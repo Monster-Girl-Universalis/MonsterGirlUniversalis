@@ -1,0 +1,18 @@
+government = monarchy
+government_rank = 2
+primary_culture = grangold_human
+religion = ilias_light_religion
+technology_group = TECH_HUMAN
+1444.1.1 = { 
+	monarch = { 
+		name = "Magus King"
+		dynasty = "of Grangold"
+		culture = "proto_human"
+		birth_date = 1414.1.1
+		adm = 5
+		dip = 4
+		mil = 5
+	}
+}
+capital = 1552
+add_government_reform = 

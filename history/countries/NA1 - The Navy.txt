@@ -1,0 +1,19 @@
+government = monarchy
+religion = water_religion
+technology_group = TECH_SEA_DWELLER
+primary_culture = Sea_Horse_Girl
+add_government_reform = Sea_Dweller_realm
+government_rank = 2
+historical_rival = FP1 #Fishy Pirates vs the Navy
+1444.1.1 = { 
+	monarch = { 
+		name = "Leviathan"
+		dynasty = "of the Navy"
+		birth_date = 1424.1.1
+		adm = 5
+		dip = 6
+		mil = 4
+		female = yes
+	}
+}
+capital = 484

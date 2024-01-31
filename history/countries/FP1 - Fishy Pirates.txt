@@ -1,0 +1,19 @@
+government = monarchy
+religion = water_religion
+technology_group = TECH_MERMAID
+primary_culture = Mermaid_Pirate
+add_government_reform = Mermaid_realm
+government_rank = 2
+historical_rival = NA1 #Fishy Pirates vs the Navy
+1444.1.1 = { 
+	monarch = { 
+		name = "Ashel"
+		dynasty = "of the Fishy Pirates"
+		birth_date = 1424.1.1
+		adm = 5
+		dip = 5
+		mil = 5
+		female = yes
+	}
+}
+capital = 1043

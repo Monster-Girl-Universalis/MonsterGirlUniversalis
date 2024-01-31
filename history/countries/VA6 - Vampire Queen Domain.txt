@@ -1,0 +1,18 @@
+government = monarchy
+religion = monster_lord_religion
+technology_group = TECH_VAMPIRE
+primary_culture = Royal_Vampire
+add_government_reform = Vampire_realm
+government_rank = 3
+1444.1.1 = { 
+	monarch = { 
+		name = "Fatima"
+		dynasty = "the Royal Vampire"
+		birth_date = 1404.1.1
+		adm = 5
+		dip = 5
+		mil = 6
+		female = yes
+	}
+}
+capital = 1918

@@ -1,0 +1,18 @@
+government = monarchy
+government_rank = 1
+primary_culture = Sister_Lamia
+add_government_reform = Lamia_realm
+religion = ilias_light_religion
+technology_group = TECH_LAMIA
+1444.1.1 = { 
+	monarch = { 
+		name = "Evangeline"
+		dynasty = "the Lamia"
+		birth_date = 1424.1.1
+		adm = 4
+		dip = 4
+		mil = 4
+		female = yes
+	}
+}
+capital = 2226

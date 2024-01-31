@@ -1,0 +1,239 @@
+succubi_internal_development = {
+
+	slot = 1
+	generic = yes
+	ai = yes
+	
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		culture_group = succubi #succubi
+		NOT = { 
+			OR = {
+				
+			}
+		}
+	}
+	
+	has_country_shield = yes
+	
+	gen_succubi_establish_alliances = {
+		icon = mission_alliances
+		required_missions = { }
+		position = 1
+		
+		trigger = {
+			num_of_allies = 2
+		}
+		
+		effect = {
+			add_prestige = 20
+			add_country_modifier = {
+				name = "gen_succubi_diplomacy"
+				duration = 5475
+			}
+		}
+	}
+	
+	gen_succubi_seduction_and_diplomacy = {
+		icon = mission_succubi_seduction_and_diplomacy
+		required_missions = { gen_succubi_establish_alliances }
+		position = 2
+		
+		trigger = {
+			diplomatic_reputation = 4
+			estate_loyalty = {
+    				estate = estate_monster_girls
+    				loyalty = 60
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "gen_succubi_seduction"
+				duration = 9125 #25 years
+			}
+			change_government_reform_progress = 50
+		}
+	}
+
+	gen_succubi_expand_succubi_vassals = {
+		icon = mission_succubi_expand_succubi_vassals
+		required_missions = { gen_succubi_seduction_and_diplomacy }
+		position = 3
+		trigger = {
+			vassal = 3
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "gen_succubi_vassals"
+				duration = 9125 #25 years
+			}
+				
+		}
+	}
+
+	gen_succubi_subversion_and_intrigue = {
+		icon = mission_succubi_subversion_and_intrigue
+		required_missions = { gen_succubi_expand_succubi_vassals }
+		position = 4
+		
+		
+		trigger = {
+			num_of_diplomats = 4
+			statesman = 4
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "gen_succubi_subversion"
+				duration = 9125 #25 years
+			}			
+		}
+	}
+
+	gen_succubi_magnificence_and_beauty = {
+		icon = mission_succubi_magnificence_and_beauty
+		required_missions = { gen_succubi_subversion_and_intrigue }
+		position = 5
+		
+		
+		trigger = {
+			diplomatic_reputation = 7
+			num_of_diplomats = 6
+			legitimacy_equivalent = 100
+		}
+		
+		effect = {
+	
+			add_years_of_income = 3
+			add_adm_power = 100
+			add_dip_power = 100
+			add_mil_power = 100
+		}
+	}
+	
+}
+succubi_trade_expansion = {
+
+	slot = 5
+	generic = yes
+	ai = yes
+	
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		culture_group = succubi #succubi
+		NOT = { 
+			OR = {
+				
+			}
+		}
+	}
+	
+	has_country_shield = yes
+	
+	gen_succubi_encourage_human_succubi_marriages = {
+		icon = mission_succubi_encourage_human_succubi_marriages
+		required_missions = { }
+		position = 1
+		
+		trigger = {
+			estate_loyalty = {
+    				estate = estate_monster_girls
+    				loyalty = 60
+				}
+			has_estate_privilege = estate_encourage_succubi_to_settle
+		}
+		
+		effect = {
+			add_stability = 1
+			add_country_modifier = {
+				name = "gen_succubi_encourage_marriages"
+				duration = -1
+			}
+		}
+	}
+
+	gen_succubi_expand_succubi_influence = {
+		icon = mission_succubi_expand_succubi_influence
+		required_missions = { gen_succubi_encourage_human_succubi_marriages }
+		position = 2
+		
+		trigger = {
+			grown_by_development = 250
+
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "gen_succubi_expand_influence"
+				duration = 9125 #25 years
+			}	
+			add_prestige = 10
+		}
+	}
+
+	gen_succubi_establish_trade_companies = {
+		icon = mission_colonial
+		required_missions = { gen_succubi_expand_succubi_influence }
+		position = 3
+
+		trigger = {
+			OR = {
+				num_of_strong_trade_companies = 2
+				num_of_merchants = 4
+			}
+		}
+		
+		effect = {	
+			add_mercantilism = 1
+			add_years_of_income = 3
+		}
+	}
+	gen_succubi_powerful_succubi_girl_ruler = {
+		icon = mission_succubi_powerful_succubi_girl_ruler
+		required_missions = { gen_succubi_establish_trade_companies }
+		position = 4
+		
+		trigger = {
+			monthly_adm = 10
+			monthly_dip = 10
+			monthly_mil = 10
+			grown_by_development = 750
+			legitimacy_equivalent = 90
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "gen_succubi_powerful_girl"
+				duration = 9125 #25 years
+			}
+			add_years_of_income = 1.5
+			add_prestige = 15
+		}
+	}
+	gen_succubi_royal_ambitions = {
+		icon = mission_succubi_queen_challenger
+		required_missions = { gen_succubi_powerful_succubi_girl_ruler }
+		position = 5
+		
+		trigger = {
+			monthly_adm = 12
+			monthly_dip = 12
+			monthly_mil = 12
+			government_rank = 2
+			army_tradition = 50
+			army_size = 150
+			legitimacy_equivalent = 100
+			is_bankrupt = no
+		}
+		
+		effect = {
+			add_prestige = 50
+			add_adm_power = 50
+			add_dip_power = 50
+			add_mil_power = 50
+		}
+	}
+	
+}

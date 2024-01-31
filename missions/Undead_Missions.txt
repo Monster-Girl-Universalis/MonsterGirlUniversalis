@@ -1,0 +1,263 @@
+undead_internal_development = {
+
+	slot = 1
+	generic = yes
+	ai = yes
+	
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		culture_group = undead #undead
+		NOT = { 
+			OR = {
+				
+			}
+		}
+	}
+	
+	has_country_shield = yes
+	
+	gen_undead_administrative_affairs = {
+		icon = mission_early_game_buildings
+		required_missions = { }
+		position = 1
+		
+		trigger = {
+			stability = 1
+			employed_advisor = {
+				category = ADM
+				culture = ROOT
+			}
+		}
+		
+		effect = {
+			change_government_reform_progress = 25
+			add_country_modifier = {
+				name = "gen_undead_governing_advancements"
+				duration = 5475
+			}
+		}
+	}
+	
+	gen_undead_increase_our_income = {
+		icon = mission_high_income
+		required_missions = { gen_undead_administrative_affairs }
+		position = 2
+		
+		trigger = {
+			share_of_starting_income = 2
+		}
+		
+		effect = {
+			add_years_of_income = 1
+		}
+	}
+
+	gen_undead_introduce_ghost_girls_to_army = {
+		icon = mission_undead_introduce_ghost_girls_to_army
+		required_missions = { gen_undead_increase_our_income }
+		position = 3
+		
+		
+		trigger = {
+			estate_loyalty = {
+    				estate = estate_monster_girls
+    				loyalty = 60
+				}
+			has_estate_privilege = estate_weaponized_spooky_scary_ghosts 
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "gen_undead_justified_ghost_warfare"
+				duration = -1
+			}	
+			add_army_tradition = 10	
+		}
+	}
+
+	gen_undead_prepare_zombie_hordes = {
+		icon = mission_undead_prepare_zombie_hordes
+		required_missions = { gen_undead_introduce_ghost_girls_to_army }
+		position = 4
+		
+		
+		trigger = {
+			max_manpower = 75
+			calc_true_if = {
+				all_owned_province = {
+					OR = {
+						has_building = barracks
+					}
+				}
+				amount = 10
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "gen_undead_deathmarch_of_zombie_hordes"
+				duration = 9125 #25 years
+			}
+		}
+	}
+
+	gen_undead_grandeur_necromancer_mansion = {
+		icon = mission_undead_grandeur_necromancer_mansion
+		required_missions = { gen_undead_prepare_zombie_hordes }
+		position = 5
+
+		trigger = {
+			share_of_starting_income = 6
+			capital_scope = {
+				development = 40
+				num_of_buildings_in_province = 5
+				num_of_times_expanded_infrastructure = 2 
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "gen_undead_grandeur_necromancer"
+				duration = 9125 #25 years
+			}	
+			add_prestige = 33
+			add_years_of_income = 1.5	
+		}
+	}
+	
+}
+undead_trade_expansion = {
+
+	slot = 5
+	generic = yes
+	ai = yes
+	
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		culture_group = undead #undead
+		NOT = { 
+			OR = {
+				
+			}
+		}
+	}
+	
+	has_country_shield = yes
+	
+	gen_undead_secure_trade_income = {
+		icon = mission_hanseatic_city
+		required_missions = { }
+		position = 1
+		
+		trigger = {
+			trade_income_percentage = 0.33
+		}
+		
+		effect = {
+			add_mercantilism = 2
+			add_country_modifier = {
+				name = "gen_undead_trade_advancements"
+				duration = 9125 #25 years
+			}
+		}
+	}
+	
+	gen_undead_ban_the_holy_water = {
+		icon = mission_undead_ban_the_holy_water
+		required_missions = { gen_undead_secure_trade_income }
+		position = 2
+		
+		trigger = {
+			incense = 4
+			treasury = 400
+		}
+		
+		effect = {
+			add_treasury = -400
+			random_owned_province = {
+				limit = { trade_goods = incense }
+				change_trade_goods = unknown
+			}
+			random_owned_province = {
+				limit = { trade_goods = incense }
+				change_trade_goods = unknown
+			}
+			random_owned_province = {
+				limit = { trade_goods = incense }
+				change_trade_goods = unknown
+			}
+			random_owned_province = {
+				limit = { trade_goods = incense }
+				change_trade_goods = unknown
+			}
+			add_country_modifier = {
+				name = "gen_undead_got_rid_of_holy_water"
+				duration = 9125 #25 years
+			}
+		}
+	}
+	
+	gen_undead_establish_trade_companies = {
+		icon = mission_colonial
+		required_missions = { gen_undead_ban_the_holy_water }
+		position = 3
+
+		trigger = {
+			OR = {
+				num_of_strong_trade_companies = 2
+				num_of_merchants = 4
+			}
+		}
+		
+		effect = {
+			add_years_of_income = 0.50
+			add_mercantilism = 5
+		}
+	}
+	gen_undead_powerful_undead_ruler = {
+		icon = mission_undead_powerful_undead_ruler
+		required_missions = { gen_undead_establish_trade_companies }
+		position = 4
+		
+		trigger = {
+			monthly_adm = 10
+			monthly_dip = 10
+			monthly_mil = 10
+			grown_by_development = 750
+			legitimacy_equivalent = 90
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "gen_undead_rise_of_the_undead"
+				duration = 9125 #25 years
+			}
+			change_government_reform_progress = 50
+			add_prestige = 20
+		}
+	}
+	gen_undead_royal_ambitions = {
+		icon = mission_undead_lich_queen
+		required_missions = { gen_undead_powerful_undead_ruler }
+		position = 5
+		
+		trigger = {
+			monthly_adm = 12
+			monthly_dip = 12
+			monthly_mil = 12
+			government_rank = 2
+			army_tradition = 50
+			army_size = 150
+			legitimacy_equivalent = 100
+			is_bankrupt = no
+		}
+		
+		effect = {
+			add_prestige = 50
+			add_adm_power = 50
+			add_dip_power = 50
+			add_mil_power = 50
+		}
+	}
+	
+}

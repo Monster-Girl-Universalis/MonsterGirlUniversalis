@@ -1,0 +1,44 @@
+mgq_has_adm_advisor = {
+	custom_trigger_tooltip = {
+		tooltip = has_adm_advisor_tooltip
+		OR = {
+			advisor = treasurer
+			advisor = philosopher
+			advisor = artist
+			advisor = theologian
+			advisor = master_of_mint
+			advisor = inquisitor
+			advisor = natural_scientist
+		}
+	}
+}
+
+mgq_has_dip_advisor = {
+	custom_trigger_tooltip = {
+		tooltip = has_dip_advisor_tooltip
+		OR = {
+			advisor = statesman
+			advisor = diplomat
+			advisor = naval_reformer
+			advisor = trader
+			advisor = colonial_governor
+			advisor = navigator
+			advisor = spymaster
+		}
+	}
+}
+
+mgq_has_mil_advisor = {
+	custom_trigger_tooltip = {
+		tooltip = has_mil_advisor_tooltip
+		OR = {
+			advisor = army_organiser
+			advisor = army_reformer
+			advisor = commandant
+			advisor = grand_captain
+			advisor = recruitmaster
+			advisor = fortification_expert
+			advisor = quartermaster
+		}
+	}
+}

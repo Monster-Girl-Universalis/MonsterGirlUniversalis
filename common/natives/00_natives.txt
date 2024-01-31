@@ -1,0 +1,97 @@
+natives_wendigo = {
+	graphical_culture = inuitgfx
+	color = { 0 255 0 }
+	icon = 1
+	
+	unit = infantry_bst_t1_01
+	
+	provinces = {
+		#Wendigo
+		2483 2484 2485 2486 2487 2488 2489 2490 2491 2492 2493 2494 2495
+		#Mammoth
+		2468 2469 2470 2471 2472 2473 2474 2475 2477
+		#Yeti
+		2457 2459 2461 2462 2463 2464 2465 2466 2467
+		#Polar Bear
+		2510 2511 2512 2513 2514 2515 2516 2517 2518 2519 2520 2521 2522
+		2523 2524
+		#White Horns
+		2525 2526 2527 2528 2529 2530 2531 2532 2533 2534 2535 2536 2537
+		2538 2540
+		#Krampus
+		2539 2541 2542 2543 2544 2545 2546 2547 2548 2549 2550 2551 2552
+		2553 2554
+	}
+}
+
+natives_ghoul = {
+	graphical_culture = inuitgfx
+	color = { 180  180  80 }
+	icon = 2
+	
+	unit = infantry_und_t1_01
+	
+	provinces = {
+		2452 2453 2454 2455 2456 2458 2460
+	}
+}
+
+natives_seal = {
+	graphical_culture = inuitgfx
+	color = { 255  255  80 }
+	icon = 3
+	
+	unit = infantry_mer_t1_01
+	
+	provinces = {
+		#Seal
+		2418 2419 2420 2421 2422 2423 2424 2425 2448 2449 2450 2451
+		#Polar Krill
+		2426 2427 2428 2429 2430 2431 2432 2443
+		#Sedna
+		2433 2434 2435 2436 2437 2438 2439 2440 2441 2442
+	}
+}
+
+natives_tsurara = {
+	graphical_culture = inuitgfx
+	color = { 255  255  0 }
+	icon = 4
+	
+	unit = infantry_dmh_t1_01
+	
+	provinces = {
+		#Glacies
+		2479 2480 2481 2482 2496 2497 2498
+		#Tsurara-Onna
+		2555 2556 2557 2558 2559 2560 2561 2562 2563 2564 2565 2566 2567
+		2599 2600
+		#Permafrost Witch
+		2571 2573 2575 2577 2579 2580 2581 2582 2416
+	}
+}
+
+natives_penguin = {
+	graphical_culture = inuitgfx
+	color = { 0 255  255 }
+	icon = 5
+	
+	unit = infantry_hrp_t1_01
+	
+	provinces = {
+		#Penguin
+		361 362 1332 1924 1925 2163 2501 2502 2503 2504 2505 2506 2507
+		2508 2509		
+	}
+}
+
+natives_american_sa = {
+	graphical_culture = southamericagfx
+	color = { 255  0  0 }
+	icon = 6
+	
+	unit = native_indian_archer
+	
+	provinces = {
+	}
+}

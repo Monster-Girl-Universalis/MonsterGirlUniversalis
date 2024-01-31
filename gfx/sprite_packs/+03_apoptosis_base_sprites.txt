@@ -1,0 +1,27 @@
+apoptosis_sprite_pack = {
+	# Tests against every tag in game
+	country_trigger = {
+		culture_group = apoptosis
+	}
+
+	sprite_infantry = {
+		0 = APT_INFANTRY_1
+		1 = APT_INFANTRY_2
+		2 = APT_INFANTRY_3
+		3 = APT_INFANTRY_4
+	}
+
+	sprite_cavalry = {
+		0 = APT_CAVALRY_1
+		1 = APT_CAVALRY_2
+		2 = APT_CAVALRY_3
+		3 = APT_CAVALRY_4
+	}
+	
+	sprite_artillery = {
+		0 = APT_ARTILLERY_1
+		1 = APT_ARTILLERY_2
+		2 = APT_ARTILLERY_3
+		3 = APT_ARTILLERY_4
+	}
+}

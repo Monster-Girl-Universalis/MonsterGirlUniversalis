@@ -1,0 +1,18 @@
+government = monarchy
+government_rank = 1
+primary_culture = Slug_Girl
+add_government_reform = Land_Dweller_realm
+religion = monster_lord_religion
+technology_group = TECH_LAND_DWELLER
+capital = 454
+1444.1.1 = { 
+	monarch = { 
+		name = "Elisabeth"
+		dynasty = "the Slug"
+		birth_date = 1424.1.1
+		adm = 5
+		dip = 5
+		mil = 5
+		female = yes
+	}
+}

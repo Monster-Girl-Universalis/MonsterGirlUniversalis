@@ -1,0 +1,768 @@
+#Give us 3 privileges
+estate_monster_girls_three_privileges = {
+	can_select = {
+		NOT = {
+			num_of_estate_privileges = {
+				estate = estate_monster_girls
+				value = 2
+			}
+		}
+	}
+	selection_weight = {
+		factor = 1
+	}
+	pre_effect = {
+		set_variable = {
+			which = estate_monster_girls_three_privileges_var
+			value = 0
+		}
+		if = {
+			limit = {
+				num_of_estate_privileges = {
+					estate = estate_monster_girls
+					value = 1
+				}
+			}
+			set_variable = {
+				which = estate_monster_girls_three_privileges_var
+				value = 2
+			}
+		}
+		else = {
+			set_variable = {
+				which = estate_monster_girls_three_privileges_var
+				value = 1
+			}
+		}
+	}
+	task_requirements = {
+		if = {
+			limit = {
+				check_variable = {
+					which = estate_monster_girls_three_privileges_var
+					value = 2
+				}
+			}
+			num_of_estate_privileges = {
+				estate = estate_monster_girls
+				value = 3
+			}
+		}
+		else = {
+			num_of_estate_privileges = {
+				estate = estate_monster_girls
+				value = 2
+			}
+		}
+	}
+    task_completed_effect = {
+		add_estate_loyalty = {
+			estate = estate_monster_girls
+			loyalty = 15
+		}
+    }
+    failing_effect = {
+        add_estate_loyalty_modifier = {
+            estate = estate_monster_girls
+			desc = EST_VAL_AGENDA_DENIED
+			loyalty = -10
+			duration = 7300
+        }
+    }
+}
+
+estate_monster_girls_develop_x = {
+	selection_weight = {
+		factor = 1
+	}
+	can_select = {
+		any_owned_province = {
+			is_state_core = root
+		}
+	}
+	pre_effect = {
+		set_variable = {
+			which = develop_x_category_monster_girls
+			value = 0
+		}
+		random_list = {
+			1 = { 
+				set_variable = {
+					which = develop_x_category_monster_girls
+					value = 3
+				}
+			}
+			2 = { #dip
+				set_variable = {
+					which = develop_x_category_monster_girls
+					value = 2
+				}
+			}
+			1 = { #adm
+				set_variable = {
+					which = develop_x_category_monster_girls
+					value = 1
+				}
+			}
+		}
+		random_owned_province = {
+			limit = {
+				is_state_core = root
+			}
+			save_event_target_as = agenda_province
+		}
+		event_target:agenda_province = {
+			if = {
+				limit = {
+					root = {
+						check_variable = {
+							which = develop_x_category_monster_girls
+							value = 3
+						}
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							which = province_mil_var
+							value = 1
+						}
+					}
+					set_variable = {
+						which = province_mil_var
+						value = 0
+					}
+				}
+				export_to_variable = {
+					which = province_mil_var
+					value = trigger_value:base_manpower
+				}
+				change_variable = {
+					which = province_mil_var
+					value = 2
+				}
+			}
+			else_if = {
+				limit = {
+					root = {
+						check_variable = {
+							which = develop_x_category_monster_girls
+							value = 2
+						}
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							which = province_dip_var
+							value = 1
+						}
+					}
+					set_variable = {
+						which = province_dip_var
+						value = 0
+					}
+				}
+				export_to_variable = {
+					which = province_dip_var
+					value = trigger_value:base_production
+				}
+				change_variable = {
+					which = province_dip_var
+					value = 2
+				}
+			}
+			else = {
+				if = {
+					limit = {
+						check_variable = {
+							which = province_adm_var
+							value = 1
+						}
+					}
+					set_variable = {
+						which = province_adm_var
+						value = 0
+					}
+				}
+				export_to_variable = {
+					which = province_adm_var
+					value = trigger_value:base_tax
+				}
+				change_variable = {
+					which = province_adm_var
+					value = 2
+				}
+			}
+		}
+	}
+	provinces_to_highlight = {
+		province_id = event_target:agenda_province
+	}
+	fail_if = {
+		event_target:agenda_province = {
+			NOT = { owned_by = root }
+		}
+	}
+    task_requirements = {
+		event_target:agenda_province = {
+			if = {
+				limit = {
+					root = {
+						check_variable = {
+							which = develop_x_category_monster_girls
+							value = 3
+						}
+					}
+				}
+				base_manpower = "province_mil_var"
+			}
+			else_if = {
+				limit = {
+					root = {
+						check_variable = {
+							which = develop_x_category_monster_girls
+							value = 2
+						}
+					}
+				}
+				base_production = "province_dip_var"
+			}
+			else = {
+				base_tax = "province_adm_var"
+			}
+		}
+    }
+    task_completed_effect = {
+		add_estate_loyalty = {
+			estate = estate_monster_girls
+			loyalty = 15
+		}
+		if = {
+			limit = {
+				check_variable = {
+					which = develop_x_category_monster_girls
+					value = 3
+				}
+			}
+			 add_yearly_manpower = 0.3
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					which = develop_x_category_monster_girls
+					value = 2
+				}
+			}
+			add_years_of_income = 0.3
+		}
+		else = {
+			add_prestige = 10
+		}
+    }
+    failing_effect = {
+		event_target:agenda_province = {
+			if = {
+				limit = { owned_by = root }
+				add_named_unrest = {
+					name = local_monster_girls_displeased
+					value = 5
+				}
+			}
+		}
+        add_estate_loyalty_modifier = {
+            estate = estate_monster_girls
+			desc = EST_VAL_AGENDA_DENIED
+			loyalty = -10
+			duration = 7300
+        }
+    }
+}
+#Yoma want mana
+estate_monster_girls_yoma_require_resources = {
+	max_days_active = 5475
+	can_select = {
+		always = yes
+	}
+	selection_weight = {
+		factor = 1
+	}
+	pre_effect = {
+	}
+
+	task_requirements = {
+		adm_power_cost = 200
+		dip_power_cost = 200
+		mil_power_cost = 200
+		years_of_income = 1.0
+	}
+	fail_if = {
+		is_bankrupt = yes
+	}
+    task_completed_effect = {
+		
+		add_estate_loyalty = {
+			estate = estate_monster_girls
+			loyalty = 15
+		}
+		add_adm_power = 10
+		add_dip_power = 10
+		add_mil_power = 10
+    }
+    failing_effect = {
+		
+		add_estate_loyalty = {
+			estate = estate_monster_girls
+			loyalty = -10
+		}
+		add_legitimacy = -10
+    }
+}
+estate_monster_girls_build_manufactory_in_y = {
+	can_select = {
+		any_owned_province = {
+			is_state_core = root
+			root_can_build_manufactory_here_trigger = yes
+			has_burghers_trade_good_trigger = yes
+		}
+		monthly_income = 30
+	}
+	selection_weight = {
+		factor = 2
+		modifier = {
+			factor = 0.5
+			OR = {
+				current_age = age_of_discovery
+				current_age = age_of_reformation
+			}
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { monthly_income = 40 }
+		}
+		modifier = {
+			factor = 2
+			monthly_income = 60
+		}
+		modifier = {
+			factor = 2
+			is_institution_enabled = manufactories
+			NOT = { has_institution = manufactories }
+		}
+	}
+	pre_effect = {
+		random_owned_province = {
+			limit = {
+				is_state_core = root
+				root_can_build_manufactory_here_trigger = yes
+				has_burghers_trade_good_trigger = yes
+			}
+			save_event_target_as = agenda_province
+		}
+		random_owned_province = {
+			limit = {
+				is_state_core = root
+				base_production = 5
+				root_can_build_manufactory_here_trigger = yes
+				has_burghers_trade_good_trigger = yes
+			}
+			save_event_target_as = agenda_province
+		}
+		random_owned_province = {
+			limit = {
+				is_state_core = root
+				base_production = 10
+				root_can_build_manufactory_here_trigger = yes
+				has_burghers_trade_good_trigger = yes
+			}
+			save_event_target_as = agenda_province
+		}
+	}
+	provinces_to_highlight = {
+		province_id = event_target:agenda_province
+	}
+	fail_if = {
+		event_target:agenda_province = {
+			NOT = { owned_by = root }
+		}
+	}
+    task_requirements = {
+		event_target:agenda_province = {
+			custom_trigger_tooltip = {
+				tooltip = has_manufactory_trigger_tooltip
+				OR = {
+					if = {
+						limit = {
+							OR = {
+								trade_goods = naval_supplies
+								trade_goods = fish
+								trade_goods = salt
+							}
+						}
+						has_building = wharf
+					}
+					else_if = {
+						limit = {
+							OR = {
+								trade_goods = copper
+								trade_goods = iron
+							}
+						}
+						has_building = weapons
+					}
+					else_if = {
+						limit = {
+							OR = {
+								trade_goods = wool
+								trade_goods = cloth
+								trade_goods = silk
+								trade_goods = dyes
+							}
+						}
+						has_building = textile
+					}
+					else_if = {
+						limit = {
+							OR = {
+								trade_goods = ivory
+								trade_goods = slaves
+								trade_goods = spices
+								trade_goods = cloves
+								trade_goods = fur
+								trade_goods = incense
+							}
+						}
+						has_building = tradecompany
+					}
+					else_if = {
+						limit = {
+							OR = {
+								trade_goods = grain
+								trade_goods = livestock
+								trade_goods = wine
+							}
+						}
+						has_building = farm_estate
+					}
+					else_if = {
+						limit = {
+							OR = {
+								trade_goods = paper
+								trade_goods = gems
+								trade_goods = tropical_wood
+								trade_goods = glass
+								trade_goods = chinaware
+							}
+						}
+						has_building = mills
+					}
+					else_if = {
+						limit = {
+							trade_goods = coal
+						}
+						has_building = furnace
+					}
+					else = {
+						has_building = plantations
+					}
+					has_building = ramparts
+					has_building = soldier_households
+					has_building = impressment_offices
+					has_building = state_house
+				}
+			}
+		}
+    }
+    task_completed_effect = {
+		add_estate_loyalty = {
+			estate = estate_monster_girls
+			loyalty = 15
+		}
+		event_target:agenda_province = {
+			add_base_production = 1
+			add_province_modifier = {
+				name = prospering_production
+				duration = 5475
+			}
+		}
+    }
+    failing_effect = {
+		event_target:agenda_province = {
+			if = {
+				limit = { owned_by = root }
+				add_named_unrest = {
+					name = local_monster_girls_displeased
+					value = 5
+				}
+			}
+		}
+        add_estate_loyalty_modifier = {
+            estate = estate_monster_girls
+			desc = EST_VAL_AGENDA_DENIED
+			loyalty = -10
+			duration = 7300
+        }
+    }
+}
+#Mermaids want access to the Sea
+estate_monster_girls_mermaids_access_sea = {
+	can_select = {
+		is_free_or_tributary_trigger = yes
+		NOT = {
+			any_owned_province = {
+				has_port = yes
+			}
+		}
+		any_owned_province = {
+			any_neighbor_province = {
+				has_port = yes
+				owner = {
+					NOT = { overlord_of = root }
+					NOT = { is_subject_of = root }
+					NOT = { alliance_with = root }
+					NOT = { ROOT = { truce_with = prev } }
+					NOT = {
+						has_opinion = {
+							who = root
+							value = 50
+						}
+					}
+					OR = {
+						is_part_of_hre = no
+						NOT = { hre_reform_passed = landfriede }
+						ROOT = { is_part_of_hre = no }
+					}
+				}
+			}
+		}
+	}
+	selection_weight = {
+		factor = 2.5
+		modifier = {
+			factor = 0.25
+			any_country = {
+				coalition_target = root
+			}
+		}
+	}
+	pre_effect = {
+		random_owned_province = {
+			limit = {
+				any_neighbor_province = {
+					has_port = yes
+					owner = {
+						NOT = { overlord_of = root }
+						NOT = { is_subject_of = root }
+						NOT = { alliance_with = root }
+						NOT = { ROOT = { truce_with = prev } }
+						NOT = {
+							has_opinion = {
+								who = root
+								value = 50
+							}
+						}
+						OR = {
+							is_part_of_hre = no
+							NOT = { hre_reform_passed = landfriede }
+							ROOT = { is_part_of_hre = no }
+						}
+					}
+				}
+			}
+			random_neighbor_province = {
+				limit = {
+					has_port = yes
+					owner = {
+						NOT = { overlord_of = root }
+						NOT = { is_subject_of = root }
+						NOT = { alliance_with = root }
+						NOT = { ROOT = { truce_with = prev } }
+						NOT = {
+							has_opinion = {
+								who = root
+								value = 50
+							}
+						}
+						OR = {
+							is_part_of_hre = no
+							NOT = { hre_reform_passed = landfriede }
+							ROOT = { is_part_of_hre = no }
+						}
+					}
+				}
+				save_event_target_as = agenda_province
+			}
+		}
+	}
+	provinces_to_highlight = {
+		OR = {
+			province_id = event_target:agenda_province
+			AND = {
+				OR = {
+					is_claim = root
+					is_core = root
+				}
+				has_port = yes
+			}
+		}
+	}
+	task_requirements = {
+		any_owned_province = {
+			has_port = yes
+		}
+	}
+	immediate_effect = {
+		if = {
+			limit = {
+				event_target:agenda_province = {
+					NOT = { is_core = root }
+					NOT = { is_claim = root }
+				}
+			}
+			event_target:agenda_province = {
+				add_claim = root
+			}
+		}
+	}
+	on_invalid = {
+		event_target:agenda_province = {
+			if = {
+				limit = {
+					is_claim = root
+					NOT = { is_permanent_claim = root }
+				}
+				remove_claim = root
+			}
+		}
+	}
+	task_completed_effect = {
+		add_estate_loyalty = {
+			estate = estate_monster_girls
+			loyalty = 15
+		}
+		add_sailors = 500
+	}
+    failing_effect = {
+        add_estate_loyalty_modifier = {
+            estate = estate_monster_girls
+			desc = EST_VAL_AGENDA_DENIED
+			loyalty = -10
+			duration = 7300
+        }
+		event_target:agenda_province = {
+			if = {
+				limit = {
+					is_claim = root
+					NOT = { is_permanent_claim = root }
+				}
+				remove_claim = root
+			}
+		}
+    }
+}
+
+estate_monster_girls_slimes_want_trade = {
+	max_days_active = 5475
+	can_select = {
+		NOT = { trade_income_percentage = 0.20 }
+	}
+	selection_weight = {
+		factor = 1
+	}
+	pre_effect = {
+	}
+
+	task_requirements = {
+		trade_income_percentage = 0.20
+	}
+	fail_if = {
+		is_bankrupt = yes
+	}
+    task_completed_effect = {
+		
+		add_estate_loyalty = {
+			estate = estate_monster_girls
+			loyalty = 15
+		}
+		years_of_income = 0.2
+    }
+    failing_effect = {
+		
+		add_estate_loyalty = {
+			estate = estate_monster_girls
+			loyalty = -10
+		}
+    }
+}
+
+estate_monster_girls_vampires_want_wealth = {
+	max_days_active = 5475
+	can_select = {
+		trade_income_percentage = 0.25
+		NOT = { trade_income_percentage = 0.50 }
+	}
+	selection_weight = {
+		factor = 1
+	}
+	pre_effect = {
+	}
+
+	task_requirements = {
+		trade_income_percentage = 0.50
+	}
+	fail_if = {
+		is_bankrupt = yes
+	}
+    task_completed_effect = {
+		
+		add_estate_loyalty = {
+			estate = estate_monster_girls
+			loyalty = 15
+		}
+		years_of_income = 1
+    }
+    failing_effect = {
+		
+		add_estate_loyalty = {
+			estate = estate_monster_girls
+			loyalty = -10
+		}
+    }
+}
+
+estate_monster_girls_succubi_want_partners = {
+	max_days_active = 5475
+	can_select = {
+		always = yes
+	}
+	selection_weight = {
+		factor = 1
+	}
+	pre_effect = {
+	}
+
+	task_requirements = {
+		manpower_percentage = 0.80
+	}
+	fail_if = {
+		is_bankrupt = yes
+	}
+    task_completed_effect = {
+		
+		add_estate_loyalty = {
+			estate = estate_monster_girls
+			loyalty = 15
+		}
+		add_yearly_manpower = -1
+		add_mil_power = 75
+		add_dip_power = 75
+		add_adm_power = 75
+    }
+    failing_effect = {
+		
+		add_estate_loyalty = {
+			estate = estate_monster_girls
+			loyalty = -10
+		}
+    }
+}

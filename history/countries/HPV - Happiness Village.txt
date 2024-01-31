@@ -1,0 +1,19 @@
+government = monarchy
+government_rank = 1
+primary_culture = ilian_human
+religion = ilias_light_religion
+technology_group = TECH_HUMAN
+capital = 339
+historical_friend = HRT #Harpies and Happiness
+1444.1.1 = { 
+	monarch = { 
+		name = "Helen"
+		dynasty = "of Happiness Village"
+		birth_date = 1424.1.1
+		adm = 6
+		dip = 5
+		mil = 2
+		female = yes
+	}
+}
+add_government_reform = 

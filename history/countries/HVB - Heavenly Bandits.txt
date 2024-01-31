@@ -1,0 +1,22 @@
+government = monarchy
+government_rank = 1
+primary_culture = Dragon_Girl
+add_government_reform = heavenly_bandits
+add_accepted_culture = Vampire_Girl
+add_accepted_culture = Lamia_Girl
+add_accepted_culture = Goblin_Girl
+religion = monster_lord_religion
+secondary_religion = yamatai_religion
+technology_group = TECH_DRAGON
+capital = 71
+1444.1.1 = { 
+	monarch = { 
+		name = "Pup"
+		dynasty = "the Dragon"
+		birth_date = 1424.1.1
+		adm = 4
+		dip = 4
+		mil = 4
+		female = yes
+	}
+}

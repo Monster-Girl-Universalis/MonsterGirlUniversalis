@@ -1,0 +1,473 @@
+mgq_slime_beast = { #Slime+Beast
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = slime_ideas 
+		has_idea_group = beast_ideas 
+	}
+	allow = {
+		full_idea_group = slime_ideas 
+		full_idea_group = beast_ideas 
+	}
+
+	production_efficiency = 0.10
+	trade_efficiency = 0.10
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+mgq_beast_elf = { #Beast+Elf
+	monarch_power = MIL
+
+	potential = {
+		has_idea_group = elf_ideas 
+		has_idea_group = beast_ideas 
+	}
+	allow = {
+		full_idea_group = elf_ideas 
+		full_idea_group = beast_ideas 
+	}
+
+	shock_damage_received =-0.20
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+mgq_human_mermaid = { #Human+Mermaid
+	monarch_power = ADM
+
+	potential = {
+		has_idea_group = human_ideas 
+		has_idea_group = mermaid_ideas 
+	}
+	allow = {
+		full_idea_group = human_ideas 
+		full_idea_group = mermaid_ideas 
+	}
+
+	merchants = 1
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+mgq_mermaid_elf = { #Mermaid+Fairy
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = elf_ideas 
+		has_idea_group = mermaid_ideas 
+	}
+	allow = {
+		full_idea_group = elf_ideas 
+		full_idea_group = mermaid_ideas 
+	}
+
+	naval_morale_damage_received = -0.10
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+mgq_human_vampire = { #Human+Vampire
+	monarch_power = ADM
+
+	potential = {
+		has_idea_group = human_ideas 
+		has_idea_group = vampire_ideas 
+	}
+	allow = {
+		full_idea_group = human_ideas 
+		full_idea_group = vampire_ideas 
+	}
+
+	trade_efficiency = 0.20
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+mgq_human_demi_human = { #Human+Demi-Human
+	monarch_power = ADM
+
+	potential = {
+		has_idea_group = human_ideas 
+		has_idea_group = demi_human_ideas 
+	}
+	allow = {
+		full_idea_group = human_ideas 
+		full_idea_group = demi_human_ideas 
+	}
+
+	idea_cost = -0.25
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+mgq_human_yoma = { #Human+Yoma
+	monarch_power = MIL
+
+	potential = {
+		has_idea_group = human_ideas 
+		has_idea_group = yoma_ideas 
+	}
+	allow = {
+		full_idea_group = human_ideas 
+		full_idea_group = yoma_ideas 
+	}
+	infantry_fire = 0.25
+	leader_land_fire = 1
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+mgq_land_dweller_yoma = { #Land Dweller+Yoma
+	monarch_power = MIL
+
+	potential = {
+		has_idea_group = land_dweller_ideas
+		has_idea_group = yoma_ideas 
+	}
+	allow = {
+		full_idea_group = land_dweller_ideas
+		full_idea_group = yoma_ideas 
+	}
+	infantry_power = 0.25
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+mgq_angel_alraune = { #Angel+Alraune
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = angel_ideas
+		has_idea_group = alraune_ideas 
+	}
+	allow = {
+		full_idea_group = angel_ideas
+		full_idea_group = alraune_ideas 
+	}
+	province_warscore_cost = -0.20
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+mgq_alraune_sea_dweller = { #Alraune+Sea Dweller
+	monarch_power = ADM
+
+	potential = {
+		has_idea_group = alraune_ideas
+		has_idea_group = sea_dweller_ideas
+	}
+	allow = {
+		full_idea_group = alraune_ideas 
+		full_idea_group = sea_dweller_ideas
+	}
+	naval_morale_damage = 0.10
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+mgq_yoma_sea_dweller = { #Yoma+Sea Dweller
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = yoma_ideas
+		has_idea_group = sea_dweller_ideas
+	}
+	allow = {
+		full_idea_group = yoma_ideas 
+		full_idea_group = sea_dweller_ideas
+	}
+	leader_naval_fire = 1
+	prestige_from_naval = 0.1
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+mgq_angel_ghouls = { #Angel+Undead
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = angel_ideas
+		has_idea_group = undead_ideas 
+	}
+	allow = {
+		full_idea_group = angel_ideas
+		full_idea_group = undead_ideas 
+	}
+	war_exhaustion_cost = -0.50
+	war_exhaustion = -0.10
+	ai_will_do = {
+		factor = 1
+	}
+}
+mgq_zombie_dragon_girls = { #Dragon+Undead
+	monarch_power = MIL
+
+	potential = {
+		has_idea_group = dragon_ideas
+		has_idea_group = undead_ideas 
+	}
+	allow = {
+		full_idea_group = dragon_ideas
+		full_idea_group = undead_ideas 
+	}
+	own_territory_dice_roll_bonus = 1
+	land_morale = -0.05
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+mgq_dragon_apoptosis = { #Dragon+Apoptosis
+	monarch_power = MIL
+
+	potential = {
+		has_idea_group = dragon_ideas
+		has_idea_group = apoptosis_ideas 
+	}
+	allow = {
+		full_idea_group = dragon_ideas
+		full_idea_group = apoptosis_ideas 
+	}
+	fire_damage_received = -0.10
+	infantry_shock = 0.50
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+mgq_doll_apoptosis = { #Doll+Apoptosis
+	monarch_power = ADM
+
+	potential = {
+		has_idea_group = doll_ideas
+		has_idea_group = apoptosis_ideas 
+	}
+	allow = {
+		full_idea_group = doll_ideas
+		full_idea_group = apoptosis_ideas 
+	}
+	development_cost = -0.10
+	all_power_cost = -0.025
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+mgq_alraune_apoptosis = { #Alraune+Apoptosis
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = alraune_ideas
+		has_idea_group = apoptosis_ideas 
+	}
+	allow = {
+		full_idea_group = alraune_ideas
+		full_idea_group = apoptosis_ideas 
+	}
+	morale_damage = 0.10
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+mgq_sea_dweller_apoptosis = { #Sea Dweller+Apoptosis
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = sea_dweller_ideas
+		has_idea_group = apoptosis_ideas 
+	}
+	allow = {
+		full_idea_group = sea_dweller_ideas
+		full_idea_group = apoptosis_ideas 
+	}
+	own_coast_naval_combat_bonus = 1
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+mgq_insect_apoptosis = { #Insect+Apoptosis
+	monarch_power = MIL
+
+	potential = {
+		has_idea_group = insect_ideas
+		has_idea_group = apoptosis_ideas 
+	}
+	allow = {
+		full_idea_group = insect_ideas
+		full_idea_group = apoptosis_ideas 
+	}
+	infantry_shock = 1
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+mgq_undead_apoptosis = { #Undead+Apoptosis
+	monarch_power = ADM
+
+	potential = {
+		has_idea_group = undead_ideas
+		has_idea_group = apoptosis_ideas 
+	}
+	allow = {
+		full_idea_group = undead_ideas
+		full_idea_group = apoptosis_ideas 
+	}
+	morale_damage_received = -0.10
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+mgq_yoma_apoptosis = { #Yoma+Apoptosis
+	monarch_power = MIL
+
+	potential = {
+		has_idea_group = yoma_ideas
+		has_idea_group = apoptosis_ideas 
+	}
+	allow = {
+		full_idea_group = yoma_ideas
+		full_idea_group = apoptosis_ideas 
+	}
+	infantry_fire = 1
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+mgq_slime_apoptosis = { #Slime+Apoptosis
+	monarch_power = ADM
+
+	potential = {
+		has_idea_group = slime_ideas
+		has_idea_group = apoptosis_ideas 
+	}
+	allow = {
+		full_idea_group = slime_ideas
+		full_idea_group = apoptosis_ideas 
+	}
+	build_time = -0.50
+	ai_will_do = {
+		factor = 1
+	}
+}
+mgq_roid_apoptosis = { #Roid+Apoptosis
+	monarch_power = MIL
+
+	potential = {
+		has_idea_group = roid_ideas
+		has_idea_group = apoptosis_ideas 
+	}
+	allow = {
+		full_idea_group = roid_ideas
+		full_idea_group = apoptosis_ideas 
+	}
+	military_tactics = 0.15
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+mgq_scylla_apoptosis = { #Scylla+Apoptosis
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = scylla_ideas
+		has_idea_group = apoptosis_ideas 
+	}
+	allow = {
+		full_idea_group = scylla_ideas
+		full_idea_group = apoptosis_ideas 
+	}
+	landing_penalty = -2
+	ai_will_do = {
+		factor = 1
+	}
+}
+mgq_angel_apoptosis = { #Angel+Apoptosis
+	monarch_power = MIL
+
+	potential = {
+		has_idea_group = angel_ideas
+		has_idea_group = apoptosis_ideas 
+	}
+	allow = {
+		full_idea_group = angel_ideas
+		full_idea_group = apoptosis_ideas 
+	}
+	artillery_barrage_cost = -0.33
+	assault_fort_ability = 0.33
+	ai_will_do = {
+		factor = 1
+	}
+}
+mgq_chimeraroids = { #Chimera+Roid
+	monarch_power = ADM
+
+	potential = {
+		has_idea_group = roid_ideas
+		has_idea_group = chimera_ideas 
+	}
+	allow = {
+		full_idea_group = roid_ideas
+		full_idea_group = chimera_ideas 
+	}
+	administrative_efficiency = 0.10
+	development_cost_modifier = -0.05
+	ai_will_do = {
+		factor = 1
+	}
+}
+mgq_cyborg_augmentation = { #Human+Roid
+	monarch_power = ADM
+
+	potential = {
+		has_idea_group = roid_ideas
+		has_idea_group = human_ideas 
+	}
+	allow = {
+		full_idea_group = roid_ideas
+		full_idea_group = human_ideas 
+	}
+	all_power_cost = -0.04
+	ai_will_do = {
+		factor = 1
+	}
+}
+mgq_demonoid_research = { #Human+Demi-Human+Vampire+Yoma
+	monarch_power = MIL
+
+	potential = {
+		has_idea_group = human_ideas
+		has_idea_group = demi_human_ideas 
+		has_idea_group = vampire_ideas 
+		has_idea_group = yoma_ideas 
+	}
+	allow = {
+		full_idea_group = human_ideas
+		full_idea_group = demi_human_ideas 
+		full_idea_group = vampire_ideas 
+		full_idea_group = yoma_ideas 
+	}
+	infantry_fire = 1
+	artillery_fire = 1
+	cavalry_fire = 1
+	ai_will_do = {
+		factor = 1
+	}
+}

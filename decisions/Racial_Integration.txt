@@ -1,0 +1,1604 @@
+country_decisions = {
+
+	human_integration_decision = {
+		major = yes
+		potential = {
+			AND = {
+				any_owned_province = { culture_group = Human_culture }
+				NOT = { technology_group = TECH_HUMAN }			
+				NOT = { 
+					check_variable = {
+						which = Human_integration
+						value = 1
+					} 
+				}
+			}
+		}
+		allow = {
+			development_in_provinces = {
+				value = 300
+				culture_group = Human_culture
+			}
+		}
+		effect = {
+
+			add_country_modifier = {
+				name = "human_integration_mod"
+				duration = 3650
+			}
+ 			set_variable = {
+   				which = Human_integration
+  				value = 1
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	undead_integration_decision = {
+		major = yes
+		potential = {
+			AND = {
+				any_owned_province = { culture_group = undead }
+					NOT = {
+		OR = {
+			technology_group = TECH_UNDEAD
+			primary_culture = Undead_Apoptosis  
+			check_variable = {
+				which = Angel_Ghouls
+				value = 1
+			}  
+			check_variable = {
+				which = Zombie_Dragon_Girls
+				value = 1
+			}
+			check_variable = {
+				which = Undead_integration
+				value = 1
+			} 
+			was_tag = RMA
+			was_tag = MMW
+			was_tag = MII
+			was_tag = HM1
+			was_tag = MG1
+			was_tag = MR2
+			was_tag = SH1
+			was_tag = SH2
+			was_tag = PA1
+			was_tag = JD1
+			was_tag = HI1
+			was_tag = HK1
+			was_tag = HK2
+			was_tag = NM1
+			was_tag = SP1
+			was_tag = SP2
+			was_tag = SP3
+			was_tag = GH1
+			was_tag = GH2
+			was_tag = WA1
+			was_tag = WA2
+			was_tag = ZA1
+			was_tag = LC1
+			was_tag = DG1
+			was_tag = DG2
+			was_tag = LQD
+			was_tag = MS1
+			was_tag = MS2
+			was_tag = EN1
+			was_tag = EN2
+
+			tag = JD1
+			tag = ZA1
+			tag = SH1
+		}
+					}
+			}
+		}
+		allow = {
+			development_in_provinces = {
+				value = 300
+				culture_group = undead
+			}
+		}
+		effect = {
+
+			add_country_modifier = {
+				name = "undead_integration_mod"
+				duration = 3650
+			}
+ 			set_variable = {
+   				which = Undead_integration
+  				value = 1
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	land_dweller_integration_decision = {
+		major = yes
+		potential = {
+			AND = {
+				any_owned_province = { culture_group = land_dweller }
+					NOT = {
+		OR = {
+			technology_group = TECH_LAND_DWELLER
+			check_variable = {
+				which = Land_Dweller_integration
+				value = 1
+			} 
+			was_tag = LGR
+			was_tag = SLU
+			was_tag = ERD
+			was_tag = ROR
+			was_tag = MDS
+			was_tag = SLT
+			was_tag = AR1
+			was_tag = FR1
+			was_tag = FR2
+			was_tag = FR3
+			was_tag = FR4
+			was_tag = SH1
+			tag = SH1
+			was_tag = LDQ
+			was_tag = SLT
+			tag = BS1
+			tag = BS2
+			was_tag = BS1
+			was_tag = BS2
+
+			tag = ML1
+			was_tag = ML1
+		}
+					}
+			}
+		}
+		allow = {
+			development_in_provinces = {
+				value = 300
+				culture_group = land_dweller
+			}
+		}
+		effect = {
+
+			add_country_modifier = {
+				name = "land_dweller_integration_mod"
+				duration = 3650
+			}
+ 			set_variable = {
+   				which = Land_Dweller_integration
+  				value = 1
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	succubi_integration_decision = {
+		major = yes
+		potential = {
+			AND = {
+				any_owned_province = { culture_group = succubi }
+					NOT = {
+		OR = {
+			technology_group = TECH_SUCCUBI
+			check_variable = {
+				which = Succubi_integration
+				value = 1
+			} 
+			tag = HM1
+			tag = LC1
+			was_tag = IMR
+			was_tag = SNR
+			was_tag = CH1
+			was_tag = SU1
+			was_tag = SU2
+			was_tag = HM1
+			was_tag = LC1
+			was_tag = SSD
+			was_tag = KU1
+			was_tag = SM3
+			was_tag = SM4
+			was_tag = SM5
+
+			tag = ML1
+			was_tag = ML1
+		}
+					}
+			}
+		}
+		allow = {
+			development_in_provinces = {
+				value = 300
+				culture_group = succubi
+			}
+		}
+		effect = {
+
+			add_country_modifier = {
+				name = "succubi_integration_mod"
+				duration = 3650
+			}
+ 			set_variable = {
+   				which = Succubi_integration
+  				value = 1
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	slime_integration_decision = {
+		major = yes
+		potential = {
+			AND = {
+				any_owned_province = { culture_group = slime }
+					NOT = {
+		OR = {
+			technology_group = TECH_SLIME
+			primary_culture = Slime_Apoptosis
+			check_variable = {
+				which = Slime_integration
+				value = 1
+			} 
+			tag = UN1
+			was_tag = SLR
+			was_tag = SLM
+			was_tag = BLR
+			was_tag = BP1
+			was_tag = SB1
+			was_tag = RS1
+			was_tag = PS1
+			was_tag = GS1
+			was_tag = TS1
+			was_tag = BR2
+			was_tag = BR3
+			was_tag = LS1
+			was_tag = GE1
+			was_tag = GE2
+			tag = LV1
+			tag = CH2
+			tag = SC3
+			was_tag = CH2
+			was_tag = SC3
+			was_tag = LV1
+			was_tag = VA2
+			was_tag = UN1
+			was_tag = SQD
+
+			tag = ML1
+			was_tag = ML1
+		}
+					}
+			}
+		}
+		allow = {
+			development_in_provinces = {
+				value = 300
+				culture_group = slime
+			}
+		}
+		effect = {
+
+			add_country_modifier = {
+				name = "slime_integration_mod"
+				duration = 3650
+			}
+ 			set_variable = {
+   				which = Slime_integration
+  				value = 1
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	apoptosis_integration_decision = {
+		major = yes
+		potential = {
+			AND = {
+				any_owned_province = { culture_group = apoptosis }
+					NOT = {
+		OR = {
+			check_variable = {
+				which = Apoptosis_Dogma
+				value = 1
+			} 
+			technology_group = TECH_APOPTOSIS
+			check_variable = {
+				which = Apoptosis_integration
+				value = 1
+			} 
+			was_tag = RAP
+			was_tag = JIP
+			was_tag = SSP
+			was_tag = LXP
+			was_tag = SLP
+			was_tag = EAP
+			was_tag = VA1
+			was_tag = VA2
+			was_tag = VA3
+			was_tag = SH1
+			was_tag = TA1
+			was_tag = JA1
+			was_tag = RR1
+			was_tag = AA1
+			was_tag = HR1
+			was_tag = AR3
+			tag = RE1
+			was_tag = RE1
+		}
+					}
+			}
+		}
+		allow = {
+			development_in_provinces = {
+				value = 300
+				culture_group = apoptosis
+			}
+		}
+		effect = {
+
+			add_country_modifier = {
+				name = "apoptosis_integration_mod"
+				duration = 3650
+			}
+ 			set_variable = {
+   				which = Apoptosis_integration
+  				value = 1
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	alraune_integration_decision = {
+		major = yes
+		potential = {
+			AND = {
+				any_owned_province = { culture_group = alraune }
+					NOT = {
+		OR = {
+			technology_group = TECH_ALRAUNE
+			primary_culture = Alraune_Apoptosis
+			check_variable = {
+				which = Alraune_integration
+				value = 1
+			}   
+			check_variable = {
+				which = Seaweed_Extract
+				value = 1
+			}
+			was_tag = MNR
+			was_tag = RFF
+			was_tag = SWG
+			was_tag = PG1
+			was_tag = KIM
+			was_tag = WR1
+			was_tag = CG3
+			was_tag = WT1
+			was_tag = AL1
+			was_tag = AL2
+			was_tag = AL3
+			was_tag = AL4
+			tag = EL2
+			tag = EL3
+			was_tag = EL2
+			was_tag = EL3
+			tag = CO1
+			tag = CO2
+			was_tag = CO1
+			was_tag = CO2
+			was_tag = WT1
+			was_tag = AL4
+			was_tag = AQD
+
+			tag = ML1
+			was_tag = ML1
+		}
+					}
+			}
+		}
+		allow = {
+			development_in_provinces = {
+				value = 300
+				culture_group = alraune
+			}
+		}
+		effect = {
+
+			add_country_modifier = {
+				name = "alraune_integration_mod"
+				duration = 3650
+			}
+ 			set_variable = {
+   				which = Alraune_integration
+  				value = 1
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	elf_integration_decision = {
+		major = yes
+		potential = {
+			AND = {
+				any_owned_province = { culture_group = elf }
+					NOT = {
+		OR = {
+			check_variable = {
+				which = Weed_Extract
+				value = 1
+			}
+			check_variable = {
+				which = Eel_Extract
+				value = 1
+			} 
+			check_variable = {
+				which = Elf_integration
+				value = 1
+			} 
+			technology_group = TECH_ELF
+			tag = UN1
+			tag = SL1
+			tag = LC1
+			was_tag = PPR
+			was_tag = JLW
+			was_tag = JLG
+			was_tag = DLF
+			was_tag = ENF
+			was_tag = DLM
+			was_tag = DOF
+			was_tag = YE1
+			was_tag = YE2
+			was_tag = YE3
+			was_tag = IP1
+			was_tag = FS1
+			was_tag = SR2
+			was_tag = UN1
+			was_tag = SL1
+			was_tag = LC1
+			was_tag = ENV
+			was_tag = EL1
+			was_tag = EL4
+
+			tag = ML1
+			was_tag = ML1
+		}
+					}
+			}
+		}
+		allow = {
+			development_in_provinces = {
+				value = 300
+				culture_group = elf
+			}
+		}
+		effect = {
+
+			add_country_modifier = {
+				name = "elf_integration_mod"
+				duration = 3650
+			}
+ 			set_variable = {
+   				which = Elf_integration
+  				value = 1
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	beast_integration_decision = {
+		major = yes
+		potential = {
+			AND = {
+				any_owned_province = { culture_group = beast }
+					NOT = {
+		OR = {
+			check_variable = {
+				which = Carrot_Extract
+				value = 1
+			} 
+			check_variable = {
+				which = Beast_integration
+				value = 1
+			} 
+			technology_group = TECH_BEAST
+			tag = RAP
+			was_tag = RAP
+			was_tag = ORR
+			was_tag = BGR
+			was_tag = BLR
+			was_tag = WLR
+			was_tag = RGR
+			was_tag = DGR
+			was_tag = SGR
+			was_tag = ILC
+			was_tag = ANI
+			was_tag = GRB
+			tag = URM
+			was_tag = URM
+			was_tag = MM1
+			was_tag = MR1
+			tag = PY1
+			was_tag = PY1
+			was_tag = SI2
+			was_tag = CN1
+			was_tag = CN2
+			was_tag = NE1
+			was_tag = NE2
+			was_tag = WN1
+			was_tag = CB1
+			was_tag = TI1
+			was_tag = TI2
+			was_tag = PB1
+			was_tag = PB2
+			tag = UR1
+			tag = UR2
+			was_tag = UR1
+			was_tag = UR2
+			tag = CB1
+			was_tag = WE1
+			was_tag = WE2
+			was_tag = WE3
+			was_tag = MT1
+			was_tag = MT2
+			was_tag = MT3
+			was_tag = YI1
+			was_tag = YI2
+			was_tag = YI3
+			tag = BS1
+			tag = BS2
+			was_tag = BS1
+			was_tag = BS2
+			was_tag = BE1
+			was_tag = BE2
+			was_tag = CE1
+
+			was_tag = CD1
+			was_tag = BQD
+
+			tag = ML1
+			was_tag = ML1
+		}
+					}
+			}
+		}
+		allow = {
+			development_in_provinces = {
+				value = 300
+				culture_group = beast
+			}
+		}
+		effect = {
+
+			add_country_modifier = {
+				name = "beast_integration_mod"
+				duration = 3650
+			}
+ 			set_variable = {
+   				which = Beast_integration
+  				value = 1
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	insect_integration_decision = {
+		major = yes
+		potential = {
+			AND = {
+				any_owned_province = { culture_group = insect}
+					NOT = {
+		OR = {
+			technology_group = TECH_INSECT
+			primary_culture = Insect_Apoptosis
+			check_variable = {
+				which = Insect_integration
+				value = 1
+			} 
+			tag = SSP
+			was_tag = SSP
+			was_tag = BGH
+			was_tag = MDR
+			was_tag = SPG
+			was_tag = NBH
+			was_tag = NVM
+			was_tag = CG1
+			was_tag = TR1
+			was_tag = SC1
+			was_tag = AT1
+			was_tag = RT1
+			was_tag = KU3
+			tag = SR1
+			was_tag = SR1
+			was_tag = AR2
+			was_tag = SG2
+			was_tag = SM1
+			was_tag = OK1
+			was_tag = OK2
+			was_tag = BU1
+			was_tag = BU2
+			was_tag = BU3
+			was_tag = SP4
+			was_tag = RM1
+			was_tag = FL1
+			was_tag = FL2
+			was_tag = AN1
+			was_tag = IQ1
+
+			tag = ML1
+			was_tag = ML1
+		}
+					}
+			}
+		}
+		allow = {
+			development_in_provinces = {
+				value = 300
+				culture_group = insect
+			}
+		}
+		effect = {
+
+			add_country_modifier = {
+				name = "insect_integration_mod"
+				duration = 3650
+			}
+ 			set_variable = {
+   				which = Insect_integration
+  				value = 1
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	harpy_integration_decision = {
+		major = yes
+		potential = {
+			AND = {
+				any_owned_province = { culture_group = harpy }
+					NOT = {
+		OR = {
+			technology_group = TECH_HARPY
+			check_variable = {
+				which = Harpy_integration
+				value = 1
+			} 
+			was_tag = SPR
+			was_tag = OG1
+			was_tag = WI1
+			was_tag = WI2
+			was_tag = HK3
+			tag = DR3
+			tag = DR4
+			tag = LC1
+			was_tag = DR3
+			was_tag = DR4
+			was_tag = HRT
+			was_tag = HQ1
+			was_tag = LC1
+			was_tag = KU2
+			tag = BS1
+			tag = BS2
+			tag = AE1
+			was_tag = BS1
+			was_tag = BS2
+			was_tag = AE1
+
+			tag = ML1
+			was_tag = ML1
+		}
+					}
+			}
+		}
+		allow = {
+			development_in_provinces = {
+				value = 300
+				culture_group = harpy
+			}
+		}
+		effect = {
+
+			add_country_modifier = {
+				name = "harpy_integration_mod"
+				duration = 3650
+			}
+ 			set_variable = {
+   				which = Harpy_integration
+  				value = 1
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	dragon_integration_decision = {
+		major = yes
+		potential = {
+			AND = {
+				any_owned_province = { culture_group = dragon }
+					NOT = {
+		OR = {
+			technology_group = TECH_DRAGON
+			primary_culture = Dragon_Apoptosis
+			check_variable = {
+				which = Dragon_integration
+				value = 1
+			} 
+			check_variable = {
+				which = Zombie_Dragon_Girls
+				value = 1
+			}
+			tag = SL1
+			was_tag = SL1
+			was_tag = HVB
+			tag = RAP
+			was_tag = RAP
+			was_tag = SB2
+			tag = OR1
+			was_tag = OR1
+			was_tag = DR3
+			was_tag = DR4
+			tag = NV1
+			was_tag = NV1
+			was_tag = KI2
+			was_tag = KI3
+			was_tag = KY1
+			was_tag = KY2
+			was_tag = WY1
+			was_tag = WY2
+			tag = AE1
+			was_tag = AE1
+
+			tag = ML1
+			was_tag = ML1
+		}
+					}
+			}
+		}
+		allow = {
+			development_in_provinces = {
+				value = 300
+				culture_group = dragon
+			}
+		}
+		effect = {
+
+			add_country_modifier = {
+				name = "dragon_integration_mod"
+				duration = 3650
+			}
+ 			set_variable = {
+   				which = Dragon_integration
+  				value = 1
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	demi_human_integration_decision = {
+		major = yes
+		potential = {
+			AND = {
+				any_owned_province = { culture_group = demi_human }
+					NOT = {
+		OR = {
+			technology_group = TECH_DEMI_HUMAN
+			check_variable = {
+				which = Demi_Human_integration
+				value = 1
+			} 
+			check_variable = {
+				which = Hakunen_Extract
+				value = 1
+			}
+			tag = HVB
+			was_tag = HVB
+			was_tag = FSM
+			was_tag = ITT
+			was_tag = DR1
+			tag = AR2
+			was_tag = AR2
+			tag = OK1
+			was_tag = OK1
+			tag = OK2
+			was_tag = OK2
+			was_tag = YK1
+			tag = NR2
+			was_tag = NR2
+			tag = SP1
+			was_tag = SP1
+			tag = SP2
+			was_tag = SP2
+			tag = SP3
+			was_tag = SP3
+			tag = CD1
+			was_tag = CD1
+			tag = OR1
+			was_tag = OR1
+			tag = BU1
+			was_tag = BU1
+			tag = BU2
+			was_tag = BU2
+			tag = BU3
+			was_tag = BU3
+			tag = TI1
+			was_tag = TI1
+			tag = TI2
+			was_tag = TI2
+			was_tag = KE1
+			was_tag = FT1
+			was_tag = AK1
+			was_tag = AK2
+			was_tag = NK1
+			was_tag = WK1
+			was_tag = YO1
+			was_tag = YO2
+			tag = KI2
+			tag = KI3
+			was_tag = KI2
+			was_tag = KI3
+			was_tag = GO3
+			was_tag = ZO1
+
+			tag = ML1
+			was_tag = ML1
+
+		}
+					}
+			}
+		}
+		allow = {
+			development_in_provinces = {
+				value = 300
+				culture_group = demi_human
+			}
+		}
+		effect = {
+
+			add_country_modifier = {
+				name = "demi_human_integration_mod"
+				duration = 3650
+			}
+ 			set_variable = {
+   				which = Demi_Human_integration
+  				value = 1
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	vampire_integration_decision = {
+		major = yes
+		potential = {
+			AND = {
+				any_owned_province = { culture_group = vampire }
+					NOT = {
+		OR = {
+			technology_group = TECH_VAMPIRE
+			check_variable = {
+				which = Vampire_integration
+				value = 1
+			} 
+			check_variable = {
+				which = Garlic_Extract
+				value = 1
+			}
+			tag = HVB
+			was_tag = HVB
+			was_tag = VA4
+			was_tag = VA5
+			was_tag = VA6
+
+			tag = ML1
+			was_tag = ML1
+		} 
+					}
+			}
+		}
+		allow = {
+			development_in_provinces = {
+				value = 300
+				culture_group = vampire
+			}
+		}
+		effect = {
+
+			add_country_modifier = {
+				name = "vampire_integration_mod"
+				duration = 3650
+			}
+ 			set_variable = {
+   				which = Vampire_integration
+  				value = 1
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	yoma_integration_decision = {
+		major = yes
+		potential = {
+			AND = {
+				any_owned_province = { culture_group = yoma }
+					NOT = {
+		OR = {
+			technology_group = TECH_YOUMA
+			primary_culture = Yoma_Apoptosis
+			check_variable = {
+				which = Yoma_integration
+				value = 1
+			} 
+			check_variable = {
+				which = Hakunen_Extract
+				value = 1
+			}
+	 		check_variable = {
+			    which = Skull_Extract
+			    value = 1
+			}
+			was_tag = PY1
+			was_tag = GG1
+			was_tag = DH1
+			was_tag = DH2
+			tag = DR1
+			was_tag = DR1
+			tag = VA1
+			was_tag = VA1
+			was_tag = ME1
+			tag = DE1
+			was_tag = DE1
+			tag = DE2
+			was_tag = DE2
+			was_tag = LV1
+			was_tag = SM2
+			tag = TI1
+			was_tag = TI1
+			tag = TI2
+			was_tag = TI2
+			was_tag = IW1
+			was_tag = IW2
+			was_tag = SC4
+			was_tag = DM1
+			was_tag = DM2
+			was_tag = VU1
+			was_tag = VU2
+
+			tag = ML1
+			was_tag = ML1
+		}
+					}
+			}
+		}
+		allow = {
+			development_in_provinces = {
+				value = 300
+				culture_group = yoma
+			}
+		}
+		effect = {
+
+			add_country_modifier = {
+				name = "yoma_integration_mod"
+				duration = 3650
+			}
+ 			set_variable = {
+   				which = Yoma_integration
+  				value = 1
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	kitsune_integration_decision = {
+		major = yes
+		potential = {
+			AND = {
+				any_owned_province = { culture_group = kitsune }
+					NOT = {
+		OR = {
+			technology_group = TECH_KITSUNE
+			check_variable = {
+				which = Kitsune_integration
+				value = 1
+			} 
+			primary_culture = Kitsune_Apoptosis
+			was_tag = KTI
+			was_tag = KTG
+			was_tag = KI1
+			was_tag = KI4
+
+			tag = ML1
+			was_tag = ML1
+		}
+					}
+			}
+		}
+		allow = {
+			development_in_provinces = {
+				value = 300
+				culture_group = kitsune
+			}
+		}
+		effect = {
+
+			add_country_modifier = {
+				name = "kitsune_integration_mod"
+				duration = 3650
+			}
+ 			set_variable = {
+   				which = Kitsune_integration
+  				value = 1
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	mermaid_integration_decision = {
+		major = yes
+		potential = {
+			AND = {
+				any_owned_province = { culture_group = mermaid }
+					NOT = {
+		OR = {
+			technology_group = TECH_MERMAID
+			check_variable = {
+				which = Mermaid_integration
+				value = 1
+			} 
+
+			tag = PNA
+			was_tag = PNA
+			was_tag = CTR
+			was_tag = MMR
+			tag = LC1
+			was_tag = LC1
+			was_tag = SE1
+			was_tag = SE2
+			was_tag = SE3
+			was_tag = SE4
+			was_tag = SE5
+			was_tag = SE6
+			was_tag = MR3
+			was_tag = FP1
+
+			tag = ML1
+			was_tag = ML1
+		}
+					}
+			}
+		}
+		allow = {
+			development_in_provinces = {
+				value = 300
+				culture_group = mermaid
+			}
+		}
+		effect = {
+
+			add_country_modifier = {
+				name = "mermaid_integration_mod"
+				duration = 3650
+			}
+ 			set_variable = {
+   				which = Mermaid_integration
+  				value = 1
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	sea_dweller_integration_decision = {
+		major = yes
+		potential = {
+			AND = {
+				any_owned_province = { culture_group = sea_dweller }
+					NOT = {
+		OR = {
+			technology_group = TECH_SEA_DWELLER
+			primary_culture = Sea_Dweller_Apoptosis
+			check_variable = {
+				which = Sea_Dweller_integration
+				value = 1
+			} 
+			check_variable = {
+				which = Squid_Extract
+				value = 1
+			}
+			tag = SLP
+			was_tag = SLP
+			was_tag = MCG
+			was_tag = JGR
+			was_tag = CRR
+			was_tag = SEC
+			tag = SWG
+			was_tag = SWG
+			was_tag = SG1
+			was_tag = NA1
+			was_tag = DR2
+			was_tag = CO1
+			was_tag = CO2
+			tag = ES1
+			was_tag = ES1
+			tag = ES2
+			was_tag = ES2
+			tag = SC2
+			was_tag = SC2
+			was_tag = PK1
+			was_tag = PK2
+			tag = SE4
+			was_tag = SE4
+			tag = SE5
+			was_tag = SE5
+			tag = SE6
+			was_tag = SE6
+			was_tag = AJ1
+			was_tag = AJ2
+			was_tag = NA1
+			was_tag = DQ1
+
+			tag = ML1
+			was_tag = ML1
+		}
+					}
+			}
+		}
+		allow = {
+			development_in_provinces = {
+				value = 300
+				culture_group = sea_dweller
+			}
+		}
+		effect = {
+
+			add_country_modifier = {
+				name = "sea_dweller_integration_mod"
+				duration = 3650
+			}
+ 			set_variable = {
+   				which = Sea_Dweller_integration
+  				value = 1
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	doll_integration_decision = {
+		major = yes
+		potential = {
+			AND = {
+				any_owned_province = { culture_group = doll}
+					NOT = {
+		OR = {
+			technology_group = TECH_DOLL
+			primary_culture = Doll_Apoptosis
+			check_variable = {
+				which = Doll_integration
+				value = 1
+			} 
+			tag = HR1
+			was_tag = HR1
+			tag = AL3
+			was_tag = AL3
+			tag = AA1
+			was_tag = AA1
+			was_tag = MU1
+			was_tag = GR3
+			was_tag = JD1
+			tag = SH1
+			was_tag = SH1
+			tag = VA3
+			was_tag = VA3
+			tag = RR1
+			was_tag = RR1
+			tag = TA1
+			was_tag = TA1
+			tag = VA1
+			was_tag = VA1
+			tag = VA2
+			was_tag = VA2
+			tag = LXP
+			was_tag = LXP
+			tag = JIP
+			was_tag = JIP
+			was_tag = BR1
+			was_tag = PT1
+			tag = HM1
+			was_tag = HM1
+		}
+					}
+			}
+		}
+		allow = {
+			development_in_provinces = {
+				value = 300
+				culture_group = doll
+			}
+		}
+		effect = {
+
+			add_country_modifier = {
+				name = "doll_integration_mod"
+				duration = 3650
+			}
+ 			set_variable = {
+   				which = Doll_integration
+  				value = 1
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	scylla_integration_decision = {
+		major = yes
+		potential = {
+			AND = {
+				any_owned_province = { culture_group = scylla }
+					NOT = {
+		OR = {
+			technology_group = TECH_SCYLLA
+			primary_culture = Scylla_Apoptosis
+			check_variable = {
+				which = Scylla_integration
+				value = 1
+			} 
+			was_tag = SR1
+			was_tag = DS1
+			tag = DR2
+			was_tag = DR2
+			was_tag = URM
+			was_tag = ES1
+			was_tag = ES2
+			tag = HK1
+			was_tag = HK1
+			tag = HK2
+			was_tag = HK2
+			tag = NM1
+			was_tag = NM1
+			was_tag = DE1
+			tag = LV1
+			was_tag = LV1
+			tag = AA1
+			was_tag = AA1
+			tag = CH2
+			was_tag = CH2
+			tag = FC1
+			was_tag = FC1
+			tag = SC2
+			was_tag = SC2
+			tag = SC3
+			was_tag = SC3
+			tag = LC1
+			was_tag = LC1
+			was_tag = KU4
+			was_tag = SS1
+			was_tag = SS2
+
+			tag = ML1
+			was_tag = ML1
+			tag = KK1
+			was_tag = KK1
+			tag = PO1
+			was_tag = PO1
+		}
+					}
+			}
+		}
+		allow = {
+			development_in_provinces = {
+				value = 300
+				culture_group = scylla
+			}
+		}
+		effect = {
+
+			add_country_modifier = {
+				name = "scylla_integration_mod"
+				duration = 3650
+			}
+ 			set_variable = {
+   				which = Scylla_integration
+  				value = 1
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	lamia_integration_decision = {
+		major = yes
+		potential = {
+			AND = {
+				any_owned_province = { culture_group = lamia }
+					NOT = {
+		OR = {
+			technology_group = TECH_LAMIA
+			check_variable = {
+				which = Lamia_integration
+				value = 1
+			} 
+			tag = HVB
+			was_tag = HVB
+			was_tag = SSL
+			was_tag = LR1
+			was_tag = CG2
+			was_tag = NR1
+			was_tag = NR2
+			tag = ME1
+			was_tag = ME1
+			was_tag = OR1
+			was_tag = DE2
+			was_tag = ME2
+			was_tag = ME3
+			tag = LC1
+			was_tag = LC1
+			was_tag = JK1
+			was_tag = JK2
+			was_tag = SS3
+			tag = AE1
+			was_tag = AE1
+
+			tag = ML1
+			was_tag = ML1
+		}
+					}
+			}
+		}
+		allow = {
+			development_in_provinces = {
+				value = 300
+				culture_group = lamia
+			}
+		}
+		effect = {
+
+			add_country_modifier = {
+				name = "lamia_integration_mod"
+				duration = 3650
+			}
+ 			set_variable = {
+   				which = Lamia_integration
+  				value = 1
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	chimera_integration_decision = {
+		major = yes
+		potential = {
+			AND = {
+				any_owned_province = { culture_group = chimera }
+					NOT = {
+		OR = {
+			technology_group = TECH_CHIMERA
+			check_variable = {
+				which = Project_Chimera
+				value = 1
+			}
+			check_variable = {
+				which = Chimera_integration
+				value = 1
+			} 
+			
+			was_tag = CB1
+			was_tag = FC1
+			was_tag = SC2
+			was_tag = SC3
+			was_tag = ZA1
+			was_tag = GR4
+			was_tag = CH2
+			tag = AA1
+			was_tag = AA1
+			was_tag = CG4
+			tag = VA3
+			was_tag = VA3
+			tag = RR1
+			was_tag = RR1
+			tag = TA1
+			was_tag = TA1
+			tag = RE1
+			was_tag = RE1
+			tag = GR4
+		}
+					}
+			}
+		}
+		allow = {
+			development_in_provinces = {
+				value = 300
+				culture_group = chimera
+			}
+		}
+		effect = {
+
+			add_country_modifier = {
+				name = "chimera_integration_mod"
+				duration = 3650
+			}
+ 			set_variable = {
+   				which = Chimera_integration
+  				value = 1
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	angel_integration_decision = {
+		major = yes
+		potential = {
+			AND = {
+				any_owned_province = { culture_group = angel }
+					NOT = {
+		OR = {
+			technology_group = TECH_ANGEL
+			primary_culture = Angel_Apoptosis  
+			check_variable = {
+				which = Angel_Ghouls
+				value = 1
+			}
+			check_variable = {
+				which = Angel_integration
+				value = 1
+			} 
+			was_tag = UR1
+			was_tag = UR2
+			was_tag = EL2
+			was_tag = EL3
+			tag = HR1
+			was_tag = HR1
+			tag = AR3
+			was_tag = AR3
+			was_tag = SH3
+			was_tag = CR1
+			was_tag = CR2
+			was_tag = VR1
+			was_tag = VR2
+			tag = ZA1
+			was_tag = ZA1
+			was_tag = IT1
+			tag = FC1
+			was_tag = FC1
+		}
+					}
+			}
+		}
+		allow = {
+			development_in_provinces = {
+				value = 300
+				culture_group = angel
+			}
+		}
+		effect = {
+
+			add_country_modifier = {
+				name = "angel_integration_mod"
+				duration = 3650
+			}
+ 			set_variable = {
+   				which = Angel_integration
+  				value = 1
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	roid_integration_decision = {
+		major = yes
+		potential = {
+			AND = {
+				any_owned_province = { culture_group = roid }
+					NOT = {
+		OR = {
+			check_variable = {
+				which = Roid_Research
+				value = 1
+			} 
+			check_variable = {
+				which = Roid_integration
+				value = 1
+			} 
+			technology_group = TECH_ROID
+			primary_culture = Roid_Apoptosis
+			tag = SI1
+			was_tag = SI1
+			tag = RE1
+			was_tag = RE1
+			tag = JIP
+			was_tag = JIP
+			tag = LXP
+			was_tag = LXP
+			tag = VA3
+			was_tag = VA3
+			tag = TA1
+			was_tag = TA1
+			tag = RR1
+			was_tag = RR1
+		}
+					}
+			}
+		}
+		allow = {
+			development_in_provinces = {
+				value = 300
+				culture_group = roid
+			}
+		}
+		effect = {
+
+			add_country_modifier = {
+				name = "roid_integration_mod"
+				duration = 3650
+			}
+ 			set_variable = {
+   				which = Roid_integration
+  				value = 1
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	tanuki_integration_decision = {
+		major = yes
+		potential = {
+			AND = {
+				any_owned_province = { culture_group = tanuki }
+					NOT = {
+
+		OR = {
+			technology_group = TECH_TANUKI
+			check_variable = {
+				which = Tanuki_integration
+				value = 1
+			} 
+			was_tag = TA2
+
+			tag = ML1
+			was_tag = ML1
+		}
+					}
+			}
+		}
+		allow = {
+			development_in_provinces = {
+				value = 300
+				culture_group = tanuki
+			}
+		}
+		effect = {
+
+			add_country_modifier = {
+				name = "tanuki_integration_mod"
+				duration = 3650
+			}
+ 			set_variable = {
+   				which = Tanuki_integration
+  				value = 1
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+}

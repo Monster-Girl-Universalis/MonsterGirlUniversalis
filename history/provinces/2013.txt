@@ -1,0 +1,13 @@
+is_city = no
+discovered_by = TECH_ANGEL
+add_core = VR2
+discovered_by = AR3
+discovered_by = HR1
+owner = VR2
+base_tax = 1
+base_manpower = 3
+base_production = 3
+culture = Rogue_Angel
+religion = ilias_light_religion
+controller = VR2
+center_of_trade = 1

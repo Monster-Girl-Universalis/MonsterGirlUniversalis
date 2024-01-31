@@ -1,0 +1,18 @@
+capital = 1485
+government_rank = 3
+religion = monster_lord_religion
+technology_group = TECH_MERMAID
+primary_culture = Mermaid_Girl
+government = monarchy
+add_government_reform = Mermaid_realm
+1444.1.1 = { 
+	monarch = { 
+		name = "Laura"
+		dynasty = "the Royal Mermaid"
+		birth_date = 1424.1.1
+		adm = 5
+		dip = 5
+		mil = 5
+		female = yes
+	}
+}

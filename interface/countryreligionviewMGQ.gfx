@@ -1,0 +1,113 @@
+spriteTypes = {
+
+	#Ilias Faith
+	spriteType = {
+		name = "GFX_divine_hierarchy_aspect"
+		texturefile = "gfx/interface/aspects/GFX_divine_hierarchy_aspect.dds"
+		legacy_lazy_load = no
+	}	
+	
+	spriteType = {
+		name = "GFX_holy_scriptures_aspect"
+		texturefile = "gfx/interface/aspects/GFX_holy_scriptures_aspect.dds"
+		legacy_lazy_load = no
+	}	
+	
+	spriteType = {
+		name = "GFX_ritualistic_devotion_aspect"
+		texturefile = "gfx/interface/aspects/GFX_ritualistic_devotion_aspect.dds"
+		legacy_lazy_load = no
+	}	
+	
+	spriteType = {
+		name = "GFX_inquisitorial_zeal_aspect"
+		texturefile = "gfx/interface/aspects/GFX_inquisitorial_zeal_aspect.dds"
+		legacy_lazy_load = no
+	}	
+	
+	spriteType = {
+		name = "GFX_baptized_heroes_aspect"
+		texturefile = "gfx/interface/aspects/GFX_baptized_heroes_aspect.dds"
+		legacy_lazy_load = no
+	}	
+	
+	spriteType = {
+		name = "GFX_divine_intervention_aspect"
+		texturefile = "gfx/interface/aspects/GFX_divine_intervention_aspect.dds"
+		legacy_lazy_load = no
+	}	
+	
+	spriteType = {
+		name = "GFX_suffer_no_monster_and_heretic_aspect"
+		texturefile = "gfx/interface/aspects/GFX_suffer_no_monster_and_heretic_aspect.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_ilias_guidance_aspect"
+		texturefile = "gfx/interface/aspects/GFX_ilias_guidance_aspect.dds"
+		legacy_lazy_load = no
+	}	
+	
+	spriteType = {
+		name = "GFX_divine_intercession_aspect"
+		texturefile = "gfx/interface/aspects/GFX_divine_intercession_aspect.dds"
+		legacy_lazy_load = no
+	}	
+	
+	spriteType = {
+		name = "GFX_goddess_dominion_aspect"
+		texturefile = "gfx/interface/aspects/GFX_goddess_dominion_aspect.dds"
+		legacy_lazy_load = no
+	}	
+	
+	spriteType = {
+		name = "GFX_divine_dogma_aspect"
+		texturefile = "gfx/interface/aspects/GFX_divine_dogma_aspect.dds"
+		legacy_lazy_load = no
+	}	
+	
+	spriteType = {
+		name = "GFX_zealous_proselitism_aspect"
+		texturefile = "gfx/interface/aspects/GFX_zealous_proselitism_aspect.dds"
+		legacy_lazy_load = no
+	}
+	#Monster Lord Faith
+	spriteType = {
+		name = "GFX_rally_monster_girls"
+		texturefile = "gfx/interface/aspects/GFX_rally_monster_girls.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_blessing_of_the_monster_lord"
+		texturefile = "gfx/interface/aspects/GFX_blessing_of_the_monster_lord.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_monster_lord_emissaries"
+		texturefile = "gfx/interface/aspects/GFX_monster_lord_emissaries.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_great_monster_festivals"
+		texturefile = "gfx/interface/aspects/GFX_great_monster_festivals.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_monster_lord_authority"
+		texturefile = "gfx/interface/aspects/GFX_monster_lord_authority.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_monster_lord_strategy_meeting"
+		texturefile = "gfx/interface/aspects/GFX_monster_lord_strategy_meeting.dds"
+		legacy_lazy_load = no
+	}	
+	#Yamatai Faith	
+	spriteType = {
+		name = "GFX_fetishists_strip"
+		texturefile = "gfx//interface//fetishists_strip.dds"
+		noOfFrames = 33
+	}
+}
+
+

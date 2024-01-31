@@ -1,0 +1,10 @@
+spriteTypes = {
+	
+	spriteType = {
+		name = "GFX_disaster_estate_monster_girls_disaster"
+		texturefile = "gfx//interface//disasters//MGQ_monster_girls_rebellion.dds"
+		noOfFrames = 3
+		loadType = "INGAME"
+	}
+
+}

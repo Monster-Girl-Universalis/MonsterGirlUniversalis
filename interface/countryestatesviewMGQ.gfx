@@ -1,0 +1,154 @@
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_estates_icons"
+		texturefile = "gfx//interface//estates_icons.dds"
+		noOfFrames = 18
+		loadType = "INGAME"
+	}
+	
+
+	spriteType = {
+		name = "GFX_estates_icons_colour-stroke"
+		texturefile = "gfx/interface/estates_icons_colour-stroke.dds"
+		noOfFrames = 18
+		loadType = "INGAME"
+	}
+
+	spriteType = {
+		name = "privilege_harpy_girls_in_army"
+		texturefile = "gfx/interface/privileges/privilege_harpy_girls_in_army.dds"
+	}
+	spriteType = {
+		name = "privilege_alraune_healing_honey"
+		texturefile = "gfx/interface/privileges/privilege_alraune_healing_honey.dds"
+	}
+	spriteType = {
+		name = "privilege_slime_girls_merchants"
+		texturefile = "gfx/interface/privileges/privilege_slime_girls_merchants.dds"
+	}
+	spriteType = {
+		name = "privilege_open_mermaid_pubs"
+		texturefile = "gfx/interface/privileges/privilege_open_mermaid_pubs.dds"
+	}
+	spriteType = {
+		name = "privilege_open_vampire_pubs"
+		texturefile = "gfx/interface/privileges/privilege_open_vampire_pubs.dds"
+	}
+	spriteType = {
+		name = "privilege_elven_warfare_standards"
+		texturefile = "gfx/interface/privileges/privilege_elven_warfare_standards.dds"
+	}
+	spriteType = {
+		name = "privilege_yoma_warfare_standards"
+		texturefile = "gfx/interface/privileges/privilege_yoma_warfare_standards.dds"
+	}
+	spriteType = {
+		name = "privilege_weaponized_spooky_scary_ghosts"
+		texturefile = "gfx/interface/privileges/privilege_weaponized_spooky_scary_ghosts.dds"
+	}
+	spriteType = {
+		name = "privilege_invite_kitsune_sages"
+		texturefile = "gfx/interface/privileges/privilege_invite_kitsune_sages.dds"
+	}
+	spriteType = {
+		name = "privilege_encourage_succubi_to_settle"
+		texturefile = "gfx/interface/privileges/privilege_encourage_succubi_to_settle.dds"
+	}
+	spriteType = {
+		name = "privilege_insect_girl_swarms"
+		texturefile = "gfx/interface/privileges/privilege_insect_girl_swarms.dds"
+	}
+	spriteType = {
+		name = "privilege_primacy_of_lamia_nuns"
+		texturefile = "gfx/interface/privileges/privilege_primacy_of_lamia_nuns.dds"
+	}
+	spriteType = {
+		name = "privilege_scylla_maids_in_administration"
+		texturefile = "gfx/interface/privileges/privilege_scylla_maids_in_administration.dds"
+	}
+	spriteType = {
+		name = "privilege_beasts_in_military"
+		texturefile = "gfx/interface/privileges/privilege_beasts_in_military.dds"
+	}
+	spriteType = {
+		name = "privilege_seahorse_marines_in_navy"
+		texturefile = "gfx/interface/privileges/privilege_seahorse_marines_in_navy.dds"
+	}
+	spriteType = {
+		name = "privilege_angel_emissaries"
+		texturefile = "gfx/interface/privileges/privilege_angel_emissaries.dds"
+	}
+	spriteType = {
+		name = "privilege_lowly_angels_in_army"
+		texturefile = "gfx/interface/privileges/privilege_lowly_angels_in_army.dds"
+	}
+	spriteType = {
+		name = "privilege_celestial_nepotism"
+		texturefile = "gfx/interface/privileges/privilege_celestial_nepotism.dds"
+	}
+	spriteType = {
+		name = "privilege_strengthen_angel_bond"
+		texturefile = "gfx/interface/privileges/privilege_strengthen_angel_bond.dds"
+	}
+	spriteType = {
+		name = "privilege_iron_grip_of_goddess"
+		texturefile = "gfx/interface/privileges/privilege_iron_grip_of_goddess.dds"
+	}
+	spriteType = {
+		name = "privilege_sinners_punishment"
+		texturefile = "gfx/interface/privileges/privilege_sinners_punishment.dds"
+	}
+	spriteType = {
+		name = "privilege_angelic_bodies"
+		texturefile = "gfx/interface/privileges/privilege_angelic_bodies.dds"
+	}
+	spriteType = {
+		name = "privilege_heavens_thunder"
+		texturefile = "gfx/interface/privileges/privilege_heavens_thunder.dds"
+	}
+	spriteType = {
+		name = "privilege_fallen_angels_in_army"
+		texturefile = "gfx/interface/privileges/privilege_fallen_angels_in_army.dds"
+	}
+	spriteType = {
+		name = "privilege_fallen_angel_dance"
+		texturefile = "gfx/interface/privileges/privilege_fallen_angel_dance.dds"
+	}
+	spriteType = {
+		name = "privilege_angel_monster_coexistence"
+		texturefile = "gfx/interface/privileges/privilege_angel_monster_coexistence.dds"
+	}
+	spriteType = {
+		name = "privilege_subsidize_angel_farms"
+		texturefile = "gfx/interface/privileges/privilege_subsidize_angel_farms.dds"
+	}
+	spriteType = {
+		name = "privilege_fallen_angel_workforce"
+		texturefile = "gfx/interface/privileges/privilege_fallen_angel_workforce.dds"
+	}
+	spriteType = {
+		name = "privilege_scales_of_light"
+		texturefile = "gfx/interface/privileges/privilege_scales_of_light.dds"
+	}
+	spriteType = {
+		name = "privilege_luminous_dragon"
+		texturefile = "gfx/interface/privileges/privilege_luminous_dragon.dds"
+	}
+	spriteType = {
+		name = "privilege_embrace_the_otherwordliness"
+		texturefile = "gfx/interface/privileges/privilege_embrace_the_otherwordliness.dds"
+	}
+	spriteType = {
+		name = "privilege_promote_time_magic"
+		texturefile = "gfx/interface/privileges/privilege_promote_time_magic.dds"
+	}
+	spriteType = {
+		name = "privilege_practice_necromancy"
+		texturefile = "gfx/interface/privileges/privilege_practice_necromancy.dds"
+	}
+	spriteType = {
+		name = "privilege_raise_master_undead"
+		texturefile = "gfx/interface/privileges/privilege_raise_master_undead.dds"
+	}
+
+}

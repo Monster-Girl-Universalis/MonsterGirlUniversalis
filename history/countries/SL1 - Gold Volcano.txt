@@ -1,0 +1,20 @@
+government = monarchy
+government_rank = 2
+primary_culture = Fairy_Girl
+add_government_reform = Elf_realm
+religion = fire_religion
+technology_group = TECH_ELF
+historical_rival = UN1 #They just don't get along...
+1444.1.1 = { 
+	monarch = { 
+		name = "Salamander"
+		dynasty = "the Fire Spirit"
+		birth_date = 1424.1.1
+		adm = 5
+		dip = 3
+		mil = 5
+		female = yes
+	}
+	add_ruler_personality = immortal_personality
+}
+capital = 1658

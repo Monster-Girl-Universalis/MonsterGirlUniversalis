@@ -1,0 +1,18 @@
+government = monarchy
+government_rank = 1
+primary_culture = Harpy_Girl
+add_government_reform = Harpy_realm
+religion = monster_lord_religion
+technology_group = TECH_HARPY
+1444.1.1 = { 
+	monarch = { 
+		name = "Tsubaki"
+		dynasty = "the Winged Harpy"
+		birth_date = 1424.1.1
+		adm = 4
+		dip = 4
+		mil = 4
+		female = yes
+	}
+}
+capital = 1754

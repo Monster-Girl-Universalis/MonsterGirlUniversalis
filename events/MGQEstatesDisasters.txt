@@ -1,0 +1,50 @@
+#############################
+# Events for the New Estates
+#############################
+
+namespace = mgq_estate_disasters
+
+# The Monster Girls break free!
+country_event = {
+	id = mgq_estate_disasters.1
+	title = mgq_estate_disasters.1.t
+	desc = mgq_estate_disasters.1.d
+	picture = MONSTER_GIRLS_UPSET_eventPicture
+	
+	major = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		set_country_flag = monster_girls_estate_triggered
+	}	
+	
+	option = {
+		name = mgq_estate_disasters.1.a	
+		create_independent_estate = {
+			estate = estate_monster_girls
+			play_as = no
+			government = monarchy
+			#primary_culture = Yoma_Girl
+			#add_government_reform = Yoma_realm
+			#religion = monster_lord_religion
+			#custom_national_ideas = MGQ_human_ideas
+		}
+	}
+	
+	option = {
+		name = mgq_estate_disasters.1.b
+		trigger = { 
+			ai = no 
+		}
+		create_independent_estate = {
+			estate = estate_monster_girls
+			play_as = yes
+			government = monarchy
+			#primary_culture = Yoma_Girl
+			#add_government_reform = Yoma_realm
+			#religion = monster_lord_religion
+			#change_religion = monster_lord_religion
+			#custom_national_ideas = MGQ_human_ideas
+		}
+	}
+}

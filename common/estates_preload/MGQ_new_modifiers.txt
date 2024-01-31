@@ -1,0 +1,74 @@
+#Define estate loyalty and influence modifiers here
+
+
+
+estate_monster_girls = {
+	modifier_definition = {
+		type = loyalty
+		key = monster_girls_loyalty_modifier
+		trigger = {
+			has_estate = estate_monster_girls
+		}
+	}
+	modifier_definition = {
+		type = influence
+		key = monster_girls_influence_modifier
+		trigger = {
+			has_estate = estate_monster_girls
+		}
+	}
+	modifier_definition = {
+		type = privileges
+		key = monster_girls_privilege_slots
+		trigger = {
+			has_estate = estate_monster_girls
+		}
+	}
+}
+estate_angels = {
+	modifier_definition = {
+		type = loyalty
+		key = angels_loyalty_modifier
+		trigger = {
+			has_estate = estate_angels
+		}
+	}
+	modifier_definition = {
+		type = influence
+		key = angels_influence_modifier
+		trigger = {
+			has_estate = estate_angels
+		}
+	}
+	modifier_definition = {
+		type = privileges
+		key = angels_privilege_slots
+		trigger = {
+			has_estate = estate_angels
+		}
+	}
+}
+estate_spiritualists = {
+	modifier_definition = {
+		type = loyalty
+		key = spiritualists_loyalty_modifier
+		trigger = {
+			has_estate = estate_spiritualists
+		}
+	}
+	modifier_definition = {
+		type = influence
+		key = spiritualists_influence_modifier
+		trigger = {
+			has_estate = estate_spiritualists
+		}
+	}
+	modifier_definition = {
+		type = privileges
+		key = spiritualists_privilege_slots
+		trigger = {
+			has_estate = estate_spiritualists
+		}
+	}
+}
+

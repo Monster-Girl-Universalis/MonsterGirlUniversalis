@@ -1,0 +1,1205 @@
+#Generic Privileges for everyone
+estate_nobles_supremacy_over_crown = {
+	icon = privilege_empty_throne
+	max_absolutism = -5
+	#influence = 0.1
+	#loyalty = 0.1
+	is_valid = {
+		NOT = { has_government_attribute = blocked_call_diet }
+	}
+	penalties = {
+	}
+	benefits = {
+		all_estate_loyalty_equilibrium = 0.1
+		all_estate_influence_modifier = 0.1
+	}
+	mechanics = {
+		can_give_agendas_without_interaction
+	}
+	ai_will_do = {
+		factor = 10
+	}
+}
+#Monster Girls
+estate_monster_girls_land_rights = {
+	icon = privilege_grant_autonomy
+	land_share = 5
+	max_absolutism = -5
+	loyalty = 0.05
+	influence = 0.05
+	can_select = {
+	}
+	on_granted = {
+	}
+	penalties = {
+	}
+	benefits = {
+		governing_capacity = 100
+	}
+	ai_will_do = {
+		factor = 5
+		modifier = {
+			factor = 1.4
+			num_of_territories = 5
+		}
+		modifier = {
+			factor = 1.5
+			num_of_territories = 10
+		}
+		modifier = {
+			factor = 1.5
+			num_of_territories = 15
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				NOT = { crown_land_share = 25 }
+				estate_influence = {
+					estate = estate_monster_girls
+					influence = 75
+				}
+			}
+			NOT = { has_estate_privilege = estate_monster_girls_land_rights }
+		}
+		modifier = {
+			factor = 0
+			NOT = { governing_capacity_percentage = 0.5 }
+		}
+		modifier = {
+			factor = 0.8
+			OR = {
+				NOT = { crown_land_share = 40 }
+				AND = {
+					is_absolutism_active = yes
+					NOT = { crown_land_share = 60 }
+				}
+			}
+			NOT = { has_estate_privilege = estate_monster_girls_land_rights }
+		}
+		modifier = {
+			factor = 0.8
+			OR = {
+				NOT = { crown_land_share = 30 }
+				AND = {
+					is_absolutism_active = yes
+					NOT = { crown_land_share = 50 }
+				}
+			}
+			NOT = { has_estate_privilege = estate_monster_girls_land_rights }
+		}
+		modifier = {
+			factor = 3
+			OR = {
+				AND = {
+					governing_capacity_percentage = 0.9
+					NOT = { has_estate_privilege = estate_monster_girls_land_rights }
+				}
+				#The trigger below should make sure that the AI actually keeps this privilege when enacting it early game
+				AND = {
+					governing_capacity_percentage = 0.6
+					has_estate_privilege = estate_monster_girls_land_rights
+				}
+			}
+		}
+		modifier = {
+			factor = 0.8
+			is_absolutism_active = yes
+		}
+		modifier = {
+			factor = 2
+			governing_capacity_percentage = 0.9
+		}
+		modifier = {
+			factor = 3
+			governing_capacity_percentage = 1
+		}
+		modifier = {
+			factor = 10
+			governing_capacity_percentage = 1.2
+		}
+		modifier = {
+			factor = 8
+			NOT = { adm_tech = 12 }
+			governing_capacity_percentage = 0.8
+		}
+		modifier = {
+			factor = 5
+			NOT = { adm_tech = 12 }
+			NOT = { government_rank = 1 }
+			governing_capacity_percentage = 0.65
+		}
+		#Has already a similar privilege active
+		modifier = {
+			factor = 0.75
+			has_estate_privilege = estate_church_land_rights
+		}
+		modifier = {
+			factor = 0.75
+			has_estate_privilege = estate_maratha_land_rights
+		}
+		modifier = {
+			factor = 0.75
+			has_estate_privilege = estate_brahmins_land_rights
+		}
+		modifier = {
+			factor = 0.75
+			has_estate_privilege = estate_vaisyas_land_rights
+		}
+		modifier = {
+			factor = 0.75
+			has_estate_privilege = estate_nomadic_tribes_land_rights
+		}
+		modifier = {
+			factor = 0.75
+			has_estate_privilege = estate_dhimmi_land_rights
+		}
+		modifier = {
+			factor = 0.75
+			has_estate_privilege = estate_jains_land_rights
+		}
+		modifier = {
+			factor = 0.75
+			has_estate_privilege = estate_rajput_land_rights
+		}
+		modifier = {
+			factor = 0.75
+			has_estate_privilege = estate_angels_land_rights
+		}
+		modifier = {
+			factor = 0.75
+			has_estate_privilege = estate_spiritualists_land_rights
+		}
+	}
+}
+
+
+estate_autonomy_of_monster_girls = {
+	icon = privilege_tolerance_heathen
+	max_absolutism = -10
+	loyalty = 0.1
+	influence = 0.1
+	penalties = {
+	}
+	benefits = {
+	}
+	ai_will_do = {
+		factor = 10
+		modifier = {
+			factor = 0
+			is_absolutism_active = yes
+		}
+	}
+}
+
+estate_harpy_girls_in_army = {
+	icon = privilege_harpy_girls_in_army
+	max_absolutism = -5
+	loyalty = 0.05
+	influence = 0.1
+
+
+	modifier = {
+			movement_speed = 0.15
+			global_manpower_modifier = -0.10
+	}
+}
+
+estate_alraune_healing_honey = {
+	icon = privilege_alraune_healing_honey
+	max_absolutism = -5
+	loyalty = 0.05
+	influence = 0.1
+
+
+	modifier = {
+			reinforce_speed = 0.33
+			production_efficiency = -0.1		
+	}
+}
+	
+estate_slime_girls_merchants = {
+	icon = privilege_slime_girls_merchants
+	max_absolutism = -5
+	loyalty = 0.05
+	influence = 0.1
+
+
+	modifier = {
+			merchants = 1	
+			trade_efficiency = -0.1	
+	}
+}
+
+estate_open_mermaid_pubs = {
+	icon = privilege_open_mermaid_pubs
+	max_absolutism = -5
+	loyalty = 0.05
+	influence = 0.1
+
+
+	modifier = {
+			naval_morale = 0.1
+			global_sailors_modifier = -0.15		
+	}
+}
+
+estate_open_vampire_pubs = {
+	icon = privilege_open_vampire_pubs
+	max_absolutism = -5
+	loyalty = 0.05
+	influence = 0.1
+
+
+	modifier = {
+			trade_efficiency = 0.15
+			inflation_action_cost = 0.25		
+	}
+}
+
+estate_elven_warfare_standards = {
+	icon = privilege_elven_warfare_standards
+	max_absolutism = -5
+	loyalty = 0.05
+	influence = 0.1
+
+
+	modifier = {
+			shock_damage = 0.075
+			land_maintenance_modifier = 0.15		
+	}
+}
+
+estate_yoma_warfare_standards = {
+	icon = privilege_yoma_warfare_standards
+	max_absolutism = -5
+	loyalty = 0.05
+	influence = 0.1
+
+
+	modifier = {
+			fire_damage = 0.075
+			land_maintenance_modifier = 0.15		
+	}
+}
+estate_weaponized_spooky_scary_ghosts = {
+	icon = privilege_weaponized_spooky_scary_ghosts
+	max_absolutism = -5
+	loyalty = 0.05
+	influence = 0.1
+
+
+	modifier = {
+			morale_damage = 0.05
+			diplomatic_reputation = -1		
+	}
+}
+estate_invite_kitsune_sages = {
+	icon = privilege_invite_kitsune_sages
+	max_absolutism = -5
+	loyalty = 0.05
+	influence = 0.1
+
+
+	modifier = {
+			global_tax_modifier = -0.15
+			technology_cost = -0.1		
+	}
+}
+estate_encourage_succubi_to_settle = {
+	icon = privilege_encourage_succubi_to_settle
+	max_absolutism = -5
+	loyalty = 0.05
+	influence = 0.1
+
+
+	modifier = {
+			global_manpower_modifier = -0.15
+			global_unrest = -2		
+	}
+}
+estate_insect_girl_swarms = {
+	icon = privilege_insect_girl_swarms
+	max_absolutism = -5
+	loyalty = 0.05
+	influence = 0.1
+
+
+	modifier = {
+			global_manpower_modifier = 0.30
+			global_monthly_devastation = 0.1		
+	}
+}
+estate_primacy_of_lamia_nuns = {
+	icon = privilege_primacy_of_lamia_nuns
+	max_absolutism = -5
+	loyalty = 0.05
+	influence = 0.1
+
+
+	modifier = {
+			development_cost = -0.1
+			global_monthly_devastation = -0.1
+			can_not_declare_war = yes		
+	}
+}
+estate_scylla_maids_in_administration = {
+	icon = privilege_scylla_maids_in_administration
+	land_share = 10
+	max_absolutism = -5
+	loyalty = 0.05
+	influence = 0.1
+
+
+	modifier = {
+		country_admin_power = -1
+		governing_cost = -0.20
+		build_time = -0.20			
+	}
+}
+estate_beasts_in_military = {
+	icon = privilege_beasts_in_military
+	land_share = 10
+	max_absolutism = -5
+	loyalty = 0.05
+	influence = 0.1
+
+
+	modifier = {		
+		country_military_power = -1
+		infantry_power = 0.10
+		army_tradition = 1		
+	}
+}
+estate_seahorse_marines_in_navy = {
+	icon = privilege_seahorse_marines_in_navy
+	land_share = 10
+	max_absolutism = -5
+	loyalty = 0.05
+	influence = 0.1
+
+
+	modifier = {
+		country_diplomatic_power = -1
+		global_naval_engagement_modifier = 0.10
+		allowed_marine_fraction = 0.10		
+	}
+}
+
+#Angels
+estate_angels_land_rights = {
+	icon = privilege_grant_autonomy
+	land_share = 5
+	max_absolutism = -5
+	loyalty = 0.05
+	influence = 0.05
+	can_select = {
+	}
+	on_granted = {
+	}
+	penalties = {
+	}
+	benefits = {
+		governing_capacity = 100
+	}
+	ai_will_do = {
+		factor = 5
+		modifier = {
+			factor = 1.4
+			num_of_territories = 5
+		}
+		modifier = {
+			factor = 1.5
+			num_of_territories = 10
+		}
+		modifier = {
+			factor = 1.5
+			num_of_territories = 15
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				NOT = { crown_land_share = 25 }
+				estate_influence = {
+					estate = estate_angels
+					influence = 75
+				}
+			}
+			NOT = { has_estate_privilege = estate_angels_land_rights }
+		}
+		modifier = {
+			factor = 0
+			NOT = { governing_capacity_percentage = 0.5 }
+		}
+		modifier = {
+			factor = 0.8
+			OR = {
+				NOT = { crown_land_share = 40 }
+				AND = {
+					is_absolutism_active = yes
+					NOT = { crown_land_share = 60 }
+				}
+			}
+			NOT = { has_estate_privilege = estate_angels_land_rights }
+		}
+		modifier = {
+			factor = 0.8
+			OR = {
+				NOT = { crown_land_share = 30 }
+				AND = {
+					is_absolutism_active = yes
+					NOT = { crown_land_share = 50 }
+				}
+			}
+			NOT = { has_estate_privilege = estate_angels_land_rights }
+		}
+		modifier = {
+			factor = 3
+			OR = {
+				AND = {
+					governing_capacity_percentage = 0.9
+					NOT = { has_estate_privilege = estate_angels_land_rights }
+				}
+				#The trigger below should make sure that the AI actually keeps this privilege when enacting it early game
+				AND = {
+					governing_capacity_percentage = 0.6
+					has_estate_privilege = estate_angels_land_rights
+				}
+			}
+		}
+		modifier = {
+			factor = 0.8
+			is_absolutism_active = yes
+		}
+		modifier = {
+			factor = 2
+			governing_capacity_percentage = 0.9
+		}
+		modifier = {
+			factor = 3
+			governing_capacity_percentage = 1
+		}
+		modifier = {
+			factor = 10
+			governing_capacity_percentage = 1.2
+		}
+		modifier = {
+			factor = 8
+			NOT = { adm_tech = 12 }
+			governing_capacity_percentage = 0.8
+		}
+		modifier = {
+			factor = 5
+			NOT = { adm_tech = 12 }
+			NOT = { government_rank = 1 }
+			governing_capacity_percentage = 0.65
+		}
+		#Has already a similar privilege active
+		modifier = {
+			factor = 0.75
+			has_estate_privilege = estate_church_land_rights
+		}
+		modifier = {
+			factor = 0.75
+			has_estate_privilege = estate_maratha_land_rights
+		}
+		modifier = {
+			factor = 0.75
+			has_estate_privilege = estate_brahmins_land_rights
+		}
+		modifier = {
+			factor = 0.75
+			has_estate_privilege = estate_vaisyas_land_rights
+		}
+		modifier = {
+			factor = 0.75
+			has_estate_privilege = estate_nomadic_tribes_land_rights
+		}
+		modifier = {
+			factor = 0.75
+			has_estate_privilege = estate_dhimmi_land_rights
+		}
+		modifier = {
+			factor = 0.75
+			has_estate_privilege = estate_jains_land_rights
+		}
+		modifier = {
+			factor = 0.75
+			has_estate_privilege = estate_rajput_land_rights
+		}
+		modifier = {
+			factor = 0.75
+			has_estate_privilege = estate_monster_girls_land_rights
+		}
+		modifier = {
+			factor = 0.75
+			has_estate_privilege = estate_spiritualists_land_rights
+		}
+	}
+}
+
+
+estate_autonomy_of_angels = {
+	icon = privilege_tolerance_heathen
+	max_absolutism = -10
+	loyalty = 0.1
+	influence = 0.1
+	penalties = {
+	}
+	benefits = {
+	}
+	ai_will_do = {
+		factor = 10
+		modifier = {
+			factor = 0
+			is_absolutism_active = yes
+		}
+	}
+}
+estate_angel_emissaries = {
+	icon = privilege_angel_emissaries
+	max_absolutism = -5
+	loyalty = 0.05
+	influence = 0.1
+	modifier = {
+			rival_change_cost = -0.50
+			envoy_travel_time = -0.25		
+	}
+}
+estate_lowly_angels_in_army = {
+	icon = privilege_lowly_angels_in_army
+	max_absolutism = -5
+	loyalty = 0.05
+	influence = 0.1
+	is_valid = { 
+		NOT = {
+			tag = ENV
+			culture = Fallen_Angel
+		}
+	}
+	modifier = {
+			land_maintenance_modifier = 0.15
+			infantry_power = 0.05
+			shock_damage = 0.05		
+	}
+}
+estate_celestial_nepotism = {
+	icon = privilege_celestial_nepotism
+	max_absolutism = -5
+	loyalty = 0.05
+	influence = 0.1
+	is_valid = { 
+		NOT = {
+			tag = ENV
+			culture = Fallen_Angel
+		}
+	}
+	modifier = {
+			yearly_corruption = 0.10
+			expand_administration_cost = -0.25		
+	}
+}
+estate_strengthen_angel_bond = {
+	icon = privilege_strengthen_angel_bond
+	max_absolutism = -5
+	loyalty = 0.05
+	influence = 0.1
+	is_valid = { 
+		NOT = {
+			tag = ENV
+			culture = Fallen_Angel
+		}
+	}
+	modifier = {
+			relation_with_same_culture_group = 50
+			relation_with_other_culture = -15		
+	}
+}
+estate_iron_grip_of_goddess = {
+	icon = privilege_iron_grip_of_goddess
+	max_absolutism = -5
+	loyalty = 0.05
+	influence = 0.1
+	is_valid = { 
+		NOT = {
+			tag = ENV
+			culture = Fallen_Angel
+		}
+	}	
+	modifier = {
+			global_autonomy = -0.05
+			technology_cost = 0.10		
+	}
+}
+estate_sinners_punishment = {
+	icon = privilege_sinners_punishment
+	max_absolutism = -5
+	loyalty = 0.05
+	influence = 0.1
+	is_valid = { 
+		NOT = {
+			tag = ENV
+			culture = Fallen_Angel
+		}
+	}
+	modifier = {
+			global_unrest = 2
+			discipline = 0.05		
+	}
+}
+estate_angelic_bodies = {
+	icon = privilege_angelic_bodies
+	max_absolutism = -5
+	loyalty = 0.05
+	influence = 0.1
+	modifier = {
+			land_maintenance_modifier = 0.15
+			shock_damage_received = -0.05
+			fire_damage_received = -0.05		
+	}
+}
+estate_heavens_thunder = {
+	icon = privilege_heavens_thunder
+	max_absolutism = -5
+	loyalty = 0.05
+	influence = 0.1
+	modifier = {
+			shock_damage = 0.10
+			all_power_cost = 0.025		
+	}
+}
+estate_fallen_angels_in_army = {
+	icon = privilege_fallen_angels_in_army
+	max_absolutism = -5
+	loyalty = 0.05
+	influence = 0.1
+	is_valid = { 
+		OR = {
+			tag = ENV
+			culture = Fallen_Angel
+		}
+	}
+	modifier = {
+			land_maintenance_modifier = 0.15
+			infantry_power = 0.10	
+	}
+}
+estate_fallen_angel_dance = {
+	icon = privilege_fallen_angel_dance
+	max_absolutism = -5
+	loyalty = 0.05
+	influence = 0.1
+	is_valid = { 
+		OR = {
+			tag = ENV
+			culture = Fallen_Angel
+		}
+	}
+	modifier = {
+			morale_damage_received = -0.10
+			military_tactics = -0.05
+	}
+}
+estate_angel_monster_coexistence = {
+	icon = privilege_angel_monster_coexistence
+	max_absolutism = -5
+	loyalty = 0.05
+	influence = 0.1
+	is_valid = { 
+		OR = {
+			tag = ENV
+			culture = Fallen_Angel
+		}
+	}
+	modifier = {
+			no_religion_penalty = yes
+			state_maintenance_modifier = 0.25
+	}
+}
+estate_subsidize_angel_farms = {
+	icon = privilege_subsidize_angel_farms
+	max_absolutism = -5
+	loyalty = 0.05
+	influence = 0.1
+	is_valid = { 
+		OR = {
+			tag = ENV
+			culture = Fallen_Angel
+		}
+	}
+	modifier = {
+			development_cost = -0.05
+			state_maintenance_modifier = 0.25
+	}
+}
+estate_fallen_angel_workforce = {
+	icon = privilege_fallen_angel_workforce
+	max_absolutism = -5
+	loyalty = 0.05
+	influence = 0.1
+	is_valid = { 
+		OR = {
+			tag = ENV
+			culture = Fallen_Angel
+		}
+	}
+	modifier = {
+			build_time = -0.33
+			state_maintenance_modifier = 0.25
+	}
+}
+estate_scales_of_light = {
+	icon = privilege_scales_of_light
+	max_absolutism = -5
+	loyalty = 0.05
+	influence = 0.1
+	is_valid = {
+		AND = {
+			OR = {
+				unit_type = TECH_APOPTOSIS
+				culture = Angel_Apoptosis
+				tag = HR1
+				tag = HR2
+			}
+		}
+	}
+	on_granted = { add_stability = -1 } 
+	modifier = {
+			country_admin_power = -1
+			country_diplomatic_power = -1
+			country_military_power = -1
+			morale_damage = 0.20
+	}
+}
+estate_luminous_dragon = {
+	icon = privilege_luminous_dragon
+	max_absolutism = -5
+	loyalty = 0.05
+	influence = 0.1
+	is_valid = {
+		AND = {
+			OR = {
+				unit_type = TECH_APOPTOSIS
+				culture = Angel_Apoptosis
+				tag = HR1
+				tag = HR2
+			}
+		}
+	}
+	on_granted = { add_stability = -1 } 
+	modifier = {
+			all_power_cost = 0.10
+			infantry_shock = 1
+			artillery_shock = 1
+			leader_land_shock = 1
+	}
+}
+estate_embrace_the_otherwordliness = {
+	icon = privilege_embrace_the_otherwordliness
+	max_absolutism = -5
+	loyalty = 0.05
+	influence = 0.1
+	is_valid = { 
+		OR = {
+			unit_type = TECH_APOPTOSIS
+			culture = Angel_Apoptosis
+			tag = HR1
+			tag = HR2
+		}
+		NOT = {
+			tag = RAP
+			tag = EAP
+			tag = LXP
+			tag = JIP
+			tag = SLP
+			tag = SSP
+			tag = VA1
+			tag = VA2
+			tag = SH1
+			tag = VA3
+			tag = TA1
+			tag = JA1
+			tag = RR1
+			tag = AA1
+		}
+	}
+	modifier = {
+			diplomatic_reputation = -1
+			unjustified_demands = -0.5
+	}
+}
+
+#Spiritualists
+estate_spiritualists_land_rights = {
+	icon = privilege_grant_autonomy
+	land_share = 5
+	max_absolutism = -5
+	loyalty = 0.05
+	influence = 0.05
+	can_select = {
+	}
+	on_granted = {
+	}
+	penalties = {
+	}
+	benefits = {
+		governing_capacity = 100
+	}
+	ai_will_do = {
+		factor = 5
+		modifier = {
+			factor = 1.4
+			num_of_territories = 5
+		}
+		modifier = {
+			factor = 1.5
+			num_of_territories = 10
+		}
+		modifier = {
+			factor = 1.5
+			num_of_territories = 15
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				NOT = { crown_land_share = 25 }
+				estate_influence = {
+					estate = estate_spiritualists
+					influence = 75
+				}
+			}
+			NOT = { has_estate_privilege = estate_spiritualists_land_rights }
+		}
+		modifier = {
+			factor = 0
+			NOT = { governing_capacity_percentage = 0.5 }
+		}
+		modifier = {
+			factor = 0.8
+			OR = {
+				NOT = { crown_land_share = 40 }
+				AND = {
+					is_absolutism_active = yes
+					NOT = { crown_land_share = 60 }
+				}
+			}
+			NOT = { has_estate_privilege = estate_spiritualists_land_rights }
+		}
+		modifier = {
+			factor = 0.8
+			OR = {
+				NOT = { crown_land_share = 30 }
+				AND = {
+					is_absolutism_active = yes
+					NOT = { crown_land_share = 50 }
+				}
+			}
+			NOT = { has_estate_privilege = estate_spiritualists_land_rights }
+		}
+		modifier = {
+			factor = 3
+			OR = {
+				AND = {
+					governing_capacity_percentage = 0.9
+					NOT = { has_estate_privilege = estate_spiritualists_land_rights }
+				}
+				#The trigger below should make sure that the AI actually keeps this privilege when enacting it early game
+				AND = {
+					governing_capacity_percentage = 0.6
+					has_estate_privilege = estate_spiritualists_land_rights
+				}
+			}
+		}
+		modifier = {
+			factor = 0.8
+			is_absolutism_active = yes
+		}
+		modifier = {
+			factor = 2
+			governing_capacity_percentage = 0.9
+		}
+		modifier = {
+			factor = 3
+			governing_capacity_percentage = 1
+		}
+		modifier = {
+			factor = 10
+			governing_capacity_percentage = 1.2
+		}
+		modifier = {
+			factor = 8
+			NOT = { adm_tech = 12 }
+			governing_capacity_percentage = 0.8
+		}
+		modifier = {
+			factor = 5
+			NOT = { adm_tech = 12 }
+			NOT = { government_rank = 1 }
+			governing_capacity_percentage = 0.65
+		}
+		#Has already a similar privilege active
+		modifier = {
+			factor = 0.75
+			has_estate_privilege = estate_church_land_rights
+		}
+		modifier = {
+			factor = 0.75
+			has_estate_privilege = estate_maratha_land_rights
+		}
+		modifier = {
+			factor = 0.75
+			has_estate_privilege = estate_brahmins_land_rights
+		}
+		modifier = {
+			factor = 0.75
+			has_estate_privilege = estate_vaisyas_land_rights
+		}
+		modifier = {
+			factor = 0.75
+			has_estate_privilege = estate_nomadic_tribes_land_rights
+		}
+		modifier = {
+			factor = 0.75
+			has_estate_privilege = estate_dhimmi_land_rights
+		}
+		modifier = {
+			factor = 0.75
+			has_estate_privilege = estate_jains_land_rights
+		}
+		modifier = {
+			factor = 0.75
+			has_estate_privilege = estate_rajput_land_rights
+		}
+		modifier = {
+			factor = 0.75
+			has_estate_privilege = estate_monster_girls_land_rights
+		}
+		modifier = {
+			factor = 0.75
+			has_estate_privilege = estate_angels_land_rights
+		}
+	}
+}
+estate_autonomy_of_spiritualists = {
+	icon = privilege_tolerance_heathen
+	max_absolutism = -10
+	loyalty = 0.1
+	influence = 0.1
+	penalties = {
+	}
+	benefits = {
+	}
+	ai_will_do = {
+		factor = 10
+		modifier = {
+			factor = 0
+			is_absolutism_active = yes
+		}
+	}
+}
+estate_spiritualists_reinforced_zombies = {
+	icon = privilege_supply_arms
+	loyalty = 0.05
+	influence = 0.05
+	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	on_granted = {
+		add_country_modifier = {
+			name = reinforced_zombies
+			duration = -1
+		}
+	}
+	on_revoked = {
+		remove_country_modifier = reinforced_zombies
+	}
+	on_invalid = {
+		remove_country_modifier = reinforced_zombies
+	}
+	modifier = {
+			land_maintenance_modifier = 0.10
+	}
+	ai_will_do = {
+		factor = 5
+	}
+}
+estate_promote_time_magic = {
+	icon = privilege_promote_time_magic
+	land_share = 10
+	max_absolutism = -5
+	loyalty = 0.10
+	influence = 0.10
+	modifier = {		
+		all_power_cost = 0.05		
+	}
+}
+estate_mass_quick = {
+	icon = privilege_promote_time_magic
+	max_absolutism = -5
+	loyalty = 0.00
+	influence = 0.10
+	is_valid = {
+		has_estate_privilege = estate_promote_time_magic
+	}
+	modifier = {		
+		movement_speed = 0.10
+		build_time = -0.10
+		great_project_upgrade_time = -0.10		
+	}
+}
+estate_mass_slow = {
+	icon = privilege_promote_time_magic
+	max_absolutism = -5
+	loyalty = 0.00
+	influence = 0.10
+	is_valid = {
+		has_estate_privilege = estate_promote_time_magic
+	}
+	on_granted = {
+		custom_tooltip = estate_mass_slow_gt
+		tooltip = {
+			add_province_modifier = {
+				name = spiritualists_mass_slow
+				duration = -1
+			}
+		}
+	}
+	on_revoked = {
+		custom_tooltip = estate_mass_slow_rt
+	}
+	on_granted_province = {
+				limit = { owned_by = ROOT }
+				add_province_modifier = {
+					name = spiritualists_mass_slow
+					duration = -1
+				}
+	}
+	on_invalid_province = {
+		if = {
+			limit = { has_province_modifier = spiritualists_mass_slow }
+			remove_province_modifier = spiritualists_mass_slow
+		}
+	}
+	on_revoked_province = {
+		if = {
+			limit = { has_province_modifier = spiritualists_mass_slow }
+			remove_province_modifier = spiritualists_mass_slow
+		}
+	}
+}
+estate_rezone = {
+	icon = privilege_promote_time_magic
+	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	loyalty = 0.00
+	influence = 0.10
+	is_valid = {
+		AND = {
+			has_estate_privilege = estate_promote_time_magic
+		}
+	}
+	on_granted = { add_stability = -2 } 
+	modifier = {
+			military_tactics = 1
+			morale_damage = 0.20
+	}
+	cooldown_years = 1
+	on_cooldown_expires = {
+		remove_estate_privilege = estate_rezone 
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+estate_gravity = {
+	icon = privilege_promote_time_magic
+	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	loyalty = 0.00
+	influence = 0.10
+	is_valid = {
+		AND = {
+			has_estate_privilege = estate_promote_time_magic
+		}
+	}
+	on_granted = { add_stability = -2 } 
+	modifier = {
+			siege_ability = 2
+	}
+	cooldown_years = 1
+	on_cooldown_expires = {
+		remove_estate_privilege = estate_gravity
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+estate_practice_necromancy = {
+	icon = privilege_practice_necromancy
+	land_share = 5
+	max_absolutism = -5
+	loyalty = 0.05
+	influence = 0.05
+	is_valid = { 
+		OR = {
+			tag = PT1
+			was_tag = PT1
+		}
+		NOT = {
+			tag = HM1
+			tag = LC1
+			was_tag = HM1
+			was_tag = LC1
+		}
+	}
+	modifier = {
+			has_russian_abilities = yes	
+			has_streltsy = yes
+			allowed_streltsy_fraction = 0.25
+	}
+}
+estate_mass_produce_zombies = {
+	icon = privilege_practice_necromancy
+	land_share = 5
+	max_absolutism = -5
+	loyalty = 0.05
+	influence = 0.05
+	is_valid = { 
+		has_estate_privilege = estate_practice_necromancy
+	}
+	modifier = {
+			allowed_streltsy_fraction = 0.25
+	}
+}
+estate_raise_master_undead = {
+	icon = privilege_raise_master_undead
+	land_share = 10
+	max_absolutism = -5
+	loyalty = 0.05
+	influence = 0.05
+	is_valid = { 
+		AND = {
+			OR = {
+				has_estate_privilege = estate_practice_necromancy
+				tag = HM1
+				tag = LC1
+				was_tag = HM1
+				was_tag = LC1
+			}
+			full_idea_group = undead_ideas
+		}
+	}	on_granted = {
+		add_country_modifier = {
+			name = raise_master_undead
+			duration = -1
+		}
+	}
+	on_revoked = {
+		remove_country_modifier = raise_master_undead
+	}
+	on_invalid = {
+		remove_country_modifier = raise_master_undead
+	}
+	modifier = {
+			all_power_cost = 0.04
+	}
+}

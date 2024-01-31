@@ -1,0 +1,205 @@
+##################################################################################################
+# scriptable and usable for event-system below.
+##################################################################################################
+
+#MGQ_combating_chaosization = {
+#	yearly_chaos = 0.5
+#}
+smugglers_helping_us = {
+	global_tax_modifier = 0.1
+	trade_efficiency = 0.1
+}
+
+# Harmonized Modifiers
+##################################################
+
+harmonized_monster_lord_religion = {
+	trade_efficiency = 0.15
+	religion = yes
+}
+harmonized_fenrir_religion = {
+	infantry_power = 0.15
+	religion = yes
+}
+harmonized_dark_goddess_religion = {
+	army_tradition = 1
+	religion = yes
+}
+
+# Religion Groups
+##################################################
+
+harmonized_chaos_religion_g = {
+	province_warscore_cost = -0.15
+	religion = yes
+}
+harmonized_ilias_religion_g = {
+	global_tax_modifier = 0.20
+	religion = yes
+}
+harmonized_elemental_religion_g = {
+	global_monthly_devastation = -0.33
+	religion = yes
+}
+harmonized_science_religion_g = {
+	build_cost = -0.15
+	religion = yes
+}
+
+# Religion Interactions
+##################################################
+
+
+blessing_of_the_monster_lord_mod = {
+	discipline = 0.06
+	manpower_recovery_speed = 0.25
+	#reinforce_speed = 0.25
+}
+
+monster_lord_emissaries_mod = {
+	max_general_fire = 1
+	max_general_maneuver = 1
+	max_general_shock = 1
+	max_general_siege = 1
+}
+
+supported_party_of_heroes_mod = {
+	tolerance_own = 2
+}
+
+ignored_party_of_heroes_mod = {
+	tolerance_own = -2
+}
+
+ilias_protects_mod = {
+	discipline = 0.05
+	all_power_cost = -0.10
+	own_territory_dice_roll_bonus = 1
+}
+
+goddess_blessing_mod = {
+	production_efficiency = 0.10
+	trade_efficiency = 0.10
+}
+
+# Spiritualists
+##################################################
+
+reinforced_zombies = {
+	fire_damage = 0.10
+	fire_damage_received = -0.10
+	is_streltsy_modifier = yes
+}
+spiritualists_mass_slow = {
+	local_hostile_movement_speed = 0.15
+	local_defensiveness = 0.15
+}
+raise_master_undead = {
+	morale_damage_received = -0.25
+	discipline = 0.06
+	is_streltsy_modifier = yes
+}
+
+# Racial integration
+##################################################
+
+human_integration_mod = {
+	country_admin_power = -1
+	all_power_cost = 0.05
+}
+undead_integration_mod = {
+	country_admin_power = -1
+	all_power_cost = 0.05
+}
+land_dweller_integration_mod = {
+	country_admin_power = -1
+	all_power_cost = 0.05
+}
+succubi_integration_mod = {
+	country_admin_power = -1
+	all_power_cost = 0.05
+}
+slime_integration_mod = {
+	country_admin_power = -1
+	all_power_cost = 0.05
+}
+apoptosis_integration_mod = {
+	country_admin_power = -1
+	all_power_cost = 0.05
+}
+alraune_integration_mod = {
+	country_admin_power = -1
+	all_power_cost = 0.05
+}
+elf_integration_mod = {
+	country_admin_power = -1
+	all_power_cost = 0.05
+}
+beast_integration_mod = {
+	country_admin_power = -1
+	all_power_cost = 0.05
+}
+insect_integration_mod = {
+	country_admin_power = -1
+	all_power_cost = 0.05
+}
+harpy_integration_mod = {
+	country_admin_power = -1
+	all_power_cost = 0.05
+}
+dragon_integration_mod = {
+	country_admin_power = -1
+	all_power_cost = 0.05
+}
+demi_human_integration_mod = {
+	country_admin_power = -1
+	all_power_cost = 0.05
+}
+vampire_integration_mod = {
+	country_admin_power = -1
+	all_power_cost = 0.05
+}
+yoma_integration_mod = {
+	country_admin_power = -1
+	all_power_cost = 0.05
+}
+kitsune_integration_mod = {
+	country_admin_power = -1
+	all_power_cost = 0.05
+}
+mermaid_integration_mod = {
+	country_admin_power = -1
+	all_power_cost = 0.05
+}
+sea_dweller_integration_mod = {
+	country_admin_power = -1
+	all_power_cost = 0.05
+}
+doll_integration_mod = {
+	country_admin_power = -1
+	all_power_cost = 0.05
+}
+scylla_integration_mod = {
+	country_admin_power = -1
+	all_power_cost = 0.05
+}
+lamia_integration_mod = {
+	country_admin_power = -1
+	all_power_cost = 0.05
+}
+chimera_integration_mod = {
+	country_admin_power = -1
+	all_power_cost = 0.05
+}
+angel_integration_mod = {
+	country_admin_power = -1
+	all_power_cost = 0.05
+}
+roid_integration_mod = {
+	country_admin_power = -1
+	all_power_cost = 0.05
+}
+tanuki_integration_mod = {
+	country_admin_power = -1
+	all_power_cost = 0.05
+}

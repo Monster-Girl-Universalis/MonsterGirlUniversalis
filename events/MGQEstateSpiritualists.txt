@@ -1,0 +1,81 @@
+namespace = spiritualists_estate_events
+
+# Advancement of the Spiritualists
+country_event = {
+	id = spiritualists_estate_events.1
+	title = spiritualists_estate_events.1.t
+	desc = spiritualists_estate_events.1.desc
+	picture = SPIRITUALISTS_GOOD_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		has_estate = estate_spiritualists
+		NOT = {
+			has_estate_influence_modifier = {
+				estate = estate_spiritualists
+				modifier = EST_VAL_SPIRITUALISTS_ADVANCE
+			}
+		}
+		NOT = {
+			has_estate_influence_modifier = {
+				estate = estate_spiritualists
+				modifier = EST_VAL_SPIRITUALISTS_DECLINE
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = spiritualists_estate_events.1.a
+		add_estate_influence_modifier = {
+			estate = estate_spiritualists
+			desc = EST_VAL_SPIRITUALISTS_ADVANCE
+			influence = 10
+			duration = 5475
+		}
+	}
+}
+
+# Decline of the Spiritualists
+country_event = {
+	id = spiritualists_estate_events.2
+	title = spiritualists_estate_events.2.t
+	desc = spiritualists_estate_events.2.desc
+	picture = SPIRITUALISTS_BAD_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		has_estate = estate_spiritualists
+		NOT = {
+			has_estate_influence_modifier = {
+				estate = estate_spiritualists
+				modifier = EST_VAL_SPIRITUALISTS_ADVANCE
+			}
+		}
+		NOT = {
+			has_estate_influence_modifier = {
+				estate = estate_spiritualists
+				modifier = EST_VAL_SPIRITUALISTS_DECLINE
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = spiritualists_estate_events.2.a
+		add_estate_influence_modifier = {
+			estate = estate_spiritualists
+			desc = EST_VAL_SPIRITUALISTS_DECLINE
+			influence = -10
+			duration = 5475
+		}
+	}
+}

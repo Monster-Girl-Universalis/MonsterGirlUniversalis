@@ -1,0 +1,19 @@
+government = monarchy
+government_rank = 2
+primary_culture = Angel_Girl
+religion = ilias_light_religion
+technology_group = TECH_ANGEL
+1444.1.1 = { 
+	monarch = { 
+		name = "Beastiel"
+		dynasty = "of Heaven"
+		birth_date = 1.1.1
+		adm = 4
+		dip = 4
+		mil = 4
+		female = yes
+	}
+	add_ruler_personality = immortal_personality
+}
+add_government_reform = Angel_realm
+capital = 2137

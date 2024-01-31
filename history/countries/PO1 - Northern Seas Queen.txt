@@ -1,0 +1,19 @@
+government = monarchy
+religion = monster_lord_religion
+technology_group = TECH_SEA_DWELLER
+primary_culture = Royal_Sea_Dweller
+add_government_reform = Sea_Dweller_realm
+government_rank = 2
+historical_friend = KK1#Two Queens
+1444.1.1 = { 
+	monarch = { 
+		name = "Poseidoness"
+		dynasty = "of the North Seas"
+		birth_date = 1424.1.1
+		adm = 5
+		dip = 4
+		mil = 6
+		female = yes
+	}
+}
+capital = 2617

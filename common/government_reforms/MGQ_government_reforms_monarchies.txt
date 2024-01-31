@@ -1,0 +1,898 @@
+#Feudalism vs Autocracy:
+
+Apoptosis_realm = {
+	lock_level_when_selected = yes
+	icon = "apoptosis_realm"
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			culture_group = apoptosis
+			AND = {
+				is_playing_custom_nation = yes
+				have_had_reform = Apoptosis_realm
+			}
+		}
+	}
+
+	valid_for_new_country = no
+	valid_for_nation_designer = yes
+	nation_designer_cost = 40
+	legacy_equivalent = ottoman_government_legacy
+	modifiers = {
+		monarch_lifespan = 1
+		diplomats = -1
+		stability_cost_to_declare_war = -2
+		global_autonomy = -0.05
+		governing_capacity = 250
+		block_introduce_heir = yes
+	}
+	custom_attributes = {
+		queen = no
+	}
+	conditional = {
+		allow = { has_dlc = "Rights of Man" }
+		has_harem = yes
+	}
+}
+
+Zombie_realm = {
+	lock_level_when_selected = yes
+	icon = "zombie_realm"
+	allow_normal_conversion = no
+	potential = {
+		OR = {
+			culture_group = undead
+			AND = {
+				is_playing_custom_nation = yes
+				have_had_reform = Zombie_realm
+			}
+		}
+	}
+	valid_for_new_country = no
+	valid_for_nation_designer = yes
+	nation_designer_cost = 40
+	legacy_equivalent = ottoman_government_legacy
+	modifiers = {
+		governing_capacity = 200
+		land_morale = -0.075
+		morale_damage_received = -0.20
+		monarch_lifespan = 1
+		block_introduce_heir = yes
+	}
+	custom_attributes = {
+		queen = no
+	}
+	conditional = {
+		allow = { has_dlc = "Rights of Man" }
+		has_harem = yes
+	}
+}
+
+Ghost_realm = {
+	lock_level_when_selected = yes
+	icon = "ghost_realm"
+	allow_normal_conversion = no
+	potential = {
+		OR = {
+			culture_group = undead
+			AND = {
+				is_playing_custom_nation = yes
+				have_had_reform = Ghost_realm
+			}
+		}
+	}
+	valid_for_new_country = no
+	valid_for_nation_designer = yes
+	nation_designer_cost = 40
+	legacy_equivalent = ottoman_government_legacy
+	modifiers = {
+		governing_capacity = 200
+		ae_impact = -0.2
+		monarch_lifespan = 1
+		block_introduce_heir = yes
+	}
+	custom_attributes = {
+		queen = no
+	}
+	conditional = {
+		allow = { has_dlc = "Rights of Man" }
+		has_harem = yes
+	}
+}
+
+Land_Dweller_realm = {
+	lock_level_when_selected = yes
+	icon = "land_dweller_realm"
+	allow_normal_conversion = no
+	potential = {
+		OR = {
+			culture_group = land_dweller
+			AND = {
+				is_playing_custom_nation = yes
+				have_had_reform = Land_Dweller_realm 
+			}
+		}
+	}
+	valid_for_new_country = no
+	valid_for_nation_designer = yes
+	nation_designer_cost = 40
+	legacy_equivalent = ottoman_government_legacy
+	modifiers = {
+		governing_capacity = 200
+		land_forcelimit_modifier = 0.25
+		development_cost = 0.05
+		core_creation = 0.05	
+		monarch_lifespan = 1
+		block_introduce_heir = yes
+	}
+	custom_attributes = {
+		queen = no
+	}
+	conditional = {
+		allow = { has_dlc = "Rights of Man" }
+		has_harem = yes
+	}
+}
+
+Slime_realm = {
+	lock_level_when_selected = yes
+	icon = "slime_realm"
+	allow_normal_conversion = no
+	potential = {
+		OR = {
+			culture_group = slime
+			AND = {
+				is_playing_custom_nation = yes
+				have_had_reform = Slime_realm
+			}
+		}
+	}
+	valid_for_new_country = no
+	valid_for_nation_designer = yes
+	nation_designer_cost = 40
+	legacy_equivalent = ottoman_government_legacy
+	modifiers = {
+		governing_capacity = 200
+		fire_damage_received = 0.075
+		reinforce_speed = 0.30
+		reinforce_cost_modifier = -0.30
+		monarch_lifespan = 1
+		block_introduce_heir = yes
+	}
+	custom_attributes = {
+		queen = no
+	}
+	conditional = {
+		allow = { has_dlc = "Rights of Man" }
+		has_harem = yes
+	}
+}
+
+Beast_realm = {
+	lock_level_when_selected = yes
+	icon = "beast_realm"
+	allow_normal_conversion = no
+	potential = {
+		OR = {
+			culture_group = beast
+			AND = {
+				is_playing_custom_nation = yes
+				have_had_reform = Beast_realm
+			}
+		}
+	}
+	valid_for_new_country = no
+	valid_for_nation_designer = yes
+	nation_designer_cost = 40
+	legacy_equivalent = ottoman_government_legacy
+	raze_province = yes
+	modifiers = {
+		governing_capacity = 200
+		shock_damage = 0.125
+		artillery_power = -0.075
+		monarch_lifespan = 1
+		block_introduce_heir = yes
+	}
+	custom_attributes = {
+		queen = no
+	}
+	conditional = {
+		allow = { has_dlc = "Rights of Man" }
+		has_harem = yes
+	}
+}
+
+Succubi_realm = {
+	lock_level_when_selected = yes
+	icon = "succubi_realm"
+	allow_normal_conversion = no
+	potential = {
+		OR = {
+			culture_group = succubi
+			AND = {
+				is_playing_custom_nation = yes
+				have_had_reform = Succubi_realm
+			}
+		}
+	}
+	valid_for_new_country = no
+	valid_for_nation_designer = yes
+	nation_designer_cost = 40
+	legacy_equivalent = ottoman_government_legacy
+	modifiers = {
+		governing_capacity = 200
+		improve_relation_modifier = 0.30
+		monarch_lifespan = 1
+		block_introduce_heir = yes
+	}
+	custom_attributes = {
+		queen = no
+	}
+	conditional = {
+		allow = { has_dlc = "Rights of Man" }
+		has_harem = yes
+	}
+}
+
+Alraune_realm = {
+	lock_level_when_selected = yes
+	icon = "alraune_realm"
+	allow_normal_conversion = no
+	potential = {
+		OR = {
+			culture_group = alraune
+			AND = {
+				is_playing_custom_nation = yes
+				have_had_reform = Alraune_realm
+			}
+		}
+	}
+	valid_for_new_country = no
+	valid_for_nation_designer = yes
+	nation_designer_cost = 40
+	legacy_equivalent = ottoman_government_legacy
+	modifiers = {
+		governing_capacity = 200
+		recover_army_morale_speed = 0.25
+		monarch_lifespan = 1
+		block_introduce_heir = yes
+	}
+	custom_attributes = {
+		queen = no
+	}
+	conditional = {
+		allow = { has_dlc = "Rights of Man" }
+		has_harem = yes
+	}
+}
+
+Harpy_realm = {
+	lock_level_when_selected = yes
+	icon = "harpy_realm"
+	allow_normal_conversion = no
+	potential = {
+		OR = {
+			culture_group = harpy
+			AND = {
+				is_playing_custom_nation = yes
+				have_had_reform = Harpy_realm
+			}
+		}
+	}
+	valid_for_new_country = no
+	valid_for_nation_designer = yes
+	nation_designer_cost = 40
+	legacy_equivalent = ottoman_government_legacy
+	modifiers = {
+		governing_capacity = 200
+		movement_speed = 0.15
+		monarch_lifespan = 1
+		block_introduce_heir = yes
+	}
+	custom_attributes = {
+		queen = no
+	}
+	conditional = {
+		allow = { has_dlc = "Rights of Man" }
+		has_harem = yes
+	}
+}
+
+Elf_realm = {
+	lock_level_when_selected = yes
+	icon = "elf_realm"
+	allow_normal_conversion = no
+	potential = {
+		OR = {
+			culture_group = elf
+			AND = {
+				is_playing_custom_nation = yes
+				have_had_reform = Elf_realm
+			}
+		}
+	}
+	valid_for_new_country = no
+	valid_for_nation_designer = yes
+	nation_designer_cost = 40
+	legacy_equivalent = ottoman_government_legacy
+	modifiers = {
+		governing_capacity = 200
+		shock_damage_received = -0.075
+		monarch_lifespan = 1
+		block_introduce_heir = yes
+	}
+	custom_attributes = {
+		queen = no
+	}
+	conditional = {
+		allow = { has_dlc = "Rights of Man" }
+		has_harem = yes
+	}
+}
+
+Insect_realm = {
+	lock_level_when_selected = yes
+	icon = "insect_realm"
+	allow_normal_conversion = no
+	potential = {
+		OR = {
+			culture_group = insect
+			AND = {
+				is_playing_custom_nation = yes
+				have_had_reform = Insect_realm
+			}
+		}
+	}
+	valid_for_new_country = no
+	valid_for_nation_designer = yes
+	nation_designer_cost = 40
+	legacy_equivalent = ottoman_government_legacy
+	modifiers = {
+		governing_capacity = 200
+		global_manpower_modifier = 0.10
+		land_forcelimit_modifier = 0.10
+		monarch_lifespan = 1
+		block_introduce_heir = yes
+	}
+	custom_attributes = {
+		queen = no
+	}
+	conditional = {
+		allow = { has_dlc = "Rights of Man" }
+		has_harem = yes
+	}
+}
+
+Dragon_realm = {
+	lock_level_when_selected = yes
+	icon = "dragon_realm"
+	allow_normal_conversion = no
+	potential = {
+		OR = {
+			culture_group = dragon
+			AND = {
+				is_playing_custom_nation = yes
+				have_had_reform = Dragon_realm
+			}
+		}
+	}
+	valid_for_new_country = no
+	valid_for_nation_designer = yes
+	nation_designer_cost = 40
+	legacy_equivalent = ottoman_government_legacy
+	modifiers = {
+		governing_capacity = 200
+		fire_damage = 0.075
+		monarch_lifespan = 1
+		block_introduce_heir = yes
+	}
+	custom_attributes = {
+		queen = no
+	}
+	conditional = {
+		allow = { has_dlc = "Rights of Man" }
+		has_harem = yes
+	}
+}
+
+Sea_Dweller_realm = {
+	lock_level_when_selected = yes
+	icon = "sea_dweller_realm"
+	allow_normal_conversion = no
+	potential = {
+		OR = {
+			culture_group = sea_dweller
+			AND = {
+				is_playing_custom_nation = yes
+				have_had_reform = Sea_Dweller_realm
+			}
+		}
+	}
+	valid_for_new_country = no
+	valid_for_nation_designer = yes
+	nation_designer_cost = 40
+	legacy_equivalent = ottoman_government_legacy
+	modifiers = {
+		governing_capacity = 200
+		naval_morale_damage_received = -0.075
+		monarch_lifespan = 1
+		block_introduce_heir = yes
+	}
+	custom_attributes = {
+		queen = no
+	}
+	conditional = {
+		allow = { has_dlc = "Rights of Man" }
+		has_harem = yes
+	}
+}
+
+Mermaid_realm = {
+	lock_level_when_selected = yes
+	icon = "mermaid_realm"
+	allow_normal_conversion = no
+	potential = {
+		OR = {
+			culture_group = mermaid
+			AND = {
+				is_playing_custom_nation = yes
+				have_had_reform = Mermaid_realm
+			}
+		}
+	}
+	valid_for_new_country = no
+	valid_for_nation_designer = yes
+	nation_designer_cost = 40
+	legacy_equivalent = ottoman_government_legacy
+	modifiers = {
+		governing_capacity = 200
+		naval_morale_damage = 0.075
+		monarch_lifespan = 1
+		block_introduce_heir = yes
+	}
+	custom_attributes = {
+		queen = no
+	}
+	conditional = {
+		allow = { has_dlc = "Rights of Man" }
+		has_harem = yes
+	}
+}
+
+Demi_Human_realm = {
+	lock_level_when_selected = yes
+	icon = "demi-human_realm"
+	allow_normal_conversion = no
+	potential = {
+		OR = {
+			culture_group = demi_human
+			AND = {
+				is_playing_custom_nation = yes
+				have_had_reform = Demi_Human_realm
+			}
+		}
+	}
+	valid_for_new_country = no
+	valid_for_nation_designer = yes
+	nation_designer_cost = 40
+	legacy_equivalent = ottoman_government_legacy
+	modifiers = {
+		governing_capacity = 200
+		fire_damage_received = -0.1
+		monarch_lifespan = 1
+		block_introduce_heir = yes
+	}
+	custom_attributes = {
+		queen = no
+	}
+	conditional = {
+		allow = { has_dlc = "Rights of Man" }
+		has_harem = yes
+	}
+}
+
+Doll_realm = {
+	lock_level_when_selected = yes
+	icon = "doll_realm"
+	allow_normal_conversion = no
+	potential = {
+		OR = {
+			culture_group = doll
+			AND = {
+				is_playing_custom_nation = yes
+				have_had_reform = Doll_realm
+			}
+		}
+	}
+	valid_for_new_country = no
+	valid_for_nation_designer = yes
+	nation_designer_cost = 40
+	legacy_equivalent = ottoman_government_legacy
+	modifiers = {
+		governing_capacity = 200
+		morale_damage_received = -0.075
+		monarch_lifespan = 1
+		block_introduce_heir = yes
+	}
+	custom_attributes = {
+		queen = no
+	}
+	conditional = {
+		allow = { has_dlc = "Rights of Man" }
+		has_harem = yes
+	}
+}
+
+Angel_realm = {
+	lock_level_when_selected = yes
+	icon = "angel_realm"
+	allow_normal_conversion = no
+	potential = {
+		OR = {
+			culture_group = angel
+			AND = {
+				is_playing_custom_nation = yes
+				have_had_reform = Angel_realm
+			}
+		}
+	}
+	valid_for_new_country = no
+	valid_for_nation_designer = yes
+	nation_designer_cost = 40
+	legacy_equivalent = ottoman_government_legacy
+	modifiers = {
+		governing_capacity = 200
+		military_tactics = 0.15
+		monarch_lifespan = 1
+		block_introduce_heir = yes
+	}
+	custom_attributes = {
+		queen = no
+	}
+	conditional = {
+		allow = { has_dlc = "Rights of Man" }
+		has_harem = yes
+	}
+}
+
+Yoma_realm = {
+	lock_level_when_selected = yes
+	icon = "yoma_realm"
+	allow_normal_conversion = no
+	potential = {
+		OR = {
+			culture_group = yoma
+			AND = {
+				is_playing_custom_nation = yes
+				have_had_reform = Yoma_realm
+			}
+		}
+	}
+	valid_for_new_country = no
+	valid_for_nation_designer = yes
+	nation_designer_cost = 40
+	legacy_equivalent = ottoman_government_legacy
+	modifiers = {
+		governing_capacity = 200
+		fire_damage = 0.1
+		monarch_lifespan = 1
+		block_introduce_heir = yes
+	}
+	custom_attributes = {
+		queen = no
+	}
+	conditional = {
+		allow = { has_dlc = "Rights of Man" }
+		has_harem = yes
+	}
+}
+
+Vampire_realm = {
+	lock_level_when_selected = yes
+	icon = "vampire_realm"
+	allow_normal_conversion = no
+	potential = {
+		OR = {
+			culture_group = vampire
+			AND = {
+				is_playing_custom_nation = yes
+				have_had_reform = Vampire_realm
+			}
+		}
+	}
+	valid_for_new_country = no
+	valid_for_nation_designer = yes
+	nation_designer_cost = 40
+	legacy_equivalent = ottoman_government_legacy
+	modifiers = {
+		governing_capacity = 200
+		morale_damage = 0.075
+		monarch_lifespan = 1
+		block_introduce_heir = yes
+	}
+	custom_attributes = {
+		queen = no
+	}
+	conditional = {
+		allow = { has_dlc = "Rights of Man" }
+		has_harem = yes
+	}
+}
+
+Lamia_realm = {
+	lock_level_when_selected = yes
+	icon = "lamia_realm"
+	allow_normal_conversion = no
+	potential = {
+		OR = {
+			culture_group = lamia
+			AND = {
+				is_playing_custom_nation = yes
+				have_had_reform = Lamia_realm
+			}
+		}
+	}
+	valid_for_new_country = no
+	valid_for_nation_designer = yes
+	nation_designer_cost = 40
+	legacy_equivalent = ottoman_government_legacy
+	modifiers = {
+		governing_capacity = 200
+		administrative_efficiency = 0.1
+		monarch_lifespan = 1
+		block_introduce_heir = yes
+	}
+	custom_attributes = {
+		queen = no
+	}
+	conditional = {
+		allow = { has_dlc = "Rights of Man" }
+		has_harem = yes
+	}
+}
+
+Scylla_realm = {
+	lock_level_when_selected = yes
+	icon = "scylla_realm"
+	allow_normal_conversion = no
+	potential = {
+		OR = {
+			culture_group = scylla
+			AND = {
+				is_playing_custom_nation = yes
+				have_had_reform = Scylla_realm
+			}
+		}
+	}
+	valid_for_new_country = no
+	valid_for_nation_designer = yes
+	nation_designer_cost = 40
+	legacy_equivalent = ottoman_government_legacy
+	modifiers = {
+		governing_capacity = 200
+		all_power_cost = -0.03
+		monarch_lifespan = 1
+		block_introduce_heir = yes
+	}
+	custom_attributes = {
+		queen = no
+	}
+	conditional = {
+		allow = { has_dlc = "Rights of Man" }
+		has_harem = yes
+	}
+}
+
+Chimera_realm = {
+	lock_level_when_selected = yes
+	icon = "chimera_realm"
+	allow_normal_conversion = no
+	potential = {
+		OR = {
+			culture_group = chimera
+			AND = {
+				is_playing_custom_nation = yes
+				have_had_reform = Chimera_realm
+			}
+		}
+	}
+	valid_for_new_country = no
+	valid_for_nation_designer = yes
+	nation_designer_cost = 40
+	legacy_equivalent = ottoman_government_legacy
+	modifiers = {
+		governing_capacity = 200
+		possible_policy = 1
+		yearly_innovativeness = 0.2
+		monarch_lifespan = 1
+		block_introduce_heir = yes
+	}
+	custom_attributes = {
+		queen = no
+	}
+	conditional = {
+		allow = { has_dlc = "Rights of Man" }
+		has_harem = yes
+	}
+}
+
+Kitsune_realm = {
+	lock_level_when_selected = yes
+	icon = "kitsune_realm"
+	allow_normal_conversion = no
+	potential = {
+		OR = {
+			culture_group = kitsune
+			AND = {
+				is_playing_custom_nation = yes
+				have_had_reform = Kitsune_realm
+			}
+		}
+	}
+	valid_for_new_country = no
+	valid_for_nation_designer = yes
+	nation_designer_cost = 40
+	legacy_equivalent = ottoman_government_legacy
+	modifiers = {
+		governing_capacity = 200
+		technology_cost = -0.125
+		monarch_lifespan = 1
+		block_introduce_heir = yes
+	}
+	custom_attributes = {
+		queen = no
+	}
+	conditional = {
+		allow = { has_dlc = "Rights of Man" }
+		has_harem = yes
+	}
+}
+
+Roid_realm = {
+	lock_level_when_selected = yes
+	icon = "roid_realm"
+	allow_normal_conversion = no
+	potential = {
+		OR = {
+			culture_group = roid
+			AND = {
+				is_playing_custom_nation = yes
+				have_had_reform = Roid_realm
+			}
+		}
+	}
+	valid_for_new_country = no
+	valid_for_nation_designer = yes
+	nation_designer_cost = 40
+	legacy_equivalent = ottoman_government_legacy
+	modifiers = {
+		governing_capacity = 200
+		discipline = 0.1
+		capped_by_forcelimit = yes
+		monarch_lifespan = 1
+		block_introduce_heir = yes
+	}
+	custom_attributes = {
+		queen = no
+	}
+	conditional = {
+		allow = { has_dlc = "Rights of Man" }
+		has_harem = yes
+	}
+}
+
+Tanuki_realm = {
+	lock_level_when_selected = yes
+	icon = "tanuki_realm"
+	allow_normal_conversion = no
+	potential = {
+		OR = {
+			culture_group = tanuki
+			AND = {
+				is_playing_custom_nation = yes
+				have_had_reform = Tanuki_realm
+			}
+		}
+	}
+	valid_for_new_country = no
+	valid_for_nation_designer = yes
+	nation_designer_cost = 40
+	legacy_equivalent = ottoman_government_legacy
+	modifiers = {
+		governing_capacity = 200
+		state_maintenance_modifier = -0.67
+		monarch_lifespan = 1
+		block_introduce_heir = yes
+	}
+	custom_attributes = {
+		queen = no
+	}
+	conditional = {
+		allow = { has_dlc = "Rights of Man" }
+		has_harem = yes
+	}
+}
+
+Artiste_necromancer = {
+	lock_level_when_selected = yes
+	icon = "artiste_necromancer"
+	allow_normal_conversion = no
+	potential = {
+		OR = {
+			tag = HM1
+			tag = LC1
+			was_tag = HM1
+			was_tag = LC1
+			have_had_reform = Artiste_necromancer 
+			AND = {
+				is_playing_custom_nation = yes
+				have_had_reform = heavenly_bandits
+			}
+		}
+	}
+	valid_for_new_country = no
+	valid_for_nation_designer = yes
+	nation_designer_cost = 40
+	has_russian_abilities = yes
+	legacy_equivalent = artiste_legacy
+	modifiers = {
+		governing_capacity = 300
+		monarch_lifespan = 2
+		block_introduce_heir = yes
+		has_streltsy = yes
+		allowed_streltsy_fraction = 0.50
+	}
+	custom_attributes = {
+		queen = no
+	}
+	conditional = {
+		allow = { has_dlc = "Rights of Man" }
+		has_harem = yes
+	}
+	conditional = {
+		allow = { 
+			has_dlc = "Third Rome" 
+			NOT = { has_dlc = "Domination" }
+		}
+		government_abilities = {
+			russian_mechanic
+		}
+	}
+}
+
+heavenly_bandits = {
+	lock_level_when_selected = yes
+	icon = "heavenly_bandits"
+	allow_normal_conversion = no
+	potential = {
+    		OR = {
+			tag= HVB
+			was_tag = HVB
+			have_had_reform = heavenly_bandits
+			}
+			AND = {
+				is_playing_custom_nation = yes
+				have_had_reform = heavenly_bandits
+			}
+		}
+	}
+	valid_for_new_country = no
+	valid_for_nation_designer = no
+	nation_designer_cost = 40
+	#legacy_equivalent = ottoman_government_legacy
+	modifiers = {
+		num_accepted_cultures = 4
+		diplomats = 2
+		loot_amount = 0.5
+		available_province_loot = 0.5
+		monarch_lifespan = 1
+		block_introduce_heir = yes
+	}
+	custom_attributes = {
+		queen = no
+	}
+	conditional = {
+		allow = { has_dlc = "Rights of Man" }
+		has_harem = yes
+	}
+}

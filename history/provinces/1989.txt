@@ -1,0 +1,15 @@
+is_city = no
+discovered_by = TECH_ANGEL
+add_core = SH3
+discovered_by = AR3
+discovered_by = HR1
+owner = SH3
+base_tax = 5
+base_manpower = 7
+base_production = 7
+culture = Angel_Girl
+religion = ilias_light_religion
+controller = SH3
+trade_goods = incense
+fort_15th = yes
+center_of_trade = 2

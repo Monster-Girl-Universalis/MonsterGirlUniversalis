@@ -1,0 +1,22 @@
+government = monarchy
+government_rank = 2
+primary_culture = Zombie_Girl
+primary_culture = Chimera_Girl
+add_government_reform = Artiste_necromancer
+religion = seekers_of_truth_religion
+technology_group = TECH_UNDEAD
+historical_rival = PT1 #La Croix strongly disapproves Kagetsumugi mindset
+1444.1.1 = { 
+	monarch = { 
+		name = "La Croix Shirome"
+		dynasty = "Artiste"
+		culture = "Necromancer_Succubi"
+		birth_date = 1424.1.1
+		adm = 6
+		dip = 5
+		mil = 6
+		female = yes
+	}
+	add_ruler_personality = immortal_personality
+}
+capital = 1766

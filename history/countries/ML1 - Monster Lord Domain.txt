@@ -1,0 +1,121 @@
+government = monarchy
+government_rank = 3
+primary_culture = Royal_Yoma
+add_government_reform = Yoma_realm
+religion = monster_lord_religion
+technology_group = TECH_YOUMA
+historical_rival = IT1 #Suffer no malicious goddess and her idiotic ways
+934.1.1 = { 
+	monarch = { 
+		name = "Alipheese VIII"
+		dynasty = "Fateburn"
+		birth_date = 934.1.1
+		adm = 4
+		dip = 5
+		mil = 6
+		leader = { 
+			name = "Alipheese VIII"
+			type = general
+			fire = 10
+			shock = 10
+			manuever = 10
+			siege = 8
+			personality = ruthless_personality
+		}
+	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = malevolent_personality
+}
+954.1.1 = { 
+	monarch = { 
+		name = "Alipheese IX"
+		dynasty = "Fateburn"
+		birth_date = 936.1.1
+		adm = 5
+		dip = 5
+		mil = 5
+	}
+}
+1036.1.1 = { 
+	monarch = { 
+		name = "Alipheese X"
+		dynasty = "Fateburn"
+		birth_date = 1016.1.1
+		adm = 5
+		dip = 5
+		mil = 5
+	}
+}
+1109.1.1 = { 
+	monarch = { 
+		name = "Alipheese XI"
+		dynasty = "Fateburn"
+		birth_date = 1089.1.1
+		adm = 5
+		dip = 5
+		mil = 5
+	}
+}
+1182.1.1 = { 
+	monarch = { 
+		name = "Alipheese XII"
+		dynasty = "Fateburn"
+		birth_date = 1162.1.1
+		adm = 5
+		dip = 5
+		mil = 5
+	}
+}
+1255.1.1 = { 
+	monarch = { 
+		name = "Alipheese XIII"
+		dynasty = "Fateburn"
+		birth_date = 1235.1.1
+		adm = 5
+		dip = 5
+		mil = 5
+	}
+}
+1328.1.1 = { 
+	monarch = { 
+		name = "Alipheese XIV"
+		dynasty = "Fateburn"
+		birth_date = 1308.1.1
+		adm = 5
+		dip = 5
+		mil = 5
+	}
+}
+1414.1.1 = { 
+	monarch = { 
+		name = "Alipheese XV"
+		monarch_name = "Alipheese XV"
+		dynasty = "Fateburn"
+		birth_date = 1394.1.1
+		adm = 6
+		dip = 6
+		mil = 6
+		female = yes
+		leader = { 
+			name = "Alipheese XV"
+			type = general
+			fire = 10
+			shock = 10
+			manuever = 10
+			siege = 8
+		}
+	}
+}
+1434.1.1 = { 
+	heir = { 
+		name = "Alipheese XVI"
+		monarch_name = "Alipheese XVI"
+		dynasty = "Fateburn"
+		birth_date = 1434.1.1
+		adm = 6
+		dip = 6
+		mil = 6
+		female = yes
+	}
+}
+capital = 2409

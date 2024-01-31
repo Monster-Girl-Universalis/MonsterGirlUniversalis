@@ -1,0 +1,116 @@
+spriteTypes = {	
+	spriteType = {
+		name = "government_reform_apoptosis_realm"
+		texturefile = "gfx//interface//government_reform_icons//apoptosis_realm_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_zombie_realm"
+		texturefile = "gfx//interface//government_reform_icons//zombie_realm_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_ghost_realm"
+		texturefile = "gfx//interface//government_reform_icons//ghost_realm_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_land_dweller_realm"
+		texturefile = "gfx//interface//government_reform_icons//land_dweller_realm_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_slime_realm"
+		texturefile = "gfx//interface//government_reform_icons//slime_realm_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_beast_realm"
+		texturefile = "gfx//interface//government_reform_icons//beast_realm_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_succubi_realm"
+		texturefile = "gfx//interface//government_reform_icons//succubi_realm_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_alraune_realm"
+		texturefile = "gfx//interface//government_reform_icons//alraune_realm_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_dragon_realm"
+		texturefile = "gfx//interface//government_reform_icons//dragon_realm_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_elf_realm"
+		texturefile = "gfx//interface//government_reform_icons//elf_realm_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_insect_realm"
+		texturefile = "gfx//interface//government_reform_icons//insect_realm_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_harpy_realm"
+		texturefile = "gfx//interface//government_reform_icons//harpy_realm_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_sea_dweller_realm"
+		texturefile = "gfx//interface//government_reform_icons//sea_dweller_realm_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_mermaid_realm"
+		texturefile = "gfx//interface//government_reform_icons//mermaid_realm_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_demi-human_realm"
+		texturefile = "gfx//interface//government_reform_icons//demi-human_realm_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_doll_realm"
+		texturefile = "gfx//interface//government_reform_icons//doll_realm_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_angel_realm"
+		texturefile = "gfx//interface//government_reform_icons//angel_realm_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_yoma_realm"
+		texturefile = "gfx//interface//government_reform_icons//yoma_realm_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_vampire_realm"
+		texturefile = "gfx//interface//government_reform_icons//vampire_realm_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_lamia_realm"
+		texturefile = "gfx//interface//government_reform_icons//lamia_realm_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_scylla_realm"
+		texturefile = "gfx//interface//government_reform_icons//scylla_realm_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_chimera_realm"
+		texturefile = "gfx//interface//government_reform_icons//chimera_realm_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_kitsune_realm"
+		texturefile = "gfx//interface//government_reform_icons//kitsune_realm_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_roid_realm"
+		texturefile = "gfx//interface//government_reform_icons//roid_realm_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_tanuki_realm"
+		texturefile = "gfx//interface//government_reform_icons//tanuki_realm_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_monster_chiefdom"
+		texturefile = "gfx//interface//government_reform_icons//monster_chiefdom_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_artiste_necromancer"
+		texturefile = "gfx//interface//government_reform_icons//artiste_necromancer_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_heavenly_bandits"
+		texturefile = "gfx//interface//government_reform_icons//heavenly_bandits_reform.dds"
+	}
+
+	
+}

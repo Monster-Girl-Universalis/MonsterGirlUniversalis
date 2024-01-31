@@ -1,0 +1,782 @@
+cat_shrines = {
+	global_unrest = -2
+	build_time = -0.10
+	allow = {
+		religion = yamatai_religion
+	}
+	sprite = 18
+	ai_will_do = {
+		factor = 1
+		modifier = {
+	        accepted_culture = Nekomata_Girl
+			factor = 2
+		}
+		modifier = {
+	        consort_culture = Nekomata_Girl
+			factor = 2
+		}
+		modifier = {
+	        dominant_culture = Nekomata_Girl
+			factor = 2
+		}
+		modifier = {
+	        heir_culture = Nekomata_Girl
+			factor = 2
+		}
+		modifier = {
+	        primary_culture = Nekomata_Girl
+			factor = 2
+		}
+		modifier = {
+	        ruler_culture = Nekomata_Girl
+			factor = 2
+		}
+		modifier = {
+	        personality = ai_balanced
+			factor = 2
+		}
+		modifier = {
+			NOT = { stability = 0 }
+			factor = 2
+		}
+	}
+}
+tanuki_shrines = {
+	idea_cost = -0.10
+	trade_efficiency = 0.10
+	allow = {
+		religion = yamatai_religion
+	}
+	sprite = 19
+	ai_will_do = {
+		factor = 1
+		modifier = {
+	        accepted_culture = Tanuki_Girl
+			factor = 2
+		}
+		modifier = {
+	        consort_culture = Tanuki_Girl
+			factor = 2
+		}
+		modifier = {
+	        dominant_culture = Tanuki_Girl
+			factor = 2
+		}
+		modifier = {
+	        heir_culture = Tanuki_Girl
+			factor = 2
+		}
+		modifier = {
+	        primary_culture = Tanuki_Girl
+			factor = 2
+		}
+		modifier = {
+	        ruler_culture = Tanuki_Girl
+			factor = 2
+		}
+		modifier = {
+	        personality = ai_diplomat
+			factor = 2
+		}
+		modifier = {
+			trade_income_percentage = 0.33
+			factor = 2
+		}
+	}
+}
+fox_shrines = {
+	shock_damage_received = -0.10
+	build_cost = -0.05
+	allow = {
+		religion = yamatai_religion
+	}
+	sprite = 20
+	ai_will_do = {
+		factor = 1
+		modifier = {
+	        culture_group = kitsune
+			factor = 2
+		}
+		modifier = {
+	        consort_culture = Kitsune_Girl
+			factor = 2
+		}
+		modifier = {
+	        dominant_culture = Kitsune_Girl
+			factor = 2
+		}
+		modifier = {
+	        heir_culture = Kitsune_Girl
+			factor = 2
+		}
+		modifier = {
+	        primary_culture = Kitsune_Girl
+			factor = 2
+		}
+		modifier = {
+	        ruler_culture = Kitsune_Girl
+			factor = 2
+		}
+		modifier = {
+	        consort_culture = Feral_Kitsune
+			factor = 2
+		}
+		modifier = {
+	        dominant_culture = Feral_Kitsune
+			factor = 2
+		}
+		modifier = {
+	        heir_culture = Feral_Kitsune
+			factor = 2
+		}
+		modifier = {
+	        primary_culture = Feral_Kitsune
+			factor = 2
+		}
+		modifier = {
+	        ruler_culture = Feral_Kitsune
+			factor = 2
+		}
+		modifier = {
+	        consort_culture = Dream_Fox
+			factor = 2
+		}
+		modifier = {
+	        dominant_culture = Dream_Fox
+			factor = 2
+		}
+		modifier = {
+	        heir_culture = Dream_Fox
+			factor = 2
+		}
+		modifier = {
+	        primary_culture = Dream_Fox
+			factor = 2
+		}
+		modifier = {
+	        ruler_culture = Dream_Fox
+			factor = 2
+		}
+		modifier = {
+	        personality = ai_capitalist
+			factor = 2
+		}
+		modifier = {
+			inflation = 5
+			factor = 2
+		}
+	}
+}
+snake_shrines = {
+	morale_damage = 0.10
+	infantry_shock = 0.25
+	allow = {
+		religion = yamatai_religion
+	}
+	sprite = 21
+	ai_will_do = {
+		factor = 1
+		modifier = {
+	        culture_group = lamia
+			factor = 2
+		}
+		modifier = {
+	        consort_culture = Yamatai_Lamia
+			factor = 2
+		}
+		modifier = {
+	        dominant_culture = Yamatai_Lamia
+			factor = 2
+		}
+		modifier = {
+	        heir_culture = Yamatai_Lamia
+			factor = 2
+		}
+		modifier = {
+	        primary_culture = Yamatai_Lamia
+			factor = 2
+		}
+		modifier = {
+	        ruler_culture = Yamatai_Lamia
+			factor = 2
+		}
+		modifier = {
+	        personality = ai_militarist
+			factor = 2
+		}
+	}
+}
+ilias_shrines = {
+	stability_cost_modifier = -0.20
+	global_tax_modifier = 0.15
+	allow = {
+		religion = yamatai_religion
+		OR = {
+			any_owned_province = {
+				OR = {
+					religion_group = ilias_religion_g
+					any_neighbor_province = {
+						religion_group = ilias_religion_g
+					}
+				}
+			}			
+			any_neighbor_country = {
+				religion_group = ilias_religion_g
+			}
+		}
+	}
+	sprite = 22
+	ai_will_do = {
+		factor = 1
+		modifier = {
+	        culture_group = angel
+			factor = 5
+		}
+		modifier = {
+	        heir_religion = ilias_light_religion
+			factor = 5
+		}
+		modifier = {
+	        heir_religion = angel_world_religion
+			factor = 5
+		}
+		modifier = {
+	        dominant_religion = ilias_light_religion
+			factor = 5
+		}
+		modifier = {
+	        dominant_religion = angel_world_religion
+			factor = 5
+		}
+		modifier = {
+	        consort_religion = ilias_light_religion
+			factor = 5
+		}
+		modifier = {
+	        consort_religion = angel_world_religion
+			factor = 5
+		}
+		modifier = {
+	        ruler_religion = ilias_light_religion
+			factor = 5
+		}
+		modifier = {
+	        ruler_religion = angel_world_religion
+			factor = 5
+		}
+		modifier = {
+	        personality = ai_capitalist
+			factor = 2
+		}
+	}
+}
+monster_lord_shrines = {
+	fire_damage = 0.05
+	infantry_fire = 0.15
+	artillery_fire = 0.15
+	allow = {
+		religion = yamatai_religion
+		OR = {
+			any_owned_province = {
+				OR = {
+					religion_group = monster_religion_g
+					any_neighbor_province = {
+						religion_group = monster_religion_g
+					}
+				}
+			}			
+			any_neighbor_country = {
+				religion_group = monster_religion_g
+			}
+		}
+	}
+	sprite = 23
+	ai_will_do = {
+		factor = 1
+		modifier = {
+	        culture_group = yoma
+			factor = 5
+		}
+		modifier = {
+	        heir_religion = monster_lord_religion
+			factor = 5
+		}
+		modifier = {
+	        heir_religion = dark_goddess_religion
+			factor = 5
+		}
+		modifier = {
+	        dominant_religion = monster_lord_religion
+			factor = 5
+		}
+		modifier = {
+	        dominant_religion = dark_goddess_religion
+			factor = 5
+		}
+		modifier = {
+	        consort_religion = monster_lord_religion
+			factor = 5
+		}
+		modifier = {
+	        consort_religion = dark_goddess_religion
+			factor = 5
+		}
+		modifier = {
+	        ruler_religion = monster_lord_religion
+			factor = 5
+		}
+		modifier = {
+	        ruler_religion = dark_goddess_religion
+			factor = 5
+		}
+		modifier = {
+	        personality = ai_militarist
+			factor = 2
+		}
+	}
+}
+chaos_shrines = {
+	artillery_fire = 1
+	all_power_cost = -0.05
+	allow = {
+		religion = yamatai_religion
+		OR = {
+			any_owned_province = {
+				OR = {
+					religion_group = chaos_religion_g
+					any_neighbor_province = {
+						religion_group = chaos_religion_g
+					}
+				}
+			}			
+			any_neighbor_country = {
+				religion_group = chaos_religion_g
+			}
+		}
+	}
+	sprite = 24
+	ai_will_do = {
+		factor = 1
+		modifier = {
+	        culture_group = apoptosis
+			factor = 5
+		}
+		modifier = {
+	        heir_religion = chaos_religion
+			factor = 5
+		}
+		modifier = {
+	        dominant_religion = chaos_religion
+			factor = 5
+		}
+		modifier = {
+	        consort_religion = chaos_religion
+			factor = 5
+		}
+		modifier = {
+	        ruler_religion = chaos_religion
+			factor = 5
+		}
+		modifier = {
+	        personality = ai_militarist
+			factor = 2
+		}
+	}
+}
+sylph_shrines = {
+	movement_speed = 0.10
+	development_cost =-0.05
+	allow = {
+		religion = yamatai_religion
+		OR = {
+			any_owned_province = {
+				OR = {
+					religion = wind_religion 
+					any_neighbor_province = {
+						religion = wind_religion 
+					}
+				}
+			}			
+			any_neighbor_country = {
+				religion = wind_religion 
+			}
+		}
+	}
+	sprite = 25
+	ai_will_do = {
+		factor = 1
+		modifier = {
+	        culture_group = harpy
+			factor = 5
+		}
+		modifier = {
+	        heir_religion = wind_religion
+			factor = 5
+		}
+		modifier = {
+	        dominant_religion = wind_religion
+			factor = 5
+		}
+		modifier = {
+	        consort_religion = wind_religion
+			factor = 5
+		}
+		modifier = {
+	        ruler_religion = wind_religion
+			factor = 5
+		}
+		modifier = {
+	        personality = ai_diplomat
+			factor = 2
+		}
+	}
+}
+gnome_shrines = {
+	shock_damage_received = -0.10
+	development_cost =-0.05
+	allow = {
+		religion = yamatai_religion
+		OR = {
+			any_owned_province = {
+				OR = {
+					religion = earth_religion 
+					any_neighbor_province = {
+						religion = earth_religion 
+					}
+				}
+			}			
+			any_neighbor_country = {
+				religion = earth_religion 
+			}
+		}
+	}
+	sprite = 26
+	ai_will_do = {
+		factor = 1
+		modifier = {
+	        culture_group = doll
+			factor = 5
+		}
+		modifier = {
+	        heir_religion = earth_religion
+			factor = 5
+		}
+		modifier = {
+	        dominant_religion = earth_religion
+			factor = 5
+		}
+		modifier = {
+	        consort_religion = earth_religion
+			factor = 5
+		}
+		modifier = {
+	        ruler_religion = earth_religion
+			factor = 5
+		}
+		modifier = {
+	        personality = ai_balanced
+			factor = 2
+		}
+	}
+}
+undine_shrines = {
+	fire_damage_received = -0.10
+	development_cost =-0.05
+	allow = {
+		religion = yamatai_religion
+		OR = {
+			any_owned_province = {
+				OR = {
+					religion = water_religion 
+					any_neighbor_province = {
+						religion = water_religion 
+					}
+				}
+			}			
+			any_neighbor_country = {
+				religion = water_religion 
+			}
+		}
+	}
+	sprite = 27
+	ai_will_do = {
+		factor = 1
+		modifier = {
+	        culture_group = slime
+			factor = 5
+		}
+		modifier = {
+	        heir_religion = water_religion
+			factor = 5
+		}
+		modifier = {
+	        dominant_religion = water_religion
+			factor = 5
+		}
+		modifier = {
+	        consort_religion = water_religion
+			factor = 5
+		}
+		modifier = {
+	        ruler_religion = water_religion
+			factor = 5
+		}
+		modifier = {
+	        personality = ai_capitalist
+			factor = 2
+		}
+	}
+}
+salamander_shrines = {
+	fire_damage = 0.10
+	development_cost =-0.05
+	allow = {
+		religion = yamatai_religion
+		OR = {
+			any_owned_province = {
+				OR = {
+					religion = fire_religion 
+					any_neighbor_province = {
+						religion = fire_religion 
+					}
+				}
+			}			
+			any_neighbor_country = {
+				religion = fire_religion 
+			}
+		}
+	}
+	sprite = 28
+	ai_will_do = {
+		factor = 1
+		modifier = {
+	        culture_group = dragon
+			factor = 5
+		}
+		modifier = {
+	        heir_religion = fire_religion
+			factor = 5
+		}
+		modifier = {
+	        dominant_religion = fire_religion
+			factor = 5
+		}
+		modifier = {
+	        consort_religion = fire_religion
+			factor = 5
+		}
+		modifier = {
+	        ruler_religion = fire_religion
+			factor = 5
+		}
+		modifier = {
+	        personality = ai_militarist
+			factor = 2
+		}
+	}
+}
+science_shrines = {
+	all_power_cost = -0.05
+	yearly_innovativeness = 0.5
+	allow = {
+		religion = yamatai_religion
+		OR = {
+			any_owned_province = {
+				OR = {
+					religion_group = science_religion_g 
+					any_neighbor_province = {
+						religion_group = science_religion_g 
+					}
+				}
+			}			
+			any_neighbor_country = {
+				religion_group = science_religion_g 
+			}
+		}
+	}
+	sprite = 29
+	ai_will_do = {
+		factor = 1
+		modifier = {
+	        culture_group = roid
+			factor = 5
+		}
+		modifier = {
+	        heir_religion = seekers_of_truth_religion
+			factor = 5
+		}
+		modifier = {
+	        dominant_religion = seekers_of_truth_religion
+			factor = 5
+		}
+		modifier = {
+	        consort_religion = seekers_of_truth_religion
+			factor = 5
+		}
+		modifier = {
+	        ruler_religion = seekers_of_truth_religion
+			factor = 5
+		}
+		modifier = {
+	        personality = ai_balanced
+			factor = 2
+		}
+	}
+}
+rat_shrines = {
+	prestige = -1
+	land_attrition = -0.33
+	hostile_attrition = 2
+	allow = {
+		religion = yamatai_religion
+	}
+	sprite = 30
+	ai_will_do = {
+		factor = 1
+		modifier = {
+	        accepted_culture = Rat_Girl
+			factor = 5
+		}
+		modifier = {
+	        consort_culture = Rat_Girl
+			factor = 5
+		}
+		modifier = {
+	        dominant_culture = Rat_Girl
+			factor = 5
+		}
+		modifier = {
+	        heir_culture = Rat_Girl
+			factor = 5
+		}
+		modifier = {
+	        primary_culture = Rat_Girl
+			factor = 5
+		}
+		modifier = {
+	        ruler_culture = Rat_Girl
+			factor = 5
+		}
+		modifier = {
+	        personality = ai_balanced
+			factor = 2
+		}
+		modifier = {
+			NOT = { manpower_percentage = 0.25}
+			factor = 5
+		}
+		modifier = {
+			NOT = { manpower_percentage = 0.10}
+			factor = 5
+		}
+	}
+}
+
+kirin_shrines = {
+	shock_damage = 0.20
+	morale_damage_received = -0.10
+	allow = {
+		religion = yamatai_religion
+		OR = {
+			any_owned_province = {
+				OR = {
+					culture_group = dragon
+					any_neighbor_province = {
+						culture_group = dragon
+					}
+				}
+			}			
+			any_neighbor_country = {
+				culture_group = dragon
+			}
+		}
+	}
+	sprite = 31
+	ai_will_do = {
+		factor = 1
+		modifier = {
+	        culture_group = dragon
+			factor = 2
+		}
+		modifier = {
+	        consort_culture = Kirin_Girl
+			factor = 2
+		}
+		modifier = {
+	        dominant_culture = Kirin_Girl
+			factor = 2
+		}
+		modifier = {
+	        heir_culture = Kirin_Girl
+			factor = 2
+		}
+		modifier = {
+	        primary_culture = Kirin_Girl
+			factor = 2
+		}
+		modifier = {
+	        ruler_culture = Kirin_Girl
+			factor = 2
+		}
+		modifier = {
+	        personality = ai_militarist
+			factor = 2
+		}
+	}
+}
+amaterasu_shrines = {
+	military_tactics = 0.15
+	leader_land_shock = 1
+	max_general_shock = 1
+	allow = {
+		religion = yamatai_religion
+		OR = {
+			AND = {
+				NOT = { manpower_percentage = 0.25}
+				war_exhaustion = 5
+				coalition_target = ROOT
+			}
+			AND = {
+				NOT = { manpower_percentage = 0.05}
+				war_exhaustion = 10
+			}
+			
+		}
+	}
+	sprite = 32
+	ai_will_do = {
+		factor = 1
+		modifier = {
+	        personality = ai_militarist
+			factor = 2
+		}
+	}
+}
+izanami_shrines = {
+	manpower_recovery_speed = 1
+	land_morale = -0.15
+	ae_impact = 0.15
+	allow = {
+		religion = yamatai_religion
+		OR = {
+			AND = {
+				NOT = { manpower_percentage = 0.25}
+				war_exhaustion = 5
+				coalition_target = ROOT
+			}
+			AND = {
+				NOT = { manpower_percentage = 0.05}
+				war_exhaustion = 10
+			}
+			
+		}
+	}
+	sprite = 33
+	ai_will_do = {
+		factor = 1
+		modifier = {
+	        personality = ai_militarist
+			factor = 2
+		}
+	}
+}

@@ -1,0 +1,12 @@
+# T23 Offensive fire unit 21 pip total
+
+type = infantry
+unit_type = TECH_HUMAN
+
+maneuver = 1
+offensive_morale = 3
+defensive_morale = 4
+offensive_fire = 5
+defensive_fire = 5
+offensive_shock = 2
+defensive_shock = 2

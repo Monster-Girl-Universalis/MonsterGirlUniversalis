@@ -1,0 +1,240 @@
+# For Government Reforms to identify properly influence and loyalty modifiers, remember to put disqualifying triggers before the has_reform
+
+estate_monster_girls = {
+	icon = 16
+	# Used for when declaring independence
+	independence_tech_group = TECH_YOUMA
+	province_independence_weight = {
+		factor = 1
+		modifier = {
+			factor = 2
+			religion = monster_lord_religion
+		}
+		modifier = {
+			factor = 2
+			religion = dark_goddess_religion
+		}
+		modifier = {
+			factor = 2
+			culture_group = land_dweller 
+		}
+		modifier = {
+			factor = 2
+			culture_group = undead
+		}
+		modifier = {
+			factor = 2
+			culture_group = apoptosis
+		}
+		modifier = {
+			factor = 2
+			culture_group = alraune
+		}
+		modifier = {
+			factor = 2
+			culture_group = beast
+		}
+		modifier = {
+			factor = 2
+			culture_group = succubi
+		}
+		modifier = {
+			factor = 2
+			culture_group = slime
+		}
+		modifier = {
+			factor = 2
+			culture_group = harpy
+		}
+		modifier = {
+			factor = 2
+			culture_group = elf
+		}
+		modifier = {
+			factor = 2
+			culture_group = dragon
+		}
+		modifier = {
+			factor = 2
+			culture_group = doll
+		}
+		modifier = {
+			factor = 2
+			culture_group = demi_human
+		}
+		modifier = {
+			factor = 2
+			culture_group = vampire
+		}
+		modifier = {
+			factor = 2
+			culture_group = yoma
+		}
+		modifier = {
+			factor = 2
+			culture_group = sea_dweller
+		}
+		modifier = {
+			factor = 2
+			culture_group = mermaid
+		}
+		modifier = {
+			factor = 2
+			culture_group = kitsune
+		}
+		modifier = {
+			factor = 2
+			culture_group = scylla
+		}
+		modifier = {
+			factor = 2
+			culture_group = lamia
+		}
+		modifier = {
+			factor = 2
+			culture_group = chimera
+		}
+		modifier = {
+			factor = 2
+			culture_group = roid
+		}
+		modifier = {
+			factor = 2
+			culture_group = tanuki
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { development = 10 }
+		}
+		modifier = {
+			factor = 0.75
+			development = 15
+		}
+		modifier = {
+			factor = 0.75
+			development = 20
+		}
+	}
+
+
+	# If true, country will get estate
+	trigger = {
+					OR = {
+						unit_type = TECH_HUMAN
+						unit_type = TECH_APOPTOSIS
+						unit_type = TECH_UNDEAD
+						unit_type = TECH_LAND_DWELLER
+						unit_type = TECH_ALRAUNE
+						unit_type = TECH_BEAST
+						unit_type = TECH_HARPY
+						unit_type = TECH_SUCCUBI
+						unit_type = TECH_SLIME
+						unit_type = TECH_ELF
+						unit_type = TECH_INSECT
+						unit_type = TECH_DRAGON
+						unit_type = TECH_DEMI_HUMAN
+						unit_type = TECH_DOLL
+						# unit_type = TECH_ANGEL
+						unit_type = TECH_YOUMA
+						unit_type = TECH_MERMAID
+						unit_type = TECH_SEA_DWELLER
+						unit_type = TECH_VAMPIRE
+						unit_type = TECH_LAMIA
+						unit_type = TECH_SCYLLA
+						unit_type = TECH_CHIMERA
+						unit_type = TECH_KITSUNE
+						unit_type = TECH_ROID
+						unit_type = TECH_TANUKI
+
+					}
+	}
+
+	# These scale with loyalty & power
+	country_modifier_happy = {
+		improve_relation_modifier = 0.3
+		heir_chance = 2.5
+		female_advisor_chance = 1
+	}
+	country_modifier_neutral = {	
+		heir_chance = 1
+	}	
+	country_modifier_angry = {
+		improve_relation_modifier = -0.3
+		manpower_recovery_speed = -0.3
+		global_unrest = 3
+	}
+	land_ownership_modifier = {
+		monster_girls_loyalty_modifier = 0.2
+	}
+	
+
+	# Influence modifiers
+	base_influence = 10
+	influence_modifier = {
+		desc = EST_VAL_OTHER_ESTATE_IN_POWER
+		trigger = {
+			OR = {
+				has_disaster = estate_nobility_disaster
+				has_disaster = estate_church_disaster
+				has_disaster = estate_burghers_disaster
+				has_disaster = estate_brahmins_disaster
+				has_disaster = estate_vaisyas_disaster
+				has_disaster = estate_jains_disaster
+
+			}
+		}
+		influence = -40
+	}
+	
+	#Loyalty Modifiers
+	loyalty_modifier = {
+		desc = EST_VAL_OTHER_ESTATE_IN_POWER_LOY
+		trigger = {
+			OR = {
+				has_disaster = estate_nobility_disaster
+				has_disaster = estate_church_disaster
+				has_disaster = estate_burghers_disaster
+				has_disaster = estate_brahmins_disaster
+				has_disaster = estate_vaisyas_disaster
+				has_disaster = estate_jains_disaster
+
+			}
+		}
+		loyalty = -20
+	}
+
+	privileges = {
+		estate_monster_girls_land_rights
+		estate_autonomy_of_monster_girls
+		estate_harpy_girls_in_army 
+		estate_alraune_healing_honey 
+		estate_slime_girls_merchants 
+		estate_open_mermaid_pubs 
+		estate_open_vampire_pubs 
+		estate_elven_warfare_standards 
+		estate_yoma_warfare_standards 
+		estate_weaponized_spooky_scary_ghosts 
+		estate_invite_kitsune_sages 
+		estate_encourage_succubi_to_settle 
+		estate_insect_girl_swarms 
+		estate_primacy_of_lamia_nuns 
+		estate_scylla_maids_in_administration 
+		estate_beasts_in_military  
+		estate_seahorse_marines_in_navy
+	}
+
+	agendas = {
+		estate_monster_girls_three_privileges
+		estate_monster_girls_develop_x
+		estate_monster_girls_slimes_want_trade
+		estate_monster_girls_vampires_want_wealth
+		estate_monster_girls_mermaids_access_sea
+		estate_monster_girls_yoma_require_resources
+		estate_monster_girls_build_manufactory_in_y
+		estate_monster_girls_succubi_want_partners
+	}
+
+	color = { 127 84 176 }
+	
+	influence_from_dev_modifier = 1.0
+}

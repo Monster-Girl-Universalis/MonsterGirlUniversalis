@@ -1,0 +1,18 @@
+is_city = no
+discovered_by = TECH_ANGEL
+add_core = IT1
+discovered_by = AR3
+discovered_by = HR1
+owner = IT1
+base_tax = 4
+base_manpower = 6
+base_production = 6
+culture = Angel_Apoptosis
+religion = ilias_light_religion
+controller = IT1
+trade_goods = iron
+latent_trade_goods = { 
+	coal 
+}
+fort_15th = yes
+center_of_trade = 2

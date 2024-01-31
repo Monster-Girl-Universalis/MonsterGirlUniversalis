@@ -1,0 +1,19 @@
+government = monarchy
+government_rank = 1
+primary_culture = Doll_Girl
+add_government_reform = Doll_realm
+religion = monster_lord_religion
+technology_group = TECH_DOLL
+1444.1.1 = { 
+	monarch = { 
+		name = "Banachi"
+		dynasty = "the Doll"
+		birth_date = 1424.1.1
+		adm = 3
+		dip = 4
+		mil = 3
+		female = yes
+	}
+}
+capital = 691
+add_government_reform = Doll_realm

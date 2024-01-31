@@ -1,0 +1,345 @@
+kitsune_internal_development = {
+
+	slot = 1
+	generic = yes
+	ai = yes
+	
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		culture_group = kitsune #kitsune 
+		NOT = { 
+			OR = {
+				
+			}
+		}
+	}
+	
+	has_country_shield = yes
+	
+	gen_kitsune_internal_stability = {
+		icon = mission_early_game_buildings
+		required_missions = { }
+		position = 1
+		
+		trigger = {
+			stability = 1
+			capital_scope = {
+				development = 15
+			}
+		}
+		
+		effect = {
+			add_adm_power = 50
+			add_dip_power = 50
+			add_mil_power = 50
+		}
+	}
+	
+	gen_kitsune_thin_fried_tofu_production = {
+		icon = mission_kitsune_thin_fried_tofu_production
+		required_missions = { gen_kitsune_internal_stability }
+		position = 2
+		
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 5
+				base_production = 6
+			}
+		}
+		effect = {
+			random_owned_province = {
+				limit = {
+					base_production = 6 
+					NOT = { has_province_modifier = gen_kitsune_thin_fried_tofu_production }
+				}
+				add_province_modifier = {
+					name = "gen_kitsune_thin_fried_tofu_production"
+					duration = -1
+				}
+			}
+			random_owned_province = {
+				limit = {
+					base_production = 6 
+					NOT = { has_province_modifier = gen_kitsune_thin_fried_tofu_production }
+				}
+				add_province_modifier = {
+					name = "gen_kitsune_thin_fried_tofu_production"
+					duration = -1
+				}
+			}
+			random_owned_province = {
+				limit = {
+					base_production = 6 
+					NOT = { has_province_modifier = gen_kitsune_thin_fried_tofu_production }
+				}
+				add_province_modifier = {
+					name = "gen_kitsune_thin_fried_tofu_production"
+					duration = -1
+				}
+			}
+			random_owned_province = {
+				limit = {
+					base_production = 6 
+					NOT = { has_province_modifier = gen_kitsune_thin_fried_tofu_production }
+				}
+				add_province_modifier = {
+					name = "gen_kitsune_thin_fried_tofu_production"
+					duration = -1
+				}
+			}
+			random_owned_province = {
+				limit = {
+					base_production = 6 
+					NOT = { has_province_modifier = gen_kitsune_thin_fried_tofu_production }
+				}
+				add_province_modifier = {
+					name = "gen_kitsune_thin_fried_tofu_production"
+					duration = -1
+				}
+			}
+		}
+	}
+
+	gen_fund_kitsune_sages = {
+		icon = mission_fund_kitsune_sages
+		required_missions = { gen_kitsune_thin_fried_tofu_production }
+		position = 3
+		
+		
+		trigger = {
+			treasury = 400
+			has_estate_privilege = estate_invite_kitsune_sages
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "gen_kitsune_funded_sages"
+				duration = -1
+			}	
+			add_treasury = -400	
+		}
+	}
+
+	gen_kitsune_secure_food_production = {
+		icon = mission_secure_food_production
+		required_missions = { gen_fund_kitsune_sages }
+		position = 4
+		
+		
+		trigger = {
+			grain = 1
+			fish = 1
+			spices = 1
+			wine = 1
+			num_of_owned_provinces_with = {
+				has_production_building_trigger = yes
+				value = 15
+			}
+			calc_true_if = {
+				all_owned_province = {
+					OR = {
+						has_building = mills
+						has_building = farm_estate
+						has_building = tradecompany
+						has_building = plantations
+					}
+				}
+				amount = 5
+			}
+		}
+		
+		effect = {
+			random_owned_province = {
+				limit = { trade_goods = grain }
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+				add_province_modifier = {
+					name = "gen_kitsune_food_production_boom"
+					duration = 9125 #25 years
+				}
+			}
+			random_owned_province = {
+				limit = { trade_goods = fish }
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+				add_province_modifier = {
+					name = "gen_kitsune_food_production_boom"
+					duration = 9125 #25 years
+				}
+			}
+				random_owned_province = {
+				limit = { trade_goods = spices }
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+				add_province_modifier = {
+					name = "gen_kitsune_food_production_boom"
+					duration = 9125 #25 years
+				}
+			}
+			random_owned_province = {
+				limit = { trade_goods = wine }
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+				add_province_modifier = {
+					name = "gen_kitsune_food_production_boom"
+					duration = 9125 #25 years
+				}
+			}
+		}
+	}
+
+	gen_kitsune_prosperous_realm = {
+		icon = mission_early_modern_university
+		required_missions = { gen_kitsune_secure_food_production }
+		position = 5
+		
+		
+		trigger = {
+			share_of_starting_income = 15
+			calc_true_if = {
+				all_owned_province = {
+					OR = {
+						has_building = mills
+						has_building = farm_estate
+						has_building = tradecompany
+						has_building = plantations
+						has_building = textile
+						has_building = weapons
+						has_building = wharf
+						has_building = furnace
+					}
+				}
+				amount = 20
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "gen_kitsune_prosperous_realm"
+				duration = 9125 #25 years
+			}	
+			add_years_of_income = 2.5	
+		}
+	}
+	
+}
+kitsune_trade_expansion = {
+
+	slot = 5
+	generic = yes
+	ai = yes
+	
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		culture_group = kitsune #kitsune 
+		NOT = { 
+			OR = {
+				
+			}
+		}
+	}
+	
+	has_country_shield = yes
+	
+	gen_kitsune_assemble_taoist_warriors = {
+		icon = mission_kitsune_assemble_taoist_warriors
+		required_missions = { }
+		position = 1
+		
+		trigger = {
+			army_professionalism = 0.075
+			army_size_percentage = 0.90
+		}
+		
+		effect = {
+			add_army_tradition = 20
+			add_mil_power = 40
+		}
+	}
+	
+
+	gen_kitsune_expand_our_realm = {
+		icon = mission_conquer_50_development
+		required_missions = { gen_kitsune_assemble_taoist_warriors }
+		position = 2
+		
+		trigger = {
+			grown_by_development = 250
+
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "gen_kitsune_expand_our_realm"
+				duration = 9125 #25 years
+			}	
+			add_prestige = 10
+		}
+	}
+
+	
+	gen_kitsune_establish_trade_companies = {
+		icon = mission_colonial
+		required_missions = { gen_kitsune_expand_our_realm }
+		position = 3
+
+		trigger = {
+			OR = {
+				num_of_strong_trade_companies = 2
+				num_of_merchants = 4
+			}
+		}
+		
+		effect = {
+			add_years_of_income = 0.50
+			add_mercantilism = 5
+		}
+	}
+	gen_powerful_kitsune_ruler = {
+		icon = mission_powerful_kitsune_ruler
+		required_missions = { gen_kitsune_establish_trade_companies }
+		position = 4
+		
+		trigger = {
+			monthly_adm = 10
+			monthly_dip = 10
+			monthly_mil = 10
+			grown_by_development = 750
+			legitimacy_equivalent = 90
+		}
+		
+		effect = {
+
+			change_government_reform_progress = 50
+			add_prestige = 20
+		}
+	}
+	gen_kitsune_nine_tailed_ambitions = {
+		icon = mission_kitsune_nine_tailed_ambitions
+		required_missions = { gen_powerful_kitsune_ruler }
+		position = 5
+		
+		trigger = {
+			monthly_adm = 12
+			monthly_dip = 12
+			monthly_mil = 12
+			government_rank = 2
+			army_tradition = 50
+			army_size = 150
+			legitimacy_equivalent = 100
+			is_bankrupt = no
+		}
+		
+		effect = {
+			add_prestige = 50
+			add_adm_power = 50
+			add_dip_power = 50
+			add_mil_power = 50
+		}
+	}
+	
+}

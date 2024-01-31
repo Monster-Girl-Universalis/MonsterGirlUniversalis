@@ -1,0 +1,24 @@
+bookmark =
+{
+	name = "MGQ_ILIAS"
+	desc = "MGQ_ILIAS_DESC"
+	date = 1444.11.11
+	
+	center = 41
+
+	country = ENV
+	country = ILB
+	country = HRT
+	country = SLT
+	country = WLR
+	country = IMR
+	country = SLR
+	country = RMA
+	country = SLU
+	
+	easy_country = ENV
+	easy_country = ILB
+	easy_country = HRT
+	easy_country = SLT
+	
+}

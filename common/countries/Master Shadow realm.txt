@@ -1,0 +1,127 @@
+graphical_culture = asiangfx
+color = { 133 63 89 }
+revolutionary_colors = { 2 3 4 }
+random_nation_chance = 0
+historical_score = 500
+historical_idea_groups = { 
+	religious_ideas economic_ideas quantity_ideas administrative_ideas diplomatic_ideas offensive_ideas humanist_ideas influence_ideas 
+}
+historical_units = { 
+	infantry_und_t1_01 infantry_und_t5_01 infantry_und_t10_01 infantry_und_t13_01 infantry_und_t16_01 infantry_und_t19_01 infantry_und_t23_01 infantry_und_t26_01 
+}
+monarch_names = { 
+	"Motohito #0" = 5
+	"Mihito #0" = 5
+	"Hikohito #0" = 5
+	"Fusahito #0" = 5
+	"Katsuhito #0" = 5
+	"Tomohito #0" = 5
+	"Michihito #0" = 5
+	"Kazuhito #0" = 5
+	"Kotohito #0" = 5
+	"Tsuguhito #0" = 5
+	"Nagahito #0" = 5
+	"Satohito #0" = 5
+	"Asahito #0" = 5
+	"Yasuhito #0" = 5
+	"Teruhito #0" = 5
+	"Hidehito #0" = 5
+	"Morohito #0" = 5
+	"Ayahito #0" = 5
+	"Takauji #0" = 5
+	"Yoshiakira #0" = 5
+	"Yoshimitsu #0" = 5
+	"Yoshimochi #0" = 5
+	"Yoshikazu #0" = 5
+	"Yoshinori #0" = 5
+	"Yoshikatsu #0" = 5
+	"Yoshimasa #0" = 5
+	"Yoshihisa #0" = 5
+	"Yoshitane #0" = 5
+	"Yoshizumi #0" = 5
+	"Yoshiharu #0" = 5
+	"Yoshiteru #0" = 5
+	"Yoshihide #0" = 5
+	"Yoshiaki #0" = 5
+	"Nobutada #0" = 5
+	"Hidenobu #0" = 5
+	"Hideyoshi #0" = 5
+	"Hideyori #0" = 5
+	"Ieyasu #0" = 5
+	"Hidetada #0" = 5
+	"Iemitsu #0" = 5
+	"Ietsuna #0" = 5
+	"Tsunayoshi #0" = 5
+	"Ienobu #0" = 5
+	"Ietsugu #0" = 5
+	"Yoshimune #0" = 5
+	"Ieshige #0" = 5
+	"Ieharu #0" = 5
+	"Ienari #0" = 5
+	"Ieyoshi #0" = 5
+	"Iesada #0" = 5
+	"Iemochi #0" = 5
+	"Yoshinobu #0" = 5
+	"Chrome #0" = -20
+	"Frederica #0" = -20
+	"Minelli #0" = -20
+	"Lisa #0" = -20
+	"Esmeralda #0" = -20
+	"Selene #0" = -20
+	"Nina #0" = -20
+	"Louise #0" = -20
+	"Lucia #0" = -20
+	"Lily #0" = -20
+	"Melissa #0" = -20
+	"Ophelia #0" = -20
+	"Sara #0" = -20
+	"Satsuki #0" = -20
+	"Natsuki #0" = -20
+	"Selene #0" = -20
+	"Stella #0" = -20
+	"Sonya #0" = -20
+	"Shoki #0" = -20
+	"Anna #0" = -20
+	"Teresa #0" = -20
+	"Julia #0" = -20
+	"Janette #0" = -20
+	"Yvette #0" = -20
+	"Elisabeth #0" = -20
+	"Shadow #0" = -20
+	"Sakura #0" = -20
+	"Elissa #0" = -20
+	"Claudia #0" = -20
+	"Lucretia #0" = -20
+}
+leader_names = { 
+	Deathwhisper Gravecaller Bonechiller Shadowlurker Tombdancer Soulshriek Deathgaze Cryptkeeper Ghostwhisperer Deathsong
+	Soullessstare Shadowweaver Spectralaura Phantomsong Wraithmist Necrosoul Poltergeist Ethereality Shadeform Bansheemoan
+	Phantasmal Ghoulglow Elementalista 
+}
+ship_names = { 
+	Reaper Deathbloom Decayheart Necrosail Grimtide Decaywave Ghostgalleon Dreadship Decaydrift Ghost
+	Phantom Skeleton Spectral Mortalrift Phantomfate Gravecurrent Dyingtide Decaydrift Oblivionflow Reapercrest
+	Deathswirl Grimcurrent Wraith Zombie Haunted Necrotide Decayingwake Wraithwave Necrofury Thanatelle
+	Necrothorn Deathwhisper Necrobond Decaycrush Lifelesslagoon Mortuarymist Corpseride Cremationcruise Mortalmerger Decaydance
+	Virulence Plaguebearer Thanatos Decay Mortality Phantasma Nocturne Graveyard Necroskiff Lifegoner
+	Decayvoyager Deathcruiser Necronav Deathfuse Decaydream Corpsecraft Dreadcruiser Decaydancer Grimscythe Deathbloom
+	Necroglide Deathdancer Decaydelight Corpseclipper Corpse Banshee Apparition Shadow Revenant Grim
+	"Deathly Convergence" "Corpsefire Embrace" "Morbid Melding" "Phantasmal Union" "Ominous Embrace" "Melancholic Coupling" "Hallowed Conjunction" "Haunting Cruiser" "Deathly Alliance" "The Black Plague"
+	"Death's Shadow" "Dreadnought of the Damned" "Graveyard Galley" "The Bone Ship" "The Phantom Frigate" "Ghost Vessel" "Necrotic Cruiser" "Coffin Cutter" "Cursed Clipper" "Skeletal Schooner"
+	"Tombstone Transport" "Eerie Vessel" "Macabre Man-o'-War" "Grim Galleon" "Haunted Hulk" "Undead Hulk" "Spectral Raider" "Ghostly Galleon" "Shadowed Ship of Souls" "Phantom Frigate"
+	"Bone-chilling Battleship" Poltergeist Ghostship "Ship of the Damned" "Stygian Spectre" "Black Death Brig" "Soulless Schooner" "Crypt Cruiser" "Cursed Clipper" "Phantom Privateer"
+	"Rotting Raider" "Spirit Sloop" "Wight Warship" "Lich Launch" "Zombie Vessel" "Zombie Zephyr" "Deathless Dinghy" "Shadow Ship" "Blackened Brigantine" "Death's Jolly Roger"
+	"Ghost Galleon" "Soulless Schooner" "Phantasmal Vessel" "Necrotic Nautilus" "Cursed Caravel" "Rotting Raft" "Spectral Warship" "Haunted Hull" "Ghastly Galley" "Revenant Rigger"
+	"Macabre Merchantman" "Rotting Rowboat" "Phantom's Fury" "Haunted Horizon" "Spectral Sea Witch" "Shadowed Serpent" "Phantom Pirate" "Spirit Siren" "Eerie Enchantment" "Ethereal Mist"
+	"Phantom Pharaoh" "Ghost Ship Gargoyle" "Spectral Sailor" "Haunted High Seas" "Phantom's Plunder" "Ghostly Guardian" "Shadowed Schooner" "Apparition Vessel" "Ethereal Sloop" "Mystic Marauder"
+	"Mary Celeste" "Black Pearl" "Queen Selene's Revenge" "HMS Terror" "Spectral Seafarer" "Phantom Maiden" "Haunted Hesperus" "Dreadful Dame" "Poltergeist Princess" "Grim Maiden"
+	"Cursed Lady" "Banshee Belle" "Undead Vixen" "Skeleton Siren" "Deathly Damsel" "Phantom Pearl" "Ghostly Gale" "Spectral Serenade" "Phantom Phoenix" "Eerie Empress"
+	"Wraith Wave" "Phantom Princess" "Spirit Skiff" "Phantom's Pride" "Spectral Symphony" "Phantom's Promise" "Haunted Heart" "Ghostly Grace" "Phantom's Peril" "Spectral Sorceress"
+	"Wraith Wench" "Banshee's Fury" "Lady of the Lake" "Shapeshifting Sloop" "Mirage Ferry" 
+}
+army_names = { 
+	"Master Shadow Army" "$PROVINCE$ Army" 
+}
+fleet_names = { 
+	"Master Shadow Navy" "$PROVINCE$ Navy" 
+}

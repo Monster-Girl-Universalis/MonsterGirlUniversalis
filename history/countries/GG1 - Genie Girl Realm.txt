@@ -1,0 +1,18 @@
+government = monarchy
+government_rank = 1
+primary_culture = Genie_Girl
+add_government_reform = Yoma_realm
+religion = monster_lord_religion
+technology_group = TECH_YOUMA
+1444.1.1 = { 
+	monarch = { 
+		name = "Amara"
+		dynasty = "the Genie"
+		birth_date = 1424.1.1
+		adm = 4
+		dip = 4
+		mil = 4
+		female = yes
+	}
+}
+capital = 737

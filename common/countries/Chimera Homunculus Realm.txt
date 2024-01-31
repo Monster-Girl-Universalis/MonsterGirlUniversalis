@@ -1,0 +1,109 @@
+graphical_culture = asiangfx
+color = { 209 146 88 }
+revolutionary_colors = { 2 7 4 }
+random_nation_chance = 0
+historical_score = 500
+historical_idea_groups = { 
+	religious_ideas economic_ideas quantity_ideas administrative_ideas diplomatic_ideas offensive_ideas humanist_ideas influence_ideas 
+}
+historical_units = { 
+}
+monarch_names = { 
+	"Heinrich #0" = 5
+	"Lazarus #0" = 5
+	"Marcellus #0" = 5
+	"John #0" = 5
+	"Kazuya #0" = 5
+	"Kockyoin #0" = 5
+	"Jack #0" = 5
+	"Hans #0" = 5
+	"Lars #0" = 5
+	"Lauratt #0" = 5
+	"Merlin #0" = 5
+	"Samson #0" = 5
+	"Toru #0" = 5
+	"Pylate #0" = 5
+	"Lest #0" = 5
+	"Adrian #0" = 5
+	"Caleb #0" = 5
+	"Ethan #0" = 5
+	"Gabriel #0" = 5
+	"Isaac #0" = 5
+	"Julian #0" = 5
+	"Lucas #0" = 5
+	"Nathaniel #0" = 5
+	"Oliver #0" = 5
+	"Sebastian #0" = 5
+	"Alexander #0" = 5
+	"Christopher #0" = 5
+	"Daniel #0" = 5
+	"Elijah #0" = 5
+	"Gavin #0" = 5
+	"Henry #0" = 5
+	"Jonathan #0" = 5
+	"Liam #0" = 5
+	"Samuel #0" = 5
+	"Benjamin #0" = 5
+	"David #0" = 5
+	"Evan #0" = 5
+	"Jacob #0" = 5
+	"Gregory #0" = 5
+	"Isaiah #0" = 5
+	"Matthew #0" = 5
+	"Owen #0" = 5
+	"Ryan #0" = 5
+	"Thomas #0" = 5
+	"Damian #0" = 5
+	"Hector #0" = 5
+	"Maximilian #0" = 5
+	"Rafael #0" = 5
+	"Victor #0" = 5
+	"Xavier #0" = 5
+	"Fernando #0" = 5
+	"Nicolas #0" = 5
+	"Awawa #0" = -20
+	"Wrappy #0" = -20
+	"Spinny #0" = -20
+	"Flappy #0" = -20
+	"Reina #0" = -20
+	"Selene #0" = -20
+	"Nina #0" = -20
+	"Carol #0" = -20
+	"Odette #0" = -20
+	"Tsubasa #0" = -20
+	"Leene #0" = -20
+	"Sara #0" = -20
+	"Selene #0" = -20
+	"Stella #0" = -20
+	"Sonya #0" = -20
+	"Crowley #0" = -20
+	"Anna #0" = -20
+	"Teresa #0" = -20
+	"Julia #0" = -20
+	"Janette #0" = -20
+	"Yvette #0" = -20
+	"Elisabeth #0" = -20
+	"Elissa #0" = -20
+	"Claudia #0" = -20
+	"Lucretia #0" = -20
+	"Emeth #0" = -20
+	"Francesca #0" = -20
+	"Maiden #0" = -20
+	"Maiss #0" = -20
+	"Jillian #0" = -20
+}
+leader_names = { 
+	Emberheart Goldenscale Steelborne Kingsley Moonshadow Titanium Xalvador Zephyrblade Magitek Pulsesteel
+	Prototype Synthsteel Arcanotech Electroflux Pulsestrike Circuitblade Steelspark Autochaser Roboforge Technosurge
+	Mechaburst Marionette Mancatcher Puppeteer Mannequin Porcelain 
+}
+ship_names = { 
+	Puppeteer Marionette Gearwork Toybox Clockwork Dollmaker Stringer Collector Automaton Plaything
+	Machinist Porcelain Crankshaft Composer Jigsaw Miniaturist Mannequin Windup Inventor Reverie
+}
+army_names = { 
+	"Chimera Army" "$PROVINCE$ Army" 
+}
+fleet_names = { 
+	"Chimera Navy" "$PROVINCE$ Navy" 
+}

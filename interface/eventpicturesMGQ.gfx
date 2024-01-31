@@ -1,0 +1,202 @@
+spriteTypes = {
+	spriteType = {
+		name = "MONSTER_GIRLS_GOOD_eventPicture"
+		texturefile = "gfx/event_pictures/MONSTER_GIRLS_GOOD_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "MONSTER_GIRLS_BAD_eventPicture"
+		texturefile = "gfx/event_pictures/MONSTER_GIRLS_BAD_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "MONSTER_GIRLS_UPSET_eventPicture"
+		texturefile = "gfx/event_pictures/MONSTER_GIRLS_UPSET_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "ANGELS_GOOD_eventPicture"
+		texturefile = "gfx/event_pictures/ANGELS_GOOD_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "ANGELS_BAD_eventPicture"
+		texturefile = "gfx/event_pictures/ANGELS_BAD_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "SPIRITUALISTS_GOOD_eventPicture"
+		texturefile = "gfx/event_pictures/SPIRITUALISTS_GOOD_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "SPIRITUALISTS_BAD_eventPicture"
+		texturefile = "gfx/event_pictures/SPIRITUALISTS_BAD_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "CHAOS_RAMPAGE_eventPicture"
+		texturefile = "gfx/event_pictures/CHAOS_RAMPAGE_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "ILIAS_CONVERSATION_eventPicture"
+		texturefile = "gfx/event_pictures/ILIAS_CONVERSATION_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "HERO_REVELATION_eventPicture"
+		texturefile = "gfx/event_pictures/HERO_REVELATION_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "ILIAS_THINKING_eventPicture"
+		texturefile = "gfx/event_pictures/ILIAS_THINKING_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "PARTY_OF_HEROES_eventPicture"
+		texturefile = "gfx/event_pictures/PARTY_OF_HEROES_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "ILIAS_EVENT_eventPicture"
+		texturefile = "gfx/event_pictures/ILIAS_EVENT_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "ILIAS_CONVERSATION_eventPicture"
+		texturefile = "gfx/event_pictures/ILIAS_CONVERSATION_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "human_RACE_eventPicture"
+		texturefile = "gfx/event_pictures/human_RACE_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "land_dweller_RACE_eventPicture"
+		texturefile = "gfx/event_pictures/land_dweller_RACE_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "undead_RACE_eventPicture"
+		texturefile = "gfx/event_pictures/undead_RACE_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "succubi_RACE_eventPicture"
+		texturefile = "gfx/event_pictures/succubi_RACE_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "slime_RACE_eventPicture"
+		texturefile = "gfx/event_pictures/slime_RACE_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "harpy_RACE_eventPicture"
+		texturefile = "gfx/event_pictures/harpy_RACE_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "elf_RACE_eventPicture"
+		texturefile = "gfx/event_pictures/elf_RACE_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "insect_RACE_eventPicture"
+		texturefile = "gfx/event_pictures/insect_RACE_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "beast_RACE_eventPicture"
+		texturefile = "gfx/event_pictures/beast_RACE_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "alraune_RACE_eventPicture"
+		texturefile = "gfx/event_pictures/alraune_RACE_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "dragon_RACE_eventPicture"
+		texturefile = "gfx/event_pictures/dragon_RACE_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "demi_human_RACE_eventPicture"
+		texturefile = "gfx/event_pictures/demi_human_RACE_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "vampire_RACE_eventPicture"
+		texturefile = "gfx/event_pictures/vampire_RACE_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "yoma_RACE_eventPicture"
+		texturefile = "gfx/event_pictures/yoma_RACE_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "sea_dweller_RACE_eventPicture"
+		texturefile = "gfx/event_pictures/sea_dweller_RACE_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "mermaid_RACE_eventPicture"
+		texturefile = "gfx/event_pictures/mermaid_RACE_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "kitsune_RACE_eventPicture"
+		texturefile = "gfx/event_pictures/kitsune_RACE_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "scylla_RACE_eventPicture"
+		texturefile = "gfx/event_pictures/scylla_RACE_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "lamia_RACE_eventPicture"
+		texturefile = "gfx/event_pictures/lamia_RACE_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "doll_RACE_eventPicture"
+		texturefile = "gfx/event_pictures/doll_RACE_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "chimera_RACE_eventPicture"
+		texturefile = "gfx/event_pictures/chimera_RACE_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "angel_RACE_eventPicture"
+		texturefile = "gfx/event_pictures/angel_RACE_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "roid_RACE_eventPicture"
+		texturefile = "gfx/event_pictures/roid_RACE_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "tanuki_RACE_eventPicture"
+		texturefile = "gfx/event_pictures/tanuki_RACE_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "apoptosis_RACE_eventPicture"
+		texturefile = "gfx/event_pictures/apoptosis_RACE_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "AdminTower_eventPicture"
+		texturefile = "gfx/event_pictures/AdminTower_eventPicture.dds"
+		allwaystransparent = yes
+	}
+}

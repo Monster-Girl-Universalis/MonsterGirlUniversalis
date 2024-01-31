@@ -1,0 +1,16 @@
+monster_chiefdom_reform = {
+	lock_level_when_selected = yes
+	icon = "monster_chiefdom"
+	allow_normal_conversion = yes
+	monarchy = yes
+	heir = yes
+	queen = no
+	valid_for_nation_designer = yes
+	nation_designer_cost = 20
+
+	modifiers = {
+		tribal_development_growth = 0.03
+		governing_capacity = 150
+		block_introduce_heir = yes
+	}
+}

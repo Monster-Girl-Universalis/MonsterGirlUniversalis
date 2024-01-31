@@ -1,0 +1,264 @@
+mermaid_internal_development = {
+
+	slot = 1
+	generic = yes
+	ai = yes
+	
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		culture_group = mermaid #mermaid  
+		NOT = { 
+			OR = {
+				
+			}
+		}
+	}
+	
+	has_country_shield = yes
+		
+	gen_mermaid_diplomacy = {
+		icon = mission_alliances
+		required_missions = { }
+		position = 1
+		
+		trigger = {
+			num_of_allies = 1
+			any_rival_country = {				
+				has_spy_network_from = {
+					who = ROOT
+					value = 30
+				}
+			}
+		}
+		
+		effect = {
+			add_dip_power = 75
+			add_country_modifier = {
+				name = "gen_mermaid_diplomacy"
+				duration = 9125 #25 years
+			}
+		}
+	}
+	
+	gen_mermaid_build_trade_fleet = {
+		icon = mission_junk_boat
+		required_missions = { gen_mermaid_diplomacy }
+		position = 2
+		
+		trigger = {
+			num_of_light_ship = 20
+			advisor = trader
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "gen_mermaid_build_trade_fleet"
+				duration = 9125 #25 years
+			}
+		}
+	}
+
+	gen_mermaid_vibrant_economy = {
+		icon = mission_infrastructure_for_huge_population
+		required_missions = { gen_mermaid_build_trade_fleet }
+		position = 3
+		
+		
+		trigger = {
+			share_of_starting_income = 3
+			trade_income_percentage = 0.33
+		}
+		effect = {
+			add_country_modifier = {
+				name = "gen_mermaid_vibrant_economy"
+				duration = 9125 #25 years
+			}			
+		}
+	}
+
+	gen_mermaid_promote_the_manufactories = {
+		icon = mission_early_modern_university
+		required_missions = { gen_mermaid_vibrant_economy }
+		position = 4
+		
+		
+		trigger = {
+			share_of_starting_income = 10
+			calc_true_if = {
+				all_owned_province = {
+					OR = {
+						has_building = mills
+						has_building = farm_estate
+						has_building = tradecompany
+						has_building = plantations
+						has_building = textile
+						has_building = weapons
+						has_building = wharf
+						has_building = furnace
+					}
+				}
+				amount = 20
+			}
+		}
+		
+		effect = {
+			add_years_of_income = 2.5
+		}
+	}
+
+	gen_mermaid_monopoly_on_food = {
+		icon = mission_secure_food_production
+		required_missions = { gen_mermaid_promote_the_manufactories }
+		position = 5
+		trigger = {
+			OR = {
+				trading_bonus = {
+					trade_goods = spices
+					value = yes
+				}
+				trading_bonus = {
+					trade_goods = fish
+					value = yes
+				}
+				trading_bonus = {
+					trade_goods = grain
+					value = yes
+				}
+				trading_bonus = {
+					trade_goods = wine
+					value = yes
+				}
+			}
+		}
+		
+		effect = {
+			add_years_of_income = 1.5
+			add_country_modifier = {
+				name = "gen_mermaid_monopoly_on_food"
+				duration = -1
+			}
+		}
+	}
+	
+}
+mermaid_trade_expansion = {
+
+	slot = 5
+	generic = yes
+	ai = yes
+	
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		culture_group = mermaid  #mermaid 
+		NOT = { 
+			OR = {
+				
+			}
+		}
+	}
+	
+	has_country_shield = yes
+	
+	gen_mermaid_promote_mermaid_pubs = {
+		icon = mission_mermaid_promote_mermaid_pubs
+		required_missions = { }
+		position = 1
+		
+		trigger = {
+			estate_loyalty = {
+    				estate = estate_monster_girls
+    				loyalty = 60
+				}
+			has_estate_privilege = estate_open_mermaid_pubs
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "gen_mermaid_promote_mermaid_pubs"
+				duration = -1
+			}
+		}
+	}
+	
+	gen_mermaid_secure_naval_supplies = {
+		icon = mission_secure_naval_supplies
+		required_missions = { gen_mermaid_promote_mermaid_pubs }
+		position = 2
+		
+		trigger = {
+			naval_supplies = 2
+			iron = 1
+			advisor = treasurer
+			advisor = naval_reformer
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "gen_mermaid_secured_naval_supplies"
+				duration = 9125 #25 years
+			}	
+			add_yearly_sailors = 0.75	
+			add_mercantilism = 3
+		}
+	}
+	
+	gen_mermaid_establish_trade_companies = {
+		icon = mission_colonial
+		required_missions = { gen_mermaid_secure_naval_supplies }
+		position = 3
+
+		trigger = {
+			OR = {
+				num_of_strong_trade_companies = 2
+				num_of_merchants = 4
+			}
+		}
+		
+		effect = {
+			add_years_of_income = 0.50
+			add_mercantilism = 5
+		}
+	}
+	gen_powerful_mermaid_girl_ruler = {
+		icon = mission_powerful_mermaid_girl_ruler
+		required_missions = { gen_mermaid_establish_trade_companies }
+		position = 4
+		
+		trigger = {
+			monthly_adm = 10
+			monthly_dip = 10
+			monthly_mil = 10
+			grown_by_development = 750
+			legitimacy_equivalent = 90
+		}
+		
+		effect = {
+			add_years_of_income = 1.5
+			add_prestige = 30
+		}
+	}
+	gen_mermaid_royal_ambitions = {
+		icon = mission_mermaid_queen_challenger
+		required_missions = { gen_powerful_mermaid_girl_ruler }
+		position = 5
+		
+		trigger = {
+			monthly_adm = 12
+			monthly_dip = 12
+			monthly_mil = 12
+			government_rank = 2
+			army_tradition = 50
+			army_size = 150
+			legitimacy_equivalent = 100
+			is_bankrupt = no
+		}
+		
+		effect = {
+			add_prestige = 50
+			add_adm_power = 50
+			add_dip_power = 50
+			add_mil_power = 50
+		}
+	}
+	
+}

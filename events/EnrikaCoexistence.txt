@@ -1,0 +1,30 @@
+########################################
+# Confucianism Events
+#
+# Written by Henrik Lohmander
+########################################
+
+namespace = enrika_coexistence_events
+
+#New Faith Harmonization
+country_event = {
+	id = enrika_coexistence_events.1
+	title = "enrika_coexistence_events.1.t"
+	desc = "enrika_coexistence_events.1.d"
+	picture = NEO_CONFUCIANISM_INCIDENT_eventPicture
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			clr_country_flag = harmonization_shangdi_conflict
+			clr_country_flag = harmonization_han_kitab
+			clr_country_flag = harmonization_fate_of_advisor
+			clr_country_flag = harmonization_empowering_ceremonies
+		}
+	}
+	
+	option = {
+		name = "enrika_coexistence_events.1.a"
+	}
+}

@@ -1,0 +1,132 @@
+# For Government Reforms to identify properly influence and loyalty modifiers, remember to put disqualifying triggers before the has_reform
+
+estate_spiritualists = {
+	icon = 18
+	# Used for when declaring independence
+	independence_tech_group = TECH_UNDEAD
+	province_independence_weight = {
+		factor = 1
+		modifier = {
+			factor = 2
+			religion = monster_lord_religion
+		}
+		modifier = {
+			factor = 2
+			religion = dark_goddess_religion
+		}
+		modifier = {
+			factor = 2
+			culture_group = undead
+		}
+		modifier = {
+			factor = 2
+			culture_group = doll
+		}
+		modifier = {
+			factor = 2
+			culture = Necromancer_Succubi
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { development = 10 }
+		}
+		modifier = {
+			factor = 0.75
+			development = 15
+		}
+		modifier = {
+			factor = 0.75
+			development = 20
+		}
+	}
+
+
+	# If true, country will get estate
+	trigger = {
+					OR = {
+						tag = HM1
+						tag = LC1
+						tag = PT1
+						was_tag = HM1
+						was_tag = LC1
+						was_tag = PT1
+					}
+	}
+
+	# These scale with loyalty & power
+	country_modifier_happy = {
+		global_unrest = -1
+		reinforce_speed = 0.20
+		global_regiment_recruit_speed = -0.20
+	}
+	country_modifier_neutral = {	
+		global_unrest = -0.5
+		reinforce_speed = 0.10
+	}	
+	country_modifier_angry = {
+		global_unrest = 2
+		reinforce_cost_modifier = 1
+		all_power_cost = 0.10
+	}
+	land_ownership_modifier = {
+		spiritualists_loyalty_modifier = 0.2
+	}
+	
+
+	# Influence modifiers
+	base_influence = 10
+	influence_modifier = {
+		desc = EST_VAL_OTHER_ESTATE_IN_POWER
+		trigger = {
+			OR = {
+				has_disaster = estate_nobility_disaster
+				has_disaster = estate_church_disaster
+				has_disaster = estate_burghers_disaster
+				has_disaster = estate_brahmins_disaster
+				has_disaster = estate_vaisyas_disaster
+				has_disaster = estate_jains_disaster
+
+			}
+		}
+		influence = -40
+	}
+	
+	#Loyalty Modifiers
+	loyalty_modifier = {
+		desc = EST_VAL_OTHER_ESTATE_IN_POWER_LOY
+		trigger = {
+			OR = {
+				has_disaster = estate_nobility_disaster
+				has_disaster = estate_church_disaster
+				has_disaster = estate_burghers_disaster
+				has_disaster = estate_brahmins_disaster
+				has_disaster = estate_vaisyas_disaster
+				has_disaster = estate_jains_disaster
+
+			}
+		}
+		loyalty = -20
+	}
+
+	privileges = {
+		estate_spiritualists_land_rights
+		estate_autonomy_of_spiritualists
+		estate_spiritualists_reinforced_zombies
+		estate_promote_time_magic
+		estate_practice_necromancy
+		estate_mass_quick
+		estate_mass_slow
+		estate_rezone
+		estate_gravity
+		estate_mass_produce_zombies
+		estate_raise_master_undead
+	}
+
+	agendas = {
+		estate_spiritualists_develop_x
+	}
+
+	color = { 62 80 43 }
+	
+	influence_from_dev_modifier = 1.0
+}

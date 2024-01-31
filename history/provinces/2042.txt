@@ -1,0 +1,13 @@
+is_city = no
+discovered_by = TECH_ANGEL
+add_core = IW2
+discovered_by = AR3
+discovered_by = HR1
+owner = IW2
+base_tax = 1
+base_manpower = 3
+base_production = 3
+culture = Ice_Witch
+religion = monster_lord_religion
+controller = IW2
+center_of_trade = 1

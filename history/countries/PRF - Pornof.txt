@@ -1,0 +1,17 @@
+government = monarchy
+government_rank = 1
+primary_culture = ilian_human
+religion = ilias_light_religion
+technology_group = TECH_HUMAN
+capital = 4#Pornof Village
+1444.1.1 = { 
+	monarch = { 
+		name = "Kakyoin"
+		dynasty = "of Pornof"
+		birth_date = 1424.1.1
+		adm = 5
+		dip = 2
+		mil = 5
+	}
+}
+add_government_reform = 

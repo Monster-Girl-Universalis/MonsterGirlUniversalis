@@ -1,0 +1,61 @@
+country_decisions = {
+
+	nine_tailed_kitsune_idea = {
+		major = yes
+		potential = {
+			not = { tag = KI1 } #Tamamo already has them
+			not = { has_country_flag = accepted_nine-tailed_kitsune_ideas }
+			was_never_end_game_tag_trigger = yes
+			culture_group = kitsune
+		}
+		allow = {
+			AND = {
+			adm_tech = 10
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			OR = {
+				mission_completed = gen_nine_tailed_kitsune_ambitions
+				AND = {
+					monthly_adm = 12
+					monthly_dip = 12
+					monthly_mil = 12
+					government_rank = 2
+					army_tradition = 50
+					army_size = 150
+					grown_by_development = 750
+					legitimacy_equivalent = 100
+					is_bankrupt = no
+				}
+			}
+			}
+		}
+		effect = {
+
+			if = {
+				limit = {
+					NOT = { government_rank = 3 }
+				}
+				set_government_rank = 3
+			}
+			add_prestige = 25
+			if = {
+				limit = {
+					NOT = { technology_group = TECH_KITSUNE }
+				}
+				change_technology_group = TECH_KITSUNE
+				change_unit_type = TECH_KITSUNE
+			}
+			if = {
+				limit = { 
+					has_custom_ideas = no 
+				}
+				country_event = { id = ideagroups.kitsune } #Swap Ideas
+				#set_country_flag = accepted_nine-tailed_kitsune_ideas
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+}

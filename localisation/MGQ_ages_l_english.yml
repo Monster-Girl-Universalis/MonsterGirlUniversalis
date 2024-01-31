@@ -1,0 +1,66 @@
+﻿l_english:
+ #Great Disaster
+ obj_250_development: "Growing Nation"
+ obj_250_development_desc: "Have at least 250 development."
+ obj_dynamic_court: "Dynamic Court"
+ obj_dynamic_court_desc: "Have employed an advisor for each type."
+
+ ab_apoptosis_encroachment: "Apoptosis Encroachment"
+ ab_san_ilia_makina: "San Ilia Makina"
+ ab_sabasa_assasins: "Sabasa Assasins"
+ ab_grand_noah_magical_advisor: "Grand Noah Magical Advisor"
+ ab_grangold_siege_ability: "Grangold Siege Ability"
+ ab_navy_ship_trade: "Navy Ship Trade"
+
+
+ #Monster Lord Invasions
+
+ obj_visitor_from_other_worlds: "Visitor From Other Worlds"
+ obj_visitor_from_other_worlds_desc: "Share religion with visitors from the parallel worlds."
+ obj_race_mastery: "Race Mastery"
+ obj_race_mastery_desc: "Finish any race idea group."
+ obj_strength_unity: "Strength Unity"
+ obj_strength_unity_desc: "Have 100% Religious Unity."
+ obj_rally_the_troops: "Rally the Troops"
+ obj_rally_the_troops_desc: "Have army size of 150."
+
+ ab_lilys_research: "Lily's Research"
+ ab_fairies_harmony_with_nature: "Fairies' Harmony with Nature"
+ ab_vampire_queen_ambition: "Vampire Queen Ambition"
+ ab_mermaid_queen_generals: "Mermaid Queen Generals"
+ ab_spider_princess_resentment: "Spider Princess Resentment"
+ ab_new_golden_age_of_piracy: "New Golden Age of Piracy"
+
+ mgq_full_any_race_tooltip: "Finish any race idea group."
+
+ #Time of Decision
+
+ obj_large_forcelimit_250: "Large Forcelimit"
+ obj_large_forcelimit_250_desc: "Have at least 250 forcelimit."
+ obj_huge_empire: "Huge Empire"
+ obj_huge_empire_desc: "Have at least 1500 total development."
+
+ ab_angels_and_monsters: "Angels and Monsters"
+ ab_goddess_comeback: "Goddess Comeback"
+ ab_cirque_du_croix: "Cirque du Croix"
+ ab_sophisticated_dolls: "Sophisticated Dolls"
+ ab_plansect_peace: "Plansect Peace"
+ ab_nereneid_ambitions: "Nereneid Ambitions"
+
+
+ #End of the Story
+ 
+ obj_monster_lord: "Monster Lord"
+ obj_monster_lord_desc: "Be the member of Fateburn family or claim the Monster Lord title by force!"
+ obj_industrial_nation: "Industrial Nation"
+ obj_industrial_nation_desc: "Have at least 5 furnaces."
+ obj_powerful_diplomacy: "Powerful Diplomacy"
+ obj_powerful_diplomacy_desc: "Have at least 7 diplomatic relations slots."
+
+ ab_makina_warfare: "Makina Warfare"
+ ab_counterattack: "Counterattack"
+ ab_cross_world_contact_elimination: "Cross-world Contact Elimination"
+ ab_path_of_judgment: "Path of Judgment"
+ ab_path_of_worldbreaker: "Path of Worldbreaker"
+ ab_join_the_alliance_of_wisdom: "Join the Alliance of Wisdom"
+ ab_world_chaos: "World Covered in Chaos"

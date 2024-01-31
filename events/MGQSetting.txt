@@ -1,0 +1,23 @@
+namespace = mgq_setting
+
+#Ilias Introduction
+country_event = {
+	id = mgq_setting.1
+	title = "mgq_setting.1.t"
+	desc = "mgq_setting.1.desc"
+	picture = ILIAS_CONVERSATION_eventPicture
+	trigger = {
+		ai = no
+		NOT = { has_global_flag = mgq_had_ilias_introduction }
+	}
+
+	mean_time_to_happen = { days = 1 }
+	fire_only_once = yes
+	immediate = {
+		hidden_effect = { set_global_flag = mgq_had_ilias_introduction }
+	}
+
+	option = {	#Goddess?
+		name = mgq_setting.1.a
+	}
+}

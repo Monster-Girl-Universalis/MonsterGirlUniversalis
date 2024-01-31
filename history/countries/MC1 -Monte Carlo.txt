@@ -1,0 +1,17 @@
+government = monarchy
+government_rank = 1
+primary_culture = slums_human
+religion = ilias_light_religion
+technology_group = TECH_HUMAN
+1444.1.1 = { 
+	monarch = { 
+		name = "Elka"
+		dynasty = "of Monte Carlo"
+		birth_date = 1424.1.1
+		adm = 5
+		dip = 4
+		mil = 4
+	}
+}
+capital = 649
+add_government_reform = 

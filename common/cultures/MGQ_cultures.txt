@@ -1,0 +1,2421 @@
+Human_culture = {
+	graphical_culture = asiangfx
+	ilian_human = {
+	
+		primary = ILW
+
+		country = {
+			female_advisor_chance = 0.5
+			diplomatic_upkeep = -1
+		}
+
+		male_names = {
+			Heinrich Lazarus Marcellus John Kazuya Kockyoin Jack Hans Lars Lauratt Merlin Samson Toru Pylate Lest Adrian
+			Caleb Ethan Gabriel Isaac Julian Lucas Nathaniel Oliver Sebastian Alexander Christopher Daniel Elijah Gavin
+			Henry Jonathan Liam Samuel Benjamin David Evan Gregory Isaiah Jacob Matthew Owen Ryan Thomas Damian Hector
+			Ivan Leonardo Maximilian Nico Octavian Paulo Rafael Victor Xavier Alexei Boris Dmitri Emiliano Fernando Javier
+			Gustavo Ignacio Lorenzo Marcelo Nicolas Rafaelo
+		}	
+		female_names = {
+			Alleria Alice Ariadne Augusta Aurora Cresta Eri Fizz Gina Gloria Haine Holly Lara Nina Louise Lucia Melissa
+			Magda Mari Maria Marie Mei-Lin Melody Milio Serra Naia Nightingale Ophelia Rinoa Rufa Sara Katie Lucretia
+			Selene Sonya Stella Anna Teresa Julia Janette Jill Yvette Elisabeth Cindy Stacy Rosary Elissa Claudia Lily
+			Stefanie Lisa Esmeralda Minelli Annie Cornelia Selene Selena Franceska Ellie Odette Carol Mary 
+		}
+		dynasty_names = {
+			Whitaker Blackwood Lancaster Morgan Sinclair Wallace Montgomery Hartley Kensington Sullivan Harrington Prescott
+			Donovan Anderson McAllister Perez Lopez Gonzalez Hernandez Martinez Thompson Smith Williams Stewart Silva
+			Jones Brown Davis Miller Taylor Rodriguez Martinez Nelson Hayron Murphy Carter Addams "of Iliasville" "of Pornof"
+			"of Iliasburg" "of Midas" "of Iliasport" "of Happiness Village"
+		}
+	}
+	slums_human = {
+	
+		primary = NMS
+
+		country = {
+			female_advisor_chance = 0.5
+			diplomatic_upkeep = -1
+		}
+
+		male_names = {
+			Heinrich Lazarus Marcellus John Kazuya Kockyoin Jack Hans Lars Lauratt Merlin Samson Toru Pylate Lest Adrian
+			Caleb Ethan Gabriel Isaac Julian Lucas Nathaniel Oliver Sebastian Alexander Christopher Daniel Elijah Gavin
+			Henry Jonathan Liam Samuel Benjamin David Evan Gregory Isaiah Jacob Matthew Owen Ryan Thomas Damian Hector
+			Ivan Leonardo Maximilian Nico Octavian Paulo Rafael Victor Xavier Alexei Boris Dmitri Emiliano Fernando Javier
+			Gustavo Ignacio Lorenzo Marcelo Nicolas Rafaelo
+		}	
+		female_names = {
+			Alleria Alice Ariadne Augusta Aurora Cresta Eri Fizz Gina Gloria Haine Holly Lara Nina Louise Lucia Melissa
+			Magda Mari Maria Marie Mei-Lin Melody Milio Serra Naia Nightingale Ophelia Rinoa Rufa Sara Katie Lucretia
+			Selene Sonya Stella Anna Teresa Julia Janette Jill Yvette Elisabeth Cindy Stacy Rosary Elissa Claudia Lily
+			Stefanie Lisa Esmeralda Minelli Annie Cornelia Selene Selena Franceska Ellie Odette Carol Mary 
+		}
+		dynasty_names = {
+			Whitaker Blackwood Morgan Sinclair Wallace Hartley Kensington Sullivan Harrington Prescott Dagger Shadowbane
+			Ashthorn Quickblade McAllister Thornton Flint Montgomery Wellington Bradford Thompson Williams Ashford
+			Jones Daggerford Manson Rodriguez Martinez Escobar Parker Stewart Carter "of Slums" "of Monte Carlo"
+			
+		}
+	}
+	natalian_human = {
+	
+
+
+		country = {
+			female_advisor_chance = 0.5
+			diplomatic_upkeep = -1
+		}
+		male_names = {
+			Heinrich Lazarus Marcellus John Kazuya Kockyoin Jack Hans Lars Lauratt Merlin Samson Toru Pylate Lest Adrian
+			Caleb Ethan Gabriel Isaac Julian Lucas Nathaniel Oliver Sebastian Alexander Christopher Daniel Elijah Gavin
+			Henry Jonathan Liam Samuel Benjamin David Evan Gregory Isaiah Jacob Matthew Owen Ryan Thomas Damian Hector
+			Ivan Leonardo Maximilian Nico Octavian Paulo Rafael Victor Xavier Alexei Boris Dmitri Emiliano Fernando Javier
+			Gustavo Ignacio Lorenzo Marcelo Nicolas Rafaelo
+		}	
+		female_names = {
+			Alleria Alice Ariadne Augusta Aurora Cresta Eri Fizz Gina Gloria Haine Holly Lara Nina Louise Lucia Melissa
+			Magda Mari Maria Marie Mei-Lin Melody Milio Serra Naia Nightingale Ophelia Rinoa Rufa Sara Katie Lucretia
+			Selene Sonya Stella Anna Teresa Julia Janette Jill Yvette Elisabeth Cindy Stacy Rosary Elissa Claudia Lily
+			Stefanie Lisa Esmeralda Minelli Annie Cornelia Selene Selena Franceska Ellie Odette Carol Mary 
+		}
+		dynasty_names = {
+			Whitaker Blackwood Lancaster Morgan Sinclair Wallace Montgomery Hartley Kensington Sullivan Harrington Prescott
+			Donovan Anderson McAllister Thornton Fitzgerald Wellington Bradford Thompson Smith Williams Stewart Ashford
+			Jones Brown Davis Fernandez Taylor Rodriguez Martinez Ramirez Costa Murphy Carter Addams Moretti Santos Vasquez
+			"of San Ilia" "of Rubiana" "of Port Natalia" "of Luddite Village" 
+		}
+	}
+	sabasa_human = {
+	
+
+
+		country = {
+			female_advisor_chance = 0.5
+			diplomatic_upkeep = -1
+		}
+		male_names = {
+			Samson Amir Bashir Cyrus Darius Emir Farid Gideon Harun Idris Jamal Karim Luka Malik Nadir Omar Parviz Qasim
+			Rafiq Samir Tariq Usman Vikram Waleed Xerxes Yasin Zaid Adnan Bilal Daoud Farouk Caleb Gabriel Isaac Jacob
+			Nathan Zachary Aaron David Elijah Kieran Mason Wyatt Zane Evan Ghalib Jamil Hamid Latif Qadir Saeed Vahid
+			Zafar Adnan Haroon Gulzar Fahad
+		}	
+		female_names = {
+			Orlan Sara Salaan Aisha Basma Celia Dahlia Esma Farah Gilda Haleema Jamila Karima Layla Malika Naia Nadia Omaima
+			Rania Samira Talia Valentina Xena Yara Zaina Ada Bella Fara Gia Hana Giselle Farida Fatima Bella Zahara Yasmin
+			Valeria Ula Rania Maliha Ophira Haleema Dalia Bahira Amelia Clara Delilah Eleanor Felicity Isabella Josephine Lily
+			Katherine Matilda Natalie Sophia Zoe Ava Emma
+		}
+		dynasty_names = {
+			"of Sabasa" "of Grandeur" "of Saloon" Alhazred Khalid Faris Aziz Hakim Haroun Rashid Al-Amin Hakimi Nasser Zaydan
+			Abbas Farouk Azhari Haddad Hamdi Saadawi Al-Masri Qadiri Al-Sharif Mansour Hassan Zahiri Alawi Attia Tawfiq Karam
+			Halabi Saidi Khalil Hariri Zayed Hamadi Hossain Shahin Masri Hakimi Saleh Ghazali
+		}
+	}
+	worm_summoner = {
+	
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}
+		male_names = {
+			Matthew Dorian Casper Benedict Alaric Zephyr Yorick Xavier Wallace Vincent Ulysses Theodore Silas Reginald
+			Quentin Percival Oswald Nathaniel Magnus Leopold Kendrick Jasper Ignatius Harold Giles Fabian Everett Desmond
+			Cedric Barnaby Ambrose
+		}	
+		female_names = {
+			Alleria Alice Ariadne Augusta Aurora Cresta Eri Fizz Gina Gloria Haine Holly Lara Nina Louise Lucia Melissa
+			Magda Mari Maria Marie Mei-Lin Melody Serra Naia Ophelia Rinoa Rufa Sara Katie Lucretia Adeline Beatrice Frederica
+			Selene Sonya Stella Anna Teresa Julia Janette Jill Yvette Elisabeth Cindy Stacy Rosary Elissa Claudia Lily
+			Stefanie Lisa Esmeralda Minelli Annie Cornelia Selene Selena Franceska Ellie Odette Carol Mary Lambdadelta
+			Gertruda Charlotte Suleika Albertine "Elsa Maria" Uhrmann Oktavia Izabel Patricia Roberta Kriemhild Wadanohara
+		}
+		dynasty_names = {
+			"of Magistea" "the Witch" Spellbinder Nightgloom Moonspell Blackthistle Shadowcaster Spellbound Starhaven Nightfall
+			Mistveil Spellweaver Shadowthorn Moonstone Darkholm Witchwood Stormrider Moonfire Ashenwood Ravenshadow Bloodmoon
+			Silverbrook Shadowvale Runekeeper Duskwalker Sunfire Swiftstrike Mistweaver Willowglen Berncastel "von Seckendorff"
+			Gretchen "of Walpurgisnacht" Hopkins
+		}
+	}
+	noah_human = {
+	
+
+
+		country = {
+			female_advisor_chance = 0.5
+			diplomatic_upkeep = -1
+		}
+		male_names = {
+			Heinrich Lazarus Marcellus John Kazuya Kockyoin Jack Hans Lars Lauratt Merlin Samson Toru Pylate Lest Adrian
+			Caleb Ethan Gabriel Isaac Julian Lucas Nathaniel Oliver Sebastian Alexander Christopher Daniel Elijah Gavin
+			Henry Jonathan Liam Samuel Benjamin David Evan Gregory Isaiah Jacob Matthew Owen Ryan Thomas Damian Hector
+			Ivan Leonardo Maximilian Nico Octavian Paulo Rafael Victor Xavier Alexei Boris Dmitri Emiliano Fernando Javier
+			Gustavo Ignacio Lorenzo Marcelo Nicolas Rafaelo
+		}	
+		female_names = {
+			Alleria Alice Ariadne Augusta Aurora Cresta Eri Fizz Gina Gloria Haine Holly Lara Nina Louise Lucia Melissa
+			Magda Mari Maria Marie Mei-Lin Melody Milio Serra Naia Nightingale Ophelia Rinoa Rufa Sara Katie Lucretia
+			Selene Sonya Stella Anna Teresa Julia Janette Jill Yvette Elisabeth Cindy Stacy Rosary Elissa Claudia Lily
+			Stefanie Lisa Esmeralda Minelli Annie Cornelia Selene Selena Franceska Ellie Odette Carol Mary 
+		}
+		dynasty_names = {
+			Whitaker Belmont Hawthorne Ashwood Sinclair Wallace Montgomery Hartley Lancaster Kingsley Harrington Prescott
+			Donovan Anderson Hartley Caldwell Fitzgerald Kensington Wellington Bradford Thompson Smith Williams Stewart
+			Jones Brown Davis Miller Taylor Rodriguez Martinez Nelson Hayron Murphy Riversong Addams Beaumont Worthington
+			Langley "of Port Marle" "of Grand Noah" "of Finoa" "of Lima" "of Esta" 
+		}
+	}
+	yamatai_human = {
+	
+
+
+		country = {
+			female_advisor_chance = 0.5
+			diplomatic_upkeep = -1
+		}
+		male_names = {
+			Motohito Mihito Hikohito Fusahito Katsuhito Tomohito Michihito Kazuhito Kotohito Tsuguhito Nagahito Kazuya
+			Satohito Asahito Yasuhito Teruhito Hidehito Morohito Ayahito Takauji Yoshiakira Yoshimitsu Hakunen Toru
+			Yoshimochi Yoshikazu Yoshinori Yoshikatsu Yoshimasa Yoshihisa Yoshitane Yoshizumi Yoshiharu Yoshiteru 
+			Yoshihide Yoshiaki Nobutada Hidenobu Hideyoshi Hideyori Ieyasu Hidetada Iemitsu Ietsuna Tsunayoshi Ienobu 
+			Ietsugu Yoshimune Ieshige Ieharu Ienari Ieyoshi Iesada Iemochi Yoshinobu			
+		}	
+		female_names = {
+			Satsuki Natsuki Shoki Yayoi Yoko Reina Tsubasa Sakura Tsubaki Kasumi Kaname Ageha Manako Akari Yonaka Kokona
+			Oyuki Shizuku Nanoha Shiranami Magatsu Kawako Jakotsu Yugiri Yuuka Yuuki Yuuko Yuuna Yuzuki Yumeko Sakuya
+			Toku Sen Tama Aya Ina Kumiko Ai Aiko Aimi Aina Airi Akane Akemi Aki Akiko Akira Ami Aoi Asuka Atsuko Aya Ayaka 
+			Ayako Ayame Ayane Ayano Chika Chikako Chinatsu Chiyo Chiyoko Cho Chou Chouko Emi Etsuko Hana Hanae Hanako Haru 
+			Haruka Haruko Haruna Hikari Hikaru Hina Hinata Hiroko Hitomi Honoka Hoshi Hoshiko Hotaru Izumi Junko Kaede 
+			Kanon Kaori Kaoru Kasumi Kazue Kazuko Keiko Kiku Kiyoko Kohaku Koharu Kokoro Kotone Kumiko Kyo Kyou Mai Makoto 
+			Mami Manami Mao Mariko Masami Masuyo Mayu Megumi Mei Michi Michiko Midori Mika Miki Miku Minako Minato Mio 
+			Misaki Mitsuko Miu Miyako Miyu Mizuki Moe Momoka Momoko Moriko Nana Nanami Naoko Naomi Natsuki Natsuko Natsumi 
+			Noa Noriko Ran Rei Ren Riko Rin Rina Rio Sachiko Saki Sakura Sakurako Satomi Sayuri Setsuko Shinju Shinobu 
+			Shiori Shizuka Shun Sora Sumiko Suzu Suzume Takako Takara Tamiko Tomiko Tomoko Tomomi Tsubaki Tsubame Tsubasa 
+			Tsukiko Ume Umeko Wakana Yasu Yoko Yoshi Yoshiko Youko Yua Yui Yuina Yuki Yukiko Yuko Yumi Yumiko Yuri Yuu 
+
+		} 
+		dynasty_names = {
+			Yamato Arisugawa Asaka Fushimi "Kan'in" Katsura Kaya Kitashirakawa Kuni Nashimoto Takeda Yamashina Fujikawa Tanaka
+			Shimizu Nakamura Morioka Sato Suzuki Yamamoto Ito Kobayashi Hasegawa Yamada Kato Yoshida Sasaki Nakajima Oda Mori
+			Hayashi Ishikawa Sakamoto Aoki Matsui Kimura Inoue Watanabe Nakagawa Fujii Takada Yoshida Okamoto Hayashida Kagayaki
+		}
+	}
+	grangold_human = {
+	
+
+
+		country = {
+			female_advisor_chance = 0.5
+			diplomatic_upkeep = -1
+		}
+		male_names = {
+			Heinrich Lazarus Marcellus John Kazuya Kockyoin Jack Hans Lars Lauratt Merlin Samson Toru Pylate Lest Adrian
+			Caleb Ethan Gabriel Isaac Julian Lucas Nathaniel Oliver Sebastian Alexander Christopher Daniel Elijah Gavin
+			Henry Jonathan Liam Samuel Benjamin David Evan Gregory Isaiah Jacob Matthew Owen Ryan Thomas Damian Hector
+			Ivan Leonardo Maximilian Nico Octavian Paulo Rafael Victor Xavier Alexei Boris Dmitri Emiliano Fernando Javier
+			Gustavo Ignacio Lorenzo Marcelo Nicolas Rafaelo
+		}	
+		female_names = {
+			Alleria Alice Ariadne Augusta Aurora Cresta Eri Fizz Gina Gloria Haine Holly Lara Nina Louise Lucia Melissa
+			Magda Mari Maria Marie Mei-Lin Melody Milio Serra Naia Nightingale Ophelia Rinoa Rufa Sara Katie Lucretia
+			Selene Sonya Stella Anna Teresa Julia Janette Jill Yvette Elisabeth Cindy Stacy Rosary Elissa Claudia Lily
+			Stefanie Lisa Esmeralda Minelli Annie Cornelia Selene Selena Franceska Ellie Odette Carol Mary 
+		}
+		dynasty_names = {
+			Whitaker Belmont Hawthorne Ashwood Sinclair Wallace Montgomery Hartley Lancaster Kingsley Harrington Prescott
+			Donovan Anderson Hartley Caldwell Fitzgerald Kensington Wellington Bradford Thompson Smith Williams Stewart
+			Jones Brown Davis Miller Taylor Rodriguez Martinez Nelson Hayron Murphy Riversong Addams Beaumont Worthington
+			Langley "of Goddard" "of Grangold" 
+		}
+	}
+	remina_human = {
+	
+
+
+		country = {
+			female_advisor_chance = 0.5
+			diplomatic_upkeep = -1
+		}
+		male_names = {
+			Adrian Alistair Bartholomew Casimir Dominic Ezekiel Ferdinand Gregory Harland Ignatius Julius Kristoff Lucian
+			Caleb Ethan Gabriel Isaac Julian Lucas Nathaniel Oliver Sebastian Alexander Christopher Daniel Elijah Gavin
+			Samuel Benjamin David Evan Matthew Thomas Damian Hector Oberon Percival Quillan Reginald Thaddeus Ulysses Yorick
+			Maximilian Octavian Rafael Victor Javier Nicolas Valerian Alaric Benedict Cyprian Darius
+		}	
+		female_names = {
+			Alleria Alice Ariadne Augusta Aurora Cresta Eri Fizz Gina Gloria Haine Holly Lara Nina Louise Lucia Melissa
+			Magda Mari Maria Marie Mei-Lin Melody Milio Serra Naia Nightingale Ophelia Rinoa Rufa Sara Katie Lucretia
+			Selene Sonya Stella Anna Teresa Julia Janette Jill Yvette Elisabeth Cindy Stacy Rosary Elissa Claudia Lily
+			Stefanie Lisa Esmeralda Minelli Annie Cornelia Selene Selena Franceska Ellie Odette Carol Mary 
+		}
+		dynasty_names = {
+			"of Remina" Blackwood Ravenshadow Moonstone Darkmore Ashenfell Somerset Wycliffe Pendleton Sinclair Channing
+			Brighton Templeton Astor Forsythe Thorneycroft Ashbourne Penrose Hartley Winslow Hayron Montague Stirling
+			Devereaux Wellington Harrington Beaumont Radcliffe Lockwood Kingsley Whitaker Hawthorne Bellamy
+		}
+	}
+	proto_human = {
+	
+
+
+		country = {
+			female_advisor_chance = 0.5
+			diplomatic_upkeep = -1
+		}
+		male_names = {
+			Argo Brom Cael Daxon Eldric Finnian Graden Hadrian Idris Jareth Kaelan Lysander Malachi Nael Oren Phelan Quinlan
+			Ronan Soren Tavian Ulric Vesper Wyland Xander Yorin Zephyr Alden Bowen Cyrus Eamon Draven Caelum Brystan Aeson
+			Yorick Valerian Urien Silas Oberon Nael Magnus Finnian Adam
+		}	
+		female_names = {
+			Evangeline Daphne Celestia Bellatrix Althea Zara Yara Xanthe Willow Veda Thalia Selene Rowena Quinn Phoebe Nyx
+			Ophelia Maeve Lyra Kira Juniper Isolde Hazel Gaia Freya Elysia Delphine Cerys Brynn Aria Calliope Bianca Ayla
+			Xena Ursa Rhea Phaedra Genevieve Elara Dara Celia Eva
+		}
+		dynasty_names = {
+			Stonebridge Oakhart Ironhide Whitewood Boulderstone Shadowcrest Staghorn Emberfield Rockwell Wilderbrook Steelhart
+			Willowshade Flintwood Thornvale Ironwood Swiftstream Grimshaw Frostbane Holloway Stormridge Ironspear Shadefall
+			Mountaincrest Silverthorn Mosswood Stormglen Blackstone Lightfoot Oakthorn Stonehelm
+		}
+	}
+	replicant_human = {
+	
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}
+		male_names = {
+			
+		}	
+		female_names = {
+			Seraphina Aurora Celeste Eden Harmony Iris Luna Nova Selene Trinity Astra Galatea Lyra Ophelia Callista Elysia
+			Serenity Zephyra Evangeline Ember Elara Amara Seraphine Azalea Electra Calypso Melody Astraea Daphne Cleo Bella
+			Aria Zara Yara Xanthe Venus Unity Radiance Quartz Pearl Opal Nova Melody Jasmine Infinity Grace Faith Destiny
+		}
+		dynasty_names = {
+			Everhart Dawnswell Celestine Goldenleaf Silvermane Starfield Faithborne Moonshadow Lumina Solaris Radiant Harmony
+			Echoheart Virtus Divinefire Arcane Elysium Astralyn Sanctus Valorheart Astraea Solstice Celestia Astrid Aurelian
+			Luminara Ethereal Sylvaris Iliadis
+		}
+	}
+	male_names = {
+		
+	}	
+	female_names = {
+		
+	}
+	dynasty_names = {
+
+	}
+}
+
+land_dweller = {
+	graphical_culture = asiangfx
+
+	Leech_Girl = {
+
+		primary = LGR
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}
+	}
+	Earthworm_Girl = {
+
+		primary = ERD
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}
+	}
+	Slug_Girl = {
+
+		primary = ERD
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}
+	}
+	Roper_Girl = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}
+	}
+	Alligator_Girl = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}
+	}
+	Frog_Girl = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}
+	}
+
+	male_names = {
+		
+
+	}	
+	female_names = {
+		Gaa Mimi Keroron Kururu Elisabeth Hiru Cindy Stacy Melk Rosary Melty Stefanie Chandra Yugiri Carrie Lisa
+		Mitsuko Esmeralda Minelli Annie Yoko Cornelia Selene Botan Selena Franceska Patra Elma Ellie Gabby Odette
+		Carol Kyona Lihitinu Haruka Tama Barbun Mary Kamuro Amara Amira Kris Pina Pii Reina Miu Leene Tsubasa
+		Sakura Ageha Manako Kaname Urara Shizuku Tsubaki Kureha Oyuki Nanoha Banachi Jillian Miyabi Paianne Mukuro
+		Elissa Lona Marion San Kasumi Claudia Gekka Freia Lucretia Nanabi Dahlia
+	} 
+	dynasty_names = {
+		Earthborn Terracrest Soilshaper Canyonrunner Forestkeeper Valleywanderer Grassstalker Woodswalker Wildflower Meadowgrace
+		Cavernfrost Plainsrunner Terrafoot Mountainclaw Woodlandia Junglebeast Desertdune Grasslandia Fieldrunner Cliffwalker
+	}
+}
+
+undead = {
+	graphical_culture = asiangfx
+
+	Ghost_Girl = {
+
+		primary = RMA
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}	
+	}
+	Mimic_Girl = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}	
+	}
+	Zombie_Girl = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}	
+	}
+	Mummy_Girl = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}	
+	}
+	Ghoul_Girl = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}	
+	}
+	Spirit_Girl = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}	
+	}
+
+	male_names = {
+		
+
+	}	
+	female_names = {
+		Alleria Alice Ariadne Augusta Aurora Cresta Crowley Eri Fizz Gina Gloria Haine Holly Lara Nina Louise Lucia Melissa
+		Magda Mari Maria Marie Mei-Lin Melody Milio Serra Naia Nightingale Ophelia Orlan Rinoa Rufa Salaan Sara Katie
+		Satsuki Natsuki Selene Sonya Stella Shoki Anna Teresa Julia Janette Jill Yvette Yayoi Elisabeth Cindy Stacy Rosary 
+		Stefanie Lisa Esmeralda Minelli Annie Yoko Cornelia Selene Selena Franceska Ellie Odette Carol Mary Reina Tsubasa
+		Sakura Tsubaki Elissa Kasumi Claudia Lucretia Dahlia
+	}
+	dynasty_names = {
+		Deathwhisper Gravecaller Bonechiller Shadowlurker Tombdancer Soulshriek Deathgaze Cryptkeeper Ghostwhisperer Deathsong
+		Soullessstare Shadowweaver Spectralaura Phantomsong Wraithmist Necrosoul Poltergeist Ethereality Shadeform Bansheemoan
+		Phantasmal Ghoulglow Elementalista 
+	}
+}
+
+succubi = {
+	graphical_culture = asiangfx
+
+	Imp_Girl = {
+
+		primary = IMR
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}	
+	}
+	Stray_Succubi = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}	
+	}
+	Monster_Succubi = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}	
+	}
+	Village_Succubi = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}	
+	}
+	Necromancer_Succubi = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}	
+	}
+	Nightmare_Succubi = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}	
+	}
+
+	male_names = {
+		
+
+	}	
+	female_names = {
+		Ayane Eva Nina Lilith Lilim Lily Melissa Mei Serra Minagi Morrigan Astaroth Remia Rumia Ramia
+		Mysteltainn Myusca Fulbeua Nabisu Natasha Nemea Lilin Mare Ogretooth Executioner Rigeo Saki
+		Sara Elza Christie Tarza Vinum Andariel Cydaea Chartila Xisesha Vylsha Nymlyss Ryryla Yseryera
+		Fysereth Vilinoria Wylinelin Nemorless Ryrnessa Ginoryxih Daemlia Azaerelin Glysnessa Ynisyss
+		Ariesryss Wylinera Orinlienne Wylinlith Harellyss Xenorin Kylaris Iphislyss Irinynore Jynlith
+	}
+	dynasty_names = {
+		Lustheart Desiredevil Passionflower Charmspell Allurefire Aphrodisia Thrillseeker Lovepotion Sirenspell Enslaveheart
+		Passionflame Euphoria Temptress Lustborn Spellweaver Nightshade Fireheart Whisperwind Moonlit Red-hot Charisma
+		Pleasuregiver Desirewhisper Charmcaster
+	}
+}
+
+slime = {
+	graphical_culture = asiangfx
+
+	Slime_Girl = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}	
+	}
+	Blob_Girl = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}	
+	}
+	Brom_Girl = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}	
+	}
+	Lava_Girl = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}	
+	}
+	Gelatinous_Cube_Girl = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}	
+	}
+
+	male_names = {
+		
+
+	}	
+	female_names = {
+		Puruko Mimi Keroron Kururu Elisabeth Lime Cindy Stacy Rosary Melty Stefanie Chandra Yugiri Carrie Lisa Marge
+		Mitsuko Esmeralda Minelli Annie Yoko Cornelia Selene Botan Selena Franceska Patra Elma Ellie Gabby Odette
+		Carol Kyona Lihitinu Haruka Tama Barbun Mary Kamuro Amara Amira Kris Pina Pii Reina Miu Leene Tsubasa
+		Sakura Ageha Manako Kaname Urara Shizuku Tsubaki Kureha Oyuki Nanoha Banachi Jillian Miyabi Paianne Mukuro
+		Elissa Lona Marion San Kasumi Claudia Gekka Freia Lucretia Nanabi Dahlia Kanade Romi Bess
+	}
+	dynasty_names = {
+		Gooey Oozeling Blobber Gelatinous Squishy Jiggly Slimy Viscous Sticky Glutinous Spongy Amorphous Drippy
+		Adhesive Cohesive Oozebloom Jiggleglow Puddleslip Slurpslide Squishsplasher Slimedancer
+	}
+}
+
+harpy = {
+	graphical_culture = asiangfx
+
+	Harpy_Girl = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}	
+	}
+	Sparrow_Girl = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}	
+	}
+	Siren_Girl = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}	
+	}
+	Phoenix_Girl = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}	
+	}
+	Ostrich_Girl = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}	
+	}
+	Penguin_Girl = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}	
+	}
+
+	male_names = {
+		
+	}	
+	female_names = {
+		Mimi Elisabeth Hiru Cindy Stacy Rosary Melty Stefanie Chandra Yugiri Carrie Lisa Nyphiara Sephial Zephylia
+		Mitsuko Esmeralda Minelli Annie Yoko Cornelia Selene Botan Selena Franceska Patra Elma Ellie Gabby Odette
+		Carol Kyona Lihitinu Haruka Tama Barbun Mary Kamuro Amara Amira Kris Pina Pii Reina Miu Leene Tsubasa
+		Sakura Ageha Manako Kaname Urara Shizuku Tsubaki Kureha Oyuki Nanoha Banachi Jillian Miyabi Paianne Mukuro
+		Elissa Lona Marion San Kasumi Claudia Gekka Freia Lucretia Nanabi Dahlia Pheliana Refletsia
+	}
+	dynasty_names = {
+		Skyrider Featherwing Talonclaw Songbird Windrider Airswoop Cloudglide Thunderbolt Sunsoar Moonfeather Skydancer
+		Stormcaller Wingbeat Airborne Skydive Skylark Falconflight Wingedheart Featherflight Skyfall Cloudsoar Starling
+		Sparrowhawk Falconcrest Talonstrike Ravenclaw Vulturegaze Condorglide
+	}
+}
+
+elf = {
+	graphical_culture = asiangfx
+
+	Dark_Elf = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}	
+	}
+	Forest_Elf = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}	
+	}
+	Enrika_Elf = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}	
+	}
+	Island_Elf = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}	
+	}
+	Fairy_Girl = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}	
+	}
+	Dullahan_Girl = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}	
+	}
+	Magical_Elf = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}	
+	}
+	Carbuncle_Girl = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}	
+	}
+	Horai_Elf = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}	
+	}
+	Glacies = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}	
+	}
+
+	male_names = {
+		
+
+	}	
+	female_names = {
+		Alleria Alice Ariadne Augusta Aurora Cresta Crowley Eri Fizz Gina Gloria Haine Holly Lara Nina Louise Lucia Melissa
+		Magda Mari Maria Marie  Melody Milio Serra Naia Ophelia Orlan Rinoa Rufa Salaan Sara Lalatina Lona Marion San Jame
+		Satsuki Natsuki Selene Sonya Stella Shoki Anna Teresa Julia Janette Jill Yvette Yayoi Elisabeth Cindy Stacy Rosary 
+		Stefanie Lisa Esmeralda Minelli Annie Yoko Cornelia Selene Selena Franceska Ellie Odette Carol Mary Reina Tsubasa
+		Sakura Tsubaki Elissa Kasumi Claudia Lucretia Dahlia Freya Gekka Fernandez
+	}
+	dynasty_names = {
+		Silverleaf Moonwhisper Sunfire Starweaver Windcaller Woodsworn Shadowhunter Elfborn Leafsong Starshine Sunflower
+		Greenbough Windchaser Nightshade Woodwanderer Starfall Sunburst Forestwalker Shadowstalker Leafwhisper Dreamweaver
+		Autumnleaf Winterfrost Duskrunner Dawnlight Waterfall Fireheart Earthsong
+	}
+}
+
+insect = {
+	graphical_culture = asiangfx
+
+	Spider_Girl = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}	
+	}
+	Ant_Girl = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}	
+	}
+	Antlion_Girl = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}	
+	}
+	Arachne_Girl = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}	
+	}
+	Bee_Girl = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}	
+	}
+	Fly_Girl = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}	
+	}
+	Bug_Girl = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}	
+	}
+	Butterfly_Girl = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}	
+	}
+	Caterpillar_Girl = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}	
+	}
+	Centipede_Girl = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}	
+	}
+	Cockroach_Girl = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}	
+	}
+	Mantis_Girl = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}	
+	}
+	Novistador_Girl = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}	
+	}
+	Sandworm_Girl = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}	
+	}
+	Silkworm_Girl = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}	
+	}
+	Scorpion_Girl = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}	
+	}
+
+	male_names = {
+		
+
+	}	
+	female_names = {
+		Mimi Elisabeth Hiru Cindy Stacy Rosary Melty Stefanie Chandra Yugiri Carrie Lisa Aranje Barbarella Media Striga
+		Mitsuko Esmeralda Minelli Annie Yoko Cornelia Selene Botan Selena Franceska Patra Elma Ellie Gabby Odette
+		Carol Kyona Lihitinu Haruka Tama Barbun Mary Kamuro Amara Amira Kris Reina Miu Leene Tsubasa Hinageshi Matis
+		Sakura Ageha Manako Kaname Urara Shizuku Tsubaki Kureha Oyuki Nanoha Banachi Jillian Miyabi Paianne Mukuro
+		Elissa Lona Marion San Kasumi Claudia Gekka Freia Lucretia Nanabi Dahlia Meda Oogumo Rachura Rachnera Scarlet Rachnee
+	}
+	dynasty_names = {
+		Anthophila Myrmidonia Lepidoptera Formicae Arachnidae Formicosia Arachnia Scarabaia Orthoptera Hemiptera Odonata Mantodea
+		Trichoptera Tettigonia Coccinellia Syrphidae Arachnidia Erebidae Odonata Psocoptera Formicona Empidid Syrphid Silithid
+	}
+}
+
+beast = {
+	graphical_culture = asiangfx
+
+	Orc_Girl = {
+
+		primary = ORR
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}	
+	}
+	Bunny_Girl = {
+
+		primary = BGR
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}	
+	}
+	Anteater_Girl = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}	
+	}
+	Grizzly_Girl = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}	
+	}
+	Basilisk_Girl = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}	
+	}
+	Behemoth_Girl = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}	
+	}
+	Catoblepas_Girl = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}	
+	}
+	Centaur_Girl = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}	
+	}
+	Cerberus_Girl = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}	
+	}
+	Dog_Girl = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}	
+	}
+	Wolf_Girl = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}	
+	}
+	Rat_Girl = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}	
+	}
+	Minotaur_Girl = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}	
+	}
+	Nekomata_Girl = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}	
+	}
+	Sheep_Girl = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}	
+	}
+	Tiger_Girl = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}	
+	}
+	Polar_Bear_Girl = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}	
+	}
+	Wendigo_Girl = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}
+	}
+	Mammoth_Girl = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}	
+	}
+	Yeti_Girl = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}	
+	}
+	Krampus_Girl = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}	
+	}
+
+	male_names = {
+		
+	}	
+	female_names = {
+		Gaa Mimi Keroron Kururu Elisabeth Hiru Cindy Stacy Rosary Melty Stefanie Chandra Yugiri Carrie Lisa Haruka
+		Mitsuko Esmeralda Minelli Annie Yoko Cornelia Selene Botan Selena Franceska Patra Elma Ellie Gabby Odette
+		Carol Kyona Lihitinu Haruka Tama Barbun Mary Kamuro Amara Amira Kris Reina Miu Leene Tsubasa Minamo Albina
+		Sakura Ageha Manako Kaname Urara Shizuku Tsubaki Kureha Oyuki Nanoha Banachi Jillian Miyabi Paianne Mukuro
+		Elissa Lona Marion San Kasumi Claudia Gekka Freia Lucretia Nanabi Dahlia
+	}
+	dynasty_names = {
+		Wildmane Fierceclaw Savagefang Pantherpounce Lionheart Tigertooth Leopardclaw Wolfpack Bearpaw Beaststride Hyenalaugh
+		Lynxsight Cougargrowl Boarcrush Raccoonmask Badgerburrow Batwing Panthera Elkstomp Feralbite Shadowbeast Weredoom
+		Lycanblood Clawfury Rampantroar Huntress Clawstrike Growlsnarl Howlermoon
+	}
+}
+
+alraune = {
+	graphical_culture = asiangfx
+
+	Mandragora_Girl = {
+
+		primary = MNR
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}	
+	}
+	Alraune_Girl = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}	
+	}
+	Watermelon_Girl = {
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}	
+	}
+	Pitcher_Girl = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}	
+	}
+	Cactus_Girl = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}	
+	}
+	Seaweed_Girl = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}	
+	}
+	Mushroom_Girl = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}	
+	}
+	Dryad_Girl = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}	
+	}
+	Walraune_Girl = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}	
+	}
+	Dark_Dryad = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}	
+	}
+	Lampas_Girl = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}	
+	}
+
+	male_names = {
+		
+
+	}	
+	female_names = {
+		Elisabeth Hiru Cindy Stacy Melk Rosary Melty Stefanie Chandra Yugiri Carrie Lisa Arum Rooty Flora Aria
+		Mitsuko Esmeralda Minelli Annie Yoko Cornelia Selene Botan Selena Franceska Patra Elma Ellie Gabby Odette
+		Carol Kyona Lihitinu Haruka Tama Barbun Mary Kamuro Amara Amira Kris Ragora Alrauna Reina Miu Leene Tsubasa
+		Sakura Ageha Manako Kaname Urara Shizuku Tsubaki Kureha Oyuki Nanoha Banachi Jillian Miyabi Paianne Mukuro
+		Elissa Lona Marion San Kasumi Claudia Gekka Freia Lucretia Nanabi Dahlia Raffia Fleesia Wakame Belladonna Melon
+		Dorie Deana Casta Lampas Widow Dorothy
+	}
+	dynasty_names = {
+		Florica Rosenthorn Leafgreen Vinedancer Petalbloom Mossleaf Willowbloom Sunflower Wildbloom Clovermist Meadowgrass Bloomfield
+		Thornblossom Verdantia Rootbinder Bramblethorn Nightshade Fernweave Thistlewind Florontia Sylvanica Leafshade Thornsong Rootclaw
+	}
+}
+
+dragon = {
+	graphical_culture = asiangfx
+
+	Dragon_Girl = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}	
+	}
+	Kirin_Girl = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}	
+	}
+	Kyoryuu_Girl = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}	
+	}
+	Lizard_Girl = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}	
+	}
+	Sea_Dragon_Girl = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}	
+	}
+	Wyvern_Girl = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}	
+	}
+	Aevis_Girl = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}	
+	}
+
+	male_names = {
+		
+
+	}	
+	female_names = {
+		Gaa Mimi Elisabeth Hiru Cindy Stacy Rosary Melty Stefanie Chandra Yugiri Carrie Lisa Haruka Grande Kirin
+		Mitsuko Esmeralda Minelli Annie Yoko Cornelia Selene Botan Selena Franceska Patra Elma Ellie Gabby Odette
+		Carol Kyona Lihitinu Haruka Tama Barbun Mary Kamuro Amara Amira Kris Reina Miu Leene Tsubasa Minamo Albina
+		Sakura Ageha Manako Kaname Urara Shizuku Tsubaki Kureha Oyuki Nanoha Banachi Jillian Miyabi Paianne Mukuro
+		Elissa Lona Marion San Kasumi Claudia Gekka Freia Lucretia Nanabi Dahlia Levia Mio Tatsuko Warvein Liru Len
+		Miranda Granda Andrea
+	}
+	dynasty_names = {
+		Bloodmoon Ashenheart Silverclaw Flamestrike Stormcaller Ironfang Darkwing Emberheart Bloodclaw Stormwatcher Pyronyx Terrastryke
+		Shadowflame Infernion Thunderclaw Frostscale Nidhoggra Saphirion Wyvernia Drakonia Arcanium Boreallia Oceanwing Geodragon
+	}
+}
+
+apoptosis = {
+	graphical_culture = asiangfx
+
+	Dragon_Apoptosis = {
+
+		primary = RAP
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}
+	}
+	Doll_Apoptosis = {
+
+		primary = LXP
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}
+	}
+	Alraune_Apoptosis = {
+
+		primary = EAP
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}
+	}
+	Sea_Dweller_Apoptosis = {
+
+		primary = SLP
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}
+	}
+	Insect_Apoptosis = {
+
+		primary = SSP
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}
+	}
+	Roid_Apoptosis = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}
+	}
+	Yoma_Apoptosis = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}
+	}
+	Slime_Apoptosis = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}
+	}
+	Undead_Apoptosis = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}
+	}
+	Scylla_Apoptosis = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}
+	}
+	Angel_Apoptosis = {
+
+
+
+		male_names = {
+
+
+		}	
+		female_names = {
+			Heriel Alciel Sonya Celestria Aurora Elysium Radiance Sereneth Aetheria Elysia Aria Hecate 
+			Xaela Malachiel Seraphiel Nocturna Erebos Nyxandra Vesperine Luciana Morwenna Azariel Evangeline 
+			Gabrielle Endiel Demisiel Tartariel Nucleriel Hadroniel
+ 		} 
+		dynasty_names = {
+			Entropica Silentfall Abyssalwing Dreadwing Doomwhisper Shadowflame Emberdemise Voidweaver Bloodfire
+			Voidseeker Doombringer Chaosheart Solstice Starflare Dawnbreaker
+		}
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}
+	}
+	Kitsune_Apoptosis = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}
+	}
+	XX-class_Apoptosis = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}
+	}
+
+	male_names = {
+
+
+	}	
+	female_names = {
+		Shesta Sully Jaide Eater Luxuru Riot Vitae Vetala Valto Shinifa Amphil Ribo-Ribo Jellaila Twinkell Pyrogram Deathrona
+		Heri Alci Metamo Adora Sonya Starma Amunario Necrocella Apocyta Caspasea Tumorcide Baxessa Mitocrypt Apothea Cytokilla
+		Deathkaryo Cytophagus Endoreaper Autophagic Necrotessa Cellcide Caspaseia Apoptress Pyrotosis Phagocytia Necrosia Thanatella
+		Apoptotron Pyropteron Necrolyst Caspasella Apoptrix Apopore Necrothra Pyroclast Oncogenie Pyrolasia Nucleocida Apoptisca		
+	} 
+	dynasty_names = {
+		Apoptera Necrosoul Pyrolith Thanatex Apoptotia Necrofury Aberrant Infestus Entropica Xaosian Noxian Nyxen
+		Eternalsorrow Doomreaper Voidbane Silentfall Voidrend
+	}
+}
+
+demi_human = {
+	graphical_culture = asiangfx
+
+	Goblin_Girl = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}
+	}
+	Dodomeki = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}
+	}
+	Ittan_Momen = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}
+	}
+	Futakuchi_Girl = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}
+	}
+	Akaname = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}
+	}
+	Kappa = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}
+	}
+	Kejourou = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}
+	}
+	Oni = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}
+	}
+	Yuki_Onna = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}
+	}
+	Ancient_Youkai = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}
+	}
+
+	male_names = {
+
+
+	}	
+	female_names = {
+		Satsuki Natsuki Shoki Yayoi Yoko Reina Tsubasa Sakura Tsubaki Kasumi Kaname Ageha Manako Urara Momen
+		Kureha Oyuki Botan Shizuku Nanoha Shiranami Magatsu Kawako Jakotsu Yugiri Yuuka Yuuki Yuuko Yuuna Yuzuki
+		Toku Sen Tama Aya Ina Kumiko Ai Aiko Aimi Aina Airi Akane Akemi Aki Akiko Akira Ami Aoi Asuka Atsuko Aya Ayaka 
+		Ayako Ayame Ayane Ayano Chika Chikako Chinatsu Chiyo Chiyoko Cho Chou Chouko Emi Etsuko Hana Hanae Hanako Haru 
+		Haruka Haruko Haruna Hikari Hikaru Hina Hinata Hiroko Hitomi Honoka Hoshi Hoshiko Hotaru Izumi Junko Kaede 
+		Kanon Kaori Kaoru Kasumi Kazue Kazuko Keiko Kiku Kiyoko Kohaku Koharu Kokoro Kotone Kumiko Kyo Kyou Mai Makoto 
+		Mami Manami Mao Mariko Masami Masuyo Mayu Megumi Mei Michi Michiko Midori Mika Miki Miku Minako Minato Mio 
+		Misaki Mitsuko Miu Miyako Miyu Mizuki Moe Momoka Momoko Moriko Nana Nanami Naoko Naomi Natsuki Natsuko Natsumi 
+		Noa Noriko Ran Rei Ren Riko Rin Rina Rio Sachiko Saki Sakura Sakurako Satomi Sayuri Setsuko Shinju Shinobu 
+		Shiori Shizuka Shun Sora Sumiko Suzu Suzume Takako Takara Tamiko Tomiko Tomoko Tomomi Tsubaki Tsubame Tsubasa 
+		Tsukiko Ume Umeko Wakana Yasu Yoko Yoshi Yoshiko Youko Yua Yui Yuina Yuki Yukiko Yuko Yumi Yumiko Yuri Yuu 
+
+	} 
+	dynasty_names = {
+		Yamato Arisugawa Asaka Fushimi "Kan'in" Katsura Kaya Kitashirakawa Kuni Nashimoto Takeda Yamashina Fujikawa Tanaka
+		Shimizu Nakamura Morioka Sato Suzuki Yamamoto Ito Kobayashi Hasegawa Yamada Kato Yoshida Sasaki Nakajima Oda Mori
+		Hayashi Ishikawa Sakamoto Aoki Matsui Kimura Inoue Watanabe Nakagawa Fujii Takada Yoshida Okamoto Hayashida Kagayaki
+	}
+}
+
+vampire = {
+	graphical_culture = asiangfx
+
+	Vampire_Girl = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}
+	}
+	Royal_Vampire = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}
+	}
+
+	male_names = {
+
+
+	}	
+	female_names = {
+		Elisabeth Rosary Stefanie Lisa Esmeralda Minelli Annie Cornelia Selene Selena Franceska Elma Ellie Odette
+		Carol Mary Amara Amira Reina Albina Jillian Elissa Marion Claudia Freia Lucretia Dahlia Miranda Rose Carmilla
+		Evita Valheart Fatima Vanilla Wilhelmina Angela Lilith Isabella Valeria Morgana Anastasia Genevieve Ravenna
+		Victoria Rosalind Eveline Valentina Drusilla Vivienne Isolde Shalltear Svetlana Marcella Valentina Zara
+		Bianca Celeste Lavinia Arabella Sabrina Cassandra Aurelia Adriana Giselle Octavia Arcueid 
+	} 
+	dynasty_names = {
+		Dracul Nightshade Crimsonfang Moonbrook Blackthorn Bloodworth Ravencrest Shadowborne Vanthorn Darkmore Ashenbrook
+		Gravesend Vespera Darkwood Nocturne Bloodmoon Blackwood Crossbane Nightshade Baneblood Nightfall Hollowgrave
+		Winterthorn Bloodthorn Shadowvale Moonstone Nightlock Blackrose Darkmoor Heart-Under-Blade Bloodfallen Brunestud
+	}
+}
+
+yoma = {
+	graphical_culture = asiangfx
+
+	Yoma_Girl = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}
+	}
+	Ice_Witch = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}
+	}
+	Genie_Girl = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}
+	}
+	Vouivre_Girl = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}
+	}
+	Royal_Yoma = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}
+	}
+
+	male_names = {
+
+
+	}	
+	female_names = {
+		Elisabeth Rosary Stefanie Lisa Esmeralda Minelli Annie Cornelia Selene Selena Franceska Elma Ellie Odette
+		Carol Mary Amara Amira Reina Albina Jillian Elissa Marion Claudia Freia Lucretia Dahlia Miranda Rose Carmilla
+		Evita Valheart Fatima Vanilla Wilhelmina Lilith Isabella Valeria Morgana Anastasia Genevieve Ravenna
+		Victoria Rosalind Eveline Valentina Drusilla Vivienne Isolde Rosalind Svetlana Marcella Valentina Zara
+		Bianca Lavinia Arabella Sabrina Cassandra Aurelia Adriana Giselle Octavia Bell Aradia Miriam Emily Gilgorn
+		Irma Lyla Mephisto Musette 		
+	} 
+	dynasty_names = {
+		Nightshade Crimsonfang Moonbrook Blackthorn Bloodworth Ravencrest Shadowborne Vanthorn Darkmore Ashenbrook
+		Gravesend Vespera Darkwood Nocturne Bloodmoon Blackwood Crossbane Nightshade Baneblood Nightfall Hollowgrave
+		Winterthorn Bloodthorn Shadowvale Moonstone Nightlock Blackrose Darkmoor Ashenheart Stormcaller Emberheart
+		Stormwatcher Shadowflame Infernion Saphirion Arcanium
+	}
+}
+
+sea_dweller = {
+	graphical_culture = asiangfx
+
+	Jellyfish_Girl = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}
+	}
+	Crab_Girl = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}
+	}
+	Coral_Girl = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}
+	}
+	Dagon_Girl = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}
+	}
+	Fake_Jelly_Girl = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}
+	}
+	Sea_Anemone_Girl = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}
+	}
+	Sea_Cucumber_Girl = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}
+	}
+	Sea_Horse_Girl = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}
+	}
+	Sea_Slug_Girl = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}
+	}
+	Shellfish_Girl = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}
+	}
+	Starfish_Girl = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}
+	}
+	Royal_Sea_Dweller = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}
+	}
+	Polar_Krill_Girl = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}
+	}
+
+	male_names = {
+
+
+	}	
+	female_names = {
+		Elisabeth Cindy Stacy Stefanie Carrie Lisa Marge Esmeralda Annie Cornelia Selene Selena Franceska Elma Ellie Odette Carol
+		Mary Reina Jillian Miyabi Elissa Lona Marion Claudia Freia Anko Samansa Gigi Sango Soapy Seraphy Kurage Arne Levia Ocean
+		Meia Amy Anemo Isabelle Yume Tatsuko Shelly Asta Amabie Ashel Bonnie Roza El Heine Jessie Meryl Mink Lolitta Maine Laura
+		Nixie Aurelia Delphine Nerissa Calypso Maris Pearl Thalassa Aquila Naida Adriana Azure Marcella Coraline Meridia Larissa
+		Nereida Marinella Aquaria Serenella
+ 	} 
+	dynasty_names = {
+		Wavecrest Deepwater Coralheart Oceansong Tidewalker Seastorm Mariner Saltwind Aquashell Pearlfin Coralblade Seashimmer
+		Oceandream Sirenwater Mermarine Seabreeze Wavecaller Oceancrest Coralshore Sailfish Aquascale Seastar Maridream Deepsea
+		Tidesong Seashell Coralwave Oceandancer
+	}
+}
+
+mermaid = {
+	graphical_culture = asiangfx
+
+	Mermaid_Girl = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}
+	}
+	Natalian_Mermaid = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}
+	}
+	Mermaid_Pirate = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}
+	}
+	Anglerfish_Girl = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}
+	}
+	Catfish_Girl = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}
+	}
+	Manta_Girl = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}
+	}
+	Narwhal_Girl = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}
+	}
+	Seal_Girl = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}	
+	}
+	Sedna_Girl = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}	
+	}
+
+	male_names = {
+
+
+	}	
+	female_names = {
+		Elisabeth Cindy Stacy Stefanie Carrie Lisa Marge Esmeralda Annie Cornelia Selene Selena Franceska Elma Ellie Odette Carol
+		Mary Reina Jillian Miyabi Elissa Lona Marion Claudia Freia Anko Samansa Gigi Sango Seraphy Levia Ocean Marina Maris Aurora
+		Meia Amy Isabelle Yume Shelly Asta Amabie Ashel Bonnie Roza El Heine Jessie Meryl Mink Lolitta Maine Laura Lumi Aqua Celeste
+		Nixie Aurelia Delphine Nerissa Calypso Maris Pearl Thalassa Aquila Naida Adriana Azure Marcella Coraline Meridia Larissa
+		Nereida Marinella Aquaria Serenella Melusine Anko
+	} 
+	dynasty_names = {
+		Seafire Coralstream Oceanic Mariscale Aquashimmer Wavebreaker Pearlwater Sirenwhisper Seastar Meriwave Nautica Oceancrest
+		Mermelody Seashine Aquafin Sailsea Neptunea Oceandream Seawave Marinewind Coralshell Aquamarine Waveglide Merisong 
+		Oceangem Sirencrest Tidesong Seabreeze Wavecaller
+	}
+}
+
+kitsune = {
+	graphical_culture = asiangfx
+
+	Kitsune_Girl = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}
+	}
+	Feral_Kitsune = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}
+	}
+	Spirit_Fox = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}
+	}
+
+	male_names = {
+
+
+	}	
+	female_names = {
+		Daji Haruka Izuna Kitsu Nanabi Minamo Kamuro Yao Satsuki Natsuki Shoki Yayoi Yoko Reina Tsubasa Sakura Tsubaki
+		Kureha Oyuki Shizuku Nanoha Shiranami Magatsu Yugiri Yuuka Yuuki Yuuko Yuuna Yuzuki Kasumi Kaname Ageha Manako
+		Toku Sen Tama Aya Ina Kumiko Ai Aiko Aimi Aina Airi Akane Akemi Aki Akiko Akira Ami Aoi Asuka Atsuko Aya Ayaka 
+		Ayako Ayame Ayane Ayano Chika Chikako Chinatsu Chiyo Chiyoko Cho Chou Chouko Emi Etsuko Hana Hanae Hanako Haru 
+		Haruka Haruko Haruna Hikari Hikaru Hina Hinata Hiroko Hitomi Honoka Hoshi Hoshiko Hotaru Izumi Junko Kaede 
+		Kanon Kaori Kaoru Kasumi Kazue Kazuko Keiko Kiku Kiyoko Kohaku Koharu Kokoro Kotone Kumiko Kyo Kyou Mai Makoto 
+		Mami Manami Mao Mariko Masami Masuyo Mayu Megumi Mei Michi Michiko Midori Mika Miki Miku Minako Minato Mio 
+		Misaki Mitsuko Miu Miyako Miyu Mizuki Moe Momoka Momoko Moriko Nana Nanami Naoko Naomi Natsuki Natsuko Natsumi 
+		Noa Noriko Ran Rei Ren Riko Rin Rina Rio Sachiko Saki Sakura Sakurako Satomi Sayuri Setsuko Shinju Shinobu 
+		Shiori Shizuka Shun Sora Sumiko Suzu Suzume Takako Takara Tamiko Tomiko Tomoko Tomomi Tsubaki Tsubame Tsubasa 
+		Tsukiko Ume Umeko Wakana Yasu Yoko Yoshi Yoshiko Youko Yua Yui Yuina Yuki Yukiko Yuko Yumi Yumiko Yuri Yuu 
+	} 
+	dynasty_names = {
+		Yamato Arisugawa Asaka Fushimi "Kan'in" Katsura Kaya Kitashirakawa Kuni Nashimoto Takeda Yamashina Fujikawa Tanaka
+		Shimizu Nakamura Morioka Sato Suzuki Yamamoto Ito Kobayashi Hasegawa Yamada Kato Yoshida Sasaki Nakajima Oda Mori
+		Hayashi Ishikawa Sakamoto Aoki Matsui Kimura Inoue Watanabe Nakagawa Fujii Takada Yoshida Okamoto Hayashida Kagayaki		
+	}
+}
+
+scylla = {
+	graphical_culture = asiangfx
+
+	Scylla_Girl = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}
+	}
+	Desert_Scylla = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}
+	}
+	Sables = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}
+	}
+	Urscylla = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}
+	}
+	Ustrel = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}
+	}
+	Demon_Scylla = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}
+	}
+	Royal_Scylla = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}
+	}
+
+	male_names = {
+
+
+	}	
+	female_names = {
+		Elisabeth Hiru Cindy Stacy Rosary Stefanie Chandra Yugiri Carrie Lisa Aria Sakura Ageha Manako Kaname
+		Mitsuko Esmeralda Minelli Annie Yoko Cornelia Selene Selena Franceska Patra Elma Ellie Gabby Odette
+		Carol Kyona Haruka Mary Amara Amira Kris Reina Leene Tsubasa Octavia Coraline Azura Nereida Delphine
+		Marisol Cascade Sabrina Emily Cassandra Amara Naida Elysia Adriana Miriam Deiji Ooma Hiruko Sharon Zenovia
+		Elissa Lona Marion San Kasumi Claudia Gekka Freia Lucretia Dahlia Wakame Melon Dorie Deana Widow Dorothy
+		Sunny Ran Cecile Cylla Frill Lemon		
+	} 
+	dynasty_names = {
+		Tentaculus Krakencoil Abysscale Sirenstrike Coraltide Octowave Scyllawind Tidalwrath Inkwater Seafury
+		Coralarm Sirenbeak Squidstorm Seafoam Scyllashade Krakenheart Abyssmaw Tentacleapex Coralcoil Deepcurrent
+		Scyllaspire Inkswirl Seastalker
+	}
+}
+
+lamia = {
+	graphical_culture = asiangfx
+
+	Lamia_Girl = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}
+	}
+	Cobra_Girl = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}
+	}
+	Medusa_Girl = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}
+	}
+	Yamatai_Lamia = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}
+	}
+	Sister_Lamia = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}
+	}
+	Demon_Lamia = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}
+	}
+	Royal_Lamia = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}
+	}
+
+	male_names = {
+
+
+	}	
+	female_names = {
+		Elisabeth Cindy Stacy Rosary Melty Stefanie Chandra Yugiri Carrie Lisa Aria Lila Jakotsu Albina Anastasia Diusa
+		Mitsuko Esmeralda Minelli Annie Yoko Cornelia Selene Selena Franceska Elma Ellie Odette Mephisto Mizuki Cassandra
+		Carol Kyona Haruka Tama Mary Amara Amira Kris Reina Tsubasa Shiranami Saja Sofia Ariadne Zara Nyx Elysia Thalia
+		Sakura Jillian Miyabi Mukuro Elissa Lona Marion San Kasumi Claudia Freia Lucretia Dahlia Melon Dorie Deana Dorothy
+		Seraphine Calista Lavinia Ophelia Mirabelle Delphine Sapphira
+	} 
+	dynasty_names = {
+		Viperstone Serpentfang Blackscale Cobrashadow Scalespire Venomheart Fangtail Serpenthorn Slithertongue Slytherskin
+		Scalecoil Fangstrike Serpentine Vipertide Cobrashield Scaleslash Venomwhisper Fanggaze Serpentcry Blackthorn Scalestrike
+		Cobrawhisper Vipercoil Fangspear Serpentcrest Scaleswift Venomfang Slitherstrike Vipercrawl
+	}
+}
+
+doll = {
+	graphical_culture = asiangfx
+
+	Doll_Girl = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}
+	}
+	Golem_Girl = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}
+	}
+	Automata_Girl = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}
+	}
+
+	male_names = {
+
+
+	}	
+	female_names = {
+		Elisabeth Cindy Stacy Rosary Stefanie Chandra Yugiri Carrie Lisa Aria Esmeralda Minelli Annie Yoko Cornelia Selene
+		Selena Franceska Patra Elma Ellie Odette Carol Tama Mary Amara Amira Kris Reina Tsubasa Sakura Ageha Manako Kaname
+		Shizuku Tsubaki Kureha Oyuki Nanoha Banachi Jillian Miyabi Mukuro Eva Daphne Cleo Bella Ada Zara Xanthe Violet Tessa
+		Elissa Lona Marion San Kasumi Claudia Freia Lucretia Dahlia Dorie Deana Widow Dorothy Stella Ruby Quinn Penelope Mia
+		Nora Ophelia Kira Juno Ivy Giselle Fiona Clara Bianca Coppelia Maiss Robin Torture Maiden Paianne Knog
+	} 
+	dynasty_names = {
+		Puppeteer Mannequin Marionette Dollmaker Stitchcraft Porcelain Stringheart Woodensoul Inanimate Silentstring Jointedlimb
+		Puppetcraft Windup Seamstress Stitchedheart Unmoving Jointedwood Lifelike Stuffedheart Woodenframe Twistedlimb Stitchface
+		Malletlock Patchwork Marblespring Twistedheart Mancatcher
+	}
+}
+
+chimera = {
+	graphical_culture = asiangfx
+
+	Chimera_Girl = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}
+	}
+
+	male_names = {
+
+
+	}	
+	female_names = {
+		Elisabeth Cindy Stacy Melty Stefanie Carrie Lisa Aria Esmeralda Annie Yoko Selene Selena Franceska Elma Ellie Gabby 
+		Carol Mary Jillian Elissa Lona Marion San Claudia Lucretia Dorie Deana Dorothy Amphisbaena Arc-En-Ciel Crowley Flappy
+		Wrappy Spinny Awawa Robin Hainuwele Laplace Lily Lippy Rapunzel Tsukuyomi Julia Typhon Cleo Basil Aurora Zara Vesper
+		Raine Quinn Petra Orion Nyla Lyla Kael Hazel Freya Blaze Adara
+	} 
+	dynasty_names = {
+		Emberheart Goldenscale Steelborne Kingsley Moonshadow Titanium Xalvador Zephyrblade Magitek Pulsesteel Prototype Synthsteel
+		Arcanotech Electroflux Pulsestrike Circuitblade Steelspark Autochaser Roboforge Technosurge Mechaburst Marionette Mancatcher
+		Puppeteer Mannequin Porcelain 
+	}
+}
+
+angel = {
+	graphical_culture = asiangfx
+
+	Angel_Girl = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}
+	}
+	Rogue_Angel = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}
+	}
+	Fallen_Angel = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}
+	}
+
+	male_names = {
+
+
+	}	
+	female_names = {
+		Heriel Alciel Celestria Aurora Radiance Aetheria Aria Seraphiel Luciana Evangeline Aetheria Faith Grace
+		Hope Gabrielle Eden Micaela Lucifina Zion Gnosis Gabriela Uriela Sandalphon Sariela Raphaela Eggiel Silkiel
+		Revel Mariel Ranael Chamael Wormiel Cupi Endiel Eliciel Erigora Kyrie Berryelle Muzukiel Nagael Runael
+		Uranus Victoria Celeste Evangeline Angelica Harmony Divine Elara Heavenly Luminara Serenity Anaelle Azalea
+	} 
+	dynasty_names = {
+		Starflare Dawnbreaker Lightwing Divineheart Halostrider Gracewing Angelis Heavenborn Feathertouch Aetherius
+		Angelheart Luminelle Ethereal Serenade Luminastra Starwing Hopegale Lumisong Angelglory Seraphicgleam Starlight
+		Angelbane Radiantflare Harmonywing Heavensong Brightfeather Aetherwind Divinefire
+	}
+}
+
+roid = {
+	graphical_culture = asiangfx
+
+	Roid_Girl = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}
+	}
+	Cyborg = {
+
+
+
+		country = {
+			diplomatic_upkeep = -1
+		}
+	}
+
+	male_names = {
+
+
+	}	
+	female_names = {
+		Jillian Radio Nova Blitz Valkyrie Luna Electra Athena Sable Rhea Vega Astra Ember Aurora Nyx Tempest Hera Vesper
+		Iris Zephyr Nemesis Lyra Astrid Selene Galatea Elara Titanica Elysia Astraea Artemis Solara Thunder Genesis Stellar
+		Radiant Nebula Zenith Andromeda Orion Cyra Galaxia Juna Cynda Maven Myra Xena Cybil Evie Tesla Vela Celia Robin Laplace
+		Impromptu
+	} 
+	dynasty_names = {
+		Cybernetica Electroflux Steamforge Gadgeteer Synthsteel Mechatrix Bioengineer Electroid Technomancer Quantum Automaton
+		Pulsesteel Magitek Cybermind Synthweaver Titanium Circuitbreaker Technosurge Roboforge Mechaburst Autochaser Steelspark
+		Mechadriver Alloyshard Wireframe Pulsestrike Technomagus Roboclaw
+	}
+}
+
+tanuki = {
+	graphical_culture = asiangfx
+
+	Tanuki_Girl = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}
+	}
+
+	male_names = {
+
+
+	}	
+	female_names = {
+		Ai Aiko Aimi Aina Airi Akane Akemi Aki Akiko Akira Ami Aoi Asuka Atsuko Aya Ayaka 
+		Ayako Ayame Ayane Ayano Chika Chikako Chinatsu Chiyo Chiyoko Cho Chou Chouko Emi Etsuko Hana Hanae Hanako Haru 
+		Haruka Haruko Haruna Hikari Hikaru Hina Hinata Hiroko Hitomi Honoka Hoshi Hoshiko Hotaru Izumi Junko Kaede 
+		Kanon Kaori Kaoru Kasumi Kazue Kazuko Keiko Kiku Kiyoko Kohaku Koharu Kokoro Kotone Kumiko Kyo Kyou Mai Makoto 
+		Mami Manami Mao Mariko Masami Masuyo Mayu Megumi Mei Michi Michiko Midori Mika Miki Miku Minako Minato Mio 
+		Misaki Mitsuko Miu Miyako Miyu Mizuki Moe Momoka Momoko Moriko Nana Nanami Naoko Naomi Natsuki Natsuko Natsumi 
+		Noa Noriko Ran Rei Ren Riko Rin Rina Rio Sachiko Saki Sakura Sakurako Satomi Sayuri Setsuko Shinju Shinobu 
+		Shiori Shizuka Shun Sora Sumiko Suzu Suzume Takako Takara Tamiko Tomiko Tomoko Tomomi Tsubaki Tsubame Tsubasa 
+		Tsukiko Ume Umeko Wakana Yasu Yoko Yoshi Yoshiko Youko Yua Yui Yuina Yuki Yukiko Yuko Yumi Yumiko Yuri Yuu		
+	} 
+	dynasty_names = {
+		Yamato Arisugawa Asaka Fushimi "Kan'in" Katsura Kaya Kitashirakawa Kuni Nashimoto Takeda Yamashina Fujikawa Tanaka
+		Shimizu Nakamura Morioka Sato Suzuki Yamamoto Ito Kobayashi Hasegawa Yamada Kato Yoshida Sasaki Nakajima Oda Mori
+		Hayashi Ishikawa Sakamoto Aoki Matsui Kimura Inoue Watanabe Nakagawa Fujii Takada Yoshida Okamoto Hayashida Kagayaki		
+	}
+}

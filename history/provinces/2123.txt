@@ -1,0 +1,13 @@
+is_city = no
+discovered_by = TECH_ANGEL
+add_core = SH3
+discovered_by = AR3
+discovered_by = HR1
+owner = SH3
+base_tax = 1
+base_manpower = 3
+base_production = 3
+culture = Angel_Girl
+religion = ilias_light_religion
+controller = SH3
+center_of_trade = 1

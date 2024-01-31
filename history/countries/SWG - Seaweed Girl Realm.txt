@@ -1,0 +1,18 @@
+government = monarchy
+government_rank = 1
+primary_culture = Seaweed_Girl
+add_government_reform = Alraune_realm
+religion = monster_lord_religion
+technology_group = TECH_ALRAUNE
+capital = 502
+1444.1.1 = { 
+	monarch = { 
+		name = "Wakame"
+		dynasty = "Seeweed"
+		birth_date = 1424.1.1
+		adm = 4
+		dip = 3
+		mil = 3
+		female = yes
+	}
+}

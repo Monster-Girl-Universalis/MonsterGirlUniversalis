@@ -1,0 +1,18 @@
+government = monarchy
+government_rank = 2
+primary_culture = Kirin_Girl
+religion = monster_lord_religion
+technology_group = TECH_DRAGON
+1444.1.1 = { 
+	monarch = { 
+		name = "Kirin"
+		dynasty = "Kaminari"
+		female = yes
+		birth_date = 1424.1.1
+		adm = 4
+		dip = 4
+		mil = 4
+	}
+}
+add_government_reform = Dragon_realm
+capital = 2207

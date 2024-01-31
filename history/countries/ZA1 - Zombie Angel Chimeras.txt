@@ -1,0 +1,18 @@
+government = monarchy
+government_rank = 1
+primary_culture = Chimera_Girl
+religion = chaos_religion
+technology_group = TECH_CHIMERA
+1444.1.1 = { 
+	monarch = { 
+		female = yes
+		name = "Wrappy"
+		dynasty = "Organism AD-5"
+		birth_date = 1424.1.1
+		adm = 4
+		dip = 4
+		mil = 4
+	}
+}
+add_government_reform = Chimera_realm
+capital = 2118

@@ -1,0 +1,31 @@
+bookmark =
+{
+	name = "MGQ_BOOKMARK"
+	desc = "MGQ_BOOKMARK_DESC"
+	date = 1444.11.11
+	
+	center = 41
+	default = yes
+
+	country = ENV
+	country = ML1
+	country = SI1
+	country = SA1
+	country = GR2
+	country = GR4
+	country = PT1
+	country = IT1
+	country = LC1
+	country = CD1
+	country = NA1
+	country = FP1
+	
+	easy_country = ENV
+	easy_country = ML1
+	easy_country = SI1
+	easy_country = SA1
+	easy_country = GR2
+	easy_country = GR4
+	easy_country = PT1
+	
+}

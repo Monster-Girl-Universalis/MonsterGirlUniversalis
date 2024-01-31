@@ -1,0 +1,799 @@
+age_of_discovery = {	#Great Disaster
+	start = 1400
+	
+	can_start = {
+		always = yes
+	}
+	
+	religious_conflicts = yes
+	#papacy = 1.0
+	
+
+	objectives = {
+
+		obj_250_development = {
+			total_development = 250			
+		}
+		obj_5_centers_of_trade = {
+			calc_true_if = {
+				all_owned_province = {
+					OR = {
+						province_has_center_of_trade_of_level = 2
+						province_has_center_of_trade_of_level = 3
+					}
+					controlled_by = owner
+					is_core = ROOT
+				}
+				amount = 5
+			}
+		}
+		obj_30_development_city = {
+			custom_trigger_tooltip = {
+				tooltip = obj_30_development_city_tooltip
+				any_owned_province = {
+					exclude_from_progress = {
+						is_core = ROOT
+						controlled_by = owner
+					}
+					development_discounting_tribal = 30
+				}
+			}
+		}
+		obj_renaissance = {
+	 		has_institution = renaissance
+	 		all_state_province = {
+	 			renaissance = 100
+	 		}
+		}
+		obj_two_continents = {
+			num_of_continents = 2
+		}
+		obj_humiliate_rival = {
+			custom_trigger_tooltip = {
+				tooltip = obj_humiliate_rival_tooltip
+				has_country_flag = humiliated_rival
+			}
+		}
+		obj_dynamic_court = {
+			mgq_has_adm_advisor = yes
+			mgq_has_dip_advisor = yes
+			mgq_has_mil_advisor = yes
+		}
+	}
+	
+	abilities = {
+		ab_allow_feudal_de_jure_law = {
+			effect = {
+				custom_tooltip = feudal_de_jure_law
+				set_country_flag = feudal_de_jure_law
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+		
+		ab_justified_wars = {
+			modifier = {
+				ae_impact = -0.1
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+		ab_transfer_vassal_wargoal = {
+			modifier = {
+				can_transfer_vassal_wargoal = yes
+				can_chain_claim = yes
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+		ab_free_war_taxes = {
+			modifier = {
+				war_taxes_cost_modifier = -1.0
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+		ab_attack_bonus_in_capital_terrain = {
+			modifier = {
+				attack_bonus_in_capital_terrain = 1
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}		
+		ab_apoptosis_encroachment = {		
+			allow = {
+				culture_group = apoptosis
+			}
+			modifier = {
+				land_maintenance_modifier = -0.50
+			}
+			ai_will_do = {
+				factor = 100
+				modifier = {
+					factor = 0
+					NOT = {
+						any_subject_country = {
+							liberty_desire = 20
+						}
+					}
+				}
+			}
+		}
+		ab_san_ilia_makina = {		
+			allow = {
+				tag = SI1
+			}
+			modifier = {
+				technology_cost = -0.10
+			}
+			ai_will_do = {
+				factor = 100
+			}
+		}
+		ab_sabasa_assasins = {
+			allow = {
+				culture = sabasa_human
+			}
+			modifier = {
+				shock_damage = 0.15
+			}
+			ai_will_do = {
+				factor = 100
+			}
+		}
+		ab_grand_noah_magical_advisor = {
+			allow = {
+				tag = GR2
+			}
+			modifier = {
+				all_power_cost = -0.05
+			}
+			ai_will_do = {
+				factor = 100
+			}
+		}
+		ab_grangold_siege_ability = {
+			allow = {
+				tag = GR4
+			}
+			modifier = {
+				leader_siege = 1
+				siege_ability = 0.10
+			}
+			ai_will_do = {
+				factor = 100
+			}
+		}
+		ab_navy_ship_trade = {
+			allow = {
+				tag = NA1
+			}
+			modifier = {
+				global_ship_trade_power = 0.50
+			}
+			ai_will_do = {
+				factor = 100
+			}
+		}
+	}
+}
+
+age_of_reformation = {	#Monster Lord Invasions
+	start = 1520
+	
+	can_start = {
+		is_institution_enabled = new_world_i
+	}
+	
+	religious_conflicts = yes
+	
+	objectives = {
+		obj_visitor_from_other_worlds = {
+			OR = {
+				religion = chaos_religion 
+				religion = angel_world_religion 
+				religion = dark_goddess_religion 
+			}
+		}
+		obj_race_mastery = {
+				custom_trigger_tooltip = {
+					tooltip = mgq_full_any_race_tooltip
+					OR = {
+						full_idea_group = human_ideas 
+						full_idea_group = land_dweller_ideas 
+						full_idea_group = succubi_ideas 
+						full_idea_group = undead_ideas 
+						full_idea_group = slime_ideas 
+						full_idea_group = apoptosis_ideas 
+						full_idea_group = alraune_ideas 
+						full_idea_group = elf_ideas 
+						full_idea_group = beast_ideas 
+						full_idea_group = insect_ideas 
+						full_idea_group = harpy_ideas 
+						full_idea_group = dragon_ideas 
+						full_idea_group = demi_human_ideas 
+						full_idea_group = vampire_ideas 
+						full_idea_group = yoma_ideas 
+						full_idea_group = kitsune_ideas 
+						full_idea_group = mermaid_ideas 
+						full_idea_group = sea_dweller_ideas 
+						full_idea_group = doll_ideas 
+						full_idea_group = scylla_ideas 
+						full_idea_group = lamia_ideas 
+						full_idea_group = chimera_ideas 
+						full_idea_group = angel_ideas 
+						full_idea_group = roid_ideas 
+						full_idea_group = tanuki_ideas 
+					}
+				}
+		}
+		obj_convert_10_provinces = {
+			custom_trigger_tooltip = {
+				tooltip = obj_convert_10_provinces_tooltip
+				check_variable = { 
+					which = num_converted_religion 
+					value = 10
+				}
+			}
+		}
+		obj_force_converted = {
+			custom_trigger_tooltip = {
+				tooltip = obj_force_converted_tooltip
+				has_country_flag = force_converted
+			}
+		}
+		obj_strength_unity = {
+			religious_unity = 1
+		}
+		obj_rally_the_troops = {
+			army_size = 150
+		}				
+		obj_many_vassals = {
+			vassal = 4
+		}
+	}
+
+	abilities = {
+		ab_siege_blockades = {
+			modifier = {
+				siege_blockade_progress = 1
+			}
+			ai_will_do = {
+				factor = 10
+				modifier = {
+					factor = 0
+					NOT = {
+							num_of_ports = 5
+					}
+				}
+			}
+		}		
+		ab_warscore_vs_religion = {
+			modifier = {
+				warscore_cost_vs_other_religion = -0.25
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+		ab_mercenary_discipline = {
+			modifier = {
+				mercenary_discipline = 0.05
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+		ab_ship_power_propagation = {
+			modifier = {
+				ship_power_propagation = 0.2
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+		ab_prestige_per_development_from_conversion = {
+			modifier = {
+				prestige_per_development_from_conversion = 0.3
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+		ab_lilys_research = {
+			allow = {
+				culture = worm_summoner
+			}
+			modifier = {
+				all_power_cost = -0.05
+			}
+			ai_will_do = {
+				factor = 100
+			}
+		}
+		ab_fairies_harmony_with_nature = {
+			allow = {
+				OR = {
+					tag = WT1
+					tag = EL1
+					AND = {
+						culture_group = elf
+						government_rank = 3
+						NOT = { religion = chaos_religion }
+					}					
+				}
+			}
+			modifier = {
+				development_cost = -0.15
+			}
+			ai_will_do = {
+				factor = 100
+			}
+		}
+
+		ab_vampire_queen_ambition = {
+			allow = {
+				OR = {
+					tag = VA6
+					AND = {
+						culture_group = vampire
+						government_rank = 3
+					}					
+				}
+
+			}
+			modifier = {
+				cb_on_overseas = yes
+				ignore_coring_distance = yes
+			}
+			ai_will_do = {
+				factor = 100
+			}
+		}
+		ab_mermaid_queen_generals = {
+			allow = {
+				OR = {
+					tag = MR3
+					AND = {
+						culture_group = mermaid
+						government_rank = 3
+					}					
+				}
+			}
+			modifier = {
+				leader_naval_manuever = 2
+				max_admiral_maneuver = 1
+			}
+			ai_will_do = {
+				factor = 100
+			}
+		}
+		ab_spider_princess_resentment = {
+			allow = {
+				OR = {
+					tag = SP4
+					AND = {
+						culture = Arachne_Girl
+						government_rank = 3
+					}
+					AND = {
+						culture = Spider_Girl
+						government_rank = 3
+					}					
+				}
+			}
+			modifier = {
+				army_tradition = 1
+				manpower_recovery_speed = 0.33
+			}
+			ai_will_do = {
+				factor = 100
+			}
+		}
+		ab_new_golden_age_of_piracy = {
+			allow = {
+				tag = FP1
+			}
+			modifier = {
+				capture_ship_chance = 0.33
+			}
+			ai_will_do = {
+				factor = 100
+			}
+		}
+	}
+}
+
+age_of_absolutism = {	#Time of Decision
+	start = 1620
+	
+	can_start = {
+		is_institution_enabled = global_trade
+	}
+	
+	#papacy = 1.5
+
+	religious_conflicts = yes	
+
+	absolutism = {
+		harsh_treatment = 1
+		stability = 1
+		decrease_autonomy_command = 1
+		strengthen_government = 2
+		
+		increase_autonomy_command = -2
+		debase_currency = -1
+		execute_rebel_acceptance_command = -10
+		automatic_seat_in_parliament = -2
+		manual_seat_in_parliament = -2
+		war_exhaustion = -1
+	}
+	
+	objectives = {
+		obj_3_trade_companies = {
+			num_of_trade_companies = 3
+		}
+		obj_universities = {
+			num_of_owned_provinces_with = {
+				has_building = university 
+				value = 5 
+			}
+		}
+		obj_large_forcelimit_250 = {
+			land_forcelimit = 250
+		}
+		obj_90_absolutism = {
+			absolutism = 90
+		}
+		obj_huge_empire = {
+			total_development = 1500
+			government_rank = 3
+		}
+		obj_cultures_accepted = {
+			num_accepted_cultures = 5
+		}
+		obj_win_religious_war = {
+			custom_trigger_tooltip = {
+				tooltip = obj_religious_league_war_on_winning_side_tooltip
+				has_country_flag = religious_league_war_on_winning_side
+			}			
+		}
+	}
+	
+	abilities = {
+		ab_allow_edict_of_absolutism = {
+			effect = {
+				custom_tooltip = edict_of_absolutism_tt
+				set_country_flag = edict_of_absolutism
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+		ab_rival_border_fort = {
+			modifier = {
+				rival_border_fort_maintenance = -1.0
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+		ab_harsh_treatment = {
+			modifier = {
+				harsh_treatment_cost = -0.5
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+		ab_adm_efficiency = {
+			modifier = {
+				administrative_efficiency = 0.05
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+		ab_yearly_absolutism = {
+			modifier = {
+				yearly_absolutism = 1
+			}
+			ai_will_do = {
+				factor = 100
+			}
+		}
+		ab_angels_and_monsters = {
+			allow = {
+				OR = {
+					AND = {
+						religion = ilias_light_religion
+						government_rank = 3
+					}
+					AND = {
+						religion = monster_lord_religion
+						government_rank = 3
+					}					
+				}
+			}
+			modifier = {
+				governing_capacity_modifier = 0.20
+			}
+			ai_will_do = {
+				factor = 100
+			}
+		}
+
+		ab_goddess_comeback = {
+			allow = {
+				tag = IT1
+			}
+			modifier = {
+				max_absolutism_effect = 0.33
+			}
+			ai_will_do = {
+				factor = 100
+			}
+		}
+		ab_cirque_du_croix = {
+			allow = {
+				tag = LC1
+			}
+			modifier = {
+				military_tactics = 0.25
+			}
+			ai_will_do = {
+				factor = 100
+			}
+		}
+		ab_sophisticated_dolls = {
+			allow = {
+				tag = PT1
+			}
+			modifier = {
+				morale_damage_received = -0.25
+			}
+			ai_will_do = {
+				factor = 100
+			}
+		}
+		ab_plansect_peace = {
+			allow = {
+				OR = {
+					tag = AL4
+					tag = RM1
+				}
+			}
+			modifier = {
+				production_efficiency = 0.15
+				global_prosperity_growth = 2
+			}
+			ai_will_do = {
+				factor = 100
+			}
+		}
+		ab_nereneid_ambitions = {
+			allow = {
+				OR = {
+					tag = LV1
+					tag = SM2
+				}
+			}
+			modifier = {
+				fire_damage = 0.15
+				global_autonomy = -0.10
+				min_autonomy_in_territories = -0.15
+			}
+			ai_will_do = {
+				factor = 100
+			}
+		}
+	}
+}
+
+age_of_revolutions = {	#End of the Story
+	start = 1710
+	
+	can_start = {
+		is_institution_enabled = enlightenment
+	}
+	
+	#papacy = 2.0
+
+	religious_conflicts = yes
+
+	absolutism = {
+		harsh_treatment = 1
+		stability = 1
+		decrease_autonomy_command = 1
+		strengthen_government = 2
+		increase_autonomy_command = -2
+		debase_currency = -1
+		execute_rebel_acceptance_command = -10
+		automatic_seat_in_parliament = -2
+		manual_seat_in_parliament = -2
+		war_exhaustion = -1
+	}
+	
+	objectives = {		
+		obj_monster_lord = {
+			OR = {	
+				is_emperor = yes
+				dynasty = "Fateburn"
+			}
+		}
+		obj_large_subject = {
+			any_subject_country = {
+				total_development = 250
+			}
+		}
+		obj_disc_army = {
+			has_global_modifier_value = {
+				which = discipline
+				value = 0.25
+				extra_shortcut = yes
+			}
+		}
+		obj_huge_capital = {
+			capital_scope = {
+				development = 50
+			}
+		}
+		obj_great_general = {
+			has_commanding_three_star = yes
+		}
+		obj_industrial_nation = {
+			furnace = 5
+		}
+		obj_powerful_diplomacy = {
+			num_of_diplomatic_relations = 7
+		}
+	}
+
+	abilities = {
+		ab_makina_warfare = {
+			modifier = {
+				artillery_levels_available_vs_fort = 5
+			}
+			ai_will_do = {
+				factor = 15
+			}
+		}
+		ab_force_march = {
+			modifier = {
+				force_march_free = yes
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+		ab_more_ships_can_fire = {
+			modifier = {
+				global_naval_engagement_modifier = 0.20
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+		ab_no_distance_for_core = {
+			modifier = {
+				ignore_coring_distance = yes
+			}
+			ai_will_do = {
+				factor = 15
+				modifier = {
+					# AI peace code relies on being limited by coring range, or it will create crazy border gore where it can't reach its new lands
+					factor = 0
+					OR = {
+						is_subject = no
+						overlord = {
+							ai = yes
+						}
+					}
+				}
+			}
+		}
+		ab_backrow_artillery = {
+			modifier = {
+				backrow_artillery_damage = 0.20
+			}
+			ai_will_do = {
+				factor = 15
+			}
+		}
+		ab_counterattack = {
+			allow = {
+				AND = {
+					culture_group = Human_culture 
+					NOT = { culture = replicant_human }
+				}
+			}
+			modifier = {
+				global_regiment_recruit_speed = -0.33
+				land_forcelimit_modifier = 0.33
+			}
+			ai_will_do = {
+				factor = 100
+			}
+		}
+		ab_cross_world_contact_elimination = {
+			allow = {
+				AND = {
+					religion = chaos_religion 
+					culture_group = apoptosis
+				}
+			}
+			modifier = {
+				province_warscore_cost = -0.33
+				years_of_nationalism = -6
+			}
+			ai_will_do = {
+				factor = 100
+			}
+		}
+		ab_path_of_judgment = {
+			allow = {
+				AND = {
+					religion = angel_world_religion
+					religious_unity = 1
+				}
+			}
+			modifier = {
+				max_general_siege = 2
+				max_general_fire = 2
+				leader_cost = -0.33
+			}
+			ai_will_do = {
+				factor = 100
+			}
+		}
+		ab_path_of_worldbreaker = {
+			allow = {
+				AND = {
+					religion = dark_goddess_religion
+					religious_unity = 1
+				}
+			}
+			modifier = {
+				max_general_siege = 2
+				max_general_fire = 2
+				leader_land_fire = 1
+				leader_siege = 1
+			}
+			ai_will_do = {
+				factor = 100
+			}
+		}
+		ab_join_the_alliance_of_wisdom = {
+			allow = {
+				religion = seekers_of_truth_religion
+			}
+			modifier = {
+				max_general_siege = 1
+				max_general_fire = 1
+				all_power_cost = -0.15
+			}
+			ai_will_do = {
+				factor = 100
+			}
+		}
+		ab_world_chaos = {
+			allow = {
+				culture = XX-class_Apoptosis
+			}
+			modifier = {
+				military_tactics = 1
+				siege_ability = 0.33
+				global_unrest = -6
+				overextension_impact_modifier = -0.5
+			}
+			ai_will_do = {
+				factor = 100
+			}
+		}
+	}
+}

@@ -1,0 +1,23 @@
+bookmark =
+{
+	name = "MGQ_SNOW"
+	desc = "MGQ_SNOW_DESC"
+	date = 1444.11.11
+	
+	center = 1989
+
+	country = SH3
+	country = IT1
+	country = AR3
+	country = HR1
+	country = PB1
+	country = ZA1
+	country = IW1
+	country = FC1
+	
+	easy_country = SH3
+	easy_country = IT1
+	easy_country = AR3
+	easy_country = HR1
+	
+}

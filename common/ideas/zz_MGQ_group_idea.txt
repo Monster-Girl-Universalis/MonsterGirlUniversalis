@@ -1,0 +1,1972 @@
+MGQ_human_ideas = {
+	start = {
+		stability_cost_modifier = -0.15
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+	
+	bonus = {
+		global_tax_modifier = 0.15
+	}
+	
+	trigger = {
+		culture_group = Human_culture
+		NOT = {
+			culture = worm_summoner
+		}
+	}	
+	free = yes
+	
+	MGQ_goddess_worship = {
+		tolerance_own = 1
+		missionary_maintenance_cost = -0.2
+	}
+	MGQ_baptized_heroes = {
+		leader_land_shock = 1
+		shock_damage = 0.10
+	}	
+	MGQ_human_perseverance = {
+		defensiveness = 0.15
+	}
+	MGQ_fertile_lands = {
+		production_efficiency = 0.10
+	}
+	MGQ_aim_for_coexistence = {
+		tolerance_heathen = 2
+		tolerance_of_heathens_capacity = 2
+	}
+	MGQ_makina_research = {
+		technology_cost = -0.1
+	}
+	MGQ_greater_army = {
+		land_forcelimit_modifier = 0.15
+		global_manpower_modifier = 0.15
+	}
+}
+
+MGQ_slime_ideas = {
+	start = {
+		tolerance_own = 1
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+	
+	bonus = {
+		build_cost = -0.15
+	}
+	
+	trigger = {
+		culture_group = slime
+		NOT = {
+			culture = Lava_Girl
+		}
+
+	}	
+	free = yes
+	
+	MGQ_resilient_slimes = {
+		land_morale = 0.10
+	}
+	MGQ_recombine = {
+		land_attrition = -0.25
+		leader_land_manuever = 1
+	}	
+	MGQ_peaceful_lowly_slimes = {
+		production_efficiency = 0.125
+	}
+	MGQ_thriving_slime_merchants = {
+		trade_efficiency = 0.10
+	}
+	MGQ_slime_vitality = {
+		shock_damage_received = -0.075
+		fire_damage_received = -0.075
+	}
+	MGQ_malicious_feral_slimes = {
+		infantry_power = 0.20
+	}
+	MGQ_widespread_race = {
+		land_forcelimit_modifier = 0.15
+		diplomats = 1
+	}
+}
+
+MGQ_alraune_ideas = {
+	start = {
+		global_unrest = -1
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+	
+	bonus = {
+		land_maintenance_modifier = -0.10
+	}
+	
+	trigger = {
+		OR = {
+			culture_group = alraune
+		}
+	}	
+	free = yes
+	
+	MGQ_alraune_regeneration = {
+		recover_army_morale_speed = 0.25
+	}
+	MGQ_plants_vitality = {
+		land_attrition = -0.15
+		manpower_recovery_speed = 0.10
+	}	
+	MGQ_fast_growth = {
+		reinforce_speed = 0.33
+	}
+	MGQ_healing_our_soil = {
+		development_cost = -0.15
+	}
+	MGQ_dense_woods = {
+		defensiveness = 0.40
+		fire_damage_received = 0.10
+	}
+	MGQ_feral_alraunes = {
+		infantry_power = 0.20
+	}
+	MGQ_flower_nepenthes = {
+		hostile_attrition = 1
+		max_hostile_attrition = 3
+	}
+}
+
+MGQ_succubi_ideas = {
+	start = {
+		tolerance_heathen = 2
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+	
+	bonus = {
+		global_unrest = -1.50
+	}
+	
+	trigger = {
+		OR = {
+			culture_group = succubi
+		}
+	}	
+	free = yes
+	
+	MGQ_pacifying_the_men = {
+		years_of_nationalism = -5
+	}
+	MGQ_benevolent_mistresses = {
+		diplomatic_reputation = 1
+		diplomatic_annexation_cost = -0.2
+	}	
+	MGQ_hypnotic_persuasion = {
+		accept_vassalization_reasons = 20
+		transfer_trade_power_reasons = 20
+	}
+	MGQ_maintaining_good_image = {
+		ae_impact = -0.2
+		diplomats = 1
+	}
+	MGQ_widespread_relations = {
+		diplomatic_upkeep = 2
+	}
+	MGQ_succubi_envoys = {
+		relation_with_accepted_culture = 30
+		relation_with_other_culture = 30
+	}
+	MGQ_archsuccubus_battlemagi = {
+		leader_land_fire = 1
+		leader_naval_fire = 1
+	}
+}
+
+MGQ_elf_ideas = {
+	start = {
+		idea_cost = -0.1
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+	
+	bonus = {
+		technology_cost = -0.10
+	}
+	
+	trigger = {
+		OR = {
+			culture_group = elf
+		}
+	}	
+	free = yes
+	
+	MGQ_mystical_forests = {
+		defensiveness = 0.10
+		hostile_attrition = 1
+		max_hostile_attrition = 1
+	}
+	MGQ_elven_archery = {
+		shock_damage = 0.15
+	}	
+	MGQ_natures_blessing = {
+		global_trade_goods_size = 0.25
+		development_cost = -0.05
+	}
+	MGQ_forest_guardians = {
+		land_morale = 0.125
+	}
+	MGQ_eternal_bond = {
+		diplomatic_reputation = 1
+	}
+	MGQ_elven_enclaves = {
+		trade_efficiency = 0.1
+	}
+	MGQ_elven_harmony = {
+		legitimacy = 1
+		republican_tradition = 0.3
+		devotion = 1
+		horde_unity = 1
+		meritocracy = 0.5
+		global_manpower_modifier = 0.15
+		manpower_recovery_speed = 0.15
+	}
+}
+
+MGQ_harpy_ideas = {
+	start = {
+		land_attrition = -0.15
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+	
+	bonus = {
+		trade_efficiency = 0.1
+	}
+	
+	trigger = {
+		OR = {
+			culture_group = harpy
+		}
+		NOT = {
+			tag = HRT
+		}
+		NOT = {
+			tag = HQ1
+		}
+	}	
+	free = yes
+	
+	MGQ_aerial_dominance = {
+		land_morale = 0.1
+	}
+	MGQ_skyborne_raiders = {
+		movement_speed = 0.05
+		privateer_efficiency = 0.2
+	}	
+	MGQ_feathered_diplomacy = {
+		improve_relation_modifier = 0.15
+		spy_offence = 0.15
+	}
+	MGQ_aerie_networks = {
+		caravan_power = 0.15
+		trade_steering = 0.1
+	}
+	MGQ_harpies_claws = {
+		infantry_power = 0.15
+	}
+	MGQ_guardians_of_the_sky = {
+		defensiveness = 0.20
+	}
+	MGQ_avian_artistry = {
+		global_trade_goods_size = 0.5
+	}
+}
+
+MGQ_sea_dweller_ideas = {
+	start = {
+		global_trade_power = 0.15
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+	
+	bonus = {
+		global_trade_goods_size = 0.15
+	}
+	
+	trigger = {
+		OR = {
+			culture_group = sea_dweller
+		}
+	}	
+	free = yes
+	
+	MGQ_marine_tradition = {
+		naval_morale = 0.125
+	}
+	MGQ_mystical_currents = {
+		ship_trade_power_modifier = 0.25
+	}	
+	MGQ_abyssal_dominion = {
+		privateer_efficiency = 0.33
+	}
+	MGQ_seafarers_resilience = {
+		naval_attrition = -0.15
+		sailors_recovery_speed = 0.15
+	}
+	MGQ_coral_architects = {
+		build_cost = -0.125
+	}
+	MGQ_nautical_ingenuity = {
+		ship_durability = 0.05
+	}
+	MGQ_oceanic_unity = {
+		navy_tradition = 1
+	}
+}
+
+MGQ_mermaid_ideas = {
+	start = {
+		trade_efficiency = 0.10
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+	
+	bonus = {
+		ship_durability = 0.05
+	}
+	
+	trigger = {
+		OR = {
+			culture_group = mermaid
+		}
+	}	
+	free = yes
+	
+	MGQ_enchanted_waters = {
+		naval_morale = 0.075
+	}
+	MGQ_pearl_divers = {
+		global_trade_goods_size = 0.1
+	}	
+	MGQ_aquatic_harmony = {
+		improve_relation_modifier = 0.25
+	}
+	MGQ_seafaring_traditions = {
+		naval_forcelimit_modifier = 0.1
+		sailors_recovery_speed = 0.10
+	}
+	MGQ_treasure_of_the_deep = {
+		global_trade_power = 0.15
+	}
+	MGQ_marine_diplomacy = {
+		diplomatic_upkeep = 1
+	}
+	MGQ_mermaids_call = {
+		global_naval_engagement_modifier = 0.15
+	}
+}
+
+MGQ_kitsune_ideas = {
+	start = {
+		spy_offence = 0.15
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+	
+	bonus = {
+		global_spy_defence = 0.15
+	}
+	
+	trigger = {
+		OR = {
+			culture_group = kitsune
+		}
+	}	
+	free = yes
+	
+	MGQ_shapeshifting_trickery = {
+		unjustified_demands = -0.2
+	}
+	MGQ_mystical_illusions = {
+		fire_damage_received = -0.1
+	}	
+	MGQ_cunning_diplomacy = {
+		improve_relation_modifier = 0.10
+		spy_offence = 0.25
+	}
+	MGQ_kitsune_tricksters = {
+		shock_damage_received = -0.15
+	}
+	MGQ_shapechanging_mastery = {
+		reinforce_speed = 0.33
+	}
+	MGQ_kitsune_ninjas = {
+		infantry_shock = 0.33
+	}
+	MGQ_kitsune_taoists = {
+		infantry_fire = 0.33
+	}
+}
+
+MGQ_slug_ideas = {
+	start = {
+		defensiveness = 0.15
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+	
+	bonus = {
+		hostile_attrition = 1
+	}
+	
+	trigger = {
+		OR = {
+			culture = Slug_Girl
+		}
+	}	
+	free = yes
+	
+	MGQ_slimy_resilience = {
+		morale_damage_received = -0.05
+	}
+	MGQ_sluggish_expansion = {
+		core_creation = -0.10
+	}	
+	MGQ_adaptive_metabolism = {
+		manpower_recovery_speed = 0.25
+	}
+	MGQ_efficient_harvesting = {
+		production_efficiency = 0.10
+	}
+	MGQ_resilient_infrastructure = {
+		build_cost = -0.075
+		max_hostile_attrition = 1
+	}
+	MGQ_adhesive_warfare = {
+		shock_damage = 0.20
+	}
+	MGQ_civic_adaptation = {
+		global_tax_modifier = 0.15
+	}
+}
+
+
+MGQ_insect_ideas = {
+	start = {
+		reinforce_cost_modifier = -0.25
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+	
+	bonus = {
+		reinforce_speed = 0.25
+	}
+	
+	trigger = {
+		culture_group = insect
+		NOT = {
+			culture = Butterfly_Girl
+		}
+	}	
+	free = yes
+	
+	MGQ_chitinous_defenses = {
+		defensiveness = 0.1
+		recover_army_morale_speed = 0.10
+	}
+	MGQ_efficient_harvesting = {
+		production_efficiency = 0.10
+	}	
+	MGQ_swarm_tactics = {
+		land_forcelimit_modifier = 0.33
+		shock_damage_received = 0.075
+	}
+	MGQ_insect_fertility = {
+		manpower_recovery_speed = 0.33
+	}
+	MGQ_silk_trade = {
+		global_trade_goods_size_modifier = 0.15
+	}
+	MGQ_adaptive_foraging = {
+		land_attrition = -0.25
+	}
+	MGQ_high_insect_warfare = {
+		infantry_power = 0.25
+	}
+}
+
+MGQ_lamia_ideas = {
+	start = {
+		defensiveness = 0.15
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+	
+	bonus = {
+		advisor_cost = -0.1
+	}
+	
+	trigger = {
+		OR = {
+			culture_group = lamia
+		}
+	}	
+	free = yes
+	
+	MGQ_serpentine_charms = {
+		diplomatic_reputation = 1
+	}
+	MGQ_venomous_ambush = {
+		morale_damage = 0.05
+	}	
+	MGQ_serpent_wisdom = {
+		administrative_efficiency = 0.05
+	}
+	MGQ_tail_strike_tactics = {
+		infantry_shock = 0.5
+		infantry_power = 0.05
+	}
+	MGQ_eternal_beauty = {
+		improve_relation_modifier = 0.15
+	}
+	MGQ_economic_serenity = {
+		development_cost = -0.075
+	}
+	MGQ_cunning_negotiators = {
+		unjustified_demands = -0.2
+	}
+}
+
+MGQ_scylla_ideas = {
+	start = {
+		free_adm_policy = 1
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+	
+	bonus = {
+		possible_policy = 1
+	}
+	
+	trigger = {
+		OR = {
+			culture_group = scylla
+		}
+	}	
+	free = yes
+	
+	MGQ_tentacle_mastery = {
+		morale_damage = 0.075
+		naval_morale_damage = 0.075
+	}
+	MGQ_hydrokinetic_prowess = {
+		naval_forcelimit_modifier = 0.15
+	}	
+	MGQ_tentacle_reach = {
+		infantry_power = 0.33
+		fire_damage_received = 0.1
+		shock_damage_received = 0.1
+	}
+	MGQ_amphibious_warriors = {
+		land_morale = 0.075
+		naval_morale = 0.075
+	}
+	MGQ_kraken_heritage = {
+		sailors_recovery_speed = 0.15
+	}
+	MGQ_eightfold_navigation = {
+		global_ship_trade_power = 0.25
+	}
+	MGQ_ink_cloud_defense = {
+		transport_attrition = -0.5
+	}
+}
+
+MGQ_doll_ideas = {
+	start = {
+		trade_efficiency = 0.1
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+	
+	bonus = {
+		morale_damage_received = -0.075
+	}
+	
+	trigger = {
+		OR = {
+			culture_group = doll
+		}
+	}	
+	free = yes
+	
+	MGQ_inanimate_diplomacy = {
+		diplomatic_upkeep = 1
+	}
+	MGQ_clockwork_production = {
+		build_cost = -0.1
+	}
+	MGQ_clockwork_precision = {
+		artillery_power = 0.15
+	}
+	MGQ_artificial_intellect = {
+		technology_cost = -0.05
+	}
+	MGQ_mass_produced = {
+		manpower_recovery_speed = 0.15
+		global_manpower_modifier = 0.15
+	}
+	MGQ_master_craftsmanship = {
+		development_cost = -0.10
+	}
+	MGQ_precision_warfare = {
+		infantry_fire = 0.5
+	}
+}
+
+MGQ_chimera_ideas = {
+	start = {
+		technology_cost = -0.075
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+	
+	bonus = {
+		global_unrest = -1
+	}
+	
+	trigger = {
+		OR = {
+			culture_group = chimera
+		}
+	}	
+	free = yes
+	
+	MGQ_hybrid_physiology = {
+		manpower_recovery_speed = 0.20
+	}
+	MGQ_adaptive_genetics = {
+		global_regiment_recruit_speed = -0.50
+	}	
+	MGQ_biological_alchemy = {
+		global_supply_limit_modifier = 0.33
+	}
+	MGQ_versatile_warriors = {
+		infantry_power = 0.15
+	}
+	MGQ_morphing_tactics = {
+		morale_damage_received = -0.10
+	}
+	MGQ_evolving_defense = {
+		garrison_damage = 0.60
+	}
+	MGQ_regenerative_traits = {
+		recover_army_morale_speed = 0.10
+	}
+}
+
+MGQ_ittan_momen_ideas = {
+	start = {
+		regiment_disembark_speed = 0.25
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+	
+	bonus = {
+		movement_speed_in_fleet_modifier = 0.5
+	}
+	
+	trigger = {
+		OR = {
+			culture = Ittan_Momen
+		}
+	}	
+	free = yes
+	
+	MGQ_scrolls_of_secrets = {
+		no_claim_cost_increasement = yes
+		spy_action_cost_modifier = -0.2
+	}
+	MGQ_lingering_presence = {
+		diplomatic_reputation = 1
+	}
+	MGQ_airborne_patrol = {
+		land_forcelimit_modifier = 0.30
+	}	
+	MGQ_silent_watcher = {
+		ae_impact = -0.2
+	}
+	MGQ_swift_response = {
+		movement_speed = 0.10
+	}
+	MGQ_evasive_maneuvers = {
+		max_general_maneuver = 1
+		leader_land_manuever = 1
+	}
+	MGQ_flapping_cloth = {
+		shock_damage_received = -0.20
+		fire_damage_received = 0.05
+	}
+}
+
+MGQ_genie_ideas = {
+	start = {
+		diplomatic_reputation = 1
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+	
+	bonus = {
+		fire_damage = 0.1
+	}
+	
+	trigger = {
+		OR = {
+			culture = Genie_Girl
+		}
+	}	
+	free = yes
+	
+	MGQ_elemental_mastery = {
+		production_efficiency = 0.1
+	}
+	MGQ_wishes_of_prosperity = {
+		global_tax_modifier = 0.15
+	}
+	MGQ_wish-fulfillment_contracts = {
+		merc_maintenance_modifier = -0.33
+	}	
+	MGQ_arcane_defense = {
+		defensiveness = 0.30
+	}
+	MGQ_ethereal_mobility = {
+		movement_speed = 0.10
+	}
+	MGQ_powerful_yomas = {
+		max_general_fire = 1
+	}
+	MGQ_unlimited_wishes = {
+		idea_cost = -0.2
+	}
+}
+
+MGQ_minotaur_ideas = {
+	start = {
+		shock_damage = 0.1
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+	
+	bonus = {
+		prestige_from_land = 0.50
+	}
+	
+	trigger = {
+		OR = {
+			culture = Minotaur_Girl
+		}
+	}	
+	free = yes
+	
+	MGQ_labyrinthine_fortresses = {
+		defensiveness = 0.2
+	}
+	MGQ_bullish_might = {
+		land_morale = 0.15
+	}
+	MGQ_maze_architects = {
+		build_cost = -0.1
+	}	
+	MGQ_cattle_herders = {
+		global_manpower_modifier = 0.20
+	}
+	MGQ_horns_of_fury = {
+		shock_damage = 0.15
+	}
+	MGQ_bullish_endurance = {
+		morale_damage_received = -0.10
+	}
+	MGQ_minotaur_heritage = {
+		army_tradition = 1
+	}
+}
+
+MGQ_alligator_ideas = {
+	start = {
+		leader_land_manuever = 1
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+	
+	bonus = {
+		movement_speed_in_fleet_modifier = 0.5
+	}
+	
+	trigger = {
+		OR = {
+			culture = Alligator_Girl
+		}
+	}	
+	free = yes
+	
+	MGQ_swampland_warriors = {
+		land_forcelimit_modifier = 0.15
+	}
+	MGQ_lurking_predators = {
+		leader_land_shock = 1
+	}
+	MGQ_reptilian_resilience = {
+		land_attrition = -0.20
+	}	
+	MGQ_jaws_of_death = {
+		morale_damage = 0.075
+	}
+	MGQ_marsh_mastery = {
+		development_cost_in_primary_culture = -0.1
+	}
+	MGQ_natural_camouflage = {
+		hostile_attrition = 1
+	}
+	MGQ_predatory_instincts = {
+		infantry_power = 0.15
+	}
+}
+
+MGQ_dodomeki_ideas = {
+	start = {
+		yearly_corruption = -0.1
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+	
+	bonus = {
+		rival_change_cost = -0.2
+	}
+	
+	trigger = {
+		OR = {
+			culture = Dodomeki
+		}
+	}	
+	free = yes
+	
+	MGQ_thousand-eyed_guardians = {
+		claim_duration = 1		
+	}
+	MGQ_lantern-lit_roads = {
+		movement_speed = 0.10
+	}
+	MGQ_all-seeing_eyes = {
+		spy_offence = 0.33
+	}
+	MGQ_cursed_wealth = {
+		global_tax_modifier = 0.25
+		global_unrest = 1
+	}
+	MGQ_esoteric_knowledge = {
+		technology_cost = -0.05
+	}
+	MGQ_gaze_of_fear = {
+		morale_damage = 0.05
+	}
+	MGQ_eyes_of_the_occult = {
+		morale_damage_received = -0.10
+	}
+}
+
+MGQ_mummy_ideas = {
+	start = {
+		idea_cost = -0.05
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+	
+	bonus = {
+		prestige = 1
+	}
+	
+	trigger = {
+		OR = {
+			culture = Mummy_Girl
+		}
+	}	
+	free = yes
+	
+	MGQ_ancient_guardians = {
+		defensiveness = 0.15
+	}
+	MGQ_eternal_wisdom = {
+		technology_cost = -0.05
+	}
+	MGQ_resilient_heirlooms = {
+		garrison_damage = 0.5
+	}	
+	MGQ_curse_of_the_pharaohs = {
+		fire_damage = 0.10
+	}
+	MGQ_pyramid_builders = {
+		development_cost = -0.05
+		build_cost = -0.05
+	}
+	MGQ_restless_dead = {
+		morale_damage_received = -0.05
+	}
+	MGQ_sands_of_time = {
+		build_time = -0.33
+		great_project_upgrade_time = -0.33
+		culture_conversion_time = -0.33
+	}
+}
+
+MGQ_spirit_ideas = {
+	start = {
+		morale_damage_received = -0.03
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+	
+	bonus = {
+		movement_speed = 0.1
+	}
+	
+	trigger = {
+		OR = {
+			culture = Spirit_Girl
+		}
+	}	
+	free = yes
+	
+	MGQ_ethereal_knowledge = {
+		idea_cost = -0.1
+	}
+	MGQ_spectral_insight = {
+		technology_cost = -0.1
+	}
+	MGQ_haunting_harmonies = {
+		stability_cost_modifier = -0.20
+	}	
+	MGQ_soulbinding_rituals = {
+		land_morale = 0.10
+	}
+	MGQ_swift_response = {
+		movement_speed = 0.10
+	}
+	MGQ_incorporeal_bodies = {
+		shock_damage_received = -0.25
+	}
+	MGQ_astral_beings = {
+		fire_damage = 0.1
+	}
+}
+
+MGQ_nekomata_ideas = {
+	start = {
+		diplomatic_reputation = 1
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+	
+	bonus = {
+		prestige = 1
+	}
+	
+	trigger = {
+		OR = {
+			culture = Nekomata_Girl
+		}
+	}	
+	free = yes
+	
+	MGQ_cats_cunning = {
+		trade_efficiency = 0.1
+	}
+	MGQ_mystical_paws = {
+		infantry_shock = 0.25
+	}
+	MGQ_cats_agility = {
+		leader_land_manuever = 2
+	}	
+	MGQ_feline_fortitude = {
+		land_morale = 0.10
+	}
+	MGQ_nine_lives = {
+		shock_damage_received = -0.10
+		fire_damage_received = -0.10
+	}
+	MGQ_playful_spirit = {
+		stability_cost_modifier = -0.33
+	}
+	MGQ_sneak_and_pounce = {
+		infantry_power = 0.15
+	}
+}
+
+MGQ_frog_ideas = {
+	start = {
+		regiment_disembark_speed = 0.25
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+	
+	bonus = {
+		diplomatic_upkeep = 1
+	}
+	
+	trigger = {
+		OR = {
+			culture = Frog_Girl
+		}
+	}	
+	free = yes
+	
+	MGQ_amphibious_advantage = {
+		naval_forcelimit_modifier = 0.1
+		land_forcelimit_modifier = 0.1
+	}
+	MGQ_sticky_ambush = {
+		infantry_power = 0.1
+	}
+	MGQ_marshland_resilience = {
+		land_attrition = -0.33
+	}	
+	MGQ_jumping_mobility = {
+		movement_speed = 0.10
+	}
+	MGQ_toxin_mastery = {
+		shock_damage = 0.125
+	}
+	MGQ_tongue_strike = {
+		morale_damage = 0.05
+		infantry_shock = 0.25
+	}
+	MGQ_swampy_agriculture = {
+		development_cost_in_primary_culture = -0.1
+	}
+}
+
+MGQ_akaname_ideas = {
+	start = {
+		production_efficiency = 0.1
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+	
+	bonus = {
+		hostile_attrition = 1
+	}
+	
+	trigger = {
+		OR = {
+			culture = Akaname
+		}
+	}	
+	free = yes
+	
+	MGQ_waste_utilization = {
+		development_cost = -0.1
+	}
+	MGQ_toxic_cleansing = {
+		global_unrest = -1
+	}
+	MGQ_filth_alchemy = {
+		shock_damage = 0.15
+	}	
+	MGQ_nocturnal_adaptation = {
+		global_spy_defence = 0.33
+	}
+	MGQ_slimy_camouflage = {
+		max_hostile_attrition = 1
+	}
+	MGQ_unsanitar_opportunists = {
+		trade_efficiency = 0.15
+	}
+	MGQ_mudslide_ambush = {
+		assault_fort_ability = 0.33
+	}
+}
+
+MGQ_kappa_ideas = {
+	start = {
+		diplomatic_reputation = 1
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+	
+	bonus = {
+		movement_speed_in_fleet_modifier = 0.5
+	}
+	
+	trigger = {
+		OR = {
+			culture = Kappa
+		}
+	}	
+	free = yes
+	
+	MGQ_riverside_experts = {
+		global_sailors_modifier = 0.15
+	}
+	MGQ_aquatic_defense = {
+		defensiveness = 0.15
+		regiment_disembark_speed = 0.15
+	}
+	MGQ_waterway_commerce = {
+		trade_efficiency = 0.1
+	}	
+	MGQ_river_guardians = {
+		infantry_power = 0.15
+	}
+	MGQ_ritual_mysticism = {
+		stability_cost_modifier = -0.15
+	}
+	MGQ_kappa_engineering = {
+		development_cost = -0.1
+	}
+	MGQ_kappa_martial_arts = {
+		infantry_shock = 1
+	}
+}
+
+MGQ_futakuchi_ideas = {
+	start = {
+		global_tax_modifier = 0.10
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+	
+	bonus = {
+		stability_cost_modifier = -0.10
+	}
+	
+	trigger = {
+		OR = {
+			culture = Futakuchi_Girl
+		}
+	}	
+	free = yes
+	
+	MGQ_two_minds_one_body = {
+		diplomats = 1
+	}
+	MGQ_cursed_appetite = {
+		ae_impact = -0.15
+	}
+	MGQ_whispered_deception = {
+		diplomatic_upkeep = 1
+	}	
+	MGQ_hidden_appetite = {
+		morale_damage = 0.1
+	}
+	MGQ_feeding_on_secrets = {
+		technology_cost = 0.10
+	}
+	MGQ_dual_persona = {
+		free_policy = 1
+		possible_policy = 1
+	}
+	MGQ_blinding_wind_talismans = {
+		shock_damage = 0.15
+	}
+}
+
+MGQ_kejourou_ideas = {
+	start = {
+		dip_advisor_cost = -0.2
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+	
+	bonus = {
+		core_creation = -0.1
+	}
+	
+	trigger = {
+		OR = {
+			culture = Kejourou
+		}
+	}	
+	free = yes
+	
+	MGQ_seductive_allure = {
+		diplomatic_reputation = 1
+	}
+	MGQ_silken_intrigue = {
+		spy_offence = 0.40
+	}
+	MGQ_court_of_deceit = {
+		country_diplomatic_power = 1
+	}	
+	MGQ_graceful_governance = {
+		country_admin_power = 1
+	}
+	MGQ_cunning_manipulation = {
+		fabricate_claims_cost = -0.75
+	}
+	MGQ_cursed_dance = {
+		global_attacker_dice_roll_bonus = 1
+		land_maintenance_modifier = 0.10
+	}
+	MGQ_ice_bullet_talismans = {
+		fire_damage_received = -0.15
+	}
+}
+
+MGQ_worm_summoner_ideas = {
+	start = {
+		technology_cost = -0.10
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+	
+	bonus = {
+		development_cost = -0.10
+	}
+	
+	trigger = {
+		OR = {
+			culture = worm_summoner
+		}
+	}	
+	free = yes
+	
+	MGQ_widespread_witchcraft = {
+		advisor_cost = -0.15
+	}
+	MGQ_worm_summoning = {
+		reinforce_speed = 0.25
+	}
+	MGQ_arcane_traps = {
+		hostile_attrition = 2
+	}	
+	MGQ_construction_magic = {
+		build_cost = -0.1
+	}
+	MGQ_weaponized_spells = {
+		fire_damage = 0.10
+	}
+	MGQ_defensive_magic = {
+		fire_damage_received = -0.10
+	}
+	MGQ_devouring_tentacles = {
+		morale_damage = 0.075
+	}
+}
+
+MGQ_yuki_onna_ideas = {
+	start = {
+		defensiveness = 0.10
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+	
+	bonus = {
+		fire_damage_received = -0.075
+	}
+	
+	trigger = {
+		OR = {
+			culture = Yuki_Onna
+		}
+	}	
+	free = yes
+	
+	MGQ_ice_manipulation = {
+		fire_damage_received = -0.075
+	}
+	MGQ_frozen_ambush = {
+		morale_damage = 0.075
+	}
+	MGQ_glacial_fortresses = {
+		fort_maintenance_modifier = -0.25
+	}	
+	MGQ_blizzard_mastery = {
+		hostile_attrition = 1.5
+	}
+	MGQ_frostbite_resistance = {
+		land_attrition = -0.50
+	}
+	MGQ_mistress_of_ice_magic = {
+		advisor_cost = -0.15
+	}
+	MGQ_frozen_strongholds = {
+		garrison_damage = 0.5
+	}
+}
+
+MGQ_angel_ideas = {
+	start = {
+		global_missionary_strength = 0.03
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+	
+	bonus = {
+		missionaries = 1
+	}
+	
+	trigger = {
+		OR = {
+			culture_group = angel
+		}
+	}	
+	free = yes
+	
+	MGQ_divine_bloodline = {
+		legitimacy = 1
+		republican_tradition = 0.3
+		devotion = 1
+		horde_unity = 1
+		meritocracy = 0.5
+	}
+	MGQ_guardian_of_the_faith = {
+		land_morale = 0.20
+	}
+	MGQ_ilias_grace = {
+		development_cost = -0.10
+	}	
+	MGQ_goddess_obedience = {
+		stability_cost_modifier = -0.33
+	}
+	MGQ_pious_crusaders = {
+		manpower_in_true_faith_provinces = 0.20
+		monthly_church_power = 0.05
+	}
+	MGQ_holy_element = {
+		military_tactics = 0.10
+	}
+	MGQ_sinners_punishment = {
+		morale_damage = 0.05
+	}
+}
+
+MGQ_tanuki_ideas = {
+	start = {
+		fire_damage = 0.10
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+	
+	bonus = {
+		stability_cost_modifier = -0.20
+	}
+	
+	trigger = {
+		OR = {
+			culture_group = tanuki
+		}
+	}	
+	free = yes
+	
+	MGQ_tanuki_prosperity = {
+		trade_efficiency = 0.15
+	}
+	MGQ_sake_brewing_mastery = {
+		production_efficiency = 0.15
+	}
+	MGQ_mischievous_tactics = {
+		discipline = -0.025
+		shock_damage = 0.25
+	}	
+	MGQ_artisanal_crafts = {
+		global_trade_goods_size_modifier = 0.15
+	}
+	MGQ_tanuki_festivals = {
+		prestige = 1
+	}
+	MGQ_tanuki_taoists = {
+		shock_damage_received = -0.075
+		fire_damage_received = -0.075
+	}
+	MGQ_bakedanuki = {
+		infantry_power = 0.20
+	}
+}
+
+MGQ_master_shadow_ideas = {
+	start = {
+		regiment_manpower_usage = -0.20
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+	
+	bonus = {
+		defensiveness = 0.15
+	}
+	
+	trigger = {
+		OR = {
+			tag = MS1
+			tag = MS2
+		}
+	}	
+	free = yes
+	
+	MGQ_ethereal_infiltrators = {
+		spy_offence = 0.25
+	}
+	MGQ_umbral_manipulation = {
+		discipline = 0.05
+	}
+	MGQ_whispering_shadows = {
+		movement_speed = 0.15
+	}	
+	MGQ_shadowmeld_rituals = {
+		land_attrition = -0.10
+	}
+	MGQ_haunting_presence = {
+		morale_damage = 0.10
+	}
+	MGQ_veil_of_shadows = {
+		morale_damage_received = -0.10
+	}
+	MGQ_shadow_cloak = {
+		fort_maintenance_modifier = -0.25
+	}
+}
+
+MGQ_kirin_ideas = {
+	start = {
+		leader_land_fire = 1
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+	
+	bonus = {
+		leader_siege = 1
+	}
+	
+	trigger = {
+		OR = {
+			culture = Kirin_Girl
+		}
+	}	
+	free = yes
+	
+	MGQ_gracious_dragons = {
+		global_unrest = -1
+	}
+	MGQ_thunder_hooves = {
+		infantry_power = 0.15
+	}
+	MGQ_lunar_healing_arts = {
+		reinforce_speed = 0.25
+	}	
+	MGQ_celestial_horn_mastery = {
+		fire_damage = 0.20
+	}
+	MGQ_elemental_affinity_thunder = {
+		shock_damage_received = -0.20
+	}
+	MGQ_thunderstorm_mastery = {
+		shock_damage = 0.20
+	}
+	MGQ_harmonious_presence = {
+		ae_impact = -0.15
+	}
+}
+
+MGQ_behemoth_ideas = {
+	start = {
+		global_regiment_cost = -0.10
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+	
+	bonus = {
+		supply_limit_modifier = 0.25
+	}
+	
+	trigger = {
+		OR = {
+			culture = Behemoth_Girl
+		}
+	}	
+	free = yes
+	
+	MGQ_mighty_roar = {
+		morale_damage = 0.15
+	}
+	MGQ_towering_stature = {
+		land_morale = 0.10
+	}
+	MGQ_earthshaking_charge = {
+		infantry_power = 0.20
+	}	
+	MGQ_behemoth_endurance = {
+		recover_army_morale_speed = 0.10
+	}
+	MGQ_behemoth_stampede_tactics = {
+		shock_damage = 0.10
+		fire_damage_received = 0.10
+	}
+	MGQ_roaming_domain = {
+		movement_speed = 0.05
+	}
+	MGQ_behemoth_territorial_dominance = {
+		defensiveness = 0.10
+	}
+}
+
+MGQ_wyvern_ideas = {
+	start = {
+		shock_damage = 0.10
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+	
+	bonus = {
+		fire_damage = 0.10
+	}
+	
+	trigger = {
+		OR = {
+			culture = Wyvern_Girl
+		}
+	}	
+	free = yes
+	
+	MGQ_Aerial_Reconnaissance = {
+		spy_offence = 0.20
+	}
+	MGQ_Wyvern_Nest_Fortifications = {
+		defensiveness = 0.15
+	}
+	MGQ_Skyborne_Raiders = {
+		loot_amount = 0.20
+		available_province_loot = 0.20
+	}	
+	MGQ_Draconic_Ferocity = {
+		discipline = 0.05
+	}
+	MGQ_Wyvern_Borne_Artillery = {
+		artillery_power = 0.15
+	}
+	MGQ_Aerial_Supremacy_Doctrine = {
+		reinforce_speed = 0.25
+	}
+	MGQ_Flight_of_Prosperity = {
+		trade_steering = 0.20
+	}
+}
+
+MGQ_oni_ideas = {
+	start = {
+		shock_damage = 0.15
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+	
+	bonus = {
+		discipline = 0.075
+	}
+	
+	trigger = {
+		OR = {
+			culture = Oni
+		}
+	}	
+	free = yes
+	
+	MGQ_Oni_Warlords_of_Strength = {
+		land_morale = 0.15
+	}
+	MGQ_Brutal_Oni_Onslaught = {
+		siege_ability = 0.25
+	}
+	MGQ_Oni_Arts_and_Culture = {
+		prestige = 1
+	}	
+	MGQ_Oni_Clan_Unity = {
+		global_manpower_modifier = 0.20
+	}
+	MGQ_Mountain_Warfare_Mastery = {
+		land_attrition = -0.20
+	}
+	MGQ_Oni_Bloodline_Prestige = {
+		prestige_decay = -0.01
+	}
+	MGQ_Oni_Mercenaries = {
+		merc_maintenance_modifier = -0.25
+	}
+}
+
+MGQ_demon_monk_ideas = {
+	start = {
+		infantry_shock = 0.33
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+	
+	bonus = {
+		infantry_power = 0.15
+	}
+	
+	trigger = {
+		OR = {
+			tag = DM1
+			tag = DM2
+		}
+	}	
+	free = yes
+	
+	MGQ_Infernal_Meditation = {
+		defensiveness = 0.10
+	}
+	MGQ_Demonic_Martial_Arts_Mastery = {
+		land_morale = 0.15
+	}
+	MGQ_Hellfire_Sermons = {
+		leader_land_shock = 1
+	}	
+	MGQ_Infernal_Monasticism = {
+		discipline = 0.03
+		stability_cost_modifier = -0.10
+	}
+	MGQ_Yoma_Monastic_Orders = {
+		morale_damage_received = -0.125
+	}
+	MGQ_Yoma_Healing_Arts = {
+		reinforce_speed = 0.33
+	}
+	MGQ_Hellfire_Mantra_Chanting = {
+		fire_damage = 0.20
+	}
+}
+
+MGQ_vouivre_ideas = {
+	start = {
+		shock_damage = 0.125
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+	
+	bonus = {
+		fire_damage = 0.125
+	}
+	
+	trigger = {
+		OR = {
+			culture = Vouivre_Girl
+		}
+	}	
+	free = yes
+	
+	MGQ_Vital_Aura = {
+		manpower_recovery_speed = 0.33
+	}
+	MGQ_Dual_Arcane_Mastery = {
+		reserves_organisation = 0.33
+	}
+	MGQ_Mystic_Resilience = {
+		morale_damage_received = -0.10
+	}	
+	MGQ_Yoma_Harmony_Connection = {
+		recover_army_morale_speed = 0.15
+	}
+	MGQ_Celestial_Warding_Spell = {
+		defensiveness = 0.15
+	}
+	MGQ_Umbral_Dragon = {
+		infantry_fire = 0.5
+	}
+	MGQ_Spiritual_Renewal_Rituals = {
+		all_power_cost = -0.06
+	}
+}
+
+MGQ_kyoryuu_ideas = {
+	start = {
+		infantry_power = 0.30
+		infantry_cost = 0.30
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+	
+	bonus = {
+		infantry_cost = -0.15
+	}
+	
+	trigger = {
+		OR = {
+			culture = Kyoryuu_Girl
+		}
+	}	
+	free = yes
+	
+	MGQ_Primeval_Tactics = {
+		fire_damage = 0.10
+	}
+	MGQ_Hardened_Skin = {
+		shock_damage_received = -0.10
+	}
+	MGQ_Earthquake_Mastery = {
+		shock_damage = 0.15
+	}	
+	MGQ_Ancient_Art_of_Warfare = {
+		army_tradition = 1
+	}
+	MGQ_Fossil_Extraction = {
+		production_efficiency = 0.05
+	}
+	MGQ_Jurassic_Guardianship = {
+		defensiveness = 0.15
+	}
+	MGQ_Kind_Giants = {
+		diplomatic_reputation = 1
+		overextension_impact_modifier = 0.25
+	}
+}
+
+MGQ_basilisk_ideas = {
+	start = {
+		land_attrition = -0.15
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+	
+	bonus = {
+		movement_speed = 0.125
+	}
+	
+	trigger = {
+		OR = {
+			culture = Basilisk_Girl
+		}
+	}	
+	free = yes
+	
+	MGQ_Petrifying_Gaze = {
+		morale_damage = 0.10
+	}
+	MGQ_Stonecrafted_Architecture = {
+		defensiveness = 0.35
+	}
+	MGQ_Serpentine_Subterfuge = {
+		spy_offence = 0.25
+	}	
+	MGQ_Basilisk_Ambush_Tactics = {
+		fire_damage = 0.15
+	}
+	MGQ_Petrification_Doctrine = {
+		hostile_attrition = 1
+		max_hostile_attrition = 1
+	}
+	MGQ_Enigmatic_Stone_Sculptures = {
+		prestige = 1
+	}
+	MGQ_Basilisk_Trade_Routes = {
+		trade_efficiency = 0.10
+	}
+}
+
+MGQ_aevis_ideas = {
+	start = {
+		own_territory_dice_roll_bonus = 1
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+	
+	bonus = {
+		discipline = 0.05
+	}
+	
+	trigger = {
+		OR = {
+			culture = Aevis_Girl
+		}
+	}	
+	free = yes
+	
+	MGQ_Aevis_Sky_Mastery = {
+		land_morale = 0.15
+	}
+	MGQ_Galeforce_Commerce = {
+		trade_efficiency = 0.20
+	}
+	MGQ_Celestial_Soarers = {
+		manpower_recovery_speed = 0.33
+	}	
+	MGQ_Aerial_Defense_Expertise = {
+		global_trade_goods_size_modifier = 0.15
+	}
+	MGQ_Feathered_Trade_Winds = {
+		trade_steering = 0.33
+	}
+	MGQ_Whirlwind_Unity = {
+		global_unrest = -1
+	}
+	MGQ_Aeromantic_Insights = {
+		global_spy_defence = 0.20
+	}
+}
+
+MGQ_wendigo_ideas = {
+	start = {
+		infantry_shock = 0.25
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+	
+	bonus = {
+		stability_cost_modifier = -0.10
+	}
+	
+	trigger = {
+		OR = {
+			culture = Wendigo_Girl
+			culture = Krampus_Girl
+		}
+	}	
+	free = yes
+	
+	MGQ_Frozen_Wilderness_Mastery = {
+		tribal_development_growth = 0.05
+	}
+	MGQ_Chilling_Presence = {
+		enemy_core_creation = 0.2
+	}
+	MGQ_Permafrost_Agriculture_Techniques = {
+		global_trade_goods_size = 0.25
+	}	
+	MGQ_Frostbite_Resilience = {
+		global_trade_goods_size_modifier = 0.15
+	}
+	MGQ_Savage_Ambush_Tactics = {
+		leader_land_manuever = 1
+		shock_damage = 0.10
+	}
+	MGQ_Ice_Shaman_Traditions = {
+		fire_damage_received = -0.15
+	}
+	MGQ_Hoarfrost_Fortifications = {
+		defensiveness = 0.33
+	}
+}
+
+MGQ_mammoth_ideas = {
+	start = {
+		infantry_shock = 0.67
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+	
+	bonus = {
+		land_maintenance_modifier = -0.10
+	}
+	
+	trigger = {
+		OR = {
+			culture = Mammoth_Girl
+		}
+	}	
+	free = yes
+	
+	MGQ_Tusked_Guardians = {
+		defensiveness = 0.15
+	}
+	MGQ_Nomadic_Adaptability = {
+		manpower_recovery_speed = 0.15
+	}
+	MGQ_Mammoth_Migrations = {
+		movement_speed = 0.075
+	}	
+	MGQ_Tusked_Trade_Routes = {
+		trade_steering = 0.15
+	}
+	MGQ_Ancient_Ice_Shamanism = {
+		same_culture_advisor_cost = -0.30
+	}
+	MGQ_Ancient_Beasts = {
+		infantry_power = 0.35
+		reinforce_speed = -0.25
+	}
+	MGQ_Mammoth_Dominance_Legacy = {
+		diplomatic_reputation = 1
+	}
+}
+
+MGQ_yeti_ideas = {
+	start = {
+		tribal_development_growth = 0.05
+		infantry_power = 0.10
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+	
+	bonus = {
+		morale_damage_received = -0.20
+	}
+	
+	trigger = {
+		OR = {
+			culture = Yeti_Girl
+		}
+	}	
+	free = yes
+	
+	MGQ_Snowy_Fortress_Architecture = {
+		defensiveness = 0.20
+	}
+	MGQ_Frostbitten_Warriors = {
+		shock_damage = 0.25
+	}
+	MGQ_Frozen_Resources_Mastery = {
+		global_trade_goods_size = 0.50
+	}	
+	MGQ_Yeti_Clans_Unity = {
+		global_unrest = -1
+	}
+	MGQ_Frozen_Artisan_Traditions = {
+		production_efficiency = 0.15
+	}
+	MGQ_Yeti_Wayfarers = {
+		diplomatic_reputation = 2
+	}
+	MGQ_Cryomancy_Mastery = {
+		advisor_cost = -0.25
+		fire_damage_received = -0.15
+	}
+}

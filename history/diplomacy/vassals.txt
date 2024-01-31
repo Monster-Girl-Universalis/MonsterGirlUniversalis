@@ -1,0 +1,35 @@
+#Grangold
+vassal = {
+	first = GR4 #Grangold
+	second = GR3 #Automata girls
+	start_date = 1444.1.1
+}
+vassal = {
+	first = GR4 #Grangold
+	second = GO1 #Goddard
+	start_date = 1444.1.1 
+}
+
+#Monster Lord Subjects
+vassal = {
+	first = ML1 #Monster Lord
+	second = GO3 #Gouki Oni
+	start_date = 1444.1.1 
+}
+vassal = {
+	first = ML1 #Monster Lord
+	second = ZO1 #Zenki Oni
+	start_date = 1444.1.1 
+}
+vassal = {
+	first = ML1 #Monster Lord
+	second = AE1 #Aevis Realm
+	start_date = 1444.1.1 
+}
+
+#La Croix Domain
+vassal = {
+	first = LC1 #La Croix
+	second = CH2 #Chimera Coast
+	start_date = 1444.1.1 
+}

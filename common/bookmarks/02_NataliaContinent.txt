@@ -1,0 +1,24 @@
+bookmark =
+{
+	name = "MGQ_NATALIA"
+	desc = "MGQ_NATALIA_DESC"
+	date = 1444.11.11
+	
+	center = 582
+
+	country = SI1
+	country = HM1
+	country = PT1
+	country = FS1
+	country = PNA
+	country = CH1
+	country = SSL
+	country = MR1
+	country = PG1
+	
+	easy_country = SI1
+	easy_country = HM1
+	easy_country = PT1
+	easy_country = FS1
+	
+}

@@ -1,0 +1,19 @@
+capital = 1014
+government_rank = 3
+religion = monster_lord_religion
+technology_group = TECH_ELF
+primary_culture = Island_Elf
+government = monarchy
+add_government_reform = Elf_realm
+historical_friend = EL4 #Hikkikomori cousin...
+1444.1.1 = { 
+	monarch = { 
+		name = "Freya"
+		dynasty = "the Royal Elf"
+		birth_date = 1424.1.1
+		adm = 5
+		dip = 5
+		mil = 5
+		female = yes
+	}
+}

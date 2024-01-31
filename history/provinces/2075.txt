@@ -1,0 +1,12 @@
+is_city = no
+discovered_by = TECH_ANGEL
+add_core = ZA1
+discovered_by = AR3
+discovered_by = HR1
+owner = ZA1
+base_tax = 1
+base_manpower = 3
+base_production = 3
+culture = Chimera_Girl
+religion = chaos_religion
+controller = ZA1

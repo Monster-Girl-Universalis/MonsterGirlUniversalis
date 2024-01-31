@@ -1,0 +1,194 @@
+spriteTypes = {
+	#---------------------------------------------------
+    # ADM
+    #---------------------------------------------------
+
+    spriteType = {
+		name = "GFX_idea_human_ideas"
+		texturefile = "gfx//interface//ideas//idea_human_ideas.dds"
+		noOfFrames = 1
+		
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+    spriteType = {
+		name = "GFX_idea_undead_ideas"
+		texturefile = "gfx//interface//ideas//idea_undead_ideas.dds"
+		noOfFrames = 1
+		
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+    spriteType = {
+		name = "GFX_idea_alraune_ideas"
+		texturefile = "gfx//interface//ideas//idea_alraune_ideas.dds"
+		noOfFrames = 1
+		
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+    spriteType = {
+		name = "GFX_idea_insect_ideas"
+		texturefile = "gfx//interface//ideas//idea_insect_ideas.dds"
+		noOfFrames = 1
+		
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+    spriteType = {
+		name = "GFX_idea_demi_human_ideas"
+		texturefile = "gfx//interface//ideas//idea_demi_human_ideas.dds"
+		noOfFrames = 1
+		
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+    spriteType = {
+		name = "GFX_idea_kitsune_ideas"
+		texturefile = "gfx//interface//ideas//idea_kitsune_ideas.dds"
+		noOfFrames = 1
+		
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+    spriteType = {
+		name = "GFX_idea_doll_ideas"
+		texturefile = "gfx//interface//ideas//idea_doll_ideas.dds"
+		noOfFrames = 1
+		
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+    spriteType = {
+		name = "GFX_idea_chimera_ideas"
+		texturefile = "gfx//interface//ideas//idea_chimera_ideas.dds"
+		noOfFrames = 1
+		
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+    spriteType = {
+		name = "GFX_idea_tanuki_ideas"
+		texturefile = "gfx//interface//ideas//idea_tanuki_ideas.dds"
+		noOfFrames = 1
+		
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+    
+    #---------------------------------------------------
+    # DIP
+    #---------------------------------------------------
+
+    spriteType = {
+		name = "GFX_idea_succubi_ideas"
+		texturefile = "gfx//interface//ideas//idea_succubi_ideas.dds"
+		noOfFrames = 1
+		
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+
+    spriteType = {
+		name = "GFX_idea_slime_ideas"
+		texturefile = "gfx//interface//ideas//idea_slime_ideas.dds"
+		noOfFrames = 1
+		
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+    spriteType = {
+		name = "GFX_idea_elf_ideas"
+		texturefile = "gfx//interface//ideas//idea_elf_ideas.dds"
+		noOfFrames = 1
+		
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+    spriteType = {
+		name = "GFX_idea_harpy_ideas"
+		texturefile = "gfx//interface//ideas//idea_harpy_ideas.dds"
+		noOfFrames = 1
+		
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+    spriteType = {
+		name = "GFX_idea_vampire_ideas"
+		texturefile = "gfx//interface//ideas//idea_vampire_ideas.dds"
+		noOfFrames = 1
+		
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+    spriteType = {
+		name = "GFX_idea_mermaid_ideas"
+		texturefile = "gfx//interface//ideas//idea_mermaid_ideas.dds"
+		noOfFrames = 1
+		
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+    spriteType = {
+		name = "GFX_idea_scylla_ideas"
+		texturefile = "gfx//interface//ideas//idea_scylla_ideas.dds"
+		noOfFrames = 1
+		
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+    spriteType = {
+		name = "GFX_idea_angel_ideas"
+		texturefile = "gfx//interface//ideas//idea_angel_ideas.dds"
+		noOfFrames = 1
+		
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+
+    
+    #---------------------------------------------------
+    # MIL
+    #---------------------------------------------------
+
+    spriteType = {
+		name = "GFX_idea_land_dweller_ideas"
+		texturefile = "gfx//interface//ideas//idea_land_dweller_ideas.dds"
+		noOfFrames = 1
+		
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+    spriteType = {
+		name = "GFX_idea_apoptosis_ideas"
+		texturefile = "gfx//interface//ideas//idea_apoptosis_ideas.dds"
+		noOfFrames = 1
+		
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+    spriteType = {
+		name = "GFX_idea_beast_ideas"
+		texturefile = "gfx//interface//ideas//idea_beast_ideas.dds"
+		noOfFrames = 1
+		
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+    spriteType = {
+		name = "GFX_idea_dragon_ideas"
+		texturefile = "gfx//interface//ideas//idea_dragon_ideas.dds"
+		noOfFrames = 1
+		
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+    spriteType = {
+		name = "GFX_idea_yoma_ideas"
+		texturefile = "gfx//interface//ideas//idea_yoma_ideas.dds"
+		noOfFrames = 1
+		
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+    spriteType = {
+		name = "GFX_idea_sea_dweller_ideas"
+		texturefile = "gfx//interface//ideas//idea_sea_dweller_ideas.dds"
+		noOfFrames = 1
+		
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+    spriteType = {
+		name = "GFX_idea_lamia_ideas"
+		texturefile = "gfx//interface//ideas//idea_lamia_ideas.dds"
+		noOfFrames = 1
+		
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+    spriteType = {
+		name = "GFX_idea_roid_ideas"
+		texturefile = "gfx//interface//ideas//idea_roid_ideas.dds"
+		noOfFrames = 1
+		
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+
+}

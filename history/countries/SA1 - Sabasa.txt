@@ -1,0 +1,19 @@
+government = monarchy
+government_rank = 2
+primary_culture = sabasa_human
+religion = ilias_light_religion
+technology_group = TECH_HUMAN
+historical_friend = PY1#Sphynx Blood
+1444.1.1 = { 
+	monarch = { 
+		name = "Sara"
+		dynasty = "of Sabasa"
+		birth_date = 1424.1.1
+		adm = 1
+		dip = 1
+		mil = 1
+		female = yes
+	}
+}
+capital = 755
+add_government_reform = 

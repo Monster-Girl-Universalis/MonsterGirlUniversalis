@@ -1,0 +1,18 @@
+government = monarchy
+government_rank = 2
+primary_culture = Horai_Elf
+add_government_reform = Elf_realm
+religion = yamatai_religion
+technology_group = TECH_ELF
+1444.1.1 = { 
+	monarch = { 
+		name = "Megumi"
+		dynasty = "of Yamatai"
+		birth_date = 1424.1.1
+		adm = 4
+		dip = 5
+		mil = 4
+		female = yes
+	}
+}
+capital = 1159

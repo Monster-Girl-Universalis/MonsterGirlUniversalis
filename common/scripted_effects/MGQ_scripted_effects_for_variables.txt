@@ -1,0 +1,67 @@
+###GENERAL STUFF WITH VARIABLES###
+
+
+###CHAOS VARIABLES###
+MGQ_add_chaos = {
+	if = {
+		limit = {
+			ai = no
+		}
+		change_variable = {
+			which = MGQ_chaos
+			value = $value$
+		}
+		hidden_effect = {
+			if = {
+				limit = {
+					check_variable = {
+						which = MGQ_chaos
+						value = 101
+					}
+				}
+				set_variable = {
+					which = MGQ_chaos
+					value = 100
+				}
+			}
+		}
+	}
+}
+
+MGQ_reduce_chaos = {
+	if = {
+		limit = {
+			ai = no
+		}
+		subtract_variable = {
+			which = MGQ_chaos
+			value = $value$
+		}
+		if = {
+			limit = {
+				NOT = {
+					check_variable = {
+						which = MGQ_chaos
+						value = 0
+					}
+				}
+			}
+			set_variable = {
+				which = MGQ_chaos
+				value = 0
+			}
+		}
+	}
+}
+
+MGQ_add_yearly_chaos = {
+	hidden_effect = {
+		export_to_variable = {
+			which = yearly_chaos_variable
+		}
+		export_to_variable = {
+			which = monthly_battle_passion_variable
+			value = modifier:yearly_chaos
+		}
+	}
+}

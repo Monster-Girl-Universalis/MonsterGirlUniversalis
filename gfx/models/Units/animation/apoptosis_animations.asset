@@ -1,0 +1,19 @@
+animation = {
+	name = "apoptosis_01_idle_animation"
+	file = "apoptosis_01_idle.anim"
+}
+
+animation = {
+	name = "apoptosis_01_moving_animation"
+	file = "apoptosis_01_moving.anim"
+}
+
+animation = {
+	name = "apoptosis_01_attack_animation"
+	file = "apoptosis_01_attack.anim"
+}
+
+animation = {
+	name = "apoptosis_01_rifle_attack_animation"
+	file = "apoptosis_01_rifle_attack.anim"
+}

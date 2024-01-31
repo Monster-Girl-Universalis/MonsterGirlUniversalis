@@ -1,0 +1,19 @@
+government = monarchy
+government_rank = 2
+primary_culture = Horai_Elf
+add_government_reform = Elf_realm
+religion = yamatai_religion
+technology_group = TECH_ELF
+historical_friend = EL1#Hikkikomori cousin...
+1444.1.1 = { 
+	monarch = { 
+		name = "Asuka"
+		dynasty = "no Mikoto"
+		birth_date = 1424.1.1
+		adm = 6
+		dip = 1
+		mil = 6
+		female = yes
+	}
+}
+capital = 2159

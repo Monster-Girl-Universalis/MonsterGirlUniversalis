@@ -1,0 +1,47 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_holy_site_default"
+		texturefile = "gfx//interface//holy_sites//tartarus.dds"
+	}
+
+	spriteType = {
+		name = "GFX_holy_site_20"
+		texturefile = "gfx//interface//holy_sites//tartarus.dds"
+		loadType = "INGAME"
+	}	
+
+	spriteType = {
+		name = "GFX_holy_site_58"
+		texturefile = "gfx//interface//holy_sites//tartarus.dds"
+		loadType = "INGAME"
+	}	
+
+	spriteType = {
+		name = "GFX_holy_site_550"
+		texturefile = "gfx//interface//holy_sites//ancient_lab.dds"
+		loadType = "INGAME"
+	}	
+
+	spriteType = {
+		name = "GFX_holy_site_971"
+		texturefile = "gfx//interface//holy_sites//tartarus.dds"
+		loadType = "INGAME"
+	}
+
+	spriteType = {
+		name = "GFX_holy_site_209"
+		texturefile = "gfx//interface//holy_sites//adm_tower.dds"
+		loadType = "INGAME"
+	}
+
+	spriteType = {
+		name = "GFX_holy_site_1766"
+		texturefile = "gfx//interface//holy_sites//la_croix.dds"
+		loadType = "INGAME"
+	}	
+
+	spriteType = {
+		name = "GFX_holy_site_1856"
+		texturefile = "gfx//interface//holy_sites//tartarus.dds"
+		loadType = "INGAME"
+	}

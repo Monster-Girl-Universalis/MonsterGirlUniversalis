@@ -1,0 +1,18 @@
+government = monarchy
+religion = water_religion
+technology_group = TECH_SEA_DWELLER
+primary_culture = Crab_Girl
+add_government_reform = Sea_Dweller_realm
+government_rank = 1
+capital = 259
+1444.1.1 = { 
+	monarch = { 
+		name = "Mini"
+		dynasty = "the Crab"
+		birth_date = 1424.1.1
+		adm = 4
+		dip = 4
+		mil = 4
+		female = yes
+	}
+}

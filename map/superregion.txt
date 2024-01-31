@@ -1,0 +1,62 @@
+# A region can only belong to one super region.
+ilias_superregion = { 
+	iliasville_region irina_region iliasburg_region pornof_region 
+}
+# Sea super regions are used by AI to plan naval bases (it wants at least one fleet in each it has non-home presence if possible).
+great_sea_superregion = { 
+	great_sea_region 
+}
+enrika_superregion = { 
+	enrika_region 
+}
+harpy_forest_superregion = { 
+	happiness_village_region midas_region 
+}
+navy_superregion = { 
+	navyl_region 
+}
+san_ilia_superregion = { 
+	port_natalia_region san_ilia_region st_amos_region south_undersea_temple_region 
+}
+western_natalia_superregion = { 
+	forest_of_spirits_region monte_carlo_region puppeteer_tower_region 
+}
+sabasa_superregion = { 
+	sabasa_region magistea_region pyramid_region fairy_island_region 
+}
+north_safina_superregion = { 
+	saloon_region safar_ruins_region grandeur_region great_pirate_cave_region 
+}
+yamatai_superregion = { 
+	yamatai_caves_region yamatai_region horai_region 
+}
+grand_noah_superregion = { 
+	grand_noah_region finoa_region cow_demon_region plansect_region 
+}
+western_noah_superregion = { 
+	lyra_region undine_region 
+}
+eastern_gold_superregion = { 
+	goddard_region grangold_region toxic_swamp_region north_undersea_temple_region 
+}
+central_gold_superregion = { 
+	gold_volcano_region succubus_village_region lady_village_region 
+}
+western_gold_superregion = { 
+	holy_wings_shrine_region devastated_plains_region 
+}
+vampire_castle_superregion = { 
+	vampire_castle_region 
+}
+snow_continent_superregion = { 
+	snow_cave_region ilias_temple_ruins_region snow_heaven_region eden_region 
+}
+south_pole_superregion = { 
+	sedna_region wendigo_coast_region 
+}
+north_pole_superregion = { 
+	penguin_coast_region north_coven_region 
+}
+hellgondo_superregion = { 
+	hellgondo_shrine_region hellgondo_tartarus_region sealed_sinner_prison_region monster_lord_castle_region 
+}

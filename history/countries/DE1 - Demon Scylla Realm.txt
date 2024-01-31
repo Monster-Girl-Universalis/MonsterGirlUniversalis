@@ -1,0 +1,18 @@
+government = monarchy
+religion = monster_lord_religion
+technology_group = TECH_SCYLLA
+primary_culture = Demon_Scylla
+add_government_reform = Scylla_realm
+government_rank = 1
+1444.1.1 = { 
+	monarch = { 
+		name = "Miriam"
+		dynasty = "Demon Scylla"
+		birth_date = 1424.1.1
+		adm = 4
+		dip = 4
+		mil = 4
+		female = yes
+	}
+}
+capital = 1698

@@ -1,0 +1,909 @@
+science_spreading_the_truth = {
+	is_blessing = yes
+
+	modifier = {
+		core_creation = -0.1
+		diplomatic_annexation_cost = -0.1
+	}
+	ai_will_do = {
+		factor = 10
+		modifier = {
+			factor = 2
+			overextension_percentage = 0.7
+		}
+		modifier = {
+			factor = 3
+			overextension_percentage = 0.5
+		}
+	}
+}
+
+science_tactical_makina = {
+	is_blessing = yes
+
+	modifier = {
+		military_tactics = 0.05
+		land_maintenance_modifier = 0.05
+	}
+	ai_will_do = {
+		factor = 15
+		modifier = {
+			factor = 3
+			NOT = {
+				manpower = 4
+			}
+		}
+	}
+}
+
+science_stormtrooper_makina = {
+	is_blessing = yes
+
+	modifier = {
+		fire_damage = 0.05
+		artillery_power = 0.05
+		land_maintenance_modifier = 0.05
+	}
+	ai_will_do = {
+		factor = 15
+	}
+}
+
+science_scientific_method = {
+	is_blessing = yes
+
+	modifier = {
+		innovativeness_gain = 0.50
+		yearly_innovativeness = 0.20
+	}
+	ai_will_do = {
+		factor = 10
+		modifier = {
+			factor = 3
+			NOT = {
+				any_neighbor_country = {
+					tech_difference = 1
+				}
+			}
+		}
+	}
+}
+
+science_disguised_mecha_diplomats = {
+	is_blessing = yes
+
+	modifier = {
+		diplomats = 2
+	}
+	ai_will_do = {
+		factor = 4
+		modifier = {
+			factor = 2
+			NOT = {
+				num_of_diplomats = 2
+			}
+		}
+		modifier = {
+			factor = 2
+			NOT = {
+				num_of_diplomats = 3
+			}
+		}
+		modifier = {
+			factor = 2
+			NOT = {
+				num_of_diplomats = 4
+			}
+		}
+	}
+}
+
+science_roid_research = {
+	is_blessing = yes
+	potential = {
+		NOT = {
+			OR = { 
+				tag = HM1			#Chrome already has Frederika MK-II
+				was_tag = HM1
+				tag = SI1
+				was_tag = SI1			#San Ilia aready has roid ideas
+				tag = RE1
+				was_tag = RE1			#Remina is already advanced enough to produce Roids
+				technology_group = TECH_ROID
+			}
+		}
+	}
+	effect = {
+ 		set_variable = {
+   			which = Roid_Research
+  			value = 1
+		}
+	}
+	modifier = {
+		fire_damage_received = -0.01
+	}
+	ai_will_do = {
+		factor = 3
+		modifier = {
+			factor = 0
+			OR = {
+				tag = HM1
+				was_tag = HM1
+				tag = SI1
+				was_tag = SI1
+				technology_group = TECH_ROID
+				tag = RE1
+				was_tag = RE1			
+			}
+		}
+	}
+}
+science_apoptosis_dogma = {
+	is_blessing = yes
+	effect = {
+ 		set_variable = {
+   			which = Apoptosis_Dogma
+  			value = 1
+		}
+	} 
+	potential = {
+		NOT = {
+			OR = {
+				technology_group = TECH_APOPTOSIS
+				tag = RE1
+				was_tag = RE1			#Remina is already advanced enough to do Apoptosis research
+			}
+		}
+	}
+	modifier = {
+		infantry_fire = 0.01
+	}
+	ai_will_do = {
+		factor = 3
+		modifier = {
+			factor = 0
+			OR = {
+				technology_group = TECH_APOPTOSIS
+				tag = RE1
+				was_tag = RE1			
+			}
+		}
+	}
+}
+science_carrot_extract = {
+	is_blessing = yes
+	potential = {
+		AND = {
+			religion = seekers_of_truth_religion
+			OR = {
+			technology_group = TECH_SLIME
+			primary_culture = Slime_Apoptosis
+			tag = UN1
+			was_tag = SLR
+			was_tag = SLM
+			was_tag = BLR
+			was_tag = BP1
+			was_tag = SB1
+			was_tag = RS1
+			was_tag = PS1
+			was_tag = GS1
+			was_tag = TS1
+			was_tag = BR2
+			was_tag = BR3
+			was_tag = LS1
+			was_tag = GE1
+			was_tag = GE2
+			tag = LV1
+			tag = CH2
+			tag = SC3
+			was_tag = CH2
+			was_tag = SC3
+			was_tag = LV1
+			was_tag = VA2
+			was_tag = UN1
+			was_tag = SQD
+
+			#tag = ML1
+			#was_tag = ML1
+			}
+		}
+		
+	}
+	effect = {
+ 		set_variable = {
+   			 which = Carrot_Extract
+  			 value = 1
+		}
+	}
+	modifier = {
+		production_efficiency = 0.01
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				technology_group = TECH_SLIME
+			}
+		}
+	}
+}
+science_weed_extract = {
+	is_blessing = yes
+	potential = {
+		AND = {
+			religion = seekers_of_truth_religion
+			OR = {
+			check_variable = {
+				which = Carrot_Extract
+				value = 1
+			} 
+			technology_group = TECH_BEAST
+			tag = RAP
+			was_tag = RAP
+			was_tag = ORR
+			was_tag = BGR
+			was_tag = BLR
+			was_tag = WLR
+			was_tag = RGR
+			was_tag = DGR
+			was_tag = SGR
+			was_tag = ILC
+			was_tag = ANI
+			was_tag = GRB
+			tag = URM
+			was_tag = URM
+			was_tag = MM1
+			was_tag = MR1
+			tag = PY1
+			was_tag = PY1
+			was_tag = SI2
+			was_tag = CN1
+			was_tag = CN2
+			was_tag = NE1
+			was_tag = NE2
+			was_tag = WN1
+			was_tag = CB1
+			was_tag = TI1
+			was_tag = TI2
+			was_tag = PB1
+			was_tag = PB2
+			was_tag = PB3
+			was_tag = PB4
+			was_tag = PB5
+			was_tag = PB6
+			was_tag = WH1
+			was_tag = WH2
+			was_tag = WH3
+			was_tag = KR1
+			was_tag = KR2
+			was_tag = KR3
+			tag = UR1
+			tag = UR2
+			was_tag = UR1
+			was_tag = UR2
+			tag = CB1
+			was_tag = WE1
+			was_tag = WE2
+			was_tag = WE3
+			was_tag = MT1
+			was_tag = MT2
+			was_tag = MT3
+			was_tag = YI1
+			was_tag = YI2
+			was_tag = YI3
+			tag = BS1
+			tag = BS2
+			was_tag = BS1
+			was_tag = BS2
+			was_tag = BE1
+			was_tag = BE2
+			was_tag = CE1
+
+			was_tag = CD1
+			was_tag = BQD
+
+			#tag = ML1
+			#was_tag = ML1
+			}
+		}
+	}
+	effect = {
+ 		set_variable = {
+   			 which = Weed_Extract
+  			 value = 1
+		}
+	}
+	modifier = {
+		global_prosperity_growth = 0.01
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				OR = { 
+					check_variable = {
+						which = Carrot_Extract
+				 		value = 1
+					} 
+					technology_group = TECH_BEAST
+				}
+			}
+		}
+	}
+}
+science_fish_extract = {
+	is_blessing = yes
+	potential = {
+		AND = {
+			religion = seekers_of_truth_religion
+		OR = {
+			technology_group = TECH_MERMAID
+
+			tag = PNA
+			was_tag = PNA
+			was_tag = CTR
+			was_tag = MMR
+			tag = LC1
+			was_tag = LC1
+			was_tag = SE1
+			was_tag = SE2
+			was_tag = SE3
+			was_tag = SE4
+			was_tag = SE5
+			was_tag = SE6
+			was_tag = MR3
+			was_tag = FP1
+
+			#tag = ML1
+			#was_tag = ML1
+			}
+		}
+	}
+	effect = {
+ 		set_variable = {
+   			 which = Fish_Extract
+  			 value = 1
+		}
+	}
+	modifier = {
+		sailor_maintenance_modifer = -0.01
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				technology_group = TECH_MERMAID
+			}
+		}
+	}
+}
+science_eel_extract = {
+	is_blessing = yes
+	potential = {
+		AND = {
+			religion = seekers_of_truth_religion
+			OR = {
+			technology_group = TECH_MERMAID
+
+			tag = PNA
+			was_tag = PNA
+			was_tag = CTR
+			was_tag = MMR
+			tag = LC1
+			was_tag = LC1
+			was_tag = SE1
+			was_tag = SE2
+			was_tag = SE3
+			was_tag = SE4
+			was_tag = SE5
+			was_tag = SE6
+			was_tag = MR3
+			was_tag = FP1
+
+			#tag = ML1
+			#was_tag = ML1
+			}
+		}
+	}
+	effect = {
+ 		set_variable = {
+   			 which = Eel_Extract
+  			 value = 1
+		}
+	}
+	modifier = {
+		sailors_recovery_speed = 0.01
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				technology_group = TECH_MERMAID
+
+			}
+		}
+	}
+}
+science_garlic_extract = {
+	is_blessing = yes
+	potential = {
+		AND = {
+			religion = seekers_of_truth_religion
+			OR = { 
+				check_variable = {
+					which = Fish_Extract
+			 		value = 1
+				} 
+				technology_group = TECH_HUMAN
+			}
+		}
+	}
+	effect = {
+ 		set_variable = {
+   			 which = Garlic_Extract
+  			 value = 1
+		}
+	}
+	modifier = {
+		morale_damage = 0.001
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				OR = { 
+					check_variable = {
+						which = Fish_Extract
+				 		value = 1
+					} 
+					technology_group = TECH_HUMAN
+				}
+			}
+		}
+	}
+}
+science_hakunen_extract = {
+	is_blessing = yes
+	potential = {
+		AND = {
+			religion = seekers_of_truth_religion
+			OR = { 
+				check_variable = {
+					which = Fish_Extract
+			 		value = 1
+				} 
+				technology_group = TECH_HUMAN
+			}
+		}
+	}
+	effect = {
+ 		set_variable = {
+   			 which = Hakunen_Extract
+  			 value = 1
+		}
+	}
+	modifier = {
+		shock_damage_received = -0.001
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				OR = { 
+					check_variable = {
+						which = Fish_Extract
+				 		value = 1
+					} 
+					technology_group = TECH_HUMAN
+				}
+			}
+		}
+	}
+}
+science_skull_extract = {
+	is_blessing = yes
+	potential = {
+		AND = {
+			religion = seekers_of_truth_religion
+		OR = {
+			technology_group = TECH_LAND_DWELLER
+			was_tag = LGR
+			was_tag = SLU
+			was_tag = ERD
+			was_tag = ROR
+			was_tag = MDS
+			was_tag = SLT
+			was_tag = AR1
+			was_tag = FR1
+			was_tag = FR2
+			was_tag = FR3
+			was_tag = FR4
+			was_tag = SH1
+			tag = SH1
+			was_tag = LDQ
+			was_tag = SLT
+			tag = BS1
+			tag = BS2
+			was_tag = BS1
+			was_tag = BS2
+
+			#tag = ML1
+			#was_tag = ML1
+		}
+		}
+	}
+	effect = {
+ 		set_variable = {
+   			 which = Skull_Extract
+  			 value = 1
+		}
+	}
+	modifier = {
+		shock_damage = 0.001
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				OR = { 
+					technology_group = TECH_LAND_DWELLER
+				}
+			}
+		}
+	}
+}
+science_seaweed_extract = {
+	is_blessing = yes
+	potential = {
+		AND = {
+			religion = seekers_of_truth_religion
+		OR = {
+			technology_group = TECH_ANGEL
+			primary_culture = Angel_Apoptosis  
+			check_variable = {
+				which = Angel_Ghouls
+				value = 1
+			}
+			was_tag = UR1
+			was_tag = UR2
+			was_tag = EL2
+			was_tag = EL3
+			tag = HR1
+			was_tag = HR1
+			tag = AR3
+			was_tag = AR3
+			was_tag = SH3
+			was_tag = CR1
+			was_tag = CR2
+			was_tag = VR1
+			was_tag = VR2
+			tag = ZA1
+			was_tag = ZA1
+			was_tag = IT1
+			tag = FC1
+			was_tag = FC1
+		}
+		}
+	}
+	effect = {
+ 		set_variable = {
+   			 which = Seaweed_Extract
+  			 value = 1
+		}
+	}
+	modifier = {
+		recover_army_morale_speed = 0.01
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				OR = { 
+					check_variable = {
+						which = Angel_Ghouls
+				 		value = 1
+					} 
+					technology_group = TECH_ANGEL
+				}
+			}
+		}
+	}
+}
+science_squid_extract = {
+	is_blessing = yes
+	potential = {
+		AND = {
+			religion = seekers_of_truth_religion
+			OR = { 
+				check_variable = {
+					which = Hakunen_Extract
+			 		value = 1
+				} 
+				check_variable = {
+					which = Skull_Extract
+			 		value = 1
+				} 
+				check_variable = {
+					which = Seaweed_Extract
+			 		value = 1
+				} 
+				technology_group = TECH_ALRAUNE
+				technology_group = TECH_YOMA
+			was_tag = MNR
+			was_tag = RFF
+			was_tag = SWG
+			was_tag = PG1
+			was_tag = KIM
+			was_tag = WR1
+			was_tag = CG3
+			was_tag = WT1
+			was_tag = AL1
+			was_tag = AL2
+			was_tag = AL3
+			was_tag = AL4
+			tag = EL2
+			tag = EL3
+			was_tag = EL2
+			was_tag = EL3
+			tag = CO1
+			tag = CO2
+			was_tag = CO1
+			was_tag = CO2
+			was_tag = WT1
+			was_tag = AL4
+			was_tag = AQD
+			was_tag = PY1
+			was_tag = GG1
+			was_tag = DH1
+			was_tag = DH2
+			tag = DR1
+			was_tag = DR1
+			tag = VA1
+			was_tag = VA1
+			was_tag = ME1
+			tag = DE1
+			was_tag = DE1
+			tag = DE2
+			was_tag = DE2
+			was_tag = LV1
+			was_tag = SM2
+			tag = TI1
+			was_tag = TI1
+			tag = TI2
+			was_tag = TI2
+			was_tag = IW1
+			was_tag = IW2
+			was_tag = SC4
+			was_tag = DM1
+			was_tag = DM2
+			was_tag = VU1
+			was_tag = VU2
+			was_tag = NP1
+
+			#tag = ML1
+			#was_tag = ML1
+			}
+		}
+	}
+	effect = {
+ 		set_variable = {
+   			 which = Squid_Extract
+  			 value = 1
+		}
+	}
+	modifier = {
+		naval_morale_damage = 0.001
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				OR = { 
+					check_variable = {
+						which = Hakunen_Extract
+				 		value = 1
+					}
+					check_variable = {
+						which = Skull_Extract
+				 		value = 1
+					}
+					check_variable = {
+						which = Seaweed_Extract
+				 		value = 1
+					}
+					technology_group = TECH_ALRAUNE
+					technology_group = TECH_YOMA
+				}
+			}
+		}
+	}
+}
+science_project_chimera = {
+	is_blessing = yes
+	potential = {
+		NOT = {
+			OR = { 
+				technology_group = TECH_CHIMERA
+				tag = RE1
+				was_tag = RE1			#Remina is already advanced enough to produce Chimeras
+				tag = GR4
+				was_tag = GR4			#Grangold is already advanced enough to produce Chimeras
+			}
+		}
+	}
+	effect = {
+ 		set_variable = {
+   			 which = Project_Chimera
+  			 value = 1
+		}
+	}
+	modifier = {
+		assault_fort_cost_modifier = -0.01
+	}
+	ai_will_do = {
+		factor = 3 
+		modifier = {
+			factor = 0
+			OR = {
+				technology_group = TECH_CHIMERA
+				tag = RE1
+				was_tag = RE1
+				tag = GR4
+				was_tag = GR4
+			}
+		}
+	}
+}
+science_angel_ghouls = {
+	is_blessing = yes
+	potential = {
+		AND = {
+			religion = seekers_of_truth_religion
+			OR = { 
+				tag = LC1
+				was_tag = LC1
+				technology_group = TECH_ANGEL
+			was_tag = UR1
+			was_tag = UR2
+			was_tag = EL2
+			was_tag = EL3
+			tag = HR1
+			was_tag = HR1
+			tag = AR3
+			was_tag = AR3
+			was_tag = SH3
+			was_tag = CR1
+			was_tag = CR2
+			was_tag = VR1
+			was_tag = VR2
+			tag = ZA1
+			was_tag = ZA1
+			was_tag = IT1
+			tag = FC1
+			was_tag = FC1
+			}
+		}
+		#tag = HM1
+	}
+	effect = {
+ 		set_variable = {
+   			 which = Angel_Ghouls
+  			 value = 1
+		}
+	}
+	modifier = {
+		morale_damage_received = -0.001
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				OR = { 
+					tag = LC1 
+					was_tag = LC1
+					technology_group = TECH_ANGEL
+				}
+			}
+		}
+	}
+}
+science_zombie_dragon_girls = {
+	is_blessing = yes
+	potential = {
+		AND = {
+			religion = seekers_of_truth_religion
+			OR = { 
+				tag = LC1
+				was_tag = LC1
+				technology_group = TECH_DRAGON
+			tag = SL1
+			was_tag = SL1
+			was_tag = HVB
+			tag = RAP
+			was_tag = RAP
+			was_tag = SB2
+			tag = OR1
+			was_tag = OR1
+			was_tag = DR3
+			was_tag = DR4
+			tag = NV1
+			was_tag = NV1
+			was_tag = KI2
+			was_tag = KI3
+			was_tag = KY1
+			was_tag = KY2
+			was_tag = WY1
+			was_tag = WY2
+			tag = AE1
+			was_tag = AE1
+
+			tag = ML1
+			was_tag = ML1
+			}
+		}
+	}
+	effect = {
+ 		set_variable = {
+   			 which = Zombie_Dragon_Girls
+  			 value = 1
+		}
+	}
+	modifier = {
+		assault_fort_ability = 0.01
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				OR = { 
+					tag = LC1 
+					was_tag = LC1
+					technology_group = TECH_DRAGON
+				}
+			}
+		}
+	}
+}
+science_frederika_MK2 = {
+	is_blessing = yes
+	potential = {
+		AND = {
+			religion = seekers_of_truth_religion
+			OR = {
+				tag = HM1
+				was_tag = HM1
+			}
+		}
+	}
+	effect = {
+ 		set_variable = {
+   			 which = Roid_Research
+  			 value = 1
+		}
+	}
+	modifier = {
+		backrow_artillery_damage = 0.25
+	}
+	ai_will_do = {
+		factor = 5
+		modifier = {
+			factor = 0
+			NOT = {
+				tag = HM1
+				was_tag = HM1
+			}
+		}
+	}
+}
+

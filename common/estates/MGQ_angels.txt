@@ -1,0 +1,133 @@
+# For Government Reforms to identify properly influence and loyalty modifiers, remember to put disqualifying triggers before the has_reform
+
+estate_angels = {
+	icon = 17
+	# Used for when declaring independence
+	independence_tech_group = TECH_ANGEL
+	province_independence_weight = {
+		factor = 1
+
+		modifier = {
+			factor = 2
+			religion = ilias_light_religion
+		}
+
+		modifier = {
+			factor = 2
+			religion = angel_world_religion
+		}
+
+		modifier = {
+			factor = 2
+			culture_group = angel
+		}
+
+		modifier = {
+			factor = 1.5
+			NOT = { development = 10 }
+		}
+		modifier = {
+			factor = 0.75
+			development = 15
+		}
+		modifier = {
+			factor = 0.75
+			development = 20
+		}
+	}
+
+
+	# If true, country will get estate
+	trigger = {
+					OR = {
+						tag = ENV
+						unit_type = TECH_ANGEL
+						culture_group = angel
+						culture = Angel_Apoptosis
+					}
+	}
+
+	# These scale with loyalty & power
+	country_modifier_happy = {
+		reinforce_speed = 0.20
+		state_maintenance_modifier = -0.33
+		ae_impact = -0.25
+	}
+	country_modifier_neutral = {	
+		state_maintenance_modifier = -0.25
+		reinforce_speed = 0.10
+	}	
+	country_modifier_angry = {
+		state_maintenance_modifier = 0.50
+		reinforce_speed = -0.33
+		envoy_travel_time = 1.5
+	}
+	land_ownership_modifier = {
+		angels_loyalty_modifier = 0.2
+	}
+	
+
+	# Influence modifiers
+	base_influence = 10
+	influence_modifier = {
+		desc = EST_VAL_OTHER_ESTATE_IN_POWER
+		trigger = {
+			OR = {
+				has_disaster = estate_nobility_disaster
+				has_disaster = estate_church_disaster
+				has_disaster = estate_burghers_disaster
+				has_disaster = estate_brahmins_disaster
+				has_disaster = estate_vaisyas_disaster
+				has_disaster = estate_jains_disaster
+
+			}
+		}
+		influence = -40
+	}
+	
+	#Loyalty Modifiers
+	loyalty_modifier = {
+		desc = EST_VAL_OTHER_ESTATE_IN_POWER_LOY
+		trigger = {
+			OR = {
+				has_disaster = estate_nobility_disaster
+				has_disaster = estate_church_disaster
+				has_disaster = estate_burghers_disaster
+				has_disaster = estate_brahmins_disaster
+				has_disaster = estate_vaisyas_disaster
+				has_disaster = estate_jains_disaster
+
+			}
+		}
+		loyalty = -20
+	}
+
+	privileges = {
+		estate_angels_land_rights
+		estate_autonomy_of_angels
+		estate_angel_emissaries
+		estate_lowly_angels_in_army
+		estate_celestial_nepotism
+		estate_strengthen_angel_bond
+		estate_iron_grip_of_goddess
+		estate_sinners_punishment
+		estate_angelic_bodies
+		estate_heavens_thunder
+		estate_fallen_angels_in_army
+		estate_fallen_angel_dance
+		estate_angel_monster_coexistence
+		estate_subsidize_angel_farms
+		estate_fallen_angel_workforce
+		estate_scales_of_light
+		estate_luminous_dragon
+		estate_embrace_the_otherwordliness
+	}
+
+	agendas = {
+		estate_angels_develop_x
+	}
+
+	color = { 217 180 100 }
+	
+	influence_from_dev_modifier = 1.0
+}

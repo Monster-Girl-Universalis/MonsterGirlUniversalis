@@ -1,0 +1,359 @@
+country_decisions = {
+
+	san_ilia_nation = {
+		major = yes
+		potential = {
+			was_never_end_game_tag_trigger = yes
+			culture = natalian_human
+			NOT = { exists = SI1 }
+		}
+		allow = {
+			AND = {
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			OR = {
+				AND = {
+					government_rank = 2
+					army_size = 100
+					grown_by_development = 500
+					owns_core_province = 582
+					owns_core_province = 595
+					owns_core_province = 596
+					owns_core_province = 581
+					owns_core_province = 580
+					num_of_owned_provinces_with = {
+						superregion = san_ilia_superregion
+						is_core = ROOT
+						value = 40
+					}
+				}
+			}
+			}
+		}
+		effect = {
+
+			change_tag = SI1
+
+			if = {
+				limit = {
+					NOT = { government_rank = 3 }
+				}
+				set_government_rank = 3
+			}
+
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			if = {
+				limit = {
+					NOT = { technology_group = TECH_HUMAN }
+				}
+				change_technology_group = TECH_HUMAN 
+				change_unit_type = TECH_HUMAN 
+			}
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	sabasa_nation = {
+		major = yes
+		potential = {
+			was_never_end_game_tag_trigger = yes
+			OR = {
+				culture = sabasa_human
+				culture = worm_summoner
+			}
+			NOT = { exists = SA1 }
+		}
+		allow = {
+			AND = {
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			OR = {
+				AND = {
+					government_rank = 2
+					army_size = 100
+					grown_by_development = 500
+					owns_core_province = 755
+					owns_core_province = 751
+					owns_core_province = 754
+					owns_core_province = 756
+					owns_core_province = 748
+					num_of_owned_provinces_with = {
+						superregion = sabasa_superregion
+						is_core = ROOT
+						value = 40
+					}
+				}
+			}
+			}
+		}
+		effect = {
+
+			change_tag = SA1
+
+			if = {
+				limit = {
+					NOT = { government_rank = 3 }
+				}
+				set_government_rank = 3
+			}
+
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			if = {
+				limit = {
+					NOT = { technology_group = TECH_HUMAN }
+				}
+				change_technology_group = TECH_HUMAN 
+				change_unit_type = TECH_HUMAN 
+			}
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	grand_noah_nation = {
+		major = yes
+		potential = {
+			was_never_end_game_tag_trigger = yes
+			OR = {
+				culture = noah_human
+				culture = yamatai_human
+			}
+			NOT = { exists = GR2 }
+		}
+		allow = {
+			AND = {
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			OR = {
+				AND = {
+					government_rank = 2
+					army_size = 100
+					grown_by_development = 500
+					owns_core_province = 1192
+					owns_core_province = 1193
+					owns_core_province = 1194
+					owns_core_province = 1195
+					owns_core_province = 1200
+					num_of_owned_provinces_with = {
+						superregion = grand_noah_superregion
+						is_core = ROOT
+						value = 40
+					}
+				}
+			}
+			}
+		}
+		effect = {
+
+			change_tag = GR2
+
+			if = {
+				limit = {
+					NOT = { government_rank = 3 }
+				}
+				set_government_rank = 3
+			}
+
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			if = {
+				limit = {
+					NOT = { technology_group = TECH_HUMAN }
+				}
+				change_technology_group = TECH_HUMAN 
+				change_unit_type = TECH_HUMAN 
+			}
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	grangold_nation = {
+		major = yes
+		potential = {
+			was_never_end_game_tag_trigger = yes
+			OR = {
+				culture = grangold_human
+				culture = proto_human
+			}
+			NOT = { exists = GR4 }
+		}
+		allow = {
+			AND = {
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			OR = {
+				AND = {
+					government_rank = 2
+					army_size = 100
+					grown_by_development = 500
+					owns_core_province = 1626
+					owns_core_province = 1625
+					owns_core_province = 1627
+					owns_core_province = 1605
+					owns_core_province = 1552
+					num_of_owned_provinces_with = {
+						superregion = eastern_gold_superregion 
+						is_core = ROOT
+						value = 40
+					}
+				}
+			}
+			}
+		}
+		effect = {
+
+			change_tag = GR4
+
+			if = {
+				limit = {
+					NOT = { government_rank = 3 }
+				}
+				set_government_rank = 3
+			}
+
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			if = {
+				limit = {
+					NOT = { technology_group = TECH_HUMAN }
+				}
+				change_technology_group = TECH_HUMAN 
+				change_unit_type = TECH_HUMAN 
+			}
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	remina_nation = {
+		major = yes
+		potential = {
+			was_never_end_game_tag_trigger = yes
+			culture_group = Human_culture
+			NOT = { exists = RE1 }
+			num_of_owned_provinces_with = {
+				region = hellgondo_tartarus_region
+				value = 1
+			}
+		}
+		allow = {
+			AND = {
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			OR = {
+				AND = {
+					government_rank = 2
+					army_size = 100
+					grown_by_development = 500
+					owns_core_province = 2263
+					owns_core_province = 2266
+					owns_core_province = 2271
+					owns_core_province = 2269
+					owns_core_province = 2274
+					num_of_owned_provinces_with = {
+						region = hellgondo_tartarus_region
+						is_core = ROOT
+						value = 20
+					}
+				}
+			}
+			}
+		}
+		effect = {
+			change_tag = RE1
+			remina_bay_area = {
+				change_culture = remina_human
+				change_religion = ROOT
+			}
+			monster_lord_checkpoint = {
+				change_culture = remina_human
+				change_religion = ROOT
+			}
+			desolate_coast = {
+				change_culture = remina_human
+				change_religion = ROOT
+			}
+			hellgondo_tartarus_coast = {
+				change_culture = remina_human
+				change_religion = ROOT
+			}
+			2274 = { change_province_name = "Remina Tartarus" }
+			2275 = { change_province_name = "Remina checkpoint 1" }
+			2271 = { change_province_name = "Remina checkpoint 2" }
+			2301 = { change_province_name = "Remina checkpoint 3" }
+			2302 = { change_province_name = "Remina checkpoint 4" }
+			2262 = { change_province_name = "New Remina" }
+			2260 = { change_province_name = "New Remina coast" }
+			2273 = { change_province_name = "Remina lands 1" }
+			2278 = { change_province_name = "Remina lands 2" }
+			2281 = { change_province_name = "Remina lands 3" }
+			set_capital = 2262	
+			2262 = {
+					add_base_tax = 3
+					add_base_production = 3
+					add_base_manpower = 3
+					center_of_trade = 3
+			}
+			change_primary_culture = remina_human
+			if = {
+				limit = {
+					NOT = { government_rank = 3 }
+				}
+				set_government_rank = 3
+			}
+
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			if = {
+				limit = {
+					NOT = { technology_group = TECH_HUMAN }
+				}
+				change_technology_group = TECH_HUMAN 
+				change_unit_type = TECH_HUMAN 
+			}
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+}

@@ -1,0 +1,18 @@
+government = monarchy
+government_rank = 2
+primary_culture = Monster_Succubi
+add_government_reform = Succubi_realm
+religion = monster_lord_religion
+technology_group = TECH_SUCCUBI
+1444.1.1 = { 
+	monarch = { 
+		name = "Leila"
+		dynasty = "the Succubus"
+		birth_date = 1424.1.1
+		adm = 4
+		dip = 4
+		mil = 4
+		female = yes
+	}
+}
+capital = 2241

@@ -1,0 +1,18 @@
+government = monarchy
+government_rank = 1
+primary_culture = Wolf_Girl
+add_government_reform = Beast_realm
+religion = fenrir_religion
+technology_group = TECH_BEAST
+capital = 76
+1444.1.1 = { 
+	monarch = { 
+		name = "Amara"
+		dynasty = "the Wolf"
+		birth_date = 1424.1.1
+		adm = 2
+		dip = 3
+		mil = 5
+		female = yes
+	}
+}

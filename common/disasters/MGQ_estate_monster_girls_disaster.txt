@@ -1,0 +1,111 @@
+estate_monster_girls_disaster = {
+	potential = {
+		has_estate = estate_monster_girls
+		estate_influence = {
+			estate = estate_monster_girls
+			influence = 80
+		}
+		OR = {
+			technology_group = TECH_ANGEL
+			technology_group = TECH_HUMAN
+		}
+		OR = {
+			NOT = { has_country_flag = monster_girls_estate_triggered }
+			had_country_flag = {
+				flag = monster_girls_estate_triggered
+				days = 365
+			}
+		}
+	}
+
+
+	can_start = {
+		has_any_disaster = no
+		estate_influence = {
+			estate = estate_monster_girls
+			influence = 80
+		}
+		is_at_war = no
+	}
+	
+	can_stop = {
+		OR = {
+			has_any_disaster = yes
+			NOT = {
+				estate_influence = {
+					estate = estate_monster_girls
+					influence = 80
+				}		
+			}
+		}
+	}
+	
+	down_progress = {
+		factor = 0
+		modifier = {
+			factor = 1
+			NOT = {
+				estate_influence = {
+					estate = estate_monster_girls
+					influence = 80
+				}
+			}
+		}
+	}
+	
+	progress = {
+		modifier = {
+			factor = 0.5
+			NOT = {
+				estate_loyalty = {
+					estate = estate_monster_girls
+					loyalty = 50
+				}
+			}
+			is_at_war = no
+		}
+		modifier = {
+			factor = 0.5
+			NOT = {
+				estate_loyalty = {
+					estate = estate_monster_girls
+					loyalty = 40
+				}
+			}
+			is_at_war = no
+		}
+		modifier = {
+			factor = 1
+			NOT = {
+				estate_loyalty = {
+					estate = estate_monster_girls
+					loyalty = 30
+				}
+			}
+			is_at_war = no
+		}
+		modifier = {
+			factor = 1
+			NOT = {
+				estate_loyalty = {
+					estate = estate_monster_girls
+					loyalty = 20
+				}
+			}
+			is_at_war = no
+		}
+	}
+	
+	can_end = {
+		always = yes
+	}
+
+	on_start = mgq_estate_disasters.1
+	
+	on_start_effect = {
+		custom_tooltip = estate_monster_girls_disaster_tooltip
+	}
+	
+	on_monthly = {
+	}
+}

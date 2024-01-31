@@ -1,0 +1,18 @@
+government = monarchy
+government_rank = 1
+primary_culture = Ittan_Momen
+add_government_reform = Demi_Human_realm
+religion = yamatai_religion
+technology_group = TECH_DEMI_HUMAN
+1444.1.1 = { 
+	monarch = { 
+		name = "Kaname"
+		dynasty = "Momen"
+		birth_date = 1424.1.1
+		adm = 4
+		dip = 4
+		mil = 4
+		female = yes
+	}
+}
+capital = 586

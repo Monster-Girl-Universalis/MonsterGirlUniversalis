@@ -1,0 +1,41 @@
+#Eastern Ilias Tartarus entrance
+owner = RAP
+controller = RAP
+add_core = RAP
+culture = Dragon_Apoptosis
+religion = chaos_religion
+base_tax = 6
+base_production = 6
+trade_goods = iron
+base_manpower = 8
+capital = "Eastern Ilias Tartarus entrance"
+is_city = yes
+extra_cost = 8
+center_of_trade = 1
+latent_trade_goods = { 
+	coal 
+}
+discovered_by = TECH_CHIMERA
+discovered_by = TECH_DOLL
+discovered_by = TECH_DRAGON
+discovered_by = TECH_KITSUNE
+discovered_by = TECH_MERMAID
+discovered_by = TECH_TANUKI
+discovered_by = TECH_DEMI_HUMAN
+discovered_by = TECH_ALRAUNE
+discovered_by = TECH_ANGEL
+discovered_by = TECH_BEAST
+discovered_by = TECH_ELF
+discovered_by = TECH_HARPY
+discovered_by = TECH_HUMAN
+discovered_by = TECH_INSECT
+discovered_by = TECH_LAMIA
+discovered_by = TECH_LAND_DWELLER
+discovered_by = TECH_SCYLLA
+discovered_by = TECH_SEA_DWELLER
+discovered_by = TECH_SLIME
+discovered_by = TECH_SUCCUBI
+discovered_by = TECH_UNDEAD
+discovered_by = TECH_VAMPIRE
+discovered_by = TECH_YOUMA
+fort_15th = yes

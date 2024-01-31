@@ -1,0 +1,316 @@
+alraune_internal_development = {
+
+	slot = 1
+	generic = yes
+	ai = yes
+	
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		culture_group = alraune #alraune
+		NOT = { 
+			OR = {
+				
+			}
+		}
+	}
+	
+	has_country_shield = yes
+	
+	gen_alraune_establish_alliances = {
+		icon = mission_alliances
+		required_missions = { }
+		position = 1
+		
+		trigger = {
+			num_of_allies = 2
+		}
+		
+		effect = {
+			add_prestige = 20
+			add_country_modifier = {
+				name = "gen_alraune_diplomacy"
+				duration = 5475
+			}
+		}
+	}
+	
+	gen_alraune_embrace_natures_dominion = {
+		icon = mission_alraune_embrace_natures_dominion
+		required_missions = { gen_alraune_establish_alliances }
+		position = 2
+		
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 15
+				development = 10
+				is_overseas = no
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "gen_alraune_nature_dominion"
+				duration = 9125 #25 years
+			}
+			change_government_reform_progress = 50
+		}
+	}
+
+	gen_alraune_enchantment_of_floral_realm = {
+		icon = mission_alraune_enchantment_of_floral_realm
+		required_missions = { gen_alraune_embrace_natures_dominion }
+		position = 3
+		
+		
+		trigger = {
+			adm_power = 800
+			dip_power = 800
+			mil_power = 800
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "gen_alraune_floral_enchantment"
+				duration = 9125 #25 years
+			}
+			add_adm_power = -75
+			add_dip_power = -75
+			add_mil_power = -75	
+		}
+	}
+
+	gen_alraune_secure_food_production = {
+		icon = mission_secure_food_production
+		required_missions = { gen_alraune_enchantment_of_floral_realm }
+		position = 4
+		
+		
+		trigger = {
+			grain = 3
+			fish = 3
+			spices = 3
+			wine = 3
+			num_of_owned_provinces_with = {
+				has_production_building_trigger = yes
+				value = 15
+			}
+			calc_true_if = {
+				all_owned_province = {
+					OR = {
+						has_building = mills
+						has_building = farm_estate
+						has_building = tradecompany
+						has_building = plantations
+					}
+				}
+				amount = 3
+			}
+		}
+		
+		effect = {
+			random_owned_province = {
+				limit = { trade_goods = grain }
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+				add_province_modifier = {
+					name = "gen_alraune_food_production_boom"
+					duration = 9125 #25 years
+				}
+			}
+			random_owned_province = {
+				limit = { trade_goods = fish }
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+				add_province_modifier = {
+					name = "gen_alraune_food_production_boom"
+					duration = 9125 #25 years
+				}
+			}
+				random_owned_province = {
+				limit = { trade_goods = spices }
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+				add_province_modifier = {
+					name = "gen_alraune_food_production_boom"
+					duration = 9125 #25 years
+				}
+			}
+			random_owned_province = {
+				limit = { trade_goods = wine }
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+				add_province_modifier = {
+					name = "gen_alraune_food_production_boom"
+					duration = 9125 #25 years
+				}
+			}
+		}
+	}
+
+	gen_alraune_blooming_empire = {
+		icon = mission_alraune_blooming_empire
+		required_missions = { gen_alraune_secure_food_production }
+		position = 5
+		
+		
+		trigger = {
+			stability = 3
+			legitimacy_equivalent = 90
+			calc_true_if = {
+				all_owned_province = {
+					OR = {
+						has_building = mills
+						has_building = farm_estate
+						has_building = tradecompany
+						has_building = plantations
+						has_building = textile
+						has_building = weapons
+						has_building = wharf
+						has_building = furnace
+					}
+				}
+				amount = 20
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "gen_alraune_blooming_empire"
+				duration = 9125 #25 years
+			}	
+			add_years_of_income = 1.5
+			add_adm_power = 50
+			add_dip_power = 50
+			add_mil_power = 50
+		}
+	}
+	
+}
+alraune_trade_expansion = {
+
+	slot = 5
+	generic = yes
+	ai = yes
+	
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		culture_group = alraune #alraune
+		NOT = { 
+			OR = {
+				
+			}
+		}
+	}
+	
+	has_country_shield = yes
+	
+	gen_alraune_promote_healing_honey = {
+		icon = mission_alraune_promote_healing_honey
+		required_missions = { }
+		position = 1
+		
+		trigger = {
+			estate_loyalty = {
+    				estate = estate_monster_girls
+    				loyalty = 60
+				}
+			has_estate_privilege = estate_alraune_healing_honey
+		}
+		
+		effect = {
+			add_prestige = 15
+			add_country_modifier = {
+				name = "gen_alraune_advanced_healing_honey"
+				duration = -1
+			}
+		}
+	}
+	
+	gen_alraune_unleash_floral_fury = {
+		icon = mission_alraune_unleash_floral_fury
+		required_missions = { gen_alraune_promote_healing_honey }
+		position = 2
+		
+		trigger = {
+			army_size_percentage = 1
+			army_reformer = 2
+
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "gen_alraune_unleash_floral_fury"
+				duration = 9125 #25 years
+			}	
+			add_army_tradition = 10
+		}
+	}
+	
+	gen_alraune_establish_trade_companies = {
+		icon = mission_colonial
+		required_missions = { gen_alraune_unleash_floral_fury }
+		position = 3
+
+		trigger = {
+			OR = {
+				num_of_strong_trade_companies = 2
+				num_of_merchants = 4
+			}
+		}
+		
+		effect = {	
+			add_mercantilism = 4
+			add_years_of_income = 1
+		}
+	}
+	gen_alraune_powerful_plant_girl_ruler = {
+		icon = mission_alraune_powerful_plant_girl_ruler
+		required_missions = { gen_alraune_establish_trade_companies }
+		position = 4
+		
+		trigger = {
+			monthly_adm = 10
+			monthly_dip = 10
+			monthly_mil = 10
+			grown_by_development = 750
+			legitimacy_equivalent = 90
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "gen_alraune_powerful_plant_girl"
+				duration = 9125 #25 years
+			}
+			add_years_of_income = 1.5
+			add_prestige = 15
+		}
+	}
+	gen_alraune_royal_ambitions = {
+		icon = mission_alraune_queen_challenger
+		required_missions = { gen_alraune_powerful_plant_girl_ruler }
+		position = 5
+		
+		trigger = {
+			monthly_adm = 12
+			monthly_dip = 12
+			monthly_mil = 12
+			government_rank = 2
+			army_tradition = 50
+			army_size = 150
+			legitimacy_equivalent = 100
+			is_bankrupt = no
+		}
+		
+		effect = {
+			add_prestige = 50
+			add_adm_power = 50
+			add_dip_power = 50
+			add_mil_power = 50
+		}
+	}
+	
+}

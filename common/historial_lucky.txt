@@ -1,0 +1,95 @@
+
+# Order here is the priority for taking them, if trigger is true.
+
+GR4 = { #Grangold
+	always = yes
+}
+
+SA1 = { #Sabasa
+	always = yes
+}
+
+GR2 = { #Grand Noah
+	always = yes
+}
+
+SI1 = { #San Ilia
+	always = yes
+}
+
+PT1 = { #Puppeteer Tower
+	always = yes
+}
+
+ML1 = { #Monster Lord
+	always = yes
+}
+
+ENV = { #Enrika
+	always = yes
+}
+
+IT1 = { #Goddess Ilias
+	always = yes
+}
+
+#9th onwards (Queen monsters and Chromey, she has a potential to grow)
+
+
+LC1 = { #La Croix Domain
+	always = yes
+}
+EL1 = { #Elf Queen
+	always = yes
+}
+SP4 = { #Spider Princess
+	always = yes
+}
+MR3 = { #Mermaid Queen
+	always = yes
+}
+VA6 = { #Vampire Queen
+	always = yes
+}
+HRT = { #Harpy Tower
+	always = yes
+}
+SQD = { #Slime Queen
+	always = yes
+}
+LDQ = { #Land Dweller Queen
+	always = yes
+}
+LQD = { #Lich Queen
+	always = yes
+}
+AQD = { #Alraune Queen
+	always = yes
+}
+BQD = { #Beast Queen
+	always = yes
+}
+SSD = { #Succubi Queen
+	always = yes
+}
+CD1 = { #Cow Demon Queen
+	always = yes
+}
+PY1 = { #The Pyramid
+	always = yes
+}
+OR1 = { #Yamata no Orochi
+	always = yes
+}
+NA1 = { #The Navy
+	always = yes
+}
+HM1 = { #Haunted Mansion
+	always = yes
+}
+SLT = { #Slug Tower
+	always = yes
+}
+FP1 = { #It was that moment, when Bonnie became Legendary Pirate Queen
+	always = yes
+}

@@ -1,0 +1,81 @@
+namespace = angels_estate_events
+
+# Advancement of the Angels
+country_event = {
+	id = angels_estate_events.1
+	title = angels_estate_events.1.t
+	desc = angels_estate_events.1.desc
+	picture = ANGELS_GOOD_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		has_estate = estate_angels
+		NOT = {
+			has_estate_influence_modifier = {
+				estate = estate_angels
+				modifier = EST_VAL_ANGELS_ADVANCE
+			}
+		}
+		NOT = {
+			has_estate_influence_modifier = {
+				estate = estate_angels
+				modifier = EST_VAL_ANGELS_DECLINE
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = angels_estate_events.1.a
+		add_estate_influence_modifier = {
+			estate = estate_angels
+			desc = EST_VAL_ANGELS_ADVANCE
+			influence = 10
+			duration = 5475
+		}
+	}
+}
+
+# Decline of the Angels
+country_event = {
+	id = angels_estate_events.2
+	title = angels_estate_events.2.t
+	desc = angels_estate_events.2.desc
+	picture = ANGELS_BAD_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		has_estate = estate_angels
+		NOT = {
+			has_estate_influence_modifier = {
+				estate = estate_angels
+				modifier = EST_VAL_ANGELS_ADVANCE
+			}
+		}
+		NOT = {
+			has_estate_influence_modifier = {
+				estate = estate_angels
+				modifier = EST_VAL_ANGELS_DECLINE
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = angels_events.2.a
+		add_estate_influence_modifier = {
+			estate = estate_angels
+			desc = EST_VAL_ANGELS_DECLINE
+			influence = -10
+			duration = 5475
+		}
+	}
+}

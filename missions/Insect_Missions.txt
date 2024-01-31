@@ -1,0 +1,294 @@
+insect_internal_development = {
+
+	slot = 1
+	generic = yes
+	ai = yes
+	
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		culture_group = insect #insect
+		NOT = { 
+			OR = {
+				
+			}
+		}
+	}
+	
+	has_country_shield = yes
+	
+	gen_insect_swarm_unity = {
+		icon = mission_alliances
+		required_missions = { }
+		position = 1
+		
+		trigger = {
+			num_of_allies = 1
+			estate_loyalty = {
+    				estate = estate_monster_girls
+    				loyalty = 60
+			}
+			estate_loyalty = {
+    				estate = estate_nobles
+    				loyalty = 60
+			}
+		}
+		
+		effect = {
+			add_prestige = 20
+			add_country_modifier = {
+				name = "gen_insect_swarm_unity"
+				duration = 5475
+			}
+		}
+	}
+	
+	gen_insect_enhance_the_breeding_grounds = {
+		icon = mission_alraune_unleash_floral_fury
+		required_missions = { gen_insect_swarm_unity }
+		position = 2
+		
+		trigger = {
+			calc_true_if = {
+				all_owned_province = {	
+					base_manpower = 6 
+					OR = {
+						has_building = barracks
+						has_building = regimental_camp
+					}
+				}
+				amount = 6
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "gen_insect_enhance_the_breeding_grounds"
+				duration = 9125 #25 years
+			}
+			capital_scope = { add_building = soldier_households }
+		}
+	}
+
+	gen_insect_fortify_the_realm = {
+		icon = mission_fortify_the_realm
+		required_missions = { gen_insect_enhance_the_breeding_grounds }
+		position = 3
+		
+		
+		trigger = {
+			calc_true_if = {
+				all_owned_province = {
+					base_manpower = 8 
+					OR = {
+						has_building = fort_15th
+					}
+				}
+				amount = 6
+			}
+			
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "gen_insect_fortify_the_realm"
+				duration = 9125 #25 years
+			}
+			random_owned_province = {
+				limit = {
+					base_manpower = 8
+					has_building = fort_15th
+				}
+				add_building = ramparts
+			}
+			random_owned_province = {
+				limit = {
+					base_manpower = 8
+					has_building = fort_15th
+				}
+				add_building = ramparts
+			}
+		}
+	}
+
+	gen_insect_secure_food_production = {
+		icon = mission_secure_food_production
+		required_missions = { gen_insect_fortify_the_realm }
+		position = 4
+		
+		
+		trigger = {
+			grain = 7
+			fish = 7
+			livestock = 7
+			num_of_owned_provinces_with = {
+				has_production_building_trigger = yes
+				value =20
+			}
+			calc_true_if = {
+				all_owned_province = {
+					OR = {
+						has_building = mills
+						has_building = farm_estate
+						has_building = tradecompany
+						has_building = plantations
+					}
+				}
+				amount = 7
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "gen_insect_secure_food_production"
+				duration = 9125 #25 years
+			}			
+		}
+	}
+
+
+	gen_insect_infrastructure_for_huge_population = {
+		icon = mission_infrastructure_for_huge_population
+		required_missions = { gen_insect_secure_food_production }
+		position = 5
+		
+		
+		trigger = {
+			calc_true_if = {
+				all_owned_province = {
+					development = 20	
+					num_of_times_expanded_infrastructure = 1
+				}
+				amount = 20
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "gen_insect_infrastructure_for_huge_population"
+				duration = -1
+			}
+		}
+	}
+	
+}
+insect_trade_expansion = {
+
+	slot = 5
+	generic = yes
+	ai = yes
+	
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		culture_group = insect #insect
+		NOT = { 
+			OR = {
+				
+			}
+		}
+	}
+	
+	has_country_shield = yes
+	
+	gen_insect_incorporate_swarm_tactics = {
+		icon = mission_insect_incorporate_swarm_tactics
+		required_missions = { }
+		position = 1
+		
+		trigger = {
+			estate_loyalty = {
+    				estate = estate_monster_girls
+    				loyalty = 60
+				}
+			has_estate_privilege = estate_insect_girl_swarms
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "gen_insect_incorporate_swarm_tactics"
+				duration = -1
+			}
+		}
+	}
+	
+	gen_insect_secure_army_supplies = {
+		icon = mission_secure_army_supplies
+		required_missions = { gen_insect_incorporate_swarm_tactics }
+		position = 2
+		
+		trigger = {
+			copper = 1
+			iron = 1
+			advisor = trader
+			advisor = commandant
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "gen_insect_secured_army_supplies"
+				duration = 9125 #25 years
+			}	
+			add_years_of_income = 0.50	
+			add_mercantilism = 2
+		}
+	}
+	
+	gen_insect_establish_trade_companies = {
+		icon = mission_colonial
+		required_missions = { gen_insect_secure_army_supplies }
+		position = 3
+
+		trigger = {
+			OR = {
+				num_of_strong_trade_companies = 2
+				num_of_merchants = 4
+			}
+		}
+		
+		effect = {	
+			add_mercantilism = 4
+			add_years_of_income = 1
+		}
+	}
+	gen_insect_powerful_insect_girl_ruler = {
+		icon = mission_insect_powerful_insect_girl_ruler
+		required_missions = { gen_insect_establish_trade_companies }
+		position = 4
+		
+		trigger = {
+			monthly_adm = 10
+			monthly_dip = 10
+			monthly_mil = 10
+			grown_by_development = 750
+			legitimacy_equivalent = 90
+		}
+		
+		effect = {
+			add_years_of_income = 1.5
+			add_army_tradition = 30
+		}
+	}
+	gen_insect_royal_ambitions = {
+		icon = mission_insect_queen_challenger
+		required_missions = { gen_insect_powerful_insect_girl_ruler }
+		position = 5
+		
+		trigger = {
+			monthly_adm = 12
+			monthly_dip = 12
+			monthly_mil = 12
+			government_rank = 2
+			army_tradition = 50
+			army_size = 150
+			legitimacy_equivalent = 100
+			is_bankrupt = no
+		}
+		
+		effect = {
+			add_army_tradition = 50
+			add_adm_power = 50
+			add_dip_power = 50
+			add_mil_power = 50
+		}
+	}
+	
+}

@@ -1,0 +1,18 @@
+government = monarchy
+government_rank = 2
+primary_culture = Basilisk_Girl
+add_government_reform = Beast_realm
+religion = monster_lord_religion
+technology_group = TECH_BEAST
+1444.1.1 = { 
+	monarch = { 
+		name = "Amara"
+		dynasty = "the Basilisk"
+		birth_date = 1424.1.1
+		adm = 4
+		dip = 4
+		mil = 4
+		female = yes
+	}
+}
+capital = 2215

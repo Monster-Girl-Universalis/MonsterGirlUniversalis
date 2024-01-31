@@ -1,0 +1,269 @@
+beast_internal_development = {
+
+	slot = 1
+	generic = yes
+	ai = yes
+	
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		culture_group = beast #beast
+		NOT = { 
+			OR = {
+				
+			}
+		}
+	}
+	
+	has_country_shield = yes
+	
+	gen_beast_tribal_unity = {
+		icon = mission_alliances
+		required_missions = { }
+		position = 1
+		
+		trigger = {
+			num_of_allies = 1
+			estate_loyalty = {
+    				estate = estate_monster_girls
+    				loyalty = 60
+			}
+			estate_loyalty = {
+    				estate = estate_nobles
+    				loyalty = 60
+			}
+		}
+		
+		effect = {
+			add_prestige = 20
+			add_country_modifier = {
+				name = "gen_beast_unity"
+				duration = 5475
+			}
+		}
+	}
+	
+	gen_beast_mastery = {
+		icon = mission_beast_mastery
+		required_missions = { gen_beast_tribal_unity }
+		position = 2
+		
+		trigger = {
+			calc_true_if = {
+				all_owned_province = {
+					OR = {
+						has_building = barracks
+						has_building = regimental_camp
+						has_building = courthouse
+					}
+				}
+				amount = 10
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "gen_beast_warmastery"
+				duration = 9125 #25 years
+			}
+			change_government_reform_progress = 50
+		}
+	}
+
+	gen_beast_realm_of_the_wild = {
+		icon = mission_beast_realm_of_the_wild
+		required_missions = { gen_beast_mastery }
+		position = 3
+		
+		
+		trigger = {
+			calc_true_if = {
+				all_owned_province = {
+					OR = {
+						fort_level = 2
+					}
+				}
+				amount = 6
+			}
+			livestock = 12
+			
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "gen_realm_of_the_wild"
+				duration = 9125 #25 years
+			}
+		}
+	}
+
+	gen_beast_apex_sovereignty = {
+		icon = mission_beast_apex_sovereignty
+		required_missions = { gen_beast_realm_of_the_wild }
+		position = 4
+		
+		
+		trigger = {
+			estate_loyalty = {
+    				estate = estate_monster_girls
+    				loyalty = 60
+				}
+			has_estate_privilege = estate_beasts_in_military 
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "gen_beast_apex"
+				duration = -1
+			}
+		}
+	}
+
+	gen_beast_primal_wisdom = {
+		icon = mission_beast_primal_wisdom
+		required_missions = { gen_beast_apex_sovereignty }
+		position = 5
+		
+		
+		trigger = {
+			stability = 3
+			adm_power = 600
+			dip_power = 600
+			mil_power = 600
+			advisor = philosopher
+			adm_tech = 12
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "gen_beast_primal"
+				duration = -1
+			}	
+			add_adm_power = -300
+			add_dip_power = -300
+			add_mil_power = -300
+		}
+	}
+	
+}
+beast_trade_expansion = {
+
+	slot = 5
+	generic = yes
+	ai = yes
+	
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		culture_group = beast #beast
+		NOT = { 
+			OR = {
+				
+			}
+		}
+	}
+	
+	has_country_shield = yes
+	
+	gen_beast_strengthen_beast_girls = {
+		icon = mission_beast_strengthen_beast_girls
+		required_missions = { }
+		position = 1
+		
+		trigger = {
+			army_professionalism = 0.10
+		}
+		
+		effect = {
+			add_army_tradition = 10
+			add_country_modifier = {
+				name = "gen_beast_strengthen_beast_girls"
+				duration = 9125 #25 years
+			}
+		}
+	}
+	
+	gen_beast_secure_army_supplies = {
+		icon = mission_secure_army_supplies
+		required_missions = { gen_beast_strengthen_beast_girls }
+		position = 2
+		
+		trigger = {
+			copper = 1
+			iron = 1
+			advisor = trader
+			advisor = commandant
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "gen_beast_secured_army_supplies"
+				duration = 9125 #25 years
+			}	
+			add_years_of_income = 0.50	
+			add_mercantilism = 2
+		}
+	}
+	
+	gen_beast_establish_trade_companies = {
+		icon = mission_colonial
+		required_missions = { gen_beast_secure_army_supplies }
+		position = 3
+
+		trigger = {
+			OR = {
+				num_of_strong_trade_companies = 2
+				num_of_merchants = 4
+			}
+		}
+		
+		effect = {	
+			add_mercantilism = 4
+			add_years_of_income = 1
+		}
+	}
+	gen_beast_powerful_beast_girl_ruler = {
+		icon = mission_beast_powerful_beast_girl_ruler
+		required_missions = { gen_beast_establish_trade_companies }
+		position = 4
+		
+		trigger = {
+			monthly_adm = 10
+			monthly_dip = 10
+			monthly_mil = 10
+			grown_by_development = 750
+			legitimacy_equivalent = 90
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "gen_beast_powerful_beast_girl"
+				duration = 9125 #25 years
+			}
+			add_years_of_income = 1
+			add_army_tradition = 20
+		}
+	}
+	gen_beast_royal_ambitions = {
+		icon = mission_beast_queen_challenger
+		required_missions = { gen_beast_powerful_beast_girl_ruler }
+		position = 5
+		
+		trigger = {
+			monthly_adm = 12
+			monthly_dip = 12
+			monthly_mil = 12
+			government_rank = 2
+			army_tradition = 50
+			army_size = 150
+			legitimacy_equivalent = 100
+			is_bankrupt = no
+		}
+		
+		effect = {
+			add_army_tradition = 50
+			add_adm_power = 50
+			add_dip_power = 50
+			add_mil_power = 50
+		}
+	}
+	
+}

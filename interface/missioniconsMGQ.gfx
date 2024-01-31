@@ -1,0 +1,283 @@
+spriteTypes = {
+
+	spriteType = {
+        name = "mission_slime_court"
+        texturefile = "gfx//interface//missions//mission_slime_court.dds"
+    }
+	spriteType = {
+        name = "mission_secure_food_production"
+        texturefile = "gfx//interface//missions//mission_secure_food_production.dds"
+    }
+	spriteType = {
+        name = "mission_slime_appease_merchants"
+        texturefile = "gfx//interface//missions//mission_slime_appease_merchants.dds"
+    }
+	spriteType = {
+        name = "mission_slime_boomerang_monopoly"
+        texturefile = "gfx//interface//missions//mission_slime_boomerang_monopoly.dds"
+    }
+	spriteType = {
+        name = "mission_slime_powerful_slime_girl_ruler"
+        texturefile = "gfx//interface//missions//mission_slime_powerful_slime_girl_ruler.dds"
+    }
+	spriteType = {
+        name = "mission_slime_queen_challenger"
+        texturefile = "gfx//interface//missions//mission_slime_queen_challenger.dds"
+    }
+	spriteType = {
+        name = "mission_land_dweller_accepted_races_in_our_realm"
+        texturefile = "gfx//interface//missions//mission_land_dweller_accepted_races_in_our_realm.dds"
+    }
+	spriteType = {
+        name = "mission_regulate_salt_circulation"
+        texturefile = "gfx//interface//missions//mission_regulate_salt_circulation.dds"
+    }
+	spriteType = {
+        name = "mission_land_dweller_morale"
+        texturefile = "gfx//interface//missions//mission_land_dweller_morale.dds"
+    }
+	spriteType = {
+        name = "mission_secure_army_supplies"
+        texturefile = "gfx//interface//missions//mission_secure_army_supplies.dds"
+    }
+	spriteType = {
+        name = "mission_powerful_land_dweller_girl_ruler"
+        texturefile = "gfx//interface//missions//mission_powerful_land_dweller_girl_ruler.dds"
+    }
+	spriteType = {
+        name = "mission_land_dweller_queen_challenger"
+        texturefile = "gfx//interface//missions//mission_land_dweller_queen_challenger.dds"
+    }
+	spriteType = {
+        name = "mission_undead_introduce_ghost_girls_to_army"
+        texturefile = "gfx//interface//missions//mission_undead_introduce_ghost_girls_to_army.dds"
+    }
+	spriteType = {
+        name = "mission_undead_prepare_zombie_hordes"
+        texturefile = "gfx//interface//missions//mission_undead_prepare_zombie_hordes.dds"
+    }
+	spriteType = {
+        name = "mission_undead_grandeur_necromancer_mansion"
+        texturefile = "gfx//interface//missions//mission_undead_grandeur_necromancer_mansion.dds"
+    }
+	spriteType = {
+        name = "mission_undead_ban_the_holy_water"
+        texturefile = "gfx//interface//missions//mission_undead_ban_the_holy_water.dds"
+    }
+	spriteType = {
+        name = "mission_undead_powerful_undead_ruler"
+        texturefile = "gfx//interface//missions//mission_undead_powerful_undead_ruler.dds"
+    }
+	spriteType = {
+        name = "mission_undead_lich_queen"
+        texturefile = "gfx//interface//missions//mission_undead_lich_queen.dds"
+    }
+	spriteType = {
+        name = "mission_alraune_embrace_natures_dominion"
+        texturefile = "gfx//interface//missions//mission_alraune_embrace_natures_dominion.dds"
+    }
+	spriteType = {
+        name = "mission_alraune_enchantment_of_floral_realm"
+        texturefile = "gfx//interface//missions//mission_alraune_enchantment_of_floral_realm.dds"
+    }
+	spriteType = {
+        name = "mission_alraune_blooming_empire"
+        texturefile = "gfx//interface//missions//mission_alraune_blooming_empire.dds"
+    }
+	spriteType = {
+        name = "mission_alraune_promote_healing_honey"
+        texturefile = "gfx//interface//missions//mission_alraune_promote_healing_honey.dds"
+    }
+	spriteType = {
+        name = "mission_alraune_unleash_floral_fury"
+        texturefile = "gfx//interface//missions//mission_alraune_unleash_floral_fury.dds"
+    }
+	spriteType = {
+        name = "mission_alraune_powerful_plant_girl_ruler"
+        texturefile = "gfx//interface//missions//mission_alraune_powerful_plant_girl_ruler.dds"
+    }
+	spriteType = {
+        name = "mission_alraune_queen_challenger"
+        texturefile = "gfx//interface//missions//mission_alraune_queen_challenger.dds"
+    }
+	spriteType = {
+        name = "mission_succubi_seduction_and_diplomacy"
+        texturefile = "gfx//interface//missions//mission_succubi_seduction_and_diplomacy.dds"
+    }
+	spriteType = {
+        name = "mission_succubi_expand_succubi_vassals"
+        texturefile = "gfx//interface//missions//mission_succubi_expand_succubi_vassals.dds"
+    }
+	spriteType = {
+        name = "mission_succubi_subversion_and_intrigue"
+        texturefile = "gfx//interface//missions//mission_succubi_subversion_and_intrigue.dds"
+    }
+	spriteType = {
+        name = "mission_succubi_magnificence_and_beauty"
+        texturefile = "gfx//interface//missions//mission_succubi_magnificence_and_beauty.dds"
+    }
+	spriteType = {
+        name = "mission_succubi_encourage_human_succubi_marriages"
+        texturefile = "gfx//interface//missions//mission_succubi_encourage_human_succubi_marriages.dds"
+    }
+	spriteType = {
+        name = "mission_succubi_expand_succubi_influence"
+        texturefile = "gfx//interface//missions//mission_succubi_expand_succubi_influence.dds"
+    }
+	spriteType = {
+        name = "mission_succubi_powerful_succubi_girl_ruler"
+        texturefile = "gfx//interface//missions//mission_succubi_powerful_succubi_girl_ruler.dds"
+    }
+	spriteType = {
+        name = "mission_succubi_queen_challenger"
+        texturefile = "gfx//interface//missions//mission_succubi_queen_challenger.dds"
+    }
+	spriteType = {
+        name = "mission_beast_mastery"
+        texturefile = "gfx//interface//missions//mission_beast_mastery.dds"
+    }
+	spriteType = {
+        name = "mission_beast_realm_of_the_wild"
+        texturefile = "gfx//interface//missions//mission_beast_realm_of_the_wild.dds"
+    }
+	spriteType = {
+        name = "mission_beast_apex_sovereignty"
+        texturefile = "gfx//interface//missions//mission_beast_apex_sovereignty.dds"
+    }
+	spriteType = {
+        name = "mission_beast_primal_wisdom"
+        texturefile = "gfx//interface//missions//mission_beast_primal_wisdom.dds"
+    }
+	spriteType = {
+        name = "mission_beast_strengthen_beast_girls"
+        texturefile = "gfx//interface//missions//mission_beast_strengthen_beast_girls.dds"
+    }
+	spriteType = {
+        name = "mission_beast_powerful_beast_girl_ruler"
+        texturefile = "gfx//interface//missions//mission_beast_powerful_beast_girl_ruler.dds"
+    }
+	spriteType = {
+        name = "mission_beast_queen_challenger"
+        texturefile = "gfx//interface//missions//mission_beast_queen_challenger.dds"
+    }
+	spriteType = {
+        name = "mission_elf_channel_fairy_magic"
+        texturefile = "gfx//interface//missions//mission_elf_channel_fairy_magic.dds"
+    }
+	spriteType = {
+        name = "mission_secure_magical_supplies"
+        texturefile = "gfx//interface//missions//mission_secure_magical_supplies.dds"
+    }
+	spriteType = {
+        name = "mission_four_spirits"
+        texturefile = "gfx//interface//missions//mission_four_spirits.dds"
+    }
+	spriteType = {
+        name = "mission_elf_powerful_elf_girl_ruler"
+        texturefile = "gfx//interface//missions//mission_elf_powerful_elf_girl_ruler.dds"
+    }
+	spriteType = {
+        name = "mission_elf_queen_challenger"
+        texturefile = "gfx//interface//missions//mission_elf_queen_challenger.dds"
+    }
+	spriteType = {
+        name = "mission_harpy_accepted_races_in_our_realm"
+        texturefile = "gfx//interface//missions//mission_harpy_accepted_races_in_our_realm.dds"
+    }
+	spriteType = {
+        name = "mission_establish_feathers_market"
+        texturefile = "gfx//interface//missions//mission_establish_feathers_market.dds"
+    }
+	spriteType = {
+        name = "mission_harpy_establish_harpy_regiments"
+        texturefile = "gfx//interface//missions//mission_harpy_establish_harpy_regiments.dds"
+    }
+	spriteType = {
+        name = "mission_powerful_harpy_girl_ruler"
+        texturefile = "gfx//interface//missions//mission_powerful_harpy_girl_ruler.dds"
+    }
+	spriteType = {
+        name = "mission_harpy_queen_challenger"
+        texturefile = "gfx//interface//missions//mission_harpy_queen_challenger.dds"
+    }
+	spriteType = {
+        name = "mission_kitsune_thin_fried_tofu_production"
+        texturefile = "gfx//interface//missions//mission_kitsune_thin_fried_tofu_production.dds"
+    }
+	spriteType = {
+        name = "mission_fund_kitsune_sages"
+        texturefile = "gfx//interface//missions//mission_fund_kitsune_sages.dds"
+    }
+	spriteType = {
+        name = "mission_kitsune_assemble_taoist_warriors"
+        texturefile = "gfx//interface//missions//mission_kitsune_assemble_taoist_warriors.dds"
+    }
+	spriteType = {
+        name = "mission_powerful_kitsune_ruler"
+        texturefile = "gfx//interface//missions//mission_powerful_kitsune_ruler.dds"
+    }
+	spriteType = {
+        name = "mission_kitsune_nine_tailed_ambitions"
+        texturefile = "gfx//interface//missions//mission_kitsune_nine_tailed_ambitions.dds"
+    }
+	spriteType = {
+        name = "mission_fortify_the_realm"
+        texturefile = "gfx//interface//missions//mission_fortify_the_realm.dds"
+    }
+	spriteType = {
+        name = "mission_infrastructure_for_huge_population"
+        texturefile = "gfx//interface//missions//mission_infrastructure_for_huge_population.dds"
+    }
+	spriteType = {
+        name = "mission_insect_incorporate_swarm_tactics"
+        texturefile = "gfx//interface//missions//mission_insect_incorporate_swarm_tactics.dds"
+    }
+	spriteType = {
+        name = "mission_insect_powerful_insect_girl_ruler"
+        texturefile = "gfx//interface//missions//mission_insect_powerful_insect_girl_ruler.dds"
+    }
+	spriteType = {
+        name = "mission_insect_queen_challenger"
+        texturefile = "gfx//interface//missions//mission_insect_queen_challenger.dds"
+    }
+	spriteType = {
+        name = "mission_sea_dweller_hunting_for_pearls"
+        texturefile = "gfx//interface//missions//mission_sea_dweller_hunting_for_pearls.dds"
+    }
+	spriteType = {
+        name = "mission_seahorse_marine_department"
+        texturefile = "gfx//interface//missions//mission_seahorse_marine_department.dds"
+    }
+	spriteType = {
+        name = "mission_sea_dweller_wisdom_of_the_deep"
+        texturefile = "gfx//interface//missions//mission_sea_dweller_wisdom_of_the_deep.dds"
+    }
+	spriteType = {
+        name = "mission_sea_dweller_morale"
+        texturefile = "gfx//interface//missions//mission_sea_dweller_morale.dds"
+    }
+	spriteType = {
+        name = "mission_secure_naval_supplies"
+        texturefile = "gfx//interface//missions//mission_secure_naval_supplies.dds"
+    }
+	spriteType = {
+        name = "mission_powerful_sea_dweller_girl_ruler"
+        texturefile = "gfx//interface//missions//mission_powerful_sea_dweller_girl_ruler.dds"
+    }
+	spriteType = {
+        name = "mission_royal_sea_dweller_challenger"
+        texturefile = "gfx//interface//missions//mission_royal_sea_dweller_challenger.dds"
+    }
+	spriteType = {
+        name = "mission_mermaid_promote_mermaid_pubs"
+        texturefile = "gfx//interface//missions//mission_mermaid_promote_mermaid_pubs.dds"
+    }
+	spriteType = {
+        name = "mission_powerful_mermaid_girl_ruler"
+        texturefile = "gfx//interface//missions//mission_powerful_mermaid_girl_ruler.dds"
+    }
+	spriteType = {
+        name = "mission_mermaid_queen_challenger"
+        texturefile = "gfx//interface//missions//mission_mermaid_queen_challenger.dds"
+    }
+}	

@@ -1,0 +1,143 @@
+spriteTypes = {
+
+		spriteType = {
+		name = "GFX_great_project_ilias_temple"	
+		texturefile = "gfx//interface//great_projects//great_project_ilias_temple.dds"
+	}
+		spriteType = {
+		name = "GFX_great_project_mithra_castle"	
+		texturefile = "gfx//interface//great_projects//great_project_mithra_castle.dds"
+	}
+		spriteType = {
+		name = "GFX_great_project_sutherland_inn"	
+		texturefile = "gfx//interface//great_projects//great_project_sutherland_inn.dds"
+	}
+		spriteType = {
+		name = "GFX_great_project_south_ilias_tartarus"	
+		texturefile = "gfx//interface//great_projects//great_project_south_ilias_tartarus.dds"
+	}
+		spriteType = {
+		name = "GFX_great_project_eastern_ilias_tartarus"	
+		texturefile = "gfx//interface//great_projects//great_project_eastern_ilias_tartarus.dds"
+	}
+		spriteType = {
+		name = "GFX_great_project_ancient_lab_facility"	
+		texturefile = "gfx//interface//great_projects//great_project_ancient_lab_facility.dds"
+	}
+		spriteType = {
+		name = "GFX_great_project_san_ilia_library"	
+		texturefile = "gfx//interface//great_projects//great_project_san_ilia_library.dds"
+	}
+		spriteType = {
+		name = "GFX_great_project_haunted_mansion"	
+		texturefile = "gfx//interface//great_projects//great_project_haunted_mansion.dds"
+	}
+		spriteType = {
+		name = "GFX_great_project_forest_of_spirits"	
+		texturefile = "gfx//interface//great_projects//great_project_forest_of_spirits.dds"
+	}
+		spriteType = {
+		name = "GFX_great_project_pyramid"	
+		texturefile = "gfx//interface//great_projects//great_project_pyramid.dds"
+	}
+		spriteType = {
+		name = "GFX_great_project_grandeur_bazaar"	
+		texturefile = "gfx//interface//great_projects//great_project_grandeur_bazaar.dds"
+	}
+		spriteType = {
+		name = "GFX_great_project_world_tree"	
+		texturefile = "gfx//interface//great_projects//great_project_world_tree.dds"
+	}
+		spriteType = {
+		name = "GFX_great_project_sabasa_tartarus"	
+		texturefile = "gfx//interface//great_projects//great_project_sabasa_tartarus.dds"
+	}
+		spriteType = {
+		name = "GFX_great_project_safar_ruins"	
+		texturefile = "gfx//interface//great_projects//great_project_safar_ruins.dds"
+	}
+		spriteType = {
+		name = "GFX_great_project_administrator_tower"	
+		texturefile = "gfx//interface//great_projects//great_project_administrator_tower.dds"
+	}
+		spriteType = {
+		name = "GFX_great_project_black_palace"	
+		texturefile = "gfx//interface//great_projects//great_project_black_palace.dds"
+	}
+		spriteType = {
+		name = "GFX_great_project_noah_colosseum"	
+		texturefile = "gfx//interface//great_projects//great_project_noah_colosseum.dds"
+	}
+		spriteType = {
+		name = "GFX_great_project_shrine_hill"	
+		texturefile = "gfx//interface//great_projects//great_project_shrine_hill.dds"
+	}
+		spriteType = {
+		name = "GFX_great_project_undine_spring"	
+		texturefile = "gfx//interface//great_projects//great_project_undine_spring.dds"
+	}
+		spriteType = {
+		name = "GFX_great_project_cow_demon_castle"	
+		texturefile = "gfx//interface//great_projects//great_project_cow_demon_castle.dds"
+	}
+		spriteType = {
+		name = "GFX_great_project_lyra_falls"	
+		texturefile = "gfx//interface//great_projects//great_project_lyra_falls.dds"
+	}
+		spriteType = {
+		name = "GFX_great_project_gold_volcano"	
+		texturefile = "gfx//interface//great_projects//great_project_gold_volcano.dds"
+	}
+		spriteType = {
+		name = "GFX_great_project_grangold_palace"	
+		texturefile = "gfx//interface//great_projects//great_project_grangold_palace.dds"
+	}
+		spriteType = {
+		name = "GFX_great_project_spider_princess_lair"	
+		texturefile = "gfx//interface//great_projects//great_project_spider_princess_lair.dds"
+	}
+		spriteType = {
+		name = "GFX_great_project_gold_tartarus"	
+		texturefile = "gfx//interface//great_projects//great_project_gold_tartarus.dds"
+	}
+		spriteType = {
+		name = "GFX_great_project_holy_wings_shrine"	
+		texturefile = "gfx//interface//great_projects//great_project_holy_wings_shrine.dds"
+	}
+		spriteType = {
+		name = "GFX_great_project_devastated_plains"	
+		texturefile = "gfx//interface//great_projects//great_project_devastated_plains.dds"
+	}
+		spriteType = {
+		name = "GFX_great_project_vampire_castle"	
+		texturefile = "gfx//interface//great_projects//great_project_vampire_castle.dds"
+	}
+		spriteType = {
+		name = "GFX_great_project_snow_shrine"	
+		texturefile = "gfx//interface//great_projects//great_project_snow_shrine.dds"
+	}
+		spriteType = {
+		name = "GFX_great_project_snow_heaven"	
+		texturefile = "gfx//interface//great_projects//great_project_snow_heaven.dds"
+	}
+		spriteType = {
+		name = "GFX_great_project_hall_of_creation"	
+		texturefile = "gfx//interface//great_projects//great_project_hall_of_creation.dds"
+	}
+		spriteType = {
+		name = "GFX_great_project_ilias_temple_ruins"	
+		texturefile = "gfx//interface//great_projects//great_project_ilias_temple_ruins.dds"
+	}
+		spriteType = {
+		name = "GFX_great_project_hellgondo_tartarus"	
+		texturefile = "gfx//interface//great_projects//great_project_hellgondo_tartarus.dds"
+	}
+		spriteType = {
+		name = "GFX_great_project_sealed_sinner_prison"	
+		texturefile = "gfx//interface//great_projects//great_project_sealed_sinner_prison.dds"
+	}
+		spriteType = {
+		name = "GFX_great_project_monster_lord_castle"	
+		texturefile = "gfx//interface//great_projects//great_project_monster_lord_castle.dds"
+	}
+}

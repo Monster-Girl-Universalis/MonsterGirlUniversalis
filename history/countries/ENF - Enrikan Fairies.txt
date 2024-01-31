@@ -1,0 +1,18 @@
+government = monarchy
+government_rank = 1
+primary_culture = Fairy_Girl
+add_government_reform = Elf_realm
+religion = monster_lord_religion
+technology_group = TECH_ELF
+capital = 296
+1444.1.1 = { 
+	monarch = { 
+		name = "Fell"
+		dynasty = "the Fairy"
+		birth_date = 1424.1.1
+		adm = 4
+		dip = 4
+		mil = 3
+		female = yes
+	}
+}

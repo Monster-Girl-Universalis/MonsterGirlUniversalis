@@ -1,0 +1,7 @@
+government = monarchy
+government_rank = 1
+primary_culture = ilian_human
+religion = ilias_light_religion
+technology_group = TECH_HUMAN
+capital = 434
+add_government_reform = 

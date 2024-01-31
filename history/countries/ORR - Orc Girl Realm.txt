@@ -1,0 +1,18 @@
+government = monarchy
+government_rank = 1
+primary_culture = Orc_Girl
+add_government_reform = Beast_realm
+religion = monster_lord_religion
+technology_group = TECH_BEAST
+capital = 31
+1444.1.1 = { 
+	monarch = { 
+		name = "Hip"
+		dynasty = "the Orc"
+		birth_date = 1424.1.1
+		adm = 2
+		dip = 3
+		mil = 5
+		female = yes
+	}
+}

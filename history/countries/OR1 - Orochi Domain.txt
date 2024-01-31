@@ -1,0 +1,19 @@
+government = monarchy
+government_rank = 2
+primary_culture = Yamatai_Lamia
+add_government_reform = Lamia_realm
+religion = yamatai_religion
+technology_group = TECH_LAMIA
+1444.1.1 = { 
+	monarch = { 
+		name = "Yamata"
+		dynasty = "no Orochi"
+		birth_date = 1424.1.1
+		adm = 3
+		dip = 5
+		mil = 6
+		female = yes
+	}
+	add_ruler_personality = immortal_personality
+}
+capital = 1209

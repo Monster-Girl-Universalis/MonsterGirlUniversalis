@@ -1,0 +1,19 @@
+government = monarchy
+government_rank = 2
+primary_culture = Zombie_Girl
+add_government_reform = Artiste_necromancer
+religion = seekers_of_truth_religion
+technology_group = TECH_UNDEAD
+1444.1.1 = { 
+	monarch = { 
+		name = "Chrome"
+		dynasty = "Artiste"
+		culture = "Necromancer_Succubi"
+		birth_date = 1424.1.1
+		adm = 6
+		dip = 5
+		mil = 4
+		female = yes
+	}
+}
+capital = 618

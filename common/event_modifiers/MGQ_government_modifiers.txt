@@ -1,0 +1,3 @@
+MGQ_chaos = {
+	picture = "chaos"
+}

@@ -1,0 +1,1248 @@
+#Iliasville Heroes
+merc_iliasville_heroes = {
+    regiments_per_development = 0.05
+	artillery_weight = 0.1
+    home_province = 41
+	sprites = { asiangfx_sprite_pack }
+    trigger = {
+		OR = {
+			capital_scope = { 
+				continent = Ilias
+			}
+			any_owned_province = {
+				superregion = ilias_superregion
+			}
+		}
+	}
+	modifier = {
+        infantry_power = 0.05
+        may_recruit_female_generals = yes
+	}
+}
+
+#Dahlia Thugs
+merc_dahlia_thugs = {
+    regiments_per_development = 0.05
+	artillery_weight = 0.1
+    home_province = 79
+	sprites = { asiangfx_sprite_pack }
+    trigger = {
+		OR = {
+			capital_scope = { 
+				continent = Ilias
+			}
+			any_owned_province = {
+				superregion = ilias_superregion
+			}
+		}
+	}
+	modifier = {
+        infantry_power = 0.05
+        may_recruit_female_generals = yes
+	}
+}
+
+#Southern Tartarus Abominations
+merc_southern_tartarus_abominations = {
+    regiments_per_development = 0.05
+	artillery_weight = 0.2
+    home_province = 58
+	sprites = { apoptosisgfx_sprite_pack }
+    trigger = {
+		OR = {
+			capital_scope = { 
+				continent = Ilias
+			}
+			any_owned_province = {
+				superregion = ilias_superregion
+			}
+		}
+	}
+	modifier = {
+        artillery_power = 0.10
+        may_recruit_female_generals = yes
+        female_advisor_chance = 1.0
+	}
+}
+
+#Eastern Tartarus Abominations
+merc_eastern_tartarus_abominations = {
+    regiments_per_development = 0.05
+	artillery_weight = 0.2
+    home_province = 20
+	sprites = { apoptosisgfx_sprite_pack }
+    trigger = {
+		OR = {
+			capital_scope = { 
+				continent = Ilias
+			}
+			any_owned_province = {
+				superregion = ilias_superregion
+			}
+		}
+	}
+	modifier = {
+        artillery_power = 0.10
+        may_recruit_female_generals = yes
+        female_advisor_chance = 1.0
+	}
+}
+
+#Lost Woods Elves
+merc_lost_woods_elves = {
+    regiments_per_development = 0.05
+	artillery_weight = 0.1
+    home_province = 264
+	sprites = { asiangfx_sprite_pack }
+    trigger = {
+		OR = {
+			capital_scope = { 
+				continent = Ilias
+			}
+			any_owned_province = {
+				superregion = enrika_superregion
+			}
+		}
+	}
+	modifier = {
+        shock_damage = 0.05
+        may_recruit_female_generals = yes
+        female_advisor_chance = 1.0
+	}
+}
+
+#Unfortunate Mermaids
+merc_unfortunate_mermaids = {
+    regiments_per_development = 0.05
+	artillery_weight = 0.1
+    home_province = 258
+	sprites = { asiangfx_sprite_pack }
+    trigger = {
+		OR = {
+			capital_scope = { 
+				continent = Ilias
+			}
+			any_owned_province = {
+				superregion = enrika_superregion
+			}
+		}
+	}
+	modifier = {
+        shock_damage = 0.05
+        may_recruit_female_generals = yes
+        female_advisor_chance = 1.0
+	}
+}
+
+#Slug Swarms
+merc_slug_swarms = {
+    regiments_per_development = 0.05
+	artillery_weight = 0.1
+    home_province = 457
+	sprites = { asiangfx_sprite_pack }
+    trigger = {
+		OR = {
+			capital_scope = { 
+				continent = Ilias
+			}
+			any_owned_province = {
+				superregion = harpy_forest_superregion
+			}
+		}
+	}
+	modifier = {
+        shock_damage_received = -0.05
+        may_recruit_female_generals = yes
+        female_advisor_chance = 1.0
+	}
+}
+
+#Rabid Harpies
+merc_rabid_harpies = {
+    regiments_per_development = 0.05
+	artillery_weight = 0.1
+    home_province = 388
+	sprites = { asiangfx_sprite_pack }
+    trigger = {
+		OR = {
+			capital_scope = { 
+				continent = Ilias
+			}
+			any_owned_province = {
+				superregion = harpy_forest_superregion
+			}
+		}
+	}
+	modifier = {
+        shock_damage_received = -0.05
+        may_recruit_female_generals = yes
+        female_advisor_chance = 1.0
+	}
+}
+
+#Naval Marines
+merc_naval_marines = {
+    regiments_per_development = 0.05
+	artillery_weight = 0.2
+    home_province = 484
+	sprites = { asiangfx_sprite_pack }
+    trigger = {
+		OR = {
+			capital_scope = { 
+				continent = Noah
+			}
+			any_owned_province = {
+				superregion = navy_superregion
+			}
+		}
+	}
+	modifier = {
+        fire_damage_received = -0.05
+        may_recruit_female_generals = yes
+        female_advisor_chance = 1.0
+	}
+}
+
+#Natalian Mermaids
+merc_natalian_mermaids = {
+    regiments_per_development = 0.05
+	artillery_weight = 0.1
+    home_province = 496
+	sprites = { asiangfx_sprite_pack }
+    trigger = {
+		OR = {
+			capital_scope = { 
+				continent = Natalia
+			}
+			any_owned_province = {
+				superregion = san_ilia_superregion
+			}
+		}
+	}
+	modifier = {
+        fire_damage_received = -0.05
+        may_recruit_female_generals = yes
+        female_advisor_chance = 1.0
+	}
+}
+
+#Assault Roids
+merc_assault_roids = {
+    regiments_per_development = 0.05
+	artillery_weight = 0.5
+    home_province = 550
+	sprites = { asiangfx_sprite_pack }
+    trigger = {
+		OR = {
+			capital_scope = { 
+				continent = Natalia
+			}
+			any_owned_province = {
+				superregion = san_ilia_superregion
+			}
+		}
+	}
+	modifier = {
+        fire_damage = 0.05
+        may_recruit_female_generals = yes
+        female_advisor_chance = 1.0
+	}
+}
+
+#Succubus Nuns
+merc_succubus_nuns = {
+    regiments_per_development = 0.05
+	artillery_weight = 0.1
+    home_province = 584
+	sprites = { asiangfx_sprite_pack }
+    trigger = {
+		OR = {
+			capital_scope = { 
+				continent = Natalia
+			}
+			any_owned_province = {
+				superregion = san_ilia_superregion
+			}
+		}
+	}
+	modifier = {
+        fire_damage_received = -0.05
+        may_recruit_female_generals = yes
+        female_advisor_chance = 1.0
+	}
+}
+#Elka's Thugs
+merc_elka_thugs = {
+    regiments_per_development = 0.05
+	artillery_weight = 0.1
+    home_province = 649
+	sprites = { asiangfx_sprite_pack }
+    trigger = {
+		OR = {
+			capital_scope = { 
+				continent = Natalia
+			}
+			any_owned_province = {
+				superregion = western_natalia_superregion
+			}
+		}
+	}
+	modifier = {
+        infantry_power = 0.05
+        may_recruit_female_generals = yes
+	}
+}
+#Zombies for Hire
+merc_zombies_for_hire = {
+    regiments_per_development = 0.06
+	artillery_weight = 0
+    home_province = 618
+	sprites = { asiangfx_sprite_pack }
+    trigger = {
+		OR = {
+			capital_scope = { 
+				continent = Natalia
+			}
+			any_owned_province = {
+				superregion = western_natalia_superregion
+			}
+		}
+	}
+	modifier = {
+        infantry_power = 0.025
+        may_recruit_female_generals = yes
+        female_advisor_chance = 1.0
+	}
+}
+#Professional Dolls
+merc_professional_dolls = {
+    regiments_per_development = 0.05
+	artillery_weight = 0.1
+    home_province = 698
+	sprites = { asiangfx_sprite_pack }
+    trigger = {
+		OR = {
+			capital_scope = { 
+				continent = Natalia
+			}
+			any_owned_province = {
+				superregion = western_natalia_superregion
+			}
+		}
+	}
+	modifier = {
+        discipline = 0.05
+        may_recruit_female_generals = yes
+        female_advisor_chance = 1.0
+	}
+}
+#Sabasa Assasins
+merc_sabasa_assasins = {
+    regiments_per_development = 0.05
+    home_province = 744
+	sprites = { asiangfx_sprite_pack }
+    trigger = {
+		OR = {
+			capital_scope = { 
+				continent = Safina
+			}
+			any_owned_province = {
+				superregion = sabasa_superregion
+			}
+		}
+	}
+	modifier = {
+        discipline = 0.05
+        may_recruit_female_generals = yes
+	}
+}
+#Lucia's Warband
+merc_lucia_warband = {
+    regiments_per_development = 0.05
+    home_province = 836
+	sprites = { asiangfx_sprite_pack }
+    trigger = {
+		OR = {
+			capital_scope = { 
+				continent = Safina
+			}
+			any_owned_province = {
+				superregion = sabasa_superregion
+			}
+		}
+	}
+	modifier = {
+        infantry_power = 0.10
+        may_recruit_female_generals = yes
+        female_advisor_chance = 1.0
+	}
+}
+#Walraunes
+merc_walraunes = {
+    regiments_per_development = 0.05
+	artillery_weight = 0.1
+    home_province = 1022
+	sprites = { asiangfx_sprite_pack }
+    trigger = {
+		OR = {
+			capital_scope = { 
+				continent = Safina
+			}
+			any_owned_province = {
+				superregion = sabasa_superregion
+			}
+		}
+	}
+	modifier = {
+        infantry_power = 0.05
+        may_recruit_female_generals = yes
+        female_advisor_chance = 1.0
+	}
+}
+#Devil Hunters
+merc_devil_hunters = {
+    regiments_per_development = 0.05
+	artillery_weight = 0.1
+    home_province = 874
+	sprites = { asiangfx_sprite_pack }
+    trigger = {
+		OR = {
+			capital_scope = { 
+				continent = Safina
+			}
+			any_owned_province = {
+				superregion = sabasa_superregion
+			}
+		}
+	}
+	modifier = {
+        shock_damage = 0.05
+        may_recruit_female_generals = yes
+        female_advisor_chance = 1.0
+	}
+}
+#Don Father's Troops
+merc_don_father_troops = {
+    regiments_per_development = 0.05
+	artillery_weight = 0.2
+    home_province = 773
+	sprites = { asiangfx_sprite_pack }
+    trigger = {
+		OR = {
+			capital_scope = { 
+				continent = Safina
+			}
+			any_owned_province = {
+				superregion = north_safina_superregion
+			}
+		}
+	}
+	modifier = {
+        discipline = 0.03
+        may_recruit_female_generals = yes
+	}
+}
+#Scale Bandits
+merc_scale_bandits = {
+    regiments_per_development = 0.05
+    home_province = 924
+	sprites = { asiangfx_sprite_pack }
+    trigger = {
+		OR = {
+			capital_scope = { 
+				continent = Safina
+			}
+			any_owned_province = {
+				superregion = north_safina_superregion
+			}
+		}
+	}
+	modifier = {
+        fire_damage = 0.05
+        may_recruit_female_generals = yes
+        female_advisor_chance = 1.0
+	}
+}
+#Mud Dolls
+merc_mud_dolls = {
+    regiments_per_development = 0.05
+    home_province = 937
+	sprites = { asiangfx_sprite_pack }
+    trigger = {
+		OR = {
+			capital_scope = { 
+				continent = Safina
+			}
+			any_owned_province = {
+				superregion = north_safina_superregion
+			}
+		}
+	}
+	modifier = {
+        fire_damage_received = -0.05
+        may_recruit_female_generals = yes
+        female_advisor_chance = 1.0
+	}
+}
+#Safina Apoptosis
+merc_safina_apoptosis = {
+    regiments_per_development = 0.06
+	artillery_weight = 0.15
+    home_province = 971
+	sprites = { apoptosisgfx_sprite_pack }
+    trigger = {
+		OR = {
+			capital_scope = { 
+				continent = Safina
+			}
+			any_owned_province = {
+				superregion = north_safina_superregion
+			}
+		}
+	}
+	modifier = {
+        artillery_power = 0.05
+        may_recruit_female_generals = yes
+        female_advisor_chance = 1.0
+	}
+}
+#Frog Girls
+merc_frog_girls = {
+    regiments_per_development = 0.05
+	artillery_weight = 0.2
+    home_province = 1069
+	sprites = { asiangfx_sprite_pack }
+    trigger = {
+		OR = {
+			capital_scope = { 
+				continent = Noah
+			}
+			any_owned_province = {
+				superregion = grand_noah_superregion
+			}
+		}
+	}
+	modifier = {
+        shock_damage_received = -0.05
+        may_recruit_female_generals = yes
+        female_advisor_chance = 1.0
+	}
+}
+#Noah Gladiators
+merc_noah_gladiators = {
+    regiments_per_development = 0.05
+	artillery_weight = 0.2
+    home_province = 1194
+	sprites = { asiangfx_sprite_pack }
+    trigger = {
+		OR = {
+			capital_scope = { 
+				continent = Noah
+			}
+			any_owned_province = {
+				superregion = grand_noah_superregion
+			}
+		}
+	}
+	modifier = {
+        infantry_power = 0.10
+        may_recruit_female_generals = yes
+        female_advisor_chance = 1.0
+	}
+}
+#Canaan Sisters
+merc_canaan_sisters = {
+    regiments_per_development = 0.07
+	artillery_weight = 0.2
+    home_province = 1368
+	sprites = { asiangfx_sprite_pack }
+    trigger = {
+		OR = {
+			capital_scope = { 
+				continent = Noah
+			}
+			any_owned_province = {
+				superregion = grand_noah_superregion
+			}
+		}
+	}
+	modifier = {
+        discipline = 0.05
+        may_recruit_female_generals = yes
+        female_advisor_chance = 1.0
+	}
+}
+#Kunoichi Elves
+merc_kunoichi_elves = {
+    regiments_per_development = 0.05
+	artillery_weight = 0.2
+    home_province = 1168
+	sprites = { asiangfx_sprite_pack }
+    trigger = {
+		OR = {
+			capital_scope = { 
+				continent = Noah
+			}
+			any_owned_province = {
+				superregion = yamatai_superregion
+			}
+		}
+	}
+	modifier = {
+        shock_damage = 0.10
+        may_recruit_female_generals = yes
+        female_advisor_chance = 1.0
+	}
+}
+#Yamatai Militia
+merc_yamatai_militia = {
+    regiments_per_development = 0.05
+	artillery_weight = 0.2
+    home_province = 1222
+	sprites = { asiangfx_sprite_pack }
+    trigger = {
+		OR = {
+			capital_scope = { 
+				continent = Noah
+			}
+			any_owned_province = {
+				superregion = yamatai_superregion
+			}
+		}
+	}
+	modifier = {
+        infantry_power = 0.10
+        may_recruit_female_generals = yes
+        female_advisor_chance = 1.0
+	}
+}
+#Red Slimes
+merc_red_slimes = {
+    regiments_per_development = 0.06
+	artillery_weight = 0.2
+    home_province = 1391
+	sprites = { asiangfx_sprite_pack }
+    trigger = {
+		OR = {
+			capital_scope = { 
+				continent = Noah
+			}
+			any_owned_province = {
+				superregion = western_noah_superregion
+			}
+		}
+	}
+	modifier = {
+        shock_damage_received = -0.05
+        may_recruit_female_generals = yes
+        female_advisor_chance = 1.0
+	}
+}
+#Mercenary Mermaids
+merc_mercenary_mermaids = {
+    regiments_per_development = 0.05
+	artillery_weight = 0.2
+    home_province = 1472
+	sprites = { asiangfx_sprite_pack }
+    trigger = {
+		OR = {
+			capital_scope = { 
+				continent = Noah
+			}
+			any_owned_province = {
+				superregion = western_noah_superregion
+			}
+		}
+	}
+	modifier = {
+        shock_damage_received = -0.05
+        may_recruit_female_generals = yes
+        female_advisor_chance = 1.0
+	}
+}
+#Western Nekomatas
+merc_western_nekomatas = {
+    regiments_per_development = 0.05
+	artillery_weight = 0.2
+    home_province = 1439
+	sprites = { asiangfx_sprite_pack }
+    trigger = {
+		OR = {
+			capital_scope = { 
+				continent = Noah
+			}
+			any_owned_province = {
+				superregion = western_noah_superregion
+			}
+		}
+	}
+	modifier = {
+        shock_damage = 0.05
+        may_recruit_female_generals = yes
+        female_advisor_chance = 1.0
+	}
+}
+#Goddard Mercenaries
+merc_goddard_mercenaries = {
+    regiments_per_development = 0.05
+	artillery_weight = 0.2
+    home_province = 1522
+	sprites = { asiangfx_sprite_pack }
+    trigger = {
+		OR = {
+			capital_scope = { 
+				continent = Gold
+			}
+			any_owned_province = {
+				superregion = eastern_gold_superregion
+			}
+		}
+	}
+	modifier = {
+        infantry_power = 0.10
+        may_recruit_female_generals = yes
+        female_advisor_chance = 1.0
+	}
+}
+#Ants for hire
+merc_ants_for_hire = {
+    regiments_per_development = 0.06
+	artillery_weight = 0.2
+    home_province = 1546
+	sprites = { asiangfx_sprite_pack }
+    trigger = {
+		OR = {
+			capital_scope = { 
+				continent = Gold
+			}
+			any_owned_province = {
+				superregion = eastern_gold_superregion
+			}
+		}
+	}
+	modifier = {
+        infantry_power = 0.10
+        may_recruit_female_generals = yes
+        female_advisor_chance = 1.0
+	}
+}
+#Restless Ghouls
+merc_restless_ghouls = {
+    regiments_per_development = 0.06
+	artillery_weight = 0.2
+    home_province = 1604
+	sprites = { asiangfx_sprite_pack }
+    trigger = {
+		OR = {
+			capital_scope = { 
+				continent = Gold
+			}
+			any_owned_province = {
+				superregion = eastern_gold_superregion
+			}
+		}
+	}
+	modifier = {
+        morale_damage = 0.05
+        may_recruit_female_generals = yes
+        female_advisor_chance = 1.0
+	}
+}
+#Battle Golems
+merc_battle_golems = {
+    regiments_per_development = 0.05
+	artillery_weight = 0.2
+    home_province = 1678
+	sprites = { asiangfx_sprite_pack }
+    trigger = {
+		OR = {
+			capital_scope = { 
+				continent = Gold
+			}
+			any_owned_province = {
+				superregion = central_gold_superregion
+			}
+		}
+	}
+	modifier = {
+        morale_damage_received = -0.05
+        may_recruit_female_generals = yes
+        female_advisor_chance = 1.0
+	}
+}
+#Feral Succubi
+merc_feral_succubi = {
+    regiments_per_development = 0.05
+	artillery_weight = 0.2
+    home_province = 1708
+	sprites = { asiangfx_sprite_pack }
+    trigger = {
+		OR = {
+			capital_scope = { 
+				continent = Gold
+			}
+			any_owned_province = {
+				superregion = eastern_gold_superregion
+			}
+		}
+	}
+	modifier = {
+        fire_damage = 0.05
+        may_recruit_female_generals = yes
+        female_advisor_chance = 1.0
+	}
+}
+#The Arachnes
+merc_arachnes = {
+    regiments_per_development = 0.05
+	artillery_weight = 0.2
+    home_province = 1788
+	sprites = { asiangfx_sprite_pack }
+    trigger = {
+		OR = {
+			capital_scope = { 
+				continent = Gold
+			}
+			any_owned_province = {
+				superregion = eastern_gold_superregion
+			}
+		}
+	}
+	modifier = {
+        morale_damage = 0.05
+        may_recruit_female_generals = yes
+        female_advisor_chance = 1.0
+	}
+}
+#Oni of the mountain
+merc_oni_of_the_mountain = {
+    regiments_per_development = 0.05
+	artillery_weight = 0.2
+    home_province = 1822
+	sprites = { asiangfx_sprite_pack }
+    trigger = {
+		OR = {
+			capital_scope = { 
+				continent = Gold
+			}
+			any_owned_province = {
+				superregion = western_gold_superregion
+			}
+		}
+	}
+	modifier = {
+        shock_damage = 0.10
+        may_recruit_female_generals = yes
+        female_advisor_chance = 1.0
+	}
+}
+#Chimeric constructs
+merc_chimeric_constructs = {
+    regiments_per_development = 0.05
+	artillery_weight = 0.2
+    home_province = 1778
+	sprites = { asiangfx_sprite_pack }
+    trigger = {
+		OR = {
+			capital_scope = { 
+				continent = Gold
+			}
+			any_owned_province = {
+				superregion = western_gold_superregion
+			}
+		}
+	}
+	modifier = {
+        infantry_power = 0.15
+        may_recruit_female_generals = yes
+        female_advisor_chance = 1.0
+	}
+}
+#Gold Apoptosis
+merc_gold_apoptosis = {
+    regiments_per_development = 0.06
+	artillery_weight = 0.2
+    home_province = 1856
+	sprites = { apoptosisgfx_sprite_pack }
+    trigger = {
+		OR = {
+			capital_scope = { 
+				continent = Gold
+			}
+			any_owned_province = {
+				superregion = western_gold_superregion
+			}
+		}
+	}
+	modifier = {
+        artillery_power = 0.15
+        may_recruit_female_generals = yes
+        female_advisor_chance = 1.0
+	}
+}
+#Elite Vampires
+merc_elite_vampires = {
+    regiments_per_development = 0.04
+	artillery_weight = 0.1
+    home_province = 1918
+	sprites = { asiangfx_sprite_pack }
+    trigger = {
+		OR = {
+			capital_scope = { 
+				continent = Hellgondo
+			}
+			any_owned_province = {
+				superregion = vampire_castle_superregion
+			}
+		}
+	}
+	modifier = {
+        infantry_power = 0.20
+        may_recruit_female_generals = yes
+        female_advisor_chance = 1.0
+	}
+}
+#Roaming Wyverns
+merc_roaming_wyverns = {
+    regiments_per_development = 0.05
+	artillery_weight = 0.1
+    home_province = 2235
+	sprites = { asiangfx_sprite_pack }
+    trigger = {
+		OR = {
+			capital_scope = { 
+				continent = Hellgondo
+			}
+			any_owned_province = {
+				superregion = hellgondo_superregion
+			}
+		}
+	}
+	modifier = {
+        shock_damage = 0.10
+        may_recruit_female_generals = yes
+        female_advisor_chance = 1.0
+	}
+}
+#Centaur elite
+merc_centaur_elite = {
+    regiments_per_development = 0.06
+    home_province = 2274
+	sprites = { asiangfx_sprite_pack }
+    trigger = {
+		OR = {
+			capital_scope = { 
+				continent = Hellgondo
+			}
+			any_owned_province = {
+				superregion = hellgondo_superregion
+			}
+		}
+	}
+	modifier = {
+        infantry_shock = 0.25
+        may_recruit_female_generals = yes
+        female_advisor_chance = 1.0
+	}
+}
+#Hellgondo Taoists
+merc_hellgondo_taoists = {
+    regiments_per_development = 0.05
+	artillery_weight = 0.1
+    home_province = 2347
+	sprites = { asiangfx_sprite_pack }
+    trigger = {
+		OR = {
+			capital_scope = { 
+				continent = Hellgondo
+			}
+			any_owned_province = {
+				superregion = hellgondo_superregion
+			}
+		}
+	}
+	modifier = {
+        fire_damage = 0.10
+        may_recruit_female_generals = yes
+        female_advisor_chance = 1.0
+	}
+}
+#Elder Oni
+merc_elder_oni = {
+    regiments_per_development = 0.04
+	artillery_weight = 0.1
+    home_province = 2388
+	sprites = { asiangfx_sprite_pack }
+    trigger = {
+		OR = {
+			capital_scope = { 
+				continent = Hellgondo
+			}
+			any_owned_province = {
+				superregion = hellgondo_superregion
+			}
+		}
+	}
+	modifier = {
+        infantry_power = 0.15
+        may_recruit_female_generals = yes
+        female_advisor_chance = 1.0
+	}
+}
+#Shadows from the Netherworld
+merc_shadows_from_the_netherworld = {
+    regiments_per_development = 0.05
+    home_province = 2183
+	sprites = { asiangfx_sprite_pack }
+    trigger = {
+		OR = {
+			capital_scope = { 
+				continent = Hellgondo
+			}
+			any_owned_province = {
+				superregion = hellgondo_superregion
+			}
+		}
+	}
+	modifier = {
+        morale_damage = 0.075
+        may_recruit_female_generals = yes
+        female_advisor_chance = 1.0
+	}
+}
+#Polar Bears
+merc_polar_bears = {
+    regiments_per_development = 0.05
+	artillery_weight = 0.1
+    home_province = 1964
+	sprites = { asiangfx_sprite_pack }
+    trigger = {
+		OR = {
+			capital_scope = { 
+				continent = Snow_Continent
+			}
+			any_owned_province = {
+				superregion = snow_continent_superregion
+			}
+		}
+	}
+	modifier = {
+        infantry_power = 0.10
+        may_recruit_female_generals = yes
+        female_advisor_chance = 1.0
+	}
+}
+#Ice Witches
+merc_ice_witches = {
+    regiments_per_development = 0.04
+	artillery_weight = 0.15
+    home_province = 2037
+	sprites = { asiangfx_sprite_pack }
+    trigger = {
+		OR = {
+			capital_scope = { 
+				continent = Snow_Continent
+			}
+			any_owned_province = {
+				superregion = snow_continent_superregion
+			}
+		}
+	}
+	modifier = {
+        fire_damage_received = -0.10
+        may_recruit_female_generals = yes
+        female_advisor_chance = 1.0
+	}
+}
+#Rogue Valkyries
+merc_rogue_valkyries = {
+    regiments_per_development = 0.05
+	artillery_weight = 0.1
+    home_province = 2013
+	sprites = { asiangfx_sprite_pack }
+    trigger = {
+		OR = {
+			capital_scope = { 
+				continent = Snow_Continent
+			}
+			any_owned_province = {
+				superregion = snow_continent_superregion
+			}
+		}
+	}
+	modifier = {
+        shock_damage = 0.10
+        may_recruit_female_generals = yes
+        female_advisor_chance = 1.0
+	}
+}
+#Angel Beasts
+merc_angel_beasts = {
+    regiments_per_development = 0.05
+	artillery_weight = 0.1
+    home_province = 2138
+	sprites = { asiangfx_sprite_pack }
+    trigger = {
+		OR = {
+			capital_scope = { 
+				continent = Snow_Continent
+			}
+			any_owned_province = {
+				superregion = snow_continent_superregion
+			}
+		}
+	}
+	modifier = {
+        shock_damage = 0.10
+        may_recruit_female_generals = yes
+        female_advisor_chance = 1.0
+	}
+}
+#Otherwordly Angels
+merc_otherwordly_angels = {
+    regiments_per_development = 0.06
+	artillery_weight = 0.2
+    home_province = 2089
+	sprites = { apoptosisgfx_sprite_pack }
+    trigger = {
+		OR = {
+			capital_scope = { 
+				continent = Snow_Continent
+			}
+			any_owned_province = {
+				superregion = snow_continent_superregion
+			}
+		}
+	}
+	modifier = {
+        artillery_power = 0.15
+        may_recruit_female_generals = yes
+        female_advisor_chance = 1.0
+	}
+}
+#Feral Wendigoes
+merc_feral_wendigoes = {
+    regiments_per_development = 0.06
+    home_province = 2484
+	sprites = { inuitgfx_sprite_pack }
+    trigger = {
+		OR = {
+			capital_scope = { 
+				continent = South_Pole
+			}
+			any_owned_province = {
+				superregion = south_pole_superregion
+			}
+		}
+	}
+	modifier = {
+        infantry_power = 0.10
+        may_recruit_female_generals = yes
+        female_advisor_chance = 1.0
+	}
+}
+#Sedna daughters
+merc_sedna_daughters = {
+    regiments_per_development = 0.06
+    home_province = 2433
+	sprites = { inuitgfx_sprite_pack }
+    trigger = {
+		OR = {
+			capital_scope = { 
+				continent = South_Pole
+			}
+			any_owned_province = {
+				superregion = south_pole_superregion
+			}
+		}
+	}
+	modifier = {
+        fire_damage_received = 0.10
+        may_recruit_female_generals = yes
+        female_advisor_chance = 1.0
+	}
+}
+#The Drowned
+merc_the_drowned = {
+    regiments_per_development = 0.06
+    home_province = 2456
+	sprites = { inuitgfx_sprite_pack }
+    trigger = {
+		OR = {
+			capital_scope = { 
+				continent = South_Pole
+			}
+			any_owned_province = {
+				superregion = south_pole_superregion
+			}
+		}
+	}
+	modifier = {
+        morale_damage = 0.05
+        may_recruit_female_generals = yes
+        female_advisor_chance = 1.0
+	}
+}
+#Northern Bears
+merc_northern_bears = {
+    regiments_per_development = 0.06
+    home_province = 2522
+	sprites = { inuitgfx_sprite_pack }
+    trigger = {
+		OR = {
+			capital_scope = { 
+				continent = North_Pole
+			}
+			any_owned_province = {
+				superregion = north_pole_superregion
+			}
+		}
+	}
+	modifier = {
+        infantry_power = 0.10
+        may_recruit_female_generals = yes
+        female_advisor_chance = 1.0
+	}
+}
+#Emperor Penguins
+merc_emperor_penguins = {
+    regiments_per_development = 0.05
+    home_province = 2501
+	sprites = { inuitgfx_sprite_pack }
+    trigger = {
+		OR = {
+			capital_scope = { 
+				continent = North_Pole
+			}
+			any_owned_province = {
+				superregion = north_pole_superregion
+			}
+		}
+	}
+	modifier = {
+        infantry_shock = 0.15
+        may_recruit_female_generals = yes
+        female_advisor_chance = 1.0
+	}
+}
+#Tsurara Onnas
+merc_tsurara_onnas = {
+    regiments_per_development = 0.06
+    home_province = 2559
+	sprites = { inuitgfx_sprite_pack }
+    trigger = {
+		OR = {
+			capital_scope = { 
+				continent = North_Pole
+			}
+			any_owned_province = {
+				superregion = north_pole_superregion
+			}
+		}
+	}
+	modifier = {
+        fire_damage_received = -0.05
+        may_recruit_female_generals = yes
+        female_advisor_chance = 1.0
+	}
+}

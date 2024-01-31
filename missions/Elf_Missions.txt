@@ -1,0 +1,325 @@
+elf_internal_development = {
+
+	slot = 1
+	generic = yes
+	ai = yes
+	
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		culture_group = elf #elf
+		NOT = { 
+			OR = {
+				
+			}
+		}
+	}
+	
+	has_country_shield = yes
+	
+	gen_elf_internal_harmony = {
+		icon = mission_alliances
+		required_missions = { }
+		position = 1
+		
+		trigger = {
+			stability = 1
+			statesman = 1	
+			treasurer = 1		
+		}
+		
+		effect = {
+			add_prestige = 20
+			add_country_modifier = {
+				name = "gen_elf_internal_harmony"
+				duration = 5475
+			}
+		}
+	}
+	
+	gen_elf_embrace_natures_dominion = {
+		icon = mission_alraune_embrace_natures_dominion
+		required_missions = { gen_elf_internal_harmony }
+		position = 2
+		
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 15
+				development = 10
+				is_overseas = no
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "gen_elf_nature_dominion"
+				duration = 9125 #25 years
+			}
+			change_government_reform_progress = 50
+		}
+	}
+
+	gen_elf_channel_fairy_magic = {
+		icon = mission_elf_channel_fairy_magic
+		required_missions = { gen_elf_embrace_natures_dominion }
+		position = 3
+		
+		
+		trigger = {
+			OR = {
+
+					num_of_owned_provinces_with = {
+						value = 6
+						development = 25
+						#is_overseas = no
+					}
+
+					num_of_owned_provinces_with = {
+						value = 10
+						development = 20
+						#is_overseas = no
+					}
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "gen_channel_fairy_magic"
+				duration = 9125 #25 years
+			}	
+		}
+	}
+
+	gen_elf_secure_magical_supplies = {
+		icon = mission_secure_magical_supplies
+		required_missions = { gen_elf_channel_fairy_magic }
+		position = 4
+		
+		
+		trigger = {
+			tropical_wood = 2
+			silk = 2
+			cotton = 2
+			wool = 2
+			dyes = 2
+			calc_true_if = {
+				all_owned_province = {
+					OR = {
+						has_building = mills
+						has_building = farm_estate
+						has_building = tradecompany
+						has_building = plantations
+					}
+				}
+				amount = 10
+			}
+		}
+		
+		effect = {
+			random_owned_province = {
+				limit = { trade_goods = tropical_wood }
+				add_province_modifier = {
+					name = "gen_elf_magical_supplies_boom"
+					duration = 9125 #25 years
+				}
+			}
+			random_owned_province = {
+				limit = { trade_goods = silk }
+				add_province_modifier = {
+					name = "gen_elf_magical_supplies_boom"
+					duration = 9125 #25 years
+				}
+			}
+			random_owned_province = {
+				limit = { trade_goods = cotton }
+				add_province_modifier = {
+					name = "gen_elf_magical_supplies_boom"
+					duration = 9125 #25 years
+				}
+			}
+			random_owned_province = {
+				limit = { trade_goods = wool }
+				add_province_modifier = {
+					name = "gen_elf_magical_supplies_boom"
+					duration = 9125 #25 years
+				}
+			}
+			random_owned_province = {
+				limit = { trade_goods = dyes }
+				add_province_modifier = {
+					name = "gen_elf_magical_supplies_boom"
+					duration = 9125 #25 years
+				}
+			}
+		}
+	}
+
+	gen_elf_arcane_paradise = {
+		icon = mission_alraune_blooming_empire
+		required_missions = { gen_elf_secure_magical_supplies }
+		position = 5
+		
+		
+		trigger = {
+			stability = 2
+			legitimacy_equivalent = 90
+			calc_true_if = {
+				all_owned_province = {
+					OR = {
+						has_building = mills
+						has_building = farm_estate
+						has_building = tradecompany
+						has_building = plantations
+						has_building = textile
+						has_building = weapons
+						has_building = wharf
+						has_building = furnace
+					}
+				}
+				amount = 25
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "gen_elf_arcane_paradise"
+				duration = -1
+			}	
+			add_adm_power = -150
+			add_dip_power = -150
+			add_mil_power = -150
+		}
+	}
+	
+}
+elf_trade_expansion = {
+
+	slot = 5
+	generic = yes
+	ai = yes
+	
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		culture_group = elf #elf
+		NOT = { 
+			OR = {
+				
+			}
+		}
+	}
+	
+	has_country_shield = yes
+	
+	gen_elf_promote_elven_warfare = {
+		icon = mission_secure_army_supplies
+		required_missions = { }
+		position = 1
+		
+		trigger = {
+			estate_loyalty = {
+    				estate = estate_monster_girls
+    				loyalty = 60
+				}
+			has_estate_privilege = estate_elven_warfare_standards
+		}
+		
+		effect = {
+			add_prestige = 15
+			add_country_modifier = {
+				name = "gen_integrate_elven_warfare"
+				duration = -1
+			}
+		}
+	}
+	
+	gen_elf_channel_spirits_of_nature = {
+		icon = mission_four_spirits
+		required_missions = { gen_elf_promote_elven_warfare }
+		position = 2
+		
+		trigger = {
+			OR = {
+				has_global_modifier_value = {
+					which = shock_damage
+					value = 0.20
+				}
+				has_global_modifier_value = {
+					which = fire_damage
+					value = 0.20
+				}
+			}
+
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "gen_elf_channel_spirits_of_nature"
+				duration = 9125 #25 years
+			}	
+			add_army_tradition = 10
+		}
+	}
+	
+	gen_elf_establish_trade_companies = {
+		icon = mission_colonial
+		required_missions = { gen_elf_channel_spirits_of_nature }
+		position = 3
+
+		trigger = {
+			OR = {
+				num_of_strong_trade_companies = 2
+				num_of_merchants = 4
+			}
+		}
+		
+		effect = {	
+			add_mercantilism = 4
+			add_years_of_income = 1
+		}
+	}
+	gen_elf_powerful_elf_girl_ruler = {
+		icon = mission_elf_powerful_elf_girl_ruler
+		required_missions = { gen_elf_establish_trade_companies }
+		position = 4
+		
+		trigger = {
+			monthly_adm = 10
+			monthly_dip = 10
+			monthly_mil = 10
+			grown_by_development = 750
+			legitimacy_equivalent = 90
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "gen_elf_powerful_elf_girl"
+				duration = 9125 #25 years
+			}
+			add_years_of_income = 1
+			add_prestige = 15
+		}
+	}
+	gen_elf_royal_ambitions = {
+		icon = mission_elf_queen_challenger
+		required_missions = { gen_elf_powerful_elf_girl_ruler }
+		position = 5
+		
+		trigger = {
+			monthly_adm = 12
+			monthly_dip = 12
+			monthly_mil = 12
+			government_rank = 2
+			army_tradition = 50
+			army_size = 150
+			legitimacy_equivalent = 100
+			is_bankrupt = no
+		}
+		
+		effect = {
+			add_prestige = 50
+			add_adm_power = 50
+			add_dip_power = 50
+			add_mil_power = 50
+		}
+	}
+	
+}

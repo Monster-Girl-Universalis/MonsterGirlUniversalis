@@ -1,0 +1,4252 @@
+#Pornof
+PRF_ideas = {
+	start = {
+		stability_cost_modifier = -0.15
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+	}
+
+	bonus = {
+		global_trade_power = 0.2
+	}
+	
+	trigger = {
+		tag = PRF
+	}
+	free = yes
+
+	PRF_tolerance_for_everyone = {
+		tolerance_own = 2
+	}
+	PRF_shameless_village = {		
+		diplomatic_reputation = -2
+		ae_impact = 0.2
+	}
+	PRF_thriving_casino = {
+		global_trade_goods_size_modifier = 0.25
+	}
+	PRF_fertile_fields = {
+		development_cost = -0.15
+	}
+	PRF_army_of_pornof = {
+		land_forcelimit_modifier = 0.33
+	}
+	PRF_shocking_villagemen = {
+		shock_damage = 0.20
+	}
+	PRF_pornof_perseverance = {
+		fire_damage_received = -0.10
+	}
+}
+#Leech Girl Realm
+LGR_ideas = {
+	start = {
+		global_monthly_devastation = -0.33
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+
+	bonus = {
+		land_attrition = -0.25
+	}
+	
+	trigger = {
+		culture = Leech_Girl
+	}
+	free = yes
+
+	LGR_leech_of_leeches = {
+		morale_damage = 0.1
+		morale_damage_received = -0.1
+	}
+	LGR_hardened_land_dwellers = {		
+		land_attrition = -0.1
+	}
+	LGR_versatile_leech_girls = {
+		reinforce_speed = 0.15
+		reinforce_cost_modifier = -0.20
+	}
+	LGR_bio_breath = {
+		hostile_attrition = 1
+		max_hostile_attrition = 3
+	}
+	LGR_mass_quick = {
+		movement_speed = 0.1
+	}
+	LGR_efficient_resource_usage = {
+		build_cost = -0.2
+	}
+	LGR_attuned_to_nature = {
+		global_prosperity_growth = 0.5
+	}
+}
+#Rostrum Mountains
+RMA_ideas = {
+	start = {
+		land_attrition = -0.10
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+
+	bonus = {		
+		fire_damage_received = -0.10
+	}
+	
+	trigger = {
+		tag = RMA
+	}
+	free = yes
+
+	RMA_short_lived_flame = {
+		fire_damage = 0.20
+		fire_damage_received = 0.20
+	}
+	RMA_will_o_wisp = {		
+		infantry_fire = 0.5
+	}
+	RMA_fireball_battle_magic = {
+		artillery_levels_available_vs_fort = 1
+		siege_ability = 0.20
+	}
+	RMA_caves_development = {
+		development_cost_modifier = -0.1
+		development_cost = -0.05
+	}
+	RMA_advanced_ghost_army = {
+		can_bypass_forts = yes
+	}
+	RMA_candle_burnout = {
+		discipline = 0.075
+		global_manpower_modifier = -0.20
+	}
+	RMA_resilience_to_death = {
+		manpower_recovery_speed = -0.20
+		reinforce_speed = 0.50
+	}
+}
+#Luxuru Apoptosis
+LXP_ideas = {
+	start = {
+		idea_cost = -0.10
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+
+	bonus = {		
+		technology_cost = -0.15
+	}
+	
+	trigger = {
+		tag = LXP
+	}
+	free = yes
+
+	LXP_multi-claw_restraint_device = {
+		infantry_power = 0.10
+		discipline = 0.03
+	}
+	LXP_otherworldly_being = {		
+		unjustified_demands = -0.5
+	}
+	LXP_advanced_researching_capability = {
+		innovativeness_gain = 0.75
+		global_institution_spread = 0.1
+	}
+	LXP_versatile_engineering_machinery = {
+		build_cost = -0.1
+		backrow_artillery_damage = 0.25
+	}
+	LXP_spacetime_assimilation = {
+		culture_conversion_cost = -0.33
+	}
+	LXP_durable_apoptosis = {
+		land_attrition = -0.33
+		war_exhaustion = -0.20
+	}
+	LXP_cross_world_contact_elimination = {
+		ignore_coring_distance = yes
+		core_creation = -0.2
+		allow_client_states = yes
+	}
+}
+#Riot Apoptosis
+RAP_ideas = {
+	start = {
+		global_unrest = -1
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+
+	bonus = {		
+		discipline = 0.05
+	}
+	
+	trigger = {
+		tag = RAP
+	}
+	free = yes
+
+	RAP_beast_apoptosis = {
+		shock_damage = 0.30
+		shock_damage_received = 0.20
+	}
+	RAP_proud_dragonkin = {		
+		infantry_power = 0.15
+		fire_damage = 0.05
+	}
+	RAP_exploring_outside_world = {
+		diplomatic_upkeep = 1
+		diplomats = 1
+	}
+	RAP_lunatic_beast = {
+		movement_speed = 0.20
+	}
+	RAP_spacetime_assimilation = {		
+		culture_conversion_cost = -0.33
+	}
+	RAP_steel_body_focused_mind = {
+		morale_damage_received = -0.025
+		land_morale = 0.075
+	}
+	RAP_cross_world_contact_elimination = {
+		ignore_coring_distance = yes
+		core_creation = -0.2
+		allow_client_states = yes
+	}
+}
+#Eater Apoptosis
+EAP_ideas = {
+	start = {
+		recover_army_morale_speed = 0.10
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+
+	bonus = {		
+		fire_damage_received = -0.10
+	}
+	
+	trigger = {
+		tag = EAP
+	}
+	free = yes
+
+	EAP_spacetime_assimilation = {		
+		culture_conversion_cost = -0.33
+	}
+	EAP_alraunes_desire_to_live = {		
+		land_morale = 0.125
+	}
+	EAP_flesh_petal_trap = {
+		military_tactics = 0.10
+	}
+	EAP_healing_honey = {
+		recover_army_morale_speed = 0.10
+		development_cost = -0.05
+	}
+	EAP_apoptosis_alraune = {
+		hostile_attrition = 2
+		global_monthly_devastation = -0.2
+	}
+	EAP_otherworldy_being = {		
+		unjustified_demands = -0.5
+	}
+	EAP_cross_world_contact_elimination = {
+		ignore_coring_distance = yes
+		core_creation = -0.2
+		allow_client_states = yes
+	}
+}
+#Iliasville
+ILW_ideas = {
+	start = {
+		tolerance_own = 1
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+
+	bonus = {		
+		global_prosperity_growth = 0.50
+	}
+	
+	trigger = {
+		tag = ILW
+	}
+	free = yes
+
+	ILW_fertile_lands = {		
+		production_efficiency = 0.10
+	}
+	ILW_home_of_brave_Luka = {		
+		land_morale = 0.15
+	}
+	ILW_Ilias_Temple = {
+		prestige = 1
+		legitimacy = 1
+		republican_tradition = 0.3
+		devotion = 1
+		horde_unity = 1
+		meritocracy = 0.5
+	}
+	ILW_iliasville_perseverance = {
+		defensiveness = 0.15
+	}
+	ILW_trade_with_slime_girls = {
+		trade_efficiency = 0.1
+		tolerance_heathen = 1
+	}
+	ILW_secret_treasury = {		
+		interest = -0.5
+	}
+	ILW_door_to_the_hades = {
+		country_admin_power = 1
+	}
+}
+#Nameless Slums
+NMS_ideas = {
+	start = {
+		diplomats = 1
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+
+	bonus = {		
+		spy_offence = 0.2
+	}
+	
+	trigger = {
+		tag = NMS
+	}
+	free = yes
+
+	NMS_underworld_network = {		
+		spy_offence = 0.25
+	}
+	NMS_questionable_locals = {
+		global_tax_modifier = -0.1
+		global_trade_power = 0.1
+		trade_efficiency = 0.1
+	}
+	NMS_dahlias_thugs = {
+		leader_land_shock = 1
+		shock_damage = 0.10
+	}
+	NMS_spy_informants = {
+		global_spy_defence = 0.25
+	}
+	NMS_maritime_criminal_activity = {
+		privateer_efficiency = 0.2
+		ship_power_propagation = 0.2
+	}
+	NMS_antagonizing_approach = {		
+		embargo_efficiency = 0.25
+		power_projection_from_insults = 1
+	}
+	NMS_found_dahlias_syndicate = {
+		discipline = 0.05
+		mercenary_manpower = 0.33
+	}
+}
+#Earthworm Drylands
+ERD_ideas = {
+	start = {
+		global_monthly_devastation = -0.33
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+
+	bonus = {		
+		land_attrition = -0.1		
+		land_morale = 0.025
+		
+	}
+	
+	trigger = {
+		culture = Earthworm_Girl
+	}
+	free = yes
+
+	ERD_hardened_land_dwellers = {		
+		land_attrition = -0.1
+	}
+	ERD_attuned_to_nature = {
+		global_prosperity_growth = 0.5
+	}
+	ERD_earthworm_vitality = {		
+		land_morale = 0.125
+	}
+	ERD_bio_breath = {
+		hostile_attrition = 1
+		max_hostile_attrition = 3
+	}
+	ERD_affinity_to_our_kin = {
+		same_culture_advisor_cost = -0.15
+		relation_with_same_culture_group = 15
+	}
+	ERD_digging_holes = {		
+		production_efficiency = 0.10
+		gold_depletion_chance_modifier = -0.1
+	}
+	ERD_underground_catacombs = {
+		global_allowed_num_of_buildings = 1
+	}
+}
+#Jaide Apoptosis
+JIP_ideas = {
+	start = {
+		military_tactics = 0.10
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+
+	bonus = {		
+		leader_land_fire = 1
+	}
+	
+	trigger = {
+		tag = JIP
+	}
+	free = yes
+
+	JIP_otherworldy_being = {		
+		unjustified_demands = -0.5
+	}
+	JIP_laser_eye_scissor_legs = {		
+		artillery_power = 0.10
+		discipline = 0.03
+	}
+	JIP_advanced_research = {
+		idea_cost = -0.2
+		embracement_cost = -0.1
+	}
+	JIP_durable_prototype_roid = {
+		fire_damage_received = -0.05
+		shock_damage_received = -0.05
+	}
+	JIP_architectural_engineering = {
+		build_time = -0.33
+		build_cost = -0.1
+	}
+	JIP_spacetime_assimilation = {		
+		culture_conversion_cost = -0.33
+	}
+	JIP_cross_world_contact_elimination = {
+		ignore_coring_distance = yes
+		core_creation = -0.2
+		allow_client_states = yes
+	}
+}
+#Sully Apoptosis
+SLP_ideas = {
+	start = {
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		naval_morale = 0.075
+		may_recruit_female_generals = yes
+	}
+
+	bonus = {		
+		navy_tradition = 1
+	}
+	
+	trigger = {
+		tag = SLP
+	}
+	free = yes
+
+	SLP_spacetime_assimilation = {		
+		culture_conversion_cost = -0.33
+	}
+	SLP_apoptosis_sea_dweller = {		
+		heavy_ship_power = 0.15
+	}
+	SLP_maritime_advancements = {
+		naval_forcelimit_modifier = 0.1
+		global_sailors_modifier = 0.15
+	}
+	SLP_bubbles_spam = {
+		global_naval_engagement_modifier = 0.20
+	}
+	SLP_secured_coastline = {
+		own_coast_naval_combat_bonus = 1.0
+	}
+	SLP_otherworldy_being = {		
+		unjustified_demands = -0.5
+	}
+	SLP_cross_world_contact_elimination = {
+		ignore_coring_distance = yes
+		core_creation = -0.2
+		allow_client_states = yes
+	}
+}
+#Shesta Apoptosis
+SSP_ideas = {
+	start = {
+		morale_damage_received = -0.10
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+
+	bonus = {		
+		fire_damage = 0.10
+	}
+	
+	trigger = {
+		tag = SSP
+	}
+	free = yes
+
+	SSP_floating_girl = {		
+		shock_damage_received = -0.15
+	}
+	SSP_spacetime_assimilation = {		
+		culture_conversion_cost = -0.33
+	}
+	SSP_merchant_endeavours = {
+		trade_efficiency = 0.1
+		trade_steering = 0.1
+	}
+	SSP_doomed_magician = {
+		recover_army_morale_speed = -0.10
+		all_power_cost = -0.1
+	}
+	SSP_cooking_advancements = {
+		production_efficiency = 0.05
+		land_maintenance_modifier = -0.05
+	}
+	SSP_otherworldy_being = {		
+		unjustified_demands = -0.5
+	}
+	SSP_cross_world_contact_elimination = {
+		ignore_coring_distance = yes
+		core_creation = -0.2
+		allow_client_states = yes
+	}
+}
+#Orc Girl Realm
+ORR_ideas = {
+	start = {
+		core_creation = -0.15
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+
+	bonus = {		
+		army_tradition = 1
+	}
+	
+	trigger = {
+		culture = Orc_Girl
+	}
+	free = yes
+
+	ORR_orc_looting = {		
+		available_province_loot = 0.33
+		loot_amount = 0.33
+	}
+	ORR_raze_everything = {		
+		raze_power_gain = 0.25
+	}
+	ORR_expert_blitz = {
+		shock_damage = 0.125
+	}
+	ORR_cheerful_orcs = {
+		war_exhaustion_cost = -0.25
+		war_exhaustion = -0.10
+	}
+	ORR_raider_economy = {
+		land_maintenance_modifier = -0.33
+		production_efficiency = -0.10
+	}
+	ORR_loot_loot_loot = {		
+		build_cost = 0.15
+		siege_ability = 0.33
+	}
+	ORR_warrior_society = {
+		general_cost = -0.20
+		free_leader_pool = 2
+	}
+}
+#Bunny Girl Realm
+BGR_ideas = {
+	start = {
+		shock_damage = 0.10
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+
+	bonus = {		
+		army_tradition = 1
+	}
+	
+	trigger = {
+		culture = Bunny_Girl
+	}
+	free = yes
+
+	BGR_friendly_with_humans = {		
+		tolerance_heathen = 2
+	}
+	BGR_attuned_huntresses = {		
+		shock_damage_received = -0.10
+	}
+	BGR_expert_archers = {
+		leader_land_shock = 1
+	}
+	BGR_cheerful_rabbits = {
+		war_exhaustion_cost = -0.25
+		war_exhaustion = -0.10
+	}
+	BGR_affinity_to_our_kin = {
+		same_culture_advisor_cost = -0.15
+		relation_with_same_culture_group = 15
+	}
+	BGR_tolerant_monsters = {		
+		num_accepted_cultures = 3
+		relation_with_accepted_culture = 15
+	}
+	BGR_travelling_merchants = {
+		trade_efficiency = 0.1
+		trade_range_modifier = 0.67
+	}
+}
+#Enrika Village
+ENV_ideas = {
+	start = {
+		yearly_harmony = 0.5
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+
+	bonus = {		
+		production_efficiency = 0.1
+	}
+	
+	trigger = {
+		tag = ENV
+	}
+	free = yes
+
+	ENV_sanctuary_of_peace = {		
+		global_unrest = -2
+	}
+	ENV_mystical_connections = {		
+		prestige = 1
+	}
+	ENV_elven_craftsmanship = {
+		global_trade_goods_size = 0.25
+	}
+	ENV_hidden_refuge = {
+		defensiveness = 0.15
+	}
+	ENV_guardians_of_the_woods = {
+		land_attrition = -0.20
+	}
+	ENV_fallen_angels_in_army = {
+		fire_damage = 0.10
+		military_tactics = 0.2
+	}
+	ENV_unshaken_resolve = {
+		discipline = 0.1
+	}
+}
+#Dog Girl Realm
+DGR_ideas = {
+	start = {
+		global_unrest = -1
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+
+	bonus = {		
+		yearly_army_professionalism = 0.01
+	}
+	
+	trigger = {
+		culture = Dog_Girl
+	}
+	free = yes
+
+	DGR_loyal_companions = {		
+		land_morale = 0.1
+	}
+	DGR_agile_pursuit = {	
+		reinforce_speed = 0.20	
+	}
+	DGR_feral_instincts = {
+		manpower_recovery_speed = 0.15
+	}
+	DGR_beast_mastery = {
+		land_attrition = -0.1
+	}
+	DGR_tribal_bonds = {
+		stability_cost_modifier = -0.15
+	}
+	DGR_pack_tactics = {		
+		fire_damage = 0.1
+	}
+	DGR_animal_empathy = {
+		num_accepted_cultures = 1
+	}
+}
+#Heavenly Bandits
+HVB_ideas = {
+	start = {
+		leader_land_shock = 1
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+
+	bonus = {		
+		global_trade_power = 0.15
+	}
+	
+	trigger = {
+		tag = HVB
+	}
+	free = yes
+
+	HVB_irreverent_tricksters = {		
+		shock_damage = 0.15
+	}
+	HVB_swift_retreat = {		
+		land_attrition = -0.10
+	}
+	HVB_misdirection_tactics = {
+		global_spy_defence = 0.2
+	}
+	HVB_evasive_maneuvers = {
+		movement_speed = 0.10
+	}
+	HVB_charismatic_outlaws = {
+		diplomatic_reputation = 1
+	}
+	HVB_unpredictable_raids = {		
+		land_maintenance_modifier = -0.20
+	}
+	HVB_stolen_techniques = {
+		max_general_shock = 1
+		max_general_maneuver = 1
+	}
+}
+#Centaurs
+ILC_ideas = {
+	start = {
+		shock_damage = 0.10
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+
+	bonus = {		
+		army_tradition = 1
+	}
+	
+	trigger = {
+		culture = Centaur_Girl
+	}
+	free = yes
+
+	ILC_skilled_archers = {		
+		fire_damage = 0.10
+	}
+	ILC_swift_riders = {		
+		shock_damage_received = -0.10
+	}
+	ILC_nomadic_traditions = {
+		global_monthly_devastation = -0.1
+		global_supply_limit_modifier = 0.33
+	}
+	ILC_plains_warriors = {
+		land_morale = 0.1
+	}
+	ILC_tribal_unity = {
+		stability_cost_modifier = -0.15
+	}
+	ILC_steppe_tactics = {		
+		land_attrition = -0.15
+	}
+	ILC_riders_of_legend = {
+		morale_damage = 0.1
+	}
+}
+#Rat Girl Realm
+RGR_ideas = {
+	start = {
+		global_trade_power = 0.1
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+
+	bonus = {		
+		global_unrest = -1
+	}
+	
+	trigger = {
+		culture = Rat_Girl
+	}
+	free = yes
+
+	RGR_urban_cunning = {		
+		production_efficiency = 0.1
+	}
+	RGR_underground_network = {		
+		spy_offence = 0.25
+		no_claim_cost_increasement = yes
+	}
+	RGR_quick_escapes = {
+		movement_speed = 0.05
+		enable_forced_march = yes
+	}
+	RGR_resilient_resistance = {
+		defensiveness = 0.15
+	}
+	RGR_skilled_plague_handlers = {
+		hostile_attrition = 1
+		max_hostile_attrition = 1
+	}
+	RGR_urban_espionage = {		
+		rebel_support_efficiency = 1
+	}
+	RGR_shadowy_dominance = {
+		global_spy_defence = 0.25
+		spy_action_cost_modifier = -0.25
+	}
+}
+#Roper Realm
+ROR_ideas = {
+	start = {
+		global_garrison_growth = 0.10
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+
+	bonus = {		
+		war_exhaustion = -0.10
+	}
+	
+	trigger = {
+		culture = Roper_Girl
+	}
+	free = yes
+
+	ROR_cave_ambush_tactics = {		
+		infantry_shock = 0.5
+	}
+	ROR_cruel_predators = {		
+		land_morale = 0.1
+	}
+	ROR_devouring_grasp = {
+		infantry_power = 0.15
+	}
+	ROR_sticky_entrapment = {
+		own_territory_dice_roll_bonus = 1
+		movement_speed = -0.05
+	}
+	ROR_digestive_efficiency = {
+		global_tax_modifier = 0.15
+	}
+	ROR_cave_mastery = {		
+		defensiveness = 0.15
+	}
+	ROR_ruthless_predation = {
+		morale_damage = 0.15
+	}
+}
+#Sheep Girl Realm
+SGR_ideas = {
+	start = {
+		development_cost_in_primary_culture = -0.1
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+
+	bonus = {		
+		country_admin_power = 1
+	}
+	
+	trigger = {
+		culture = Sheep_Girl
+	}
+	free = yes
+
+	SGR_wool_production = {		
+		global_trade_goods_size_modifier = 0.125
+	}
+	SGR_peaceful_grazing = {		
+		global_prosperity_growth = 1
+	}
+	SGR_fertile_lands = {
+		development_cost = -0.1
+	}
+	SGR_wool_trade_dominance = {
+		trade_efficiency = 0.15
+	}
+	SGR_ewe_guardians = {
+		defensiveness = 0.15
+	}
+	SGR_wine_consumption = {		
+		global_unrest = -1
+	}
+	SGR_flock_unity = {
+		country_diplomatic_power = 1
+	}
+}
+#Wolf Girl Realm
+WLR_ideas = {
+	start = {
+		land_attrition = -0.10
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+
+	bonus = {		
+		shock_damage = 0.15
+	}
+	
+	trigger = {
+		culture = Wolf_Girl
+	}
+	free = yes
+
+	WLR_predatory_instincts = {		
+		land_morale = 0.1
+	}
+	WLR_pack_tactics = {		
+		fire_damage = 0.10
+	}
+	WLR_hunters_intuition = {
+		global_manpower_modifier = 0.15
+	}
+	WLR_swift_pursuit = {
+		movement_speed = 0.10
+	}
+	WLR_alpha_unity = {
+		recover_army_morale_speed = 0.15
+	}
+	WLR_natural_scavengers = {		
+		global_trade_goods_size_modifier = 0.1
+	}
+	WLR_call_of_fenrir = {
+		leader_land_shock = 2
+		max_general_shock = 1
+	}
+}
+#Mimic ideas
+MMW_ideas = {
+	start = {
+		defensiveness = 0.10
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+
+	bonus = {		
+		max_hostile_attrition = 1
+	}
+	
+	trigger = {
+		culture = Mimic_Girl
+	}
+	free = yes
+
+	MMW_deceptive_diplomacy = {		
+		diplomatic_upkeep = 1
+	}
+	MMW_corpse_of_the_chest = {		
+		hostile_attrition = 1
+	}
+	MMW_camouflaged_ambush = {
+		morale_damage = 0.05
+	}
+	MMW_lurking_predators = {
+		leader_land_manuever = 1
+	}
+	MMW_spiritualist_mastery = {
+		regiment_manpower_usage = -0.1
+		reinforce_cost_modifier = -0.50
+	}
+	MMW_mimic_isolationism = {		
+		global_spy_defence = 0.25
+		mercantilism_cost = -0.25
+	}
+	MMW_mimic_assimilation = {
+		culture_conversion_cost = -0.2
+		culture_conversion_time = -0.2
+	}
+}
+#Anteater Ideas
+ANI_ideas = {
+	start = {
+		defensiveness = 0.10
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+
+	bonus = {		
+		diplomatic_reputation = 1
+	}
+	
+	trigger = {
+		culture = Anteater_Girl
+	}
+	free = yes
+
+	ANI_tongue_lash_tactics = {		
+		shock_damage = 0.10
+	}
+	ANI_predatory_agility = {		
+		movement_speed = 0.10
+	}
+	ANI_whip-like_precision = {
+		shock_damage_received = -0.10
+	}
+	ANI_evasive_strikes = {
+		land_morale = 0.05
+	}
+	ANI_claws_of_the_hunter = {
+		infantry_power = 0.10
+	}
+	ANI_scent_tracking = {		
+		leader_land_manuever = 1
+	}
+	ANI_territorial_instincts = {
+		core_creation = -0.1
+	}
+}
+#Grizzly Ideas
+GRB_ideas = {
+	start = {
+		army_tradition = 1
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+
+	bonus = {		
+		stability_cost_modifier = -0.15
+	}
+	
+	trigger = {
+		culture = Grizzly_Girl
+	}
+	free = yes
+
+	GRB_ferocious_maulers = {		
+		infantry_power = 0.10
+	}
+	GRB_savage_instincts = {		
+		land_morale = 0.10
+	}
+	GRB_unyielding_defense = {
+		defensiveness = 0.15
+	}
+	GRB_rapid_response = {
+		leader_land_shock = 1
+	}
+	GRB_hibernation_period = {
+		land_maintenance_modifier = -0.10
+	}
+	GRB_feast_or_famine = {		
+		war_exhaustion = -0.05
+		war_exhaustion_cost = -0.10
+	}
+	GRB_natural_ambushers = {
+		morale_damage = 0.05
+	}
+}
+#Port Marle
+PM1_ideas = {
+	start = {
+		religious_unity = 0.25
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+
+	bonus = {		
+		tolerance_own = 1
+	}
+	
+	trigger = {
+		tag = PM1
+	}
+	free = yes
+
+	PM1_northern_trade_hub = {		
+		production_efficiency = 0.10
+	}
+	PM1_navy_viceroys = {
+		heavy_ship_power = 0.1
+		max_admiral_shock = 1
+	}
+	PM1_seahorse_girls = {
+		sailors_recovery_speed = 0.25
+		sailor_maintenance_modifer = -0.1
+	}
+	PM1_coastal_prosperity = {
+		development_cost = -0.075
+	}
+	PM1_seafood_wealth = {
+		production_efficiency = 0.1
+	}
+	PM1_fertile_coasts = {		
+		global_trade_goods_size_modifier = 0.10
+	}
+	PM1_cultural_exchange = {
+		num_accepted_cultures = 2
+	}
+}
+#Port Natalia
+PNA_ideas = {
+	start = {
+		religious_unity = 0.25
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+
+	bonus = {		
+		tolerance_own = 1
+	}
+	
+	trigger = {
+		tag = PNA
+	}
+	free = yes
+
+	PNA_cosmopolitan_port = {		
+		global_unrest = -1
+	}
+	PNA_mermaid_pubs = {		
+		naval_morale = 0.1
+		trade_efficiency = 0.1
+	}
+	PNA_multinational_trade_hub = {
+		global_trade_power = 0.15
+		caravan_power = 0.25
+	}
+	PNA_naval_legacy = {
+		naval_tradition_from_trade = 0.5
+		navy_tradition = 1
+	}
+	PNA_fortified_harbor = {
+		local_own_coast_naval_combat_bonus = 1
+	}
+	PNA_fertile_coasts = {		
+		global_trade_goods_size_modifier = 0.10
+	}
+	PNA_maritime_trade = {
+		global_ship_trade_power = 0.33
+		naval_forcelimit_modifier = 0.15
+	}
+}
+#Luddite Village
+LDV_ideas = {
+	start = {
+		tolerance_of_heretics_capacity = -3
+		tolerance_of_heathens_capacity = -3
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		#may_recruit_female_generals = yes
+	}
+
+	bonus = {		
+		tolerance_own = 2
+	}
+	
+	trigger = {
+		tag = LDV
+	}
+	free = yes
+
+	LDV_simple_living = {		
+		development_cost = -0.05
+		build_cost = -0.05
+	}
+	LDV_rural_self-sufficiency = {		
+		production_efficiency = 0.10
+	}
+	LDV_traditional_values = {
+		global_missionary_strength = 0.03
+		tolerance_own = 1
+	}
+	LDV_agrarian_society = {
+		global_trade_goods_size = -0.20
+		mercantilism_cost = -0.5
+	}
+	LDV_local_governance = {
+		global_autonomy = -0.05
+	}
+	LDV_corrupt_ruler = {		
+		yearly_corruption = 0.15
+		global_unrest = -2
+	}
+	LDV_crusade_for_ilias = {
+		cb_on_religious_enemies = yes
+		extra_manpower_at_religious_war = yes
+	}
+}
+#San Ilia
+SI1_ideas = {
+	start = {
+		innovativeness_gain = 0.5
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+
+	bonus = {
+		all_power_cost = -0.025		
+	}
+	
+	trigger = {
+		tag = SI1
+	}
+	free = yes
+
+	SI1_center_of_science = {		
+		idea_cost = -0.20
+	}
+	SI1_defender_of_faith = {		
+		land_morale = 0.15
+	}
+	SI1_enlightened_scholarship = {
+		technology_cost = -0.1
+	}
+	SI1_vibro_blades = {
+		shock_damage = 0.15
+	}
+	SI1_trial_punishers = {
+		military_tactics = 0.20
+	}
+	SI1_kirlian_zappers = {		
+		morale_damage_received = -0.10
+	}
+	SI1_gatling_guns = {
+		backrow_artillery_damage = 0.15
+	}
+}
+#Monte Carlo
+MC1_ideas = {
+	start = {
+		global_trade_power = 0.15
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+
+	bonus = {		
+		trade_company_investment_cost = -0.33
+	}
+	
+	trigger = {
+		tag = MC1
+	}
+	free = yes
+
+	MC1_black_market_hub = {		
+		global_foreign_trade_power = 0.15
+	}
+	MC1_criminal_network = {		
+		spy_offence = 0.20
+	}
+	MC1_smugglers_haven = {
+		trade_steering = 0.20
+	}
+	MC1_ruthless_enforcers = {
+		fire_damage = 0.15
+	}
+	MC1_corruption_schemes = {
+		yearly_corruption = -0.15
+	}
+	MC1_shadow_diplomacy = {		
+		diplomatic_annexation_cost = -0.15
+	}
+	MC1_contraband_specialists = {
+		trade_efficiency = 0.20
+	}
+}
+#Forest of Spirits
+FS1_ideas = {
+	start = {
+		movement_speed = 0.20
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+
+	bonus = {
+		diplomatic_reputation = 1	
+	}
+	
+	trigger = {
+		tag = FS1
+	}
+	free = yes
+
+	FS1_mystical_guardians = {		
+		defensiveness = 0.15
+	}
+	FS1_ancient_woodlands = {		
+		development_cost = -0.10
+	}
+	FS1_fey_enchantment = {
+		global_allowed_num_of_buildings = 1
+	}
+	FS1_elemental_harmony = {
+		all_power_cost = -0.02
+	}
+	FS1_natural_regeneration = {
+		global_monthly_devastation = -0.33
+	}
+	FS1_woodland_archers = {		
+		shock_damage = 0.15
+	}
+	FS1_sylvan_prosperity = {
+		global_trade_goods_size = 0.25
+	}
+}
+#Haunted Mansion
+HM1_ideas = {
+	start = {
+		idea_cost = -0.075
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+
+	bonus = {		
+		technology_cost = -0.075
+	}
+	
+	trigger = {
+		tag = HM1
+	}
+	free = yes
+
+	HM1_ghastly_residents = {		
+		hostile_attrition = 2
+	}
+	HM1_ectoplasmic_defenses = {		
+		defensiveness = 0.20
+	}
+	HM1_poltergeist_pranks = {
+		enemy_core_creation = 0.2
+		core_creation = -0.1
+	}
+	HM1_cursed_land = {
+		max_hostile_attrition = 2
+	}
+	HM1_zombie_hordes = {
+		global_manpower_modifier = 0.33
+		land_forcelimit_modifier = 0.20
+	}
+	HM1_antique_mansion = {		
+		development_cost = -0.05
+		prestige = 1
+	}
+	HM1_chromes_dollcraft = {
+		global_regiment_recruit_speed = -0.33
+		morale_damage_received = -0.075
+	}
+}
+#The Pyramid
+PY1_ideas = {
+	start = {
+		prestige = 1.5
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+
+	bonus = {		
+		legitimacy = 1.5
+		republican_tradition = 0.45
+		devotion = 1.5
+		horde_unity = 1.5
+		meritocracy = 0.75
+	}
+	
+	trigger = {
+		tag = PY1
+	}
+	free = yes
+
+	PY1_riddles_of_the_sphinx = {		
+		advisor_cost = -0.25
+	}
+	PY1_monumental_heritage = {		
+		global_tax_modifier = 0.25
+	}
+	PY1_astronomical_wisdom = {
+		all_power_cost = -0.05
+	}
+	PY1_pyramid_restoration = {
+		build_cost = -0.15
+		great_project_upgrade_cost = -0.15
+	}
+	PY1_mummification_mastery = {
+		morale_damage_received = -0.15
+	}
+	PY1_ancient_sphynx_yoma = {		
+		fire_damage = 0.15
+	}
+	PY1_ties_with_sabasa = {
+		diplomatic_upkeep = 1
+		diplomatic_reputation = 1
+	}
+}
+#Sabasa
+SA1_ideas = {
+	start = {
+		cavalry_cost = -0.15
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+
+	bonus = {		
+		trade_steering = 0.15
+	}
+	
+	trigger = {
+		tag = SA1
+	}
+	free = yes
+
+	SA1_desert_warriors = {		
+		infantry_power = 0.15
+		army_tradition = 1
+	}
+	SA1_trade_hub = {		
+		trade_efficiency = 0.20
+	}
+	SA1_desert_fortifications = {
+		defensiveness = 0.15
+	}
+	SA1_nomadic_heritage = {
+		cavalry_shock = 1
+		cav_to_inf_ratio = 0.50
+	}
+	SA1_sandstorm_tactics = {
+		cavalry_power = 0.25
+	}
+	SA1_assasin_clan = {		
+		shock_damage = 0.15
+	}
+	SA1_finest_military = {
+		military_tactics = 0.25
+	}
+}
+#Grandeur
+GR1_ideas = {
+	start = {
+		stability_cost_modifier = -0.33
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+
+	bonus = {		
+		global_tax_modifier = 0.15
+	}
+	
+	trigger = {
+		tag = GR1
+	}
+	free = yes
+
+	GR1_trade_oasis = {		
+		trade_efficiency = 0.20
+	}
+	GR1_entertainment_capital = {		
+		global_unrest = -3
+	}
+	GR1_luxury_districts = {
+		global_trade_goods_size = 0.50
+	}
+	GR1_succubus_showbiz = {
+		diplomatic_reputation = 2
+	}
+	GR1_merchant_guild = {
+		merchants = 1
+		dip_tech_cost_modifier = -0.1
+	}
+	GR1_global_trade_hub = {		
+		reduced_trade_penalty_on_non_main_tradenode = 0.50
+		caravan_power = 0.33
+	}
+	GR1_blacksmith_guild = {
+		global_regiment_cost = -0.20
+		mil_tech_cost_modifier = -0.1
+	}
+}
+#Don Father Domain
+DF1_ideas = {
+	start = {
+		fire_damage = 0.10
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+
+	bonus = {		
+		fire_damage_received = -0.10
+	}
+	
+	trigger = {
+		tag = DF1
+	}
+	free = yes
+
+	DF1_underworld_authority = {		
+		reduced_liberty_desire = 15
+		
+	}
+	DF1_black_market_trade = {		
+		global_trade_goods_size = 0.5
+	}
+	DF1_enforcer_corps = {
+		infantry_power = 0.20
+	}
+	DF1_smuggling_expertise = {
+		trade_efficiency = 0.15
+	}
+	DF1_ruthless_leadership = {
+		leader_land_shock = 1
+		discipline = 0.075
+	}
+	DF1_lord_of_the_underworld = {		
+		spy_offence = 0.50
+	}
+	DF1_smuggler_guild = {
+		merchants = 1
+	}
+}
+#Devil Hunter Realm and Coast
+DH1_ideas = {
+	start = {
+		defensiveness = 0.10
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+
+	bonus = {		
+		prestige = 1
+	}
+	
+	trigger = {
+		OR = {
+			tag = DH1
+			tag = DH2
+		}
+	}
+	free = yes
+
+	DH1_blade_mastery = {		
+		infantry_power = 0.10
+	}
+	DH1_honorable_clan_heritage = {		
+		stability_cost_modifier = -0.10
+	}
+	DH1_swift_strikes = {
+		movement_speed = 0.10
+	}
+	DH1_tactical_expertise = {
+		land_morale = 0.15
+	}
+	DH1_disciplined_warriors = {
+		global_regiment_recruit_speed = -0.15
+	}
+	DH1_swordsmanship_legacy = {		
+		mil_tech_cost_modifier = -0.10
+	}
+	DH1_battlefield_strategy = {
+		fire_damage = 0.10
+	}
+}
+#Scale Bandits
+SB2_ideas = {
+	start = {
+		fire_damage = 0.10
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+
+	bonus = {		
+		max_general_fire = 1
+	}
+	
+	trigger = {
+		tag = SB2
+	}
+	free = yes
+
+	SB2_lizardkin_tenacity = {		
+		land_attrition = -0.10
+	}
+	SB2_mined_wealth = {		
+		production_efficiency = 0.10
+	}
+	SB2_tunnel_network = {
+		development_cost = -0.10
+	}
+	SB2_smugglers_trade = {
+		trade_steering = 0.15
+	}
+	SB2_ambush_tactics = {
+		shock_damage = 0.15
+	}
+	SB2_reptilian_camouflage = {		
+		fire_damage_received = -0.10
+	}
+	SB2_draconic_leadership = {
+		leader_land_fire = 1
+	}
+}
+#Saloon
+SA2_ideas = {
+	start = {
+		global_trade_power = 0.1
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+
+	bonus = {		
+		num_accepted_cultures = 1
+	}
+	
+	trigger = {
+		tag = SA2
+	}
+	free = yes
+
+	SA2_assasin_clan_legacy = {		
+		army_tradition = 1
+		global_manpower_modifier = 0.10
+	}
+	SA2_duelist_tradition = {		
+		land_morale = 0.10
+	}
+	SA2_crystal_blacksmith = {
+		fire_damage_received = -0.10
+	}
+	SA2_saloon_gambling = {
+		trade_efficiency = 0.10
+	}
+	SA2_saloon_spirit = {
+		diplomatic_reputation = 1
+	}
+	SA2_bounty_hunter_guild = {		
+		manpower_recovery_speed = 0.15
+	}
+	SA2_mineral-rich_mines = {
+		global_trade_goods_size_modifier = 0.125
+	}
+}
+#Mirage Realm
+MR2_ideas = {
+	start = {
+		idea_cost = -0.1
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+
+	bonus = {		
+		diplomatic_reputation = 1
+	}
+	
+	trigger = {
+		tag = MR2
+	}
+	free = yes
+
+	MR2_misdirection_tactics = {		
+		movement_speed = 0.05
+		shock_damage_received = -0.05
+	}
+	MR2_ethereal_warriors = {		
+		shock_damage = 0.15
+	}
+	MR2_master_illusionists = {
+		advisor_cost = -0.15
+	}
+	MR2_phantasmal_guardians = {
+		defensiveness = 0.15
+	}
+	MR2_illusory_obstacles = {
+		hostile_attrition = 2
+	}
+	MR2_ever-changing_strategies = {		
+		manpower_recovery_speed = 0.20
+	}
+	MR2_phantom_reserves = {
+		land_maintenance_modifier = -0.125
+	}
+}
+#Safar Ruins
+SR2_ideas = {
+	start = {
+		global_supply_limit_modifier = 0.25
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+
+	bonus = {		
+		land_morale = 0.05
+	}
+	
+	trigger = {
+		tag = SR2
+	}
+	free = yes
+
+	SR2_mud_doll_familiars = {		
+		manpower_in_true_faith_provinces = 0.33
+		land_forcelimit_modifier = 0.10
+	}
+	SR2_earth_spirits_blessing = {		
+		production_efficiency = 0.10
+	}
+	SR2_ancient_animist_legacy = {
+		technology_cost = -0.1
+	}
+	SR2_elemental_guardians = {
+		defensiveness = 0.10
+		leader_land_manuever = 1
+	}
+	SR2_harmony_with_nature = {
+		development_cost = -0.10
+	}
+	SR2_gnomes_resilience = {		
+		land_maintenance_modifier = -0.15
+	}
+	SR2_gnomes_protection = {
+		shock_damage_received = -0.20
+	}
+}
+#Vetala Apoptosis
+VA1_ideas = {
+	start = {
+		technology_cost = -0.10
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+
+	bonus = {		
+		fire_damage = 0.05
+	}
+	
+	trigger = {
+		tag = VA1
+	}
+	free = yes
+
+	VA1_otherworldy_being = {		
+		unjustified_demands = -0.5
+	}
+	VA1_spacetime_assimilation = {		
+		culture_conversion_cost = -0.33
+	}
+	VA1_gaping_void = {		
+		hostile_attrition = 2
+		max_hostile_attrition = 1
+	}
+	VA1_monstrous_physiology = {
+		shock_damage_received = -0.15
+		global_regiment_recruit_speed = -0.15
+	}
+	VA1_tongue_of_constriction = {
+		morale_damage = 0.10
+	}
+	VA1_extraordinary_strength = {
+		infantry_power = 0.20
+	}
+	VA1_cross_world_contact_elimination = {
+		ignore_coring_distance = yes
+		core_creation = -0.2
+		allow_client_states = yes
+	}
+}
+#Vitae Apoptosis
+VA2_ideas = {
+	start = {
+		shock_damage_received = -0.15
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+
+	bonus = {		
+		defensiveness = 0.15
+	}
+	
+	trigger = {
+		tag = VA2
+	}
+	free = yes
+
+	VA2_adaptive_architecture = {		
+		build_cost = -0.15
+	}
+	VA2_self-regeneration_protocols = {		
+		manpower_recovery_speed = 0.25
+	}
+	VA2_bio-mechanical_mastery = {
+		production_efficiency = 0.10
+	}
+	VA2_symbiotic_fusion = {
+		technology_cost = -0.1
+	}
+	VA2_spacetime_assimilation = {		
+		culture_conversion_cost = -0.33
+	}
+	VA2_automated_offense = {		
+		artillery_power = 0.10
+	}
+	VA2_cross_world_contact_elimination = {
+		ignore_coring_distance = yes
+		core_creation = -0.2
+		allow_client_states = yes
+	}
+}
+#Shinifa Apoptosis
+SH1_ideas = {
+	start = {
+		culture_conversion_time = -0.1
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+
+	bonus = {		
+		leader_land_shock = 1
+	}
+	
+	trigger = {
+		tag = SH1
+	}
+	free = yes
+
+	SH1_otherworldy_being = {		
+		unjustified_demands = -0.5
+	}
+	SH1_whispers_of_madness = {		
+		morale_damage_received = -0.10
+		morale_damage = 0.05
+	}
+	SH1_spacetime_assimilation = {		
+		culture_conversion_cost = -0.33
+	}
+	SH1_unpredictable_tactics = {
+		max_general_shock = 2
+	}
+	SH1_void_resonance = {
+		spy_offence = 0.25
+	}
+	SH1_invasive_absorption = {		
+		overextension_impact_modifier = -0.33
+	}
+	SH1_cross_world_contact_elimination = {
+		ignore_coring_distance = yes
+		core_creation = -0.2
+		allow_client_states = yes
+	}
+}
+#Valto Apoptosis
+VA3_ideas = {
+	start = {
+		technology_cost = -0.10
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+
+	bonus = {		
+		global_institution_spread = 0.33
+	}
+	
+	trigger = {
+		tag = VA3
+	}
+	free = yes
+
+	VA3_spacetime_assimilation = {		
+		culture_conversion_cost = -0.33
+	}
+	VA3_mechanical_precision = {		
+		fire_damage = 0.10
+	}
+	VA3_gatling_arsenal = {
+		backrow_artillery_damage = 0.20
+	}
+	VA3_mysterious_machinery = {
+		possible_policy = 1
+	}
+	VA3_automated_factories = {
+		global_allowed_num_of_manufactories = 1
+		build_cost = -0.05
+	}
+	VA3_roid_armor = {		
+		fire_damage_received = -0.10
+	}
+	VA3_cross_world_contact_elimination = {
+		ignore_coring_distance = yes
+		core_creation = -0.2
+		allow_client_states = yes
+	}
+}
+#Paintgeist Realm
+PA1_ideas = {
+	start = {
+		trade_efficiency = 0.10
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+
+	bonus = {		
+		technology_cost = -0.075
+	}
+	
+	trigger = {
+		tag = PA1
+	}
+	free = yes
+
+	PA1_colorful_ambiance = {		
+		diplomatic_reputation = 1
+	}
+	PA1_spectral_brushwork = {		
+		prestige = 1
+	}
+	PA1_chromatic_architecture = {
+		build_cost = -0.15
+	}
+	PA1_shapeshifting_specters = {
+		shock_damage_received = -0.15
+	}
+	PA1_haunting_melodies = {
+		morale_damage = 0.075
+	}
+	PA1_surreal_harvest = {		
+		global_tax_modifier = 0.15
+	}
+	PA1_artistic_inspiration = {
+		advisor_cost = -0.15
+	}
+}
+#World Tree
+WT1_ideas = {
+	start = {
+		trade_efficiency = 0.1
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+
+	bonus = {		
+		diplomatic_reputation = 1
+	}
+	
+	trigger = {
+		tag = WT1
+	}
+	free = yes
+
+	WT1_verdant_vigor = {		
+		production_efficiency = 0.15
+	}
+	WT1_entwined_guardians = {		
+		defensiveness = 0.15
+	}
+	WT1_floral_resilience = {
+		global_manpower_modifier = 0.33
+	}
+	WT1_harmony_with_nature = {
+		advisor_cost = -0.20
+	}
+	WT1_photosynthesis_bonus = {
+		global_tax_modifier = 0.1
+	}
+	WT1_yggdrasil_fruits = {		
+		global_trade_goods_size_modifier = 0.25
+	}
+	WT1_nurturing_spirits = {
+		development_cost = -0.10
+	}
+}
+#The Navy
+NA1_ideas = {
+	start = {
+		global_ship_cost = -0.15
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+
+	bonus = {		
+		flagship_cost = -0.5
+	}
+	
+	trigger = {
+		tag = NA1
+	}
+	free = yes
+
+	NA1_leviathans_legacy = {		
+		ship_durability = 0.10
+	}
+	NA1_tidal_mastery = {		
+		naval_morale = 0.15
+	}
+	NA1_leviathans_roar = {
+		naval_morale_damage = 0.10
+	}
+	NA1_pirate_hunter_legacy = {
+		navy_tradition = 1
+	}
+	NA1_seahorse_marine_pride = {
+		sailors_recovery_speed = 0.25
+	}
+	NA1_gatekeepers_of_the_seas = {		
+		blockade_efficiency = 0.33
+	}
+	NA1_aquatic_maneuvering = {
+		disengagement_chance = 0.10
+		regiment_disembark_speed = 0.25
+	}
+}
+#Fishy Pirates
+FP1_ideas = {
+	start = {
+		may_perform_slave_raid_on_same_religion = yes
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+
+	bonus = {		
+		coast_raid_range = 2
+	}
+	
+	trigger = {
+		tag = FP1
+	}
+	free = yes
+
+	FP1_relentless_pirates = {		
+		sunk_ship_morale_hit_recieved = -0.15
+	}
+	FP1_mermaid_merchants = {		
+		merchants = 1
+	}
+	FP1_competent_vice_captain = {
+		free_policy = 1
+	}
+	FP1_nautical_resilience = {
+		naval_morale = 0.15
+	}
+	FP1_aquatic_ambush = {
+		capture_ship_chance = 0.33
+	}
+	FP1_fishy_hideouts_idea = {
+		naval_attrition = -0.20
+	}
+	FP1_raid_leaders_tactics = {
+		global_naval_engagement_modifier = 0.15
+	}
+}
+#Finoa
+FI1_ideas = {
+	start = {
+		global_monthly_devastation = -0.15
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+
+	bonus = {		
+		global_prosperity_growth = 0.5
+	}
+	
+	trigger = {
+		tag = FI1
+	}
+	free = yes
+
+	FI1_fishing_tradition = {		
+		global_ship_trade_power = 0.2
+	}
+	FI1_finoa_plains = {		
+		development_cost = -0.10
+	}
+	FI1_cultural_diversity = {
+		tolerance_heretic = 2
+		tolerance_heathen = 2
+	}
+	FI1_seaside_hospitality = {
+		improve_relation_modifier = 0.2
+	}
+	FI1_maritime_trade_hub = {
+		trade_efficiency = 0.10
+	}
+	FI1_human_perseverance = {
+		defensiveness = 0.15
+	}
+	FI1_fertile_lands = {
+		production_efficiency = 0.10
+	}
+}
+#Grand Noah
+GR2_ideas = {
+	start = {
+		tolerance_heretic = 3
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+
+	bonus = {		
+		tolerance_of_heretics_capacity = 3
+	}
+	
+	trigger = {
+		tag = GR2
+	}
+	free = yes
+
+	GR2_harmonious_coexistence = {		
+		tolerance_heathen = 3
+		tolerance_of_heathens_capacity = 3
+	}
+	GR2_colosseum_glory = {		
+		land_morale = 0.20
+	}
+	GR2_marketplace_melting_pot = {
+		trade_efficiency = 0.15
+	}
+	GR2_cerberus_and_dullahan = {
+		discipline = 0.075
+	}
+	GR2_monster_warriors = {
+		infantry_power = 0.20
+	}
+	GR2_top-notch_diplomacy = {
+		diplomatic_reputation = 3
+	}
+	GR2_inclusive_governance = {
+		global_tax_modifier = 0.20
+	}
+}
+#Mephisto Domain
+ME1_ideas = {
+	start = {
+		fire_damage = 0.15
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+
+	bonus = {		
+		prestige = 1
+	}
+	
+	trigger = {
+		tag = ME1
+	}
+	free = yes
+
+	ME1_arcane_mastery = {		
+		global_tax_modifier = 0.15
+	}
+	ME1_serpentine_sovereignty = {		
+		land_morale = 0.15
+	}
+	ME1_magical_school = {
+		technology_cost = -0.10
+		advisor_cost = -0.10
+	}
+	ME1_meticulous_planning = {
+		military_tactics = 0.33
+		possible_policy = 1
+	}
+	ME1_inscrutable_diplomacy = {
+		spy_offence = 0.40
+		can_claim_states = yes
+		no_claim_cost_increasement = yes
+	}
+	ME1_ancient_traditions = {
+		stability_cost_modifier = -0.20
+	}
+	ME1_contractual_prowess = {
+		diplomatic_reputation = 2
+	}
+}
+#Orochi Domain
+OR1_ideas = {
+	start = {
+		spy_offence = 0.25
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+
+	bonus = {		
+		morale_damage = 0.15
+	}
+	
+	trigger = {
+		tag = OR1
+	}
+	free = yes
+
+	OR1_serpentine_resilience = {		
+		land_morale = 0.20
+	}
+	OR1_divine_scales = {		
+		fire_damage_received = -0.20
+	}
+	OR1_coiled_defense = {
+		defensiveness = 0.33
+	}
+	OR1_wisdom_of_the_ancestors = {
+		idea_cost = -0.15
+	}
+	OR1_powerful_ancient_youkai = {
+		prestige = 1.5
+	}
+	OR1_eternal_serpent = {
+		country_admin_power = 1
+	}
+	OR1_heads_of_diplomacy = {
+		diplomatic_upkeep = 3
+	}
+}
+#Yamatai Village
+YM1_ideas = {
+	start = {
+		build_cost = -0.10
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+
+	bonus = {		
+		development_cost = -0.10
+	}
+	
+	trigger = {
+		tag = YM1
+	}
+	free = yes
+
+	YM1_martial_prowess = {		
+		land_morale = 0.10
+		infantry_power = 0.10
+	}
+	YM1_eastern_book_of_secrets = {		
+		advisor_pool = 3
+	}
+	YM1_natural_harmony = {
+		global_manpower_modifier = 0.25
+	}
+	YM1_hermits_wisdom = {
+		technology_cost = -0.10
+	}
+	YM1_hidden_techniques = {
+		discipline = 0.05
+	}
+	YM1_agricultural_mastery = {
+		production_efficiency = 0.10
+	}
+	YM1_traditional_arts = {
+		prestige = 1
+	}
+}
+#Cow Demon Domain
+CD1_ideas = {
+	start = {
+		leader_land_shock = 1
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+
+	bonus = {		
+		leader_siege = 1
+	}
+	
+	trigger = {
+		tag = CD1
+	}
+	free = yes
+
+	CD1_legacy_of_the_first_queen = {		
+		legitimacy = 1
+		republican_tradition = 0.3
+		devotion = 1
+		horde_unity = 1
+		meritocracy = 0.5
+	}
+	CD1_inherited_strength = {		
+		land_morale = 0.20
+	}
+	CD1_unyielding_resilience = {
+		defensiveness = 0.1
+	}
+	CD1_loyalty_to_the_herd = {
+		stability_cost_modifier = -0.15
+	}
+	CD1_immense_brute_strength = {
+		infantry_power = 0.25
+		technology_cost = 0.10
+	}
+	CD1_queenly_ambitions = {
+		prestige = 1
+	}
+	CD1_straightforward_diplomacy = {
+		diplomatic_reputation = 1
+	}
+}
+#Iliasburg
+ILB_ideas = {
+	start = {
+		land_morale = 0.15
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+
+	bonus = {		
+		tolerance_own = 1
+	}
+	
+	trigger = {
+		tag = ILB
+	}
+	free = yes
+
+	ILB_holy_education = {		
+		technology_cost = -0.10
+	}
+	ILB_pilgrim_destination = {		
+		general_cost = -0.20
+	}
+	ILB_heavenly_blessings = {
+		prestige = 1
+	}
+	ILB_baptized_heroes = {
+		leader_land_shock = 1
+		shock_damage = 0.10
+	}
+	ILB_ama_ama_dango = {
+		diplomatic_reputation = 1
+		production_efficiency = 0.15
+	}
+	ILB_sutherland_inn = {
+		trade_efficiency = 0.15
+	}
+	ILB_heart_of_ilias_continent = {
+		merchants = 1
+	}
+}
+#Iliasport
+ILP_ideas = {
+	start = {
+		land_morale = 0.10
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+
+	bonus = {		
+		recover_navy_morale_speed = 0.1
+	}
+	
+	trigger = {
+		tag = ILP
+	}
+	free = yes
+
+	ILP_maritime_devotion = {		
+		naval_forcelimit_modifier = 0.15
+	}
+	ILP_pilgrims_hub = {		
+		production_efficiency = 0.10
+	}
+	ILP_seafaring_traditions = {
+		navy_tradition = 1
+	}
+	ILP_iliasport_university = {
+		technology_cost = -0.10
+		idea_cost = -0.10
+	}
+	ILP_medicine_faculty = {
+		reinforce_speed = 0.20
+	}
+	ILP_scholar_faculty = {
+		all_power_cost = -0.02
+	}
+	ILP_natalian_trade = {
+		trade_efficiency = 0.10
+		trade_steering = 0.10
+	}
+}
+#Happiness Village
+HPV_ideas = {
+	start = {
+		stability_cost_modifier = -0.15
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+
+	bonus = {		
+		diplomatic_upkeep = 1
+	}
+	
+	trigger = {
+		tag = HPV
+	}
+	free = yes
+
+	HPV_joyful_atmosphere = {
+		all_estate_possible_privileges = 1		
+		manpower_recovery_speed = 0.10
+	}
+	HPV_countryside_abundance = {		
+		global_tax_modifier = 0.10
+	}
+	HPV_peaceful_coexistence = {
+		global_unrest = -1
+	}
+	HPV_village_festivals = {
+		global_trade_power = 0.1
+	}
+	HPV_happiness_harvest = {
+		global_trade_goods_size_modifier  = 0.15
+	}
+	HPV_fairy_blacksmith = {
+		shock_damage_received = -0.15
+	}
+	HPV_happiness_prosperity = {
+		build_cost = -0.10
+	}
+}
+#Midas Village
+MIV_ideas = {
+	start = {
+		land_forcelimit_modifier = 0.10
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+
+	bonus = {		
+		global_tax_modifier = 0.10
+	}
+	
+	trigger = {
+		tag = MIV
+	}
+	free = yes
+
+	MIV_golden_legacy = {		
+		gold_depletion_chance_modifier = -0.40
+	}
+	MIV_golden_touch = {		
+		production_efficiency = 0.10
+	}
+	MIV_defense_against_slugs = {
+		defensiveness= 0.15
+	}
+	MIV_famed_meat_production = {
+		supply_limit_modifier = 0.20
+	}
+	MIV_maid_legacy = {
+		state_maintenance_modifier = -0.25
+		governing_capacity_modifier = 0.1
+	}
+	MIV_golden_blacksmith = {
+		land_morale = 0.15
+	}
+	MIV_gilded_infrastructure = {
+		build_cost = -0.10
+	}
+}
+#Undine Spring
+UN1_ideas = {
+	start = {
+		fire_damage_received = -0.15
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+
+	bonus = {		
+		diplomatic_reputation = 1
+	}
+	
+	trigger = {
+		tag = UN1
+	}
+	free = yes
+
+	UN1_mystical_isolation = {		
+		ae_impact = -0.15
+	}
+	UN1_natural_harmony = {		
+		stability_cost_modifier = -0.10
+	}
+	UN1_springs_protection = {
+		defensiveness = 0.1
+	}
+	UN1_spiritual_resilience = {
+		global_manpower_modifier = 0.25
+		manpower_recovery_speed = 0.25
+	}
+	UN1_serene_mind = {
+		discipline = 0.075
+	}
+	UN1_natural_purity = {
+		development_cost = -0.15
+	}
+	UN1_mystic_mediation = {
+		global_unrest = -1
+	}
+}
+#Goddard
+GO1_ideas = {
+	start = {
+		stability_cost_modifier = -0.15
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+
+	bonus = {		
+		global_tax_modifier = 0.15
+	}
+	
+	trigger = {
+		tag = GO1
+	}
+	free = yes
+
+    GO1_cultural_exchange = {
+        num_accepted_cultures = 2
+    }
+    GO1_urban_growth = {
+        global_manpower_modifier = 0.25
+    }
+    GO1_merchant_network = {
+        trade_efficiency = 0.10
+    }
+    GO1_magical_merlin_chan = {
+        fire_damage = 0.125
+    }
+    GO1_diplomatic_ties = {
+        envoy_travel_time = -0.25
+    }
+    GO1_civic_participation = {
+        global_unrest = -2
+    }
+    GO1_mercantile_legacy = {
+        global_trade_power = 0.15
+    }
+}
+#Grangold
+GR4_ideas = {
+	start = {
+		can_claim_states = yes
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+
+	bonus = {		
+		military_tactics = 0.15
+	}
+	
+	trigger = {
+		tag = GR4
+	}
+	free = yes
+
+    GR4_magical_science = {
+        technology_cost = -0.10
+	idea_cost = -0.15
+    }
+    GR4_war_academy = {
+        land_morale = 0.10
+        infantry_power = 0.10
+    }
+    GR4_fortified_ports = {
+        defensiveness = 0.15
+    }
+    GR4_fortified_checkpoints = {
+        fort_maintenance_modifier = -0.15
+    }
+    GR4_mercenary_traditions = {
+        merc_maintenance_modifier = -0.33
+    }
+    GR4_magus_king = {
+        all_power_cost = -0.05
+    }
+    GR4_grangold_makina = {
+        discipline = 0.10
+    }
+}
+#Goldport
+GO2_ideas = {
+	start = {
+		stability_cost_modifier = -0.15
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+
+	bonus = {		
+	own_coast_naval_combat_bonus = 1
+	}
+	
+	trigger = {
+		tag = GO2
+	}
+	free = yes
+
+    GO2_mercantile_spirit = {
+        global_trade_power = 0.15
+    }
+    GO2_wealthy_merchants = {
+        global_tax_modifier = 0.20
+    }
+    GO2_maritime_dominance = {
+        global_ship_cost = -0.15
+        naval_forcelimit_modifier = 0.10
+    }
+    GO2_strategic_ports = {
+        local_sailors_modifier = 0.20
+        global_ship_recruit_speed = -0.15
+    }
+    GO2_international_trade = {
+        merchants = 1
+    }
+    GO2_shipbuilding_excellence = {
+        ship_durability = 0.10
+        ship_power_propagation = 0.15
+    }
+    GO2_free_trade_agreements = {
+        trade_efficiency = 0.15
+    }
+}
+#Butterfly Realm
+BU1_ideas = {
+	start = {
+		defensiveness = 0.15
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+
+	bonus = {		
+		diplomatic_reputation = 1
+	}
+	
+	trigger = {
+		culture = Butterfly_Girl
+	}
+	free = yes
+
+    BU1_floral_haven = {
+        development_cost = -0.10
+    }
+    BU1_pollination_networks = {
+        global_institution_spread = 0.20
+    }
+    BU1_exotic_gardens = {
+        global_prov_trade_power_modifier = 0.20
+    }
+    BU1_silk_production = {
+        global_trade_goods_size_modifier = 0.15
+    }
+    BU1_butterfly_wings = {
+        global_manpower_modifier = 0.10
+    }
+    BU1_blossom_diplomacy = {
+        diplomatic_annexation_cost = -0.15
+    }
+    BU1_wings_of_freedom = {
+        global_unrest = -1
+    }
+}
+#Ghoul Realm
+GH1_ideas = {
+	start = {	
+		defensiveness = 0.15
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+
+	bonus = {		
+		hostile_attrition = 1
+	}
+	
+	trigger = {
+		culture = Ghoul_Girl
+		NOT = {
+			tag = LQD
+		}
+	}
+	free = yes
+
+    GH1_graveyard_guardians = {
+        global_manpower_modifier = 0.20
+    }
+    GH1_unholy_resilience = {
+        land_morale = 0.05
+    }
+    GH1_necromantic_knowledge = {
+        reinforce_speed = 0.40
+    }
+    GH1_haunting_presence = {
+        global_unrest = -2
+    }
+    GH1_corpse_harvest = {
+        manpower_recovery_speed = 0.20
+    }
+    GH1_cursed_diplomacy = {
+        diplomatic_reputation = -1
+        diplomatic_annexation_cost = -0.15
+    }
+    GH1_soul_siphon = {
+        discipline = 0.05
+    }
+}
+#Warmer Realm and Zombie nations
+WA1_ideas = {
+	start = {
+		manpower_recovery_speed = 0.15
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+
+	bonus = {		
+		global_unrest = -1
+	}
+	
+	trigger = {
+		culture = Zombie_Girl
+		NOT = {
+			OR = {
+				tag = LC1
+				tag = LQD
+			}
+		}
+	}
+	free = yes
+
+    WA1_plague_mastery = {
+        hostile_attrition = 2
+    }
+    WA1_undying_resurgence = {
+        land_forcelimit_modifier = 0.15
+    }
+    WA1_carrion_harvest = {
+        war_exhaustion = -0.10
+    }
+    WA1_mortal_subversion = {
+        infantry_cost = -0.10
+        infantry_power = 0.10
+    }
+    WA1_curse_bound_pacts = {
+        diplomatic_annexation_cost = -0.15
+    }
+    WA1_ephemeral_resilience = {
+        discipline = 0.05
+    }
+    WA1_withering_influence = {
+        max_hostile_attrition = 2
+    }
+}
+#Dragon Girl Realm
+DR3_ideas = {
+	start = {
+		land_morale = 0.10
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+
+	bonus = {		
+		discipline = 0.05
+	}
+	
+	trigger = {
+		culture = Dragon_Girl
+	}
+	free = yes
+
+    DG1_draconic_majesty = {
+        prestige = 0.50
+    }
+    DG1_scales_of_resilience = {
+        defensiveness = 0.15
+    }
+    DG1_flameforged_weapons = {
+        infantry_power = 0.15
+    }
+    DG1_dragons_hoard = {
+        global_tax_modifier = 0.10
+    }
+    DG1_aerial_dominance = {
+        movement_speed = 0.075
+    }
+    DG1_ancient_bloodline = {
+       legitimacy = 1
+		republican_tradition = 0.3
+		devotion = 1
+		horde_unity = 1
+		meritocracy = 0.5
+    }
+    DG1_scorching_wrath = {
+        fire_damage = 0.15
+    }
+}
+#Succubus Village
+SU1_ideas = {
+	start = {
+		diplomatic_upkeep = 1
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+
+	bonus = {		
+		diplomatic_reputation = 2
+	}
+	
+	trigger = {
+		tag = SU1
+	}
+	free = yes
+
+    SU1_succubi_allure = {
+	ae_impact = -0.2
+    }
+    SU1_veil_of_shadows = {
+        spy_offence = 0.30
+    }
+    SU1_succubus_diplomacy = {
+        diplomatic_annexation_cost = -0.2
+    }
+    SU1_pleasure_persuasion = {
+	accept_vassalization_reasons = 25
+	transfer_trade_power_reasons = 25
+    }
+    SU1_potatoes_cultivation = {
+        land_forcelimit_modifier = 0.20
+    }
+    SU1_succubus_witch = {
+        fire_damage = 0.10
+    }
+    SU1_arcane_village_library = {
+        country_admin_power = 1
+	technology_cost = -0.05
+    }
+}
+#Lava Girl
+LS1_ideas = {
+	start = {
+		tolerance_own = 1
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+
+	bonus = {		
+		global_unrest = -1
+	}
+	
+	trigger = {
+		culture = Lava_Girl
+	}
+	free = yes
+    LS1_magma_fortresses = {
+        defensiveness = 0.20
+        fort_maintenance_modifier = -0.15
+    }
+    LS1_lava_warriors = {
+        land_morale = 0.10
+    }
+    LS1_volcanic_harvest = {
+        global_trade_goods_size_modifier = 0.10
+    }
+    LS1_lava_flow_trade = {
+        trade_efficiency = 0.15
+    }
+    LS1_fire_sorcery = {
+        infantry_fire = 0.5
+    }
+    LS1_molten_diplomacy = {
+        diplomatic_upkeep = 1
+    }
+    LS1_magma_power = {
+        infantry_power = 0.15
+        morale_damage_received = -0.075
+    }
+}
+#Gold Volcano
+SL1_ideas = {
+	start = {
+		fire_damage_received = -0.15
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+
+	bonus = {		
+		global_manpower_modifier = 0.20
+	}
+	
+	trigger = {
+		tag = SL1
+	}
+	free = yes
+
+    SL1_flames_of_power = {
+        discipline = 0.05
+    }
+    SL1_salamander_wisdom = {
+        technology_cost = -0.10
+    }
+    SL1_fiery_fortifications = {
+        defensiveness = 0.20
+    }
+    SL1_fists_of_fire = {
+        infantry_power = 0.15
+    }
+    SL1_pyrokinetic_warfare = {
+        artillery_power = 0.15
+    }
+    SL1_fire_mastery = {
+        infantry_fire = 0.75
+    }
+    SL1_infused_inferno_magic = {
+        artillery_fire = 0.75
+    }
+}
+#Spider Princess Domain
+SP4_ideas = {
+	start = {
+		discipline = 0.075
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+
+	bonus = {		
+		infantry_power = 0.25
+	}
+	
+	trigger = {
+		tag = SP4
+	}
+	free = yes
+
+    SP4_webbed_tactics = {
+        shock_damage_received = -0.10
+    }
+    SP4_arachnid_ambush = {
+        morale_damage = 0.10
+    }
+    SP4_venomous_strikes = {
+        infantry_shock = 0.50
+        leader_land_shock = 1
+    }
+    SP4_arachne_military_prowess = {
+        military_tactics = 0.15
+    }
+    SP4_silk_roads = {
+        trade_efficiency = 0.10
+    }
+    SP4_cacoon_resilience = {
+        defensiveness = 0.25
+    }
+    SP4_arachnid_dominion = {
+        core_creation = -0.15
+        global_unrest = -1
+    }
+}
+#Lady Village
+LV1_ideas = {
+	start = {
+		global_spy_defence = 0.20
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+
+	bonus = {		
+		spy_offence = 0.30
+	}
+	
+	trigger = {
+		tag = LV1
+	}
+	free = yes
+
+
+    LV1_enigmatic_elegance = {
+        global_tax_modifier = 0.15
+    }
+    LV1_monsters_in_hide = {
+        morale_damage_received = -0.10
+    }
+    LV1_veiled_diplomacy = {
+        diplomatic_reputation = 1
+    }
+    LV1_mysterious_charisma = {
+        improve_relation_modifier = 0.20
+    }
+    LV1_femme_fatale = {
+        morale_damage = 0.10
+    }
+    LV1_whispered_secrets = {
+        diplomatic_annexation_cost = -0.15
+    }
+    LV1_nereneid_legacy = {
+        prestige = 0.5
+	infantry_power = 0.20
+    }
+}
+#Scenic Mountain
+SM2_ideas = {
+	start = {
+		tolerance_own = 1
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+
+	bonus = {		
+		infantry_power = 0.10
+	}
+	
+	trigger = {
+		tag = SM2
+	}
+	free = yes
+    SM2_yoma_dominance = {
+        fire_damage_received = -0.10
+    }
+    SM2_feral_prowess = {
+        infantry_power = 0.10
+    }
+    SM2_natural_bastions = {
+        defensiveness = 0.15
+        fort_maintenance_modifier = -0.15
+    }
+    SM2_yoma_resilience = {
+        manpower_recovery_speed = 0.25
+    }
+    SM2_savage_ambush = {
+        morale_damage = 0.10
+    }
+    SM2_feral_monsters = {
+       morale_damage_received = -0.10
+    }
+    SM2_monster_dominion = {
+        discipline = 0.05
+    }
+}
+#Twinkle Apoptosis
+TA1_ideas = {
+	start = {
+		infantry_power = 0.20
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+
+	bonus = {		
+		infantry_fire = 0.50
+	}
+	
+	trigger = {
+		tag = TA1
+	}
+	free = yes
+
+	TA1_otherworldy_being = {		
+		unjustified_demands = -0.5
+	}
+	TA1_gunner_roid = {		
+		fire_damage = 0.20
+	}
+	TA1_advanced_cannons = {
+		backrow_artillery_damage = 0.25
+	}
+	TA1_roid_armor = {
+		fire_damage_received = -0.10
+	}
+	TA1_dual_persona = {
+		global_unrest = 1
+		all_power_cost = -0.05
+	}
+	TA1_spacetime_assimilation = {		
+		culture_conversion_cost = -0.33
+	}
+	TA1_cross_world_contact_elimination = {
+		ignore_coring_distance = yes
+		core_creation = -0.2
+		allow_client_states = yes
+	}
+}
+#Jellaila Apoptosis
+JA1_ideas = {
+	start = {
+		stability_cost_modifier = -0.10
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+
+	bonus = {		
+		defensiveness = 0.10
+	}
+	
+	trigger = {
+		tag = JA1
+	}
+	free = yes
+
+	JA1_spacetime_assimilation = {		
+		culture_conversion_cost = -0.33
+	}
+	JA1_inspiring_songs = {		
+		land_morale = 0.20
+	}
+	JA1_hell_cry_song = {
+		morale_damage = 0.15
+	}
+	JA1_miracle_song = {
+		all_power_cost = -0.075
+	}
+	JA1_herald_of_demise = {
+		morale_damage_received = -0.075
+	}
+	JA1_song_enveloping_the_world = {
+		build_cost = -0.05
+		development_cost = -0.05
+	}
+	JA1_cross_world_contact_elimination = {
+		ignore_coring_distance = yes
+		core_creation = -0.2
+		allow_client_states = yes
+	}
+}
+#Ribo-Ribo Apoptosis
+RR1_ideas = {
+	start = {
+		siege_ability = 0.15
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+
+	bonus = {		
+		artillery_power = 0.15
+	}
+	
+	trigger = {
+		tag = RR1
+	}
+	free = yes
+
+	RR1_advanced_technology = {
+		technology_cost = -0.10
+		global_institution_spread = 0.33
+	}
+	RR1_roid_armor = {
+		fire_damage_received = -0.10
+	}
+	RR1_spacetime_assimilation = {		
+		culture_conversion_cost = -0.33
+	}
+	RR1_otherworldy_being = {		
+		unjustified_demands = -0.5
+	}
+	RR1_mechanized_combat = {
+		discipline = 0.10
+		land_forcelimit_modifier = 0.10
+	}
+   	RR1_capsule_mechanism = {
+        	land_morale = 0.10
+        	manpower_recovery_speed = 0.15
+    	}
+	RR1_cross_world_contact_elimination = {
+		ignore_coring_distance = yes
+		core_creation = -0.2
+		allow_client_states = yes
+	}
+}
+#Amphil Apoptosis
+AA1_ideas = {
+	start = {
+		infantry_shock = 0.25
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+
+	bonus = {		
+		global_manpower_modifier = 0.10
+	}
+	
+	trigger = {
+		tag = AA1
+	}
+	free = yes
+
+    	AA1_overpowering_fist = {
+       		infantry_power = 0.25
+    	}
+	AA1_scylla_apoptosis = {		
+		morale_damage = 0.10
+	}
+   	AA1_shapeshifting_tentacles = {
+        	shock_damage = 0.20
+    	}
+	AA1_parasitic_adaptation = {
+        	hostile_attrition = 1
+        	max_hostile_attrition = 1
+	}
+	AA1_spacetime_assimilation = {		
+		culture_conversion_cost = -0.33
+	}
+	AA1_otherworldy_being = {		
+		unjustified_demands = -0.5
+	}
+	AA1_cross_world_contact_elimination = {
+		ignore_coring_distance = yes
+		core_creation = -0.2
+		allow_client_states = yes
+	}
+}
+#Tiger Girl Realm
+TI1_ideas = {
+	start = {
+		defensiveness = 0.10
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+
+	bonus = {		
+		global_unrest = -1
+	}
+	
+	trigger = {
+		culture = Tiger_Girl
+	}
+	free = yes
+
+    TI1_feline_ferocity = {
+        land_morale = 0.15
+    }
+    TI1_jungle_dominance = {
+        shock_damage_received = -0.15
+    }
+    TI1_agile_warriors = {
+        infantry_power = 0.15
+    }
+    TI1_wild_instincts = {
+        manpower_recovery_speed = 0.10
+    }
+    TI1_territorial_guardians = {
+        land_forcelimit_modifier = 0.20
+    }
+    TI1_primal_agility = {
+        movement_speed = 0.05
+    }
+    TI1_feral_pride = {
+        morale_damage_received = -0.075
+    }
+}
+#Vampire Girl Realm
+VA4_ideas = {
+	start = {
+		leader_land_shock = 1
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+
+	bonus = {		
+		global_tax_modifier = 0.25
+	}
+	
+	trigger = {
+		culture = Vampire_Girl
+	}
+	free = yes
+    VA4_blood_magic = {
+        global_manpower_modifier = 0.20
+    }
+    VA4_eclipsed_dominion = {
+        global_unrest = -1
+        global_garrison_growth = 0.15
+    }
+    VA4_nights_veil = {
+        leader_land_fire = 1
+        infantry_power = 0.10
+    }
+    VA4_immortal_nobility = {
+        global_trade_power = 0.10
+        improve_relation_modifier = 0.20
+    }
+    VA4_shadow_manipulation = {
+        core_creation = -0.10
+        global_spy_defence = 0.15
+    }
+    VA4_vampiric_supremacy = {
+        manpower_recovery_speed = 0.20
+    }
+    VA4_dominion_of_darkness = {
+       discipline = 0.06
+    }
+}
+#La Croix Domain
+LC1_ideas = {
+	start = {
+		country_admin_power = 1
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+
+	bonus = {		
+		country_diplomatic_power = 1
+	}
+	
+	trigger = {
+		tag = LC1
+	}
+	free = yes
+    LC1_necromantic_proficiency = {
+        manpower_recovery_speed = 0.33
+	ae_impact = 0.10
+    }
+    LC1_undying_will = {
+        infantry_power = 0.20
+    }
+    LC1_cursed_bastions = {
+        max_hostile_attrition = 2
+        fort_maintenance_modifier = -0.15
+    }
+    LC1_circue_du_croix = {
+        max_general_shock = 1
+        max_general_fire = 1
+	army_tradition = 1
+    }
+    LC1_elite_zombies_ambush = {
+        morale_damage = 0.10
+    }
+    LC1_eerie_terrain = {
+        hostile_attrition = 2
+    }
+    LC1_dark_dominion = {
+        country_military_power = 1
+    }
+}
+#Polar Bear Girls
+PB1_ideas = {
+	start = {
+		shock_damage = 0.15
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+
+	bonus = {		
+		stability_cost_modifier = -0.20
+	}
+	
+	trigger = {
+		culture = Polar_Bear_Girl
+	}
+	free = yes
+    PB1_icy_fortifications = {
+        defensiveness = 0.15
+    }
+    PB1_blizzard_resilience = {
+        land_morale = 0.10
+    }
+    PB1_frozen_terrain = {
+        hostile_attrition = 1
+    }
+    PB1_frostbite_expertise = {
+        land_attrition = -0.20
+    }
+    PB1_polar_dominance = {
+        infantry_power = 0.25
+    }
+    PB1_warm_fur = {
+        shock_damage_received = -0.20
+    }
+    PB1_friendly_beasts = {
+        diplomatic_reputation = 1
+        diplomatic_upkeep = 1
+    }
+}
+#Ice Witch Realm
+IW1_ideas = {
+	start = {
+		legitimacy = 1
+		republican_tradition = 0.3
+		devotion = 1
+		horde_unity = 1
+		meritocracy = 0.5
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+
+	bonus = {			
+        	global_unrest = -1
+	}
+	
+	trigger = {
+		culture = Ice_Witch
+	}
+	free = yes
+
+    IW1_frost_mastery = {
+        fire_damage_received = -0.15
+    }
+    IW1_glacial_fortresses = {
+        fort_maintenance_modifier = -0.33
+    }
+    IW1_snowfall_secrets = {
+        global_spy_defence = 0.20
+    }
+    IW1_ice_witch_wisdom = {
+        all_power_cost = -0.04
+    }
+    IW1_glacial_isolation = {
+        defensiveness = 0.25
+    }
+    IW1_northern_monarchs = {
+        morale_damage_received = -0.075
+    }
+    IW1_yoma_hermits = {
+        discipline = 0.05
+    }
+}
+#Snow Heaven
+SH3_ideas = {
+	start = {
+		build_cost = -0.10
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+
+	bonus = {		
+		global_tax_modifier = 0.15
+	}
+	
+	trigger = {
+		tag = SH3
+	}
+	free = yes
+
+    SH3_angelic_resilience = {
+        discipline = 0.05
+    }
+    SH3_heavenly_abodes = {
+        defensiveness = 0.15
+    }
+    SH3_celestial_blessings = {
+        land_morale = 0.15
+    }
+    SH3_rebuilding_the_heaven_we_lost = {
+        development_cost = -0.10
+    }
+    SH3_angelic_grace = {
+        movement_speed = 0.10
+    }
+    SH3_holy_guardians = {
+        morale_damage_received = -0.075
+    }
+    SH3_ascendant_rule = {
+        core_creation = -0.15
+    }
+}
+#Angel Apoptosis
+HR1_ideas = {
+	start = {
+		global_missionary_strength = 0.03
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+
+	bonus = {		
+		missionaries = 1
+	}
+	
+	trigger = {
+		culture = Angel_Apoptosis
+	}
+	free = yes
+
+	HR1_spacetime_assimilation = {		
+		culture_conversion_cost = -0.33
+	}
+	HR1_wings_of_destruction = {		
+		shock_damage = 0.20
+	}
+	HR1_omega_blaze = {
+		fire_damage = 0.20
+	}
+	HR1_divine_forging = {
+		production_efficiency = 0.10
+	}
+	HR1_deformed_angels = {
+		morale_damage = 0.10
+		diplomatic_reputation = -1
+	}
+	HR1_holy_dark_fusion = {
+		military_tactics = 0.15
+	}
+	HR1_cross_world_contact_elimination = {
+		ignore_coring_distance = yes
+		core_creation = -0.2
+		allow_client_states = yes
+	}
+}
+#Goddess Ilias
+IT1_ideas = {
+	start = {
+		legitimacy = 2.5
+		republican_tradition = 0.75
+		devotion = 2.5
+		horde_unity = 2.5
+		meritocracy = 1.25
+		angels_loyalty_modifier = 0.30
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+		cb_on_overseas = yes
+		cb_on_religious_enemies = yes
+		reduced_stab_impacts = yes
+	}
+
+	bonus = {		
+		all_power_cost = -0.15
+	}
+	
+	trigger = {
+		tag = IT1
+	}
+	free = yes
+
+	IT1_manipulative_deity = {		
+		diplomatic_reputation = 3
+		diplomatic_annexation_cost = -0.33
+	}
+   	IT1_pragmatic_ruler = {
+        	stability_cost_modifier = -0.50
+    	}
+	IT1_self_centered_goddess = {
+		global_tax_modifier = 0.50
+	}
+	IT1_divine_goddess_of_light = {
+		military_tactics = 0.30
+	}
+	IT1_strategical_mastermind = {
+        	max_general_shock = 1
+        	max_general_fire = 1
+		leader_land_shock = 1
+		leader_land_fire = 1
+	}
+	IT1_recognised_living_deity = {
+		reverse_relation_with_same_religion = 150
+		land_morale = 0.33
+	}
+	IT1_ultimate_messiah_and_big_bang = {
+		fire_damage = 0.33
+		shock_damage = 0.33
+		land_maintenance_modifier = 0.50
+	}
+}
+
+#Monster Lord
+ML1_ideas = {
+	start = {
+		discipline = 0.10
+		development_cost = -0.10
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+		cb_on_overseas = yes
+		cb_on_religious_enemies = yes
+		reduced_stab_impacts = yes
+	}
+
+	bonus = {		
+		military_tactics = 0.25
+	}
+	
+	trigger = {
+		tag = ML1
+	}
+	free = yes
+
+	ML1_Lamia_Administrative_Legacy = {		
+		administrative_efficiency = 0.10
+		core_creation = -0.10
+	}
+   	ML1_Yoma_Rulership_Doctrine = {
+        	ae_impact = -0.20
+		global_unrest = -2
+    	}
+	ML1_Scylla_Multitasking = {
+		all_power_cost = -0.10
+	}
+	ML1_Beastial_Legions = {
+		infantry_power = 0.25
+	}
+	ML1_Land_Dweller_Ultimate_Metabolism = {
+        	land_attrition = -0.50
+	}
+	ML1_Sea_Dweller_Naval_Excellence = {
+		naval_morale = 0.15
+		global_naval_engagement_modifier = 0.10
+	}
+	ML1_Alraune_Recovery_Units = {
+		fire_damage_received = -0.20
+		shock_damage_received = -0.20
+	}
+}
+
+#Remina
+RE1_ideas = {
+	start = {
+		technology_cost = -0.10
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+	
+	bonus = {
+		all_power_cost = -0.05
+	}
+	
+	trigger = {
+		OR = {
+			tag = RE1
+		}
+	}	
+	free = yes
+	
+	RE1_Coexistence_Edict = {
+		improve_relation_modifier = 0.20
+		global_unrest = -1
+	}
+	RE1_Tartarus_Rift_Research = {
+		military_tactics = 0.05
+		fire_damage = 0.05
+		artillery_power = 0.05
+	}
+	RE1_Scholarly_Exchange_Program = {
+		idea_cost = -0.20
+		global_institution_spread = 0.20
+	}	
+	RE1_Monster_Guard_Corps = {
+		discipline = 0.05
+		land_morale = 0.05
+	}
+	RE1_Heinrich_Legacy = {
+		infantry_power = 0.20
+		morale_damage_received = -0.10
+	}
+	RE1_hitec_development = {
+		development_cost = -0.10
+		build_time = -0.20
+	}
+	RE1_Remina_Special_Force_Units = {
+		infantry_fire = 1
+	}
+}
+
+#Slime Queen Domain
+SQD_ideas = {
+	start = {
+		siege_ability = 0.33
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+	
+	bonus = {
+		production_efficiency = 0.15
+	}
+	
+	trigger = {
+		OR = {
+			tag = SQD
+		}
+	}	
+	free = yes
+	
+	SQD_elite_slimes = {
+		land_morale = 0.20
+	}
+	SQD_fast_recombination = {
+		land_attrition = -0.25
+		build_cost = -0.15
+	}
+	SQD_slime_vitality = {
+		shock_damage_received = -0.075
+		fire_damage_received = -0.075
+	}	
+	SQD_royal_governance = {
+		prestige = 1
+		state_maintenance_modifier = -0.25
+	}
+	SQD_malicious_feral_slimes = {
+		infantry_power = 0.30
+	}
+	SQD_internal_development = {
+		development_cost = -0.15
+		build_time = -0.15
+	}
+	SQD_unparalleled_slime_merchants = {
+		trade_efficiency = 0.15
+	}
+}
+#Land Dweller Queen Domain
+LDQ_ideas = {
+	start = {
+		fire_damage_received = -0.20
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+
+	bonus = {		
+		land_attrition = -0.15		
+		land_morale = 0.20
+		
+	}
+	
+	trigger = {
+		tag = LDQ
+	}
+	free = yes
+
+	LDQ_underground_catacombs = {
+		global_allowed_num_of_buildings = 1
+	}
+	LDQ_experts_at_survival = {		
+		land_attrition = -0.40
+	}
+	LDQ_attuned_to_nature = {
+		global_monthly_devastation = -0.5
+		global_prosperity_growth = 0.5
+	}
+	LDQ_using_every_resource = {
+		build_cost = -0.33
+	}
+	LDQ_toxic_breath = {
+		hostile_attrition = 2
+		max_hostile_attrition = 4
+	}
+	LDQ_royal_governance = {
+		prestige = 1
+		state_maintenance_modifier = -0.25
+	}
+	LDQ_enhanced_mass_quick = {
+		movement_speed = 0.2
+	}
+}
+#Lich Queen Domain
+LQD_ideas = {
+	start = {
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		diplomats = 1
+		may_recruit_female_generals = yes
+	}
+
+	bonus = {		
+		fire_damage_received = -0.10
+	}
+	
+	trigger = {
+		tag = LQD
+	}
+	free = yes
+
+	LQD_zombie_hordes = {
+		land_forcelimit_modifier = 0.25
+	}
+	LQD_battle_mummies = {		
+		infantry_shock = 1
+	}
+	LQD_mansion_development = {
+		development_cost_modifier = -0.15
+	}
+	LQD_advanced_ghost_army = {
+		can_bypass_forts = yes
+		land_attrition = -0.33
+	}
+	LQD_advanced_fireball_battle_magic = {
+		artillery_levels_available_vs_fort = 2
+		siege_ability = 0.30
+	}
+	LQD_restless_army_absolute_obedience = {
+		discipline = 0.075
+	}
+	LQD_wrath_of_the_lich_queen = {
+		ae_impact = 0.25
+		reinforce_speed = 0.50
+	}
+}
+#Alraune Queen Domain
+AQD_ideas = {
+	start = {
+		global_unrest = -1.5
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+	
+	bonus = {
+		land_maintenance_modifier = -0.20
+	}
+	
+	trigger = {
+		tag = AQD
+	}	
+	free = yes
+	
+	AQD_enthralling_aroma = {
+		ae_impact = -0.33
+	}
+	AQD_thorned_guardians = {
+		shock_damage_received = -0.20
+		morale_damage = 0.05
+	}	
+	AQD_rapid_growth = {
+		reinforce_speed = 0.50
+	}
+	AQD_revitalizing_our_soil = {
+		development_cost = -0.20
+	}
+	AQD_floral_alchemy = {
+		recover_army_morale_speed = 0.20
+		reserves_organisation = 0.80
+	}
+	AQD_canaan_sisters = {
+		infantry_power = 0.20
+		mercenary_discipline = 0.05
+	}
+	AQD_forest_whisper = {
+		hostile_attrition = 2
+		max_hostile_attrition = 2
+	}
+}
+#Beast Queen Domain
+BQD_ideas = {
+	start = {
+		shock_damage = 0.20
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+	
+	bonus = {
+		army_tradition = 1
+	}
+	
+	trigger = {
+		tag = BQD
+	}	
+	free = yes
+	
+	BQD_savage_fury = {
+		infantry_power = 0.20
+	}
+	BQD_animal_instincts = {
+		global_spy_defence = 0.25
+	}	
+	BQD_pack_mentality = {
+		land_morale = 0.10
+		reserves_organisation = 0.50
+	}
+	BQD_wild_abundance = {
+		global_trade_goods_size = 0.5
+	}
+	BQD_fearsome_predators = {
+		morale_damage = 0.10
+	}
+	BQD_warrior_society = {
+		general_cost = -0.20
+		free_leader_pool = 2
+	}
+	BQD_primal_ascendance = {
+		hostile_attrition = 1
+		defensiveness = 0.20
+		development_cost = -0.05
+	}
+}
+#Succubi Queen Domain
+SSD_ideas = {
+	start = {
+		tolerance_heathen = 2
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+	
+	bonus = {
+		improve_relation_modifier = 0.2
+	}
+	
+	trigger = {
+		tag = SSD
+	}	
+	free = yes
+	
+	SSD_alluring_charisma = {
+		ae_impact = -0.33
+		diplomats = 2
+	}
+	SSD_pleasure_cultivation = {
+		global_unrest = -2
+		diplomatic_reputation = 1
+	}	
+	SSD_eternal_temptation = {
+		accept_vassalization_reasons = 30
+		transfer_trade_power_reasons = 30
+		diplomatic_annexation_cost = -0.30
+	}
+	SSD_demonic_contracts = {
+		merchants = 1
+		advisor_pool = 1
+		free_leader_pool = 1
+	}
+	SSD_widespread_relations = {
+		diplomatic_upkeep = 2
+	}
+	SSD_dark_enchantments = {
+		fire_damage = 0.10
+		fire_damage_received = -0.10
+	}
+	SSD_archsuccubus_elite = {
+		leader_land_fire = 2
+		leader_naval_fire = 2
+		discipline = 0.06
+	}
+}
+#Mermaid Queen Domain
+MR3_ideas = {
+	start = {
+		global_unrest = -1
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+	
+	bonus = {
+		improve_relation_modifier = 0.2
+	}
+	
+	trigger = {
+		tag = MR3
+	}	
+	free = yes
+	
+	MR3_aquatic_dominion = {
+		naval_morale = 0.20
+	}
+	MR3_marine_resourcefulness = {
+		development_cost = -0.10
+	}	
+	MR3_royal_governance = {
+		prestige = 1
+		state_maintenance_modifier = -0.25
+	}
+	MR3_coral_architecture = {
+		defensiveness = 0.25
+		build_cost = -0.15
+	}
+	MR3_mermaid_knights = {
+		discipline = 0.075
+	}
+	MR3_lorelei_songs = {
+		morale_damage_received = -0.10
+	}
+	MR3_mermaid_riches = {
+		global_trade_goods_size = 0.5
+	}
+}
+#Elf Queen Domain
+EL1_ideas = {
+	start = {
+		idea_cost = -0.15
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+	
+	bonus = {
+		technology_cost = -0.15
+	}
+	
+	trigger = {
+		tag = EL1
+	}	
+	free = yes
+	
+	EL1_archery_mastery = {
+		shock_damage = 0.20
+	}
+	EL1_eternal_forests = {
+		defensiveness = 0.15
+		hostile_attrition = 2
+		max_hostile_attrition = 2
+	}	
+	EL1_natures_miracle = {
+		global_trade_goods_size = 0.33
+		development_cost = -0.10
+	}
+	EL1_forest_champions = {
+		land_morale = 0.15
+		infantry_power = 0.15
+	}
+	EL1_woodland_dominion = {
+		build_cost = -0.15
+	}
+	EL1_sylvan_grace = {
+		diplomatic_reputation = 2
+	}
+	EL1_elven_culture = {
+		global_unrest = -1.5
+	}
+}
+#Vampire Queen Domain
+VA6_ideas = {
+	start = {
+		idea_cost = -0.15
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+	
+	bonus = {
+		technology_cost = -0.15
+	}
+	
+	trigger = {
+		tag = VA6
+	}	
+	free = yes
+	VA6_bloodthirsty_dominion = {
+		infantry_power = 0.25
+	}
+	VA6_eternal_night = {
+		country_military_power = 1
+	}
+	VA6_vampiric_nobility = {
+		global_tax_modifier = 0.30
+		stability_cost_modifier = -0.20
+	}
+	VA6_vampiric_domination = {
+		discipline = 0.05
+		manpower_recovery_speed = 0.20
+	}
+	VA6_dark_allure = {
+		global_trade_goods_size_modifier = 0.15
+		diplomatic_reputation = 2
+	}
+	VA6_crimson_magic = {
+		global_manpower_modifier = 0.33
+	}
+	VA6_night_emperors_on_the_hunt = {
+		morale_damage = 0.15
+	}
+}
+#Harpy Queen Domain
+HQ1_ideas = {
+	start = {
+		trade_efficiency = 0.20
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+	
+	bonus = {
+		caravan_power = 0.30		
+	}
+	
+	trigger = {
+		OR = {
+			tag = HQ1
+			tag = HRT
+		}
+	}	
+	free = yes
+	HQ1_Aerial_Excellence = {
+		land_morale = 0.20		
+	}
+	HQ1_Harpy_Black_Marketeers = {
+		trade_steering = 0.20
+		spy_offence = 0.30		
+	}
+	HQ1_Legacy_of_Queen_Refletsia = {
+		infantry_power = 0.30
+		shock_damage_received = 0.10		
+	}
+	HQ1_Wind_Singers = {
+		improve_relation_modifier = 0.20		
+	}
+	HQ1_Nest_Fortifications = {
+		defensiveness = 0.25		
+	}
+	HQ1_Aerial_Scouts = {
+		global_spy_defence = 0.30
+	}
+	HQ1_Aerial_Sovereignty = {
+		leader_land_manuever = 1
+		max_general_maneuver = 1
+	}
+}
+#Insect Queen Domain
+IQ1_ideas = {
+	start = {
+		reinforce_cost_modifier = -0.50
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+
+	bonus = {		
+		infantry_power = 0.25
+	}
+	
+	trigger = {
+		OR = {
+			tag = IQ1
+			tag = RM1
+			tag = RT1
+		}
+	}
+	free = yes
+
+    IQ1_chitinous_armor = {
+        shock_damage_received = -0.15
+	defensiveness = 0.25
+    }
+    IQ1_legion_mothers = {
+        global_manpower_modifier = 0.33
+    }
+    IQ1_insect_fertility = {
+	manpower_recovery_speed = 0.33
+    }
+    IQ1_underworld_insects = {
+        fire_damage_received = -0.15
+    }
+    IQ1_swarm_formation = {
+	land_forcelimit_modifier = 0.33
+    }
+    IQ1_hive_workforce = {
+	build_time = -0.15
+	great_project_upgrade_time = -0.15
+    }
+    IQ1_hive_infrastructure = {
+        global_allowed_num_of_buildings = 1
+    }
+}
+#Deep Sea Queen Domain
+DQ1_ideas = {
+	start = {
+		sailors_recovery_speed = 0.30
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+
+	bonus = {		
+		ship_durability = 0.10
+	}
+	
+	trigger = {
+		OR = {
+			tag = DQ1
+			tag = KK1
+			tag = PO1
+		}
+	}
+	free = yes
+
+    DQ1_oceanic_excellence = {
+        navy_tradition = 1.5
+    }
+    DQ1_royal_governance = {
+	prestige = 1
+	state_maintenance_modifier = -0.25
+    }
+    DQ1_enchanted_currents = {
+	ship_trade_power_modifier = 0.50
+    }
+    DQ1_marine_mastery = {
+        naval_morale = 0.20
+    }
+    DQ1_sea_palace_maiko = {
+	improve_relation_modifier = 0.33
+    }
+    DQ1_water_element_affinity = {
+	morale_damage_received = -0.10
+	leader_land_manuever = 1
+	leader_naval_manuever = 1
+    }
+    DQ1_super_sea_strength = {
+        heavy_ship_power = 0.25
+	galley_power = 0.25
+    }
+}

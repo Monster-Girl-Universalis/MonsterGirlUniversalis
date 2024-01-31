@@ -1,0 +1,13 @@
+#Grand Noah allies
+alliance = {
+	first = GR2 #Grand Noah
+	second = ME1 #Mephisto
+	start_date = 1444.1.1 
+}
+
+#Goddess Ilias and Eden
+alliance = {
+	first = IT1 #Goddess Ilias
+	second = SH3 #Snow Heaven (Eden and Ranael)
+	start_date = 1.1.1 
+}

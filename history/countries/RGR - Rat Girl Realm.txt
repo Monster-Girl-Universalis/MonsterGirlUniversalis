@@ -1,0 +1,18 @@
+government = monarchy
+government_rank = 1
+primary_culture = Rat_Girl
+add_government_reform = Beast_realm
+religion = monster_lord_religion
+technology_group = TECH_BEAST
+capital = 75
+1444.1.1 = { 
+	monarch = { 
+		name = "Ratty"
+		dynasty = "the Rat"
+		birth_date = 1424.1.1
+		adm = 5
+		dip = 3
+		mil = 2
+		female = yes
+	}
+}

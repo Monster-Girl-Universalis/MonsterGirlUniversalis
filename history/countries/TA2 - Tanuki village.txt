@@ -1,0 +1,18 @@
+government = monarchy
+government_rank = 2
+primary_culture = Tanuki_Girl
+add_government_reform = Tanuki_realm
+religion = yamatai_religion
+technology_group = TECH_TANUKI
+capital = 2165
+1444.1.1 = { 
+	monarch = { 
+		name = "Kuro"
+		dynasty = "of Tanuki Village"
+		birth_date = 1424.1.1
+		adm = 6
+		dip = 5
+		mil = 6
+		female = yes
+	}
+}

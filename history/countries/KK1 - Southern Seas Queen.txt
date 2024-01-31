@@ -1,0 +1,19 @@
+government = monarchy
+religion = monster_lord_religion
+technology_group = TECH_SEA_DWELLER
+primary_culture = Royal_Sea_Dweller
+add_government_reform = Sea_Dweller_realm
+government_rank = 2
+historical_friend = PO1#Two Queens
+1444.1.1 = { 
+	monarch = { 
+		name = "Kraken"
+		dynasty = "of the South Seas"
+		birth_date = 1424.1.1
+		adm = 5
+		dip = 6
+		mil = 4
+		female = yes
+	}
+}
+capital = 2595

@@ -1,0 +1,20 @@
+government = monarchy
+government_rank = 2
+primary_culture = Fairy_Girl
+add_government_reform = Elf_realm
+religion = water_religion
+technology_group = TECH_ELF
+historical_rival = SL1 #They just don't get along...
+1444.1.1 = { 
+	monarch = { 
+		name = "Undine"
+		dynasty = "the Water Spirit"
+		birth_date = 1424.1.1
+		adm = 4
+		dip = 5
+		mil = 4
+		female = yes
+	}
+	add_ruler_personality = immortal_personality
+}
+capital = 1401

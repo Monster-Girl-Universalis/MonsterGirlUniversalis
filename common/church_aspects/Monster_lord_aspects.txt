@@ -1,0 +1,176 @@
+rally_monster_girls = {
+	sprite = "GFX_rally_monster_girls"
+	cost = 150
+	trigger = {
+		NOT = {
+			army_size_percentage = 2
+		}
+	}
+	effect = {
+		custom_tooltip = rally_monster_girls_tt
+		hidden_effect = {
+			random_owned_province = {
+
+				add_unit_construction = {
+					type = infantry
+					amount = 12
+					speed = 0.1
+					cost = 0
+				}
+			}
+
+			if = {
+				limit = {
+					mil_tech = 7
+				}
+				random_owned_province = {
+
+					add_unit_construction = {
+						type = artillery
+						amount = 4
+						speed = 0.1
+						cost = 0
+					}
+				}
+			}
+			if = {
+				limit = {
+					land_forcelimit = 100
+				}
+				random_owned_province = {
+					build_to_forcelimit = {
+						infantry = 0.25
+						artillery = 0.1
+					}
+				}
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 3
+		modifier = {
+			factor = 0
+			is_at_war = no
+		}
+		modifier = {
+			factor = 0
+			army_size_percentage = 1
+		}
+	}
+}
+
+blessing_of_the_monster_lord = {
+	sprite = "GFX_blessing_of_the_monster_lord"
+	cost = 125
+	trigger = {
+		NOT = { has_country_modifier = blessing_of_the_monster_lord_mod }
+	}
+	effect = {
+		custom_tooltip = blessing_of_the_monster_lord_tt
+		hidden_effect = {
+			add_country_modifier = {
+				name = blessing_of_the_monster_lord_mod
+				duration = 5475
+			}
+			create_general = { tradition = 75 }
+			create_admiral = { tradition = 75 } 
+		}
+	}
+	ai_will_do = {
+		factor = 3
+		modifier = {
+			factor = 0
+			is_at_war = no
+		}
+	}
+}
+
+monster_lord_emissaries = {
+	sprite = "GFX_monster_lord_emissaries"
+	cost = 100
+	trigger = {
+		NOT = {
+			has_country_modifier = monster_lord_emissaries_mod
+		}
+	}
+	effect = {
+		custom_tooltip = monster_lord_emissaries_tt
+		hidden_effect = {
+			add_country_modifier = {
+				name = monster_lord_emissaries_mod
+				duration = 5475
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 3
+		modifier = {
+			factor = 0
+			is_at_war = no
+		}
+	}
+}
+
+great_monster_festivals = {
+	sprite = "GFX_great_monster_festivals"
+	cost = 100
+	trigger = {
+		NOT = {
+			stability = 3
+		}
+	}
+	effect = {
+		add_stability = 1
+	}
+	ai_will_do = {
+		factor = 3
+		modifier = {
+			factor = 0.5
+			stability = 0
+		}
+		modifier = {
+			factor = 0.5
+			stability = 1
+		}
+		modifier = {
+			factor = 0.5
+			stability = 2
+		}
+	}
+}
+
+monster_lord_authority = {
+	sprite = "GFX_monster_lord_authority"
+	cost = 100
+	trigger = {
+		rebel_progress_at_least = { value = 30 }
+	}
+	effect = {
+		add_rebel_progress = {
+			value = -30
+		}
+	}
+	ai_will_do = {
+		factor = 3
+		modifier = {
+			factor = 10
+			rebel_progress_at_least = { value = 80 }
+		}
+	}
+}
+
+monster_lord_strategy_meeting = {
+	sprite = "GFX_monster_lord_strategy_meeting"
+	cost = 200
+	trigger = {
+		always = yes
+	}
+	effect = {
+		add_adm_power = 100
+		add_dip_power = 100
+		add_mil_power = 100
+	}
+	ai_will_do = {
+		factor = 3
+	}
+}

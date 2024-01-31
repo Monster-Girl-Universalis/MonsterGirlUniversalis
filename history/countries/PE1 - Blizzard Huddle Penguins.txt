@@ -1,0 +1,8 @@
+government = native
+#add_government_reform = native_monster_council_reform
+add_government_reform = monster_chiefdom_reform
+government_rank = 1
+primary_culture = Penguin_Girl
+religion = monster_lord_religion
+technology_group = TECH_HARPY
+capital = 2503

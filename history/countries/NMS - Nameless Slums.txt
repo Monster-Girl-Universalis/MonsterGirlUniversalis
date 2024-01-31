@@ -1,0 +1,18 @@
+government = monarchy
+government_rank = 1
+primary_culture = slums_human
+religion = ilias_light_religion
+technology_group = TECH_HUMAN
+capital = 80#Mutated crops fields
+1444.1.1 = { 
+	monarch = { 
+		name = "Don Dahlia"
+		dynasty = "of Slums"
+		birth_date = 1418.1.1
+		adm = 5
+		dip = 5
+		mil = 5
+		female = yes
+	}
+}
+add_government_reform = 

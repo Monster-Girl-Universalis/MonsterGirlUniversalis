@@ -1,0 +1,268 @@
+namespace = ilias_light
+
+#Powerful Hero's Revelation 
+country_event = {
+	id = ilias_light.1
+	title = ilias_light.1.t
+	desc = ilias_light.1.desc
+	picture = HERO_REVELATION_eventPicture
+	
+	trigger = {
+		religion = ilias_light_religion
+		OR = {
+			NOT = { has_country_flag = heros_revelation_event }
+			had_country_flag = {
+				flag = heros_revelation_event
+				days = 2190
+			}
+		}
+	}
+
+	immediate = {
+		clr_country_flag = heros_revelation_event
+	}
+
+	after = {
+		set_country_flag = heros_revelation_event
+	}
+	
+	mean_time_to_happen = {
+		days = 2190
+	}
+	
+	option = {
+		name = ilias_light.1.a #give best equipment in our kingdom
+		add_church_power = 75
+		add_years_of_income = -0.5
+	}
+	option = {
+		name = ilias_light.1.b #ignore the hero
+		add_church_power = -25
+	}
+	option = {
+		name = ilias_light.1.c #forcefully conscript him
+		add_church_power = -50
+		add_stability = -1
+		create_general = { 
+			tradition = 80
+			culture = ilian_human
+		}
+	}
+}
+
+# Goddess Ilias is angry
+country_event = {
+	id = ilias_light.2
+	title = ilias_light.2.t
+	desc = ilias_light.2.desc
+	picture = ILIAS_THINKING_eventPicture
+	is_triggered_only = yes
+	option = {	#We will suffer...
+		name = ilias_light.2.a
+		every_owned_province = {
+			remove_loot = {
+				who = ROOT
+				amount = 10
+			}
+			add_devastation = 5
+		}
+		reduce_estate_church_loyalty_effect = yes
+	}
+}
+
+# Goddess Ilias is content
+country_event = {
+	id = ilias_light.3
+	title = ilias_light.3.t
+	desc = ilias_light.3.desc
+	picture = ILIAS_THINKING_eventPicture
+	is_triggered_only = yes
+	option = {	#That is good.
+		name = ilias_light.3.a
+		add_years_of_income = 1
+		add_corruption = -2
+		add_stability_or_adm_power = yes
+		add_estate_church_loyalty_effect = yes
+	}
+}
+
+# Goddess Ilias is happy
+country_event = {
+	id = ilias_light.4
+	title = ilias_light.4.t
+	desc = ilias_light.4.desc
+	picture = ILIAS_THINKING_eventPicture
+	is_triggered_only = yes
+	option = {	#Rejoice! Ilias Vult!
+		name = ilias_light.4.a
+		add_years_of_income = 1
+		add_corruption = -2
+		add_stability_or_adm_power = yes
+		add_country_modifier = {
+			name = "ilias_protects_mod"
+			duration = 1460
+		}
+		add_estate_church_loyalty_effect = yes
+		
+	}
+}
+
+#Divine Intervention
+country_event = {
+	id = ilias_light.5
+	title = ilias_light.5.t
+	desc = ilias_light.5.desc
+	picture = ILIAS_THINKING_eventPicture
+	
+	trigger = {
+		religion = ilias_light_religion
+		
+		OR = {
+			num_of_loans = 10
+			NOT = { stability = 0 }
+			NOT = { manpower_percentage = 0.20 }
+			corruption = 10
+			overextension_percentage = 1.5
+			is_bankrupt = yes
+		}
+		OR = {
+			NOT = { has_country_flag = divine_intervention_event }
+			had_country_flag = {
+				flag = divine_intervention_event 
+				days = 1095
+			}
+		}
+	}
+
+	immediate = {
+		clr_country_flag = divine_intervention_event 
+	}
+
+	after = {
+		set_country_flag = divine_intervention_event 
+	}
+	
+	mean_time_to_happen = {
+		days = 1095
+	}
+	option = {
+		name = ilias_light.5.a #Goddess is angry
+		trigger = {
+			NOT = { ilias_light_religion = 3 }
+		}
+		country_event = {
+			id = ilias_light.2
+		}
+	}
+	option = {
+		name = ilias_light.5.b #Goddess is satisfied
+		trigger = {
+			AND = {
+				ilias_light_religion = 3
+				NOT = { ilias_light_religion = 6 }
+			}
+		}
+		country_event = {
+			id = ilias_light.3
+		}
+	}
+	option = {
+		name = ilias_light.5.c #Goddess is very content
+		trigger = {
+			ilias_light_religion = 6
+		}
+		country_event = {
+			id = ilias_light.4
+		}
+	}
+}
+
+# Party of Baptized Heroes
+country_event = {
+	id = ilias_light.6
+	title = ilias_light.6.t
+	desc = ilias_light.6.desc
+	picture = PARTY_OF_HEROES_eventPicture
+	
+	trigger = {
+		religion = ilias_light_religion
+		OR = {
+			NOT = { has_country_flag = baptized_heroes_event }
+			had_country_flag = {
+				flag = baptized_heroes_event
+				days = 3650
+			}
+		}
+	}
+
+	immediate = {
+		clr_country_flag = baptized_heroes_event
+	}
+
+	after = {
+		set_country_flag = baptized_heroes_event
+	}
+	
+	mean_time_to_happen = {
+		days = 1095
+	}
+	
+	option = {
+		name = ilias_light.6.a #Support group of heroes
+		add_adm_power = -25
+		add_dip_power = -25
+		add_mil_power = -25
+		add_country_modifier = {
+			name = "supported_party_of_heroes_mod"
+			duration = 3650
+		}
+	}
+	option = {
+		name = ilias_light.6.b #Ignore them
+		add_corruption = -2
+		add_country_modifier = {
+			name = "ignored_party_of_heroes_mod"
+			duration = 3650
+		}
+	}
+}
+
+# Goddess Blessing
+country_event = {
+	id = ilias_light.7
+	title = ilias_light.7.t
+	desc = ilias_light.7.desc
+	picture = ILIAS_EVENT_eventPicture
+	
+	trigger = {
+		religion = ilias_light_religion
+		ilias_light_religion = 4
+		OR = {
+			NOT = { has_country_flag = goddess_blessing_event }
+			had_country_flag = {
+				flag = goddess_blessing_event 
+				days = 3650
+			}
+		}
+	}
+
+	immediate = {
+		clr_country_flag = goddess_blessing_event 
+	}
+
+	after = {
+		set_country_flag = goddess_blessing_event 
+	}
+	
+	mean_time_to_happen = {
+		days = 1095
+	}
+	
+	option = {
+		name = ilias_light.7.a
+		add_country_modifier = {
+			name = "goddess_blessing_mod"
+			duration = 3650
+		}
+	}
+}

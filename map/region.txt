@@ -1,0 +1,312 @@
+pornof_region = { 
+	areas = { 
+		pornof_south_peninsula_area pornof_area rostrum_area rostrum_caves_area rostrum_coast_area eastern_ilias_tartarus_area orcish_area southern_plains_area north_pornof_area talus_area
+		rostrum_mountains_area abandoned_coast 
+	}
+}
+iliasville_region = { 
+	areas = { 
+		slime_forest_area iliasville_area slime_village_area iliasville_outskirts_area south_ilias_coast_area south_ilias_tartarus_area serene_coast_area trials_way_area merchants_southern_route_area cave_of_trials_area
+	}
+}
+irina_region = { 
+	areas = { 
+		earthworm_area heavenly_bandits_area south_irina_road_area south_irina_mountains_area wolf_mountains_area rat_mountains_area nameless_slums_area mithra_area dahlia_docks_area iliasburg_road_area
+	}
+}
+great_sea_region = { 
+	areas = { 
+		great_sea_area 
+	}
+}
+enrika_region = { 
+	areas = { 
+		dark_elf_village dark_elven_woods elven_coast elven_traderoute_area enrika_area enrika_woods_area ereseveal_area etam_grove fairy_coast lemuse_beach
+		mimic_woods mimic_grove_area north_lemuse ntequi_vale pumpkin_grove pumpkin_woods raoru_woods retociitu_woods wasall_vale enchanting_fairywood
+	}
+}
+iliasburg_region = { 
+	areas = { 
+		iliasburg_plains iliasburg_area ilian_centaurs_area iliasport_area eastern_iliasburg eraha_beach_area naipi_village naipi_plains_area rafflesia_plains kitsune_geisha_area
+		spider_girl_area kitsune_taoist_area 
+	}
+}
+happiness_village_region = { 
+	areas = { 
+		harpy_tower_area bee_girl_hive_area bee_woods_area dog_plains_area edreenaita_spring_area happiness_village_area happiness_woods_area harpy_hill_area hive_coast_area sheep_plains_area
+		sparrow_coast_area sparrow_girl_realm_area sparrow_woods_area mimic_island_area 
+	}
+}
+midas_region = { 
+	areas = { 
+		midas_village_area conant_village iliarth_state erefor_village iliarth_coast northern_beehive_area northern_bee_plains_area midas_plains_area slug_plains_area slug_coast_area
+		slug_nuns_area midas_slugs_area high_slugs_area slug_tower_area royal_slug_coast_area warp_shrine_area midas_island_area 
+	}
+}
+navyl_region = { 
+	areas = { 
+		seahorse_state sea_slug_state navy_headquarters_state marine_stronghold_state sheep_island 
+	}
+}
+san_ilia_region = { 
+	areas = { 
+		crab_realm_area luddite_area secret_lab_facility_area sea_cucumber_area oloso_area san_ilia_crops san_ilia_area 
+	}
+}
+st_amos_region = { 
+	areas = { 
+		kinoko_mountains amos_road_area urscylla_mountains succubus_nun_area ittan_momen_coast anteater_hills lamia_sister_area grizzly_rocks mountain_st_amos_area fusuma_coast
+		port_marle 
+	}
+}
+port_natalia_region = { 
+	areas = { 
+		pitcher_grove jellyfish_beach natalian_woods oningrone_area leira_plains port_natalia_area seaweed_beach eastern_natalia_area novistador_mountains marle_road_area
+		thehad_coast leira_coast_area 
+	}
+}
+forest_of_spirits_region = { 
+	areas = { 
+		elvish_spring_area fairy_grove forest_of_spirits north_natalia_area north_natalia_coast slime_bess_area slime_bess_plains watermelon_grasslands zombie_mountains haunted_mansion_area
+	}
+}
+puppeteer_tower_region = { 
+	areas = { 
+		bandersnatch_area centipede_area doll_assembly_chambers doll_storage_area infantry_dolls_area kagetsumugi_training_grounds magician_dolls_area maid_dolls_area puppeteer_tower rubiana_area
+		sables_coast_area seekers_cave_area monster_lord_dolls_area roach_tower 
+	}
+}
+monte_carlo_region = { 
+	areas = { 
+		lamia_area minotaur_steppes shellfish_coast_area carlos_hill_area safina_mountain_pass safina_road_area tarantula_wastelands western_natalia_road monte_carlo_area 
+	}
+}
+grandeur_region = { 
+	areas = { 
+		alligator_oasis_area alligator_savanna_area cactus_drylands cactus_realm_area don_father_area grandeur_area grandeur_desert ostrich_area grandeur_road southern_grandeur_area
+		safina_river_area 
+	}
+}
+sabasa_region = { 
+	areas = { 
+		genie_desert_area genie_road_area sabasa_area southern_sabasa_area eastern_sabasa_area zahr_drylands zahr_oasis scorpion_coast_area scorpion_desert_area 
+	}
+}
+magistea_region = { 
+	areas = { 
+		magical_coast magistea_area magistea_coast magistean_borderlands lucia_mercenary_camps tower_of_magic witch_coast worm_summoner_fields devil_hunter_mountains devil_hunter_woods
+		rebel_training_grounds polar_bear_island 
+	}
+}
+pyramid_region = { 
+	areas = { 
+		pyramid_area pyramid_southern_road cobra_desert_area mummy_area nefertiti_area safina_southern_coast 
+	}
+}
+saloon_region = { 
+	areas = { 
+		ashidaka_area ashidaka_plains devil_hunter_coast dodomeki_area dodomeki_drylands saloon_area saloon_coast_area saloon_drylands_area saloon_hill saloon_abandoned_mines
+		lizard_caves tareereem_area ituru_hills 
+	}
+}
+fairy_island_region = { 
+	areas = { 
+		southern_elven_island carbuncle_coast carbuncle_jungle amazoness_coast amazoness_forest fairy_island_heart walraune_area forest_dryad_area world_tree_area dark_dryad_area
+		giantess_area giantess_coast trick_fairy_coast trick_fairy_forest 
+	}
+}
+safar_ruins_region = { 
+	areas = { 
+		mirage_coast mirage_desert safina_swamp_road sandworm_coast sandworm_desert administrator_strait_area administrator_tower_area safar_desert safar_ruins_area western_safina_swamp
+		southern_safina_swamps safina_tartarus scylla_desert oasis_of_blessings_area 
+	}
+}
+great_pirate_cave_region = { 
+	areas = { 
+		dagon_area hitodama_area pirate_coast_area great_pirate_cave_area isolated_island 
+	}
+}
+yamatai_caves_region = { 
+	areas = { 
+		kappa_caverns yuki_onna_caves yuki_onna_coast yamatai_elf_coast yamatai_caves_entrance spirit_caves spirit_coast samurai_elf_area kunoichi_elf_area nure_onna_area
+		nure_onna_caves 
+	}
+}
+grand_noah_region = { 
+	areas = { 
+		grand_noah eastern_noah dullahan_area cerberus_area noah_outskirts southern_noah hakoiri_plains hakoiri_area blue_frog_area red_frog_area
+		centaur_bay helena_area western_noah noah_kappas_area noah_mimics 
+	}
+}
+finoa_region = { 
+	areas = { 
+		finoa_area finoa_plains frog_coast frog_hills frog_peninsula froglands centaur_mountains centaur_coast eastern_froglands alra_beach
+		alraune_coast alraune_mountains alraune_plains secluded_grove 
+	}
+}
+yamatai_region = { 
+	areas = { 
+		spider_miko_area yamatai_area yamata_no_orochi_cave nekomata_area nekomata_coast futakuchi_area kejourou_area four_shrines akaname_area akaname_ricefields
+	}
+}
+cow_demon_region = { 
+	areas = { 
+		cow_demon_castle axe_coast noah_minotaurs_area okiku_mushi_area okiku_mushi_caves minotaur_coast spirit_plains spirit_woods labirynth_caverns_east labirynth_caverns_west
+		magical_academy 
+	}
+}
+plansect_region = { 
+	areas = { 
+		plansect_area canaan_forest caterpillar_area caterpillar_coast alplants_forest alplants_grove alra_shroom_area alra_woods hornet_area mantis_mountains
+		mosquito_bay mosquito_mountains insect_coast nepenthes_area nepenthes_woods red_mountains silkworm_area 
+	}
+}
+undine_region = { 
+	areas = { 
+		undine_spring lima_strait leon_coast leon_fields red_slime_area rauna_area green_slime_area slime_peninsula teal_slime_area purple_slime_area
+		undine_caverns esta_bay esta_spring lima_area lima_drylands 
+	}
+}
+lyra_region = { 
+	areas = { 
+		mermaid_queen_chamber lenore_area lenore_coast perto_spring oular_mountains western_kappas_area western_nekomatas_area esta_area lyra_coast lyra_plains
+		lyra_waterfalls mermaid_general_area mermaid_knight_area merchant_mermaid_area lorelei_coast 
+	}
+}
+goddard_region = { 
+	areas = { 
+		goddard_area goddard_coast gold_fort rocky_hills rocky_island reinard_coast western_goddard butterfly_area butterfly_coast butterfly_drylands
+		ant_drylands 
+	}
+}
+grangold_region = { 
+	areas = { 
+		grangold_area western_grangold western_gold_checkpoint gold_port grangold_mountains eastern_grangold march_coast ant_hives ant_mountains southern_grangold
+	}
+}
+toxic_swamp_region = { 
+	areas = { 
+		gold_coast elder_scylla_area elder_scylla_coast jellyfish_area jellyfish_coast coral_coast brom_coast ghoul_swamp warmer_swamp march_road
+		march_hills 
+	}
+}
+gold_volcano_region = { 
+	areas = { 
+		spider_princess_area spider_coast arachne_area atlach_nacha_area solitary_coast tarantula_caverns salamander_coast gold_volcano demon_lamia_area demon_scylla_area
+		lava_slime_area 
+	}
+}
+succubus_village_region = { 
+	areas = { 
+		succubus_village succubus_coast stray_succubus_road central_gold_hills central_gold_road western_port mud_swamp medusa_area medusa_coast dragon_mines
+		potato_fields lava_mines 
+	}
+}
+lady_village_region = { 
+	areas = { 
+		lady_village lady_road wing_harpy_hills wing_harpy_mountains flower_mantis_woods flower_mantis_area western_gold_woods insecta_coast parasol_hills aradia_hills
+		cassandra_mansion scenic_mountain 
+	}
+}
+holy_wings_shrine_region = { 
+	areas = { 
+		harpy_knight_area nightmare_wastes holy_wings_shrine_area gelatinous_area ribo_ribo_area ribo_ribo_wastelands twinkle_area twinkle_coast jellaila_area jellaila_coast
+		amphil_area amphil_coast 
+	}
+}
+devastated_plains_region = { 
+	areas = { 
+		tiger_area tiger_wastelands youki_area youki_mountains vampire_coast vampire_wastelands abandoned_road chimera_coast devastated_plains grave_sites_area
+		la_croix_base 
+	}
+}
+vampire_castle_region = { 
+	areas = { 
+		unknown_island vampire_swamps night_emperor_area nosferatu_lands arc_vampire_area carmilla_mansion elisabeth_mansion elder_vampire_coast vampire_queen_castle 
+	}
+}
+snow_cave_region = { 
+	areas = { 
+		trinity_road cupid_coast frozen_coast snow_cave snow_cave_coast snow_cave_exit polar_bear_snowfields polar_bear_coast polar_bear_village northern_angel_outpost
+	}
+}
+ilias_temple_ruins_region = { 
+	areas = { 
+		slimey_distortion spinny_distortion chimera_beast_distortion angel_zombie_distortion flappy_distortion heriel_plains heriel_area alciel_area alciel_coast ilias_temple_ruins
+		ilias_temple_ruins_deep 
+	}
+}
+snow_heaven_region = { 
+	areas = { 
+		unused_angel_road central_snowfields southern_angel_outpost southern_snowfields snow_heaven trinity_area valkyrie_area cupid_area ice_witch_area ice_witch_coast
+	}
+}
+eden_region = { 
+	areas = { 
+		valkyrie_mountains hall_of_creation_area snow_shrine_area eliciel_area eliciel_mountains uranus_area uranus_mountains 
+	}
+}
+sedna_region = { 
+	areas = { 
+		seal_area seal_bay seal_peninsula land_of_drowned south_pole_coven polar_krill_area polar_krill_coast sedna_coast sedna_snowlands 
+	}
+}
+north_pole_region = { 
+	areas = { 
+	}
+}
+wendigo_coast_region = { 
+	areas = { 
+		yeti_area yeti_coast mammoth_coast mammoth_fields snow_queen_area glacies_area glacies_coast shapeshifter_coast wendigo_coast wendigo_island
+		wendigo_wastelands drowned_coast 
+	}
+}
+horai_region = { 
+	areas = { 
+		kunoichi_harpy_area kunoichi_scylla_area kunoichi_succubi_area kunoichi_arachne_area kitsune_village_area feral_kitsune_area bakedanuki_area taoist_coast tanuki_village_area horai_coast
+		elven_village 
+	}
+}
+hellgondo_shrine_region = { 
+	areas = { 
+		hellgondo_caves hellgondo_shrine jakotsu_cave enenra_cave behemoth_area behemoth_caves shrine_underground kirin_cave kirin_coast master_shadow_cave
+		basilisk_area basilisk_cave 
+	}
+}
+hellgondo_tartarus_region = { 
+	areas = { 
+		remina_bay_area hellgondo_scyllas_area hellgondo_tartarus_coast jakotsu_coast master_shadow_area enenra_bay monster_lord_checkpoint kyoryuu_mountains kyouryuu_area desolate_coast
+	}
+}
+sealed_sinner_prison_region = { 
+	areas = { 
+		sealed_sinner_prison grand_centaur_area elder_succubus_coast vouivre_area vouivre_mountains five_tailed_kitsune_area wyvern_area wyvern_mountains scylla_servant_area hellgondo_succubi_area
+		demon_monk_area demon_monk_coast succubus_monk_area 
+	}
+}
+monster_lord_castle_region = { 
+	areas = { 
+		monster_lord_castle_area monster_lord_castle_road monster_lord_lands grand_centaur_coast elder_succubus_area aevis_area aevis_coast six_tailed_kitsune_area zenki_oni_area zenki_oni_chambers
+		gouki_oni_area gouki_oni_chambers 
+	}
+}
+south_undersea_temple_region = { 
+	areas = { 
+		south_jellyfish_area anglerfish_area south_temple_entrance sea_anemon_area kraken_area 
+	}
+}
+north_undersea_temple_region = { 
+	areas = { 
+		coral_area archjelly_area north_temple_entrance poseidoness_area starfish_area 
+	}
+}
+penguin_coast_region = { 
+	areas = { 
+		white_horn_area white_horn_coast white_horn_snowlands north_bear_area north_bear_coast north_bear_frostlands penguin_area penguin_coast penguin_frostlands 
+	}
+}
+north_coven_region = { 
+	areas = { 
+		land_of_permafrost permafrost_coast north_coven_coast north_pole_coven krampus_area krampus_coast krampus_snowlands tsurara_area tsurara_coast tsurara_frostlands
+	}
+}

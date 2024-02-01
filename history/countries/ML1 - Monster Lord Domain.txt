@@ -106,16 +106,61 @@ historical_rival = IT1 #Suffer no malicious goddess and her idiotic ways
 		}
 	}
 }
-1434.1.1 = { 
+1444.1.1 = { 
 	heir = { 
 		name = "Alipheese XVI"
 		monarch_name = "Alipheese XVI"
 		dynasty = "Fateburn"
 		birth_date = 1434.1.1
+		claim = 95
 		adm = 6
 		dip = 6
 		mil = 6
 		female = yes
 	}
+}
+1444.1.1 = { 
+	leader = {
+		name = "Granberia"
+		birth_date = 1434.1.1
+        	type = general
+        	fire = 8
+        	shock = 5
+        	manuever = 3
+        	siege = 2
+    	}
+}
+1444.1.1 = { 
+	leader = {
+		name = "Tamamo"
+		birth_date = 1424.1.1
+        	type = general
+        	fire = 5
+        	shock = 6
+        	manuever = 5
+        	siege = 6
+    	}
+}
+1444.1.1 = { 
+	leader = {
+		name = "Alma Elma"
+		birth_date = 1424.1.1
+        	type = general
+        	fire = 2
+        	shock = 8
+        	manuever = 8
+        	siege = 2
+    	}
+}
+1444.1.1 = { 
+	leader = {
+		name = "Erubetie"
+		birth_date = 1424.1.1
+        	type = general
+        	fire = 3
+        	shock = 3
+        	manuever = 10
+        	siege = 4
+    	}
 }
 capital = 2409

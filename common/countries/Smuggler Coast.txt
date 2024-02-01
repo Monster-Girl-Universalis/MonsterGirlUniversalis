@@ -4,7 +4,6 @@ revolutionary_colors = { 2 3 5 }
 random_nation_chance = 0
 historical_score = 500
 historical_idea_groups = { 
-	religious_ideas economic_ideas quantity_ideas administrative_ideas diplomatic_ideas offensive_ideas humanist_ideas influence_ideas 
 }
 historical_units = { 
 	japanese_archer eastern_bow japanese_footsoldier japanese_samurai asian_arquebusier asian_charge_cavalry asian_mass_infantry asian_musketeer reformed_asian_musketeer reformed_asian_cavalry

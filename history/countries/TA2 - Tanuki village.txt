@@ -16,3 +16,15 @@ capital = 2165
 		female = yes
 	}
 }
+1444.1.1 = { 
+	leader = {
+		name = "Inugami-Gyobo-danuki"
+		birth_date = 1424.1.1
+        	type = general
+        	fire = 3
+        	shock = 8
+        	manuever = 8
+        	siege = 1
+		female = yes
+    	}
+}

@@ -4,7 +4,6 @@ revolutionary_colors = { 0 3 4 }
 random_nation_chance = 0
 historical_score = 500
 historical_idea_groups = { 
-	religious_ideas economic_ideas quantity_ideas administrative_ideas diplomatic_ideas offensive_ideas humanist_ideas influence_ideas 
 }
 historical_units = { 
 	infantry_scc_t1_01 infantry_scc_t5_01 infantry_scc_t10_01 infantry_scc_t13_01 infantry_scc_t16_01 infantry_scc_t19_01 infantry_scc_t23_01 infantry_scc_t26_01 

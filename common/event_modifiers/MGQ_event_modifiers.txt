@@ -91,7 +91,7 @@ reinforced_zombies = {
 	is_streltsy_modifier = yes
 }
 spiritualists_mass_slow = {
-	local_hostile_movement_speed = 0.15
+	local_hostile_movement_speed = -0.15
 	local_defensiveness = 0.15
 }
 raise_master_undead = {

@@ -1,0 +1,79 @@
+namespace = lore_events
+country_event = {
+	id = lore_events.1
+	title = lore_events.1.t
+	desc = lore_events.1.desc
+	picture = MONSTER_LORD_SLAYER_eventPicture
+	
+	trigger = {
+		ai = no
+		NOT = { has_global_flag = mgq_help_from_marcellus }
+		NOT = { has_leader = "Monster Lord Slayer" }	
+		OR = {
+			num_of_loans = 10
+			NOT = { stability = 0 }
+			NOT = { manpower_percentage = 0.33 }
+		}
+		OR = {
+			NOT = { has_global_flag = mgq_help_from_marcellus }
+			had_global_flag = {
+				flag = mgq_help_from_marcellus 
+				days = 10950
+			}
+		}
+		OR = {
+			ROOT = { offensive_war_with = ML1 }
+			ROOT = { defensive_war_with = ML1 }
+		}
+	}
+
+	immediate = {
+		clr_country_flag = mgq_help_from_marcellus 
+	}
+
+	after = {
+		set_country_flag = mgq_help_from_marcellus 
+	}
+	
+	mean_time_to_happen = {
+		days = 2190
+	}
+	option = {
+		name = lore_events.1.a #Monster Lord Slayer comes to save the day
+		define_general = { 
+			name = "Monster Lord Slayer"
+        		type = general
+        		fire = 10
+        		shock = 10
+        		manuever = 10
+        		siege = 6
+		}
+	}
+}
+country_event = {
+	id = lore_events.2
+	title = lore_events.2.t
+	desc = lore_events.2.desc
+	picture = MONSTER_LORD_SLAYER_eventPicture
+	
+	trigger = {
+		has_leader = "Monster Lord Slayer"
+		#has_global_flag = mgq_help_from_marcellus
+		NOT = {
+			OR = {
+				ROOT = { offensive_war_with = ML1 }
+				ROOT = { defensive_war_with = ML1 }
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+		name = lore_events.2.a #Monster Lord Slayer disappears between dimensions
+		kill_leader = { 
+        		type = "Monster Lord Slayer"
+		}
+	}
+}

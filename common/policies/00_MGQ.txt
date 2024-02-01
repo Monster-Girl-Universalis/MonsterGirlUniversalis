@@ -170,7 +170,7 @@ mgq_alraune_sea_dweller = { #Alraune+Sea Dweller
 		full_idea_group = alraune_ideas 
 		full_idea_group = sea_dweller_ideas
 	}
-	naval_morale_damage = 0.10
+	naval_morale_damage = 0.125
 
 	ai_will_do = {
 		factor = 1
@@ -241,7 +241,7 @@ mgq_dragon_apoptosis = { #Dragon+Apoptosis
 		full_idea_group = apoptosis_ideas 
 	}
 	fire_damage_received = -0.10
-	infantry_shock = 0.50
+	infantry_shock = 0.25
 
 	ai_will_do = {
 		factor = 1
@@ -276,7 +276,7 @@ mgq_alraune_apoptosis = { #Alraune+Apoptosis
 		full_idea_group = alraune_ideas
 		full_idea_group = apoptosis_ideas 
 	}
-	morale_damage = 0.10
+	morale_damage = 0.125
 
 	ai_will_do = {
 		factor = 1
@@ -310,7 +310,7 @@ mgq_insect_apoptosis = { #Insect+Apoptosis
 		full_idea_group = insect_ideas
 		full_idea_group = apoptosis_ideas 
 	}
-	infantry_shock = 1
+	infantry_shock = 0.5
 
 	ai_will_do = {
 		factor = 1
@@ -327,7 +327,7 @@ mgq_undead_apoptosis = { #Undead+Apoptosis
 		full_idea_group = undead_ideas
 		full_idea_group = apoptosis_ideas 
 	}
-	morale_damage_received = -0.10
+	morale_damage_received = -0.125
 
 	ai_will_do = {
 		factor = 1
@@ -344,7 +344,7 @@ mgq_yoma_apoptosis = { #Yoma+Apoptosis
 		full_idea_group = yoma_ideas
 		full_idea_group = apoptosis_ideas 
 	}
-	infantry_fire = 1
+	infantry_fire = 0.33
 
 	ai_will_do = {
 		factor = 1
@@ -464,9 +464,9 @@ mgq_demonoid_research = { #Human+Demi-Human+Vampire+Yoma
 		full_idea_group = vampire_ideas 
 		full_idea_group = yoma_ideas 
 	}
-	infantry_fire = 1
-	artillery_fire = 1
-	cavalry_fire = 1
+	infantry_fire = 0.66
+	artillery_fire = 0.66
+	cavalry_fire = 0.66
 	ai_will_do = {
 		factor = 1
 	}

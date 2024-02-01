@@ -1,0 +1,4 @@
+NDefines.NCountry.MAX_ACTIVE_POLICIES = 12
+NDefines.NCountry.BASE_POSSIBLE_POLICIES = 4
+NDefines.NCountry.PS_BUY_IDEA = 200
+NDefines.NCountry.FREE_IDEA_GROUP_COST  = 5

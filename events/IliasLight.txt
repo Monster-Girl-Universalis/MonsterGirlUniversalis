@@ -59,12 +59,9 @@ country_event = {
 	is_triggered_only = yes
 	option = {	#We will suffer...
 		name = ilias_light.2.a
+		add_stability = -1
 		every_owned_province = {
-			remove_loot = {
-				who = ROOT
-				amount = 10
-			}
-			add_devastation = 5
+			add_devastation = 10
 		}
 		reduce_estate_church_loyalty_effect = yes
 	}

@@ -6,14 +6,49 @@ technology_group = TECH_HUMAN
 historical_friend = PY1#Sphynx Blood
 1444.1.1 = { 
 	monarch = { 
-		name = "Sara"
+		name = "Gigachad" #Temporary name until we know from the game his actual name
 		dynasty = "of Sabasa"
-		birth_date = 1424.1.1
-		adm = 1
-		dip = 1
-		mil = 1
+		birth_date = 1414.1.1
+		adm = 6
+		dip = 6
+		mil = 6
+	}
+}
+1444.1.1 = { 
+	heir = { 
+		name = "Sara I"
+		monarch_name = "Sara I"
+		dynasty = "of Sabasa"
+		birth_date = 1434.1.1
+		claim = 95
+		adm = 4
+		dip = 4
+		mil = 4
 		female = yes
 	}
+}
+1444.1.1 = { 
+	leader = {
+		name = "Samson the Hammer"
+		birth_date = 1414.1.1
+        	type = general
+        	fire = 5
+        	shock = 5
+        	manuever = 4
+        	siege = 2
+    	}
+}
+1444.1.1 = { 
+	leader = {
+		name = "Salaan of Assasin Clan"
+		birth_date = 1424.1.1
+        	type = general
+        	fire = 3
+        	shock = 6
+        	manuever = 6
+        	siege = 1
+		female = yes
+    	}
 }
 capital = 755
 add_government_reform = 

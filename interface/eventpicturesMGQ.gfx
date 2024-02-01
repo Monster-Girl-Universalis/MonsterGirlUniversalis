@@ -199,4 +199,124 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/AdminTower_eventPicture.dds"
 		allwaystransparent = yes
 	}
+	spriteType = {
+		name = "mermaid_merchant_eventPicture"
+		texturefile = "gfx/event_pictures/mermaid_merchant_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "insect_swarm_eventPicture"
+		texturefile = "gfx/event_pictures/insect_swarm_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "spirit_girl_eventPicture"
+		texturefile = "gfx/event_pictures/spirit_girl_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "orc_girl_eventPicture"
+		texturefile = "gfx/event_pictures/orc_girl_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "insect_girl_eventPicture"
+		texturefile = "gfx/event_pictures/insect_girl_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "dog_girl_eventPicture"
+		texturefile = "gfx/event_pictures/dog_girl_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "lily_truth_seeker_eventPicture"
+		texturefile = "gfx/event_pictures/lily_truth_seeker_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "lamia_nun_eventPicture"
+		texturefile = "gfx/event_pictures/lamia_nun_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "earthworm_girl_eventPicture"
+		texturefile = "gfx/event_pictures/earthworm_girl_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "elf_girl_eventPicture"
+		texturefile = "gfx/event_pictures/elf_girl_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "sheep_girl_eventPicture"
+		texturefile = "gfx/event_pictures/sheep_girl_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "kitsune_girl_eventPicture"
+		texturefile = "gfx/event_pictures/kitsune_girl_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "succubi_girls_eventPicture"
+		texturefile = "gfx/event_pictures/succubi_girls_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "powerful_rogue_yoma_eventPicture"
+		texturefile = "gfx/event_pictures/powerful_rogue_yoma_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "fairy_artist_eventPicture"
+		texturefile = "gfx/event_pictures/fairy_artist_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "polar_bear_girl_eventPicture"
+		texturefile = "gfx/event_pictures/polar_bear_girl_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "anteater_girl_eventPicture"
+		texturefile = "gfx/event_pictures/anteater_girl_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "ice_witch_eventPicture"
+		texturefile = "gfx/event_pictures/ice_witch_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "wolf_girl_army_eventPicture"
+		texturefile = "gfx/event_pictures/wolf_girl_army_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "yeti_girl_eventPicture"
+		texturefile = "gfx/event_pictures/yeti_girl_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "dragon_girl_army_eventPicture"
+		texturefile = "gfx/event_pictures/dragon_girl_army_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "shark_pirates_eventPicture"
+		texturefile = "gfx/event_pictures/shark_pirates_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "sparrow_girl_eventPicture"
+		texturefile = "gfx/event_pictures/sparrow_girl_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "MONSTER_LORD_SLAYER_eventPicture"
+		texturefile = "gfx/event_pictures/MONSTER_LORD_SLAYER_eventPicture.dds"
+		allwaystransparent = yes
+	}
 }

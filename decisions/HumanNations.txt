@@ -278,6 +278,7 @@ country_decisions = {
 					army_size = 100
 					grown_by_development = 500
 					owns_core_province = 2263
+					owns_core_province = 2262
 					owns_core_province = 2266
 					owns_core_province = 2271
 					owns_core_province = 2269

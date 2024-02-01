@@ -3,7 +3,7 @@ estate_monster_girls_disaster = {
 		has_estate = estate_monster_girls
 		estate_influence = {
 			estate = estate_monster_girls
-			influence = 80
+			influence = 100
 		}
 		OR = {
 			technology_group = TECH_ANGEL
@@ -23,7 +23,7 @@ estate_monster_girls_disaster = {
 		has_any_disaster = no
 		estate_influence = {
 			estate = estate_monster_girls
-			influence = 80
+			influence = 100
 		}
 		is_at_war = no
 	}

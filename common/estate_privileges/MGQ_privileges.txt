@@ -1,7 +1,8 @@
 #Generic Privileges for everyone
 estate_nobles_supremacy_over_crown = {
 	icon = privilege_empty_throne
-	max_absolutism = -5
+	max_absolutism = -10
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
 	#influence = 0.1
 	#loyalty = 0.1
 	is_valid = {
@@ -25,6 +26,7 @@ estate_monster_girls_land_rights = {
 	icon = privilege_grant_autonomy
 	land_share = 5
 	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	loyalty = 0.05
 	influence = 0.05
 	can_select = {
@@ -176,6 +178,7 @@ estate_monster_girls_land_rights = {
 estate_autonomy_of_monster_girls = {
 	icon = privilege_tolerance_heathen
 	max_absolutism = -10
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
 	loyalty = 0.1
 	influence = 0.1
 	penalties = {
@@ -194,6 +197,7 @@ estate_autonomy_of_monster_girls = {
 estate_harpy_girls_in_army = {
 	icon = privilege_harpy_girls_in_army
 	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	loyalty = 0.05
 	influence = 0.1
 
@@ -207,6 +211,7 @@ estate_harpy_girls_in_army = {
 estate_alraune_healing_honey = {
 	icon = privilege_alraune_healing_honey
 	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	loyalty = 0.05
 	influence = 0.1
 
@@ -220,6 +225,7 @@ estate_alraune_healing_honey = {
 estate_slime_girls_merchants = {
 	icon = privilege_slime_girls_merchants
 	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	loyalty = 0.05
 	influence = 0.1
 
@@ -233,6 +239,7 @@ estate_slime_girls_merchants = {
 estate_open_mermaid_pubs = {
 	icon = privilege_open_mermaid_pubs
 	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	loyalty = 0.05
 	influence = 0.1
 
@@ -246,6 +253,7 @@ estate_open_mermaid_pubs = {
 estate_open_vampire_pubs = {
 	icon = privilege_open_vampire_pubs
 	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	loyalty = 0.05
 	influence = 0.1
 
@@ -259,6 +267,7 @@ estate_open_vampire_pubs = {
 estate_elven_warfare_standards = {
 	icon = privilege_elven_warfare_standards
 	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	loyalty = 0.05
 	influence = 0.1
 
@@ -272,6 +281,7 @@ estate_elven_warfare_standards = {
 estate_yoma_warfare_standards = {
 	icon = privilege_yoma_warfare_standards
 	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	loyalty = 0.05
 	influence = 0.1
 
@@ -284,6 +294,7 @@ estate_yoma_warfare_standards = {
 estate_weaponized_spooky_scary_ghosts = {
 	icon = privilege_weaponized_spooky_scary_ghosts
 	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	loyalty = 0.05
 	influence = 0.1
 
@@ -296,6 +307,7 @@ estate_weaponized_spooky_scary_ghosts = {
 estate_invite_kitsune_sages = {
 	icon = privilege_invite_kitsune_sages
 	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	loyalty = 0.05
 	influence = 0.1
 
@@ -308,6 +320,7 @@ estate_invite_kitsune_sages = {
 estate_encourage_succubi_to_settle = {
 	icon = privilege_encourage_succubi_to_settle
 	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	loyalty = 0.05
 	influence = 0.1
 
@@ -320,6 +333,7 @@ estate_encourage_succubi_to_settle = {
 estate_insect_girl_swarms = {
 	icon = privilege_insect_girl_swarms
 	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	loyalty = 0.05
 	influence = 0.1
 
@@ -332,6 +346,7 @@ estate_insect_girl_swarms = {
 estate_primacy_of_lamia_nuns = {
 	icon = privilege_primacy_of_lamia_nuns
 	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	loyalty = 0.05
 	influence = 0.1
 
@@ -346,6 +361,7 @@ estate_scylla_maids_in_administration = {
 	icon = privilege_scylla_maids_in_administration
 	land_share = 10
 	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	loyalty = 0.05
 	influence = 0.1
 
@@ -360,6 +376,7 @@ estate_beasts_in_military = {
 	icon = privilege_beasts_in_military
 	land_share = 10
 	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	loyalty = 0.05
 	influence = 0.1
 
@@ -374,6 +391,7 @@ estate_seahorse_marines_in_navy = {
 	icon = privilege_seahorse_marines_in_navy
 	land_share = 10
 	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	loyalty = 0.05
 	influence = 0.1
 
@@ -390,6 +408,7 @@ estate_angels_land_rights = {
 	icon = privilege_grant_autonomy
 	land_share = 5
 	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	loyalty = 0.05
 	influence = 0.05
 	can_select = {
@@ -541,6 +560,7 @@ estate_angels_land_rights = {
 estate_autonomy_of_angels = {
 	icon = privilege_tolerance_heathen
 	max_absolutism = -10
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
 	loyalty = 0.1
 	influence = 0.1
 	penalties = {
@@ -558,6 +578,7 @@ estate_autonomy_of_angels = {
 estate_angel_emissaries = {
 	icon = privilege_angel_emissaries
 	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	loyalty = 0.05
 	influence = 0.1
 	modifier = {
@@ -568,6 +589,7 @@ estate_angel_emissaries = {
 estate_lowly_angels_in_army = {
 	icon = privilege_lowly_angels_in_army
 	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	loyalty = 0.05
 	influence = 0.1
 	is_valid = { 
@@ -585,6 +607,7 @@ estate_lowly_angels_in_army = {
 estate_celestial_nepotism = {
 	icon = privilege_celestial_nepotism
 	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	loyalty = 0.05
 	influence = 0.1
 	is_valid = { 
@@ -601,6 +624,7 @@ estate_celestial_nepotism = {
 estate_strengthen_angel_bond = {
 	icon = privilege_strengthen_angel_bond
 	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	loyalty = 0.05
 	influence = 0.1
 	is_valid = { 
@@ -617,6 +641,7 @@ estate_strengthen_angel_bond = {
 estate_iron_grip_of_goddess = {
 	icon = privilege_iron_grip_of_goddess
 	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	loyalty = 0.05
 	influence = 0.1
 	is_valid = { 
@@ -633,6 +658,7 @@ estate_iron_grip_of_goddess = {
 estate_sinners_punishment = {
 	icon = privilege_sinners_punishment
 	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	loyalty = 0.05
 	influence = 0.1
 	is_valid = { 
@@ -649,6 +675,7 @@ estate_sinners_punishment = {
 estate_angelic_bodies = {
 	icon = privilege_angelic_bodies
 	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	loyalty = 0.05
 	influence = 0.1
 	modifier = {
@@ -660,6 +687,7 @@ estate_angelic_bodies = {
 estate_heavens_thunder = {
 	icon = privilege_heavens_thunder
 	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	loyalty = 0.05
 	influence = 0.1
 	modifier = {
@@ -670,6 +698,7 @@ estate_heavens_thunder = {
 estate_fallen_angels_in_army = {
 	icon = privilege_fallen_angels_in_army
 	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	loyalty = 0.05
 	influence = 0.1
 	is_valid = { 
@@ -686,6 +715,7 @@ estate_fallen_angels_in_army = {
 estate_fallen_angel_dance = {
 	icon = privilege_fallen_angel_dance
 	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	loyalty = 0.05
 	influence = 0.1
 	is_valid = { 
@@ -702,6 +732,7 @@ estate_fallen_angel_dance = {
 estate_angel_monster_coexistence = {
 	icon = privilege_angel_monster_coexistence
 	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	loyalty = 0.05
 	influence = 0.1
 	is_valid = { 
@@ -718,6 +749,7 @@ estate_angel_monster_coexistence = {
 estate_subsidize_angel_farms = {
 	icon = privilege_subsidize_angel_farms
 	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	loyalty = 0.05
 	influence = 0.1
 	is_valid = { 
@@ -734,6 +766,7 @@ estate_subsidize_angel_farms = {
 estate_fallen_angel_workforce = {
 	icon = privilege_fallen_angel_workforce
 	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	loyalty = 0.05
 	influence = 0.1
 	is_valid = { 
@@ -750,6 +783,7 @@ estate_fallen_angel_workforce = {
 estate_scales_of_light = {
 	icon = privilege_scales_of_light
 	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	loyalty = 0.05
 	influence = 0.1
 	is_valid = {
@@ -773,6 +807,7 @@ estate_scales_of_light = {
 estate_luminous_dragon = {
 	icon = privilege_luminous_dragon
 	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	loyalty = 0.05
 	influence = 0.1
 	is_valid = {
@@ -796,6 +831,7 @@ estate_luminous_dragon = {
 estate_embrace_the_otherwordliness = {
 	icon = privilege_embrace_the_otherwordliness
 	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	loyalty = 0.05
 	influence = 0.1
 	is_valid = { 
@@ -833,6 +869,7 @@ estate_spiritualists_land_rights = {
 	icon = privilege_grant_autonomy
 	land_share = 5
 	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	loyalty = 0.05
 	influence = 0.05
 	can_select = {
@@ -982,6 +1019,7 @@ estate_spiritualists_land_rights = {
 estate_autonomy_of_spiritualists = {
 	icon = privilege_tolerance_heathen
 	max_absolutism = -10
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
 	loyalty = 0.1
 	influence = 0.1
 	penalties = {
@@ -1025,6 +1063,7 @@ estate_promote_time_magic = {
 	icon = privilege_promote_time_magic
 	land_share = 10
 	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	loyalty = 0.10
 	influence = 0.10
 	modifier = {		
@@ -1034,6 +1073,7 @@ estate_promote_time_magic = {
 estate_mass_quick = {
 	icon = privilege_promote_time_magic
 	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	loyalty = 0.00
 	influence = 0.10
 	is_valid = {
@@ -1048,6 +1088,7 @@ estate_mass_quick = {
 estate_mass_slow = {
 	icon = privilege_promote_time_magic
 	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	loyalty = 0.00
 	influence = 0.10
 	is_valid = {
@@ -1137,6 +1178,7 @@ estate_practice_necromancy = {
 	icon = privilege_practice_necromancy
 	land_share = 5
 	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	loyalty = 0.05
 	influence = 0.05
 	is_valid = { 
@@ -1161,6 +1203,7 @@ estate_mass_produce_zombies = {
 	icon = privilege_practice_necromancy
 	land_share = 5
 	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	loyalty = 0.05
 	influence = 0.05
 	is_valid = { 
@@ -1174,6 +1217,7 @@ estate_raise_master_undead = {
 	icon = privilege_raise_master_undead
 	land_share = 10
 	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	loyalty = 0.05
 	influence = 0.05
 	is_valid = { 

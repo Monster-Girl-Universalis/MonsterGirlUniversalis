@@ -2,8 +2,9 @@ monarch_power = MIL
 
 # applied when a country is ahead of time in this technology
 # no bonus for MIL currently
-# ahead_of_time = {
-# }
+ahead_of_time = {
+	monthly_russian_modernization = 0.05
+}
 
 # Pre-era techs
 technology = {
@@ -671,6 +672,7 @@ technology = {
 	combat_width = 1
 	
 	enable = chambered_demi_cannon
+	enable = demi_culverin
 	enable = infantry_apt_t16_01
 	enable = infantry_apt_t16_02
 	enable = infantry_und_t16_01
@@ -764,6 +766,7 @@ technology = {
 	enable = mamluk_musket_charge 
 	enable = afsharid_reformed	
 	enable = leather_cannon	
+	enable = chambered_cannon	
 	enable = steppe_mounted_raiders
 	enable = ha_xoloti
 	enable = aboriginal_swarm_cav
@@ -873,7 +876,8 @@ technology = {
 	
 	infantry_fire		= 	0.5
 		
-	enable = swivel_cannon	
+	enable = swivel_cannon
+	enable = howitzer
 	enable = infantry_hum_t20_01
 	enable = infantry_hum_t20_02
 	enable = infantry_hum_t20_03
@@ -926,7 +930,8 @@ technology = {
 	enable = polish_winged_hussar	
 	enable = muscovite_cossack	
 
-	enable = coehorn_mortar		
+	enable = horse_artillery_unit
+	enable = coehorn_mortar
 }
 
 technology = {
@@ -1068,7 +1073,8 @@ technology = {
 	artillery_shock 	=	0.1
 	artillery_fire		=	2.0
 	
-	enable = royal_mortar	
+	enable = royal_mortar
+	enable = licorne
 }
 
 technology = {
@@ -1245,7 +1251,8 @@ technology = {
 	
 	#Defense in Depth
 		
-	enable = flying_battery  
+	enable = flying_battery
+	enable = grand_battery
 }
 
 technology = {

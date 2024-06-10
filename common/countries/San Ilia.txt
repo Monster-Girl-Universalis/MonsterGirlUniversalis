@@ -60,6 +60,7 @@ monarch_names = {
 	"Xavier #0" = 5
 	"Fernando #0" = 5
 	"Nicolas #0" = 5
+	"Peter #0" = 5
 	"Alleria #0" = -20
 	"Ariadne #0" = -20
 	"Augusta #0" = -20

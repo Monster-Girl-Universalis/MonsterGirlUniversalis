@@ -1,0 +1,108 @@
+graphical_culture = asiangfx
+color = { 98 79 227 }
+revolutionary_colors = { 1 3 5 }
+random_nation_chance = 0
+historical_score = 500
+historical_idea_groups = { 
+}
+historical_units = { 
+}
+monarch_names = { 
+	"Motohito #0" = 5
+	"Mihito #0" = 5
+	"Hikohito #0" = 5
+	"Fusahito #0" = 5
+	"Katsuhito #0" = 5
+	"Tomohito #0" = 5
+	"Michihito #0" = 5
+	"Kazuhito #0" = 5
+	"Kotohito #0" = 5
+	"Tsuguhito #0" = 5
+	"Nagahito #0" = 5
+	"Satohito #0" = 5
+	"Asahito #0" = 5
+	"Yasuhito #0" = 5
+	"Teruhito #0" = 5
+	"Hidehito #0" = 5
+	"Morohito #0" = 5
+	"Ayahito #0" = 5
+	"Takauji #0" = 5
+	"Yoshiakira #0" = 5
+	"Yoshimitsu #0" = 5
+	"Yoshimochi #0" = 5
+	"Yoshikazu #0" = 5
+	"Yoshinori #0" = 5
+	"Yoshikatsu #0" = 5
+	"Yoshimasa #0" = 5
+	"Yoshihisa #0" = 5
+	"Yoshitane #0" = 5
+	"Yoshizumi #0" = 5
+	"Yoshiharu #0" = 5
+	"Yoshiteru #0" = 5
+	"Yoshihide #0" = 5
+	"Yoshiaki #0" = 5
+	"Nobutada #0" = 5
+	"Hidenobu #0" = 5
+	"Hideyoshi #0" = 5
+	"Hideyori #0" = 5
+	"Ieyasu #0" = 5
+	"Hidetada #0" = 5
+	"Iemitsu #0" = 5
+	"Ietsuna #0" = 5
+	"Tsunayoshi #0" = 5
+	"Ienobu #0" = 5
+	"Ietsugu #0" = 5
+	"Yoshimune #0" = 5
+	"Ieshige #0" = 5
+	"Ieharu #0" = 5
+	"Ienari #0" = 5
+	"Ieyoshi #0" = 5
+	"Iesada #0" = 5
+	"Iemochi #0" = 5
+	"Yoshinobu #0" = 5
+	"Aria #0" = -20
+	"Lila #0" = -20
+	"Albina #0" = -20
+	"Jakotsu #0" = -20
+	"Sofia #0" = -20
+	"Serpentina #0" = -20
+	"Odette #0" = -20
+	"Tsubasa #0" = -20
+	"Leene #0" = -20
+	"Sara #0" = -20
+	"Diusa #0" = -20
+	"Mitsuko #0" = -20
+	"Selene #0" = -20
+	"Stella #0" = -20
+	"Sonya #0" = -20
+	"Ena #0" = -20
+	"Anna #0" = -20
+	"Teresa #0" = -20
+	"Julia #0" = -20
+	"Janette #0" = -20
+	"Yvette #0" = -20
+	"Elisabeth #0" = -20
+	"Emily #0" = -20
+	"Anastasia #0" = -20
+	"Mia #0" = -20
+	"Mamba #0" = -20
+	"Amira #0" = -20
+}
+leader_names = { 
+	Viperstone Serpentfang Blackscale Cobrashadow Scalespire Venomheart Fangtail Serpenthorn Slithertongue Slytherskin
+	Scalecoil Fangstrike Serpentine Vipertide Cobrashield Scaleslash Venomwhisper Fanggaze Serpentcry Blackthorn Scalestrike
+	Cobrawhisper Vipercoil Fangspear Serpentcrest Scaleswift Venomfang Slitherstrike Vipercrawl
+}
+ship_names = { 
+	Serpentia Venomfang Cobraclasp Scalewind Medusafury Pythonstrike Anacondareef Vipercrest
+	Serpentgale Lamiafang Reptiliancoil Scyllisnake Nagaship Rattlerider Copperhead Serpentwhisper
+	Vipervoyage Hissedance Maraviper Constrictor Serpentongue Scaleroar Fangfleet Aspwave
+	Hydrasnake Coilcrest "Lamia's Sway" "Python's Grace" Cobramight Scalewind Slitherin Mambastryke
+	Cursedancer Lorensnare Lustcrusher Anacondread Nagashadow Medusail Serpentia
+}
+army_names = { 
+	"Lamia Queen Army" "Nightmare Lamia Army" "Lamia Saint Army" "Shirohebi Army" "$PROVINCE$ Army" 
+}
+fleet_names = { 
+	"Lamia Queen Navy" "Nightmare Lamia Navy" "Lamia Saint Navy" "Shirohebi Navy" "$PROVINCE$ Navy" 
+}

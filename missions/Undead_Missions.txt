@@ -44,7 +44,7 @@ undead_internal_development = {
 		position = 2
 		
 		trigger = {
-			share_of_starting_income = 2
+			share_of_starting_income = 3
 		}
 		
 		effect = {

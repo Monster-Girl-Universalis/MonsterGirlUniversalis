@@ -1,0 +1,88 @@
+namespace = apoptosis_spawn
+
+country_event = {
+	id = apoptosis_spawn.1
+	title = "apoptosis_spawn.1.t"
+	desc = "apoptosis_spawn.1.desc"
+	picture = XX_APOPTOSIS_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {		#Spawn apoptosis
+		name = apoptosis_spawn.1.a
+		SO1 = {
+			2089 = {
+				cede_province = SO1
+				add_core = SO1
+			}
+			add_country_modifier = {
+				name = "invasion_nation"
+				duration = -1
+			}
+			add_treasury = 100000
+			add_manpower = 300
+			add_sailors = 30
+			create_unit_forcelimit_percentage = {
+				type = infantry
+				force_limit_percentage = 0.90
+			}
+			create_unit_forcelimit_percentage = {
+				type = artillery
+				force_limit_percentage = 0.10
+			}
+			define_ruler = {
+				name = "Sonyachaos"
+				dynasty = "Apostle of Chaos"
+				birth_date = 1424.1.1
+				adm = 6
+				dip = 6
+				mil = 6
+				female = yes			
+			}
+			add_ruler_personality = immortal_personality
+		}
+	}
+}
+country_event = {
+	id = apoptosis_spawn.2
+	title = "apoptosis_spawn.2.t"
+	desc = "apoptosis_spawn.2.desc"
+	picture = XX_APOPTOSIS_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {		#Spawn apoptosis
+		name = apoptosis_spawn.2.a
+		AD1 = {
+			971 = {
+				cede_province = AD1
+				add_core = AD1
+			}
+			add_country_modifier = {
+				name = "invasion_nation"
+				duration = -1
+			}
+			add_treasury = 100000
+			add_manpower = 300
+			add_sailors = 30
+			create_unit_forcelimit_percentage = {
+				type = infantry
+				force_limit_percentage = 0.90
+			}
+			create_unit_forcelimit_percentage = {
+				type = artillery
+				force_limit_percentage = 0.10
+			}
+			define_ruler = {
+				name = "Cleo Adra"
+				dynasty = "Apostle of Chaos"
+				birth_date = 1424.1.1
+				adm = 6
+				dip = 6
+				mil = 6
+				female = yes			
+			}
+			add_ruler_personality = immortal_personality
+		}
+	}
+}

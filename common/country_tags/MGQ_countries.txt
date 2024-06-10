@@ -356,3 +356,8 @@ VA6 = "countries/Vampire Queen Domain.txt"
 HQ1 = "countries/Harpy Queen Domain.txt"
 IQ1 = "countries/Insect Queen Domain.txt"
 DQ1 = "countries/Deep Sea Queen Domain.txt"
+LQ1 = "countries/Lamia Queen Domain.txt"
+
+
+AD1 = "countries/Adramelech.txt"
+SO1 = "countries/Sonyachaos.txt"

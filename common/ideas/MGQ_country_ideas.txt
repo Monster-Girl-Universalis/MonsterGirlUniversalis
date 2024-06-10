@@ -1371,52 +1371,7 @@ HM1_ideas = {
 		morale_damage_received = -0.075
 	}
 }
-#The Pyramid
-PY1_ideas = {
-	start = {
-		prestige = 1.5
-		#may_establish_frontier = yes
-		#auto_explore_adjacent_to_colony = yes
-		may_recruit_female_generals = yes
-	}
 
-	bonus = {		
-		legitimacy = 1.5
-		republican_tradition = 0.45
-		devotion = 1.5
-		horde_unity = 1.5
-		meritocracy = 0.75
-	}
-	
-	trigger = {
-		tag = PY1
-	}
-	free = yes
-
-	PY1_riddles_of_the_sphinx = {		
-		advisor_cost = -0.25
-	}
-	PY1_monumental_heritage = {		
-		global_tax_modifier = 0.25
-	}
-	PY1_astronomical_wisdom = {
-		all_power_cost = -0.05
-	}
-	PY1_pyramid_restoration = {
-		build_cost = -0.15
-		great_project_upgrade_cost = -0.15
-	}
-	PY1_mummification_mastery = {
-		morale_damage_received = -0.15
-	}
-	PY1_ancient_sphynx_yoma = {		
-		fire_damage = 0.15
-	}
-	PY1_ties_with_sabasa = {
-		diplomatic_upkeep = 1
-		diplomatic_reputation = 1
-	}
-}
 #Sabasa
 SA1_ideas = {
 	start = {
@@ -4179,29 +4134,29 @@ IQ1_ideas = {
 	}
 	free = yes
 
-    IQ1_chitinous_armor = {
-        shock_damage_received = -0.15
-	defensiveness = 0.25
-    }
-    IQ1_legion_mothers = {
-        global_manpower_modifier = 0.33
-    }
-    IQ1_insect_fertility = {
-	manpower_recovery_speed = 0.33
-    }
-    IQ1_underworld_insects = {
-        fire_damage_received = -0.15
-    }
-    IQ1_swarm_formation = {
-	land_forcelimit_modifier = 0.33
-    }
-    IQ1_hive_workforce = {
-	build_time = -0.15
-	great_project_upgrade_time = -0.15
-    }
-    IQ1_hive_infrastructure = {
-        global_allowed_num_of_buildings = 1
-    }
+	IQ1_chitinous_armor = {
+        	shock_damage_received = -0.15
+		defensiveness = 0.25
+	}
+	IQ1_legion_mothers = {
+		global_manpower_modifier = 0.33
+	}
+	IQ1_insect_fertility = {
+		manpower_recovery_speed = 0.33
+	}
+	IQ1_underworld_insects = {
+		fire_damage_received = -0.15
+	}
+	IQ1_swarm_formation = {
+		land_forcelimit_modifier = 0.33
+	}
+	IQ1_hive_workforce = {
+		build_time = -0.15
+		great_project_upgrade_time = -0.15
+	}
+	IQ1_hive_infrastructure = {
+		global_allowed_num_of_buildings = 1
+	}
 }
 #Deep Sea Queen Domain
 DQ1_ideas = {
@@ -4225,29 +4180,75 @@ DQ1_ideas = {
 	}
 	free = yes
 
-    DQ1_oceanic_excellence = {
-        navy_tradition = 1.5
-    }
-    DQ1_royal_governance = {
-	prestige = 1
-	state_maintenance_modifier = -0.25
-    }
-    DQ1_enchanted_currents = {
-	ship_trade_power_modifier = 0.50
-    }
-    DQ1_marine_mastery = {
-        naval_morale = 0.20
-    }
-    DQ1_sea_palace_maiko = {
-	improve_relation_modifier = 0.33
-    }
-    DQ1_water_element_affinity = {
-	morale_damage_received = -0.10
-	leader_land_manuever = 1
-	leader_naval_manuever = 1
-    }
-    DQ1_super_sea_strength = {
-        heavy_ship_power = 0.25
-	galley_power = 0.25
-    }
+	DQ1_oceanic_excellence = {
+		navy_tradition = 1.5
+	}
+	DQ1_royal_governance = {
+		prestige = 1
+		state_maintenance_modifier = -0.25
+	}
+	DQ1_enchanted_currents = {
+		ship_trade_power_modifier = 0.50
+	}
+	DQ1_marine_mastery = {
+		naval_morale = 0.20
+	}
+	DQ1_sea_palace_maiko = {
+		improve_relation_modifier = 0.33
+	}
+	DQ1_water_element_affinity = {
+		morale_damage_received = -0.10
+		leader_land_manuever = 1
+		leader_naval_manuever = 1
+	}
+	DQ1_super_sea_strength = {
+		heavy_ship_power = 0.25
+		galley_power = 0.25
+	}
+}
+#Lamia Queen Domain
+LQ1_ideas = {
+	start = {
+		defensiveness = 0.30
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+
+	bonus = {		
+		advisor_cost = -0.15
+		administrative_efficiency = 0.05
+	}
+	
+	trigger = {
+		OR = {
+			tag = LQ1
+		}
+	}
+	free = yes
+
+	LQ1_serpentine_grace = {
+		diplomatic_reputation = 2
+	}
+	LQ1_venomous_assault = {
+		morale_damage = 0.10
+	}
+	LQ1_boa_lamias = {
+		infantry_shock = 1
+		infantry_power = 0.15
+	}
+	LQ1_white_snake_kagura_dance = {
+		land_morale = 0.20
+	}
+	LQ1_legacy_of_aria_lamia = {
+		improve_relation_modifier = 0.20
+		recover_army_morale_speed = 0.15
+	}
+	LQ1_lamia_saints = {
+		development_cost = -0.125
+	}
+	LQ1_royal_governance = {
+		prestige = 1
+		state_maintenance_modifier = -0.25
+	}
 }

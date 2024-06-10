@@ -2,7 +2,7 @@
 culture = slums_human
 religion = ilias_light_religion
 trade_goods = naval_supplies
-base_tax = 3
+base_tax = 2
 base_production = 3
 base_manpower = 2
 native_size = 0

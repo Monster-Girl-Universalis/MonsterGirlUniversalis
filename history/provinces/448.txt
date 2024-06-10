@@ -1,7 +1,7 @@
 add_core = MDS
 owner = MDS
 base_tax = 3
-base_manpower = 3
+base_manpower = 2
 base_production = 3
 culture = Slug_Girl
 religion = monster_lord_religion

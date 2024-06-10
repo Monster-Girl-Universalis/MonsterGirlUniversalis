@@ -1,0 +1,2846 @@
+haunted_mansion_demon_lord = {
+
+	slot = 1
+	generic = no
+	ai = yes
+	
+	potential = {
+		tag = HM1
+	}
+	has_country_shield = yes
+	
+	haunted_mansion_demon_lord_1 = {
+		icon = mission_monster_lord_15th
+		required_missions = { }
+		position = 1
+		
+		
+		
+		
+		
+		trigger = {
+		
+		
+			prestige = 50
+			
+			OR = {
+			
+			is_rival = ML1
+			reverse_has_opinion = {
+					who = ML1
+					value = 100
+				}
+			
+			
+			}
+			
+			
+			
+			}
+		effect = {
+			
+			capital_scope = {
+				
+				area = {
+					limit = { owned_by = ROOT }
+					add_province_modifier = {
+						name = "getting_labs_ready"
+						duration = -1 
+					}
+				}
+			}
+			
+			
+			
+		}
+	}
+	
+	haunted_mansion_demon_lord_2 = {
+		icon = mission_mountain_metals
+		required_missions = { haunted_mansion_demon_lord_1}
+		position = 2
+		
+		provinces_to_highlight = {
+		OR = {
+			province_id = 616
+			province_id = 610
+			province_id = 609
+			province_id = 620
+			province_id = 607
+			province_id = 619
+			}
+			
+		}
+		
+		
+		
+		
+		
+		trigger = {
+		
+		616 = { 
+				owned_by = ROOT
+				
+				OR = {
+					has_production_building_trigger = yes
+					trade_goods = gold
+				}
+				
+			}
+		610 = { 
+				owned_by = ROOT
+				
+				OR = {
+					has_production_building_trigger = yes
+					trade_goods = gold
+				}
+				
+			}
+		609 = { 
+				owned_by = ROOT
+				
+				OR = {
+					has_production_building_trigger = yes
+					trade_goods = gold
+				}
+				
+			}
+		620 = { 
+				owned_by = ROOT
+				
+				OR = {
+					has_production_building_trigger = yes
+					trade_goods = gold
+				}
+				
+			}
+		607 = { 
+				owned_by = ROOT
+				
+				OR = {
+					has_production_building_trigger = yes
+					trade_goods = gold
+				}
+				
+			}
+		619 = { 
+				owned_by = ROOT
+				
+				OR = {
+					has_production_building_trigger = yes
+					trade_goods = gold
+				}
+				
+			}
+		
+			
+			
+			
+			
+			
+			}
+		effect = {
+			
+			616 = { 
+				
+				
+				change_trade_goods = iron
+				add_base_production = 1
+				
+			}
+		610 = { 
+				
+				change_trade_goods = iron
+				add_base_production = 1
+				
+			}
+		609 = { 
+				
+				change_trade_goods = iron
+				add_base_production = 1
+				
+				
+			}
+		620 = { 
+				
+				change_trade_goods = iron
+				add_base_production = 1
+				
+				
+			}
+		607 = { 
+				change_trade_goods = iron
+				add_base_production = 1
+				
+				
+				
+			}
+		619 = { 
+			change_trade_goods = iron
+			add_base_production = 1
+				
+				
+				
+			}
+			
+			
+			
+		}
+	}
+	
+	
+	
+	haunted_mansion_demon_lord_3 = {
+		icon = mission_recruit_the_cossacks
+		required_missions = { haunted_mansion_demon_lord_2}
+		position = 3
+		
+		
+		
+		
+		
+		
+		
+		trigger = {
+		
+	
+		treasury = 300
+			
+			
+			
+			
+			
+			}
+		effect = {
+			
+			
+			add_country_modifier = {
+					name = hm_mountain_expedition
+					duration = 3650
+				}
+			
+			
+		}
+	}
+	
+	haunted_mansion_demon_lord_4 = {
+		icon = mission_war_chest
+		required_missions = { haunted_mansion_demon_lord_3}
+		position = 5
+		
+		provinces_to_highlight = {
+		OR = {
+			province_id = 598
+			province_id = 599
+			province_id = 600
+			
+			}
+			
+		}
+		
+		
+		
+		
+		
+		trigger = {
+		
+		NOT = { has_country_modifier = hm_mountain_expedition }
+		
+	
+			OR = {
+			
+			AND = { 
+			598 = {
+				owned_by = 
+			}
+			599 = {
+				owned_by = 
+			}
+			600 = {
+				owned_by = 
+			}
+			}
+			AND = {
+			
+			598 = {
+				owned_by = HM1
+			}
+			599 = {
+				owned_by = HM1
+			}
+			600 = {
+				owned_by = HM1
+			}
+			
+			
+			
+			
+			}
+			
+			
+			
+			
+			}
+			
+			
+			}
+		effect = {
+			598 = {
+				cede_province = HM1
+				change_trade_goods = iron
+				change_religion = seekers_of_truth_religion
+			}
+			599 = {
+				cede_province = HM1
+				change_trade_goods = iron
+				change_religion = seekers_of_truth_religion
+			}
+			600 = {
+				cede_province = HM1
+				change_trade_goods = iron
+				change_religion = seekers_of_truth_religion
+			}
+			HM1 = {
+			add_core = 598
+			add_core = 599
+			add_core = 600
+		}
+		
+		
+		
+		grizzly_rocks = {
+			limit = { 
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT } 
+			}
+			add_permanent_claim = ROOT 
+		}
+		anteater_hills = {
+			limit = { 
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT } 
+			}
+			add_permanent_claim = ROOT 
+		}
+			
+			
+			
+			
+		}
+	}
+	
+	haunted_mansion_demon_lord_5 = {
+		icon = mission_anteater
+		required_missions = { haunted_mansion_demon_lord_4}
+		position = 6
+		
+		
+		provinces_to_highlight = {
+			OR = {
+				area = grizzly_rocks
+				area = anteater_hills
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		
+		
+		
+		trigger = {
+		
+		grizzly_rocks = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		
+	    anteater_hills = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			
+			
+			
+			}
+		effect = {
+			
+			st_amos_region = {
+			limit = { 
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT } 
+			}
+			add_permanent_claim = ROOT 
+			
+			}
+			
+		}
+	}
+	
+	haunted_mansion_demon_lord_6 = {
+		icon = mission_red_mushrooms
+		required_missions = { haunted_mansion_demon_lord_5}
+		position = 7
+		
+		
+		provinces_to_highlight = {
+			OR = {
+				region = st_amos_region
+				
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		
+		
+		
+		trigger = {
+		
+		st_amos_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		
+	    
+			
+			
+			
+			}
+		effect = {
+			
+			st_amos_region = {
+			limit = { owned_by = ROOT }
+				add_province_modifier = {
+					name = "hm_integration"
+					duration = 9125
+				}
+			 
+			
+			}
+			add_ruler_modifier = {
+			name = hm_kinoko_mushrooms 
+		}
+			
+		}
+	}
+	
+haunted_mansion_demon_lord_7 = {
+		icon = mission_slime_bess
+		required_missions = { haunted_mansion_security_7}
+		position = 8
+		
+		provinces_to_highlight = {
+			OR = {
+				area = slime_bess_plains
+				area = slime_bess_area
+				
+				
+			}
+			OR = {
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			NOT = {religion = seekers_of_truth_religion}
+			}
+		}
+		
+		
+		
+		
+		
+		trigger = {
+		
+		slime_bess_plains = {
+				type = all
+				owned_by = ROOT
+				religion = seekers_of_truth_religion
+				
+			}
+		slime_bess_area = {
+				type = all
+				owned_by = ROOT
+				religion = seekers_of_truth_religion
+				
+			}
+			religion = seekers_of_truth_religion
+		
+	    
+			
+			
+			
+			}
+		effect = {
+			
+			monte_carlo_region = {
+			limit = { 
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT } 
+			}
+			add_permanent_claim = ROOT 
+			
+			}
+			
+		}
+	}
+	
+	
+haunted_mansion_demon_lord_8 = {
+		icon = mission_empire
+		required_missions = { haunted_mansion_demon_lord_7}
+		position = 9
+		
+		provinces_to_highlight = {
+			OR = {
+				area = monte_carlo_area
+				area = western_natalia_road
+				area = safina_mountain_pass
+				area = safina_road_area
+				
+				
+			}
+		
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			
+			
+		}
+		
+		
+		
+		
+		
+		trigger = {
+		
+		
+		
+		
+		    monte_carlo_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			western_natalia_road = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			safina_mountain_pass = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			safina_road_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			
+			
+			
+	    
+			
+			
+			
+			}
+		effect = {
+			
+			add_country_modifier = {
+					name = hm_conquer_1
+					duration = 9125
+				}
+			
+		}
+	}
+	
+	
+haunted_mansion_demon_lord_9 = {
+		icon = mission_alraune_embrace_natures_dominion
+		required_missions = { haunted_mansion_demon_lord_8}
+		position = 10
+		
+		provinces_to_highlight = {
+			
+				province_id = 679
+			
+		}
+		
+		
+		
+		
+		
+		trigger = {
+		
+		accepted_culture = Watermelon_Girl
+		679 = { 
+				owned_by = ROOT
+				
+				has_building = ramparts
+				has_fort_building_trigger = yes
+			}
+	    
+			
+			
+			
+			}
+		effect = {
+			
+			679 = {
+				change_culture = Watermelon_Girl
+				change_trade_goods = dyes
+				add_province_modifier = {
+					name = hm_alraune_fortress
+					duration = -1
+				}
+				add_province_modifier = {
+					name = hm_alraune_activity
+					duration = -1
+				}
+			
+			
+			
+		}
+			
+		}
+	}
+	
+
+haunted_mansion_demon_lord_10 = {
+		icon = mission_tarantula
+		required_missions = { haunted_mansion_demon_lord_9}
+		position = 11
+		
+		provinces_to_highlight = {
+			OR = {
+				area = tarantula_wastelands
+				
+				
+				
+			}
+		
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			
+			
+		}
+		
+		
+		
+		
+		
+		trigger = {
+		
+		
+	    tarantula_wastelands = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			
+			
+			
+			}
+		effect = {
+			675 = { 
+				
+				change_culture = Watermelon_Girl
+				change_trade_goods = cotton
+				add_base_production = 2
+				
+				
+			}
+			674 = { 
+				
+				change_culture = Watermelon_Girl
+				change_trade_goods = cotton
+				add_base_production = 2
+				
+				
+			}
+			676 = { 
+				
+				change_culture = Watermelon_Girl
+				change_trade_goods = cotton
+				add_base_production = 2
+				
+				
+			}
+			677 = { 
+				
+				change_culture = Watermelon_Girl
+				change_trade_goods = cotton
+				add_base_production = 2
+				
+				
+			}
+			678 = { 
+				
+				change_culture = Watermelon_Girl
+				change_trade_goods = cotton
+				add_base_production = 2
+				
+				
+			}
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+haunted_mansion_security = {
+
+	slot = 2
+	generic = no
+	ai = yes
+	
+	potential = {
+		tag = HM1
+	}
+	has_country_shield = yes
+	
+	haunted_mansion_security_1 = {
+		icon = mission_assemble_an_army
+		required_missions = { }
+		position = 1
+		
+		
+		
+		
+		
+		trigger = {
+		
+		num_of_allies = 3
+			
+			
+			}
+		effect = {
+			
+			add_country_modifier = {
+					name = hm_alliances
+					duration = 9125
+				}
+			
+			
+			
+		}
+	}
+	
+
+haunted_mansion_security_2 = {
+		icon = mission_fortify_the_realm
+		required_missions = { 
+		
+		haunted_mansion_security_1
+		haunted_mansion_demon_lord_1
+		}
+		position = 2
+		
+		provinces_to_highlight = {
+		
+			province_id = 611
+			
+			
+		}
+		
+		
+		
+		trigger = {
+		
+		611 = { 
+				owned_by = ROOT
+				
+				
+				has_fort_building_trigger = yes
+			}
+			
+			
+			}
+			
+			
+			
+		
+		
+		
+		effect = {
+			
+			611 = {
+				
+				
+				add_province_modifier = {
+					name = haunted_fort
+					duration = -1
+				}
+			
+			
+			
+		}
+	}
+	
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+haunted_mansion_security_3 = {
+		icon = mission_undead_grandeur_necromancer_mansion
+		required_missions = { 
+		
+		haunted_mansion_security_2
+		
+		}
+		position = 3
+		
+		provinces_to_highlight = {
+		
+			province_id = 617
+			
+			
+		}
+		
+		
+		
+		trigger = {
+		
+		617 = { 
+				owned_by = ROOT
+				development = 20
+				
+			NOT = {devastation = 1}
+			}
+			
+			
+			}
+			
+			
+			
+		
+		
+		
+		effect = {
+			
+			617 = {
+				
+				
+				add_province_modifier = {
+					name = happy_ghosts
+					duration = -1
+				}
+			
+			
+			
+		}
+	}
+	
+
+
+
+
+
+
+
+
+
+
+
+}
+
+haunted_mansion_security_6 = {
+		icon = mission_monster_lord_15th
+		required_missions = { 
+		
+		haunted_mansion_security_3
+		haunted_mansion_west_3
+		haunted_mansion_demon_lord_4
+		haunted_mansion_plant_5
+		
+		}
+		position = 6
+		
+		
+		
+		
+		
+		trigger = {
+		
+		is_in_deficit = no
+		monthly_adm = 11
+		natural_scientist = 1
+		diplomat = 1
+			
+			
+			}
+			
+			
+			
+		
+		
+		
+		effect = {
+			add_ruler_modifier = {
+			name = hm_bold_apprentices
+		}
+			
+	}
+	
+
+
+
+
+
+
+
+
+
+
+
+}
+
+haunted_mansion_security_7 = {
+		icon = mission_chrome_necromaster
+		required_missions = { 
+		
+		haunted_mansion_security_6
+		
+		
+		
+		
+		}
+		position = 7
+		
+		
+		
+		
+		
+		trigger = {
+		
+		religion = seekers_of_truth_religion
+		num_of_owned_provinces_with = {
+	value = 40
+	has_owner_religion = yes
+	
+	
+}
+			
+			
+			}
+			
+			
+			
+		
+		
+		
+		effect = {
+			remove_ruler_personality = just_personality
+remove_ruler_personality = righteous_personality
+remove_ruler_personality = tolerant_personality
+remove_ruler_personality = kind_hearted_personality
+remove_ruler_personality = free_thinker_personality
+remove_ruler_personality = well_connected_personality
+remove_ruler_personality = calm_personality
+remove_ruler_personality = careful_personality
+remove_ruler_personality = secretive_personality
+remove_ruler_personality = intricate_web_weaver_personality
+remove_ruler_personality = fertile_personality
+remove_ruler_personality = well_advised_personality
+remove_ruler_personality = benevolent_personality
+remove_ruler_personality = zealot_personality 
+remove_ruler_personality = pious_personality
+remove_ruler_personality = lawgiver_personality
+remove_ruler_personality = midas_touched_personality
+remove_ruler_personality = incorruptible_personality
+remove_ruler_personality = architectural_visionary_personality
+remove_ruler_personality = scholar_personality
+remove_ruler_personality = entrepreneur_personality
+remove_ruler_personality = industrious_personality
+remove_ruler_personality = expansionist_personality
+remove_ruler_personality = charismatic_negotiator_personality
+remove_ruler_personality = silver_tongue_personality
+remove_ruler_personality = conqueror_personality
+remove_ruler_personality = tactical_genius_personality
+remove_ruler_personality = bold_fighter_personality
+remove_ruler_personality = strict_personality
+remove_ruler_personality = inspiring_leader_personality
+remove_ruler_personality = martial_educator_personality
+remove_ruler_personality = navigator_personality
+remove_ruler_personality = fierce_negotiator_personality
+remove_ruler_personality = babbling_buffoon_personality
+remove_ruler_personality = embezzler_personality
+remove_ruler_personality = infertile_personality
+remove_ruler_personality = drunkard_personality
+remove_ruler_personality = sinner_personality
+remove_ruler_personality = greedy_personality
+remove_ruler_personality = cruel_personality
+remove_ruler_personality = naive_personality
+remove_ruler_personality = craven_personality
+remove_ruler_personality = loose_lips_personality
+remove_ruler_personality = obsessive_perfectionist_personality
+remove_ruler_personality = malevolent_personality
+remove_ruler_personality = reformist_personality
+remove_ruler_personality = enlightened_personality
+remove_ruler_personality = absolutist_personality
+remove_ruler_personality = legendary_pirate_personality
+
+
+
+    add_ruler_personality = immortal_personality
+	add_ruler_personality = zealot_personality
+	add_ruler_personality = scholar_personality
+	
+	sandworm_coast = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			
+	mirage_coast = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+
+
+			
+	}
+	
+
+
+
+
+
+
+
+
+
+
+
+}
+
+haunted_mansion_security_8 = {
+		icon = mission_kagetsumugi_the_puppeteer
+		required_missions = { 
+		
+		haunted_mansion_security_7
+		
+		
+		}
+		position = 8
+		
+		
+		
+		
+		
+		trigger = {
+		OR = {
+		
+		PT1 = { NOT = {total_development = 250}}
+		alliance_with = PT1
+		
+		}
+		
+			
+			
+			}
+			
+			
+			
+		
+		
+		
+		effect = {
+			add_power_projection = { 
+	type = 25_permanent_power_projection
+	amount = 25 
+}
+			
+	}
+	
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+haunted_mansion_security_9 = {
+		icon = mission_minotauros
+		required_missions = { 
+		
+	haunted_mansion_demon_lord_8
+		
+		
+		}
+		position = 10
+		
+		provinces_to_highlight = {
+			OR = {
+				area = carlos_hill_area
+				area = lamia_area
+				area = minotaur_steppes
+				area = shellfish_coast_area
+				
+				
+			}
+		
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			
+			
+		}
+		
+		
+		
+		
+		
+		trigger = {
+		
+		
+		
+		
+		    carlos_hill_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			lamia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			minotaur_steppes = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			shellfish_coast_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			
+			
+			
+	    
+			
+			
+			
+			}
+			
+			
+			
+		
+		
+		
+		effect = {
+			
+			puppeteer_tower_region = {
+			limit = { 
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT } 
+			}
+			add_permanent_claim = ROOT 
+			
+			}
+			
+		}
+	
+
+
+
+
+
+
+
+
+
+
+
+}
+
+haunted_mansion_security_10 = {
+		icon = mission_kagetsumugi_the_puppeteer2
+		required_missions = { 
+		
+haunted_mansion_security_9
+		
+		
+		}
+		position = 11
+		
+		provinces_to_highlight = {
+			OR = {
+				region = puppeteer_tower_region
+				
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		
+		
+		
+		
+		trigger = {
+		
+		puppeteer_tower_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		
+	    
+			
+			
+			
+			}
+			
+			
+			
+		
+		
+		
+		effect = {
+			
+			add_ruler_modifier = {
+			name = hm_doll_victory
+		}
+			
+		}
+	
+
+
+
+
+
+
+
+
+
+
+
+}
+
+haunted_mansion_security_11 = {
+		icon = mission_natalia_region
+		required_missions = { 
+		
+haunted_mansion_security_10
+haunted_mansion_demon_lord_10
+		
+		}
+		position = 12
+		
+		provinces_to_highlight = {
+			OR = {
+				region = puppeteer_tower_region
+				region = monte_carlo_region
+				region = st_amos_region 
+				region = san_ilia_region
+				region = port_natalia_region
+				region = forest_of_spirits_region 
+				
+				
+			}
+			OR = {
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			NOT = {Religion = seekers_of_truth_religion}
+			}
+			
+		}
+		
+		
+		
+		
+		
+		trigger = {
+		
+		puppeteer_tower_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+				religion = seekers_of_truth_religion
+			}
+			monte_carlo_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+				religion = seekers_of_truth_religion
+			}
+			st_amos_region  = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+				religion = seekers_of_truth_religion
+			}
+			san_ilia_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+				religion = seekers_of_truth_religion
+			}
+			port_natalia_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+				religion = seekers_of_truth_religion
+			}
+			forest_of_spirits_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+				religion = seekers_of_truth_religion
+			}
+		
+	    
+			
+			
+			
+			}
+			
+			
+			
+		
+		
+		
+		effect = {
+			
+			add_country_modifier = {
+					name = hm_necro_protector
+					duration = -1
+				}
+			
+		}
+	
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+}
+
+
+
+haunted_mansion_west = {
+
+	slot = 3
+	generic = no
+	ai = yes
+	
+	potential = {
+		tag = HM1
+	}
+	has_country_shield = yes
+	
+	haunted_mansion_west_1 = {
+		icon = mission_establish_high_seas_navy
+		required_missions = { }
+		position = 1
+		
+		
+		provinces_to_highlight = {
+		
+			province_id = 605
+			
+			
+		}
+		
+		
+		trigger = {
+		
+		
+			605 = { 
+				owned_by = ROOT
+				development = 12
+				
+				
+			
+			}
+			
+			}
+		effect = {
+			
+			
+			605 = {
+				
+				
+				add_province_modifier = {
+					name = hm_naval_base
+					duration = -1
+				}
+			
+			
+			
+		}
+		985 = {
+			limit = { 
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT } 
+			}
+			add_permanent_claim = ROOT 
+		}
+			
+			
+		}
+	}
+	
+
+haunted_mansion_west_2 = {
+		icon = mission_gold_mine
+		required_missions = { 
+		
+		haunted_mansion_west_1
+
+		}
+		position = 2
+		
+		provinces_to_highlight = {
+		
+			province_id = 985
+			
+			
+		}
+		
+		
+		
+		trigger = {
+		
+		985 = { 
+				owned_by = ROOT
+				
+				
+				
+			}
+			
+			
+			estate_loyalty = {
+    estate = estate_monster_girls
+    loyalty = 60
+}
+estate_influence = {
+    estate = estate_monster_girls
+    influence = 60
+}
+			
+			}
+			
+			
+			
+		
+		
+		
+		effect = {
+			
+			985 = {
+				
+				
+				add_province_modifier = {
+					name = hm_gold_deplete
+					duration = -1
+				}
+			
+			
+			
+		}
+		
+		administrator_strait_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			safina_tartarus = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			southern_safina_swamps = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			western_safina_swamp = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		
+		
+		
+		
+		
+	}
+	
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+haunted_mansion_west_3 = {
+		icon = mission_chimera_homunculus
+		required_missions = { 
+		
+		haunted_mansion_west_2
+		
+		}
+		position = 5
+		
+		provinces_to_highlight = {
+			OR = {
+				area = administrator_strait_area
+				area = safina_tartarus
+				area = southern_safina_swamps
+				area = western_safina_swamp
+				
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		
+		
+		trigger = {
+		
+		administrator_strait_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			safina_tartarus = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			southern_safina_swamps = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			western_safina_swamp = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			
+			
+			}
+			
+			
+			
+		
+		
+		
+		effect = {
+			
+			
+			add_ruler_modifier = {
+			name = hm_fruits_studying_safina
+		}
+		
+		administrator_strait_area = {
+			limit = { owned_by = ROOT }
+				add_province_modifier = {
+					name = "hm_undead_researchers"
+					duration = 18250
+				}
+			 
+			
+			}
+			safina_tartarus = {
+			limit = { owned_by = ROOT }
+				add_province_modifier = {
+					name = "hm_undead_researchers"
+					duration = 18250
+				}
+			 
+			
+			}
+			southern_safina_swamps = {
+			limit = { owned_by = ROOT }
+				add_province_modifier = {
+					name = "hm_undead_researchers"
+					duration = 18250
+				}
+			 
+			
+			}
+			western_safina_swamp = {
+			limit = { owned_by = ROOT }
+				add_province_modifier = {
+					name = "hm_undead_researchers"
+					duration = 18250
+				}
+			 
+			
+			}
+			
+			
+		}
+	}
+	
+	haunted_mansion_west_4 = {
+		icon = mission_undead_prepare_zombie_hordes
+		required_missions = { 
+		
+		haunted_mansion_west_3
+		
+		}
+		position = 6
+		
+		
+		
+		
+		
+		trigger = {
+		primary_culture = Zombie_Girl
+		
+		num_of_owned_provinces_with = {
+	value = 20
+	has_owner_culture = yes
+	
+	
+}
+			
+			
+			}
+			
+			
+			
+		
+		
+		
+		effect = {
+			
+			add_country_modifier = {
+					name = hm_abundant_zombie_girls
+					duration = -1
+				}
+			
+			
+			
+		}
+	}
+	
+	
+	
+	
+	
+haunted_mansion_west_5 = {
+		icon = mission_bedouins
+		required_missions = { 
+		
+		haunted_mansion_security_7
+		
+		}
+		position = 8
+		
+		provinces_to_highlight = {
+			OR = {
+				area = sandworm_coast
+				area = mirage_coast
+				
+			}
+			NOT = { owned_by = ROOT }
+		}
+		
+		
+		
+		
+		trigger = {
+		
+		sandworm_coast = {
+				type = all
+				owned_by = ROOT
+				
+			}
+		mirage_coast = {
+				type = all
+				owned_by = ROOT
+				
+				
+			}
+			
+			
+			}
+			
+			
+			
+		
+		
+		
+		effect = {
+			
+			sandworm_coast = {
+			limit = { owned_by = ROOT }
+				add_province_modifier = {
+					name = "hm_prepare_trade"
+					duration = -1
+				}
+			 
+			
+			}
+			mirage_coast = {
+			limit = { owned_by = ROOT }
+				add_province_modifier = {
+					name = "hm_prepare_trade"
+					duration = -1
+				}
+			 
+			
+			}
+			
+			
+			
+		}
+	}
+	
+
+haunted_mansion_west_6 = {
+		icon = mission_asian_trader
+		required_missions = { 
+		
+		haunted_mansion_west_5
+		
+		}
+		position = 9
+		
+		provinces_to_highlight = {
+			OR = {
+				area = sandworm_coast
+				area = mirage_coast
+				
+			}
+			NOT = { 
+			owned_by = ROOT 
+			
+			has_trade_building_trigger = yes
+			
+			has_manufactory_trigger = yes
+			
+			
+			
+			}
+		}
+		
+		
+		
+		trigger = {
+		
+		sandworm_coast = {
+				type = all
+				owned_by = ROOT
+				has_trade_building_trigger = yes
+				has_manufactory_trigger = yes
+			}
+		mirage_coast = {
+				type = all
+				owned_by = ROOT
+				has_trade_building_trigger = yes
+				has_manufactory_trigger = yes
+				
+			}
+			
+			
+			}
+			
+			
+			
+		
+		
+		
+		effect = {
+			
+			sandworm_coast = {
+			
+			 change_culture = Zombie_Girl
+			
+			}
+			mirage_coast = {
+			
+			 change_culture = Zombie_Girl
+			
+			}
+			
+			
+			
+		}
+	}
+
+
+haunted_mansion_west_7 = {
+		icon = mission_la_croix
+		required_missions = { 
+		
+		haunted_mansion_west_6
+		
+		}
+		position = 10
+		
+		
+		
+		
+		
+		trigger = {
+		
+		209 = { 
+				owned_by = ROOT
+				development = 25
+				
+				}
+		reverse_has_opinion = {
+					who = LC1
+					value = 200
+				}
+		
+			
+			
+			}
+			
+			
+			
+		
+		
+		
+		effect = {
+			
+			change_government_reform_progress = 50
+			country_event = { id = mt_haunted_house.4 }
+			
+			
+		}
+	}
+
+
+haunted_mansion_west_8 = {
+		icon = mission_chrome_and_shirome
+		required_missions = { 
+		
+		haunted_mansion_west_7
+		
+		}
+		position = 11
+		
+		
+		
+		
+		
+		trigger = {
+		
+		reverse_has_opinion = {
+					who = LC1
+					value = 200
+				}
+		
+		NOT = {great_power_rank = 3}
+	    
+		 LC1 = {
+		great_power_rank = 3
+		 
+		 }
+		
+		
+		
+		
+			
+			}
+			
+			
+			
+		
+		
+		
+		effect = {
+			
+			
+			create_union = LC1
+			
+			LC1 = {
+			add_country_modifier = {
+					name = hm_loyal_sister
+					duration = -1
+				}
+			}
+			
+		}
+	}
+
+
+
+}
+
+
+
+
+
+
+haunted_mansion_plant = {
+
+	slot = 4
+	generic = no
+	ai = yes
+	
+	potential = {
+		tag = HM1
+	}
+	has_country_shield = yes
+	
+	haunted_mansion_plant_1 = {
+		icon = mission_alraune_powerful_plant_girl_ruler
+		required_missions = { }
+		position = 1
+		
+		
+		
+		
+		
+		trigger = {
+		
+		army_size_percentage = 1
+		num_of_generals = 1
+		employed_advisor = {
+	    category = MIL
+	}
+			
+			
+			}
+		effect = {
+			
+			forest_of_spirits_region = {
+			limit = { 
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT } 
+			}
+			add_permanent_claim = ROOT 
+			
+			}
+			
+		}
+	}
+	
+
+haunted_mansion_plant_2 = {
+		icon = mission_watermelon_girls
+		required_missions = { haunted_mansion_plant_1}
+		position = 2
+		
+		provinces_to_highlight = {
+			OR = {
+				area = watermelon_grasslands
+				
+			}
+			
+		}
+		
+		
+		
+		
+		
+		trigger = {
+		accepted_culture = Watermelon_Girl
+		
+		watermelon_grasslands = {
+				type = all
+				owned_by = ROOT
+				religion = seekers_of_truth_religion
+				base_production = 4
+			}
+			
+			
+			}
+			
+			
+			
+		
+		
+		
+		effect = {
+			
+			
+			633 = { 
+				
+				
+				change_trade_goods = sugar
+				add_base_production = 1
+				
+			}
+		622 = { 
+				
+				change_trade_goods = sugar
+				add_base_production = 1
+				
+			}
+		613 = { 
+				
+				change_trade_goods = sugar
+				add_base_production = 1
+				
+				
+			}
+		621 = { 
+				
+				change_trade_goods = sugar
+				add_base_production = 1
+				
+				
+			}
+		614 = { 
+				change_trade_goods = sugar
+				add_base_production = 1
+				
+				
+				
+			}
+		
+			
+			
+		}
+	}
+	
+
+haunted_mansion_plant_3 = {
+		icon = mission_cannons_firing
+		required_missions = { haunted_mansion_plant_2}
+		position = 3
+		
+		
+		
+		
+		
+		
+		
+		trigger = {
+		
+			OR = {
+			army_size = SI1
+			NOT = {exists = SI1}
+			}
+			
+			}
+			
+			
+			
+		
+		
+		
+		effect = {
+			
+			secret_lab_facility_area = {
+			
+			add_core = ROOT 
+		}
+			
+		
+			
+			
+		}
+	}
+	
+	
+haunted_mansion_plant_4 = {
+		icon = mission_unite_home_region
+		required_missions = { haunted_mansion_plant_3}
+		position = 4
+		
+		provinces_to_highlight = {
+			OR = {
+			
+			owned_by = SEC
+			owned_by = CRR
+			owned_by = JGR
+			owned_by = SWG
+			owned_by = NVM
+			owned_by = PG1
+			
+			
+			}
+			
+		}
+		
+		
+		
+		
+		
+		
+		
+		trigger = {
+		
+		OR = {
+		NOT = {exists = SEC}
+		reverse_has_opinion = {
+					who = SEC
+					value = 100
+				}
+		}
+		OR = {
+		NOT = {exists = CRR}
+		reverse_has_opinion = {
+					who = CRR
+					value = 100
+				}
+		}
+		OR = {
+		NOT = {exists = JGR}
+		reverse_has_opinion = {
+					who = JGR
+					value = 100
+				}
+		}
+		OR = {
+		NOT = {exists = SWG}
+		reverse_has_opinion = {
+					who = SWG
+					value = 100
+				}
+		}
+		OR = {
+		NOT = {exists = NVM}
+		reverse_has_opinion = {
+					who = NVM
+					value = 100
+				}
+		}
+		OR = {
+		NOT = {exists = PG1}
+		reverse_has_opinion = {
+					who = PG1
+					value = 100
+				}
+		}
+		
+		
+		
+			
+			
+			}
+			
+			
+			
+		
+		
+		
+		effect = {
+			
+			
+			add_country_modifier = {
+					name = hm_eve_of_war
+					duration = 3650
+				}
+			SEC = {
+			add_historical_friend = HM1
+		}
+		CRR = {
+			add_historical_friend = HM1
+		}
+		JGR = {
+			add_historical_friend = HM1
+		}
+		SWG = {
+			add_historical_friend = HM1
+		}
+		NVM = {
+			add_historical_friend = HM1
+		}
+		PGM = {
+			add_historical_friend = HM1
+		}
+		
+			
+			
+		}
+	}
+
+
+haunted_mansion_plant_5 = {
+		icon = mission_underground_labs2
+		required_missions = { haunted_mansion_plant_4}
+		position = 5
+		
+		provinces_to_highlight = {
+			OR = {
+				area = secret_lab_facility_area
+				
+			}
+			
+		}
+		
+		
+		
+		
+		
+		trigger = {
+		
+			secret_lab_facility_area = {
+				type = all
+				owned_by = ROOT
+				
+			}
+			
+			}
+			
+			
+			
+		
+		
+		
+		effect = {
+			
+			change_mil = 1
+			
+			san_ilia_superregion = {
+			limit = { 
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT } 
+			}
+			add_permanent_claim = ROOT 
+			
+			}
+		
+			
+			
+		}
+	}
+	
+	
+haunted_mansion_plant_6 = {
+		icon = mission_impaled_soldies
+		required_missions = { haunted_mansion_plant_5}
+		position = 6
+		
+		provinces_to_highlight = {
+			OR = {
+				superregion = san_ilia_superregion
+				subcontinent = san_ilia_superregion
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		
+		
+		
+		
+		
+		trigger = {
+		
+			san_ilia_superregion = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			has_country_modifier = hm_abundant_zombie_girls
+			
+			}
+			
+			
+			
+		
+		
+		
+		effect = {
+			
+			
+		add_country_modifier = {
+					name = hm_hegemon_san_illia
+					duration = -1
+				}
+			
+			
+		}
+	}
+	
+	
+haunted_mansion_plant_7 = {
+		icon = mission_infrastructure_for_huge_population
+		required_missions = { haunted_mansion_plant_6}
+		position = 7
+		
+		provinces_to_highlight = {
+			OR = {
+				area = san_ilia_area
+			}
+			
+		}
+		
+		
+		
+		
+		
+		
+		trigger = {
+		
+			san_ilia_area = {
+				type = all
+				owned_by = ROOT
+				has_production_building_trigger = yes
+				has_manufactory_trigger = yes
+			}
+			
+			}
+			
+			
+			
+		
+		
+		
+		effect = {
+			
+			
+		add_country_modifier = {
+					name = hm_zombie_labor 
+					duration = -1
+				}
+		san_ilia_area = {
+			
+			 change_culture = Zombie_Girl
+			
+			}
+			
+			
+		}
+	}
+	
+	
+haunted_mansion_plant_8 = {
+		icon = mission_zombie_swordswoman
+		required_missions = {haunted_mansion_west_5}
+		position = 9
+		
+		
+		
+		
+		
+		
+		
+		
+		trigger = {
+		
+			estate_loyalty = {
+    estate = estate_spiritualists
+    loyalty = 60
+}
+has_estate_privilege = estate_spiritualists_reinforced_zombies
+			
+			}
+			
+			
+			
+		
+		
+		
+		effect = {
+			
+			
+		add_country_modifier = {
+					name = loyal_zombies_reward
+					duration = -1
+				}
+		
+			
+			
+		}
+	}
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+haunted_mansion_la_croix_friendship = {
+
+	slot = 5
+	generic = no
+	ai = yes
+	
+	potential = {
+		tag = HM1
+	}
+	has_country_shield = yes
+	
+	haunted_mansion_la_croix_friendship_actual = {
+		icon = mission_alliances
+		required_missions = { }
+		position = 1
+		
+		provinces_to_highlight = {
+		OR = {
+			province_id = 606
+			province_id = 605
+			province_id = 604
+			province_id = 615
+			}
+			
+		}
+		
+		trigger = {
+		606 = { 
+				owned_by = ROOT
+				OR = {
+					 has_building = grand_shipyard 
+				     has_building = shipyard 
+				}
+				
+				
+			}
+		605 = { 
+				owned_by = ROOT
+				OR = {
+					 has_building = grand_shipyard 
+				     has_building = shipyard 
+				}
+				
+				
+			}
+		604 = { 
+				owned_by = ROOT
+				OR = {
+					 has_building = grand_shipyard 
+				     has_building = shipyard 
+				}
+				
+				
+			}
+		615 = { 
+				owned_by = ROOT
+				OR = {
+					 has_building = grand_shipyard 
+				     has_building = shipyard 
+				}
+				
+				
+			}
+			
+			navy_size_percentage = 1
+			is_great_power = yes
+			reverse_has_opinion = {
+					who = LC1
+					value = 150
+				}
+		}
+		
+		effect = {
+			
+			add_historical_friend = LC1
+			create_alliance = LC1
+			LC1 = {
+			add_historical_friend = HM1
+		}
+			
+		}
+	}
+	
+	
+}
+
+
+
+
+haunted_mansion_adm_tower = {
+
+	slot = 5
+	generic = no
+	ai = yes
+	
+	potential = {
+		tag = HM1
+	}
+	has_country_shield = yes
+	
+	haunted_mansion_adm_tower_1 = {
+		icon = mission_administrator_tower
+		required_missions = { }
+		position = 2
+		
+		
+		
+		trigger = {
+		
+		OR = {
+		
+		    AND = {
+			
+			NOT = {exists = PA1}
+			209 = { 
+				owned_by = ROOT
+				
+				}
+			
+			}
+			
+			
+			AND = {
+			reverse_has_opinion = {
+					who = PA1
+					value = 200
+				}
+				PA1 = { NOT = {total_development = 150}}
+				}
+		}
+		
+		}
+		effect = {
+			
+			
+			vassalize = PA1
+			
+			
+		}
+	}
+	
+
+haunted_mansion_adm_tower_2 = {
+		icon = mission_underground_labs
+		required_missions = { haunted_mansion_adm_tower_1}
+		position = 3
+		
+		provinces_to_highlight = {
+		
+			province_id = 209
+			
+			
+			
+		}
+		
+		
+		
+		trigger = {
+		
+		
+			209 = { 
+				owned_by = ROOT
+				
+				}
+			
+			}
+			
+			
+			
+		
+		
+		
+		effect = {
+			
+			add_country_modifier = {
+					name = hm_diverting_leadership_resources
+					duration = 3650
+				}
+			
+			
+			
+		}
+	}
+	
+
+
+haunted_mansion_adm_tower_3 = {
+		icon = mission_makina_beam_scythe
+		required_missions = { haunted_mansion_adm_tower_2}
+		position = 4
+		
+		
+		
+		trigger = {
+		
+		
+			209 = { 
+				owned_by = ROOT
+				
+				}
+				NOT = { has_country_modifier = hm_diverting_leadership_resources }
+			
+			}
+			
+			
+			
+		
+		
+		
+		effect = {
+			
+			country_event = { id = mt_haunted_house.1 }
+			
+			
+			
+		}
+	}
+
+
+
+
+
+
+
+
+}
+
+
+
+haunted_mansion_safina_lab = {
+
+	slot = 5
+	generic = no
+	ai = yes
+	
+	potential = {
+		tag = HM1
+	}
+	has_country_shield = yes
+	
+	haunted_mansion_safina_lab_1 = {
+		icon = mission_underground_labs2
+		required_missions = { }
+		position = 5
+		
+		provinces_to_highlight = {
+		
+			province_id = 971
+			
+			
+			
+		}
+		
+		
+		
+		trigger = {
+		
+		
+			971 = { 
+				owned_by = ROOT
+				
+				}
+				NOT = { has_country_modifier = hm_studying_lab }
+			
+			}
+		effect = {
+			
+			add_country_modifier = {
+					name = hm_studying_lab 
+					duration = 3650
+				}
+			
+			
+			
+		}
+	}
+	
+
+haunted_mansion_safina_lab_2 = {
+		icon = mission_tartarus_rift
+		required_missions = { haunted_mansion_safina_lab_1}
+		position = 6
+		
+		
+		
+		
+		
+		trigger = {
+		
+		
+			971 = { 
+				owned_by = ROOT
+				
+				}
+				NOT = { has_country_modifier = hm_studying_lab }
+			
+			}
+			
+			
+			
+		
+		
+		
+		effect = {
+			
+			
+			country_event = { id = mt_haunted_house.2 }
+			
+			
+		}
+	}
+	
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+haunted_mansion_san_illia_lab = {
+
+	slot = 5
+	generic = no
+	ai = yes
+	
+	potential = {
+		tag = HM1
+	}
+	has_country_shield = yes
+	
+	haunted_mansion_san_illia_lab_1 = {
+		icon = mission_underground_labs3
+		required_missions = { }
+		position = 7
+		
+		provinces_to_highlight = {
+		
+			province_id = 550
+			
+			
+			
+		}
+		
+		
+		
+		trigger = {
+		
+		
+			550 = { 
+				owned_by = ROOT
+				
+				}
+				NOT = { has_country_modifier = hm_studying_lab }
+			
+			}
+		effect = {
+			
+			add_country_modifier = {
+					name = hm_studying_lab 
+					duration = 3650
+				}
+			
+			
+			
+		}
+	}
+	
+
+haunted_mansion_san_illia_lab_2 = {
+		icon = mission_makina_blast_voice
+		required_missions = { haunted_mansion_san_illia_lab_1}
+		position = 8
+		
+		
+		
+		trigger = {
+		
+		
+			550 = { 
+				owned_by = ROOT
+				
+				}
+				NOT = { has_country_modifier = hm_studying_lab }
+			
+			}
+			
+			
+			
+		
+		
+		
+		effect = {
+			
+			
+			country_event = { id = mt_haunted_house.3 }
+			
+			
+		}
+	}
+	
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	

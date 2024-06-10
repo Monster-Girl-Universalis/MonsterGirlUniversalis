@@ -1,5 +1,5 @@
-base_tax = 3
-base_manpower = 3
+base_tax = 4
+base_manpower = 5
 base_production = 3
 culture = ilian_human
 religion = ilias_light_religion
@@ -30,3 +30,4 @@ add_core = ERF
 owner = ERF
 controller = ERF
 discovered_by = TECH_DEMI_HUMAN
+trade_goods = naval_supplies

@@ -1,6 +1,6 @@
 base_tax = 3
 base_manpower = 3
-base_production = 3
+base_production = 2
 is_city = no
 culture = ilian_human
 religion = ilias_light_religion

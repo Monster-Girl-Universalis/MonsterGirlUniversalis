@@ -154,7 +154,7 @@ technology = { #Modern Theocracy
 		renaissance = 0.5
 		new_world_i = 0.3
 	}
-	
+	governing_capacity = 100	
 	theocratic_government = yes
 }
 
@@ -276,6 +276,7 @@ technology = { #National Sovereignty
 		printing_press = 0.5
 		global_trade = 0.3
 	}
+	production_efficiency 	=	0.02
 	
 }
 
@@ -410,6 +411,7 @@ technology = { #Separation of Powers
 		manufactories = 0.5
 		enlightenment = 0.5
 	}
+	production_efficiency 	=	0.03
 	
 }
 
@@ -464,7 +466,7 @@ technology = { #Rights of Man
 		enlightenment = 1
 		industrialization = 0.5
 	}
-
+	governing_capacity = 250
 	enlightened_despotism = yes
 	bureaucratic_despotism = yes
 }

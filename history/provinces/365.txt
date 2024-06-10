@@ -1,6 +1,6 @@
 is_city = no
 base_tax = 3
-base_manpower = 2
+base_manpower = 4
 base_production = 3
 add_core = SPR
 owner = SPR

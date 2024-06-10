@@ -32,3 +32,4 @@ add_core = JK2
 owner = JK2
 culture = Lamia_Girl
 controller = JK2
+trade_goods = iron

@@ -1,0 +1,1471 @@
+san_ilia_internal_development = {
+
+	slot = 1
+	generic = yes
+	ai = yes
+	
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		tag = SI1
+	}
+	
+	has_country_shield = yes
+	
+	SI1_san_ilia_court = {
+		icon = mission_asian_trader
+		required_missions = { }
+		position = 1
+		
+		trigger = {
+			devotion = 100
+			employed_advisor = {
+				category = ADM
+			}
+			employed_advisor = {
+				category = DIP
+			}
+			employed_advisor = {
+				category = MIL
+			}
+		}
+		
+		effect = {
+			add_prestige = 20
+			add_country_modifier = {
+				name = "san_ilia_court"
+				duration = 5475
+			}
+		}
+	}	
+	SI1_holy_land_of_churches = {
+		icon = mission_european_church
+		required_missions = { SI1_san_ilia_court  }
+		position = 2
+		
+		trigger = {
+			calc_true_if = {
+				all_owned_province = {
+					OR = {
+						has_building = temple
+						has_building = cathedral
+					}
+				}
+				amount = 10
+			}
+		}
+		
+		effect = {
+			every_owned_province = {
+				limit = {
+					OR = {
+						has_building = temple
+						has_building = cathedral
+					}
+				}
+				add_random_development = 1
+			}
+		}
+	}	
+	SI1_majestic_cathedral_of_san_ilia = {
+		icon = mission_early_game_buildings
+		required_missions = { SI1_holy_land_of_churches }
+		position = 3
+		
+		trigger = {
+			582 = {
+				development = 30
+				OR = {
+					num_of_times_expanded_infrastructure = 2
+					province_has_center_of_trade_of_level = 3
+				}
+				is_prosperous = yes
+			}
+		}
+		
+		effect = {
+			add_prestige = 20
+			582 = {
+				add_building = cathedral
+				add_province_modifier = { name = majestic_cathedral_of_san_ilia duration = -1 }
+			}
+		}
+	}	
+	SI1_develop_the_countryside = {
+		icon = mission_settlers_north_america
+		required_missions = { SI1_majestic_cathedral_of_san_ilia }
+		position = 4
+		
+		trigger = {	
+			san_ilia_region = {
+				type = all
+				owned_by = ROOT
+				OR = {
+					has_owner_accepted_culture = yes
+					has_owner_culture = yes
+				}
+				development = 12
+			}
+		}
+		
+		effect = {
+			add_years_of_income = 0.5
+			add_years_of_owned_provinces_manpower = {
+				years = 0.25
+				trigger = {
+					OR = {
+						has_owner_accepted_culture = yes
+						has_owner_culture = yes
+					}
+				}
+			}
+			add_years_of_owned_provinces_sailors = {
+				years = 0.25
+				trigger = {
+					OR = {
+						has_owner_accepted_culture = yes
+						has_owner_culture = yes
+					}
+				}
+			}
+		}
+	}	
+	SI1_industrialisation_led_by_church = {
+		icon = mission_rb_build_furnaces
+		required_missions = { SI1_develop_the_countryside }
+		position = 5
+
+		trigger = {
+			num_of_owned_provinces_with = {
+				has_production_building_trigger = yes
+				value = 25
+			}
+			calc_true_if = {
+				all_owned_province = {
+					OR = {
+						has_building = mills
+						has_building = farm_estate
+						has_building = tradecompany
+						has_building = plantations
+					}
+				}
+				amount = 15
+			}
+			innovativeness = 30
+		}
+		effect = {
+			add_years_of_income = 1.5
+			add_country_modifier = {
+				name = "industrialisation_led_by_church"
+				duration = -1
+			}
+		}
+	}	
+	SI1_human_makina_fusion = {
+		icon = mission_human_makina_fusion
+		required_missions = { SI1_industrialisation_led_by_church }
+		position = 6
+		
+		trigger = {
+			treasury = 10000
+			innovativeness = 65
+		}
+		
+		effect = {
+			add_treasury = -10000
+			add_country_modifier = {
+				name = "human_makina_fusion"
+				duration = 3650 #10 years
+			}
+			add_adm_tech = 1
+			add_dip_tech = 1
+			add_mil_tech = 1
+		}
+	}	
+	SI1_fusion_complete = {
+		icon = mission_fusion_complete
+		required_missions = { SI1_human_makina_fusion }
+		position = 7
+		
+		trigger = {
+			NOT = { has_country_modifier = human_makina_fusion }
+		}
+		
+		effect = {
+			ROOT = { change_religion = seekers_of_truth_religion }
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						culture_group = Human_culture
+					}
+					change_culture = Cyborg
+				}
+			}
+			hidden_effect = {
+				every_owned_province = {
+					change_religion = seekers_of_truth_religion
+				}
+				set_ruler_religion = seekers_of_truth_religion
+			}
+			change_primary_culture = Cyborg
+			add_country_modifier = {
+				name = "the_singularity"
+				duration = -1
+			}
+		}
+	}
+		
+}
+san_ilia_coastal_conquest_branch = {
+
+	slot = 2
+	generic = yes
+	ai = yes
+	
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		tag = SI1
+	}
+	
+	has_country_shield = yes
+	
+	SI1_prepare_san_ilia_fleet = {
+		icon = mission_galleys_in_port
+		required_missions = { }
+		position = 1
+		
+		trigger = {
+			navy_size_percentage = 0.85
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "si1_raise_the_navy"
+				duration = 5475
+			}
+			sea_cucumber_area = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+			crab_realm_area = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+		}
+	}	
+	SI1_growth_of_the_south_coast = {
+		icon = mission_invade_island
+		required_missions = { SI1_prepare_san_ilia_fleet }
+		position = 2
+		
+		trigger = {
+			sea_cucumber_area = {
+				type = all
+				owned_by = ROOT
+				base_production = 5
+			}
+			crab_realm_area = {
+				type = all
+				owned_by = ROOT
+				base_production = 5
+			}			
+		}
+		
+		effect = {
+			jellyfish_beach = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+			seaweed_beach = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+		}
+	}	
+	SI1_crabs_and_jellies = {
+		icon = mission_crabs_and_jellies
+		required_missions = { SI1_growth_of_the_south_coast }
+		position = 3
+		
+		trigger = {
+			jellyfish_beach = {
+				type = all
+				owned_by = ROOT
+				base_production = 5
+			}
+			seaweed_beach = {
+				type = all
+				owned_by = ROOT
+				base_production = 5
+			}			
+		}
+		
+		effect = {
+			add_navy_tradition = 25
+			pitcher_grove = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+			oningrone_area = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+		}
+	}	
+	SI1_question_of_port_natalia = {
+		icon = mission_danzig_or_war
+		required_missions = { SI1_crabs_and_jellies }
+		position = 4
+		
+		trigger = {
+			army_strength = {
+				who = PNA
+				value = 1.5
+			}	
+			grown_by_development = 500		
+		}
+		
+		effect = {
+			country_event = { id = flavor_si1.2 }
+		}
+	}
+	SI1_monitor_the_luddites = {
+		icon = mission_religious
+		required_missions = { }
+		position = 5
+		
+		trigger = {
+			has_spy_network_in = {
+				who = LDV
+				value = 50
+			}
+		}
+		
+		effect = {
+			add_dip_power = 50
+			add_spy_network_in = {
+				who = LDV
+				value = -50
+			}
+		}
+	}
+	SI1_san_ilias_ultimatum = {
+		icon = mission_landsknecht_soldier
+		required_missions = { SI1_monitor_the_luddites }
+		position = 6
+		
+		trigger = {
+			has_spy_network_in = {
+				who = LDV
+				value = 25
+			}
+		}
+		
+		effect = {
+			country_event = { id = flavor_si1.3 }
+		}
+	}
+	SI1_face_the_three_succubi = {
+		icon = mission_astaroth
+		required_missions = { SI1_san_ilias_ultimatum }
+		position = 7
+		
+		trigger = {
+			is_year = 1454
+		}
+		
+		effect = {
+			country_event = { id = flavor_si1.4 }
+		}
+	}
+	SI1_undo_the_luddite_annihilation = {
+		icon = mission_pol_tend_east
+		required_missions = { SI1_face_the_three_succubi }
+		position = 8
+		
+		trigger = {
+			NOT = { num_of_rebel_controlled_provinces = 1 }
+			NOT = { num_of_rebel_armies = 1 }
+			523 = { is_prosperous = yes }
+		}
+		
+		effect = {
+			country_event = { id = flavor_si1.5 }
+		}
+	}
+	SI1_ties_with_iliasport = {
+		icon = renaissance_city
+		required_missions = { SI1_undo_the_luddite_annihilation }
+		position = 9
+		
+		trigger = {
+				AND = {	
+					treasury = 1000			
+					reverse_has_opinion = {
+						who = ILP
+						value = 150
+					}
+					army_strength = {
+						who = ILP
+						value = 2
+					}
+					ILP = {
+						NOT = { total_development = 500 }
+					}
+					
+				}
+		}
+		
+		effect = {
+			add_treasury = -1000
+			create_union = ILP
+		}
+	}
+	SI1_increase_our_presence_in_ilias_continent = {
+		icon = mission_ilias_continent
+		required_missions = { SI1_ties_with_iliasport }
+		position = 10
+		
+		trigger = {
+				num_of_merchants = 4
+				trade_income_percentage = 0.33
+		}
+		
+		effect = {
+			add_years_of_income = 1
+			iliasburg_region = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	SI1_heart_of_ilias_continent = {
+		icon = dalmatian_conquest
+		required_missions = { SI1_increase_our_presence_in_ilias_continent }
+		position = 11
+		
+		trigger = {
+			iliasburg_region = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		
+		effect = {
+			add_prestige = 75
+			irina_region = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+			iliasville_area = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+
+}
+san_ilia_consolidating_natalia_forest_of_spirits = {
+
+	slot = 3
+	generic = yes
+	ai = yes
+	
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		tag = SI1
+	}
+	
+	has_country_shield = yes
+
+	SI1_succubi_and_lamia_nuns = {
+		icon = mission_sister_lamia
+		required_missions = { }
+		position = 1
+		
+		trigger = {
+			OR = {
+				AND = {
+					grown_by_development = 300
+					SSL = {
+						NOT = { total_development = 250 }
+					}
+					SNR = {
+						NOT = { total_development = 250 }
+					}
+				}
+				AND = {
+					NOT = {exists = SSL }
+					lamia_sister_area = {
+						type = all
+						owned_by = ROOT
+				
+					}
+					NOT = {exists = SNR }
+					succubus_nun_area = {
+						type = all
+						owned_by = ROOT
+				
+					}
+				}
+				AND = {				
+					reverse_has_opinion = {
+						who = SSL
+						value = 150
+					}
+					SSL = {
+						NOT = { total_development = 250 }
+					}	
+					reverse_has_opinion = {
+						who = SNR
+						value = 150
+					}
+					SNR = {
+						NOT = { total_development = 250 }
+					}
+				}
+			}
+		}
+		
+		effect = {
+			add_dip_power = 50
+			vassalize = SSL
+			vassalize = SNR
+		}
+	}
+	SI1_prepare_st_amos_expedition = {
+		icon = mission_mountain_metals
+		required_missions = { SI1_succubi_and_lamia_nuns }
+		position = 2
+		
+		trigger = {
+			treasury = 200
+			mil_power = 40
+		}
+		
+		effect = {
+			add_treasury = -200
+			add_mil_power = -40
+			add_country_modifier = {
+				name = "si1_st_amos_expedition"
+				duration = 1460 #4 years
+			}
+			grizzly_rocks = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+			anteater_hills = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+			mountain_st_amos_area = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	SI1_foot_of_the_mountain = {
+		icon = mission_potosi_silver
+		required_missions = { SI1_prepare_st_amos_expedition }
+		position = 3
+		
+		trigger = {
+			NOT = { has_country_modifier = si1_st_amos_expedition }
+			grizzly_rocks = {
+				type = all
+				owned_by = ROOT
+			}
+			anteater_hills = {
+				type = all
+				owned_by = ROOT
+			}
+			OR = {
+				AND = { 
+					598 = {
+						owned_by = 
+					}
+					599 = {
+						owned_by = 
+					}
+					600 = {
+						owned_by = 
+					}
+				}
+				AND = { 
+					598 = {
+						owned_by = SI1
+					}
+					599 = {
+						owned_by = SI1
+					}
+					600 = {
+						owned_by = SI1
+					}
+				}
+			}
+		}
+		
+		effect = {
+			add_prestige = 25
+			598 = {
+				cede_province = SI1
+				change_religion = ROOT
+			}
+			599 = {
+				cede_province = SI1
+				change_religion = ROOT
+			}
+			600 = {
+				cede_province = SI1
+				change_religion = ROOT
+			}
+			SI1 = {
+				add_core = 598
+				add_core = 599
+				add_core = 600			
+			}
+		}
+	}
+	SI1_secure_the_route_for_pilgrimes = {
+		icon = mission_develop_the_scandes
+		required_missions = { SI1_foot_of_the_mountain }
+		position = 4
+		
+		trigger = {
+			treasury = 250
+			dip_power = 50
+			adm_power = 50
+			mil_power = 50
+		}
+		
+		effect = {
+			add_treasury = -250
+			add_dip_power = -50
+			add_adm_power = -50
+			add_mil_power = -50
+			598 = {
+				add_province_modifier = { name = place_of_ilias_pilgrimes duration = -1 }
+			}
+			599 = {
+				add_province_modifier = { name = place_of_ilias_pilgrimes duration = -1 }
+			}
+			600 = {
+				add_province_modifier = { name = place_of_ilias_pilgrimes duration = -1 }
+			}
+		}
+	}	
+	SI1_research_slime_girls_habitat = {
+		icon = mission_slime_bess
+		required_missions = { }
+		position = 5
+		
+		trigger = {
+			OR = {
+				has_spy_network_in = {
+					who = BP1
+					value = 50
+				}
+				has_spy_network_in = {
+					who = SB1
+					value = 50
+				}
+				AND = {
+					alliance_with = BP1
+					reverse_has_opinion = {
+						who = BP1
+						value = 150
+					}
+				}
+				AND = {
+					alliance_with = SB1
+					reverse_has_opinion = {
+						who = SB1
+						value = 150
+					}
+				}				
+			}
+		}
+		
+		effect = {
+			if = {
+				limit = {
+					alliance_with = SB1
+					reverse_has_opinion = {
+						who = SB1
+						value = 150
+					}
+				}
+				vassalize = SB1
+			}
+			if = {
+				limit = {
+					alliance_with = BP1
+					reverse_has_opinion = {
+						who = BP1
+						value = 150
+					}
+				}
+				vassalize = BP1
+			}
+			if = {
+				limit = {
+					has_spy_network_in = {
+						who = SB1
+						value = 50
+					}
+				}
+				slime_bess_area = {
+					type = all
+					add_permanent_claim = ROOT
+				}
+			}
+			if = {
+				limit = {
+					has_spy_network_in = {
+						who = BP1
+						value = 50
+					}
+				}
+				slime_bess_plains = {
+					type = all
+					add_permanent_claim = ROOT
+				}
+			}
+		}
+	}
+	SI1_help_slime_girls_communities = {
+		icon = mission_slime_court
+		required_missions = { SI1_research_slime_girls_habitat }
+		position = 6
+		
+		trigger = {
+			treasury = 600
+			dip_power = 200
+			slime_bess_area = {
+				type = all
+				OR = {
+					owned_by = ROOT
+					owned_by_subject_of = ROOT
+				}
+			}
+			slime_bess_plains = {
+				type = all
+				OR = {
+					owned_by = ROOT
+					owned_by_subject_of = ROOT
+				}
+			}
+		}
+		
+		effect = {
+			add_treasury = -600
+			add_dip_power = -200
+ 			set_variable = {
+   				which = Slime_integration
+  				value = 1
+			}
+			add_accepted_culture = Slime_Girl
+			every_owned_province = {
+				limit = {
+					culture = Slime_Girl
+				}
+				add_random_development = 3
+			}
+			watermelon_grasslands = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	SI1_watermelon_alraunes = {
+		icon = mission_watermelon_girls
+		required_missions = { SI1_help_slime_girls_communities }
+		position = 7
+		
+		trigger = {
+			watermelon_grasslands = {
+				type = all
+				owned_by = ROOT
+				development = 15
+			}
+		}
+		
+		effect = {
+			add_accepted_culture = Watermelon_Girl
+			forest_of_spirits = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+			fairy_grove = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+			elvish_spring_area = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	SI1_forest_of_spirits = {
+		icon = mission_alraune_blooming_empire
+		required_missions = { SI1_watermelon_alraunes }
+		position = 8
+		
+		trigger = {
+			forest_of_spirits = {
+				type = all
+				owned_by = ROOT
+				is_prosperous = yes
+			}
+			fairy_grove = {
+				type = all
+				owned_by = ROOT
+				is_prosperous = yes
+			}
+			elvish_spring_area = {
+				type = all
+				owned_by = ROOT
+				is_prosperous = yes
+			}
+		}
+		
+		effect = {
+ 			set_variable = {
+   				which = Elf_integration
+  				value = 1
+			}
+			all_owned_province = {
+				limit = {
+					religion = wind_religion
+				}
+				add_province_modifier = { name = integration_of_sylph_practices duration = -1 }
+			}
+			add_country_modifier = {
+				name = "power_of_the_wind_harnessed"
+				duration = -1
+			}
+			forest_of_spirits_region = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+			
+		}
+	}
+	SI1_build_the_trading_fleet = {
+		icon = mission_galleys_in_port
+		required_missions = { }
+		position = 9
+		
+		trigger = {
+			dip_power = 400
+			num_of_light_ship = 15
+		}
+		effect = {
+			add_country_modifier = {
+				name = "si1_trading_fleet"
+				duration = 7300
+			}			
+		}
+	}
+	SI1_powerful_san_ilia_navy = {
+		icon = mission_establish_high_seas_navy
+		required_missions = { SI1_build_the_trading_fleet }
+		position = 10
+		
+		trigger = {
+			num_of_heavy_ship = 30
+			navy_size_percentage = 0.90
+		}
+		effect = {
+			add_mil_power = 100
+			add_prestige = 25			
+		}
+	}
+	SI1_secure_the_high_sees_with_dreadnought_makina = {
+		icon = mission_dreadnought
+		required_missions = { SI1_powerful_san_ilia_navy }
+		position = 11
+		
+		trigger = {
+			innovativeness = 40
+		}
+		effect = {
+			add_country_modifier = {
+				name = "si1_dreadnoughts"
+				duration = -1
+			}
+			south_undersea_temple_region = {
+				type = all
+				add_permanent_claim = ROOT
+			}			
+		}
+	}		
+}
+
+san_ilia_consolidating_natalia_monte_carlo = {
+
+	slot = 4
+	generic = yes
+	ai = yes
+	
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		tag = SI1
+	}
+	
+	has_country_shield = yes
+
+	SI1_secure_trade_with_port_marle = {
+		icon = sources_of_trade
+		required_missions = { }
+		position = 1
+		
+		trigger = {
+			employed_advisor = {
+				type = trader
+			}
+			OR = {
+				has_merchant = the_navy		
+				army_size_percentage = 0.85
+			}
+		}
+		
+		effect = {
+			marle_road_area = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+			novistador_mountains = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+		}
+	}	
+	SI1_seize_road_to_marle = {
+		icon = up_the_adige
+		required_missions = { SI1_secure_trade_with_port_marle  }
+		position = 2
+		
+		trigger = {
+			marle_road_area = {
+				type = all
+				owned_by = ROOT
+			}
+			novistador_mountains = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		
+		effect = {
+			kinoko_mountains = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+			urscylla_mountains = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+		}
+	}	
+	SI1_port_marle_corridor = {
+		icon = mission_gold_mine
+		required_missions = { SI1_seize_road_to_marle  }
+		position = 3
+		
+		trigger = {
+			kinoko_mountains = {
+				type = all
+				owned_by = ROOT
+			}
+			urscylla_mountains = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		
+		effect = {
+			ittan_momen_coast = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+			fusuma_coast = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+			add_historical_friend = PM1
+		}
+	}	
+	SI1_fusuma_coast = {
+		icon = mission_caribbean_cn
+		required_missions = { SI1_port_marle_corridor }
+		position = 4
+		
+		trigger = {
+			ittan_momen_coast = {
+				type = all
+				owned_by = ROOT
+			}
+			fusuma_coast = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		
+		effect = {
+
+			port_marle = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+			add_country_modifier = {
+				name = "si1_trading_with_grand_noah"
+				duration = 10950 #30 years
+			}
+			add_years_of_income = 1.5
+		}
+	}	
+	SI1_lamia_lands = {
+		icon = mission_lamia1
+		required_missions = { }
+		position = 5
+		
+		trigger = {
+			OR = {
+				AND = {
+					has_spy_network_in = {
+						who = LR1
+						value = 30
+					}
+					has_spy_network_in = {
+						who = SG1
+						value = 30
+					}
+				}
+				AND = {
+					lamia_area = {
+						type = all
+						owned_by = ROOT
+					}
+					shellfish_coast_area = {
+						type = all
+						owned_by = ROOT
+					}
+				}
+			}
+		}
+		
+		effect = {
+			shellfish_coast_area = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+			lamia_area = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+		}
+	}	
+	SI1_integrate_lamias = {
+		icon = mission_lamia2
+		required_missions = { SI1_lamia_lands }
+		position = 6
+		
+		trigger = {
+			lamia_area = {
+				type = all
+				owned_by = ROOT
+				development = 10
+			}
+		}
+		
+		effect = {
+			add_accepted_culture = Sister_Lamia 
+			every_owned_province = {
+				limit = {
+					culture_group = lamia
+				}
+				change_culture = Sister_Lamia 
+			}
+ 			set_variable = {
+   				which = Lamia_integration
+  				value = 1
+			}
+			carlos_hill_area = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+		}
+	}	
+	SI1_fortify_carlos_hill = {
+		icon = mission_fortify_the_realm
+		required_missions = { SI1_integrate_lamias }
+		position = 7
+		provinces_to_highlight = {
+			province_id = 646
+		}		
+		trigger = {
+			carlos_hill_area = {
+				type = all
+				owned_by = ROOT
+			}
+			646 = { 
+				owned_by = ROOT
+				has_fort_building_trigger = yes
+			}
+		}
+		
+		effect = {
+			monte_carlo_area = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+			western_natalia_road = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+		}
+	}	
+	SI1_shutdown_the_elka_company = {
+		icon = chater_the_voc
+		required_missions = { SI1_fortify_carlos_hill }
+		position = 8
+		
+		trigger = {
+			monte_carlo_area = {
+				type = all
+				owned_by = ROOT
+			}
+			western_natalia_road = {
+				type = all
+				owned_by = ROOT
+			}
+			NOT = { has_country_modifier = recruited_smugglers }
+			NOT = { has_country_modifier = smugglers_dominating }
+		}
+		
+		effect = {
+
+			monte_carlo_region = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+			add_country_modifier = {
+				name = "si1_destroyed_the_smugglers_den"
+				duration = 10950 #30 years
+			}
+		}
+	}	
+	SI1_subjugate_mountain_minotaurs = {
+		icon = mission_minotauros
+		required_missions = { SI1_shutdown_the_elka_company }
+		position = 9
+		
+		trigger = {
+			minotaur_steppes = {
+				type = all
+				owned_by = ROOT
+			}
+			safina_mountain_pass = {
+				type = all
+				owned_by = ROOT
+			}
+			safina_road_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			add_army_tradition = 50
+			bandersnatch_area = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+			sables_coast_area = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+			centipede_area = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+			rubiana_area = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+		}
+	}	
+	SI1_investigate_rubiana = {
+		icon = mission_rubiana
+		required_missions = { SI1_subjugate_mountain_minotaurs }
+		position = 10
+		
+		trigger = {
+			rubiana_area = {
+				type = all
+				owned_by = ROOT
+			}
+			adm_power = 250
+		}
+		
+		effect = {
+			add_adm_power = -250
+			country_event = { id = flavor_si1.6 }
+		}
+	}	
+	SI1_besiege_the_seekers_cave_entrance = {
+		icon = mission_kagetsumugi_the_puppeteer
+		required_missions = { SI1_investigate_rubiana }
+		position = 11
+		
+		trigger = {
+			bandersnatch_area = {
+				type = all
+				owned_by = ROOT
+			}
+			sables_coast_area = {
+				type = all
+				owned_by = ROOT
+			}
+			centipede_area = {
+				type = all
+				owned_by = ROOT
+			}
+			army_size = 250
+		}
+		
+		effect = {
+			puppeteer_tower_region = {
+				type = all
+				add_permanent_claim  = ROOT
+			}
+			add_country_modifier = {
+				name = "si1_ready_to_face_kagetsumugi"
+				duration = 3650 #10 years
+			}
+		}
+	}
+	
+
+}
+
+san_ilia_researcher_branch = {
+
+	slot = 5
+	generic = yes
+	ai = yes
+	
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		tag = SI1
+	}
+	
+	has_country_shield = yes
+	
+	SI1_explore_the_ancient_ruins = {
+		icon = mission_underground_labs
+		required_missions = { }
+		position = 1
+		
+		trigger = {
+			treasury = 300
+			adm_power = 60
+		}
+		
+		effect = {
+			add_treasury = -300
+			add_adm_power = -60
+			add_country_modifier = {
+				name = "si1_exploring_the_ruins"
+				duration = 1460 #4 years
+			}
+			change_variable = {
+				which = Investigation_Progress
+				value = 1
+			}
+		}
+	}	
+	SI1_fruits_of_the_exploration = {
+		icon = mission_makina_laser_pointer
+		required_missions = { SI1_explore_the_ancient_ruins  }
+		position = 2
+		
+		trigger = {
+			NOT = { has_country_modifier = si1_exploring_the_ruins }
+		}
+		
+		effect = {
+			change_innovativeness = 4
+			add_country_modifier = {
+				name = "si1_first_payments_for_research"
+				duration = 3650
+			}
+		}
+	}	
+	SI1_build_the_makina_research_universities = {
+		icon = pontifical_universities
+		required_missions = { SI1_fruits_of_the_exploration }
+		position = 3
+		
+		trigger = {
+			innovativeness = 10
+			treasury = 1500
+		}
+		
+		effect = {
+			add_treasury = -1500
+			change_innovativeness = -10
+			582 = {
+				add_building = university
+			}
+			536 = {
+				add_building = university
+			}
+			550 = {
+				add_building = university
+			}
+			556 = {
+				add_building = university
+			}
+			557 = {
+				add_building = university
+			}
+			add_country_modifier = {
+				name = "build_the_makina_research_universities"
+				duration = 3650
+			}
+		}
+	}	
+	SI1_fund_the_advanced_technology_research = {
+		icon = mission_underground_labs2
+		required_missions = { SI1_build_the_makina_research_universities  }
+		position = 4
+		
+		trigger = {
+			innovativeness = 20
+		}
+		
+		effect = {
+			change_innovativeness = -20
+			add_country_modifier = {
+				name = "fund_the_advanced_technology_research"
+				duration = 1460
+			}
+			change_variable = {
+				which = Investigation_Progress
+				value = 1
+			}
+		}
+	}	
+	SI1_popes_ultimate_mecha_suit = {
+		icon = mission_popes_ultimate_mecha_suit
+		required_missions = { SI1_fund_the_advanced_technology_research }
+		position = 5
+		
+		trigger = {
+			NOT = { has_country_modifier = fund_the_advanced_technology_research }
+		}
+		
+		effect = {
+			remove_ruler_personality = just_personality
+remove_ruler_personality = righteous_personality
+remove_ruler_personality = tolerant_personality
+remove_ruler_personality = kind_hearted_personality
+remove_ruler_personality = free_thinker_personality
+remove_ruler_personality = well_connected_personality
+remove_ruler_personality = calm_personality
+remove_ruler_personality = careful_personality
+remove_ruler_personality = secretive_personality
+remove_ruler_personality = intricate_web_weaver_personality
+remove_ruler_personality = fertile_personality
+remove_ruler_personality = well_advised_personality
+remove_ruler_personality = benevolent_personality
+remove_ruler_personality = zealot_personality 
+remove_ruler_personality = pious_personality
+remove_ruler_personality = lawgiver_personality
+remove_ruler_personality = midas_touched_personality
+remove_ruler_personality = incorruptible_personality
+remove_ruler_personality = architectural_visionary_personality
+remove_ruler_personality = scholar_personality
+remove_ruler_personality = entrepreneur_personality
+remove_ruler_personality = industrious_personality
+remove_ruler_personality = expansionist_personality
+remove_ruler_personality = charismatic_negotiator_personality
+remove_ruler_personality = silver_tongue_personality
+remove_ruler_personality = conqueror_personality
+remove_ruler_personality = tactical_genius_personality
+remove_ruler_personality = bold_fighter_personality
+remove_ruler_personality = strict_personality
+remove_ruler_personality = inspiring_leader_personality
+remove_ruler_personality = martial_educator_personality
+remove_ruler_personality = navigator_personality
+remove_ruler_personality = fierce_negotiator_personality
+remove_ruler_personality = babbling_buffoon_personality
+remove_ruler_personality = embezzler_personality
+remove_ruler_personality = infertile_personality
+remove_ruler_personality = drunkard_personality
+remove_ruler_personality = sinner_personality
+remove_ruler_personality = greedy_personality
+remove_ruler_personality = cruel_personality
+remove_ruler_personality = naive_personality
+remove_ruler_personality = craven_personality
+remove_ruler_personality = loose_lips_personality
+remove_ruler_personality = obsessive_perfectionist_personality
+remove_ruler_personality = malevolent_personality
+remove_ruler_personality = reformist_personality
+remove_ruler_personality = enlightened_personality
+remove_ruler_personality = absolutist_personality
+remove_ruler_personality = legendary_pirate_personality
+
+
+
+    add_ruler_personality = immortal_personality
+	add_ruler_personality = free_thinker_personality
+	add_ruler_personality = scholar_personality
+	set_ruler_culture = Cyborg
+		}
+	}
+	SI1_delve_deeper_to_the_facilities_secrets = {
+		icon = mission_underground_labs3
+		required_missions = { SI1_popes_ultimate_mecha_suit }
+		position = 6
+		
+		trigger = {
+			innovativeness = 80
+			550 = {
+				has_great_project = {
+					type = ancient_lab_facility
+					tier = 3
+				}
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "delve_deeper_to_the_facilities_secrets"
+				duration = 3650
+			}
+			change_variable = {
+				which = Investigation_Progress
+				value = 1
+			}
+		}
+	}
+	SI1_uncovered_some_truth_of_this_world = {
+		icon = mission_ancient_lab_ruins_discover_truth
+		required_missions = { SI1_delve_deeper_to_the_facilities_secrets }
+		position = 7
+		
+		trigger = {
+			NOT = { has_country_modifier = delve_deeper_to_the_facilities_secrets }
+			check_variable = {
+				which = Investigation_Progress
+				value = 5
+			}
+		}
+		
+		effect = {
+			country_event = { id = flavor_si1.7 }
+		}
+	}
+}

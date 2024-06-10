@@ -1,0 +1,302 @@
+angel_internal_development = {
+
+	slot = 1
+	generic = yes
+	ai = yes
+	
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		culture_group = angel #angel
+		NOT = { 
+			OR = {
+				
+			}
+		}
+	}
+	
+	has_country_shield = yes
+	
+	gen_angel_adherence_to_ilias_faith = {
+		icon = mission_hands_praying
+		required_missions = { }
+		position = 1
+		
+		trigger = {
+			stability = 1
+			inquisitor = 1	
+		}
+		
+		effect = {
+			add_church_power = 100
+			add_country_modifier = {
+				name = "gen_angel_adherence_to_ilias_faith_mod"
+				duration = 5475
+			}
+		}
+	}
+	
+	gen_angel_prosperity_and_control = {
+		icon = mission_high_income
+		required_missions = { gen_angel_adherence_to_ilias_faith }
+		position = 2
+		
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 10
+				development = 10
+				is_overseas = no
+			}
+			NOT = { average_home_autonomy = 15 }
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "gen_angel_prosperity_and_control_mod"
+				duration = 9125 #25 years
+			}
+			change_government_reform_progress = 25
+			add_adm_power = 75
+		}
+	}
+
+	gen_angel_build_churches_for_ilias = {
+		icon = mission_european_church
+		required_missions = { gen_angel_prosperity_and_control }
+		position = 3
+		
+		
+		trigger = {
+			calc_true_if = {
+				all_owned_province = {
+					OR = {
+						has_building = temple
+						has_building = cathedral
+					}
+				}
+				amount = 20
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "gen_angel_build_churches_for_ilias_mod"
+				duration = 9125 #25 years
+			}	
+		}
+	}
+
+	gen_angel_feathers_market = {
+		icon = mission_establish_feathers_market
+		required_missions = { gen_angel_build_churches_for_ilias }
+		position = 4
+		
+		
+		trigger = {
+			incense = 10
+			num_of_merchants = 4
+			production_efficiency = 0.40
+			calc_true_if = {
+				all_owned_province = {
+					OR = {
+						has_building = mills
+						has_building = farm_estate
+						has_building = tradecompany
+						has_building = plantations
+					}
+				}
+				amount = 10
+			}
+		}
+		
+		effect = {
+			add_years_of_income = 1.50
+			add_country_modifier = {
+				name = "gen_angel_feathers_market"
+				duration = 9125 #25 years
+			}
+		}
+	}
+
+	gen_angel_absolute_rule = {
+		icon = mission_empire
+		required_missions = { gen_angel_feathers_market }
+		position = 5
+		
+		
+		trigger = {
+			crown_land_share = 75
+			share_of_starting_income = 15
+			NOT = { average_unrest = 1  }
+			NOT = { average_home_autonomy = 1  }
+			calc_true_if = {
+				all_owned_province = {
+					OR = {
+						has_building = mills
+						has_building = farm_estate
+						has_building = tradecompany
+						has_building = plantations
+						has_building = textile
+						has_building = weapons
+						has_building = wharf
+						has_building = furnace
+					}
+				}
+				amount = 25
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "gen_angel_absolute_rule_mod"
+				duration = -1
+			}	
+			add_adm_power = 50
+			add_dip_power = 50
+			add_mil_power = 50
+		}
+	}
+	
+}
+angel_trade_expansion = {
+
+	slot = 5
+	generic = yes
+	ai = yes
+	
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		culture_group = angel #angel
+		NOT = { 
+			OR = {
+				
+			}
+		}
+	}
+	
+	has_country_shield = yes
+	
+	gen_angel_give_angel_privileges = {
+		icon = mission_angel_give_angel_privileges
+		required_missions = { }
+		position = 1
+		
+		trigger = {
+			estate_loyalty = {
+    				estate = estate_angels
+    				loyalty = 60
+				}
+			num_of_estate_privileges = {
+				estate = estate_angels 
+				value = 4
+			}
+		}
+		
+		effect = {
+			add_estate_loyalty = {
+    				estate = estate_angels
+    				loyalty = 15
+			}
+			add_country_modifier = {
+				name = "gen_angel_privileges_mod"
+				duration = -1
+			}
+		}
+	}
+	
+	gen_angel_total_submission_to_goddess = {
+		icon = mission_ilias
+		required_missions = { gen_angel_give_angel_privileges }
+		position = 2
+		
+		trigger = {
+			has_global_modifier_value = {
+				which = discipline
+				value = 0.15
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "gen_angel_total_submission_to_goddess_mod"
+				duration = -1
+			}	
+			add_army_tradition = 10
+		}
+	}
+	
+	gen_angel_establish_trade_companies = {
+		icon = mission_colonial
+		required_missions = { gen_angel_total_submission_to_goddess }
+		position = 3
+
+		trigger = {
+			OR = {
+				num_of_strong_trade_companies = 2
+				num_of_merchants = 4
+			}
+		}
+		
+		effect = {	
+			add_mercantilism = 4
+			add_years_of_income = 1
+		}
+	}
+	gen_angel_high_angel_ruler = {
+		icon = mission_ranael
+		required_missions = { gen_angel_establish_trade_companies }
+		position = 4
+		
+		trigger = {
+			monthly_adm = 10
+			monthly_dip = 10
+			monthly_mil = 10
+			grown_by_development = 750
+			legitimacy_equivalent = 90
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "gen_high_angel_mod"
+				duration = 9125 #25 years
+			}
+			add_years_of_income = 1
+			add_prestige = 15
+		}
+	}
+	gen_seraph_ambitions = {
+		icon = mission_zion
+		required_missions = { gen_angel_high_angel_ruler }
+		position = 5
+		
+		trigger = {
+			monthly_adm = 12
+			monthly_dip = 12
+			monthly_mil = 12
+			government_rank = 2
+			army_tradition = 50
+			army_size = 150
+			legitimacy_equivalent = 100
+			is_bankrupt = no
+		}
+		
+		effect = {
+			if = {
+				limit = {
+					NOT = { tag = IT1 }
+					NOT = { tag = SH3 }
+				}
+				custom_tooltip = accepted_seraph_ideas_tt
+				set_country_flag = accepted_seraph_ideas
+				hidden_effect = {
+					swap_free_idea_group = yes
+				}
+			}
+			else = { add_prestige = 50 }
+			add_prestige = 50
+			add_adm_power = 50
+			add_dip_power = 50
+			add_mil_power = 50
+		}
+	}
+	
+}

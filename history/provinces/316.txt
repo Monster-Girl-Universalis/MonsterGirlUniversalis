@@ -31,4 +31,3 @@ owner = ILB
 culture = ilian_human
 controller = ILB
 discovered_by = TECH_DEMI_HUMAN
-trade_goods = spices

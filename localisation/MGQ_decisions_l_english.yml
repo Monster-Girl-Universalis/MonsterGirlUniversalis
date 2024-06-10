@@ -24,6 +24,12 @@
  deep_sea_queen_nation_desc:0 "After becoming a powerful Sea Dweller and mastering the power of the water our ruler is capable enough to wear the mantle of Deep Sea Queen."
  mermaid_queen_nation_title:0 "Claim the title of Mermaid Queen"
  mermaid_queen_nation_desc:0 "After becoming a powerful Mermaid and mastering the power of the water our ruler is capable enough to wear the mantle of Mermaid Queen."
+ ultimate_final_doll_idea_title:0 "Embrace Ultimate Final Doll Ideas"
+ ultimate_final_doll_idea_desc:0 "Our Doll ruler finally grew strong enough to achieve the artificial perfection. She is about to become the most powerful doll construct.\n§YWe change our national ideas.§!"
+ seraph_idea_title:0 "Embrace Seraph Ideas"
+ seraph_idea_desc:0 "Our Angel ruler finally grew strong enough to be promoted in the hierarchy by the Goddess herself. Ilias decided to grant her the Seraph title!\n§YWe change our national ideas.§!"
+ lamia_queen_nation_title:0 "Claim the title of Lamia Queen"
+ lamia_queen_nation_desc:0 "After becoming a powerful Lamia and mastering the tail skills our ruler is capable enough to wear the mantle of Lamia Queen."
 
  ###HUMAN NATIONS### 
  san_ilia_nation_title:0 "Restore kingdom of San Ilia"
@@ -88,3 +94,6 @@
  roid_integration_decision_desc:0 "We have a lot of roid subjects in our realm and it's finally time to properly integrate them into our society. Though it will clearly benefit us in future, this process will require some time."
  tanuki_integration_decision_title:0 "Integrate tanuki race"
  tanuki_integration_decision_desc:0 "We have a lot of tanuki subjects in our realm and it's finally time to properly integrate them into our society. Though it will clearly benefit us in future, this process will require some time."
+ ###MISSION TREES DECISIONS###
+ investigate_rubiana_once_again_title:0 "Investigate Rubiana once again"
+ investigate_rubiana_once_again_desc:0 "We investigated the mysterious disappearance of Rubiana villagers but didn't find a clear explanation to the mystery. But perhaps we can revisit the place, provided we have better technology and learn more insight into this world."

@@ -1,0 +1,1796 @@
+namespace = gen_mgq_flavor
+
+
+
+
+#Productive Alraune
+country_event = {
+	id = gen_mgq_flavor.1
+	title = "gen_mgq_flavor.1.t"
+	desc = "gen_mgq_flavor.1.d"
+	picture = alraune_RACE_eventPicture
+	
+	trigger = {
+		has_estate = estate_monster_girls
+		NOT = { has_country_modifier = abundant_healing_honey }
+	}
+	
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "gen_mgq_flavor.1.a" 
+		add_country_modifier = {
+					name = abundant_healing_honey
+					duration = 3650
+				}
+		
+	}
+	option = {
+		name = "gen_mgq_flavor.1.b" 
+		highlight = yes
+		trigger = { ruler_has_personality_ancestor = { key = midas_touched } }
+		add_country_modifier = {
+					name = abundant_healing_honey
+					duration = 5475
+				}
+		
+	}
+	
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#Unemployed Beast Girls
+country_event = {
+	id = gen_mgq_flavor.2
+	title = "gen_mgq_flavor.2.t"
+	desc = "gen_mgq_flavor.2.d"
+	picture = beast_RACE_eventPicture
+	
+	trigger = {
+		has_estate = estate_monster_girls
+		NOT = { has_country_modifier = beast_girls_in_military }
+		NOT = { has_country_modifier = beast_girls_in_construction }
+			}
+	
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "gen_mgq_flavor.2.a" 
+		add_country_modifier = {
+					name = beast_girls_in_military
+					duration = 3650
+				}
+		
+	}
+	option = {
+		name = "gen_mgq_flavor.2.b" 
+		highlight = yes
+		trigger = { ruler_has_personality_ancestor = { key = martial_educator } }
+		add_country_modifier = {
+					name = beast_girls_in_military
+					duration = 7000
+				}
+		
+	}
+	option = {
+		name = "gen_mgq_flavor.2.c" 
+		add_country_modifier = {
+					name = beast_girls_in_construction
+					duration = 3650
+				}
+				add_adm_power = -10
+		
+	}
+	
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+#Mermaids Leave the Navy
+country_event = {
+	id = gen_mgq_flavor.3
+	title = "gen_mgq_flavor.3.t"
+	desc = "gen_mgq_flavor.3.d"
+	picture = mermaid_RACE_eventPicture
+	
+	trigger = {
+		has_estate = estate_monster_girls
+		num_of_ports = 1
+			}
+	
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "gen_mgq_flavor.3.a" 
+		add_years_of_income = 0.3
+		add_navy_tradition = -20
+		
+	}
+	option = {
+		name = "gen_mgq_flavor.3.b" 
+		add_dip_power = -25
+		add_navy_tradition = 10
+		
+		
+	}
+	
+	
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+#Orc Girls Turn to Banditry!
+country_event = {
+	id = gen_mgq_flavor.4
+	title = "gen_mgq_flavor.4.t"
+	desc = "gen_mgq_flavor.4.d"
+	picture = orc_girl_eventPicture
+	
+	trigger = {
+		has_estate = estate_monster_girls
+		NOT = { has_country_modifier = orc_girl_criminals }
+		NOT = { has_country_modifier = orc_girls_military }
+			}
+	
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "gen_mgq_flavor.4.a" 
+		add_country_modifier = {
+					name = orc_girl_criminals
+					duration = 3650
+				}
+		
+	}
+	option = {
+		name = "gen_mgq_flavor.4.b" 
+		add_adm_power = -25
+		add_mil_power = -25
+	
+		
+		
+	}
+	option = {
+		name = "gen_mgq_flavor.4.c" 
+		add_country_modifier = {
+					name = orc_girls_military
+					duration = 3650
+				}
+		add_mil_power = -150
+		
+		
+	}
+	
+	
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+#Insect Girl Population Boom
+country_event = {
+	id = gen_mgq_flavor.5
+	title = "gen_mgq_flavor.5.t"
+	desc = "gen_mgq_flavor.5.d"
+	picture = insect_girl_eventPicture
+	
+	trigger = {
+		has_estate = estate_monster_girls
+		
+			}
+	
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "gen_mgq_flavor.5.a" 
+		add_yearly_manpower = 0.3
+		random_owned_province = {
+			anti_tax_rebels = 1
+		}
+	}
+	option = {
+		name = "gen_mgq_flavor.5.b" 
+		add_years_of_income = 0.3
+		random_owned_province = {
+			anti_tax_rebels = 1
+		}
+	
+		
+		
+	}
+	
+	
+	
+	
+}
+
+
+
+
+
+
+
+
+
+#Who's a Good Girl? Dog Girls Are!
+country_event = {
+	id = gen_mgq_flavor.6
+	title = "gen_mgq_flavor.6.t"
+	desc = "gen_mgq_flavor.6.d"
+	picture = dog_girl_eventPicture
+	
+	trigger = {
+		has_estate = estate_monster_girls
+		NOT = { has_country_modifier = dog_girl_adorable_expansionists }
+		NOT = { has_country_modifier = dog_girl_diplomats }
+		NOT = { has_country_modifier = dog_girl_overlords }
+			}
+	
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "gen_mgq_flavor.6.a" 
+		add_country_modifier = {
+					name = dog_girl_adorable_expansionists
+					duration = 3650
+				}
+		
+	}
+	option = {
+		name = "gen_mgq_flavor.6.b" 
+		add_country_modifier = {
+					name = dog_girl_diplomats
+					duration = 3650
+				}
+		
+	}
+	option = {
+		name = "gen_mgq_flavor.6.c" 
+		add_country_modifier = {
+					name = dog_girl_overlords
+					duration = 3650
+				}
+		
+	}
+	
+	
+}
+	
+	
+
+
+
+
+
+#Truth Seekers Set Up Shop
+country_event = {
+	id = gen_mgq_flavor.7
+	title = "gen_mgq_flavor.7.t"
+	desc = "gen_mgq_flavor.7.d"
+	picture = lily_truth_seeker_eventPicture
+	
+	trigger = {
+		has_estate = estate_monster_girls
+		NOT = { has_country_modifier = truth_seeker_minorities }
+		NOT = { has_country_modifier = orthodoxy_asserted }
+		NOT = {religion = seekers_of_truth_religion}
+		NOT = { any_owned_province = { religion = seekers_of_truth_religion } } 
+			}
+	
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "gen_mgq_flavor.7.a" 
+		add_country_modifier = {
+					name = truth_seeker_minorities
+					duration = 3650
+				}
+		random_owned_province = {
+				change_religion = seekers_of_truth_religion
+			}
+		
+	}
+	option = {
+		name = "gen_mgq_flavor.7.b" 
+		add_country_modifier = {
+					name = orthodoxy_asserted
+					duration = 3650
+				}
+		
+		
+	}
+	
+	
+	
+}
+
+
+
+
+
+
+
+
+#Foreign Mermaids Girls Outcompete Local Merchants!
+country_event = {
+	id = gen_mgq_flavor.8
+	title = "gen_mgq_flavor.8.t"
+	desc = "gen_mgq_flavor.8.d"
+	picture = mermaid_merchant_eventPicture
+	
+	trigger = {
+		has_estate = estate_monster_girls
+		num_of_ports = 1
+			}
+	
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "gen_mgq_flavor.8.a" 
+		add_years_of_income = -0.1
+		
+		
+	}
+	option = {
+		name = "gen_mgq_flavor.8.b" 
+		reduce_estate_burghers_loyalty_effect = yes
+		random_owned_province = {
+			anti_tax_rebels = 1
+		}
+
+		
+		
+		
+	}
+	
+	
+	
+}
+
+
+
+
+
+
+
+#Lamia Nun Administrators Offer Their Services
+country_event = {
+	id = gen_mgq_flavor.9
+	title = "gen_mgq_flavor.9.t"
+	desc = "gen_mgq_flavor.9.d"
+	picture = lamia_nun_eventPicture
+	
+	trigger = {
+		has_estate = estate_monster_girls
+		NOT = { has_country_modifier = lamia_nun_administration }
+		
+			}
+	
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "gen_mgq_flavor.9.a" 
+		add_country_modifier = {
+					name = lamia_nun_administration
+					duration = 3650
+				}
+		
+	}
+	option = {
+		name = "gen_mgq_flavor.9.b" 
+		add_prestige = 5
+		
+	}
+	
+	
+	
+}
+
+
+
+
+
+
+
+
+
+#Earthworm Girls Find a Mine!
+country_event = {
+	id = gen_mgq_flavor.10
+	title = "gen_mgq_flavor.10.t"
+	desc = "gen_mgq_flavor.10.d"
+	picture = earthworm_girl_eventPicture
+	
+	trigger = {
+		has_estate = estate_monster_girls
+		OR = {
+		iron = 1
+		copper = 1
+		}
+		NOT = {
+			any_owned_province = {
+				has_province_modifier = earthworm_girl_mine
+			}
+		}
+		
+			}
+	
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "gen_mgq_flavor.10.a" 
+		random_owned_province = {
+				limit = {
+					OR = {
+					trade_goods = iron
+					trade_goods = copper
+					
+					}
+				}
+				add_base_production = 5
+				add_province_modifier = {
+					name = "earthworm_girl_mine"
+					duration = -1
+				}
+			}
+		
+	}
+	option = {
+		name = "gen_mgq_flavor.10.b" 
+		add_prestige = 10
+		
+	}
+	
+	
+	
+}
+
+
+
+
+
+
+
+
+#Sea Dwellers Settle
+country_event = {
+	id = gen_mgq_flavor.11
+	title = "gen_mgq_flavor.11.t"
+	desc = "gen_mgq_flavor.11.d"
+	picture = sea_dweller_RACE_eventPicture
+	
+	trigger = {
+		has_estate = estate_monster_girls
+		num_of_ports = 1
+		
+			}
+	
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "gen_mgq_flavor.11.a" 
+		random_owned_province = {
+				limit = {
+					has_port = yes
+				}
+				add_base_production = 1
+				add_local_autonomy = 50
+			}
+		
+	}
+	option = {
+		name = "gen_mgq_flavor.11.b" 
+		random_owned_province = {
+				limit = {
+					has_port = yes
+				}
+				add_base_production = 1
+				add_adm_power = -25
+			}
+		
+	}
+	option = {
+		name = "gen_mgq_flavor.11.c" 
+		add_mil_power = -5
+		
+	}
+	option = {
+		name = "gen_mgq_flavor.11.e" 
+		highlight = yes
+		trigger = { ruler_has_personality_ancestor = { key = tolerant } }
+		random_owned_province = {
+				limit = {
+					has_port = yes
+				}
+				add_base_production = 1
+				
+			}
+		
+	}
+	
+	
+	
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+#Tanuki Scammers!
+country_event = {
+	id = gen_mgq_flavor.12
+	title = "gen_mgq_flavor.12.t"
+	desc = "gen_mgq_flavor.12.d"
+	picture = tanuki_RACE_eventPicture
+	
+	trigger = {
+		has_estate = estate_monster_girls
+		
+		NOT = { has_country_modifier = tanuki_scammer_spies }
+		
+			}
+	
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "gen_mgq_flavor.12.a" 
+		add_years_of_income = -0.25
+		add_country_modifier = {
+					name = tanuki_scammer_spies
+					duration = 3650
+				}
+	}
+	option = {
+		name = "gen_mgq_flavor.12.b" 
+		add_prestige = 1
+		add_years_of_income = -0.25
+	}
+	
+	
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+#High Quality Sheep Girl Wool
+country_event = {
+	id = gen_mgq_flavor.13
+	title = "gen_mgq_flavor.13.t"
+	desc = "gen_mgq_flavor.13.d"
+	picture = sheep_girl_eventPicture
+	
+	trigger = {
+		has_estate = estate_monster_girls
+		
+		NOT = { has_country_modifier = sheep_wool_supplies }
+		NOT = { has_country_modifier = extra_sheep_wool_supplies }
+		NOT = { has_country_modifier = yeti_fur_dominating } #The Sheep Girl Wool obviously isn't good enough for this event if it is losing to Yeti Fur on the market
+		
+			}
+	
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "gen_mgq_flavor.13.a" 
+		add_country_modifier = {
+					name = sheep_wool_supplies
+					duration = 3650
+				}
+	}
+	option = {
+		name = "gen_mgq_flavor.13.b" 
+		add_country_modifier = {
+					name = extra_sheep_wool_supplies
+					duration = 3650
+				}
+	}
+	
+	
+	
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+#Slime Girl Merchants Sell Gummy Worms
+country_event = {
+	id = gen_mgq_flavor.14
+	title = "gen_mgq_flavor.14.t"
+	desc = "gen_mgq_flavor.14.d"
+	picture = slime_RACE_eventPicture
+	
+	trigger = {
+		has_estate = estate_monster_girls
+		
+		NOT = { has_country_modifier = slime_girls_alienated }
+		NOT = { has_country_modifier = worm_girls_alienated }
+		
+		
+			}
+	
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "gen_mgq_flavor.14.a" 
+		add_country_modifier = {
+					name = slime_girls_alienated
+					duration = 3650
+				}
+	}
+	option = {
+		name = "gen_mgq_flavor.14.b" 
+		add_country_modifier = {
+					name = worm_girls_alienated
+					duration = 3650
+				}
+	}
+	
+	
+	
+	
+}
+
+
+
+
+
+
+
+
+#Kitsune Customers Flowing In
+country_event = {
+	id = gen_mgq_flavor.15
+	title = "gen_mgq_flavor.15.t"
+	desc = "gen_mgq_flavor.15.d"
+	picture = kitsune_girl_eventPicture
+	
+	trigger = {
+		has_estate = estate_monster_girls
+		
+		NOT = { has_country_modifier = kitsune_sage_customers }
+		
+		
+		
+			}
+	
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "gen_mgq_flavor.15.a" 
+		add_country_modifier = {
+					name = kitsune_sage_customers
+					duration = 3650
+				}
+	}
+	
+	
+	
+	
+	
+}
+
+
+
+
+
+
+
+#Succubi Settlers 
+country_event = {
+	id = gen_mgq_flavor.16
+	title = "gen_mgq_flavor.16.t"
+	desc = "gen_mgq_flavor.16.d"
+	picture = succubi_girls_eventPicture
+	
+	trigger = {
+		has_estate = estate_monster_girls
+		
+		
+		NOT = { has_country_modifier = succubus_as_diplomats }
+		NOT = { has_country_modifier = succubus_in_military }
+		NOT = { has_country_modifier = succubus_in_administration }
+		
+		
+		
+			}
+	
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "gen_mgq_flavor.16.a" 
+		add_dip_power = 25
+		add_country_modifier = {
+					name = succubus_as_diplomats
+					duration = 3650
+				}
+	}
+	option = {
+		name = "gen_mgq_flavor.16.b" 
+		add_country_modifier = {
+					name = succubus_in_military
+					duration = 3650
+				}
+	}
+	option = {
+		name = "gen_mgq_flavor.16.c" 
+		add_country_modifier = {
+					name = succubus_in_administration
+					duration = 3650
+				}
+	}
+	
+	
+	
+	
+	
+}
+
+
+
+
+
+
+
+#Yoma Prisoner Escapes!
+country_event = {
+	id = gen_mgq_flavor.17
+	title = "gen_mgq_flavor.17.t"
+	desc = "gen_mgq_flavor.17.d"
+	picture = powerful_rogue_yoma_eventPicture
+	
+	trigger = {
+		has_estate = estate_monster_girls
+		
+		}
+	
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "gen_mgq_flavor.17.a" 
+		add_mil_power = -100
+		add_manpower = -1
+		
+	}
+	option = {
+		name = "gen_mgq_flavor.17.b" 
+		add_stability = -1
+		add_prestige = -25
+		
+	}
+	
+	
+	
+	
+	
+	
+}
+
+
+
+
+
+
+#Statue of the Fairy
+country_event = {
+	id = gen_mgq_flavor.18
+	title = "gen_mgq_flavor.18.t"
+	desc = "gen_mgq_flavor.18.d"
+	picture = fairy_artist_eventPicture
+	
+	trigger = {
+		has_estate = estate_monster_girls
+		
+		
+		NOT = { has_country_modifier = fairy_girl_statue }
+		
+		
+		
+			}
+	
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "gen_mgq_flavor.18.a" 
+	    add_years_of_income = -1
+		add_country_modifier = {
+					name = fairy_girl_statue
+					duration = 3650
+				}
+	}
+	option = {
+		name = "gen_mgq_flavor.18.b" 
+		add_prestige = -10
+	}
+	
+	
+	
+	
+	
+	
+}
+
+
+
+
+
+
+
+
+
+
+#Polar Bear Girls Deliver Presents
+country_event = {
+	id = gen_mgq_flavor.19
+	title = "gen_mgq_flavor.19.t"
+	desc = "gen_mgq_flavor.19.d"
+	picture = polar_bear_girl_eventPicture
+	
+	trigger = {
+		has_estate = estate_monster_girls
+		
+		
+		NOT = { has_country_modifier = polar_bear_presents }
+		
+		
+		
+			}
+	
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "gen_mgq_flavor.19.a" 
+		reduce_estate_burghers_loyalty_effect = yes
+	    add_country_modifier = {
+					name = polar_bear_presents
+					duration = 3650
+				}
+	}
+	option = {
+		name = "gen_mgq_flavor.19.b" 
+		add_stability = -1
+	}
+	
+	
+	
+	
+	
+	
+}
+
+
+
+
+
+
+
+#Embarrassing Secret Leaked!
+country_event = {
+	id = gen_mgq_flavor.20
+	title = "gen_mgq_flavor.20.t"
+	desc = "gen_mgq_flavor.20.d"
+	picture = tanuki_RACE_eventPicture
+	
+	trigger = {
+		has_estate = estate_monster_girls
+		
+		
+		NOT = { has_country_modifier = tanuki_offended_accusations }
+		NOT = { has_country_modifier = kitsune_offended_accusations}
+		
+		
+		
+			}
+	
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "gen_mgq_flavor.20.a" 
+	
+	    add_country_modifier = {
+					name = tanuki_offended_accusations
+					duration = 3650
+				}
+	}
+	option = {
+		name = "gen_mgq_flavor.20.b" 
+		add_country_modifier = {
+					name = kitsune_offended_accusations
+					duration = 3650
+				}
+	}
+	option = {
+		name = "gen_mgq_flavor.20.c" 
+		add_prestige = 5
+		highlight = yes
+		trigger = { ruler_has_personality_ancestor = { key = secretive } }
+	}
+	
+	
+	
+	
+	
+	
+}
+
+
+
+
+
+
+
+#Dragon Girl Tactics
+country_event = {
+	id = gen_mgq_flavor.21
+	title = "gen_mgq_flavor.21.t"
+	desc = "gen_mgq_flavor.21.d"
+	picture = dragon_girl_army_eventPicture
+	
+	trigger = {
+		has_estate = estate_monster_girls
+		
+		
+		NOT = { has_country_modifier = dragon_girl_tactics }
+		NOT = { has_country_modifier = no_dragon_girl_tactics}
+		
+		
+		
+			}
+	
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "gen_mgq_flavor.21.a" 
+	
+	    add_country_modifier = {
+					name = dragon_girl_tactics
+					duration = 3650
+				}
+	}
+	option = {
+		name = "gen_mgq_flavor.21.b" 
+		add_country_modifier = {
+					name = no_dragon_girl_tactics
+					duration = 3650
+				}
+	}
+	
+	
+	
+	
+	
+	
+	
+}
+
+
+
+
+
+
+
+
+#Sea Dweller Pirates For Hire
+country_event = {
+	id = gen_mgq_flavor.22
+	title = "gen_mgq_flavor.22.t"
+	desc = "gen_mgq_flavor.22.d"
+	picture = shark_pirates_eventPicture
+	
+	trigger = {
+		has_estate = estate_monster_girls
+		
+		
+		NOT = { has_country_modifier = sea_dweller_pirates_hired }
+		
+		
+		
+		
+			}
+	
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "gen_mgq_flavor.22.a" 
+	
+	    add_country_modifier = {
+					name = sea_dweller_pirates_hired
+					duration = 3650
+				}
+	}
+	option = {
+		name = "gen_mgq_flavor.22.b" 
+		add_prestige = 5
+	}
+	
+	
+	
+	
+	
+	
+	
+}
+
+
+
+
+
+#Harpy Girl Scouts For Hire
+country_event = {
+	id = gen_mgq_flavor.23
+	title = "gen_mgq_flavor.23.t"
+	desc = "gen_mgq_flavor.23.d"
+	picture = sparrow_girl_eventPicture
+	
+	trigger = {
+		has_estate = estate_monster_girls
+		
+		
+		NOT = { has_country_modifier = harpy_girl_scouts_hired }
+		NOT = { has_country_modifier = increased_reliance_spies }
+		
+		
+		
+		
+			}
+	
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "gen_mgq_flavor.23.a" 
+	
+	    add_country_modifier = {
+					name = harpy_girl_scouts_hired
+					duration = 3650
+				}
+	}
+	option = {
+		name = "gen_mgq_flavor.23.b" 
+	
+	    add_country_modifier = {
+					name = increased_reliance_spies
+					duration = 3650
+				}
+	}
+	
+	
+	
+	
+	
+	
+	
+}
+
+
+
+
+
+
+
+
+#Ghost Girls Haunt a Fort
+country_event = {
+	id = gen_mgq_flavor.24
+	title = "gen_mgq_flavor.24.t"
+	desc = "gen_mgq_flavor.24.d"
+	picture = undead_RACE_eventPicture
+	
+	trigger = {
+		has_estate = estate_monster_girls
+		
+		
+		any_owned_province = {
+			is_overseas = no
+			is_capital = no
+			fort_level = 1
+			
+		}
+		
+		NOT = {
+		
+		any_owned_province = {
+			
+			 has_province_modifier = "ghosts_haunting_fort" 
+		}
+		
+		
+		
+		
+		}
+		
+		
+			}
+	
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "gen_mgq_flavor.24.a" 
+	    random_owned_province = {
+				limit = {
+				fort_level = 1
+				is_capital = no
+				}
+				add_province_modifier = {
+					name = "ghosts_haunting_fort"
+					duration = 3650
+				}
+				}
+				
+			
+	    
+	}
+	option = {
+		name = "gen_mgq_flavor.24.b" 
+		add_adm_power = -10
+	    random_owned_province = {
+				limit = {
+				fort_level = 1
+				is_capital = no
+				}
+				add_province_modifier = {
+					name = "ghosts_haunting_fort"
+					duration = 7300
+				}
+				}
+	    
+	}
+	option = {
+		name = "gen_mgq_flavor.24.c" 
+	    add_mil_power = -10
+	    
+	}
+	
+	
+	
+	
+	
+	
+	
+}
+
+
+
+
+
+
+
+
+
+
+#Undead Girls Take Offense to Holy Water
+country_event = {
+	id = gen_mgq_flavor.25
+	title = "gen_mgq_flavor.25.t"
+	desc = "gen_mgq_flavor.25.d"
+	picture = spirit_girl_eventPicture
+	
+	trigger = {
+		has_estate = estate_monster_girls
+		
+		incense = 1
+		NOT = {
+		
+		any_owned_province = {
+			
+			 has_province_modifier = "holy_water_production_curbed" 
+		}
+		
+		
+		
+		
+		}
+		
+		
+		
+		
+			}
+	
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "gen_mgq_flavor.25.a" 
+	    add_estate_loyalty = {
+        estate = estate_monster_girls
+        loyalty = -10
+}
+	    
+	}
+	option = {
+		name = "gen_mgq_flavor.25.b" 
+	    every_owned_province = {
+			limit = {
+				trade_goods = incense
+			}
+			add_province_modifier = {
+				name = holy_water_production_curbed
+				duration = 3650
+			}			
+		}
+	    
+	}
+	
+	
+	
+	
+	
+	
+	
+}
+
+
+
+
+
+
+
+
+#Elven Officer Discharged!
+country_event = {
+	id = gen_mgq_flavor.26
+	title = "gen_mgq_flavor.26.t"
+	desc = "gen_mgq_flavor.26.d"
+	picture = elf_girl_eventPicture
+	
+	trigger = {
+		has_estate = estate_monster_girls
+		has_estate = estate_nobles
+		
+		
+		
+		
+		
+		
+		
+			}
+	
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "gen_mgq_flavor.26.a" 
+	    add_estate_loyalty = {
+        estate = estate_monster_girls
+        loyalty = 10
+}
+add_estate_loyalty = {
+        estate = estate_nobles
+        loyalty = -10
+}
+add_army_tradition = 10
+	    
+	}
+	option = {
+		name = "gen_mgq_flavor.26.b" 
+	 add_estate_loyalty = {
+        estate = estate_monster_girls
+        loyalty = -10
+}
+add_estate_loyalty = {
+        estate = estate_nobles
+        loyalty = 10
+}
+add_estate_influence_modifier = {
+			estate = estate_monster_girls
+			desc = EST_VAL_ELVES_UPSET
+			influence = -10
+			duration = 5475
+		}
+	    
+	}
+	
+	
+	
+	
+	
+	
+	
+}
+
+
+
+
+
+
+
+#Conflict Between Ant Girls and Anteater Girls
+country_event = {
+	id = gen_mgq_flavor.27
+	title = "gen_mgq_flavor.27.t"
+	desc = "gen_mgq_flavor.27.d"
+	picture = anteater_girl_eventPicture
+	
+	trigger = {
+		has_estate = estate_monster_girls
+		
+		
+		
+		
+		
+		
+		
+			}
+	
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "gen_mgq_flavor.27.a" 
+	add_dip_power = -50
+	    
+	}
+	option = {
+		name = "gen_mgq_flavor.27.b" 
+	add_mil_power = -50
+	    
+	}
+	option = {
+		name = "gen_mgq_flavor.27.c" 
+	add_estate_loyalty = {
+        estate = estate_monster_girls
+        loyalty = -10
+}
+	   
+	}
+	
+	
+	
+	
+	
+	
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+#Ice Witches Ask for Funding for Ice Sculptures
+country_event = {
+	id = gen_mgq_flavor.28
+	title = "gen_mgq_flavor.28.t"
+	desc = "gen_mgq_flavor.28.d"
+	picture = ice_witch_eventPicture
+	
+	trigger = {
+		has_estate = estate_monster_girls
+		
+		
+		
+		
+		
+		
+		
+			}
+	
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "gen_mgq_flavor.28.a" 
+	add_years_of_income = -0.25
+	add_splendor = 100
+	    
+	}
+	option = {
+		name = "gen_mgq_flavor.28.b" 
+	add_years_of_income = -0.75
+	add_splendor = 200
+	    
+	}
+	option = {
+		name = "gen_mgq_flavor.28.c" 
+	add_estate_loyalty = {
+        estate = estate_monster_girls
+        loyalty = -10
+}
+add_prestige = -10
+	   
+	}
+	
+	
+	
+	
+	
+	
+	
+}
+
+
+
+
+
+
+
+
+#Wolf Girl Mercenaries
+country_event = {
+	id = gen_mgq_flavor.29
+	title = "gen_mgq_flavor.29.t"
+	desc = "gen_mgq_flavor.29.d"
+	picture = wolf_girl_army_eventPicture
+	
+	trigger = {
+		has_estate = estate_monster_girls
+		
+		
+		NOT = {religion = fenrir_religion}
+		
+		NOT = { has_country_modifier = wolf_girl_mercs }
+		
+		
+			}
+	
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "gen_mgq_flavor.29.a" 
+	add_country_modifier = {
+					name = wolf_girl_mercs
+					duration = 3650
+				}
+	random_owned_province = {
+				change_religion = fenrir_religion
+			}
+	    
+	}
+	option = {
+		name = "gen_mgq_flavor.29.b" 
+	
+	    add_estate_influence_modifier = {
+			estate = estate_monster_girls
+			desc = EST_VAL_WOLF_MERCS_REJECTED
+			influence = -10
+			duration = 5475
+		}
+		add_estate_loyalty = {
+        estate = estate_church
+        loyalty = 10
+}
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+}
+
+
+
+
+
+
+
+
+#Yeti Fur Outcompetes Sheep Girl Fur
+country_event = {
+	id = gen_mgq_flavor.30
+	title = "gen_mgq_flavor.30.t"
+	desc = "gen_mgq_flavor.30.d"
+	picture = yeti_girl_eventPicture
+	
+	trigger = {
+		has_estate = estate_monster_girls
+		
+		NOT = { has_country_modifier = sheep_wool_supplies }
+		NOT = { has_country_modifier = extra_sheep_wool_supplies }
+		NOT = { has_country_modifier = yeti_fur_dominating } 
+		
+		OR = 
+		
+		{
+		
+		
+		north_pole_superregion = {
+				type = any
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		south_pole_superregion = {
+				type = any
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		
+		
+		
+		
+		
+		
+		
+		}
+		
+		
+			}
+	
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "gen_mgq_flavor.30.a" 
+		add_country_modifier = {
+					name = yeti_fur_dominating
+					duration = 3650
+				}
+	}
+	option = {
+		name = "gen_mgq_flavor.30.b" 
+		
+		add_mercantilism = 3
+		add_estate_loyalty = {
+        estate = estate_monster_girls
+        loyalty = 10
+}
+		
+		}
+	
+	
+	
+	
+	
+}
+
+
+
+
+
+
+
+
+#Insect Girl Swarm Devastates a Province
+country_event = {
+	id = gen_mgq_flavor.31
+	title = "gen_mgq_flavor.31.t"
+	desc = "gen_mgq_flavor.31.d"
+	picture = insect_swarm_eventPicture
+	
+	trigger = {
+		has_estate = estate_monster_girls
+		
+	}
+	
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "gen_mgq_flavor.31.a" 
+		
+		random_owned_province = {
+				
+				add_devastation = 30
+				
+			}
+	}
+	option = {
+		name = "gen_mgq_flavor.31.b" 
+		add_mil_power = -25
+		add_prestige = 10
+	}
+	option = {
+		name = "gen_mgq_flavor.31.c" 
+			add_years_of_income = -0.1
+		
+	}
+	
+	
+	
+}

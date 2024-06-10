@@ -1,8 +1,8 @@
 add_core = KTI
 owner = KTI
-base_tax = 3
+base_tax = 4
 base_manpower = 3
-base_production = 3
+base_production = 4
 culture = Kitsune_Girl
 religion = yamatai_religion
 controller = KTI

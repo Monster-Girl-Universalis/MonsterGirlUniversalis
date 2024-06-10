@@ -3751,6 +3751,8 @@ angel_ideas = {
 			was_tag = IT1
 			tag = FC1
 			was_tag = FC1
+			tag = ENV
+			was_tag = ENV
 		}
 	}	
 

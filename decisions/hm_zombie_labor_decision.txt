@@ -1,0 +1,34 @@
+country_decisions = {
+
+	hm_zombie_labor_decision = {
+		major = no
+		potential = {
+
+			has_country_modifier = hm_zombie_labor 
+		}
+		allow = {
+			NOT = { has_country_modifier = hm_not_enough_zombies }
+			manpower = 30
+			
+			
+		}
+		effect = {
+
+			add_country_modifier = {
+					name = hm_not_enough_zombies
+					duration = 7300
+				}
+			add_manpower = -30
+			capital_scope = {
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+				
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+}

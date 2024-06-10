@@ -388,6 +388,7 @@ MGQ_kitsune_ideas = {
 		OR = {
 			culture_group = kitsune
 		}
+		NOT = { has_country_flag = accepted_nine-tailed_kitsune_ideas }
 	}	
 	free = yes
 	
@@ -530,7 +531,7 @@ MGQ_lamia_ideas = {
 		morale_damage = 0.05
 	}	
 	MGQ_serpent_wisdom = {
-		administrative_efficiency = 0.05
+		administrative_efficiency = 0.025
 	}
 	MGQ_tail_strike_tactics = {
 		infantry_shock = 0.5
@@ -609,6 +610,7 @@ MGQ_doll_ideas = {
 		OR = {
 			culture_group = doll
 		}
+		NOT = { has_country_flag = accepted_ultimate_final_doll_ideas }
 	}	
 	free = yes
 	
@@ -1337,6 +1339,7 @@ MGQ_angel_ideas = {
 		OR = {
 			culture_group = angel
 		}
+		NOT = { has_country_flag = accepted_seraph_ideas }
 	}	
 	free = yes
 	

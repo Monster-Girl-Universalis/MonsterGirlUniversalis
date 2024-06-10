@@ -31,3 +31,4 @@ add_core = KY1
 owner = KY1
 culture = Kyoryuu_Girl
 controller = KY1
+trade_goods = copper

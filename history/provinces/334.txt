@@ -1,7 +1,7 @@
 is_city = no
-base_tax = 3
-base_manpower = 2
-base_production = 3
+base_tax = 4
+base_manpower = 5
+base_production = 4
 add_core = DGR
 owner = DGR
 culture = Dog_Girl

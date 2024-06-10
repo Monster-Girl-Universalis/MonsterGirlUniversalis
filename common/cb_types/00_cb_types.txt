@@ -35,25 +35,7 @@ cb_restore_personal_union = {
 	is_triggered_only = yes
 	months = 240
 
-	prerequisites_self = {
-		OR = {
-			government = monarchy
-			has_government_attribute = has_dutch_election
-		}
-		is_revolutionary = no
-	}
 
-	prerequisites = {
-		FROM = {
-			OR = {
-				government = monarchy
-				has_reform = ambrosian_republic
-				# has_reform = military_dictatorship_reform
-				has_country_flag = neapolitan_republic
-			}
-			is_subject = no
-		}
-	}
 
 	war_goal = take_capital_personal_union
 }
@@ -507,6 +489,8 @@ cb_imperial = {
 		OR = {
 			dip_tech = 23
 			invasion_nation = yes
+			tag = AD1
+			tag = SO1
 		}
 		is_free_or_tributary_trigger = yes
 		is_revolutionary = no

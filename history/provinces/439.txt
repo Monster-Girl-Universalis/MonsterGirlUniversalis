@@ -1,7 +1,7 @@
 add_core = MIV
 owner = MIV
-base_tax = 3
-base_manpower = 3
+base_tax = 4
+base_manpower = 4
 base_production = 3
 culture = ilian_human
 religion = ilias_light_religion

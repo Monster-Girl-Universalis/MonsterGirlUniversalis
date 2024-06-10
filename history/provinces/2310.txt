@@ -31,3 +31,4 @@ add_core = WY2
 owner = WY2
 culture = Wyvern_Girl
 controller = WY2
+trade_goods = copper

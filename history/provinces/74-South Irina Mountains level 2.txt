@@ -2,7 +2,7 @@
 culture = Wolf_Girl
 religion = fenrir_religion
 trade_goods = copper
-base_tax = 3
+base_tax = 2
 base_production = 3
 base_manpower = 2
 native_size = 0

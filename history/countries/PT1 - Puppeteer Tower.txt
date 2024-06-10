@@ -1,5 +1,5 @@
 government = monarchy
-government_rank = 1
+government_rank = 2
 primary_culture = Doll_Girl
 add_government_reform = Doll_realm
 religion = monster_lord_religion

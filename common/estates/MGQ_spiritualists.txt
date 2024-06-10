@@ -50,6 +50,7 @@ estate_spiritualists = {
 						was_tag = HM1
 						was_tag = LC1
 						was_tag = PT1
+						has_idea = ultimate_doll_spiritualist_mastery 
 					}
 	}
 
@@ -120,6 +121,11 @@ estate_spiritualists = {
 		estate_gravity
 		estate_mass_produce_zombies
 		estate_raise_master_undead
+		estate_zombie_admin
+		estate_loyal_zombies
+		estate_zombie_settlements
+		estate_zombie_education
+		estate_zombie_medic
 	}
 
 	agendas = {

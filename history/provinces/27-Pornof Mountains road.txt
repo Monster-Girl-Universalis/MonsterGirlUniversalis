@@ -2,7 +2,7 @@
 culture = Orc_Girl
 religion = monster_lord_religion
 trade_goods = grain
-base_tax = 3
+base_tax = 2
 base_production = 3
 base_manpower = 2
 native_size = 0

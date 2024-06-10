@@ -108,6 +108,12 @@ spriteTypes = {
 		texturefile = "gfx//interface//fetishists_strip.dds"
 		noOfFrames = 33
 	}
+	#Elemental Religions
+	spriteType = {
+		name = "GFX_hindu_deities_strip"
+		texturefile = "gfx//interface//hindu_deities_strip.dds"
+		noOfFrames = 16
+	}
 }
 
 

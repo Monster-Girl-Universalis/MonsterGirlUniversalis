@@ -1,7 +1,7 @@
 is_city = no
 base_tax = 3
 base_manpower = 2
-base_production = 3
+base_production = 5
 add_core = SGR
 owner = SGR
 culture = Sheep_Girl
@@ -30,3 +30,4 @@ discovered_by = TECH_UNDEAD
 discovered_by = TECH_VAMPIRE
 discovered_by = TECH_YOUMA
 discovered_by = TECH_DEMI_HUMAN
+trade_goods = wine

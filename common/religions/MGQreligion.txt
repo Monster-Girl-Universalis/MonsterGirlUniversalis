@@ -214,7 +214,7 @@ elemental_religion_g = {
 			shock_damage = 0.15
 			movement_speed = 0.10
 		}
-		
+		personal_deity = yes		
 		province = {
 			local_prosperity_growth = 0.1
 			local_development_cost = -0.1
@@ -222,7 +222,7 @@ elemental_religion_g = {
 		
 		
 		country_as_secondary = {
-			movement_speed = 0.125
+			movement_speed = 0.10
 		}
 
 	}	
@@ -233,16 +233,18 @@ elemental_religion_g = {
 		country = {
 			shock_damage_received = -0.15
 		}
+
+		personal_deity = yes
 		
 		province = {
 			local_prosperity_growth = 0.1
-			local_hostile_movement_speed = 0.10
+			local_hostile_movement_speed = -0.10
 			local_development_cost = -0.1
 		}
 		
 		
 		country_as_secondary = {
-			land_morale_constant = 0.75
+			land_morale_constant = 0.50
 		}
 
 	}	
@@ -254,7 +256,8 @@ elemental_religion_g = {
 			fire_damage_received = -0.15
 			morale_damage_received = -0.10
 		}
-		
+
+		personal_deity = yes		
 		province = {
 			local_prosperity_growth = 0.05
 			local_development_cost = -0.05
@@ -262,7 +265,7 @@ elemental_religion_g = {
 		
 		
 		country_as_secondary = {		
-			morale_damage_received = -0.125
+			morale_damage_received = -0.075
 		}
 
 	}	
@@ -274,7 +277,8 @@ elemental_religion_g = {
 			fire_damage = 0.15
 			morale_damage = 0.10
 		}
-		
+
+		personal_deity = yes		
 		province = {
 			local_prosperity_growth = 0.05
 			local_development_cost = -0.05
@@ -282,7 +286,7 @@ elemental_religion_g = {
 		
 		
 		country_as_secondary = {	
-			morale_damage = 0.125
+			morale_damage = 0.075
 		}
 
 	}	

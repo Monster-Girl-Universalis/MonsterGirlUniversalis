@@ -312,11 +312,41 @@ spriteTypes = {
 	spriteType = {
 		name = "sparrow_girl_eventPicture"
 		texturefile = "gfx/event_pictures/sparrow_girl_eventPicture.dds"
-		allwaystransparent = yes
+		allwaystransparent = yes	
 	}
 	spriteType = {
 		name = "MONSTER_LORD_SLAYER_eventPicture"
 		texturefile = "gfx/event_pictures/MONSTER_LORD_SLAYER_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "AssasinationAttempt_eventPicture"
+		texturefile = "gfx/event_pictures/AssasinationAttempt_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "PortNatalia_eventPicture"
+		texturefile = "gfx/event_pictures/PortNatalia_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "LudditeVillage_eventPicture"
+		texturefile = "gfx/event_pictures/LudditeVillage_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "Lilith_Sisters_eventPicture"
+		texturefile = "gfx/event_pictures/Lilith_Sisters_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "Rubiana_eventPicture"
+		texturefile = "gfx/event_pictures/Rubiana_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "PromesteinLabs"
+		texturefile = "gfx/event_pictures/PromesteinLabs.dds"
 		allwaystransparent = yes
 	}
 }

@@ -384,3 +384,206 @@ gen_mermaid_secured_naval_supplies = {
 	naval_maintenance_modifier = -0.15
 	naval_forcelimit_modifier = 0.15
 }
+
+gen_doll_improve_the_doll_quality_mod = {
+	production_efficiency = 0.15
+	build_cost = -0.10
+}
+gen_doll_assembly_lines_mod = {
+	build_time = -0.10
+	global_regiment_recruit_speed = -0.10
+}
+gen_doll_introduce_vocaloids_mod = {
+	morale_damage_received = -0.05
+	naval_morale_damage_received = -0.05
+}
+gen_doll_produce_golem_seals_mod = {
+	defensiveness = 0.075
+	siege_ability = 0.075
+}
+gen_doll_quality_precision_mod = {
+	all_power_cost = -0.02
+}
+gen_doll_secure_parts_for_doll_production__mod = {
+	development_cost = -0.05
+	build_cost = -0.10
+}
+gen_doll_powerful_doll_girl_mod = {
+	prestige_decay = -0.02
+	manpower_recovery_speed = 0.33
+}
+gen_angel_adherence_to_ilias_faith_mod = {
+	prestige = 0.5
+	stability_cost_modifier = -0.10
+}
+gen_angel_prosperity_and_control_mod = {
+	global_monthly_devastation = -0.2
+	development_cost = -0.10
+}
+gen_angel_build_churches_for_ilias_mod = {
+	global_tax_modifier = 0.25
+	build_time = -0.1
+}
+gen_angel_feathers_market_mod = {
+	trade_efficiency = 0.15
+	merchants = 1
+}
+gen_angel_absolute_rule_mod = {
+	max_absolutism = 10
+	yearly_absolutism = 0.5
+}
+gen_angel_privileges_mod = {
+	angels_loyalty_modifier = 0.10
+}
+gen_angel_total_submission_to_goddess_mod = {
+	global_unrest = -1
+	autonomy_change_time = -0.25
+}
+gen_high_angel_mod = {
+	discipline = 0.05
+	military_tactics = 0.05
+}
+gen_lamia_diplomacy = {
+	diplomatic_upkeep = 2
+}
+gen_invited_lamia_nuns = {
+	development_cost = -0.05
+	global_monthly_devastation = -0.05	
+}
+gen_lamia_secure_food_production_mod = {
+	production_efficiency = 0.15
+}
+gen_lamia_perfect_administrators = {
+	overextension_impact_modifier = -0.1
+	administrative_efficiency = 0.05
+}
+gen_lamia_secure_flail_production = {
+	shock_damage = 0.075
+	infantry_shock = 0.25
+}
+gen_yoma_secure_rapier_production = {
+	infantry_power = 0.10
+	infantry_cost = -0.10
+}
+gen_yoma_prosperous_realm = {
+	production_efficiency = 0.10
+	trade_efficiency = 0.10
+}
+gen_integrate_yoma_warfare = {
+	land_maintenance_modifier = -0.15
+}
+gen_yoma_rapiers_and_magic_mod = {
+	shock_damage = 0.10
+	fire_damage = 0.10
+}
+gen_demi_human_diplomacy = {
+	diplomatic_upkeep = 1
+	dip_advisor_cost = -0.15
+}
+gen_demi_human_develop_youkai_habitat = {
+	build_cost = -0.10
+	reform_progress_growth = 0.10
+}
+gen_demi_human_deal_with_feral_youkai = {
+	build_time = -0.075
+	great_project_upgrade_time = -0.075
+}
+gen_demi_human_land_of_shrines_mod = {
+	development_cost = -0.1
+	development_cost_in_primary_culture = -0.1
+}
+gen_demi_human_taoist_powerhouse = {
+	prestige_decay = -0.01
+	all_power_cost = -0.025
+}
+gen_demi_human_youkai_warfare_mod = {
+	shock_damage = 0.15
+	infantry_shock = 0.15
+}
+
+###San Ilia
+san_ilia_court = {
+	advisor_cost = -0.15
+}
+majestic_cathedral_of_san_ilia = {
+	local_tax_modifier = 1
+}
+industrialisation_led_by_church = {
+	global_institution_spread = 0.20
+	embracement_cost = -0.20
+}
+human_makina_fusion = {
+	all_power_cost = -0.05
+	country_admin_power = -1
+	country_diplomatic_power = -1
+	country_military_power = -1
+}
+the_singularity = {
+	country_admin_power = 1
+	country_diplomatic_power = 1
+	country_military_power = 1
+	
+}
+si1_raise_the_navy = {
+	naval_maintenance_modifier = -0.20
+	naval_tradition_from_trade = 0.1
+}
+si1_st_amos_expedition = {
+	all_power_cost = 0.05
+	country_diplomatic_power = -1
+}
+place_of_ilias_pilgrimes = {
+	local_development_cost = -0.15
+	allowed_num_of_buildings = 1
+}
+integration_of_sylph_practices = {
+	religion = yes
+	local_religious_unity_contribution = -1
+}
+power_of_the_wind_harnessed = {
+	movement_speed = 0.10
+}
+si1_trading_fleet = {
+	ship_trade_power_modifier = 0.2
+	light_ship_cost = -0.30
+}
+si1_dreadnoughts = {
+	ship_durability = 0.20
+	heavy_ship_hull_size_modifier = 0.1
+}
+si1_trading_with_grand_noah = {
+	trade_efficiency = 0.20
+	inflation_reduction = -0.03
+}
+si1_destroyed_the_smugglers_den = {
+	embargo_efficiency = 0.50
+	yearly_corruption = -0.20
+}
+si1_ready_to_face_kagetsumugi = {
+	discipline = 0.05
+	global_regiment_recruit_speed = -0.15
+}
+si1_exploring_the_ruins = {
+	all_power_cost = 0.05
+	country_administrative_power = -1
+	
+}
+si1_first_payments_for_research = {
+	all_power_cost = -0.025
+	yearly_innovativeness = 0.5
+}
+build_the_makina_research_universities = {
+	yearly_innovativeness = 1
+	monthly_splendor = 2
+}
+fund_the_advanced_technology_research = {
+	all_power_cost = -0.05
+	yearly_innovativeness = 2
+	monthly_splendor = 2
+}
+delve_deeper_to_the_facilities_secrets = {
+	all_power_cost = 0.10
+	country_administrative_power = -1
+	country_diplomatic_power = -1
+	country_military_power = -1
+}

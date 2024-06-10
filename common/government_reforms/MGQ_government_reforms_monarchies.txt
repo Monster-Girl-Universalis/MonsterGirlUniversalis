@@ -638,7 +638,7 @@ Lamia_realm = {
 	legacy_equivalent = ottoman_government_legacy
 	modifiers = {
 		governing_capacity = 200
-		administrative_efficiency = 0.1
+		administrative_efficiency = 0.05
 		monarch_lifespan = 1
 		block_introduce_heir = yes
 	}
@@ -826,7 +826,7 @@ Artiste_necromancer = {
 			have_had_reform = Artiste_necromancer 
 			AND = {
 				is_playing_custom_nation = yes
-				have_had_reform = heavenly_bandits
+				have_had_reform = Artiste_necromancer 
 			}
 		}
 	}
@@ -866,20 +866,19 @@ heavenly_bandits = {
 	allow_normal_conversion = no
 	potential = {
     		OR = {
-			tag= HVB
+			tag = HVB
 			was_tag = HVB
-			have_had_reform = heavenly_bandits
-			}
+			have_had_reform = heavenly_bandits2
 			AND = {
 				is_playing_custom_nation = yes
-				have_had_reform = heavenly_bandits
+				have_had_reform = heavenly_bandits2
 			}
 		}
 	}
 	valid_for_new_country = no
 	valid_for_nation_designer = no
 	nation_designer_cost = 40
-	#legacy_equivalent = ottoman_government_legacy
+	legacy_equivalent = ottoman_government_legacy
 	modifiers = {
 		num_accepted_cultures = 4
 		diplomats = 2

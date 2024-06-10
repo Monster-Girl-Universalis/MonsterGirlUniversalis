@@ -1,0 +1,147 @@
+# Do not change tags in here without changing every other reference to them.
+# If adding new dieties, make sure they are uniquely named.
+
+earthquake = {
+	leader_siege = 2
+	global_monthly_devastation = 0.15
+	
+	potential = { religion = earth_religion }
+	trigger = {}
+	sprite = 14
+	
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			personality = ai_militarist
+		}
+		modifier = {
+			factor = 0.5
+			is_year = 1550
+		}	
+		modifier = {
+			factor = 0.5
+			personality = ai_diplomat
+		}		
+	}
+}
+
+mountain_aspect = {
+	defensiveness = 0.30
+	garrison_size = 0.50
+	
+	potential = { religion = earth_religion }
+	trigger = {}
+	sprite = 14
+	
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 3
+			personality = ai_balanced
+		}
+		modifier = {
+			factor = 0.5
+			personality = ai_diplomat
+		}			
+	}	
+}
+
+desert_aspect = {
+	land_attrition = -0.25
+	fire_damage = 0.10
+	
+	potential = { religion = earth_religion }
+	trigger = {}
+	sprite = 14
+	
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 3
+			personality = ai_capitalist
+		}	
+		modifier = {
+			factor = 1.5
+			is_year = 1550
+		}	
+		modifier = {
+			factor = 2
+			personality = ai_militarist
+		}			
+	}	
+}
+
+earth_rumbling_decapitation = {
+	shock_damage = 0.10
+	tolerance_own = 3
+	
+	potential = { religion = earth_religion }
+	trigger = {}
+	sprite = 14
+	
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 3
+			personality = ai_militarist
+		}	
+		modifier = {
+			factor = 2
+			personality = ai_colonialist
+		}		
+	}	
+}
+
+mole = { 
+	movement_speed = 0.10
+	leader_land_manuever = 1
+	
+	potential = { religion = earth_religion }
+	trigger = {}
+	sprite = 14
+	
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			personality = ai_capitalist
+		}	
+		modifier = {
+			factor = 0.75
+			personality = ai_militarist
+		}		
+	}	
+}
+
+sandstorm = {
+	administrative_efficiency = 0.025
+	
+	potential = { religion = earth_religion }
+	trigger = {}
+	sprite = 14
+	
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			personality = ai_balanced
+		}	
+		modifier = {
+			factor = 0.5
+			personality = ai_capitalist
+		}		
+	}	
+}

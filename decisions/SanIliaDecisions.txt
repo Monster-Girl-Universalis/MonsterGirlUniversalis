@@ -1,0 +1,25 @@
+country_decisions = {
+
+	investigate_rubiana_once_again = {
+		major = yes
+		potential = {
+			has_country_flag = SI1_investigated_rubiana_once
+		}
+		allow = {
+			AND = {
+				adm_tech = 15
+				check_variable = {
+					which = Investigation_Progress
+					value = 3
+				}
+			}
+		}
+		effect = {
+				country_event = { id = flavor_si1.60 } 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+}

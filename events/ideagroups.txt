@@ -9124,12 +9124,77 @@ country_event = {
 				set_country_flag = refused_nine-tailed_kitsune_ideas
 			}
 		}
-		
 		set_country_flag = accepted_nine-tailed_kitsune_ideas
 		swap_free_idea_group = yes		#keep progress
 	}
 	option = {
 		name = ideagroups.1.b	#No, we cannot abandon our roots.
+		#No Effect
+		ai_chance = { factor = 0 }
+	}
+}
+
+# ultimate final doll
+country_event = {
+	id = ideagroups.doll
+	title = ideagroups.1.t
+	desc = ideagroups.1.d
+	picture = ADVISOR_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = ideagroups.1.a	#Yes Please!
+		ai_chance = { factor = 1 }
+		trigger = {
+				has_custom_ideas = no 
+			}
+		hidden_effect = {
+			if = {
+				limit = {
+					has_idea_group = ultimate_final_doll_ideas
+				}
+				set_country_flag = refused_ultimate_final_doll_ideas
+			}
+		}
+		set_country_flag = accepted_ultimate_final_doll_ideas
+		swap_free_idea_group = yes		#keep progress
+	}
+	option = {
+		name = ideagroups.1.b	#No, we cannot abandon our roots.
+		#No Effect
+		ai_chance = { factor = 0 }
+	}
+}
+
+# Seraph
+country_event = {
+	id = ideagroups.angel
+	title = ideagroups.1.t
+	desc = ideagroups.1.d
+	picture = ADVISOR_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = ideagroups.1.a	#Yes Please!
+		ai_chance = { factor = 1 }
+		trigger = {
+				has_custom_ideas = no 
+			}
+		hidden_effect = {
+			if = {
+				limit = {
+					has_idea_group = seraph_ideas
+				}
+				set_country_flag = refused_seraph_ideas
+			}
+		}
+		set_country_flag = accepted_seraph_ideas
+		swap_free_idea_group = yes		#keep progress
+	}
+	option = {
+		name = ideagroups.3.b	#No, we cannot abandon our roots.
 		#No Effect
 		ai_chance = { factor = 0 }
 	}

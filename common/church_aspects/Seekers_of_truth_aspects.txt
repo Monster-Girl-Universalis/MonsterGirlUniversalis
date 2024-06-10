@@ -790,6 +790,8 @@ science_angel_ghouls = {
 			was_tag = IT1
 			tag = FC1
 			was_tag = FC1
+			tag = ENV
+			was_tag = ENV
 			}
 		}
 		#tag = HM1

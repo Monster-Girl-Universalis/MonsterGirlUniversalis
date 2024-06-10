@@ -1,0 +1,21 @@
+government = monarchy
+government_rank = 3
+add_government_reform = Apoptosis_realm
+primary_culture = XX-class_Apoptosis
+religion = chaos_religion
+technology_group = TECH_APOPTOSIS
+
+capital = 2089 # Ilias Temple Ruins
+1444.1.1 = { 
+	monarch = { 
+		name = "Sonyachaos"
+		dynasty = "Apostle of Chaos"
+		birth_date = 1424.1.1
+		adm = 6
+		dip = 6
+		mil = 6
+		female = yes
+	}
+	add_ruler_personality = immortal_personality
+}
+#Sonya Apoptosis

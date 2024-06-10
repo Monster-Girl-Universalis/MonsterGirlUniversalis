@@ -1,5 +1,5 @@
-base_tax = 3
-base_manpower = 3
+base_tax = 4
+base_manpower = 6
 base_production = 3
 culture = Bee_Girl
 religion = monster_lord_religion
@@ -30,3 +30,4 @@ add_core = NBH
 owner = NBH
 controller = NBH
 discovered_by = TECH_DEMI_HUMAN
+trade_goods = tropical_wood

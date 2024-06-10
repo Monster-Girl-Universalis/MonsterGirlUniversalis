@@ -32,4 +32,3 @@ discovered_by = TECH_YOUMA
 discovered_by = TECH_DEMI_HUMAN
 center_of_trade = 1
 trade_goods = salt
-fort_15th = yes

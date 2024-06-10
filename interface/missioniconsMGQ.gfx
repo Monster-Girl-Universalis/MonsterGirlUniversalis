@@ -280,4 +280,237 @@ spriteTypes = {
         name = "mission_mermaid_queen_challenger"
         texturefile = "gfx//interface//missions//mission_mermaid_queen_challenger.dds"
     }
+	spriteType = {
+        name = "mission_administrator_tower"
+        texturefile = "gfx//interface//missions//mission_administrator_tower.dds"
+    }
+	spriteType = {
+        name = "mission_anteater"
+        texturefile = "gfx//interface//missions//mission_anteater.dds"
+    }
+	spriteType = {
+        name = "mission_chimera_homunculus"
+        texturefile = "gfx//interface//missions//mission_chimera_homunculus.dds"
+    }
+	spriteType = {
+        name = "mission_chrome_and_shirome"
+        texturefile = "gfx//interface//missions//mission_chrome_and_shirome.dds"
+    }
+	spriteType = {
+        name = "mission_chrome_necromaster"
+        texturefile = "gfx//interface//missions//mission_chrome_necromaster.dds"
+    }
+	spriteType = {
+        name = "mission_gold_mine"
+        texturefile = "gfx//interface//missions//mission_gold_mine.dds"
+    }
+	spriteType = {
+        name = "mission_kagetsumugi_the_puppeteer"
+        texturefile = "gfx//interface//missions//mission_kagetsumugi_the_puppeteer.dds"
+    }
+	spriteType = {
+        name = "mission_kagetsumugi_the_puppeteer2"
+        texturefile = "gfx//interface//missions//mission_kagetsumugi_the_puppeteer2.dds"
+    }
+	spriteType = {
+        name = "mission_la_croix"
+        texturefile = "gfx//interface//missions//mission_la_croix.dds"
+    }
+	spriteType = {
+        name = "mission_makina_beam_scythe"
+        texturefile = "gfx//interface//missions//mission_makina_beam_scythe.dds"
+    }
+	spriteType = {
+        name = "mission_makina_blast_voice"
+        texturefile = "gfx//interface//missions//mission_makina_blast_voice.dds"
+    }
+	spriteType = {
+        name = "mission_minotauros"
+        texturefile = "gfx//interface//missions//mission_minotauros.dds"
+    }
+	spriteType = {
+        name = "mission_monster_lord_15th"
+        texturefile = "gfx//interface//missions//mission_monster_lord_15th.dds"
+    }
+	spriteType = {
+        name = "mission_mountain_metals"
+        texturefile = "gfx//interface//missions//mission_mountain_metals.dds"
+    }
+	spriteType = {
+        name = "mission_natalia_region"
+        texturefile = "gfx//interface//missions//mission_natalia_region.dds"
+    }
+	spriteType = {
+        name = "mission_red_mushrooms"
+        texturefile = "gfx//interface//missions//mission_red_mushrooms.dds"
+    }
+	spriteType = {
+        name = "mission_slime_bess"
+        texturefile = "gfx//interface//missions//mission_slime_bess.dds"
+    }
+	spriteType = {
+        name = "mission_tarantula"
+        texturefile = "gfx//interface//missions//mission_tarantula.dds"
+    }
+	spriteType = {
+        name = "mission_tartarus_rift"
+        texturefile = "gfx//interface//missions//mission_tartarus_rift.dds"
+    }
+	spriteType = {
+        name = "mission_underground_labs"
+        texturefile = "gfx//interface//missions//mission_underground_labs.dds"
+    }
+	spriteType = {
+        name = "mission_underground_labs2"
+        texturefile = "gfx//interface//missions//mission_underground_labs2.dds"
+    }
+	spriteType = {
+        name = "mission_underground_labs3"
+        texturefile = "gfx//interface//missions//mission_underground_labs3.dds"
+    }
+	spriteType = {
+        name = "mission_watermelon_girls"
+        texturefile = "gfx//interface//missions//mission_watermelon_girls.dds"
+    }
+	spriteType = {
+        name = "mission_zombie_swordswoman"
+        texturefile = "gfx//interface//missions//mission_zombie_swordswoman.dds"
+    }
+	spriteType = {
+        name = "mission_makina_laser_pointer"
+        texturefile = "gfx//interface//missions//mission_makina_laser_pointer.dds"
+    }
+	spriteType = {
+        name = "mission_crabs_and_jellies"
+        texturefile = "gfx//interface//missions//mission_crabs_and_jellies.dds"
+    }
+	spriteType = {
+        name = "mission_astaroth"
+        texturefile = "gfx//interface//missions//mission_astaroth.dds"
+    }
+	spriteType = {
+        name = "mission_sister_lamia"
+        texturefile = "gfx//interface//missions//mission_sister_lamia.dds"
+    }
+	spriteType = {
+        name = "mission_lamia1"
+        texturefile = "gfx//interface//missions//mission_lamia1.dds"
+    }
+	spriteType = {
+        name = "mission_lamia2"
+        texturefile = "gfx//interface//missions//mission_lamia2.dds"
+    }
+	spriteType = {
+        name = "mission_rubiana"
+        texturefile = "gfx//interface//missions//mission_rubiana.dds"
+    }
+	spriteType = {
+        name = "mission_ilias_continent"
+        texturefile = "gfx//interface//missions//mission_ilias_continent.dds"
+    }
+	spriteType = {
+        name = "mission_dreadnought"
+        texturefile = "gfx//interface//missions//mission_dreadnought.dds"
+    }
+	spriteType = {
+        name = "mission_popes_ultimate_mecha_suit"
+        texturefile = "gfx//interface//missions//mission_popes_ultimate_mecha_suit.dds"
+    }
+	spriteType = {
+        name = "mission_human_makina_fusion"
+        texturefile = "gfx//interface//missions//mission_human_makina_fusion.dds"
+    }
+	spriteType = {
+        name = "mission_fusion_complete"
+        texturefile = "gfx//interface//missions//mission_fusion_complete.dds"
+    }
+	spriteType = {
+        name = "mission_ancient_lab_ruins_discover_truth"
+        texturefile = "gfx//interface//missions//mission_ancient_lab_ruins_discover_truth.dds"
+    }
+	spriteType = {
+        name = "mission_dollmaking"
+        texturefile = "gfx//interface//missions//mission_dollmaking.dds"
+    }
+	spriteType = {
+        name = "mission_doll_improve_the_doll_quality"
+        texturefile = "gfx//interface//missions//mission_doll_improve_the_doll_quality.dds"
+    }
+	spriteType = {
+        name = "mission_doll_assembly_lines"
+        texturefile = "gfx//interface//missions//mission_doll_assembly_lines.dds"
+    }
+	spriteType = {
+        name = "mission_doll_introduce_vocaloids"
+        texturefile = "gfx//interface//missions//mission_doll_introduce_vocaloids.dds"
+    }
+	spriteType = {
+        name = "mission_golem_girl"
+        texturefile = "gfx//interface//missions//mission_golem_girl.dds"
+    }
+	spriteType = {
+        name = "mission_doll_quality_precision"
+        texturefile = "gfx//interface//missions//mission_doll_quality_precision.dds"
+    }
+	spriteType = {
+        name = "mission_powerful_doll_girl_ruler"
+        texturefile = "gfx//interface//missions//mission_powerful_doll_girl_ruler.dds"
+    }
+	spriteType = {
+        name = "mission_ultimate_doll_ambitions"
+        texturefile = "gfx//interface//missions//mission_ultimate_doll_ambitions.dds"
+    }
+	spriteType = {
+        name = "mission_angel_give_angel_privileges"
+        texturefile = "gfx//interface//missions//mission_angel_give_angel_privileges.dds"
+    }
+	spriteType = {
+        name = "mission_ilias"
+        texturefile = "gfx//interface//missions//mission_ilias.dds"
+    }
+	spriteType = {
+        name = "mission_ranael"
+        texturefile = "gfx//interface//missions//mission_ranael.dds"
+    }
+	spriteType = {
+        name = "mission_zion"
+        texturefile = "gfx//interface//missions//mission_zion.dds"
+    }
+	spriteType = {
+        name = "mission_secure_flail_production"
+        texturefile = "gfx//interface//missions//mission_secure_flail_production.dds"
+    }
+	spriteType = {
+        name = "mission_lamia_queen_challenger"
+        texturefile = "gfx//interface//missions//mission_lamia_queen_challenger.dds"
+    }
+	spriteType = {
+        name = "mission_yoma_nobility_and_grace"
+        texturefile = "gfx//interface//missions//mission_yoma_nobility_and_grace.dds"
+    }
+	spriteType = {
+        name = "mission_yoma_promote_yoma_warfare"
+        texturefile = "gfx//interface//missions//mission_yoma_promote_yoma_warfare.dds"
+    }
+	spriteType = {
+        name = "mission_powerful_yoma_ruler"
+        texturefile = "gfx//interface//missions//mission_powerful_yoma_ruler.dds"
+    }
+	spriteType = {
+        name = "mission_yoma_royal_ambitions"
+        texturefile = "gfx//interface//missions//mission_yoma_royal_ambitions.dds"
+    }
+	spriteType = {
+        name = "mission_demi_human_youkai_warfare"
+        texturefile = "gfx//interface//missions//mission_demi_human_youkai_warfare.dds"
+    }
+	spriteType = {
+        name = "mission_powerful_demi_human_ruler"
+        texturefile = "gfx//interface//missions//mission_powerful_demi_human_ruler.dds"
+    }
+	spriteType = {
+        name = "mission_elder_youkai_ambitions"
+        texturefile = "gfx//interface//missions//mission_elder_youkai_ambitions.dds"
+    }
+
 }	

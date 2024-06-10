@@ -31,3 +31,4 @@ discovered_by = TECH_UNDEAD
 discovered_by = TECH_VAMPIRE
 discovered_by = TECH_YOUMA
 discovered_by = TECH_ROID
+trade_goods = copper

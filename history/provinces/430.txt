@@ -1,4 +1,4 @@
-base_tax = 3
+base_tax = 4
 base_manpower = 3
 base_production = 3
 culture = ilian_human
@@ -30,4 +30,3 @@ add_core = ILR
 owner = ILR
 controller = ILR
 discovered_by = TECH_DEMI_HUMAN
-trade_goods = copper

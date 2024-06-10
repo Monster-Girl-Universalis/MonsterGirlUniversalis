@@ -1,0 +1,144 @@
+# Do not change tags in here without changing every other reference to them.
+# If adding new dieties, make sure they are uniquely named.
+
+wildfire = {
+	hostile_attrition = 3
+	fort_maintenance_modifier = 0.30
+	
+	potential = { religion = fire_religion }
+	trigger = {}
+	sprite = 16
+	
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			personality = ai_militarist
+		}
+		modifier = {
+			factor = 1.5
+			is_year = 1550
+		}	
+		modifier = {
+			factor = 0.5
+			personality = ai_diplomat
+		}		
+	}
+}
+
+stars = {
+	idea_cost = -0.10
+	advisor_cost = -0.25
+	
+	potential = { religion = fire_religion }
+	trigger = {}
+	sprite = 16
+	
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 3
+			personality = ai_balanced
+		}
+		modifier = {
+			factor = 3
+			personality = ai_capitalist
+		}			
+	}	
+}
+
+sun = {
+	global_manpower_modifier = 0.25
+	global_unrest = -3
+	
+	potential = { religion = fire_religion }
+	trigger = {}
+	sprite = 16
+	
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 3
+			personality = ai_militarist
+		}	
+		modifier = {
+			factor = 2
+			personality = ai_balanced
+		}		
+	}	
+}
+
+omega_blaze = {
+	siege_ability = 0.20
+	prestige_from_land = 1
+	
+	potential = { religion = fire_religion }
+	trigger = {}
+	sprite = 16
+	
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 3
+			personality = ai_militarist
+		}	
+		modifier = {
+			factor = 2
+			personality = ai_balanced
+		}			
+	}	
+}
+
+phoenix = { 
+	war_exhaustion = -0.05
+	reinforce_cost_modifier = -0.5
+	
+	potential = { religion = fire_religion }
+	trigger = {}
+	sprite = 16
+	
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			personality = ai_capitalist
+		}	
+		modifier = {
+			factor = 1.75
+			personality = ai_militarist
+		}		
+	}	
+}
+
+ash = {
+	core_creation = -0.10
+	unjustified_demands = -0.10
+	
+	potential = { religion = fire_religion }
+	trigger = {}
+	sprite = 16
+	
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 3
+			personality = ai_balanced
+		}	
+		modifier = {
+			factor = 0.5
+			personality = ai_capitalist
+		}		
+	}	
+}

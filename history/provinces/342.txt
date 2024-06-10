@@ -1,7 +1,7 @@
 is_city = no
-base_tax = 3
-base_manpower = 2
-base_production = 3
+base_tax = 5
+base_manpower = 6
+base_production = 5
 add_core = HPV
 owner = HPV
 culture = ilian_human

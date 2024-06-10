@@ -106,7 +106,7 @@ beast_internal_development = {
 			estate_loyalty = {
     				estate = estate_monster_girls
     				loyalty = 60
-				}
+			}
 			has_estate_privilege = estate_beasts_in_military 
 		}
 		

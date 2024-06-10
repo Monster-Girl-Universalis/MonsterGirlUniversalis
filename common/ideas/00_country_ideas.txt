@@ -3,7 +3,6 @@
 # If adding new groups or ideas, make sure they are unique.
 
 # This one is the first for the case that some country manages to become fully Norse.
-
 nine-tailed_kitsune_ideas = {
 	start = {
 		spy_offence = 0.40	
@@ -16,10 +15,9 @@ nine-tailed_kitsune_ideas = {
 	
 	trigger = {
 		OR = {
-			has_country_flag = accepted_9tailed_kitsune_ideas
+			has_country_flag = accepted_nine-tailed_kitsune_ideas
 			tag = KI1
 		}
-		NOT = { has_country_flag = refused_9tailed_kitsune_ideas }
 	}
 	free = yes
 	
@@ -51,6 +49,193 @@ nine-tailed_kitsune_ideas = {
 	}
 }
 
+ultimate_final_doll_ideas = {
+	start = {
+		artillery_power = 0.20	
+		artillery_cost = -0.20
+		may_recruit_female_generals = yes
+	}
+	
+	bonus = {
+		morale_damage_received = -0.10
+	}
+	
+	trigger = {
+		OR = {
+			has_country_flag = accepted_ultimate_final_doll_ideas
+			tag = PT1
+		}
+	}
+	free = yes
+	
+	ultimate_doll_dollmaker_innovation = {
+		production_efficiency = 0.15
+		global_regiment_recruit_speed = -0.10
+	}
+	ultimate_doll_precision_engineering = {
+		build_cost = -0.10
+		development_cost = -0.10 
+	}
+	ultimate_doll_advanced_academy_dolls = {
+		technology_cost = -0.10
+		administrative_efficiency = 0.05
+	}
+	ultimate_doll_vocaloid_synthesis = {
+		land_morale = 0.20
+	}
+	ultimate_doll_guardian_golems = {
+		artillery_shock = 1
+		fort_maintenance_modifier = 0.20
+		defensiveness = 0.20
+	}
+	ultimate_doll_weaponized_evilmatons = {
+		morale_damage = 0.10
+		infantry_fire = 0.75
+	}
+	ultimate_doll_spiritualist_mastery = {
+		spiritualists_loyalty_modifier = 0.20
+		spiritualists_influence_modifier = 0.10
+	}
+}
+
+seraph_ideas = {
+	start = {
+		global_missionary_strength = 0.03
+		shock_damage = 0.20
+		may_recruit_female_generals = yes
+	}
+	
+	bonus = {
+		missionaries = 2
+	}
+	
+	trigger = {
+		has_country_flag = accepted_seraph_ideas
+	}
+	free = yes
+	
+	seraph_chosen_by_ilias = {
+		legitimacy = 1.5
+		republican_tradition = 0.45
+		devotion = 1.5
+		horde_unity = 1.5
+		meritocracy = 0.75
+	}
+	seraph_legacy_of_daystar = {
+		fire_damage = 0.15
+	}
+	seraph_legacy_of_blade_of_heaven = {
+		military_tactics = 0.15
+	}
+	seraph_legacy_of_garden_of_creation = {
+		development_cost = -0.10
+		manpower_in_true_faith_provinces = 0.33
+	}
+	seraph_daughters_of_goddess = {
+		angels_loyalty_modifier = 0.20
+		angels_influence_modifier = 0.10
+	}
+	seraph_seraphic_guardianship = {
+		own_territory_dice_roll_bonus = 1
+		defensiveness = 0.15
+	}
+	seraph_goddess_worship = {
+		stability_cost_modifier = -0.20
+		global_unrest = -1
+	}
+}
+#Sphynx
+PY1_ideas = {
+	start = {
+		prestige = 1.5
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+
+	bonus = {		
+		legitimacy = 1.5
+		republican_tradition = 0.45
+		devotion = 1.5
+		horde_unity = 1.5
+		meritocracy = 0.75
+	}
+	
+	trigger = {
+		OR = {
+			has_country_flag = accepted_sphynx_ideas
+			tag = PY1
+		}
+	}
+	free = yes
+
+	PY1_riddles_of_the_sphinx = {		
+		advisor_cost = -0.33
+	}
+	PY1_monumental_heritage = {		
+		global_tax_modifier = 0.33
+	}
+	PY1_astronomical_wisdom = {
+		all_power_cost = -0.075
+	}
+	PY1_pyramid_restoration = {
+		build_cost = -0.15
+		great_project_upgrade_cost = -0.15
+	}
+	PY1_mummification_mastery = {
+		morale_damage_received = -0.15
+	}
+	PY1_ancient_sphynx_yoma = {		
+		fire_damage = 0.25
+	}
+	PY1_ties_with_sabasa = {
+		diplomatic_upkeep = 2
+		diplomatic_reputation = 2
+	}
+}
+#Elder Youkai
+elder_youkai_ideas = {
+	start = {
+		prestige = 1
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+
+	bonus = {		
+		global_attacker_dice_roll_bonus = 1
+	}
+	
+	trigger = {
+		OR = {
+			has_country_flag = accepted_elder_youkai_ideas
+		}
+	}
+	free = yes
+
+	elder_youkai_immovable_force = {		
+		global_defender_dice_roll_bonus = 1
+	}
+	elder_youkai_Eldritch_Arcana_Mastery  = {		
+		technology_cost = -0.125
+	}
+	elder_youkai_Spirit_of_Yamatai = {
+		land_morale = 0.15
+	}
+	elder_youkai_dominion_of_ancient_woods = {
+		governing_capacity_modifier = 0.20
+	}
+	elder_youkai_ice_mastery = {
+		fire_damage_received = -0.25
+	}
+	elder_youkai_demon_arts_booster = {		
+		all_power_cost = -0.075
+	}
+	elder_youkai_ancient_youkai_heritage = {
+		prestige_decay = -0.01
+		diplomatic_reputation = 2
+	}
+}
 norse_ideas = {
 	start = {
 		land_morale = 0.15	

@@ -141,7 +141,7 @@ succubi_trade_expansion = {
 			estate_loyalty = {
     				estate = estate_monster_girls
     				loyalty = 60
-				}
+			}
 			has_estate_privilege = estate_encourage_succubi_to_settle
 		}
 		

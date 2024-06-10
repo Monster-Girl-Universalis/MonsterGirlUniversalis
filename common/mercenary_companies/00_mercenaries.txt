@@ -1,6 +1,6 @@
 #Iliasville Heroes
 merc_iliasville_heroes = {
-    regiments_per_development = 0.05
+    regiments_per_development = 0.04
 	artillery_weight = 0.1
     home_province = 41
 	sprites = { asiangfx_sprite_pack }
@@ -22,7 +22,7 @@ merc_iliasville_heroes = {
 
 #Dahlia Thugs
 merc_dahlia_thugs = {
-    regiments_per_development = 0.05
+    regiments_per_development = 0.04
 	artillery_weight = 0.1
     home_province = 79
 	sprites = { asiangfx_sprite_pack }
@@ -44,7 +44,7 @@ merc_dahlia_thugs = {
 
 #Southern Tartarus Abominations
 merc_southern_tartarus_abominations = {
-    regiments_per_development = 0.05
+    regiments_per_development = 0.04
 	artillery_weight = 0.2
     home_province = 58
 	sprites = { apoptosisgfx_sprite_pack }
@@ -67,7 +67,7 @@ merc_southern_tartarus_abominations = {
 
 #Eastern Tartarus Abominations
 merc_eastern_tartarus_abominations = {
-    regiments_per_development = 0.05
+    regiments_per_development = 0.04
 	artillery_weight = 0.2
     home_province = 20
 	sprites = { apoptosisgfx_sprite_pack }
@@ -90,7 +90,7 @@ merc_eastern_tartarus_abominations = {
 
 #Lost Woods Elves
 merc_lost_woods_elves = {
-    regiments_per_development = 0.05
+    regiments_per_development = 0.04
 	artillery_weight = 0.1
     home_province = 264
 	sprites = { asiangfx_sprite_pack }
@@ -113,7 +113,7 @@ merc_lost_woods_elves = {
 
 #Unfortunate Mermaids
 merc_unfortunate_mermaids = {
-    regiments_per_development = 0.05
+    regiments_per_development = 0.04
 	artillery_weight = 0.1
     home_province = 258
 	sprites = { asiangfx_sprite_pack }
@@ -136,7 +136,7 @@ merc_unfortunate_mermaids = {
 
 #Slug Swarms
 merc_slug_swarms = {
-    regiments_per_development = 0.05
+    regiments_per_development = 0.04
 	artillery_weight = 0.1
     home_province = 457
 	sprites = { asiangfx_sprite_pack }
@@ -159,7 +159,7 @@ merc_slug_swarms = {
 
 #Rabid Harpies
 merc_rabid_harpies = {
-    regiments_per_development = 0.05
+    regiments_per_development = 0.04
 	artillery_weight = 0.1
     home_province = 388
 	sprites = { asiangfx_sprite_pack }
@@ -182,7 +182,7 @@ merc_rabid_harpies = {
 
 #Naval Marines
 merc_naval_marines = {
-    regiments_per_development = 0.05
+    regiments_per_development = 0.04
 	artillery_weight = 0.2
     home_province = 484
 	sprites = { asiangfx_sprite_pack }
@@ -205,7 +205,7 @@ merc_naval_marines = {
 
 #Natalian Mermaids
 merc_natalian_mermaids = {
-    regiments_per_development = 0.05
+    regiments_per_development = 0.04
 	artillery_weight = 0.1
     home_province = 496
 	sprites = { asiangfx_sprite_pack }
@@ -228,7 +228,7 @@ merc_natalian_mermaids = {
 
 #Assault Roids
 merc_assault_roids = {
-    regiments_per_development = 0.05
+    regiments_per_development = 0.04
 	artillery_weight = 0.5
     home_province = 550
 	sprites = { asiangfx_sprite_pack }
@@ -251,7 +251,7 @@ merc_assault_roids = {
 
 #Succubus Nuns
 merc_succubus_nuns = {
-    regiments_per_development = 0.05
+    regiments_per_development = 0.04
 	artillery_weight = 0.1
     home_province = 584
 	sprites = { asiangfx_sprite_pack }
@@ -273,7 +273,7 @@ merc_succubus_nuns = {
 }
 #Elka's Thugs
 merc_elka_thugs = {
-    regiments_per_development = 0.05
+    regiments_per_development = 0.04
 	artillery_weight = 0.1
     home_province = 649
 	sprites = { asiangfx_sprite_pack }
@@ -294,7 +294,7 @@ merc_elka_thugs = {
 }
 #Zombies for Hire
 merc_zombies_for_hire = {
-    regiments_per_development = 0.06
+    regiments_per_development = 0.04
 	artillery_weight = 0
     home_province = 618
 	sprites = { asiangfx_sprite_pack }
@@ -316,7 +316,7 @@ merc_zombies_for_hire = {
 }
 #Professional Dolls
 merc_professional_dolls = {
-    regiments_per_development = 0.05
+    regiments_per_development = 0.04
 	artillery_weight = 0.1
     home_province = 698
 	sprites = { asiangfx_sprite_pack }
@@ -338,7 +338,7 @@ merc_professional_dolls = {
 }
 #Sabasa Assasins
 merc_sabasa_assasins = {
-    regiments_per_development = 0.05
+    regiments_per_development = 0.04
     home_province = 744
 	sprites = { asiangfx_sprite_pack }
     trigger = {
@@ -358,7 +358,7 @@ merc_sabasa_assasins = {
 }
 #Lucia's Warband
 merc_lucia_warband = {
-    regiments_per_development = 0.05
+    regiments_per_development = 0.04
     home_province = 836
 	sprites = { asiangfx_sprite_pack }
     trigger = {
@@ -379,7 +379,7 @@ merc_lucia_warband = {
 }
 #Walraunes
 merc_walraunes = {
-    regiments_per_development = 0.05
+    regiments_per_development = 0.04
 	artillery_weight = 0.1
     home_province = 1022
 	sprites = { asiangfx_sprite_pack }
@@ -401,7 +401,7 @@ merc_walraunes = {
 }
 #Devil Hunters
 merc_devil_hunters = {
-    regiments_per_development = 0.05
+    regiments_per_development = 0.04
 	artillery_weight = 0.1
     home_province = 874
 	sprites = { asiangfx_sprite_pack }
@@ -423,7 +423,7 @@ merc_devil_hunters = {
 }
 #Don Father's Troops
 merc_don_father_troops = {
-    regiments_per_development = 0.05
+    regiments_per_development = 0.04
 	artillery_weight = 0.2
     home_province = 773
 	sprites = { asiangfx_sprite_pack }
@@ -444,7 +444,7 @@ merc_don_father_troops = {
 }
 #Scale Bandits
 merc_scale_bandits = {
-    regiments_per_development = 0.05
+    regiments_per_development = 0.04
     home_province = 924
 	sprites = { asiangfx_sprite_pack }
     trigger = {
@@ -465,7 +465,7 @@ merc_scale_bandits = {
 }
 #Mud Dolls
 merc_mud_dolls = {
-    regiments_per_development = 0.05
+    regiments_per_development = 0.04
     home_province = 937
 	sprites = { asiangfx_sprite_pack }
     trigger = {
@@ -486,7 +486,7 @@ merc_mud_dolls = {
 }
 #Safina Apoptosis
 merc_safina_apoptosis = {
-    regiments_per_development = 0.06
+    regiments_per_development = 0.04
 	artillery_weight = 0.15
     home_province = 971
 	sprites = { apoptosisgfx_sprite_pack }
@@ -508,7 +508,7 @@ merc_safina_apoptosis = {
 }
 #Frog Girls
 merc_frog_girls = {
-    regiments_per_development = 0.05
+    regiments_per_development = 0.04
 	artillery_weight = 0.2
     home_province = 1069
 	sprites = { asiangfx_sprite_pack }
@@ -530,7 +530,7 @@ merc_frog_girls = {
 }
 #Noah Gladiators
 merc_noah_gladiators = {
-    regiments_per_development = 0.05
+    regiments_per_development = 0.04
 	artillery_weight = 0.2
     home_province = 1194
 	sprites = { asiangfx_sprite_pack }
@@ -574,7 +574,7 @@ merc_canaan_sisters = {
 }
 #Kunoichi Elves
 merc_kunoichi_elves = {
-    regiments_per_development = 0.05
+    regiments_per_development = 0.04
 	artillery_weight = 0.2
     home_province = 1168
 	sprites = { asiangfx_sprite_pack }
@@ -596,7 +596,7 @@ merc_kunoichi_elves = {
 }
 #Yamatai Militia
 merc_yamatai_militia = {
-    regiments_per_development = 0.05
+    regiments_per_development = 0.04
 	artillery_weight = 0.2
     home_province = 1222
 	sprites = { asiangfx_sprite_pack }
@@ -618,7 +618,7 @@ merc_yamatai_militia = {
 }
 #Red Slimes
 merc_red_slimes = {
-    regiments_per_development = 0.06
+    regiments_per_development = 0.04
 	artillery_weight = 0.2
     home_province = 1391
 	sprites = { asiangfx_sprite_pack }
@@ -640,7 +640,7 @@ merc_red_slimes = {
 }
 #Mercenary Mermaids
 merc_mercenary_mermaids = {
-    regiments_per_development = 0.05
+    regiments_per_development = 0.04
 	artillery_weight = 0.2
     home_province = 1472
 	sprites = { asiangfx_sprite_pack }
@@ -662,7 +662,7 @@ merc_mercenary_mermaids = {
 }
 #Western Nekomatas
 merc_western_nekomatas = {
-    regiments_per_development = 0.05
+    regiments_per_development = 0.04
 	artillery_weight = 0.2
     home_province = 1439
 	sprites = { asiangfx_sprite_pack }
@@ -684,7 +684,7 @@ merc_western_nekomatas = {
 }
 #Goddard Mercenaries
 merc_goddard_mercenaries = {
-    regiments_per_development = 0.05
+    regiments_per_development = 0.04
 	artillery_weight = 0.2
     home_province = 1522
 	sprites = { asiangfx_sprite_pack }
@@ -706,7 +706,7 @@ merc_goddard_mercenaries = {
 }
 #Ants for hire
 merc_ants_for_hire = {
-    regiments_per_development = 0.06
+    regiments_per_development = 0.04
 	artillery_weight = 0.2
     home_province = 1546
 	sprites = { asiangfx_sprite_pack }
@@ -728,7 +728,7 @@ merc_ants_for_hire = {
 }
 #Restless Ghouls
 merc_restless_ghouls = {
-    regiments_per_development = 0.06
+    regiments_per_development = 0.04
 	artillery_weight = 0.2
     home_province = 1604
 	sprites = { asiangfx_sprite_pack }
@@ -750,7 +750,7 @@ merc_restless_ghouls = {
 }
 #Battle Golems
 merc_battle_golems = {
-    regiments_per_development = 0.05
+    regiments_per_development = 0.04
 	artillery_weight = 0.2
     home_province = 1678
 	sprites = { asiangfx_sprite_pack }
@@ -772,7 +772,7 @@ merc_battle_golems = {
 }
 #Feral Succubi
 merc_feral_succubi = {
-    regiments_per_development = 0.05
+    regiments_per_development = 0.04
 	artillery_weight = 0.2
     home_province = 1708
 	sprites = { asiangfx_sprite_pack }
@@ -794,7 +794,7 @@ merc_feral_succubi = {
 }
 #The Arachnes
 merc_arachnes = {
-    regiments_per_development = 0.05
+    regiments_per_development = 0.04
 	artillery_weight = 0.2
     home_province = 1788
 	sprites = { asiangfx_sprite_pack }
@@ -816,7 +816,7 @@ merc_arachnes = {
 }
 #Oni of the mountain
 merc_oni_of_the_mountain = {
-    regiments_per_development = 0.05
+    regiments_per_development = 0.04
 	artillery_weight = 0.2
     home_province = 1822
 	sprites = { asiangfx_sprite_pack }
@@ -838,7 +838,7 @@ merc_oni_of_the_mountain = {
 }
 #Chimeric constructs
 merc_chimeric_constructs = {
-    regiments_per_development = 0.05
+    regiments_per_development = 0.04
 	artillery_weight = 0.2
     home_province = 1778
 	sprites = { asiangfx_sprite_pack }
@@ -860,7 +860,7 @@ merc_chimeric_constructs = {
 }
 #Gold Apoptosis
 merc_gold_apoptosis = {
-    regiments_per_development = 0.06
+    regiments_per_development = 0.04
 	artillery_weight = 0.2
     home_province = 1856
 	sprites = { apoptosisgfx_sprite_pack }
@@ -882,7 +882,7 @@ merc_gold_apoptosis = {
 }
 #Elite Vampires
 merc_elite_vampires = {
-    regiments_per_development = 0.04
+    regiments_per_development = 0.03
 	artillery_weight = 0.1
     home_province = 1918
 	sprites = { asiangfx_sprite_pack }
@@ -904,7 +904,7 @@ merc_elite_vampires = {
 }
 #Roaming Wyverns
 merc_roaming_wyverns = {
-    regiments_per_development = 0.05
+    regiments_per_development = 0.04
 	artillery_weight = 0.1
     home_province = 2235
 	sprites = { asiangfx_sprite_pack }
@@ -926,7 +926,7 @@ merc_roaming_wyverns = {
 }
 #Centaur elite
 merc_centaur_elite = {
-    regiments_per_development = 0.06
+    regiments_per_development = 0.04
     home_province = 2274
 	sprites = { asiangfx_sprite_pack }
     trigger = {
@@ -947,7 +947,7 @@ merc_centaur_elite = {
 }
 #Hellgondo Taoists
 merc_hellgondo_taoists = {
-    regiments_per_development = 0.05
+    regiments_per_development = 0.04
 	artillery_weight = 0.1
     home_province = 2347
 	sprites = { asiangfx_sprite_pack }
@@ -969,7 +969,7 @@ merc_hellgondo_taoists = {
 }
 #Elder Oni
 merc_elder_oni = {
-    regiments_per_development = 0.04
+    regiments_per_development = 0.03
 	artillery_weight = 0.1
     home_province = 2388
 	sprites = { asiangfx_sprite_pack }
@@ -991,7 +991,7 @@ merc_elder_oni = {
 }
 #Shadows from the Netherworld
 merc_shadows_from_the_netherworld = {
-    regiments_per_development = 0.05
+    regiments_per_development = 0.04
     home_province = 2183
 	sprites = { asiangfx_sprite_pack }
     trigger = {
@@ -1012,7 +1012,7 @@ merc_shadows_from_the_netherworld = {
 }
 #Polar Bears
 merc_polar_bears = {
-    regiments_per_development = 0.05
+    regiments_per_development = 0.04
 	artillery_weight = 0.1
     home_province = 1964
 	sprites = { asiangfx_sprite_pack }
@@ -1034,7 +1034,7 @@ merc_polar_bears = {
 }
 #Ice Witches
 merc_ice_witches = {
-    regiments_per_development = 0.04
+    regiments_per_development = 0.03
 	artillery_weight = 0.15
     home_province = 2037
 	sprites = { asiangfx_sprite_pack }
@@ -1056,7 +1056,7 @@ merc_ice_witches = {
 }
 #Rogue Valkyries
 merc_rogue_valkyries = {
-    regiments_per_development = 0.05
+    regiments_per_development = 0.04
 	artillery_weight = 0.1
     home_province = 2013
 	sprites = { asiangfx_sprite_pack }
@@ -1078,7 +1078,7 @@ merc_rogue_valkyries = {
 }
 #Angel Beasts
 merc_angel_beasts = {
-    regiments_per_development = 0.05
+    regiments_per_development = 0.04
 	artillery_weight = 0.1
     home_province = 2138
 	sprites = { asiangfx_sprite_pack }
@@ -1100,7 +1100,7 @@ merc_angel_beasts = {
 }
 #Otherwordly Angels
 merc_otherwordly_angels = {
-    regiments_per_development = 0.06
+    regiments_per_development = 0.04
 	artillery_weight = 0.2
     home_province = 2089
 	sprites = { apoptosisgfx_sprite_pack }
@@ -1122,7 +1122,7 @@ merc_otherwordly_angels = {
 }
 #Feral Wendigoes
 merc_feral_wendigoes = {
-    regiments_per_development = 0.06
+    regiments_per_development = 0.04
     home_province = 2484
 	sprites = { inuitgfx_sprite_pack }
     trigger = {
@@ -1143,7 +1143,7 @@ merc_feral_wendigoes = {
 }
 #Sedna daughters
 merc_sedna_daughters = {
-    regiments_per_development = 0.06
+    regiments_per_development = 0.04
     home_province = 2433
 	sprites = { inuitgfx_sprite_pack }
     trigger = {
@@ -1164,7 +1164,7 @@ merc_sedna_daughters = {
 }
 #The Drowned
 merc_the_drowned = {
-    regiments_per_development = 0.06
+    regiments_per_development = 0.04
     home_province = 2456
 	sprites = { inuitgfx_sprite_pack }
     trigger = {
@@ -1185,7 +1185,7 @@ merc_the_drowned = {
 }
 #Northern Bears
 merc_northern_bears = {
-    regiments_per_development = 0.06
+    regiments_per_development = 0.04
     home_province = 2522
 	sprites = { inuitgfx_sprite_pack }
     trigger = {
@@ -1206,7 +1206,7 @@ merc_northern_bears = {
 }
 #Emperor Penguins
 merc_emperor_penguins = {
-    regiments_per_development = 0.05
+    regiments_per_development = 0.04
     home_province = 2501
 	sprites = { inuitgfx_sprite_pack }
     trigger = {
@@ -1227,7 +1227,7 @@ merc_emperor_penguins = {
 }
 #Tsurara Onnas
 merc_tsurara_onnas = {
-    regiments_per_development = 0.06
+    regiments_per_development = 0.04
     home_province = 2559
 	sprites = { inuitgfx_sprite_pack }
     trigger = {

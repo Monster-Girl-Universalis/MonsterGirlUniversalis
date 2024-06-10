@@ -1,0 +1,298 @@
+demi_human_internal_development = {
+
+	slot = 1
+	generic = yes
+	ai = yes
+	
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		culture_group = demi_human #demi_human 
+		NOT = { 
+			OR = {
+				
+			}
+		}
+	}
+	
+	has_country_shield = yes
+	
+	gen_demi_human_diplomacy = {
+		icon = mission_alliances
+		required_missions = { }
+		position = 1
+		
+		trigger = {
+			OR = {
+				num_of_allies = 2
+				diplomatic_reputation = 4
+			}
+		}
+		
+		effect = {
+			add_dip_power = 75
+			add_country_modifier = {
+				name = "gen_demi_human_diplomacy"
+				duration = 9125 #25 years
+			}
+		}
+	}
+	
+	gen_demi_human_develop_youkai_habitat = {
+		icon = mission_beast_realm_of_the_wild
+		required_missions = { gen_demi_human_diplomacy }
+		position = 2
+		
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 5
+				development = 20
+			}
+		}
+		effect = {
+			random_owned_province = {
+				limit = {
+					development = 20 
+				}
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+			}
+			add_country_modifier = {
+				name = "gen_demi_human_develop_youkai_habitat"
+				duration = 9125 #25 years
+			}
+		}
+	}
+
+	gen_demi_human_deal_with_feral_youkai = {
+		icon = mission_beast_apex_sovereignty
+		required_missions = { gen_demi_human_develop_youkai_habitat }
+		position = 3
+		
+		
+		trigger = {
+			estate_loyalty = {
+    				estate = estate_monster_girls
+    				loyalty = 60
+			}
+			calc_true_if = {
+				all_owned_province = {
+					OR = {
+						fort_level = 2
+					}
+					is_prosperous = yes
+				}
+				amount = 10
+			}
+		}
+		
+		effect = {
+			add_army_tradition = 25
+			add_army_professionalism = 0.05
+			add_country_modifier = {
+				name = "gen_demi_human_deal_with_feral_youkai"
+				duration = 9125 #25 years
+			}
+		}
+	}
+
+	gen_demi_human_land_of_shrines = {
+		icon = mission_asian_city
+		required_missions = { gen_demi_human_deal_with_feral_youkai }
+		position = 4
+		
+		
+		trigger = {
+			calc_true_if = {
+				all_owned_province = {
+					OR = {
+						has_building = temple
+						has_building = cathedral
+					}
+				}
+				amount = 30
+			}
+		}
+		
+		effect = {
+			add_years_of_income = 1
+			add_country_modifier = {
+				name = "gen_demi_human_land_of_shrines_mod"
+				duration = 9125 #25 years
+			}	
+		}
+	}
+	gen_demi_human_taoist_powerhouse = {
+		icon = mission_japanese_fort
+		required_missions = { gen_demi_human_land_of_shrines }
+		position = 5
+		
+		
+		trigger = {
+			stability = 3
+			legitimacy_equivalent = 100
+			calc_true_if = {
+				all_owned_province = {
+					OR = {
+						has_building = mills
+						has_building = farm_estate
+						has_building = tradecompany
+						has_building = plantations
+						has_building = textile
+						has_building = weapons
+						has_building = wharf
+						has_building = furnace
+					}
+				}
+				amount = 20
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "gen_demi_human_taoist_powerhouse"
+				duration = -1
+			}	
+			add_adm_power = -150
+			add_dip_power = -150
+			add_mil_power = -150		
+		}
+	}
+	
+}
+demi_human_trade_expansion = {
+
+	slot = 5
+	generic = yes
+	ai = yes
+	
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		culture_group = demi_human #demi_human 
+		NOT = { 
+			OR = {
+				
+			}
+		}
+	}
+	
+	has_country_shield = yes
+	
+	gen_demi_human_assemble_taoist_warriors = {
+		icon = mission_kitsune_assemble_taoist_warriors
+		required_missions = { }
+		position = 1
+		
+		trigger = {
+			army_professionalism = 0.075
+			army_size_percentage = 0.90
+		}
+		
+		effect = {
+			add_army_tradition = 20
+			add_mil_power = 40
+		}
+	}
+	
+
+	gen_demi_human_youkai_warfare = {
+		icon = mission_demi_human_youkai_warfare
+		required_missions = { gen_demi_human_assemble_taoist_warriors }
+		position = 2
+		
+		trigger = {
+			OR = {
+				has_global_modifier_value = {
+					which = infantry_power
+					value = 0.15
+				}
+				has_global_modifier_value = {
+					which = shock_damage
+					value = 0.15
+				}
+			}
+
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "gen_demi_human_youkai_warfare_mod"
+				duration = 9125 #25 years
+			}	
+			add_army_tradition = 10
+		}
+	}
+
+	
+	gen_demi_human_establish_trade_companies = {
+		icon = mission_colonial
+		required_missions = { gen_demi_human_youkai_warfare }
+		position = 3
+
+		trigger = {
+			OR = {
+				num_of_strong_trade_companies = 2
+				num_of_merchants = 4
+			}
+		}
+		
+		effect = {
+			add_years_of_income = 0.50
+			add_mercantilism = 5
+		}
+	}
+	gen_powerful_demi_human_ruler = {
+		icon = mission_powerful_demi_human_ruler
+		required_missions = { gen_demi_human_establish_trade_companies }
+		position = 4
+		
+		trigger = {
+			monthly_adm = 10
+			monthly_dip = 10
+			monthly_mil = 10
+			grown_by_development = 750
+			legitimacy_equivalent = 90
+		}
+		
+		effect = {
+
+			change_government_reform_progress = 50
+			add_prestige = 20
+		}
+	}
+	gen_elder_youkai_ambitions = {
+		icon = mission_elder_youkai_ambitions
+		required_missions = { gen_powerful_demi_human_ruler }
+		position = 5
+		
+		trigger = {
+			monthly_adm = 12
+			monthly_dip = 12
+			monthly_mil = 12
+			government_rank = 2
+			army_tradition = 50
+			army_size = 150
+			legitimacy_equivalent = 100
+			is_bankrupt = no
+		}
+		
+		effect = {
+			if = {
+				limit = {
+					NOT = { tag = OR1 }
+				}
+				custom_tooltip = accepted_elder_youkai_ideas_tt
+				set_country_flag = accepted_elder_youkai_ideas
+				hidden_effect = {
+					swap_free_idea_group = yes
+				}
+			}
+			else = { add_prestige = 50 }
+			add_prestige = 50
+			add_adm_power = 50
+			add_dip_power = 50
+			add_mil_power = 50
+		}
+	}
+	
+}

@@ -2,9 +2,9 @@
 culture = Doll_Apoptosis
 religion = chaos_religion
 trade_goods = dyes
-base_tax = 3
-base_production = 3
-base_manpower = 2
+base_tax = 5
+base_production = 6
+base_manpower = 5
 native_size = 0
 native_ferocity = 0
 native_hostileness = 0

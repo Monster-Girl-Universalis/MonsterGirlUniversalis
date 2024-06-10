@@ -1,0 +1,144 @@
+# Do not change tags in here without changing every other reference to them.
+# If adding new dieties, make sure they are uniquely named.
+
+tornado = {
+	leader_land_manuever = 3
+	build_cost = 0.20
+	
+	potential = { religion = wind_religion }
+	trigger = {}
+	sprite = 13
+	
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			personality = ai_militarist
+		}
+		modifier = {
+			factor = 0.5
+			is_year = 1550
+		}	
+		modifier = {
+			factor = 0.5
+			personality = ai_diplomat
+		}		
+	}
+}
+
+clouds = {
+	war_exhaustion = -0.05
+	development_cost = -0.10
+	
+	potential = { religion = wind_religion }
+	trigger = {}
+	sprite = 13
+	
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 3
+			personality = ai_balanced
+		}
+		modifier = {
+			factor = 0.5
+			personality = ai_diplomat
+		}			
+	}	
+}
+
+mist = {
+	can_claim_states = yes
+	spy_offence = 0.50
+	
+	potential = { religion = wind_religion }
+	trigger = {}
+	sprite = 13
+	
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 3
+			personality = ai_capitalist
+		}		
+		modifier = {
+			factor = 2
+			personality = ai_militarist
+		}			
+	}	
+}
+
+vacuum_slash = {
+	infantry_power = 0.10
+	army_tradition_from_battle = 1
+	
+	potential = { religion = wind_religion }
+	trigger = {}
+	sprite = 13
+	
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 3
+			personality = ai_capitalist
+		}	
+		modifier = {
+			factor = 2
+			personality = ai_colonialist
+		}		
+	}	
+}
+
+falcon = { 
+	diplomats = 2
+	envoy_travel_time = -0.30
+	
+	potential = { religion = wind_religion }
+	trigger = {}
+	sprite = 13
+	
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			personality = ai_capitalist
+		}	
+		modifier = {
+			factor = 0.75
+			personality = ai_militarist
+		}		
+	}	
+}
+
+zephyr = {
+	reduced_liberty_desire = 15
+	diplomatic_upkeep = 1
+	
+	potential = { religion = wind_religion }
+	trigger = {}
+	sprite = 13
+	
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			personality = ai_balanced
+		}	
+		modifier = {
+			factor = 0.5
+			personality = ai_capitalist
+		}		
+	}	
+}

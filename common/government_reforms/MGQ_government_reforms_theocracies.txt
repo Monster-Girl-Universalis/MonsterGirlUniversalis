@@ -1,0 +1,26 @@
+san_ilia_holy_kingdom_reform = {
+	lock_level_when_selected = yes
+	icon = "monks"
+	allow_normal_conversion = no
+	potential = {
+		tag = SI1
+	}
+	valid_for_new_country = no
+	valid_for_nation_designer = no
+	nation_designer_cost = 40
+	royal_marriage = yes
+	modifiers = {
+		devotion = 1
+		global_tax_modifier = 0.20
+		num_accepted_cultures = 2
+		governing_capacity = 200
+	}
+	conditional = {
+		allow = {
+			has_dlc = "Common Sense"
+		}
+		custom_attributes = {
+			gain_devotion_from_conversions = yes
+		}
+	}
+}

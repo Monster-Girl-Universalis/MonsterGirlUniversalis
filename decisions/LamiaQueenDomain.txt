@@ -1,12 +1,12 @@
 country_decisions = {
 
-	nine_tailed_kitsune_idea = {
+	lamia_queen_nation = {
 		major = yes
 		potential = {
-			not = { tag = KI1 } #Tamamo already has them
-			not = { has_country_flag = accepted_nine-tailed_kitsune_ideas }
+
 			was_never_end_game_tag_trigger = yes
-			culture_group = kitsune
+			culture_group = lamia
+			NOT = { exists = LQ1 }
 		}
 		allow = {
 			AND = {
@@ -14,7 +14,7 @@ country_decisions = {
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
 			OR = {
-				mission_completed = gen_nine_tailed_kitsune_ambitions
+				mission_completed = gen_lamia_royal_ambitions
 				AND = {
 					monthly_adm = 12
 					monthly_dip = 12
@@ -31,26 +31,30 @@ country_decisions = {
 		}
 		effect = {
 
+			change_tag = LQ1
+
 			if = {
 				limit = {
 					NOT = { government_rank = 3 }
 				}
 				set_government_rank = 3
 			}
+
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
 			add_prestige = 25
 			if = {
 				limit = {
-					NOT = { technology_group = TECH_KITSUNE }
+					NOT = { technology_group = TECH_LAMIA }
 				}
-				change_technology_group = TECH_KITSUNE
-				change_unit_type = TECH_KITSUNE
+				change_technology_group = TECH_LAMIA
+				change_unit_type = TECH_LAMIA
 			}
 			if = {
-				limit = { 
-					has_custom_ideas = no 
-				}
-				country_event = { id = ideagroups.kitsune } #Swap Ideas
-				#set_country_flag = accepted_nine-tailed_kitsune_ideas
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
 			}
 		}
 		ai_will_do = {

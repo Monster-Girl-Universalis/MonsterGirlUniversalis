@@ -1,0 +1,352 @@
+yoma_internal_development = {
+
+	slot = 1
+	generic = yes
+	ai = yes
+	
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		culture_group = yoma #yoma 
+		NOT = { 
+			OR = {
+				
+			}
+		}
+	}
+	
+	has_country_shield = yes
+	
+	gen_yoma_internal_stability = {
+		icon = mission_early_game_buildings
+		required_missions = { }
+		position = 1
+		
+		trigger = {
+			stability = 1
+			capital_scope = {
+				development = 15
+			}
+		}
+		
+		effect = {
+			add_adm_power = 50
+			add_dip_power = 50
+			add_mil_power = 50
+		}
+	}
+	
+	gen_yoma_nobility_and_grace = {
+		icon = mission_yoma_nobility_and_grace
+		required_missions = { gen_yoma_internal_stability }
+		position = 2
+		
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 5
+				base_tax = 7
+			}
+			estate_loyalty = {
+    				estate = estate_nobles
+    				loyalty = 60
+			}
+		}
+		effect = {
+			random_owned_province = {
+				limit = {
+					base_tax = 6 
+				}
+				add_base_manpower = 3
+			}
+			random_owned_province = {
+				limit = {
+					base_tax = 6 
+				}
+				add_base_manpower = 3
+			}
+			random_owned_province = {
+				limit = {
+					base_tax = 6 
+				}
+				add_base_manpower = 3
+			}
+			random_owned_province = {
+				limit = {
+					base_tax = 6 
+				}
+				add_base_manpower = 3
+			}
+			random_owned_province = {
+				limit = {
+					base_tax = 6 
+				}
+				add_base_manpower = 3
+			}
+		}
+	}
+
+	gen_yoma_majestic_castles = {
+		icon = mission_fortify_the_realm
+		required_missions = { gen_yoma_nobility_and_grace }
+		position = 3
+		
+		
+		trigger = {
+			treasury = 1000
+			prestige = 50
+			calc_true_if = {
+				all_owned_province = {
+					OR = {
+						fort_level = 2
+					}
+					is_prosperous = yes
+				}
+				amount = 5
+			}
+		}
+		
+		effect = {
+			random_owned_province = {
+				limit = { 
+					is_prosperous = yes
+					has_building = fort_15th
+				}
+				add_building = ramparts
+			}
+			random_owned_province = {
+				limit = {
+					is_prosperous = yes
+					has_building = fort_15th
+				}
+				add_building = ramparts
+			}
+			random_owned_province = {
+				limit = {
+					is_prosperous = yes
+					has_building = fort_15th
+				}
+				add_building = ramparts
+			}
+			random_owned_province = {
+				limit = {
+					is_prosperous = yes
+					has_building = fort_15th
+				}
+				add_building = ramparts
+			}
+			random_owned_province = {
+				limit = {
+					is_prosperous = yes
+					has_building = fort_15th
+				}
+				add_building = ramparts
+			}	
+			add_treasury = -1000	
+			add_prestige = 25
+		}
+	}
+
+	gen_yoma_secure_rapier_production = {
+		icon = mission_secure_army_supplies
+		required_missions = { gen_yoma_majestic_castles }
+		position = 4
+		
+		
+		trigger = {
+			iron = 4
+			copper = 4
+			num_of_owned_provinces_with = {
+				has_production_building_trigger = yes
+				value = 25
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "gen_yoma_secure_rapier_production"
+				duration = -1
+			}	
+			add_years_of_income = 1			
+		}
+	}
+
+	gen_yoma_prosperous_realm = {
+		icon = mission_early_modern_university
+		required_missions = { gen_yoma_secure_rapier_production }
+		position = 5
+		
+		
+		trigger = {
+			share_of_starting_income = 15
+			calc_true_if = {
+				all_owned_province = {
+					OR = {
+						has_building = mills
+						has_building = farm_estate
+						has_building = tradecompany
+						has_building = plantations
+						has_building = textile
+						has_building = weapons
+						has_building = wharf
+						has_building = furnace
+					}
+				}
+				amount = 20
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "gen_yoma_prosperous_realm"
+				duration = 9125 #25 years
+			}	
+			add_years_of_income = 2.5	
+		}
+	}
+	
+}
+yoma_trade_expansion = {
+
+	slot = 5
+	generic = yes
+	ai = yes
+	
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		culture_group = yoma #yoma 
+		NOT = { 
+			OR = {
+				
+			}
+		}
+	}
+	
+	has_country_shield = yes
+	
+	gen_yoma_promote_yoma_warfare = {
+		icon = mission_yoma_promote_yoma_warfare
+		required_missions = { }
+		position = 1
+		
+		trigger = {
+			estate_loyalty = {
+    				estate = estate_monster_girls
+    				loyalty = 60
+			}
+			has_estate_privilege = estate_yoma_warfare_standards
+		}
+		
+		effect = {
+			add_prestige = 15
+			add_country_modifier = {
+				name = "gen_integrate_yoma_warfare"
+				duration = -1
+			}
+		}
+	}
+	
+
+	gen_yoma_rapiers_and_magic = {
+		icon = mission_conquer_50_development
+		required_missions = { gen_yoma_promote_yoma_warfare }
+		position = 2
+		
+		trigger = {
+			AND = {
+				has_global_modifier_value = {
+					which = infantry_power
+					value = 0.10
+				}
+				has_global_modifier_value = {
+					which = fire_damage
+					value = 0.15
+				}
+			}
+
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "gen_yoma_rapiers_and_magic_mod"
+				duration = 9125 #25 years
+			}	
+			add_army_tradition = 10
+		}
+	}
+
+	
+	gen_yoma_establish_trade_companies = {
+		icon = mission_colonial
+		required_missions = { gen_yoma_rapiers_and_magic }
+		position = 3
+
+		trigger = {
+			OR = {
+				num_of_strong_trade_companies = 2
+				num_of_merchants = 4
+			}
+		}
+		
+		effect = {
+			add_years_of_income = 0.50
+			add_mercantilism = 5
+		}
+	}
+	gen_powerful_yoma_ruler = {
+		icon = mission_powerful_yoma_ruler
+		required_missions = { gen_yoma_establish_trade_companies }
+		position = 4
+		
+		trigger = {
+			monthly_adm = 10
+			monthly_dip = 10
+			monthly_mil = 10
+			grown_by_development = 750
+			legitimacy_equivalent = 90
+		}
+		
+		effect = {
+
+			change_government_reform_progress = 50
+			add_prestige = 20
+		}
+	}
+	gen_yoma_royal_ambitions = {
+		icon = mission_yoma_royal_ambitions
+		required_missions = { gen_powerful_yoma_ruler }
+		position = 5
+		
+		trigger = {
+			monthly_adm = 12
+			monthly_dip = 12
+			monthly_mil = 12
+			government_rank = 2
+			army_tradition = 50
+			army_size = 150
+			legitimacy_equivalent = 100
+			is_bankrupt = no
+		}
+		
+		effect = {
+			if = {
+				limit = {
+					NOT = { tag = ML1 }
+					NOT = { tag = PY1 }
+					NOT = { tag = LV1 }
+					NOT = { tag = SM2 }
+					NOT = { tag = ME1 }
+				}
+				custom_tooltip = accepted_sphynx_ideas_tt
+				set_country_flag = accepted_sphynx_ideas
+				hidden_effect = {
+					swap_free_idea_group = yes
+				}
+			}
+			else = { add_prestige = 50 }
+			add_prestige = 50
+			add_adm_power = 50
+			add_dip_power = 50
+			add_mil_power = 50
+		}
+	}
+	
+}

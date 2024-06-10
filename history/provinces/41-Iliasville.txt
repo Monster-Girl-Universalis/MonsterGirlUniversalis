@@ -1,7 +1,7 @@
 #41-Iliasville
 culture = ilian_human
 religion = ilias_light_religion
-trade_goods = spices
+trade_goods = grain
 base_tax = 7
 base_production = 5
 base_manpower = 7

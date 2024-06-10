@@ -32,3 +32,4 @@ discovered_by = TECH_UNDEAD
 discovered_by = TECH_VAMPIRE
 discovered_by = TECH_YOUMA
 center_of_trade = 1
+trade_goods = copper

@@ -31,3 +31,4 @@ add_core = EN1
 owner = EN1
 culture = Spirit_Girl
 controller = EN1
+trade_goods = copper

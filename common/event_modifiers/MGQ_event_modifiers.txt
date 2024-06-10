@@ -82,6 +82,14 @@ goddess_blessing_mod = {
 	trade_efficiency = 0.10
 }
 
+# Clergy
+##################################################
+estate_researchers_guaranteed_autonomy_mod = {
+	religion = yes
+	local_religious_unity_contribution = -1
+	local_missionary_strength = -1
+}
+
 # Spiritualists
 ##################################################
 
@@ -202,4 +210,176 @@ roid_integration_mod = {
 tanuki_integration_mod = {
 	country_admin_power = -1
 	all_power_cost = 0.05
+}
+
+# Generic events
+##################################################
+abundant_healing_honey = {
+	local_development_cost = -0.1
+	local_tax_modifier = 0.1
+}
+
+healing_honey_in_military = {
+	reinforce_speed = 0.2
+}
+
+ghosts_haunting_fort = {
+	local_defensiveness = 0.2
+	attrition = 1
+	local_development_cost = 0.2
+}
+
+beast_girls_in_military = {
+	shock_damage = 0.05
+	manpower_recovery_speed = 0.10
+	global_unrest = 2
+}
+
+beast_girls_in_construction = {
+	development_cost = -0.05
+	build_cost = -0.05
+	global_unrest = 4
+}
+
+holy_water_production_curbed = {
+	local_production_efficiency = -0.5
+}
+
+orc_girl_criminals = {
+	production_efficiency = -0.1
+	global_unrest = 2
+}
+
+orc_girls_military = {
+	infantry_power = 0.10
+	manpower_recovery_speed = 0.10
+	loot_amount = 0.5
+	available_province_loot = 0.5
+}
+
+dog_girl_adorable_expansionists = {
+	years_of_nationalism = -5
+	ae_impact = -0.1
+}
+
+dog_girl_diplomats = {
+	diplomatic_reputation = 2
+	diplomatic_upkeep = 1
+}
+
+dog_girl_overlords = {
+	global_unrest = -4
+}
+
+truth_seeker_minorities = {
+	idea_cost = -0.05
+}
+
+orthodoxy_asserted = {
+	global_missionary_strength = 0.01
+}
+
+lamia_nun_administration = {
+	global_autonomy = -0.05
+	core_creation = -0.05
+	tolerance_heretic = -1
+	tolerance_heathen = -1
+}
+
+earthworm_girl_mine = {
+	local_governing_cost_increase = 20
+}
+
+tanuki_scammer_spies = {
+	diplomatic_reputation = -1
+	spy_offence = 0.25
+}
+
+sheep_wool_supplies = {
+	land_attrition = -0.10
+}
+
+extra_sheep_wool_supplies = {
+	land_attrition = -0.20
+	global_tax_modifier = -0.1
+}
+
+slime_girls_alienated = {
+	reinforce_cost_modifier = 0.5
+}
+
+worm_girls_alienated = {
+	build_cost = 0.1
+	build_time = 0.2
+}
+
+kitsune_sage_customers = {
+	global_trade_goods_size_modifier = 0.1
+	technology_cost = -0.05
+}
+
+succubus_as_diplomats = {
+	improve_relation_modifier = 0.2
+}
+
+succubus_in_military = {
+	morale_damage = 0.05
+	siege_ability = 0.10
+}
+
+succubus_in_administration = {
+	years_of_nationalism = -10
+}
+
+fairy_girl_statue = {
+	diplomatic_reputation = 2
+}
+
+polar_bear_presents = {
+	global_unrest = -1
+	global_trade_goods_size_modifier = -0.1
+}
+
+wolf_girl_mercs = {
+	tolerance_own = -3
+	mercenary_discipline = 0.05
+	mercenary_manpower = 0.25
+}
+
+tanuki_offended_accusations = {
+	trade_efficiency = -0.1
+}
+
+kitsune_offended_accusations = {
+	technology_cost = 0.05
+}
+
+yeti_fur_dominating = {
+	land_attrition = -0.15
+	war_exhaustion = -0.05
+}
+
+dragon_girl_tactics = {
+	fire_damage = 0.10
+	land_maintenance_modifier = 0.20
+}
+
+no_dragon_girl_tactics = {
+	fire_damage = -0.05
+}
+
+sea_dweller_pirates_hired = {
+	diplomatic_reputation = -1
+	privateer_efficiency = 0.3
+}
+
+harpy_girl_scouts_hired = {
+	movement_speed = 0.10
+	leader_land_manuever = 1
+	global_tax_modifier = -0.1
+}
+
+increased_reliance_spies = {
+	spy_offence = 0.2
+	global_spy_defence = 0.2
 }

@@ -1,0 +1,274 @@
+doll_internal_development = {
+
+	slot = 1
+	generic = yes
+	ai = yes
+	
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		culture_group = doll #doll
+		NOT = { 
+			OR = {
+				
+			}
+		}
+	}
+	
+	has_country_shield = yes
+	
+	gen_dollmaking = {
+		icon = mission_dollmaking
+		required_missions = { }
+		position = 1
+		
+		trigger = {
+			employed_advisor = {
+				category = ADM
+				culture = ROOT
+			}
+			employed_advisor = {
+				category = DIP
+				culture = ROOT
+			}
+		}
+		
+		effect = {
+			add_adm_power = 50
+			add_dip_power = 50
+			add_mil_power = 50
+			add_treasury = -100
+		}
+	}
+	
+	gen_doll_improve_the_doll_quality = {
+		icon = mission_doll_improve_the_doll_quality
+		required_missions = { gen_dollmaking }
+		position = 2
+		
+		trigger = {
+			production_efficiency = 0.20
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "gen_doll_improve_the_doll_quality_mod"
+				duration = 9125 #25 years
+			}
+			add_adm_power = 20
+			add_dip_power = 20
+			add_mil_power = 20
+		}
+	}
+
+	gen_doll_assembly_lines = {
+		icon = mission_doll_assembly_lines
+		required_missions = { gen_doll_improve_the_doll_quality }
+		position = 3
+		
+		
+		trigger = {
+			share_of_starting_income = 2.5
+			num_of_owned_provinces_with = {
+				has_production_building_trigger = yes
+				value = 10
+			}
+			
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "gen_doll_assembly_lines_mod"
+				duration = 9125 #25 years
+			}	
+		}
+	}
+
+	gen_doll_introduce_vocaloids = {
+		icon = mission_doll_introduce_vocaloids
+		required_missions = { gen_doll_assembly_lines }
+		position = 4
+		trigger = {
+			dip_tech = 10
+			num_of_diplomats = 4
+			treasury 1500
+		}
+		
+		effect = {
+			add_treasury = -1500
+			add_country_modifier = {
+				name = "gen_doll_introduce_vocaloids_mod"
+				duration = -1
+			}			
+		}
+	}
+
+	gen_doll_produce_golem_seals = {
+		icon = mission_golem_girl
+		required_missions = { gen_doll_introduce_vocaloids }
+		position = 5
+		
+		
+		trigger = {
+			mil_tech = 12
+			treasury = 1500
+			calc_true_if = {
+				all_owned_province = {
+					OR = {
+						has_building = ramparts
+						has_building = soldier_households
+						has_building = impressment_offices
+						has_building = weapons
+						has_building = wharf
+						has_building = furnace
+					}
+				}
+				amount = 15
+			}
+		}
+		
+		effect = {
+			add_treasury = -1500
+			add_country_modifier = {
+				name = "gen_doll_produce_golem_seals_mod"
+				duration = -1
+			}	
+		}
+	}
+	
+}
+doll_trade_expansion = {
+
+	slot = 5
+	generic = yes
+	ai = yes
+	
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		culture_group = doll #doll
+		NOT = { 
+			OR = {
+				
+			}
+		}
+	}
+	
+	has_country_shield = yes
+	
+	gen_doll_quality_precision = {
+		icon = mission_doll_quality_precision
+		required_missions = { }
+		position = 1
+		
+		trigger = {
+			estate_loyalty = {
+    				estate = estate_monster_girls
+    				loyalty = 60
+				}
+			monthly_adm = 7
+			monthly_dip = 7
+			monthly_mil = 7
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "gen_doll_quality_precision_mod" 
+				duration = -1
+			}
+		}
+	}
+	
+	gen_doll_secure_parts_for_doll_production = {
+		icon = mission_underground_labs2
+		required_missions = { gen_doll_quality_precision }
+		position = 2
+		
+		trigger = {
+			cotton = 2
+			iron = 2
+			advisor = natural_scientist
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "gen_doll_secure_parts_for_doll_production_mod"
+				duration = 9125 #25 years
+			}	
+			add_yearly_manpower = 0.50	
+			add_mercantilism = 2
+		}
+	}
+
+	gen_doll_establish_trade_companies = {
+		icon = mission_colonial
+		required_missions = { gen_doll_secure_parts_for_doll_production }
+		position = 3
+
+		trigger = {
+			OR = {
+				num_of_strong_trade_companies = 2
+				num_of_merchants = 4
+			}
+		}
+		
+		effect = {
+			add_years_of_income = 0.50
+			add_mercantilism = 5
+		}
+	}
+	gen_powerful_doll_girl_ruler = {
+		icon = mission_powerful_doll_girl_ruler
+		required_missions = { gen_doll_establish_trade_companies }
+		position = 4
+		
+		trigger = {
+			monthly_adm = 10
+			monthly_dip = 10
+			monthly_mil = 10
+			grown_by_development = 750
+			legitimacy_equivalent = 90
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "gen_doll_powerful_doll_girl_mod"
+				duration = 9125 #25 years
+			}
+			change_government_reform_progress = 50
+			add_prestige = 20
+		}
+	}
+	gen_ultimate_doll_ambitions = {
+		icon = mission_ultimate_doll_ambitions
+		required_missions = { gen_powerful_doll_girl_ruler }
+		position = 5
+		
+		trigger = {
+			monthly_adm = 12
+			monthly_dip = 12
+			monthly_mil = 12
+			government_rank = 2
+			army_tradition = 50
+			army_size = 150
+			legitimacy_equivalent = 100
+			is_bankrupt = no
+		}
+		
+		effect = {
+			if = {
+				limit = {
+					NOT = { tag = PT1 }
+				}
+				custom_tooltip = accepted_ultimate_final_doll_ideas_tt 
+				set_country_flag = accepted_ultimate_final_doll_ideas
+				hidden_effect = {
+					swap_free_idea_group = yes
+				}
+			}
+			else = { add_prestige = 50 }
+			add_prestige = 50
+			add_adm_power = 50
+			add_dip_power = 50
+			add_mil_power = 50
+		}
+	}
+}

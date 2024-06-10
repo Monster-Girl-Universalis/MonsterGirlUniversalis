@@ -1,7 +1,7 @@
 is_city = no
 base_tax = 3
 base_manpower = 2
-base_production = 3
+base_production = 4
 add_core = BGH
 owner = BGH
 culture = Bee_Girl

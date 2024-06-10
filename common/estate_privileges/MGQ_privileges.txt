@@ -1182,10 +1182,6 @@ estate_practice_necromancy = {
 	loyalty = 0.05
 	influence = 0.05
 	is_valid = { 
-		OR = {
-			tag = PT1
-			was_tag = PT1
-		}
 		NOT = {
 			tag = HM1
 			tag = LC1

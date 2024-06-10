@@ -1,0 +1,169 @@
+namespace = flavor_si1
+
+country_event = {
+	id = flavor_si1.1
+	title = "flavor_si1.1.t"
+	desc = "flavor_si1.1.desc"
+	picture = AssasinationAttempt_eventPicture
+	fire_only_once = yes
+	trigger = {
+		tag = SI1
+		is_year = 1444
+		NOT = { is_year = 1449 }
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {		#Assasination attempt
+		name = flavor_si1.1.a
+		add_stability = -1
+	}
+}
+country_event = {
+	id = flavor_si1.2
+	title = "flavor_si1.2.t"
+	desc = "flavor_si1.2.desc"
+	picture = PortNatalia_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {		#Question of Port Natalia - CB
+		name = flavor_si1.2.a
+		add_casus_belli = {
+			target = PNA
+			type = cb_restore_personal_union
+   			months = 240
+		}
+	}
+	option = {		#Question of Port Natalia - PU
+		name = flavor_si1.2.b
+		trigger = {			
+			reverse_has_opinion = {
+				who = PNA
+				value = 150
+			}
+		}
+		create_union = PNA
+	}
+}
+country_event = {
+	id = flavor_si1.3
+	title = "flavor_si1.3.t"
+	desc = "flavor_si1.3.desc"
+	picture = LudditeVillage_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {		#Ultimatum to luddites
+		name = flavor_si1.3.a
+		inherit = LDV
+	}
+}
+country_event = {
+	id = flavor_si1.4
+	title = "flavor_si1.4.t"
+	desc = "flavor_si1.4.desc"
+	picture = Lilith_Sisters_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {		#Facing Lilith Sisters
+		name = flavor_si1.4.a
+			542 = {
+				spawn_rebels = {
+					type = noble_rebels
+					size = 8
+					culture = Monster_Succubi
+					leader = "Astaroth"
+					female = yes
+				}
+			}
+	}
+}
+country_event = {
+	id = flavor_si1.5
+	title = "flavor_si1.5.t"
+	desc = "flavor_si1.5.desc"
+	picture = LudditeVillage_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {		#Undo luddite annihilation
+		name = flavor_si1.5.a
+		add_stability = 1
+		add_prestige = 30
+	}
+}
+country_event = {
+	id = flavor_si1.6
+	title = "flavor_si1.6.t"
+	desc = "flavor_si1.6.desc"
+	picture = Rubiana_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {		#Investigate Rubiana
+		name = flavor_si1.6.a
+		change_variable = {
+			which = Investigation_Progress
+			value = 1
+		}
+		set_country_flag = SI1_investigated_rubiana_once
+	}
+}
+country_event = {
+	id = flavor_si1.7
+	title = "flavor_si1.7.t"
+	desc = "flavor_si1.7.desc"
+	picture = PromesteinLabs
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {		#Uncovered the truth - Angel World
+		name = flavor_si1.7.a
+		reset_golden_age = yes
+		ROOT = { change_religion = angel_world_religion }
+		hidden_effect = {
+			every_owned_province = {
+				change_religion = angel_world_religion 
+			}
+			set_ruler_religion = angel_world_religion 
+		}
+		
+	}	
+	option = {		#Uncovered the truth - Monster World
+		name = flavor_si1.7.b
+		reset_golden_age = yes
+		ROOT = { change_religion = dark_goddess_religion }
+		hidden_effect = {
+			every_owned_province = {
+				change_religion = dark_goddess_religion 
+			}
+			set_ruler_religion = dark_goddess_religion 
+		}
+	}	
+	option = {		#Uncovered the truth - We owe no allegiance!
+		name = flavor_si1.7.c
+		reset_golden_age = yes
+		add_prestige = 100
+	}
+}
+country_event = {
+	id = flavor_si1.60
+	title = "flavor_si1.60.t"
+	desc = "flavor_si1.60.desc"
+	picture = Rubiana_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {		#Investigate Rubiana Detailed
+		name = flavor_si1.60.a
+		change_variable = {
+			which = Investigation_Progress
+			value = 1
+		}
+		clr_country_flag = SI1_investigated_rubiana_once
+	}
+}

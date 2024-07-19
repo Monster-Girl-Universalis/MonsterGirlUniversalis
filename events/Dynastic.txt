@@ -568,6 +568,17 @@ country_event = {
 		kill_heir = {}
 		add_prestige = -10
 	}
+	option = {
+		trigger = {
+			OR = {
+				heir_has_personality = immortal_personality
+				ruler_has_personality = immortal_personality
+				dynasty = "Fateburn"
+			}
+		}
+		name = "EVTOPTC9459"		#U mad bro? I'm an immortal
+		add_prestige = 10
+	}
 }
 
 

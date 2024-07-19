@@ -1,11 +1,11 @@
 government = monarchy
 government_rank = 2
 primary_culture = Cockroach_Girl
-add_government_reform = Insect_realm
+add_government_reform = queen_roach_reform
 religion = monster_lord_religion
 technology_group = TECH_INSECT
 1444.1.1 = { 
-	monarch = {
+	monarch = { 
 		name = "Groys"
 		dynasty = "the Royal Roach"
 		birth_date = 1424.1.1

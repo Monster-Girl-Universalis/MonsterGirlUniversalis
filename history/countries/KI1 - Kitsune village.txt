@@ -1,7 +1,7 @@
 government = monarchy
 government_rank = 2
 primary_culture = Kitsune_Girl
-add_government_reform = Kitsune_realm
+add_government_reform = tamamo_reform
 religion = yamatai_religion
 technology_group = TECH_KITSUNE
 capital = 2180
@@ -18,14 +18,14 @@ capital = 2180
 	add_ruler_personality = immortal_personality
 }
 1444.1.1 = { 
-	leader = {
+	leader = { 
 		name = "Yao of Kitsune Village"
 		birth_date = 1424.1.1
-        	type = general
-        	fire = 3
-        	shock = 8
-        	manuever = 8
-        	siege = 1
+		type = general
+		fire = 3
+		shock = 8
+		manuever = 8
+		siege = 1
 		female = yes
-    	}
+	}
 }

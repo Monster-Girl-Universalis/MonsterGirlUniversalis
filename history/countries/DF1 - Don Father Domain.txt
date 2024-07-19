@@ -14,4 +14,4 @@ technology_group = TECH_HUMAN
 	}
 }
 capital = 773
-add_government_reform = 
+add_government_reform = don_father_reform 

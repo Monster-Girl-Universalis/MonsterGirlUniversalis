@@ -1,3 +1,75 @@
+#Give us 3 privileges
+estate_angels_three_privileges = {
+	can_select = {
+		NOT = {
+			num_of_estate_privileges = {
+				estate = estate_angels
+				value = 2
+			}
+		}
+	}
+	selection_weight = {
+		factor = 1
+	}
+	pre_effect = {
+		set_variable = {
+			which = estate_angels_three_privileges_var
+			value = 0
+		}
+		if = {
+			limit = {
+				num_of_estate_privileges = {
+					estate = estate_angels
+					value = 1
+				}
+			}
+			set_variable = {
+				which = estate_angels_three_privileges_var
+				value = 2
+			}
+		}
+		else = {
+			set_variable = {
+				which = estate_angels_three_privileges_var
+				value = 1
+			}
+		}
+	}
+	task_requirements = {
+		if = {
+			limit = {
+				check_variable = {
+					which = estate_angels_three_privileges_var
+					value = 2
+				}
+			}
+			num_of_estate_privileges = {
+				estate = estate_angels
+				value = 3
+			}
+		}
+		else = {
+			num_of_estate_privileges = {
+				estate = estate_angels
+				value = 2
+			}
+		}
+	}
+    task_completed_effect = {
+		add_estate_loyalty = {
+			estate = estate_angels
+			loyalty = 15
+		}
+    }
+    failing_effect = {
+        add_estate_loyalty_modifier = {
+            estate = estate_angels
+			desc = EST_VAL_AGENDA_DENIED
+			loyalty = -10
+			duration = 7300
+        }
+    }
+}
 estate_angels_develop_x = {
 	selection_weight = {
 		factor = 1
@@ -203,5 +275,864 @@ estate_angels_develop_x = {
 			loyalty = -10
 			duration = 7300
         }
+    }
+}
+
+#Triggers: any province has the basic conditions, country has adm tech 4
+estate_angels_build_temple_in_y = {
+	can_select = {
+		adm_tech = 4
+		NOT = {
+			tag = ENV
+			was_tag = ENV
+			culture = Fallen_Angel
+		}
+		any_owned_province = {
+			is_state_core = root
+			NOT = { has_building = cathedral }
+			OR = {
+				AND = {
+					NOT = { has_building = temple }
+					num_free_building_slots = 1
+				}
+				AND = {
+					ROOT = { adm_tech = 19 }
+					has_building = temple
+				}
+			}
+		}
+	}
+	selection_weight = {
+		factor = 1
+		modifier = {
+			factor = 0.65
+			NOT = {
+				any_owned_province = {
+					is_state_core = root
+					base_tax = 4
+					NOT = { has_building = cathedral }
+					OR = {
+						AND = {
+							NOT = { has_building = temple }
+							num_free_building_slots = 1
+						}
+						AND = {
+							ROOT = { adm_tech = 19 }
+							has_building = temple
+						}
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 1.2
+			any_owned_province = {
+				is_state_core = root
+				base_tax = 7
+				NOT = { has_building = cathedral }
+				OR = {
+					AND = {
+						NOT = { has_building = temple }
+						num_free_building_slots = 1
+					}
+					AND = {
+						ROOT = { adm_tech = 19 }
+						has_building = temple
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 2
+			NOT = {
+				crown_land_share = 15
+			}
+		}
+	}
+	pre_effect = {
+		set_variable = {
+			which = estate_angels_build_temple_in_y_var
+			value = 0
+		}
+		random_owned_province = {
+			limit = {
+				is_state_core = root
+				NOT = { has_building = cathedral }
+				OR = {
+					AND = {
+						NOT = { has_building = temple }
+						num_free_building_slots = 1
+					}
+					AND = {
+						ROOT = { adm_tech = 19 }
+						has_building = temple
+					}
+				}
+			}
+			save_event_target_as = agenda_province
+		}
+		random_owned_province = {
+			limit = {
+				is_state_core = root
+				base_tax = 4
+				NOT = { has_building = cathedral }
+				OR = {
+					AND = {
+						NOT = { has_building = temple }
+						num_free_building_slots = 1
+					}
+					AND = {
+						ROOT = { adm_tech = 19 }
+						has_building = temple
+					}
+				}
+			}
+			save_event_target_as = agenda_province
+		}
+		random_owned_province = {
+			limit = {
+				is_state_core = root
+				base_tax = 7
+				NOT = { has_building = cathedral }
+				OR = {
+					AND = {
+						NOT = { has_building = temple }
+						num_free_building_slots = 1
+					}
+					AND = {
+						ROOT = { adm_tech = 19 }
+						has_building = temple
+					}
+				}
+			}
+			save_event_target_as = agenda_province
+		}
+		event_target:agenda_province = {
+			if = {
+				limit = {
+					NOT = { has_building = temple }
+				}
+				ROOT = {
+					set_variable = {
+						which = estate_angels_build_temple_in_y_var
+						value = 1
+					}
+				}
+			}
+			else = {
+				ROOT = {
+					set_variable = {
+						which = estate_angels_build_temple_in_y_var
+						value = 2
+					}
+				}
+			}
+		}
+	}
+	provinces_to_highlight = {
+		province_id = event_target:agenda_province
+	}
+	fail_if = {
+		event_target:agenda_province = {
+			NOT = { owned_by = root }
+		}
+	}
+    task_requirements = {
+		if = {
+			limit = {
+				has_estate_agenda_auto_completion = {
+					estate = estate_angels
+				}
+			}
+			has_estate_agenda_auto_completion = {
+				estate = estate_angels
+			}
+		}
+		else = {
+			if = {
+				limit = {
+					check_variable = {
+						which = estate_angels_build_temple_in_y_var
+						value = 2
+					}
+				}
+				event_target:agenda_province = {
+					has_building = cathedral
+				}
+			}
+			else = {
+				event_target:agenda_province = {
+					OR = {
+						has_building = temple
+						has_building = cathedral
+					}
+				}
+			}
+		}
+    }
+    task_completed_effect = {
+		on_completed_agenda_effect = {
+			estate = estate_angels
+		}
+		add_estate_loyalty = {
+			estate = estate_angels
+			loyalty = 15
+		}
+    }
+    failing_effect = {
+		on_failed_agenda_effect = yes
+		clr_auto_complete_flag = yes
+		add_estate_loyalty_modifier = {
+			estate = estate_angels
+			desc = EST_VAL_AGENDA_DENIED
+			loyalty = -10
+			duration = 7300
+		}
+    }
+}
+
+
+#Triggers: any province has the basic conditions, country has adm tech 4
+estate_angels_build_workshop_in_y = {
+	can_select = {
+		adm_tech = 4
+		OR = {
+			tag = ENV
+			was_tag = ENV
+			culture = Fallen_Angel
+		}
+		any_owned_province = {
+			is_state_core = root
+			NOT = { has_building = counting_house }
+			OR = {
+				AND = {
+					NOT = { has_building = workshop }
+					num_free_building_slots = 1
+				}
+				AND = {
+					ROOT = { adm_tech = 19 }
+					has_building = workshop
+				}
+			}
+		}
+	}
+	selection_weight = {
+		factor = 1
+		modifier = {
+			factor = 0.65
+			NOT = {
+				any_owned_province = {
+					is_state_core = root
+					base_production = 4
+					NOT = { has_building = counting_house  }
+					OR = {
+						AND = {
+							NOT = { has_building = workshop }
+							num_free_building_slots = 1
+						}
+						AND = {
+							ROOT = { adm_tech = 19 }
+							has_building = workshop
+						}
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 1.2
+			any_owned_province = {
+				is_state_core = root
+				base_production = 7
+				NOT = { has_building = counting_house  }
+				OR = {
+					AND = {
+						NOT = { has_building = workshop }
+						num_free_building_slots = 1
+					}
+					AND = {
+						ROOT = { adm_tech = 19 }
+						has_building = workshop
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 2
+			NOT = {
+				crown_land_share = 15
+			}
+		}
+	}
+	pre_effect = {
+		set_variable = {
+			which = estate_angels_build_workshop_in_y_var
+			value = 0
+		}
+		random_owned_province = {
+			limit = {
+				is_state_core = root
+				NOT = { has_building = counting_house  }
+				OR = {
+					AND = {
+						NOT = { has_building = workshop }
+						num_free_building_slots = 1
+					}
+					AND = {
+						ROOT = { adm_tech = 19 }
+						has_building = workshop
+					}
+				}
+			}
+			save_event_target_as = agenda_province
+		}
+		random_owned_province = {
+			limit = {
+				is_state_core = root
+				base_production = 4
+				NOT = { has_building = counting_house  }
+				OR = {
+					AND = {
+						NOT = { has_building = workshop }
+						num_free_building_slots = 1
+					}
+					AND = {
+						ROOT = { adm_tech = 19 }
+						has_building = workshop
+					}
+				}
+			}
+			save_event_target_as = agenda_province
+		}
+		random_owned_province = {
+			limit = {
+				is_state_core = root
+				base_production = 7
+				NOT = { has_building = counting_house  }
+				OR = {
+					AND = {
+						NOT = { has_building = workshop }
+						num_free_building_slots = 1
+					}
+					AND = {
+						ROOT = { adm_tech = 19 }
+						has_building = workshop
+					}
+				}
+			}
+			save_event_target_as = agenda_province
+		}
+		event_target:agenda_province = {
+			if = {
+				limit = {
+					NOT = { has_building = workshop }
+				}
+				ROOT = {
+					set_variable = {
+						which = estate_angels_build_workshop_in_y_var
+						value = 1
+					}
+				}
+			}
+			else = {
+				ROOT = {
+					set_variable = {
+						which = estate_angels_build_workshop_in_y_var
+						value = 2
+					}
+				}
+			}
+		}
+	}
+	provinces_to_highlight = {
+		province_id = event_target:agenda_province
+	}
+	fail_if = {
+		event_target:agenda_province = {
+			NOT = { owned_by = root }
+		}
+	}
+    task_requirements = {
+		if = {
+			limit = {
+				has_estate_agenda_auto_completion = {
+					estate = estate_angels
+				}
+			}
+			has_estate_agenda_auto_completion = {
+				estate = estate_angels
+			}
+		}
+		else = {
+			if = {
+				limit = {
+					check_variable = {
+						which = estate_angels_build_workshop_in_y_var
+						value = 2
+					}
+				}
+				event_target:agenda_province = {
+					has_building = counting_house 
+				}
+			}
+			else = {
+				event_target:agenda_province = {
+					OR = {
+						has_building = workshop
+						has_building = counting_house 
+					}
+				}
+			}
+		}
+    }
+    task_completed_effect = {
+		on_completed_agenda_effect = {
+			estate = estate_angels
+		}
+		add_estate_loyalty = {
+			estate = estate_angels
+			loyalty = 15
+		}
+    }
+    failing_effect = {
+		on_failed_agenda_effect = yes
+		clr_auto_complete_flag = yes
+		add_estate_loyalty_modifier = {
+			estate = estate_angels
+			desc = EST_VAL_AGENDA_DENIED
+			loyalty = -10
+			duration = 7300
+		}
+    }
+}
+
+#Convert province culture
+estate_angels_convert_province_culture = {
+	can_select = {
+		any_owned_province = {
+			NOT = { culture = root }
+			has_owner_accepted_culture = no
+			NOT = { nationalism = 1 }
+			religion = root
+			any_neighbor_province = {
+				owned_by = root
+				culture = root
+			}
+		}
+		NOT = {
+			tag = ENV
+			was_tag = ENV
+			culture = Fallen_Angel
+		}
+	}
+	selection_weight = {
+		factor = 1
+		modifier = {
+			factor = 0.75
+			always = yes
+		}
+	}
+	pre_effect = {
+		random_owned_province = {
+			limit = {
+				NOT = { culture = root }
+				has_owner_accepted_culture = no
+				NOT = { nationalism = 1 }
+				religion = root
+				any_neighbor_province = {
+					owned_by = root
+					culture = root
+				}
+			}
+			save_event_target_as = angels_agenda_province
+			choose_random_development_bonus_effect = yes
+		}
+	}
+	fail_if = {
+		event_target:angels_agenda_province = {
+			OR = {
+				NOT = { owned_by = root }
+				nationalism = 1
+				NOT = { religion = root }
+			}
+		}
+	}
+	immediate_effect = {
+		event_target:angels_agenda_province = {
+			add_province_modifier = {
+				name = agenda_cultural_conversion_help
+				duration = 7300
+			}
+		}
+	}
+	on_invalid = {
+		event_target:angels_agenda_province = {
+			clear_random_development_bonus_flags_effect = yes
+			if = {
+				limit = {
+					has_province_modifier = agenda_cultural_conversion_help
+				}
+				remove_province_modifier = agenda_cultural_conversion_help
+			}
+		}
+	}
+	provinces_to_highlight = {
+		province_id = event_target:angels_agenda_province
+	}
+	task_requirements = {
+		if = {
+			limit = {
+				has_estate_agenda_auto_completion = {
+					estate = estate_angels
+				}
+			}
+			has_estate_agenda_auto_completion = {
+				estate = estate_angels
+			}
+		}
+		else = {
+			if = {
+				limit = {
+					NOT = {
+						event_target:angels_agenda_province = {
+							has_owner_accepted_culture = yes
+						}
+					}
+				}
+				event_target:angels_agenda_province = {
+					culture = root
+				}
+			}
+			else = { #don't want to show this in most cases, but don't want it to count as a fail if you do this.
+				event_target:angels_agenda_province = {
+					has_owner_accepted_culture = yes
+				}
+			}
+		}
+	}
+    task_completed_effect = {
+		on_completed_agenda_effect = {
+			estate = estate_angels
+		}
+		add_estate_loyalty = {
+			estate = estate_angels
+			loyalty = 15
+		}
+		event_target:angels_agenda_province = {
+			apply_random_development_bonus_bonus_effect = yes
+		}
+		hidden_effect = {
+			event_target:angels_agenda_province = {
+				if = {
+					limit = {
+						has_province_modifier = agenda_cultural_conversion_help
+					}
+					remove_province_modifier = agenda_cultural_conversion_help
+				}
+			}
+		}
+	}
+    failing_effect = {
+		on_failed_agenda_effect = yes
+		clr_auto_complete_flag = yes
+        add_estate_loyalty_modifier = {
+            estate = estate_angels
+			desc = EST_VAL_AGENDA_DENIED
+			loyalty = -10
+			duration = 7300
+        }
+		event_target:angels_agenda_province = {
+			clear_random_development_bonus_flags_effect = yes
+			if = {
+				limit = {
+					has_province_modifier = agenda_cultural_conversion_help
+				}
+				remove_province_modifier = agenda_cultural_conversion_help
+			}
+		}
+    }
+}
+
+
+#Increase autonomy in X
+estate_angels_increase_autonomy_in_province_x = {
+	can_select = {
+		any_owned_province = {
+			is_state_core = root
+			NOT = { local_autonomy = 75 }
+			OR = {
+				tag = ENV
+				was_tag = ENV
+				culture = Fallen_Angel
+			}
+			is_capital = no
+			NOT = { has_province_modifier = autonomy_increased }
+			NOT = { has_province_modifier = autonomy_decreased }
+		}
+	}
+	selection_weight = {
+		factor = 1.5
+	}
+	pre_effect = {
+		set_variable = {
+			which = estate_angels_increase_autonomy_in_province_x_var
+			value = 0
+		}
+		random_owned_province = {
+			limit = {
+				is_state_core = root
+				NOT = { local_autonomy = 75 }
+				is_capital = no
+				NOT = { has_province_modifier = autonomy_increased }
+				NOT = { has_province_modifier = autonomy_decreased }
+			}
+			save_event_target_as = agenda_province
+			choose_random_development_bonus_effect = yes
+		}
+		event_target:agenda_province = {
+			if = {
+				limit = {
+					local_autonomy = 60
+				}
+				root = {
+					set_variable = {
+						which = estate_angels_increase_autonomy_in_province_x_var
+						value = 5
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					local_autonomy = 45
+				}
+				root = {
+					set_variable = {
+						which = estate_angels_increase_autonomy_in_province_x_var
+						value = 4
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					local_autonomy = 30
+				}
+				root = {
+					set_variable = {
+						which = estate_angels_increase_autonomy_in_province_x_var
+						value = 3
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					local_autonomy = 15
+				}
+				root = {
+					set_variable = {
+						which = estate_angels_increase_autonomy_in_province_x_var
+						value = 2
+					}
+				}
+			}
+			else = {
+				root = {
+					set_variable = {
+						which = estate_angels_increase_autonomy_in_province_x_var
+						value = 1
+					}
+				}
+			}
+		}
+	}
+	on_invalid = {
+		event_target:agenda_province = {
+			clear_random_development_bonus_flags_effect = yes
+		}
+	}
+	provinces_to_highlight = {
+		province_id = event_target:agenda_province
+	}
+	fail_if = {
+		OR = {
+			event_target:agenda_province = {
+				NOT = { owned_by = root }
+			}
+			event_target:agenda_province = {
+				religion_group = root
+			}
+			custom_trigger_tooltip = {
+				tooltip = estate_angels_increase_autonomy_in_province_x_tooltip
+				hidden_trigger = {
+					if = {
+						limit = {
+							check_variable = {
+								which = estate_angels_increase_autonomy_in_province_x_var
+								value = 5
+							}
+						}
+						event_target:agenda_province = {
+							NOT = { local_autonomy = 50 }
+						}
+					}
+					else_if = {
+						limit = {
+							check_variable = {
+								which = estate_angels_increase_autonomy_in_province_x_var
+								value = 4
+							}
+						}
+						event_target:agenda_province = {
+							NOT = { local_autonomy = 35 }
+						}
+					}
+					else_if = {
+						limit = {
+							check_variable = {
+								which = estate_angels_increase_autonomy_in_province_x_var
+								value = 3
+							}
+						}
+						event_target:agenda_province = {
+							NOT = { local_autonomy = 20 }
+						}
+					}
+					else_if = {
+						limit = {
+							check_variable = {
+								which = estate_angels_increase_autonomy_in_province_x_var
+								value = 2
+							}
+						}
+						event_target:agenda_province = {
+							NOT = { local_autonomy = 5 }
+						}
+					}
+					else = {
+						hidden_trigger = {
+							always = no
+						}
+					}
+				}
+			}	
+		}
+	}
+	task_requirements = {
+		if = {
+			limit = {
+				has_estate_agenda_auto_completion = {
+					estate = estate_angels
+				}
+			}
+			has_estate_agenda_auto_completion = {
+				estate = estate_angels
+			}
+		}
+		else = {
+			if = {
+				limit = {
+					check_variable = {
+						which = estate_angels_increase_autonomy_in_province_x_var
+						value = 5
+					}
+				}
+				event_target:agenda_province = {
+					local_autonomy = 75
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						which = estate_angels_increase_autonomy_in_province_x_var
+						value = 4
+					}
+				}
+				event_target:agenda_province = {
+					local_autonomy = 60
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						which = estate_angels_increase_autonomy_in_province_x_var
+						value = 3
+					}
+				}
+				event_target:agenda_province = {
+					local_autonomy = 45
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						which = estate_angels_increase_autonomy_in_province_x_var
+						value = 2
+					}
+				}
+				event_target:agenda_province = {
+					local_autonomy = 30
+				}
+			}
+			else = {
+				event_target:agenda_province = {
+					local_autonomy = 15
+				}
+			}
+		}
+	}
+    task_completed_effect = {
+		on_completed_agenda_effect = {
+			estate = estate_angels
+		}
+		add_estate_loyalty = {
+			estate = estate_angels
+			loyalty = 15
+		}
+		event_target:agenda_province = {
+			apply_random_development_bonus_bonus_effect = yes
+		}
+    }
+    failing_effect = {
+		on_failed_agenda_effect = yes
+		clr_auto_complete_flag = yes
+		event_target:agenda_province = {
+			clear_random_development_bonus_flags_effect = yes
+		}
+        add_estate_loyalty_modifier = {
+            estate = estate_angels
+			desc = EST_VAL_AGENDA_DENIED
+			loyalty = -10
+			duration = 7300
+        }
+    }
+}
+
+
+estate_angels_prove_devotion_to_ilias = {
+	max_days_active = 5475
+	can_select = {
+		religion = ilias_light_religion
+	}
+	selection_weight = {
+		factor = 1
+	}
+	pre_effect = {
+	}
+
+	task_requirements = {
+		church_power = 200
+	}
+    task_completed_effect = {
+		
+		add_estate_loyalty = {
+			estate = estate_angels
+			loyalty = 15
+		}
+		stability = 1
+    }
+    failing_effect = {
+		
+		add_estate_loyalty = {
+			estate = estate_angels
+			loyalty = -10
+		}
     }
 }

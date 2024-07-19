@@ -47,9 +47,11 @@ estate_spiritualists = {
 						tag = HM1
 						tag = LC1
 						tag = PT1
+						tag = LQD
 						was_tag = HM1
 						was_tag = LC1
 						was_tag = PT1
+						was_tag = LQD
 						has_idea = ultimate_doll_spiritualist_mastery 
 					}
 	}
@@ -130,6 +132,9 @@ estate_spiritualists = {
 
 	agendas = {
 		estate_spiritualists_develop_x
+		estate_spiritualists_three_privileges 
+		estate_spiritualists_build_university_in_y
+		estate_spiritualists_raise_zombies
 	}
 
 	color = { 62 80 43 }

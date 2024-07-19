@@ -3,5 +3,5 @@ government_rank = 1
 primary_culture = slums_human
 religion = ilias_light_religion
 technology_group = TECH_HUMAN
-capital = 103#Mutated crops fields
-add_government_reform = 
+capital = 103
+add_government_reform = criminal_syndicate_reform 

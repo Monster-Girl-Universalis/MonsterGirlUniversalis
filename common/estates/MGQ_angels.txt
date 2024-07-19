@@ -125,6 +125,12 @@ estate_angels = {
 
 	agendas = {
 		estate_angels_develop_x
+		estate_angels_three_privileges
+		estate_angels_build_temple_in_y
+		estate_angels_build_workshop_in_y
+		estate_angels_convert_province_culture
+		estate_angels_increase_autonomy_in_province_x
+		estate_angels_prove_devotion_to_ilias
 	}
 
 	color = { 217 180 100 }

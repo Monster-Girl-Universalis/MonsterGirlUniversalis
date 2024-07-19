@@ -105,11 +105,10 @@ leader_names = {
 	Dreamweaver Autumnleaf Winterfrost Duskrunner Dawnlight Waterfall Fireheart Earthsong 
 }
 ship_names = { 
-	Elara Aeloria Thalindor Sylvanwind Verdelith Starleaf Silverbreeze Eldertide Feyshadow
-	Moonshimmer Ilyrion Nimbelar Elessar Lorendel Elunara Glyndoria Woodhaven Tiraelin
-	Galenor Faelindra Silvershade Windswift Thalassian Elendil Starleaf Greenleaf Aeloria
-	Moonshadow Eldertree Aerowind Thornbloom Elfsong Sylvanstar Frostwood Rivendell Moonlily
-	Breezefall Galadhrim Faelight Sunspire
+	Elara Aeloria Thalindor Sylvanwind Verdelith Starleaf Silverbreeze Eldertide Feyshadow Moonshimmer
+	Ilyrion Nimbelar Elessar Lorendel Elunara Glyndoria Woodhaven Tiraelin Galenor Faelindra
+	Silvershade Windswift Thalassian Elendil Starleaf Greenleaf Aeloria Moonshadow Eldertree Aerowind
+	Thornbloom Elfsong Sylvanstar Frostwood Rivendell Moonlily Breezefall Galadhrim Faelight Sunspire
 }
 army_names = { 
 	"Pumpkin Army" "$PROVINCE$ Army" 

@@ -59,6 +59,7 @@ country_decisions = {
 				change_unit_type = TECH_SEA_DWELLER 
 			}
 			if = {
+				limit = { has_custom_ideas = no }
 				country_event = { id = ideagroups.1 } #Swap Ideas
 			}
 		}

@@ -17,28 +17,28 @@ technology_group = TECH_HUMAN
 	}
 }
 1444.1.1 = { 
-	leader = {
+	leader = { 
 		name = "Caesar Cerberus"
 		birth_date = 1424.1.1
-        	type = general
-        	fire = 6
-        	shock = 4
-        	manuever = 4
-        	siege = 2
+		type = general
+		fire = 6
+		shock = 4
+		manuever = 4
+		siege = 2
 		female = yes
-    	}
+	}
 }
 1444.1.1 = { 
-	leader = {
+	leader = { 
 		name = "Arthur Dullahan"
 		birth_date = 1424.1.1
-        	type = general
-        	fire = 4
-        	shock = 6
-        	manuever = 4
-        	siege = 2
+		type = general
+		fire = 4
+		shock = 6
+		manuever = 4
+		siege = 2
 		female = yes
-    	}
+	}
 }
 capital = 1192
-add_government_reform = 
+add_government_reform = grand_noah_reform

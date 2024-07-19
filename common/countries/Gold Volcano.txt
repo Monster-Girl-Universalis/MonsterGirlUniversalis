@@ -60,47 +60,45 @@ monarch_names = {
 	"Xavier #0" = 5
 	"Fernando #0" = 5
 	"Nicolas #0" = 5
-	"Alleria #0" = -20
-	"Alice #0" = -20
-	"Ariadne #0" = -20
-	"Augusta #0" = -20
-	"Aurora #0" = -20
-	"Fernandez #0" = -20
-	"Lucretia #0" = -20
-	"Claudia #0" = -20
-	"Elissa #0" = -20
-	"Reina #0" = -20
-	"Tsubaki #0" = -20
-	"Rinoa #0" = -20
-	"Anna #0" = -20
-	"Satsuki #0" = -20
-	"Natsuki #0" = -20
-	"Sonya #0" = -20
-	"Stella #0" = -20
-	"Marion #0" = -20
-	"Shoki #0" = -20
-	"Kasumi #0" = -20
-	"Freya #0" = -20
-	"Carol #0" = -20
-	"Mary #0" = -20
-	"Franceska #0" = -20
+	"Warvein #0" = -20
+	"Lila #0" = -20
+	"Liru #0" = -20
+	"Miranda #0" = -20
+	"Sofia #0" = -20
+	"Len #0" = -20
+	"Odette #0" = -20
+	"Tsubasa #0" = -20
+	"Leene #0" = -20
+	"Sara #0" = -20
 	"Ellie #0" = -20
-	"Yvette #0" = -20
-	"Yayoi #0" = -20
+	"Aradia #0" = -20
+	"Selene #0" = -20
+	"Stella #0" = -20
+	"Sonya #0" = -20
+	"Levia #0" = -20
+	"Anna #0" = -20
 	"Teresa #0" = -20
-	"Lona #0" = -20
-	"Melissa #0" = -20
+	"Julia #0" = -20
+	"Janette #0" = -20
+	"Yvette #0" = -20
+	"Elisabeth #0" = -20
+	"Emily #0" = -20
+	"Anastasia #0" = -20
+	"Lucretia #0" = -20
+	"Andrea #0" = -20
+	"Granda #0" = -20
 }
 leader_names = { 
-	Silverleaf Moonwhisper Sunfire Starweaver Windcaller Woodsworn Shadowhunter Elfborn Leafsong Starshine
-	Sunflower Greenbough Windchaser Nightshade Woodwanderer Starfall Sunburst Forestwalker Shadowstalker Leafwhisper
-	Dreamweaver Autumnleaf Winterfrost Duskrunner Dawnlight Waterfall Fireheart Earthsong 
+	Bloodmoon Ashenheart Silverclaw Flamestrike Stormcaller Ironfang Darkwing Emberheart Bloodclaw Stormwatcher
+	Pyronyx Terrastryke Shadowflame Infernion Thunderclaw Frostscale Nidhoggra Saphirion Wyvernia Drakonia
+	Arcanium Boreallia Oceanwing Geodragon 
 }
 ship_names = { 
-	Elara Aeloria Thalindor Sylvanwind Verdelith Starleaf Silverbreeze Eldertide Feyshadow Moonshimmer
-	Ilyrion Nimbelar Elessar Lorendel Elunara Glyndoria Woodhaven Tiraelin Galenor Faelindra
-	Silvershade Windswift Thalassian Elendil Starleaf Greenleaf Aeloria Moonshadow Eldertree Aerowind
-	Thornbloom Elfsong Sylvanstar Frostwood Rivendell Moonlily Breezefall Galadhrim Faelight Sunspire
+	Furyflame Wyrmrider Drakescale "Serpent's Breath" Firewing Chromarok Scorchclaw Dragonheart Wyrmskull Tiamatide
+	Draconic Dragonclaw Wyrmrider Serpent Drakescale Chromatic Scorchclaw Dragonheart Wyrmlord "Dragonheart Sovereign"
+	"Scorchclaw Tempest" "Dragonclaw Defender" Uroboros Draconith Pyroclaw Serpentix Scorchrend Wyrmscar Aureliar Firedrake
+	Drakari Cindrake Wyrmforge Aurelis Vermithor Draculon Flamespire Ignithorn Draconyx Abyssire
+	Chrysmere Scalethorn Drakona Emberclad Aureline Firesoul 
 }
 army_names = { 
 	"Salamander Army" "$PROVINCE$ Army" 

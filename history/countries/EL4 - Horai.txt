@@ -1,7 +1,7 @@
 government = monarchy
 government_rank = 2
 primary_culture = Horai_Elf
-add_government_reform = Elf_realm
+add_government_reform = horai_reform
 religion = yamatai_religion
 technology_group = TECH_ELF
 historical_friend = EL1#Hikkikomori cousin...

@@ -1,7 +1,7 @@
 government = monarchy
 government_rank = 2
-primary_culture = Royal_Yoma
-add_government_reform = Yoma_realm
+primary_culture = Yoma_Girl
+add_government_reform = mephisto_reform
 religion = monster_lord_religion
 technology_group = TECH_YOUMA
 1444.1.1 = { 
@@ -16,3 +16,4 @@ technology_group = TECH_YOUMA
 	}
 }
 capital = 1251
+add_accepted_culture = Magical_Elf

@@ -10,6 +10,12 @@ smugglers_helping_us = {
 	trade_efficiency = 0.1
 }
 
+comet_dragonfire_buff = {
+	fire_damage = 0.05
+	infantry_fire = 0.10
+	artillery_fire = 0.10
+}
+
 # Harmonized Modifiers
 ##################################################
 

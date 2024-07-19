@@ -927,8 +927,15 @@
  DQ1_ADJ: "Deep Sea Queen"
  LQ1: "Lamia Queen"
  LQ1_ADJ: "Lamia Queen"
+ SQ1: "Scylla Queen"
+ SQ1_ADJ: "Scylla Queen"
 
  SO1:0 "Sonya Apoptosis"
- SO1_ADJ:0 "Sonya Chaos"
+ SO1_ADJ:0 "Sonyachaos"
  AD1:0 "Adramelech Apoptosis"
  AD1_ADJ:0 "Adramelech"
+
+ CR3: "Canceroid Realm"
+ CR3_ADJ: "Canceroid"
+ XX7: "Chimera XX-7"
+ XX7_ADJ: "Chimera XX-7"

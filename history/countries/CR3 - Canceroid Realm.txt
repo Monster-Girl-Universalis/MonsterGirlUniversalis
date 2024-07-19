@@ -1,0 +1,6 @@
+government = monarchy
+add_government_reform = Roid_realm
+government_rank = 1
+technology_group = TECH_ROID
+religion = seekers_of_truth_religion
+primary_culture = Roid_Girl

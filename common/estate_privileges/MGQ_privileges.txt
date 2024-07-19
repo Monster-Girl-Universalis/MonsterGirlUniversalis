@@ -595,6 +595,7 @@ estate_lowly_angels_in_army = {
 	is_valid = { 
 		NOT = {
 			tag = ENV
+			was_tag = ENV
 			culture = Fallen_Angel
 		}
 	}
@@ -613,6 +614,7 @@ estate_celestial_nepotism = {
 	is_valid = { 
 		NOT = {
 			tag = ENV
+			was_tag = ENV
 			culture = Fallen_Angel
 		}
 	}
@@ -630,6 +632,7 @@ estate_strengthen_angel_bond = {
 	is_valid = { 
 		NOT = {
 			tag = ENV
+			was_tag = ENV
 			culture = Fallen_Angel
 		}
 	}
@@ -647,6 +650,7 @@ estate_iron_grip_of_goddess = {
 	is_valid = { 
 		NOT = {
 			tag = ENV
+			was_tag = ENV
 			culture = Fallen_Angel
 		}
 	}	
@@ -664,6 +668,7 @@ estate_sinners_punishment = {
 	is_valid = { 
 		NOT = {
 			tag = ENV
+			was_tag = ENV
 			culture = Fallen_Angel
 		}
 	}
@@ -704,6 +709,7 @@ estate_fallen_angels_in_army = {
 	is_valid = { 
 		OR = {
 			tag = ENV
+			was_tag = ENV
 			culture = Fallen_Angel
 		}
 	}
@@ -721,6 +727,7 @@ estate_fallen_angel_dance = {
 	is_valid = { 
 		OR = {
 			tag = ENV
+			was_tag = ENV
 			culture = Fallen_Angel
 		}
 	}
@@ -738,6 +745,7 @@ estate_angel_monster_coexistence = {
 	is_valid = { 
 		OR = {
 			tag = ENV
+			was_tag = ENV
 			culture = Fallen_Angel
 		}
 	}
@@ -755,6 +763,7 @@ estate_subsidize_angel_farms = {
 	is_valid = { 
 		OR = {
 			tag = ENV
+			was_tag = ENV
 			culture = Fallen_Angel
 		}
 	}
@@ -772,6 +781,7 @@ estate_fallen_angel_workforce = {
 	is_valid = { 
 		OR = {
 			tag = ENV
+			was_tag = ENV
 			culture = Fallen_Angel
 		}
 	}

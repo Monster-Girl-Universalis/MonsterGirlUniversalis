@@ -3,7 +3,7 @@ government_rank = 2
 primary_culture = Angel_Girl
 religion = ilias_light_religion
 technology_group = TECH_ANGEL
-historical_friend = IT1 #Eden loves Goddess Ilias-sama
+historical_friend = IT1#Eden loves Goddess Ilias-sama
 1444.1.1 = { 
 	monarch = { 
 		name = "Eden"
@@ -16,5 +16,5 @@ historical_friend = IT1 #Eden loves Goddess Ilias-sama
 	}
 	add_ruler_personality = immortal_personality
 }
-add_government_reform = Angel_realm
+add_government_reform = snow_heaven_reform
 capital = 1989

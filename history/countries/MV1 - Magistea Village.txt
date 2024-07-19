@@ -3,11 +3,11 @@ government_rank = 1
 primary_culture = worm_summoner
 religion = seekers_of_truth_religion
 technology_group = TECH_HUMAN
-historical_rival = TM1 #Magistean civil war
+historical_rival = TM1#Magistean civil war
 1444.1.1 = { 
 	monarch = { 
 		name = "Lily"
-		dynasty = "of Magistea Village"
+		dynasty = "Maistre"
 		birth_date = 1424.1.1
 		adm = 5
 		dip = 4
@@ -16,4 +16,4 @@ historical_rival = TM1 #Magistean civil war
 	}
 }
 capital = 857
-add_government_reform = 
+add_government_reform = worm_summoner_reform

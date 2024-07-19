@@ -15,4 +15,4 @@ capital = 324#Mutated crops fields
 		female = yes
 	}
 }
-add_government_reform = 
+add_government_reform = iliasport_reform

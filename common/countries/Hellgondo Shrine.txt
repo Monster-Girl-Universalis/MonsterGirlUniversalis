@@ -90,15 +90,14 @@ monarch_names = {
 }
 leader_names = { 
 	Viperstone Serpentfang Blackscale Cobrashadow Scalespire Venomheart Fangtail Serpenthorn Slithertongue Slytherskin
-	Scalecoil Fangstrike Serpentine Vipertide Cobrashield Scaleslash Venomwhisper Fanggaze Serpentcry Blackthorn Scalestrike
-	Cobrawhisper Vipercoil Fangspear Serpentcrest Scaleswift Venomfang Slitherstrike Vipercrawl
+	Scalecoil Fangstrike Serpentine Vipertide Cobrashield Scaleslash Venomwhisper Fanggaze Serpentcry Blackthorn
+	Scalestrike Cobrawhisper Vipercoil Fangspear Serpentcrest Scaleswift Venomfang Slitherstrike Vipercrawl 
 }
 ship_names = { 
-	Serpentia Venomfang Cobraclasp Scalewind Medusafury Pythonstrike Anacondareef Vipercrest
-	Serpentgale Lamiafang Reptiliancoil Scyllisnake Nagaship Rattlerider Copperhead Serpentwhisper
-	Vipervoyage Hissedance Maraviper Constrictor Serpentongue Scaleroar Fangfleet Aspwave
-	Hydrasnake Coilcrest "Lamia's Sway" "Python's Grace" Cobramight Scalewind Slitherin Mambastryke
-	Cursedancer Lorensnare Lustcrusher Anacondread Nagashadow Medusail Serpentia
+	Serpentia Venomfang Cobraclasp Scalewind Medusafury Pythonstrike Anacondareef Vipercrest Serpentgale Lamiafang
+	Reptiliancoil Scyllisnake Nagaship Rattlerider Copperhead Serpentwhisper Vipervoyage Hissedance Maraviper Constrictor
+	Serpentongue Scaleroar Fangfleet Aspwave Hydrasnake Coilcrest "Lamia's Sway" "Python's Grace" Cobramight Scalewind
+	Slitherin Mambastryke Cursedancer Lorensnare Lustcrusher Anacondread Nagashadow Medusail Serpentia 
 }
 army_names = { 
 	"Sister Lamia Army" "$PROVINCE$ Army" 

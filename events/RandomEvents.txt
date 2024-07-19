@@ -2582,13 +2582,25 @@ country_event = {
 		}
 		highlight = yes
 		trigger = {
-			ruler_has_personality_ancestor = { key = scholar }
+			OR = {
+				ruler_has_personality_ancestor = { key = scholar }
+				religion_group = science_religion_g
+				secondary_religion_group = science_religion_g
+				has_harmonized_with = science_religion_g
+				has_adopted_cult = science_shrines 
+			}
 		}
 		add_adm_power = 20
 	}
 	
 	option = {
 		name = "EVTOPTA5060"		# It's an omen
+		trigger = {
+			NOT = { religion_group = science_religion_g }
+		}
+		trigger = {
+			NOT = { religion_group = chaos_religion_g }
+		}
 		if = {
 			limit = { NOT = { stability = -2 } }
 			add_adm_power = -100
@@ -2600,6 +2612,12 @@ country_event = {
 	}
 	option = {
 		name = "EVTOPTB5060"		# The end is nigh!
+		trigger = {
+			NOT = { religion_group = science_religion_g }
+		}
+		trigger = {
+			NOT = { religion_group = chaos_religion_g }
+		}
 		if = {
 			limit = { NOT = { stability = -2 } }
 			add_adm_power = -100
@@ -2611,6 +2629,12 @@ country_event = {
 	}
 	option = {
 		name = "EVTOPTC5060"		# The economy, fools!
+		trigger = {
+			NOT = { religion_group = science_religion_g }
+		}
+		trigger = {
+			NOT = { religion_group = chaos_religion_g }
+		}
 		if = {
 			limit = { NOT = { stability = -2 } }
 			add_adm_power = -100
@@ -2622,6 +2646,12 @@ country_event = {
 	}
 	option = {
 		name = "EVTOPTE5060"		# I wish I lived in more enlightened times.
+		trigger = {
+			NOT = { religion_group = science_religion_g }
+		}
+		trigger = {
+			NOT = { religion_group = chaos_religion_g }
+		}
 		if = {
 			limit = { NOT = { stability = -2 } }
 			add_adm_power = -100
@@ -2647,6 +2677,12 @@ country_event = {
 	}
 	option = {
 		name = "EVTOPTG5060"		# If only we had comet sense!
+		trigger = {
+			NOT = { religion_group = science_religion_g }
+		}
+		trigger = {
+			NOT = { religion_group = chaos_religion_g }
+		}
 		if = {
 			limit = { NOT = { stability = -2 } }
 			add_adm_power = -100
@@ -2660,6 +2696,12 @@ country_event = {
 		name = "EVTOPTH5060"		# Oh comet, devil's kith and kin...
 		trigger = {
 			NOT = { religion_group = pagan }
+		}
+		trigger = {
+			NOT = { religion_group = science_religion_g }
+		}
+		trigger = {
+			NOT = { religion_group = chaos_religion_g }
 		}		
 		if = {
 			limit = { NOT = { stability = -2 } }
@@ -2675,6 +2717,12 @@ country_event = {
 		trigger = {
 			NOT = { is_year = 1445 }
 		}
+		trigger = {
+			NOT = { religion_group = science_religion_g }
+		}
+		trigger = {
+			NOT = { religion_group = chaos_religion_g }
+		}
 		if = {
 			limit = { NOT = { stability = -2 } }
 			add_adm_power = -100
@@ -2689,6 +2737,12 @@ country_event = {
 		trigger = {
 			is_year = 1810
 		}
+		trigger = {
+			NOT = { religion_group = science_religion_g }
+		}
+		trigger = {
+			NOT = { religion_group = chaos_religion_g }
+		}
 		if = {
 			limit = { NOT = { stability = -2 } }
 			add_adm_power = -100
@@ -2700,6 +2754,12 @@ country_event = {
 	}	
 	option = {
 		name = "EVTOPTK5060"		# That's it. I'm dead.
+		trigger = {
+			NOT = { religion_group = science_religion_g }
+		}
+		trigger = {
+			NOT = { religion_group = chaos_religion_g }
+		}
 		if = {
 			limit = { NOT = { stability = -2 } }
 			add_adm_power = -100
@@ -2712,6 +2772,12 @@ country_event = {
 	option = {
 		name = "EVTOPTL5060"		# Curse you, Comet Sense!
 		trigger = {
+			NOT = { religion_group = science_religion_g }
+		}
+		trigger = {
+			NOT = { religion_group = chaos_religion_g }
+		}
+		trigger = {
 			NOT = { stability = -1 }
 		}
 		if = {
@@ -2721,6 +2787,29 @@ country_event = {
 		if = {
 			limit = { stability = -2 }
 			add_stability = -1
+		}
+	}		
+	option = {
+		name = "EVTOPTL5061"		# CROSS-WORLD CONTACT... Ah, it's just a comet.
+		trigger = {
+			OR = {
+				religion_group = chaos_religion_g
+				culture_group = apoptosis
+			}
+		}
+	}		
+	option = {
+		name = "EVTOPTL5062"		# I'm getting all fired up!
+		trigger = {
+			OR = {
+				religion = fire_religion
+				culture_group = dragon
+				culture = Dragon_Apoptosis
+			}
+		}
+		add_country_modifier = {
+			name = "comet_dragonfire_buff"
+			duration = 3650
 		}
 	}		
 }
@@ -7405,7 +7494,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA740"
-		trigger = { NOT = { tag = SMC } }
+		trigger = { NOT = { culture = slums_human } }
 		ai_chance = {
 			factor = 35
 			modifier = {
@@ -7417,7 +7506,7 @@ country_event = {
 	}
 	option = {
 		name = "EVTOPTB740"
-		trigger = { NOT = { tag = SMC } }
+		trigger = { NOT = { culture = slums_human } }
 		ai_chance = {
 			factor = 65
 		}
@@ -7429,7 +7518,7 @@ country_event = {
 	option = {
 		name = "personality_options.740.a"
 		highlight = yes
-		trigger = { ruler_has_personality_ancestor = { key = entrepreneur } NOT = { tag = SMC } }
+		trigger = { ruler_has_personality_ancestor = { key = entrepreneur } NOT = { culture = slums_human } }
 		ai_chance = {
 			factor = 100
 			modifier = {
@@ -7444,7 +7533,7 @@ country_event = {
 		highlight = yes
 		trigger = {
 			ruler_has_personality = embezzler_personality
-			NOT = { tag = SMC } 
+			NOT = { culture = slums_human } 
 		}
 		ai_chance = {
 			factor = 100
@@ -7456,7 +7545,7 @@ country_event = {
 	}
 	option = {
 		name = "EVTOPTC740"
-		trigger = { OR = { tag = SMC was_tag = SMC } }
+		trigger = { culture = slums_human }
 		ai_chance = {
 			factor = 100
 			modifier = {
@@ -7472,7 +7561,7 @@ country_event = {
 	}
 	option = {
 		name = "EVTOPTD740"
-		trigger = { OR = { tag = SMC was_tag = SMC } }
+		trigger = { culture = slums_human }
 		ai_chance = {
 			factor = 100
 			modifier = {

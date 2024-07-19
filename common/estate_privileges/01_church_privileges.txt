@@ -2026,7 +2026,10 @@ estate_church_embrace_singluar_cult = {
 	influence = 0.1
 	loyalty = 0
 	is_valid = {
-		religion = shamanism
+		OR = {
+			religion = shamanism
+			#religion = yamatai_religion
+		}
 		has_dlc = "Rights of Man"
 	}
 	can_select = {
@@ -2070,7 +2073,10 @@ estate_church_flexible_cults = {
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
 	influence = 0.05
 	is_valid = {
-		religion = shamanism
+		OR = {
+			religion = shamanism
+			#religion = yamatai_religion
+		}
 		has_dlc = "Rights of Man"
 		NOT = { has_country_flag = enabled_cult_switching_mission }
 	}
@@ -2100,6 +2106,7 @@ estate_church_flexible_cults = {
 		factor = 0	#Not really needed, the AI should choose the right Cult from the get-go
 	}
 }
+
 
 ###MUSLIM PRIVILEGES###
 #Privilege to remove adm cost of scholars

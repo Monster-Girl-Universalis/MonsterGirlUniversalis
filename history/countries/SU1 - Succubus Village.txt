@@ -1,7 +1,7 @@
 government = monarchy
 government_rank = 2
 primary_culture = Village_Succubi
-add_government_reform = Succubi_realm
+add_government_reform = succubus_village_reform
 religion = monster_lord_religion
 technology_group = TECH_SUCCUBI
 1444.1.1 = { 

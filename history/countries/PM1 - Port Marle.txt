@@ -4,4 +4,5 @@ primary_culture = natalian_human
 religion = ilias_light_religion
 technology_group = TECH_HUMAN
 capital = 539
-add_government_reform = 
+add_government_reform = port_marle_reform
+add_accepted_culture = Sea_Horse_Girl

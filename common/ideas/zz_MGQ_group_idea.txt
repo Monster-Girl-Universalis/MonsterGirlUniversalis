@@ -1474,6 +1474,7 @@ MGQ_kirin_ideas = {
 		OR = {
 			culture = Kirin_Girl
 		}
+		NOT = { has_country_flag = accepted_dragon_empress_ideas }
 	}	
 	free = yes
 	
@@ -1559,6 +1560,7 @@ MGQ_wyvern_ideas = {
 		OR = {
 			culture = Wyvern_Girl
 		}
+		NOT = { has_country_flag = accepted_dragon_empress_ideas }
 	}	
 	free = yes
 	
@@ -1731,6 +1733,7 @@ MGQ_kyoryuu_ideas = {
 		OR = {
 			culture = Kyoryuu_Girl
 		}
+		NOT = { has_country_flag = accepted_dragon_empress_ideas }
 	}	
 	free = yes
 	
@@ -1817,6 +1820,7 @@ MGQ_aevis_ideas = {
 		OR = {
 			culture = Aevis_Girl
 		}
+		NOT = { has_country_flag = accepted_dragon_empress_ideas }
 	}	
 	free = yes
 	

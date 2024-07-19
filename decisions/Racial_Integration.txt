@@ -5,7 +5,10 @@ country_decisions = {
 		potential = {
 			AND = {
 				any_owned_province = { culture_group = Human_culture }
-				NOT = { technology_group = TECH_HUMAN }			
+				NOT = { technology_group = TECH_HUMAN }	
+				NOT = {
+					has_reform = enrika_reform
+				}		
 				NOT = { 
 					check_variable = {
 						which = Human_integration
@@ -40,6 +43,9 @@ country_decisions = {
 		potential = {
 			AND = {
 				any_owned_province = { culture_group = undead }
+				NOT = {
+					has_reform = enrika_reform
+				}
 					NOT = {
 		OR = {
 			technology_group = TECH_UNDEAD
@@ -121,6 +127,9 @@ country_decisions = {
 		potential = {
 			AND = {
 				any_owned_province = { culture_group = land_dweller }
+				NOT = {
+					has_reform = enrika_reform
+				}
 					NOT = {
 		OR = {
 			technology_group = TECH_LAND_DWELLER
@@ -181,6 +190,9 @@ country_decisions = {
 		potential = {
 			AND = {
 				any_owned_province = { culture_group = succubi }
+				NOT = {
+					has_reform = enrika_reform
+				}
 					NOT = {
 		OR = {
 			technology_group = TECH_SUCCUBI
@@ -235,6 +247,9 @@ country_decisions = {
 		potential = {
 			AND = {
 				any_owned_province = { culture_group = slime }
+				NOT = {
+					has_reform = enrika_reform
+				}
 					NOT = {
 		OR = {
 			technology_group = TECH_SLIME
@@ -300,6 +315,9 @@ country_decisions = {
 		potential = {
 			AND = {
 				any_owned_province = { culture_group = apoptosis }
+				NOT = {
+					has_reform = enrika_reform
+				}
 					NOT = {
 		OR = {
 			check_variable = {
@@ -359,6 +377,9 @@ country_decisions = {
 		potential = {
 			AND = {
 				any_owned_province = { culture_group = alraune }
+				NOT = {
+					has_reform = enrika_reform
+				}
 					NOT = {
 		OR = {
 			technology_group = TECH_ALRAUNE
@@ -427,6 +448,9 @@ country_decisions = {
 		potential = {
 			AND = {
 				any_owned_province = { culture_group = elf }
+				NOT = {
+					has_reform = enrika_reform
+				}
 					NOT = {
 		OR = {
 			check_variable = {
@@ -497,6 +521,9 @@ country_decisions = {
 		potential = {
 			AND = {
 				any_owned_province = { culture_group = beast }
+				NOT = {
+					has_reform = enrika_reform
+				}
 					NOT = {
 		OR = {
 			check_variable = {
@@ -594,6 +621,9 @@ country_decisions = {
 		potential = {
 			AND = {
 				any_owned_province = { culture_group = insect}
+				NOT = {
+					has_reform = enrika_reform
+				}
 					NOT = {
 		OR = {
 			technology_group = TECH_INSECT
@@ -664,6 +694,9 @@ country_decisions = {
 		potential = {
 			AND = {
 				any_owned_province = { culture_group = harpy }
+				NOT = {
+					has_reform = enrika_reform
+				}
 					NOT = {
 		OR = {
 			technology_group = TECH_HARPY
@@ -724,6 +757,9 @@ country_decisions = {
 		potential = {
 			AND = {
 				any_owned_province = { culture_group = dragon }
+				NOT = {
+					has_reform = enrika_reform
+				}
 					NOT = {
 		OR = {
 			technology_group = TECH_DRAGON
@@ -789,6 +825,9 @@ country_decisions = {
 		potential = {
 			AND = {
 				any_owned_province = { culture_group = demi_human }
+				NOT = {
+					has_reform = enrika_reform
+				}
 					NOT = {
 		OR = {
 			technology_group = TECH_DEMI_HUMAN
@@ -882,6 +921,9 @@ country_decisions = {
 		potential = {
 			AND = {
 				any_owned_province = { culture_group = vampire }
+				NOT = {
+					has_reform = enrika_reform
+				}
 					NOT = {
 		OR = {
 			technology_group = TECH_VAMPIRE
@@ -931,6 +973,9 @@ country_decisions = {
 		potential = {
 			AND = {
 				any_owned_province = { culture_group = yoma }
+				NOT = {
+					has_reform = enrika_reform
+				}
 					NOT = {
 		OR = {
 			technology_group = TECH_YOUMA
@@ -1006,6 +1051,9 @@ country_decisions = {
 		potential = {
 			AND = {
 				any_owned_province = { culture_group = kitsune }
+				NOT = {
+					has_reform = enrika_reform
+				}
 					NOT = {
 		OR = {
 			technology_group = TECH_KITSUNE
@@ -1051,6 +1099,9 @@ country_decisions = {
 		potential = {
 			AND = {
 				any_owned_province = { culture_group = mermaid }
+				NOT = {
+					has_reform = enrika_reform
+				}
 					NOT = {
 		OR = {
 			technology_group = TECH_MERMAID
@@ -1106,6 +1157,9 @@ country_decisions = {
 		potential = {
 			AND = {
 				any_owned_province = { culture_group = sea_dweller }
+				NOT = {
+					has_reform = enrika_reform
+				}
 					NOT = {
 		OR = {
 			technology_group = TECH_SEA_DWELLER
@@ -1181,7 +1235,10 @@ country_decisions = {
 		major = yes
 		potential = {
 			AND = {
-				any_owned_province = { culture_group = doll}
+				any_owned_province = { culture_group = doll }
+				NOT = {
+					has_reform = enrika_reform
+				}
 					NOT = {
 		OR = {
 			technology_group = TECH_DOLL
@@ -1249,6 +1306,9 @@ country_decisions = {
 		potential = {
 			AND = {
 				any_owned_province = { culture_group = scylla }
+				NOT = {
+					has_reform = enrika_reform
+				}
 					NOT = {
 		OR = {
 			technology_group = TECH_SCYLLA
@@ -1325,6 +1385,9 @@ country_decisions = {
 		potential = {
 			AND = {
 				any_owned_province = { culture_group = lamia }
+				NOT = {
+					has_reform = enrika_reform
+				}
 					NOT = {
 		OR = {
 			technology_group = TECH_LAMIA
@@ -1385,6 +1448,9 @@ country_decisions = {
 		potential = {
 			AND = {
 				any_owned_province = { culture_group = chimera }
+				NOT = {
+					has_reform = enrika_reform
+				}
 					NOT = {
 		OR = {
 			technology_group = TECH_CHIMERA
@@ -1446,6 +1512,12 @@ country_decisions = {
 		potential = {
 			AND = {
 				any_owned_province = { culture_group = angel }
+				NOT = {
+					has_reform = enrika_reform
+				}
+				NOT = {
+					tag = ML1
+				}
 					NOT = {
 		OR = {
 			technology_group = TECH_ANGEL
@@ -1506,6 +1578,9 @@ country_decisions = {
 		potential = {
 			AND = {
 				any_owned_province = { culture_group = roid }
+				NOT = {
+					has_reform = enrika_reform
+				}
 					NOT = {
 		OR = {
 			check_variable = {
@@ -1562,6 +1637,9 @@ country_decisions = {
 		potential = {
 			AND = {
 				any_owned_province = { culture_group = tanuki }
+				NOT = {
+					has_reform = enrika_reform
+				}
 					NOT = {
 
 		OR = {

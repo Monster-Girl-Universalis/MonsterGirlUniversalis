@@ -4,7 +4,7 @@ primary_culture = ilian_human
 religion = ilias_light_religion
 technology_group = TECH_HUMAN
 capital = 442
-historical_rival = MDS #Slug infestation
+historical_rival = MDS#Slug infestation
 historical_rival = SLT
 1444.1.1 = { 
 	monarch = { 
@@ -17,4 +17,4 @@ historical_rival = SLT
 		female = yes
 	}
 }
-add_government_reform = 
+add_government_reform = midas_reform

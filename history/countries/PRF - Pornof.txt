@@ -14,4 +14,4 @@ capital = 4#Pornof Village
 		mil = 5
 	}
 }
-add_government_reform = 
+add_government_reform = pornof_reform

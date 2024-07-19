@@ -3296,6 +3296,8 @@
  EVTOPTF5060:0 "Sacrifice a human heart to appease the comet!"
  EVTOPTG5060:0 "If only we had comet sense..."
  EVTOPTH5060:0 "Oh Comet, devil's kith and kin..."
+ EVTOPTL5061:0 "CROSS-WORLD CONTACT... Ah, it's just a comet."
+ EVTOPTL5062:0 "I'm getting all fired up!"
  EVTNAME9073:0 "Privileges Revoked"
  EVTDESC9073:0 "In the year of our lord, [GetYear], the most serene Augustus [Emperor.Monarch.GetName], Romanorum Imperator, crowned by God, has again convened the Estates of the Holy Roman Empire. The Diet has agreed to a motion to centralize foreign policy and warfare by having all member states submit to a direct vassalage under the [Emperor.Monarch.GetTitle]."
  EVTOPTA9073:0 "Demand Oaths of Loyalty"
@@ -4597,3 +4599,5 @@
  dancing_on_the_knife_bad:0 "Dancing on the Knife"
  desc_dancing_on_the_knife_bad:0 "Our diplomatic efforts have failed."
  lunar_new_year:0 "Lunar New Year"
+
+ EVTOPTC9459:0 "You gonna try harder then that."

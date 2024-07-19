@@ -75,7 +75,7 @@
  trade_company_enrika_trade: "Enrika Charter"
  TRADE_COMPANY_ENRIKA_NODE_Root_Culture_GetName: "[Root.Culture.GetName] Enrika Company"
  TRADE_COMPANY_ENRIKA_NODE_Ilias_Trade_Company: "Enrika Trade Company"
- trade_company_happiness_village: "Happiness Village Charter"
+ trade_company_happiness_village_trade: "Happiness Village Charter"
  TRADE_COMPANY_HAPPINESS_VILLAGE_NODE_Root_Culture_GetName: "[Root.Culture.GetName] Happiness Village Company"
  TRADE_COMPANY_HAPPINESS_VILLAGE_Ilias_Trade_Company: "Happiness Village Trade Company"
  trade_company_slug_tower_trade: "Slug Tower Charter"

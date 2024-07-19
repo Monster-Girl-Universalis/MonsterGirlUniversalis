@@ -3,7 +3,7 @@ government_rank = 1
 primary_culture = worm_summoner
 religion = seekers_of_truth_religion
 technology_group = TECH_HUMAN
-historical_rival = MV1 #Magistean civil war
+historical_rival = MV1#Magistean civil war
 1444.1.1 = { 
 	monarch = { 
 		name = "Lucia"
@@ -16,4 +16,4 @@ historical_rival = MV1 #Magistean civil war
 	}
 }
 capital = 836
-add_government_reform = 
+add_government_reform = worm_summoner_reform

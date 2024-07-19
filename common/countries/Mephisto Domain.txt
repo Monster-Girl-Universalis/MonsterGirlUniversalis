@@ -90,15 +90,15 @@ monarch_names = {
 }
 leader_names = { 
 	Nightshade Crimsonfang Moonbrook Blackthorn Bloodworth Ravencrest Shadowborne Vanthorn Darkmore Ashenbrook
-	Gravesend Vespera Darkwood Nocturne Bloodmoon Blackwood Crossbane Nightshade Baneblood Nightfall Hollowgrave
-	Winterthorn Bloodthorn Shadowvale Moonstone Nightlock Blackrose Darkmoor Ashenheart Stormcaller Emberheart
-	Stormwatcher Shadowflame Infernion Saphirion Arcanium Vipercrawl
+	Gravesend Vespera Darkwood Nocturne Bloodmoon Blackwood Crossbane Nightshade Baneblood Nightfall
+	Hollowgrave Winterthorn Bloodthorn Shadowvale Moonstone Nightlock Blackrose Darkmoor Ashenheart Stormcaller
+	Emberheart Stormwatcher Shadowflame Infernion Saphirion Arcanium Vipercrawl 
 }
 ship_names = { 
-	Shadeclaw Netherblade Onyxclaw Shadowswift Abysswrath Infernostorm Phantomwail Soulreaver
-	Eldritchbane  Cursedark Voidshriek Dreadshade Yomaheart Darkwhisper Spectertide Nightshade
-	Doomgale Ebonspire Wraithwind Harbinger Yomafury Horrortide Wraithwing Phantomark Apparition
-	Gloomship Dreadwake Bansheesurge Wightstrider Yomastrider Soulstorm Wailwind Eclipsail
+	Shadeclaw Netherblade Onyxclaw Shadowswift Abysswrath Infernostorm Phantomwail Soulreaver Eldritchbane Cursedark
+	Voidshriek Dreadshade Yomaheart Darkwhisper Spectertide Nightshade Doomgale Ebonspire Wraithwind Harbinger
+	Yomafury Horrortide Wraithwing Phantomark Apparition Gloomship Dreadwake Bansheesurge Wightstrider Yomastrider
+	Soulstorm Wailwind Eclipsail 
 }
 army_names = { 
 	"Mephisto Army" "$PROVINCE$ Army" 

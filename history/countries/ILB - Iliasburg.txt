@@ -15,4 +15,4 @@ capital = 310#Mutated crops fields
 		female = yes
 	}
 }
-add_government_reform = 
+add_government_reform = iliasburg_reform

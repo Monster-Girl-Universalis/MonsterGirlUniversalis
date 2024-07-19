@@ -8,100 +8,107 @@ historical_idea_groups = {
 historical_units = { 
 }
 monarch_names = { 
-	"Heinrich #0" = 5
-	"Lazarus #0" = 5
-	"Marcellus #0" = 5
-	"John #0" = 5
-	"Kazuya #0" = 5
-	"Kockyoin #0" = 5
-	"Jack #0" = 5
-	"Hans #0" = 5
-	"Lars #0" = 5
-	"Lauratt #0" = 5
-	"Merlin #0" = 5
-	"Samson #0" = 5
-	"Toru #0" = 5
-	"Pylate #0" = 5
-	"Lest #0" = 5
-	"Adrian #0" = 5
-	"Caleb #0" = 5
-	"Ethan #0" = 5
-	"Gabriel #0" = 5
-	"Isaac #0" = 5
-	"Julian #0" = 5
-	"Lucas #0" = 5
-	"Nathaniel #0" = 5
-	"Oliver #0" = 5
-	"Sebastian #0" = 5
-	"Alexander #0" = 5
-	"Christopher #0" = 5
-	"Daniel #0" = 5
-	"Elijah #0" = 5
-	"Gavin #0" = 5
-	"Henry #0" = 5
-	"Jonathan #0" = 5
-	"Liam #0" = 5
-	"Samuel #0" = 5
-	"Benjamin #0" = 5
-	"David #0" = 5
-	"Evan #0" = 5
-	"Jacob #0" = 5
-	"Gregory #0" = 5
-	"Isaiah #0" = 5
-	"Matthew #0" = 5
-	"Owen #0" = 5
-	"Ryan #0" = 5
-	"Thomas #0" = 5
-	"Damian #0" = 5
-	"Hector #0" = 5
-	"Maximilian #0" = 5
-	"Rafael #0" = 5
-	"Victor #0" = 5
-	"Xavier #0" = 5
-	"Fernando #0" = 5
-	"Nicolas #0" = 5
-	"Alleria #0" = -20
-	"Alice #0" = -20
-	"Ariadne #0" = -20
-	"Augusta #0" = -20
-	"Aurora #0" = -20
-	"Fernandez #0" = -20
-	"Lucretia #0" = -20
-	"Claudia #0" = -20
-	"Elissa #0" = -20
-	"Reina #0" = -20
-	"Tsubaki #0" = -20
-	"Rinoa #0" = -20
-	"Anna #0" = -20
+	"Motohito #0" = 5
+	"Mihito #0" = 5
+	"Hikohito #0" = 5
+	"Fusahito #0" = 5
+	"Katsuhito #0" = 5
+	"Tomohito #0" = 5
+	"Michihito #0" = 5
+	"Kazuhito #0" = 5
+	"Kotohito #0" = 5
+	"Tsuguhito #0" = 5
+	"Nagahito #0" = 5
+	"Satohito #0" = 5
+	"Asahito #0" = 5
+	"Yasuhito #0" = 5
+	"Teruhito #0" = 5
+	"Hidehito #0" = 5
+	"Morohito #0" = 5
+	"Ayahito #0" = 5
+	"Takauji #0" = 5
+	"Yoshiakira #0" = 5
+	"Yoshimitsu #0" = 5
+	"Yoshimochi #0" = 5
+	"Yoshikazu #0" = 5
+	"Yoshinori #0" = 5
+	"Yoshikatsu #0" = 5
+	"Yoshimasa #0" = 5
+	"Yoshihisa #0" = 5
+	"Yoshitane #0" = 5
+	"Yoshizumi #0" = 5
+	"Yoshiharu #0" = 5
+	"Yoshiteru #0" = 5
+	"Yoshihide #0" = 5
+	"Yoshiaki #0" = 5
+	"Nobutada #0" = 5
+	"Hidenobu #0" = 5
+	"Hideyoshi #0" = 5
+	"Hideyori #0" = 5
+	"Ieyasu #0" = 5
+	"Hidetada #0" = 5
+	"Iemitsu #0" = 5
+	"Ietsuna #0" = 5
+	"Tsunayoshi #0" = 5
+	"Ienobu #0" = 5
+	"Ietsugu #0" = 5
+	"Yoshimune #0" = 5
+	"Ieshige #0" = 5
+	"Ieharu #0" = 5
+	"Ienari #0" = 5
+	"Ieyoshi #0" = 5
+	"Iesada #0" = 5
+	"Iemochi #0" = 5
+	"Yoshinobu #0" = 5
+	"Puruko #0" = -20
+	"Lime #0" = -20
+	"Melty #0" = -20
+	"Esmeralda #0" = -20
+	"Selene #0" = -20
+	"Nina #0" = -20
+	"Louise #0" = -20
+	"Lucia #0" = -20
+	"Lily #0" = -20
+	"Melissa #0" = -20
+	"Ophelia #0" = -20
+	"Sara #0" = -20
 	"Satsuki #0" = -20
 	"Natsuki #0" = -20
-	"Sonya #0" = -20
+	"Selene #0" = -20
 	"Stella #0" = -20
-	"Marion #0" = -20
+	"Sonya #0" = -20
 	"Shoki #0" = -20
-	"Kasumi #0" = -20
-	"Freya #0" = -20
-	"Carol #0" = -20
-	"Mary #0" = -20
-	"Franceska #0" = -20
-	"Ellie #0" = -20
-	"Yvette #0" = -20
-	"Yayoi #0" = -20
+	"Anna #0" = -20
 	"Teresa #0" = -20
-	"Lona #0" = -20
-	"Melissa #0" = -20
+	"Julia #0" = -20
+	"Janette #0" = -20
+	"Yvette #0" = -20
+	"Elisabeth #0" = -20
+	"Bess #0" = -20
+	"Sakura #0" = -20
+	"Elissa #0" = -20
+	"Claudia #0" = -20
+	"Lucretia #0" = -20
 }
 leader_names = { 
-	Silverleaf Moonwhisper Sunfire Starweaver Windcaller Woodsworn Shadowhunter Elfborn Leafsong Starshine
-	Sunflower Greenbough Windchaser Nightshade Woodwanderer Starfall Sunburst Forestwalker Shadowstalker Leafwhisper
-	Dreamweaver Autumnleaf Winterfrost Duskrunner Dawnlight Waterfall Fireheart Earthsong 
+	Gooey Oozeling Blobber Gelatinous Squishy Jiggly Slimy Viscous Sticky Glutinous
+	Spongy Amorphous Drippy Adhesive Cohesive Oozebloom Jiggleglow Puddleslip Slurpslide Squishsplasher
+	Slimedancer
 }
 ship_names = { 
-	Elara Aeloria Thalindor Sylvanwind Verdelith Starleaf Silverbreeze Eldertide Feyshadow
-	Moonshimmer Ilyrion Nimbelar Elessar Lorendel Elunara Glyndoria Woodhaven Tiraelin
-	Galenor Faelindra Silvershade Windswift Thalassian Elendil Starleaf Greenleaf Aeloria
-	Moonshadow Eldertree Aerowind Thornbloom Elfsong Sylvanstar Frostwood Rivendell Moonlily
-	Breezefall Galadhrim Faelight Sunspire
+	Gelatine Slimecraft Oozetron Viscosity Slimedrive Mucus Goober Slipstream Jellifish Squishboat
+	Gluevessel Puddingprow Bounceboat Elasticity Stickyship Jellboat Gumdrop Slimegondola Slithersail Oozeboat
+	Gloopstar Oozecraft Puddingprise Blobcruiser Squishboat Gelatinaut Slimechaser Viscousia Jellitron Gloopvessel
+	Blobship Puddingboat Slimecraft Squishyacht Gelatinship Viscouscraft Jelliboat Gloopcarrier Puddingbarge Slimebarque
+	Squishbarge Bouncybarge Floppyship Softpaddle Wobblyvessel Pliablecraft Gluebarge Gummyship Stickysail Jellbo
+	Puddingcraft Bouncyskiff Elasticraft Mucousbarge Gooark Squishboat Slickvessel Gelship Slimeboat Gloopship
+	Squelcher Slickster Viscousvessel Jelliedaft Gluecraft Mucousmariner Bounceliner Gummybarge Slippercraft Gloopcraft
+	Gluebarge Jellian Bouncebarge Stickyboat Gumbarge Goober Mucusia Slicker Slickness Jellify
+	Gluey Pudding Bounce Sticky Jelly Gummy Slithery Oozing Floppy Gloop
+	Gunge Droop Slipstream Slither Ooze Viscera Jellies Bouncier Oozed Glooped
+	Squishy Flexed Swoops Dribble Flops Slips Mushy Stretch Wobble Plasm
+	Drools Goopy Slimarine Mucosa Goober Slickster Gluon Jellyfish Gummibear Flopper
+	Malleable Amorphous 
 }
 army_names = { 
 	"Undine Army" "$PROVINCE$ Army" 

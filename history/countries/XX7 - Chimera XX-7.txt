@@ -1,0 +1,6 @@
+government = monarchy
+add_government_reform = Chimera_realm
+government_rank = 1
+technology_group = TECH_CHIMERA
+religion = seekers_of_truth_religion
+primary_culture = Chimera_Girl

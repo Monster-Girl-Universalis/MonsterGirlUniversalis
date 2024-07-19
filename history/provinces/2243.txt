@@ -30,5 +30,5 @@ discovered_by = TECH_VAMPIRE
 discovered_by = TECH_YOUMA
 add_core = EN2
 owner = EN2
-culture = Ghost_Girl
+culture = Spirit_Girl
 controller = EN2

@@ -101,11 +101,11 @@ leader_names = {
 	Formicona Empidid Syrphid Silithid 
 }
 ship_names = { 
-	Stinger Chitin Exoskeleton Mandible Chrysalis Moth Pincer Carapace Wingspan
-	Silkstrand Scuttle Antenna Larva Mantis Thorax Weevil Cicada Myrmidon
-	Arachnid Gnawer Strike Horn Roar Swarm Weaver Drainer Crawler Leaper
-	Dusk Defender Armor Skimmer Blade Cricketsong Skimmer Exosuit Ladybug 
-	Grasshopper Firefly Mantis Hornet Webweaver mosquito
+	Stinger Chitin Exoskeleton Mandible Chrysalis Moth Pincer Carapace Wingspan Silkstrand
+	Scuttle Antenna Larva Mantis Thorax Weevil Cicada Myrmidon Arachnid Gnawer
+	Strike Horn Roar Swarm Weaver Drainer Crawler Leaper Dusk Defender
+	Armor Skimmer Blade Cricketsong Skimmer Exosuit Ladybug Grasshopper Firefly Mantis
+	Hornet Webweaver mosquito 
 }
 army_names = { 
 	"Cockroach Army" "Speed Roach Army" "Royal Roach Army" "$PROVINCE$ Army" 

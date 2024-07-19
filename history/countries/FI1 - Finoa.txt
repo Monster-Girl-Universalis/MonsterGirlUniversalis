@@ -16,4 +16,4 @@ technology_group = TECH_HUMAN
 	}
 }
 capital = 1071
-add_government_reform = 
+add_government_reform = finoa_reform

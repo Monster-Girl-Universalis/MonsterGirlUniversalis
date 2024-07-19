@@ -718,6 +718,7 @@ HVB_ideas = {
 	
 	trigger = {
 		tag = HVB
+		NOT = { has_country_flag = accepted_dragon_empress_ideas }
 	}
 	free = yes
 
@@ -1558,6 +1559,7 @@ SB2_ideas = {
 	
 	trigger = {
 		tag = SB2
+		NOT = { has_country_flag = accepted_dragon_empress_ideas }
 	}
 	free = yes
 
@@ -2770,6 +2772,7 @@ DR3_ideas = {
 	
 	trigger = {
 		culture = Dragon_Girl
+		NOT = { has_country_flag = accepted_dragon_empress_ideas }
 	}
 	free = yes
 
@@ -2897,6 +2900,7 @@ SL1_ideas = {
 	
 	trigger = {
 		tag = SL1
+		NOT = { has_country_flag = accepted_dragon_empress_ideas }
 	}
 	free = yes
 
@@ -4250,5 +4254,54 @@ LQ1_ideas = {
 	LQ1_royal_governance = {
 		prestige = 1
 		state_maintenance_modifier = -0.25
+	}
+}
+#Scylla Queen Domain
+SQ1_ideas = {
+	start = {
+		free_policy = 1
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+
+	bonus = {		
+		possible_policy = 1
+	}
+	
+	trigger = {
+		OR = {
+			tag = SQ1
+		}
+	}
+	free = yes
+
+	SQ1_tentacle_proficiency = {
+		morale_damage = 0.10
+		naval_morale_damage = 0.10
+	}
+	SQ1_royal_governance = {
+		prestige = 1
+		state_maintenance_modifier = -0.25
+	}
+	SQ1_oceanic_affinity = {
+		sailors_recovery_speed = 0.20
+		global_ship_trade_power = 0.30
+	}
+	SQ1_high_tentacle_up = {
+		infantry_power = 0.40
+		all_power_cost = 0.02
+	}
+	SQ1_elder_scylla_generals = {
+		land_morale = 0.15
+		leader_land_shock = 1
+	}
+	SQ1_legacy_of_queen_zenovia = {
+		global_prosperity_growth = 0.20
+		war_exhaustion = -0.10
+	}
+	SQ1_professional_scylla_servants = {
+		same_culture_advisor_cost = -0.30
+		advisor_pool = 4
 	}
 }

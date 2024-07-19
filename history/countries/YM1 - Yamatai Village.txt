@@ -4,4 +4,4 @@ primary_culture = yamatai_human
 religion = yamatai_religion
 technology_group = TECH_HUMAN
 capital = 1223
-add_government_reform = 
+add_government_reform = yamatai_reform 

@@ -15,4 +15,4 @@ technology_group = TECH_HUMAN
 	}
 }
 capital = 1552
-add_government_reform = 
+add_government_reform = grangold_reform

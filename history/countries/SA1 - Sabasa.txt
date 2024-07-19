@@ -6,7 +6,7 @@ technology_group = TECH_HUMAN
 historical_friend = PY1#Sphynx Blood
 1444.1.1 = { 
 	monarch = { 
-		name = "Gigachad" #Temporary name until we know from the game his actual name
+		name = "Gigachad"#Temporary name until we know from the game his actual name
 		dynasty = "of Sabasa"
 		birth_date = 1414.1.1
 		adm = 6
@@ -28,27 +28,27 @@ historical_friend = PY1#Sphynx Blood
 	}
 }
 1444.1.1 = { 
-	leader = {
+	leader = { 
 		name = "Samson the Hammer"
 		birth_date = 1414.1.1
-        	type = general
-        	fire = 5
-        	shock = 5
-        	manuever = 4
-        	siege = 2
-    	}
+		type = general
+		fire = 5
+		shock = 5
+		manuever = 4
+		siege = 2
+	}
 }
 1444.1.1 = { 
-	leader = {
+	leader = { 
 		name = "Salaan of Assasin Clan"
 		birth_date = 1424.1.1
-        	type = general
-        	fire = 3
-        	shock = 6
-        	manuever = 6
-        	siege = 1
+		type = general
+		fire = 3
+		shock = 6
+		manuever = 6
+		siege = 1
 		female = yes
-    	}
+	}
 }
 capital = 755
-add_government_reform = 
+add_government_reform = sabasa_reform

@@ -1,10 +1,10 @@
 government = monarchy
 government_rank = 2
-primary_culture = Fairy_Girl
-add_government_reform = Elf_realm
+primary_culture = Dragon_Girl
+add_government_reform = salamander_reform
 religion = fire_religion
-technology_group = TECH_ELF
-historical_rival = UN1 #They just don't get along...
+technology_group = TECH_DRAGON
+historical_rival = UN1#They just don't get along...
 1444.1.1 = { 
 	monarch = { 
 		name = "Salamander"

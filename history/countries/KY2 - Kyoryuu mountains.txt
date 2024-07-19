@@ -14,5 +14,5 @@ technology_group = TECH_DRAGON
 		mil = 4
 	}
 }
-add_government_reform = Dragon_realm
+add_government_reform = Giant_realm
 capital = 2296

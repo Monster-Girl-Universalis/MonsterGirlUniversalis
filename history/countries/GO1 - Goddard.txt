@@ -4,4 +4,4 @@ primary_culture = grangold_human
 religion = ilias_light_religion
 technology_group = TECH_HUMAN
 capital = 1519
-add_government_reform = 
+add_government_reform = goddard_reform

@@ -1,10 +1,10 @@
 government = monarchy
 government_rank = 2
-primary_culture = Fairy_Girl
-add_government_reform = Elf_realm
+primary_culture = Slime_Girl
+add_government_reform = undine_reform
 religion = water_religion
-technology_group = TECH_ELF
-historical_rival = SL1 #They just don't get along...
+technology_group = TECH_SLIME
+historical_rival = SL1#They just don't get along...
 1444.1.1 = { 
 	monarch = { 
 		name = "Undine"

@@ -4,7 +4,7 @@ primary_culture = ilian_human
 religion = ilias_light_religion
 technology_group = TECH_HUMAN
 capital = 339
-historical_friend = HRT #Harpies and Happiness
+historical_friend = HRT#Harpies and Happiness
 1444.1.1 = { 
 	monarch = { 
 		name = "Helen"
@@ -16,4 +16,5 @@ historical_friend = HRT #Harpies and Happiness
 		female = yes
 	}
 }
-add_government_reform = 
+add_government_reform = happiness_reform
+add_accepted_culture = Harpy_Girl

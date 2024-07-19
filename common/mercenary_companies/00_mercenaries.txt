@@ -897,7 +897,7 @@ merc_elite_vampires = {
 		}
 	}
 	modifier = {
-        infantry_power = 0.20
+        infantry_power = 0.15
         may_recruit_female_generals = yes
         female_advisor_chance = 1.0
 	}
@@ -1157,7 +1157,7 @@ merc_sedna_daughters = {
 		}
 	}
 	modifier = {
-        fire_damage_received = 0.10
+        fire_damage_received = -0.10
         may_recruit_female_generals = yes
         female_advisor_chance = 1.0
 	}

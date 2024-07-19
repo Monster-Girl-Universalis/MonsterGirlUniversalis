@@ -91,19 +91,18 @@ monarch_names = {
 	"Gigi #0" = -20
 }
 leader_names = { 
-	Seafire Coralstream Oceanic Mariscale Aquashimmer Wavebreaker Pearlwater Sirenwhisper Seastar Meriwave Nautica Oceancrest
-	Mermelody Seashine Aquafin Sailsea Neptunea Oceandream Seawave Marinewind Coralshell Aquamarine Waveglide Merisong 
-	Oceangem Sirencrest Tidesong Seabreeze Wavecaller
+	Seafire Coralstream Oceanic Mariscale Aquashimmer Wavebreaker Pearlwater Sirenwhisper Seastar Meriwave
+	Nautica Oceancrest Mermelody Seashine Aquafin Sailsea Neptunea Oceandream Seawave Marinewind
+	Coralshell Aquamarine Waveglide Merisong Oceangem Sirencrest Tidesong Seabreeze Wavecaller 
 }
 ship_names = { 
-	Aquanaut Seashell Coralsong Wavecrest Mermaiden Neptunia Kelpie Coralis Seastorm
-	Tidewind Aquatica Marineveil Pearlbane Nereida Oceania Thalassan Seabreeze Sirensong
-	Marinara Nautika Aquaviper Sirenbane Marinara Seastar Deepseeker Oceandream Abyssal
-	Shipwrecker Mermidon Aqualith Seacharm Aquasurge Merstar Selkie Seawind Aquatide
-	Lagoon Aquarius Seaglory Neptunia Pearlheart "Siren's Song" Deepsea "Wave Dancer"
-	"Poseidon's Trident" Tentaclos Krakensurge Inkshadow Aquaknot Krakensurge Abyssalight
-	Oktopirate Tritonwrath Tidalwrath Marinebrute Seastrider Cepharcane Kelpstrider
-	Krakenfury Oceandread Serpentide Scyllurge
+	Aquanaut Seashell Coralsong Wavecrest Mermaiden Neptunia Kelpie Coralis Seastorm Tidewind
+	Aquatica Marineveil Pearlbane Nereida Oceania Thalassan Seabreeze Sirensong Marinara Nautika
+	Aquaviper Sirenbane Marinara Seastar Deepseeker Oceandream Abyssal Shipwrecker Mermidon Aqualith
+	Seacharm Aquasurge Merstar Selkie Seawind Aquatide Lagoon Aquarius Seaglory Neptunia
+	Pearlheart "Siren's Song" Deepsea "Wave Dancer" "Poseidon's Trident" Tentaclos Krakensurge Inkshadow Aquaknot Krakensurge
+	Abyssalight Oktopirate Tritonwrath Tidalwrath Marinebrute Seastrider Cepharcane Kelpstrider Krakenfury Oceandread
+	Serpentide Scyllurge 
 }
 army_names = { 
 	"Fishy Army" "$PROVINCE$ Army" 

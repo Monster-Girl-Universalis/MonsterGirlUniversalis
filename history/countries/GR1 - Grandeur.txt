@@ -4,4 +4,4 @@ primary_culture = sabasa_human
 religion = ilias_light_religion
 technology_group = TECH_HUMAN
 capital = 798
-add_government_reform = 
+add_government_reform = grandeur_reform

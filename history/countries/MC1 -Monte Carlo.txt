@@ -14,4 +14,4 @@ technology_group = TECH_HUMAN
 	}
 }
 capital = 649
-add_government_reform = 
+add_government_reform = criminal_syndicate_reform 

@@ -1,13 +1,14 @@
 government = monarchy
 government_rank = 2
 primary_culture = Enrika_Elf
-add_government_reform = Elf_realm
+add_government_reform = enrika_reform 
 religion = enrika_religion
 add_harmonized_religion = monster_lord_religion
 add_harmonized_religion = ilias_light_religion
 technology_group = TECH_ELF
 capital = 204
 historical_rival = IT1 #She really hates Ilias...
+add_accepted_culture = Fallen_Angel
 1444.1.1 = { 
 	monarch = { 
 		name = "Micaela"

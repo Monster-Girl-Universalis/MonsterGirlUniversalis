@@ -1,3 +1,75 @@
+#Give us 3 privileges
+estate_spiritualists_three_privileges = {
+	can_select = {
+		NOT = {
+			num_of_estate_privileges = {
+				estate = estate_spiritualists
+				value = 2
+			}
+		}
+	}
+	selection_weight = {
+		factor = 1
+	}
+	pre_effect = {
+		set_variable = {
+			which = estate_spiritualists_three_privileges_var
+			value = 0
+		}
+		if = {
+			limit = {
+				num_of_estate_privileges = {
+					estate = estate_spiritualists
+					value = 1
+				}
+			}
+			set_variable = {
+				which = estate_spiritualists_three_privileges_var
+				value = 2
+			}
+		}
+		else = {
+			set_variable = {
+				which = estate_spiritualists_three_privileges_var
+				value = 1
+			}
+		}
+	}
+	task_requirements = {
+		if = {
+			limit = {
+				check_variable = {
+					which = estate_spiritualists_three_privileges_var
+					value = 2
+				}
+			}
+			num_of_estate_privileges = {
+				estate = estate_spiritualists
+				value = 3
+			}
+		}
+		else = {
+			num_of_estate_privileges = {
+				estate = estate_spiritualists
+				value = 2
+			}
+		}
+	}
+    task_completed_effect = {
+		add_estate_loyalty = {
+			estate = estate_spiritualists
+			loyalty = 15
+		}
+    }
+    failing_effect = {
+        add_estate_loyalty_modifier = {
+            estate = estate_spiritualists
+			desc = EST_VAL_AGENDA_DENIED
+			loyalty = -10
+			duration = 7300
+        }
+    }
+}
 estate_spiritualists_develop_x = {
 	selection_weight = {
 		factor = 1
@@ -203,5 +275,171 @@ estate_spiritualists_develop_x = {
 			loyalty = -10
 			duration = 7300
         }
+    }
+}
+
+estate_spiritualists_build_university_in_y = {
+	can_select = {
+		adm_tech = 17
+		any_owned_province = {
+			is_state_core = root
+			NOT = { has_building = university }
+			OR = {
+				development = 10
+				is_capital = yes
+			}
+		}
+	}
+	selection_weight = {
+		factor = 1
+		modifier = {
+			factor = 0.75
+			NOT = {
+				any_owned_province = {
+					is_state_core = root
+					NOT = { has_building = university }
+					development = 15
+				}
+			}
+		}
+		modifier = {
+			factor = 1.2
+			any_owned_province = {
+				is_state_core = root
+				NOT = { has_building = university }
+				development = 20
+			}
+		}
+		modifier = {
+			factor = 2
+			is_institution_enabled = enlightenment
+			NOT = { has_institution = enlightenment }
+		}
+	}
+	pre_effect = {
+		random_owned_province = {
+			limit = {
+				is_state_core = root
+				NOT = { has_building = university }
+				development = 10
+			}
+			save_event_target_as = agenda_province
+		}
+		random_owned_province = {
+			limit = {
+				is_state_core = root
+				NOT = { has_building = university }
+				development = 15
+			}
+			save_event_target_as = agenda_province
+		}
+		random_owned_province = {
+			limit = {
+				NOT = { religion_group = root }
+				is_state_core = root
+				NOT = { has_building = university }
+				development = 20
+			}
+			save_event_target_as = agenda_province
+		}
+	}
+	fail_if = {
+		event_target:agenda_province = {
+			OR = {
+				NOT = { owned_by = root }
+				religion_group = root
+			}
+		}
+	}
+	provinces_to_highlight = {
+		province_id = event_target:agenda_province
+	}
+    task_requirements = {
+		if = {
+			limit = {
+				has_estate_agenda_auto_completion = {
+					estate = estate_spiritualists
+				}
+			}
+			has_estate_agenda_auto_completion = {
+				estate = estate_spiritualists
+			}
+		}
+		else = {
+			event_target:agenda_province = {
+				has_building = university
+			}
+		}
+    }
+    task_completed_effect = {
+		on_completed_agenda_effect = {
+			estate = estate_spiritualists
+		}
+		add_estate_loyalty = {
+			estate = estate_spiritualists
+			loyalty = 15
+		}
+		add_adm_power = 35
+		add_dip_power = 35
+		add_mil_power = 35
+    }
+    failing_effect = {
+		on_failed_agenda_effect = yes
+		clr_auto_complete_flag = yes
+		event_target:agenda_province = {
+			if = {
+				limit = { owned_by = root }
+				add_named_unrest = {
+					name = local_spiritualists_displeased
+					value = 5
+				}
+			}
+		}
+        add_estate_loyalty_modifier = {
+            estate = estate_spiritualists
+			desc = EST_VAL_AGENDA_DENIED
+			loyalty = -10
+			duration = 7300
+        }
+    }
+}
+
+estate_spiritualists_raise_zombies = {
+	max_days_active = 5475
+	can_select = {
+		OR = {
+			has_estate_privilege = estate_practice_necromancy
+			tag = HM1
+			tag = LC1
+			was_tag = HM1
+			was_tag = LC1
+		}
+	}
+	selection_weight = {
+		factor = 1
+	}
+	pre_effect = {
+	}
+
+	task_requirements = {
+		num_of_streltsy = 30
+	}
+	fail_if = {
+		is_bankrupt = yes
+	}
+    task_completed_effect = {
+		
+		add_estate_loyalty = {
+			estate = estate_spiritualists
+			loyalty = 15
+		}
+		add_army_professionalism = 0.01
+    }
+    failing_effect = {
+		
+		add_estate_loyalty = {
+			estate = estate_spiritualists
+			loyalty = -10
+		}
     }
 }

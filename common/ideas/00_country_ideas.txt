@@ -236,6 +236,48 @@ elder_youkai_ideas = {
 		diplomatic_reputation = 2
 	}
 }
+#Dragon Empress
+dragon_empress_ideas = {
+	start = {
+		leader_siege = 1
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+
+	bonus = {		
+		siege_ability = 0.30
+	}
+	
+	trigger = {
+		OR = {
+			has_country_flag = accepted_dragon_empress_ideas
+		}
+	}
+	free = yes
+
+	dragon_empress_Imperial_Command = {		
+		discipline = 0.10
+	}
+	dragon_empress_Scales_of_the_Dragon  = {		
+		land_attrition = -0.20
+	}
+	dragon_empress_breath_of_fire = {
+		fire_damage = 0.20
+	}
+	dragon_empress_dragon_battlecry = {
+		land_morale = 0.20
+	}
+	dragon_empress_wings_of_bahamut = {
+		movement_speed = 0.15
+	}
+	dragon_empress_divine_dragons = {		
+		fire_damage_received = -0.20
+	}
+	dragon_empress_dragon_conquerors = {
+		leader_land_fire = 1
+	}
+}
 norse_ideas = {
 	start = {
 		land_morale = 0.15	

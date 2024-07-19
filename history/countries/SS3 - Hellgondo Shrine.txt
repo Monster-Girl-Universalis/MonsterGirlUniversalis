@@ -1,7 +1,7 @@
 government = monarchy
 government_rank = 1
 primary_culture = Sister_Lamia
-add_government_reform = Lamia_realm
+add_government_reform = hellgondo_shrine_reform
 religion = ilias_light_religion
 technology_group = TECH_LAMIA
 1444.1.1 = { 

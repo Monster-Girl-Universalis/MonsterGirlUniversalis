@@ -3,7 +3,7 @@ government_rank = 1
 primary_culture = slums_human
 religion = ilias_light_religion
 technology_group = TECH_HUMAN
-capital = 80#Mutated crops fields
+capital = 80
 1444.1.1 = { 
 	monarch = { 
 		name = "Don Dahlia"
@@ -15,4 +15,4 @@ capital = 80#Mutated crops fields
 		female = yes
 	}
 }
-add_government_reform = 
+add_government_reform = criminal_syndicate_reform 

@@ -4,4 +4,4 @@ primary_culture = natalian_human
 religion = ilias_light_religion
 technology_group = TECH_HUMAN
 capital = 542
-add_government_reform = 
+add_government_reform = luddite_village_reform

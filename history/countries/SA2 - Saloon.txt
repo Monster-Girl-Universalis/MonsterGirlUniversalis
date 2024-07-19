@@ -5,4 +5,4 @@ capital = 914
 technology_group = TECH_HUMAN
 primary_culture = sabasa_human
 government_rank = 1
-add_government_reform = 
+add_government_reform = saloon_reform

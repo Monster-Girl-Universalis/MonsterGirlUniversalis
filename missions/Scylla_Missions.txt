@@ -1,0 +1,294 @@
+scylla_internal_development = {
+
+	slot = 1
+	generic = yes
+	ai = yes
+	
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		culture_group = scylla #scylla 
+		NOT = { 
+			OR = {
+				
+			}
+		}
+	}
+	
+	has_country_shield = yes
+	
+	gen_scylla_establish_alliances = {
+		icon = mission_alliances
+		required_missions = { }
+		position = 1
+		
+		trigger = {
+			num_of_allies = 2
+			prestige = 10
+		}
+		
+		effect = {
+			add_adm_power = 30
+			add_dip_power = 30
+			add_mil_power = 30
+		}
+	}
+	
+	gen_scylla_seafood_production = {
+		icon = mission_scylla_seafood_production
+		required_missions = { gen_scylla_establish_alliances }
+		position = 2
+		
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 4
+				AND = {
+					base_production = 6
+					trade_goods = fish
+				}
+			}
+		}
+		effect = {
+			random_owned_province = {
+				limit = {
+					AND = {
+						base_production = 6
+						trade_goods = fish
+					} 
+					NOT = { has_province_modifier = gen_scylla_seafood_production }
+				}
+				add_province_modifier = {
+					name = "gen_scylla_seafood_production_mod"
+					duration = -1
+				}
+			}
+			random_owned_province = {
+				limit = {
+					AND = {
+						base_production = 6
+						trade_goods = fish
+					} 
+					NOT = { has_province_modifier = gen_scylla_seafood_production }
+				}
+				add_province_modifier = {
+					name = "gen_scylla_seafood_production_mod"
+					duration = -1
+				}
+			}
+			random_owned_province = {
+				limit = {
+					AND = {
+						base_production = 6
+						trade_goods = fish
+					} 
+					NOT = { has_province_modifier = gen_scylla_seafood_production }
+				}
+				add_province_modifier = {
+					name = "gen_scylla_seafood_production_mod"
+					duration = -1
+				}
+			}
+			random_owned_province = {
+				limit = {
+					AND = {
+						base_production = 6
+						trade_goods = fish
+					} 
+					NOT = { has_province_modifier = gen_scylla_seafood_production }
+				}
+				add_province_modifier = {
+					name = "gen_scylla_seafood_production_mod"
+					duration = -1
+				}
+			}
+		}
+	}
+
+	gen_scylla_vibrant_economy = {
+		icon = mission_infrastructure_for_huge_population
+		required_missions = { gen_scylla_seafood_production }
+		position = 3
+		
+		
+		trigger = {
+			share_of_starting_income = 4
+			advisor = trader
+		}
+		effect = {
+			add_country_modifier = {
+				name = "gen_scylla_vibrant_economy_mod"
+				duration = 9125 #25 years
+			}			
+		}
+	}
+
+	gen_scylla_invite_maids_to_administration = {
+		icon = mission_scylla_invite_maids_to_administration
+		required_missions = { gen_scylla_vibrant_economy }
+		position = 4
+		
+		trigger = {
+			estate_loyalty = {
+    				estate = estate_monster_girls
+    				loyalty = 60
+			}
+			has_estate_privilege = estate_scylla_maids_in_administration 
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "gen_scylla_invite_maids_to_administration_mod"
+				duration = -1
+			}
+		}
+	}
+
+	gen_scylla_all_covering_tentacles = {
+		icon = mission_scylla_all_covering_tentacles
+		required_missions = { gen_scylla_invite_maids_to_administration }
+		position = 5
+		trigger = {
+			OR = {
+				num_of_merchants = 8
+				num_of_diplomats = 8
+			}
+			OR = {
+				num_of_generals_with_traits = 8
+				num_of_admirals_with_traits = 8
+			}
+		}
+		effect = {
+			add_years_of_income = 2
+			add_adm_power = 150
+			add_dip_power = 150
+			add_mil_power = 150
+		}
+	}
+	
+}
+scylla_trade_expansion = {
+
+	slot = 5
+	generic = yes
+	ai = yes
+	
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		culture_group = scylla #scylla  
+		NOT = { 
+			OR = {
+				
+			}
+		}
+	}
+	
+	has_country_shield = yes
+	
+	gen_scylla_secure_naval_supplies = {
+		icon = mission_secure_naval_supplies
+		required_missions = { }
+		position = 1
+		
+		trigger = {
+			fish = 2
+			naval_supplies = 2
+		}
+		
+		effect = {
+			add_navy_tradition = 10
+			add_country_modifier = {
+				name = "gen_scylla_secure_naval_supplies_mod"
+				duration = 9125 #25 years
+			}
+		}
+	}
+	
+
+	gen_scylla_warfare = {
+		icon = mission_scylla_warfare
+		required_missions = { gen_scylla_secure_naval_supplies }
+		position = 2
+		
+		trigger = {
+			OR = {
+				has_global_modifier_value = {
+					which = morale_damage
+					value = 0.15
+				}
+				has_global_modifier_value = {
+					which = naval_morale
+					value = 0.15
+				}
+			}
+
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "gen_scylla_warfare_mod"
+				duration = 9125 #25 years
+			}	
+			add_prestige = 10
+		}
+	}
+
+	
+	gen_scylla_establish_trade_companies = {
+		icon = mission_colonial
+		required_missions = { gen_scylla_warfare }
+		position = 3
+
+		trigger = {
+			OR = {
+				num_of_strong_trade_companies = 2
+				num_of_merchants = 4
+			}
+		}
+		
+		effect = {
+			add_years_of_income = 0.50
+			add_mercantilism = 5
+		}
+	}
+	gen_powerful_scylla_ruler = {
+		icon = mission_powerful_scylla_ruler
+		required_missions = { gen_scylla_establish_trade_companies }
+		position = 4
+		
+		trigger = {
+			monthly_adm = 10
+			monthly_dip = 10
+			monthly_mil = 10
+			grown_by_development = 750
+			legitimacy_equivalent = 90
+		}
+		
+		effect = {
+			change_government_reform_progress = 50
+			add_prestige = 20
+		}
+	}
+	gen_scylla_royal_ambitions = {
+		icon = mission_scylla_queen_challenger
+		required_missions = { gen_powerful_scylla_ruler }
+		position = 5
+		
+		trigger = {
+			monthly_adm = 12
+			monthly_dip = 12
+			monthly_mil = 12
+			government_rank = 2
+			army_tradition = 50
+			army_size = 150
+			legitimacy_equivalent = 100
+			is_bankrupt = no
+		}
+		
+		effect = {
+			add_prestige = 50
+			add_adm_power = 50
+			add_dip_power = 50
+			add_mil_power = 50
+		}
+	}
+	
+}

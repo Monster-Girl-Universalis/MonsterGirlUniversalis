@@ -86,6 +86,53 @@ monarchy = {
 				Tanuki_realm
 				Artiste_necromancer
 				heavenly_bandits
+				enrika_reform 
+				criminal_syndicate_reform 
+				don_father_reform 
+				iliasburg_reform 
+				pornof_reform 
+				happiness_reform 
+				midas_reform 
+				iliasport_reform 
+				port_natalia_reform 
+				luddite_village_reform 
+				port_marle_reform
+				sylph_reform
+				queen_roach_reform
+				sabasa_reform 
+				saloon_reform 
+				grandeur_reform 
+				worm_summoner_reform 
+				gnome_reform 
+				fishy_pirates_reform 
+				navy_reform 
+				finoa_reform 
+				grand_noah_reform 
+				mephisto_reform
+				yamatai_reform 
+				horai_reform 
+				tamamo_reform 
+				undine_reform 
+				goddard_reform 
+				grangold_reform 
+				goldport_reform 
+				succubus_village_reform 
+				lady_village_reform 
+				salamander_reform 
+				snow_heaven_reform 
+				goddess_ilias_reform 
+				hellgondo_shrine_reform 
+				monster_lord_reform 
+				remina_reform 
+				rostrum_reform 
+				rubiana_reform 
+				esta_reform 
+				pirate_state_reform 
+				Fairy_realm
+				Giant_realm 
+
+				#kagetsumugi_reform 
+				#promestein_reform 
 			}
 		}
 		hereditary_vs_nobility = {

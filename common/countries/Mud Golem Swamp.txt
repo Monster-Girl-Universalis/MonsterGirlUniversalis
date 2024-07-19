@@ -101,7 +101,7 @@ leader_names = {
 	Jointedlimb Malletlock Patchwork Marblespring Twistedheart Mancatcher Puppetcraft Windup Seamstress Stitchedheart
 	Unmoving Jointedwood Lifelike Stuffedheart Woodenframe Twistedlimb Stitchface Mechanika Dreadnought Manikin
 	Gearwork Automaton Titan Dollmaker Porcelain Crankshaft Lithesome Cogsprite Miniature Pinwheel
-	Pincushion 
+	Pincushion
 }
 ship_names = { 
 	Puppeteer Marionette Gearwork Toybox Clockwork Dollmaker Stringer Collector Automaton Plaything

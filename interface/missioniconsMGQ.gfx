@@ -512,5 +512,60 @@ spriteTypes = {
         name = "mission_elder_youkai_ambitions"
         texturefile = "gfx//interface//missions//mission_elder_youkai_ambitions.dds"
     }
-
+	spriteType = {
+        name = "mission_vampire_hypnotic_subjugation"
+        texturefile = "gfx//interface//missions//mission_vampire_hypnotic_subjugation.dds"
+    }
+	spriteType = {
+        name = "mission_vampire_promote_vampire_pubs"
+        texturefile = "gfx//interface//missions//mission_vampire_promote_vampire_pubs.dds"
+    }
+	spriteType = {
+        name = "mission_powerful_vampire_ruler"
+        texturefile = "gfx//interface//missions//mission_powerful_vampire_ruler.dds"
+    }
+	spriteType = {
+        name = "mission_vampire_royal_ambitions"
+        texturefile = "gfx//interface//missions//mission_vampire_royal_ambitions.dds"
+    }
+	spriteType = {
+        name = "mission_dragon_primal_wisdom"
+        texturefile = "gfx//interface//missions//mission_dragon_primal_wisdom.dds"
+    }
+	spriteType = {
+        name = "mission_dragon_strengthen_dragon_girls"
+        texturefile = "gfx//interface//missions//mission_dragon_strengthen_dragon_girls.dds"
+    }
+	spriteType = {
+        name = "mission_aevis"
+        texturefile = "gfx//interface//missions//mission_aevis.dds"
+    }
+	spriteType = {
+        name = "mission_azi_dahaka"
+        texturefile = "gfx//interface//missions//mission_azi_dahaka.dds"
+    }
+	spriteType = {
+        name = "mission_scylla_seafood_production"
+        texturefile = "gfx//interface//missions//mission_scylla_seafood_production.dds"
+    }
+	spriteType = {
+        name = "mission_scylla_invite_maids_to_administration"
+        texturefile = "gfx//interface//missions//mission_scylla_invite_maids_to_administration.dds"
+    }
+	spriteType = {
+        name = "mission_scylla_all_covering_tentacles"
+        texturefile = "gfx//interface//missions//mission_scylla_all_covering_tentacles.dds"
+    }
+	spriteType = {
+        name = "mission_scylla_warfare"
+        texturefile = "gfx//interface//missions//mission_scylla_warfare.dds"
+    }
+	spriteType = {
+        name = "mission_powerful_scylla_ruler"
+        texturefile = "gfx//interface//missions//mission_powerful_scylla_ruler.dds"
+    }
+	spriteType = {
+        name = "mission_scylla_queen_challenger"
+        texturefile = "gfx//interface//missions//mission_scylla_queen_challenger.dds"
+    }
 }	

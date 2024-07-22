@@ -17,6 +17,11 @@ irina_region = {
 great_sea_region = { 
 	areas = { 
 		great_sea_area 
+		monster_lord_sea_area
+		central_sentora_tartarus_sea_area
+		saloon_coast_sea_area
+		western_gold_sea_area
+		snow_heaven_sea_area
 	}
 }
 enrika_region = { 

@@ -1,4 +1,17 @@
 ﻿l_english:
-at_least_5dev: "Province has at least 5 development"
-at_least_10dev: "Province has at least 10 development"
-at_least_20dev: "Province has at least 20 development"
+ at_least_5dev: "Province has at least 5 development"
+ at_least_10dev: "Province has at least 10 development"
+ at_least_20dev: "Province has at least 20 development"
+ tooltip_any_neighbor_has_embraced_makina_research: "Adjacent province has §YMakina Research§!"
+ tooltip_any_friendly_coast_border_province_has_embraced_makina_research: "Nearby Friendly Province has §YMakina Research§!"
+ tooltip_colonial_overlord_makina_research: "Port/Capital - Colonial Overlord has §YMakina Research§!"
+ tooltip_makina_research_embraced: "Not Trade Company & Owner has embraced §YMakina Research§!"
+ CAPITAL_OF_MAKINA_RESEARCHING_NATION: "Capital of a Makina Researching Nation"
+ MAKINA_RESEARCH_PROVINCE: "Significant Makina Presence"
+ #province modifiers
+ renaissance_origin: "Origin of Makina Research"
+ birthplace_of_makina_research: "Makina Laboratory"
+ desc_birthplace_of_makina_research: "This province had significant research into Makina."
+ #institution
+ renaissance: "Makina Research"
+ desc_renaissance: "W.I.P."

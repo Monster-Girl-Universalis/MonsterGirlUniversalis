@@ -133,9 +133,17 @@ renaissance = {
 	
 	can_start = {
 		is_year = 1450
+		is_institution_enabled = feudalism
 		is_state = yes
+		OR = {
+			20 #Eastern Ilias Tartarus
+			58 #Southern Ilias Tartarus
+			550 #Ancient Lab Facility
+			971 #Sabasa Tartarus
+			1856 #Gold Tartarus
+		}
 	}
-	start_chance = 5		#in 100 for when a province can_start
+	start_chance = 10		#in 100 for when a province can_start
 	
 	
 	on_start = institution_events.2
@@ -153,37 +161,118 @@ renaissance = {
 	
 	embracement_speed = {
 		modifier = {
-			factor = 1
-			potential = {
-				development = 5
-			}
+			scale = yes
+			factor = 0.6
 			custom_trigger_tooltip = {
-				tooltip = at_least_5dev
+				tooltip = tooltip_any_friendly_coast_border_province_has_embraced_makina_research
+				any_friendly_coast_border_province = {
+					renaissance = 100
+				}
 			}
-			
-			
 		}
 		modifier = {
-			factor = 2
+			factor = 0.3
+			scale = yes
+			potential = {
+				NOT = {
+					any_friendly_coast_border_province = {
+						renaissance = 100
+					}
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = tooltip_any_neighbor_has_embraced_makina_research
+				any_neighbor_province = {
+					NOT = { owned_by = ROOT }
+					renaissance = 100
+				}
+			}
+		}
+		modifier = {
+			factor = 0.4
+			scale = yes
+			potential = {
+				owner = {
+					OR = { #Has roids, dolls, apoptosis, or is seeker's of truth
+						tag = SI1
+						was_tag = SI1
+						tag = RE1
+						was_tag = RE1
+
+						technology_group = TECH_ROID
+						technology_group = TECH_DOLL
+						technology_group = TECH_APOPTOSIS
+						has_idea_group = roid_ideas
+						has_idea_group = doll_ideas
+						has_idea_group = apoptosis_ideas
+
+						religion = seekers_of_truth_religion
+					}
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = CAPITAL_OF_MAKINA_RESEARCHING_NATION
+			
+				is_capital = yes
+				owner = {
+					OR = { #Has roids, dolls, apoptosis, or is seeker's of truth
+						tag = SI1
+						was_tag = SI1
+						tag = RE1
+						was_tag = RE1
+
+						technology_group = TECH_ROID
+						technology_group = TECH_DOLL
+						technology_group = TECH_APOPTOSIS
+						full_idea_group = roid_ideas
+						full_idea_group = doll_ideas
+						full_idea_group = apoptosis_ideas
+
+						religion = seekers_of_truth_religion
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 0.2
+			scale = yes
+			potential = {
+				OR = {
+					religion = seekers_of_truth_religion
+					culture_group = roid
+					culture_group = doll
+					culture_group = apoptosis
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = MAKINA_RESEARCH_PROVINCE
+				OR = {
+					religion = seekers_of_truth_religion
+					culture_group = roid
+					culture_group = doll
+					culture_group = apoptosis
+				}
+			}
+		}
+		modifier = {
+			factor = 1
 			potential = {
 				development = 10
 			}
 			custom_trigger_tooltip = {
 				tooltip = at_least_10dev
+				development = 10
 			}
-			
-			
 		}
 		modifier = {
-			factor = 4
+			factor = 2
 			potential = {
 				development = 20
 			}
 			custom_trigger_tooltip = {
 				tooltip = at_least_20dev
+				development = 20
 			}
-			
-			
 		}
 		modifier = {
 			factor = 5
@@ -194,7 +283,7 @@ renaissance = {
 				}
 			}
 			custom_trigger_tooltip = {
-				tooltip = tooltip_colonial_overlord_renaissance
+				tooltip = tooltip_colonial_overlord_makina_research
 				OR = {
 					has_port = yes
 					is_capital = yes
@@ -215,7 +304,7 @@ renaissance = {
 			}
 			
 			custom_trigger_tooltip = {
-				tooltip = tooltip_renaissance_embraced
+				tooltip = tooltip_makina_research_embraced
 				is_owned_by_trade_company = no
 				owner = {
 					has_institution = renaissance

@@ -109,14 +109,12 @@ feudalism = {
 }
 
 #######################################
-# Renaissance
-# 
-# Flows from italy
+# Makina Research (replaces the renaissance)
 #######################################
 
 renaissance = {
 
-	bonus = {
+	bonus = { #TODO
 		development_cost = -0.05
 		build_cost = -0.05
 	}
@@ -125,7 +123,7 @@ renaissance = {
 
 
 	historical_start_date = 1450.1.1
-	historical_start_province = 116 # Florence
+	historical_start_province = 550 # Ancient Lab Facility
 
 	history = {
 		is_year = 1450
@@ -136,29 +134,23 @@ renaissance = {
 		is_institution_enabled = feudalism
 		is_state = yes
 		OR = {
-			20 #Eastern Ilias Tartarus
-			58 #Southern Ilias Tartarus
-			550 #Ancient Lab Facility
-			971 #Sabasa Tartarus
-			1856 #Gold Tartarus
+			province_id = 20 #Eastern Ilias Tartarus
+			province_id = 58 #Southern Ilias Tartarus
+			province_id = 550 #Ancient Lab Facility
+			province_id = 971 #Sabasa Tartarus
+			province_id = 1856 #Gold Tartarus
+			province_id = 2274 #Hellgondo Tartarus
+			province_id = 322 #Iliasport
 		}
 	}
-	start_chance = 10		#in 100 for when a province can_start
-	
+	start_chance = 20		#in 100 for when a province can_start
 	
 	on_start = institution_events.2
-	
-	
-	
-
-	
 	
 	can_embrace = {
 		owner = { has_institution = feudalism }
 	}
 
-
-	
 	embracement_speed = {
 		modifier = {
 			scale = yes

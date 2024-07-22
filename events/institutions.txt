@@ -84,13 +84,9 @@ country_event = {
 						province_id = 58 #Southern Ilias Tartarus
 						province_id = 550 #Ancient Lab Facility
 						province_id = 971 #Sabasa Tartarus
-						province_id = 209 #Administrator's Tower
-						province_id = 1766 #La Croix Laboratory
 						province_id = 1856 #Gold Tartarus
-						#area = eastern_ilias_tartarus_area
-						#area = south_ilias_tartarus_area
-						#area = safina_tartarus
-						#area = hellgondo_tartarus_coast
+						province_id = 2274 #Hellgondo Tartarus
+						province_id = 322 #Iliasport
 					}
 				}
 				add_institution_embracement = {

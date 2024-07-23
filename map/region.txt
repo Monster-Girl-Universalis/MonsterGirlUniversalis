@@ -42,7 +42,7 @@ noah_gold_sea_region = {
 		undine_sea_area
 	}
 }
-south_poll_sea_reagion = {
+south_pole_sea_region = {
 	areas = {
 		wendigo_coast_sea_area
 	}

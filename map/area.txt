@@ -18,27 +18,79 @@ eastern_ilias_tartarus_area = {
 	18 19 20 
 }
 great_sea_area = { 
-	25 105 106 107 108 109 110 111 112 113
-	114 115 116 117 118 119 120 121 122 123
-	124 125 126 127 129    
-	135 136 138 139 140 141  
+	25
+	114 119 123
 	147 148 149 153
-	154 155 156 157 158 159 160 161 162 163
-	164 165 166 167 168 169 170 171 172 173
-	174 177 178 179 180 181 182 183
+	155 156 157 158 160 161 162 163
+	167 168 169 170 171 172 173
+	174 178 179 180 181 182 183
 	184 185 186 187 188 189 190 191 192 193
-	194 195 196 198 200 203
-	2668 2669 2670
-	2671 2672 2673 2674 2675 2676 2677 2678 2679 2680
-	2681 2682 2683 2684 2685 2686 2687 2688 2689 2690
-	2691 2692 2693 2694 2695 2696 2697 2698 2699 2700
-	2701 2702 2703 2704 2705 2706 2707 2708 2709 2710
-	2711 2712 2716
+	194 195 196 198 200
+}
+north_yamatai_coast_sea_area = {
+	166 203 2675 2676 2677 2678 2679
+}
+south_yamatai_coast_sea_area = {
+	124 164
+	2680 2681 2682 2683 2684 2685 2686 2687 2688  
+}
+undine_sea_area = { #Lima sea
+	129 135 136 138 2674
+}
+north_sea_queen_sea_area = {
+	176 177 2668 2669 2670 2671 2672 2673 2698
+}
+north_natalia_coast_sea_area = {
+	107 122 2692 2693 2694
+}
+esta_lake_sea_area = {
+	126 127
+}
+the_navy_coast_sea_area = {
+	105 2689 2690 2691 2695
+}
+east_ilias_coast_sea_area = {
+	115 116 117
+}
+south_ilias_coast_sea_area = {
+	112 113 118 2705
+}
+iliasport_coast_sea_area = {
+	106 # warp shrine
+	108 2696 2697
+}
+southern_sea_queen_sea_area = {
+	109 110 2699 2700 2701 2716  
+}
+roach_sea_area = {
+	120 2702 2703
+}
+sabasa_coast_sea_area = {
+	2707 2704 2706
+}
+wendigo_coast_sea_area = {
+	159 125 121 111
+}
+magistea_coast_sea_area = {
+	139 140 141 2658 2708 2709 2710 2711 2712
+}
+north_hellgondo_sea_area = {
+	2717 2718 2719 2720 2723 199
+}
+hellgondo_gold_sea_area = {
+	145 201 2661 2662 2663 2664 2665 2666 2667
 }
 monster_lord_sea_area = {
-	145 146 150 151 175 176 199 201
-	152 # vampire queen
-	2659 2660 2661 2662 2663 2664 2665 2666 2667
+	150 151 2657 2659 2660 143
+}
+unknown_island_sea_area = {
+	146 154 2721 2722
+}
+vampire_queen_sea_area = {
+	152 2726 2727 2728 # vampire queen
+	175 2725
+	2729 2730 # north pole coast
+	2724 165 # great ocean
 }
 central_sentora_tartarus_sea_area = {
 	130 2625 2626 2627 2628 2629 2630 # bordering tartarus
@@ -51,15 +103,15 @@ central_sentora_tartarus_sea_area = {
 saloon_coast_sea_area = {
 	134 2646 2647 2648 2649 2650 # coast of Saloon
 	137 2651 #fishy pirates
-	2652 2653
+	2653
 }
 western_gold_sea_area = {
-	133 2654 2655 2656 2657 2658 143
+	133 2654 2655 2656 
 }
 snow_heaven_sea_area = {
 	142 2713 2714 2715
 	#deep ocean
-	144 197 202
+	144 197 202 2652
 }
 orcish_area = { 
 	26 27 29 

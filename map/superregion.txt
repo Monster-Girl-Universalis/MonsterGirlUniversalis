@@ -16,7 +16,7 @@ navy_superregion = {
 	navyl_region 
 }
 san_ilia_superregion = { 
-	port_natalia_region san_ilia_region st_amos_region south_undersea_temple_region 
+	port_natalia_region san_ilia_region st_amos_region south_undersea_temple_region port_marle_region
 }
 western_natalia_superregion = { 
 	forest_of_spirits_region monte_carlo_region puppeteer_tower_region 

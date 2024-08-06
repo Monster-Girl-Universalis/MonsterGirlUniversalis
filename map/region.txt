@@ -55,14 +55,17 @@ san_ilia_region = {
 }
 st_amos_region = { 
 	areas = { 
-		kinoko_mountains amos_road_area urscylla_mountains succubus_nun_area ittan_momen_coast anteater_hills lamia_sister_area grizzly_rocks mountain_st_amos_area fusuma_coast
-		port_marle 
+		amos_road_area succubus_nun_area ittan_momen_coast anteater_hills lamia_sister_area grizzly_rocks mountain_st_amos_area 
 	}
 }
 port_natalia_region = { 
 	areas = { 
-		pitcher_grove jellyfish_beach natalian_woods oningrone_area leira_plains port_natalia_area seaweed_beach eastern_natalia_area novistador_mountains marle_road_area
-		thehad_coast leira_coast_area 
+		pitcher_grove jellyfish_beach natalian_woods oningrone_area leira_plains port_natalia_area seaweed_beach eastern_natalia_area marle_road_area leira_coast_area
+	}
+}
+port_marle_region = { 
+	areas = { 
+		thehad_coast novistador_mountains port_marle kinoko_mountains fusuma_coast urscylla_mountains 
 	}
 }
 forest_of_spirits_region = { 

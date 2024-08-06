@@ -315,7 +315,7 @@ eastern_natalia_area = {
 	529 531 492 491 
 }
 port_marle = { 
-	551 539 533 
+	551 539 532 533 
 }
 fusuma_coast = { 
 	566 554 575 
@@ -387,7 +387,7 @@ marle_road_area = {
 	534 541 
 }
 thehad_coast = { 
-	511 532 508 510 
+	511 508 510 
 }
 pitcher_grove = { 
 	509 512 513 498 

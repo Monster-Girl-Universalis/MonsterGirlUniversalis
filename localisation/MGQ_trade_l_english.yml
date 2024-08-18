@@ -53,6 +53,9 @@
  hellgondo_tartarus: "Hellgondo Tartarus"
  sealed_sinner_prison: "Sealed Sinner Prison"
  monster_lord_castle: "Monster Lord Castle"
+ esta: "Esta"
+ lima: "Lima"
+ #port_marle: "Port Marle" #Already placed elsewhere
  ###TRADE COMPANY REGIONS###
  trade_company_pornof_trade: "Pornof Charter"
  TRADE_COMPANY_PORNOF_NODE_Root_Culture_GetName: "[Root.Culture.GetName] Pornof Company"
@@ -201,6 +204,15 @@
  trade_company_monster_lord_castle_trade: "Monster Lord Castle Charter"
  TRADE_COMPANY_MONSTER_LORD_CASTLE_NODE_Root_Culture_GetName: "[Root.Culture.GetName] Monster Lord Castle Company"
  TRADE_COMPANY_MONSTER_LORD_CASTLE_Hellgondo_Trade_Company: "Monster Lord Castle Trade Company"
+ trade_company_esta_trade: "Esta Charter"
+ TRADE_COMPANY_ESTA_NODE_Root_Culture_GetName: "[Root.Culture.GetName] Esta Company"
+ TRADE_COMPANY_ESTA_VILLAGE_Noah_Trade_Company: "Esta Trade Company"
+ trade_company_port_marle_trade: "Port Marle Charter"
+ TRADE_COMPANY_PORT_MARLE_NODE_Root_Culture_GetName: "[Root.Culture.GetName] Marle Company"
+ TRADE_COMPANY_PORT_MARLE_NATALIA_Trade_Company: "Port Marle Trade Company"
+ trade_company_lima_trade: "Lima Charter"
+ TRADE_COMPANY_LIMA_NODE_Root_Culture_GetName: "[Root.Culture.GetName] Lima Company"
+ TRADE_COMPANY_LIMA_Noah_Trade_Company: "Lima Trade Company"
  ###COLONIAL REGIONS###
  colonial_wendigo_coast: "Colonial Wendigo Coast"
  COLONIAL_WENDIGO_COAST_Root_Culture_GetName_Wendigo_Coast:0 "[Root.GetAdjective] Wendigo Coast"

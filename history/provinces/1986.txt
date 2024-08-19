@@ -10,3 +10,5 @@ base_production = 3
 culture = Rogue_Angel
 religion = ilias_light_religion
 controller = VR1
+discovered_by = FC1
+discovered_by = ZA1

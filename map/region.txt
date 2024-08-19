@@ -19,68 +19,54 @@ great_sea_region = {
 		great_sea_area 
 	}
 }
-magistea_coast_sea_region = {
-	areas = {
-		magistea_coast_sea_area
+magistea_coast_sea_region = { 
+	areas = { 
+		magistea_coast_sea_area 
 	}
 }
-sabasa_coast_sea_region = {
-	areas = {
-		roach_sea_area
-		sabasa_coast_sea_area
+sabasa_coast_sea_region = { 
+	areas = { 
+		roach_sea_area sabasa_coast_sea_area 
 	}
 }
-ilias_coast_sea_region = {
-	areas = {
-		east_ilias_coast_sea_area
-		south_ilias_coast_sea_area
+ilias_coast_sea_region = { 
+	areas = { 
+		east_ilias_coast_sea_area south_ilias_coast_sea_area 
 	}
 }
-noah_gold_sea_region = {
-	areas = {
-		north_sea_queen_sea_area
-		undine_sea_area
+noah_gold_sea_region = { 
+	areas = { 
+		north_sea_queen_sea_area undine_sea_area 
 	}
 }
-south_pole_sea_region = {
-	areas = {
-		wendigo_coast_sea_area
+south_pole_sea_region = { 
+	areas = { 
+		wendigo_coast_sea_area 
 	}
 }
-inland_sea_region = {
-	areas = {
-		central_sentora_tartarus_sea_area
-		saloon_coast_sea_area
+inland_sea_region = { 
+	areas = { 
+		central_sentora_tartarus_sea_area saloon_coast_sea_area 
 	}
 }
-natalia_coast_sea_region = {
-	areas = {
-		southern_sea_queen_sea_area
-		esta_lake_sea_area
-		north_natalia_coast_sea_area
-		the_navy_coast_sea_area
-		iliasport_coast_sea_area
+natalia_coast_sea_region = { 
+	areas = { 
+		southern_sea_queen_sea_area esta_lake_sea_area north_natalia_coast_sea_area the_navy_coast_sea_area iliasport_coast_sea_area 
 	}
 }
-monster_lord_sea_region = {
-	areas = {
-		snow_heaven_sea_area
-		western_gold_sea_area
-		monster_lord_sea_area
-		hellgondo_gold_sea_area
-		north_hellgondo_sea_area
+monster_lord_sea_region = { 
+	areas = { 
+		snow_heaven_sea_area western_gold_sea_area monster_lord_sea_area hellgondo_gold_sea_area north_hellgondo_sea_area 
 	}
 }
-vampire_queen_sea_region = {
-	areas = {
-		vampire_queen_sea_area
-		unknown_island_sea_area
+vampire_queen_sea_region = { 
+	areas = { 
+		vampire_queen_sea_area unknown_island_sea_area 
 	}
 }
-yamatai_sea_region = {
-	areas = {
-		north_yamatai_coast_sea_area
-		south_yamatai_coast_sea_area
+yamatai_sea_region = { 
+	areas = { 
+		north_yamatai_coast_sea_area south_yamatai_coast_sea_area 
 	}
 }
 enrika_region = { 
@@ -109,7 +95,7 @@ midas_region = {
 }
 navyl_region = { 
 	areas = { 
-		seahorse_state sea_slug_state navy_headquarters_state marine_stronghold_state sheep_island 
+		seahorse_state sea_slug_state navy_headquarters_state marine_stronghold_state sheep_island western_gloria_isles_area gloria_isles_area gloria_treasury_area 
 	}
 }
 san_ilia_region = { 
@@ -119,17 +105,14 @@ san_ilia_region = {
 }
 st_amos_region = { 
 	areas = { 
-		amos_road_area succubus_nun_area ittan_momen_coast anteater_hills lamia_sister_area grizzly_rocks mountain_st_amos_area 
+		kinoko_mountains amos_road_area urscylla_mountains succubus_nun_area ittan_momen_coast anteater_hills lamia_sister_area grizzly_rocks mountain_st_amos_area fusuma_coast
+		port_marle 
 	}
 }
 port_natalia_region = { 
 	areas = { 
-		pitcher_grove jellyfish_beach natalian_woods oningrone_area leira_plains port_natalia_area seaweed_beach eastern_natalia_area marle_road_area leira_coast_area
-	}
-}
-port_marle_region = { 
-	areas = { 
-		thehad_coast novistador_mountains port_marle kinoko_mountains fusuma_coast urscylla_mountains 
+		pitcher_grove jellyfish_beach natalian_woods oningrone_area leira_plains port_natalia_area seaweed_beach eastern_natalia_area novistador_mountains marle_road_area
+		thehad_coast leira_coast_area 
 	}
 }
 forest_of_spirits_region = { 
@@ -196,7 +179,7 @@ great_pirate_cave_region = {
 yamatai_caves_region = { 
 	areas = { 
 		kappa_caverns yuki_onna_caves yuki_onna_coast yamatai_elf_coast yamatai_caves_entrance spirit_caves spirit_coast samurai_elf_area kunoichi_elf_area nure_onna_area
-		nure_onna_caves 
+		nure_onna_caves sea_dragon_isles_area manta_isles_area 
 	}
 }
 grand_noah_region = { 
@@ -331,7 +314,7 @@ wendigo_coast_region = {
 horai_region = { 
 	areas = { 
 		kunoichi_harpy_area kunoichi_scylla_area kunoichi_succubi_area kunoichi_arachne_area kitsune_village_area feral_kitsune_area bakedanuki_area taoist_coast tanuki_village_area horai_coast
-		elven_village 
+		elven_village sea_dragon_area 
 	}
 }
 hellgondo_shrine_region = { 
@@ -375,5 +358,10 @@ penguin_coast_region = {
 north_coven_region = { 
 	areas = { 
 		land_of_permafrost permafrost_coast north_coven_coast north_pole_coven krampus_area krampus_coast krampus_snowlands tsurara_area tsurara_coast tsurara_frostlands
+	}
+}
+western_great_sea_region = { 
+	areas = { 
+		western_great_sea_area 
 	}
 }

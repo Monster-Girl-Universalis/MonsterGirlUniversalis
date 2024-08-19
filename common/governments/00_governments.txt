@@ -60,6 +60,7 @@ monarchy = {
 
 				#MGQ
 				Apoptosis_realm
+				High_Apoptosis_realm 
 				Zombie_realm
 				Ghost_realm
 				Land_Dweller_realm
@@ -130,6 +131,7 @@ monarchy = {
 				pirate_state_reform 
 				Fairy_realm
 				Giant_realm 
+				gloria_pirates_reform 
 
 				#kagetsumugi_reform 
 				#promestein_reform 
@@ -315,7 +317,7 @@ monarchy = {
 				royal_decree_reform
 				aristocratic_court_reform
 				general_estates_reform
-				states_general_reform
+				#states_general_reform
 				legislative_sejm
 				integrated_sejmiks
 				feuillant_reform

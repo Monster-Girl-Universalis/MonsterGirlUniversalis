@@ -1,0 +1,19 @@
+government = monarchy
+government_rank = 1
+primary_culture = slums_human
+religion = water_religion
+add_government_reform = gloria_pirates_reform
+technology_group = TECH_HUMAN
+1444.1.1 = { 
+	monarch = { 
+		name = "Gloria"
+		dynasty = "of Great Seas"
+		birth_date = 1424.1.1
+		adm = 5
+		dip = 5
+		mil = 5
+		female = yes
+	}
+}
+capital = 2780
+add_government_reform = gloria_pirates_reform

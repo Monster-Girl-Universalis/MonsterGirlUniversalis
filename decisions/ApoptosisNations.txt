@@ -1,0 +1,1522 @@
+country_decisions = {
+
+	ilias_tartarus_nation = {
+		major = yes
+		potential = {
+			was_never_end_game_tag_trigger = yes
+			culture_group = apoptosis
+			NOT = { exists = IT2 }
+			capital_scope = {
+				region = iliasville_region 
+				is_core = ROOT
+			}
+		}
+		allow = {
+			AND = {
+				is_free_or_tributary_trigger = yes
+				is_at_war = no
+				OR = {
+					AND = {
+						army_size = 50
+						grown_by_development = 300
+						num_of_owned_provinces_with = {
+							region = iliasville_region
+							is_core = ROOT
+							value = 20
+						}
+					}
+				}
+				owns_core_province = 58
+				capital_scope = {
+					region = iliasville_region
+					is_core = ROOT
+				}
+			}
+		}
+		effect = {
+
+			change_tag = IT2
+
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
+			if = {
+				limit = {
+					iliasville_region = { AND = { culture_group = Human_culture owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Human_integration
+  					value = 1
+				}
+			}
+			if = {
+				limit = {
+					iliasville_region = { AND = { culture_group = land_dweller owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Land_Dweller_integration
+  					value = 1
+				}
+			}
+			if = {
+				limit = {
+					iliasville_region = { AND = { culture_group = undead owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Undead_integration
+  					value = 1
+				}
+			}
+			if = {
+				limit = {
+					iliasville_region = { AND = { culture_group = succubi owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Succubi_integration
+  					value = 1
+				}
+			}
+			if = {
+				limit = {
+					iliasville_region = { AND = { culture_group = slime owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Slime_integration
+  					value = 1
+				}
+			}
+			if = {
+				limit = {
+					iliasville_region = { AND = { culture_group = harpy owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Harpy_integration
+  					value = 1
+				}
+			}
+			if = {
+				limit = {
+					iliasville_region = { AND = { culture_group = elf owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Elf_integration
+  					value = 1
+				}
+			}
+			if = {
+				limit = {
+					iliasville_region = { AND = { culture_group = insect owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Insect_integration
+  					value = 1
+				}
+			}
+			if = {
+				limit = {
+					iliasville_region = { AND = { culture_group = beast owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Beast_integration
+  					value = 1
+				}
+			}
+			if = {
+				limit = {
+					iliasville_region = { AND = { culture_group = alraune owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Alraune_integration
+  					value = 1
+				}
+			}
+			if = {
+				limit = {
+					iliasville_region = { AND = { culture_group = dragon owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Dragon_integration
+  					value = 1
+				}
+			}
+			if = {
+				limit = {
+					iliasville_region = { AND = { culture_group = demi_human owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Demi_Human_integration
+  					value = 1
+				}
+			}
+			if = {
+				limit = {
+					iliasville_region = { AND = { culture_group = vampire owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Vampire_integration
+  					value = 1
+				}
+			}
+			if = {
+				limit = {
+					iliasville_region = { AND = { culture_group = yoma owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Yoma_integration
+  					value = 1
+				}
+			}
+			if = {
+				limit = {
+					iliasville_region = { AND = { culture_group = sea_dweller owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Sea_Dweller_integration
+  					value = 1
+				}
+			}
+			if = {
+				limit = {
+					iliasville_region = { AND = { culture_group = land_dweller owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Land_Dweller_integration
+  					value = 1
+				}
+			}
+			if = {
+				limit = {
+					iliasville_region = { AND = { culture_group = land_dweller owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Land_Dweller_integration
+  					value = 1
+				}
+			}
+			if = {
+				limit = {
+					iliasville_region = { AND = { culture_group = land_dweller owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Land_Dweller_integration
+  					value = 1
+				}
+			}
+			if = {
+				limit = {
+					iliasville_region = { AND = { culture_group = mermaid owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Mermaid_integration
+  					value = 1
+				}
+			}
+			if = {
+				limit = {
+					iliasville_region = { AND = { culture_group = kitsune owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Kitsune_integration
+  					value = 1
+				}
+			}
+			if = {
+				limit = {
+					iliasville_region = { AND = { culture_group = scylla owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Scylla_integration
+  					value = 1
+				}
+			}
+			if = {
+				limit = {
+					iliasville_region = { AND = { culture_group = lamia owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Lamia_integration
+  					value = 1
+				}
+			}
+			if = {
+				limit = {
+					iliasville_region = { AND = { culture_group = doll owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Doll_integration
+  					value = 1
+				}
+			}
+			if = {
+				limit = {
+					iliasville_region = { AND = { culture_group = chimera owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Chimera_integration
+  					value = 1
+				}
+			}
+			if = {
+				limit = {
+					iliasville_region = { AND = { culture_group = angel owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Angel_integration
+  					value = 1
+				}
+			}
+			if = {
+				limit = {
+					iliasville_region = { AND = { culture_group = roid owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Roid_integration
+  					value = 1
+				}
+			}
+			if = {
+				limit = {
+					iliasville_region = { AND = { culture_group = tanuki owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Tanuki_integration
+  					value = 1
+				}
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			if = {
+				limit = {
+					NOT = { technology_group = TECH_APOPTOSIS }
+				}
+				change_technology_group = TECH_APOPTOSIS 
+				change_unit_type = TECH_APOPTOSIS 
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	rostrum_tartarus_nation = {
+		major = yes
+		potential = {
+			was_never_end_game_tag_trigger = yes
+			culture_group = apoptosis
+			NOT = { exists = RO1 }
+			capital_scope = {
+				region = pornof_region 
+				is_core = ROOT
+			}
+		}
+		allow = {
+			AND = {
+				is_free_or_tributary_trigger = yes
+				is_at_war = no
+				OR = {
+					AND = {
+						army_size = 50
+						grown_by_development = 300
+						num_of_owned_provinces_with = {
+							region = pornof_region 
+							is_core = ROOT
+							value = 20
+						}
+					}
+				}
+				owns_core_province = 20
+				capital_scope = {
+					region = pornof_region 
+					is_core = ROOT
+				}
+			}
+		}
+		effect = {
+
+			change_tag = RO1
+
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
+			if = {
+				limit = {
+					pornof_region = { AND = { culture_group = Human_culture owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Human_integration
+  					value = 1
+				}
+			}
+			if = {
+				limit = {
+					pornof_region = { AND = { culture_group = land_dweller owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Land_Dweller_integration
+  					value = 1
+				}
+			}
+			if = {
+				limit = {
+					pornof_region = { AND = { culture_group = undead owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Undead_integration
+  					value = 1
+				}
+			}
+			if = {
+				limit = {
+					pornof_region = { AND = { culture_group = succubi owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Succubi_integration
+  					value = 1
+				}
+			}
+			if = {
+				limit = {
+					pornof_region = { AND = { culture_group = slime owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Slime_integration
+  					value = 1
+				}
+			}
+			if = {
+				limit = {
+					pornof_region = { AND = { culture_group = harpy owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Harpy_integration
+  					value = 1
+				}
+			}
+			if = {
+				limit = {
+					pornof_region = { AND = { culture_group = elf owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Elf_integration
+  					value = 1
+				}
+			}
+			if = {
+				limit = {
+					pornof_region = { AND = { culture_group = insect owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Insect_integration
+  					value = 1
+				}
+			}
+			if = {
+				limit = {
+					pornof_region = { AND = { culture_group = beast owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Beast_integration
+  					value = 1
+				}
+			}
+			if = {
+				limit = {
+					pornof_region = { AND = { culture_group = alraune owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Alraune_integration
+  					value = 1
+				}
+			}
+			if = {
+				limit = {
+					pornof_region = { AND = { culture_group = dragon owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Dragon_integration
+  					value = 1
+				}
+			}
+			if = {
+				limit = {
+					pornof_region = { AND = { culture_group = demi_human owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Demi_Human_integration
+  					value = 1
+				}
+			}
+			if = {
+				limit = {
+					pornof_region = { AND = { culture_group = vampire owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Vampire_integration
+  					value = 1
+				}
+			}
+			if = {
+				limit = {
+					pornof_region = { AND = { culture_group = yoma owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Yoma_integration
+  					value = 1
+				}
+			}
+			if = {
+				limit = {
+					pornof_region = { AND = { culture_group = sea_dweller owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Sea_Dweller_integration
+  					value = 1
+				}
+			}
+			if = {
+				limit = {
+					pornof_region = { AND = { culture_group = land_dweller owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Land_Dweller_integration
+  					value = 1
+				}
+			}
+			if = {
+				limit = {
+					pornof_region = { AND = { culture_group = land_dweller owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Land_Dweller_integration
+  					value = 1
+				}
+			}
+			if = {
+				limit = {
+					pornof_region = { AND = { culture_group = land_dweller owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Land_Dweller_integration
+  					value = 1
+				}
+			}
+			if = {
+				limit = {
+					pornof_region = { AND = { culture_group = mermaid owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Mermaid_integration
+  					value = 1
+				}
+			}
+			if = {
+				limit = {
+					pornof_region = { AND = { culture_group = kitsune owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Kitsune_integration
+  					value = 1
+				}
+			}
+			if = {
+				limit = {
+					pornof_region = { AND = { culture_group = scylla owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Scylla_integration
+  					value = 1
+				}
+			}
+			if = {
+				limit = {
+					pornof_region = { AND = { culture_group = lamia owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Lamia_integration
+  					value = 1
+				}
+			}
+			if = {
+				limit = {
+					pornof_region = { AND = { culture_group = doll owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Doll_integration
+  					value = 1
+				}
+			}
+			if = {
+				limit = {
+					pornof_region = { AND = { culture_group = chimera owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Chimera_integration
+  					value = 1
+				}
+			}
+			if = {
+				limit = {
+					pornof_region = { AND = { culture_group = angel owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Angel_integration
+  					value = 1
+				}
+			}
+			if = {
+				limit = {
+					pornof_region = { AND = { culture_group = roid owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Roid_integration
+  					value = 1
+				}
+			}
+			if = {
+				limit = {
+					pornof_region = { AND = { culture_group = tanuki owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Tanuki_integration
+  					value = 1
+				}
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			if = {
+				limit = {
+					NOT = { technology_group = TECH_APOPTOSIS }
+				}
+				change_technology_group = TECH_APOPTOSIS 
+				change_unit_type = TECH_APOPTOSIS 
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	safina_tartarus_nation = {
+		major = yes
+		potential = {
+			was_never_end_game_tag_trigger = yes
+			culture_group = apoptosis
+			NOT = { exists = SA3 }
+			capital_scope = {
+				region = safar_ruins_region 
+				is_core = ROOT
+			}
+		}
+		allow = {
+			AND = {
+				is_free_or_tributary_trigger = yes
+				is_at_war = no
+				OR = {
+					AND = {
+						army_size = 50
+						grown_by_development = 300
+						num_of_owned_provinces_with = {
+							region = safar_ruins_region 
+							is_core = ROOT
+							value = 20
+						}
+					}
+				}
+				owns_core_province = 971
+				capital_scope = {
+					region = safar_ruins_region 
+					is_core = ROOT
+				}
+			}
+		}
+		effect = {
+
+			change_tag = SA3
+
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
+			if = {
+				limit = {
+					safar_ruins_region = { AND = { culture_group = Human_culture owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Human_integration
+  					value = 1
+				}
+			}
+			if = {
+				limit = {
+					safar_ruins_region = { AND = { culture_group = land_dweller owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Land_Dweller_integration
+  					value = 1
+				}
+			}
+			if = {
+				limit = {
+					safar_ruins_region = { AND = { culture_group = undead owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Undead_integration
+  					value = 1
+				}
+			}
+			if = {
+				limit = {
+					safar_ruins_region = { AND = { culture_group = succubi owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Succubi_integration
+  					value = 1
+				}
+			}
+			if = {
+				limit = {
+					safar_ruins_region = { AND = { culture_group = slime owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Slime_integration
+  					value = 1
+				}
+			}
+			if = {
+				limit = {
+					safar_ruins_region = { AND = { culture_group = harpy owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Harpy_integration
+  					value = 1
+				}
+			}
+			if = {
+				limit = {
+					safar_ruins_region = { AND = { culture_group = elf owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Elf_integration
+  					value = 1
+				}
+			}
+			if = {
+				limit = {
+					safar_ruins_region = { AND = { culture_group = insect owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Insect_integration
+  					value = 1
+				}
+			}
+			if = {
+				limit = {
+					safar_ruins_region = { AND = { culture_group = beast owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Beast_integration
+  					value = 1
+				}
+			}
+			if = {
+				limit = {
+					safar_ruins_region = { AND = { culture_group = alraune owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Alraune_integration
+  					value = 1
+				}
+			}
+			if = {
+				limit = {
+					safar_ruins_region = { AND = { culture_group = dragon owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Dragon_integration
+  					value = 1
+				}
+			}
+			if = {
+				limit = {
+					safar_ruins_region = { AND = { culture_group = demi_human owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Demi_Human_integration
+  					value = 1
+				}
+			}
+			if = {
+				limit = {
+					safar_ruins_region = { AND = { culture_group = vampire owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Vampire_integration
+  					value = 1
+				}
+			}
+			if = {
+				limit = {
+					safar_ruins_region = { AND = { culture_group = yoma owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Yoma_integration
+  					value = 1
+				}
+			}
+			if = {
+				limit = {
+					safar_ruins_region = { AND = { culture_group = sea_dweller owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Sea_Dweller_integration
+  					value = 1
+				}
+			}
+			if = {
+				limit = {
+					safar_ruins_region = { AND = { culture_group = land_dweller owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Land_Dweller_integration
+  					value = 1
+				}
+			}
+			if = {
+				limit = {
+					safar_ruins_region = { AND = { culture_group = land_dweller owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Land_Dweller_integration
+  					value = 1
+				}
+			}
+			if = {
+				limit = {
+					safar_ruins_region = { AND = { culture_group = land_dweller owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Land_Dweller_integration
+  					value = 1
+				}
+			}
+			if = {
+				limit = {
+					safar_ruins_region = { AND = { culture_group = mermaid owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Mermaid_integration
+  					value = 1
+				}
+			}
+			if = {
+				limit = {
+					safar_ruins_region = { AND = { culture_group = kitsune owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Kitsune_integration
+  					value = 1
+				}
+			}
+			if = {
+				limit = {
+					safar_ruins_region = { AND = { culture_group = scylla owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Scylla_integration
+  					value = 1
+				}
+			}
+			if = {
+				limit = {
+					safar_ruins_region = { AND = { culture_group = lamia owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Lamia_integration
+  					value = 1
+				}
+			}
+			if = {
+				limit = {
+					safar_ruins_region = { AND = { culture_group = doll owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Doll_integration
+  					value = 1
+				}
+			}
+			if = {
+				limit = {
+					safar_ruins_region = { AND = { culture_group = chimera owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Chimera_integration
+  					value = 1
+				}
+			}
+			if = {
+				limit = {
+					safar_ruins_region = { AND = { culture_group = angel owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Angel_integration
+  					value = 1
+				}
+			}
+			if = {
+				limit = {
+					safar_ruins_region = { AND = { culture_group = roid owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Roid_integration
+  					value = 1
+				}
+			}
+			if = {
+				limit = {
+					safar_ruins_region = { AND = { culture_group = tanuki owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Tanuki_integration
+  					value = 1
+				}
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			if = {
+				limit = {
+					NOT = { technology_group = TECH_APOPTOSIS }
+				}
+				change_technology_group = TECH_APOPTOSIS 
+				change_unit_type = TECH_APOPTOSIS 
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	gold_tartarus_nation = {
+		major = yes
+		potential = {
+			was_never_end_game_tag_trigger = yes
+			culture_group = apoptosis
+			NOT = { exists = GO4 }
+			capital_scope = {
+				region = holy_wings_shrine_region 
+				is_core = ROOT
+			}
+		}
+		allow = {
+			AND = {
+				is_free_or_tributary_trigger = yes
+				is_at_war = no
+				OR = {
+					AND = {
+						army_size = 50
+						grown_by_development = 300
+						num_of_owned_provinces_with = {
+							region = holy_wings_shrine_region 
+							is_core = ROOT
+							value = 20
+						}
+					}
+				}
+				owns_core_province = 1856
+				capital_scope = {
+					region = holy_wings_shrine_region 
+					is_core = ROOT
+				}
+			}
+		}
+		effect = {
+
+			change_tag = GO4
+
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
+			if = {
+				limit = {
+					holy_wings_shrine_region = { AND = { culture_group = Human_culture owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Human_integration
+  					value = 1
+				}
+			}
+			if = {
+				limit = {
+					holy_wings_shrine_region = { AND = { culture_group = land_dweller owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Land_Dweller_integration
+  					value = 1
+				}
+			}
+			if = {
+				limit = {
+					holy_wings_shrine_region = { AND = { culture_group = undead owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Undead_integration
+  					value = 1
+				}
+			}
+			if = {
+				limit = {
+					holy_wings_shrine_region = { AND = { culture_group = succubi owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Succubi_integration
+  					value = 1
+				}
+			}
+			if = {
+				limit = {
+					holy_wings_shrine_region = { AND = { culture_group = slime owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Slime_integration
+  					value = 1
+				}
+			}
+			if = {
+				limit = {
+					holy_wings_shrine_region = { AND = { culture_group = harpy owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Harpy_integration
+  					value = 1
+				}
+			}
+			if = {
+				limit = {
+					holy_wings_shrine_region = { AND = { culture_group = elf owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Elf_integration
+  					value = 1
+				}
+			}
+			if = {
+				limit = {
+					holy_wings_shrine_region = { AND = { culture_group = insect owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Insect_integration
+  					value = 1
+				}
+			}
+			if = {
+				limit = {
+					holy_wings_shrine_region = { AND = { culture_group = beast owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Beast_integration
+  					value = 1
+				}
+			}
+			if = {
+				limit = {
+					holy_wings_shrine_region = { AND = { culture_group = alraune owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Alraune_integration
+  					value = 1
+				}
+			}
+			if = {
+				limit = {
+					holy_wings_shrine_region = { AND = { culture_group = dragon owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Dragon_integration
+  					value = 1
+				}
+			}
+			if = {
+				limit = {
+					holy_wings_shrine_region = { AND = { culture_group = demi_human owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Demi_Human_integration
+  					value = 1
+				}
+			}
+			if = {
+				limit = {
+					holy_wings_shrine_region = { AND = { culture_group = vampire owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Vampire_integration
+  					value = 1
+				}
+			}
+			if = {
+				limit = {
+					holy_wings_shrine_region = { AND = { culture_group = yoma owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Yoma_integration
+  					value = 1
+				}
+			}
+			if = {
+				limit = {
+					holy_wings_shrine_region = { AND = { culture_group = sea_dweller owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Sea_Dweller_integration
+  					value = 1
+				}
+			}
+			if = {
+				limit = {
+					holy_wings_shrine_region = { AND = { culture_group = land_dweller owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Land_Dweller_integration
+  					value = 1
+				}
+			}
+			if = {
+				limit = {
+					holy_wings_shrine_region = { AND = { culture_group = land_dweller owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Land_Dweller_integration
+  					value = 1
+				}
+			}
+			if = {
+				limit = {
+					holy_wings_shrine_region = { AND = { culture_group = land_dweller owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Land_Dweller_integration
+  					value = 1
+				}
+			}
+			if = {
+				limit = {
+					holy_wings_shrine_region = { AND = { culture_group = mermaid owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Mermaid_integration
+  					value = 1
+				}
+			}
+			if = {
+				limit = {
+					holy_wings_shrine_region = { AND = { culture_group = kitsune owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Kitsune_integration
+  					value = 1
+				}
+			}
+			if = {
+				limit = {
+					holy_wings_shrine_region = { AND = { culture_group = scylla owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Scylla_integration
+  					value = 1
+				}
+			}
+			if = {
+				limit = {
+					holy_wings_shrine_region = { AND = { culture_group = lamia owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Lamia_integration
+  					value = 1
+				}
+			}
+			if = {
+				limit = {
+					holy_wings_shrine_region = { AND = { culture_group = doll owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Doll_integration
+  					value = 1
+				}
+			}
+			if = {
+				limit = {
+					holy_wings_shrine_region = { AND = { culture_group = chimera owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Chimera_integration
+  					value = 1
+				}
+			}
+			if = {
+				limit = {
+					holy_wings_shrine_region = { AND = { culture_group = angel owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Angel_integration
+  					value = 1
+				}
+			}
+			if = {
+				limit = {
+					holy_wings_shrine_region = { AND = { culture_group = roid owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Roid_integration
+  					value = 1
+				}
+			}
+			if = {
+				limit = {
+					holy_wings_shrine_region = { AND = { culture_group = tanuki owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Tanuki_integration
+  					value = 1
+				}
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			if = {
+				limit = {
+					NOT = { technology_group = TECH_APOPTOSIS }
+				}
+				change_technology_group = TECH_APOPTOSIS 
+				change_unit_type = TECH_APOPTOSIS 
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	hellgondo_tartarus_nation = {
+		major = yes
+		potential = {
+			was_never_end_game_tag_trigger = yes
+			culture_group = apoptosis
+			NOT = { exists = HE1 }
+			capital_scope = {
+				region = hellgondo_tartarus_region 
+				is_core = ROOT
+			}
+		}
+		allow = {
+			AND = {
+				is_free_or_tributary_trigger = yes
+				is_at_war = no
+				OR = {
+					AND = {
+						army_size = 50
+						grown_by_development = 300
+						num_of_owned_provinces_with = {
+							region = hellgondo_tartarus_region 
+							is_core = ROOT
+							value = 20
+						}
+					}
+				}
+				owns_core_province = 2274
+				capital_scope = {
+					region = hellgondo_tartarus_region 
+					is_core = ROOT
+				}
+			}
+		}
+		effect = {
+
+			change_tag = HE1
+
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
+			if = {
+				limit = {
+					hellgondo_tartarus_region = { AND = { culture_group = Human_culture owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Human_integration
+  					value = 1
+				}
+			}
+			if = {
+				limit = {
+					hellgondo_tartarus_region = { AND = { culture_group = land_dweller owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Land_Dweller_integration
+  					value = 1
+				}
+			}
+			if = {
+				limit = {
+					hellgondo_tartarus_region = { AND = { culture_group = undead owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Undead_integration
+  					value = 1
+				}
+			}
+			if = {
+				limit = {
+					hellgondo_tartarus_region = { AND = { culture_group = succubi owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Succubi_integration
+  					value = 1
+				}
+			}
+			if = {
+				limit = {
+					hellgondo_tartarus_region = { AND = { culture_group = slime owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Slime_integration
+  					value = 1
+				}
+			}
+			if = {
+				limit = {
+					hellgondo_tartarus_region = { AND = { culture_group = harpy owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Harpy_integration
+  					value = 1
+				}
+			}
+			if = {
+				limit = {
+					hellgondo_tartarus_region = { AND = { culture_group = elf owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Elf_integration
+  					value = 1
+				}
+			}
+			if = {
+				limit = {
+					hellgondo_tartarus_region = { AND = { culture_group = insect owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Insect_integration
+  					value = 1
+				}
+			}
+			if = {
+				limit = {
+					hellgondo_tartarus_region = { AND = { culture_group = beast owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Beast_integration
+  					value = 1
+				}
+			}
+			if = {
+				limit = {
+					hellgondo_tartarus_region = { AND = { culture_group = alraune owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Alraune_integration
+  					value = 1
+				}
+			}
+			if = {
+				limit = {
+					hellgondo_tartarus_region = { AND = { culture_group = dragon owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Dragon_integration
+  					value = 1
+				}
+			}
+			if = {
+				limit = {
+					hellgondo_tartarus_region = { AND = { culture_group = demi_human owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Demi_Human_integration
+  					value = 1
+				}
+			}
+			if = {
+				limit = {
+					hellgondo_tartarus_region = { AND = { culture_group = vampire owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Vampire_integration
+  					value = 1
+				}
+			}
+			if = {
+				limit = {
+					hellgondo_tartarus_region = { AND = { culture_group = yoma owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Yoma_integration
+  					value = 1
+				}
+			}
+			if = {
+				limit = {
+					hellgondo_tartarus_region = { AND = { culture_group = sea_dweller owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Sea_Dweller_integration
+  					value = 1
+				}
+			}
+			if = {
+				limit = {
+					hellgondo_tartarus_region = { AND = { culture_group = land_dweller owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Land_Dweller_integration
+  					value = 1
+				}
+			}
+			if = {
+				limit = {
+					hellgondo_tartarus_region = { AND = { culture_group = land_dweller owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Land_Dweller_integration
+  					value = 1
+				}
+			}
+			if = {
+				limit = {
+					hellgondo_tartarus_region = { AND = { culture_group = land_dweller owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Land_Dweller_integration
+  					value = 1
+				}
+			}
+			if = {
+				limit = {
+					hellgondo_tartarus_region = { AND = { culture_group = mermaid owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Mermaid_integration
+  					value = 1
+				}
+			}
+			if = {
+				limit = {
+					hellgondo_tartarus_region = { AND = { culture_group = kitsune owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Kitsune_integration
+  					value = 1
+				}
+			}
+			if = {
+				limit = {
+					hellgondo_tartarus_region = { AND = { culture_group = scylla owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Scylla_integration
+  					value = 1
+				}
+			}
+			if = {
+				limit = {
+					hellgondo_tartarus_region = { AND = { culture_group = lamia owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Lamia_integration
+  					value = 1
+				}
+			}
+			if = {
+				limit = {
+					hellgondo_tartarus_region = { AND = { culture_group = doll owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Doll_integration
+  					value = 1
+				}
+			}
+			if = {
+				limit = {
+					hellgondo_tartarus_region = { AND = { culture_group = chimera owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Chimera_integration
+  					value = 1
+				}
+			}
+			if = {
+				limit = {
+					hellgondo_tartarus_region = { AND = { culture_group = angel owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Angel_integration
+  					value = 1
+				}
+			}
+			if = {
+				limit = {
+					hellgondo_tartarus_region = { AND = { culture_group = roid owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Roid_integration
+  					value = 1
+				}
+			}
+			if = {
+				limit = {
+					hellgondo_tartarus_region = { AND = { culture_group = tanuki owned_by = ROOT } }
+				}
+ 				set_variable = {
+   					which = Tanuki_integration
+  					value = 1
+				}
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			if = {
+				limit = {
+					NOT = { technology_group = TECH_APOPTOSIS }
+				}
+				change_technology_group = TECH_APOPTOSIS 
+				change_unit_type = TECH_APOPTOSIS 
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+}

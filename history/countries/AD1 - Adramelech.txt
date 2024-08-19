@@ -1,6 +1,6 @@
 government = monarchy
 government_rank = 3
-add_government_reform = Apoptosis_realm
+add_government_reform = High_Apoptosis_realm
 primary_culture = XX-class_Apoptosis
 religion = chaos_religion
 technology_group = TECH_APOPTOSIS

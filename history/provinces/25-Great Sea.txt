@@ -21,3 +21,4 @@ discovered_by = TECH_TANUKI
 discovered_by = TECH_UNDEAD
 discovered_by = TECH_VAMPIRE
 discovered_by = TECH_YOUMA
+discovered_by = TECH_ROID

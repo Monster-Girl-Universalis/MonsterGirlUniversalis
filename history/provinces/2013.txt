@@ -11,3 +11,5 @@ culture = Rogue_Angel
 religion = ilias_light_religion
 controller = VR2
 center_of_trade = 1
+discovered_by = FC1
+discovered_by = ZA1

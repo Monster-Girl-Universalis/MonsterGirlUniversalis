@@ -10,3 +10,5 @@ base_production = 3
 culture = Chimera_Girl
 religion = chaos_religion
 controller = SC2
+discovered_by = FC1
+discovered_by = ZA1

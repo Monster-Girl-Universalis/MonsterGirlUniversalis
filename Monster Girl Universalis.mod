@@ -1,4 +1,4 @@
-version="1.36.*"
+version="1.37.*"
 tags={
 	"Map"
 	"Religion"
@@ -11,7 +11,7 @@ tags={
 	"Missions And Decisions"
 	"National Ideas"
 }
-name="Monster Girl Universalis"
+name="Monster Girl Universalis - Github"
 replace_path="common/bookmarks"
 replace_path="common/church_aspects"
 replace_path="common/countries"
@@ -29,5 +29,5 @@ replace_path="history/wars"
 replace_path="history/provinces"
 replace_path="history/advisors"
 replace_path="gfx/loadingscreens"
-supported_version="1.36.*"
+supported_version="v1.37.2.0"
 remote_file_id="3127144147"

@@ -2,9 +2,13 @@ country_decisions = {
 
 	settle_in_mithra = {
 		potential = {
-			OR = {
-				owns_core_province = 86
-				owns_core_province = 104
+			AND = {
+				87 = { is_empty = yes }
+				88 = { is_empty = yes }
+				OR = {
+					owns_core_province = 86
+					owns_core_province = 104
+				}
 			}
 		}
 		allow = {
@@ -28,9 +32,16 @@ country_decisions = {
 	}
 	settle_in_sealed_sinner_prison = {
 		potential = {
-			OR = {
-				owns_core_province = 2310
-				owns_core_province = 2307
+			AND = {
+				2230 = { is_empty = yes }
+				2231 = { is_empty = yes }
+				2232 = { is_empty = yes }
+				2233 = { is_empty = yes }
+				2234 = { is_empty = yes }
+				OR = {
+					owns_core_province = 2310
+					owns_core_province = 2307
+				}
 			}
 		}
 		allow = {

@@ -11,3 +11,5 @@ culture = Angel_Apoptosis
 religion = ilias_light_religion
 controller = HR1
 trade_goods = incense
+discovered_by = FC1
+discovered_by = ZA1

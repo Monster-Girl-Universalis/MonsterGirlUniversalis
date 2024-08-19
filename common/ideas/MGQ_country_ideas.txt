@@ -1830,7 +1830,7 @@ SH1_ideas = {
 		spy_offence = 0.25
 	}
 	SH1_invasive_absorption = {		
-		overextension_impact_modifier = -0.33
+		overextension_impact_modifier = -0.25
 	}
 	SH1_cross_world_contact_elimination = {
 		ignore_coring_distance = yes
@@ -3621,7 +3621,190 @@ ML1_ideas = {
 		shock_damage_received = -0.20
 	}
 }
+#Sea Dragon Girl Realm
+SD1_ideas = {
+	start = {
+		naval_morale = 0.10
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
 
+	bonus = {		
+		ship_durability = 0.10
+	}
+	
+	trigger = {
+		culture = Sea_Dragon_Girl
+		NOT = { has_country_flag = accepted_dragon_empress_ideas }
+	}
+	free = yes
+
+    SD1_draconic_majesty = {
+        prestige = 0.50
+    }
+    SD1_Warden_of_Sunken_Treasures = {
+        production_efficiency = 0.20
+    }
+    SD1_Echoes_of_the_Deep = {
+        morale_damage = 0.075
+        naval_morale_damage = 0.075
+    }
+    SD1_Dominion_of_Ocean = {
+        transport_power = 0.15
+        galley_power = 0.15
+        heavy_ship_power = 0.15
+    }
+    SD1_tidal_dominance = {
+        movement_speed_onto_off_boat_modifier = 0.1
+	movement_speed_in_fleet_modifier = 1
+    }
+    SD1_Guardian_of_Depths = {
+	naval_forcelimit_modifier = 0.20
+	navy_tradition = 1
+    }
+    SD1_Heavily_Armed_Merchants = {
+	light_ship_power = 0.50
+	light_ship_number_of_cannons_modifier = 0.25
+	light_ship_hull_size_modifier = 0.25
+    }
+}
+
+#Trilobite Apoptosis
+TR2_ideas = {
+	start = {
+		defensiveness = 0.33
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+
+	bonus = {		
+		fort_maintenance_modifier = -0.33
+	}
+	
+	trigger = {
+		tag = TR2
+	}
+	free = yes
+
+	TR2_otherworldy_being = {		
+		unjustified_demands = -0.5
+	}
+	TR2_adaptive_morphology = {		
+		reinforce_speed = 0.25
+		global_supply_limit_modifier = 0.50
+	}
+	TR2_spacetime_assimilation = {		
+		culture_conversion_cost = -0.33
+	}
+	TR2_relict_predator = {
+		morale_damage = 0.20
+		diplomatic_reputation = -1
+	}
+	TR2_heavy_chitinous_plates = {
+		shock_damage_received = -0.20
+	}
+	TR2_resilient_apoptosis = {
+		infantry_power = 0.15
+		morale_damage_received = -0.10
+	}
+	TR2_cross_world_contact_elimination = {
+		ignore_coring_distance = yes
+		core_creation = -0.2
+		allow_client_states = yes
+	}
+}
+#Persephone Apoptosis
+PE4_ideas = {
+	start = {
+		land_morale = 0.15
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+
+	bonus = {		
+		diplomatic_reputation = 1
+	}
+	
+	trigger = {
+		tag = PE4
+	}
+	free = yes
+
+	PE4_Keeper_of_the_Underworld = {		
+		tolerance_own = 2
+		missionaries = 2
+	}
+	PE4_Deaths_Embrace = {
+		infantry_power = 0.15
+		reserves_organisation = 0.40
+	}
+	PE4_Harvest_of_Souls = {
+		manpower_recovery_speed = 0.33
+	}
+	PE4_spacetime_assimilation = {		
+		culture_conversion_cost = -0.33
+	}
+	PE4_persephones_invitation = {
+		morale_damage = 0.15
+		shock_damage = 0.05
+	}
+	PE4_otherworldy_being = {		
+		unjustified_demands = -0.5
+	}
+	PE4_cross_world_contact_elimination = {
+		ignore_coring_distance = yes
+		core_creation = -0.2
+		allow_client_states = yes
+	}
+}
+#Amour Doll Apoptosis
+AM1_ideas = {
+	start = {
+		ae_impact = -0.15
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+
+	bonus = {		
+		production_efficiency = 0.10
+		artillery_fire = 0.33
+	}
+	
+	trigger = {
+		tag = AM1
+	}
+	free = yes
+
+	AM1_artificial_perfection = {		
+		global_trade_goods_size_modifier = 0.50
+	}
+	AM1_Enchanted_Allure = {
+		diplomats = 2
+		improve_relation_modifier = 0.33
+	}
+	AM1_spacetime_assimilation = {		
+		culture_conversion_cost = -0.33
+	}
+	AM1_Intricate_Craftsmanship = {
+		development_cost = -0.15
+	}
+	AM1_reinforced_chaos_dolls = {
+		fire_damage = 0.20
+		infantry_fire = 0.33
+	}
+	AM1_otherworldy_being = {		
+		unjustified_demands = -0.5
+	}
+	AM1_cross_world_contact_elimination = {
+		ignore_coring_distance = yes
+		core_creation = -0.2
+		allow_client_states = yes
+	}
+}
 #Remina
 RE1_ideas = {
 	start = {
@@ -4303,5 +4486,50 @@ SQ1_ideas = {
 	SQ1_professional_scylla_servants = {
 		same_culture_advisor_cost = -0.30
 		advisor_pool = 4
+	}
+}
+#Tanuki Queen Domain
+TQ1_ideas = {
+	start = {
+		trade_efficiency = 0.25
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+
+	bonus = {		
+		stability_cost_modifier = -0.33
+	}
+	
+	trigger = {
+		OR = {
+			tag = TQ1
+		}
+	}
+	free = yes
+
+	TQ1_tanuki_master_shinobis = {
+		shock_damage = 0.20
+		infantry_shock = 0.20
+	}
+	TQ1_tanuki_royal_sake = {
+		production_efficiency = 0.20
+	}
+	TQ1_bakedanuki_elite = {
+		infantry_power = 0.20
+		shock_damage_received = -0.20		
+	}
+	TQ1_tanuki_cosmic_taoists = {
+		infantry_fire = 1
+	}
+	TQ1_tanuki_queen_festivals = {
+		prestige = 2
+	}
+	TQ1_ninja_art_fire_veil = {
+		fire_damage = 0.15
+	}
+	TQ1_worldwide_merchants = {
+		placed_merchant_power_modifier = 0.50
+		merchants = 1
 	}
 }

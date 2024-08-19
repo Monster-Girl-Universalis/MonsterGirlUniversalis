@@ -202,6 +202,8 @@ science_carrot_extract = {
 			was_tag = VA2
 			was_tag = UN1
 			was_tag = SQD
+			tag = PE4
+			was_tag = PE4
 
 			#tag = ML1
 			#was_tag = ML1
@@ -439,6 +441,8 @@ science_garlic_extract = {
 			 		value = 1
 				} 
 				technology_group = TECH_HUMAN
+				tag = CG4
+				was_tag = CG4
 			}
 		}
 	}
@@ -478,6 +482,8 @@ science_hakunen_extract = {
 			 		value = 1
 				} 
 				technology_group = TECH_HUMAN
+				tag = CG4
+				was_tag = CG4
 			}
 		}
 	}

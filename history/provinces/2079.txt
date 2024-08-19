@@ -11,3 +11,5 @@ culture = Chimera_Girl
 religion = chaos_religion
 controller = CB1
 trade_goods = ivory
+discovered_by = FC1
+discovered_by = ZA1

@@ -1,0 +1,151 @@
+namespace = flavor_generic
+
+country_event = {
+	id = flavor_generic.1				#Chimera racial ideas completion through the 5th mission
+	title = "flavor_generic.1.t"
+	desc = "flavor_generic.1.desc"
+	picture = chimera_RACE_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {		
+		name = flavor_generic.1.a
+ 		set_variable = {
+   			which = Human_integration
+  			value = 1
+		}
+	}
+	option = {		
+		name = flavor_generic.1.b
+ 		set_variable = {
+   			which = Land_Dweller_integration
+  			value = 1
+		}
+	}
+	option = {		
+		name = flavor_generic.1.c
+ 		set_variable = {
+   			which = Succubi_integration
+  			value = 1
+		}
+	}
+	option = {		
+		name = flavor_generic.1.d
+ 		set_variable = {
+   			which = Slime_integration
+  			value = 1
+		}
+	}
+	option = {		
+		name = flavor_generic.1.e
+ 		set_variable = {
+   			which = Alraune_integration
+  			value = 1
+		}
+	}
+	option = {		
+		name = flavor_generic.1.f
+ 		set_variable = {
+   			which = Elf_integration
+  			value = 1
+		}
+	}
+	option = {		
+		name = flavor_generic.1.g
+ 		set_variable = {
+   			which = Beast_integration
+  			value = 1
+		}
+	}
+	option = {		
+		name = flavor_generic.1.h
+ 		set_variable = {
+   			which = Insect_integration
+  			value = 1
+		}
+	}
+	option = {		
+		name = flavor_generic.1.i
+ 		set_variable = {
+   			which = Harpy_integration
+  			value = 1
+		}
+	}
+	option = {		
+		name = flavor_generic.1.j
+ 		set_variable = {
+   			which = Dragon_integration
+  			value = 1
+		}
+	}
+	option = {		
+		name = flavor_generic.1.k
+ 		set_variable = {
+   			which = Demi_Human_integration
+  			value = 1
+		}
+	}
+	option = {		
+		name = flavor_generic.1.l
+ 		set_variable = {
+   			which = Vampire_integration
+  			value = 1
+		}
+	}
+	option = {		
+		name = flavor_generic.1.m
+ 		set_variable = {
+   			which = Yoma_integration
+  			value = 1
+		}
+	}
+	option = {		
+		name = flavor_generic.1.n
+ 		set_variable = {
+   			which = Kitsune_integration
+  			value = 1
+		}
+	}
+	option = {		
+		name = flavor_generic.1.o
+ 		set_variable = {
+   			which = Mermaid_integration
+  			value = 1
+		}
+	}
+	option = {		
+		name = flavor_generic.1.p
+ 		set_variable = {
+   			which = Sea_Dweller_integration
+  			value = 1
+		}
+	}
+	option = {		
+		name = flavor_generic.1.q
+ 		set_variable = {
+   			which = Scylla_integration
+  			value = 1
+		}
+	}
+	option = {		
+		name = flavor_generic.1.r
+ 		set_variable = {
+   			which = Lamia_integration
+  			value = 1
+		}
+	}
+	option = {		
+		name = flavor_generic.1.s
+ 		set_variable = {
+   			which = Angel_integration
+  			value = 1
+		}
+	}
+	option = {		
+		name = flavor_generic.1.ta
+ 		set_variable = {
+   			which = Tanuki_integration
+  			value = 1
+		}
+	}
+}

@@ -1,0 +1,46 @@
+country_decisions = {
+
+	quantum_barrier = {
+		potential = {
+			AND = {
+				OR = {
+					tag = TR2
+					tag = PE4
+					tag = AM1
+					mission_completed = gen_apoptosis_research_barrier_technology 
+				}		
+				NOT = { 
+					check_variable = {
+						which = Quantum_Barrier_Used
+						value = 3
+					} 
+				}		
+				NOT = { 
+					truce_with = ML1
+				}
+			}
+		}
+		allow = {
+			AND = {
+				is_free_or_tributary_trigger = yes	
+				NOT = { 
+					check_variable = {
+						which = Quantum_Barrier_Used
+						value = 3
+					} 
+				}
+			}
+		}
+		effect = {
+			add_truce_with = ML1
+			white_peace = ML1
+			change_variable = {
+				which = Quantum_Barrier_Used
+				value = 1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

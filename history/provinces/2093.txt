@@ -11,3 +11,5 @@ culture = Angel_Apoptosis
 religion = ilias_light_religion
 controller = IT1
 trade_goods = gems
+discovered_by = FC1
+discovered_by = ZA1

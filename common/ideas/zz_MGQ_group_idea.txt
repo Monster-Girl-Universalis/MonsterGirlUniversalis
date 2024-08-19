@@ -654,6 +654,7 @@ MGQ_chimera_ideas = {
 		OR = {
 			culture_group = chimera
 		}
+		NOT = { has_country_flag = accepted_giga_mutant_ideas }
 	}	
 	free = yes
 	
@@ -1975,5 +1976,54 @@ MGQ_yeti_ideas = {
 	MGQ_Cryomancy_Mastery = {
 		advisor_cost = -0.25
 		fire_damage_received = -0.15
+	}
+}
+
+MGQ_roid_ideas = {
+	start = {
+		state_maintenance_modifier = -0.25
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+	
+	bonus = {
+		discipline = 0.05
+	}
+	
+	trigger = {
+		OR = {
+			culture_group = roid
+		}
+	}	
+	free = yes
+	
+	RD1_precision_engineering = {
+		land_maintenance_modifier = -0.20
+		naval_maintenance_modifier = -0.20
+	}
+	RD1_assembly_line_production = {
+		global_regiment_recruit_speed = -0.15
+		land_forcelimit_modifier = 0.15
+	}
+	RD1_mechanical_resilience = {
+		infantry_power = 0.10
+		fire_damage_received = -0.05
+	}	
+	RD1_vocaloid_integration = {
+		land_morale = 0.10
+		morale_damage = 0.05
+	}
+	RD1_military_infrastructure = {
+		land_attrition = -0.20
+		reinforce_speed = 0.20
+	}
+	RD1_advanced_makina_technology = {
+		discipline = 0.025
+		country_military_power = 1
+	}
+	RD1_artificial_intelligence_tactics = {
+		movement_speed = 0.10
+		military_tactics = 0.10
 	}
 }

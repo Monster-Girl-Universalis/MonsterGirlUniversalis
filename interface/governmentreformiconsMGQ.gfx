@@ -4,6 +4,10 @@ spriteTypes = {
 		texturefile = "gfx//interface//government_reform_icons//apoptosis_realm_reform.dds"
 	}
 	spriteType = {
+		name = "government_reform_high_apoptosis_realm"
+		texturefile = "gfx//interface//government_reform_icons//high_apoptosis_realm_reform.dds"
+	}
+	spriteType = {
 		name = "government_reform_zombie_realm"
 		texturefile = "gfx//interface//government_reform_icons//zombie_realm_reform.dds"
 	}
@@ -206,5 +210,9 @@ spriteTypes = {
 	spriteType = {
 		name = "government_reform_promestein"
 		texturefile = "gfx//interface//government_reform_icons//promestein_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_gloria_pirates"
+		texturefile = "gfx//interface//government_reform_icons//gloria_pirates_reform.dds"
 	}
 }

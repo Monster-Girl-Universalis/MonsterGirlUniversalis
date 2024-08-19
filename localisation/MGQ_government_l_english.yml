@@ -2,6 +2,8 @@
  ###GOVERNMENT REFORMS###
  Apoptosis_realm: "Apoptosis realm"
  Apoptosis_realm_desc: "A realm ruled by apoptosis, mysterious space-time phenomena lurking in the depth of Tartarus and chaos-eroded areas of our and paralleled worlds."
+ High_Apoptosis_realm: "High Apoptosis realm"
+ High_Apoptosis_realm_desc: "A realm ruled by high-ranking apoptosis, mysterious space-time phenomena lurking in the depth of Tartarus and chaos-eroded areas of our and paralleled worlds."
  Zombie_realm: "Zombie realm"
  Zombie_realm_desc: "A realm ruled by undead creatures, highly resilient to damage but also rather rigid and slow."
  Ghost_realm: "Ghost realm"
@@ -151,3 +153,5 @@
  kagetsumugi_reform_desc: "A kingdom of dolls governed by an extremely sophisticated individual bearing the title of Kagetsumugi. Its ruler boasts unparalleled proficiency in dollcraft and can produce the most powerful artificial monsters rivaling the strength of Monster Lords of the past era." 
  promestein_reform: "Promestein's Technocracy"
  promestein_reform_desc: "A realm governed by rogue angel Promestein who finds herself in odds with Goddess Ilias. She founded the Seekers of Truth Association and created highly advanced facilities all over the world to aid her research." 
+ gloria_pirates_reform: "Gloria Pirates"
+ gloria_pirates_reform_desc: "Gloria Pirates are a group of humans contesting the seven seas. The MS Gloria is a ship led by an all-female pirate crew that specializes in hunting down other pirates." 

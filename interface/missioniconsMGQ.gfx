@@ -568,4 +568,64 @@ spriteTypes = {
         name = "mission_scylla_queen_challenger"
         texturefile = "gfx//interface//missions//mission_scylla_queen_challenger.dds"
     }
+	spriteType = {
+        name = "mission_amphil"
+        texturefile = "gfx//interface//missions//mission_amphil.dds"
+    }
+	spriteType = {
+        name = "mission_valto"
+        texturefile = "gfx//interface//missions//mission_valto.dds"
+    }
+	spriteType = {
+        name = "mission_powerful_apoptosis_ruler"
+        texturefile = "gfx//interface//missions//mission_powerful_apoptosis_ruler.dds"
+    }
+	spriteType = {
+        name = "mission_high_apoptosis_ambitions"
+        texturefile = "gfx//interface//missions//mission_high_apoptosis_ambitions.dds"
+    }
+	spriteType = {
+        name = "mission_chimera_collect_genetic_material"
+        texturefile = "gfx//interface//missions//mission_chimera_collect_genetic_material.dds"
+    }
+	spriteType = {
+        name = "mission_powerful_chimera_ruler"
+        texturefile = "gfx//interface//missions//mission_powerful_chimera_ruler.dds"
+    }
+	spriteType = {
+        name = "mission_giga_mutant_ambitions"
+        texturefile = "gfx//interface//missions//mission_giga_mutant_ambitions.dds"
+    }
+	spriteType = {
+        name = "mission_tanuki_increase_trade"
+        texturefile = "gfx//interface//missions//mission_tanuki_increase_trade.dds"
+    }
+	spriteType = {
+        name = "mission_tanuki_ninjas"
+        texturefile = "gfx//interface//missions//mission_tanuki_ninjas.dds"
+    }
+	spriteType = {
+        name = "mission_powerful_tanuki_ruler"
+        texturefile = "gfx//interface//missions//mission_powerful_tanuki_ruler.dds"
+    }
+	spriteType = {
+        name = "mission_tanuki_royal_ambitions"
+        texturefile = "gfx//interface//missions//mission_tanuki_royal_ambitions.dds"
+    }
+	spriteType = {
+        name = "mission_radio"
+        texturefile = "gfx//interface//missions//mission_radio.dds"
+    }
+	spriteType = {
+        name = "mission_roid_army"
+        texturefile = "gfx//interface//missions//mission_roid_army.dds"
+    }
+	spriteType = {
+        name = "mission_assasinroid"
+        texturefile = "gfx//interface//missions//mission_assasinroid.dds"
+    }
+	spriteType = {
+        name = "mission_knightroid"
+        texturefile = "gfx//interface//missions//mission_knightroid.dds"
+    }
 }	

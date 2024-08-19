@@ -4,3 +4,14 @@ government_rank = 1
 technology_group = TECH_CHIMERA
 religion = seekers_of_truth_religion
 primary_culture = Chimera_Girl
+1444.1.1 = { 
+	monarch = { 
+		name = "Robin"
+		dynasty = "Chimera XX-7"
+		birth_date = 1.1.1
+		adm = 4
+		dip = 4
+		mil = 4
+		female = yes
+	}
+}

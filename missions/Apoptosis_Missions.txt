@@ -1,0 +1,293 @@
+apoptosis_internal_development = {
+
+	slot = 1
+	generic = yes
+	ai = yes
+	
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		culture_group = apoptosis #apoptosis
+		NOT = { 
+			OR = {
+				
+			}
+		}
+	}
+	
+	has_country_shield = yes
+	
+	gen_apoptosis_prepare_to_travel_outside = {
+		icon = mission_tartarus_rift
+		required_missions = { }
+		position = 1
+		
+		trigger = {
+			employed_advisor = {
+				category = ADM
+				culture = ROOT
+			}
+			employed_advisor = {
+				category = DIP
+				culture = ROOT
+			}
+		}
+		effect = {
+			add_adm_power = 50
+			add_dip_power = 50
+			add_mil_power = 50
+			add_treasury = -100
+		}
+	}
+	
+	gen_apoptosis_exploring_the_world = {
+		icon = mission_ilias_continent
+		required_missions = { gen_apoptosis_prepare_to_travel_outside }
+		position = 2
+		
+		trigger = {
+			any_neighbor_province = {
+				has_discovered = root
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "gen_apoptosis_exploring_the_world_mod"
+				duration = 9125 #25 years
+			}
+			add_adm_power = 20
+			add_dip_power = 20
+			add_mil_power = 20
+		}
+	}
+
+	gen_apoptosis_genetic_assimilation = {
+		icon = mission_amphil
+		required_missions = { gen_apoptosis_exploring_the_world }
+		position = 3
+		
+		
+		trigger = {
+			development_in_provinces = {
+				value = 300
+				culture = ROOT
+			}
+			
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "gen_apoptosis_genetic_assimilation_mod"
+				duration = -1
+			}	
+		}
+	}
+
+	gen_apoptosis_promote_the_manufactories = {
+		icon = mission_early_modern_university
+		required_missions = { gen_apoptosis_genetic_assimilation }
+		position = 4
+		
+		
+		trigger = {
+			share_of_starting_income = 10
+			calc_true_if = {
+				all_owned_province = {
+					OR = {
+						has_building = mills
+						has_building = farm_estate
+						has_building = tradecompany
+						has_building = plantations
+						has_building = textile
+						has_building = weapons
+						has_building = wharf
+						has_building = furnace
+					}
+				}
+				amount = 20
+			}
+		}
+		
+		effect = {
+			add_years_of_income = 2.5
+		}
+	}
+
+	gen_apoptosis_research_barrier_technology = {
+		icon = mission_underground_labs2
+		required_missions = { gen_apoptosis_promote_the_manufactories }
+		position = 5
+		
+		trigger = {
+			innovativeness = 40
+			mil_tech = 12
+			treasury = 3000
+		}
+		
+		effect = {
+			add_treasury = -3000
+			change_innovativeness = 5
+			add_country_modifier = {
+				name = "gen_apoptosis_barrier_technology"
+				duration = -1
+			}
+		}
+	}
+	
+}
+apoptosis_trade_expansion = {
+
+	slot = 5
+	generic = yes
+	ai = yes
+	
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		culture_group = apoptosis #apoptosis
+		NOT = { 
+			OR = {
+				
+			}
+		}
+	}
+	
+	has_country_shield = yes
+	
+	gen_apoptosis_quality_precision = {
+		icon = mission_valto
+		required_missions = { }
+		position = 1
+		
+		trigger = {
+			estate_loyalty = {
+    				estate = estate_apoptosis
+    				loyalty = 60
+				}
+			monthly_adm = 7
+			monthly_dip = 7
+			monthly_mil = 7
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "gen_apoptosis_quality_precision_mod" 
+				duration = -1
+			}
+		}
+	}
+	
+	gen_apoptosis_finish_racial_ideas = {
+		icon = mission_underground_labs3
+		required_missions = { gen_apoptosis_quality_precision }
+		position = 2
+		
+		trigger = {
+				custom_trigger_tooltip = {
+					tooltip = mgq_full_any_race_tooltip
+					OR = {
+						full_idea_group = human_ideas 
+						full_idea_group = land_dweller_ideas 
+						full_idea_group = succubi_ideas 
+						full_idea_group = undead_ideas 
+						full_idea_group = slime_ideas 
+						full_idea_group = apoptosis_ideas 
+						full_idea_group = alraune_ideas 
+						full_idea_group = elf_ideas 
+						full_idea_group = beast_ideas 
+						full_idea_group = insect_ideas 
+						full_idea_group = harpy_ideas 
+						full_idea_group = dragon_ideas 
+						full_idea_group = demi_human_ideas 
+						full_idea_group = vampire_ideas 
+						full_idea_group = yoma_ideas 
+						full_idea_group = kitsune_ideas 
+						full_idea_group = mermaid_ideas 
+						full_idea_group = sea_dweller_ideas 
+						full_idea_group = doll_ideas 
+						full_idea_group = scylla_ideas 
+						full_idea_group = lamia_ideas 
+						full_idea_group = chimera_ideas 
+						full_idea_group = angel_ideas 
+						full_idea_group = roid_ideas 
+						full_idea_group = tanuki_ideas 
+					}
+				}
+		}
+		
+		effect = {
+			add_adm_power = 50	
+			add_dip_power = 50
+			add_mil_power = 50
+		}
+	}
+
+	gen_apoptosis_establish_trade_companies = {
+		icon = mission_colonial
+		required_missions = { gen_apoptosis_finish_racial_ideas }
+		position = 3
+
+		trigger = {
+			OR = {
+				num_of_strong_trade_companies = 2
+				num_of_merchants = 4
+			}
+		}
+		
+		effect = {
+			add_years_of_income = 0.50
+			add_mercantilism = 5			
+		}
+	}
+	gen_powerful_apoptosis_ruler = {
+		icon = mission_powerful_apoptosis_ruler
+		required_missions = { gen_apoptosis_establish_trade_companies }
+		position = 4
+		
+		trigger = {
+			monthly_adm = 10
+			monthly_dip = 10
+			monthly_mil = 10
+			grown_by_development = 750
+			legitimacy_equivalent = 90
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "gen_apoptosis_powerful_apoptosis_mod"
+				duration = 9125 #25 years
+			}
+			change_government_reform_progress = 50
+			add_prestige = 20
+		}
+	}
+	gen_high_apoptosis_ambitions = {
+		icon = mission_high_apoptosis_ambitions
+		required_missions = { gen_powerful_apoptosis_ruler }
+		position = 5
+		
+		trigger = {
+			monthly_adm = 12
+			monthly_dip = 12
+			monthly_mil = 12
+			government_rank = 2
+			army_tradition = 50
+			army_size = 150
+			legitimacy_equivalent = 100
+			is_bankrupt = no
+		}
+		
+		effect = {
+			if = {
+				limit = {
+					NOT = { has_reform = High_Apoptosis_realm  }
+				}
+				add_government_reform = High_Apoptosis_realm  
+			}
+			else = { add_prestige = 50 }
+			add_prestige = 50
+			add_adm_power = 50
+			add_dip_power = 50
+			add_mil_power = 50
+		}
+	}
+}

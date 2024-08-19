@@ -2128,6 +2128,9 @@ undead_ideas = {
 			tag = JD1
 			tag = ZA1
 			tag = SH1
+
+			tag = PE4
+			was_tag = PE4
 		}
 	}	
 
@@ -2215,6 +2218,8 @@ slime_ideas = {
 
 			tag = ML1
 			was_tag = ML1
+			tag = PE4
+			was_tag = PE4
 		}
 	}	
 
@@ -2288,6 +2293,9 @@ apoptosis_ideas = {
 			was_tag = AA1
 			was_tag = HR1
 			was_tag = AR3
+			was_tag = TR2
+			was_tag = PE4
+			was_tag = AM1
 			tag = RE1
 			was_tag = RE1
 		}
@@ -2628,6 +2636,8 @@ insect_ideas = {
 			} 
 			tag = SSP
 			was_tag = SSP
+			tag = TR2
+			was_tag = TR2
 			was_tag = BGH
 			was_tag = MDR
 			was_tag = SPG
@@ -3317,6 +3327,10 @@ sea_dweller_ideas = {
 			was_tag = SE5
 			tag = SE6
 			was_tag = SE6
+			tag = MA1 
+			was_tag = MA1 
+			tag = MA2 
+			was_tag = MA2 
 			was_tag = AJ1
 			was_tag = AJ2
 			was_tag = NA1
@@ -3412,6 +3426,8 @@ doll_ideas = {
 			was_tag = PT1
 			tag = HM1
 			was_tag = HM1
+			tag = AM1
+			was_tag = AM1
 		}
 	}	
 

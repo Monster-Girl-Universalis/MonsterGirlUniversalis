@@ -10,3 +10,5 @@ base_production = 3
 culture = Angel_Apoptosis
 religion = ilias_light_religion
 controller = AR3
+discovered_by = FC1
+discovered_by = ZA1

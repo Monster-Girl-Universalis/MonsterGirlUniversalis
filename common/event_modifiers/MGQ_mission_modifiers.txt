@@ -596,6 +596,76 @@ gen_vampire_expand_our_realm_mod = {
 	infantry_power = 0.10
 	country_admin_power = 1
 }
+gen_apoptosis_exploring_the_world_mod = {
+	auto_explore_adjacent_to_colony = yes
+	country_diplomatic_power = 1
+}
+gen_apoptosis_genetic_assimilation_mod = {
+	all_power_cost = -0.025
+	apoptosis_privilege_slots = 2
+}
+gen_apoptosis_barrier_technology = {
+	defensiveness = 0.05
+	morale_damage_received = -0.05
+}
+gen_apoptosis_quality_precision_mod = {
+	technology_cost = -0.05
+	idea_cost = -0.05
+}
+gen_apoptosis_powerful_apoptosis_mod = {
+	development_cost_modifier = -0.10
+	culture_conversion_time = -0.10
+}
+gen_chimera_collect_genetic_material_mod = {
+	yearly_innovativeness = 0.10
+	advisor_cost = -0.10
+}
+gen_chimera_efficient_resources = {
+	build_cost = -0.125
+}
+gen_chimera_secure_food_production = {
+	development_cost = -0.10
+	production_efficiency = 0.10
+}
+gen_chimeric_armies_mod = {
+	recover_army_morale_speed = 0.10
+	manpower_recovery_speed = 0.10
+}
+gen_chimera_racial_ideas = {
+	all_power_cost = -0.05
+}
+gen_tanuki_cultivate_the_fields = {
+	production_efficiency = 0.05
+	development_cost = -0.10
+}
+gen_tanuki_assemble_ninjas_mod = {
+	spy_offence = 0.20
+	army_tradition = 1
+}
+gen_roid_mechanical_maids_mod = {
+	all_power_cost = -0.025
+	country_admin_power = 1
+}
+gen_roid_assembly_lines_mod = {
+	build_time = -0.10
+	global_regiment_recruit_speed = -0.15
+}
+gen_roid_prosperous_realm = {
+	development_cost = -0.10
+	build_cost = -0.15
+}
+gen_roid_raise_artificial_army_mod = {
+	land_forcelimit = 10
+	country_military_power = 1
+}
+gen_roid_secure_parts_for_roid_production_mod = {
+	fire_damage = 0.10
+	shock_damage = 0.10
+}
+gen_roid_powerful_roid_girl_mod = {
+	build_cost = -0.10
+	build_time = -0.10
+}
 
 ###San Ilia
 san_ilia_court = {

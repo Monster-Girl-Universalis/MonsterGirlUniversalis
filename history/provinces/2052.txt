@@ -11,3 +11,5 @@ culture = Angel_Girl
 religion = ilias_light_religion
 controller = SH3
 trade_goods = incense
+discovered_by = FC1
+discovered_by = ZA1

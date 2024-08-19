@@ -1,0 +1,285 @@
+chimera_internal_development = {
+
+	slot = 1
+	generic = yes
+	ai = yes
+	
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		culture_group = chimera #chimera
+		NOT = { 
+			OR = {
+				
+			}
+		}
+	}
+	
+	has_country_shield = yes
+	
+	gen_chimera_internal_stability = {
+		icon = mission_early_game_buildings
+		required_missions = { }
+		position = 1
+		
+		trigger = {
+			stability = 1
+			capital_scope = {
+				development = 15
+			}
+		}
+		
+		effect = {
+			add_adm_power = 50
+			add_dip_power = 50
+			add_mil_power = 50
+		}
+	}
+	
+	gen_chimera_collect_genetic_material = {
+		icon = mission_chimera_collect_genetic_material
+		required_missions = { gen_chimera_internal_stability }
+		position = 2
+		
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 10
+				has_owner_accepted_culture = yes
+				NOT = { culture = root }
+				development = 10
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "gen_chimera_collect_genetic_material_mod"
+				duration = 9125 #25 years
+			}
+			change_government_reform_progress = 50
+		}
+	}
+
+	gen_chimera_bolster_our_income = {
+		icon = mission_high_income
+		required_missions = { gen_chimera_collect_genetic_material }
+		position = 3
+		
+		
+		trigger = {
+			share_of_starting_income = 3
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "gen_chimera_efficient_resources"
+				duration = 9125 #25 years
+			}	
+			add_years_of_income = 1	
+		}
+	}
+
+	gen_chimera_secure_food_production = {
+		icon = mission_secure_food_production
+		required_missions = { gen_chimera_bolster_our_income }
+		position = 4
+		
+		
+		trigger = {
+			grain = 7
+			fish = 7
+			livestock = 7
+			num_of_owned_provinces_with = {
+				has_production_building_trigger = yes
+				value = 25
+			}
+			calc_true_if = {
+				all_owned_province = {
+					OR = {
+						has_building = mills
+						has_building = farm_estate
+						has_building = tradecompany
+						has_building = plantations
+					}
+				}
+				amount = 5
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "gen_chimera_secure_food_production"
+				duration = 9125 #25 years
+			}			
+		}
+	}
+
+	gen_chimera_advanced_bioengineering = {
+		icon = mission_underground_labs2
+		required_missions = { gen_chimera_secure_food_production }
+		position = 5
+		
+		trigger = {
+			innovativeness = 40
+			dip_tech = 12
+			treasury = 3000
+		}
+		
+		effect = {
+			add_treasury = -3000
+			change_innovativeness = 5
+			country_event = { id = flavor_generic.1 }
+		}
+	}
+	
+}
+chimera_trade_expansion = {
+
+	slot = 5
+	generic = yes
+	ai = yes
+	
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		culture_group = chimera #chimera
+		NOT = { 
+			OR = {
+				
+			}
+		}
+	}
+	
+	has_country_shield = yes
+	
+	gen_chimera_chimeric_armies = {
+		icon = mission_chimera_homunculus
+		required_missions = { }
+		position = 1
+		
+		trigger = {
+			army_size_percentage = 0.9
+			num_accepted_cultures = 2
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "gen_chimeric_armies_mod" 
+				duration = -1
+			}
+		}
+	}
+	
+	gen_chimera_finish_racial_ideas = {
+		icon = mission_underground_labs3
+		required_missions = { gen_chimera_chimeric_armies }
+		position = 2
+		
+		trigger = {
+				custom_trigger_tooltip = {
+					tooltip = mgq_full_any_race_tooltip
+					OR = {
+						full_idea_group = human_ideas 
+						full_idea_group = land_dweller_ideas 
+						full_idea_group = succubi_ideas 
+						full_idea_group = undead_ideas 
+						full_idea_group = slime_ideas 
+						full_idea_group = apoptosis_ideas 
+						full_idea_group = alraune_ideas 
+						full_idea_group = elf_ideas 
+						full_idea_group = beast_ideas 
+						full_idea_group = insect_ideas 
+						full_idea_group = harpy_ideas 
+						full_idea_group = dragon_ideas 
+						full_idea_group = demi_human_ideas 
+						full_idea_group = vampire_ideas 
+						full_idea_group = yoma_ideas 
+						full_idea_group = kitsune_ideas 
+						full_idea_group = mermaid_ideas 
+						full_idea_group = sea_dweller_ideas 
+						full_idea_group = doll_ideas 
+						full_idea_group = scylla_ideas 
+						full_idea_group = lamia_ideas 
+						full_idea_group = chimera_ideas 
+						full_idea_group = angel_ideas 
+						full_idea_group = roid_ideas 
+						full_idea_group = tanuki_ideas 
+					}
+				}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "gen_chimera_racial_ideas"
+				duration = 9125 #25 years
+			}
+		}
+	}
+
+	gen_chimera_establish_trade_companies = {
+		icon = mission_colonial
+		required_missions = { gen_chimera_finish_racial_ideas }
+		position = 3
+
+		trigger = {
+			OR = {
+				num_of_strong_trade_companies = 2
+				num_of_merchants = 4
+			}
+		}
+		
+		effect = {
+			add_years_of_income = 1.50
+			add_mercantilism = 3			
+		}
+	}
+	gen_powerful_chimera_ruler = {
+		icon = mission_powerful_chimera_ruler
+		required_missions = { gen_chimera_establish_trade_companies }
+		position = 4
+		
+		trigger = {
+			monthly_adm = 10
+			monthly_dip = 10
+			monthly_mil = 10
+			grown_by_development = 750
+			legitimacy_equivalent = 90
+		}
+		
+		effect = {
+			add_adm_power = 100	
+			add_dip_power = 100
+			add_mil_power = 100
+			change_government_reform_progress = 50
+			add_prestige = 20
+		}
+	}
+	gen_giga_mutant_ambitions = {
+		icon = mission_giga_mutant_ambitions
+		required_missions = { gen_powerful_chimera_ruler }
+		position = 5
+		
+		trigger = {
+			monthly_adm = 12
+			monthly_dip = 12
+			monthly_mil = 12
+			government_rank = 2
+			army_tradition = 50
+			army_size = 150
+			legitimacy_equivalent = 100
+			is_bankrupt = no
+		}
+		
+		effect = {
+			if = {
+				custom_tooltip = accepted_giga_mutant_ideas_tt
+				set_country_flag = accepted_giga_mutant_ideas
+				hidden_effect = {
+					swap_free_idea_group = yes
+				}
+			}
+			else = { add_prestige = 50 }
+			add_prestige = 50
+			add_adm_power = 50
+			add_dip_power = 50
+			add_mil_power = 50
+		}
+	}
+}

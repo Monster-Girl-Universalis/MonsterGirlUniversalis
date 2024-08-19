@@ -202,6 +202,17 @@ each_estate_effect = {
 			$spiritualists_effect$
 		]
 	}
+	if = {
+		limit = {
+			has_estate = estate_apoptosis
+		}
+		[[effect]
+			$effect$
+		]
+		[[angels_effect]
+			$apoptosis_effect$
+		]
+	}
 }
 
 #Clergy
@@ -548,6 +559,29 @@ reduce_estate_spiritualists_loyalty_effect = {
 		}
 		add_estate_loyalty = {
 			estate = estate_spiritualists
+			loyalty = -10
+		}
+	}
+}
+#Apoptosis
+add_estate_apoptosis_loyalty_effect = {
+	if = {
+		limit = {
+			has_estate = estate_apoptosis
+		}
+		add_estate_loyalty = {
+			estate = estate_apoptosis
+			loyalty = 10
+		}
+	}
+}
+reduce_estate_apoptosis_loyalty_effect = {
+	if = {
+		limit = {
+			has_estate = estate_apoptosis
+		}
+		add_estate_loyalty = {
+			estate = estate_apoptosis
 			loyalty = -10
 		}
 	}
@@ -3243,6 +3277,14 @@ scaled_estate_spiritualists_negative_land_share_effect = {
 	scaled_estate_land_share_reduce_effect = { estate = estate_spiritualists }
 }
 
+scaled_estate_apoptosis_land_share_effect = {
+	scaled_estate_land_share_add_effect = { estate = estate_apoptosis }
+}
+
+scaled_estate_apoptosis_negative_land_share_effect = {
+	scaled_estate_land_share_reduce_effect = { estate = estate_apoptosis }
+}
+
 #Based on those above, but you can choose which estate you use
 #example of usage: scaled_estate_land_share_add_effect = { estate = estate_nobles }
 scaled_estate_land_share_add_effect = {
@@ -3834,6 +3876,26 @@ spawn_rebels_from_unhappy_estate = {
 					as_if_faction = yes
 				}
 			}
+			1 = {
+				trigger = {
+					owner = {
+						NOT = { disabled_rebels_from_seized_land_for_estate = { estate = estate_apoptosis } }
+						has_estate = estate_apoptosis 
+						NOT = {
+							estate_loyalty = {
+								estate = estate_apoptosis 
+								loyalty = 30
+							}
+						}
+					}
+				}
+				spawn_rebels = {
+					type = tribal_rebels
+					size = $size$
+					estate = estate_apoptosis 
+					as_if_faction = yes
+				}
+			}
 		}
 	}
 }
@@ -4018,6 +4080,16 @@ pick_random_estate_if_present = {
 			set_country_flag = estate_spiritualists_$flag$
 			[[estate_action]
 			$estate_action$ = estate_spiritualists
+			]
+		}
+		1 = { 
+			trigger = {
+				has_estate = estate_apoptosis
+				NOT = { has_country_flag = estate_apoptosis_$flag$ }
+			}
+			set_country_flag = estate_apoptosis_$flag$
+			[[estate_action]
+			$estate_action$ = estate_apoptosis
 			]
 		}
 	}
@@ -4991,6 +5063,13 @@ add_estate_loyalty_by_class_mil = {
 		limit = { has_estate = estate_spiritualists }
 		add_estate_loyalty = {
 			estate = estate_spiritualists
+			loyalty = $loyalty$
+		}
+	}
+	if = {
+		limit = { has_estate = estate_apoptosis }
+		add_estate_loyalty = {
+			estate = estate_apoptosis 
 			loyalty = $loyalty$
 		}
 	}

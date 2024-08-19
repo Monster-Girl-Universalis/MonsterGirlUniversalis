@@ -11,3 +11,5 @@ culture = Ice_Witch
 religion = monster_lord_religion
 controller = IW2
 center_of_trade = 1
+discovered_by = FC1
+discovered_by = ZA1

@@ -171,6 +171,10 @@ estate_monster_girls_land_rights = {
 			factor = 0.75
 			has_estate_privilege = estate_spiritualists_land_rights
 		}
+		modifier = {
+			factor = 0.75
+			has_estate_privilege = estate_apoptosis_land_rights
+		}
 	}
 }
 
@@ -552,6 +556,10 @@ estate_angels_land_rights = {
 		modifier = {
 			factor = 0.75
 			has_estate_privilege = estate_spiritualists_land_rights
+		}
+		modifier = {
+			factor = 0.75
+			has_estate_privilege = estate_apoptosis_land_rights
 		}
 	}
 }
@@ -1024,6 +1032,10 @@ estate_spiritualists_land_rights = {
 			factor = 0.75
 			has_estate_privilege = estate_angels_land_rights
 		}
+		modifier = {
+			factor = 0.75
+			has_estate_privilege = estate_apoptosis_land_rights
+		}
 	}
 }
 estate_autonomy_of_spiritualists = {
@@ -1251,5 +1263,702 @@ estate_raise_master_undead = {
 	}
 	modifier = {
 			all_power_cost = 0.04
+	}
+}
+
+
+#Apoptosis
+estate_apoptosis_land_rights  = {
+	icon = privilege_grant_autonomy
+	land_share = 5
+	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	loyalty = 0.05
+	influence = 0.05
+	can_select = {
+	}
+	on_granted = {
+	}
+	penalties = {
+	}
+	benefits = {
+		governing_capacity = 100
+	}
+	ai_will_do = {
+		factor = 5
+		modifier = {
+			factor = 1.4
+			num_of_territories = 5
+		}
+		modifier = {
+			factor = 1.5
+			num_of_territories = 10
+		}
+		modifier = {
+			factor = 1.5
+			num_of_territories = 15
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				NOT = { crown_land_share = 25 }
+				estate_influence = {
+					estate = estate_apoptosis
+					influence = 75
+				}
+			}
+			NOT = { has_estate_privilege = estate_apoptosis_land_rights }
+		}
+		modifier = {
+			factor = 0
+			NOT = { governing_capacity_percentage = 0.5 }
+		}
+		modifier = {
+			factor = 0.8
+			OR = {
+				NOT = { crown_land_share = 40 }
+				AND = {
+					is_absolutism_active = yes
+					NOT = { crown_land_share = 60 }
+				}
+			}
+			NOT = { has_estate_privilege = estate_apoptosis_land_rights }
+		}
+		modifier = {
+			factor = 0.8
+			OR = {
+				NOT = { crown_land_share = 30 }
+				AND = {
+					is_absolutism_active = yes
+					NOT = { crown_land_share = 50 }
+				}
+			}
+			NOT = { has_estate_privilege = estate_apoptosis_land_rights }
+		}
+		modifier = {
+			factor = 3
+			OR = {
+				AND = {
+					governing_capacity_percentage = 0.9
+					NOT = { has_estate_privilege = estate_apoptosis_land_rights }
+				}
+				#The trigger below should make sure that the AI actually keeps this privilege when enacting it early game
+				AND = {
+					governing_capacity_percentage = 0.6
+					has_estate_privilege = estate_apoptosis_land_rights
+				}
+			}
+		}
+		modifier = {
+			factor = 0.8
+			is_absolutism_active = yes
+		}
+		modifier = {
+			factor = 2
+			governing_capacity_percentage = 0.9
+		}
+		modifier = {
+			factor = 3
+			governing_capacity_percentage = 1
+		}
+		modifier = {
+			factor = 10
+			governing_capacity_percentage = 1.2
+		}
+		modifier = {
+			factor = 8
+			NOT = { adm_tech = 12 }
+			governing_capacity_percentage = 0.8
+		}
+		modifier = {
+			factor = 5
+			NOT = { adm_tech = 12 }
+			NOT = { government_rank = 1 }
+			governing_capacity_percentage = 0.65
+		}
+		#Has already a similar privilege active
+		modifier = {
+			factor = 0.75
+			has_estate_privilege = estate_church_land_rights
+		}
+		modifier = {
+			factor = 0.75
+			has_estate_privilege = estate_maratha_land_rights
+		}
+		modifier = {
+			factor = 0.75
+			has_estate_privilege = estate_brahmins_land_rights
+		}
+		modifier = {
+			factor = 0.75
+			has_estate_privilege = estate_vaisyas_land_rights
+		}
+		modifier = {
+			factor = 0.75
+			has_estate_privilege = estate_nomadic_tribes_land_rights
+		}
+		modifier = {
+			factor = 0.75
+			has_estate_privilege = estate_dhimmi_land_rights
+		}
+		modifier = {
+			factor = 0.75
+			has_estate_privilege = estate_jains_land_rights
+		}
+		modifier = {
+			factor = 0.75
+			has_estate_privilege = estate_rajput_land_rights
+		}
+		modifier = {
+			factor = 0.75
+			has_estate_privilege = estate_monster_girls_land_rights
+		}
+		modifier = {
+			factor = 0.75
+			has_estate_privilege = estate_angels_land_rights
+		}
+		modifier = {
+			factor = 0.75
+			has_estate_privilege = estate_spiritualists_land_rights
+		}
+	}
+}
+estate_autonomy_of_apoptosis = {
+	icon = privilege_tolerance_heathen
+	max_absolutism = -10
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
+	loyalty = 0.1
+	influence = 0.1
+	penalties = {
+	}
+	benefits = {
+		apoptosis_privilege_slots = 3
+	}
+	ai_will_do = {
+		factor = 10
+		modifier = {
+			factor = 0
+			is_absolutism_active = yes
+		}
+	}
+}
+estate_apoptosis_sea_dweller = {
+	icon = privilege_apoptosis_sully
+	land_share = 5
+	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	loyalty = 0.05
+	influence = 0.05
+	is_valid = { 
+		accepted_culture = Sea_Dweller_Apoptosis
+	}
+	modifier = {
+			heavy_ship_power = 0.15
+			all_power_cost = 0.025
+			country_diplomatic_power = -1
+	}
+}
+estate_makina_reinforced_coastline = {
+	icon = privilege_apoptosis_sully
+	land_share = 5
+	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	loyalty = 0.05
+	influence = 0.05
+	is_valid = { 
+		has_estate_privilege = estate_apoptosis_sea_dweller 
+	}
+	modifier = {
+			own_coast_naval_combat_bonus = 1.0
+			all_power_cost = 0.05
+			country_diplomatic_power = -1
+	}
+}
+estate_apoptosis_abyssal_spawn = {
+	icon = privilege_apoptosis_sully
+	land_share = 5
+	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	loyalty = 0.05
+	influence = 0.05
+	is_valid = { 
+		has_estate_privilege = estate_makina_reinforced_coastline 
+	}
+	modifier = {
+			naval_morale = 0.075
+			navy_tradition = 1
+	}
+}
+estate_apoptosis_adaptive_morphology = {
+	icon = privilege_apoptosis_trilobite
+	land_share = 5
+	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	loyalty = 0.05
+	influence = 0.05
+	is_valid = { 
+		accepted_culture = Insect_Apoptosis
+	}
+	modifier = {
+			reinforce_speed = 0.25
+			global_supply_limit_modifier = 0.50
+			all_power_cost = 0.025
+	}
+}
+estate_apoptosis_heavy_chitinous_plates = {
+	icon = privilege_apoptosis_trilobite
+	land_share = 5
+	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	loyalty = 0.05
+	influence = 0.05
+	is_valid = { 
+		has_estate_privilege = estate_apoptosis_adaptive_morphology 
+	}
+	modifier = {
+			shock_damage_received = -0.20
+			all_power_cost = 0.05
+			country_military_power = -1
+	}
+}
+estate_apoptosis_advanced_shesta_types = {
+	icon = privilege_apoptosis_shesta
+	land_share = 5
+	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	loyalty = 0.05
+	influence = 0.05
+	is_valid = { 
+		has_estate_privilege = estate_apoptosis_heavy_chitinous_plates 
+	}
+	modifier = {
+			morale_damage_received = -0.10
+			fire_damage = 0.10
+			all_power_cost = 0.05
+	}
+}
+estate_apoptosis_laser_eye_scissor_legs = {
+	icon = privilege_apoptosis_jaide
+	land_share = 5
+	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	loyalty = 0.05
+	influence = 0.05
+	is_valid = { 
+		accepted_culture = Roid_Apoptosis
+	}
+	modifier = {
+			artillery_power = 0.10
+			discipline = 0.03
+			all_power_cost = 0.025
+			country_military_power = -1
+	}
+}
+estate_apoptosis_chaos_researchers = {
+	icon = privilege_apoptosis_luxuru
+	land_share = 5
+	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	loyalty = 0.05
+	influence = 0.05
+	is_valid = { 
+		has_estate_privilege = estate_apoptosis_laser_eye_scissor_legs 
+	}
+	modifier = {
+			idea_cost = -0.10
+			technology_cost = -0.15
+			innovativeness_gain = 0.75
+			country_military_power = -1
+	}
+}
+estate_apoptosis_gunner_roids = {
+	icon = privilege_apoptosis_twinkle
+	land_share = 5
+	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	loyalty = 0.05
+	influence = 0.05
+	is_valid = { 
+		has_estate_privilege = estate_apoptosis_chaos_researchers
+	}
+	modifier = {
+			infantry_fire = 0.50
+	}
+}
+estate_apoptosis_versatile_engineering_machinery = {
+	icon = privilege_apoptosis_luxuru
+	land_share = 5
+	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	loyalty = 0.05
+	influence = 0.05
+	is_valid = { 
+		accepted_culture = Doll_Apoptosis
+	}
+	modifier = {
+			build_cost = -0.1
+			country_admin_power = 1
+			land_maintenance_modifier = 0.15
+			naval_maintenance_modifier = 0.15
+	}
+}
+estate_apoptosis_song_enveloping_the_world = {
+	icon = privilege_apoptosis_jellaila
+	land_share = 5
+	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	loyalty = 0.05
+	influence = 0.05
+	is_valid = { 
+		has_estate_privilege = estate_apoptosis_versatile_engineering_machinery 
+	}
+	modifier = {
+			build_cost = -0.05
+			development_cost = -0.05
+			land_maintenance_modifier = 0.15
+			naval_maintenance_modifier = 0.15
+	}
+}
+estate_apoptosis_herald_of_demise = {
+	icon = privilege_apoptosis_jellaila
+	land_share = 5
+	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	loyalty = 0.05
+	influence = 0.05
+	is_valid = { 
+		has_estate_privilege = estate_apoptosis_song_enveloping_the_world 
+	}
+	modifier = {
+			morale_damage_received = -0.075
+			country_military_power = 1
+			land_maintenance_modifier = 0.20
+			naval_maintenance_modifier = 0.20
+	}
+}
+estate_apoptosis_riot_types = {
+	icon = privilege_apoptosis_riot
+	land_share = 10
+	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	loyalty = 0.05
+	influence = 0.05
+	is_valid = { 
+		accepted_culture = Dragon_Apoptosis
+	}
+	modifier = {
+			country_military_power = 1
+	}
+}
+estate_apoptosis_proud_dragonkin = {
+	icon = privilege_apoptosis_riot
+	land_share = 5
+	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	loyalty = 0.05
+	influence = 0.05
+	is_valid = { 
+		has_estate_privilege = estate_apoptosis_riot_types 
+	}
+	modifier = {
+			infantry_power = 0.15
+			fire_damage = 0.05
+			land_maintenance_modifier = 0.20
+			naval_maintenance_modifier = 0.20
+	}
+}
+estate_apoptosis_lunatic_beasts = {
+	icon = privilege_apoptosis_riot
+	land_share = 5
+	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	loyalty = 0.05
+	influence = 0.05
+	is_valid = { 
+		has_estate_privilege = estate_apoptosis_proud_dragonkin 
+	}
+	modifier = {
+			movement_speed = 0.20
+			morale_damage_received = -0.075
+			country_military_power = -1
+			all_power_cost = 0.05
+	}
+}
+estate_apoptosis_alraunes_desire_to_live = {
+	icon = privilege_apoptosis_eater
+	land_share = 5
+	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	loyalty = 0.05
+	influence = 0.05
+	is_valid = { 
+		accepted_culture = Alraune_Apoptosis
+	}
+	modifier = {
+			land_morale = 0.125
+			all_power_cost = 0.025
+			country_military_power = -1
+	}
+}
+estate_apoptosis_healing_honey = {
+	icon = privilege_apoptosis_eater
+	land_share = 5
+	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	loyalty = 0.05
+	influence = 0.05
+	is_valid = { 
+		has_estate_privilege = estate_apoptosis_alraunes_desire_to_live 
+	}
+	modifier = {
+			recover_army_morale_speed = 0.10
+			development_cost = -0.05
+	}
+}
+estate_apoptosis_flesh_petal_traps = {
+	icon = privilege_apoptosis_eater
+	land_share = 5
+	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	loyalty = 0.05
+	influence = 0.05
+	is_valid = { 
+		has_estate_privilege = estate_apoptosis_healing_honey 
+	}
+	modifier = {
+			military_tactics = 0.10
+			land_maintenance_modifier = 0.10
+			naval_maintenance_modifier = 0.10
+	}
+}
+estate_apoptosis_monstrous_physiology = {
+	icon = privilege_apoptosis_vetala
+	land_share = 5
+	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	loyalty = 0.05
+	influence = 0.05
+	is_valid = { 
+		accepted_culture = Yoma_Apoptosis
+	}
+	modifier = {
+			shock_damage_received = -0.15
+			global_regiment_recruit_speed = -0.15
+			all_power_cost = 0.025
+			country_military_power = -1
+	}
+}
+estate_apoptosis_vetala_types = {
+	icon = privilege_apoptosis_vetala
+	land_share = 5
+	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	loyalty = 0.05
+	influence = 0.05
+	is_valid = { 
+		has_estate_privilege = estate_apoptosis_monstrous_physiology 
+	}
+	modifier = {
+			technology_cost = -0.10
+			fire_damage = 0.05
+			land_maintenance_modifier = 0.15
+			naval_maintenance_modifier = 0.15
+	}
+}
+estate_apoptosis_gaping_void = {
+	icon = privilege_apoptosis_vetala
+	land_share = 5
+	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	loyalty = 0.05
+	influence = 0.05
+	is_valid = { 
+		has_estate_privilege = estate_apoptosis_vetala_types 
+	}
+	modifier = {
+			hostile_attrition = 2
+			max_hostile_attrition = 1
+	}
+}
+estate_apoptosis_bio-mechanical_mastery = {
+	icon = privilege_apoptosis_vitae
+	land_share = 5
+	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	loyalty = 0.05
+	influence = 0.05
+	is_valid = { 
+		accepted_culture = Slime_Apoptosis
+	}
+	modifier = {
+			production_efficiency = 0.10
+			all_power_cost = 0.025
+	}
+}
+estate_apoptosis_adaptive_architecture = {
+	icon = privilege_apoptosis_vitae
+	land_share = 5
+	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	loyalty = 0.05
+	influence = 0.05
+	is_valid = { 
+		has_estate_privilege = estate_apoptosis_bio-mechanical_mastery
+	}
+	modifier = {
+			build_cost = -0.15
+			all_power_cost = 0.025
+	}
+}
+estate_apoptosis_self-regeneration_protocols = {
+	icon = privilege_apoptosis_vitae
+	land_share = 5
+	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	loyalty = 0.05
+	influence = 0.05
+	is_valid = { 
+		has_estate_privilege = estate_apoptosis_adaptive_architecture 
+	}
+	modifier = {
+			manpower_recovery_speed = 0.25
+			land_maintenance_modifier = 0.10
+			naval_maintenance_modifier = 0.10
+	}
+}
+estate_apoptosis_void_resonance = {
+	icon = privilege_apoptosis_shinifa
+	land_share = 5
+	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	loyalty = 0.05
+	influence = 0.05
+	is_valid = { 
+		accepted_culture = Undead_Apoptosis
+	}
+	modifier = {
+			spy_offence = 0.25
+			all_power_cost = 0.025
+	}
+}
+estate_apoptosis_invasive_absorption = {
+	icon = privilege_apoptosis_shinifa
+	land_share = 5
+	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	loyalty = 0.05
+	influence = 0.05
+	is_valid = { 
+		has_estate_privilege = estate_apoptosis_void_resonance 
+	}
+	modifier = {
+			overextension_impact_modifier = -0.25
+			country_admin_power = -1
+	}
+}
+estate_apoptosis_whispers_of_madness = {
+	icon = privilege_apoptosis_shinifa
+	land_share = 5
+	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	loyalty = 0.05
+	influence = 0.05
+	is_valid = { 
+		has_estate_privilege = estate_apoptosis_invasive_absorption 
+	}
+	modifier = {
+			morale_damage_received = -0.10
+			morale_damage = 0.05
+	}
+}
+estate_apoptosis_scylla_apoptosis = {
+	icon = privilege_apoptosis_amphil
+	land_share = 5
+	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	loyalty = 0.05
+	influence = 0.05
+	is_valid = { 
+		accepted_culture = Scylla_Apoptosis
+	}
+	modifier = {
+			morale_damage = 0.10
+			country_military_power = -1
+	}
+}
+estate_apoptosis_amphil_types = {
+	icon = privilege_apoptosis_amphil
+	land_share = 5
+	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	loyalty = 0.05
+	influence = 0.05
+	is_valid = { 
+		has_estate_privilege = estate_apoptosis_scylla_apoptosis 
+	}
+	modifier = {
+			infantry_shock = 0.25
+			global_manpower_modifier = 0.10
+			land_maintenance_modifier = 0.30
+	}
+}
+estate_apoptosis_overpowering_fist = {
+	icon = privilege_apoptosis_amphil
+	land_share = 5
+	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	loyalty = 0.05
+	influence = 0.05
+	is_valid = { 
+		has_estate_privilege = estate_apoptosis_amphil_types 
+	}
+	modifier = {
+			infantry_power = 0.25
+	}
+}
+estate_apoptosis_angel_apoptosis = {
+	icon = privilege_scales_of_light
+	land_share = 5
+	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	loyalty = 0.05
+	influence = 0.05
+	is_valid = { 
+		accepted_culture = Angel_Apoptosis
+	}
+	modifier = {
+			global_missionary_strength = 0.03
+			missionaries = 1
+			global_tax_modifier = -0.15
+	}
+}
+estate_apoptosis_divine_forging = {
+	icon = privilege_scales_of_light
+	land_share = 5
+	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	loyalty = 0.05
+	influence = 0.05
+	is_valid = { 
+		has_estate_privilege = estate_apoptosis_angel_apoptosis 
+	}
+	modifier = {
+			production_efficiency = 0.10
+	}
+}
+estate_apoptosis_holy_dark_fusion = {
+	icon = privilege_luminous_dragon
+	land_share = 5
+	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	loyalty = 0.05
+	influence = 0.05
+	is_valid = { 
+		has_estate_privilege = estate_apoptosis_divine_forging 
+	}
+	modifier = {
+			military_tactics = 0.15
+			land_maintenance_modifier = 0.20
+			naval_maintenance_modifier = 0.20
 	}
 }

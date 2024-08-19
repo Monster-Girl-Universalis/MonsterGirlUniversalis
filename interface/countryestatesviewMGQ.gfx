@@ -2,7 +2,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_estates_icons"
 		texturefile = "gfx//interface//estates_icons.dds"
-		noOfFrames = 18
+		noOfFrames = 19
 		loadType = "INGAME"
 	}
 	
@@ -10,7 +10,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_estates_icons_colour-stroke"
 		texturefile = "gfx/interface/estates_icons_colour-stroke.dds"
-		noOfFrames = 18
+		noOfFrames = 19
 		loadType = "INGAME"
 	}
 
@@ -149,6 +149,58 @@ spriteTypes = {
 	spriteType = {
 		name = "privilege_raise_master_undead"
 		texturefile = "gfx/interface/privileges/privilege_raise_master_undead.dds"
+	}
+	spriteType = {
+		name = "privilege_apoptosis_sully"
+		texturefile = "gfx/interface/privileges/privilege_apoptosis_sully.dds"
+	}
+	spriteType = {
+		name = "privilege_apoptosis_trilobite"
+		texturefile = "gfx/interface/privileges/privilege_apoptosis_trilobite.dds"
+	}
+	spriteType = {
+		name = "privilege_apoptosis_shesta"
+		texturefile = "gfx/interface/privileges/privilege_apoptosis_shesta.dds"
+	}
+	spriteType = {
+		name = "privilege_apoptosis_jaide"
+		texturefile = "gfx/interface/privileges/privilege_apoptosis_jaide.dds"
+	}
+	spriteType = {
+		name = "privilege_apoptosis_luxuru"
+		texturefile = "gfx/interface/privileges/privilege_apoptosis_luxuru.dds"
+	}
+	spriteType = {
+		name = "privilege_apoptosis_twinkle"
+		texturefile = "gfx/interface/privileges/privilege_apoptosis_twinkle.dds"
+	}
+	spriteType = {
+		name = "privilege_apoptosis_jellaila"
+		texturefile = "gfx/interface/privileges/privilege_apoptosis_jellaila.dds"
+	}
+	spriteType = {
+		name = "privilege_apoptosis_riot"
+		texturefile = "gfx/interface/privileges/privilege_apoptosis_riot.dds"
+	}
+	spriteType = {
+		name = "privilege_apoptosis_eater"
+		texturefile = "gfx/interface/privileges/privilege_apoptosis_eater.dds"
+	}
+	spriteType = {
+		name = "privilege_apoptosis_vetala"
+		texturefile = "gfx/interface/privileges/privilege_apoptosis_vetala.dds"
+	}
+	spriteType = {
+		name = "privilege_apoptosis_vitae"
+		texturefile = "gfx/interface/privileges/privilege_apoptosis_vitae.dds"
+	}
+	spriteType = {
+		name = "privilege_apoptosis_shinifa"
+		texturefile = "gfx/interface/privileges/privilege_apoptosis_shinifa.dds"
+	}
+	spriteType = {
+		name = "privilege_apoptosis_amphil"
+		texturefile = "gfx/interface/privileges/privilege_apoptosis_amphil.dds"
 	}
 
 }

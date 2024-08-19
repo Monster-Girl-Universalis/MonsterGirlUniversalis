@@ -1,0 +1,124 @@
+graphical_culture = asiangfx
+color = { 141 42 1 }
+revolutionary_colors = { 2 3 8 }
+random_nation_chance = 0
+historical_score = 500
+historical_idea_groups = { 
+}
+historical_units = { 
+	infantry_apt_t1_01 infantry_apt_t5_01 infantry_apt_t10_01 infantry_apt_t13_01 infantry_apt_t16_01 infantry_apt_t19_01 infantry_apt_t23_01 infantry_apt_t26_01 
+}
+monarch_names = { 
+	"Motohito #0" = 5
+	"Mihito #0" = 5
+	"Hikohito #0" = 5
+	"Fusahito #0" = 5
+	"Katsuhito #0" = 5
+	"Tomohito #0" = 5
+	"Michihito #0" = 5
+	"Kazuhito #0" = 5
+	"Kotohito #0" = 5
+	"Tsuguhito #0" = 5
+	"Nagahito #0" = 5
+	"Satohito #0" = 5
+	"Asahito #0" = 5
+	"Yasuhito #0" = 5
+	"Teruhito #0" = 5
+	"Hidehito #0" = 5
+	"Morohito #0" = 5
+	"Ayahito #0" = 5
+	"Takauji #0" = 5
+	"Yoshiakira #0" = 5
+	"Yoshimitsu #0" = 5
+	"Yoshimochi #0" = 5
+	"Yoshikazu #0" = 5
+	"Yoshinori #0" = 5
+	"Yoshikatsu #0" = 5
+	"Yoshimasa #0" = 5
+	"Yoshihisa #0" = 5
+	"Yoshitane #0" = 5
+	"Yoshizumi #0" = 5
+	"Yoshiharu #0" = 5
+	"Yoshiteru #0" = 5
+	"Yoshihide #0" = 5
+	"Yoshiaki #0" = 5
+	"Nobutada #0" = 5
+	"Hidenobu #0" = 5
+	"Hideyoshi #0" = 5
+	"Hideyori #0" = 5
+	"Ieyasu #0" = 5
+	"Hidetada #0" = 5
+	"Iemitsu #0" = 5
+	"Ietsuna #0" = 5
+	"Tsunayoshi #0" = 5
+	"Ienobu #0" = 5
+	"Ietsugu #0" = 5
+	"Yoshimune #0" = 5
+	"Ieshige #0" = 5
+	"Ieharu #0" = 5
+	"Ienari #0" = 5
+	"Ieyoshi #0" = 5
+	"Iesada #0" = 5
+	"Iemochi #0" = 5
+	"Yoshinobu #0" = 5
+	"Jaide #0" = -20
+	"Pyrogram #0" = -20
+	"Deathrona #0" = -20
+	"Metamo #0" = -20
+	"Adora #0" = -20
+	"Sonya #0" = -20
+	"Starma #0" = -20
+	"Amunario #0" = -20
+	"Necrocella #0" = -20
+	"Apocyta #0" = -20
+	"Caspasea #0" = -20
+	"Tumorcide #0" = -20
+	"Mitocrypt #0" = -20
+	"Apothea #0" = -20
+	"Cytokilla #0" = -20
+	"Thanatella #0" = -20
+	"Deathkaryo #0" = -20
+	"Cytophagus #0" = -20
+	"Endoreaper #0" = -20
+	"Necrotessa #0" = -20
+	"Executioner #0" = -20
+	"Cellcide #0" = -20
+	"Apoptress #0" = -20
+	"Pyrotosis #0" = -20
+	"Phagocytia #0" = -20
+	"Necrosia #0" = -20
+	"Apoptisca #0" = -20
+	"Nucleocida #0" = -20
+	"Oncogenie #0" = -20
+	"Apoptrix #0" = -20
+	"Necrolyst #0" = -20
+	"Apoptotron #0" = -20
+}
+leader_names = { 
+	Apoptera Necrosoul Pyrolith Thanatex Apoptotia Necrofury Aberrant Infestus Entropica Xaosian
+	Noxian Nyxen 
+}
+ship_names = { 
+	Reaper Riot Ribonucleic Metamorphic Amun Shimmering Deathbloom Decayheart Cellmate Necrosail
+	Grimtide Decaywave Mortalrift Phantomfate Moribundia Gravecurrent Dyingtide Decaydrift Oblivionflow Reapercrest
+	Deathswirl Grimcurrent Necrotide Decayingwake Wraithwave Thanatosphere Phagocross Apoptosys Necrobyss Thanatonix
+	Phagoreaper Apoptosisia Necrofury Thanatelle Phagocell Apocalypse Necrothorn Thanadendron Cellulosea Apophasia
+	Necrocyte Thanatosia Phagodiva Apopdyne Necrocell Deathwhisper Cellfusion Necrobond Decaycrush Apoptosiswave
+	Lifelesslagoon Cadavericca Mortuarymist Phagocytosispair Tissuefuse Corpseride Entropyembrace Cremationcruise Apoptoticcoven Atonicalliance
+	Virophagevessel Necroticnexus Celldeathcruiser Mortalmerger Decaydance Celldeath Virulence Plaguebearer Thanatos Decay
+	Mortality Entropy Putrefaction Necrotic Corruption Necrosis Elegy Asphyxiation Oblivion Atrophy
+	Wither Pestilence Famine Phantasma Nocturne Doom Catastrophe Demise Ruin Annihilation
+	Euthanasia Demolition Extinction Armageddon Extermination Perdition Ablation Obliteration Degeneration Devastation
+	Necrosisnavigator Mortalitymariner Pestilenceship Biotrawler Infectediver Necroskiff Disintegrator Cancerclipper Oncosailor Malignantia
+	Lifegoner Cellship Apocruiser Decayvoyager Tumorunner Deathcruiser Cytoship Necronav Apoptria Pyrovamp
+	Staradora Alcivita Deathfuse Decaydream Apopthrone Voidvessel Corpsecraft Dreadcruiser Decaydancer Grimscythe
+	Ruinrider Ghostgalleon Dreadship Voidvixen Necroglide Deathdancer Decaydelight Corpseclipper "Necrotic Fusion" "Decaying Bond"
+	"Deathly Convergence" "Corpsefire Embrace" "Morbid Melding" "Phantasmal Union" "Enigma of Entropy" "Spectral Fusion" "Shadowed Confluence" "Ominous Embrace" "Withered Blend" "Melancholic Coupling"
+	"Hallowed Conjunction" "Ghostly Integration" "Eerie Merging" "Macabre Synthesis" "Haunting Cruiser" "Deathly Alliance" "Dreadful Entwinement" "Cell-death Coalescence" "Apoptotic Embrace" "Fragmented Fusion"
+}
+army_names = { 
+	"Trilobite Army" "Persephone Army" "Amour Doll Army" "$PROVINCE$ Army Unit" 
+}
+fleet_names = { 
+	"Trilobite Navy" "Persephone Navy" "Amour Doll Navy" "$PROVINCE$ Naval Unit" 
+}

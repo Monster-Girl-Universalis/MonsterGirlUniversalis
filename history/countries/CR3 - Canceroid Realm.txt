@@ -4,3 +4,14 @@ government_rank = 1
 technology_group = TECH_ROID
 religion = seekers_of_truth_religion
 primary_culture = Roid_Girl
+1444.1.1 = { 
+	monarch = { 
+		name = "Jillian"
+		dynasty = "Canceroid"
+		birth_date = 1.1.1
+		adm = 4
+		dip = 4
+		mil = 4
+		female = yes
+	}
+}

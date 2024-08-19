@@ -1,0 +1,18 @@
+government = monarchy
+government_rank = 1
+primary_culture = Insect_Apoptosis
+add_government_reform = Apoptosis_realm
+religion = chaos_religion
+technology_group = TECH_APOPTOSIS
+capital = 2271
+1444.1.1 = { 
+	monarch = { 
+		name = "Trilobite"
+		dynasty = "the Relict Arthropode"
+		birth_date = 1424.1.1
+		adm = 5
+		dip = 5
+		mil = 5
+		female = yes
+	}
+}

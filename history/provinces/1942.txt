@@ -11,3 +11,5 @@ culture = Rogue_Angel
 religion = ilias_light_religion
 controller = CR2
 trade_goods = incense
+discovered_by = FC1
+discovered_by = ZA1

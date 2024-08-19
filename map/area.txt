@@ -18,100 +18,86 @@ eastern_ilias_tartarus_area = {
 	18 19 20 
 }
 great_sea_area = { 
-	25
-	114 119 123
-	147 148 149 153
-	155 156 157 158 160 161 162 163
-	167 168 169 170 171 172 173
-	174 178 179 180 181 182 183
+	25 114 119 123 178 179 180 181 182 183
 	184 185 186 187 188 189 190 191 192 193
-	194 195 196 198 200
+	194 195 196 2741 2786 2789 2790 2755 
 }
-north_yamatai_coast_sea_area = {
-	166 203 2675 2676 2677 2678 2679
+north_yamatai_coast_sea_area = { 
+	166 203 2675 2676 2677 2678 2679 2680 2682 2681
 }
-south_yamatai_coast_sea_area = {
-	124 164
-	2680 2681 2682 2683 2684 2685 2686 2687 2688  
+south_yamatai_coast_sea_area = { 
+	164 2683 2684 2685 2686 2687 2688 
 }
-undine_sea_area = { #Lima sea
-	129 135 136 138 2674
+undine_sea_area = {  #Lima sea
+
+	129 135 136 138 2674 
 }
-north_sea_queen_sea_area = {
-	176 177 2668 2669 2670 2671 2672 2673 2698
+north_sea_queen_sea_area = { 
+	176 177 2668 2669 2670 2671 2672 2673 2698 
 }
-north_natalia_coast_sea_area = {
-	107 122 2692 2693 2694
+north_natalia_coast_sea_area = { 
+	107 122 2692 2693 2694 
 }
-esta_lake_sea_area = {
-	126 127
+esta_lake_sea_area = { 
+	126 127 124 
 }
-the_navy_coast_sea_area = {
-	105 2689 2690 2691 2695
+the_navy_coast_sea_area = { 
+	105 2689 2690 2691 2695 2764 2771 2773 2772 
 }
-east_ilias_coast_sea_area = {
-	115 116 117
+east_ilias_coast_sea_area = { 
+	115 116 117 2788 2787 2765 2766 2767 
 }
-south_ilias_coast_sea_area = {
-	112 113 118 2705
+south_ilias_coast_sea_area = { 
+	112 113 118 2705 2769 2768 2751 2754 2753 2752
+	2750 2756 2757 2749 2759 2758 
 }
-iliasport_coast_sea_area = {
-	106 # warp shrine
-	108 2696 2697
+iliasport_coast_sea_area = { 
+	106 108 2696 2697 2762 2763 
 }
-southern_sea_queen_sea_area = {
-	109 110 2699 2700 2701 2716  
+southern_sea_queen_sea_area = { 
+	109 110 2699 2700 2701 2716 2761 
 }
-roach_sea_area = {
-	120 2702 2703
+roach_sea_area = { 
+	120 2702 2703 2770 2760 
 }
-sabasa_coast_sea_area = {
-	2707 2704 2706
+sabasa_coast_sea_area = { 
+	2707 2704 2706 
 }
-wendigo_coast_sea_area = {
-	159 125 121 111
+wendigo_coast_sea_area = { 
+	159 125 121 111 2746 2745 2747 2748 
 }
-magistea_coast_sea_area = {
-	139 140 141 2658 2708 2709 2710 2711 2712
+magistea_coast_sea_area = { 
+	139 140 141 2658 2708 2709 2710 2711 2712 
 }
-north_hellgondo_sea_area = {
-	2717 2718 2719 2720 2723 199
+north_hellgondo_sea_area = { 
+	2717 2718 2719 2720 2723 199 2733 2734 2735 
 }
-hellgondo_gold_sea_area = {
-	145 201 2661 2662 2663 2664 2665 2666 2667
+hellgondo_gold_sea_area = { 
+	145 201 2661 2662 2663 2664 2665 2666 2667 2731
 }
-monster_lord_sea_area = {
-	150 151 2657 2659 2660 143
+monster_lord_sea_area = { 
+	150 151 2657 2659 2660 143 2732 
 }
-unknown_island_sea_area = {
-	146 154 2721 2722
+unknown_island_sea_area = { 
+	146 154 2721 2722 2736 2737 
 }
-vampire_queen_sea_area = {
-	152 2726 2727 2728 # vampire queen
-	175 2725
-	2729 2730 # north pole coast
-	2724 165 # great ocean
+vampire_queen_sea_area = { 
+	152 2726 2727 2728 175 2725 2729 2730 2724 165
+	2738 2739 2740 
 }
-central_sentora_tartarus_sea_area = {
-	130 2625 2626 2627 2628 2629 2630 # bordering tartarus
-	132 2621 2622 2623 #spider princess area
-	2624 2631 2632 2633  # bordering devestated plains
-	131 2634 2635 2636 2637 #goddard coast
-	2638 2639 2640 2641 # Lyra / Forest of Spirits coast
-	128 2642 2643 2644 2645 # coast of safar ruins
+central_sentora_tartarus_sea_area = { 
+	130 2625 2626 2627 2628 2629 2630 132 2621 2622
+	2623 2624 2631 2632 2633 131 2634 2635 2636 2637
+	2638 2639 2640 2641 128 2642 2643 2644 2645 
 }
-saloon_coast_sea_area = {
-	134 2646 2647 2648 2649 2650 # coast of Saloon
-	137 2651 #fishy pirates
-	2653
+saloon_coast_sea_area = { 
+	134 2646 2647 2648 2649 2650 137 2651 2653 
 }
-western_gold_sea_area = {
+western_gold_sea_area = { 
 	133 2654 2655 2656 
 }
-snow_heaven_sea_area = {
-	142 2713 2714 2715
-	#deep ocean
-	144 197 202 2652
+snow_heaven_sea_area = { 
+	142 2713 2714 2715 144 197 202 2652 
 }
 orcish_area = { 
 	26 27 29 
@@ -399,7 +385,7 @@ eastern_natalia_area = {
 	529 531 492 491 
 }
 port_marle = { 
-	551 539 532 533 
+	551 539 533 
 }
 fusuma_coast = { 
 	566 554 575 
@@ -471,7 +457,7 @@ marle_road_area = {
 	534 541 
 }
 thehad_coast = { 
-	511 508 510 
+	511 532 508 510 
 }
 pitcher_grove = { 
 	509 512 513 498 
@@ -1894,4 +1880,27 @@ permafrost_coast = {
 }
 south_jellyfish_area = { 
 	2592 2591 2594 2593 
+}
+gloria_isles_area = { 
+	2780 2779 2781 2777 2778 
+}
+western_gloria_isles_area = { 
+	2785 2784 2783 2782 
+}
+gloria_treasury_area = { 
+	2774 2776 2775 
+}
+sea_dragon_isles_area = { 
+	2794 2793 2792 2791 
+}
+manta_isles_area = { 
+	2798 2800 2799 
+}
+sea_dragon_area = { 
+	2797 2795 2796 
+}
+western_great_sea_area = { 
+	158 147 153 157 149 155 148 169 170 171
+	173 163 2744 2743 200 2742 162 174 172 198
+	168 160 156 167 161 
 }

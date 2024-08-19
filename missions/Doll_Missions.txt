@@ -90,7 +90,7 @@ doll_internal_development = {
 		trigger = {
 			dip_tech = 10
 			num_of_diplomats = 4
-			treasury 1500
+			treasury = 1500
 		}
 		
 		effect = {

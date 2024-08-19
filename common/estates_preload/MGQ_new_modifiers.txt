@@ -71,4 +71,27 @@ estate_spiritualists = {
 		}
 	}
 }
+estate_apoptosis = {
+	modifier_definition = {
+		type = loyalty
+		key = apoptosis_loyalty_modifier
+		trigger = {
+			has_estate = estate_apoptosis
+		}
+	}
+	modifier_definition = {
+		type = influence
+		key = apoptosis_influence_modifier
+		trigger = {
+			has_estate = estate_apoptosis
+		}
+	}
+	modifier_definition = {
+		type = privileges
+		key = apoptosis_privilege_slots
+		trigger = {
+			has_estate = estate_apoptosis
+		}
+	}
+}
 

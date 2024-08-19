@@ -1,0 +1,149 @@
+# For Government Reforms to identify properly influence and loyalty modifiers, remember to put disqualifying triggers before the has_reform
+
+estate_apoptosis = {
+	icon = 19
+	# Used for when declaring independence
+	independence_tech_group = TECH_APOPTOSIS
+	province_independence_weight = {
+		factor = 1
+		modifier = {
+			factor = 2
+			religion = chaos_religion
+		}
+		modifier = {
+			factor = 2
+			culture_group = apoptosis
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { development = 10 }
+		}
+		modifier = {
+			factor = 0.75
+			development = 15
+		}
+		modifier = {
+			factor = 0.75
+			development = 20
+		}
+	}
+
+
+	# If true, country will get estate
+	trigger = {
+					OR = {
+						unit_type = TECH_APOPTOSIS
+					}
+	}
+
+	# These scale with loyalty & power
+	country_modifier_happy = {
+		development_cost_modifier = 0.10
+		land_maintenance_modifier = -0.33
+		culture_conversion_time = -0.33
+	}
+	country_modifier_neutral = {	
+		land_maintenance_modifier = -0.15
+		culture_conversion_time = -0.15
+	}	
+	country_modifier_angry = {
+		shock_damage_received = 0.10
+		fire_damage_received = 0.10
+		military_tactics = -0.10
+	}
+	land_ownership_modifier = {
+		apoptosis_loyalty_modifier = 0.2
+	}
+	
+
+	# Influence modifiers
+	base_influence = 10
+	influence_modifier = {
+		desc = EST_VAL_OTHER_ESTATE_IN_POWER
+		trigger = {
+			OR = {
+				has_disaster = estate_nobility_disaster
+				has_disaster = estate_church_disaster
+				has_disaster = estate_burghers_disaster
+				has_disaster = estate_brahmins_disaster
+				has_disaster = estate_vaisyas_disaster
+				has_disaster = estate_jains_disaster
+
+			}
+		}
+		influence = -40
+	}
+	
+	#Loyalty Modifiers
+	loyalty_modifier = {
+		desc = EST_VAL_OTHER_ESTATE_IN_POWER_LOY
+		trigger = {
+			OR = {
+				has_disaster = estate_nobility_disaster
+				has_disaster = estate_church_disaster
+				has_disaster = estate_burghers_disaster
+				has_disaster = estate_brahmins_disaster
+				has_disaster = estate_vaisyas_disaster
+				has_disaster = estate_jains_disaster
+
+			}
+		}
+		loyalty = -20
+	}
+
+	privileges = {
+		estate_apoptosis_land_rights
+		estate_autonomy_of_apoptosis
+		estate_apoptosis_sea_dweller 
+		estate_makina_reinforced_coastline 
+		estate_apoptosis_abyssal_spawn 
+		estate_apoptosis_adaptive_morphology 
+		estate_apoptosis_heavy_chitinous_plates 
+		estate_apoptosis_advanced_shesta_types 
+		estate_apoptosis_laser_eye_scissor_legs 
+		estate_apoptosis_chaos_researchers 
+		estate_apoptosis_gunner_roids 
+		estate_apoptosis_versatile_engineering_machinery 
+		estate_apoptosis_song_enveloping_the_world 
+		estate_apoptosis_herald_of_demise 
+		estate_apoptosis_riot_types 
+		estate_apoptosis_proud_dragonkin 
+		estate_apoptosis_lunatic_beasts 
+		estate_apoptosis_alraunes_desire_to_live 
+		estate_apoptosis_healing_honey 
+		estate_apoptosis_flesh_petal_traps 
+		estate_apoptosis_monstrous_physiology 
+		estate_apoptosis_vetala_types 
+		estate_apoptosis_gaping_void 
+		estate_apoptosis_bio-mechanical_mastery
+		estate_apoptosis_adaptive_architecture
+		estate_apoptosis_self-regeneration_protocols
+		estate_apoptosis_void_resonance
+		estate_apoptosis_invasive_absorption 
+		estate_apoptosis_whispers_of_madness 
+		estate_apoptosis_scylla_apoptosis 
+		estate_apoptosis_amphil_types 
+		estate_apoptosis_overpowering_fist 
+		estate_apoptosis_angel_apoptosis 
+		estate_apoptosis_divine_forging 
+		estate_apoptosis_holy_dark_fusion 
+		
+		
+		
+		
+		
+	}
+
+	agendas = {
+		estate_apoptosis_develop_x
+		estate_apoptosis_crush_revolts 
+		estate_apoptosis_regain_liberty 
+		estate_apoptosis_convert_province_culture 
+		estate_apoptosis_build_up_manpower_reserves 
+		estate_apoptosis_convert_province_x 
+	}
+
+	color = { 162 173 173 }
+	
+	influence_from_dev_modifier = 1.0
+}

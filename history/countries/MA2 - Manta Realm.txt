@@ -1,0 +1,17 @@
+government = monarchy
+religion = water_religion
+technology_group = TECH_MERMAID
+primary_culture = Manta_Girl
+add_government_reform = Mermaid_realm
+government_rank = 1
+1444.1.1 = { 
+	monarch = { 
+		name = "Aqua"
+		dynasty = "the Manta"
+		birth_date = 1424.1.1
+		adm = 4
+		dip = 5
+		mil = 3
+		female = yes
+	}
+}

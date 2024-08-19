@@ -2729,12 +2729,82 @@ province;red;green;blue;x;x
 2728;63;46;209;Sea tile moread;x
 2729;212;157;232;Sea tile moread;x
 2730;211;168;227;Sea tile moread;x
-2731;228;228;170;Eastern St. Amos Mountains;x
-2732;200;200;125;Anteater Hills;x
-2733;181;181;146;San Ilia Hills;x
-2734;229;229;131;Christie Hills;x
-2735;194;194;62;Urscylla Mountains;x
-2736;225;225;144;Western Marle Mountains;x
-2737;211;211;46;Central Marle Mountains;x
-2738;159;159;111;Eastern Marle Mountains;x
-2739;197;197;30;Thehad Mountains;x
+2731;53;255;77;Guugu Yimithirr;x
+2732;45;107;40;Wulgurukaba;x
+2733;255;101;63;Baiali;x
+2734;170;83;124;Yuin;x
+2735;32;82;163;Gunditjmara;x
+2736;253;255;158;Nukunu;x
+2737;124;56;0;Ahuriri;x
+2738;186;139;0;Waitaha;x
+2739;152;83;186;Kirikiriroa;x
+2740;249;177;179;Borneo;x
+2741;138;58;45;Jeju;x
+2742;162;64;128;Yukjin;x
+2743;209;139;185;Gyeongseong;x
+2744;122;48;97;Nyeongbyeon;x
+2745;134;53;105;West Gyeongsang;x
+2746;213;38;84;Vidin;x
+2747;106;186;80;Khara Narin Ula;x
+2748;80;32;128;Jianchang;x
+2749;37;208;234;Tikhvin;x
+2750;234;227;107;Plovdiv;x
+2751;68;230;179;Cuenca;x
+2752;3;196;128;Romsdal;x
+2753;188;67;67;Narbonne;x
+2754;231;35;179;La Mancha;x
+2755;68;8;179;Soria;x
+2756;166;56;206;Welayta;x
+2757;86;116;66;Kaffa;x
+2758;46;186;146;Illubabor;x
+2759;116;166;116;Gambela;x
+2760;126;216;46;Hadiya;x
+2761;134;44;124;Arsi;x
+2762;120;55;111;Damot;x
+2763;48;148;218;Asosa;x
+2764;26;216;116;Ausa;x
+2765;146;66;126;Assab;x
+2766;186;46;176;Mendefera;x
+2767;82;128;128;Enderta;x
+2768;198;74;105;Angot;x
+2769;193;91;31;Lasta;x
+2770;58;147;124;Agew;x
+2771;71;100;145;Semien;x
+2772;145;101;5;Dembiya;x
+2773;151;190;194;Mora;x
+2774;93;188;84;Kismayo;x
+2775;204;79;98;Merca;x
+2776;89;155;254;Afgooye;x
+2777;89;124;82;Bardera;x
+2778;178;66;140;Warder;x
+2779;183;255;142;Afder;x
+2780;219;174;92;Beledweyne;x
+2781;89;138;43;Gedo;x
+2782;206;152;45;Warsheikh;x
+2783;155;170;68;Hobyo;x
+2784;142;151;215;Galkayo;x
+2785;255;153;153;El Buur;x
+2786;86;100;255;Bosaso;x
+2787;201;151;89;Hamasien;x
+2788;201;201;89;Hafun;x
+2789;194;170;163;Las Khorey;x
+2790;194;89;105;Sanaag;x
+2791;126;107;255;Ankober;x
+2792;211;163;46;Togdheer;x
+2793;97;209;85;Hargeisa;x
+2794;206;145;88;Barawa;x
+2795;206;101;70;Meregh;x
+2796;183;132;255;Pate;x
+2797;200;122;110;Shendy;x
+2798;160;160;88;Soba;x
+2799;48;97;59;Sennar;x
+2800;167;174;136;Kosti;x
+2801;228;228;170;Eastern St. Amos Mountains;x
+2802;200;200;125;Anteater Hills;x
+2803;181;181;146;San Ilia Hills;x
+2804;229;229;131;Christie Hills;x
+2805;194;194;62;Urscylla Mountains;x
+2806;225;225;144;Western Marle Mountains;x
+2807;211;211;46;Central Marle Mountains;x
+2808;159;159;111;Eastern Marle Mountains;x
+2809;197;197;30;Thehad Mountains;x

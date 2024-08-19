@@ -22,8 +22,50 @@ Apoptosis_realm = {
 		monarch_lifespan = 1
 		diplomats = -1
 		stability_cost_to_declare_war = -2
+		global_tax_income = 60
 		global_autonomy = -0.05
 		governing_capacity = 250
+		block_introduce_heir = yes
+	}
+	custom_attributes = {
+		queen = no
+	}
+	conditional = {
+		allow = { has_dlc = "Rights of Man" }
+		has_harem = yes
+	}
+}
+
+High_Apoptosis_realm = {
+	lock_level_when_selected = yes
+	icon = "high_apoptosis_realm"
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			culture_group = apoptosis
+			AND = {
+				is_playing_custom_nation = yes
+				have_had_reform = High_Apoptosis_realm
+			}
+		}
+		OR = {
+			government_rank = 3
+			mission_completed  = gen_high_apoptosis_ambitions 
+			tag = AD1
+			tag = SO1
+		}
+	}
+
+	valid_for_new_country = no
+	valid_for_nation_designer = yes
+	nation_designer_cost = 80
+	legacy_equivalent = ottoman_government_legacy
+	raze_province = yes
+	modifiers = {
+		monarch_lifespan = 1
+		stability_cost_to_declare_war = -2
+		land_maintenance_modifier = -0.50	
+		governing_capacity = 500
 		block_introduce_heir = yes
 	}
 	custom_attributes = {
@@ -2380,6 +2422,40 @@ Giant_realm = {
 		fire_damage_received = 0.15
 		movement_speed = -0.15
 		monarch_lifespan = 1
+		block_introduce_heir = yes
+	}
+	custom_attributes = {
+		queen = no
+	}
+	conditional = {
+		allow = { has_dlc = "Rights of Man" }
+		has_harem = yes
+	}
+}
+gloria_pirates_reform = {
+	lock_level_when_selected = yes
+	icon = "gloria_pirates"
+	allow_normal_conversion = no
+	potential = {
+    		OR = {
+			tag = GL1
+			was_tag = GL1
+			have_had_reform = gloria_pirates_reform 
+			AND = {
+				is_playing_custom_nation = yes
+				have_had_reform = gloria_pirates_reform 
+			}
+		}
+	}
+	valid_for_new_country = no
+	valid_for_nation_designer = no
+	nation_designer_cost = 40
+	legacy_equivalent = ottoman_government_legacy
+	modifiers = {
+		governing_capacity = 200
+		navy_tradition = 1
+		max_admiral_fire = 1
+		may_perform_slave_raid_on_same_religion = yes
 		block_introduce_heir = yes
 	}
 	custom_attributes = {

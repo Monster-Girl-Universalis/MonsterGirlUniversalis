@@ -315,6 +315,11 @@ spriteTypes = {
 		allwaystransparent = yes	
 	}
 	spriteType = {
+		name = "XX_APOPTOSIS_eventPicture"
+		texturefile = "gfx/event_pictures/XX_APOPTOSIS_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
 		name = "MONSTER_LORD_SLAYER_eventPicture"
 		texturefile = "gfx/event_pictures/MONSTER_LORD_SLAYER_eventPicture.dds"
 		allwaystransparent = yes

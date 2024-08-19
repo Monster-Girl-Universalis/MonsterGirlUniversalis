@@ -33,7 +33,8 @@ country_decisions = {
 		effect = {
 
 			change_tag = SI1
-
+			change_government = theocracy 
+			add_government_reform = san_ilia_holy_kingdom_reform
 			if = {
 				limit = {
 					NOT = { government_rank = 3 }
@@ -98,7 +99,8 @@ country_decisions = {
 		effect = {
 
 			change_tag = SA1
-
+			change_government = monarchy 
+			add_government_reform = sabasa_reform 
 			if = {
 				limit = {
 					NOT = { government_rank = 3 }
@@ -163,7 +165,8 @@ country_decisions = {
 		effect = {
 
 			change_tag = GR2
-
+			change_government = monarchy 
+			add_government_reform = grand_noah_reform 
 			if = {
 				limit = {
 					NOT = { government_rank = 3 }
@@ -228,7 +231,8 @@ country_decisions = {
 		effect = {
 
 			change_tag = GR4
-
+			change_government = monarchy 
+			add_government_reform = grangold_reform 
 			if = {
 				limit = {
 					NOT = { government_rank = 3 }
@@ -294,6 +298,8 @@ country_decisions = {
 		}
 		effect = {
 			change_tag = RE1
+			change_government = monarchy 
+			add_government_reform = remina_reform 
 			remina_bay_area = {
 				change_culture = remina_human
 				change_religion = ROOT

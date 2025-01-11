@@ -30,3 +30,5 @@ discovered_by = TECH_YOUMA
 add_core = EL1
 owner = EL1
 controller = EL1
+discovered_by = TECH_FAIRY
+discovered_by = TECH_GHOST

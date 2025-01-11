@@ -1,34 +1,27 @@
 gen_slime_growing_prosperity = {
 	global_prosperity_growth = 0.20
 }
-
 gen_slime_court = {
 	advisor_cost = -0.10
 	advisor_pool = 2
 }
-
 gen_slime_efficient_resources = {
 	global_trade_goods_size = 0.05
 	development_cost = -0.05
 }
-
 gen_slime_food_production_boom = {
 	trade_goods_size = 1.5
 }
-
 gen_slime_prosperous_realm = {
 	production_efficiency = 0.10
 	global_prosperity_growth = 0.10	
 }
-
 gen_slime_trade_advancements = {
 	trade_efficiency = 0.1
 }
-
 gen_slime_boomerang_monopoly = {
 	global_own_trade_power = 0.20
 }
-
 gen_slime_recognised_by_erubetie = {
 	improve_relation_modifier = 0.25
 	diplomatic_reputation = 1
@@ -38,21 +31,17 @@ gen_land_dweller_accepted_races = {
 	global_autonomy = -0.025
 	num_accepted_cultures = 1
 }
-
 gen_land_dweller_efficient_resources = {
 	development_cost = -0.1
 }
-
 gen_land_dweller_got_rid_of_salt = {
 	stability_cost_modifier = -0.30
 	global_unrest = -2
 }
-
 gen_land_dweller_prosperous_realm = {
 	global_supply_limit_modifier = 0.30
 	global_monthly_devastation = -0.20	
 }
-
 gen_land_dweller_secured_army_supplies = {
 	global_regiment_cost = -0.10
 	global_regiment_recruit_speed = -0.10
@@ -62,21 +51,14 @@ gen_land_dweller_secured_army_supplies = {
 gen_undead_governing_advancements = {
 	monthly_reform_progress_modifier = 0.15
 }
-
-gen_undead_justified_ghost_warfare = {
-	diplomatic_reputation = 1
-}
-
 gen_undead_deathmarch_of_zombie_hordes = {
 	land_forcelimit_modifier = 0.20
 	manpower_recovery_speed = 0.40
 }
-
 gen_undead_grandeur_necromancer = {
 	prestige = 1
 	all_power_cost = -0.04
 }
-
 gen_undead_trade_advancements = {
 	global_trade_power = 0.1
 	trade_steering = 0.1
@@ -95,30 +77,24 @@ gen_alraune_diplomacy = {
 	diplomatic_reputation = 1
 	diplomatic_upkeep = 1
 }
-
 gen_alraune_nature_dominion = {
 	development_cost = -0.1
 	build_cost = -0.1
 }
-
 gen_alraune_floral_enchantment = {
 	all_power_cost = -0.05
 	global_institution_spread = 0.20
 }
-
 gen_alraune_food_production_boom = {
 	trade_goods_size = 1.5
 }
-
 gen_alraune_blooming_empire = {
 	monthly_splendor = 1
 	advisor_cost = -0.25
 }
-
 gen_alraune_advanced_healing_honey = {
 	production_efficiency = 0.10
 }
-
 gen_alraune_unleash_floral_fury = {
 	land_morale = 0.075
 	shock_damage = 0.075
@@ -132,29 +108,23 @@ gen_alraune_powerful_plant_girl = {
 gen_succubi_diplomacy = {
 	diplomatic_reputation = 2
 }
-
 gen_succubi_seduction = {
 	diplomatic_upkeep = 2
 }
-
 gen_succubi_vassals = {
 	diplomatic_annexation_cost = -0.15
 	unjustified_demands = -0.15
 }
-
 gen_succubi_subversion = {
 	spy_offence = 0.33
 	can_claim_states = yes
 }
-
 gen_succubi_encourage_marriages = {
 	global_manpower_modifier = 0.15
 }
-
 gen_succubi_expand_influence = {
 	province_warscore_cost = -0.15
 }
-
 gen_succubi_powerful_girl = {
 	ae_impact = -0.2
 	accept_vassalization_reasons = 20
@@ -164,36 +134,29 @@ gen_beast_unity = {
 	global_unrest = -1.5
 	stability_cost_modifier = -0.2	
 }
-
 gen_beast_warmastery = {
 	army_tradition_from_battle = 0.2
 	army_tradition = 1
 }
-
 gen_realm_of_the_wild = {
 	global_monthly_devastation = -0.5
 	hostile_attrition = 1
 }
-
 gen_beast_apex = {
 	country_military_power = 1
 }
-
 gen_beast_primal = {
 	all_power_cost = -0.025
 	free_policy = 1
 }
-
 gen_beast_strengthen_beast_girls = {
 	infantry_power = 0.15
 }
-
 gen_beast_secured_army_supplies = {
 	global_regiment_cost = -0.10
 	global_regiment_recruit_speed = -0.10
 	land_maintenance_modifier = -0.05
 }
-
 gen_beast_powerful_beast_girl = {
 	raze_power_gain = 0.20
 	siege_ability = 0.20
@@ -203,36 +166,29 @@ gen_elf_internal_harmony = {
 	build_cost = -0.1
 	diplomatic_reputation = 1
 }
-
 gen_elf_nature_dominion = {
 	development_cost = -0.15
 }
-
-gen_channel_fairy_magic = {
+gen_channel_elf_magic = {
 	build_cost = -0.1
 	expand_administration_cost = -0.25
 }
-
 gen_elf_magical_supplies_boom = {
 	trade_goods_size = 1.25
 	local_monthly_devastation = -0.75
 }
-
 gen_elf_arcane_paradise = {
 	build_time = -0.15
 	great_project_upgrade_time = -0.15
 }
-
 gen_integrate_elven_warfare = {
 	land_maintenance_modifier = -0.15
 }
-
 gen_elf_channel_spirits_of_nature = {
 	monthly_splendor = 2
 	advisor_cost = -0.15
 	
 }
-
 gen_elf_powerful_elf_girl = {
 	shock_damage = 0.125
 	shock_damage_received = -0.125
@@ -242,36 +198,29 @@ gen_harpy_diplomacy = {
 	diplomatic_upkeep = 1
 	envoy_travel_time = -0.10
 }
-
 gen_harpy_accepted_races_in_our_realm = {
 	global_autonomy = -0.03
 	diplomatic_reputation = 1	
 }
-
 gen_harpy_cultivate_the_fields = {
 	production_efficiency = 0.10
 	development_cost = -0.05
 }
-
 gen_harpy_establish_feathers_market = {
 	trade_efficiency = 0.05
 	envoy_travel_time = -0.20
 }
-
 gen_harpy_prosperous_powerhouse = {
 	advisor_pool = 3
 	country_diplomatic_power = 1
 }
-
 gen_harpy_establish_harpy_regiments = {
 	global_manpower_modifier = 0.10
 }
-
 gen_harpy_secure_army_supplies = {
 	global_regiment_cost = -0.10
 	global_regiment_recruit_speed = -0.20	
 }
-
 gen_harpy_powerful_harpy_girl = {
 	shock_damage = 0.10	
 	spy_offence = 0.50
@@ -280,20 +229,16 @@ gen_harpy_powerful_harpy_girl = {
 gen_kitsune_thin_fried_tofu_production = {
 	trade_goods_size = 0.5
 }
-
 gen_kitsune_funded_sages = {
 	global_tax_modifier = 0.15
 }
-
 gen_kitsune_food_production_boom = {
 	trade_goods_size = 1.5
 }
-
 gen_kitsune_prosperous_realm = {
 	production_efficiency = 0.10
 	global_prosperity_growth = 0.10	
 }
-
 gen_kitsune_expand_our_realm = {
 	shock_damage = 0.10	
 	fire_damage = 0.10
@@ -303,12 +248,10 @@ gen_insect_swarm_unity = {
 	land_maintenance_modifier = -0.10	
 	diplomatic_reputation = 1
 }
-
 gen_insect_enhance_the_breeding_grounds = {
 	build_cost = -0.10	
 	build_time = -0.10
 }
-
 gen_insect_fortify_the_realm = {
 	fort_maintenance = -0.50
 	land_maintenance_modifier = -0.15
@@ -318,15 +261,12 @@ gen_insect_secure_food_production = {
 	development_cost = -0.10
 	production_efficiency = 0.10
 }
-
 gen_insect_infrastructure_for_huge_population = {
 	global_manpower_modifier = 0.15
 }
-
 gen_insect_incorporate_swarm_tactics = {
 	global_monthly_devastation = -0.1
 }
-
 gen_insect_secured_army_supplies = {
 	global_regiment_cost = -0.10
 	global_regiment_recruit_speed = -0.10
@@ -337,20 +277,16 @@ gen_sea_dweller_infrastructure_for_fleet = {
 	global_ship_cost = -0.25
 	naval_forcelimit_modifier = 0.10
 }
-
 gen_sea_dweller_pearl_production_mastery = {
 	trade_goods_size = 1.5
 }
-
 gen_seahorse_marine_department = {
 	country_diplomatic_power = 1
 }
-
 gen_sea_dweller_wisdom_of_the_deep = {
 	all_power_cost = -0.025
 	possible_policy = 1
 }
-
 gen_sea_dweller_secured_naval_supplies = {
 	global_ship_recruit_speed = -0.25
 	naval_maintenance_modifier = -0.15
@@ -360,26 +296,21 @@ gen_mermaid_diplomacy = {
 	diplomatic_reputation = 1
 	diplomatic_upkeep = 1
 }
-
 gen_mermaid_build_trade_fleet = {
 	global_ship_recruit_speed = -0.20
-	ship_trade_power_modifier = 0.20
+	global_ship_trade_power = 0.20
 }
-
 gen_mermaid_vibrant_economy = {
 	development_cost = -0.075
 	build_cost = -0.075
 }
-
 gen_mermaid_monopoly_on_food = {
 	trade_efficiency = 0.10
 	global_trade_goods_size_modifier = 0.05
 }
-
 gen_mermaid_promote_mermaid_pubs = {
 	global_sailors_modifier = 0.15
 }
-
 gen_mermaid_secured_naval_supplies = {
 	naval_maintenance_modifier = -0.15
 	naval_forcelimit_modifier = 0.15
@@ -412,6 +343,7 @@ gen_doll_powerful_doll_girl_mod = {
 	prestige_decay = -0.02
 	manpower_recovery_speed = 0.33
 }
+
 gen_angel_adherence_to_ilias_faith_mod = {
 	prestige = 0.5
 	stability_cost_modifier = -0.10
@@ -443,6 +375,7 @@ gen_high_angel_mod = {
 	discipline = 0.05
 	military_tactics = 0.05
 }
+
 gen_lamia_diplomacy = {
 	diplomatic_upkeep = 2
 }
@@ -461,6 +394,7 @@ gen_lamia_secure_flail_production = {
 	shock_damage = 0.075
 	infantry_shock = 0.25
 }
+
 gen_yoma_secure_rapier_production = {
 	infantry_power = 0.10
 	infantry_cost = -0.10
@@ -476,6 +410,7 @@ gen_yoma_rapiers_and_magic_mod = {
 	shock_damage = 0.10
 	fire_damage = 0.10
 }
+
 gen_demi_human_diplomacy = {
 	diplomatic_upkeep = 1
 	dip_advisor_cost = -0.15
@@ -500,6 +435,7 @@ gen_demi_human_youkai_warfare_mod = {
 	shock_damage = 0.15
 	infantry_shock = 0.15
 }
+
 gen_dragon_unity = {
 	advisor_cost = -0.10
 	stability_cost_modifier = -0.2	
@@ -525,6 +461,7 @@ gen_dragon_secured_army_supplies = {
 	global_regiment_recruit_speed = -0.10
 	land_maintenance_modifier = -0.15	
 }
+
 gen_scylla_seafood_production_mod = {
 	trade_goods_size = 0.5	
 }
@@ -543,6 +480,7 @@ gen_scylla_warfare_mod = {
 	infantry_shock = 0.25	
 	galley_power = 0.25
 }
+
 gen_human_prosperity_and_control_mod = {
 	global_monthly_devastation = -0.1
 	build_cost = -0.15
@@ -568,7 +506,7 @@ gen_human_increase_military_budget_mod = {
 }
 gen_powerful_human_ruler_mod = {
 	prestige = 1
-	stability_cost_modifier = -0.10
+	stability_cost_modifier = -0.20
 }
 gen_human_challenge_the_major_powers = {
 	monarch_admin_power = 1
@@ -576,6 +514,7 @@ gen_human_challenge_the_major_powers = {
 	monarch_military_power = 1
 	monthly_splendor = 1
 }
+
 gen_vampire_court_affairs_mod = {
 	same_culture_advisor_cost = -0.25
 	yearly_corruption = -0.25
@@ -596,6 +535,7 @@ gen_vampire_expand_our_realm_mod = {
 	infantry_power = 0.10
 	country_admin_power = 1
 }
+
 gen_apoptosis_exploring_the_world_mod = {
 	auto_explore_adjacent_to_colony = yes
 	country_diplomatic_power = 1
@@ -614,8 +554,9 @@ gen_apoptosis_quality_precision_mod = {
 }
 gen_apoptosis_powerful_apoptosis_mod = {
 	development_cost_modifier = -0.10
-	culture_conversion_time = -0.10
+	culture_conversion_time = -0.15
 }
+
 gen_chimera_collect_genetic_material_mod = {
 	yearly_innovativeness = 0.10
 	advisor_cost = -0.10
@@ -634,6 +575,7 @@ gen_chimeric_armies_mod = {
 gen_chimera_racial_ideas = {
 	all_power_cost = -0.05
 }
+
 gen_tanuki_cultivate_the_fields = {
 	production_efficiency = 0.05
 	development_cost = -0.10
@@ -642,6 +584,7 @@ gen_tanuki_assemble_ninjas_mod = {
 	spy_offence = 0.20
 	army_tradition = 1
 }
+
 gen_roid_mechanical_maids_mod = {
 	all_power_cost = -0.025
 	country_admin_power = 1
@@ -665,6 +608,37 @@ gen_roid_secure_parts_for_roid_production_mod = {
 gen_roid_powerful_roid_girl_mod = {
 	build_cost = -0.10
 	build_time = -0.10
+}
+gen_ghost_justified_ghost_warfare = {
+	diplomatic_reputation = 1
+}
+gen_ghost_haunted_forts = {
+	fort_maintenance_modifier = -0.50
+	global_garrison_growth = 0.50
+	garrison_damage = 0.50	
+}
+gen_ghost_magical_supplies_boom = {
+	trade_goods_size = 2
+}
+gen_ghost_prosperous_realm = {
+	development_cost_in_primary_culture = -0.15
+	build_cost = -0.10	
+}
+gen_fairy_internal_harmony = {
+	build_cost = -0.15	
+}
+gen_fairy_nature_dominion = {
+	global_trade_goods_size = 0.20	
+}
+gen_fairy_channel_fairy_magic = {
+	development_cost = -0.10
+	build_time = -0.15	
+}
+gen_fairy_establish_fairy_regiments = {
+	shock_damage = 0.15	
+}
+gen_fairy_powerful_fairy_girl = {
+	country_military_power = 1	
 }
 
 ###San Ilia
@@ -710,7 +684,7 @@ power_of_the_wind_harnessed = {
 	movement_speed = 0.10
 }
 si1_trading_fleet = {
-	ship_trade_power_modifier = 0.2
+	global_ship_trade_power = 0.2
 	light_ship_cost = -0.30
 }
 si1_dreadnoughts = {
@@ -752,4 +726,393 @@ delve_deeper_to_the_facilities_secrets = {
 	country_administrative_power = -1
 	country_diplomatic_power = -1
 	country_military_power = -1
+}
+
+###Tamamo
+KI1_harmony_in_kitsune_village = {
+	advisor_cost = -0.10
+	advisor_pool = 1
+}
+KI1_kitsune_udon_delicacies = {
+	trade_goods_size = 1
+}
+KI1_taoism_training_center = {
+	allowed_num_of_manufactories = 1
+	fort_level = 1
+	local_manpower = 3
+}
+KI1_kitsune_artisanry_mod = {
+	build_cost = -0.10
+	build_time = -0.15
+}
+KI1_tamamo_stop_cow_demon_plans_mod = {
+	production_efficiency = 0.15
+	infantry_shock = 0.25
+}
+KI1_raise_the_trading_fleet = {
+	trade_efficiency = 0.20
+}
+KI1_challenge_grand_noah_mod = {
+	land_forcelimit_modifier = 0.15
+	free_leader_pool = 2
+}
+ki1_protector_of_grand_noah = {
+	land_morale = 0.15
+	global_regiment_recruit_speed = -0.15
+}
+ki1_conscription_of_insects_and_plants = {
+	manpower_recovery_speed = 0.20
+	recover_army_morale_speed = 0.10
+}
+ki1_protector_of_plansect = {
+	defensiveness = 0.25
+	garrison_size = 0.15
+}
+ki1_integrated_tanuki = {
+	num_accepted_cultures = 1
+}
+ki1_youkai_diversity = {
+	num_accepted_cultures = 2
+}
+ki1_protector_of_finoa = {
+	ae_impact = -0.15
+	diplomatic_upkeep = 2
+}
+ki1_tamamo_on_ilias_continent = {
+	improve_relation_modifier = 0.2
+	province_warscore_cost = -0.1
+}
+ki1_samurai_and_kunoichi_elves = {
+	infantry_shock = 0.20
+	infantry_fire = 0.20
+}
+ki1_protector_of_yamatai = {
+	development_cost = -0.10
+	build_cost = -0.10
+}
+ki1_raise_the_navy = {
+	naval_morale = 0.1
+	ship_durability = 0.1
+}
+ki1_gateway_to_seven_seas = {
+	sailors_recovery_speed = 0.25
+	siege_blockade_progress = 1
+}
+KI1_elven_ninjutsu = {
+	shock_damage = 0.10
+}
+KI1_succubi_ninjutsu = {
+	morale_damage = 0.10
+}
+KI1_harpy_ninjutsu = {
+	movement_speed = 0.15
+}
+KI1_scylla_ninjutsu = {
+	infantry_power = 0.10
+}
+KI1_arachne_ninjutsu = {
+	morale_damage_received = -0.10
+}
+KI1_kitsune_ninjutsu = {
+	fire_damage = 0.10
+}
+
+###Enrika
+ENV_enrika_council = {
+	advisor_cost = -0.05
+	advisor_pool = 3
+}
+ENV_tranquility = {
+	global_trade_goods_size_modifier = 0.15
+}
+ENV_enrika_refuge = {
+	global_unrest = -1
+}
+ENV_cultivate_fields_mod = {
+	development_cost = -0.10
+}
+ENV_enrika_craftsmanship_mod = {
+	build_cost = -0.20
+	build_time = -0.15
+}
+ENV_enrika_economic_powerhouse = {
+	production_efficiency = 0.20
+	trade_efficiency = 0.15
+}
+ENV_fallen_angel_officers_mod = {
+	leader_land_shock = 1
+	leader_land_manuever = 1
+	leader_land_fire = 1
+}
+ENV_enrikan_makina = {
+	all_power_cost = -0.03
+	technology_cost = -0.10
+}
+ENV_dark_elven_magic = {
+	fire_damage = 0.075
+	shock_damage = 0.075
+}
+ENV_fairy_magic = {
+	global_monthly_devastation = -0.15
+	recover_army_morale_speed = 0.10
+}
+ENV_iliasville_unification = {
+	prestige = 1
+	improve_relation_modifier = 0.15
+}
+ENV_elficillin_trade = {
+	trade_efficiency = 0.05
+	merchants = 1
+}
+ENV_irina_unification_mod = {
+	land_morale = 0.10
+	army_tradition = 0.5
+}
+ENV_enrika_fleet = {
+	sailors_recovery_speed = 0.15
+	naval_forcelimit_modifier = 0.15
+}
+ENV_exploring_south_pole = {
+	colonists = 2
+	global_colonial_growth = 25
+	may_explore = yes
+}
+ENV_settlements_on_south_pole = {
+	colonists = 1
+	global_colonial_growth = 20
+	colony_development_boost = 3
+}
+ENV_yeti_fur_monopoly = {
+	trade_efficiency = 0.15
+	mercantilism_cost = -0.25
+	trade_company_investment_cost = -0.25
+}
+ENV_micaelas_rule_in_lost_woods = {
+	local_defender_dice_roll_bonus = 1
+	local_development_cost = -0.10
+}
+ENV_Soul_Revival_Blade = {
+	discipline = 0.05
+}
+ENV_Flickering_Dust_Dagger = {
+	leader_land_shock = 1
+	max_general_shock = 1
+}
+ENV_Crimson_Roar_Rapier = {
+	leader_land_fire = 1
+	max_general_maneuver = 1
+}
+
+###Monster Lord
+ML1_researching_tartarus = {
+	all_power_cost = 0.10
+}
+ML1_grangold_subjugation_campaign = {
+	warscore_from_battles_modifier = 0.50
+	province_warscore_cost = -0.15
+}
+ML1_Assistance_of_Arachnes = {
+	shock_damage_received = -0.10
+	infantry_shock = 0.30
+}
+ML1_integrate_aevis_girls = {
+	manpower_in_accepted_culture_provinces = 0.15
+	num_accepted_cultures = 1
+}
+ML1_Kyoryuu_Girl_assistance = {
+	infantry_power = 0.15
+}
+ML1_elite_wyverns = {
+	leader_land_manuever = 1
+	movement_speed = 0.15
+}
+ML1_swordmastery_proliferation = {
+	army_tradition = 1
+	leader_cost = -0.15
+}
+ML1_integrate_oni = {
+	manpower_in_accepted_culture_provinces = 0.15
+	num_accepted_cultures = 1
+}
+ML1_Assistance_of_Mermaids = {
+	trade_efficiency = 0.15
+	trade_company_investment_cost = -0.15
+}
+ML1_integrate_scylla_girls = {
+	manpower_in_accepted_culture_provinces = 0.15
+	num_accepted_cultures = 1	
+}
+ML1_hellgondo_shrine_restoration_efforts = {
+	build_cost = 0.15
+}
+ML1_hellgondo_shrine_rebuilding = {
+	local_development_cost = -0.10
+}
+ML1_integrate_kitsune_girls = {
+	manpower_in_accepted_culture_provinces = 0.15
+	num_accepted_cultures = 1	
+}
+ML1_integrate_succubi_girls = {
+	manpower_in_accepted_culture_provinces = 0.15
+	num_accepted_cultures = 1	
+}
+ML1_succubi_martial_artists = {
+	leader_land_shock = 1
+	army_tradition_from_battle = 0.2
+}
+ML1_succubi_martial_arts_proliferation = {
+	army_tradition = 1
+	leader_cost = -0.15	
+}
+ML1_Assistance_of_Elves = {
+	shock_damage = 0.10
+	leader_land_shock = 1
+}
+ML1_integrate_centaur_girls = {
+	manpower_in_accepted_culture_provinces = 0.15
+	num_accepted_cultures = 1	
+}
+ML1_holy_yoma_assistance = {
+	military_tactics = 0.10
+}
+ML1_sealed_armored_berserkers = {
+	global_unrest = -1
+}
+ML1_monster_lord_navy = {
+	heavy_ship_power = 0.15
+	galley_power = 0.15
+}
+ML1_Assistance_of_Vampires = {
+	liberty_desire_from_subject_development = -0.33
+}
+ML1_loyalty_to_monster_lord = {
+	liberty_desire = -20
+}
+ML1_vampire_war_for_independence = {
+	discipline = 0.05
+}
+
+###Roach Tower
+RT1_spiders_and_scorpions_united = {
+	manpower_in_accepted_culture_provinces = 0.10
+	num_accepted_cultures = 2
+}
+RT1_defeated_sabasa = {
+	land_morale = 0.15
+}
+RT1_defeated_sphynx = {
+	prestige = 1
+	great_project_upgrade_cost = -0.25
+}
+RT1_roach_army = {
+	infantry_cost = -0.25
+	land_maintenance_modifier = -0.25
+}
+RT1_fortified_cave = {
+	local_defensiveness = 0.33
+	fort_level = 1
+}
+RT1_defeated_kagetsumugi = {
+	all_power_cost = -0.04
+	technology_cost = -0.10
+}
+RT1_fortification_lines = {
+	local_defensiveness = 0.10
+	local_hostile_attrition = 1
+}
+RT1_conquest_of_monte_carlo = {
+	trade_efficiency = 0.15
+	privateer_efficiency = 0.25
+}
+RT1_collaboration_with_elka = {
+	trade_efficiency = 0.15
+	trade_steering = 0.25
+}
+RT1_rat_spies = {
+	spy_offence = 0.30
+	spy_action_cost_modifier = -0.2
+}
+RT1_wolf_warriors = {
+	shock_damage = 0.15
+}
+RT1_delicious_ama_ama_dango_trade = {
+	production_efficiency = 0.20
+	improve_relations_modifier = 0.20
+}
+RT1_ilias_continent_trade_flow = {
+	global_ship_trade_power = 0.33
+	placed_merchant_power_modifier = 0.5
+}
+RT1_food_for_roaches = {
+	development_cost = -0.10
+	global_manpower_modifier = 0.33
+}
+
+###Sheep Island
+
+SI2_protect_against_the_pirates_mod = {
+	block_slave_raid = yes
+	local_own_coast_naval_combat_bonus = 1
+}
+SI2_sheep_girl_heaven_mod = {
+	trade_goods_size = 2.5
+}
+SI2_high_fortifications = {
+	local_defensiveness = 0.25
+	local_defender_dice_roll_bonus = 1
+}
+SI2_sheep_island_expansion = {
+	unjustified_demands = -0.50
+	administrative_efficiency = 0.05
+}
+SI2_developing_capital = {
+	local_development_cost = -0.25
+}
+SI2_high_quality_wool = {
+	trade_value = 25
+	trade_goods_size = 2.5
+}
+SI2_found_sheep_wool_company = {
+	trade_efficiency = 0.10
+	merchants = 1
+}
+SI2_longtime_business_with_vampires = {
+	production_efficiency = 0.25
+	improve_relation_modifier = 0.15
+}
+SI2_citizenship_for_vampires = {
+	num_accepted_cultures = 1
+	promote_culture_cost = -0.50
+}
+SI2_protecting_our_trade = {
+	naval_tradition_from_trade = 0.2
+	global_ship_cost = -0.1
+}
+SI2_permanent_sheep_navy_mod = {
+	naval_forcelimit = 20
+	naval_forcelimit_modifier = 0.1
+}
+SI2_sheep_naval_supremacy = {
+	naval_forcelimit = 100
+	naval_maintenance_modifier = -0.33
+}
+SI2_sheep_colonial_efforts_mod = {
+	global_colonial_growth = 40
+	may_explore = yes
+	colonists = 1
+}
+SI2_sheep_colonial_enterprises_mod = {
+	range = 1
+	trade_steering = 0.33
+	trade_efficiency = 0.33
+}
+
+
+###Mithra Castle
+Mithra_Thunder_Retribution_Fist = {
+	infantry_power = 0.15
+}
+Mithra_Disaster_Sentence_Greatsword = {
+	max_general_fire = 1
+	morale_damage = 0.05
 }

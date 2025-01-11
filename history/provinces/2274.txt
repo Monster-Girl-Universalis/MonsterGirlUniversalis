@@ -36,4 +36,6 @@ trade_goods = iron
 latent_trade_goods = { 
 	coal 
 }
+discovered_by = TECH_FAIRY
+discovered_by = TECH_GHOST
 fort_15th = yes

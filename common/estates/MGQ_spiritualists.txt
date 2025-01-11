@@ -53,6 +53,7 @@ estate_spiritualists = {
 						was_tag = PT1
 						was_tag = LQD
 						has_idea = ultimate_doll_spiritualist_mastery 
+						has_idea = eternity_ethereal_wisdom
 					}
 	}
 

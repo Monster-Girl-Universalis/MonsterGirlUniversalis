@@ -202,5 +202,61 @@ spriteTypes = {
 		name = "privilege_apoptosis_amphil"
 		texturefile = "gfx/interface/privileges/privilege_apoptosis_amphil.dds"
 	}
+	spriteType = {
+		name = "privilege_tamamo_moonlight_cannon"
+		texturefile = "gfx/interface/privileges/privilege_tamamo_moonlight_cannon.dds"
+	}
+	spriteType = {
+		name = "privilege_devastating_gale"
+		texturefile = "gfx/interface/privileges/privilege_devastating_gale.dds"
+	}
+	spriteType = {
+		name = "privilege_wild_lands"
+		texturefile = "gfx/interface/privileges/privilege_wild_lands.dds"
+	}
+	spriteType = {
+		name = "privilege_ninjutsu"
+		texturefile = "gfx/interface/privileges/privilege_ninjutsu.dds"
+	}
+	spriteType = {
+		name = "privilege_goddess_slaying_talismans"
+		texturefile = "gfx/interface/privileges/privilege_goddess_slaying_talismans.dds"
+	}
+	spriteType = {
+		name = "privilege_godslayer_chainsaw"
+		texturefile = "gfx/interface/privileges/privilege_godslayer_chainsaw.dds"
+	}
+	spriteType = {
+		name = "privilege_fire_stones"
+		texturefile = "gfx/interface/privileges/privilege_fire_stones.dds"
+	}
+	spriteType = {
+		name = "privilege_ice_stones"
+		texturefile = "gfx/interface/privileges/privilege_ice_stones.dds"
+	}
+	spriteType = {
+		name = "privilege_thunder_stones"
+		texturefile = "gfx/interface/privileges/privilege_thunder_stones.dds"
+	}
+	spriteType = {
+		name = "privilege_wind_stones"
+		texturefile = "gfx/interface/privileges/privilege_wind_stones.dds"
+	}
+	spriteType = {
+		name = "privilege_earth_stones"
+		texturefile = "gfx/interface/privileges/privilege_earth_stones.dds"
+	}
+	spriteType = {
+		name = "privilege_water_stones"
+		texturefile = "gfx/interface/privileges/privilege_water_stones.dds"
+	}
+	spriteType = {
+		name = "privilege_holy_stones"
+		texturefile = "gfx/interface/privileges/privilege_holy_stones.dds"
+	}
+	spriteType = {
+		name = "privilege_dark_stones"
+		texturefile = "gfx/interface/privileges/privilege_dark_stones.dds"
+	}
 
 }

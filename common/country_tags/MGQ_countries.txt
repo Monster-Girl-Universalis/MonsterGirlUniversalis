@@ -370,6 +370,7 @@ DQ1 = "countries/Deep Sea Queen Domain.txt"
 LQ1 = "countries/Lamia Queen Domain.txt"
 SQ1 = "countries/Scylla Queen Domain.txt"
 TQ1 = "countries/Tanuki Queen Domain.txt"
+FQ1 = "countries/Fairy Queen Domain.txt"
 
 AD1 = "countries/Adramelech.txt"
 SO1 = "countries/Sonyachaos.txt"

@@ -31,3 +31,5 @@ culture = Sister_Lamia
 add_core = SS3
 owner = SS3
 controller = SS3
+discovered_by = TECH_FAIRY
+discovered_by = TECH_GHOST

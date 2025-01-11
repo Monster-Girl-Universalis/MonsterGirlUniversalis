@@ -35,3 +35,5 @@ latent_trade_goods = {
 	coal 
 }
 add_core = CR3
+discovered_by = TECH_FAIRY
+discovered_by = TECH_GHOST

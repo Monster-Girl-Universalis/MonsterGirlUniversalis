@@ -66,6 +66,13 @@ spriteTypes = {
 		
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
+    spriteType = {
+		name = "GFX_idea_ghost_ideas"
+		texturefile = "gfx//interface//ideas//idea_ghost_ideas.dds"
+		noOfFrames = 1
+		
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
     
     #---------------------------------------------------
     # DIP
@@ -128,6 +135,13 @@ spriteTypes = {
 		
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
+    spriteType = {
+		name = "GFX_idea_fairy_ideas"
+		texturefile = "gfx//interface//ideas//idea_fairy_ideas.dds"
+		noOfFrames = 1
+		
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
 
     
     #---------------------------------------------------
@@ -186,6 +200,13 @@ spriteTypes = {
     spriteType = {
 		name = "GFX_idea_roid_ideas"
 		texturefile = "gfx//interface//ideas//idea_roid_ideas.dds"
+		noOfFrames = 1
+		
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+    spriteType = {
+		name = "GFX_idea_giant_ideas"
+		texturefile = "gfx//interface//ideas//idea_giant_ideas.dds"
 		noOfFrames = 1
 		
 		effectFile = "gfx/FX/buttonstate.lua"

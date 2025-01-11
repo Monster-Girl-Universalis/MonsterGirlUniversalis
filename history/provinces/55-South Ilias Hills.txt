@@ -1,6 +1,6 @@
 #55-South Ilias Hills
 culture = ilian_human
-religion = ilias_light_religion
+religion = seekers_of_truth_religion
 trade_goods = tea
 base_tax = 1
 base_production = 2
@@ -36,3 +36,5 @@ discovered_by = TECH_SUCCUBI
 discovered_by = TECH_UNDEAD
 discovered_by = TECH_VAMPIRE
 discovered_by = TECH_YOUMA
+discovered_by = TECH_FAIRY
+discovered_by = TECH_GHOST

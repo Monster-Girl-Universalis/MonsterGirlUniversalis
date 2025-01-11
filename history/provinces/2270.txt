@@ -32,3 +32,5 @@ owner = TR2
 culture = Insect_Apoptosis
 controller = TR2
 add_core = TR2
+discovered_by = TECH_FAIRY
+discovered_by = TECH_GHOST

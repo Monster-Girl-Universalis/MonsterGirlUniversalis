@@ -32,4 +32,6 @@ discovered_by = TECH_UNDEAD
 discovered_by = TECH_VAMPIRE
 discovered_by = TECH_YOUMA
 center_of_trade = 1
+discovered_by = TECH_FAIRY
+discovered_by = TECH_GHOST
 fort_15th = yes

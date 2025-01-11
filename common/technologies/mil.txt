@@ -121,6 +121,10 @@ technology = {
 	enable = infantry_roi_t1_02
 	enable = infantry_tan_t1_01
 	enable = infantry_tan_t1_02
+	enable = infantry_gho_t1_01
+	enable = infantry_gho_t1_02
+	enable = infantry_fry_t1_01
+	enable = infantry_fry_t1_02
 
 	enable = cavalry_hum_t1_01
 	enable = cavalry_hum_t1_02
@@ -259,6 +263,10 @@ technology = {
 	enable = infantry_roi_t5_02
 	enable = infantry_tan_t5_01
 	enable = infantry_tan_t5_02
+	enable = infantry_gho_t5_01
+	enable = infantry_gho_t5_02
+	enable = infantry_fry_t5_01
+	enable = infantry_fry_t5_02
 	
 	combat_width = 2
 }
@@ -448,6 +456,10 @@ technology = {
 	enable = infantry_roi_t10_02
 	enable = infantry_tan_t10_01
 	enable = infantry_tan_t10_02
+	enable = infantry_gho_t10_01
+	enable = infantry_gho_t10_02
+	enable = infantry_fry_t10_01
+	enable = infantry_fry_t10_02
 
 	enable = cavalry_hum_t10_01
 	enable = cavalry_hum_t10_02
@@ -572,6 +584,10 @@ technology = {
 	enable = infantry_roi_t13_02
 	enable = infantry_tan_t13_01
 	enable = infantry_tan_t13_02
+	enable = infantry_gho_t13_01
+	enable = infantry_gho_t13_02
+	enable = infantry_fry_t13_01
+	enable = infantry_fry_t13_02
 }
 
 technology = {
@@ -719,6 +735,10 @@ technology = {
 	enable = infantry_roi_t16_02
 	enable = infantry_tan_t16_01
 	enable = infantry_tan_t16_02
+	enable = infantry_gho_t16_01
+	enable = infantry_gho_t16_02
+	enable = infantry_fry_t16_01
+	enable = infantry_fry_t16_02
 }
 
 technology = {
@@ -856,6 +876,10 @@ technology = {
 	enable = infantry_roi_t19_02
 	enable = infantry_tan_t19_01
 	enable = infantry_tan_t19_02
+	enable = infantry_gho_t19_01
+	enable = infantry_gho_t19_02
+	enable = infantry_fry_t19_01
+	enable = infantry_fry_t19_02
 }
 
 technology = {
@@ -1024,6 +1048,10 @@ technology = {
 	enable = infantry_roi_t23_02
 	enable = infantry_tan_t23_01
 	enable = infantry_tan_t23_02
+	enable = infantry_gho_t23_01
+	enable = infantry_gho_t23_02
+	enable = infantry_fry_t23_01
+	enable = infantry_fry_t23_02
 }
 
 technology = {
@@ -1166,6 +1194,10 @@ technology = {
 	enable = infantry_roi_t26_02
 	enable = infantry_tan_t26_01
 	enable = infantry_tan_t26_02
+	enable = infantry_gho_t26_01
+	enable = infantry_gho_t26_02
+	enable = infantry_fry_t26_01
+	enable = infantry_fry_t26_02
 	
 	combat_width = 2
 }

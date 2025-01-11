@@ -31,3 +31,5 @@ add_core = ML1
 owner = ML1
 culture = Centaur_Girl
 controller = ML1
+discovered_by = TECH_FAIRY
+discovered_by = TECH_GHOST

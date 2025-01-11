@@ -29,3 +29,5 @@ culture = Royal_Vampire
 religion = monster_lord_religion
 discovered_by = TECH_ROID
 trade_goods = grain
+discovered_by = TECH_FAIRY
+discovered_by = TECH_GHOST

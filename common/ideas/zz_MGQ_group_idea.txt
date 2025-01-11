@@ -2027,3 +2027,46 @@ MGQ_roid_ideas = {
 		military_tactics = 0.10
 	}
 }
+
+MGQ_fairy_ideas = {
+	start = {
+		defensiveness = 0.10
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+	
+	bonus = {
+		diplomatic_upkeep = 2
+	}
+	
+	trigger = {
+		OR = {
+			culture_group = fairy
+		}
+	}	
+	free = yes
+
+	MGQ_fairy_Wind_Magic = {
+		movement_speed = 0.15
+	}	
+	MGQ_fairy_Forest_Glades_of_Plenty = {
+		global_tax_modifier = 0.15
+	}
+	MGQ_fairy_Earth_Magic = {
+		shock_damage_received = -0.25
+	}
+	MGQ_fairy_Natures_Wrath = {
+		hostile_attrition = 1
+	}
+	MGQ_fairy_Fey_Trickery = {
+		spy_offence = 0.30
+	}	
+	MGQ_fairy_One_with_nature = {
+		manpower_recovery_speed = 0.20
+		global_monthly_devastation = -0.1
+	}
+	MGQ_fairy_Clever_Deceit = {
+		possible_policy = 1
+	}
+}

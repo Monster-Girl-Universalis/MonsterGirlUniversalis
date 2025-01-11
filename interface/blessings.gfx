@@ -45,3 +45,13 @@ spriteTypes = {
 		texturefile = "gfx//interface//holy_sites//tartarus.dds"
 		loadType = "INGAME"
 	}
+	spriteType = {
+		name = "GFX_holy_site_2274"
+		texturefile = "gfx//interface//holy_sites//tartarus.dds"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_holy_site_715"
+		texturefile = "gfx//interface//holy_sites//la_croix.dds"
+		loadType = "INGAME"
+	}

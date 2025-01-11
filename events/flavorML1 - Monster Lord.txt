@@ -1,0 +1,530 @@
+namespace = flavor_ml1
+
+country_event = {
+	id = flavor_ml1.1
+	title = "flavor_ml1.1.t"
+	desc = "flavor_ml1.1.desc"
+	picture = Aevis_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {		#Question of Aevis girls - integrate
+		name = flavor_ml1.1.a
+		inherit = AE1
+	}
+	option = {		#Question of Aevis girls - give autonomy
+		name = flavor_ml1.1.b
+		aevis_area = {
+			cede_province = AE1
+			add_core = AE1
+			add_random_development = 2
+		}
+		aevis_coast = {
+			add_random_development = 2
+		}
+		add_mil_power = 100
+		create_march = AE1
+	}
+}
+country_event = {
+	id = flavor_ml1.2
+	title = "flavor_ml1.2.t"
+	desc = "flavor_ml1.2.desc"
+	picture = Elder_Succubi_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {		#Question of Elder Succubi - offer to resettle
+		name = flavor_ml1.2.a
+		trigger = {
+			NOT = { SM5 = { total_development = 250 } }
+		}
+		elder_succubus_area = {
+			cede_province = SM5
+			add_core = SM5
+			add_random_development = 2
+		}
+		monster_lord_lands = {
+			cede_province = SM5
+			add_core = SM5
+			change_culture = Monster_Succubi
+			add_random_development = 2
+		}
+		elder_succubus_coast = {
+			cede_province = ML1
+			add_core = ML1
+		}
+		create_march = SM5
+	}
+	option = {		#Question of Elder Succubi - vassalize
+		name = flavor_ml1.2.b
+		trigger = {
+			NOT = { SM5 = { total_development = 250 } }
+		}
+		elder_succubus_coast = {
+			add_random_development = 3
+		}
+		vassalize = SM5
+	}
+	option = {		#Question of Elder Succubi - they are way too strong. Subjugate
+		name = flavor_ml1.2.c
+		trigger = {
+			SM5 = { total_development = 250 } 
+		}
+		declare_war = SM5
+	}
+	option = {		#Question of Elder Succubi - leave them be
+		name = flavor_ml1.2.d
+	}
+}
+country_event = {
+	id = flavor_ml1.3
+	title = "flavor_ml1.3.t"
+	desc = "flavor_ml1.3.desc"
+	picture = Grand_Centaur_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {		#Question of Grand Centaurs - offer to resettle
+		name = flavor_ml1.3.a
+		trigger = {
+			NOT = { CE1 = { total_development = 250 } }
+		}
+		grand_centaur_coast = {
+			cede_province = CE1
+			add_core = CE1
+			add_random_development = 2
+		}
+		zenki_oni_chambers = {
+			cede_province = CE1
+			add_core = CE1
+			change_culture = Centaur_Girl
+			add_random_development = 2
+		}
+		grand_centaur_area = {
+			cede_province = ML1
+			add_core = ML1
+		}
+		create_march = CE1
+	}
+	option = {		#Question of Grand Centaurs - vassalize
+		name = flavor_ml1.3.b
+		trigger = {
+			NOT = { CE1 = { total_development = 250 } }
+		}
+		grand_centaur_area = {
+			add_random_development = 3
+		}
+		vassalize = CE1
+	}
+	option = {		#Question of Grand Centaurs - they are way too strong. Subjugate
+		name = flavor_ml1.3.c
+		trigger = {
+			CE1 = { total_development = 250 }
+		}
+		declare_war = CE1
+	}
+	option = {		#Question of Grand Centaurs - leave them be
+		name = flavor_ml1.3.d
+	}
+}
+
+country_event = {
+	id = flavor_ml1.4
+	title = "flavor_ml1.4.t"
+	desc = "flavor_ml1.4.desc"
+	picture = Succubus_Monk_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {		#Succubus Monks - vassalize both
+		name = flavor_ml1.4.a
+		trigger = {
+			AND = {
+				NOT = { SM3 = { total_development = 250 } }
+				NOT = { SM4 = { total_development = 250 } }
+			}
+		}
+		vassalize = SM3 
+		vassalize = SM4 
+	}
+	option = {		#Succubus Monks - vassalize Succubus Monk Realm
+		name = flavor_ml1.4.b
+		trigger = {
+			NOT = { SM3 = { total_development = 250 } }
+		}
+		vassalize = SM3 
+	}
+	option = {		#Succubus Monks - vassalize Hellgondo Succubi
+		name = flavor_ml1.4.c
+		trigger = {
+			NOT = { SM4 = { total_development = 250 } }
+		}
+		vassalize = SM4 
+	}
+	option = {		#Succubus Monks - leave them be
+		name = flavor_ml1.4.d
+	}
+}
+
+country_event = {
+	id = flavor_ml1.5
+	title = "flavor_ml1.5.t"
+	desc = "flavor_ml1.5.desc"
+	picture = Vouivre_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {		#Vouivre - vassalize both
+		name = flavor_ml1.5.a
+		trigger = {
+			AND = {
+				NOT = { VU1 = { total_development = 250 } }
+				NOT = { VU2 = { total_development = 250 } }
+			}
+		}
+		vassalize = VU1 
+		vassalize = VU2 
+	}
+	option = {		#Vouivre  - vassalize VU1 
+		name = flavor_ml1.5.b
+		trigger = {
+			NOT = { VU1 = { total_development = 250 } }
+		}
+		vassalize = VU1 
+	}
+	option = {		#Vouivre  - vassalize VU2 
+		name = flavor_ml1.5.c
+		trigger = {
+			NOT = { VU2 = { total_development = 250 } }
+		}
+		vassalize = VU2 
+	}
+	option = {		#Vouivre  - leave them be
+		name = flavor_ml1.5.d
+	}
+}
+
+country_event = {
+	id = flavor_ml1.6
+	title = "flavor_ml1.6.t"
+	desc = "flavor_ml1.6.desc"
+	picture = NewMonsterLord_eventPicture
+	is_triggered_only = yes
+	
+	option = {		#Monster Lord Demand - become a vassal
+		name = flavor_ml1.6.a
+		ML1 = { vassalize = ROOT }
+	}
+	option = {		#Monster Lord Demand - become a march
+		name = flavor_ml1.6.b
+		ML1 = { vassalize = ROOT }
+	}
+	option = {		#Monster Lord Demand - but they refused
+		name = flavor_ml1.6.c
+		declare_war = ML1
+	}
+}
+country_event = {
+	id = flavor_ml1.7
+	title = "flavor_ml1.7.t"
+	desc = "flavor_ml1.7.desc"
+	picture = Scylla_Servant_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {		#Question of Scylla Servants - integrate
+		name = flavor_ml1.7.a
+		trigger = {
+			NOT = { SS2 = { total_development = 100 } }
+		}
+		inherit = SS2
+	}
+	option = {		#Question of Scylla Servants - vassalize
+		name = flavor_ml1.7.b
+		trigger = {
+			NOT = { SS2 = { total_development = 250 } }
+		}
+		hellgondo_scyllas_area = {
+			add_random_development = 2
+		}
+		add_dip_power = 100
+		vassalize = SS2
+	}
+	option = {		#Question of Scylla Servants - leave them be
+		name = flavor_ml1.7.c
+	}
+}
+
+country_event = {
+	id = flavor_ml1.8
+	title = "flavor_ml1.8.t"
+	desc = "flavor_ml1.8.desc"
+	picture = Kyoryuu_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {		#Kyoryuu - vassalize both
+		name = flavor_ml1.8.a
+		trigger = {
+			AND = {
+				NOT = { KY1 = { total_development = 250 } }
+				NOT = { KY2 = { total_development = 250 } }
+			}
+		}
+		vassalize = KY1 
+		vassalize = KY2 
+	}
+	option = {		#Kyoryuu - vassalize KY1 
+		name = flavor_ml1.8.b
+		trigger = {
+			NOT = { KY1 = { total_development = 250 } }
+		}
+		vassalize = KY1 
+	}
+	option = {		#Kyoryuu - vassalize KY2 
+		name = flavor_ml1.8.c
+		trigger = {
+			NOT = { KY2 = { total_development = 250 } }
+		}
+		vassalize = KY2 
+	}
+	option = {		#Kyoryuu - leave them be
+		name = flavor_ml1.8.d
+	}
+}
+country_event = {
+	id = flavor_ml1.9
+	title = "flavor_ml1.9.t"
+	desc = "flavor_ml1.9.desc"
+	picture = Lilith_Sisters_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {		#Lilith Sisters came to our help
+		name = flavor_ml1.9.a
+		define_general = { 
+			name = "Morrigan"
+        		type = general
+        		fire = 5
+        		shock = 6
+        		manuever = 5
+        		siege = 1
+			female = yes
+		}
+		define_general = { 
+			name = "Astaroth"
+        		type = general
+        		fire = 5
+        		shock = 5
+        		manuever = 6
+        		siege = 2
+			female = yes
+		}
+		define_general = { 
+			name = "Lilith"
+        		type = general
+        		fire = 6
+        		shock = 5
+        		manuever = 5
+        		siege = 1
+			female = yes
+		}
+		
+	}
+}
+country_event = {
+	id = flavor_ml1.10
+	title = "flavor_ml1.10.t"
+	desc = "flavor_ml1.10.desc"
+	picture = NewMonsterLord_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+		
+	option = {		#Monster Lord Demand - become a PU
+		name = flavor_ml1.10.a
+		ML1 = { create_union = ROOT }
+		add_country_modifier = {
+			name = "ML1_loyalty_to_monster_lord"
+			duration = 9125
+		}
+	}
+	option = {		#Monster Lord Demand - become a march
+		name = flavor_ml1.10.b
+		ML1 = { create_march = ROOT }
+		add_country_modifier = {
+			name = "ML1_loyalty_to_monster_lord"
+			duration = 9125
+		}
+	}
+	option = {		#Monster Lord Demand - but they refused
+		name = flavor_ml1.10.c
+		ML1 = { 
+			declare_war_with_cb = {
+				who = ROOT
+				casus_belli = cb_restore_personal_union
+			}
+		}
+		add_country_modifier = {
+			name = "ML1_vampire_war_for_independence"
+			duration = 9125
+		}
+	}
+}
+country_event = {
+	id = flavor_ml1.11
+	title = "flavor_ml1.11.t"
+	desc = "flavor_ml1.11.desc"
+	picture = SpiderPrincess_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {		
+		name = flavor_ml1.11.a
+		trigger = {
+			GR4 = { ai = yes }
+		}
+		goddard_region = {
+			limit = { owned_by = GR4 }
+			cede_province = SP4
+			add_core = SP4
+		}
+		SP4 = {inherit = GO1 }
+		grangold_region = {
+			limit = { owned_by = GR4 }
+			cede_province = ML1
+			add_core = ML1
+		}
+		succubus_village_region = {
+			limit = { owned_by = GR4 }
+			cede_province = ML1
+			add_core = ML1
+		}
+		
+	}	
+	option = {		
+		name = flavor_ml1.11.b
+		trigger = {
+			GR4 = { ai = no }
+		}
+		rocky_island = {
+			limit = { owned_by = GR4 }
+			cede_province = SP4
+			add_core = SP4
+		}
+		grangold_mountains = {
+			limit = { owned_by = GR4 }
+			cede_province = ML1
+			add_core = ML1
+		}
+		western_grangold = {
+			limit = { owned_by = GR4 }
+			cede_province = ML1
+			add_core = ML1
+		}
+		
+	}
+}
+country_event = {
+	id = flavor_ml1.12
+	title = "flavor_ml1.12.t"
+	desc = "flavor_ml1.12.desc"
+	picture = NewMonsterLord_eventPicture
+	is_triggered_only = yes
+	
+	option = {		
+		name = flavor_ml1.12.a		#info for Monster Lord Queen Allies
+	}
+}
+country_event = {
+	id = flavor_ml1.13
+	title = "flavor_ml1.13.t"
+	desc = "flavor_ml1.13.desc"
+	picture = mermaid_RACE_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {		#San Ilia for Mermaids? - Yes
+		name = flavor_ml1.13.a
+		trigger = {
+			alliance_with = MR3
+		}
+		san_ilia_region = {
+			cede_province = MR3
+			add_core = MR3
+			add_random_development = 2
+		}
+		add_dip_power = 500
+		create_union = MR3
+	}
+	option = {		#San Ilia for Mermaids? - Better not
+		name = flavor_ml1.13.b
+		lyra_region = {
+			type = all
+			add_permanent_claim = ROOT
+		}
+	}
+}
+country_event = {
+	id = flavor_ml1.14
+	title = "flavor_ml1.14.t"
+	desc = "flavor_ml1.14.desc"
+	picture = Queen_Elf_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {		#Grand Noah for Elves? - Yes
+		name = flavor_ml1.14.a
+		trigger = {
+			alliance_with = EL1
+		}
+		grand_noah_region = {
+			cede_province = EL1
+			add_core = EL1
+			add_random_development = 2
+		}
+		add_mil_power = 500
+		create_union = EL1
+		create_union = FQ1
+	}
+	option = {		#Grand Noah for Elves? - Better not
+		name = flavor_ml1.14.b
+		fairy_island_region = {
+			type = all
+			add_permanent_claim = ROOT
+		}
+	}
+}
+country_event = {
+	id = flavor_ml1.15
+	title = "flavor_ml1.15.t"
+	desc = "flavor_ml1.15.desc"
+	picture = Queen_Vampire_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {		#Sabasa for Vampires? - Yes
+		name = flavor_ml1.15.a
+		trigger = {
+			alliance_with = VA6
+		}
+		sabasa_region = {
+			cede_province = VA6
+			add_core = VA6
+			add_random_development = 5
+		}
+		sabasa_area = {
+			change_culture = Royal_Vampire
+			change_religion = ROOT
+		}
+		set_capital = 755
+		add_mil_power = 500
+	}
+	option = {		#Sabasa for Vampires? - Better not
+		name = flavor_ml1.15.b
+		vampire_castle_region = {
+			type = all
+			add_permanent_claim = ROOT
+		}
+	}
+}

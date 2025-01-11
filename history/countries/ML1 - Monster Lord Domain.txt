@@ -13,6 +13,7 @@ historical_rival = IT1#Suffer no malicious goddess and her idiotic ways
 		adm = 4
 		dip = 5
 		mil = 6
+		female = yes
 		leader = { 
 			name = "Alipheese VIII"
 			type = general
@@ -21,6 +22,7 @@ historical_rival = IT1#Suffer no malicious goddess and her idiotic ways
 			manuever = 10
 			siege = 8
 			personality = ruthless_personality
+			female = yes
 		}
 	}
 	clear_scripted_personalities = yes
@@ -34,6 +36,7 @@ historical_rival = IT1#Suffer no malicious goddess and her idiotic ways
 		adm = 5
 		dip = 5
 		mil = 5
+		female = yes
 	}
 }
 1036.1.1 = { 
@@ -44,6 +47,7 @@ historical_rival = IT1#Suffer no malicious goddess and her idiotic ways
 		adm = 5
 		dip = 5
 		mil = 5
+		female = yes
 	}
 }
 1109.1.1 = { 
@@ -54,6 +58,7 @@ historical_rival = IT1#Suffer no malicious goddess and her idiotic ways
 		adm = 5
 		dip = 5
 		mil = 5
+		female = yes
 	}
 }
 1182.1.1 = { 
@@ -64,6 +69,7 @@ historical_rival = IT1#Suffer no malicious goddess and her idiotic ways
 		adm = 5
 		dip = 5
 		mil = 5
+		female = yes
 	}
 }
 1255.1.1 = { 
@@ -74,6 +80,7 @@ historical_rival = IT1#Suffer no malicious goddess and her idiotic ways
 		adm = 5
 		dip = 5
 		mil = 5
+		female = yes
 	}
 }
 1328.1.1 = { 
@@ -84,6 +91,7 @@ historical_rival = IT1#Suffer no malicious goddess and her idiotic ways
 		adm = 5
 		dip = 5
 		mil = 5
+		female = yes
 	}
 }
 1414.1.1 = { 
@@ -103,6 +111,7 @@ historical_rival = IT1#Suffer no malicious goddess and her idiotic ways
 			shock = 10
 			manuever = 10
 			siege = 8
+			female = yes
 		}
 	}
 }
@@ -128,6 +137,7 @@ historical_rival = IT1#Suffer no malicious goddess and her idiotic ways
 		shock = 5
 		manuever = 3
 		siege = 2
+		female = yes
 	}
 }
 1444.1.1 = { 
@@ -139,6 +149,7 @@ historical_rival = IT1#Suffer no malicious goddess and her idiotic ways
 		shock = 6
 		manuever = 5
 		siege = 6
+		female = yes
 	}
 }
 1444.1.1 = { 
@@ -150,6 +161,7 @@ historical_rival = IT1#Suffer no malicious goddess and her idiotic ways
 		shock = 8
 		manuever = 8
 		siege = 2
+		female = yes
 	}
 }
 1444.1.1 = { 
@@ -161,6 +173,7 @@ historical_rival = IT1#Suffer no malicious goddess and her idiotic ways
 		shock = 3
 		manuever = 10
 		siege = 4
+		female = yes
 	}
 }
 capital = 2409

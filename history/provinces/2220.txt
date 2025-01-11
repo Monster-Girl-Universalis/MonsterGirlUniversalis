@@ -32,3 +32,5 @@ add_core = BE2
 owner = BE2
 culture = Behemoth_Girl
 controller = BE2
+discovered_by = TECH_FAIRY
+discovered_by = TECH_GHOST

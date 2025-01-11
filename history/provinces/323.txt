@@ -30,3 +30,5 @@ owner = ILP
 culture = ilian_human
 controller = ILP
 discovered_by = TECH_DEMI_HUMAN
+discovered_by = TECH_FAIRY
+discovered_by = TECH_GHOST

@@ -1627,6 +1627,198 @@ country_decisions = {
 			factor = 0
 		}
 	}
+	fairy_integration_decision_reduced_33 = {
+		major = yes
+		potential = {
+			AND = {
+				any_owned_province = { culture_group = fairy }
+				has_reform = enrika_reform
+					NOT = {
+
+		OR = {
+			technology_group = TECH_FAIRY
+			check_variable = {
+				which = Fairy_integration
+				value = 1
+			} 
+			was_tag = ENF
+			was_tag = JLW
+			was_tag = PPR
+			was_tag = JLG
+			was_tag = SR2
+			was_tag = FS1
+			tag = UN1
+			was_tag = UN1
+			tag = SL1
+			was_tag = SL1
+			was_tag = IP1
+			tag = LC1
+			was_tag = LC1
+
+			tag = ML1
+			was_tag = ML1
+		}
+					}
+			}
+		}
+		allow = {
+			development_in_provinces = {
+				value = 200
+				culture_group = fairy
+			}
+		}
+		effect = {
+
+			add_country_modifier = {
+				name = "fairy_integration_mod"
+				duration = 3650
+			}
+ 			set_variable = {
+   				which = Fairy_integration
+  				value = 1
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	ghost_integration_decision_reduced_33 = {
+		major = yes
+		potential = {
+			AND = {
+				any_owned_province = { culture_group = ghost }
+				has_reform = enrika_reform
+					NOT = {
+
+		OR = {
+			technology_group = TECH_GHOST
+			check_variable = {
+				which = Ghost_integration
+				value = 1
+			}
+			was_tag = RMA
+			was_tag = MMW
+			was_tag = MII
+			tag = HM1
+			was_tag = HM1
+			was_tag = PA1
+			was_tag = SH2
+			was_tag = MR2
+			was_tag = HI1
+			was_tag = HK1
+			was_tag = HK2
+			was_tag = NM1
+			was_tag = SP1
+			was_tag = SP2
+			was_tag = SP3
+			was_tag = MS1
+			was_tag = MS2
+			was_tag = EN1
+			was_tag = EN2
+			
+		}
+					}
+			}
+		}
+		allow = {
+			development_in_provinces = {
+				value = 200
+				culture_group = ghost
+			}
+		}
+		effect = {
+
+			add_country_modifier = {
+				name = "ghost_integration_mod"
+				duration = 3650
+			}
+ 			set_variable = {
+   				which = Ghost_integration
+  				value = 1
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	giant_integration_decision_reduced_33 = {
+		major = yes
+		potential = {
+			AND = {
+				any_owned_province = {
+					OR = {
+						culture = Narwhal_Girl
+						culture = Kyoryuu_Girl
+						culture = Golem_Girl
+						culture = Sandworm_Girl
+						culture = Mammoth_Girl
+						culture = Royal_Sea_Dweller
+					}
+				}
+				has_reform = enrika_reform
+					NOT = {
+
+		OR = {
+			check_variable = {
+				which = Giant_integration
+				value = 1
+			} 
+			was_tag = KY1
+			was_tag = KY2
+			was_tag = MU1
+			was_tag = SG2
+			was_tag = MT1
+			was_tag = MT2
+			was_tag = MT3
+			was_tag = KK1
+			was_tag = PO1
+			tag = SM2
+			was_tag = SM2
+			tag = CD1
+			was_tag = CD1
+			tag = DR3
+			was_tag = DR3
+			tag = DR4
+			was_tag = DR4
+			tag = NA1
+			was_tag = NA1
+			tag = OR1
+			was_tag = OR1
+
+			tag = ML1
+			was_tag = ML1
+		}
+					}
+			}
+		}
+		allow = {
+			development_in_provinces = {
+				value = 200
+				OR = {
+					culture = Narwhal_Girl
+					culture = Kyoryuu_Girl
+					culture = Golem_Girl
+					culture = Sandworm_Girl
+					culture = Mammoth_Girl
+					culture = Royal_Sea_Dweller 
+				}
+			}
+		}
+		effect = {
+
+			add_country_modifier = {
+				name = "giant_integration_mod"
+				duration = 3650
+			}
+ 			set_variable = {
+   				which = Giant_integration
+  				value = 1
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
 
 
 }

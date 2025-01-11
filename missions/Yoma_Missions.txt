@@ -9,7 +9,7 @@ yoma_internal_development = {
 		culture_group = yoma #yoma 
 		NOT = { 
 			OR = {
-				
+				tag = ML1
 			}
 		}
 	}
@@ -215,7 +215,7 @@ yoma_trade_expansion = {
 		culture_group = yoma #yoma 
 		NOT = { 
 			OR = {
-				
+				tag = ML1
 			}
 		}
 	}

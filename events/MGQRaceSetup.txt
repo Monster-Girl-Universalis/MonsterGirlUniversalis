@@ -131,7 +131,7 @@ country_event = {
 	id = mgq_racesetup.elf
 	title = "mgq_racesetup.elf.t"
 	desc = "mgq_racesetup.elf.desc"
-	picture = elf_RACE_eventPicture
+	picture = elf_girl_eventPicture
 	trigger = {
 		ai = no
 		culture_group = elf
@@ -524,5 +524,47 @@ country_event = {
 
 	option = {	#Ok
 		name = mgq_racesetup.apoptosis.a
+	}
+}
+country_event = {
+	id = mgq_racesetup.fairy
+	title = "mgq_racesetup.fairy.t"
+	desc = "mgq_racesetup.fairy.desc"
+	picture = fairy_RACE_eventPicture
+	trigger = {
+		ai = no
+		culture_group = fairy
+		NOT = { has_country_flag = mgq_had_race_introduction }
+	}
+
+	mean_time_to_happen = { days = 1 }
+	#fire_only_once = yes
+	immediate = {
+		hidden_effect = { set_country_flag = mgq_had_race_introduction }
+	}
+
+	option = {	#Ok
+		name = mgq_racesetup.fairy.a
+	}
+}
+country_event = {
+	id = mgq_racesetup.ghost
+	title = "mgq_racesetup.ghost.t"
+	desc = "mgq_racesetup.ghost.desc"
+	picture = ghost_RACE_eventPicture
+	trigger = {
+		ai = no
+		culture_group = ghost
+		NOT = { has_country_flag = mgq_had_race_introduction }
+	}
+
+	mean_time_to_happen = { days = 1 }
+	#fire_only_once = yes
+	immediate = {
+		hidden_effect = { set_country_flag = mgq_had_race_introduction }
+	}
+
+	option = {	#Ok
+		name = mgq_racesetup.ghost.a
 	}
 }

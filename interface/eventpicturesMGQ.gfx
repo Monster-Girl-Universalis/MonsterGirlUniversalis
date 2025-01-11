@@ -354,4 +354,164 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/PromesteinLabs.dds"
 		allwaystransparent = yes
 	}
+	spriteType = {
+		name = "Kurodanuki_startled_eventPicture"
+		texturefile = "gfx/event_pictures/Kurodanuki_startled_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "ElvenPrincess_eventPicture"
+		texturefile = "gfx/event_pictures/ElvenPrincess_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "NewMonsterLord_eventPicture"
+		texturefile = "gfx/event_pictures/NewMonsterLord_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "Mephisto_eventPicture"
+		texturefile = "gfx/event_pictures/Mephisto_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "LostWoods_eventPicture"
+		texturefile = "gfx/event_pictures/LostWoods_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "Iliasville_eventPicture"
+		texturefile = "gfx/event_pictures/Iliasville_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "Tartarus_eventPicture"
+		texturefile = "gfx/event_pictures/Tartarus_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "Castle_eventPicture"
+		texturefile = "gfx/event_pictures/Castle_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "Aevis_eventPicture"
+		texturefile = "gfx/event_pictures/Aevis_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "Elder_Succubi_eventPicture"
+		texturefile = "gfx/event_pictures/Elder_Succubi_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "Grand_Centaur_eventPicture"
+		texturefile = "gfx/event_pictures/Grand_Centaur_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "Succubus_Monk_eventPicture"
+		texturefile = "gfx/event_pictures/Succubus_Monk_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "Vouivre_eventPicture"
+		texturefile = "gfx/event_pictures/Vouivre_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "Scylla_Servant_eventPicture"
+		texturefile = "gfx/event_pictures/Scylla_Servant_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "Kyoryuu_eventPicture"
+		texturefile = "gfx/event_pictures/Kyoryuu_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "SpiderPrincess_eventPicture"
+		texturefile = "gfx/event_pictures/SpiderPrincess_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "Queen_Elf_eventPicture"
+		texturefile = "gfx/event_pictures/Queen_Elf_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "Queen_Vampire_eventPicture"
+		texturefile = "gfx/event_pictures/Queen_Vampire_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "Gnome_eventPicture"
+		texturefile = "gfx/event_pictures/Gnome_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "Undine_eventPicture"
+		texturefile = "gfx/event_pictures/Undine_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "Salamander_eventPicture"
+		texturefile = "gfx/event_pictures/Salamander_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "Kirin_eventPicture"
+		texturefile = "gfx/event_pictures/Kirin_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "Angels_Monsters_eventPicture"
+		texturefile = "gfx/event_pictures/Angels_Monsters_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "Cosmos_eventPicture"
+		texturefile = "gfx/event_pictures/Cosmos_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "Saja_eventPicture"
+		texturefile = "gfx/event_pictures/Saja_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "Tamamo_eventPicture"
+		texturefile = "gfx/event_pictures/Tamamo_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "Minagi_eventPicture"
+		texturefile = "gfx/event_pictures/Minagi_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "Kanon_eventPicture"
+		texturefile = "gfx/event_pictures/Kanon_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "Kanade_eventPicture"
+		texturefile = "gfx/event_pictures/Kanade_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "Hiruko_eventPicture"
+		texturefile = "gfx/event_pictures/Hiruko_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "ghost_RACE_eventPicture"
+		texturefile = "gfx/event_pictures/ghost_RACE_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "fairy_RACE_eventPicture"
+		texturefile = "gfx/event_pictures/fairy_RACE_eventPicture.dds"
+		allwaystransparent = yes
+	}
 }

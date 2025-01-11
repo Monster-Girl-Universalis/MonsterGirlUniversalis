@@ -30,3 +30,5 @@ culture = Mimic_Girl
 controller = MMW
 add_core = MMW
 discovered_by = TECH_DEMI_HUMAN
+discovered_by = TECH_FAIRY
+discovered_by = TECH_GHOST

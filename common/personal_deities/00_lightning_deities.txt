@@ -1,0 +1,144 @@
+# Do not change tags in here without changing every other reference to them.
+# If adding new dieties, make sure they are uniquely named.
+
+thunderclap_wrath = {
+	max_hostile_attrition = 2
+	defensiveness = -0.25
+	
+	potential = { religion = lightning_religion }
+	trigger = {}
+	sprite = 18
+	
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 18
+		modifier = {
+			factor = 2
+			personality = ai_militarist
+		}
+		modifier = {
+			factor = 1.5
+			is_year = 1550
+		}	
+		modifier = {
+			factor = 0.5
+			personality = ai_diplomat
+		}		
+	}
+}
+
+stormcaller = {
+	movement_speed = 0.25
+	shock_damage_received = 0.15
+	
+	potential = { religion = lightning_religion }
+	trigger = {}
+	sprite = 18
+	
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 3
+			personality = ai_balanced
+		}
+		modifier = {
+			factor = 3
+			personality = ai_militarist
+		}			
+	}	
+}
+
+chain_lightning = {
+	build_cost = -0.15
+	all_power_cost = 0.05
+	
+	potential = { religion = lightning_religion }
+	trigger = {}
+	sprite = 18
+	
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 3
+			personality = ai_capitalist
+		}	
+		modifier = {
+			factor = 2
+			personality = ai_balanced
+		}		
+	}	
+}
+
+lambda_spark = {
+	infantry_shock = 0.20
+	artillery_shock = 0.20
+	
+	potential = { religion = lightning_religion }
+	trigger = {}
+	sprite = 18
+	
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 3
+			personality = ai_militarist
+		}	
+		modifier = {
+			factor = 2
+			personality = ai_balanced
+		}			
+	}	
+}
+
+kirin = { 
+	development_cost = -0.075
+	prestige = 1
+	
+	potential = { religion = lightning_religion }
+	trigger = {}
+	sprite = 18
+	
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			personality = ai_capitalist
+		}	
+		modifier = {
+			factor = 1.75
+			personality = ai_militarist
+		}		
+	}	
+}
+
+skybreaker = {
+	core_creation = -0.15
+	unjustified_demands = -0.06
+	
+	potential = { religion = lightning_religion }
+	trigger = {}
+	sprite = 18
+	
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 3
+			personality = ai_balanced
+		}	
+		modifier = {
+			factor = 0.5
+			personality = ai_capitalist
+		}		
+	}	
+}

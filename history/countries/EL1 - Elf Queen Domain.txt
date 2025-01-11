@@ -6,6 +6,7 @@ primary_culture = Island_Elf
 government = monarchy
 add_government_reform = Elf_realm
 historical_friend = EL4 #Hikkikomori cousin...
+historical_friend = FQ1 #Elves and Fairies
 1444.1.1 = { 
 	monarch = { 
 		name = "Freya"

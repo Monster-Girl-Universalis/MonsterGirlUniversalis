@@ -88,6 +88,73 @@ goddess_blessing_mod = {
 	trade_efficiency = 0.10
 }
 
+dark_goddess_worship_minagi_oversees_army = {
+	discipline = 0.05
+	morale_damage_received = -0.10
+}
+
+dark_goddess_worship_minagi_oversees_administration = {
+	country_admin_power = 1
+	reform_progress_growth = 0.25
+}
+
+dark_goddess_worship_kanade_protects_slimes = {
+	local_defensiveness = 0.25
+	local_garrison_size = 1
+	local_governing_cost = 0.50
+}
+
+angel_world_micaela_mod = {
+	discipline = 0.05
+	morale_damage_received = -0.10
+}
+angel_world_uriela_mod = {
+	infantry_power = 0.20
+	artillery_power = 0.20
+}
+angel_world_gabriela_mod = {
+	development_cost = -0.10
+	global_monthly_devastation = -0.5
+}
+angel_world_metatrone_and_sandalphone_mod = {
+	all_power_cost = -0.07
+	global_trade_goods_size = 1
+}
+
+sylphs_blessing = {
+	local_development_cost = -0.15
+	trade_goods_size = 0.5
+}
+gnomes_blessing = {
+	local_development_cost = -0.15
+	local_defensiveness = 0.20
+}
+undines_blessing = {
+	trade_goods_size = 1.5
+	local_monthly_devastation = -0.1
+}
+salamanders_blessing = {
+	local_garrison_damage = 1
+	trade_goods_size = 1
+}
+affinity_to_ice = {
+	local_defensiveness = 0.50
+	local_monthly_devastation = -0.1
+}
+affinity_to_lightning = {
+	local_defender_dice_roll_bonus = 1
+	local_friendly_movement_speed = 0.15
+}
+cosmos_blessing = {
+	local_development_cost = -0.05
+	local_build_cost = -0.05
+}
+kagetsumugi_dolls_production = {
+	local_regiment_cost = -0.75
+	regiment_recruit_speed = -0.75
+	local_manpower_modifier = 0.50
+}
+
 # Clergy
 ##################################################
 estate_researchers_guaranteed_autonomy_mod = {
@@ -112,6 +179,35 @@ raise_master_undead = {
 	morale_damage_received = -0.25
 	discipline = 0.06
 	is_streltsy_modifier = yes
+}
+
+# Deity/Cult Change
+##################################################
+
+change_deity_wind_mod = {
+	global_missionary_strength = -0.03
+}
+change_deity_earth_mod = {
+	global_missionary_strength = -0.03
+}
+change_deity_water_mod = {
+	global_missionary_strength = -0.03
+}
+change_deity_fire_mod = {
+	global_missionary_strength = -0.03
+}
+change_cult_yamatai_mod = {
+	all_power_cost = 0.03
+}
+change_deity_ice_mod = {
+	global_missionary_strength = -0.03
+}
+change_deity_lightning_mod = {
+	global_missionary_strength = -0.03
+}
+change_deity_cosmos_mod = {
+	global_missionary_strength = -0.015
+	all_power_cost = 0.015
 }
 
 # Racial integration
@@ -214,6 +310,18 @@ roid_integration_mod = {
 	all_power_cost = 0.05
 }
 tanuki_integration_mod = {
+	country_admin_power = -1
+	all_power_cost = 0.05
+}
+fairy_integration_mod = {
+	country_admin_power = -1
+	all_power_cost = 0.05
+}
+ghost_integration_mod = {
+	country_admin_power = -1
+	all_power_cost = 0.05
+}
+giant_integration_mod = {
 	country_admin_power = -1
 	all_power_cost = 0.05
 }

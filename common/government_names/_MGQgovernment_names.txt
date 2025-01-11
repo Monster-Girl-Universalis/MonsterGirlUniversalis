@@ -1,0 +1,603 @@
+# For specific combinations of culture, religion and other such triggers
+# Will pick the first valid one it finds in list
+
+#Heir and consort titles are generally kept simple for clarity unless there is something special in particular that can be used.
+
+
+apoptosis_localisation = {
+	rank = {
+		1 = OTHERWORDLY_POLITY
+		2 = CHAOS_KINGDOM
+		3 = OTHERWORDLY_EMPIRE
+	}
+
+	ruler_male = {
+		1 = LOW_APOPTOSIS
+		2 = HIGH_APOPTOSIS
+		3 = X_CLASS_APOPTOSIS
+	}
+
+	ruler_female = {
+		1 = LOW_APOPTOSIS
+		2 = HIGH_APOPTOSIS
+		3 = X_CLASS_APOPTOSIS
+	}
+
+	consort_male = {
+		1 = CONSORT
+		2 = CONSORT
+		3 = CONSORT
+	}
+
+	consort_female = {
+		1 = CONSORT
+		2 = CONSORT
+		3 = CONSORT
+	}
+	
+	heir_male = {
+		1 = HEIR
+		2 = HEIR
+		3 = HEIR
+	}
+
+	heir_female = {
+		1 = HEIR_fem
+		2 = HEIR_fem
+		3 = HEIR_fem
+	}
+
+	trigger = {
+		culture_group = apoptosis
+	}
+}
+ilias_localisation = {
+	rank = {
+		1 = DIVINE_DUCHY
+		2 = KINGDOM_OF_GODDESS
+		3 = HEAVENLY_DOMAIN
+	}
+
+	ruler_male = {
+		1 = PETITE_GOD
+		2 = GOD_OF_LIGHT
+		3 = GOD_OF_CREATION
+	}
+
+	ruler_female = {
+		1 = PETITE_GODDESS
+		2 = GODDESS_OF_LIGHT
+		3 = GODDESS_OF_CREATION
+	}
+
+	consort_male = {
+		1 = CONSORT
+		2 = CONSORT
+		3 = CONSORT
+	}
+
+	consort_female = {
+		1 = CONSORT
+		2 = CONSORT
+		3 = CONSORT
+	}
+	
+	heir_male = {
+		1 = HEIR
+		2 = HEIR
+		3 = HEIR
+	}
+
+	heir_female = {
+		1 = HIGH_ANGEL
+		2 = FIRST_SERAPH
+		3 = FIRST_ARCHANGEL
+	}
+
+	trigger = {
+		OR = {
+			tag = IT1
+			has_reform = goddess_ilias_reform 
+		}
+	}
+}
+monster_lord_localisation = {
+	rank = {
+		1 = MONSTER_LORD_REALM
+		2 = MONSTER_LORD_KINGDOM
+		3 = MONSTER_LORD_EMPIRE
+	}
+
+	ruler_male = {
+		1 = PETITE_MONSTER_LORD
+		2 = MONSTER_LORD
+		3 = GREAT_MONSTER_LORD
+	}
+
+	ruler_female = {
+		1 = PETITE_MONSTER_LORD
+		2 = MONSTER_LORD
+		3 = GREAT_MONSTER_LORD
+	}
+
+	consort_male = {
+		1 = CONSORT
+		2 = CONSORT
+		3 = CONSORT
+	}
+
+	consort_female = {
+		1 = CONSORT
+		2 = CONSORT
+		3 = CONSORT
+	}
+	
+	heir_male = {
+		1 = HEIR
+		2 = HEIR
+		3 = HEIR
+	}
+
+	heir_female = {
+		1 = HEIR_fem
+		2 = HEIR_fem
+		3 = HEIR_fem
+	}
+
+	trigger = {
+		OR = {
+			tag = ML1
+			has_reform = monster_lord_reform 
+		}
+	}
+}
+haunted_mansion_localisation = {
+	rank = {
+		1 = ARTISTE_REALM
+		2 = ARTISTE_KINGDOM
+		3 = ARTISTE_EMPIRE
+	}
+
+	ruler_male = {
+		1 = NECROMANCER
+		2 = NECROMASTER
+		3 = LICH_LORD
+	}
+
+	ruler_female = {
+		1 = NECROMANCER
+		2 = NECROMASTER
+		3 = LICH_LADY
+	}
+
+	consort_male = {
+		1 = CONSORT
+		2 = CONSORT
+		3 = CONSORT
+	}
+
+	consort_female = {
+		1 = CONSORT
+		2 = CONSORT
+		3 = CONSORT
+	}
+	
+	heir_male = {
+		1 = ASSISTANT
+		2 = ASSISTANT
+		3 = ASSISTANT
+	}
+
+	heir_female = {
+		1 = ASSISTANT
+		2 = ASSISTANT
+		3 = ASSISTANT
+	}
+
+	trigger = {
+		OR = {
+			tag = HM1
+			tag = LC1
+			has_reform = Artiste_necromancer
+		}
+	}
+}
+wind_spirit_localisation = {
+	rank = {
+		1 = ELEMENTAL_REALM
+		2 = ELEMENTAL_KINGDOM
+		3 = ELEMENTAL_EMPIRE
+	}
+
+	ruler_male = {
+		1 = WIND_SPRITE
+		2 = WIND_SPIRIT
+		3 = INCARNATION_OF_WIND
+	}
+
+	ruler_female = {
+		1 = WIND_SPRITE
+		2 = WIND_SPIRIT
+		3 = INCARNATION_OF_WIND
+	}
+
+	consort_male = {
+		1 = CONSORT
+		2 = CONSORT
+		3 = CONSORT
+	}
+
+	consort_female = {
+		1 = CONSORT
+		2 = CONSORT
+		3 = CONSORT
+	}
+	
+	heir_male = {
+		1 = HEIR
+		2 = HEIR
+		3 = HEIR
+	}
+
+	heir_female = {
+		1 = HEIR_fem
+		2 = HEIR_fem
+		3 = HEIR_fem
+	}
+
+	trigger = {
+		OR = {
+			tag = FS1
+			has_reform = sylph_reform 
+		}
+	}
+}
+earth_spirit_localisation = {
+	rank = {
+		1 = ELEMENTAL_REALM
+		2 = ELEMENTAL_KINGDOM
+		3 = ELEMENTAL_EMPIRE
+	}
+
+	ruler_male = {
+		1 = EARTH_SPRITE
+		2 = EARTH_SPIRIT
+		3 = INCARNATION_OF_EARTH
+	}
+
+	ruler_female = {
+		1 = EARTH_SPRITE
+		2 = EARTH_SPIRIT
+		3 = INCARNATION_OF_EARTH
+	}
+
+	consort_male = {
+		1 = CONSORT
+		2 = CONSORT
+		3 = CONSORT
+	}
+
+	consort_female = {
+		1 = CONSORT
+		2 = CONSORT
+		3 = CONSORT
+	}
+	
+	heir_male = {
+		1 = HEIR
+		2 = HEIR
+		3 = HEIR
+	}
+
+	heir_female = {
+		1 = HEIR_fem
+		2 = HEIR_fem
+		3 = HEIR_fem
+	}
+
+	trigger = {
+		OR = {
+			tag = SR2
+			has_reform = gnome_reform 
+		}
+	}
+}
+water_spirit_localisation = {
+	rank = {
+		1 = ELEMENTAL_REALM
+		2 = ELEMENTAL_KINGDOM
+		3 = ELEMENTAL_EMPIRE
+	}
+
+	ruler_male = {
+		1 = WATER_SPRITE
+		2 = WATER_SPIRIT
+		3 = INCARNATION_OF_WATER
+	}
+
+	ruler_female = {
+		1 = WATER_SPRITE
+		2 = WATER_SPIRIT
+		3 = INCARNATION_OF_WATER
+	}
+
+	consort_male = {
+		1 = CONSORT
+		2 = CONSORT
+		3 = CONSORT
+	}
+
+	consort_female = {
+		1 = CONSORT
+		2 = CONSORT
+		3 = CONSORT
+	}
+	
+	heir_male = {
+		1 = HEIR
+		2 = HEIR
+		3 = HEIR
+	}
+
+	heir_female = {
+		1 = HEIR_fem
+		2 = HEIR_fem
+		3 = HEIR_fem
+	}
+
+	trigger = {
+		OR = {
+			tag = UN1
+			has_reform = undine_reform 
+		}
+	}
+}
+fire_spirit_localisation = {
+	rank = {
+		1 = ELEMENTAL_REALM
+		2 = ELEMENTAL_KINGDOM
+		3 = ELEMENTAL_EMPIRE
+	}
+
+	ruler_male = {
+		1 = FIRE_SPRITE
+		2 = FIRE_SPIRIT
+		3 = INCARNATION_OF_FIRE
+	}
+
+	ruler_female = {
+		1 = FIRE_SPRITE
+		2 = FIRE_SPIRIT
+		3 = INCARNATION_OF_FIRE
+	}
+
+	consort_male = {
+		1 = CONSORT
+		2 = CONSORT
+		3 = CONSORT
+	}
+
+	consort_female = {
+		1 = CONSORT
+		2 = CONSORT
+		3 = CONSORT
+	}
+	
+	heir_male = {
+		1 = HEIR
+		2 = HEIR
+		3 = HEIR
+	}
+
+	heir_female = {
+		1 = HEIR_fem
+		2 = HEIR_fem
+		3 = HEIR_fem
+	}
+
+	trigger = {
+		OR = {
+			tag = SL1
+			has_reform = salamander_reform 
+		}
+	}
+}
+the_navy_localisation = {
+	rank = {
+		1 = COUNTER_ADMIRALSHIP
+		2 = ADMIRALSHIP
+		3 = GRAND_ADMIRALSHIP
+	}
+
+	ruler_male = {
+		1 = COUNTER_ADMIRAL
+		2 = ADMIRAL
+		3 = GRAND_ADMIRAL
+	}
+
+	ruler_female = {
+		1 = COUNTER_ADMIRAL
+		2 = ADMIRAL
+		3 = GRAND_ADMIRAL
+	}
+
+	consort_male = {
+		1 = CONSORT
+		2 = CONSORT
+		3 = CONSORT
+	}
+
+	consort_female = {
+		1 = CONSORT
+		2 = CONSORT
+		3 = CONSORT
+	}
+	
+	heir_male = {
+		1 = SECOND_MATE
+		2 = SECOND_MATE
+		3 = SECOND_MATE
+	}
+
+	heir_female = {
+		1 = SECOND_MATE
+		2 = SECOND_MATE
+		3 = SECOND_MATE
+	}
+
+	trigger = {
+		OR = {
+			tag = NA1
+			has_reform = navy_reform 
+		}
+	}
+}
+pirates_localisation = {
+	rank = {
+		1 = PIRATE_STATELET
+		2 = GREAT_PIRATE_REALM
+		3 = LEGENDARY_PIRATE_REALM
+	}
+
+	ruler_male = {
+		1 = PIRATE_CAPTAIN
+		2 = GREAT_PIRATE
+		3 = LEGENDARY_PIRATE
+	}
+
+	ruler_female = {
+		1 = PIRATE_CAPTAIN
+		2 = GREAT_PIRATE
+		3 = LEGENDARY_PIRATE
+	}
+
+	consort_male = {
+		1 = CONSORT
+		2 = CONSORT
+		3 = CONSORT
+	}
+
+	consort_female = {
+		1 = CONSORT
+		2 = CONSORT
+		3 = CONSORT
+	}
+	
+	heir_male = {
+		1 = SECOND_MATE
+		2 = SECOND_MATE
+		3 = SECOND_MATE
+	}
+
+	heir_female = {
+		1 = SECOND_MATE
+		2 = SECOND_MATE
+		3 = SECOND_MATE
+	}
+
+	trigger = {
+		OR = {
+			tag = FP1
+			tag = GL1
+			has_reform = fishy_pirates_reform 
+			has_reform = pirate_state_reform 
+			has_reform = gloria_pirates_reform 
+		}
+	}
+}
+kagetsumugi_localisation = {
+	rank = {
+		1 = DOLLMAKER_REALM
+		2 = PUPPETMASTER_REALM
+		3 = KAGETSUMUGI_REALM
+	}
+
+	ruler_male = {
+		1 = DOLLMAKER
+		2 = PUPPETMASTER
+		3 = PUPPETEER_OF_OUTER_LAW
+	}
+
+	ruler_female = {
+		1 = DOLLMAKER
+		2 = PUPPETMASTER
+		3 = PUPPETEER_OF_OUTER_LAW
+	}
+
+	consort_male = {
+		1 = CONSORT
+		2 = CONSORT
+		3 = CONSORT
+	}
+
+	consort_female = {
+		1 = CONSORT
+		2 = CONSORT
+		3 = CONSORT
+	}
+	
+	heir_male = {
+		1 = SUBSTITUTE_DOLL
+		2 = SUBSTITUTE_DOLL
+		3 = SUBSTITUTE_DOLL
+	}
+
+	heir_female = {
+		1 = SUBSTITUTE_DOLL
+		2 = SUBSTITUTE_DOLL
+		3 = SUBSTITUTE_DOLL
+	}
+
+	trigger = {
+		OR = {
+			tag = PT1
+		}
+	}
+}
+sheep_island_great_company_localisation = {
+	rank = {
+		1 = TRANSNATIONAL_CORPORATION
+		2 = TRANSNATIONAL_CORPORATION
+		3 = TRANSNATIONAL_CORPORATION
+	}
+
+	ruler_male = {
+		1 = CEO
+		2 = CEO
+		3 = CEO
+	}
+
+	ruler_female = {
+		1 = CEO
+		2 = CEO
+		3 = CEO
+	}
+
+	consort_male = {
+		1 = CHIEF_SUPERVISOR
+		2 = CHIEF_SUPERVISOR
+		3 = CHIEF_SUPERVISOR
+	}
+
+	consort_female = {
+		1 = CHIEF_SUPERVISOR
+		2 = CHIEF_SUPERVISOR
+		3 = CHIEF_SUPERVISOR
+	}
+	
+	heir_male = {
+		1 = COO
+		2 = COO
+		3 = COO
+	}
+
+	heir_female = {
+		1 = COO
+		2 = COO
+		3 = COO
+	}
+
+	trigger = {
+		has_reform = sheep_island_great_company_reform
+	}
+}

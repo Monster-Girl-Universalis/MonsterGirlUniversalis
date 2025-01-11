@@ -31,3 +31,5 @@ discovered_by = TECH_UNDEAD
 discovered_by = TECH_VAMPIRE
 discovered_by = TECH_YOUMA
 trade_goods = salt
+discovered_by = TECH_FAIRY
+discovered_by = TECH_GHOST

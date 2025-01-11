@@ -52,32 +52,37 @@ undead_internal_development = {
 		}
 	}
 
-	gen_undead_introduce_ghost_girls_to_army = {
+	gen_undead_introduce_zombie_girls_to_army = {
 		icon = mission_undead_introduce_ghost_girls_to_army
 		required_missions = { gen_undead_increase_our_income }
 		position = 3
 		
 		
 		trigger = {
-			estate_loyalty = {
-    				estate = estate_monster_girls
-    				loyalty = 60
+			land_forcelimit = 60
+			calc_true_if = {
+				all_owned_province = {
+					OR = {
+						has_building = regimental_camp
+						has_building = barracks
+						has_building = conscription_center 
+						has_building = training_fields 
+					}
 				}
-			has_estate_privilege = estate_weaponized_spooky_scary_ghosts 
+				amount = 6
+			}
+			
 		}
 		
-		effect = {
-			add_country_modifier = {
-				name = "gen_undead_justified_ghost_warfare"
-				duration = -1
-			}	
-			add_army_tradition = 10	
+		effect = {	
+			add_army_tradition = 20	
+			add_yearly_manpower = 1.5
 		}
 	}
 
 	gen_undead_prepare_zombie_hordes = {
 		icon = mission_undead_prepare_zombie_hordes
-		required_missions = { gen_undead_introduce_ghost_girls_to_army }
+		required_missions = { gen_undead_introduce_zombie_girls_to_army }
 		position = 4
 		
 		

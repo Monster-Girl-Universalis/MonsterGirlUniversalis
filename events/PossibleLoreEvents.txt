@@ -77,3 +77,75 @@ country_event = {
 		}
 	}
 }
+
+#Age of decision
+country_event = {
+	id =  lore_events.3
+	title = "lore_events.3.t"
+	desc = "lore_events.3.desc"
+	picture = Angels_Monsters_eventPicture
+	trigger = {
+		NOT = { has_country_flag = mgq_great_decision }
+		current_age = age_of_absolutism
+	}
+
+	mean_time_to_happen = { days = 1 }
+	#fire_only_once = yes
+	immediate = {
+		hidden_effect = { set_country_flag = mgq_great_decision }
+	}
+
+	option = {	#Angels
+		name = lore_events.3.a
+		trigger = {
+			NOT = { religion = dark_goddess_religion }
+			NOT = { religion = eden_resistance_religion }
+			NOT = { religion_group = chaos_religion_g }
+			NOT = { religion_group = science_religion_g }
+			NOT = { religion = cosmos_religion }
+			NOT = { tag = ML1 }			#Monster Lord never sides with Ilias
+			NOT = { was_tag = ML1 }
+			NOT = { tag = KI1 }			#Tamamo never sides with Ilias
+			NOT = { was_tag = KI1 }
+			NOT = { tag = ENV }			#Micaela doesn't want to get involved
+			NOT = { was_tag = ENV }
+		}
+		ROOT = { change_religion = angel_world_religion }
+		hidden_effect = {
+			every_owned_province = {
+				change_religion = angel_world_religion 
+			}
+			set_ruler_religion = angel_world_religion 
+		}
+	}
+	option = {	#Monsters
+		name = lore_events.3.b
+		trigger = {
+			NOT = { religion = angel_world_religion }
+			NOT = { religion_group = chaos_religion_g }
+			NOT = { religion_group = science_religion_g }
+			NOT = { religion = cosmos_religion }
+			NOT = { tag = SH3 }			#Eden never abandones Ilias
+			NOT = { was_tag = SH3 }
+			NOT = { tag = IT1 }			#ilias never sides with Alipheese
+			NOT = { was_tag = IT1 }
+			NOT = { tag = ENV }			#Micaela doesn't want to get involved
+			NOT = { was_tag = ENV }
+		}
+		ROOT = { change_religion = dark_goddess_religion }
+		hidden_effect = {
+			every_owned_province = {
+				change_religion = dark_goddess_religion 
+			}
+			set_ruler_religion = dark_goddess_religion 
+		}
+	}
+	option = {	#Noone
+		name = lore_events.3.c
+		trigger = {
+			NOT = { religion = angel_world_religion }
+			NOT = { religion = dark_goddess_religion }
+		}
+		add_prestige = 25
+	}
+}

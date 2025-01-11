@@ -31,3 +31,5 @@ owner = MMW
 controller = MMW
 discovered_by = TECH_DEMI_HUMAN
 trade_goods = gems
+discovered_by = TECH_FAIRY
+discovered_by = TECH_GHOST

@@ -58,7 +58,7 @@ elf_internal_development = {
 		}
 	}
 
-	gen_elf_channel_fairy_magic = {
+	gen_elf_channel_elf_magic = {
 		icon = mission_elf_channel_fairy_magic
 		required_missions = { gen_elf_embrace_natures_dominion }
 		position = 3
@@ -83,7 +83,7 @@ elf_internal_development = {
 		
 		effect = {
 			add_country_modifier = {
-				name = "gen_channel_fairy_magic"
+				name = "gen_channel_elf_magic"
 				duration = 9125 #25 years
 			}	
 		}
@@ -91,7 +91,7 @@ elf_internal_development = {
 
 	gen_elf_secure_magical_supplies = {
 		icon = mission_secure_magical_supplies
-		required_missions = { gen_elf_channel_fairy_magic }
+		required_missions = { gen_elf_channel_elf_magic }
 		position = 4
 		
 		

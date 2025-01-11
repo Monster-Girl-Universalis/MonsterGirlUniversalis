@@ -31,3 +31,5 @@ add_core = GO3
 owner = GO3
 culture = Oni
 controller = GO3
+discovered_by = TECH_FAIRY
+discovered_by = TECH_GHOST

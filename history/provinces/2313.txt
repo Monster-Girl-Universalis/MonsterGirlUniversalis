@@ -32,3 +32,5 @@ owner = WY1
 culture = Wyvern_Girl
 controller = WY1
 trade_goods = salt
+discovered_by = TECH_FAIRY
+discovered_by = TECH_GHOST

@@ -1,0 +1,827 @@
+roach_tower_1 = {
+
+	slot = 1
+	generic = yes
+	ai = yes
+	
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		tag = RT1
+	}
+	
+	has_country_shield = yes
+	RT1_settle_in_rubiana = {
+		icon = mission_rubiana
+		required_missions = { RT1_raise_roach_army }
+		position = 2
+		
+		
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with= {
+				value = 4
+				area = rubiana_area 
+				development = 12
+			}
+		}
+		
+		effect = {
+			rubiana_area = {
+				change_culture = Cockroach_Girl
+				change_religion = ROOT
+				add_random_development = 5
+			}
+			add_yearly_manpower = 0.5
+			scorpion_coast_area = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+			scorpion_desert_area = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	RT1_spiders_and_scorpions = {
+		icon = mission_tarantula
+		required_missions = { RT1_settle_in_rubiana }
+		position = 3
+		
+		
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with= {
+				value = 10
+				OR = {
+					area = tarantula_wastelands 
+					area = scorpion_coast_area 
+					area = scorpion_desert_area 
+				}
+			}
+		}
+		
+		effect = {
+			sabasa_region = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+			add_country_modifier = {
+				name = "RT1_spiders_and_scorpions_united"
+				duration = -1
+			}
+		}
+	}
+	RT1_desert_storm = {
+		icon = mission_sabasa
+		required_missions = { RT1_spiders_and_scorpions }
+		position = 4
+		
+		
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with= {
+				value = 25
+				region = sabasa_region
+			}
+			755 = {
+				owned_by = ROOT
+				is_core = ROOT
+			}
+		}
+		
+		effect = {
+			pyramid_region = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+			add_country_modifier = {
+				name = "RT1_defeated_sabasa"
+				duration = 9125
+			}
+		}
+	}
+	RT1_get_to_the_pyramid = {
+		icon = mission_pyramid
+		required_missions = { RT1_desert_storm }
+		position = 5
+		
+		
+		trigger = {
+			pyramid_area = {
+				type = all
+				owned_by = ROOT
+			}	
+			pyramid_southern_road = {
+				type = all
+				owned_by = ROOT
+			}
+			nefertiti_area = {
+				type = all
+				owned_by = ROOT
+			}
+			PY1 = { exists = no }		
+		}
+		
+		effect = {
+			add_prestige = 50
+			add_country_modifier = {
+				name = "RT1_defeated_sphynx"
+				duration = 9125
+			}
+		}
+	}
+	RT1_sphynx_assistance = {
+		icon = mission_sphynx
+		required_missions = { RT1_get_to_the_pyramid }
+		position = 6
+		
+		
+		trigger = {
+			819 = {
+				owned_by = ROOT
+				has_great_project = {
+					type = pyramid
+					tier = 3
+				}
+			}	
+		}
+		
+		effect = {
+ 			set_variable = {
+   				which = Beast_integration
+  				value = 1
+			}
+ 			set_variable = {
+   				which = Yoma_integration
+  				value = 1
+			}
+ 			set_variable = {
+   				which = Undead_integration
+  				value = 1
+			}
+		}
+	}
+	
+}
+roach_tower_2 = {
+
+	slot = 2
+	generic = yes
+	ai = yes
+	
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		tag = RT1
+	}
+	
+	has_country_shield = yes
+	RT1_raise_roach_army = {
+		icon = mission_roach_girl
+		required_missions = { }
+		position = 1
+		
+		
+		trigger = {
+			army_size_percentage = 0.9
+			army_size = 20
+			num_of_generals = 2
+		}
+		
+		effect = {
+			rubiana_area = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+			sables_coast_area = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+			minotaur_steppes = {
+				type = all
+				add_permanent_claim = ROOT
+			}			
+		}
+	}
+	RT1_rubiana_drylands = {
+		icon = mission_wasteland_campaigns
+		required_missions = { RT1_raise_roach_army }
+		position = 2
+		
+		
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with= {
+				value = 10
+				OR = {
+					area = rubiana_area 
+					area = sables_coast_area 
+					area = minotaur_steppes 
+				}
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "RT1_roach_army"
+				duration = 9125
+			}
+			bandersnatch_area = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+			centipede_area = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+			tarantula_wastelands = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	RT1_seekers_cave = {
+		icon = mission_mountain_metals
+		required_missions = { RT1_rubiana_drylands }
+		position = 3
+		
+		
+		trigger = {
+			bandersnatch_area = {
+				type = all
+				owned_by = ROOT
+			}
+			centipede_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		
+		effect = {
+			seekers_cave_area = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+			661 = {
+				add_province_modifier = {
+					name = "RT1_fortified_cave"
+					duration = -1
+				}
+				add_building = fort_16th			
+			}
+		}
+	}
+	RT1_push_back_the_dolls = {
+		icon = mission_hagenbeck
+		required_missions = { RT1_seekers_cave }
+		position = 4
+		
+		
+		trigger = {
+			seekers_cave_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		
+		effect = {
+			doll_assembly_chambers = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+			doll_storage_area = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+			infantry_dolls_area = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+			kagetsumugi_training_grounds = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+			magician_dolls_area = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+			maid_dolls_area = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+			puppeteer_tower = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+			monster_lord_dolls_area = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	RT1_confront_kagetsumugi = {
+		icon = mission_kagetsumugi_the_puppeteer2
+		required_missions = { RT1_push_back_the_dolls }
+		position = 5
+		
+		
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with= {
+				value = 25
+				OR = {
+					area = doll_assembly_chambers 
+					area = doll_storage_area 
+					area = infantry_dolls_area 
+					area = kagetsumugi_training_grounds 
+					area = magician_dolls_area 
+					area = maid_dolls_area 
+					area = puppeteer_tower 
+					area = monster_lord_dolls_area 
+				}
+			}
+		}
+		
+		effect = {
+			add_army_tradition = 30
+			add_country_modifier = {
+				name = "RT1_defeated_kagetsumugi"
+				duration = 9125
+			}			
+		}
+	}
+	RT1_dollmaking_secrets = {
+		icon = mission_doll_improve_the_doll_quality
+		required_missions = { RT1_confront_kagetsumugi }
+		position = 6
+		
+		
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with= {
+				value = 31
+				is_prosperous = yes
+				development = 15
+				OR = {
+					area = doll_assembly_chambers 
+					area = doll_storage_area 
+					area = infantry_dolls_area 
+					area = kagetsumugi_training_grounds 
+					area = magician_dolls_area 
+					area = maid_dolls_area 
+					area = puppeteer_tower 
+					area = monster_lord_dolls_area 
+					area = seekers_cave_area 
+				}
+			}
+		}
+		
+		effect = {
+ 			set_variable = {
+   				which = Doll_integration
+  				value = 1
+			}
+			add_adm_tech = 1				
+		}
+	}
+	
+}
+roach_tower_3 = {
+
+	slot = 3
+	generic = yes
+	ai = yes
+	
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		tag = RT1
+	}
+	
+	has_country_shield = yes
+	RT1_fortification_lines = {
+		icon = mission_fortify_the_realm
+		required_missions = { RT1_rubiana_drylands }
+		position = 3
+		
+		
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with= {
+				value = 4
+				region = puppeteer_tower_region 
+				has_building = fort_15th
+			}
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with= {
+				value = 6
+				region = puppeteer_tower_region 
+				base_manpower = 6
+				OR = {
+					has_building = barracks
+					has_building = regimental_camp
+				}
+			}
+		}
+		
+		effect = {
+			safina_road_area = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+			safina_mountain_pass = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+			capital_scope = { add_building = soldier_households }
+			puppeteer_tower_region = {
+				type = all
+				add_province_modifier = {
+					name = "RT1_fortification_lines"
+					duration = -1
+				}				
+			}
+		}
+	}
+	RT1_conquer_minotaurs_realms = {
+		icon = mission_minotauros
+		required_missions = { RT1_fortification_lines }
+		position = 4
+		
+		trigger = {
+			minotaur_steppes = {
+				type = all
+				owned_by = ROOT
+			}
+			safina_road_area = {
+				type = all
+				owned_by = ROOT
+			}
+			safina_mountain_pass = {
+				type = all
+				owned_by = ROOT
+			}			
+		}
+		
+		effect = {
+			add_accepted_culture = Minotaur_Girl
+			monte_carlo_region = {
+				type = all
+				add_permanent_claim = ROOT
+			}			
+		}
+	}
+	RT1_conquest_of_monte_carlo = {
+		icon = mission_natalia_region
+		required_missions = { RT1_conquer_minotaurs_realms }
+		position = 5
+		
+		trigger = {
+			monte_carlo_region = {
+				type = all
+				owned_by = ROOT
+			}			
+		}
+		
+		effect = {
+			add_years_of_income = 1.5
+			add_country_modifier = {
+				name = "RT1_conquest_of_monte_carlo"
+				duration = 9125
+			}			
+		}
+	}
+	RT1_deal_with_elka_company = {
+		icon = chater_the_voc
+		required_missions = { RT1_conquest_of_monte_carlo }
+		position = 6
+		
+		trigger = {
+			OR = {
+				full_idea_group = trade_ideas
+				full_idea_group = spy_ideas
+			}
+			monte_carlo_region = {
+				type = all
+				owned_by = ROOT
+				base_production = 8
+			}			
+		}
+		
+		effect = {
+			add_years_of_income = 1
+			add_mercantilism = 5
+			add_country_modifier = {
+				name = "RT1_collaboration_with_elka"
+				duration = -1
+			}			
+		}
+	}
+	
+}
+roach_tower_4 = {
+
+	slot = 4
+	generic = yes
+	ai = yes
+	
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		tag = RT1
+	}
+	
+	has_country_shield = yes
+	RT1_raise_roach_navy = {
+		icon = mission_galleys_in_port
+		required_missions = { }
+		position = 1
+		
+		
+		trigger = {
+			navy_size_percentage = 0.9
+			navy_size = 20
+			num_of_admirals = 2
+		}
+		
+		effect = {
+			dahlia_docks_area = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+			mithra_area = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+			nameless_slums_area = {
+				type = all
+				add_permanent_claim = ROOT
+			}			
+		}
+	}
+	RT1_occupy_the_nameless_slums = {
+		icon = mission_don_dahlia
+		required_missions = { RT1_raise_roach_navy }
+		position = 2
+		
+		
+		trigger = {
+			dahlia_docks_area = {
+				type = all
+				owned_by = ROOT
+			}
+			nameless_slums_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		
+		effect = {
+			81 = { change_trade_goods = grain }
+			79 = {
+				change_province_name = "Roach Slums"
+				add_random_development = 15
+			}
+			nameless_slums_area = {
+				change_culture = Cockroach_Girl
+				change_religion = ROOT
+			}
+			wolf_mountains_area = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+			rat_mountains_area = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+			south_irina_mountains_area = {
+				type = all
+				add_permanent_claim = ROOT
+			}						
+		}
+	}
+	RT1_wolves_and_rats = {
+		icon = mission_rat_girl
+		required_missions = { RT1_occupy_the_nameless_slums }
+		position = 3
+		
+		
+		trigger = {
+			wolf_mountains_area = {
+				type = all
+				owned_by = ROOT
+			}
+			rat_mountains_area = {
+				type = all
+				owned_by = ROOT
+			}
+			south_irina_mountains_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		
+		effect = {
+			irina_region = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+			add_mil_power = 100
+			add_country_modifier = {
+				name = "RT1_rat_spies"
+				duration = 9125
+			}						
+		}
+	}
+	RT1_irina_campaign = {
+		icon = mission_wolf_girl
+		required_missions = { RT1_wolves_and_rats }
+		position = 4
+		
+		
+		trigger = {
+			irina_region = {
+				type = all
+				owned_by = ROOT
+			}
+			army_size = 100
+		}
+		
+		effect = {
+			iliasburg_region = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+			add_adm_power = 100
+			add_country_modifier = {
+				name = "RT1_wolf_warriors"
+				duration = 9125
+			}									
+		}
+	}
+	RT1_conquest_of_iliasburg = {
+		icon = dalmatian_conquest
+		required_missions = { RT1_irina_campaign }
+		position = 5
+		
+		
+		trigger = {
+			iliasburg_area = {
+				type = all
+				owned_by = ROOT
+			}
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with= {
+				value = 25
+				OR = {
+					region = iliasburg_region
+				}
+			}
+			
+		}
+		
+		effect = {
+			iliasburg_region = {
+				type = all
+				add_random_development = 3
+			}
+			add_dip_power = 100
+			add_country_modifier = {
+				name = "RT1_delicious_ama_ama_dango_trade"
+				duration = 9125
+			}									
+		}
+	}
+	RT1_iliasport = {
+		icon = renaissance_city
+		required_missions = { RT1_conquest_of_iliasburg }
+		position = 6
+		
+		
+		trigger = {
+			iliasport_area = {
+				type = all
+				owned_by = ROOT
+				development = 20
+			}
+			iliasburg_region = {
+				type = all
+				owned_by = ROOT
+			}
+			
+		}
+		
+		effect = {
+			add_mercantilism = 5
+			add_yearly_sailors = 1
+			add_country_modifier = {
+				name = "RT1_ilias_continent_trade_flow"
+				duration = -1
+			}									
+		}
+	}
+	
+}
+roach_tower_5 = {
+
+	slot = 5
+	generic = yes
+	ai = yes
+	
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		tag = RT1
+	}
+	
+	has_country_shield = yes
+	RT1_mithra_castle = {
+		icon = mission_mithra_castle
+		required_missions = { RT1_occupy_the_nameless_slums }
+		position = 3
+		
+		
+		trigger = {
+			mithra_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		
+		effect = {
+			88 = {
+				add_great_project_tier = {
+					type = mithra_castle 
+					tier = 1
+				}
+			}
+			add_army_tradition = 25						
+		}
+	}
+	RT1_search_for_legendary_weapons = {
+		icon = mission_mithra_legendary_sword
+		required_missions = { RT1_mithra_castle }
+		position = 4
+		
+		
+		trigger = {
+			OR = {
+				has_global_modifier_value = {
+					which = spy_offence
+					value = 0.5
+				}
+				has_global_modifier_value = {
+					which = manpower_recovery_speed
+					value = 0.6
+				}
+			}
+			88 = {
+				has_great_project = {
+					type = mithra_castle 
+					tier = 3
+				}
+				owned_by = ROOT
+			}
+		}
+		
+		effect = {
+			country_event = { id = flavor_rt1.1 }					
+		}
+	}
+	RT1_food_for_roaches = {
+		icon = mission_secure_food_production
+		required_missions = { }
+		position = 5
+		
+		trigger = {
+			grain = 10
+			fish = 10
+			livestock = 10
+			num_of_owned_provinces_with = {
+				has_production_building_trigger = yes
+				value =30
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "RT1_food_for_roaches"
+				duration = 9125 #25 years
+			}	
+			add_yearly_manpower = 1.5		
+		}
+	}
+	RT1_infrastructure_for_huge_population = {
+		icon = mission_infrastructure_for_huge_population
+		required_missions = { RT1_food_for_roaches }
+		position = 6
+		
+		
+		trigger = {
+			calc_true_if = {
+				all_owned_province = {
+					development = 20	
+					num_of_times_expanded_infrastructure = 1
+				}
+				amount = 20
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "gen_insect_infrastructure_for_huge_population"
+				duration = -1
+			}
+		}
+	}
+	
+}
+
+

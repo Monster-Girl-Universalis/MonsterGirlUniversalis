@@ -33,6 +33,7 @@ estate_apoptosis = {
 	trigger = {
 					OR = {
 						unit_type = TECH_APOPTOSIS
+						has_reform = delve_into_chaos_reform 
 					}
 	}
 

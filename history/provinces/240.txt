@@ -31,3 +31,5 @@ culture = Dark_Elf
 controller = DLF
 discovered_by = TECH_DEMI_HUMAN
 trade_goods = dyes
+discovered_by = TECH_FAIRY
+discovered_by = TECH_GHOST

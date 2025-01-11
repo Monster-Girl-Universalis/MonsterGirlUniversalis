@@ -118,8 +118,8 @@ ship_names = {
 	"Deathly Alliance" "Dreadful Entwinement" "Cell-death Coalescence" "Apoptotic Embrace" "Fragmented Fusion" 
 }
 army_names = { 
-	"Luxuru Army" "$PROVINCE$ Army Unit"
+	"Luxuru Army" "$PROVINCE$ Army Unit" 
 }
 fleet_names = { 
-	"Luxuru Navy" "$PROVINCE$ Naval Unit"
+	"Luxuru Navy" "$PROVINCE$ Naval Unit" 
 }

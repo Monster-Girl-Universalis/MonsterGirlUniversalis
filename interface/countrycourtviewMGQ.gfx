@@ -3,7 +3,7 @@ spriteTypes = {
 		name = "GFX_tech_group_strip"
 		texturefile = "gfx//interface//tech_group_strip2.dds"
 		transparencecheck = yes	
-		noOfFrames = 42
+		noOfFrames = 44
 	}
 
 }

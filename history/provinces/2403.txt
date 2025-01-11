@@ -32,3 +32,5 @@ owner = ML1
 culture = Royal_Yoma
 controller = ML1
 trade_goods = gold
+discovered_by = TECH_FAIRY
+discovered_by = TECH_GHOST

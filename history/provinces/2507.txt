@@ -1,7 +1,7 @@
 base_tax = 3
 base_manpower = 3
 base_production = 4
-religion = monster_lord_religion
+religion = wind_religion
 is_city = no
 culture = Penguin_Girl
 center_of_trade = 1

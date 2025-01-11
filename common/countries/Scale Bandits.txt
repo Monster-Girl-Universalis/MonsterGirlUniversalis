@@ -89,16 +89,16 @@ monarch_names = {
 	"Granda #0" = -20
 }
 leader_names = { 
-	Bloodmoon Ashenheart Silverclaw Flamestrike Stormcaller Ironfang Darkwing Emberheart Bloodclaw Stormwatcher Pyronyx Terrastryke
-	Shadowflame Infernion Thunderclaw Frostscale Nidhoggra Saphirion Wyvernia Drakonia Arcanium Boreallia Oceanwing Geodragon	
+	Bloodmoon Ashenheart Silverclaw Flamestrike Stormcaller Ironfang Darkwing Emberheart Bloodclaw Stormwatcher
+	Pyronyx Terrastryke Shadowflame Infernion Thunderclaw Frostscale Nidhoggra Saphirion Wyvernia Drakonia
+	Arcanium Boreallia Oceanwing Geodragon 
 }
 ship_names = { 
-	Furyflame Wyrmrider Drakescale "Serpent's Breath" Firewing Chromarok Scorchclaw Dragonheart
-	Wyrmskull Tiamatide Draconic Dragonclaw Wyrmrider Serpent Drakescale Chromatic Scorchclaw
-	Dragonheart Wyrmlord "Dragonheart Sovereign" "Scorchclaw Tempest" "Dragonclaw Defender" Uroboros
-	Draconith Pyroclaw Serpentix Scorchrend Wyrmscar Aureliar Firedrake Drakari Cindrake Wyrmforge
-	Aurelis Vermithor Draculon Flamespire Ignithorn Draconyx Abyssire Chrysmere Scalethorn Drakona
-	Emberclad Aureline Firesoul
+	Furyflame Wyrmrider Drakescale "Serpent's Breath" Firewing Chromarok Scorchclaw Dragonheart Wyrmskull Tiamatide
+	Draconic Dragonclaw Wyrmrider Serpent Drakescale Chromatic Scorchclaw Dragonheart Wyrmlord "Dragonheart Sovereign"
+	"Scorchclaw Tempest" "Dragonclaw Defender" Uroboros Draconith Pyroclaw Serpentix Scorchrend Wyrmscar Aureliar Firedrake
+	Drakari Cindrake Wyrmforge Aurelis Vermithor Draculon Flamespire Ignithorn Draconyx Abyssire
+	Chrysmere Scalethorn Drakona Emberclad Aureline Firesoul 
 }
 army_names = { 
 	"Scale Bandits Army" "$PROVINCE$ Army" 

@@ -138,7 +138,7 @@ ship_names = {
 	Yadake Yaeyama Yaezakura Yahagi Yakaze Yakumo Yamagumo Yamakaze Yamashiro Yamato
 	Yamazuki Yanagi Yashima Yasoshima Yayoi Yodo Yodohashi Yoizuki Yomogi Yoshino
 	Yoshun Yubari Yugiri Yugumo Yukigumo Yukikaze Yunagi Yura Yuzuki Zuiho
-	Zuikaku 
+	Zuikaku
 }
 army_names = { 
 	"Hitodama Army" "$PROVINCE$ Army" 

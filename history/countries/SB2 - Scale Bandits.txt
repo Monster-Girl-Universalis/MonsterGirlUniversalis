@@ -1,12 +1,12 @@
 government = monarchy
 government_rank = 1
 primary_culture = Lizard_Girl
-religion = monster_lord_religion
+religion = fire_religion
 technology_group = TECH_DRAGON
 1444.1.1 = { 
-	monarch = {
+	monarch = { 
 		name = "Miranda"
-		dynasty = "of Saloon" 
+		dynasty = "of Saloon"
 		female = yes
 		birth_date = 1424.1.1
 		adm = 4

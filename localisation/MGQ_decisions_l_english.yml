@@ -38,6 +38,8 @@
  vampire_queen_nation_desc:0 "After becoming a powerful Vampire and mastering the demon arts skills our ruler is capable enough to wear the mantle of Vampire Queen."
  tanuki_queen_nation_title:0 "Claim the title of Tanuki Queen"
  tanuki_queen_nation_desc:0 "After becoming a powerful Tanuki and mastering the taoist and ninjutsu skills our ruler is capable enough to wear the mantle of Tanuki Queen."
+ fairy_queen_nation_title:0 "Claim the title of Fairy Queen"
+ fairy_queen_nation_desc:0 "After becoming a powerful Fairy and mastering the power of natural elements our ruler is capable enough to wear the mantle of Fairy Queen."
 
  ###HUMAN NATIONS### 
  san_ilia_nation_title:0 "Restore the kingdom of San Ilia"
@@ -64,6 +66,24 @@
  hellgondo_tartarus_nation_desc:0 "Apoptosis in Hellgondo Tartarus managed to organize themselves into powerful entity uniting the surrounding region. We should establish our nation as a poweful player in outside world!\n§YWe will be able to successfully collect and incorporate genetic material of all races in Hellgondo Tartarus region controlled by us.§!"
  esta_tartarus_nation_title:0 "Unite Esta Tartarus"
  esta_tartarus_nation_desc:0 "Apoptosis in Esta Tartarus managed to organize themselves into powerful entity uniting the surrounding region. We should establish our nation as a poweful player in outside world!\n§YWe will be able to successfully collect and incorporate genetic material of all races in PLACEHOLDER region controlled by us.§!"
+
+ ###CHANGE ASPECT OR SHRINE###
+ change_deity_wind_decision_title:0 "Change Aspect of Wind"
+ change_deity_wind_decision_desc:0 "We will switch to a different aspect of Wind religion."
+ change_deity_earth_decision_title:0 "Change Aspect of Earth"
+ change_deity_earth_decision_desc:0 "We will switch to a different aspect of Earth religion."
+ change_deity_water_decision_title:0 "Change Aspect of Water"
+ change_deity_water_decision_desc:0 "We will switch to a different aspect of Water religion."
+ change_deity_fire_decision_title:0 "Change Aspect of Fire"
+ change_deity_fire_decision_desc:0 "We will switch to a different aspect of Fire religion."
+ change_cult_yamatai_decision_title:0 "Change Main Shrine"
+ change_cult_yamatai_decision_desc:0 "We will change the central Shrine of our religion."
+ change_deity_ice_decision_title:0 "Change Aspect of Ice"
+ change_deity_ice_decision_desc:0 "We will switch to a different aspect of Ice religion."
+ change_deity_lightning_decision_title:0 "Change Aspect of Lightning"
+ change_deity_lightning_decision_desc:0 "We will switch to a different aspect of Lightning religion."
+ change_deity_cosmos_decision_title:0 "Change Aspect of Cosmos"
+ change_deity_cosmos_decision_desc:0 "We will switch to a different aspect of the Guardian Butterfly Cosmos."
 
  ###RACIAL INTEGRATION###
  human_integration_decision_title:0 "Integrate human race"
@@ -116,6 +136,12 @@
  roid_integration_decision_desc:0 "We have a lot of roid subjects in our realm and it's finally time to properly integrate them into our society. Though it will clearly benefit us in future, this process will require some time."
  tanuki_integration_decision_title:0 "Integrate tanuki race"
  tanuki_integration_decision_desc:0 "We have a lot of tanuki subjects in our realm and it's finally time to properly integrate them into our society. Though it will clearly benefit us in future, this process will require some time."
+ fairy_integration_decision_title:0 "Integrate fairy race"
+ fairy_integration_decision_desc:0 "We have a lot of fairy subjects in our realm and it's finally time to properly integrate them into our society. Though it will clearly benefit us in future, this process will require some time."
+ ghost_integration_decision_title:0 "Integrate ghost race"
+ ghost_integration_decision_desc:0 "We have a lot of ghost subjects in our realm and it's finally time to properly integrate them into our society. Though it will clearly benefit us in future, this process will require some time."
+ giant_integration_decision_title:0 "Integrate giant race"
+ giant_integration_decision_desc:0 "We have a lot of giant subjects in our realm and it's finally time to properly integrate them into our society. Though it will clearly benefit us in future, this process will require some time."
 
 
  human_integration_decision_reduced_33_title:0 "Integrate human race"
@@ -168,6 +194,12 @@
  roid_integration_decision_reduced_33_desc:0 "We have a lot of roid subjects in our realm and it's finally time to properly integrate them into our society. Though it will clearly benefit us in future, this process will require some time."
  tanuki_integration_decision_reduced_33_title:0 "Integrate tanuki race"
  tanuki_integration_decision_reduced_33_desc:0 "We have a lot of tanuki subjects in our realm and it's finally time to properly integrate them into our society. Though it will clearly benefit us in future, this process will require some time."
+ fairy_integration_decision_reduced_33_title:0 "Integrate fairy race"
+ fairy_integration_decision_reduced_33_desc:0 "We have a lot of fairy subjects in our realm and it's finally time to properly integrate them into our society. Though it will clearly benefit us in future, this process will require some time."
+ ghost_integration_decision_reduced_33_title:0 "Integrate ghost race"
+ ghost_integration_decision_reduced_33_desc:0 "We have a lot of ghost subjects in our realm and it's finally time to properly integrate them into our society. Though it will clearly benefit us in future, this process will require some time."
+ giant_integration_decision_reduced_33_title:0 "Integrate giant race"
+ giant_integration_decision_reduced_33_desc:0 "We have a lot of giant subjects in our realm and it's finally time to properly integrate them into our society. Though it will clearly benefit us in future, this process will require some time."
 
  ###MISSION TREES DECISIONS###
  investigate_rubiana_once_again_title:0 "Investigate Rubiana once again"

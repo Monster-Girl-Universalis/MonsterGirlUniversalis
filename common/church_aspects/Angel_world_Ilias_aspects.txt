@@ -1,0 +1,135 @@
+sword_that_unites_heavenly_armies = {
+	sprite = "GFX_angel_world_micaela"
+	cost = 125
+	trigger = {
+		NOT = {
+			has_country_modifier = angel_world_micaela_mod
+		}
+	}
+	effect = {
+		custom_tooltip = sword_that_unites_heavenly_armies_tt
+		hidden_effect = {
+			add_country_modifier = {
+				name = angel_world_micaela_mod
+				duration = 5475
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 3
+		modifier = {
+			factor = 0
+			is_at_war = no
+		}
+	}
+}
+
+guardian_of_law = {
+	sprite = "GFX_angel_world_rafaela"
+	cost = 100
+	trigger = {
+		always = yes
+	}
+	effect = {
+		change_government_reform_progress = 50
+	}
+	ai_will_do = {
+		factor = 3
+	}
+}
+
+heavenly_battle_weapon = {
+	sprite = "GFX_angel_world_uriela"
+	cost = 125
+	trigger = {
+		NOT = {
+			has_country_modifier = angel_world_uriela_mod
+		}
+	}
+	effect = {
+		custom_tooltip = heavenly_battle_weapon_tt
+		hidden_effect = {
+			add_country_modifier = {
+				name = angel_world_uriela_mod
+				duration = 5475
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 3
+		modifier = {
+			factor = 0
+			is_at_war = no
+		}
+	}
+}
+gabrielas_healing_assistance = {
+	sprite = "GFX_angel_world_gabriela"
+	cost = 125
+	trigger = {
+		NOT = {
+			has_country_modifier = angel_world_gabriela_mod
+		}
+	}
+	effect = {
+		custom_tooltip = gabrielas_healing_assistance_weapon_tt
+		hidden_effect = {
+			add_country_modifier = {
+				name = angel_world_gabriela_mod
+				duration = 5475
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 3
+		modifier = {
+			factor = 0
+			is_at_war = yes
+		}
+	}
+}
+sariela_authority = {
+	sprite = "GFX_angel_world_sariela"
+	cost = 150
+	trigger = {
+		rebel_progress_at_least = { value = 50 }
+	}
+	effect = {
+		add_rebel_progress = {
+			value = -50
+		}
+	}
+	ai_will_do = {
+		factor = 3
+		modifier = {
+			factor = 10
+			rebel_progress_at_least = { value = 90 }
+		}
+	}
+}
+
+nuclear_powered_twin_angels = {
+	sprite = "GFX_angel_world_metatrone_and_sandalphone"
+	cost = 200
+	trigger = {
+		NOT = {
+			has_country_modifier = angel_world_metatrone_and_sandalphone_mod
+		}
+	}
+	effect = {
+		custom_tooltip = angel_world_metatrone_and_sandalphone_mod_tt
+		hidden_effect = {
+			add_country_modifier = {
+				name = angel_world_metatrone_and_sandalphone_mod
+				duration = 5475
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 3
+		modifier = {
+			factor = 0
+			is_at_war = yes
+		}
+	}
+}

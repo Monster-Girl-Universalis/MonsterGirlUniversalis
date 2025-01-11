@@ -32,3 +32,5 @@ owner = JK1
 culture = Lamia_Girl
 controller = JK1
 trade_goods = iron
+discovered_by = TECH_FAIRY
+discovered_by = TECH_GHOST

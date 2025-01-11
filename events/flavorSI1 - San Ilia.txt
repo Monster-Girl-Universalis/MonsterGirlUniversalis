@@ -123,6 +123,13 @@ country_event = {
 	
 	option = {		#Uncovered the truth - Angel World
 		name = flavor_si1.7.a
+		trigger = {
+			NOT = { religion = dark_goddess_religion }
+			NOT = { religion = eden_resistance_religion }
+			NOT = { religion_group = chaos_religion_g }
+			NOT = { religion_group = science_religion_g }
+			NOT = { religion = cosmos_religion }
+		}
 		reset_golden_age = yes
 		ROOT = { change_religion = angel_world_religion }
 		hidden_effect = {
@@ -135,6 +142,12 @@ country_event = {
 	}	
 	option = {		#Uncovered the truth - Monster World
 		name = flavor_si1.7.b
+		trigger = {
+			NOT = { religion = angel_world_religion }
+			NOT = { religion_group = chaos_religion_g }
+			NOT = { religion_group = science_religion_g }
+			NOT = { religion = cosmos_religion }
+		}
 		reset_golden_age = yes
 		ROOT = { change_religion = dark_goddess_religion }
 		hidden_effect = {
@@ -146,6 +159,10 @@ country_event = {
 	}	
 	option = {		#Uncovered the truth - We owe no allegiance!
 		name = flavor_si1.7.c
+		trigger = {
+			NOT = { religion = angel_world_religion }
+			NOT = { religion = dark_goddess_religion }
+		}
 		reset_golden_age = yes
 		add_prestige = 100
 	}

@@ -1,0 +1,172 @@
+country_decisions = {
+
+	change_deity_wind_decision = {
+		major = no
+		potential = {
+			religion = wind_religion
+		}
+		allow = {
+			NOT = { has_country_modifier = change_deity_wind_mod }
+			
+			
+		}
+		effect = {
+			country_event = { id = elemental_religion.1 }
+			add_country_modifier = {
+				name = change_deity_wind_mod
+				duration = 3650
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	change_deity_earth_decision = {
+		major = no
+		potential = {
+			religion = earth_religion
+		}
+		allow = {
+			NOT = { has_country_modifier = change_deity_earth_mod }
+			
+			
+		}
+		effect = {
+			country_event = { id = elemental_religion.2 }
+			add_country_modifier = {
+				name = change_deity_earth_mod
+				duration = 3650
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	change_deity_water_decision = {
+		major = no
+		potential = {
+			religion = water_religion
+		}
+		allow = {
+			NOT = { has_country_modifier = change_deity_water_mod }
+			
+			
+		}
+		effect = {
+			country_event = { id = elemental_religion.3 }
+			add_country_modifier = {
+				name = change_deity_water_mod
+				duration = 3650
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	change_deity_fire_decision = {
+		major = no
+		potential = {
+			religion = fire_religion
+		}
+		allow = {
+			NOT = { has_country_modifier = change_deity_fire_mod }
+			
+			
+		}
+		effect = {
+			country_event = { id = elemental_religion.4 }			
+			add_country_modifier = {
+				name = change_deity_fire_mod
+				duration = 3650
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	change_cult_yamatai_decision = {
+		major = no
+		potential = {
+			religion = yamatai_religion
+		}
+		allow = {
+			NOT = { has_country_modifier = change_cult_yamatai_mod }
+			
+			
+		}
+		effect = {
+			country_event = { id = elemental_religion.5 }			
+			add_country_modifier = {
+					name = change_cult_yamatai_mod
+					duration = 3650
+				}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	change_deity_ice_decision = {
+		major = no
+		potential = {
+			religion = ice_religion
+		}
+		allow = {
+			NOT = { has_country_modifier = change_deity_ice_mod }
+			
+			
+		}
+		effect = {
+			country_event = { id = elemental_religion.6 }			
+			add_country_modifier = {
+				name = change_deity_ice_mod 
+				duration = 3650
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	change_deity_lightning_decision = {
+		major = no
+		potential = {
+			religion = lightning_religion
+		}
+		allow = {
+			NOT = { has_country_modifier = change_deity_lightning_mod }
+			
+			
+		}
+		effect = {
+			country_event = { id = elemental_religion.7 }			
+			add_country_modifier = {
+				name = change_deity_lightning_mod 
+				duration = 3650
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	change_deity_cosmos_decision = {
+		major = no
+		potential = {
+			religion = cosmos_religion
+		}
+		allow = {
+			NOT = { has_country_modifier = change_deity_cosmos_mod }
+			
+			
+		}
+		effect = {
+			country_event = { id = elemental_religion.8 }			
+			add_country_modifier = {
+				name = change_deity_cosmos_mod 
+				duration = 3650
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+}

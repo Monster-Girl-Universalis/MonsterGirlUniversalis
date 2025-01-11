@@ -1,0 +1,119 @@
+heretek_substitute_bodies = {
+	is_blessing = yes
+
+	modifier = {
+		no_stability_loss_on_monarch_death = yes
+		country_admin_power = 1
+	}
+	ai_will_do = {
+		factor = 10
+		modifier = {
+			factor = 2
+			overextension_percentage = 0.7
+		}
+		modifier = {
+			factor = 3
+			overextension_percentage = 0.5
+		}
+	}
+}
+
+heretek_corpses_puppetry = {
+	is_blessing = yes
+
+	modifier = {
+		manpower_recovery_speed = 0.15
+		land_maintenance_modifier = -0.10
+	}
+	ai_will_do = {
+		factor = 15
+		modifier = {
+			factor = 3
+			NOT = {
+				manpower = 4
+			}
+		}
+	}
+}
+
+heretek_macabre_murder_circus = {
+	is_blessing = yes
+
+	modifier = {
+		infantry_power = 0.20
+		land_maintenance_modifier = 0.10
+	}
+	ai_will_do = {
+		factor = 15
+	}
+}
+
+heretek_parasitic_nano_dolls = {
+	is_blessing = yes
+
+	modifier = {
+		land_maintenance_modifier = 0.10
+		morale_damage = 0.15
+	}
+	ai_will_do = {
+		factor = 10
+		modifier = {
+			factor = 3
+			NOT = {
+				any_neighbor_country = {
+					tech_difference = 1
+				}
+			}
+		}
+	}
+}
+
+heretek_assasination_protocols = {
+	is_blessing = yes
+
+	modifier = {
+		spy_offence = 1
+	}
+	ai_will_do = {
+		factor = 15
+	}
+}
+
+heretek_knowledge_from_other_worlds = {
+	is_blessing = yes
+
+	modifier = {
+		country_diplomatic_power = 1
+		possible_policy = 2
+	}
+	ai_will_do = {
+		factor = 10
+		modifier = {
+			factor = 3
+			NOT = {
+				any_neighbor_country = {
+					tech_difference = 1
+				}
+			}
+		}
+	}
+}
+heretek_spells_not_to_be_named = {
+	is_blessing = yes
+
+	modifier = {
+		all_power_cost = -0.15
+		global_monthly_devastation = 0.25
+	}
+	ai_will_do = {
+		factor = 1 
+		modifier = {
+			factor = 3
+			NOT = {
+				any_neighbor_country = {
+					tech_difference = 1
+				}
+			}
+		}
+	}
+}

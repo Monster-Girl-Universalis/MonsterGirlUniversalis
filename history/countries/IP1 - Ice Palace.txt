@@ -1,9 +1,9 @@
 government = monarchy
 government_rank = 2
 primary_culture = Glacies
-add_government_reform = Elf_realm
-religion = monster_lord_religion
-technology_group = TECH_ELF
+add_government_reform = Fairy_realm
+religion = ice_religion
+technology_group = TECH_FAIRY
 1444.1.1 = { 
 	monarch = { 
 		name = "Fuyu"

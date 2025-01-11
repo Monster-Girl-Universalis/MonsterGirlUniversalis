@@ -31,3 +31,5 @@ owner = AM1
 culture = Doll_Apoptosis
 controller = AM1
 add_core = AM1
+discovered_by = TECH_FAIRY
+discovered_by = TECH_GHOST

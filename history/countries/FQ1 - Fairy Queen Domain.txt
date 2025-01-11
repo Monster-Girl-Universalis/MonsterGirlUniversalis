@@ -1,0 +1,19 @@
+government_rank = 3
+religion = monster_lord_religion
+technology_group = TECH_FAIRY
+primary_culture = Fairy_Girl
+government = monarchy
+add_government_reform = Fairy_realm
+historical_friend = EL1#Elves and Fairies
+1444.1.1 = { 
+	monarch = { 
+		name = "Airy"
+		dynasty = "the Royal Fairy"
+		birth_date = 1424.1.1
+		adm = 5
+		dip = 5
+		mil = 5
+		female = yes
+	}
+}
+capital = 1017

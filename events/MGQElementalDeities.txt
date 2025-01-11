@@ -1,0 +1,466 @@
+namespace = elemental_religion
+
+# Change Wind deity
+country_event = {
+	id = elemental_religion.1
+	title = elemental_religion.1.t
+	desc = elemental_religion.1.desc
+	picture = fairy_RACE_eventPicture
+	is_triggered_only = yes
+	option = {	
+		name = elemental_religion.wind.a
+		change_personal_deity = tornado
+	}
+	option = {	
+		name = elemental_religion.wind.b
+		change_personal_deity = clouds 
+	}
+	option = {	
+		name = elemental_religion.wind.c
+		change_personal_deity = mist 
+	}
+	option = {	
+		name = elemental_religion.wind.d
+		change_personal_deity = vacuum_slash 
+	}
+	option = {	
+		name = elemental_religion.wind.e
+		change_personal_deity = falcon 
+	}
+	option = {	
+		name = elemental_religion.wind.f
+		change_personal_deity = zephyr 
+	}
+}
+# Change Earth deity
+country_event = {
+	id = elemental_religion.2
+	title = elemental_religion.2.t
+	desc = elemental_religion.2.desc
+	picture = Gnome_eventPicture
+	is_triggered_only = yes
+	option = {	
+		name = elemental_religion.earth.a
+		change_personal_deity = earthquake 
+	}
+	option = {	
+		name = elemental_religion.earth.b
+		change_personal_deity = mountain_aspect 
+	}
+	option = {	
+		name = elemental_religion.earth.c
+		change_personal_deity = desert_aspect 
+	}
+	option = {	
+		name = elemental_religion.earth.d
+		change_personal_deity = earth_rumbling_decapitation 
+	}
+	option = {	
+		name = elemental_religion.earth.e
+		change_personal_deity = mole 
+	}
+	option = {	
+		name = elemental_religion.earth.f
+		change_personal_deity = sandstorm 
+	}
+}
+# Change Water deity
+country_event = {
+	id = elemental_religion.3
+	title = elemental_religion.3.t
+	desc = elemental_religion.3.desc
+	picture = Undine_eventPicture
+	is_triggered_only = yes
+	option = {	
+		name = elemental_religion.water.a
+		change_personal_deity = aqua_pentagram 
+	}
+	option = {	
+		name = elemental_religion.water.b
+		change_personal_deity = tsunami 
+	}
+	option = {	
+		name = elemental_religion.water.c
+		change_personal_deity = river 
+	}
+	option = {	
+		name = elemental_religion.water.d
+		change_personal_deity = ocean_aspect 
+	}
+	option = {	
+		name = elemental_religion.water.e
+		change_personal_deity = dragonfish 
+	}
+	option = {	
+		name = elemental_religion.water.f
+		change_personal_deity = rain 
+	}
+}
+# Change Fire deity
+country_event = {
+	id = elemental_religion.4
+	title = elemental_religion.4.t
+	desc = elemental_religion.4.desc
+	picture = Salamander_eventPicture
+	is_triggered_only = yes
+	option = {	
+		name = elemental_religion.fire.a
+		change_personal_deity = wildfire 
+	}
+	option = {	
+		name = elemental_religion.fire.b
+		change_personal_deity = stars 
+	}
+	option = {	
+		name = elemental_religion.fire.c
+		change_personal_deity = sun 
+	}
+	option = {	
+		name = elemental_religion.fire.d
+		change_personal_deity = omega_blaze 
+	}
+	option = {	
+		name = elemental_religion.fire.e
+		change_personal_deity = phoenix 
+	}
+	option = {	
+		name = elemental_religion.fire.f
+		change_personal_deity = ash 
+	}
+}
+# Change Yamatai Cult
+country_event = {
+	id = elemental_religion.5
+	title = elemental_religion.5.t
+	desc = elemental_religion.5.desc
+	picture = kitsune_girl_eventPicture
+	is_triggered_only = yes
+	option = {	
+		name = elemental_religion.yamatai.a
+		change_cult = cat_shrines 
+	}
+	option = {	
+		name = elemental_religion.yamatai.b
+		change_cult = tanuki_shrines 
+	}
+	option = {	
+		name = elemental_religion.yamatai.c
+		change_cult = fox_shrines 
+	}
+	option = {	
+		name = elemental_religion.yamatai.d
+		change_cult = snake_shrines 
+	}
+	option = {	
+		name = elemental_religion.yamatai.e
+		trigger = {
+		OR = {
+			any_owned_province = {
+				OR = {
+					religion_group = ilias_religion_g
+					any_neighbor_province = {
+						religion_group = ilias_religion_g
+					}
+				}
+			}			
+			any_neighbor_country = {
+				religion_group = ilias_religion_g
+			}
+		}
+		}
+		change_cult = ilias_shrines 
+	}
+	option = {	
+		name = elemental_religion.yamatai.f
+		trigger = {
+		OR = {
+			any_owned_province = {
+				OR = {
+					religion_group = monster_religion_g
+					any_neighbor_province = {
+						religion_group = monster_religion_g
+					}
+				}
+			}			
+			any_neighbor_country = {
+				religion_group = monster_religion_g
+			}
+		}
+		}
+		change_cult = monster_lord_shrines 
+	}
+	option = {	
+		name = elemental_religion.yamatai.g
+		trigger = {
+		OR = {
+			any_owned_province = {
+				OR = {
+					religion_group = chaos_religion_g
+					any_neighbor_province = {
+						religion_group = chaos_religion_g
+					}
+				}
+			}			
+			any_neighbor_country = {
+				religion_group = chaos_religion_g
+			}
+		}
+		}
+		change_cult = chaos_shrines 
+	}
+	option = {	
+		name = elemental_religion.yamatai.h
+		trigger = {
+		OR = {
+			any_owned_province = {
+				OR = {
+					religion = wind_religion 
+					any_neighbor_province = {
+						religion = wind_religion 
+					}
+				}
+			}			
+			any_neighbor_country = {
+				religion = wind_religion 
+			}
+		}
+		}
+		change_cult = sylph_shrines 
+	}
+	option = {	
+		name = elemental_religion.yamatai.i
+		trigger = {
+		OR = {
+			any_owned_province = {
+				OR = {
+					religion = earth_religion 
+					any_neighbor_province = {
+						religion = earth_religion 
+					}
+				}
+			}			
+			any_neighbor_country = {
+				religion = earth_religion 
+			}
+		}
+		}
+		change_cult = gnome_shrines 
+	}
+	option = {	
+		name = elemental_religion.yamatai.j
+		trigger = {
+
+		OR = {
+			any_owned_province = {
+				OR = {
+					religion = water_religion 
+					any_neighbor_province = {
+						religion = water_religion 
+					}
+				}
+			}			
+			any_neighbor_country = {
+				religion = water_religion 
+			}
+		}
+		}
+		change_cult = undine_shrines 
+	}
+	option = {	
+		name = elemental_religion.yamatai.k
+		trigger = {
+
+		OR = {
+			any_owned_province = {
+				OR = {
+					religion = fire_religion 
+					any_neighbor_province = {
+						religion = fire_religion 
+					}
+				}
+			}			
+			any_neighbor_country = {
+				religion = fire_religion 
+			}
+		}
+		}
+		change_cult = salamander_shrines 
+	}
+	option = {	
+		name = elemental_religion.yamatai.l
+		trigger = {
+
+		OR = {
+			any_owned_province = {
+				OR = {
+					religion_group = science_religion_g 
+					any_neighbor_province = {
+						religion_group = science_religion_g 
+					}
+				}
+			}			
+			any_neighbor_country = {
+				religion_group = science_religion_g 
+			}
+		}
+		}
+		change_cult = science_shrines 
+	}
+	option = {	
+		name = elemental_religion.yamatai.m
+		change_cult = rat_shrines 
+	}
+	option = {	
+		name = elemental_religion.yamatai.n
+		trigger = {
+
+		OR = {
+			any_owned_province = {
+				OR = {
+					culture_group = dragon
+					any_neighbor_province = {
+						culture_group = dragon
+					}
+				}
+			}			
+			any_neighbor_country = {
+				culture_group = dragon
+			}
+		}
+		}
+		change_cult = kirin_shrines 
+	}
+	option = {	
+		name = elemental_religion.yamatai.o
+		trigger = {
+		OR = {
+			AND = {
+				NOT = { manpower_percentage = 0.25}
+				war_exhaustion = 5
+				coalition_target = ROOT
+			}
+			AND = {
+				NOT = { manpower_percentage = 0.05}
+				war_exhaustion = 10
+			}
+			
+		}
+		}
+		change_cult = amaterasu_shrines 
+	}
+	option = {	
+		name = elemental_religion.yamatai.p
+		trigger = {
+		OR = {
+			AND = {
+				NOT = { manpower_percentage = 0.25}
+				war_exhaustion = 5
+				coalition_target = ROOT
+			}
+			AND = {
+				NOT = { manpower_percentage = 0.05}
+				war_exhaustion = 10
+			}
+			
+		}
+		}
+		change_cult = izanami_shrines 
+	}
+}
+
+# Change Ice deity
+country_event = {
+	id = elemental_religion.6
+	title = elemental_religion.6.t
+	desc = elemental_religion.6.desc
+	picture = ice_witch_eventPicture
+	is_triggered_only = yes
+	option = {	
+		name = elemental_religion.ice.a
+		change_personal_deity = frostbite 
+	}
+	option = {	
+		name = elemental_religion.ice.b
+		change_personal_deity = glacial_stasis 
+	}
+	option = {	
+		name = elemental_religion.ice.c
+		change_personal_deity = cryo_shield 
+	}
+	option = {	
+		name = elemental_religion.ice.d
+		change_personal_deity = sigma_frost 
+	}
+	option = {	
+		name = elemental_religion.ice.e
+		change_personal_deity = snow_serenity 
+	}
+	option = {	
+		name = elemental_religion.ice.f
+		change_personal_deity = permafrost 
+	}
+}
+# Change Lightning deity
+country_event = {
+	id = elemental_religion.7
+	title = elemental_religion.7.t
+	desc = elemental_religion.7.desc
+	picture = Kirin_eventPicture
+	is_triggered_only = yes
+	option = {	
+		name = elemental_religion.lightning.a
+		change_personal_deity = thunderclap_wrath 
+	}
+	option = {	
+		name = elemental_religion.lightning.b
+		change_personal_deity = stormcaller 
+	}
+	option = {	
+		name = elemental_religion.lightning.c
+		change_personal_deity = chain_lightning 
+	}
+	option = {	
+		name = elemental_religion.lightning.d
+		change_personal_deity = lambda_spark 
+	}
+	option = {	
+		name = elemental_religion.lightning.e
+		change_personal_deity = kirin 
+	}
+	option = {	
+		name = elemental_religion.lightning.f
+		change_personal_deity = skybreaker 
+	}
+}
+# Change Cosmos deity
+country_event = {
+	id = elemental_religion.8
+	title = elemental_religion.8.t
+	desc = elemental_religion.8.desc
+	picture = Cosmos_eventPicture
+	is_triggered_only = yes
+	option = {	
+		name = elemental_religion.cosmos.a
+		change_personal_deity = eclipse
+	}
+	option = {	
+		name = elemental_religion.cosmos.b
+		change_personal_deity = galaxy
+	}
+	option = {	
+		name = elemental_religion.cosmos.c
+		change_personal_deity = starfire
+	}
+	option = {	
+		name = elemental_religion.cosmos.d
+		change_personal_deity = star_healing
+	}
+	option = {	
+		name = elemental_religion.cosmos.e
+		change_personal_deity = star_guardian
+	}
+	option = {	
+		name = elemental_religion.cosmos.f
+		change_personal_deity = terra_mastery
+	}
+}

@@ -1,8 +1,8 @@
 government = monarchy
-government_rank = 2
+government_rank = 3
 primary_culture = Doll_Girl
 add_government_reform = Doll_realm
-religion = monster_lord_religion
+religion = rogue_magicraft_religion
 technology_group = TECH_DOLL
 1444.1.1 = { 
 	monarch = { 
@@ -14,6 +14,7 @@ technology_group = TECH_DOLL
 		mil = 5
 		female = yes
 	}
+	add_ruler_personality = immortal_personality
 }
 capital = 715
 add_government_reform = Doll_realm

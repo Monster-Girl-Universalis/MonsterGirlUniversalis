@@ -31,3 +31,5 @@ owner = PE4
 culture = Undead_Apoptosis
 controller = PE4
 add_core = PE4
+discovered_by = TECH_FAIRY
+discovered_by = TECH_GHOST

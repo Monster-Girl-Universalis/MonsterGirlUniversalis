@@ -1,7 +1,7 @@
 base_tax = 1
 base_manpower = 1
 base_production = 1
-religion = monster_lord_religion
+religion = ice_religion
 is_city = no
 culture = Ice_Witch
 discovered_by = PE1

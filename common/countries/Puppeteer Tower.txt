@@ -97,16 +97,15 @@ monarch_names = {
 	"Jillian #0" = -20
 }
 leader_names = { 
-	Puppeteer Mannequin Marionette Dollmaker Stitchcraft Porcelain Stringheart Woodensoul
-	Inanimate Silentstring Jointedlimb Malletlock Patchwork Marblespring Twistedheart Mancatcher
-	Puppetcraft Windup Seamstress Stitchedheart Unmoving Jointedwood Lifelike Stuffedheart 
-	Woodenframe Twistedlimb Stitchface Mechanika Dreadnought Manikin Gearwork Automaton Titan
-	Dollmaker Porcelain Crankshaft Lithesome Cogsprite Miniature Pinwheel Pincushion
+	Puppeteer Mannequin Marionette Dollmaker Stitchcraft Porcelain Stringheart Woodensoul Inanimate Silentstring
+	Jointedlimb Malletlock Patchwork Marblespring Twistedheart Mancatcher Puppetcraft Windup Seamstress Stitchedheart
+	Unmoving Jointedwood Lifelike Stuffedheart Woodenframe Twistedlimb Stitchface Mechanika Dreadnought Manikin
+	Gearwork Automaton Titan Dollmaker Porcelain Crankshaft Lithesome Cogsprite Miniature Pinwheel
+	Pincushion 
 }
 ship_names = { 
-	Puppeteer Marionette Gearwork Toybox Clockwork Dollmaker Stringer Collector
-	Automaton Plaything Machinist Porcelain Crankshaft Composer Jigsaw Miniaturist
-	Mannequin Windup Inventor Reverie
+	Puppeteer Marionette Gearwork Toybox Clockwork Dollmaker Stringer Collector Automaton Plaything
+	Machinist Porcelain Crankshaft Composer Jigsaw Miniaturist Mannequin Windup Inventor Reverie
 }
 army_names = { 
 	"Kagetsumugi Army" "Doll Army" "$PROVINCE$ Army" 

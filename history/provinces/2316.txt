@@ -32,3 +32,5 @@ owner = DM1
 culture = Yoma_Girl
 controller = DM1
 trade_goods = incense
+discovered_by = TECH_FAIRY
+discovered_by = TECH_GHOST

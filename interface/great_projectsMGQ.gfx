@@ -140,4 +140,12 @@ spriteTypes = {
 		name = "GFX_great_project_monster_lord_castle"	
 		texturefile = "gfx//interface//great_projects//great_project_monster_lord_castle.dds"
 	}
+		spriteType = {
+		name = "GFX_great_project_alma_elmas_martial_arts_academy"	
+		texturefile = "gfx//interface//great_projects//great_project_alma_elmas_martial_arts_academy.dds"
+	}
+		spriteType = {
+		name = "GFX_great_project_granberias_swordmaster_academy"	
+		texturefile = "gfx//interface//great_projects//great_project_granberias_swordmaster_academy.dds"
+	}
 }

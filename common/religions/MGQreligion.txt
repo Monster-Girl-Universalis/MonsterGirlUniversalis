@@ -84,7 +84,16 @@ ilias_religion_g = {
 			tolerance_of_heathens_capacity = -3
 			military_tactics = 0.15
 		}
-		
+		uses_anglican_power = yes
+		aspects = {
+			sword_that_unites_heavenly_armies 
+			guardian_of_law 
+			heavenly_battle_weapon 
+			gabrielas_healing_assistance 
+			sariela_authority 
+			nuclear_powered_twin_angels 
+		}
+		aspects_name = ANGEL_WORLD_ASPECTS			
 		province = {
  			local_tax_modifier = 0.2
 			local_prosperity_growth = 0.05
@@ -93,7 +102,28 @@ ilias_religion_g = {
 		
 		country_as_secondary = {
 			
-			military_tactics = 0.05
+			military_tactics = 0.10
+		}
+		
+	}
+	eden_resistance_religion = {	#Angel Resistance of MW led by Eden
+		color = { 199 166 108 }
+		heretic = { heretic_ilias_apologists }
+		icon = 46
+		allow_female_defenders_of_the_faith = yes
+		country = {
+			discipline = 0.05
+			infantry_power = 0.15
+		}
+		fervor = yes
+		province = {
+ 			local_manpower_modifier = 0.15
+			local_defensiveness = 0.25
+		}
+		
+		
+		country_as_secondary = {
+			infantry_power = 0.15
 		}
 		
 	}
@@ -185,10 +215,156 @@ monster_religion_g = {
 		icon = 30
 		allow_female_defenders_of_the_faith = yes
 		country = {
-			infantry_fire = 1
-			army_tradition = 1
+			infantry_fire = 0.5
+			yearly_patriarch_authority = 0.02
 		}
-		
+		has_patriarchs = yes
+		orthodox_icons = {
+			dark_goddess_icon_saja = {
+				fire_damage = 0.20
+				military_tactics = 0.10
+				
+				allow = {
+					always = yes
+				}
+
+				visible = {
+					always = yes
+				}
+
+				ai_will_do = {
+					factor = 0.05
+					modifier = {
+						factor = 0
+						is_at_war = no
+					}
+					modifier = {
+						factor = 3
+						is_in_important_war = yes
+					}
+				}
+			}
+			dark_goddess_icon_tamamo = {
+				all_power_cost = -0.05
+				artillery_power = 0.25
+				
+				allow = {
+					always = yes
+				}
+
+				visible = {
+					always = yes
+				}
+
+				ai_will_do = {
+					factor = 0.05
+					modifier = {
+						factor = 0
+						is_at_war = no
+					}
+					modifier = {
+						factor = 3
+						is_in_important_war = yes
+					}
+				}
+			}
+			dark_goddess_icon_minagi = {
+				army_tradition = 0.5
+				infantry_power = 0.25
+				
+				allow = {
+					always = yes
+				}
+
+				visible = {
+					always = yes
+				}
+
+				ai_will_do = {
+					factor = 0.05
+					modifier = {
+						factor = 0
+						is_at_war = no
+					}
+					modifier = {
+						factor = 3
+						is_in_important_war = yes
+					}
+				}
+			}
+			dark_goddess_icon_kanon = {
+				global_unrest = 1
+				development_cost = -0.15
+				
+				allow = {
+					always = yes
+				}
+
+				visible = {
+					always = yes
+				}
+
+				ai_will_do = {
+					factor = 0.05
+					modifier = {
+						factor = 0
+						is_at_war = no
+					}
+					modifier = {
+						factor = 3
+						is_in_important_war = yes
+					}
+				}
+			}
+			dark_goddess_icon_kanade = {
+				reinforce_speed = 0.50
+				manpower_recovery_speed = 0.50
+				
+				allow = {
+					always = yes
+				}
+
+				visible = {
+					always = yes
+				}
+
+				ai_will_do = {
+					factor = 0.05
+					modifier = {
+						factor = 0
+						is_at_war = no
+					}
+					modifier = {
+						factor = 3
+						is_in_important_war = yes
+					}
+				}
+			}	
+			dark_goddess_icon_hiruko = {
+				administrative_efficiency = -0.05
+				morale_damage = 0.25
+				
+				allow = {
+					always = yes
+				}
+
+				visible = {
+					always = yes
+				}
+
+				ai_will_do = {
+					factor = 0.05
+					modifier = {
+						factor = 0
+						is_at_war = no
+					}
+					modifier = {
+						factor = 3
+						is_in_important_war = yes
+					}
+				}
+			}	
+		}
 		province = {
  			local_manpower_modifier = 0.20
 		}
@@ -311,6 +487,67 @@ elemental_religion_g = {
 		}
 
 	}
+	ice_religion = {	#Worshippers of Ice Element
+		color = { 95 213 241 }
+		heretic = { heretic_rogue_elementalists }
+		icon = 44
+		country = {
+			fire_damage_received = -0.10
+			morale_damage_received = -0.15
+		}
+
+		personal_deity = yes		
+		province = {
+			local_hostile_movement_speed = -0.15
+		}
+		
+
+		personal_deity = yes		
+		country_as_secondary = {	
+			fire_damage_received = -0.10
+		}
+
+	}
+	lightning_religion = {	#Worshippers of Lightning Element
+		color = { 249 230 146 }
+		heretic = { heretic_rogue_elementalists }
+		icon = 45
+		country = {
+			shock_damage = 0.20
+			leader_land_shock = 1
+		}
+
+		personal_deity = yes		
+		province = {
+			local_prosperity_growth = 0.05
+			local_development_cost = -0.05
+		}
+		
+
+		personal_deity = yes		
+		country_as_secondary = {	
+			leader_land_shock = 1
+		}
+
+	}
+	cosmos_religion = {	#Worshippers of the Guardian Butterfly Cosmos
+		color = { 111 149 110 }
+		heretic = { heretic_rogue_elementalists }
+		icon = 47
+		country = {
+			global_attacker_dice_roll_bonus = 1
+			country_diplomatic_power = 1
+		}
+
+		personal_deity = yes		
+		province = {
+			local_development_cost = -0.15
+		}		
+		country_as_secondary = {	
+			country_diplomatic_power = 1
+		}
+
+	}
 		
 	harmonized_modifier = harmonized_elemental_religion_g
 	crusade_name = CRUSADE
@@ -343,9 +580,7 @@ science_religion_g = {
 			209 #Administrator's Tower
 			1766 #La Croix Laboratory
 			1856 #Gold Tartarus
-			#2089 #Ilias Temple Ruins
-			#Hellgondo Tartarus TBA
-			#Hellgondo, Puppeteer Tower, Degris Hill or whatever TBA
+			2274 #Hellgondo Tartarus
 		}
 		
 		blessings = {
@@ -371,6 +606,63 @@ science_religion_g = {
 			science_frederika_MK2 
 		}
 
+	}
+	rogue_magicraft_religion = {	#Kagetsumugi Heretic Knowledge
+		color = { 53 37 39 }
+		heretic = { heretic_chaos_researchers }
+		icon = 43
+		allow_female_defenders_of_the_faith = yes
+		country = {
+			ae_impact = 0.20
+			diplomatic_reputation = -3
+			morale_damage = 0.25
+		}
+		
+		province = {
+ 			local_garrison_size = 0.25
+			local_regiment_cost = -0.20
+		}
+		
+		
+		country_as_secondary = {
+			ae_impact = 0.15
+			morale_damage = 0.15
+		}
+		holy_sites = {
+			20 #Eastern Ilias Tartarus
+			58 #Southern Ilias Tartarus
+			550 #Ancient Lab Facility
+			971 #Sabasa Tartarus
+			209 #Administrator's Tower
+			715 #Puppeteer Tower
+			1856 #Gold Tartarus
+			2274 #Hellgondo Tartarus
+			#Degris Hill or whatever TBA
+		}
+		blessings = {
+			heretek_substitute_bodies
+			heretek_corpses_puppetry
+			heretek_macabre_murder_circus
+			heretek_parasitic_nano_dolls
+			heretek_assasination_protocols
+			heretek_knowledge_from_other_worlds
+			heretek_spells_not_to_be_named
+			science_roid_research 
+			science_apoptosis_dogma 
+			science_carrot_extract 
+			science_weed_extract 
+			science_fish_extract 
+			science_eel_extract 
+			science_garlic_extract 
+			science_hakunen_extract 
+			science_skull_extract 
+			science_seaweed_extract 
+			science_squid_extract 
+			science_project_chimera 
+			science_angel_ghouls 
+			science_zombie_dragon_girls 
+		}
+		
 	}
 		
 	harmonized_modifier = harmonized_science_religion_g

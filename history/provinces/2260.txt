@@ -32,3 +32,5 @@ culture = Undead_Apoptosis
 controller = PE4
 trade_goods = incense
 add_core = PE4
+discovered_by = TECH_FAIRY
+discovered_by = TECH_GHOST

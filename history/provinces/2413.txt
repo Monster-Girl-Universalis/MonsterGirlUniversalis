@@ -33,3 +33,5 @@ add_core = RT1
 owner = RT1
 controller = RT1
 trade_goods = iron
+discovered_by = TECH_FAIRY
+discovered_by = TECH_GHOST

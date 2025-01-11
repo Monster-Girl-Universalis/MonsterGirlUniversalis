@@ -32,3 +32,5 @@ owner = KY2
 culture = Kyoryuu_Girl
 controller = KY2
 trade_goods = ivory
+discovered_by = TECH_FAIRY
+discovered_by = TECH_GHOST

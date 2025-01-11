@@ -32,3 +32,5 @@ owner = SS2
 culture = Scylla_Girl
 controller = SS2
 trade_goods = incense
+discovered_by = TECH_FAIRY
+discovered_by = TECH_GHOST

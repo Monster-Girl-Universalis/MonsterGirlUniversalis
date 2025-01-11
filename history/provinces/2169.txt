@@ -32,3 +32,5 @@ discovered_by = TECH_YOUMA
 owner = TA2
 controller = TA2
 trade_goods = chinaware
+discovered_by = TECH_FAIRY
+discovered_by = TECH_GHOST

@@ -1,0 +1,1386 @@
+monster_lord_1 = {
+
+	slot = 1
+	generic = yes
+	ai = yes
+	
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		tag = ML1
+	}
+	
+	has_country_shield = yes
+	
+	ML1_consolidate_monster_lord_armies = {
+		icon = mission_secure_army_supplies
+		required_missions = { }
+		position = 1
+		
+		trigger = {
+			stability = 1
+			manpower_percentage = 0.90
+		}
+		
+		effect = {
+			add_adm_power = 50
+			add_dip_power = 50
+			add_mil_power = 50
+			hellgondo_tartarus_region = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	ML1_encounter_the_apoptosis = {
+		icon = mission_persephone
+		required_missions = { ML1_consolidate_monster_lord_armies }
+		position = 2
+		
+		trigger = {
+			OR = {
+				truce_with = TR2
+				truce_with = AM1
+				truce_with = PE4
+				mil_tech = 6
+			}
+		}
+		effect = {
+			add_adm_tech = 1
+		}
+	}
+
+	ML1_secure_tartarus_entrance = {
+		icon = mission_tartarus_rift
+		required_missions = { ML1_encounter_the_apoptosis }
+		position = 3
+		
+		
+		trigger = {
+			monster_lord_checkpoint = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		
+		effect = {
+			add_mil_tech = 1
+		}
+	}
+
+	ML1_deep_into_tartarus = {
+		icon = mission_trilobite
+		required_missions = { ML1_secure_tartarus_entrance }
+		position = 4
+		
+		
+		trigger = {
+			hellgondo_tartarus_region = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "ML1_researching_tartarus"
+				duration = 1460	#4years
+			}	
+			add_years_of_income = -1			
+		}
+	}
+
+	ML1_contact_with_another_world = {
+		icon = mission_lilith
+		required_missions = { ML1_deep_into_tartarus }
+		position = 5
+		
+		
+		trigger = {
+			NOT = { has_country_modifier = ML1_researching_tartarus }
+		}
+		
+		effect = {
+			country_event = { id = flavor_ml1.9 }	
+			add_dip_tech = 1	
+		}
+	}
+	ML1_grangold_manipulation = {
+		icon = mission_tamamo_MW
+		required_missions = { ML1_contact_with_another_world }
+		position = 6
+		
+		
+		trigger = {
+			OR = {
+				has_spy_network_in = {
+					who = GR4
+					value = 30
+				}
+				current_age = age_of_reformation	#Monster Lord Wars
+			}
+		}
+		
+		effect = {
+			GR4 = { 
+				declare_war_with_cb = {
+					who = GR2
+					casus_belli = cb_restore_personal_union
+				}
+				add_truce_with = ML1
+				white_peace = ML1
+			}
+			western_port = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+			gold_port = {
+				type = all
+				add_permanent_claim = ROOT
+			}	
+		}
+	}
+	ML1_foothold_in_goldport = {
+		icon = mission_secure_naval_supplies
+		required_missions = { ML1_grangold_manipulation }
+		position = 7
+		
+		
+		trigger = {
+			western_port = {
+				type = all
+				owned_by = ROOT
+			}
+			gold_port = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		
+		effect = {
+			1552 = { add_core = ROOT }
+			grangold_region = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+			central_gold_hills = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+			add_country_modifier = {
+				name = "ML1_grangold_subjugation_campaign"
+				duration = 9125 
+			}	
+		}
+	}
+	ML1_partition_grangold = {
+		icon = mission_partition_grangold
+		required_missions = { ML1_foothold_in_goldport }
+		position = 8
+		
+		
+		trigger = {
+			war_score_against = {
+				who = GR4
+				value = 90
+			}
+			1552 = { controlled_by = ML1 }
+		}
+		
+		effect = {
+			country_event = { id = flavor_ml1.11 }	
+			SP4 = { country_event = { id = flavor_ml1.12 }	}
+			create_alliance = SP4
+		}
+	}
+	ML1_wasteland_campaigns = {
+		icon = mission_wasteland_campaigns
+		required_missions = { ML1_partition_grangold }
+		position = 9
+		
+		
+		trigger = {
+			OR = {
+				has_spy_network_in = {
+					who = GR4
+					value = 50
+				}
+				NOT = { exists = GR4 }
+			}
+			army_size = 200
+		}
+		
+		effect = {
+			toxic_swamp_region = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+			lima_area = {
+				type = all
+				add_permanent_claim = SP4
+			}
+			lima_drylands = {
+				type = all
+				add_permanent_claim = SP4
+			}
+			lima_strait = {
+				type = all
+				add_permanent_claim = SP4
+			}
+		}
+	}
+	ML1_deal_with_spider_princess = {
+		icon = mission_insect_queen_challenger
+		required_missions = { ML1_wasteland_campaigns }
+		position = 10
+		
+		
+		trigger = {
+			OR = {
+				AND = {
+					lima_area = {
+						type = all
+						owned_by = SP4
+					}
+					lima_drylands = {
+						type = all
+						owned_by = SP4
+					}
+					lima_strait = {
+						type = all
+						owned_by = SP4
+					}
+					alliance_with = SP4
+				}
+				AND = {
+					toxic_swamp_region = {
+						type = all
+						owned_by = ROOT
+					}
+					alliance_with = SP4
+				}
+			}
+		}
+		
+		effect = {
+			create_union = SP4
+			define_general = { 
+				name = "Spider Princess"
+        			type = general
+        			fire = 3
+        			shock = 7
+        			manuever = 3
+        			siege = 4
+				female = yes
+			}
+			add_country_modifier = {
+				name = "ML1_Assistance_of_Arachnes"
+				duration = -1
+			}
+			
+		}
+	}
+	
+}
+monster_lord_2 = {
+
+	slot = 2
+	generic = yes
+	ai = yes
+	
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		tag = ML1
+	}
+	
+	has_country_shield = yes
+	
+	ML1_aevis_realm = {
+		icon = mission_aevis
+		required_missions = { }
+		position = 1
+		
+		trigger = {
+			reverse_has_opinion = {
+				who = AE1
+				value = 200
+			}
+			stability = 1
+			mil_tech = 4
+		}
+		
+		effect = {
+			add_accepted_culture = Aevis_Girl
+			add_country_modifier = {
+				name = "ML1_integrate_aevis_girls"
+				duration = -1 
+			}
+			country_event = { id = flavor_ml1.1 }
+		}
+	}
+	ML1_kyoryuu_girls = {
+		icon = mission_kyoryuu
+		required_missions = { ML1_aevis_realm }
+		position = 2
+		
+		trigger = {
+			
+			OR = {
+				AND = {
+					reverse_has_opinion = {
+						who = KY1
+						value = 50
+					}
+					reverse_has_opinion = {
+						who = KY2
+						value = 50
+					}
+				}
+				mil_tech = 6
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "ML1_Kyoryuu_Girl_assistance"
+				duration = 9125 #25years 
+			}
+			country_event = { id = flavor_ml1.8 }
+		}
+	}
+	ML1_dragonkin_pride = {
+		icon = mission_dragon_primal_wisdom
+		required_missions = { ML1_kyoryuu_girls }
+		position = 3
+		
+		trigger = {		
+			OR = {
+				army_size = 100
+				army_size_percentage = 1.5
+				mil_tech = 7
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "ML1_elite_wyverns"
+				duration = 9125 #25years 
+			}
+			add_army_tradition = 20
+		}
+	}	
+	ML1_build_granberias_swordmaster_academy = {
+		icon = mission_granberia
+		required_missions = { ML1_dragonkin_pride }
+		position = 4
+		
+		trigger = {
+			2397 = {
+				owned_by = ROOT
+				has_great_project = {
+					type = granberias_swordmaster_academy
+					tier = 1
+				}
+			}
+			
+		}
+		
+		effect = {
+			add_army_tradition = 20
+			add_yearly_manpower = 1
+		}
+	}	
+	ML1_patronize_sword_training_culture = {
+		icon = mission_granberia_battle
+		required_missions = { ML1_build_granberias_swordmaster_academy }
+		position = 5
+		
+		trigger = {
+			OR = {
+				full_idea_group = offensive_ideas
+				full_idea_group = dragon_ideas
+				2397 = {
+					owned_by = ROOT
+					has_great_project = {
+						type = granberias_swordmaster_academy
+						tier = 3
+					}
+				}	
+			}
+			
+		}		
+		effect = {
+			add_country_modifier = {
+				name = "ML1_swordmastery_proliferation"
+				duration = 9125	#25 years
+			}
+			add_army_tradition = 50			
+		}
+	}
+	ML1_contact_mermaid_queen = {
+		icon = mission_mermaid_queen_challenger
+		required_missions = { }
+		position = 6
+		
+		trigger = {
+			OR = {
+				current_age = age_of_reformation
+				total_development = 1500
+			}
+			
+		}		
+		effect = {
+			MR3 = { country_event = { id = flavor_ml1.12 }	}
+			create_alliance = MR3
+			add_navy_tradition = 20		
+		}
+	}
+	ML1_prepare_to_invade_san_ilia = {
+		icon = mission_san_ilia
+		required_missions = { ML1_contact_mermaid_queen }
+		position = 7
+		
+		trigger = {
+			OR = {
+				army_size = 200
+				has_spy_network_in = {
+					who = SI1
+					value = 50
+				}
+			}
+			
+		}		
+		effect = {
+			san_ilia_region = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+			582 = { add_core = ROOT }
+			declare_war_with_cb = {
+				who = SI1
+				casus_belli = cb_imperial
+			}				
+		}
+	}
+	ML1_reign_in_san_ilia_question = {
+		icon = mission_powerful_mermaid_girl_ruler
+		required_missions = { ML1_prepare_to_invade_san_ilia }
+		position = 8
+		
+		trigger = {
+			san_ilia_region = {
+				type = all
+				owned_by = ROOT
+			}
+		}		
+		effect = {
+			country_event = { id = flavor_ml1.13 }			
+		}
+	}
+	ML1_question_of_port_natalia = {
+		icon = mission_danzig_or_war
+		required_missions = { ML1_reign_in_san_ilia_question }
+		position = 9
+		
+		trigger = {
+			navy_size = 250
+			OR = {
+				senior_union_with = MR3
+				full_idea_group = mermaid_ideas
+			}
+		}		
+		effect = {
+			port_natalia_region = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+			add_country_modifier = {
+				name = "ML1_Assistance_of_Mermaids"
+				duration = -1
+			}			
+		}
+	}
+	ML1_natalia_aspirations = {
+		icon = mission_natalia_region
+		required_missions = { ML1_question_of_port_natalia }
+		position = 10
+		
+		trigger = {
+			port_natalia_region = {
+				type = all
+				owned_by = ROOT
+			}
+		}		
+		effect = {
+			st_amos_region = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+			forest_of_spirits_region = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+			monte_carlo_region = {
+				type = all
+				add_permanent_claim = ROOT
+			} 
+			puppeteer_tower_region = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+			south_undersea_temple_region = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+			lyra_region = {
+				type = all
+				add_permanent_claim = MR3
+			}			
+		}
+	}	
+}
+monster_lord_3 = {
+
+	slot = 3
+	generic = yes
+	ai = yes
+	
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		tag = ML1
+	}
+	
+	has_country_shield = yes
+	
+	ML1_gouki_and_zenki = {
+		icon = mission_zenki_oni
+		required_missions = { }
+		position = 1
+		
+		trigger = {
+			reverse_has_opinion = {
+				who = GO3
+				value = 200
+			}
+			reverse_has_opinion = {
+				who = ZO1
+				value = 200
+			}
+		}
+		
+		effect = {
+			add_adm_power = 100
+			add_dip_power = 100
+			add_accepted_culture = Oni
+			add_country_modifier = {
+				name = "ML1_integrate_oni"
+				duration = -1 
+			}
+		}
+	}	
+	ML1_hellgondo_scyllas_proposal = {
+		icon = mission_scylla_servant
+		required_missions = { ML1_gouki_and_zenki }
+		position = 2
+		
+		trigger = {
+			
+			OR = {
+				reverse_has_opinion = {
+					who = SS2
+					value = 50
+				}
+				diplomatic_reputation = 3
+				dip_tech = 6
+			}
+		}
+		
+		effect = {
+			add_accepted_culture = Scylla_Girl
+			add_country_modifier = {
+				name = "ML1_integrate_scylla_girls"
+				duration = -1 
+			}
+			country_event = { id = flavor_ml1.7 }
+			basilisk_area = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+			basilisk_cave = {
+				type = all
+				add_permanent_claim = ROOT
+			}			
+		}
+	}		
+	ML1_basilisk_lands = {
+		icon = mission_basilisk
+		required_missions = { ML1_hellgondo_scyllas_proposal }
+		position = 3
+		
+		trigger = {
+			basilisk_area = {
+				type = all
+				owned_by = ROOT
+			}
+			basilisk_cave = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			hellgondo_caves = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+			kirin_coast = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+			enenra_bay = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+			add_prestige = 25
+		}
+	}		
+	ML1_outer_caves = {
+		icon = mission_mountain_metals
+		required_missions = { ML1_basilisk_lands }
+		position = 4
+		
+		trigger = {
+			hellgondo_caves = {
+				type = all
+				owned_by = ROOT
+			}
+			kirin_coast = {
+				type = all
+				owned_by = ROOT
+			}
+			enenra_bay = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			hellgondo_shrine_region = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+		}
+	}		
+	ML1_hellgondo_shrine = {
+		icon = mission_sister_lamia
+		required_missions = { ML1_outer_caves }
+		position = 5
+		
+		trigger = {
+			hellgondo_shrine_region = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "ML1_hellgondo_shrine_restoration_efforts"
+				duration = 9125	#25 years
+			}
+			hellgondo_shrine_region = {
+				type = all
+				add_random_development = 3
+				add_province_modifier = {
+					name = "ML1_hellgondo_shrine_rebuilding"
+					duration = 9125	#25 years
+				}
+			}			
+		}
+	}
+	ML1_ties_with_tamamo = {
+		icon = mission_tamamo
+		required_missions = { }
+		position = 6
+		
+		trigger = {
+			OR = {
+				current_age = age_of_reformation
+				total_development = 1500
+			}
+			
+		}		
+		effect = {
+			KI1 = { country_event = { id = flavor_ml1.12 }	}
+			create_alliance = KI1
+			add_navy_tradition = 20		
+		}
+	}
+	ML1_persuade_tamamo = {
+		icon = mission_zero_tailed_kitsune_ambitions
+		required_missions = { ML1_ties_with_tamamo }
+		position = 7
+		
+		trigger = {
+			KI1 = { trust = { who = ROOT value = 100 } }
+			reverse_has_opinion = {
+				who = KI1
+				value = 150
+			}
+			alliance_with = KI1
+		}		
+		effect = {
+			change_government_reform_progress = 50	
+			create_union = KI1
+		}
+	}
+	ML1_prepare_to_invade_sabasa = {
+		icon = mission_sabasa
+		required_missions = { }
+		position = 8
+		
+		trigger = {
+			OR = {
+				army_size = 200
+				has_spy_network_in = {
+					who = SA1
+					value = 50
+				}
+				alliance_with = VA6
+			}
+			
+		}		
+		effect = {
+			sabasa_region = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+			755 = { add_core = ROOT }
+			declare_war_with_cb = {
+				who = SA1
+				casus_belli = cb_imperial
+			}				
+		}
+	}
+	ML1_reign_in_sabasa_question = {
+		icon = mission_vampire_queen
+		required_missions = { ML1_prepare_to_invade_sabasa }
+		position = 9
+		
+		trigger = {
+			sabasa_region = {
+				type = all
+				owned_by = ROOT
+			}
+		}		
+		effect = {
+			country_event = { id = flavor_ml1.15 }			
+		}
+	}
+	ML1_question_of_grandeur = {
+		icon = mission_grandeur
+		required_missions = { ML1_reign_in_sabasa_question }
+		position = 10
+		
+		trigger = {
+			army_size = 250
+			OR = {
+				senior_union_with = VA6
+				full_idea_group = vampire_ideas
+			}
+		}		
+		effect = {
+			grandeur_region = {
+				type = all
+				add_permanent_claim = ROOT
+			}			
+		}
+	}
+	ML1_safina_aspirations = {
+		icon = mission_safina_region
+		required_missions = { ML1_question_of_grandeur }
+		position = 11
+		
+		trigger = {
+			grandeur_region = {
+				type = all
+				owned_by = ROOT
+			}
+		}		
+		effect = {
+			pyramid_region = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+			saloon_region = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+			magistea_region = {
+				type = all
+				add_permanent_claim = ROOT
+			} 
+			safar_ruins_region = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+			great_pirate_cave_region = {
+				type = all
+				add_permanent_claim = ROOT
+			}			
+		}
+	}		
+}
+monster_lord_4 = {
+
+	slot = 4
+	generic = yes
+	ai = yes
+	
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		tag = ML1
+	}
+	
+	has_country_shield = yes
+	
+	ML1_kitsune_girls = {
+		icon = mission_five_tailed_taoist
+		required_missions = { }
+		position = 1
+		
+		trigger = {
+			adm_tech = 4
+			dip_tech = 4
+			OR = {
+				reverse_has_opinion = {
+					who = KI4
+					value = 150
+				}
+				AND = {
+					stability = 2
+					alliance_with = KI4
+				}
+				dip_tech = 5
+			}
+		}
+		
+		effect = {
+			add_accepted_culture = Kitsune_Girl
+			add_country_modifier = {
+				name = "ML1_integrate_kitsune_girls"
+				duration = -1 
+			}
+			vassalize = KI4
+		}
+	}	
+	ML1_elder_succubi_proposal = {
+		icon = mission_elder_succubi
+		required_missions = { ML1_kitsune_girls }
+		position = 2
+		
+		trigger = {
+			
+			OR = {
+				reverse_has_opinion = {
+					who = SM5
+					value = 50
+				}
+				diplomatic_reputation = 3
+				dip_tech = 6
+			}
+		}
+		
+		effect = {
+			add_accepted_culture = Monster_Succubi
+			add_country_modifier = {
+				name = "ML1_integrate_succubi_girls"
+				duration = -1 
+			}
+			country_event = { id = flavor_ml1.2 }
+		}
+	}	
+	ML1_succubus_monks = {
+		icon = mission_succubus_monks
+		required_missions = { ML1_elder_succubi_proposal }
+		position = 3
+		
+		trigger = {
+			
+			OR = {
+				AND = {
+					reverse_has_opinion = {
+						who = SM4
+						value = 50
+					}
+					reverse_has_opinion = {
+						who = SM3
+						value = 50
+					}
+				}
+				army_tradition = 40
+				mil_tech = 7
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "ML1_succubi_martial_artists"
+				duration = 9125 #25years 
+			}
+			add_army_tradition = 20
+			country_event = { id = flavor_ml1.4 }
+		}
+	}	
+	ML1_build_alma_elmas_martial_arts_academy = {
+		icon = mission_succubi_queen_challenger
+		required_missions = { ML1_succubus_monks }
+		position = 4
+		
+		trigger = {
+			2403 = {
+				owned_by = ROOT
+				has_great_project = {
+					type = alma_elmas_martial_arts_academy
+					tier = 1
+				}
+			}
+			
+		}
+		
+		effect = {
+			add_army_tradition = 20
+			add_yearly_manpower = 1
+		}
+	}	
+	ML1_patronize_martial_arts_for_succubi = {
+		icon = mission_alma_elma_battle
+		required_missions = { ML1_build_alma_elmas_martial_arts_academy }
+		position = 5
+		
+		trigger = {
+			OR = {
+				full_idea_group = quality_ideas
+				full_idea_group = succubi_ideas
+				2403 = {
+					owned_by = ROOT
+					has_great_project = {
+						type = alma_elmas_martial_arts_academy
+						tier = 3
+					}
+				}	
+			}
+			
+		}		
+		effect = {
+			add_country_modifier = {
+				name = "ML1_succubi_martial_arts_proliferation"
+				duration = 9125	#25 years
+			}
+			add_army_tradition = 50				
+		}
+	}
+	ML1_contact_elf_queen = {
+		icon = mission_elf_queen_challenger
+		required_missions = { }
+		position = 6
+		
+		trigger = {
+			OR = {
+				current_age = age_of_reformation
+				total_development = 1500
+			}
+			
+		}		
+		effect = {
+			EL1 = { country_event = { id = flavor_ml1.12 }	}
+			create_alliance = EL1
+			add_navy_tradition = 20		
+		}
+	}
+	ML1_prepare_to_invade_grand_noah = {
+		icon = mission_grand_noah
+		required_missions = { ML1_contact_elf_queen }
+		position = 7
+		
+		trigger = {
+			OR = {
+				army_size = 200
+				has_spy_network_in = {
+					who = GR2
+					value = 50
+				}
+			}
+			
+		}		
+		effect = {
+			grand_noah_region = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+			1192 = { add_core = ROOT }
+			declare_war_with_cb = {
+				who = GR2
+				casus_belli = cb_imperial
+			}				
+		}
+	}
+	ML1_reign_in_grand_noah_question = {
+		icon = mission_elf_amazoness
+		required_missions = { ML1_prepare_to_invade_grand_noah }
+		position = 8
+		
+		trigger = {
+			grand_noah_region = {
+				type = all
+				owned_by = ROOT
+			}
+		}		
+		effect = {
+			country_event = { id = flavor_ml1.14 }			
+		}
+	}
+	ML1_question_of_finoa = {
+		icon = mission_rubiana
+		required_missions = { ML1_reign_in_grand_noah_question }
+		position = 9
+		
+		trigger = {
+			army_size = 250
+			OR = {
+				senior_union_with = EL1
+				full_idea_group = elf_ideas
+			}
+		}		
+		effect = {
+			finoa_region = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+			add_country_modifier = {
+				name = "ML1_Assistance_of_Elves"
+				duration = -1
+			}			
+		}
+	}
+	ML1_noah_aspirations = {
+		icon = mission_noah_region
+		required_missions = { ML1_question_of_finoa }
+		position = 10
+		
+		trigger = {
+			finoa_region = {
+				type = all
+				owned_by = ROOT
+			}
+		}		
+		effect = {
+			yamatai_region = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+			yamatai_caves_region = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+			horai_region = {
+				type = all
+				add_permanent_claim = ROOT
+			} 
+			cow_demon_region = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+			plansect_region = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+			undine_region = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+			navyl_region = {
+				type = all
+				add_permanent_claim = ROOT
+			}			
+		}
+	}	
+}
+monster_lord_5 = {
+
+	slot = 5
+	generic = yes
+	ai = yes
+	
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		tag = ML1
+	}
+	
+	has_country_shield = yes
+	
+	ML1_yoma_elites = {
+		icon = mission_yoma_promote_yoma_warfare
+		required_missions = { }
+		position = 1
+		
+		trigger = {
+			estate_loyalty = {
+    				estate = estate_monster_girls
+    				loyalty = 60
+			}
+			OR = {
+				has_estate_privilege = estate_yoma_warfare_standards
+				army_size_percentage = 1
+			}
+		}
+		
+		effect = {
+			add_prestige = 15
+			add_country_modifier = {
+				name = "gen_integrate_yoma_warfare"
+				duration = -1
+			}
+			sealed_sinner_prison_region = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	ML1_grand_centaur_proposal = {
+		icon = mission_grand_centaur
+		required_missions = { ML1_kitsune_girls ML1_yoma_elites }
+		position = 2
+		
+		trigger = {
+			
+			OR = {
+				reverse_has_opinion = {
+					who = CE1
+					value = 50
+				}
+				diplomatic_reputation = 3
+				mil_tech = 6
+			}
+		}
+		
+		effect = {
+			add_accepted_culture = Centaur_Girl
+			add_country_modifier = {
+				name = "ML1_integrate_centaur_girls"
+				duration = -1 
+			}
+			country_event = { id = flavor_ml1.3 }
+		}
+	}
+
+	ML1_vouivre_girls = {
+		icon = mission_vouivre
+		required_missions = { ML1_grand_centaur_proposal }
+		position = 3
+		
+		trigger = {
+			
+			OR = {
+				AND = {
+					reverse_has_opinion = {
+						who = VU1
+						value = 50
+					}
+					reverse_has_opinion = {
+						who = VU2
+						value = 50
+					}
+				}
+				mil_tech = 7
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "ML1_holy_yoma_assistance"
+				duration = 9125 #25years 
+			}
+			change_government_reform_progress = 50
+			country_event = { id = flavor_ml1.5 }
+		}
+	}
+	ML1_sealed_sinner_unification = {
+		icon = mission_sealed_sinner_prison
+		required_missions = { ML1_vouivre_girls ML1_succubus_monks }
+		position = 4
+		
+		trigger = {
+			#prestige = 50
+			#army_size_percentage = 1
+		}
+		
+		effect = {
+			WY1 = {
+				country_event = { id = flavor_ml1.6 }
+			}
+			WY2 = {
+				country_event = { id = flavor_ml1.6 }
+			}
+			DM1 = {
+				country_event = { id = flavor_ml1.6 }
+			}
+			DM2 = {
+				country_event = { id = flavor_ml1.6 }
+			}
+			SS1 = {
+				country_event = { id = flavor_ml1.6 }
+			}
+		}
+	}
+	ML1_seal_armored_berserkers = {
+		icon = mission_armored_berserker
+		required_missions = { ML1_sealed_sinner_unification }
+		position = 5
+		
+		trigger = {
+			adm_power = 100
+			dip_power = 100
+			mil_power = 100
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with= {
+				value = 30
+				region = sealed_sinner_prison_region 
+			}
+			2233 = {
+				owned_by = ROOT
+				has_great_project = {
+					type = sealed_sinner_prison 
+					tier = 1
+				}
+			}
+		}
+		
+		effect = {
+			add_adm_power = -100
+			add_dip_power = -100
+			add_mil_power = -100
+			add_country_modifier = {
+				name = "ML1_sealed_armored_berserkers"
+				duration = -1 
+			}
+			2233 = {
+				owned_by = ROOT
+				add_great_project_tier = {
+					type = sealed_sinner_prison 
+					tier = 1
+				}
+			}
+		}
+	}
+	ML1_monster_lord_navy = {
+		icon = mission_rb_grow_the_channel
+		required_missions = { }
+		position = 6
+		
+		trigger = {
+			num_of_heavy_ship = 15
+			navy_size_percentage = 1
+		}
+		
+		effect = {
+			add_navy_tradition = 30
+			add_country_modifier = {
+				name = "ML1_monster_lord_navy"
+				duration = 7300
+			}
+		}
+	}
+	ML1_unknown_island = {
+		icon = mission_secure_lemuse_trade
+		required_missions = { ML1_monster_lord_navy }
+		position = 7
+		
+		trigger = {
+			treasury = 600
+		}
+		
+		effect = {
+			add_treasury = -600
+			227 = { add_siberian_construction = 600 }
+			1937 = { add_siberian_construction = 600 }
+			1938 = { add_siberian_construction = 600 }
+			unknown_island = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+			
+		}
+	}
+	ML1_queen_vampire = {
+		icon = mission_vampire_royal_ambitions
+		required_missions = { ML1_unknown_island }
+		position = 8
+		
+		trigger = {
+			OR = {
+				AND = {
+					reverse_has_opinion = {
+						who = VA6
+						value = 100
+					}
+					military_strength = {
+						who = VA6
+						value = 5.0
+					}
+				}
+				military_strength = {
+					who = VA6
+					value = 10.0
+				}
+				is_hegemon = yes
+			}
+		}	
+		effect = {
+			VA6 = {
+				country_event = { id = flavor_ml1.10 }
+			}
+			vampire_castle_region = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	ML1_rule_over_the_vampire_castle = {
+		icon = mission_fortify_the_realm
+		required_missions = { ML1_queen_vampire }
+		position = 9
+		
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with= {
+				value = 38
+				region = vampire_castle_region 
+			}
+		}			
+		
+		effect = {
+			add_country_modifier = {
+				name = "ML1_Assistance_of_Vampires"
+				duration = -1
+			}
+		}
+	}
+	ML1_buy_vampires_real_estate = {
+		icon = mission_powerful_vampire_ruler
+		required_missions = { ML1_rule_over_the_vampire_castle }
+		position = 10
+		
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with= {
+				value = 38
+				region = vampire_castle_region 
+				development = 20
+				is_prosperous = yes
+			}
+			years_of_income = 5.0
+		}			
+		
+		effect = {
+			add_years_of_income = -5.0
+			inherit = VA6
+		}
+	}
+	
+}

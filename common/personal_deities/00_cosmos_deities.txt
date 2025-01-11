@@ -1,0 +1,143 @@
+# Do not change tags in here without changing every other reference to them.
+# If adding new dieties, make sure they are uniquely named.
+
+eclipse = {
+	all_power_cost = 0.10
+	attack_bonus_in_capital_terrain = 2
+	
+	potential = { religion = cosmos_religion }
+	trigger = {}
+	sprite = 19
+	
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			personality = ai_militarist
+		}
+		modifier = {
+			factor = 0.5
+			is_year = 1550
+		}	
+		modifier = {
+			factor = 0.5
+			personality = ai_diplomat
+		}		
+	}
+}
+
+galaxy = {
+	all_power_cost = -0.10
+	attack_bonus_in_capital_terrain = -2
+	
+	potential = { religion = cosmos_religion }
+	trigger = {}
+	sprite = 19
+	
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 3
+			personality = ai_balanced
+		}
+		modifier = {
+			factor = 0.5
+			personality = ai_diplomat
+		}			
+	}	
+}
+
+starfire = {
+	siege_ability = 0.50
+	defensiveness = -0.25
+	
+	potential = { religion = cosmos_religion }
+	trigger = {}
+	sprite = 19
+	
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 3
+			personality = ai_capitalist
+		}		
+		modifier = {
+			factor = 2
+			personality = ai_militarist
+		}			
+	}	
+}
+
+star_healing = {
+	development_cost = -0.125
+	development_cost_in_primary_culture = -0.125
+	
+	potential = { religion = cosmos_religion }
+	trigger = {}
+	sprite = 19
+	
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 3
+			personality = ai_capitalist
+		}	
+		modifier = {
+			factor = 2
+			personality = ai_colonialist
+		}		
+	}	
+}
+
+star_guardian = { 
+	shock_damage = 0.33
+	country_military_power = -2
+	potential = { religion = cosmos_religion }
+	trigger = {}
+	sprite = 19
+	
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			personality = ai_militarist
+		}	
+		modifier = {
+			factor = 0.75
+			personality = ai_capitalist
+		}		
+	}	
+}
+
+terra_mastery = {
+	shock_damage_received = -0.33
+	country_military_power = -2
+	
+	potential = { religion = cosmos_religion }
+	trigger = {}
+	sprite = 19
+	
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			personality = ai_balanced
+		}	
+		modifier = {
+			factor = 0.5
+			personality = ai_capitalist
+		}		
+	}	
+}

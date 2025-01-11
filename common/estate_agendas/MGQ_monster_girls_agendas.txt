@@ -697,6 +697,10 @@ estate_monster_girls_succubi_want_partners = {
 	}
 	selection_weight = {
 		factor = 1
+		modifier = {
+			factor = 10
+			has_estate_privilege = estate_encourage_succubi_to_settle 
+		}
 	}
 	pre_effect = {
 	}

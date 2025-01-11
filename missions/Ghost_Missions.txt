@@ -1,0 +1,324 @@
+ghost_internal_development = {
+
+	slot = 1
+	generic = yes
+	ai = yes
+	
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		culture_group = ghost #ghost
+		NOT = { 
+			OR = {
+				
+			}
+		}
+	}
+	
+	has_country_shield = yes
+	
+	gen_ghost_internal_stability = {
+		icon = mission_early_game_buildings
+		required_missions = { }
+		position = 1
+		
+		trigger = {
+			stability = 1
+			capital_scope = {
+				development = 15
+			}
+		}
+		
+		effect = {
+			add_adm_power = 50
+			add_dip_power = 50
+			add_mil_power = 50
+		}
+	}
+	
+	gen_ghost_increase_our_income = {
+		icon = mission_high_income
+		required_missions = { gen_ghost_internal_stability }
+		position = 2
+		
+		trigger = {
+			share_of_starting_income = 3
+		}
+		
+		effect = {
+			add_years_of_income = 1
+		}
+	}
+
+	gen_ghost_haunted_forts = {
+		icon = mission_undead_grandeur_necromancer_mansion
+		required_missions = { gen_ghost_increase_our_income }
+		position = 3
+		
+		
+		trigger = {
+			calc_true_if = {
+				all_owned_province = {
+					OR = {
+						fort_level = 2
+					}
+				}
+				amount = 8
+			}
+			has_global_modifier_value = {
+				which = defensiveness
+				value = 0.30
+			}
+			
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "gen_ghost_haunted_forts"
+				duration = 9125 #25 years
+			}
+		}
+	}
+
+
+	gen_ghost_secure_magical_supplies = {
+		icon = mission_secure_magical_supplies
+		required_missions = { gen_ghost_haunted_forts }
+		position = 4
+		
+		
+		trigger = {
+			tropical_wood = 2
+			silk = 2
+			cotton = 2
+			wool = 2
+			dyes = 2
+			calc_true_if = {
+				all_owned_province = {
+					OR = {
+						has_building = mills
+						has_building = farm_estate
+						has_building = tradecompany
+						has_building = plantations
+					}
+				}
+				amount = 10
+			}
+		}
+		
+		effect = {
+			random_owned_province = {
+				limit = { trade_goods = tropical_wood }
+				add_province_modifier = {
+					name = "gen_ghost_magical_supplies_boom"
+					duration = 9125 #25 years
+				}
+			}
+			random_owned_province = {
+				limit = { trade_goods = silk }
+				add_province_modifier = {
+					name = "gen_ghost_magical_supplies_boom"
+					duration = 9125 #25 years
+				}
+			}
+			random_owned_province = {
+				limit = { trade_goods = cotton }
+				add_province_modifier = {
+					name = "gen_ghost_magical_supplies_boom"
+					duration = 9125 #25 years
+				}
+			}
+			random_owned_province = {
+				limit = { trade_goods = wool }
+				add_province_modifier = {
+					name = "gen_ghost_magical_supplies_boom"
+					duration = 9125 #25 years
+				}
+			}
+			random_owned_province = {
+				limit = { trade_goods = dyes }
+				add_province_modifier = {
+					name = "gen_ghost_magical_supplies_boom"
+					duration = 9125 #25 years
+				}
+			}
+			add_years_of_income = 0.5
+		}
+	}
+
+	gen_ghost_prosperous_realm = {
+		icon = mission_early_modern_university
+		required_missions = { gen_ghost_secure_magical_supplies }
+		position = 5
+		
+		
+		trigger = {
+			share_of_starting_income = 15
+			calc_true_if = {
+				all_owned_province = {
+					OR = {
+						has_building = mills
+						has_building = farm_estate
+						has_building = tradecompany
+						has_building = plantations
+						has_building = textile
+						has_building = weapons
+						has_building = wharf
+						has_building = furnace
+					}
+				}
+				amount = 20
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "gen_ghost_prosperous_realm"
+				duration = 9125 #25 years
+			}	
+			add_years_of_income = 1	
+		}
+	}
+	
+}
+ghost_trade_expansion = {
+
+	slot = 5
+	generic = yes
+	ai = yes
+	
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		culture_group = ghost #ghost
+		NOT = { 
+			OR = {
+				
+			}
+		}
+	}
+	
+	has_country_shield = yes
+	
+	gen_ghost_weaponize_spooky_scary_ghosts = {
+		icon = mission_ghost_girl
+		required_missions = { }
+		position = 1
+		
+		trigger = {
+			estate_loyalty = {
+    				estate = estate_monster_girls
+    				loyalty = 60
+				}
+			has_estate_privilege = estate_weaponized_spooky_scary_ghosts
+		}
+		
+		effect = {
+			add_army_tradition = 10
+			add_country_modifier = {
+				name = "gen_ghost_justified_ghost_warfare"
+				duration = -1
+			}
+		}
+	}
+	
+	gen_ghost_ban_the_holy_water = {
+		icon = mission_undead_ban_the_holy_water
+		required_missions = { gen_ghost_weaponize_spooky_scary_ghosts }
+		position = 2
+		
+		trigger = {
+			incense = 4
+			treasury = 400
+		}
+		
+		effect = {
+			add_treasury = -400
+			random_owned_province = {
+				limit = { trade_goods = incense }
+				change_trade_goods = unknown
+			}
+			random_owned_province = {
+				limit = { trade_goods = incense }
+				change_trade_goods = unknown
+			}
+			random_owned_province = {
+				limit = { trade_goods = incense }
+				change_trade_goods = unknown
+			}
+			random_owned_province = {
+				limit = { trade_goods = incense }
+				change_trade_goods = unknown
+			}
+			add_country_modifier = {
+				name = "gen_undead_got_rid_of_holy_water"
+				duration = 9125 #25 years
+			}
+		}
+	}
+	
+	gen_ghost_establish_trade_companies = {
+		icon = mission_colonial
+		required_missions = { gen_ghost_ban_the_holy_water }
+		position = 3
+
+		trigger = {
+			OR = {
+				num_of_strong_trade_companies = 2
+				num_of_merchants = 4
+			}
+		}
+		
+		effect = {	
+			add_mercantilism = 4
+			add_years_of_income = 1
+		}
+	}
+	gen_ghost_powerful_ghost_ruler = {
+		icon = mission_master_shadow
+		required_missions = { gen_ghost_establish_trade_companies }
+		position = 4
+		
+		trigger = {
+			monthly_adm = 10
+			monthly_dip = 10
+			monthly_mil = 10
+			grown_by_development = 750
+			legitimacy_equivalent = 90
+		}
+		
+		effect = {
+			add_years_of_income = 3
+		}
+	}
+	gen_ghost_eternity_ambitions = {
+		icon = mission_hasshaku_sama
+		required_missions = { gen_ghost_powerful_ghost_ruler }
+		position = 5
+		
+		trigger = {
+			monthly_adm = 12
+			monthly_dip = 12
+			monthly_mil = 12
+			government_rank = 2
+			army_tradition = 50
+			army_size = 150
+			legitimacy_equivalent = 100
+			is_bankrupt = no
+		}
+		
+		effect = {
+			if = {
+				custom_tooltip = accepted_eternity_ideas_tt
+				set_country_flag = accepted_eternity_ideas
+				hidden_effect = {
+					swap_free_idea_group = yes
+				}
+			}
+			else = { add_prestige = 50 }
+			add_army_tradition = 50
+			add_adm_power = 50
+			add_dip_power = 50
+			add_mil_power = 50
+		}
+	}
+	
+}

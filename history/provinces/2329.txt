@@ -31,3 +31,5 @@ add_core = DM2
 owner = DM2
 culture = Yoma_Girl
 controller = DM2
+discovered_by = TECH_FAIRY
+discovered_by = TECH_GHOST

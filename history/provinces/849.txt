@@ -32,3 +32,5 @@ discovered_by = TECH_YOUMA
 discovered_by = TECH_DEMI_HUMAN
 center_of_trade = 1
 trade_goods = cotton
+discovered_by = TECH_FAIRY
+discovered_by = TECH_GHOST

@@ -330,7 +330,7 @@ dragon_empress_ideas = {
 	}
 
 	bonus = {		
-		siege_ability = 0.30
+		siege_ability = 0.20
 	}
 	
 	trigger = {
@@ -341,7 +341,7 @@ dragon_empress_ideas = {
 	free = yes
 
 	dragon_empress_Imperial_Command = {		
-		discipline = 0.10
+		discipline = 0.075
 	}
 	dragon_empress_Scales_of_the_Dragon  = {		
 		land_attrition = -0.20
@@ -360,6 +360,52 @@ dragon_empress_ideas = {
 	}
 	dragon_empress_dragon_conquerors = {
 		leader_land_fire = 1
+	}
+}
+#Eternity
+eternity_ideas = {
+	start = {
+		max_hostile_attrition = 2
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+
+	bonus = {		
+		defensiveness = 0.25
+	}
+	
+	trigger = {
+		OR = {
+			has_country_flag = accepted_eternity_ideas
+		}
+	}
+	free = yes
+
+	eternity_cursed_lands = {		
+		hostile_attrition = 3
+	}
+	eternity_deafening_soulshriek  = {		
+		morale_damage = 0.25
+	}
+	eternity_spiritualist_high_mastery = {
+		regiment_manpower_usage = -0.2
+		reinforce_cost_modifier = -0.50		
+	}
+	eternity_spectral_movements = {
+		movement_speed = 0.20
+		can_bypass_forts = yes
+	}
+	eternity_lords_of_astral = {
+		fire_damage = 0.175
+	}
+	eternity_ethereal_wisdom = {		
+		spiritualists_loyalty_modifier = 0.10
+		spiritualists_influence_modifier = 0.10	
+		idea_cost = -0.10			
+	}
+	eternity_eternal_veil = {
+		morale_damage_received = -0.25
 	}
 }
 norse_ideas = {

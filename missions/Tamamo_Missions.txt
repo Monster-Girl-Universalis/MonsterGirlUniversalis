@@ -1,0 +1,1303 @@
+tamamo_internal_development_and_cow_demon_branch = {
+
+	slot = 1
+	generic = yes
+	ai = yes
+	
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		tag = KI1
+	}
+	
+	has_country_shield = yes
+	
+	KI1_harmony_in_kitsune_village = {
+		icon = mission_early_game_buildings
+		required_missions = { }
+		position = 1
+		
+		trigger = {
+			stability = 1
+			employed_advisor = {
+				category = ADM
+			}
+			employed_advisor = {
+				category = DIP
+			}
+			employed_advisor = {
+				category = MIL
+			}
+		}
+		
+		effect = {
+			add_stability = 1
+			add_country_modifier = {
+				name = "KI1_harmony_in_kitsune_village"
+				duration = 5475
+			}
+		}
+	}
+
+	KI1_kitsune_udon_delicacies = {
+		icon = mission_kitsune_thin_fried_tofu_production
+		required_missions = { KI1_harmony_in_kitsune_village }
+		position = 2
+		
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 5
+				base_production = 7
+			}
+		}
+		effect = {
+			random_owned_province = {
+				limit = {
+					base_production = 7 
+					NOT = { has_province_modifier = gen_kitsune_thin_fried_tofu_production }
+				}
+				add_province_modifier = {
+					name = "KI1_kitsune_udon_delicacies"
+					duration = -1
+				}
+			}
+			random_owned_province = {
+				limit = {
+					base_production = 7 
+					NOT = { has_province_modifier = gen_kitsune_thin_fried_tofu_production }
+				}
+				add_province_modifier = {
+					name = "KI1_kitsune_udon_delicacies"
+					duration = -1
+				}
+			}
+			random_owned_province = {
+				limit = {
+					base_production = 7 
+					NOT = { has_province_modifier = gen_kitsune_thin_fried_tofu_production }
+				}
+				add_province_modifier = {
+					name = "KI1_kitsune_udon_delicacies"
+					duration = -1
+				}
+			}
+			random_owned_province = {
+				limit = {
+					base_production = 7 
+					NOT = { has_province_modifier = gen_kitsune_thin_fried_tofu_production }
+				}
+				add_province_modifier = {
+					name = "KI1_kitsune_udon_delicacies"
+					duration = -1
+				}
+			}
+			random_owned_province = {
+				limit = {
+					base_production = 7 
+					NOT = { has_province_modifier = gen_kitsune_thin_fried_tofu_production }
+				}
+				add_province_modifier = {
+					name = "KI1_kitsune_udon_delicacies"
+					duration = -1
+				}
+			}
+		}
+	}
+
+	KI1_kitsune_taoism_schools = {
+		icon = mission_fund_kitsune_sages
+		required_missions = { KI1_kitsune_udon_delicacies }
+		position = 3
+		
+		
+		trigger = {
+			treasury = 1000
+			has_estate_privilege = estate_invite_kitsune_sages
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "gen_kitsune_funded_sages"
+				duration = -1
+			}	
+			add_treasury = -1000
+			2180 = {
+				add_building_construction = {
+    					building = university
+    					speed = 0.25
+    					cost = 0.25
+				}
+				add_province_modifier = {
+					name = "KI1_taoism_training_center"
+					duration = -1
+				}
+			}	
+		}
+	}
+
+	KI1_kitsune_artisanry = {
+		icon = mission_doll_quality_precision
+		required_missions = { KI1_kitsune_taoism_schools }
+		position = 4
+
+		trigger = {
+			num_of_owned_provinces_with = {
+				has_production_building_trigger = yes
+				value = 30
+			}
+		}
+		effect = {
+			add_years_of_income = 2.5
+			add_country_modifier = {
+				name = "KI1_kitsune_artisanry_mod"
+				duration = 7300
+			}
+		}
+	}
+
+	KI1_infiltrate_magical_academy = {
+		icon = mission_tamamo_infiltrate_magical_academy
+		required_missions = { KI1_advance_to_grand_noah }
+		position = 7
+
+		trigger = {
+			OR = {
+				has_spy_network_in = {
+					who = ME1
+					value = 50
+				}
+				AND = {
+					has_spy_network_in = {
+						who = ME1
+						value = 25
+					}
+					employed_advisor = {
+						type = spymaster
+						skill = 5
+					}					
+				}
+			}		
+		}
+		effect = {
+			magical_academy = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+			spirit_woods = {
+				type = all
+				add_permanent_claim = ROOT
+			}			
+			country_event = { id = flavor_ki1.5 }
+		}
+	}
+	KI1_demand_answers_from_mephisto = {
+		icon = mission_mephisto
+		required_missions = { KI1_infiltrate_magical_academy }
+		position = 8
+
+		trigger = {
+			magical_academy = {
+				type = all
+				owned_by = ROOT
+			}
+			ME1 = { exists = no }				
+		}
+		effect = {
+			country_event = { id = flavor_ki1.6 }
+			okiku_mushi_area = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+			okiku_mushi_caves = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+			spirit_plains = {
+				type = all
+				add_permanent_claim = ROOT
+			}			
+		}
+	}
+	KI1_secure_okiku_mushi_caves = {
+		icon = mission_okiku_mushi
+		required_missions = { KI1_demand_answers_from_mephisto }
+		position = 9
+
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with= {
+				value = 15
+				region = cow_demon_region
+			}						
+		}
+		effect = {
+			cow_demon_region = {
+				type = all
+				add_permanent_claim = ROOT
+			}						
+		}
+	}
+	KI1_stop_cow_demon_plans = {
+		icon = mission_cow_demon
+		required_missions = { KI1_secure_okiku_mushi_caves }
+		position = 10
+
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with= {
+				value = 25
+				region = cow_demon_region
+			}
+			1290 = {
+				owned_by = ROOT
+			}	
+								
+		}
+		effect = {
+			add_country_modifier = {
+				name = "KI1_tamamo_stop_cow_demon_plans_mod"
+				duration = 7300
+			}
+			1290 = {
+				add_great_project_tier = {
+    					type = cow_demon_castle 
+    					tier = 1
+				}	
+			}					
+		}
+	}
+		
+}
+tamamo_horai_grand_noah_branch = {
+
+	slot = 2
+	generic = yes
+	ai = yes
+	
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		tag = KI1
+	}
+	
+	has_country_shield = yes
+	
+	KI1_prepare_kitsune_trading_fleet = {
+		icon = mission_galleys_in_port
+		required_missions = { }
+		position = 1
+		
+		trigger = {
+			navy_size_percentage = 0.75
+			num_of_light_ship = 20
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "KI1_raise_the_trading_fleet"
+				duration = 5475
+			}
+			add_mercantilism = 2
+		}
+	}		
+	KI1_hikkikomori_elf = {
+		icon = mission_elf_princess
+		required_missions = { KI1_prepare_kitsune_trading_fleet }
+		position = 2
+		
+		trigger = {
+			OR = {
+				has_spy_network_in = {
+					who = EL4
+					value = 60
+				}
+				alliance_with = EL4
+			}
+		}
+		
+		effect = {
+			country_event = { id = flavor_ki1.2 }
+		}
+	}		
+	KI1_control_over_the_summit = {
+		icon = mission_mt_horai
+		required_missions = { KI1_hikkikomori_elf }
+		position = 3
+		
+		trigger = {
+			OR = {
+				reverse_has_opinion = {
+					who = EL4
+					value = 190
+				}
+				AND = {
+					horai_coast = {
+						type = all
+						owned_by = ROOT
+					}
+					elven_village = {
+						type = all
+						owned_by = ROOT
+					}
+				}
+			}
+		}
+		effect = {
+			inherit = EL4
+			add_accepted_culture = Horai_Elf
+			horai_region = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+		}
+	}		
+	KI1_horai_for_kitsunes = {
+		icon = mission_kitsune_assemble_taoist_warriors
+		required_missions = { KI1_control_over_the_summit }
+		position = 4
+		
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with= {
+				value = 45
+				region = horai_region 
+			}	
+		}
+		effect = {
+			2180 = {
+				add_building_construction = {
+    					building = soldier_households
+    					speed = 0.25
+    					cost = 0.25
+				}
+			}
+			country_event = { id = flavor_ki1.3 }
+		}
+	}		
+	KI1_challenge_grand_noah = {
+		icon = mission_dullahan
+		required_missions = { KI1_horai_for_kitsunes }
+		position = 5
+		
+		trigger = {
+			is_great_power = yes
+			OR = {
+				is_rival = GR2
+				military_strength = {
+					who = GR2
+					value = 2.0
+				}
+				GR2 = { exists = no }
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "KI1_challenge_grand_noah_mod"
+				duration = 3650
+			}
+			noah_outskirts = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+			cerberus_area = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+			dullahan_area = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+			eastern_noah = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+			southern_noah = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+		}
+	}		
+	KI1_advance_to_grand_noah = {
+		icon = mission_cerberus
+		required_missions = { KI1_challenge_grand_noah  }
+		position = 6
+		
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with= {
+				value = 15
+				region = grand_noah_region
+			}			
+		}
+		effect = {
+			add_prestige = 50
+			grand_noah = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+			helena_area = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+			western_noah = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+			noah_mimics = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+			noah_kappas_area = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+		}
+	}		
+	KI1_take_over_noah_kingdom = {
+		icon = mission_infrastructure_for_huge_population
+		required_missions = { KI1_advance_to_grand_noah }
+		position = 7
+		
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with= {
+				value = 30
+				region = grand_noah_region
+			}
+			1192 = {
+				owned_by = ROOT
+			}
+			1194 = {
+				owned_by = ROOT
+			}			
+		}
+		effect = {
+			add_army_tradition = 50
+			1194 = {
+				add_great_project_tier = {
+    					type = noah_colosseum 
+    					tier = 1
+				}	
+			}
+		}
+	}		
+	KI1_grand_noah_unification = {
+		icon = mission_secure_army_supplies
+		required_missions = { KI1_take_over_noah_kingdom }
+		position = 8
+		
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with= {
+				value = 60
+				region = grand_noah_region
+			}			
+		}
+		effect = {
+			plansect_region = {
+				type = all
+				add_permanent_claim = ROOT
+			}			
+			add_country_modifier = {
+				name = "ki1_protector_of_grand_noah"
+				duration = 10950
+			}
+		}
+	}		
+	KI1_enter_plansect_woods = {
+		icon = mission_alraune_embrace_natures_dominion
+		required_missions = { KI1_grand_noah_unification }
+		position = 9
+		
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with= {
+				value = 30
+				region = plansect_region 
+			}			
+		}
+		effect = {
+			add_yearly_manpower = 2
+			add_country_modifier = {
+				name = "ki1_conscription_of_insects_and_plants"
+				duration = 7300
+			}
+		}
+	}		
+	KI1_eternal_peace_in_plansect = {
+		icon = mission_alraune_blooming_empire
+		required_missions = { KI1_enter_plansect_woods }
+		position = 10
+		
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with= {
+				value = 60
+				region = plansect_region 
+			}			
+		}
+		effect = {
+			add_years_of_income = 3			
+			add_country_modifier = {
+				name = "ki1_protector_of_plansect"
+				duration = 10950
+			}
+		}
+	}
+}
+tamamo_kitsune_island_monster_lord_branch = {
+
+	slot = 3
+	generic = yes
+	ai = yes
+	
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		tag = KI1
+	}
+	
+	has_country_shield = yes
+
+	KI1_kitsune_tanuki_rivalry = {
+		icon = mission_tanuki_increase_trade
+		required_missions = { }
+		position = 1
+		
+		trigger = {
+			army_size_percentage = 0.90
+			OR = {
+				is_enemy = TA2
+				military_strength = {
+					who = TA2
+					value = 2.0
+				}
+			}
+		}
+		
+		effect = {
+			declare_war = TA2
+		}
+	}
+	KI1_tamamo_kurodanuki_duel = {
+		icon = mission_tanuki_royal_ambitions
+		required_missions = { KI1_kitsune_tanuki_rivalry }
+		position = 2
+		
+		trigger = {
+			war_score_against = {
+				who = TA2
+				value = 80
+			}
+			2165 = { controlled_by = KI1 }
+		}
+		
+		effect = {
+			country_event = { id = flavor_ki1.1 }
+		}
+	}
+	KI1_tamamo_subjugation_of_tanuki = {
+		icon = mission_tanuki_ninjas
+		required_missions = { KI1_tamamo_kurodanuki_duel }
+		position = 3
+		
+		trigger = {
+			OR = {
+				AND = {
+					tanuki_village_area = {
+						type = all
+						owned_by = ROOT
+					}
+					taoist_coast = {
+						type = all
+						owned_by = ROOT
+					}
+					bakedanuki_area = {
+						type = all
+						owned_by = ROOT
+					}
+				}
+				AND = {
+					TA2 = { is_subject_of = KI1 }
+					TA2 = { NOT = { liberty_desire = 50 } }
+				}
+			}
+		}
+		effect = {
+			add_prestige = 50
+			add_accepted_culture = Tanuki_Girl
+			add_country_modifier = {
+				name = "ki1_integrated_tanuki"
+				duration = -1
+			}
+		}
+	}
+	KI1_tamamo_peace_in_two_villages = {
+		icon = mission_scylla_seafood_production
+		required_missions = { KI1_tamamo_subjugation_of_tanuki }
+		position = 4
+		
+		trigger = {
+			tanuki_village_area = {
+				type = all
+				owned_by = ROOT
+				development = 15
+			}
+			taoist_coast = {
+				type = all
+				owned_by = ROOT
+				development = 15
+			}
+			bakedanuki_area = {
+				type = all
+				owned_by = ROOT
+				development = 15
+			}
+			kitsune_village_area = {
+				type = all
+				owned_by = ROOT
+				development = 15
+			}
+			feral_kitsune_area = {
+				type = all
+				owned_by = ROOT
+				development = 15
+			}
+		}
+		effect = {
+			change_government_reform_progress = 75
+ 			set_variable = {
+   				which = Tanuki_integration
+  				value = 1
+			}
+			every_owned_province = {
+				limit = {
+					OR = {
+						culture = Kitsune_Girl
+						culture = Feral_Kitsune
+						culture = Tanuki_Girl
+					}
+				}
+				add_random_development = 2
+			}
+		}
+	}
+
+	KI1_monster_lord_education = {
+		icon = mission_monster_lord_15th
+		required_missions = {  }
+		position = 5
+		
+		trigger = {
+			adm_tech = 4
+			reverse_has_opinion = {
+				who = ML1
+				value = -50
+			}
+		}
+		
+		effect = {
+			country_event = { id = flavor_ki1.4 }
+			add_historical_friend = ML1
+		}
+	}
+	KI1_centennial_wisdom_of_kitsune = {
+		icon = mission_powerful_kitsune_ruler
+		required_missions = { KI1_monster_lord_education  }
+		position = 6
+		
+		trigger = {
+			check_variable = {
+				which = Educated_Monster_Lords
+				value = 3
+			}
+		}
+		
+		effect = {
+			add_adm_power = 50
+			add_dip_power = 50
+			add_mil_power = 50
+		}
+	}
+	KI1_nine_tailed_mastery = {
+		icon = mission_kitsune_nine_tailed_ambitions
+		required_missions = { KI1_centennial_wisdom_of_kitsune }
+		position = 7
+		
+		trigger = {
+			adm_tech = 12
+			check_variable = {
+				which = Educated_Monster_Lords
+				value = 5
+			}
+		}
+		
+		effect = {
+			add_adm_power = 100
+			add_dip_power = 100
+			add_mil_power = 100
+		}
+	}
+	KI1_overpower_the_monster_lord = {
+		icon = mission_overpower_the_monster_lord
+		required_missions = { KI1_nine_tailed_mastery }
+		position = 9
+		
+		trigger = {
+			mil_tech = 13
+			total_development = ML1
+			military_strength = {
+				who = ML1
+				value = 1.0
+			}
+		}
+		
+		effect = {
+			add_adm_power = 200
+			add_dip_power = 200
+			add_mil_power = 200
+		}
+	}
+	KI1_zero_tailed_kitsune_ambitions = {
+		icon = mission_zero_tailed_kitsune_ambitions
+		required_missions = { KI1_overpower_the_monster_lord }
+		position = 10
+		
+		trigger = {
+			total_development = ML1
+			OR = {
+				military_strength = {
+					who = ML1
+					value = 5.0
+				}
+				AND = {
+					check_variable = {
+						which = Educated_Monster_Lords
+						value = 5
+					}
+					military_strength = {
+						who = ML1
+						value = 2.0
+					}
+				}
+				check_variable = {
+					which = Educated_Monster_Lords
+					value = 7
+				}
+			}
+		}
+		
+		effect = {
+			create_union = ML1
+			
+		}
+	}
+
+}
+
+tamamo_yamatai_branch = {
+
+	slot = 4
+	generic = yes
+	ai = yes
+	
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		tag = KI1
+	}
+	
+	has_country_shield = yes
+
+		
+	KI1_ties_with_yamatai_village = {
+		icon = mission_asian_city
+		required_missions = { }
+		position = 1
+		
+		trigger = {
+			reverse_has_opinion = {
+				who = YM1
+				value = 100
+			}
+		}
+		effect = {
+			add_historical_friend = YM1
+			yamata_no_orochi_cave = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+			spider_miko_area = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+		}
+	}		
+	KI1_defeat_yamata_no_orochi = {
+		icon = mission_yamata_no_orochi
+		required_missions = { KI1_ties_with_yamatai_village  }
+		position = 2
+		
+		trigger = {
+			yamata_no_orochi_cave = {
+				type = all
+				owned_by = ROOT
+			}
+			OR1 = { exists = no }
+			adm_power = 50
+			dip_power = 50
+			mil_power = 50
+		}
+		effect = {
+			add_adm_power = -50
+			add_dip_power = -50
+			add_mil_power = -50
+			vassalize = YM1
+		}
+	}		
+	KI1_kitsune_reign_in_yamatai = {
+		icon = mission_japanese_fort
+		required_missions = { KI1_defeat_yamata_no_orochi }
+		position = 3
+		
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with= {
+				value = 20
+				region = yamatai_region 
+			}
+		}
+		effect = {
+			add_accepted_culture = yamatai_human
+			yamatai_region = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+ 			set_variable = {
+   				which = Human_integration
+  				value = 1
+			}
+		}
+	}		
+	KI1_yamatai_demi_humans = {
+		icon = mission_akaname
+		required_missions = { KI1_kitsune_reign_in_yamatai }
+		position = 4
+		
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with= {
+				value = 45
+				region = yamatai_region 
+			}
+		}
+		effect = {
+ 			set_variable = {
+   				which = Demi_Human_integration
+  				value = 1
+			}
+			add_country_modifier = {
+				name = "ki1_youkai_diversity"
+				duration = -1
+			}
+		}
+	}
+		
+	KI1_fortify_yamatai_caves = {
+		icon = mission_gold_mine
+		required_missions = { KI1_control_yamatai_passages }
+		position = 5
+		
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with= {
+				value = 10
+				region = yamatai_caves_region 
+				has_fort_building_trigger = yes
+			}
+		}
+		effect = {
+			blue_frog_area = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+			red_frog_area = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+			hakoiri_plains = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+			centaur_bay = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+			hakoiri_area = {
+				type = all
+				add_permanent_claim = ROOT
+			}			
+		}
+	}		
+	KI1_invade_frog_plains = {
+		icon = mission_frogs
+		required_missions = { KI1_fortify_yamatai_caves  }
+		position = 6
+		
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with= {
+				value = 15
+				OR = {
+					area = blue_frog_area 
+					area = red_frog_area 
+					area = hakoiri_plains 
+					area = centaur_bay 
+					area = hakoiri_area 
+				}
+			}
+		}
+		effect = {
+			centaur_mountains = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+			finoa_area = {
+				type = all
+				add_permanent_claim = ROOT
+			}			
+			finoa_plains= {
+				type = all
+				add_permanent_claim = ROOT
+			}			
+			centaur_coast = {
+				type = all
+				add_permanent_claim = ROOT
+			}			
+			frog_hills = {
+				type = all
+				add_permanent_claim = ROOT
+			}						
+		}
+	}		
+	KI1_take_over_finoa = {
+		icon = mission_rubiana
+		required_missions = { KI1_invade_frog_plains }
+		position = 7
+		
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with= {
+				value = 15
+				OR = {
+					area = centaur_mountains 
+					area = finoa_area 
+					area = finoa_plains
+					area = centaur_coast 
+					area = frog_hills 
+				}
+			}
+			1071 = {
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			add_mil_power = 150	
+			finoa_region = {
+				type = all
+				add_permanent_claim = ROOT
+			}						
+		}
+	}		
+	KI1_unification_of_finoa = {
+		icon = mission_infrastructure_for_huge_population
+		required_missions = { KI1_take_over_finoa }
+		position = 8
+		
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with= {
+				value = 50
+				region = finoa_region
+			}
+		}
+		effect = {
+			add_dip_power = 150
+			add_country_modifier = {
+				name = "ki1_protector_of_finoa"
+				duration = 10950
+			}
+			iliasburg_region = {
+				type = all
+				add_permanent_claim = ROOT
+			}					
+		}
+	}		
+	KI1_foothold_in_iliasburg = {
+		icon = mission_ilias_continent
+		required_missions = { KI1_unification_of_finoa }
+		position = 9
+		
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with= {
+				value = 15
+				region = iliasburg_region 
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "ki1_tamamo_on_ilias_continent"
+				duration = 7200
+			}
+			vassalize = KTI
+			vassalize = KTG					
+		}
+	}		
+	KI1_secure_all_routes_to_seekers_cave = {
+		icon = mission_gold_mine
+		required_missions = { KI1_foothold_in_iliasburg }
+		position = 10
+		
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with= {
+				value = 9
+				OR = {
+					area = kitsune_taoist_area
+					area = spider_girl_area
+					area = kitsune_geisha_area 
+				} 
+			}
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with= {
+				value = 41
+				region = iliasburg_region 
+			}
+		}
+		effect = {
+			ilias_superregion = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+			enrika_superregion = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+			harpy_forest_superregion = {
+				type = all
+				add_permanent_claim = ROOT
+			}			
+		}
+	}
+}
+
+tamamo_yamatai_caves = {
+
+	slot = 5
+	generic = yes
+	ai = yes
+	
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		tag = KI1
+	}
+	
+	has_country_shield = yes
+	
+	KI1_yamatai_elves = {
+		icon = mission_samurai_elf
+		required_missions = { }
+		position = 1
+		
+		trigger = {
+			OR = {
+				has_spy_network_in = {
+					who = YE1
+					value = 40
+				}
+				YE1 = { exists = no }				
+			}
+			OR = {
+				has_spy_network_in = {
+					who = YE2
+					value = 40
+				}
+				YE2 = { exists = no }				
+			}
+		}
+		
+		effect = {
+			add_dip_power = 100
+			kunoichi_elf_area = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+			yamatai_elf_coast = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+			samurai_elf_area = {
+				type = all
+				add_permanent_claim = ROOT
+			}			
+		}
+	}	
+	KI1_yamatai_caverns = {
+		icon = mission_kunoichi_elf
+		required_missions = { KI1_yamatai_elves }
+		position = 2
+		
+		trigger = {
+			kunoichi_elf_area = {
+				type = all
+				owned_by = ROOT
+			}
+			yamatai_elf_coast = {
+				type = all
+				owned_by = ROOT
+			}
+			samurai_elf_area = {
+				type = all
+				owned_by = ROOT
+			}			
+		}
+		
+		effect = {
+			nure_onna_caves = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+			nure_onna_area = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+			kappa_caverns = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+			add_country_modifier = {
+				name = "ki1_samurai_and_kunoichi_elves"
+				duration = 7300
+			}			
+		}
+	}	
+	KI1_tame_nure_onnas = {
+		icon = mission_nure_onna
+		required_missions = { KI1_yamatai_caverns }
+		position = 3
+		
+		trigger = {
+			nure_onna_caves = {
+				type = all
+				owned_by = ROOT
+			}
+			nure_onna_area = {
+				type = all
+				owned_by = ROOT
+			}
+			NR2 = { exists = no }			
+		}
+		
+		effect = {
+			add_adm_power = 100
+			yamatai_caves_region = {
+				type = all
+				add_permanent_claim = ROOT
+			}			
+		}
+	}	
+	KI1_control_yamatai_passages = {
+		icon = mission_mountain_metals
+		required_missions = { KI1_tame_nure_onnas }
+		position = 4
+		
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with= {
+				value = 45
+				region = yamatai_caves_region 
+			}		
+		}
+		
+		effect = {
+			add_mil_power = 100
+			add_country_modifier = {
+				name = "ki1_protector_of_yamatai"
+				duration = 10950
+			}			
+		}
+	}		
+	KI1_finoan_land_dwellers = {
+		icon = mission_frogs2
+		required_missions = { KI1_invade_frog_plains }
+		position = 7
+		
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with= {
+				value = 17
+				OR = {
+					area = froglands
+					area = frog_coast
+					area = eastern_froglands
+					area = frog_peninsula
+				}
+			}
+		}
+		effect = {
+			add_adm_power = 150
+ 			set_variable = {
+   				which = Land_Dweller_integration
+  				value = 1
+			}					
+		}
+	}	
+	has_country_shield = yes
+	
+	KI1_challenge_the_navy = {
+		icon = mission_sea_dweller_morale
+		required_missions = { KI1_finoan_land_dwellers  }
+		position = 8
+		
+		trigger = {
+			navy_size_percentage = 0.75
+			num_of_heavy_ship = 50
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "ki1_raise_the_navy"
+				duration = 5475
+			}
+			add_navy_tradition = 25
+			484 = {
+				add_permanent_claim = ROOT
+			}
+			
+		}
+	}	
+	KI1_capture_navy_headquarters = {
+		icon = mission_royal_sea_dweller_challenger
+		required_missions = { KI1_challenge_the_navy }
+		position = 9
+		
+		trigger = {
+			484 = {
+				owned_by = ROOT
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "ki1_gateway_to_seven_seas"
+				duration = -1
+			}
+			add_navy_tradition = 50
+			navyl_region = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+			
+		}
+	}	
+	KI1_rule_the_noah_seas = {
+		icon = mission_galleys_in_port
+		required_missions = { KI1_capture_navy_headquarters }
+		position = 10
+		
+		trigger = {
+			navyl_region = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		
+		effect = {
+			add_navy_tradition = 50
+			add_yearly_sailors = 2.5
+ 			set_variable = {
+   				which = Sea_Dweller_integration
+  				value = 1
+			}
+			
+		}
+	}
+}

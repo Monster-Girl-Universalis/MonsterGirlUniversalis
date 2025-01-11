@@ -1,0 +1,336 @@
+music = {
+	name = "maintheme"
+	file = "maintheme.ogg"
+}
+music = {
+	name = "zukan_library"
+	file = "zukan_library.ogg"
+}
+music = {
+	name = "castle1_san_ilia"
+	file = "castle1_san_ilia.ogg"
+}
+music = {
+	name = "boss0"
+	file = "boss0.ogg"
+}
+music = {
+	name = "field1"
+	file = "field1.ogg"
+}
+music = {
+	name = "yamatai_makai"
+	file = "yamatai_makai.ogg"
+}
+music = {
+	name = "umi"
+	file = "umi.ogg"
+}
+music = {
+	name = "tamamo"
+	file = "tamamo.ogg"
+}
+music = {
+	name = "stein"
+	file = "stein.ogg"
+}
+music = {
+	name = "singun_t"
+	file = "singun_t.ogg"
+}
+music = {
+	name = "singun_kessen_m"
+	file = "singun_kessen_m.ogg"
+}
+music = {
+	name = "singun_kessen_g"
+	file = "singun_kessen_g.ogg"
+}
+music = {
+	name = "kagetumugi"
+	file = "kagetumugi.ogg"
+}
+music = {
+	name = "sinden_ilias_temple"
+	file = "sinden_ilias_temple.ogg"
+}
+music = {
+	name = "scene_sinpi_garuda"
+	file = "scene_sinpi_garuda.ogg"
+}
+music = {
+	name = "scene_kanasimi2_dead_village"
+	file = "scene_kanasimi2_dead_village.ogg"
+}
+music = {
+	name = "scene_dance2"
+	file = "scene_dance2.ogg"
+}
+music = {
+	name = "scene_dance1"
+	file = "scene_dance1.ogg"
+}
+music = {
+	name = "scene_comi1_silly"
+	file = "scene_comi1_silly.ogg"
+}
+music = {
+	name = "scene_comi2"
+	file = "scene_comi2.ogg"
+}
+music = {
+	name = "scene_chaos1"
+	file = "scene_chaos1.ogg"
+}
+music = {
+	name = "scene_battle1"
+	file = "scene_battle1.ogg"
+}
+music = {
+	name = "scene_alice2_BA"
+	file = "scene_alice2_BA.ogg"
+}
+music = {
+	name = "scene_alice"
+	file = "scene_alice.ogg"
+}
+music = {
+	name = "saki"
+	file = "saki.ogg"
+}
+music = {
+	name = "sabaku_sabasa_region"
+	file = "sabaku_sabasa_region.ogg"
+}
+music = {
+	name = "ruka_angry"
+	file = "ruka_angry.ogg"
+}
+music = {
+	name = "queen"
+	file = "queen.ogg"
+}
+music = {
+	name = "ooana_tartarus_entrance"
+	file = "ooana_tartarus_entrance.ogg"
+}
+music = {
+	name = "mura7_yamatai"
+	file = "mura7_yamatai.ogg"
+}
+music = {
+	name = "mura6_sabasa"
+	file = "mura6_sabasa.ogg"
+}
+music = {
+	name = "mura4_goldport"
+	file = "mura4_goldport.ogg"
+}
+music = {
+	name = "mura3_shady_place"
+	file = "mura3_shady_place.ogg"
+}
+music = {
+	name = "mura2_generic"
+	file = "mura2_generic.ogg"
+}
+music = {
+	name = "mura1_iliasville"
+	file = "mura1_iliasville.ogg"
+}
+music = {
+	name = "kiki4_Counterattack"
+	file = "kiki4_Counterattack.ogg"
+}
+music = {
+	name = "kiki3"
+	file = "kiki3.ogg"
+}
+music = {
+	name = "kiki2"
+	file = "kiki2.ogg"
+}
+music = {
+	name = "kiki1"
+	file = "kiki1.ogg"
+}
+music = {
+	name = "field4"
+	file = "field4.ogg"
+}
+music = {
+	name = "field3"
+	file = "field3.ogg"
+}
+music = {
+	name = "field2"
+	file = "field2.ogg"
+}
+music = {
+	name = "enrika"
+	file = "enrika.ogg"
+}
+music = {
+	name = "dungeon1"
+	file = "dungeon1.ogg"
+}
+music = {
+	name = "dungeon_urayama_slime_mountains"
+	file = "dungeon_urayama_slime_mountains.ogg"
+}
+music = {
+	name = "dungeon_umi"
+	file = "dungeon_umi.ogg"
+}
+music = {
+	name = "dungeon_tower"
+	file = "dungeon_tower.ogg"
+}
+music = {
+	name = "dungeon_tosyo"
+	file = "dungeon_tosyo.ogg"
+}
+music = {
+	name = "dungeon_toride"
+	file = "dungeon_toride.ogg"
+}
+music = {
+	name = "dungeon_tarutaro2"
+	file = "dungeon_tarutaro2.ogg"
+}
+music = {
+	name = "dungeon_tarutaro1"
+	file = "dungeon_tarutaro1.ogg"
+}
+music = {
+	name = "dungeon_siro_vampire"
+	file = "dungeon_siro_vampire.ogg"
+}
+music = {
+	name = "dungeon_sinpi"
+	file = "dungeon_sinpi.ogg"
+}
+music = {
+	name = "dungeon_sinden3"
+	file = "dungeon_sinden3.ogg"
+}
+music = {
+	name = "dungeon_sinden2"
+	file = "dungeon_sinden2.ogg"
+}
+music = {
+	name = "dungeon_sinden1"
+	file = "dungeon_sinden1.ogg"
+}
+music = {
+	name = "dungeon_seizan_st_amos"
+	file = "dungeon_seizan_st_amos.ogg"
+}
+music = {
+	name = "dungeon_seireinomori_forest_of_spirits"
+	file = "dungeon_seireinomori_forest_of_spirits.ogg"
+}
+music = {
+	name = "dungeon_safar"
+	file = "dungeon_safar.ogg"
+}
+music = {
+	name = "dungeon_pyla"
+	file = "dungeon_pyla.ogg"
+}
+music = {
+	name = "dungeon_plansect"
+	file = "dungeon_plansect.ogg"
+}
+music = {
+	name = "dungeon_oka_mountain"
+	file = "dungeon_oka_mountain.ogg"
+}
+music = {
+	name = "dungeon_obakeyasiki_ghosts"
+	file = "dungeon_obakeyasiki_ghosts.ogg"
+}
+music = {
+	name = "dungeon_mitora"
+	file = "dungeon_mitora.ogg"
+}
+music = {
+	name = "dungeon_maouzyou"
+	file = "dungeon_maouzyou.ogg"
+}
+music = {
+	name = "dungeon_madou_magistea"
+	file = "dungeon_madou_magistea.ogg"
+}
+music = {
+	name = "dungeon_labo1"
+	file = "dungeon_labo1.ogg"
+}
+music = {
+	name = "dungeon_koori_snow_continent"
+	file = "dungeon_koori_snow_continent.ogg"
+}
+music = {
+	name = "dungeon_kazan_salamander"
+	file = "dungeon_kazan_salamander.ogg"
+}
+music = {
+	name = "dungeon_izumi"
+	file = "dungeon_izumi.ogg"
+}
+music = {
+	name = "dungeon_iseki"
+	file = "dungeon_iseki.ogg"
+}
+music = {
+	name = "dungeon_colosseum"
+	file = "dungeon_colosseum.ogg"
+}
+music = {
+	name = "daimeikai"
+	file = "daimeikai.ogg"
+}
+music = {
+	name = "city1"
+	file = "city1.ogg"
+}
+music = {
+	name = "castle4_grangold"
+	file = "castle4_grangold.ogg"
+}
+music = {
+	name = "castle3_grand_noah"
+	file = "castle3_grand_noah.ogg"
+}
+music = {
+	name = "castle2_sabasa"
+	file = "castle2_sabasa.ogg"
+}
+music = {
+	name = "castle1_san_ilia"
+	file = "castle1_san_ilia.ogg"
+}
+music = {
+	name = "boss2"
+	file = "boss2.ogg"
+}
+music = {
+	name = "boss1"
+	file = "boss1.ogg"
+}
+music = {
+	name = "boss0-3"
+	file = "boss0-3.ogg"
+}
+music = {
+	name = "boss0-4"
+	file = "boss0-4.ogg"
+}
+music = {
+	name = "boss_yonseirei"
+	file = "boss_yonseirei.ogg"
+}
+music = {
+	name = "boss_worldbreaker"
+	file = "boss_worldbreaker.ogg"
+}

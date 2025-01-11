@@ -1,0 +1,32 @@
+namespace = flavor_rt1
+
+country_event = {
+	id = flavor_rt1.1 
+	title = "flavor_rt1.1.t"
+	desc = "flavor_rt1.1.desc"
+	picture = Castle_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {		#Mithra 20 legendary weapons - Soul Revival Blade, dedicated for the concealed
+		name = flavor_rt1.1.a
+		add_country_modifier = {
+			name = "ENV_Soul_Revival_Blade"
+    			duration = -1
+		}		
+	}
+	option = {		#Mithra 20 legendary weapons - Thunder Retribution Fist, dedicated for the passionate
+		name = flavor_rt1.1.b
+		add_country_modifier = {
+			name = "Mithra_Thunder_Retribution_Fist"
+    			duration = -1
+		}
+	}
+	option = {		#Mithra 20 legendary weapons - Disaster Sentence Greatsword, dedicated for the intense
+		name = flavor_rt1.1.c
+		add_country_modifier = {
+			name = "Mithra_Disaster_Sentence_Greatsword"
+    			duration = -1
+		}
+	}
+}

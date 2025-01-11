@@ -1982,7 +1982,7 @@ land_dweller_ideas = {
 	tunneling_techniques = {
 		siege_ability = 0.10
 	}
-	unity_of_clans = {
+	land_dweller_unity_of_clans = {
 		global_unrest = -1
 	}
 	geomancy_mastery = {
@@ -2434,10 +2434,6 @@ elf_ideas = {
 				which = Weed_Extract
 				value = 1
 			}
-			check_variable = {
-				which = Eel_Extract
-				value = 1
-			} 
 			check_variable = {
 				which = Elf_integration
 				value = 1
@@ -3948,6 +3944,236 @@ tanuki_ideas = {
 		modifier = { 
 			factor = 0.75 
 			NOT = { monthly_adm = 8 }
+		}
+	}
+}
+
+fairy_ideas = {
+	category = DIP
+	trigger = {
+		OR = {
+			technology_group = TECH_FAIRY
+			check_variable = {
+				which = Fairy_integration
+				value = 1
+			} 
+			check_variable = {
+				which = Eel_Extract
+				value = 1
+			} 
+			was_tag = ENF
+			was_tag = JLW
+			was_tag = PPR
+			was_tag = JLG
+			was_tag = SR2
+			was_tag = FS1
+			tag = UN1
+			was_tag = UN1
+			tag = SL1
+			was_tag = SL1
+			was_tag = IP1
+			tag = LC1
+			was_tag = LC1
+
+			tag = ML1
+			was_tag = ML1
+		}
+	}	
+
+	bonus = {
+		land_morale = 0.10
+	}
+
+	Mischievous_Diplomacy = {
+		improve_relation_modifier = 0.15
+		ae_impact = -0.05
+	}
+	Wings_of_Freedom = {
+		envoy_travel_time = -0.1
+		movement_speed = 0.1
+	}
+	Enchanted_Fairy_Forests = {
+		global_trade_goods_size_modifier = 0.15
+	}
+	Protective_Nature_Spells = {
+		defensiveness = 0.20
+	}
+	Magical_Resonance = {
+		monarch_admin_power = 1
+	}
+	Adaptive_Fairies = {
+		global_institution_spread = 0.15
+ 	}
+	Tricksters_Everywhere = {
+		diplomats = 1
+	}
+
+	ai_will_do = {
+		factor = 0.6
+		modifier = {
+			factor = 1.1
+			national_focus = DIP
+		}
+		modifier = { 
+			factor = 0.75 
+			NOT = { monthly_dip = 8 }
+		}
+	}
+}
+
+
+ghost_ideas = {
+	category = ADM
+	trigger = {
+		OR = {
+			technology_group = TECH_GHOST
+			check_variable = {
+				which = Ghost_integration
+				value = 1
+			} 
+			was_tag = RMA
+			was_tag = MMW
+			was_tag = MII
+			tag = HM1
+			was_tag = HM1
+			was_tag = PA1
+			was_tag = SH2
+			was_tag = MR2
+			was_tag = HI1
+			was_tag = HK1
+			was_tag = HK2
+			was_tag = NM1
+			was_tag = SP1
+			was_tag = SP2
+			was_tag = SP3
+			was_tag = MS1
+			was_tag = MS2
+			was_tag = EN1
+			was_tag = EN2
+		}
+	}	
+
+	bonus = {
+		shock_damage = 0.075
+	}
+
+	Spectral_Trepidation = {
+		global_unrest = -1
+	}
+	Ghost_Attrition_Warfare = {
+		hostile_attrition = 1
+	}
+	Whispered_Warnings = {
+		discovered_relations_impact = -0.80
+		global_spy_defence = 0.25
+	}
+	Veil_Between_Worlds = {
+		stability_cost_modifier = -0.33
+	}
+	Spirit_Rule = {
+		governing_cost = -0.15
+	}
+	Wisdom_of_Past_Lives = {
+		reform_progress_growth = 0.33
+ 	}
+	Unfinished_Business = {
+		discipline = 0.04
+	}
+
+	ai_will_do = {
+		factor = 0.6
+		modifier = {
+			factor = 1.1
+			national_focus = ADM
+		}
+		modifier = { 
+			factor = 0.75 
+			NOT = { monthly_adm = 8 }
+		}
+	}
+}
+giant_ideas = {
+	category = MIL
+	trigger = {
+		OR = {
+			OR = {
+				culture = Narwhal_Girl
+				culture = Kyoryuu_Girl
+				culture = Golem_Girl
+				culture = Sandworm_Girl
+				culture = Mammoth_Girl
+				culture = Royal_Sea_Dweller
+			}
+			check_variable = {
+				which = Giant_integration
+				value = 1
+			} 
+			was_tag = KY1
+			was_tag = KY2
+			was_tag = MU1
+			was_tag = SG2
+			was_tag = MT1
+			was_tag = MT2
+			was_tag = MT3
+			was_tag = KK1
+			was_tag = PO1
+			tag = SM2
+			was_tag = SM2
+			tag = CD1
+			was_tag = CD1
+			tag = DR3
+			was_tag = DR3
+			tag = DR4
+			was_tag = DR4
+			tag = NA1
+			was_tag = NA1
+			tag = OR1
+			was_tag = OR1
+
+			tag = ML1
+			was_tag = ML1
+		}
+	}	
+
+	bonus = {
+		infantry_shock = 0.33
+	}
+
+	Giants_Battle_Spirit = {
+		morale_damage = 0.10
+	}
+	Body_Slam = {
+		shock_damage = 0.20
+	}
+	Titans_in_Army = {
+		siege_ability = 0.20
+	}
+	Gigas_Elites = {
+		leader_land_shock = 1
+	}
+	Relentless_Rampage = {
+		assault_fort_ability = 1
+		defensiveness = -0.15
+	}
+	Enduring_Legacy = {
+		prestige = 0.5
+		army_tradition = 0.5
+ 	}
+	Giants_Tyranny = {
+		infantry_power = 0.50
+		global_monthly_devastation = 0.15
+		land_maintenance_modifier = 0.15
+	}
+
+	ai_will_do = {
+		factor = 0.6
+		modifier = {
+			factor = 1.1
+			national_focus = MIL
+		}
+		modifier = { 
+			factor = 0.75 
+			NOT = { monthly_mil = 8 }
 		}
 	}
 }

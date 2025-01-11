@@ -14,5 +14,5 @@ technology_group = TECH_BEAST
 		female = yes
 	}
 }
-add_government_reform = Beast_realm
+add_government_reform = sheep_island_reform 
 capital = 208

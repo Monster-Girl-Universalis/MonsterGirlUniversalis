@@ -32,3 +32,5 @@ discovered_by = TECH_YOUMA
 discovered_by = TECH_DEMI_HUMAN
 discovered_by = TECH_ROID
 trade_goods = copper
+discovered_by = TECH_FAIRY
+discovered_by = TECH_GHOST

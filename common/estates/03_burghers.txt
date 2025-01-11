@@ -330,6 +330,14 @@ estate_burghers = {
 		estate_burghers_AZT_mexican_gold_mines
 		estate_burghers_fugger_family
 		estate_burghers_TIM_gulf_toll
+		estate_burghersMGQ_fire_stones
+		estate_burghersMGQ_ice_stones
+		estate_burghersMGQ_thunder_stones
+		estate_burghersMGQ_wind_stones
+		estate_burghersMGQ_earth_stones
+		estate_burghersMGQ_water_stones
+		estate_burghersMGQ_holy_stones
+		estate_burghersMGQ_dark_stones
 	}
 
 	agendas = {

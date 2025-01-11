@@ -1,0 +1,1115 @@
+song = {
+	name = "maintheme"
+	
+	chance = {
+		modifier = {
+			factor = 0			#only played in mainscreen.
+		}		
+	}
+}
+
+song = {
+	name = "zukan_library"
+	
+	chance = {
+		modifier = {
+			factor = 1
+			is_at_war = no
+		}		
+	}
+}
+
+song = {
+	name = "castle1_san_ilia"
+	
+	chance = {
+		modifier = {
+			factor = 5
+			capital_scope = { region = san_ilia_region  }
+		}		
+	}
+}
+
+song = {
+	name = "boss0"
+	
+	chance = {
+		modifier = {
+			factor = 3
+			is_at_war = yes
+		}		
+	}
+}
+
+song = {
+	name = "field1"
+	
+	chance = {
+		modifier = {
+			factor = 3
+			is_at_war = no
+		}		
+	}
+}
+song = {
+	name = "yamatai_makai"
+	
+	chance = {
+		modifier = {
+			factor = 1.25
+			capital_scope = { region = yamatai_region }
+		}
+		modifier = {
+			factor = 1.25
+			capital_scope = { region = yamatai_caves_region }
+		}
+		modifier = {
+			factor = 1.25
+			capital_scope = { region = horai_region }
+		}		
+	}
+}
+
+song = {
+	name = "umi"
+	
+	chance = {
+		modifier = {
+			factor = 5
+			num_of_ports = 20
+		}
+		modifier = {
+			factor = 5
+			culture_group = mermaid
+		}
+		modifier = {
+			factor = 5
+			culture_group = sea_dweller
+		}		
+		modifier = {
+			factor = 5
+			culture = Sea_Dragon_Girl
+		}	
+		modifier = {
+			factor = 5
+			tag = GL1
+		}
+	}
+}
+song = {
+	name = "tamamo"
+	
+	chance = {
+		modifier = {
+			factor = 5
+			culture_group = kitsune
+		}
+		modifier = {
+			factor = 5
+			tag = ML1
+		}		
+		modifier = {
+			factor = 15
+			tag = KI1
+		}
+	}
+}
+song = {
+	name = "stein"
+	
+	chance = {
+		modifier = {
+			factor = 1.5
+			religion = seekers_of_truth_religion 
+		}
+	}
+}
+
+
+song = {
+	name = "singun_t"
+	
+	chance = {
+		modifier = {
+			factor = 1
+			is_at_war = yes
+		}
+		modifier = {
+			factor = 5
+			army_size_percentage = 2
+		}
+		modifier = {
+			factor = 10
+			army_size_percentage = 3
+		}		
+	}
+}
+song = {
+	name = "singun_kessen_m"
+	
+	chance = {
+		modifier = {
+			factor = 5
+			AND = {
+				is_in_coalition_war = yes
+				num_of_coalition_members = 20
+				war_score = 10
+			}
+		}
+		modifier = {
+			factor = 5
+			AND = {
+				is_in_coalition_war = yes
+				num_of_coalition_members = 20
+				war_score = 50
+			}
+			
+		}
+		modifier = {
+			factor = 5
+			AND = {
+				is_in_coalition_war = yes
+				war_score = 50
+			}
+		}
+		modifier = {
+			factor = 5
+			AND = {
+				war_with = ML1
+				war_score = 50
+			}
+		}		
+	}
+}
+song = {
+	name = "singun_kessen_g"
+	
+	chance = {
+		modifier = {
+			factor = 5
+			AND = {
+				is_in_coalition_war = yes
+				num_of_coalition_members = 20
+				war_score = 10
+			}
+		}
+		modifier = {
+			factor = 5
+			AND = {
+				is_in_coalition_war = yes
+				num_of_coalition_members = 20
+				war_score = 50
+			}
+			
+		}
+		modifier = {
+			factor = 5
+			AND = {
+				is_in_coalition_war = yes
+				war_score = 50
+			}
+		}
+		modifier = {
+			factor = 5
+			AND = {
+				war_with = IT1
+				war_score = 50
+			}
+		}		
+	}
+}
+song = {
+	name = "kagetumugi"
+	
+	chance = {
+		modifier = {
+			factor = 5
+			tag = PT1
+			
+		}
+		modifier = {
+			factor = 5
+			war_with = PT1
+		}		
+	}
+}
+song = {
+	name = "sinden_ilias_temple"
+	
+	chance = {
+		modifier = {
+			factor = 5
+			capital_scope = { region = iliasville_region }
+		}				
+	}
+}
+song = {
+	name = "scene_sinpi_garuda"
+	
+	chance = {
+		modifier = {
+			factor = 5
+			capital_scope = { region = holy_wings_shrine_region }
+		}				
+	}
+}
+song = {
+	name = "scene_kanasimi2_dead_village"
+	
+	chance = {
+		modifier = {
+			factor = 5
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 10
+				devastation = 20
+			}
+		}
+		modifier = {
+			factor = 5
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 10
+				devastation = 50
+			}
+		}
+		modifier = {
+			factor = 5
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 5
+				devastation = 70
+			}
+		}
+		modifier = {
+			factor = 5
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 3
+				devastation = 90
+			}
+		}				
+	}
+}
+
+song = {
+	name = "scene_dance2"
+	
+	chance = {
+		modifier = {
+			factor = 1.5
+			is_at_war = no
+		}		
+	}
+}
+song = {
+	name = "scene_dance1"
+	
+	chance = {
+		modifier = {
+			factor = 1.5
+			is_at_war = no
+		}		
+	}
+}
+song = {
+	name = "scene_comi1_silly"
+	
+	chance = {
+		modifier = {
+			factor = 3
+			tag = SI2
+		}		
+	}
+}
+song = {
+	name = "scene_comi2"
+	
+	chance = {
+		modifier = {
+			factor = 3
+			tag = SI2
+		}		
+	}
+}
+song = {
+	name = "scene_chaos1"
+	
+	chance = {
+		modifier = {
+			factor = 5
+			AND = {
+				technology_group = TECH_APOPTOSIS
+				great_power_rank = 4
+				government_rank = 3
+			}
+		}
+		modifier = {
+			factor = 10
+			AND = {
+				technology_group = TECH_APOPTOSIS
+				is_hegemon = yes
+			}
+		}		
+	}
+}
+
+song = {
+	name = "scene_battle1"
+	
+	chance = {
+		modifier = {
+			factor = 1.5
+			is_at_war = yes
+		}		
+	}
+}
+song = {
+	name = "scene_alice2_BA"
+	
+	chance = {
+		modifier = {
+			factor = 10
+			AND = {
+				tag = ML1
+				is_hegemon = yes
+			}
+		}
+		modifier = {
+			factor = 10
+			AND = {
+				tag = ML1
+				great_power_rank = 1
+			}
+		}		
+	}
+}
+song = {
+	name = "scene_alice"
+	
+	chance = {
+		modifier = {
+			factor = 1.5
+			AND = {
+				tag = ML1
+				is_at_war = no
+			}
+			
+		}		
+	}
+}
+song = {
+	name = "saki"
+	
+	chance = {
+		modifier = {
+			factor = 5
+			capital_scope = { region = grandeur_region }
+		}
+		modifier = {
+			factor = 5
+			grandeur_area = {
+				type = ALL
+				owned_by = ROOT
+			}
+		}		
+	}
+}
+song = {
+	name = "sabaku_sabasa_region"
+	
+	chance = {
+		modifier = {
+			factor = 5
+			capital_scope = { region = sabasa_region }
+		}
+		modifier = {
+			factor = 5
+			capital_scope = { region = pyramid_region }
+		}
+		modifier = {
+			factor = 5
+			capital_scope = { region = saloon_region }
+		}
+		modifier = {
+			factor = 5
+			capital_scope = { region = grandeur_region }
+		}		
+	}
+}
+song = {
+	name = "ruka_angry"
+	
+	chance = {
+		modifier = {
+			factor = 2
+			is_in_coalition_war = yes
+		}		
+	}
+}
+song = {
+	name = "queen"
+	
+	chance = {
+		modifier = {
+			factor = 1
+			is_at_war = no
+		}		
+	}
+}
+song = {
+	name = "saki"
+	
+	chance = {
+		modifier = {
+			factor = 5
+			capital_scope = { region = grandeur_region }
+		}		
+	}
+}
+song = {
+	name = "ooana_tartarus_entrance"
+	
+	chance = {
+		modifier = {
+			factor = 10
+			culture = apoptosis
+		}		
+	}
+}
+song = {
+	name = "mura7_yamatai"
+	
+	chance = {
+		modifier = {
+			factor = 5
+			capital_scope = { region = yamatai_region }
+		}				
+	}
+}
+song = {
+	name = "mura6_sabasa"
+	
+	chance = {
+		modifier = {
+			factor = 5
+			capital_scope = { region = sabasa_region }
+		}				
+	}
+}
+song = {
+	name = "mura4_goldport"
+	
+	chance = {
+		modifier = {
+			factor = 5
+			capital_scope = { region = goldport_region }
+		}				
+	}
+}
+song = {
+	name = "mura3_shady_place"
+	
+	chance = {
+		modifier = {
+			factor = 5
+			culture = Slums_Human
+		}
+		modifier = {
+			factor = 5
+			culture = Worm_Summoner
+		}				
+	}
+}
+song = {
+	name = "mura2_generic"
+	
+	chance = {
+		modifier = {
+			factor = 5
+			culture_group = Human_culture
+		}				
+	}
+	chance = {
+		modifier = {
+			factor = 5
+			capital_scope = { region = happiness_village_region }
+		}				
+	}
+	chance = {
+		modifier = {
+			factor = 5
+			capital_scope = { region = succubus_village_region }
+		}				
+	}
+	chance = {
+		modifier = {
+			factor = 5
+			capital_scope = { region = lady_village_region }
+		}				
+	}
+}
+song = {
+	name = "mura1_iliasville"
+	
+	chance = {
+		modifier = {
+			factor = 5
+			tag = ILW
+		}				
+	}
+}
+song = {
+	name = "kiki4_Counterattack"
+	
+	chance = {
+		modifier = {
+			factor = 1.5
+			AND = {
+				is_at_war = yes
+				war_score = 25
+			}
+			
+		}		
+	}
+}
+song = {
+	name = "kiki3"
+	
+	chance = {
+		modifier = {
+			factor = 1.5
+			AND = {
+				is_at_war = yes
+				war_score = -25
+				NOT = {war_score = 25}
+			}
+			
+		}		
+	}
+}
+song = {
+	name = "kiki2"
+	
+	chance = {
+		modifier = {
+			factor = 1
+			is_at_war = yes
+		}		
+	}
+}
+song = {
+	name = "kiki1"
+	
+	chance = {
+		modifier = {
+			factor = 1
+			is_at_war = yes
+		}		
+	}
+}
+song = {
+	name = "field4"
+	
+	chance = {
+		modifier = {
+			factor = 5
+			capital_scope = { superregion = hellgondo_superregion }
+		}				
+	}
+}
+song = {
+	name = "field3"
+	
+	chance = {
+		modifier = {
+			factor = 5
+			capital_scope = { region = snow_cave_region }
+		}				
+	}
+	chance = {
+		modifier = {
+			factor = 5
+			capital_scope = { region = snow_heaven_region }
+		}				
+	}
+	chance = {
+		modifier = {
+			factor = 5
+			capital_scope = { region = eden_region }
+		}				
+	}
+}
+song = {
+	name = "field2"
+	
+	chance = {
+		modifier = {
+			factor = 1
+			is_at_war = no
+		}				
+	}
+}
+song = {
+	name = "enrika"
+	
+	chance = {
+		modifier = {
+			factor = 5
+			capital_scope = { region = enrika_region }
+		}
+		modifier = {
+			factor = 2.5
+			tag = SH3
+		}				
+	}
+}
+song = {
+	name = "dungeon1"
+	
+	chance = {
+		modifier = {
+			factor = 5
+			capital_scope = { has_terrain = caves }
+		}				
+	}
+}
+song = {
+	name = "dungeon_urayama_slime_mountains"
+	
+	chance = {
+		modifier = {
+			factor = 5
+			capital_scope = { area = slime_village_area }
+		}				
+	}
+}
+song = {
+	name = "dungeon_umi"
+	
+	chance = {
+		modifier = {
+			factor = 5
+			culture_group = sea_dweller
+		}				
+	}
+}
+song = {
+	name = "dungeon_tower"
+	
+	chance = {
+		modifier = {
+			factor = 5
+			capital_scope = { region = midas_region }
+		}
+		modifier = {
+			factor = 5
+			capital_scope = { region = cow_demon_region }
+		}				
+	}
+}
+song = {
+	name = "dungeon_tosyo"
+	
+	chance = {
+		modifier = {
+			factor = 5
+			capital_scope = { region = san_ilia_region }
+		}
+		modifier = {
+			factor = 5
+			capital_scope = { region = magistea_region }
+		}				
+	}
+}
+song = {
+	name = "dungeon_tarutaro2"
+	
+	chance = {
+		modifier = {
+			factor = 5
+			culture_group = apoptosis
+		}				
+	}
+}
+song = {
+	name = "dungeon_tarutaro1"
+	
+	chance = {
+		modifier = {
+			factor = 5
+			culture_group = apoptosis
+		}				
+	}
+}
+song = {
+	name = "dungeon_siro_vampire"
+	
+	chance = {
+		modifier = {
+			factor = 5
+			culture_group = vampire
+		}				
+	}
+}
+song = {
+	name = "dungeon_sinden3"
+	
+	chance = {
+		modifier = {
+			factor = 5
+			capital_scope = { region = ilias_temple_ruins_region }
+		}				
+	}
+}
+song = {
+	name = "dungeon_sinden2"
+	
+	chance = {
+		modifier = {
+			factor = 5
+			capital_scope = { region = ilias_temple_ruins_region }
+		}				
+	}
+}
+song = {
+	name = "dungeon_sinden1"
+	
+	chance = {
+		modifier = {
+			factor = 5
+			capital_scope = { region = ilias_temple_ruins_region }
+		}				
+	}
+}
+song = {
+	name = "dungeon_seizan_st_amos" 
+	
+	chance = {
+		modifier = {
+			factor = 5
+			capital_scope = { region = st_amos_region }
+		}				
+	}
+}
+song = {
+	name = "dungeon_seireinomori_forest_of_spirits"
+	
+	chance = {
+		modifier = {
+			factor = 5
+			culture_group = elf
+		}
+		modifier = {
+			factor = 5
+			culture_group = fairy
+		}				
+	}
+}
+song = {
+	name = "dungeon_safar"
+	
+	chance = {
+		modifier = {
+			factor = 5
+			religion = earth_religion
+		}				
+	}
+}
+song = {
+	name = "dungeon_pyla"
+	
+	chance = {
+		modifier = {
+			factor = 5
+			capital_scope = { region = pyramid_region }
+		}				
+	}
+}
+song = {
+	name = "dungeon_plansect"
+	
+	chance = {
+		modifier = {
+			factor = 5
+			capital_scope = { region = plansect_region }
+		}				
+	}
+}
+song = {
+	name = "dungeon_oka_mountain"
+	
+	chance = {
+		modifier = {
+			factor = 5
+			capital_scope = { has_terrain = hills }
+		}
+		modifier = {
+			factor = 5
+			capital_scope = { has_terrain = mountain }
+		}
+		modifier = {
+			factor = 5
+			capital_scope = { has_terrain = highlands }
+		}				
+	}
+}
+song = {
+	name = "dungeon_obakeyasiki_ghosts"
+	
+	chance = {
+		modifier = {
+			factor = 5
+			culture_group = ghost
+		}
+		modifier = {
+			factor = 5
+			culture_group = undead
+		}
+		modifier = {
+			factor = 5
+			tag = HM1
+		}				
+	}
+}
+song = {
+	name = "dungeon_mitora"
+	
+	chance = {
+		modifier = {
+			factor = 5
+			owns = 88
+		}				
+	}
+}
+song = {
+	name = "dungeon_maouzyou"
+	
+	chance = {
+		modifier = {
+			factor = 5
+			capital_scope = { region = monster_lord_castle_region }
+		}				
+	}
+}
+song = {
+	name = "dungeon_madou_magistea"
+	
+	chance = {
+		modifier = {
+			factor = 5
+			capital_scope = { region = magistea_region }
+		}				
+	}
+}
+song = {
+	name = "dungeon_labo1"
+	
+	chance = {
+		modifier = {
+			factor = 5
+			capital_scope = { area = administrator_tower_area }
+		}
+		modifier = {
+			factor = 5
+			capital_scope = { area = administrator_strait_area }
+		}				
+	}
+}
+song = {
+	name = "dungeon_koori_snow_continent"
+	
+	chance = {
+		modifier = {
+			factor = 5
+			capital_scope = { continent = Snow_Continent }
+		}				
+	}
+}
+song = {
+	name = "dungeon_kazan_salamander"
+	
+	chance = {
+		modifier = {
+			factor = 5
+			religion = fire_religion
+		}				
+	}
+}
+song = {
+	name = "dungeon_izumi"
+	
+	chance = {
+		modifier = {
+			factor = 1
+			is_at_war = NO
+		}				
+	}
+}
+song = {
+	name = "dungeon_iseki"
+	
+	chance = {
+		modifier = {
+			factor = 5
+			owns = 550
+		}				
+	}
+}
+song = {
+	name = "dungeon_colosseum"
+	
+	chance = {
+		modifier = {
+			factor = 5
+			owns = 1194
+		}				
+	}
+}
+song = {
+	name = "daimeikai"
+	
+	chance = {
+		modifier = {
+			factor = 1.5
+			AND = {
+				culture = Yamatai_Human
+				is_at_war = yes
+				war_score = 25
+			}
+			
+		}		
+	}
+}
+song = {
+	name = "city1"
+	
+	chance = {
+		modifier = {
+			factor = 5
+			is_at_war = NO
+		}				
+	}
+}
+song = {
+	name = "castle4_grangold"
+	
+	chance = {
+		modifier = {
+			factor = 5
+			tag = GR4
+		}				
+	}
+}
+song = {
+	name = "castle3_grand_noah"
+	
+	chance = {
+		modifier = {
+			factor = 5
+			tag = GR2
+		}				
+	}
+}
+song = {
+	name = "castle2_sabasa"
+	
+	chance = {
+		modifier = {
+			factor = 5
+			tag = SA1
+		}				
+	}
+}
+song = {
+	name = "castle1_san_ilia"
+	
+	chance = {
+		modifier = {
+			factor = 5
+			tag = SI1
+		}				
+	}
+}
+
+song = {
+	name = "boss2"
+	
+	chance = {
+		modifier = {
+			factor = 1
+			is_at_war = yes
+		}		
+	}
+}
+song = {
+	name = "boss1"
+	
+	chance = {
+		modifier = {
+			factor = 1
+			is_at_war = yes
+		}		
+	}
+}
+song = {
+	name = "boss0-3"
+	
+	chance = {
+		modifier = {
+			factor = 1
+			is_at_war = yes
+		}		
+	}
+}
+song = {
+	name = "boss0-4"
+	
+	chance = {
+		modifier = {
+			factor = 3
+			is_at_war = yes
+		}		
+	}
+}
+song = {
+	name = "boss_yonseirei"
+	
+	chance = {
+		modifier = {
+			factor = 5
+			war_with = FS1
+		}
+		modifier = {
+			factor = 5
+			war_with = SR2
+		}
+		modifier = {
+			factor = 5
+			war_with = UN1
+		}
+		modifier = {
+			factor = 5
+			war_with = SL1
+		}		
+	}
+}
+song = {
+	name = "boss_worldbreaker"
+	
+	chance = {
+		modifier = {
+			factor = 100
+			AND = {
+				is_at_war = yes
+				army_size = 1000
+				is_hegemon = yes
+			}
+		}		
+	}
+}
+
+
+
+
+
+
+
+
+

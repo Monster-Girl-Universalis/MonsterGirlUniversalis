@@ -30,3 +30,5 @@ owner = DLM
 culture = Dark_Elf
 controller = DLM
 discovered_by = TECH_DEMI_HUMAN
+discovered_by = TECH_FAIRY
+discovered_by = TECH_GHOST

@@ -33,3 +33,5 @@ discovered_by = TECH_VAMPIRE
 discovered_by = TECH_YOUMA
 center_of_trade = 1
 trade_goods = tropical_wood
+discovered_by = TECH_FAIRY
+discovered_by = TECH_GHOST

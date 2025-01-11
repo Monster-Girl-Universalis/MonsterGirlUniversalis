@@ -31,3 +31,5 @@ owner = MMR
 controller = MMR
 discovered_by = TECH_DEMI_HUMAN
 trade_goods = fish
+discovered_by = TECH_FAIRY
+discovered_by = TECH_GHOST

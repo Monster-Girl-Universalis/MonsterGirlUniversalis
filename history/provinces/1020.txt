@@ -30,3 +30,5 @@ discovered_by = TECH_DEMI_HUMAN
 add_core = EL1
 owner = EL1
 controller = EL1
+discovered_by = TECH_FAIRY
+discovered_by = TECH_GHOST

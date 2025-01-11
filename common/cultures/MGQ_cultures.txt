@@ -391,24 +391,7 @@ land_dweller = {
 undead = {
 	graphical_culture = asiangfx
 
-	Ghost_Girl = {
 
-		primary = RMA
-
-		country = {
-			female_advisor_chance = 1
-			diplomatic_upkeep = -1
-		}	
-	}
-	Mimic_Girl = {
-
-
-
-		country = {
-			female_advisor_chance = 1
-			diplomatic_upkeep = -1
-		}	
-	}
 	Zombie_Girl = {
 
 
@@ -428,6 +411,46 @@ undead = {
 		}	
 	}
 	Ghoul_Girl = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}	
+	}
+
+	male_names = {
+		
+
+	}	
+	female_names = {
+		Alleria Alice Ariadne Augusta Aurora Cresta Crowley Eri Fizz Gina Gloria Haine Holly Lara Nina Louise Lucia Melissa
+		Magda Mari Maria Marie Mei-Lin Melody Milio Serra Naia Nightingale Ophelia Orlan Rinoa Rufa Salaan Sara Katie
+		Satsuki Natsuki Selene Sonya Stella Shoki Anna Teresa Julia Janette Jill Yvette Yayoi Elisabeth Cindy Stacy Rosary 
+		Stefanie Lisa Esmeralda Minelli Annie Yoko Cornelia Selene Selena Franceska Ellie Odette Carol Mary Reina Tsubasa
+		Sakura Tsubaki Elissa Kasumi Claudia Lucretia Dahlia
+	}
+	dynasty_names = {
+		Deathwhisper Gravecaller Bonechiller Shadowlurker Tombdancer Soulshriek Deathgaze Cryptkeeper Ghostwhisperer Deathsong
+		Soullessstare Shadowweaver Spectralaura Phantomsong Wraithmist Necrosoul Poltergeist Ethereality Shadeform Bansheemoan
+		Phantasmal Ghoulglow Elementalista 
+	}
+}
+
+ghost = {
+	graphical_culture = asiangfx
+
+	Ghost_Girl = {
+
+		primary = RMA
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}	
+	}
+	Mimic_Girl = {
 
 
 
@@ -681,6 +704,55 @@ harpy = {
 	}
 }
 
+fairy = {
+	graphical_culture = asiangfx
+
+	Fairy_Girl = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}	
+	}
+	Carbuncle_Girl = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}	
+	}
+	Glacies = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}	
+	}
+
+	male_names = {
+		Oberon
+
+	}	
+	female_names = {
+		Alleria Alice Ariadne Augusta Aurora Cresta Crowley Eri Fizz Gina Gloria Haine Holly Lara Nina Louise Lucia Melissa
+		Magda Mari Maria Marie  Melody Milio Serra Naia Ophelia Orlan Rinoa Rufa Salaan Sara Lalatina Lona Marion San Jame
+		Satsuki Natsuki Selene Sonya Stella Shoki Anna Teresa Julia Janette Jill Yvette Yayoi Elisabeth Cindy Stacy Rosary 
+		Stefanie Lisa Esmeralda Minelli Annie Yoko Cornelia Selene Selena Franceska Ellie Odette Carol Mary Reina Tsubasa
+		Sakura Tsubaki Elissa Kasumi Claudia Lucretia Dahlia Freya Gekka Titania
+	}
+	dynasty_names = {
+		Silverleaf Moonwhisper Sunfire Starweaver Windcaller Woodsworn Shadowhunter Elfborn Leafsong Starshine Sunflower
+		Greenbough Windchaser Nightshade Woodwanderer Starfall Sunburst Forestwalker Shadowstalker Leafwhisper Dreamweaver
+		Autumnleaf Winterfrost Duskrunner Dawnlight Waterfall Fireheart Earthsong
+	}
+}
+
 elf = {
 	graphical_culture = asiangfx
 
@@ -720,15 +792,6 @@ elf = {
 			diplomatic_upkeep = -1
 		}	
 	}
-	Fairy_Girl = {
-
-
-
-		country = {
-			female_advisor_chance = 1
-			diplomatic_upkeep = -1
-		}	
-	}
 	Dullahan_Girl = {
 
 
@@ -747,25 +810,7 @@ elf = {
 			diplomatic_upkeep = -1
 		}	
 	}
-	Carbuncle_Girl = {
-
-
-
-		country = {
-			female_advisor_chance = 1
-			diplomatic_upkeep = -1
-		}	
-	}
 	Horai_Elf = {
-
-
-
-		country = {
-			female_advisor_chance = 1
-			diplomatic_upkeep = -1
-		}	
-	}
-	Glacies = {
 
 
 
@@ -776,7 +821,7 @@ elf = {
 	}
 
 	male_names = {
-		
+		Allen
 
 	}	
 	female_names = {

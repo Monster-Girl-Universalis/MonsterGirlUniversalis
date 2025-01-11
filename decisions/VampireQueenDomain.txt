@@ -6,7 +6,7 @@ country_decisions = {
 
 			was_never_end_game_tag_trigger = yes
 			culture_group = vampire
-			NOT = { exists = VA4 }
+			NOT = { exists = VA6 }
 		}
 		allow = {
 			AND = {
@@ -31,7 +31,7 @@ country_decisions = {
 		}
 		effect = {
 
-			change_tag = VA4
+			change_tag = VA6
 
 			if = {
 				limit = {

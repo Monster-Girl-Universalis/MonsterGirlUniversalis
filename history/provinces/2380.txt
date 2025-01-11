@@ -32,3 +32,5 @@ owner = GO3
 culture = Oni
 controller = GO3
 trade_goods = wine
+discovered_by = TECH_FAIRY
+discovered_by = TECH_GHOST

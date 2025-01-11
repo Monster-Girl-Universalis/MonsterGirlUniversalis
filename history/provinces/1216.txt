@@ -33,4 +33,6 @@ add_core = EL4
 owner = EL4
 controller = EL4
 trade_goods = incense
+discovered_by = TECH_FAIRY
+discovered_by = TECH_GHOST
 fort_15th = yes

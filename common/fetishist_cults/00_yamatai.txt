@@ -575,6 +575,182 @@ salamander_shrines = {
 		}
 	}
 }
+ice_shrines = {
+	defensiveness = 0.20
+	development_cost =-0.05
+	allow = {
+		religion = yamatai_religion
+		OR = {
+			any_owned_province = {
+				OR = {
+					religion = ice_religion 
+					any_neighbor_province = {
+						religion = ice_religion 
+					}
+				}
+			}			
+			any_neighbor_country = {
+				religion = ice_religion 
+			}
+		}
+	}
+	sprite = 34
+	ai_will_do = {
+		factor = 1
+		modifier = {
+	        consort_culture = Ice_Witch
+			factor = 2
+		}
+		modifier = {
+	        dominant_culture = Ice_Witch
+			factor = 2
+		}
+		modifier = {
+	        heir_culture = Ice_Witch
+			factor = 2
+		}
+		modifier = {
+	        primary_culture = Ice_Witch
+			factor = 2
+		}
+		modifier = {
+	        ruler_culture = Ice_Witch
+			factor = 2
+		}
+		modifier = {
+	        heir_religion = ice_religion
+			factor = 5
+		}
+		modifier = {
+	        dominant_religion = ice_religion 
+			factor = 5
+		}
+		modifier = {
+	        consort_religion = ice_religion 
+			factor = 5
+		}
+		modifier = {
+	        ruler_religion = ice_religion 
+			factor = 5
+		}
+		modifier = {
+	        personality = ai_balanced
+			factor = 2
+		}
+	}
+}
+lightning_shrines = {
+	shock_damage = 0.10
+	development_cost =-0.05
+	allow = {
+		religion = yamatai_religion
+		OR = {
+			any_owned_province = {
+				OR = {
+					religion = lightning_religion 
+					any_neighbor_province = {
+						religion = lightning_religion 
+					}
+				}
+			}			
+			any_neighbor_country = {
+				religion = lightning_religion 
+			}
+		}
+	}
+	sprite = 35
+	ai_will_do = {
+		factor = 1
+		modifier = {
+	        consort_culture = Kirin_Girl
+			factor = 2
+		}
+		modifier = {
+	        dominant_culture = Kirin_Girl
+			factor = 2
+		}
+		modifier = {
+	        heir_culture = Kirin_Girl
+			factor = 2
+		}
+		modifier = {
+	        primary_culture = Kirin_Girl
+			factor = 2
+		}
+		modifier = {
+	        ruler_culture = Kirin_Girl
+			factor = 2
+		}
+		modifier = {
+	        heir_religion = lightning_religion 
+			factor = 5
+		}
+		modifier = {
+	        dominant_religion = lightning_religion 
+			factor = 5
+		}
+		modifier = {
+	        consort_religion = lightning_religion 
+			factor = 5
+		}
+		modifier = {
+	        ruler_religion = lightning_religion 
+			factor = 5
+		}
+		modifier = {
+	        personality = ai_balanced
+			factor = 2
+		}
+	}
+}
+cosmos_shrines = {
+	country_diplomatic_power = 1
+	development_cost = -0.075
+	allow = {
+		religion = yamatai_religion
+		OR = {
+			any_owned_province = {
+				OR = {
+					religion = cosmos_religion 
+					any_neighbor_province = {
+						religion = cosmos_religion 
+					}
+				}
+			}			
+			any_neighbor_country = {
+				religion = cosmos_religion 
+			}
+		}
+	}
+	sprite = 36
+	ai_will_do = {
+		factor = 1
+		modifier = {
+	        culture_group = fairy
+			factor = 5
+		}
+		modifier = {
+	        heir_religion = cosmos_religion 
+			factor = 5
+		}
+		modifier = {
+	        dominant_religion = cosmos_religion 
+			factor = 5
+		}
+		modifier = {
+	        consort_religion = cosmos_religion 
+			factor = 5
+		}
+		modifier = {
+	        ruler_religion = cosmos_religion 
+			factor = 5
+		}
+		modifier = {
+	        personality = ai_balanced
+			factor = 2
+		}
+	}
+}
 science_shrines = {
 	all_power_cost = -0.05
 	yearly_innovativeness = 0.5

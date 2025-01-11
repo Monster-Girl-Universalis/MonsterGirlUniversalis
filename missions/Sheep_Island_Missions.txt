@@ -1,0 +1,608 @@
+sheep_island_1 = {
+
+	slot = 1
+	generic = yes
+	ai = yes
+	
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		tag = SI2
+	}
+	
+	has_country_shield = yes
+	SI2_protect_against_the_pirates = {
+		icon = mission_seahorse_marine_department
+		required_missions = { SI2_raise_sheep_self_defense_forces }
+		position = 2
+		
+		
+		trigger = {
+			208 = {
+				has_building = coastal_defence
+			}
+			mil_power = 300
+		}
+		
+		effect = {
+			add_mil_power = -300
+			208 = {
+				add_base_production = 5
+				add_building = impressment_offices 
+				add_province_modifier = {
+					name = "SI2_protect_against_the_pirates_mod"
+					duration = -1
+				}
+			}
+			add_prestige = 5			
+		}
+	}
+	SI2_invite_sheep_settlers = {
+		icon = mission_sheep1
+		required_missions = { }
+		position = 4
+		
+		
+		trigger = {
+			OR = {
+				treasury = 500
+				reverse_has_opinion = {
+					who = SGR
+					value = 100
+				}	
+			}
+		}
+		
+		effect = {
+			208 = {
+				add_random_development = 5
+			}
+			add_prestige = 5			
+		}
+	}
+	SI2_sheep_girl_heaven = {
+		icon = mission_sheep2
+		required_missions = { SI2_invite_sheep_settlers }
+		position = 5
+		
+		
+		trigger = {
+			OR = {
+				treasury = 1000
+				reverse_has_opinion = {
+					who = SGR
+					value = 200
+				}	
+			}
+		}
+		
+		effect = {
+			208 = {
+				add_random_development = 10
+				add_province_modifier = {
+					name = "SI2_sheep_girl_heaven_mod"
+					duration = -1
+				}
+			}
+			add_prestige = 5			
+		}
+	}
+	SI2_presence_in_port_natalia = {
+		icon = mission_danzig_or_war
+		required_missions = { SI2_sheep_external_focus }
+		position = 7
+		
+		
+		trigger = {
+			528 = { is_strongest_trade_power = ROOT }
+		}
+		
+		effect = {
+			port_natalia_region = {
+				type = all
+				add_permanent_claim = ROOT
+			}			
+		}
+	}
+	
+}
+sheep_island_2 = {
+
+	slot = 2
+	generic = yes
+	ai = yes
+	
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		tag = SI2
+	}
+	
+	has_country_shield = yes
+	SI2_raise_sheep_self_defense_forces = {
+		icon = mission_minotauros
+		required_missions = { }
+		position = 1
+		
+		
+		trigger = {
+			army_size_percentage = 1
+			army_size = 20
+		}
+		
+		effect = {
+			208 = {
+				add_base_manpower = 5
+			}
+			add_prestige = 5			
+		}
+	}
+	SI2_build_fortifications = {
+		icon = mission_fortify_the_realm
+		required_missions = { SI2_raise_sheep_self_defense_forces }
+		position = 2
+		
+		
+		trigger = {
+			208 = {
+				has_building = fort_15th
+				has_building = ramparts
+			}
+		}
+		
+		effect = {
+			208 = {
+				add_base_manpower = 5
+				add_province_modifier = {
+					name = "SI2_high_fortifications"
+					duration = -1
+				}
+			}
+			add_prestige = 5			
+		}
+	}
+	SI2_sheep_external_focus = {
+		icon = mission_sheep3
+		required_missions = { SI2_build_fortifications SI2_sheep_girl_heaven SI2_sheep_world_trading_port }
+		position = 6
+		
+		
+		trigger = {
+			OR = {
+				208 = {
+					has_building = fort_16th
+					development = 80
+					num_of_times_expanded_infrastructure = 5
+				}
+				208 = {
+					development = 90
+					num_of_times_expanded_infrastructure = 6
+				}
+			}
+		}
+		
+		effect = {
+			remove_government_reform = sheep_island_reform 
+			add_government_reform = sheep_island_great_company_reform
+			set_government_rank = 3
+			add_prestige = 5
+			add_country_modifier = {
+				name = "SI2_sheep_island_expansion"
+				duration = -1
+			}			
+		}
+	}
+	SI2_presence_in_the_navy = {
+		icon = mission_royal_sea_dweller_challenger
+		required_missions = { SI2_sheep_external_focus }
+		position = 7
+		
+		
+		trigger = {
+			479 = { is_strongest_trade_power = ROOT }
+		}
+		
+		effect = {
+			navyl_region = {
+				type = all
+				add_permanent_claim = ROOT
+			}			
+		}
+	}
+	
+}
+sheep_island_3 = {
+
+	slot = 3
+	generic = yes
+	ai = yes
+	
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		tag = SI2
+	}
+	
+	has_country_shield = yes
+	SI2_harmonious_nation = {
+		icon = mission_enrika_council
+		required_missions = { }
+		position = 1
+		
+		
+		trigger = {
+			stability = 2
+			208 = { NOT = {devastation = 1} }
+		}
+		
+		effect = {
+			208 = {
+				add_province_modifier = {
+					name = "SI2_developing_capital"
+					duration = 9125
+				}
+				add_prosperity = 25
+			}
+		}
+	}
+	SI2_bursting_sheep_island = {
+		icon = mission_alraune_promote_healing_honey
+		required_missions = { SI2_harmonious_nation }
+		position = 2
+
+		trigger = {
+			208 = {
+				development = 20
+				num_of_times_expanded_infrastructure = 1
+			}
+		}
+		
+		effect = {
+			capital_scope = {
+				add_province_modifier = {
+					name = "SI2_high_quality_wool"
+					duration = -1
+				}
+				add_prosperity = 25
+				center_of_trade = 1
+			}
+		}
+	}
+	SI2_international_wool_shipment = {
+		icon = mission_colonial
+		required_missions = { SI2_bursting_sheep_island }
+		position = 3
+
+		trigger = {
+			208 = {
+				development = 25
+				province_has_center_of_trade_of_level = 2
+				has_building = marketplace
+				has_building = workshop
+				has_building = dock 
+			}
+		}
+		
+		effect = {
+			208 = {
+				add_building = trade_depot
+				add_prosperity = 25
+			}
+			add_treasury = 500
+		}
+	}
+	SI2_sheep_metropolis = {
+		icon = mission_infrastructure_for_huge_population
+		required_missions = { SI2_international_wool_shipment }
+		position = 4
+
+		trigger = {
+			208 = {
+				development = 40
+				has_building = courthouse
+				has_building = textile
+				num_of_times_expanded_infrastructure = 2
+			}
+		}
+		
+		effect = {
+			208 = {
+				add_building = stock_exchange
+				add_prosperity = 25
+			}
+			add_adm_power = 100
+			add_dip_power = 100
+			add_mil_power = 100
+		}
+	}
+	SI2_sheep_world_trading_port = {
+		icon = mission_secure_naval_supplies
+		required_missions = { SI2_sheep_metropolis }
+		position = 5
+
+		trigger = {
+			208 = {
+				development = 50
+				has_building = shipyard
+				num_of_times_expanded_infrastructure = 3
+				province_has_center_of_trade_of_level = 3
+			}
+		}
+		
+		effect = {
+			208 = {
+				add_building = drydock
+				add_building = grand_shipyard
+				add_building = counting_house
+				add_prosperity = 25
+			}
+			add_country_modifier = {
+				name = "SI2_found_sheep_wool_company"
+				duration = -1
+			}
+		}
+	}
+	SI2_presence_in_iliasburg = {
+		icon = mission_ilias_continent
+		required_missions = { SI2_sheep_external_focus }
+		position = 7
+		
+		
+		trigger = {
+			316 = { is_strongest_trade_power = ROOT }
+		}
+		
+		effect = {
+			iliasburg_region = {
+				type = all
+				add_permanent_claim = ROOT
+			}			
+		}
+	}
+}
+sheep_island_4 = {
+
+	slot = 4
+	generic = yes
+	ai = yes
+	
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		tag = SI2
+	}
+	
+	has_country_shield = yes
+
+	SI2_partnership_with_queen_vampire = {
+		icon = mission_vampire_queen
+		required_missions = { SI2_bursting_sheep_island }
+		position = 3
+
+		trigger = {
+			reverse_has_opinion = {
+				who = VA6
+				value = 50
+			}
+		}
+		
+		effect = {
+			create_alliance = VA6
+			add_trust = {
+				who = VA6
+				value = 20
+				mutual = yes
+			}
+		}
+	}
+	SI2_longtime_business_with_vampires = {
+		icon = mission_vampire_royal_ambitions
+		required_missions = { SI2_partnership_with_queen_vampire }
+		position = 4
+
+		trigger = {
+			VA6 = { trust = { who = ROOT value = 90 } }
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "SI2_longtime_business_with_vampires"
+				duration = 9125
+			}
+			add_years_of_income = 2.5			
+		}
+	}
+	SI2_invite_vampires_to_settle = {
+		icon = mission_vampire_promote_vampire_pubs
+		required_missions = { SI2_longtime_business_with_vampires }
+		position = 5
+
+		trigger = {
+			reverse_has_opinion = {
+				who = VA6
+				value = 150
+			}
+			OR = {
+				full_idea_group = humanist_ideas
+				full_idea_group = trade_ideas
+				full_idea_group = diplomatic_ideas
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "SI2_citizenship_for_vampires"
+				duration = -1
+			}
+ 			set_variable = {
+   				which = Vampire_integration
+  				value = 1
+			}			
+		}
+	}
+	SI2_presence_in_finoa = {
+		icon = mission_rubiana
+		required_missions = { SI2_sheep_external_focus }
+		position = 7
+		
+		
+		trigger = {
+			1102 = { is_strongest_trade_power = ROOT }
+		}
+		
+		effect = {
+			finoa_region = {
+				type = all
+				add_permanent_claim = ROOT
+			}			
+		}
+	}
+}
+sheep_island_5 = {
+
+	slot = 5
+	generic = yes
+	ai = yes
+	
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		tag = SI2
+	}
+	
+	has_country_shield = yes
+
+	SI2_sheep_trading_fleet_navy = {
+		icon = mission_junk_boat
+		required_missions = { }
+		position = 1
+		
+		
+		trigger = {
+			navy_size_percentage = 0.9
+			num_of_light_ship = 12
+			num_of_admirals = 1
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "SI2_protecting_our_trade"
+				duration = 9125
+			}			
+		}
+	}
+	SI2_permanent_sheep_navy = {
+		icon = mission_galleys_in_port
+		required_missions = { SI2_sheep_trading_fleet_navy }
+		position = 2
+		
+		
+		trigger = {
+			dip_power = 400
+		}
+		
+		effect = {
+			add_dip_power = -400
+			208 = {
+				add_unit_construction = {
+					type = light_ship
+					amount = 10
+					speed = 0.1
+					cost = 0
+				}
+				add_building = courthouse
+			}
+			add_country_modifier = {
+				name = "SI2_permanent_sheep_navy_mod"
+				duration = -1
+			}			
+		}
+	}
+	SI2_sheep_naval_supremacy = {
+		icon = mission_establish_high_seas_navy
+		required_missions = { SI2_permanent_sheep_navy }
+		position = 3
+		
+		
+		trigger = {
+			dip_power = 800
+			treasury = 1000
+		}
+		
+		effect = {
+			add_dip_power = -800
+			add_treasury = -1000
+			208 = {
+				add_unit_construction = {
+					type = light_ship
+					amount = 50
+					speed = 0.1
+					cost = 0
+				}
+				add_building = textile
+			}
+			add_country_modifier = {
+				name = "SI2_sheep_naval_supremacy"
+				duration = -1
+			}	
+		}
+	}		
+		
+	SI2_sheep_colonial_efforts = {
+		icon = mission_colonial
+		required_missions = { }
+		position = 4
+		
+		
+		trigger = {
+			OR = {
+				full_idea_group = exploration_ideas 
+				full_idea_group = expansion_ideas 
+				full_idea_group = naval_ideas 
+				full_idea_group = maritime_ideas 
+			}
+		}
+		
+		effect = {
+			add_prestige = 25
+			208 = {
+				add_unit_construction = {
+					type = transport
+					amount = 10
+					speed = 0.1
+					cost = 0
+				}
+			}
+			add_country_modifier = {
+				name = "SI2_sheep_colonial_efforts_mod"
+				duration = -1
+			}			
+		}
+	}		
+	SI2_sheep_colonial_enterprises = {
+		icon = mission_secure_lemuse_trade
+		required_missions = { SI2_sheep_colonial_efforts }
+		position = 5
+		
+		
+		trigger = {
+			has_subject_of_type = private_enterprise 
+			has_subject_of_type = self_governing_colony 
+		}
+		
+		effect = {
+			add_prestige = 50
+			208 = {
+				add_unit_construction = {
+					type = heavy_ship
+					amount = 20
+					speed = 0.1
+					cost = 0
+				}
+			}
+			add_country_modifier = {
+				name = "SI2_sheep_colonial_enterprises_mod"
+				duration = -1
+			}			
+		}
+	}
+
+	
+}
+
+

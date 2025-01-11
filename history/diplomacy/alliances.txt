@@ -11,3 +11,10 @@ alliance = {
 	second = SH3 #Snow Heaven (Eden and Ranael)
 	start_date = 1.1.1 
 }
+
+#Elf and Fairy Queens
+alliance = {
+	first = EL1 #Elf Queen
+	second = FQ1 #Fairy Queen
+	start_date = 1444.1.1 
+}

@@ -103,6 +103,14 @@ estate_monster_girls = {
 			culture_group = tanuki
 		}
 		modifier = {
+			factor = 2
+			culture_group = fairy
+		}
+		modifier = {
+			factor = 2
+			culture_group = ghost
+		}
+		modifier = {
 			factor = 1.5
 			NOT = { development = 10 }
 		}
@@ -145,7 +153,14 @@ estate_monster_girls = {
 						unit_type = TECH_KITSUNE
 						unit_type = TECH_ROID
 						unit_type = TECH_TANUKI
-
+						unit_type = TECH_FAIRY
+						unit_type = TECH_GHOST
+						has_reform = yoma_nobility_reform 
+						has_reform = succubus_nobility_reform 
+						has_reform = vampire_nobility_reform 
+						has_reform = elf_nobility_reform 
+						has_reform = lamia_nobility_reform 
+						has_reform = scylla_nobility_reform 
 					}
 	}
 
@@ -221,6 +236,14 @@ estate_monster_girls = {
 		estate_scylla_maids_in_administration 
 		estate_beasts_in_military  
 		estate_seahorse_marines_in_navy
+		#Special
+		estate_dextrous_kitsune 
+		estate_tamamo_moonlight_cannon 
+		estate_life_restoration_talismans 
+		estate_devastating_gale 
+		estate_wild_lands 
+		estate_forbidden_art_nine_tails_funeral_pyre 
+		
 	}
 
 	agendas = {

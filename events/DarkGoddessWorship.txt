@@ -1,0 +1,527 @@
+namespace = dark_goddess_worship
+
+
+# Saja Icon
+country_event = {
+	id = dark_goddess_worship_events.1
+	title = dark_goddess_worship_events.1.t
+	desc = dark_goddess_worship_events.1.desc
+	picture = Saja_eventPicture
+
+	trigger = {
+		has_dlc = "Third Rome"
+		uses_religious_icons = yes
+		current_icon = dark_goddess_icon_saja
+		OR = {
+			NOT = { has_country_flag = dark_goddess_saja_icon }
+			had_country_flag = {
+				flag = dark_goddess_saja_icon 
+				days = 2920
+			}
+		}
+	}
+
+	immediate = {
+		clr_country_flag = dark_goddess_saja_icon 
+	}
+
+	after = {
+		set_country_flag = dark_goddess_saja_icon 
+	}
+
+	mean_time_to_happen = {
+		days = 730
+	}
+
+	option = {
+		name = dark_goddess_worship_events.1.a			#Saja Innovative Reforms
+		change_government_reform_progress = 50
+		add_army_tradition = 20
+		add_navy_tradition = 20
+	}
+}
+# Tamamo Icon
+country_event = {
+	id = dark_goddess_worship_events.2
+	title = dark_goddess_worship_events.2.t
+	desc = dark_goddess_worship_events.2.desc
+	picture = Tamamo_eventPicture
+
+	trigger = {
+		has_dlc = "Third Rome"
+		uses_religious_icons = yes
+		current_icon = dark_goddess_icon_tamamo
+		OR = {
+			NOT = { has_country_flag = dark_goddess_tamamo_icon }
+			had_country_flag = {
+				flag = dark_goddess_tamamo_icon
+				days = 2920
+			}
+		}
+	}
+
+	immediate = {
+		clr_country_flag = dark_goddess_tamamo_icon
+	}
+
+	after = {
+		set_country_flag = dark_goddess_tamamo_icon
+	}
+
+	mean_time_to_happen = {
+		days = 730
+	}
+
+	option = {
+		name = dark_goddess_worship_events.2.a			#Tamamo aids in government
+		add_adm_power = 150
+	}
+	option = {
+		name = dark_goddess_worship_events.2.b			#Tamamo aids in trade
+		add_dip_power = 150
+	}
+	option = {
+		name = dark_goddess_worship_events.2.c			#Tamamo aids in military
+		add_mil_power = 150
+	}
+}
+# Minagi Icon
+country_event = {
+	id = dark_goddess_worship_events.3
+	title = dark_goddess_worship_events.3.t
+	desc = dark_goddess_worship_events.3.desc
+	picture = Minagi_eventPicture
+
+	trigger = {
+		has_dlc = "Third Rome"
+		uses_religious_icons = yes
+		current_icon = dark_goddess_icon_minagi
+		OR = {
+			NOT = { has_country_flag = dark_goddess_minagi_icon }
+			had_country_flag = {
+				flag = dark_goddess_minagi_icon 
+				days = 2920
+			}
+		}
+	}
+
+	immediate = {
+		clr_country_flag = dark_goddess_minagi_icon 
+	}
+
+	after = {
+		set_country_flag = dark_goddess_minagi_icon 
+	}
+
+	mean_time_to_happen = {
+		days = 730
+	}
+
+	option = {
+		name = dark_goddess_worship_events.3.a			#Minagi oversees army
+		add_mil_power = -200
+		add_country_modifier = {
+			name = "dark_goddess_worship_minagi_oversees_army"
+			duration = 3650
+		}
+	}
+	option = {
+		name = dark_goddess_worship_events.3.b			#Minagi oversees administration
+		add_adm_power = -200
+		add_country_modifier = {
+			name = "dark_goddess_worship_minagi_oversees_administration"
+			duration = 3650
+		}
+	}
+	option = {
+		name = dark_goddess_worship_events.3.c			#We are fine, but thanks anyway
+		add_patriarch_authority = 0.10
+	}
+}
+
+# Kanon Icon
+country_event = {
+	id = dark_goddess_worship_events.4
+	title = dark_goddess_worship_events.4.t
+	desc = dark_goddess_worship_events.4.desc
+	picture = Kanon_eventPicture
+
+	trigger = {
+		has_dlc = "Third Rome"
+		uses_religious_icons = yes
+		current_icon = dark_goddess_icon_kanon
+		OR = {
+			NOT = { has_country_flag = dark_goddess_kanon_icon }
+			had_country_flag = {
+				flag = dark_goddess_kanon_icon 
+				days = 1095
+			}
+		}
+	}
+
+	immediate = {
+		clr_country_flag = dark_goddess_kanon_icon 
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					NOT = { development = 20 }
+				}
+				save_event_target_as = dark_goddess_worship_kanon_prov
+			}
+			random_owned_province = {
+				limit = {
+					development = 20
+					NOT = { development = 40 }
+				}
+				save_event_target_as = dark_goddess_worship_kanon_rich_prov
+			}
+			random_owned_province = {
+				limit = {
+					development = 40
+					NOT = { development = 80 }
+				}
+				save_event_target_as = dark_goddess_worship_kanon_very_rich_prov
+			}
+			random_owned_province = {
+				limit = {
+					development = 80
+				}
+				save_event_target_as = dark_goddess_worship_kanon_ridiculous_rich_prov
+			}
+			random_owned_province = {
+				limit = {
+					development = 160
+				}
+				save_event_target_as = dark_goddess_worship_kanon_chaos_rich_prov
+			}
+		}
+	}
+
+	after = {
+		set_country_flag = dark_goddess_kanon_icon 
+	}
+
+	mean_time_to_happen = {
+		days = 730
+	}
+
+	option = {
+		name = dark_goddess_worship_events.4.a			#Kanon develops a province below 20dev
+		event_target:dark_goddess_worship_kanon_prov = {
+			add_random_development = 3
+		}
+	}
+	option = {
+		name = dark_goddess_worship_events.4.b			#Kanon develops a province 20-39dev
+		add_inflation = 1
+		trigger = {
+			any_owned_province = {
+				AND = {
+					development = 20
+					NOT = { development = 40 }
+				}
+			}
+		}
+		event_target:dark_goddess_worship_kanon_rich_prov = {
+			add_random_development = 6
+		}
+	}
+	option = {
+		name = dark_goddess_worship_events.4.c			#Kanon develops a province 40-79dev
+		add_inflation = 2
+		trigger = {
+			any_owned_province = {
+				AND = {
+					development = 40
+					NOT = { development = 80 }
+				}
+			}
+		}
+		event_target:dark_goddess_worship_kanon_very_rich_prov = {
+			add_random_development = 9
+		}
+	}
+	option = {
+		name = dark_goddess_worship_events.4.d			#Kanon develops a province 80-159dev
+		add_inflation = 3
+		trigger = {
+			any_owned_province = {
+				AND = {
+					development = 80
+					NOT = { development = 160 }
+				}
+			}
+		}
+		event_target:dark_goddess_worship_kanon_ridiculous_rich_prov = {
+			add_random_development = 12
+		}
+	}
+	option = {
+		name = dark_goddess_worship_events.4.e			#Kanon develops a province 160+dev
+		add_inflation = 4
+		trigger = {
+			any_owned_province = {
+				development = 160
+			}
+		}
+		event_target:dark_goddess_worship_kanon_chaos_rich_prov = {
+			add_random_development = 15
+		}
+	}
+	option = {
+		name = dark_goddess_worship_events.4.f			#Stop wasting your power on this nonsence!
+		add_corruption = -3
+	}
+}
+# Kanade Icon
+country_event = {
+	id = dark_goddess_worship_events.5
+	title = dark_goddess_worship_events.5.t
+	desc = dark_goddess_worship_events.5.desc
+	picture = Kanade_eventPicture
+
+	trigger = {
+		has_dlc = "Third Rome"
+		uses_religious_icons = yes
+		current_icon = dark_goddess_icon_kanade
+		OR = {
+			NOT = { has_country_flag = dark_goddess_kanade_icon }
+			had_country_flag = {
+				flag = dark_goddess_kanade_icon 
+				days = 1095
+			}
+		}
+	}
+
+	immediate = {
+		clr_country_flag = dark_goddess_kanade_icon 
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					NOT = { culture_group = slime }
+				}
+				save_event_target_as = dark_goddess_worship_kanade_icon_prov
+			}
+		}
+	}
+
+	after = {
+		set_country_flag = dark_goddess_kanade_icon 
+	}
+
+	mean_time_to_happen = {
+		days = 730
+	}
+	option = {
+		name = dark_goddess_worship_events.5.a				#No Slime Girls? Make Slime Girls
+		trigger = {
+			any_owned_province = {
+				NOT = { culture_group = slime }
+			}
+		}
+		event_target:dark_goddess_worship_kanade_icon_prov = {
+			add_base_tax = 2
+			add_base_production = 2
+			add_base_manpower = 2
+			change_culture = Slime_Girl
+		}
+	}
+	option = {
+		name = dark_goddess_worship_events.5.b				#No Slime Girls? Make Blob Girls
+		trigger = {
+			any_owned_province = {
+				NOT = { culture_group = slime }
+			}
+		}
+		event_target:dark_goddess_worship_kanade_icon_prov = {
+			add_base_tax = 2
+			add_base_production = 2
+			add_base_manpower = 2
+			change_culture = Blob_Girl
+		}
+	}
+	option = {
+		name = dark_goddess_worship_events.5.c				#No Slime Girls? Make Brom Girls
+		trigger = {
+			any_owned_province = {
+				NOT = { culture_group = slime }
+			}
+		}
+		event_target:dark_goddess_worship_kanade_icon_prov = {
+			add_base_tax = 2
+			add_base_production = 2
+			add_base_manpower = 2
+			change_culture = Brom_Girl
+		}
+	}
+	option = {
+		name = dark_goddess_worship_events.5.d				#No Slime Girls? Make Lava Girls
+		trigger = {
+			any_owned_province = {
+				NOT = { culture_group = slime }
+			}
+		}
+		event_target:dark_goddess_worship_kanade_icon_prov = {
+			add_base_tax = 2
+			add_base_production = 2
+			add_base_manpower = 2
+			change_culture = Lava_Girl
+		}
+	}
+	option = {
+		name = dark_goddess_worship_events.5.e				#No Slime Girls? Make Gelatinous Cube Girls
+		trigger = {
+			any_owned_province = {
+				NOT = { culture_group = slime }
+			}
+		}
+		event_target:dark_goddess_worship_kanade_icon_prov = {
+			add_base_tax = 2
+			add_base_production = 2
+			add_base_manpower = 2
+			change_culture = Gelatinous_Cube_Girl 
+		}
+	}
+	option = {
+		name = dark_goddess_worship_events.5.z				#Kanade protects Slime Girls
+		trigger = {
+			any_owned_province = {
+				culture_group = slime
+			}
+		}
+		every_owned_province = {
+			limit = { culture_group = slime }
+			add_province_modifier = {
+				name = "dark_goddess_worship_kanade_protects_slimes"
+				duration = 3650
+			}			
+		}
+	}
+}
+
+# Hiruko Icon
+country_event = {
+	id = dark_goddess_worship_events.6
+	title = dark_goddess_worship_events.6.t
+	desc = dark_goddess_worship_events.6.desc
+	picture = Hiruko_eventPicture
+
+	trigger = {
+		has_dlc = "Third Rome"
+		uses_religious_icons = yes
+		current_icon = dark_goddess_icon_hiruko
+		OR = {
+			NOT = { has_country_flag = dark_goddess_hiruko_icon }
+			had_country_flag = {
+				flag = dark_goddess_hiruko_icon 
+				days = 1095
+			}
+		}
+	}
+
+	immediate = {
+		clr_country_flag = dark_goddess_hiruko_icon 
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					NOT = { development = 10 }
+				}
+				save_event_target_as = dark_goddess_worship_hiruko_icon_prov
+			}
+			random_owned_province = {
+				limit = {
+					AND = {
+						development = 10
+						NOT = { development = 20 }
+					}
+				}
+				save_event_target_as = dark_goddess_worship_hiruko_icon_second_prov
+			}
+			random_owned_province = {
+				limit = {
+					AND = {
+						development = 20
+						NOT = { development = 30 }
+					}
+				}
+				save_event_target_as = dark_goddess_worship_hiruko_icon_third_prov
+			}
+			random_owned_province = {
+				limit = {
+					development = 30
+				}
+				save_event_target_as = dark_goddess_worship_hiruko_icon_fourth_prov
+			}
+		}
+	}
+
+	after = {
+		set_country_flag = dark_goddess_hiruko_icon 
+	}
+
+	mean_time_to_happen = {
+		days = 730
+	}
+
+	option = {
+		name = dark_goddess_worship_events.6.a				#Lady Hiruko is hungry - no provinces above 10dev
+		trigger = {
+			NOT = { any_owned_province = { development = 10 } }
+		}
+		event_target:dark_goddess_worship_hiruko_icon_prov = {
+			add_base_tax = -1
+			add_base_production = -1
+			add_base_manpower = -1
+		}
+		add_yearly_manpower = -0.50
+	}
+	option = {
+		name = dark_goddess_worship_events.6.b				#Lady Hiruko is hungry - no provinces above 20dev
+		trigger = {
+			any_owned_province = {development = 10}
+			NOT = {
+				any_owned_province = {development = 20}
+			}
+		}
+		event_target:dark_goddess_worship_hiruko_icon_second_prov = {
+			add_base_tax = -2
+			add_base_production = -2
+			add_base_manpower = -2
+		}
+		add_adm_power = 100
+		add_dip_power = 100
+		add_mil_power = 100
+		add_yearly_manpower = -0.50
+	}
+	option = {
+		name = dark_goddess_worship_events.6.c				#Lady Hiruko is hungry - no provinces above 30dev
+		trigger = {
+			any_owned_province = {development = 20}
+			NOT = { any_owned_province = { development = 30 } }
+		}
+		event_target:dark_goddess_worship_hiruko_icon_third_prov = {
+			add_base_tax = -3
+			add_base_production = -3
+			add_base_manpower = -3
+		}
+		add_adm_power = 200
+		add_dip_power = 200
+		add_mil_power = 200
+		add_yearly_manpower = -0.50
+	}
+	option = {
+		name = dark_goddess_worship_events.6.d				#Lady Hiruko is hungry - there is 30+dev province
+		trigger = {
+			any_owned_province = { development = 30 }
+		}
+		event_target:dark_goddess_worship_hiruko_icon_fourth_prov = {
+			add_base_tax = -4
+			add_base_production = -4
+			add_base_manpower = -4
+		}
+		add_adm_power = 400
+		add_dip_power = 400
+		add_mil_power = 400
+		add_yearly_manpower = -0.50
+	}
+}

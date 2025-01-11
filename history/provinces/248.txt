@@ -32,3 +32,5 @@ controller = DLM
 center_of_trade = 1
 discovered_by = TECH_DEMI_HUMAN
 trade_goods = tropical_wood
+discovered_by = TECH_FAIRY
+discovered_by = TECH_GHOST

@@ -492,10 +492,10 @@ estate_angels_build_temple_in_y = {
 }
 
 
-#Triggers: any province has the basic conditions, country has adm tech 4
+#Triggers: any province has the basic conditions, country has adm tech 6
 estate_angels_build_workshop_in_y = {
 	can_select = {
-		adm_tech = 4
+		adm_tech = 6
 		OR = {
 			tag = ENV
 			was_tag = ENV

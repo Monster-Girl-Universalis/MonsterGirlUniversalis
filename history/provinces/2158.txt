@@ -32,3 +32,5 @@ discovered_by = TECH_YOUMA
 owner = KU4
 controller = KU4
 trade_goods = dyes
+discovered_by = TECH_FAIRY
+discovered_by = TECH_GHOST

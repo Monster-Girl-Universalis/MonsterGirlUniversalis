@@ -1,0 +1,232 @@
+namespace = flavor_ki1
+
+country_event = {
+	id = flavor_ki1.1
+	title = "flavor_ki1.1.t"
+	desc = "flavor_ki1.1.desc"
+	picture = Kurodanuki_startled_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {		#Question of Tanuki - annex
+		name = flavor_ki1.1.a
+		inherit = TA2
+	}
+	option = {		#Question of Tanuki - vassalize
+		name = flavor_ki1.1.b
+		vassalize = TA2
+	}
+	option = {		#Question of Tanuki - make march
+		name = flavor_ki1.1.c
+		create_march = TA2
+	}
+}
+
+country_event = {
+	id = flavor_ki1.2
+	title = "flavor_ki1.2.t"
+	desc = "flavor_ki1.2.desc"
+	picture = ElvenPrincess_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {		#Trade with Elven Village - forceful option
+		name = flavor_ki1.2.a
+		add_casus_belli = {
+			target = EL4
+			type = cb_vassalize_mission
+   			months = 240
+		}
+	}
+	option = {		#Trade with Elven Village - Peaceful Option
+		name = flavor_ki1.2.b
+		trigger = {
+			alliance_with = EL4
+		}
+		vassalize = EL4
+	}
+}
+
+
+country_event = {
+	id = flavor_ki1.3
+	title = "flavor_ki1.3.t"
+	desc = "flavor_ki1.3.desc"
+	picture = kitsune_RACE_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {		#Ninja Military Grounds -  Promote Elven Ninjutsu
+		name = flavor_ki1.3.a
+ 		set_variable = {
+   			which = Elf_integration
+  			value = 1
+		}
+		add_country_modifier = {
+			name = "KI1_elven_ninjutsu"
+			duration = 3650
+		}
+		
+	}
+	option = {		#Ninja Military Grounds - Promote Succubi Ninjutsu
+		name = flavor_ki1.3.b
+ 		set_variable = {
+   			which = Succubi_integration
+  			value = 1
+		}
+		add_country_modifier = {
+			name = "KI1_succubi_ninjutsu"
+			duration = 3650
+		}
+	}
+	option = {		#Ninja Military Grounds - Promote Harpy Ninjutsu
+		name = flavor_ki1.3.c
+ 		set_variable = {
+   			which = Harpy_integration
+  			value = 1
+		}
+		add_country_modifier = {
+			name = "KI1_harpy_ninjutsu"
+			duration = 3650
+		}
+	}
+	option = {		#Ninja Military Grounds - Promote Scylla Ninjutsu
+		name = flavor_ki1.3.d
+ 		set_variable = {
+   			which = Scylla_integration
+  			value = 1
+		}
+		add_country_modifier = {
+			name = "KI1_scylla_ninjutsu"
+			duration = 3650
+		}
+	}
+	option = {		#Ninja Military Grounds - Promote Arachne Ninjutsu
+		name = flavor_ki1.3.e
+ 		set_variable = {
+   			which = Insect_integration
+  			value = 1
+		}
+		add_country_modifier = {
+			name = "KI1_arachne_ninjutsu"
+			duration = 3650
+		}
+	}
+	option = {		#Ninja Military Grounds - Improve Kitsune Ninjutsu
+		name = flavor_ki1.3.f
+ 		add_army_tradition = 50
+		add_country_modifier = {
+			name = "KI1_kitsune_ninjutsu"
+			duration = 10950
+		}
+	}
+}
+
+
+country_event = {
+	id = flavor_ki1.4
+	title = "flavor_ki1.4.t"
+	desc = "flavor_ki1.4.desc"
+	picture = NewMonsterLord_eventPicture
+	is_triggered_only = yes
+	
+	option = {		#Focus on administrative education
+		name = flavor_ki1.4.a
+		ML1 = {
+			change_adm = 1
+		}
+		change_variable = {
+			which = Educated_Monster_Lords
+			value = 1
+		}
+	}
+	option = {		#Focus on diplomatic education
+		name = flavor_ki1.4.b
+		ML1 = {
+			change_dip = 1
+		}
+		change_variable = {
+			which = Educated_Monster_Lords
+			value = 1
+		}
+	}
+	option = {		#Focus on military education
+		name = flavor_ki1.4.c
+		ML1 = {
+			change_mil = 1
+		}
+		change_variable = {
+			which = Educated_Monster_Lords
+			value = 1
+		}
+	}	
+	option = {		#Advanced administrative education
+		name = flavor_ki1.4.d
+		ML1 = {
+			change_adm = 1
+			add_ruler_personality = lawgiver_personality
+			change_mil = -1
+		}
+		change_variable = {
+			which = Educated_Monster_Lords
+			value = 1
+		}
+	}	
+	option = {		#Advanced diplomatic education
+		name = flavor_ki1.4.e
+		ML1 = {
+			change_dip = 1
+			add_ruler_personality = careful_personality
+			change_adm = -1
+		}
+		change_variable = {
+			which = Educated_Monster_Lords
+			value = 1
+		}
+	}	
+	option = {		#Advanced military education
+		name = flavor_ki1.4.f
+		ML1 = {
+			change_mil = 1
+			add_ruler_personality = strict_personality
+			change_dip = -1
+		}
+		change_variable = {
+			which = Educated_Monster_Lords
+			value = 1
+		}
+	}	
+	option = {		#Refuse to educate the current ruler
+		name = flavor_ki1.4.g
+		reverse_add_opinion = {
+			who = ML1
+			modifier = refused_to_educate_current_monster_lord 
+		}
+	}
+}
+
+country_event = {
+	id = flavor_ki1.5
+	title = "flavor_ki1.5.t"
+	desc = "flavor_ki1.5.desc"
+	picture = Mephisto_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {		#Overheard Mephisto and Monster Lord's plans
+		name = flavor_ki1.5.a
+	}
+}
+
+country_event = {
+	id = flavor_ki1.6
+	title = "flavor_ki1.6.t"
+	desc = "flavor_ki1.6.desc"
+	picture = Mephisto_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {		#Mephisto's explanations
+		name = flavor_ki1.6.a
+	}
+}

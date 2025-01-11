@@ -30,3 +30,5 @@ discovered_by = TECH_DEMI_HUMAN
 add_core = SR2
 owner = SR2
 controller = SR2
+discovered_by = TECH_FAIRY
+discovered_by = TECH_GHOST

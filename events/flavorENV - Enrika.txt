@@ -1,0 +1,123 @@
+namespace = flavor_env
+
+
+country_event = {
+	id = flavor_env.1 
+	title = "flavor_env.1.t"
+	desc = "flavor_env.1.desc"
+	picture = LostWoods_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {		#Micaela united the Lost Woods. Time to take a break or..?
+		name = flavor_env.1.a
+		enrika_region = {
+			add_province_modifier = {
+				name = "ENV_micaelas_rule_in_lost_woods"
+    				duration = 9125
+			}
+		}
+	}
+}
+
+country_event = {
+	id = flavor_env.2
+	title = "flavor_env.2.t"
+	desc = "flavor_env.2.desc"
+	picture = Iliasville_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {		#Ties with Iliasville - Vassal option
+		name = flavor_env.2.a
+		trigger = {
+			NOT = { ILW = { total_development = 500 } }
+		}
+		vassalize = ILW
+	}
+	option = {		#Ties with Iliasville - Inherit Option
+		name = flavor_env.2.b
+		trigger = {
+			alliance_with = ILW
+			NOT = { ILW = { total_development = 500 } }
+		}
+		inherit = ILW
+	}
+	option = {		#Seems Iliasville is too powerful to yield
+		name = flavor_env.2.c
+	}
+}
+
+country_event = {
+	id = flavor_env.3 
+	title = "flavor_env.3.t"
+	desc = "flavor_env.3.desc"
+	picture = Tartarus_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {		#Research on Parallel Worlds - Learn from the ruined Iliasville. Countermeasures against Ilias
+		name = flavor_env.3.a
+ 		set_variable = {
+   			which = Goddess_Slayer_Protocol
+  			value = 1
+		}
+		add_historical_rival = IT1
+	}
+	option = {		#Research on Parallel Worlds - Learn from the past Rostrum. Obtain secret of spirit stones refining
+		name = flavor_env.3.b
+		add_country_modifier = {
+			name = "ENV_mass_produced_spirit_stones"
+    			duration = -1
+		}
+ 		set_variable = {
+   			which = Spirit_Stone_Subsidies
+  			value = 1
+		}
+	}
+}
+
+country_event = {
+	id = flavor_env.4 
+	title = "flavor_env.4.t"
+	desc = "flavor_env.4.desc"
+	picture = Castle_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {		#Mithra 20 legendary weapons - Soul Revival Blade, dedicated for the concealed
+		name = flavor_env.4.a
+		add_country_modifier = {
+			name = "ENV_Soul_Revival_Blade"
+    			duration = -1
+		}		
+	}
+	option = {		#Mithra 20 legendary weapons - Flickering Dust Dagger, dedicated for the skillful
+		name = flavor_env.4.b
+		add_country_modifier = {
+			name = "ENV_Flickering_Dust_Dagger"
+    			duration = -1
+		}
+	}
+	option = {		#Mithra 20 legendary weapons - Crimson Roar Rapier, dedicated for the honourable
+		name = flavor_env.4.c
+		add_country_modifier = {
+			name = "ENV_Crimson_Roar_Rapier"
+    			duration = -1
+		}
+	}
+}
+
+country_event = {
+	id = flavor_env.5 
+	title = "flavor_env.5.t"
+	desc = "flavor_env.5.desc"
+	picture = ILIAS_CONVERSATION_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {		#Confront the Goddess Ilias
+		name = flavor_env.5.a
+		inherit = IT1		
+	}
+}

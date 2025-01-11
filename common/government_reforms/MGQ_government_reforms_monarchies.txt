@@ -116,7 +116,7 @@ Ghost_realm = {
 	allow_normal_conversion = no
 	potential = {
 		OR = {
-			culture_group = undead
+			culture_group = ghost
 			AND = {
 				is_playing_custom_nation = yes
 				have_had_reform = Ghost_realm
@@ -2367,7 +2367,7 @@ Fairy_realm = {
 	allow_normal_conversion = no
 	potential = {
     		OR = {
-			culture = Fairy_Girl
+			culture_group = fairy
 			have_had_reform = Fairy_realm
 			AND = {
 				is_playing_custom_nation = yes
@@ -2464,5 +2464,472 @@ gloria_pirates_reform = {
 	conditional = {
 		allow = { has_dlc = "Rights of Man" }
 		has_harem = yes
+	}
+}
+sheep_island_reform = {
+	lock_level_when_selected = yes
+	icon = "sheep_island"
+	allow_normal_conversion = no
+	potential = {
+    		OR = {
+			tag = SI2
+			was_tag = SI2
+			have_had_reform = sheep_island_reform 
+			AND = {
+				is_playing_custom_nation = yes
+				have_had_reform = sheep_island_reform 
+			}
+		}
+	}
+	valid_for_new_country = no
+	valid_for_nation_designer = no
+	nation_designer_cost = 40
+	legacy_equivalent = ottoman_government_legacy
+	modifiers = {
+		improve_relation_modifier = 1
+		can_not_declare_war = yes
+		interest = -1
+		monarch_lifespan = 1
+		block_introduce_heir = yes
+	}
+	custom_attributes = {
+		queen = no
+	}
+	conditional = {
+		allow = { has_dlc = "Rights of Man" }
+		has_harem = yes
+	}
+}
+sheep_island_great_company_reform = {
+	lock_level_when_selected = yes
+	icon = "sheep_island_great_company"
+	allow_normal_conversion = no
+	potential = {
+    		OR = {
+			tag = SI2
+			was_tag = SI2
+			have_had_reform = sheep_island_great_company_reform 
+			AND = {
+				is_playing_custom_nation = yes
+				have_had_reform = sheep_island_great_company_reform 
+			}
+		}
+	}
+	valid_for_new_country = no
+	valid_for_nation_designer = no
+	nation_designer_cost = 40
+	legacy_equivalent = ottoman_government_legacy
+	fixed_rank = 3
+	modifiers = {
+		governing_capacity = 300
+		navy_tradition = 1
+		monarch_lifespan = 1
+		colonists = 2
+		colony_development_boost = 5
+		trade_range_modifier = 1
+		block_introduce_heir = yes
+	}
+	custom_attributes = {
+		queen = no
+	}
+	conditional = {
+		allow = { has_dlc = "Rights of Man" }
+		has_harem = yes
+	}
+}
+
+#Hereditary vs Nobility:
+
+yoma_nobility_reform = {
+	icon = "yoma_nobility"
+	allow_normal_conversion = yes
+	potential = {
+		is_revolutionary = no
+	}
+	trigger = {
+		OR = {
+			full_idea_group = yoma_ideas
+			culture_group = yoma
+			primary_culture = Yoma_Apoptosis
+		}
+	}
+	modifiers = {
+		monster_girls_influence_modifier = 0.1
+		general_cost = 0.10
+		infantry_fire = 0.20
+	}
+	custom_attributes = {
+		
+	}
+	ai = {
+		factor = 1
+	}
+}
+succubus_nobility_reform = {
+	icon = "succubus_nobility"
+	allow_normal_conversion = yes
+	potential = {
+		is_revolutionary = no
+	}
+	trigger = {
+		OR = {
+			full_idea_group = succubi_ideas
+			culture_group = succubi
+		}
+	}
+	modifiers = {
+		monster_girls_influence_modifier = 0.1
+		diplomatic_reputation = 2
+		inflation_reduction = -0.10
+	}
+	custom_attributes = {
+		
+	}
+	ai = {
+		factor = 1
+	}
+}
+vampire_nobility_reform = {
+	icon = "vampire_nobility"
+	allow_normal_conversion = yes
+	potential = {
+		is_revolutionary = no
+	}
+	trigger = {
+		OR = {
+			full_idea_group = vampire_ideas
+			culture_group = vampire
+		}
+	}
+	modifiers = {
+		monster_girls_influence_modifier = 0.1
+		general_cost = 0.10
+		diplomatic_annexation_cost = -0.10
+	}
+	custom_attributes = {
+		
+	}
+	ai = {
+		factor = 1
+	}
+}
+elf_nobility_reform = {
+	icon = "elf_nobility"
+	allow_normal_conversion = yes
+	potential = {
+		is_revolutionary = no
+	}
+	trigger = {
+		OR = {
+			full_idea_group = elf_ideas
+			culture_group = elf
+		}
+	}
+	modifiers = {
+		monster_girls_influence_modifier = 0.1
+		general_cost = 0.10
+		infantry_shock = 0.20
+	}
+	custom_attributes = {
+		
+	}
+	ai = {
+		factor = 1
+	}
+}
+lamia_nobility_reform = {
+	icon = "lamia_nobility"
+	allow_normal_conversion = yes
+	potential = {
+		is_revolutionary = no
+	}
+	trigger = {
+		OR = {
+			full_idea_group = lamia_ideas
+			culture_group = lamia
+		}
+	}
+	modifiers = {
+		monster_girls_influence_modifier = 0.1
+		general_cost = 0.20
+		administrative_efficiency = 0.025
+	}
+	custom_attributes = {
+		
+	}
+	ai = {
+		factor = 1
+	}
+}
+scylla_nobility_reform = {
+	icon = "scylla_nobility"
+	allow_normal_conversion = yes
+	potential = {
+		is_revolutionary = no
+	}
+	trigger = {
+		OR = {
+			full_idea_group = scylla_ideas
+			culture_group = scylla
+			primary_culture = Scylla_Apoptosis
+		}
+	}
+	modifiers = {
+		monster_girls_influence_modifier = 0.1
+		general_cost = 0.20
+		governing_capacity_modifier = 0.10
+	}
+	custom_attributes = {
+		
+	}
+	ai = {
+		factor = 1
+	}
+}
+angel_nobility_reform = {
+	icon = "angel_nobility"
+	allow_normal_conversion = yes
+	potential = {
+		is_revolutionary = no
+	}
+	trigger = {
+		OR = {
+			full_idea_group = angel_ideas
+			culture_group = angel
+			primary_culture = Angel_Apoptosis
+		}
+	}
+	modifiers = {
+		angels_influence_modifier = 0.1
+		discipline = 0.025
+		land_maintenance_modifier = -0.10
+	}
+	custom_attributes = {
+		
+	}
+	ai = {
+		factor = 1
+	}
+}
+
+#Bureaucracy:
+
+monster_administration_reform = {
+	icon = "monster_administration"
+	allow_normal_conversion = yes
+	potential = {
+		is_revolutionary = no
+	}
+	trigger = {
+		has_estate = estate_monster_girls
+	}
+	modifiers = {
+		monster_girls_loyalty_modifier = 0.1
+		years_of_nationalism = 5
+		num_accepted_cultures = 5
+		promote_culture_cost = -0.25
+	}
+	custom_attributes = {
+		
+	}
+	ai = {
+		factor = 1
+	}
+}
+angel_administration_reform = {
+	icon = "angel_administration"
+	allow_normal_conversion = yes
+	potential = {
+		is_revolutionary = no
+	}
+	trigger = {
+		has_estate = estate_angels
+	}
+	modifiers = {
+		angels_loyalty_modifier = 0.1
+		years_of_nationalism = -5
+		num_accepted_cultures = -1
+	}
+	custom_attributes = {
+		
+	}
+	ai = {
+		factor = 1
+	}
+}
+
+#deliberative_assembly
+monster_autonomous_councils_reform = {
+	icon = "monster_autonomous_councils"
+	allow_normal_conversion = yes	
+	trigger = {		
+			OR = {
+				
+				has_estate = estate_monster_girls
+			}
+	}
+	modifiers = {
+		global_unrest = -3
+		stability_cost_modifier = 0.50
+	}
+	ai = {
+		factor = 1
+	}
+}
+heavenly_client_states_reform = {
+	icon = "heavenly_client_states"
+	allow_normal_conversion = yes	
+	potential = {
+		is_revolutionary = no
+		NOT = { tag = ENV }
+		NOT = { was_tag = ENV }
+	}
+	trigger = {		
+			OR = {
+				has_estate = estate_angels
+			}
+	}
+	modifiers = {
+		vassal_forcelimit_bonus = 0.33
+		vassal_naval_forcelimit_bonus = 0.33
+		diplomatic_upkeep = 1
+	}
+	ai = {
+		factor = 1
+	}
+}
+coexistence_parliament_reform = {
+	icon = "coexistence_parliament"
+	modifiers = {
+		global_autonomy = 0.10
+		reform_progress_growth = 0.33
+	}
+	potential = {
+		is_revolutionary = no
+	}
+	
+	trigger = {		
+			AND = {
+				any_owned_province = { culture_group = Human_culture }
+				any_owned_province = { culture_group = angel }
+				any_owned_province = { religion_group = monster_religion_g }
+			}
+	}
+
+	conditional = {
+		has_parliament = yes
+	}
+	ai = {
+		factor = 1
+	}
+}
+
+#Growth of Administration
+
+kitsune_in_administration_reform = {
+	icon = "kitsune_in_administration"
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			is_revolutionary = no
+			NOT = { has_dlc = "Emperor" }
+		}
+	}
+	trigger = {		
+			OR = {
+				any_owned_province = { culture_group = kitsune }
+				any_owned_province = { culture = Kitsune_Apoptosis }
+				any_owned_province = { religion = yamatai_religion }
+			}
+	}
+	modifiers = {
+		free_adm_policy = 1
+		monster_girls_influence_modifier = 0.1
+		monster_girls_loyalty_modifier = 0.1
+		all_power_cost = -0.025
+	}
+	ai = {
+		factor = 1
+	}
+}
+lamia_in_administration_reform = {
+	icon = "lamia_in_administration"
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			is_revolutionary = no
+			NOT = { has_dlc = "Emperor" }
+		}
+	}
+	trigger = {		
+			OR = {
+				any_owned_province = { culture_group = lamia }
+				any_owned_province = { culture = Aevis_Girl }
+				any_owned_province = { culture = Narwhal_Girl }
+			}
+	}
+	modifiers = {
+		free_dip_policy = 1
+		monster_girls_influence_modifier = 0.1
+		monster_girls_loyalty_modifier = 0.1
+		administrative_efficiency = 0.02
+	}
+	ai = {
+		factor = 1
+	}
+}
+yoma_in_administration_reform = {
+	icon = "yoma_in_administration"
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			is_revolutionary = no
+			NOT = { has_dlc = "Emperor" }
+		}
+	}
+	trigger = {		
+			OR = {
+				any_owned_province = { culture_group = yoma }
+				any_owned_province = { culture = Yoma_Apoptosis }
+				any_owned_province = { religion_group = monster_religion_g }
+			}
+	}
+	modifiers = {
+		free_mil_policy = 1
+		monster_girls_influence_modifier = 0.2
+		monster_girls_loyalty_modifier = 0.1
+		country_military_power = 1
+	}
+	ai = {
+		factor = 1
+	}
+}
+divine_administration_reform = {
+	icon = "divine_administration"
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			is_revolutionary = no
+			NOT = { has_dlc = "Emperor" }
+		}
+	}
+	trigger = {		
+			OR = {
+				religion = ilias_light_religion 
+				religion = angel_world_religion
+				
+			}
+			OR = {
+				primary_culture = Angel_Girl
+				primary_culture = Angel_Apoptosis
+			}
+	}
+	modifiers = {
+		global_unrest = -1
+		min_autonomy_in_territories = -0.15
+		stability_cost_modifier = -0.15
+	}
+	ai = {
+		factor = 1
 	}
 }

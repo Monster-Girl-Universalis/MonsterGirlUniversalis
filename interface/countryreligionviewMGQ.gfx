@@ -102,18 +102,72 @@ spriteTypes = {
 		texturefile = "gfx/interface/aspects/GFX_monster_lord_strategy_meeting.dds"
 		legacy_lazy_load = no
 	}	
+
+	#Dark Goddess and her 6 Ancestors
+	spriteType = {
+		name = "GFX_russian_icons_strip"
+		texturefile = "gfx//interface//russian_icons_strip.dds"
+		noOfFrames = 6
+	}
+
+	spriteType = {
+		name = "GFX_icon_patriarch_authority"
+		texturefile = "gfx/interface/icon_patriarch_authority.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_icon_high_patriarch_authority"
+		texturefile = "gfx/interface/icon_high_patriarch_authority.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_icon_low_patriarch_authority"
+		texturefile = "gfx/interface/icon_low_patriarch_authority.dds"
+	}
 	#Yamatai Faith	
 	spriteType = {
 		name = "GFX_fetishists_strip"
 		texturefile = "gfx//interface//fetishists_strip.dds"
-		noOfFrames = 33
+		noOfFrames = 36
 	}
 	#Elemental Religions
 	spriteType = {
 		name = "GFX_hindu_deities_strip"
 		texturefile = "gfx//interface//hindu_deities_strip.dds"
-		noOfFrames = 16
+		noOfFrames = 19
 	}
+	#Angel World 7 Archangels
+	spriteType = {
+		name = "GFX_angel_world_micaela"
+		texturefile = "gfx/interface/aspects/GFX_angel_world_micaela.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_angel_world_rafaela"
+		texturefile = "gfx/interface/aspects/GFX_angel_world_rafaela.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_angel_world_uriela"
+		texturefile = "gfx/interface/aspects/GFX_angel_world_uriela.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_angel_world_gabriela"
+		texturefile = "gfx/interface/aspects/GFX_angel_world_gabriela.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_angel_world_sariela"
+		texturefile = "gfx/interface/aspects/GFX_angel_world_sariela.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_angel_world_metatrone_and_sandalphone"
+		texturefile = "gfx/interface/aspects/GFX_angel_world_metatrone_and_sandalphone.dds"
+		legacy_lazy_load = no
+	}
+	
 }
 
 

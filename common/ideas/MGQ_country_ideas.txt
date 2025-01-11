@@ -4533,3 +4533,47 @@ TQ1_ideas = {
 		merchants = 1
 	}
 }
+#Fairy Queen Domain
+FQ1_ideas = {
+	start = {
+		improve_relation_modifier = 0.30
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+	
+	bonus = {
+		diplomatic_upkeep = 4
+	}
+	
+	trigger = {
+		OR = {
+			tag = FQ1
+		}
+	}	
+	free = yes
+	
+	FQ1_Queen_Fairy_Rule = {
+		country_admin_power = 1
+	}
+	FQ1_Advanced_Fairy_Army = {
+		can_bypass_forts = yes
+		reinforce_cost_modifier = -0.33
+	}
+	FQ1_Royal_Pranks = {
+		spy_offence = 0.50
+	}	
+	FQ1_Queen_Fairy_Mediation = {
+		country_diplomatic_power = 1
+	}
+	FQ1_Advanced_Wind_Magic = {
+		movement_speed = 0.25
+	}
+	FQ1_Advanced_Earth_Magic = {
+		shock_damage_received = -0.33
+	}
+	FQ1_Cunning_Deceit = {
+		possible_policy = 1
+		free_policy = 1
+	}
+}

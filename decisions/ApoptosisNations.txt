@@ -180,33 +180,6 @@ country_decisions = {
 			}
 			if = {
 				limit = {
-					iliasville_region = { AND = { culture_group = land_dweller owned_by = ROOT } }
-				}
- 				set_variable = {
-   					which = Land_Dweller_integration
-  					value = 1
-				}
-			}
-			if = {
-				limit = {
-					iliasville_region = { AND = { culture_group = land_dweller owned_by = ROOT } }
-				}
- 				set_variable = {
-   					which = Land_Dweller_integration
-  					value = 1
-				}
-			}
-			if = {
-				limit = {
-					iliasville_region = { AND = { culture_group = land_dweller owned_by = ROOT } }
-				}
- 				set_variable = {
-   					which = Land_Dweller_integration
-  					value = 1
-				}
-			}
-			if = {
-				limit = {
 					iliasville_region = { AND = { culture_group = mermaid owned_by = ROOT } }
 				}
  				set_variable = {
@@ -479,33 +452,6 @@ country_decisions = {
 				}
  				set_variable = {
    					which = Sea_Dweller_integration
-  					value = 1
-				}
-			}
-			if = {
-				limit = {
-					pornof_region = { AND = { culture_group = land_dweller owned_by = ROOT } }
-				}
- 				set_variable = {
-   					which = Land_Dweller_integration
-  					value = 1
-				}
-			}
-			if = {
-				limit = {
-					pornof_region = { AND = { culture_group = land_dweller owned_by = ROOT } }
-				}
- 				set_variable = {
-   					which = Land_Dweller_integration
-  					value = 1
-				}
-			}
-			if = {
-				limit = {
-					pornof_region = { AND = { culture_group = land_dweller owned_by = ROOT } }
-				}
- 				set_variable = {
-   					which = Land_Dweller_integration
   					value = 1
 				}
 			}
@@ -788,33 +734,6 @@ country_decisions = {
 			}
 			if = {
 				limit = {
-					safar_ruins_region = { AND = { culture_group = land_dweller owned_by = ROOT } }
-				}
- 				set_variable = {
-   					which = Land_Dweller_integration
-  					value = 1
-				}
-			}
-			if = {
-				limit = {
-					safar_ruins_region = { AND = { culture_group = land_dweller owned_by = ROOT } }
-				}
- 				set_variable = {
-   					which = Land_Dweller_integration
-  					value = 1
-				}
-			}
-			if = {
-				limit = {
-					safar_ruins_region = { AND = { culture_group = land_dweller owned_by = ROOT } }
-				}
- 				set_variable = {
-   					which = Land_Dweller_integration
-  					value = 1
-				}
-			}
-			if = {
-				limit = {
 					safar_ruins_region = { AND = { culture_group = mermaid owned_by = ROOT } }
 				}
  				set_variable = {
@@ -1092,33 +1011,6 @@ country_decisions = {
 			}
 			if = {
 				limit = {
-					holy_wings_shrine_region = { AND = { culture_group = land_dweller owned_by = ROOT } }
-				}
- 				set_variable = {
-   					which = Land_Dweller_integration
-  					value = 1
-				}
-			}
-			if = {
-				limit = {
-					holy_wings_shrine_region = { AND = { culture_group = land_dweller owned_by = ROOT } }
-				}
- 				set_variable = {
-   					which = Land_Dweller_integration
-  					value = 1
-				}
-			}
-			if = {
-				limit = {
-					holy_wings_shrine_region = { AND = { culture_group = land_dweller owned_by = ROOT } }
-				}
- 				set_variable = {
-   					which = Land_Dweller_integration
-  					value = 1
-				}
-			}
-			if = {
-				limit = {
 					holy_wings_shrine_region = { AND = { culture_group = mermaid owned_by = ROOT } }
 				}
  				set_variable = {
@@ -1390,33 +1282,6 @@ country_decisions = {
 				}
  				set_variable = {
    					which = Sea_Dweller_integration
-  					value = 1
-				}
-			}
-			if = {
-				limit = {
-					hellgondo_tartarus_region = { AND = { culture_group = land_dweller owned_by = ROOT } }
-				}
- 				set_variable = {
-   					which = Land_Dweller_integration
-  					value = 1
-				}
-			}
-			if = {
-				limit = {
-					hellgondo_tartarus_region = { AND = { culture_group = land_dweller owned_by = ROOT } }
-				}
- 				set_variable = {
-   					which = Land_Dweller_integration
-  					value = 1
-				}
-			}
-			if = {
-				limit = {
-					hellgondo_tartarus_region = { AND = { culture_group = land_dweller owned_by = ROOT } }
-				}
- 				set_variable = {
-   					which = Land_Dweller_integration
   					value = 1
 				}
 			}

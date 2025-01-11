@@ -32,3 +32,5 @@ owner = ZO1
 culture = Oni
 controller = ZO1
 trade_goods = wine
+discovered_by = TECH_FAIRY
+discovered_by = TECH_GHOST

@@ -215,4 +215,192 @@ spriteTypes = {
 		name = "government_reform_gloria_pirates"
 		texturefile = "gfx//interface//government_reform_icons//gloria_pirates_reform.dds"
 	}
+	spriteType = {
+		name = "government_reform_sheep_island"
+		texturefile = "gfx//interface//government_reform_icons//sheep_island_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_sheep_island_great_company"
+		texturefile = "gfx//interface//government_reform_icons//sheep_island_great_company_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_yoma_nobility"
+		texturefile = "gfx//interface//government_reform_icons//yoma_nobility_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_succubus_nobility"
+		texturefile = "gfx//interface//government_reform_icons//succubus_nobility_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_vampire_nobility"
+		texturefile = "gfx//interface//government_reform_icons//vampire_nobility_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_elf_nobility"
+		texturefile = "gfx//interface//government_reform_icons//elf_nobility_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_lamia_nobility"
+		texturefile = "gfx//interface//government_reform_icons//lamia_nobility_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_scylla_nobility"
+		texturefile = "gfx//interface//government_reform_icons//scylla_nobility_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_angel_nobility"
+		texturefile = "gfx//interface//government_reform_icons//angel_nobility_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_monster_administration"
+		texturefile = "gfx//interface//government_reform_icons//monster_administration_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_angel_administration"
+		texturefile = "gfx//interface//government_reform_icons//angel_administration_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_delve_into_chaos"
+		texturefile = "gfx//interface//government_reform_icons//delve_into_chaos_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_ilias_clergy"
+		texturefile = "gfx//interface//government_reform_icons//ilias_clergy_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_eden_resistance"
+		texturefile = "gfx//interface//government_reform_icons//eden_resistance_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_monster_religious_tolerance"
+		texturefile = "gfx//interface//government_reform_icons//monster_religious_tolerance_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_enrika_governing"
+		texturefile = "gfx//interface//government_reform_icons//enrika_governing_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_legacy_of_fenrir"
+		texturefile = "gfx//interface//government_reform_icons//legacy_of_fenrir_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_sylph_festivals"
+		texturefile = "gfx//interface//government_reform_icons//sylph_festivals_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_gnome_festivals"
+		texturefile = "gfx//interface//government_reform_icons//gnome_festivals_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_undine_worship"
+		texturefile = "gfx//interface//government_reform_icons//undine_worship_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_salamander_paganism"
+		texturefile = "gfx//interface//government_reform_icons//salamander_paganism_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_yamatai_plethora_of_shrines"
+		texturefile = "gfx//interface//government_reform_icons//yamatai_plethora_of_shrines_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_ice_element_sensing"
+		texturefile = "gfx//interface//government_reform_icons//ice_element_sensing_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_lightning_element_sensing"
+		texturefile = "gfx//interface//government_reform_icons//lightning_element_sensing_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_guardian_butterfly_cults"
+		texturefile = "gfx//interface//government_reform_icons//guardian_butterfly_cults_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_alliance_of_wisdom"
+		texturefile = "gfx//interface//government_reform_icons//alliance_of_wisdom_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_forbidden_puppetry"
+		texturefile = "gfx//interface//government_reform_icons//forbidden_puppetry_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_sword_of_heavenly_army"
+		texturefile = "gfx//interface//government_reform_icons//sword_of_heavenly_army_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_daystar"
+		texturefile = "gfx//interface//government_reform_icons//daystar_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_corpse_army_elminea"
+		texturefile = "gfx//interface//government_reform_icons//corpse_army_elminea_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_saja_legacy"
+		texturefile = "gfx//interface//government_reform_icons//saja_legacy_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_tamamo_legacy"
+		texturefile = "gfx//interface//government_reform_icons//tamamo_legacy_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_minagi_legacy"
+		texturefile = "gfx//interface//government_reform_icons//minagi_legacy_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_kanon_legacy"
+		texturefile = "gfx//interface//government_reform_icons//kanon_legacy_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_kanade_legacy"
+		texturefile = "gfx//interface//government_reform_icons//kanade_legacy_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_hiruko_legacy"
+		texturefile = "gfx//interface//government_reform_icons//hiruko_legacy_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_adramelech_fighting_stance"
+		texturefile = "gfx//interface//government_reform_icons//adramelech_fighting_stance_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_sonyachaos_fighting_stance"
+		texturefile = "gfx//interface//government_reform_icons//sonyachaos_fighting_stance_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_white_rabbit_omnipresence"
+		texturefile = "gfx//interface//government_reform_icons//white_rabbit_omnipresence_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_reaper_removal_protocol"
+		texturefile = "gfx//interface//government_reform_icons//reaper_removal_protocol_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_monster_autonomous_councils"
+		texturefile = "gfx//interface//government_reform_icons//monster_autonomous_councils_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_heavenly_client_states"
+		texturefile = "gfx//interface//government_reform_icons//heavenly_client_states_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_coexistence_parliament"
+		texturefile = "gfx//interface//government_reform_icons//coexistence_parliament_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_kitsune_in_administration"
+		texturefile = "gfx//interface//government_reform_icons//kitsune_in_administration_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_lamia_in_administration"
+		texturefile = "gfx//interface//government_reform_icons//lamia_in_administration_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_yoma_in_administration"
+		texturefile = "gfx//interface//government_reform_icons//yoma_in_administration_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_divine_administration"
+		texturefile = "gfx//interface//government_reform_icons//divine_administration_reform.dds"
+	}
 }

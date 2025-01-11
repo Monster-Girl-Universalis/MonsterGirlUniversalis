@@ -30,3 +30,5 @@ owner = ENV
 culture = Enrika_Elf
 controller = ENV
 discovered_by = TECH_DEMI_HUMAN
+discovered_by = TECH_FAIRY
+discovered_by = TECH_GHOST

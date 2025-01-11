@@ -32,3 +32,5 @@ owner = SM4
 culture = Monster_Succubi
 controller = SM4
 trade_goods = incense
+discovered_by = TECH_FAIRY
+discovered_by = TECH_GHOST

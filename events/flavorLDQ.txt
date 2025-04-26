@@ -1,0 +1,377 @@
+########################################
+# Flavor Events for Land Dweller Queen Realm by Cris
+########################################
+
+namespace = flavor_ldq
+
+###LDQ Flavor events###
+
+country_event = {
+	id = flavor_ldq.1
+	title = flavor_ldq.1_title
+	desc = flavor_ldq.1_desc
+	picture = UNDINE2_eventPicture
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = flavor_ldq.1.a
+		add_ruler_modifier = {
+			name = ldq_water_power
+			duration = -1
+		}
+        undine_spring = {
+            add_province_modifier = {
+					name = ldq_water_faith
+					duration = 7300
+				}
+				change_culture = Slug_Girl
+                change_religion = water_religion
+        }
+		ai_chance = {
+			factor = 100
+		}
+	}
+		option = {
+		name = flavor_ldq.1.b
+        add_ruler_modifier = {
+            name = ldq_water_power
+            duration = -1
+        }
+        change_ruler_stat = {
+				type = mil
+				amount = 2
+			}
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+country_event = {
+	id = flavor_ldq.2
+	title = flavor_ldq.2_title
+	desc = flavor_ldq.2_desc
+	picture = SYLPH_eventPicture
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = flavor_ldq.2.a
+		add_ruler_modifier = {
+			name = ldq_wind_power
+			duration = -1
+		}
+        forest_of_spirits = {
+            add_province_modifier = {
+					name = ldq_wind_faith
+					duration = 7300
+				}
+				change_culture = Slug_Girl
+                change_religion = wind_religion
+        }
+		ai_chance = {
+			factor = 100
+		}
+	}
+		option = {
+		name = flavor_ldq.2.b
+        add_ruler_modifier = {
+            name = ldq_wind_power
+            duration = -1
+        }
+        change_ruler_stat = {
+				type = dip
+				amount = 2
+			}
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+country_event = {
+	id = flavor_ldq.3
+	title = flavor_ldq.3_title
+	desc = flavor_ldq.3_desc
+	picture = GNOME2_eventPicture
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = flavor_ldq.3.a
+		add_ruler_modifier = {
+			name = ldq_earth_power
+			duration = -1
+		}
+        safar_ruins_area = {
+            add_province_modifier = {
+					name = ldq_earth_faith
+					duration = 7300
+				}
+				change_culture = Slug_Girl
+                change_religion = earth_religion
+        }
+		ai_chance = {
+			factor = 100
+		}
+	}
+		option = {
+		name = flavor_ldq.3.b
+        add_ruler_modifier = {
+            name = ldq_earth_power
+            duration = -1
+        }
+        change_ruler_stat = {
+				type = adm
+				amount = 2
+			}
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+country_event = {
+	id = flavor_ldq.4
+	title = flavor_ldq.4_title
+	desc = flavor_ldq.4_desc
+	picture = SALAMANDER2_eventPicture
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = flavor_ldq.4.a
+		add_ruler_modifier = {
+			name = ldq_fire_power
+			duration = -1
+		}
+        gold_volcano = {
+            add_province_modifier = {
+					name = ldq_fire_faith
+					duration = 7300
+				}
+				change_culture = Slug_Girl
+                change_religion = fire_religion
+        }
+		ai_chance = {
+			factor = 100
+		}
+	}
+		option = {
+		name = flavor_ldq.4.b
+        add_ruler_modifier = {
+            name = ldq_fire_power
+            duration = -1
+        }
+        change_ruler_stat = {
+				type = adm
+				amount = 1
+			}
+		change_ruler_stat = {
+				type = dip
+				amount = 1
+			}
+		change_ruler_stat = {
+				type = mil
+				amount = 1
+			}
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+country_event = {
+	id = flavor_ldq.5
+	title = flavor_ldq.5_title
+	desc = flavor_ldq.5_desc
+	picture = SLIME_BAD_eventPicture
+	fire_only_once = yes
+	is_triggered_only = no
+	trigger = {
+	OR = {
+		tag = LDQ
+		tag = SLU
+	}
+	undine_spring = {
+		type = all
+		owned_by = ROOT
+		is_core = ROOT
+	}
+	undine_caverns = {
+		type = all
+		owned_by = ROOT
+		is_core = ROOT
+	}
+	esta_spring = {
+        type = all
+        owned_by = ROOT
+		is_core = ROOT
+	}
+	has_country_flag = slime_enemy
+}
+   	mean_time_to_happen = {
+	months = 6
+	}
+	option = {
+		name = flavor_ldq.5.a
+		add_country_modifier = {
+			name = ldq_slime_enemy
+			duration = 7300
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+country_event = {
+	id = flavor_ldq.6
+	title = flavor_ldq.6_title
+	desc = flavor_ldq.6_desc
+	picture = SLIME_GOOD_eventPicture
+	fire_only_once = yes
+	is_triggered_only = no
+	trigger = {
+	OR = {
+		tag = LDQ
+	}
+	undine_spring = {
+		type = all
+		owned_by = ROOT
+		is_core = ROOT
+	}
+	undine_caverns = {
+		type = all
+		owned_by = ROOT
+		is_core = ROOT
+	}
+	esta_spring = {
+        type = all
+        owned_by = ROOT
+		is_core = ROOT
+	}
+	has_country_flag = slime_friends
+}
+   	mean_time_to_happen = {
+	months = 12
+	}
+	option = {
+		name = flavor_ldq.6.a
+		remove_country_modifier = slu_slime_friends
+		add_country_modifier = {
+			name = ldq_slime_slug_union
+			duration = -1
+		}
+		add_accepted_culture = Blob_Girl
+		add_accepted_culture = Brom_Girl
+		add_accepted_culture = Lava_Girl
+		add_accepted_culture = Gelatinous_Cube_Girl
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+country_event = {
+	id = flavor_ldq.7
+	title = flavor_ldq.7_title
+	desc = flavor_ldq.7_desc
+	picture = LAMIA_eventPicture
+	fire_only_once = yes
+	is_triggered_only = no
+	trigger = {
+	OR = {
+		tag = LDQ
+		tag = SLU
+	}
+	lamia_area = {
+		type = all
+		owned_by = ROOT
+		is_core = ROOT
+	}
+}
+   	mean_time_to_happen = {
+	months = 12
+	}
+	option = {
+		name = flavor_ldq.7.a
+		set_country_flag = has_scared_lamias
+		lamia_area = {
+			add_province_modifier = {
+				name = ldq_local_lamias
+				duration = 9125
+			}
+		}
+		every_province = {
+			limit = {
+				is_core = LR1
+			}
+			remove_core = LR1
+		}
+		add_treasury = 750
+		add_dip_power = 100
+		add_yearly_manpower = 1
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+country_event = {
+	id = flavor_ldq.8
+	title = flavor_ldq.8_title
+	desc = flavor_ldq.8_desc
+	picture = CHROME_eventPicture
+	fire_only_once = yes
+	is_triggered_only = no
+	trigger = {
+	tag = LDQ
+	haunted_mansion_area = {
+		type = all
+		owned_by = ROOT
+		is_core = ROOT
+	}
+}
+   	mean_time_to_happen = {
+	months = 12
+	}
+	option = {
+		name = flavor_ldq.8.a
+		618 = {
+			add_great_project_tier = {
+			 type = haunted_mansion
+			 tier = 2
+			}
+		}
+		add_country_modifier = {
+			name = ldq_chrome
+			duration = -1
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+country_event = {
+	id = flavor_ldq.9
+	title = flavor_ldq.9_title
+	desc = flavor_ldq.9_desc
+	picture = LAMIA_PALS_eventPicture
+	fire_only_once = yes
+	is_triggered_only = no
+	trigger = {
+	tag = LDQ
+	lamia_sister_area = {
+		type = all
+		owned_by = ROOT
+		is_core = ROOT
+	}
+	has_country_flag = has_scared_lamias
+}
+   	mean_time_to_happen = {
+	months = 24
+	}
+	option = {
+		name = flavor_ldq.9.a
+		add_country_modifier = {
+			name = ldq_lamia_pals
+			duration = -1
+		}
+		add_accepted_culture = Lamia_Girl
+		add_accepted_culture = Sister_Lamia
+		ai_chance = {
+			factor = 100
+		}
+	}
+}

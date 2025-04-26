@@ -24,20 +24,24 @@ country_event = {
 	
 	option = {
 		name = "gen_mgq_flavor.1.a" 
-		add_country_modifier = {
-					name = abundant_healing_honey
-					duration = 3650
-				}
+		random_owned_area = { 
+			add_province_modifier = {
+				name = abundant_healing_honey
+				duration = 3650
+			}
+		}
 		
 	}
 	option = {
 		name = "gen_mgq_flavor.1.b" 
 		highlight = yes
 		trigger = { ruler_has_personality_ancestor = { key = midas_touched } }
-		add_country_modifier = {
-					name = abundant_healing_honey
-					duration = 5475
-				}
+		random_owned_area = { 
+			add_province_modifier = {
+				name = abundant_healing_honey
+				duration = 5475
+			}
+		}
 		
 	}
 	

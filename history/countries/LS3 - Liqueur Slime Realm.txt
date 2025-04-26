@@ -1,0 +1,18 @@
+government = monarchy
+government_rank = 2
+religion = dark_goddess_religion
+technology_group = TECH_SLIME
+primary_culture = Liqueur_Slime
+add_government_reform = Slime_realm
+1444.1.1 = { 
+	monarch = { 
+		name = "Liquerin"
+		dynasty = "the Slime"
+		birth_date = 1424.1.1
+		adm = 4
+		dip = 5
+		mil = 5
+		female = yes
+	}
+}
+capital = 3059

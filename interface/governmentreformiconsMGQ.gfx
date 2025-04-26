@@ -20,6 +20,10 @@ spriteTypes = {
 		texturefile = "gfx//interface//government_reform_icons//land_dweller_realm_reform.dds"
 	}
 	spriteType = {
+		name = "government_reform_land_dweller_empire"
+		texturefile = "gfx//interface//government_reform_icons//land_dweller_empire_reform.dds"
+	}
+	spriteType = {
 		name = "government_reform_slime_realm"
 		texturefile = "gfx//interface//government_reform_icons//slime_realm_reform.dds"
 	}

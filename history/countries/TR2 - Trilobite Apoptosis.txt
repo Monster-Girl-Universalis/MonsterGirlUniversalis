@@ -1,6 +1,6 @@
 government = monarchy
 government_rank = 1
-primary_culture = Insect_Apoptosis
+primary_culture = Alraune_Apoptosis
 add_government_reform = Apoptosis_realm
 religion = chaos_religion
 technology_group = TECH_APOPTOSIS

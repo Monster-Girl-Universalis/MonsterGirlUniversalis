@@ -1,0 +1,305 @@
+﻿#Conquest missions
+l_english:
+ SLU_mission_1_1_title: "Slug with the Wind!"
+ SLU_mission_1_1_desc: "Our realm is surrounded by lesser nations that hold valuable lands, while no great power directly border us it is imperative we exploit our neighbours' weakness and quickly establish ourselves as a regional power."
+l_english:
+ SLU_mission_1_2_title: "Towards Tartarus"
+ SLU_mission_1_2_desc: "Our conquest of the southern Ilias Tartarus has unveiled advance technology the world has never seen before, the full extend of this technology is not yet known, but one thing is for certain; we must seize the other Tartarus on the eastern side of this continent!"
+l_english:
+ SLU_mission_1_3_title: "Conquer the Skies"
+ SLU_mission_1_3_desc: "Between us and our brethren on the Slug Coast stands a swarm of harpy and insect nations, although challenging, we must overcome this task if we are to reach the rich slugs lands of Midas!" 
+l_english:
+ SLU_mission_1_4_title: "Crush Midas"
+ SLU_mission_1_4_desc: "We have finally arrived at the doorstep of Midas Village; home of countless slugs and vasts amounts of gold, it is not absurd to suggest that should we be triumphant here our place as a great power would be all but asured!"
+l_english:
+ SLU_mission_1_5_title: "Trek into the Lost Woods"
+ SLU_mission_1_5_desc: "The lost woods to our west are infamous all over Ilias for the powerful and dangerous monsters residing within its boundaries, yet there are rumours of a reclusive elf village in the deepest parts of the forest, we have to make haste and verify this rumour, for if it were true it would mean this elf hamlet could consolidate into a power right next to our capital province!"
+l_english:
+ SLU_mission_1_6_title: "At Enrika's Doorstep"
+ SLU_mission_1_6_desc: "After much fighting we have discovered that the rumours were true! An elf village called "Enrika" lies in the deepest part of these woods, home to Elves, Fairies and even fallen angels, our course of action is now more clear than before."
+l_english:
+ SLU_mission_1_7_title: "Enrika Capitulation"
+ SLU_mission_1_7_desc: "We are closing in on the village, much of the forest is now under our controlled and it is only a matter of time until the walls of Enrika taste the mighty of our artillery!"
+l_english:
+ SLU_mission_1_8_title: "Seize the Ilias Temple"
+ SLU_mission_1_8_desc: "We have gained control over Ilias Temple, once the sacred place where the wicked goddess Ilias ascended from Heaven to baptized human heroes, the temple has however lost much of its religious purpose after the Great Disaster when the goddess last ascended on earth, but even so the temple has its positives; now it serves as the location for Job and Race changes and it is filled with "advisors" from all over the world, it wouldn't be too difficult to find new advisors for our court here."
+l_english:
+ SLU_mission_1_9_title: "Slimy Foes"
+ SLU_mission_1_9_desc: "We have subjugated many slimy foes on our way here, but now just north of us lies a astronger enemy; Iliasburg. One of the only nations that could challanged our supremacy over the continent, even worse many nations nearby are populated by humans loyal to the wicked Goddess of Light, subjugating them won't be easy, but luckly for us, the city of Iliasburg itself lies not that far off from our borders..."
+l_english:
+ SLU_mission_1_10_title: "Fall of Iliasburg"
+ SLU_mission_1_10_desc: "The largest city of Ilias continent, or rather the former largest one, Iliasburg has fallen! with the loss of their economic heart the humans are now helpless against us!"
+l_english:
+ SLU_mission_1_11_title: "Masters of Ilias"
+ SLU_mission_1_11_desc: "Our place in the sun has been secured! All of Ilias continent is under our banner!"
+#Colonial/naval missions
+l_english:
+ SLU_mission_3_1_title: "Settle the South Pole"
+ SLU_mission_3_1_desc: "We have secure the sounthern most tip of the Ilias continent, granting us an opportunity to expand into the South Pole, the enviroment here is harsh and there's not many valuable trade goods, but there's no power here to hinder our conquest."
+l_english:
+ SLU_mission_3_2_title: "Testing the Waters"
+ SLU_mission_3_2_desc: "The sea is a frontier we slugs traditionally don't fare too well in, mainly because of its saltiness. But that has to change, we now have colonial possesions on another continent and as such we need a strong navy to protect those lands and our trade."
+l_english:
+ SLU_mission_3_3_title: "Yoma Genetics"
+ SLU_mission_3_3_desc: "Our harsh journey into the frozen lands of the south pole has yielded an unexpected suprise; a tiny kingdom of Ice Witch Yomas! As Land-dwellers our abilities would benefit greatly from the skills and capabilities of the Yoma race, yet our continent is virtually devoid of them, as such we must absolutely send our brightest researchers to collect as many DNA samples as possible!"
+l_english:
+ SLU_mission_3_4_title: "March through the Ice"
+ SLU_mission_3_4_desc: "The icy frontier has proven to be much more valuable than initially thought, but we have explored less than half of the frozen continent, it is time we step up our colonial effots."
+l_english:
+ SLU_mission_3_5_title: "Slugs and the Great Blue Sea"
+ SLU_mission_3_5_desc: "In our quest for dominance in Ilias Continent we have underestimated the importance of a navy, rather than field a token naval force we should aim to build a fleet that can sink anything in its way, such that our enemies may never set foot on our shores while we bombard theirs with hellfire!"
+#Economic missions
+l_english:
+ SLU_mission_4_1_title: "Slug Paper Industry"
+ SLU_mission_4_1_desc: "Paper is a valuable yet rare good, indispensable for the administration of a nation and tax collection. Our realm just so happens to sit on one of the few places where it is produced, we should seek to increased development efforts in the province to reap the rewards of such a resource."
+l_english:
+ SLU_mission_4_2_title: "Slug Capital of Fashion"
+ SLU_mission_4_2_desc: "Douchess $MONARCH$ has a great interest in fashion but a huge problem: Her dresses instantly get covered in slime. This is the sad reality of all slugs who delved into fashion, but $MONARCH$ insists this is because we are reliant on human-made dresses and as such she insists we should start our own slime-resistant clothing production."
+l_english:
+ SLU_mission_4_3_title: "Metal Slugs"
+ SLU_mission_4_3_desc: "As wretched as the city of Pornof is, their mines can provide us with lots of iron, an indispensable material for weapon manufactoring, as such investment in this area is a top priority."
+l_english:
+ SLU_mission_4_4_title: "Midas' Gold"
+ SLU_mission_4_4_desc: "At long last the goldmines of Midas are ours! Our economic might is sure to increase tenfold, but we should tread carefully, Midas' administration already had experience in dealing with inflation, it would be simpler for us to take over the old institutions tasked with dealing with gold."
+l_english:
+ SLU_mission_4_5_title: "Salt Trade Dilemma"
+ SLU_mission_4_5_desc: "Southern Ilias is very poor compared to the north, but if we wish to field an army capable of going toe to toe with Iliasburg's we need a strong economy to support it! we must increase production in as many states as we can, although this growth may raise some problems in certain areas..."
+l_english:
+ SLU_mission_4_6_title: "Garment Manufacturing"
+ SLU_mission_4_6_desc: "The production of slug silk dates back to around the time our realm was established, the quality of this silk is second to none but it alone has its limits, but now those limits are no more! we have started manufacturing of textiles with Cloth, Dyes and Wool, with this we can have a full-circle garment industry the whole world will envy!"
+l_english:
+ SLU_mission_4_7_title: "Papermaking in Enrika"
+ SLU_mission_4_7_desc: "The lost Woods posseses a vast quantity of trees as far as the eye can see, combined with the dark and humid enviroment this makes for a perfect location to expand our slug brand of papermaking, the mass production of paper will be crucial in facilitating the burocracy of our growing state, as such we must send manpower in heavely wooded areas to start collecting logs, with our innate connection to mother nature will also ensure that we harvest this resource without damaging the local ecosystem."
+#Diplomatic & other missions
+l_english:
+ SLU_mission_2_1_title: "Slimy Relations"
+ SLU_mission_2_1_desc: "North of Midas village lies the slugs nations of our dear sister Elisabeth and Melty, who have now come under threat by the Midas humans because of the recent slug boom, we must reach out to our brethren and make them understand that we must stand together if we to survive the might of the humans."
+l_english:
+ SLU_mission_2_2_title: "Unbreakable Bond"
+ SLU_mission_2_2_desc: "Out of all of the slugs nations ours was the weakest, surrounded by hostile countries on all sides, but after many trials and tribulations we've become a power! Before our sister Elisabeth and the slug boss Melty we make our case to lead all of the slugs, to protect them and to crush anyone that intents to bring harm to them. Moved by our words and proud of our achievements, they accept to submit themselves and their states to our authority." 
+l_english:
+slug_queen_title: "Empress of Slugkind"
+slug_queen_desc: "There may never be a true "Land Dweller Queen", but at least for what is worth to us slugs, we have the chance and authority to proclaim a new queen of our own!"
+l_english:
+slu_estates_title: "Slug Absolutism"
+slu_estates_desc: "This world is inhabited by many monsters much stronger than us slugs, as such we must put bury any notation of personal gain in favor of a centralized slug state, and we must make this clear especially to the estates of our country."
+l_english:
+slu_army_professionalism_title: "Slug Swordsmanship"
+slu_army_professionalism_desc: "We excel at sword and rapier skills while our mucus-covered bodies make for great defense against blunt attacks from other blades, we must make use of our strenghts if we are to vanquish our foes."
+l_english:
+slug_magic_title: "Spellsword Mastery"
+slug_magic_desc: ""Spellsword" is an advanced job unlocked by mastering both the Warrior and Magician jobs. It is a job that combines the warrior's strength with the dark magic of magicians, but becoming expert magicians might be tricky for us slugs. We need to hone our magic abilities either in war, grinding our skills in training locations, or by studying magical books. In the latter case the libraries of Iliasport and San Ilia are good locations to get started. We need only a few books, so maybe the library is willing to lend us."
+#Decision
+l_english:
+SLU_spellblade_title: "Spellsword Skills"
+SLU_spellblade_desc: "By mastering the jobs of Warrior and Magician we have unlocked the advanced job Spellsword!"
+#Government reform
+l_english:
+ Land_Dweller_Empire: "Slug Empire"
+ Land_Dweller_Empire_desc: "A great empire inhabited by all kinds of slugs who have mastered the capabilities of their race."
+#Mission modifiers
+slu_slug_with_the_wind: "Slug with the Wind!"
+slu_towards_tartarus: "Tartarus Technology"
+slu_icy_frontier: "Icy Frontier"
+slu_slug_paper: "Slug Paper"
+slu_happiness_village_campaign: "Happiness Village Campaign"
+slu_struggle_with_midas: "Struggle with Midas"
+slu_slime_friends: "Slime-Slug Friendship"
+slu_benevolent_slug_empire: "Benevolent Slug Empire"
+slu_enrika_trek: "Trek into the Lost Forest"
+slu_enrika_penetrated: "Enrikan Defenses Penetrated"
+slu_enrika_conquest: "Conquest of Enrika"
+slu_ilias_temple: "Ilias Temple in Monster Hands"
+slu_human_lands: "Into the Human Lands"
+slu_iliasburg_fall: "Fall of Iliasburg"
+slu_pornof_iron: "Pornof Iron"
+slu_midas_gold: "Midas Gold"
+slu_land_dweller_queen: "First Slug Queen"
+slu_continental_hegemon: "Empress of Ilias Continent"
+slu_slug_relations: "Slug Relations"
+slu_slug_lightnavy: "Basic Slug fleet"
+slu_slug_south_pole_quest: "Quest for the South Pole"
+slu_slug_oceannavy: "Sea Slugs"
+slu_slug_diaspora: "Midas Slugs Diaspora"
+slu_salt_preserved: "Salt Preserved"
+slu_salt_destroyed: "Salt Destroyed"
+slu_jingo: "Jingoistic Policies"
+slu_salt_vanquished: "Sea Dwellers"
+slu_faithful: "Loyal to the Dark Goddess"
+slu_chaos: "Chaos Chaos!"
+slu_slug_sword: "Slug Swordsmanship"
+slu_absolutism: "Slug Absolutism"
+slu_frogs_in_the_army: "Frogs in the Army"
+slu_clothing_industry: "Slug clothing industry"
+slu_burocratic_paper: "Eased Burocracy"
+slu_spellblade_ice: "Spellblade Blizzard"
+slu_spellblade_lighting: "Spellblade Thunder"
+slu_spellblade_poison: "Spellblade Poison"
+slu_spellblade_magic_barrier: "Spellblade Magic Barrier"
+slu_spellblade_dark: "Spellblade Dark"
+slu_spellblade_holy: "Spellblade Holy"
+ #Province modifiers
+slu_local_paper: "Slug Paper Production"
+slu_capital_building: "Administrative Growth"
+slu_capital_of_fashion: "Slug Capital of Fashion"
+ #Events
+l_english:
+ flavor_slu.1_title: "Rise of the Slug Queen"
+ flavor_slu.1_desc: "There has never been a Slug Queen in all of history, but now that we have become the most powerful slug nation in the world, our monarch $MONARCH$ can now claim the title of sovereign of all slugkind!"
+l_english:
+ flavor_slu.2_title: "Boomerangs are flying high in Slime Village"
+ flavor_slu.2_desc: "Slugs and Slimes have never been on good terms, they like fish, we like cabbages, it just wasn't meant to be, but something seems to have changed recently. A royal visit was schedule in the slime lands and her highness $MONARCH$ was already in a bad mood at the idea of meeting slimes, and ones that would be resent the monarch that subjugated their states no less, but instead $MONARCH$ was met by a most bizzare sight; Slime girls playing with boomerangs, fishing happily in crystal clear river waters and singing joyous chores, and most unusual of all they welcome the sight of our great slug monarch and even went so far as offering their fish to her...perhaps the prosperity bought by our realm has made these slimes too gay to care about such details? We could use this opportunity to strengthen our relations."
+l_english:
+flavor_slu.3_title: "Question of the Northern Slugs"
+flavor_slu.3_desc: "We have recently proclaimed ourselves as the rulers of all slugs, yet ironically the majority of the Ilias Slug population still lives outside of our administration, while they are still part of the crown, many are calling for us to use leverage our power and annex these rich lands directly into our empire."
+l_english:
+flavor_slu.4_title: "Capital of Fashion"
+flavor_slu.4_desc: "Our merchants' latest bussiness transaction has found them in possesion of valuable silk worms, enough of them to start up a farm, with this the dream of locally produced, slime-resistant dressed can become a reality! Some have suggested the idea to use this opportunity to rename our capital city after our great monarch to mark its newfound wealth."
+l_english:
+flavor_slu.5_title: "Sluggy Stars wants to lend us their strength"
+flavor_slu.5_desc: "Sluggy Stars, or "Melty" as they call themselves, were the former rulers of Slug Tower, they have acknowledged us as the protectors of slugkind and forfeit the throne of their realm to us, but even so they still wish to support the slug cause in any way they can, and are now asking a place in our court, our government is packed as it is, while we make room for one, the other two will have to find something else to do."
+l_english:
+flavor_slu.6_title: "The Plight of Midas Village"
+flavor_slu.6_desc: "The village of Midas is renowned for three things; Goldsmithing, animal husbandry and the legendary maid Flora...and also a massive slug boom. While slugs have always lived here in recent times their numbers have exploded to the point of overrunning the village, this has cause not few issues with the local human population which has come to see slugs as pests and alas, now their worst nightmare has become a reality; a slug monarch now rules over them. We need to resolve this situation here and now, both to restored the reputation of slugs and to comfort the villagers and make them understand that we consider them as precious subjects of our realm."
+l_english:
+flavor_slu.7_title: "An unfortunate Encounter"
+flavor_slu.7_desc: "An unfortunate lamia has appeared before us, claiming to be a fair maiden and an information broker by the name of "Amira", she is offering her knowledge and skills in exchanged for a place in our court..."
+l_english:
+flavor_slu.8_title: "Another Unfortunate Encounter"
+flavor_slu.8_desc: "The thing that introduced itself as Amira has appeared again...it sounds like she's spouting off bad poetry at random...perhaps she's trying to impress us?"
+l_english:
+flavor_slu.9_title: "Yet Another Unfortunate Encounter"
+flavor_slu.9_desc: ""Fufufu...i found you!" proclaims the half-woman half-snake lamia, she insists on letting her join our court, and declares she shall display some of her knowledge to show us her worth as an informant."
+l_english:
+flavor_slu.10_title: "Yet Again: Unfortunate Encounter"
+flavor_slu.10_desc: "Unfortunate lamia appears! She recounts the tale of a world where the great disaster did not occur; a world where man and monster are still mortal enemies, and the quest for coexistence of a young unblessed human hero and her boorish yoma companion."
+l_english:
+flavor_slu.11_title: "Once Again: Unfortunate Encounter"
+flavor_slu.11_desc: "Yet again Unfortunate lamia appears! She rehearses a different story from the last but within a similar world; At journey's end the unblessed hero vanquished the ultimate foe, but was sent back in time at the beginning of his adventure by unknown forces, with all of his memories of past events and experiences intact and having to embark on the same quest again."
+l_english:
+flavor_slu.12_title: "Once More: Unfortunate Encounter"
+flavor_slu.12_desc: "Amira the unfortunate lamia appears before us...again. This time she describes the tale of a young blond female knight battling a sea monster in the open ocean."
+l_english:
+flavor_slu.13_title: "Here Again: Unfortunate Encounter"
+flavor_slu.13_desc: "Amira has appeared before us, for the 7th time...Amira recites the tale of a defeated goddess casted down on earth, using the last of her powers to bless a dying man on the streets."
+l_english:
+flavor_slu.14_title: "Again."
+flavor_slu.14_desc: "Amira...is once again with us, she has no tale to tell this time however, in fact she claims she's already displayed all of her "valuable" knowledged to us, and has come to the conclusion that we just aren't meant to be be allies. it appears she also has found work as an informant for a travelling hero..."
+l_english:
+flavor_slu.15_title: "Question of the Salt Trade"
+flavor_slu.15_desc: "Several salt producing provinces are under our administration, as salt is the bane of every slug's existance we have a very strong incentive to get rid of this good, but our realm is no longer inhabited by us alone, many non-slugs inhabit it and they're very fond of this resource, depriving them of cheap local salt is sure to cause unrest among them."
+l_english:
+flavor_slu.16_title: "Invitation to Grandeur Grand Theater!"
+flavor_slu.16_desc: "We have received an invitation from the menager of the world-renow idol Saki! They ask us to put on a performance on their stage in Grandeur, We'll have to organized a team to put on a spectacle worthy of our nation, and the trek to Grandeur through the sandy desert will test our mettle as slugs, but this might be a good chance to increase our prestige as a new power on the world stage."
+l_english:
+flavor_slu.17_title: "The show was a success!"
+flavor_slu.17_desc: "Our team has put a majestic performance on the stage of the Grand Theater, our great ruler $MONARCH$ was there to cheer on them and no doubt encouraged them to do their best! After the performance was over our group began celebrating their success with drinks and laughter, while there were minor complaints by local humans for the "damp and wet" atmosphere neither $MONARCH$ nor the team paid them heed, the celebrations continued through the night."
+l_english:
+flavor_slu.18_title: "Tea Party with Mimi"
+flavor_slu.18_desc: "Our lady $MONARCH$ and her friend Mimi have set up a tea party to blow some steam off and eat lots of cakes. The weather today was rainy and the atmosphere was dark and wet... in fact it appears the combination of favorable weather conditions and sweets have made Mimi quite energetic, so much so that she began digging franatically eveywhere, it appears Mimi went overboard and greatly damaged the area..."
+l_english:
+flavor_slu.19_title: "Gold Vein Found!"
+flavor_slu.19_desc: "News have reached our court that a group of workers intent on repairing the damage caused by Mimi's digging rampage have stumple upon a gold vein inside one of the holes!"
+l_english:
+flavor_slu.20_title: "Hiru demands a sparring contest!"
+flavor_slu.20_desc: "Hiru the Leech wasn't too thrilled by her lands being conquered by us, despite this she doesn't seem to hold a grudge against $MONARCH$, but rather she wants to test if she's worthy of leading her leech sisters in battle with a sparring contest. Despite the bitterness of defeat still fresh in the minds of leechkind, there's a warm feeling surrounding this contest, as if two friends are reconciling."
+l_english:
+flavor_slu.21_title: "Fairy Island is Within our Reach!"
+flavor_slu.21_desc: "Our expansion has brought us right before Fairy Island, home of the world tree guarded by the plant queen and now a shared home for the Fairy and Elf queens. Although they powerful foes, being restricted to the island means that they would have nowhere to go if we were succesful in establishing naval supremacy!"
+l_english:
+flavor_slu.22_title: "Slimy Friends from the Depths"
+flavor_slu.22_desc: "Sea Dwellers have many abilities of interest to us land dwellers, specifically their innate ability of not melting when making contact with salt. While this is just normality for beings that live in the salty ocean, acquiring this aptitude will be a game changer for us slugs, not least because we could finally overcome our salt weakness on land, but this would allows us to better commit ourselves to future naval exploits. As such we have arranged for DNA extraction from our slimy sea dwellers subjects, and while we're at it we should ask them to teach us the way of water."
+l_english:
+flavor_slu.23_title: "A Faithful Encounter"
+flavor_slu.23_desc: "While investigasting the southern Ilias tartarus we stumble upon what looked to be a lonely woman in the depths of tartarus, but once we approached her we realized she is some kind of insect monster. She looks lost and confused and is rambling about her lost memories and her insect legs tearing holes in her dress."
+l_english:
+flavor_slu.24_title: "Chaos Theory"
+flavor_slu.24_desc: "Time has passed since our encounter with the mysterious woman in blue in the depths of tartarus, we've discovered that she used to be a human merchant and her name is Shesta. Shesta and her highness $MONARCH$ have become very fond of each other in the meantime, $MONARCH$ has become very fascinated by Shesta's bizarre religion of chaos, and so did a few advisors of the court, perhaps we should delved deeper into this enigmatic faith?"
+l_english:
+flavor_slu.25_title: "Hopping our Way"
+flavor_slu.25_desc: "Finoa is the home of the frog girls, slimy land dwellers that reside in the swamps and ponds of this land, skilled in martial arts and capable of toxic breath they are a perfect example of what land dwellers are capable of! they would be an even more good match for us if it wasn't for their...suspicious diet, nevertheless they recognized our claim to rule over all land dwellers and are elated to join the ranks of our armies."
+l_english:
+flavor_slu.26_title: "Spellblade Style"
+flavor_slu.26_desc: "A fighter specialized in sword skills and dark magic. Their swords can be enchanted with various attributes to inflict elemental damage."
+  #Event insights
+l_english:
+flavor_insight_slu.1: "\n§GEvent Insight§!:\nThis mission will change our nation to Slug Queen and grant new national ideas, tier 1 goverment reform and add new missions."
+l_english:
+flavor_insight_slu.2: "§TWe might find something worthwhile if we establish ourselves in an area on the other side of the pole...§W"
+l_english:
+flavor_insight_slu.3: "§GIf we conciliate our relationship with the slimes, we will have a great time when we conquer a place with lots of slimes§W."
+l_english:
+flavor_insight_slu.4: "§RIf we keep antagonizing the slimes, we will have a harder time when we conquer a place with lots of slimes§W."
+l_english:
+flavor_insight_slu.5: "§VCompleting this mission will unlock the Spellsword decision§W!"
+ #Event choices
+l_english:
+ flavor_slu.1.a: "All hail $MONARCH$!"
+l_english:
+ flavor_slu.2.a: "Let's shake hands, we're both slimy."
+ flavor_slu.2.b: "By the Dark Goddess no, slime scum."
+l_english:
+ flavor_slu.3.a: "Empress $MONARCH$ shall rule over all of Slugkind!"
+ flavor_slu.3.b: "We shouldn't impose ourselves on our loyal subjects."
+l_english:
+ flavor_slu.4.a: "The Ilias continent is in dire need of name variety."
+ flavor_slu.4.b: "That's a bit too much."
+l_english:
+ flavor_slu.5.a: "We need administrative help."
+ flavor_slu.5.b: "Our diplomatic efforts are lacking."
+ flavor_slu.5.c: "The army's always open."
+l_english:
+ flavor_slu.6.a: "Let's encourage slug migration to our other states."
+l_english:
+ flavor_slu.7.a: "Kill it."
+l_english:
+ flavor_slu.8.a: "Weren't you dead? §GGale thrust§W!"
+l_english:
+ flavor_slu.9.a: "Death Sword Chaos Star!"
+l_english:
+ flavor_slu.10.a: "§TDemon Sword Snowstorm§W!"
+l_english:
+ flavor_slu.11.a: "§gWorld-Ending Slash§W!"
+l_english:
+ flavor_slu.12.a: "§VBio Breath§W!"
+l_english:
+ flavor_slu.13.a: "§RINFERNO BREATH§W!"
+l_english:
+ flavor_slu.14.a: "GOOD RIDDANCE!"
+l_english:
+ flavor_slu.15.a: "We just have to be careful around kitchens..."
+ flavor_slu.15.b: "Let them eat cake!"
+ l_english:
+ flavor_slu.16.a: "Let's slimily proceed to the Grand Theater!"
+ flavor_slu.16.b: "As if i would trek through a whole desert just for that!"
+l_english:
+ flavor_slu.17.a: "We left that stage humid and damp!"
+l_english:
+ flavor_slu.18.a: "It was just a momentary indiscretion..."
+l_english:
+ flavor_slu.19.a: "I have to tell Mimi-chan the good news!"
+l_english:
+ flavor_slu.20.a: "Let's exchange blows Hiru! En garde!"
+l_english:
+ flavor_slu.21.a: "To war by jingo!"
+l_english:
+ flavor_slu.22.a: "This truly wets my heart..."
+l_english:
+ flavor_slu.23.a: "Oh you poor thing...let's go shopping."
+l_english:
+ flavor_slu.24.a: "We must remain loyal to the Dark Goddess!"
+ flavor_slu.24.b: "Let us heed the call of the abyss!"
+l_english:
+ flavor_slu.25.a: "You... don't eat slugs do you?"
+ l_english:
+ flavor_slu.26.a: "§TSpellblade Blizzard"
+l_english:
+ flavor_slu.26.b: "§YSpellblade Thunder"
+ l_english:
+ flavor_slu.26.c: "§VSpellblade Poison"
+ l_english:
+ flavor_slu.26.d: "§iMagic Barrier"
+ l_english:
+ flavor_slu.26.e: "§gSpellblade Dark"
+ l_english:
+ flavor_slu.26.f: "§OSpellblade Holy"

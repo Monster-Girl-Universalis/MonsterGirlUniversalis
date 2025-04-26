@@ -1,0 +1,20 @@
+government = monarchy
+government_rank = 3
+primary_culture = Alraune_Girl
+add_government_reform = Alraune_realm
+religion = dark_goddess_religion
+technology_group = TECH_ALRAUNE
+historical_rival = KA2#They just don't get along...
+1444.1.1 = { 
+	monarch = { 
+		name = "Kanon"
+		dynasty = "the Plant Ancestor"
+		birth_date = 1.1.1
+		adm = 3
+		dip = 6
+		mil = 6
+		female = yes
+	}
+	add_ruler_personality = immortal_personality
+}
+capital = 2938

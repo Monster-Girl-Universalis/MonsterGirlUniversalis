@@ -341,8 +341,8 @@ monster_religion_g = {
 				}
 			}	
 			dark_goddess_icon_hiruko = {
-				administrative_efficiency = -0.05
-				morale_damage = 0.25
+				administrative_efficiency = -0.03
+				morale_damage = 0.15
 				
 				allow = {
 					always = yes
@@ -613,9 +613,9 @@ science_religion_g = {
 		icon = 43
 		allow_female_defenders_of_the_faith = yes
 		country = {
-			ae_impact = 0.20
-			diplomatic_reputation = -3
-			morale_damage = 0.25
+			ae_impact = 0.10
+			diplomatic_reputation = -1
+			morale_damage = 0.15
 		}
 		
 		province = {
@@ -625,8 +625,8 @@ science_religion_g = {
 		
 		
 		country_as_secondary = {
-			ae_impact = 0.15
-			morale_damage = 0.15
+			ae_impact = 0.10
+			morale_damage = 0.10
 		}
 		holy_sites = {
 			20 #Eastern Ilias Tartarus

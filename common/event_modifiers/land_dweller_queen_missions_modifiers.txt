@@ -1,0 +1,132 @@
+ldq_slug_golden_age = {
+    land_morale = 0.1
+	naval_morale = 0.1
+	all_power_cost = -0.1
+	global_trade_goods_size_modifier = 0.1
+	max_absolutism = 5
+	max_revolutionary_zeal = 10
+	religion = yes
+}
+ldq_slime_friends = {
+	num_accepted_cultures = 3
+	diplomatic_reputation = 2
+	improve_relation_modifier = 0.25
+	global_unrest = -2
+}
+ldq_western_noah_invasion = {
+	regiment_disembark_speed = 0.25
+	landing_penalty = -2
+}
+ldq_new_queen = {
+	enable_forced_march = yes
+	force_march_free = yes
+}
+ldq_water_power = {
+	fire_damage_received = -0.07
+	morale_damage_received = -0.07
+}
+ldq_water_faith = {
+	local_missionary_strength = -1
+}
+ldq_local_crusade = {
+	local_missionary_strength = 0.05
+}
+ldq_irredentism = {
+	global_tax_modifier = 0.25
+	manpower_in_own_culture_provinces = 0.33
+}
+ldq_local_sea = {
+	local_warscore_cost_modifier = -0.10
+}
+ldq_roach_tower = {
+	siege_ability = 0.15
+}
+ldq_wind_power = {
+	movement_speed = 0.05
+	shock_damage = 0.07
+}
+ldq_wind_faith = {
+	local_missionary_strength = -1
+}
+ldq_local_navy = {
+	local_warscore_cost_modifier = -0.15
+}
+ldq_navy_hd = {
+	max_flagships = 1
+}
+ldq_gloria = {
+	naval_morale = 0.05
+	siege_blockade_progress = 1
+}
+ldq_irredentism_completed = {
+	fort_maintenance_modifier = -0.20
+	garrison_size = 0.15
+	defensiveness = 0.10
+	max_hostile_attrition = 1
+	hostile_attrition = 1
+}
+ldq_frog_warfare = {
+	infantry_power = 0.10
+	infantry_shock = 0.25
+	morale_damage = 0.005
+}
+ldq_grand_noah = {
+	global_unrest = -1
+	overextension_impact_modifier = -0.1
+	governing_capacity_modifier = 0.1
+}
+ldq_earth_power = {
+	shock_damage_received = -0.07
+	global_garrison_growth = 0.25
+}
+ldq_earth_faith = {
+	local_missionary_strength = -1
+}
+ldq_fire_power = {
+	fire_damage_received = -0.07
+	morale_damage = 0.05
+}
+ldq_fire_faith = {
+	local_missionary_strength = -1
+}
+ldq_attuned_with_nature = {
+	movement_speed = 0.05
+	shock_damage_received = -0.07
+	morale_damage = 0.07
+	fire_damage_received = -0.07
+}
+ldq_university = {
+	embracement_cost = -0.10
+	global_institution_spread = 0.25
+}
+ldq_natural_revolution = {
+	expand_infrastructure_cost_modifier = -0.25
+	production_efficiency = 0.10
+	global_monthly_devastation = -0.5
+	development_cost_in_primary_culture = -0.10
+}
+ldq_slime_enemy = {
+	ae_impact = 0.20
+	improve_relation_modifier = -0.2
+	diplomatic_reputation = -1
+	discipline = 0.075
+}
+ldq_slime_slug_union = {
+	num_accepted_cultures = 6
+	global_unrest = -1
+	diplomatic_reputation = 2
+	improve_relation_modifier = 0.25
+	trade_efficiency = 0.10
+}
+ldq_local_lamias = {
+	local_years_of_nationalism = -30
+	local_culture_conversion_cost = 1
+}
+ldq_chrome = {
+	technology_cost = -0.05
+	idea_cost = -0.05
+}
+ldq_lamia_pals = {
+	diplomatic_reputation = 1
+	num_accepted_cultures = 2
+}

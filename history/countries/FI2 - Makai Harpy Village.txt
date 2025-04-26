@@ -1,0 +1,18 @@
+government = monarchy
+government_rank = 2
+religion = dark_goddess_religion
+technology_group = TECH_HARPY
+primary_culture = Harpy_Girl
+add_government_reform = Harpy_realm
+1444.1.1 = { 
+	monarch = { 
+		name = "Lucretia"
+		dynasty = "the Royal Harpy"
+		birth_date = 1424.1.1
+		adm = 6
+		dip = 6
+		mil = 4
+		female = yes
+	}
+}
+capital = 3184

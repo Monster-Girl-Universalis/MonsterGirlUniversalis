@@ -1773,7 +1773,7 @@ ilias_clergy_reform = {
 	}
 }
 eden_resistance_religion_reform = {
-	icon = "eden_resistance_religion"
+	icon = "eden_resistance"
 	allow_normal_conversion = yes
 	potential = {
 		NOT = { has_government_attribute = is_pirate_republic_reform }
@@ -1998,7 +1998,6 @@ undine_worship_reform = {
 		OR = {
 			religion = water_religion 
 			culture_group = mermaid
-			culture_group = fairy
 			culture_group = sea_dweller
 			culture_group = slime
 			primary_culture = Sea_Dragon_Girl

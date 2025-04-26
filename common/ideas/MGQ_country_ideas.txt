@@ -3901,49 +3901,51 @@ SQD_ideas = {
 		trade_efficiency = 0.15
 	}
 }
-#Land Dweller Queen Domain
-LDQ_ideas = {
+#Slug Queen Domain
+MGQ_LDQ_ideas = {
 	start = {
-		fire_damage_received = -0.20
+		fire_damage_received = -0.10
 		#may_establish_frontier = yes
 		#auto_explore_adjacent_to_colony = yes
 		may_recruit_female_generals = yes
 	}
-
-	bonus = {		
-		land_attrition = -0.15		
-		land_morale = 0.20
-		
+	
+	bonus = {
+		administrative_efficiency = 0.05
 	}
 	
 	trigger = {
 		tag = LDQ
-	}
+	}	
 	free = yes
-
-	LDQ_underground_catacombs = {
-		global_allowed_num_of_buildings = 1
+	
+	MGQ_LDQ_high_creature_ambitions = {
+		ae_impact = -0.1
+		discipline = 0.05
 	}
-	LDQ_experts_at_survival = {		
+	MGQ_LDQ_ineluctable_conquest = {
+		core_creation = -0.15
+		governing_capacity_modifier = 0.2
+	}	
+	MGQ_LDQ_slug_metabolism = {
+		global_manpower_modifier = 0.33
 		land_attrition = -0.40
 	}
-	LDQ_attuned_to_nature = {
-		global_monthly_devastation = -0.5
-		global_prosperity_growth = 0.5
+	MGQ_LDQ_art_of_the_blade = {
+		land_morale = 0.10
+		infantry_power = 0.10
 	}
-	LDQ_using_every_resource = {
-		build_cost = -0.33
+	MGQ_LDQ_evil_species = {
+		infantry_fire = 1
+		infantry_shock = 1
 	}
-	LDQ_toxic_breath = {
-		hostile_attrition = 2
-		max_hostile_attrition = 4
+	MGQ_LDQ_slimed_strike = {
+		military_tactics = 0.20
+		morale_damage = 0.05
 	}
-	LDQ_royal_governance = {
-		prestige = 1
-		state_maintenance_modifier = -0.25
-	}
-	LDQ_enhanced_mass_quick = {
-		movement_speed = 0.2
+	MGQ_LDQ_natural_development = {
+		global_allowed_num_of_buildings = 1
+		development_cost_in_primary_culture = -0.05
 	}
 }
 #Lich Queen Domain

@@ -1,0 +1,20 @@
+government = monarchy
+government_rank = 2
+primary_culture = Sea_Dragon_Girl
+add_government_reform = undine_reform
+religion = water_religion
+technology_group = TECH_DRAGON
+historical_rival = GR5#They just don't get along...
+1444.1.1 = { 
+	monarch = { 
+		name = "Ghatanothoa"
+		dynasty = "the Water Spirit"
+		birth_date = 1424.1.1
+		adm = 4
+		dip = 3
+		mil = 6
+		female = yes
+	}
+	add_ruler_personality = immortal_personality
+}
+capital = 3051

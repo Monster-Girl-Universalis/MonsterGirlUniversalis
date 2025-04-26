@@ -1,0 +1,43 @@
+namespace = flavor_va6
+
+#Fatima's Left Hand and Right Hand
+country_event = {
+	id = flavor_va6.1
+	title = "flavor_va6.1.t"
+	desc = "flavor_va6.1.desc"
+	picture = CARMILLA_ELISABETH_eventPicture
+	trigger = {
+		has_ruler = "Fatima"
+		tag = VA6
+		NOT = { is_year = 1500 }
+	}
+
+	mean_time_to_happen = { days = 10 }
+	fire_only_once = yes
+
+	option = {	#That's nice
+		name = flavor_va6.1.a
+		define_general = {
+			name = "Carmilla"
+			birth_date = 1424.1.1
+			type = general
+			fire = 3
+			shock = 6
+			manuever = 6
+			siege = 1
+			female = yes
+			trait = vampire_spellblade_personality 
+		}
+		define_general = {
+			name = "Elisabeth"
+			birth_date = 1424.1.1
+			type = general
+			fire = 2
+			shock = 6
+			manuever = 5
+			siege = 3
+			female = yes
+			trait = bloody_elisabeth_personality
+		}
+	}
+}

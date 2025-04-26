@@ -1,0 +1,234 @@
+slu_slug_with_the_wind = {
+	manpower_recovery_speed = 0.20
+	land_morale = 0.10
+}
+
+slu_towards_tartarus = {
+	technology_cost = -0.1
+	idea_cost = -0.1
+}
+
+slu_icy_frontier = {
+	colonists = 1
+	global_colonial_growth = 33
+}
+
+slu_slug_paper = {
+	global_tax_income = 24
+}
+
+slu_happiness_village_campaign = {
+	siege_ability = 0.10
+	ae_impact = -0.2
+}
+
+slu_struggle_with_midas = {
+	military_tactics = 0.25
+	infantry_power = 0.15
+	shock_damage = 0.10
+}
+
+slu_salt_preserved = {
+	stability_cost_modifier = 0.2
+	global_unrest = -2
+	production_efficiency = 0.10
+}
+
+slu_salt_destroyed = {
+	stability_cost_modifier = -0.6
+	global_unrest = 2
+	production_efficiency = 0.10
+}
+
+slu_slime_friends = {
+	num_accepted_cultures = 2
+	global_unrest = -1
+}
+
+slu_benevolent_slug_empire = {
+	vassal_forcelimit_bonus = 0.2
+	vassal_manpower_bonus = 0.1
+	vassal_naval_forcelimit_bonus = 0.2
+	vassal_sailors_bonus = 0.1
+	vassal_income = 0.2
+	liberty_desire = -10
+	liberty_desire_from_subject_development = -0.25
+	diplomatic_annexation_cost = -0.15
+	annexation_relations_impact = -0.25
+	diplomatic_reputation = 2
+	accept_vassalization_reasons = 15
+	diplomatic_upkeep = 2
+}
+
+slu_enrika_trek = {
+	shock_damage_received = -0.15
+	discipline = 0.05
+}
+
+slu_enrika_penetrated = {
+	core_creation = -0.1
+	fire_damage = 0.10
+}
+
+slu_enrika_conquest = {
+	artillery_power = 0.10
+	artillery_levels_available_vs_fort = 1
+	backrow_artillery_damage = 0.10
+}
+
+slu_ilias_temple = {
+	advisor_cost = -0.30
+	prestige = 1
+	reform_progress_growth = 0.3
+}
+
+slu_human_lands = {
+	warscore_cost_vs_other_religion = -0.25
+    trade_efficiency = 0.2
+}
+
+slu_iliasburg_fall = {
+	global_missionary_strength = 0.02
+	religious_unity = 0.20
+	missionary_maintenance_cost = -0.2
+}
+
+slu_pornof_iron = {
+	land_maintenance_modifier = -0.15
+	artillery_cost = -0.10
+}
+
+slu_land_dweller_queen = {
+	prestige = 0.5
+	prestige_decay = -0.01
+	monthly_splendor = 1
+}
+
+slu_midas_gold = {
+	inflation_reduction = 0.2
+    monthly_gold_inflation_modifier = -0.1
+	gold_depletion_chance_modifier = -0.4
+}
+
+slu_slug_relations = {
+	improve_relation_modifier = 0.2
+	diplomats = 1
+	diplomatic_upkeep = 2
+}
+
+slu_slug_lightnavy = {
+	light_ship_cost = -0.3
+	galley_cost = -0.3
+	flagship_cost = -0.3
+	naval_maintenance_modifier = -0.2
+}
+
+slu_slug_south_pole_quest = {
+	colonists = 1
+	global_colonial_growth = 15
+	range = 0.20
+	trade_company_investment_cost = -0.2
+	trade_steering = 0.1
+}
+
+slu_slug_oceannavy = {
+	navy_tradition = 1
+	navy_tradition_decay = -0.02
+	naval_tradition_from_battle = 0.1
+	heavy_ship_power = 0.1
+	naval_morale = 0.1
+	naval_morale_damage_received = -0.15
+	ship_durability = 0.1
+}
+
+slu_slug_diaspora = {
+	culture_conversion_cost = -0.30
+	culture_conversion_time = -0.5
+	global_colonial_growth = 30
+}
+
+slu_continental_hegemon = {
+	administrative_efficiency = 0.05
+	manpower_recovery_speed = 0.25
+	defensiveness = 0.30
+	national_focus_years = -5
+}
+slu_jingo = {
+	administrative_efficiency = 0.05
+	province_warscore_cost = -0.15
+	naval_morale = 0.1
+}
+slu_salt_vanquished = {
+	global_sailors_modifier = 0.1
+	naval_morale_damage_received = -0.05
+}
+slu_faithful = {
+	tolerance_own = 3
+	global_missionary_strength = 0.03
+}
+slu_chaos = {
+	global_missionary_strength = 0.03
+	missionary_maintenance_cost = -0.3
+	missionaries = 1
+}
+slu_slug_sword = {
+	army_tradition_decay = -0.03
+	infantry_power = 0.10
+	fire_damage_received = -0.10
+
+}
+slu_absolutism = {
+	max_absolutism = 25
+	all_estate_loyalty_equilibrium = 0.1
+	allow_free_estate_privilege_revocation = yes
+}
+slu_local_paper = {
+    local_development_cost = -0.20
+}
+slu_capital_building = {
+	local_build_cost = -0.25
+	local_build_time = -0.25
+	local_development_cost = -0.05
+}
+slu_frogs_in_the_army = {
+	shock_damage = 0.125
+	movement_speed = 0.10
+}
+slu_clothing_industry = {
+	development_cost = -0.1
+	production_efficiency = 0.05
+}
+slu_capital_of_fashion = {
+	trade_goods_size = 3
+}
+slu_burocratic_paper = {
+	global_institution_spread = 0.6
+	embracement_cost = -0.25
+	adm_tech_cost_modifier = -0.1
+	global_tax_modifier = 0.25
+}
+slu_spellblade_dark = {
+	infantry_fire = 0.05
+	morale_damage_received = -0.05
+}
+slu_spellblade_ice = {
+	fire_damage_received = -0.05
+	morale_damage_received = -0.05
+}
+slu_spellblade_lighting = {
+	shock_damage = 0.05
+	morale_damage_received = -0.05
+}
+slu_spellblade_poison = {
+	hostile_attrition = 3
+	max_hostile_attrition = 3
+}
+slu_spellblade_magic_barrier = {
+	shock_damage_received = -0.10
+	morale_damage_received = -0.10
+	recover_army_morale_speed = 0.10
+}
+slu_spellblade_holy = {
+	military_tactics = 0.15
+	morale_damage_received = -0.05
+}

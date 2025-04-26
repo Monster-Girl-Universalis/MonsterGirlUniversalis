@@ -1,0 +1,1292 @@
+########################################
+# Missions for Slug Girl Realm by Cris
+########################################
+
+slu_economic_branch = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		OR = {
+			tag = SLU
+			AND = {
+				was_tag = SLU
+				tag = LDQ
+			}
+		}
+	}
+	has_country_shield = yes
+
+	SLU_mission_4_1 = { 
+		icon = mission_paper
+		required_missions = {}
+		position = 1
+        	generic = no
+		provinces_to_highlight = {
+			province_id = 97
+			OR = {
+				NOT = {	owned_by = ROOT } # don't highlight if this city is owned by the country in question
+				NOT = {	has_building = workshop } # don't highlight if the city has X building
+				NOT = {	has_building = marketplace }
+				NOT = {	development = 15 }
+			}
+		}
+		trigger = {
+			97 = {
+				owned_by = ROOT
+				has_building = marketplace
+				development = 15
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = slu_slug_paper
+				duration = 7300
+			}
+			97 = {
+				add_province_modifier = {
+					name = slu_local_paper
+					duration = -1
+				}
+				add_center_of_trade_level = 1
+			}
+			94 = {
+				add_province_modifier = {
+					name = slu_capital_building
+					duration = 7300
+				}
+			}
+		}
+	}
+	SLU_mission_4_2 = { 
+		icon = melk_alice
+		required_missions = {SLU_mission_4_1}
+		position = 2
+        	generic = no
+		provinces_to_highlight = {
+			province_id = 94
+			OR = {
+				NOT = {	owned_by = ROOT }
+				NOT = {	has_building = workshop }
+				NOT = {	development = 30 }
+				NOT = {	has_building = fort_15th }
+			}
+		}
+		trigger = {
+			94 = {
+				owned_by = ROOT
+				has_building = workshop
+				has_building = fort_15th
+				development = 30
+			}
+		}
+		effect = {
+			country_event = {
+				id = flavor_slu.4
+			}
+		}
+	}
+	SLU_mission_4_5 = { 
+		icon = mission_salt
+		required_missions = { SLU_mission_4_2 }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 29
+				province_id = 35
+				province_id = 14
+				province_id = 327
+				province_id = 370
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		position = 3
+        	generic = no
+		trigger = {
+			workshop = 15
+			29 = {
+				owned_by = ROOT
+			}
+			35 = {
+				owned_by = ROOT
+			}
+			14 = {
+				owned_by = ROOT
+			}
+			327 = {
+				owned_by = ROOT
+			}
+			370 = {
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			add_years_of_income = 1
+			add_mercantilism = 5
+			country_event = {
+				id = flavor_slu.15
+			}
+		}
+	}
+	SLU_mission_4_3 = { 
+		icon = melk_fighter
+		required_missions = { SLU_mission_4_5 }
+		position = 4
+        	generic = no
+		provinces_to_highlight = {
+			OR = {
+				province_id = 4
+				province_id = 5
+				province_id = 6
+			}
+			NOT = { has_building = weapons }
+		}
+		trigger = {
+			4 = {
+				owned_by = ROOT
+				has_building = weapons
+			}
+			5 = {
+				owned_by = ROOT
+				has_building = weapons
+			}
+			6 = {
+				owned_by = ROOT
+				has_building = weapons
+			}
+		}
+		effect = {
+
+			add_country_modifier = {
+				name = slu_pornof_iron
+				duration = -1
+			}
+			4 = {
+			add_base_production = 3
+			}
+			5 = {
+			add_base_production = 3
+			}
+			6 = {
+			add_base_production = 3
+			}
+		}
+	}
+	SLU_mission_4_4 = { 
+		icon = midasgold
+		required_missions = {SLU_mission_4_3}
+		position = 5
+        	generic = no
+		provinces_to_highlight = {
+			OR = {
+				area = midas_plains_area
+				area = midas_village_area
+				area = slug_coast_area
+				area = slug_plains_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			midas_village_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			midas_plains_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			slug_plains_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			slug_coast_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+		}
+		effect = {
+			add_country_modifier = {
+				name = slu_midas_gold
+				duration = -1
+			}
+		}
+	}
+	SLU_mission_4_6 = {
+		icon = melk_maid  ###A huge thanks to flatpancakesss for taking the time out of his busy schedule to draw this lovely Melk for me! ^_^####
+		required_missions = {SLU_mission_4_4}
+		position = 6
+		generic = no
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 4
+				has_building = textile
+			}
+			num_of_owned_provinces_with = {
+				value = 1
+				trade_goods = silk
+			}
+			num_of_owned_provinces_with = {
+				value = 1
+				trade_goods = cloth
+			}
+			num_of_owned_provinces_with = {
+				value = 1
+				trade_goods = dyes
+			}
+			num_of_owned_provinces_with = {
+				value = 1
+				trade_goods = wool
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = slu_clothing_industry
+				duration = 10950
+			}
+			94 = {
+			add_province_modifier = {
+				name = slu_capital_of_fashion
+				duration = -1
+			}	
+			
+			}
+		}
+	}
+	SLU_mission_4_7 = {
+		icon = enrikalake
+		required_missions = {SLU_mission_4_6}
+		position = 7
+		generic = no
+		provinces_to_highlight = {
+			OR = {
+				region = enrika_region
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+
+		}
+		trigger = {
+			enrika_region = { type = all country_or_non_sovereign_subject_holds = ROOT }
+		}
+		effect = {
+			add_country_modifier = {
+				name = slu_burocratic_paper
+				duration = -1
+			}
+			ereseveal_area = {
+				add_province_modifier = {
+					name = slu_local_paper
+					duration = -1
+				}
+				add_base_production = 5
+				add_building = mills
+				change_trade_goods = paper
+				change_culture = Slug_Girl
+			}
+			dark_elven_woods = {
+				add_province_modifier = {
+					name = slu_local_paper
+					duration = -1
+				}
+				add_building = mills
+				add_base_production = 5
+				change_trade_goods = paper
+				change_culture = Slug_Girl
+			}
+			
+		}
+	}
+}
+slu_conquest_branch = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		OR = {
+			tag = SLU
+			AND = {
+				was_tag = SLU
+				tag = LDQ
+			}
+		}
+	}
+	has_country_shield = yes
+
+	SLU_mission_1_5 = { 
+		icon = mission_dark_woods 
+		required_missions = { SLU_mission_1_1 }
+		position = 2
+		generic = no
+		provinces_to_highlight = {
+			OR = {
+				area = merchants_southern_route_area
+				area = serene_coast_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			merchants_southern_route_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			serene_coast_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = slu_enrika_trek
+				duration = 7300 	
+			}
+			elven_traderoute_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			retociitu_woods = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			ntequi_vale = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			change_mil = 1
+		}
+	}
+	SLU_mission_1_6 = { 
+		icon = mission_enrikan_mountains 
+		required_missions = { SLU_mission_1_5 }
+		position = 3
+        	generic = no
+		provinces_to_highlight = {
+			OR = {
+				area = elven_traderoute_area
+				area = retociitu_woods
+				area = ntequi_vale
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			elven_traderoute_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			OR = {
+				retociitu_woods = { type = all country_or_non_sovereign_subject_holds = ROOT }
+				ntequi_vale = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			}
+		}
+
+		effect = {
+			add_adm_power = 150
+			add_country_modifier = {
+				name = slu_enrika_penetrated
+				duration = 9125	
+			}
+			mimic_grove_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			etam_grove = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			fairy_coast = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			lemuse_beach = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			north_lemuse = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			pumpkin_grove = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			ereseveal_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			wasall_vale = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			dark_elf_village = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	SLU_mission_1_7 = { 
+		icon = destroyed 
+		required_missions = { SLU_mission_1_6 }
+		position = 4
+		generic = no
+		provinces_to_highlight = {
+			OR = {
+				area = elven_traderoute_area
+				area = retociitu_woods
+				area = ntequi_vale
+				area = mimic_grove_area
+				area = etam_grove
+				area = fairy_coast
+				area = lemuse_beach
+				area = north_lemuse
+				area = pumpkin_grove
+				area = ereseveal_area
+				area = wasall_vale
+				area = dark_elf_village
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			elven_traderoute_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			retociitu_woods = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			ntequi_vale = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			mimic_grove_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			etam_grove = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			fairy_coast = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			lemuse_beach = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			north_lemuse = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			pumpkin_grove = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			ereseveal_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			wasall_vale = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			dark_elf_village = { type = all country_or_non_sovereign_subject_holds = ROOT }
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = slu_enrika_conquest
+				duration = 10950 	
+			}
+			enrika_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			add_adm_power = 100
+			add_dip_power = 100
+			add_mil_power = 100
+		}
+	}
+	slu_army_professionalism = { 
+		icon = mission_elisabeth
+		required_missions = {}
+		position = 6
+        	generic = no
+		trigger = {
+			if = {
+				limit = { has_dlc = "Cradle of Civilization" }
+				army_professionalism = 0.50
+				army_tradition = 70
+			}
+			else = {
+				army_tradition = 70
+			}
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = slu_slug_sword
+				duration = -1
+			}                            
+    		}
+	}
+}
+slu_conquest_branch2 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		OR = {
+			tag = SLU
+			AND = {
+				was_tag = SLU
+				tag = LDQ
+			}
+		}
+	}
+	has_country_shield = yes
+
+	SLU_mission_1_1 = { 
+		icon = mission_sluggirl1
+		required_missions = {  }
+		position = 1
+        	generic = no
+		trigger = {
+			army_size_percentage = 1
+            has_mil_advisor = yes
+			num_of_generals = 1
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = slu_slug_with_the_wind
+				duration = 7300
+			}
+			add_manpower = 5
+			south_ilias_tartarus_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			} 		
+			south_ilias_coast_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			merchants_southern_route_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			iliasville_outskirts_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			iliasville_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			cave_of_trials_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			serene_coast_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			southern_plains_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}                            
+		}
+	}
+	SLU_mission_1_8 = { 
+		icon = temple
+		position = 2
+		required_missions = { SLU_mission_1_1 }
+        	generic = no
+		provinces_to_highlight = {
+			OR = {
+				area = iliasville_outskirts_area
+				area = iliasville_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			iliasville_outskirts_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			iliasville_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = slu_ilias_temple
+				duration = 7300 	
+			}
+			slime_forest_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			slime_village_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			earthworm_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			south_irina_road_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			add_adm_power = 100
+		}
+	}	
+	SLU_mission_1_9 = { 
+		icon = lime
+		position = 3
+		required_missions = { SLU_mission_1_8 }
+        	generic = no
+		provinces_to_highlight = {
+			OR = {
+				area = earthworm_area
+				area = south_irina_road_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			south_irina_road_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			earthworm_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = slu_human_lands
+				duration = 9125 	
+			}
+			iliasburg_road_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			iliasburg_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			irina_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			add_mercantilism = 3
+		}
+	}
+	SLU_mission_1_10 = { 
+		icon = mission_city_fall
+		position = 4
+		required_missions = { SLU_mission_1_9 }
+        	generic = no
+		provinces_to_highlight = {
+			OR = {
+				area = iliasburg_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			iliasburg_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = slu_iliasburg_fall 
+				duration = 10950 	
+			}
+			iliasburg_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			set_variable = {
+   		which = Human_integration
+  		value = 1
+}
+		}
+	}
+	SLU_mission_1_11 = { 
+		icon = mission_hegemon_slug 
+		required_missions = { SLU_mission_1_10 SLU_mission_1_7 SLU_mission_1_4 }
+		position = 5
+        	generic = no
+		provinces_to_highlight = {
+			OR = {
+				region = enrika_region
+				region = iliasburg_region
+				region = iliasville_region
+				region = happiness_village_region
+				region = midas_region
+				region = pornof_region
+				region = irina_region
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			enrika_region = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			iliasburg_region = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			iliasville_region = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			happiness_village_region = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			midas_region = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			pornof_region = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			irina_region = { type = all country_or_non_sovereign_subject_holds = ROOT }
+		}
+		effect = {
+			add_country_modifier = {
+				name = slu_continental_hegemon
+				duration = -1 	
+			}
+			navyl_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			port_natalia_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			south_undersea_temple_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			} 	
+			roach_tower = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			sables_coast_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			san_ilia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			san_ilia_crops = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			frog_peninsula = {
+				type = all
+				add_core = ROOT
+			}
+			frog_coast = {
+				type = all
+				add_core = ROOT
+			}
+			eastern_froglands = {
+				type = all
+				add_core = ROOT
+			}
+			froglands = {
+				type = all
+				add_core = ROOT
+			}
+			1073 = {
+				add_core = ROOT
+			}
+			add_power_projection = { 
+				type = 25_permanent_power_projection
+				amount = 25 
+			} 	 	 	 	 	 	 	 		 	 	 	 	 	 	 	
+			add_prestige_or_monarch_power = {
+				amount = 100
+			}
+		}
+	}
+		slug_magic = { 
+		icon = slu_magic
+		required_missions = {}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 226
+				province_id = 323
+				province_id = 582
+				province_id = 42
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		position = 6
+		generic = no
+		trigger = {
+			OR = {
+				226 = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+				323 = {
+					type = all
+					owned_by = ROOT
+					is_core = ROOT
+				}
+				582 = {
+					type = all
+					owned_by = ROOT
+					is_core = ROOT
+				}
+				army_tradition = 70
+			reverse_has_opinion = {
+				who = SI1
+				value = 150
+			}
+			reverse_has_opinion = {
+				who = ILP
+				value = 150
+			}
+			has_great_project = {
+			type = ilias_temple
+			tier = 3
+}
+			}
+		}
+		effect = {
+			custom_tooltip = flavor_insight_slu.5
+			set_country_flag = has_magic
+		}
+	}
+	slug_queen = { 
+		icon = LDQ
+		required_missions = {}
+		position = 7
+		generic = no
+		trigger = {
+			adm_tech = 10
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			monthly_adm = 12
+			monthly_dip = 12
+			monthly_mil = 12
+			government_rank = 2
+			army_tradition = 50
+			army_size = 150
+			grown_by_development = 750
+			legitimacy_equivalent = 100
+			is_bankrupt = no
+		}
+		effect = {
+			custom_tooltip = flavor_insight_slu.1
+			country_event = {
+				id = flavor_slu.1
+			}
+		}
+	}
+}
+slu_conquest_branch3 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		OR = {
+			tag = SLU
+			AND = {
+				was_tag = SLU
+				tag = LDQ
+			}
+		}
+	}
+	has_country_shield = yes
+
+	SLU_mission_1_2 = { 
+		icon = mission_towards_tartarus 
+		required_missions = { SLU_mission_1_1 }
+		position = 2
+        	generic = no
+		provinces_to_highlight = {
+			OR = {
+				area = south_ilias_tartarus_area
+				area = south_ilias_coast_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			south_ilias_tartarus_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			south_ilias_coast_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = slu_towards_tartarus
+				duration = 7300 	
+			}
+			pornof_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	SLU_mission_1_3 = { 
+		icon = skygirl
+		required_missions = { SLU_mission_1_2 }
+		position = 3
+        	generic = no
+		provinces_to_highlight = {
+			OR = {
+				area = north_pornof_area
+				area = eastern_ilias_tartarus_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			north_pornof_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			eastern_ilias_tartarus_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = slu_happiness_village_campaign
+				duration = 9125 	
+			}
+			happiness_village_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	SLU_mission_1_4 = { 
+		icon = melkmurder 
+		required_missions = { SLU_mission_1_3 }
+		position = 4
+        	generic = no
+		provinces_to_highlight = {
+			OR = {
+				area = sparrow_girl_realm_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			sparrow_girl_realm_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = slu_struggle_with_midas
+				duration = 10950 	
+			}
+			midas_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			set_variable = {
+   		which = Harpy_integration
+  		value = 1
+}
+		}
+	}
+	slu_estates = { 
+		icon = slu_absolutism
+		required_missions = {}
+		position = 6
+		generic = no
+		trigger = {
+			crown_land_share = 50
+			estate_loyalty = {
+					estate = estate_nobles
+					loyalty = 60
+				}
+			estate_loyalty = {
+					estate = estate_burghers
+					loyalty = 60
+				}
+			estate_loyalty = {
+					estate = estate_church
+					loyalty = 60
+				}
+			estate_loyalty = {
+					estate = estate_monster_girls
+					loyalty = 60
+				}
+			num_of_estate_agendas_completed = {
+					estate = estate_nobles
+					value = 1
+				}
+			num_of_estate_agendas_completed = {
+					estate = estate_burghers
+					value = 1
+				}
+			num_of_estate_agendas_completed = {
+					estate = estate_church
+					value = 1
+				}
+			num_of_estate_agendas_completed = {
+					estate = estate_monster_girls
+					value = 1
+				}
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = slu_absolutism
+				duration = -1
+			}                            
+		}
+	}
+
+}
+slu_diplomatic_branch = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		OR = {
+			tag = SLU
+			AND = {
+				was_tag = SLU
+				tag = LDQ
+			}
+		}
+	}
+	has_country_shield = yes
+	SLU_mission_2_1 = {
+        	icon = mission_slimyrelations
+		position = 1
+        	required_missions = {}
+        	provinces_to_highlight = {
+			OR = {
+				area = midas_slugs_area
+				area = slug_tower_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			reverse_has_opinion = {
+				who = MDS
+				value = 100
+			}
+			reverse_has_opinion = {
+				who = SLT
+				value = 100
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = slu_slug_relations
+				duration = 10950
+			}
+			create_alliance = MDS
+			create_alliance = SLT
+		}
+	}
+	SLU_mission_2_2 = {
+        	icon = slu_sisters
+		position = 2
+        	required_missions = {SLU_mission_2_1}
+		provinces_to_highlight = {
+			OR = {
+				area = midas_slugs_area
+				area = slug_tower_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			reverse_has_opinion = {
+				who = MDS
+				value = 190
+			}
+			reverse_has_opinion = {
+				who = SLT
+				value = 190
+			}
+			alliance_with = MDS
+			alliance_with = SLT
+			total_development = 500
+		}
+		effect = {
+			set_country_flag = slug_union
+			create_union = MDS
+			create_union = SLT
+			change_dip = 1
+			define_general = {
+				shock = 4
+				fire = 3
+				manuever = 1
+				siege = 3
+				name = Elisabeth
+				female = yes
+				trait = master_of_arms_personality
+			}
+		}
+	}
+	SLU_mission_3_1 = { 
+		icon = mission_south_pole
+		required_missions = { SLU_mission_1_2 }
+		position = 3
+       		generic = no
+		provinces_to_highlight = {
+			OR = {
+				area = pornof_south_peninsula_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			pornof_south_peninsula_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+		}
+		effect = {
+			add_country_modifier = {
+				name = slu_icy_frontier
+				duration = 10950
+			}
+            		2419 = {
+                		create_colony = 200
+			}
+			sedna_region = {
+            		discover_country = ROOT
+				sedna_region = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+		}
+	}
+	SLU_mission_3_2 = { 
+		icon = coast
+		required_missions = {SLU_mission_3_1}
+		position = 4
+        	generic = no
+		trigger = {
+			navy_size_percentage = 0.6
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = slu_slug_lightnavy
+				duration = 7300
+			}                            
+    		}
+	}
+	SLU_mission_3_3 = { 
+		icon = icewitch
+		required_missions = {SLU_mission_3_2}
+		position = 5
+        	generic = no
+		provinces_to_highlight = {
+			OR = {
+				area = south_pole_coven
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			south_pole_coven = { type = all country_or_non_sovereign_subject_holds = ROOT }
+		}
+		effect = {
+			set_variable = {
+   				which = Yoma_integration
+  				value = 1
+			}
+        		add_adm_power = 75
+			add_dip_power = 75
+			add_mil_power = 75
+		}
+	}
+	SLU_mission_3_4 = { 
+		icon = mission_glacier
+		required_missions = {SLU_mission_3_3}
+		position = 6
+        	generic = no
+		trigger = {
+			2418 = { is_strongest_trade_power = ROOT }
+		}
+		effect = {
+			custom_tooltip = flavor_insight_slu.2
+			add_country_modifier = {
+				name = slu_slug_south_pole_quest
+				duration = -1
+			}
+			wendigo_coast_region = {
+            discover_country = ROOT
+				wendigo_coast_region = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+		}
+	}
+	SLU_mission_3_5 = { 
+		icon = mission_umineko
+		required_missions = {SLU_mission_3_4}
+		position = 7
+        	generic = no
+		trigger = {
+			navy_size_percentage = 1
+			has_flagship = yes
+			has_naval_doctrine = any
+			num_of_heavy_ship = 50
+		}
+		effect = {
+			add_country_modifier = {
+				name = slu_slug_oceannavy
+				duration = -1
+			}                            
+		}
+	}
+}

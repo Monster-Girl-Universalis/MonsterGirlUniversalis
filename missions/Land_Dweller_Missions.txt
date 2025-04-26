@@ -237,7 +237,7 @@ land_dweller_trade_expansion = {
 			add_prestige = 20
 		}
 	}
-	gen_land_dweller_royal_ambitions = {
+	gen_high_land_dweller_ambitions = {
 		icon = mission_land_dweller_queen_challenger
 		required_missions = { gen_powerful_land_dweller_girl_ruler }
 		position = 5
@@ -254,6 +254,14 @@ land_dweller_trade_expansion = {
 		}
 		
 		effect = {
+			if = {
+				custom_tooltip = accepted_high_land_dweller_ideas_tt
+				set_country_flag = accepted_high_land_dweller_ideas
+				hidden_effect = {
+					swap_free_idea_group = yes
+				}
+			}
+			else = { add_prestige = 50 }
 			add_prestige = 50
 			add_adm_power = 50
 			add_dip_power = 50

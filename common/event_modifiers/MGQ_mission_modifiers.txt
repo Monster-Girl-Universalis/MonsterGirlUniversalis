@@ -509,9 +509,9 @@ gen_powerful_human_ruler_mod = {
 	stability_cost_modifier = -0.20
 }
 gen_human_challenge_the_major_powers = {
-	monarch_admin_power = 1
-	monarch_diplomatic_power = 1
-	monarch_military_power = 1
+	country_admin_power = 1
+	country_diplomatic_power = 1
+	country_military_power = 1
 	monthly_splendor = 1
 }
 
@@ -996,6 +996,10 @@ ML1_vampire_war_for_independence = {
 RT1_spiders_and_scorpions_united = {
 	manpower_in_accepted_culture_provinces = 0.10
 	num_accepted_cultures = 2
+}
+RT1_accepted_minotaurs = {
+	manpower_in_accepted_culture_provinces = 0.05
+	num_accepted_cultures = 1
 }
 RT1_defeated_sabasa = {
 	land_morale = 0.15

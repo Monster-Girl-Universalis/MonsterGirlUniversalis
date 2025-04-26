@@ -6,14 +6,6 @@ historical_score = 500
 historical_idea_groups = { 
 }
 historical_units = { 
-	infantry_elf_t1_01
-	infantry_elf_t5_01
-	infantry_elf_t10_01
-	infantry_elf_t13_01
-	infantry_elf_t16_01
-	infantry_elf_t19_01
-	infantry_elf_t23_01
-	infantry_elf_t26_01
 }
 monarch_names = { 
 	"Motohito #0" = 5

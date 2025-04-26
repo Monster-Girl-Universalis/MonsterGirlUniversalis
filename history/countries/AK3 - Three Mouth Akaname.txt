@@ -1,0 +1,18 @@
+government = monarchy
+government_rank = 2
+religion = yamatai_religion
+technology_group = TECH_DEMI_HUMAN
+primary_culture = Three_Mouth_Akaname
+add_government_reform = Demi_Human_realm
+1444.1.1 = { 
+	monarch = { 
+		name = "Sayori"
+		dynasty = "Akaname"
+		birth_date = 1424.1.1
+		adm = 5
+		dip = 5
+		mil = 5
+		female = yes
+	}
+}
+capital = 3156

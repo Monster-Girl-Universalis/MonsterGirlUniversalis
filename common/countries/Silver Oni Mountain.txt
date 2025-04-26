@@ -1,0 +1,147 @@
+graphical_culture = asiangfx
+color = { 61 211 100 }
+revolutionary_colors = { 1 3 5 }
+random_nation_chance = 0
+historical_score = 500
+historical_idea_groups = { 
+}
+historical_units = { 
+}
+monarch_names = { 
+	"Motohito #0" = 5
+	"Mihito #0" = 5
+	"Hikohito #0" = 5
+	"Fusahito #0" = 5
+	"Katsuhito #0" = 5
+	"Tomohito #0" = 5
+	"Michihito #0" = 5
+	"Kazuhito #0" = 5
+	"Kotohito #0" = 5
+	"Tsuguhito #0" = 5
+	"Nagahito #0" = 5
+	"Satohito #0" = 5
+	"Asahito #0" = 5
+	"Yasuhito #0" = 5
+	"Teruhito #0" = 5
+	"Hidehito #0" = 5
+	"Morohito #0" = 5
+	"Ayahito #0" = 5
+	"Takauji #0" = 5
+	"Yoshiakira #0" = 5
+	"Yoshimitsu #0" = 5
+	"Yoshimochi #0" = 5
+	"Yoshikazu #0" = 5
+	"Yoshinori #0" = 5
+	"Yoshikatsu #0" = 5
+	"Yoshimasa #0" = 5
+	"Yoshihisa #0" = 5
+	"Yoshitane #0" = 5
+	"Yoshizumi #0" = 5
+	"Yoshiharu #0" = 5
+	"Yoshiteru #0" = 5
+	"Yoshihide #0" = 5
+	"Yoshiaki #0" = 5
+	"Nobutada #0" = 5
+	"Hidenobu #0" = 5
+	"Hideyoshi #0" = 5
+	"Hideyori #0" = 5
+	"Ieyasu #0" = 5
+	"Hidetada #0" = 5
+	"Iemitsu #0" = 5
+	"Ietsuna #0" = 5
+	"Tsunayoshi #0" = 5
+	"Ienobu #0" = 5
+	"Ietsugu #0" = 5
+	"Yoshimune #0" = 5
+	"Ieshige #0" = 5
+	"Ieharu #0" = 5
+	"Ienari #0" = 5
+	"Ieyoshi #0" = 5
+	"Iesada #0" = 5
+	"Iemochi #0" = 5
+	"Yoshinobu #0" = 5
+	"Haruka #0" = -20
+	"Izuna #0" = -20
+	"Kitsu #0" = -20
+	"Nanabi #0" = -20
+	"Kamuro #0" = -20
+	"Minamo #0" = -20
+	"Yao #0" = -20
+	"Yayoi #0" = -20
+	"Kyo #0" = -20
+	"Reina #0" = -20
+	"Tsubasa #0" = -20
+	"Kureha #0" = -20
+	"Oyuki #0" = -20
+	"Satsuki #0" = -20
+	"Natsuki #0" = -20
+	"Nanoha #0" = -20
+	"Magatsu #0" = -20
+	"Kasumi #0" = -20
+	"Shoki #0" = -20
+	"Kaname #0" = -20
+	"Manako #0" = -20
+	"Akemi #0" = -20
+	"Akane #0" = -20
+	"Koharu #0" = -20
+	"Honoka #0" = -20
+	"Mika #0" = -20
+	"Etsuko #0" = -20
+	"Hana #0" = -20
+	"Kaede #0" = -20
+	"Nana #0" = -20
+}
+leader_names = { 
+	Yamato Arisugawa Asaka Fushimi "Kan'in" Katsura Kaya Kitashirakawa Kuni Nashimoto
+	Takeda Yamashina Fujikawa Tanaka Shimizu Nakamura Morioka Sato Suzuki Yamamoto
+	Ito Kobayashi Hasegawa Yamada Kato Yoshida Sasaki Nakajima Oda Mori
+	Hayashi Ishikawa Sakamoto Aoki Matsui Kimura Inoue Watanabe Nakagawa Fujii
+	Takada Yoshida Okamoto Hayashida Kagayaki 
+}
+ship_names = { 
+	Abukuma Akagi Akashi Akatsuki Akebono Aki Akigumo Akikaze Akisame Akishimo
+	Akitsushima Akizuki Amagi Amagiri Amatsukaze Aoba Aoi Arare Arashi Arashio
+	Ariake Asadori Asagao Asagiri Asagumo Asahi Asakaze Asama Asanagi Asashimo
+	Asashio Ashi Ashigara Aso Ataka Atami Atogo Ayanami Azuma Azusa
+	Banjo Banryu Chidori Chikuma Chishima Chitose Chiyoda Chiyodagata Chogei Chokai
+	Chuyo Enoki Etorofu Fubuki Fuji Fujinami Furutaka Fushimi Fuso Futami
+	Fuyo Fuyutsuki Hae Hagi Hagikaze Haguro Hakaze Hamakaze Hamanami Hanazuki
+	Haogi Harukaze Haruna Harusame Harutsuki Hashidate Hashima Hatakaze Hato Hatsuharu
+	Hatsukari Hatsukaze Hatsuse Hatsushimo Hatsuume Hatsuyuki Hatsuzakura Hatsuzuki Hayabusa Hayaharu
+	Hayanami Hayase Hayashimo Hayashio Hayasui Hayate Heien Hibiki Hiei Hinoki
+	Hira Hirado Hiryu Hishi Hitonose Hiyodori Hizen Hokaze Hosho Hyuga
+	Ibuki Ikazuchi Ikazuchi Iki Ikoma Inazuma Ioshima Isokaze Isonami Isuzo
+	Itsukushima Iwami Iwate Izumi Izumo Jingei Jintsu Junyo Kaba Kaede
+	Kaga Kagero Kaimon Kaiten Kaiyo Kaki Kako Kamikaze Kamoi Karatsu
+	Karukaya Kasagi Kashi Kashii Kashiwara Kasuga Kasumi Katori Katsura Katsuragi
+	Kawachi Kawakaze Kaya Kazagumo Keyaki Kiji Kikuzuki Kinu Kinugasa Kiri
+	Kirishima Kisaragi Kishinami Kiso Kitakami Kiyonami Kiyoshimo Komahashi Kongo Kotaka
+	Kotetsu Kuma Kumano Kurama Kuroshio Kusunoki Kuwa Kuzu Maikaze Maki
+	Makigumo Makinami Manazuru Matsu Matsukaze Matsushima Maya Michishio Michizuki Mikaho
+	Mikasa Mikazuki Mikuma Minazuki Minegumo Minekaze Mishima Miyuki Mizhuo Mochizuki
+	Mogami Momi Momo Moshun Murakumo Murasame Musashi Mutsu Mutsuki Myoko
+	Nachi Naganami Nagara Nagato Nagatsuki Naka Namikaze Naniwa Nara Nashi
+	Natori Natsugumo Natsushio Natsuzuki Nenohi Niitaka Niizuki Nire Nisshin Niyodo
+	Nojima Nokaze Noshiro Notoro Nowaki Numakaze Oboro Odake Oi Oite
+	Okikaze Okinami Okinawa Okinoshima Onami Oshima Oshio Otomari Otori Otowa
+	Oyashio Oyodo Ryuho Ryujo Sagami Sagi Sagiri Sakaki Sakawa Sakura
+	Samidare Sanae Satsuki Satsuma Sawakaze Sazanami Sendai Settsu Shigure Shii
+	Shikinami Shikishima Shimakaze Shimotsutki Shimushu Shinano Shinonome Shinsoku Shiokaze Shirakami
+	Shirakumo Shiranui Shirataka Shiratsuyu Shoho Shokaku Sokuten Soryu Sugi Suma
+	Sumida Sumire Suwo Suzukaze Suzunami Suzutsuki Suzuya Suzuya Tachibana Tachikaze
+	Taiho Taiyo Takachiho Takanami Takao Takasago Takashio Take Tama Tamanami
+	Tango Tanikaze Tatara Tategami Tatsuta Teibo Tenryu Teruzuki Toba Tokitsukaze
+	Tokiwa Tomozuru Tone Tosa Tsubaki Tsubame Tsugaru Tsukuba Tsukushi Tsushima
+	Tsuta Uji Ume Umikaze Unebi Unryu Unyo Unyo Urakaze Uranami
+	Ushio Usugumo Uzuki Wakaba Wakakusa Wakamiya Wakatake Wakatsuki Wakazakura Warabi
+	Yadake Yaeyama Yaezakura Yahagi Yakaze Yakumo Yamagumo Yamakaze Yamashiro Yamato
+	Yamazuki Yanagi Yashima Yasoshima Yayoi Yodo Yodohashi Yoizuki Yomogi Yoshino
+	Yoshun Yubari Yugiri Yugumo Yukigumo Yukikaze Yunagi Yura Yuzuki Zuiho
+	Zuikaku
+}
+army_names = { 
+	"Silver Oni Army" "$PROVINCE$ Army" 
+}
+fleet_names = { 
+	"Silver Oni Navy" "$PROVINCE$ Fleet" 
+}

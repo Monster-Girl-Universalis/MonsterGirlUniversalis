@@ -1,0 +1,118 @@
+graphical_culture = asiangfx
+color = { 200 144 151 }
+revolutionary_colors = { 1 2 7 }
+random_nation_chance = 0
+historical_score = 500
+historical_idea_groups = { 
+}
+historical_units = { 
+	infantry_bst_t1_01 infantry_bst_t5_01 infantry_bst_t10_01 infantry_bst_t13_01 infantry_bst_t16_01 infantry_bst_t19_01 infantry_bst_t23_01 infantry_bst_t26_01 
+}
+monarch_names = { 
+	"Motohito #0" = 5
+	"Mihito #0" = 5
+	"Hikohito #0" = 5
+	"Fusahito #0" = 5
+	"Katsuhito #0" = 5
+	"Tomohito #0" = 5
+	"Michihito #0" = 5
+	"Kazuhito #0" = 5
+	"Kotohito #0" = 5
+	"Tsuguhito #0" = 5
+	"Nagahito #0" = 5
+	"Satohito #0" = 5
+	"Asahito #0" = 5
+	"Yasuhito #0" = 5
+	"Teruhito #0" = 5
+	"Hidehito #0" = 5
+	"Morohito #0" = 5
+	"Ayahito #0" = 5
+	"Takauji #0" = 5
+	"Yoshiakira #0" = 5
+	"Yoshimitsu #0" = 5
+	"Yoshimochi #0" = 5
+	"Yoshikazu #0" = 5
+	"Yoshinori #0" = 5
+	"Yoshikatsu #0" = 5
+	"Yoshimasa #0" = 5
+	"Yoshihisa #0" = 5
+	"Yoshitane #0" = 5
+	"Yoshizumi #0" = 5
+	"Yoshiharu #0" = 5
+	"Yoshiteru #0" = 5
+	"Yoshihide #0" = 5
+	"Yoshiaki #0" = 5
+	"Nobutada #0" = 5
+	"Hidenobu #0" = 5
+	"Hideyoshi #0" = 5
+	"Hideyori #0" = 5
+	"Ieyasu #0" = 5
+	"Hidetada #0" = 5
+	"Iemitsu #0" = 5
+	"Ietsuna #0" = 5
+	"Tsunayoshi #0" = 5
+	"Ienobu #0" = 5
+	"Ietsugu #0" = 5
+	"Yoshimune #0" = 5
+	"Ieshige #0" = 5
+	"Ieharu #0" = 5
+	"Ienari #0" = 5
+	"Ieyoshi #0" = 5
+	"Iesada #0" = 5
+	"Iemochi #0" = 5
+	"Yoshinobu #0" = 5
+	"Hip #0" = -20
+	"Lihitinu #0" = -20
+	"Barbun #0" = -20
+	"Amara #0" = -20
+	"Reina #0" = -20
+	"Selene #0" = -20
+	"Nina #0" = -20
+	"Carol #0" = -20
+	"Kyona #0" = -20
+	"Odette #0" = -20
+	"Tsubasa #0" = -20
+	"Leene #0" = -20
+	"Sara #0" = -20
+	"Satsuki #0" = -20
+	"Natsuki #0" = -20
+	"Selene #0" = -20
+	"Stella #0" = -20
+	"Sonya #0" = -20
+	"Shoki #0" = -20
+	"Anna #0" = -20
+	"Teresa #0" = -20
+	"Julia #0" = -20
+	"Janette #0" = -20
+	"Yvette #0" = -20
+	"Elisabeth #0" = -20
+	"Shadow #0" = -20
+	"Sakura #0" = -20
+	"Elissa #0" = -20
+	"Claudia #0" = -20
+	"Lucretia #0" = -20
+}
+leader_names = { 
+	Wildmane Fierceclaw Savagefang Pantherpounce Lionheart Tigertooth Leopardclaw Wolfpack Bearpaw Beaststride
+	Hyenalaugh Lynxsight Cougargrowl Boarcrush Raccoonmask Badgerburrow Batwing Panthera Elkstomp Feralbite
+	Shadowbeast Weredoom Lycanblood Clawfury Rampantroar Huntress Clawstrike Growlsnarl Howlermoon 
+}
+ship_names = { 
+	Claw Fang Roar Pounce Fury Swift Wild Scales Mane Talon
+	Whisker Tusk Growl Hunt Jaws Blaze Thorn Stalk Rumble Razor
+	Thunder Serpent Viper Lioness Manta Ursine Rhino Gorilla Tiger Shark
+	Falcon Raptor Panther Hyena Leopard Sting Saber Barracuda Prowler Feral
+	Feral Hawk Wolf Salamander Roamer Dread Huntress Falcon Lynx Jaguar
+	Stalker Phoenix Griffin Cheetah Bear Panther Raptor Thunderclaw Fangtooth Ferocity
+	Scales Maw Stealth Primal Swift Growl Mane Pounce "Fury's Roar" "Talon's Pride"
+	"Savage Beauty" Lionheart "Prowling Serpent" "Swift Mane" "Fangs of the Sea" "Panther's Grace" "Gryphon's Wing" "Beast's Bounty" "Raptor's Reach" "Clawed Courage"
+	"Maw of the Deep" "Viper's Venom" "Howling Wolf" "Fierce Falcon" "Swift Rabbit" "Cunning Fox" "Stalking Jaguar" "Soaring Griffin" "Cheetah's Sprint" "Bear's Resilience"
+	"Lynx's Gaze" "Tiger's Strike" "Salamander's Flame" "Rampaging Rhino" "Manticore's Claw" "Lurking Lizard" "Dragon's Breath" "Hyena's Laughter" "Wolfpack's Might" Sabertooth
+	"Panthera Marina" 
+}
+army_names = { 
+	"Kudan Army" "$PROVINCE$ Army" 
+}
+fleet_names = { 
+	"Kudan Navy" "$PROVINCE$ Navy" 
+}

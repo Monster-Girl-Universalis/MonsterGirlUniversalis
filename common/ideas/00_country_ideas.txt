@@ -228,6 +228,51 @@ advanced_roid_ideas = {
 	}
 }
 
+#High Land Dweller
+high_land_dweller_ideas = {
+	start = {
+		fire_damage_received = -0.20
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+
+	bonus = {		
+		land_attrition = -0.15		
+		land_morale = 0.20
+		
+	}
+	
+	trigger = {
+		has_country_flag = accepted_high_land_dweller_ideas
+	}
+	free = yes
+
+	high_land_dweller_underground_catacombs = {
+		global_allowed_num_of_buildings = 1
+	}
+	high_land_dweller_experts_at_survival = {		
+		land_attrition = -0.40
+	}
+	high_land_dweller_attuned_to_nature = {
+		global_monthly_devastation = -0.5
+		global_prosperity_growth = 0.5
+	}
+	high_land_dweller_using_every_resource = {
+		build_cost = -0.33
+	}
+	high_land_dweller_toxic_breath = {
+		hostile_attrition = 2
+		max_hostile_attrition = 4
+	}
+	high_land_dweller_royal_governance = {
+		prestige = 1
+		state_maintenance_modifier = -0.25
+	}
+	high_land_dweller_enhanced_mass_quick = {
+		movement_speed = 0.2
+	}
+}
 #Sphynx
 PY1_ideas = {
 	start = {

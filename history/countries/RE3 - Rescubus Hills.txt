@@ -1,0 +1,18 @@
+government = monarchy
+government_rank = 2
+primary_culture = Monster_Succubi
+add_government_reform = Succubi_realm
+religion = dark_goddess_religion
+technology_group = TECH_SUCCUBI
+1444.1.1 = { 
+	monarch = { 
+		name = "Ayane"
+		dynasty = "the Rescubus"
+		birth_date = 1424.1.1
+		adm = 5
+		dip = 5
+		mil = 4
+		female = yes
+	}
+}
+capital = 3380

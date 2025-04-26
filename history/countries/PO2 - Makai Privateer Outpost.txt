@@ -1,0 +1,18 @@
+government = monarchy
+religion = water_religion
+technology_group = TECH_MERMAID
+primary_culture = Mermaid_Pirate
+add_government_reform = pirate_state_reform
+government_rank = 1
+1444.1.1 = { 
+	monarch = { 
+		name = "Jill"
+		dynasty = "the Privateer"
+		birth_date = 1424.1.1
+		adm = 4
+		dip = 5
+		mil = 3
+		female = yes
+	}
+}
+capital = 3213

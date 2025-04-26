@@ -1,0 +1,20 @@
+government = monarchy
+government_rank = 2
+primary_culture = Spirit_Girl
+add_government_reform = salamander_reform
+religion = fire_religion
+technology_group = TECH_GHOST
+historical_rival = GH3#They just don't get along...
+1444.1.1 = { 
+	monarch = { 
+		name = "Grimoire"
+		dynasty = "the Fire Spirit"
+		birth_date = 1424.1.1
+		adm = 5
+		dip = 5
+		mil = 3
+		female = yes
+	}
+	add_ruler_personality = immortal_personality
+}
+capital = 2917

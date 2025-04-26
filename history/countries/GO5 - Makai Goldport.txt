@@ -1,0 +1,7 @@
+government = monarchy
+government_rank = 1
+primary_culture = grangold_human
+religion = ilias_light_religion
+technology_group = TECH_HUMAN
+add_government_reform = goldport_reform
+capital = 2952

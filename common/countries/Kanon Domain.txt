@@ -1,0 +1,118 @@
+graphical_culture = asiangfx
+color = { 87 145 42 }
+revolutionary_colors = { 5 2 6 }
+random_nation_chance = 0
+historical_score = 500
+historical_idea_groups = { 
+}
+historical_units = { 
+	infantry_alr_t1_01 infantry_alr_t5_01 infantry_alr_t10_01 infantry_alr_t13_01 infantry_alr_t16_01 infantry_alr_t19_01 infantry_alr_t23_01 infantry_alr_t26_01 
+}
+monarch_names = { 
+	"Motohito #0" = 5
+	"Mihito #0" = 5
+	"Hikohito #0" = 5
+	"Fusahito #0" = 5
+	"Katsuhito #0" = 5
+	"Tomohito #0" = 5
+	"Michihito #0" = 5
+	"Kazuhito #0" = 5
+	"Kotohito #0" = 5
+	"Tsuguhito #0" = 5
+	"Nagahito #0" = 5
+	"Satohito #0" = 5
+	"Asahito #0" = 5
+	"Yasuhito #0" = 5
+	"Teruhito #0" = 5
+	"Hidehito #0" = 5
+	"Morohito #0" = 5
+	"Ayahito #0" = 5
+	"Takauji #0" = 5
+	"Yoshiakira #0" = 5
+	"Yoshimitsu #0" = 5
+	"Yoshimochi #0" = 5
+	"Yoshikazu #0" = 5
+	"Yoshinori #0" = 5
+	"Yoshikatsu #0" = 5
+	"Yoshimasa #0" = 5
+	"Yoshihisa #0" = 5
+	"Yoshitane #0" = 5
+	"Yoshizumi #0" = 5
+	"Yoshiharu #0" = 5
+	"Yoshiteru #0" = 5
+	"Yoshihide #0" = 5
+	"Yoshiaki #0" = 5
+	"Nobutada #0" = 5
+	"Hidenobu #0" = 5
+	"Hideyoshi #0" = 5
+	"Hideyori #0" = 5
+	"Ieyasu #0" = 5
+	"Hidetada #0" = 5
+	"Iemitsu #0" = 5
+	"Ietsuna #0" = 5
+	"Tsunayoshi #0" = 5
+	"Ienobu #0" = 5
+	"Ietsugu #0" = 5
+	"Yoshimune #0" = 5
+	"Ieshige #0" = 5
+	"Ieharu #0" = 5
+	"Ienari #0" = 5
+	"Ieyoshi #0" = 5
+	"Iesada #0" = 5
+	"Iemochi #0" = 5
+	"Yoshinobu #0" = 5
+	"Dorothy #0" = -20
+	"Widow #0" = -20
+	"Lampas #0" = -20
+	"Casta #0" = -20
+	"Deana #0" = -20
+	"Dorie #0" = -20
+	"Melon #0" = -20
+	"Belladonna #0" = -20
+	"Fleesia #0" = -20
+	"Wakame #0" = -20
+	"Raffia #0" = -20
+	"Leene #0" = -20
+	"Alrauna #0" = -20
+	"Ragora #0" = -20
+	"Selene #0" = -20
+	"Stella #0" = -20
+	"Sonya #0" = -20
+	"Shoki #0" = -20
+	"Anna #0" = -20
+	"Teresa #0" = -20
+	"Julia #0" = -20
+	"Janette #0" = -20
+	"Yvette #0" = -20
+	"Elisabeth #0" = -20
+	"Shadow #0" = -20
+	"Sakura #0" = -20
+	"Elissa #0" = -20
+	"Claudia #0" = -20
+	"Lucretia #0" = -20
+}
+leader_names = { 
+	Florica Rosenthorn Leafgreen Vinedancer Petalbloom Mossleaf Willowbloom Sunflower Wildbloom Clovermist
+	Meadowgrass Bloomfield Thornblossom Verdantia Rootbinder Bramblethorn Nightshade Fernweave Thistlewind Florontia
+	Sylvanica Leafshade Thornsong Rootclaw 
+}
+ship_names = { 
+	"Enchantress's Embrace" "Blossom Maiden" Petalwhisper "Thorny Vines" "Nectar's Song" "Verdant Grace" "Perfumed Breeze" "Siren's Serenade" "Flora's Fury" "Vineyard Voyager"
+	"Bloom's Brilliance" "Ensnaring Beauty" "Blossom's Bounty" Petalveil Thornheart "Lily's Lament" Vinedancer "Dewdrop Dancer" "Garden Serpent" "Rose's Radiance"
+	"Wisteria's Whisper" "Lotus Blossom" "Ivy's Enchantment" "Blossom's Pride" "Nymph's Kiss" "Orchid's Oath" "Pansy's Promise" "Violette's Voyage" "Marigold's Majesty" "Carnation's Courage"
+	"Dahlia's Delight" "Hyacinth's Hymn" "Lily of the Sea" "Poppy's Passion" "Snapdragon's Song" "Sunflower's Solace" "Tulip's Tempest" "Zephyr's Zest" "Honeysuckle's Harmony" "Orchid's Opulence"
+	Floralblossom "Vine Serenade" "Thorny Rose" "Petal Dancer" "Enchanting Ivy" "Whispering Willow" "Bloom's Embrace" "Scented Breeze" "Nectar's Grace" "Foliage Fury"
+	"Lily's Song" "Verdant Vessel" Honeydew "Bramble's End" "Orchid's Kiss" "Ivy League" "Dewdrop Destiny" "Blossom's Promise" Rosewood "Snapdragon's Secret"
+	"Thistle's Thorn" "Petunia's Passion" "Lotus Legacy" "Wisteria's Whim" "Primrose Pearl" "Morning Glory" "Sunflower Symphony" Violetveil "Cactus Crest" "Magnolia Mirage"
+	"Aloe's Aquatic" "Dahlia's Dream" "Chamomile's Charm" "Azalea's Awakening" Zinnia Tulip Poppy Daffodil Iris Lily
+	Sunflower Petunia Azalea Chamomile Dahliarush Honeysuckle Aloebrisk Fernwhisper Cactusstorm Violetshade
+	Magnoliasurge Daisysong Primrose Wisteriawisp Lotusdream Marigold Petuniawisp Thistlerose Snapdragon Honeydew
+	Foliagewisp Orchidshade Dewmist Bramblesong Lilyvale Rosepetal Willowgale Nectarglow Ivythorn Blossomfire
+	Vineshade Petalbloom Thornwind 
+}
+army_names = { 
+	"Kanon Army" "Velraune Army" "Rose Aristocrat Army" "Nepenthes Army" "Marlboro Army" "World Tree Flower Army" "$PROVINCE$ Army" 
+}
+fleet_names = { 
+	"Kanon Navy" "Velraune Navy" "Rose Aristocrat Navy" "Nepenthes Navy" "Marlboro Navy" "World Tree Flower Navy" "$PROVINCE$ Navy" 
+}

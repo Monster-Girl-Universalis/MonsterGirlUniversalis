@@ -172,7 +172,6 @@ tamamo_internal_development_and_cow_demon_branch = {
 					}
 					employed_advisor = {
 						type = spymaster
-						skill = 5
 					}					
 				}
 			}		

@@ -1,0 +1,19 @@
+government = monarchy
+government_rank = 2
+religion = eden_resistance_religion
+technology_group = TECH_ANGEL
+primary_culture = Fallen_Angel
+add_government_reform = Angel_realm
+1444.1.1 = { 
+	monarch = { 
+		name = "Eden"
+		dynasty = "Resistance"
+		birth_date = 1.1.1
+		adm = 6
+		dip = 4
+		mil = 6
+		female = yes
+	}
+	add_ruler_personality = immortal_personality
+}
+capital = 3146

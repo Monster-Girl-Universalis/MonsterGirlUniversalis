@@ -1,0 +1,18 @@
+government = monarchy
+government_rank = 2
+primary_culture = Ancient_Dragon
+religion = yamatai_religion
+technology_group = TECH_DRAGON
+1444.1.1 = { 
+	monarch = { 
+		name = "Reina"
+		dynasty = "the Ancient Dragon"
+		female = yes
+		birth_date = 1424.1.1
+		adm = 5
+		dip = 5
+		mil = 5
+	}
+}
+add_government_reform = Dragon_realm
+capital = 3447

@@ -229,6 +229,9 @@ age_of_reformation = {	#Monster Lord Invasions
 						full_idea_group = angel_ideas 
 						full_idea_group = roid_ideas 
 						full_idea_group = tanuki_ideas 
+						full_idea_group = fairy_ideas 
+						full_idea_group = ghost_ideas 
+						full_idea_group = giant_ideas 
 					}
 				}
 		}

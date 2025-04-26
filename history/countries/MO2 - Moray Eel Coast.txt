@@ -1,0 +1,18 @@
+government = monarchy
+government_rank = 2
+primary_culture = Moray_Eel_Girl
+religion = dark_goddess_religion
+technology_group = TECH_SCYLLA
+1444.1.1 = { 
+	monarch = { 
+		name = "Nuru"
+		dynasty = "Moray"
+		female = yes
+		birth_date = 1424.1.1
+		adm = 4
+		dip = 5
+		mil = 4
+	}
+}
+add_government_reform = Scylla_realm
+capital = 3043

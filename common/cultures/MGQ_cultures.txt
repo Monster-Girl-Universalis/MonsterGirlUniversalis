@@ -370,6 +370,15 @@ land_dweller = {
 			diplomatic_upkeep = -1
 		}
 	}
+	Sarlacc_Girl = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}
+	}
 
 	male_names = {
 		
@@ -411,6 +420,15 @@ undead = {
 		}	
 	}
 	Ghoul_Girl = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}	
+	}
+	Tao = {
 
 
 
@@ -544,6 +562,33 @@ succubi = {
 			diplomatic_upkeep = -1
 		}	
 	}
+	Yoma_Succubi = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}	
+	}
+	Arc_Succubi = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}	
+	}
+	Royal_Succubi = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}	
+	}
 
 	male_names = {
 		
@@ -603,6 +648,51 @@ slime = {
 		}	
 	}
 	Gelatinous_Cube_Girl = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}	
+	}
+	Bomb_Slime = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}	
+	}
+	Liqueur_Slime = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}	
+	}
+	Royal_Slime = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}	
+	}
+	Giga_Slime = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}	
+	}
+	Mud_Girl = {
 
 
 
@@ -678,6 +768,15 @@ harpy = {
 		}	
 	}
 	Penguin_Girl = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}	
+	}
+	Archaeopteryx_Girl = {
 
 
 
@@ -811,6 +910,15 @@ elf = {
 		}	
 	}
 	Horai_Elf = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}	
+	}
+	Rogue_Elf = {
 
 
 
@@ -977,6 +1085,24 @@ insect = {
 		}	
 	}
 	Scorpion_Girl = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}	
+	}
+	Pabilsag_Girl = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}	
+	}
+	Moth_Girl = {
 
 
 
@@ -1195,6 +1321,33 @@ beast = {
 			diplomatic_upkeep = -1
 		}	
 	}
+	Baphomet_Girl = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}	
+	}
+	Kudan_Girl = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}	
+	}
+	Aun_Girl = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}	
+	}
 
 	male_names = {
 		
@@ -1314,6 +1467,33 @@ alraune = {
 			diplomatic_upkeep = -1
 		}	
 	}
+	Nepenthes_Girl = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}	
+	}
+	Marlboro_Girl = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}	
+	}
+	Giga_Dryad = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}	
+	}
 
 	male_names = {
 		
@@ -1391,6 +1571,33 @@ dragon = {
 		}	
 	}
 	Aevis_Girl = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}	
+	}
+	Marcosias_Girl = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}	
+	}
+	Ancient_Dragon = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}	
+	}
+	Dragonhead_Girl = {
 
 
 
@@ -1552,6 +1759,33 @@ apoptosis = {
 			diplomatic_upkeep = -1
 		}
 	}
+	Generated_Chaos_Image = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}
+	}
+	Human_Apoptosis = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}
+	}
+	Harpy_Apoptosis = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}
+	}
 
 	male_names = {
 
@@ -1654,6 +1888,33 @@ demi_human = {
 		}
 	}
 	Ancient_Youkai = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}
+	}
+	Asura = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}
+	}
+	Shiva_Girl = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}
+	}
+	Three_Mouth_Akaname = {
 
 
 
@@ -1768,6 +2029,33 @@ yoma = {
 		}
 	}
 	Royal_Yoma = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}
+	}
+	Garchimacera_Girl = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}
+	}
+	Gargoyle_Girl = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}
+	}
+	Athena_Girl = {
 
 
 
@@ -2020,6 +2308,24 @@ mermaid = {
 			diplomatic_upkeep = -1
 		}	
 	}
+	Great_Mermaid = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}	
+	}
+	Monstro_Girl = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}	
+	}
 
 	male_names = {
 
@@ -2160,6 +2466,15 @@ scylla = {
 			diplomatic_upkeep = -1
 		}
 	}
+	Moray_Eel_Girl = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}
+	}
 
 	male_names = {
 
@@ -2246,6 +2561,15 @@ lamia = {
 			diplomatic_upkeep = -1
 		}
 	}
+	Royal_Medusa = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}
+	}
 
 	male_names = {
 
@@ -2295,7 +2619,78 @@ doll = {
 			diplomatic_upkeep = -1
 		}
 	}
+	Slayer_Doll = {
 
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}
+	}
+	Saint_Doll = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}
+	}
+	Beast_Doll = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}
+	}
+	Shouting_Doll = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}
+	}
+	Ghost_Doll = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}
+	}
+	Agni_Doll = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}
+	}
+	Giant_Doll = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}
+	}
+	Masahime_Doll = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}
+	}
 	male_names = {
 
 
@@ -2326,7 +2721,132 @@ chimera = {
 			diplomatic_upkeep = -1
 		}
 	}
+	Angel_Chimera = {
 
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}
+	}
+	Chimera_Dryad = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}
+	}
+	Chimera_Beast = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}
+	}
+	Chimera_Slime = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}
+	}
+	Chimera_Sea_Dweller = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}
+	}
+	Weapon_Type_Mutant = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}
+	}
+	Chimera_Scylla = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}
+	}
+	Chimera_Medullahan = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}
+	}
+	Chimera_Plant = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}
+	}
+	Chimera_Insect = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}
+	}
+	Chimera_Slug = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}
+	}
+	Catoblepas_Girl = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}
+	}
+	Typhon_Girl = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}
+	}
+	Next_Doll_Chimera = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}
+	}
 	male_names = {
 
 
@@ -2374,7 +2894,15 @@ angel = {
 			diplomatic_upkeep = -1
 		}
 	}
+	Doppel_Luka = {
 
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}
+	}
 	male_names = {
 
 
@@ -2405,6 +2933,26 @@ roid = {
 		}
 	}
 	Cyborg = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1	
+			monarch_lifespan = 1
+		}
+	}
+	Mecha_Cat = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1	
+			monarch_lifespan = 1
+		}
+	}
+	Mecha_Fox = {
 
 
 

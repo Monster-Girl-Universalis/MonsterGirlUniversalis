@@ -64,6 +64,7 @@ monarchy = {
 				Zombie_realm
 				Ghost_realm
 				Land_Dweller_realm
+				Land_Dweller_Empire
 				Slime_realm
 				Beast_realm
 				Succubi_realm

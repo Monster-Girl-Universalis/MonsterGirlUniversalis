@@ -1,0 +1,82 @@
+spriteTypes = {
+	spriteType = {
+        name = "slug_queen_mission"
+        texturefile = "gfx//interface//missions//slug_queen_mission.dds"
+    }
+    spriteType = {
+        name = "wind_power"
+        texturefile = "gfx//interface//missions//wind_power.dds"
+    }
+    spriteType = {
+        name = "undine_cave"
+        texturefile = "gfx//interface//missions//undine_cave.dds"
+    }
+     spriteType = {
+        name = "undine_sea"
+        texturefile = "gfx//interface//missions//undine_sea.dds"
+    }
+    spriteType = {
+        name = "crusader_mission"
+        texturefile = "gfx//interface//missions//crusade_mission.dds"
+    }
+    spriteType = {
+        name = "earth_power"
+        texturefile = "gfx//interface//missions//earth_power.dds"
+    }
+    spriteType = {
+        name = "irredentism_pic"
+        texturefile = "gfx//interface//missions//irredentism_pic.dds"
+    }
+    spriteType = {
+        name = "kraken_sea"
+        texturefile = "gfx//interface//missions//kraken_sea.dds"
+    }
+    spriteType = {
+        name = "roach_tower_irredentism"
+        texturefile = "gfx//interface//missions//roach_tower_irredentism.dds"
+    }
+    spriteType = {
+        name = "navy_irredentism"
+        texturefile = "gfx//interface//missions//navy_irredentism.dds"
+    }
+    spriteType = {
+        name = "gloria_irredentism"
+        texturefile = "gfx//interface//missions//gloria_irredentism.dds"
+    }
+    spriteType = {
+        name = "greater_ilias"
+        texturefile = "gfx//interface//missions//greater_ilias.dds"
+    }
+    spriteType = {
+        name = "attuned_with_nature"
+        texturefile = "gfx//interface//missions//attuned_with_nature.dds"
+    }
+    spriteType = {
+        name = "ldq_frog"
+        texturefile = "gfx//interface//missions//ldq_frog.dds"
+    }
+    spriteType = {
+        name = "monster_lord"
+        texturefile = "gfx//interface//missions//monster_lord.dds"
+    }
+    spriteType = {
+        name = "grand_noah"
+        texturefile = "gfx//interface//missions//grand_noah.dds"
+    }
+    spriteType = {
+        name = "natural_revolution"
+        texturefile = "gfx//interface//missions//natural_revolution.dds"
+    }
+    spriteType = {
+        name = "salamander_fire"
+        texturefile = "gfx//interface//missions//salamander_fire.dds"
+    }
+    spriteType = {
+        name = "attuned_with_nature"
+        texturefile = "gfx//interface//missions//attuned_with_nature.dds"
+    }
+    spriteType = {
+	name = "melk_library"
+	texturefile = "gfx//interface//missions//melk_library.dds"
+    }
+}

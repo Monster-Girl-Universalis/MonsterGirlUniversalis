@@ -4453,6 +4453,58 @@ on_province_religion_converted = {
 		}
 		remove_province_modifier = ottoman_siyasah_tax_reform_manpower
 	}
+	if = {
+		limit = { 
+			owner = { 
+				has_government_reform = guardian_butterfly_cults_reform 
+			}
+			religion_group = elemental_religion_g
+			NOT = { has_province_modifier = cosmos_blessing }
+		}
+		add_province_modifier = {
+			name = cosmos_blessing
+			duration = -1
+		}
+	}
+	if = {
+		limit = {
+			OR = {
+				NOT = { 
+					owner = { has_government_reform = guardian_butterfly_cults_reform } 
+				}
+				NOT = { religion_group = elemental_religion_g }
+			}
+			has_province_modifier = cosmos_blessing 
+		}
+		remove_province_modifier = cosmos_blessing 
+	}
+	if = {
+		limit = { 
+			owner = { 
+				has_government_reform = forbidden_puppetry_reform
+			}
+			religion = rogue_magicraft_religion
+			culture_group = doll
+			NOT = { has_province_modifier = kagetsumugi_dolls_production }
+		}
+		add_province_modifier = {
+			name = kagetsumugi_dolls_production
+			duration = -1
+		}
+	}
+	if = {
+		limit = {
+			OR = {
+				NOT = { 
+					owner = { has_government_reform = forbidden_puppetry_reform } 
+				}
+				NOT = { religion = rogue_magicraft_religion }
+				NOT = { culture_group = doll }
+			}
+			has_province_modifier = kagetsumugi_dolls_production
+		}
+		remove_province_modifier = kagetsumugi_dolls_production
+	}
 }
 
 on_province_religion_changed = {
@@ -4507,6 +4559,58 @@ on_province_religion_changed = {
 		}
 		remove_province_modifier = ottoman_siyasah_tax_reform_manpower
 	}
+	if = {
+		limit = { 
+			owner = { 
+				has_government_reform = guardian_butterfly_cults_reform 
+			}
+			religion_group = elemental_religion_g
+			NOT = { has_province_modifier = cosmos_blessing }
+		}
+		add_province_modifier = {
+			name = cosmos_blessing
+			duration = -1
+		}
+	}
+	if = {
+		limit = {
+			OR = {
+				NOT = { 
+					owner = { has_government_reform = guardian_butterfly_cults_reform } 
+				}
+				NOT = { religion_group = elemental_religion_g }
+			}
+			has_province_modifier = cosmos_blessing 
+		}
+		remove_province_modifier = cosmos_blessing 
+	}
+	if = {
+		limit = { 
+			owner = { 
+				has_government_reform = forbidden_puppetry_reform
+			}
+			religion = rogue_magicraft_religion
+			culture_group = doll
+			NOT = { has_province_modifier = kagetsumugi_dolls_production }
+		}
+		add_province_modifier = {
+			name = kagetsumugi_dolls_production
+			duration = -1
+		}
+	}
+	if = {
+		limit = {
+			OR = {
+				NOT = { 
+					owner = { has_government_reform = forbidden_puppetry_reform } 
+				}
+				NOT = { religion = rogue_magicraft_religion }
+				NOT = { culture_group = doll }
+			}
+			has_province_modifier = kagetsumugi_dolls_production
+		}
+		remove_province_modifier = kagetsumugi_dolls_production
+	}
 }
 
 # province, manually conversion
@@ -4515,6 +4619,61 @@ on_province_culture_converted = {
 	judaism_on_province_culture_converted_effect = yes
 	imperial_modifiers_on_province_change_culture_or_change_owner_effect = yes
 	on_province_culture_change_effect = yes
+	if = {
+		limit = { 
+			owner = { 
+				has_government_reform = guardian_butterfly_cults_reform 
+			}
+			OR = {
+				culture_group = fairy
+				culture = Island_Elf
+			}
+			NOT = { has_province_modifier = cosmos_blessing }
+		}
+		add_province_modifier = {
+			name = cosmos_blessing
+			duration = -1
+		}
+	}
+	if = {
+		limit = {
+			OR = {
+				NOT = { 
+					owner = { has_government_reform = guardian_butterfly_cults_reform } 
+				}
+				NOT = { religion_group = elemental_religion_g }
+			}
+			has_province_modifier = cosmos_blessing 
+		}
+		remove_province_modifier = cosmos_blessing 
+	}
+	if = {
+		limit = { 
+			owner = { 
+				has_government_reform = forbidden_puppetry_reform
+			}
+			religion = rogue_magicraft_religion
+			culture_group = doll
+			NOT = { has_province_modifier = kagetsumugi_dolls_production }
+		}
+		add_province_modifier = {
+			name = kagetsumugi_dolls_production
+			duration = -1
+		}
+	}
+	if = {
+		limit = {
+			OR = {
+				NOT = { 
+					owner = { has_government_reform = forbidden_puppetry_reform } 
+				}
+				NOT = { religion = rogue_magicraft_religion }
+				NOT = { culture_group = doll }
+			}
+			has_province_modifier = kagetsumugi_dolls_production
+		}
+		remove_province_modifier = kagetsumugi_dolls_production
+	}
 }
 
 # province, general conversion through effects
@@ -4522,7 +4681,61 @@ on_province_culture_changed = {
 	on_province_culture_converted_estate_privilges_effect = yes
 	judaism_on_province_culture_converted_effect = yes
 	imperial_modifiers_on_province_change_culture_or_change_owner_effect = yes
-	on_province_culture_change_effect = yes
+	on_province_culture_change_effect = yes	if = {
+		limit = { 
+			owner = { 
+				has_government_reform = guardian_butterfly_cults_reform 
+			}
+			OR = {
+				culture_group = fairy
+				culture = Island_Elf
+			}
+			NOT = { has_province_modifier = cosmos_blessing }
+		}
+		add_province_modifier = {
+			name = cosmos_blessing
+			duration = -1
+		}
+	}
+	if = {
+		limit = {
+			OR = {
+				NOT = { 
+					owner = { has_government_reform = guardian_butterfly_cults_reform } 
+				}
+				NOT = { religion_group = elemental_religion_g }
+			}
+			has_province_modifier = cosmos_blessing 
+		}
+		remove_province_modifier = cosmos_blessing 
+	}
+	if = {
+		limit = { 
+			owner = { 
+				has_government_reform = forbidden_puppetry_reform
+			}
+			religion = rogue_magicraft_religion
+			culture_group = doll
+			NOT = { has_province_modifier = kagetsumugi_dolls_production }
+		}
+		add_province_modifier = {
+			name = kagetsumugi_dolls_production
+			duration = -1
+		}
+	}
+	if = {
+		limit = {
+			OR = {
+				NOT = { 
+					owner = { has_government_reform = forbidden_puppetry_reform } 
+				}
+				NOT = { religion = rogue_magicraft_religion }
+				NOT = { culture_group = doll }
+			}
+			has_province_modifier = kagetsumugi_dolls_production
+		}
+		remove_province_modifier = kagetsumugi_dolls_production
+	}
 }
 
 # THIS = Province, FROM = Country who Propogated
@@ -4685,6 +4898,138 @@ on_province_owner_change = {
 			name = ottoman_siyasah_tax_reform_manpower
 			duration = -1
 		}
+	}
+	if = {
+		limit = { 
+			owner = { 
+				has_government_reform = lightning_element_sensing_reform 
+			}
+			has_terrain = hills
+			NOT = { has_province_modifier = affinity_to_lightning }
+		}
+		add_province_modifier = {
+			name = affinity_to_lightning
+			duration = -1
+		}
+	}
+	if = {
+		limit = {
+			owner = { NOT = { has_reform = lightning_element_sensing_reform } }
+			has_province_modifier = affinity_to_lightning 
+		}
+		remove_province_modifier = affinity_to_lightning 
+	}
+	if = {
+		limit = { 
+			owner = { 
+				has_government_reform = ice_element_sensing_reform
+			}
+			has_terrain = glacier
+			NOT = { has_province_modifier = affinity_to_ice }
+		}
+		add_province_modifier = {
+			name = affinity_to_ice
+			duration = -1
+		}
+	}
+	if = {
+		limit = {
+			owner = { NOT = { has_reform = ice_element_sensing_reform } }
+			has_province_modifier = affinity_to_ice
+		}
+		remove_province_modifier = affinity_to_ice
+	}
+	if = {
+		limit = { 
+			owner = { 
+				has_government_reform = salamander_paganism_reform 
+			}
+			OR = {
+				has_terrain = mountains
+				has_terrain = highlands
+			}
+			NOT = { has_province_modifier = salamanders_blessing }
+		}
+		add_province_modifier = {
+			name = salamanders_blessing
+			duration = -1
+		}
+	}
+	if = {
+		limit = {
+			owner = { NOT = { has_reform = salamander_paganism_reform } }
+			has_province_modifier = salamanders_blessing
+		}
+		remove_province_modifier = salamanders_blessing
+	}
+	if = {
+		limit = { 
+			owner = { 
+				has_government_reform = undine_worship_reform 
+			}
+			OR = {
+				has_terrain = coastline
+				has_terrain = caves
+			}
+			NOT = { has_province_modifier = undines_blessing }
+		}
+		add_province_modifier = {
+			name = undines_blessing
+			duration = -1
+		}
+	}
+	if = {
+		limit = {
+			owner = { NOT = { has_reform = undine_worship_reform } }
+			has_province_modifier = undines_blessing
+		}
+		remove_province_modifier = undines_blessing
+	}
+	if = {
+		limit = { 
+			owner = { 
+				has_government_reform = gnome_festivals_reform 
+			}
+			OR = {
+				has_terrain = desert
+				has_terrain = drylands
+			}
+			NOT = { has_province_modifier = gnomes_blessing }
+		}
+		add_province_modifier = {
+			name = gnomes_blessing
+			duration = -1
+		}
+	}
+	if = {
+		limit = {
+			owner = { NOT = { has_reform = gnome_festivals_reform } }
+			has_province_modifier = gnomes_blessing
+		}
+		remove_province_modifier = gnomes_blessing
+	}
+	if = {
+		limit = { 
+			owner = { 
+				has_government_reform = sylph_festivals_reform 
+			}
+			OR = {
+				has_terrain = forest
+				has_terrain = woods
+			}
+			NOT = { has_province_modifier = sylphs_blessing }
+		}
+		add_province_modifier = {
+			name = sylphs_blessing
+			duration = -1
+		}
+	}
+	if = {
+		limit = {
+			owner = { NOT = { has_reform = sylph_festivals_reform } }
+			has_province_modifier = sylphs_blessing
+		}
+		remove_province_modifier = sylphs_blessing
 	}
 }
 

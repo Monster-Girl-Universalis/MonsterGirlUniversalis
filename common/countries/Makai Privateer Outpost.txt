@@ -1,0 +1,112 @@
+graphical_culture = asiangfx
+color = { 206 80 117 }
+revolutionary_colors = { 1 3 4 }
+random_nation_chance = 0
+historical_score = 500
+historical_idea_groups = { 
+}
+historical_units = { 
+	infantry_mer_t1_01 infantry_mer_t5_01 infantry_mer_t10_01 infantry_mer_t13_01 infantry_mer_t16_01 infantry_mer_t19_01 infantry_mer_t23_01 infantry_mer_t26_01 
+}
+monarch_names = { 
+	"Motohito #0" = 5
+	"Mihito #0" = 5
+	"Hikohito #0" = 5
+	"Fusahito #0" = 5
+	"Katsuhito #0" = 5
+	"Tomohito #0" = 5
+	"Michihito #0" = 5
+	"Kazuhito #0" = 5
+	"Kotohito #0" = 5
+	"Tsuguhito #0" = 5
+	"Nagahito #0" = 5
+	"Satohito #0" = 5
+	"Asahito #0" = 5
+	"Yasuhito #0" = 5
+	"Teruhito #0" = 5
+	"Hidehito #0" = 5
+	"Morohito #0" = 5
+	"Ayahito #0" = 5
+	"Takauji #0" = 5
+	"Yoshiakira #0" = 5
+	"Yoshimitsu #0" = 5
+	"Yoshimochi #0" = 5
+	"Yoshikazu #0" = 5
+	"Yoshinori #0" = 5
+	"Yoshikatsu #0" = 5
+	"Yoshimasa #0" = 5
+	"Yoshihisa #0" = 5
+	"Yoshitane #0" = 5
+	"Yoshizumi #0" = 5
+	"Yoshiharu #0" = 5
+	"Yoshiteru #0" = 5
+	"Yoshihide #0" = 5
+	"Yoshiaki #0" = 5
+	"Nobutada #0" = 5
+	"Hidenobu #0" = 5
+	"Hideyoshi #0" = 5
+	"Hideyori #0" = 5
+	"Ieyasu #0" = 5
+	"Hidetada #0" = 5
+	"Iemitsu #0" = 5
+	"Ietsuna #0" = 5
+	"Tsunayoshi #0" = 5
+	"Ienobu #0" = 5
+	"Ietsugu #0" = 5
+	"Yoshimune #0" = 5
+	"Ieshige #0" = 5
+	"Ieharu #0" = 5
+	"Ienari #0" = 5
+	"Ieyoshi #0" = 5
+	"Iesada #0" = 5
+	"Iemochi #0" = 5
+	"Yoshinobu #0" = 5
+	"Jessie #0" = -20
+	"Lolitta #0" = -20
+	"Ashel #0" = -20
+	"Bonnie #0" = -20
+	"Roza #0" = -20
+	"Meia #0" = -20
+	"Odette #0" = -20
+	"Tsubasa #0" = -20
+	"Leene #0" = -20
+	"Sara #0" = -20
+	"El #0" = -20
+	"Heine #0" = -20
+	"Selene #0" = -20
+	"Stella #0" = -20
+	"Sonya #0" = -20
+	"Meryl #0" = -20
+	"Anna #0" = -20
+	"Teresa #0" = -20
+	"Julia #0" = -20
+	"Janette #0" = -20
+	"Yvette #0" = -20
+	"Elisabeth #0" = -20
+	"Laura #0" = -20
+	"Sakura #0" = -20
+	"Elissa #0" = -20
+	"Claudia #0" = -20
+	"Lucretia #0" = -20
+	"Gigi #0" = -20
+}
+leader_names = { 
+	Seafire Coralstream Oceanic Mariscale Aquashimmer Wavebreaker Pearlwater Sirenwhisper Seastar Meriwave
+	Nautica Oceancrest Mermelody Seashine Aquafin Sailsea Neptunea Oceandream Seawave Marinewind
+	Coralshell Aquamarine Waveglide Merisong Oceangem Sirencrest Tidesong Seabreeze Wavecaller 
+}
+ship_names = { 
+	Aquanaut Seashell Coralsong Wavecrest Mermaiden Neptunia Kelpie Coralis Seastorm Tidewind
+	Aquatica Marineveil Pearlbane Nereida Oceania Thalassan Seabreeze Sirensong Marinara Nautika
+	Aquaviper Sirenbane Marinara Seastar Deepseeker Oceandream Abyssal Shipwrecker Mermidon Aqualith
+	Seacharm Aquasurge Merstar Selkie Seawind Aquatide Lagoon Aquarius Seaglory Neptunia
+	Pearlheart "Siren's Song" Deepsea "Wave Dancer" "Poseidon's Trident" Tentaclos Krakensurge Inkshadow Aquaknot Krakensurge
+	Abyssalight Oktopirate Tritonwrath Tidalwrath Marinebrute Seastrider Cepharcane Kelpstrider Krakenfury Oceandread
+	Serpentide Scyllurge 
+}
+army_names = { 
+	"Privateer Army" "$PROVINCE$ Army" 
+}
+fleet_names = { 
+	"Privateer Navy" "$PROVINCE$ Navy" 
+}

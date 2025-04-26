@@ -1,0 +1,122 @@
+graphical_culture = asiangfx
+color = { 194 153 185 }
+revolutionary_colors = { 0 3 1 }
+random_nation_chance = 0
+historical_score = 500
+historical_idea_groups = { 
+}
+historical_units = { 
+	infantry_scc_t1_01 infantry_scc_t5_01 infantry_scc_t10_01 infantry_scc_t13_01 infantry_scc_t16_01 infantry_scc_t19_01 infantry_scc_t23_01 infantry_scc_t26_01 
+}
+monarch_names = { 
+	"Motohito #0" = 5
+	"Mihito #0" = 5
+	"Hikohito #0" = 5
+	"Fusahito #0" = 5
+	"Katsuhito #0" = 5
+	"Tomohito #0" = 5
+	"Michihito #0" = 5
+	"Kazuhito #0" = 5
+	"Kotohito #0" = 5
+	"Tsuguhito #0" = 5
+	"Nagahito #0" = 5
+	"Satohito #0" = 5
+	"Asahito #0" = 5
+	"Yasuhito #0" = 5
+	"Teruhito #0" = 5
+	"Hidehito #0" = 5
+	"Morohito #0" = 5
+	"Ayahito #0" = 5
+	"Takauji #0" = 5
+	"Yoshiakira #0" = 5
+	"Yoshimitsu #0" = 5
+	"Yoshimochi #0" = 5
+	"Yoshikazu #0" = 5
+	"Yoshinori #0" = 5
+	"Yoshikatsu #0" = 5
+	"Yoshimasa #0" = 5
+	"Yoshihisa #0" = 5
+	"Yoshitane #0" = 5
+	"Yoshizumi #0" = 5
+	"Yoshiharu #0" = 5
+	"Yoshiteru #0" = 5
+	"Yoshihide #0" = 5
+	"Yoshiaki #0" = 5
+	"Nobutada #0" = 5
+	"Hidenobu #0" = 5
+	"Hideyoshi #0" = 5
+	"Hideyori #0" = 5
+	"Ieyasu #0" = 5
+	"Hidetada #0" = 5
+	"Iemitsu #0" = 5
+	"Ietsuna #0" = 5
+	"Tsunayoshi #0" = 5
+	"Ienobu #0" = 5
+	"Ietsugu #0" = 5
+	"Yoshimune #0" = 5
+	"Ieshige #0" = 5
+	"Ieharu #0" = 5
+	"Ienari #0" = 5
+	"Ieyoshi #0" = 5
+	"Iesada #0" = 5
+	"Iemochi #0" = 5
+	"Yoshinobu #0" = 5
+	"Lilith #0" = -20
+	"Lilim #0" = -20
+	"Lily #0" = -20
+	"Melissa #0" = -20
+	"Reina #0" = -20
+	"Selene #0" = -20
+	"Nina #0" = -20
+	"Eva #0" = -20
+	"Morrigan #0" = -20
+	"Minagi #0" = -20
+	"Astaroth #0" = -20
+	"Mysteltainn #0" = -20
+	"Myusca #0" = -20
+	"Fulbeua #0" = -20
+	"Natasha #0" = -20
+	"Selene #0" = -20
+	"Stella #0" = -20
+	"Lilin #0" = -20
+	"Ogretooth #0" = -20
+	"Anna #0" = -20
+	"Executioner #0" = -20
+	"Julia #0" = -20
+	"Janette #0" = -20
+	"Yvette #0" = -20
+	"Elisabeth #0" = -20
+	"Rigeo #0" = -20
+	"Saki #0" = -20
+	"Elissa #0" = -20
+	"Claudia #0" = -20
+	"Sara #0" = -20
+	"Tarza #0" = -20
+	"Vinum #0" = -20
+}
+leader_names = { 
+	Lustheart Desiredevil Passionflower Charmspell Allurefire Aphrodisia Thrillseeker Lovepotion Sirenspell Enslaveheart
+	Passionflame Euphoria Temptress Lustborn Spellweaver Nightshade Fireheart Whisperwind Moonlit Red-hot
+	Charisma Pleasuregiver Desirewhisper Charmcaster 
+}
+ship_names = { 
+	Temptress Enchantress Allure Seductress Charisma Fascination Spellbinder Enticement Mesmerize Ravisher
+	Hypnotize Sensuality Magnetism Siren Entrancement Fascinate Entice Sultry Captivate Sensuous
+	Spellbind Ravish Beguile Lure "Lilith's Temptation" "Demoness' Charm" "Siren's Song" "Succubus Seduction" "Enchantress' Spell" "Night Goddess' Embrace"
+	"Mistress of Shadows" "Carnal Queen" "Succubus' Delight" "Lustful Lady" "Demon Lover's Haven" "Seductive Serenade" "Passionate Piracy" "Sensual Swashbucklers" "Sinful Seas" "Succubus Temptress"
+	"Siren's Call" "Hellfire Passion" "Lustful Dreamer" "Infernal Desires" "Sinful Temptation" "Enchantress's Spell" "Sensual Serenade" "Fiery Seduction" "Dark Passion" "Hell's Embrace"
+	"Seductive Enigma" "Wicked Whisperer" "Demon's Kiss" "Forbidden Fruit" "Sensual Seas" "Spellbinding Stream" "Ravishing Ripple" "Beguiling Breeze" "Mesmerizing Melody" "Charismatic Current"
+	"Alluring Aura" "Succubus Symphony" "Enchantress Echo" "Temptress Tide" "Sinful Serenade" "Seductive Siren" "Devil's Desire" "Lust's Embrace" "Captivating Corsair" "Sensuous Serenade"
+	"Spellbinding Scourge" "Seductive Sovereign" "Enchanting Empress" "Beguiling Banshee" "Mesmerizing Marauder" "Charismatic Cruiser" "Alluring Abyss" "Ravishing Reaper" "Enthralling Echo" "Temptress Tempest"
+	"Succubus Siren" "Lilith's Lust" "Tempting Tempest" "Siren Sovereign" "Devious Dame" "Enticing Empress" "Devilish Diva" "Sinful Sphinx" "Alluring Aphrodite" "Temptation Titan"
+	"Enchantress Empress" "Seductive Mermaid" "Lustful Leviathan" "Sensual Serpent" "Demon's Mistress" "Hellfire Temptress" "Succubus Siren" "Passionate Tempest" "Demonic Allure" "Fiery Seductress"
+	"Sensuous Enchantment" "Inferno's Fury" "Desire's Flame" "Carnal Temptress" "Lustful Maiden" "Demon's Whisper" "Enchanting Siren" "Night's Passion" "Infernal Desire" "Succubus's Seduction"
+	"Succubi's Temptation" "Lilith's Embrace" "Lilim's Lust" "Sensual Seductress" "Demon's Desire" "Enchanting Enigma" "Hell's Harlot" "Fiendish Fascination" "Wicked Witchery" "Sultry Serenade"
+	"Temptress Twilight" "Infernal Infatuation" "Naughty Nymph" "Sensuous Succubus" "Dark Delight" 
+}
+army_names = { 
+	"Minagi Army" "Roccubus Army" "Rescubus Army" "Arcubus Army" "Granavas Army" "Lilith Nightmare Army" "$PROVINCE$ Army" 
+}
+fleet_names = { 
+	"Minagi Navy" "Roccubus Navy" "Rescubus Navy" "Arcubus Navy" "Granavas Navy" "Lilith Nightmare Navy" "$PROVINCE$ Navy" 
+}

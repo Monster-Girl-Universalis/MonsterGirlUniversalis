@@ -1,0 +1,39 @@
+country_decisions = {
+
+	SLU_spellblade = {
+		color = { 255 0 127 }
+		potential = {
+			AND = {
+				OR = {
+					tag = SLU
+					was_tag = SLU
+				}
+				has_country_flag = has_magic
+			}
+		}
+		allow = {
+			AND = {
+				OR = {
+					tag = SLU
+					was_tag = SLU
+				}
+				has_country_flag = has_magic
+			}
+			NOT = {has_country_modifier = slu_spellblade_dark}
+			NOT = {has_country_modifier = slu_spellblade_ice}
+			NOT = {has_country_modifier = slu_spellblade_lighting}
+			NOT = {has_country_modifier = slu_spellblade_poison}
+			NOT = {has_country_modifier = slu_spellblade_magic_barrier}
+			NOT = {has_country_modifier = slu_spellblade_holy}
+		}
+		effect = {
+			country_event = {
+				id = flavor_slu.26
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+}

@@ -1,0 +1,18 @@
+government = monarchy
+government_rank = 2
+religion = dark_goddess_religion
+technology_group = TECH_DRAGON
+primary_culture = Marcosias_Girl
+add_government_reform = Dragon_realm
+1444.1.1 = { 
+	monarch = { 
+		name = "Marcette"
+		dynasty = "the Marcosias"
+		birth_date = 1424.1.1
+		adm = 4
+		dip = 5
+		mil = 6
+		female = yes
+	}
+}
+capital = 3196

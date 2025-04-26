@@ -1,0 +1,18 @@
+government = monarchy
+government_rank = 2
+Elf 
+add_government_reform = Elf_realm
+religion = dark_goddess_religion
+technology_group = TECH_ELF
+1444.1.1 = { 
+	monarch = { 
+		name = "Helen"
+		dynasty = "the Rogue Elf"
+		birth_date = 1424.1.1
+		adm = 4
+		dip = 5
+		mil = 6
+		female = yes
+	}
+}
+capital = 3452

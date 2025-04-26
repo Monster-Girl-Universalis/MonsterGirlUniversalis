@@ -1,0 +1,108 @@
+graphical_culture = asiangfx
+color = { 83 81 57 }
+revolutionary_colors = { 2 7 4 }
+random_nation_chance = 0
+historical_score = 500
+historical_idea_groups = { 
+}
+historical_units = { 
+}
+monarch_names = { 
+	"Heinrich #0" = 5
+	"Lazarus #0" = 5
+	"Marcellus #0" = 5
+	"John #0" = 5
+	"Kazuya #0" = 5
+	"Kockyoin #0" = 5
+	"Jack #0" = 5
+	"Hans #0" = 5
+	"Lars #0" = 5
+	"Lauratt #0" = 5
+	"Merlin #0" = 5
+	"Samson #0" = 5
+	"Toru #0" = 5
+	"Pylate #0" = 5
+	"Lest #0" = 5
+	"Adrian #0" = 5
+	"Caleb #0" = 5
+	"Ethan #0" = 5
+	"Gabriel #0" = 5
+	"Isaac #0" = 5
+	"Julian #0" = 5
+	"Lucas #0" = 5
+	"Nathaniel #0" = 5
+	"Oliver #0" = 5
+	"Sebastian #0" = 5
+	"Alexander #0" = 5
+	"Christopher #0" = 5
+	"Daniel #0" = 5
+	"Elijah #0" = 5
+	"Gavin #0" = 5
+	"Henry #0" = 5
+	"Jonathan #0" = 5
+	"Liam #0" = 5
+	"Samuel #0" = 5
+	"Benjamin #0" = 5
+	"David #0" = 5
+	"Evan #0" = 5
+	"Jacob #0" = 5
+	"Gregory #0" = 5
+	"Isaiah #0" = 5
+	"Matthew #0" = 5
+	"Owen #0" = 5
+	"Ryan #0" = 5
+	"Thomas #0" = 5
+	"Damian #0" = 5
+	"Hector #0" = 5
+	"Maximilian #0" = 5
+	"Rafael #0" = 5
+	"Victor #0" = 5
+	"Xavier #0" = 5
+	"Fernando #0" = 5
+	"Nicolas #0" = 5
+	"Warvein #0" = -20
+	"Lila #0" = -20
+	"Liru #0" = -20
+	"Miranda #0" = -20
+	"Sofia #0" = -20
+	"Len #0" = -20
+	"Odette #0" = -20
+	"Tsubasa #0" = -20
+	"Leene #0" = -20
+	"Sara #0" = -20
+	"Ellie #0" = -20
+	"Aradia #0" = -20
+	"Selene #0" = -20
+	"Stella #0" = -20
+	"Sonya #0" = -20
+	"Levia #0" = -20
+	"Anna #0" = -20
+	"Teresa #0" = -20
+	"Julia #0" = -20
+	"Janette #0" = -20
+	"Yvette #0" = -20
+	"Elisabeth #0" = -20
+	"Emily #0" = -20
+	"Anastasia #0" = -20
+	"Lucretia #0" = -20
+	"Andrea #0" = -20
+	"Granda #0" = -20
+}
+leader_names = { 
+	Bloodmoon Ashenheart Silverclaw Flamestrike Stormcaller Ironfang Darkwing Emberheart Bloodclaw Stormwatcher
+	Pyronyx Terrastryke Shadowflame Infernion Thunderclaw Frostscale Nidhoggra Saphirion Wyvernia Drakonia
+	Arcanium Boreallia Oceanwing Geodragon 
+}
+ship_names = { 
+	Furyflame Wyrmrider Drakescale "Serpent's Breath" Firewing Chromarok Scorchclaw Dragonheart Wyrmskull Tiamatide
+	Draconic Dragonclaw Wyrmrider Serpent Drakescale Chromatic Scorchclaw Dragonheart Wyrmlord "Dragonheart Sovereign"
+	"Scorchclaw Tempest" "Dragonclaw Defender" Uroboros Draconith Pyroclaw Serpentix Scorchrend Wyrmscar Aureliar Firedrake
+	Drakari Cindrake Wyrmforge Aurelis Vermithor Draculon Flamespire Ignithorn Draconyx Abyssire
+	Chrysmere Scalethorn Drakona Emberclad Aureline Firesoul 
+}
+army_names = { 
+	"Ancient Dragon Army" "$PROVINCE$ Army" 
+}
+fleet_names = { 
+	"Ancient Dragon Navy" "$PROVINCE$ Navy" 
+}

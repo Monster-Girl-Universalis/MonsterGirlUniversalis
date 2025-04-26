@@ -116,7 +116,7 @@ Ghost_realm = {
 	allow_normal_conversion = no
 	potential = {
 		OR = {
-			culture_group = ghost
+			culture_group = undead
 			AND = {
 				is_playing_custom_nation = yes
 				have_had_reform = Ghost_realm
@@ -164,6 +164,36 @@ Land_Dweller_realm = {
 		land_forcelimit_modifier = 0.25
 		development_cost = 0.05
 		core_creation = 0.05	
+		monarch_lifespan = 1
+		block_introduce_heir = yes
+	}
+	custom_attributes = {
+		queen = no
+	}
+	conditional = {
+		allow = { has_dlc = "Rights of Man" }
+		has_harem = yes
+	}
+}
+
+Land_Dweller_Empire = {
+	lock_level_when_selected = yes
+	icon = "land_dweller_empire"
+	allow_normal_conversion = no
+	potential = {
+	has_country_flag = has_formed_land_dweller_queen
+	}
+	valid_for_new_country = no
+	valid_for_nation_designer = yes
+	nation_designer_cost = 40
+	legacy_equivalent = ottoman_government_legacy
+	modifiers = {
+		governing_capacity = 500
+		land_forcelimit_modifier = 0.25
+		discipline = 0.05
+		province_warscore_cost = -0.10
+		core_creation = -0.10
+		administrative_efficiency = 0.05	
 		monarch_lifespan = 1
 		block_introduce_heir = yes
 	}
@@ -2367,7 +2397,7 @@ Fairy_realm = {
 	allow_normal_conversion = no
 	potential = {
     		OR = {
-			culture_group = fairy
+			culture = Fairy_Girl
 			have_had_reform = Fairy_realm
 			AND = {
 				is_playing_custom_nation = yes

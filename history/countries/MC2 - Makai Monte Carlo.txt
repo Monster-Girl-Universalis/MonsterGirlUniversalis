@@ -1,0 +1,7 @@
+government = monarchy
+government_rank = 1
+primary_culture = slums_human
+religion = dark_goddess_religion
+technology_group = TECH_HUMAN
+add_government_reform = criminal_syndicate_reform
+capital = 3368

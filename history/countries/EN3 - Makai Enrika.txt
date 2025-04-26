@@ -1,0 +1,20 @@
+government = monarchy
+government_rank = 2
+primary_culture = Fallen_Angel
+add_government_reform = enrika_reform
+religion = enrika_religion
+technology_group = TECH_ANGEL
+1444.1.1 = { 
+	monarch = { 
+		name = "Micaela"
+		dynasty = "of Enrika"
+		culture = Fallen_Angel
+		birth_date = 1424.1.1
+		adm = 4
+		dip = 4
+		mil = 4
+		female = yes
+	}
+	add_ruler_personality = immortal_personality
+}
+capital = 3491

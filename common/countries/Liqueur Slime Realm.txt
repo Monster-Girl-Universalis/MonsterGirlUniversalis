@@ -1,0 +1,119 @@
+graphical_culture = asiangfx
+color = { 7 28 111 }
+revolutionary_colors = { 0 2 4 }
+random_nation_chance = 0
+historical_score = 500
+historical_idea_groups = { 
+}
+historical_units = { 
+	infantry_slm_t1_01 infantry_slm_t5_01 infantry_slm_t10_01 infantry_slm_t13_01 infantry_slm_t16_01 infantry_slm_t19_01 infantry_slm_t23_01 infantry_slm_t26_01 
+}
+monarch_names = { 
+	"Motohito #0" = 5
+	"Mihito #0" = 5
+	"Hikohito #0" = 5
+	"Fusahito #0" = 5
+	"Katsuhito #0" = 5
+	"Tomohito #0" = 5
+	"Michihito #0" = 5
+	"Kazuhito #0" = 5
+	"Kotohito #0" = 5
+	"Tsuguhito #0" = 5
+	"Nagahito #0" = 5
+	"Satohito #0" = 5
+	"Asahito #0" = 5
+	"Yasuhito #0" = 5
+	"Teruhito #0" = 5
+	"Hidehito #0" = 5
+	"Morohito #0" = 5
+	"Ayahito #0" = 5
+	"Takauji #0" = 5
+	"Yoshiakira #0" = 5
+	"Yoshimitsu #0" = 5
+	"Yoshimochi #0" = 5
+	"Yoshikazu #0" = 5
+	"Yoshinori #0" = 5
+	"Yoshikatsu #0" = 5
+	"Yoshimasa #0" = 5
+	"Yoshihisa #0" = 5
+	"Yoshitane #0" = 5
+	"Yoshizumi #0" = 5
+	"Yoshiharu #0" = 5
+	"Yoshiteru #0" = 5
+	"Yoshihide #0" = 5
+	"Yoshiaki #0" = 5
+	"Nobutada #0" = 5
+	"Hidenobu #0" = 5
+	"Hideyoshi #0" = 5
+	"Hideyori #0" = 5
+	"Ieyasu #0" = 5
+	"Hidetada #0" = 5
+	"Iemitsu #0" = 5
+	"Ietsuna #0" = 5
+	"Tsunayoshi #0" = 5
+	"Ienobu #0" = 5
+	"Ietsugu #0" = 5
+	"Yoshimune #0" = 5
+	"Ieshige #0" = 5
+	"Ieharu #0" = 5
+	"Ienari #0" = 5
+	"Ieyoshi #0" = 5
+	"Iesada #0" = 5
+	"Iemochi #0" = 5
+	"Yoshinobu #0" = 5
+	"Puruko #0" = -20
+	"Lime #0" = -20
+	"Melty #0" = -20
+	"Esmeralda #0" = -20
+	"Selene #0" = -20
+	"Nina #0" = -20
+	"Louise #0" = -20
+	"Lucia #0" = -20
+	"Lily #0" = -20
+	"Melissa #0" = -20
+	"Ophelia #0" = -20
+	"Sara #0" = -20
+	"Satsuki #0" = -20
+	"Natsuki #0" = -20
+	"Selene #0" = -20
+	"Stella #0" = -20
+	"Sonya #0" = -20
+	"Shoki #0" = -20
+	"Anna #0" = -20
+	"Teresa #0" = -20
+	"Julia #0" = -20
+	"Janette #0" = -20
+	"Yvette #0" = -20
+	"Elisabeth #0" = -20
+	"Bess #0" = -20
+	"Sakura #0" = -20
+	"Elissa #0" = -20
+	"Claudia #0" = -20
+	"Lucretia #0" = -20
+}
+leader_names = { 
+	Gooey Oozeling Blobber Gelatinous Squishy Jiggly Slimy Viscous Sticky Glutinous
+	Spongy Amorphous Drippy Adhesive Cohesive Oozebloom Jiggleglow Puddleslip Slurpslide Squishsplasher
+	Slimedancer
+}
+ship_names = { 
+	Gelatine Slimecraft Oozetron Viscosity Slimedrive Mucus Goober Slipstream Jellifish Squishboat
+	Gluevessel Puddingprow Bounceboat Elasticity Stickyship Jellboat Gumdrop Slimegondola Slithersail Oozeboat
+	Gloopstar Oozecraft Puddingprise Blobcruiser Squishboat Gelatinaut Slimechaser Viscousia Jellitron Gloopvessel
+	Blobship Puddingboat Slimecraft Squishyacht Gelatinship Viscouscraft Jelliboat Gloopcarrier Puddingbarge Slimebarque
+	Squishbarge Bouncybarge Floppyship Softpaddle Wobblyvessel Pliablecraft Gluebarge Gummyship Stickysail Jellbo
+	Puddingcraft Bouncyskiff Elasticraft Mucousbarge Gooark Squishboat Slickvessel Gelship Slimeboat Gloopship
+	Squelcher Slickster Viscousvessel Jelliedaft Gluecraft Mucousmariner Bounceliner Gummybarge Slippercraft Gloopcraft
+	Gluebarge Jellian Bouncebarge Stickyboat Gumbarge Goober Mucusia Slicker Slickness Jellify
+	Gluey Pudding Bounce Sticky Jelly Gummy Slithery Oozing Floppy Gloop
+	Gunge Droop Slipstream Slither Ooze Viscera Jellies Bouncier Oozed Glooped
+	Squishy Flexed Swoops Dribble Flops Slips Mushy Stretch Wobble Plasm
+	Drools Goopy Slimarine Mucosa Goober Slickster Gluon Jellyfish Gummibear Flopper
+	Malleable Amorphous 
+}
+army_names = { 
+	"Liqueur Slime Army" "$PROVINCE$ Army" 
+}
+fleet_names = { 
+	"Liqueur Slime Navy" "$PROVINCE$ Navy" 
+}

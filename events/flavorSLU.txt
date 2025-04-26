@@ -1,0 +1,1013 @@
+########################################
+# Flavor Events for Slug Girl Realm by Cris
+########################################
+
+namespace = flavor_slu
+
+###SLU Flavor events###
+
+# Land Dweller Empire #
+#Form the Land Dweller Empire
+country_event = {
+	id = flavor_slu.1
+	title = flavor_slu.1_title
+	desc = flavor_slu.1_desc
+	picture = BIG_MELK_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = flavor_slu.1.a
+		add_country_modifier = {
+			name = slu_land_dweller_queen
+			duration = 9125
+		}
+		set_country_flag = has_formed_land_dweller_queen
+		change_tag = LDQ
+		on_change_tag_effect = yes
+		swap_non_generic_missions = yes
+		add_prestige = 25
+		add_government_reform = Land_Dweller_Empire
+		if = {
+			limit = {
+				has_custom_ideas = no
+				NOT = { has_idea_group = AKS_ideas }
+			}
+			country_event = { id = ideagroups.1 } #Swap Ideas
+		}
+		ai_chance = {
+			factor = 100
+		}
+		change_ruler_stat = {
+				type = adm
+				amount = 1
+			}
+		change_ruler_stat = {
+				type = dip
+				amount = 1
+			}
+		change_ruler_stat = {
+				type = mil
+				amount = 1
+			}
+	}
+}
+
+country_event = {
+	id = flavor_slu.2
+	title = flavor_slu.2_title
+	desc = flavor_slu.2_desc
+	picture = SLUG_SLIME_eventPicture
+	fire_only_once = yes
+	is_triggered_only = no
+	trigger = {
+	OR = {
+		tag = SLU
+		was_tag = SLU
+	}
+	slime_forest_area = {
+		type = all
+		owned_by = ROOT
+		is_core = ROOT
+	}
+	slime_village_area = {
+		type = all
+		owned_by = ROOT
+		is_core = ROOT
+	}
+
+	slime_village_area = {
+         type = all
+        NOT = {unrest = 0}
+         owned_by = ROOT
+}
+	OR = {
+    		trading_bonus = {
+			trade_goods = fish
+			value = yes
+		}
+		    slime_forest_area = {
+            type = all
+            NOT = {unrest = 0}
+            owned_by = ROOT
+}
+}
+}
+   	mean_time_to_happen = {
+	months = 12
+	}
+	option = {
+		name = flavor_slu.2.a
+		custom_tooltip = flavor_insight_slu.3
+		set_country_flag = slime_friends
+		add_accepted_culture = Slime_Girl
+		add_country_modifier = {
+			name = slu_slime_friends
+			duration = -1
+		}
+		ai_chance = {
+			factor = 100
+		}
+		set_variable = {
+   		which = Slime_integration
+  		value = 1
+}
+	}
+		option = {
+		custom_tooltip = flavor_insight_slu.4
+		name = flavor_slu.2.b
+		set_country_flag = slime_enemy
+		add_prestige = 10
+		add_mil_power = 150
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+country_event = {
+	id = flavor_slu.3
+	title = flavor_slu.3_title
+	desc = flavor_slu.3_desc
+	picture = SLUG_UNIFICATION_eventPicture
+	fire_only_once = yes
+	is_triggered_only = no
+	trigger = {
+    has_country_flag = has_formed_land_dweller_queen
+	MDS = {is_subject_of_type = personal_union}
+	SLT = {is_subject_of_type = personal_union}
+}
+   	mean_time_to_happen = {
+	months = 12
+	}
+	option = {
+		name = flavor_slu.3.a
+		inherit = MDS
+		inherit = SLT
+	}
+		option = {
+		name = flavor_slu.3.b
+		add_country_modifier = {
+			name = slu_benevolent_slug_empire
+			duration = -1
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+}
+country_event = {
+	id = flavor_slu.4
+	title = flavor_slu.4_title
+	desc = flavor_slu.4_desc
+	picture = SLUG_MELKCITY_eventPicture
+	
+	is_triggered_only = yes
+	option = {
+		name = flavor_slu.4.a
+		goto = 94
+		94 = { 
+		change_trade_goods = silk
+		change_province_name = "Melkburg"
+		rename_capital = "Melkburg"
+}
+		add_prestige = 15
+		ai_chance = {
+			factor = 100
+		}
+	}
+		option = {
+		name = flavor_slu.4.b
+		goto = 94
+		94 = {
+		change_trade_goods = silk
+		add_prestige = 5
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+}
+country_event = {
+	id = flavor_slu.5
+	title = flavor_slu.5_title
+	desc = flavor_slu.5_desc
+	picture = SLUG_MELTY_eventPicture
+	fire_only_once = yes
+	is_triggered_only = no
+	trigger = {
+		tag = LDQ
+		has_country_flag = slug_union
+		OR = {
+			SLT = {is_subject_of_type = personal_union}
+			NOT { exists = SLT }
+		}
+
+}
+   	mean_time_to_happen = {
+	months = 6
+	}
+	option = {
+		name = flavor_slu.5.a
+		define_advisor = {
+			type = master_of_mint 
+			name = Melty
+			discount = yes
+			skill = 3
+			age = 20
+		}
+		define_conquistador = {
+            shock = 3
+    		fire = 5
+    		manuever = 1
+    		siege = 3
+			female = yes
+			name = Melty
+			trait = inspirational_leader_general_personality
+}
+		define_admiral = {
+   			shock = 3
+    		fire = 3
+    		manuever = 3
+   			siege = 2
+			female = yes
+			name = Melty
+			trait = ironside_personality
+}
+		ai_chance = {
+			factor = 100
+		}
+	}
+		option = {
+		name = flavor_slu.5.b
+		define_advisor = {
+			discount = yes
+			type = navigator
+			name = Melty
+			skill = 3
+			age = 20
+		ai_chance = {
+			factor = 0
+		}
+	}
+			define_conquistador = {
+            shock = 3
+    		fire = 5
+    		manuever = 1
+    		siege = 3
+			female = yes
+			name = Melty
+			trait = inspirational_leader_general_personality
+}
+		define_admiral = {
+   			shock = 3
+    		fire = 3
+    		manuever = 3
+   			siege = 2
+			female = yes
+			name = Melty
+			trait = ironside_personality
+}
+}	
+			option = {
+		name = flavor_slu.5.c
+		define_advisor = {
+			type = army_organiser
+			name = Melty
+			discount = yes
+			skill = 3
+			age = 20
+		ai_chance = {
+			factor = 0
+		}
+	}
+			define_conquistador = {
+            shock = 3
+    		fire = 5
+    		manuever = 1
+    		siege = 3
+			female = yes
+			name = Melty
+			trait = inspirational_leader_general_personality
+}
+		define_admiral = {
+   			shock = 3
+    		fire = 3
+    		manuever = 3
+   			siege = 2
+			female = yes
+			name = Melty
+			trait = ironside_personality
+}
+}
+}
+country_event = {
+	id = flavor_slu.6
+	title = flavor_slu.6_title
+	desc = flavor_slu.6_desc
+	picture = SLUG_MIDAS_eventPicture
+	fire_only_once = yes
+	is_triggered_only = no
+	trigger = {
+		    OR ={
+				tag = SLU
+				was_tag = SLU
+			}
+			midas_village_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			midas_plains_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			slug_plains_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			slug_coast_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+}
+   	mean_time_to_happen = {
+	months = 12
+	}
+	option = {
+		name = flavor_slu.6.a
+		add_country_modifier = {
+			name = slu_slug_diaspora
+			duration = -1
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+country_event = {
+	id = flavor_slu.7
+	title = flavor_slu.7_title
+	desc = flavor_slu.7_desc
+	picture = SLUG_AMIRA1_eventPicture
+	fire_only_once = yes
+	is_triggered_only = no
+	trigger = {
+		OR = {
+			tag = SLU
+			was_tag = SLU
+		}
+	41 = {
+		owned_by = ROOT
+	}
+}
+   	mean_time_to_happen = {
+	months = 12
+	}
+	option = {
+		name = flavor_slu.7.a
+		set_country_flag = has_met_amira_1
+		ai_chance = {
+			factor = 100
+		}
+	}	
+}
+country_event = {
+	id = flavor_slu.8
+	title = flavor_slu.8_title
+	desc = flavor_slu.8_desc
+	picture = SLUG_AMIRA2_eventPicture
+	fire_only_once = yes
+	is_triggered_only = no
+	trigger = {
+		has_country_flag = has_met_amira_1
+	4 = {
+		owned_by = ROOT
+	}
+}
+   	mean_time_to_happen = {
+	months = 12
+	}
+	option = {
+		name = flavor_slu.8.a
+		set_country_flag = has_met_amira_2
+		ai_chance = {
+			factor = 100
+		}
+	}	
+}
+country_event = {
+	id = flavor_slu.9
+	title = flavor_slu.9_title
+	desc = flavor_slu.9_desc
+	picture = SLUG_AMIRA3_eventPicture
+	fire_only_once = yes
+	is_triggered_only = no
+	trigger = {
+		has_country_flag = has_met_amira_2
+	339 = {
+		owned_by = ROOT
+	}
+}
+   	mean_time_to_happen = {
+	months = 12
+	}
+	option = {
+		name = flavor_slu.9.a
+		set_country_flag = has_met_amira_3
+		ai_chance = {
+			factor = 100
+		}
+	}	
+}
+country_event = {
+	id = flavor_slu.10
+	title = flavor_slu.10_title
+	desc = flavor_slu.10_desc
+	picture = SLUG_AMIRA4_eventPicture
+	fire_only_once = yes
+	is_triggered_only = no
+	trigger = {
+		
+		has_country_flag = has_met_amira_3
+	205 = {
+		owned_by = ROOT
+	}
+}
+   	mean_time_to_happen = {
+	months = 12
+	}
+	option = {
+		name = flavor_slu.10.a
+		set_country_flag = has_met_amira_4
+		ai_chance = {
+			factor = 100
+		}
+	}	
+}
+country_event = {
+	id = flavor_slu.11
+	title = flavor_slu.11_title
+	desc = flavor_slu.11_desc
+	picture = SLUG_AMIRA5_eventPicture
+	fire_only_once = yes
+	is_triggered_only = no
+	trigger = {
+	has_country_flag = has_met_amira_4
+	316 = {
+		owned_by = ROOT
+	}
+}
+   	mean_time_to_happen = {
+	months = 12
+	}
+	option = {
+		name = flavor_slu.11.a
+		set_country_flag = has_met_amira_5
+		ai_chance = {
+			factor = 100
+		}
+	}	
+}
+country_event = {
+	id = flavor_slu.12
+	title = flavor_slu.12_title
+	desc = flavor_slu.12_desc
+	picture = SLUG_AMIRA6_eventPicture
+	fire_only_once = yes
+	is_triggered_only = no
+	trigger = {
+		has_country_flag = has_met_amira_5
+	322 = {
+		owned_by = ROOT
+	}
+}
+   	mean_time_to_happen = {
+	months = 12
+	}
+	option = {
+		name = flavor_slu.12.a
+		set_country_flag = has_met_amira_6
+		ai_chance = {
+			factor = 100
+		}
+	}	
+}
+country_event = {
+	id = flavor_slu.13
+	title = flavor_slu.13_title
+	desc = flavor_slu.13_desc
+	picture = SLUG_AMIRA7_eventPicture
+	fire_only_once = yes
+	is_triggered_only = no
+	trigger = {
+		has_country_flag = has_met_amira_6
+	79 = {
+		owned_by = ROOT
+	}
+}
+   	mean_time_to_happen = {
+	months = 12
+	}
+	option = {
+		name = flavor_slu.13.a
+		set_country_flag = has_met_amira_7
+		ai_chance = {
+			factor = 100
+		}
+	}	
+}
+country_event = {
+	id = flavor_slu.14
+	title = flavor_slu.14_title
+	desc = flavor_slu.14_desc
+	picture = SLUG_AMIRA8_eventPicture
+	fire_only_once = yes
+	is_triggered_only = no
+	trigger = {
+		has_country_flag = has_met_amira_7
+	204 = {
+		owned_by = ROOT
+	}
+}
+   	mean_time_to_happen = {
+	months = 12
+	}
+	option = {
+		name = flavor_slu.14.a
+		add_prestige = 10
+		ai_chance = {
+			factor = 100
+		}
+	}	
+}
+country_event = {
+	id = flavor_slu.15
+	title = flavor_slu.15_title
+	desc = flavor_slu.15_desc
+	picture = SLUG_SALT_eventPicture
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = flavor_slu.15.a
+		add_country_modifier = {
+			name = slu_salt_preserved
+			duration = 7300
+		}
+		29 = {
+			add_base_production = 3
+		}
+		35 = {
+			add_base_production = 3
+		}
+		14 = {
+			add_base_production = 3
+		}
+		327 = {
+			add_base_production = 3
+		}
+		370 = {
+			add_base_production = 3
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+		option = {
+		name = flavor_slu.15.b
+		add_country_modifier = {
+			name = slu_salt_destroyed
+			duration = 7300
+		}
+		29 = {
+			add_base_production = 3
+			change_trade_goods = sugar
+		}
+		35 = {
+			add_base_production = 3
+			change_trade_goods = sugar
+		}
+		14 = {
+			add_base_production = 3
+			change_trade_goods = sugar
+		}
+		327 = {
+			add_base_production = 3
+			change_trade_goods = sugar
+		}
+		370 = {
+			add_base_production = 3
+			change_trade_goods = sugar
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}	
+}
+country_event = {
+	id = flavor_slu.16
+	title = flavor_slu.16_title
+	desc = flavor_slu.16_desc
+	picture = SLUG_SAKI_eventPicture
+	fire_only_once = yes
+	is_triggered_only = no
+	trigger = {
+		OR = {
+			tag = SLU
+			was_tag = SLU
+		}
+		is_great_power = yes
+		is_at_war = no
+		is_bankrupt = no
+		grown_by_development = 300
+}
+   	mean_time_to_happen = {
+	months = 12
+	}
+	option = {
+		name = flavor_slu.16.a
+		set_country_flag = went_to_grandeur_theater
+		ai_chance = {
+			factor = 100
+		}
+	}
+		option = {
+		name = flavor_slu.16.b
+		ai_chance = {
+			factor = 0
+		}
+	}	
+}
+country_event = {
+	id = flavor_slu.17
+	title = flavor_slu.17_title
+	desc = flavor_slu.17_desc
+	picture = SLUG_FIREWORKS_eventPicture
+	fire_only_once = yes
+	is_triggered_only = no
+	trigger = {
+		has_country_flag = went_to_grandeur_theater
+}
+   	mean_time_to_happen = {
+	months = 2
+	}
+	option = {
+		name = flavor_slu.17.a
+        add_prestige = 20
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+country_event = {
+	id = flavor_slu.18
+	title = flavor_slu.18_title
+	desc = flavor_slu.18_desc
+	picture = SLUG_MIMI_eventPicture
+	fire_only_once = yes
+	is_triggered_only = no
+	trigger = {
+	OR = {
+		tag = SLU
+		was_tag = SLU
+	}
+			earthworm_area = {
+            type = all
+            NOT = {unrest = 0}
+            owned_by = ROOT
+			is_core = ROOT
+}
+		    south_irina_road_area = {
+            type = all
+            NOT = {unrest = 0}
+            owned_by = ROOT
+			is_core = ROOT
+}
+		}
+   	mean_time_to_happen = {
+	months = 12
+	}
+	option = {
+		name = flavor_slu.18.a
+		add_treasury = -100
+		65 = {
+			add_devastation = 15
+		}
+		set_country_flag = has_played_with_mimi
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+country_event = {
+	id = flavor_slu.19
+	title = flavor_slu.19_title
+	desc = flavor_slu.19_desc
+	picture = SLUG_GOLD_eventPicture
+	fire_only_once = yes
+	is_triggered_only = no
+	trigger = {
+		has_country_flag = has_played_with_mimi
+		65 = {
+			 NOT = {devastation = 1}
+		}	
+		}
+   	mean_time_to_happen = {
+	months = 12
+	}
+	option = {
+		name = flavor_slu.19.a
+		65 = {
+			change_trade_goods = gold
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+country_event = {
+	id = flavor_slu.20
+	title = flavor_slu.20_title
+	desc = flavor_slu.20_desc
+	picture = SLUG_HIRU_eventPicture
+	fire_only_once = yes
+	is_triggered_only = no
+	trigger = {
+		OR = {
+			tag = SLU
+			was_tag = SLU
+		}
+	pornof_south_peninsula_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			
+			pornof_south_peninsula_area = {
+            type = all
+            NOT = {unrest = 0}
+            owned_by = ROOT
+}
+		}
+   	mean_time_to_happen = {
+	months = 6
+	}
+	option = {
+		name = flavor_slu.20.a
+		add_army_tradition = 10
+		add_yearly_manpower = 2
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+country_event = {
+	id = flavor_slu.21
+	title = flavor_slu.21_title
+	desc = flavor_slu.21_desc
+	picture = SLUG_JINGO_eventPicture
+	fire_only_once = yes
+	is_triggered_only = no
+	trigger = {
+	OR = {
+		tag = SLU
+		was_tag = SLU
+	}
+	OR = {
+		mammoth_coast = { type = all country_or_non_sovereign_subject_holds = ROOT }
+		snow_queen_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+		glacies_coast = { type = all country_or_non_sovereign_subject_holds = ROOT }
+		glacies_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+		wendigo_wastelands = { type = all country_or_non_sovereign_subject_holds = ROOT }
+		wendigo_coast = { type = all country_or_non_sovereign_subject_holds = ROOT }
+		shapeshifter_coast = { type = all country_or_non_sovereign_subject_holds = ROOT }
+		wendigo_island = { type = all country_or_non_sovereign_subject_holds = ROOT }
+	}
+	
+		}
+   	mean_time_to_happen = {
+	months = 12
+	}
+	option = {
+		name = flavor_slu.21.a
+		add_country_modifier = {
+			name = slu_jingo
+			duration = 9131
+		}
+		fairy_island_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}	
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+country_event = {
+	id = flavor_slu.22
+	title = flavor_slu.22_title
+	desc = flavor_slu.22_desc
+	picture = SLUG_GIGI_eventPicture
+	fire_only_once = yes
+	is_triggered_only = no
+	trigger = {
+		OR = {
+			tag = SLU
+			was_tag = SLU
+		}
+		OR = {
+			north_lemuse = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			development_in_provinces = {
+				value = 100
+				culture_group = sea_dweller
+			}
+		}
+}
+   	mean_time_to_happen = {
+	months = 12
+	}
+	option = {
+		name = flavor_slu.22.a
+		ai_chance = {
+			factor = 100
+		}
+		add_country_modifier = {
+			name = slu_salt_vanquished
+			duration = -1
+		}
+		set_variable = {
+   		which = Sea_Dweller_integration
+  		value = 1
+}
+	}
+}
+country_event = {
+	id = flavor_slu.23
+	title = flavor_slu.23_title
+	desc = flavor_slu.23_desc
+	picture = SLUG_SHESTA1_eventPicture
+	fire_only_once = yes
+	is_triggered_only = no
+	trigger = {
+		OR = {
+			tag = SLU
+			was_tag =SLU
+		}
+		58 = {
+		type = all
+		owned_by = ROOT
+		is_core = ROOT
+	}
+}
+   	mean_time_to_happen = {
+	months = 12
+	}
+	option = {
+		name = flavor_slu.23.a
+		set_country_flag = has_met_shesta
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+country_event = {
+	id = flavor_slu.24
+	title = flavor_slu.24_title
+	desc = flavor_slu.24_desc
+	picture = SLUG_SHESTA2_eventPicture
+	fire_only_once = yes
+	is_triggered_only = no
+	trigger = {
+		has_country_flag = has_met_shesta
+}
+   	mean_time_to_happen = {
+	months = 10
+	}
+	option = {
+		name = flavor_slu.24.a
+		add_country_modifier = {
+			name = slu_faithful
+			duration = 7300
+		}
+		add_prestige = 25
+		ai_chance = {
+			factor = 100
+		}
+	}
+	option = {
+		name = flavor_slu.24.b
+		change_religion = chaos_religion
+		94 = {
+			change_religion = chaos_religion
+		}
+		add_country_modifier = {
+			name = slu_chaos
+			duration = 7300
+		}
+		add_stability = -1
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+country_event = {
+	id = flavor_slu.25
+	title = flavor_slu.25_title
+	desc = flavor_slu.25_desc
+	picture = SLUG_FROGS_eventPicture
+	fire_only_once = yes
+	is_triggered_only = no
+	trigger = {
+		OR = {
+			tag = SLU
+			was_tag = SLU
+		}
+		AND = {
+			frog_coast = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			frog_peninsula = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			froglands = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			eastern_froglands = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			1073 = {
+			owned_by = ROOT
+		}
+}
+	}
+   	mean_time_to_happen = {
+	months = 15
+	}
+	option = {
+		name = flavor_slu.25.a
+		add_country_modifier = {
+			name = slu_frogs_in_the_army
+			duration = 10950
+		}
+			red_frog_area = {
+				type = all
+				add_core = ROOT
+			}
+			blue_frog_area = {
+				type = all
+				add_core = ROOT
+			}
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+country_event = {
+	id = flavor_slu.26
+	title = flavor_slu.26_title
+	desc = flavor_slu.26_desc
+	picture = SLUG_MAGIC_eventPicture
+	fire_only_once = no
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = { set_country_flag = mgq_had_race_introduction }
+	}
+	option = {
+		name = flavor_slu.26.a
+		add_country_modifier = {
+			name = slu_spellblade_ice
+			duration = 7300
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+	option = {
+		name = flavor_slu.26.b
+		add_country_modifier = {
+			name = slu_spellblade_lighting
+			duration = 7300
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+	option = {
+		name = flavor_slu.26.c
+		add_country_modifier = {
+			name = slu_spellblade_poison
+			duration = 7300
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+	option = {
+		name = flavor_slu.26.d
+		add_country_modifier = {
+			name = slu_spellblade_magic_barrier
+			duration = 7300
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+	option = {
+		name = flavor_slu.26.e
+		add_country_modifier = {
+			name = slu_spellblade_dark
+			duration = 7300
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+	option = {
+		name = flavor_slu.26.f
+		add_country_modifier = {
+			name = slu_spellblade_holy
+			duration = 7300
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+}

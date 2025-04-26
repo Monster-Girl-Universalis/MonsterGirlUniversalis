@@ -514,4 +514,165 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/fairy_RACE_eventPicture.dds"
 		allwaystransparent = yes
 	}
+	spriteType = {
+		name = "slug_land_dweller_queen.1"
+		texturefile = "gfx/event_pictures/slug_land_dweller_queen.1.jpg"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "BIG_MELK_eventPicture"
+		texturefile = "gfx/event_pictures/BIG_MELK_eventPicture.dds"
+	}
+	spriteType = {
+		name = "SLUG_SLIME_eventPicture"
+		texturefile = "gfx/event_pictures/SLUG_SLIME_eventPicture.dds"
+	}
+	spriteType = {
+		name = "SLUG_UNIFICATION_eventPicture"
+		texturefile = "gfx/event_pictures/SLUG_UNIFICATION_eventPicture.dds"
+	}
+	spriteType = {
+		name = "SLUG_MELKCITY_eventPicture"
+		texturefile = "gfx/event_pictures/SLUG_MELKCITY_eventPicture.dds"
+	}
+	spriteType = {
+		name = "SLUG_MELTY_eventPicture"
+		texturefile = "gfx/event_pictures/SLUG_MELTY_eventPicture.dds"
+	}
+	spriteType = {
+		name = "SLUG_MIDAS_eventPicture"
+		texturefile = "gfx/event_pictures/SLUG_MIDAS_eventPicture.dds"
+	}
+	spriteType = {
+		name = "SLUG_AMIRA1_eventPicture"
+		texturefile = "gfx/event_pictures/SLUG_AMIRA1_eventPicture.dds"
+	}
+	spriteType = {
+		name = "SLUG_AMIRA2_eventPicture"
+		texturefile = "gfx/event_pictures/SLUG_AMIRA2_eventPicture.dds"
+	}
+	spriteType = {
+		name = "SLUG_AMIRA3_eventPicture"
+		texturefile = "gfx/event_pictures/SLUG_AMIRA3_eventPicture.dds"
+	}
+	spriteType = {
+		name = "SLUG_AMIRA4_eventPicture"
+		texturefile = "gfx/event_pictures/SLUG_AMIRA4_eventPicture.dds"
+	}
+	spriteType = {
+		name = "SLUG_AMIRA5_eventPicture"
+		texturefile = "gfx/event_pictures/SLUG_AMIRA5_eventPicture.dds"
+	}
+	spriteType = {
+		name = "SLUG_AMIRA6_eventPicture"
+		texturefile = "gfx/event_pictures/SLUG_AMIRA6_eventPicture.dds"
+	}
+	spriteType = {
+		name = "SLUG_AMIRA7_eventPicture"
+		texturefile = "gfx/event_pictures/SLUG_AMIRA7_eventPicture.dds"
+	}
+	spriteType = {
+		name = "SLUG_AMIRA8_eventPicture"
+		texturefile = "gfx/event_pictures/SLUG_AMIRA8_eventPicture.dds"
+	}
+	spriteType = {
+		name = "SLUG_SALT_eventPicture"
+		texturefile = "gfx/event_pictures/SLUG_SALT_eventPicture.dds"
+	}
+	spriteType = {
+		name = "SLUG_SAKI_eventPicture"
+		texturefile = "gfx/event_pictures/SLUG_SAKI_eventPicture.dds"
+	}
+	spriteType = {
+		name = "SLUG_FIREWORKS_eventPicture"
+		texturefile = "gfx/event_pictures/SLUG_FIREWORKS_eventPicture.dds"
+	}
+	spriteType = {
+		name = "SLUG_MIMI_eventPicture"
+		texturefile = "gfx/event_pictures/SLUG_MIMI_eventPicture.dds"
+	}
+	spriteType = {
+		name = "SLUG_GOLD_eventPicture"
+		texturefile = "gfx/event_pictures/SLUG_GOLD_eventPicture.dds"
+	}
+	spriteType = {
+		name = "SLUG_HIRU_eventPicture"
+		texturefile = "gfx/event_pictures/SLUG_HIRU_eventPicture.dds"
+	}
+	spriteType = {
+		name = "SLUG_JINGO_eventPicture"
+		texturefile = "gfx/event_pictures/SLUG_JINGO_eventPicture.dds"
+	}
+	spriteType = {
+		name = "SLUG_HIRU_eventPicture"
+		texturefile = "gfx/event_pictures/SLUG_HIRU_eventPicture.dds"
+	}
+	spriteType = {
+		name = "SLUG_GIGI_eventPicture"
+		texturefile = "gfx/event_pictures/SLUG_GIGI_eventPicture.dds"
+	}
+	spriteType = {
+		name = "SLUG_SHESTA1_eventPicture"
+		texturefile = "gfx/event_pictures/SLUG_SHESTA1_eventPicture.dds"
+	}
+	spriteType = {
+		name = "SLUG_SHESTA2_eventPicture"
+		texturefile = "gfx/event_pictures/SLUG_SHESTA2_eventPicture.dds"
+	}
+	spriteType = {
+		name = "SLUG_FROGS_eventPicture"
+		texturefile = "gfx/event_pictures/SLUG_FROGS_eventPicture.dds"
+	}
+	spriteType = {
+		name = "SLUG_MAGIC_eventPicture"
+		texturefile = "gfx/event_pictures/SLUG_MAGIC_eventPicture.dds"
+	}
+	spriteType = {
+		name = "UNDINE2_eventPicture"
+		texturefile = "gfx/event_pictures/UNDINE2_eventPicture.dds"
+	}
+	spriteType = {
+		name = "SYLPH_eventPicture"
+		texturefile = "gfx/event_pictures/SYLPH_eventPicture.dds"
+	}
+	spriteType = {
+		name = "GNOME2_eventPicture"
+		texturefile = "gfx/event_pictures/GNOME2_eventPicture.dds"
+	}
+	spriteType = {
+		name = "SALAMANDER2_eventPicture"
+		texturefile = "gfx/event_pictures/SALAMANDER2_eventPicture.dds"
+	}
+	spriteType = {
+		name = "SLIME_BAD_eventPicture"
+		texturefile = "gfx/event_pictures/SLIME_BAD_eventPicture.dds"
+	}
+	spriteType = {
+		name = "LAMIA_eventPicture"
+		texturefile = "gfx/event_pictures/LAMIA_eventPicture.dds"
+	}
+	spriteType = {
+		name = "CHROME_eventPicture"
+		texturefile = "gfx/event_pictures/CHROME_eventPicture.dds"
+	}
+	spriteType = {
+		name = "SLIME_GOOD_eventPicture"
+		texturefile = "gfx/event_pictures/SLIME_GOOD_eventPicture.dds"
+	}
+	spriteType = {
+		name = "LAMIA_PALS_eventPicture"
+		texturefile = "gfx/event_pictures/LAMIA_PALS_eventPicture.dds"
+	}
+	spriteType = {
+		name = "WHITE_RABBIT_eventPicture"
+		texturefile = "gfx/event_pictures/WHITE_RABBIT_eventPicture.dds"
+	}
+	spriteType = {
+		name = "CARMILLA_ELISABETH_eventPicture"
+		texturefile = "gfx/event_pictures/CARMILLA_ELISABETH_eventPicture.dds"
+	}
+	spriteType = {
+		name = "ATLACH_NACHA_eventPicture"
+		texturefile = "gfx/event_pictures/ATLACH_NACHA_eventPicture.dds"
+	}
 }

@@ -1,0 +1,162 @@
+spriteTypes = {	
+	spriteType = {
+		name = "mission_sluggirl1"
+		texturefile = "gfx//interface//missions//mission_sluggirl1.dds"
+	}
+	spriteType = {
+		name = "mission_enrikan_mountains"
+		texturefile = "gfx//interface//missions//mission_enrikan_mountains.dds"
+	}
+	spriteType = {
+		name = "mission_landdwellerqueen"
+		texturefile = "gfx//interface//missions//mission_landdwellerqueen.dds"
+	}
+	spriteType = {
+		name = "mission_slugqueen"
+		texturefile = "gfx//interface//missions//mission_slugqueen.dds"
+	}
+	spriteType = {
+		name = "melk_fighter"
+		texturefile = "gfx//interface//missions//melk_fighter.dds"
+	}
+	spriteType = {
+		name = "mission_slimyrelations"
+		texturefile = "gfx//interface//missions//mission_slimyrelations.dds"
+	}
+	spriteType = {
+		name = "mission_south_pole"
+		texturefile = "gfx//interface//missions//mission_south_pole.dds"
+	}
+	spriteType = {
+		name = "icewitch"
+		texturefile = "gfx//interface//missions//icewitch.dds"
+	}
+	spriteType = {
+		name = "lime"
+		texturefile = "gfx//interface//missions//lime.dds"
+	}
+	spriteType = {
+		name = "destroyed"
+		texturefile = "gfx//interface//missions//destroyed.dds"
+	}
+	spriteType = {
+		name = "temple"
+		texturefile = "gfx//interface//missions//temple.dds"
+	}
+	spriteType = {
+		name = "mission_hegemon_slug"
+		texturefile = "gfx//interface//missions//mission_hegemon_slug.dds"
+	}
+	spriteType = {
+		name = "mission_hegemon"
+		texturefile = "gfx//interface//missions//mission_hegemon.dds"
+	}
+	spriteType = {
+		name = "mission_glacier"
+		texturefile = "gfx//interface//missions//mission_glacier.dds"
+	}
+	spriteType = {
+		name = "mission_umineko"
+		texturefile = "gfx//interface//missions//mission_umineko.dds"
+	}
+	spriteType = {
+		name = "mission_city_fall"
+		texturefile = "gfx//interface//missions//mission_city_fall.dds"
+	}
+	spriteType = {
+		name = "mission_elisabeth"
+		texturefile = "gfx//interface//missions//mission_elisabeth.dds"
+	}
+	spriteType = {
+		name = "melkmurder"
+		texturefile = "gfx//interface//missions//melkmurder.dds"
+	}
+	spriteType = {
+		name = "coast"
+		texturefile = "gfx//interface//missions//coast.dds"
+	}
+	spriteType = {
+		name = "capital"
+		texturefile = "gfx//interface//missions//capital.dds"
+	}
+	spriteType = {
+		name = "mission_towards_tartarus"
+		texturefile = "gfx//interface//missions//mission_towards_tartarus.dds"
+	}
+	spriteType = {
+		name = "slu_desert"
+		texturefile = "gfx//interface//missions//slu_desert.dds"
+	}
+	spriteType = {
+		name = "slu_victoria"
+		texturefile = "gfx//interface//missions//slu_victoria.dds"
+	}
+	spriteType = {
+		name = "slu_sisters"
+		texturefile = "gfx//interface//missions//slu_sisters.dds"
+	}
+	spriteType = {
+		name = "slu_absolutism"
+		texturefile = "gfx//interface//missions//slu_absolutism.dds"
+	}
+	spriteType = {
+		name = "midasgold"
+		texturefile = "gfx//interface//missions//midasgold.dds"
+	}
+	spriteType = {
+		name = "skygirl"
+		texturefile = "gfx//interface//missions//skygirl.dds"
+	}
+	spriteType = {
+		name = "mission_salt"
+		texturefile = "gfx//interface//missions//mission_salt.dds"
+	}
+	spriteType = {
+		name = "mission_paper"
+		texturefile = "gfx//interface//missions//mission_paper.dds"
+	}
+	spriteType = {
+		name = "puppet_tower"
+		texturefile = "gfx//interface//missions//puppet_tower.dds"
+	}
+	spriteType = {
+		name = "slu_frog"
+		texturefile = "gfx//interface//missions//slu_frog.dds"
+	}
+	spriteType = {
+		name = "slu_tamamo"
+		texturefile = "gfx//interface//missions//slu_tamamo.dds"
+	}
+	spriteType = {
+		name = "mission_dark_woods"
+		texturefile = "gfx//interface//missions//mission_dark_woods.dds"
+	}
+	spriteType = {
+		name = "enrikalake"
+		texturefile = "gfx//interface//missions//enrikalake.dds"
+	}
+	spriteType = {
+		name = "melk_maid"
+		texturefile = "gfx//interface//missions//melk_maid.dds"
+	}
+	spriteType = {
+		name = "LDQ"
+		texturefile = "gfx//interface//missions//LDQ.dds"
+	}
+	spriteType = {
+		name = "slu_magic"
+		texturefile = "gfx//interface//missions//slu_magic.dds"
+	}
+	spriteType = {
+		name = "melk_alice"
+		texturefile = "gfx//interface//missions//melk_alice.dds"
+	}
+}
+#you can type stuff with a "#" and it wont affect the code IT WORKS!!
+#nice =w=
+#so yeah even small mistakes/typos and it wont work, you have to be extra vigilent when you code
+#do we need to do something for the generic MT or? like if make a mission in the position of the old generic mission?
+#it will overwrite it yes
+#nice, just gotta take it slow and carefuly re-read the stuff
+#that's right, re reading your code is very important. now you could look at other code for MT for inspiration and to see how they work.
+#i made you some place holders for future icons, just replace the "..." to make it work with future .dds images

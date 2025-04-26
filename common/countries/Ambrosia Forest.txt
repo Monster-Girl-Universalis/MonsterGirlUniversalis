@@ -1,0 +1,110 @@
+graphical_culture = asiangfx
+color = { 139 169 121 }
+revolutionary_colors = { 1 1 5 }
+random_nation_chance = 0
+historical_score = 500
+historical_idea_groups = { 
+}
+historical_units = { 
+}
+monarch_names = { 
+	"Motohito #0" = 5
+	"Mihito #0" = 5
+	"Hikohito #0" = 5
+	"Fusahito #0" = 5
+	"Katsuhito #0" = 5
+	"Tomohito #0" = 5
+	"Michihito #0" = 5
+	"Kazuhito #0" = 5
+	"Kotohito #0" = 5
+	"Tsuguhito #0" = 5
+	"Nagahito #0" = 5
+	"Satohito #0" = 5
+	"Asahito #0" = 5
+	"Yasuhito #0" = 5
+	"Teruhito #0" = 5
+	"Hidehito #0" = 5
+	"Morohito #0" = 5
+	"Ayahito #0" = 5
+	"Takauji #0" = 5
+	"Yoshiakira #0" = 5
+	"Yoshimitsu #0" = 5
+	"Yoshimochi #0" = 5
+	"Yoshikazu #0" = 5
+	"Yoshinori #0" = 5
+	"Yoshikatsu #0" = 5
+	"Yoshimasa #0" = 5
+	"Yoshihisa #0" = 5
+	"Yoshitane #0" = 5
+	"Yoshizumi #0" = 5
+	"Yoshiharu #0" = 5
+	"Yoshiteru #0" = 5
+	"Yoshihide #0" = 5
+	"Yoshiaki #0" = 5
+	"Nobutada #0" = 5
+	"Hidenobu #0" = 5
+	"Hideyoshi #0" = 5
+	"Hideyori #0" = 5
+	"Ieyasu #0" = 5
+	"Hidetada #0" = 5
+	"Iemitsu #0" = 5
+	"Ietsuna #0" = 5
+	"Tsunayoshi #0" = 5
+	"Ienobu #0" = 5
+	"Ietsugu #0" = 5
+	"Yoshimune #0" = 5
+	"Ieshige #0" = 5
+	"Ieharu #0" = 5
+	"Ienari #0" = 5
+	"Ieyoshi #0" = 5
+	"Iesada #0" = 5
+	"Iemochi #0" = 5
+	"Yoshinobu #0" = 5
+	"Alleria #0" = -20
+	"Alice #0" = -20
+	"Ariadne #0" = -20
+	"Augusta #0" = -20
+	"Aurora #0" = -20
+	"Fernandez #0" = -20
+	"Lucretia #0" = -20
+	"Claudia #0" = -20
+	"Elissa #0" = -20
+	"Reina #0" = -20
+	"Tsubaki #0" = -20
+	"Rinoa #0" = -20
+	"Anna #0" = -20
+	"Satsuki #0" = -20
+	"Natsuki #0" = -20
+	"Sonya #0" = -20
+	"Stella #0" = -20
+	"Marion #0" = -20
+	"Shoki #0" = -20
+	"Kasumi #0" = -20
+	"Freya #0" = -20
+	"Carol #0" = -20
+	"Mary #0" = -20
+	"Franceska #0" = -20
+	"Ellie #0" = -20
+	"Yvette #0" = -20
+	"Yayoi #0" = -20
+	"Teresa #0" = -20
+	"Lona #0" = -20
+	"Melissa #0" = -20
+}
+leader_names = { 
+	Silverleaf Moonwhisper Sunfire Starweaver Windcaller Woodsworn Shadowhunter Elfborn Leafsong Starshine
+	Sunflower Greenbough Windchaser Nightshade Woodwanderer Starfall Sunburst Forestwalker Shadowstalker Leafwhisper
+	Dreamweaver Autumnleaf Winterfrost Duskrunner Dawnlight Waterfall Fireheart Earthsong 
+}
+ship_names = { 
+	Elara Aeloria Thalindor Sylvanwind Verdelith Starleaf Silverbreeze Eldertide Feyshadow Moonshimmer
+	Ilyrion Nimbelar Elessar Lorendel Elunara Glyndoria Woodhaven Tiraelin Galenor Faelindra
+	Silvershade Windswift Thalassian Elendil Starleaf Greenleaf Aeloria Moonshadow Eldertree Aerowind
+	Thornbloom Elfsong Sylvanstar Frostwood Rivendell Moonlily Breezefall Galadhrim Faelight Sunspire
+}
+army_names = { 
+	"Ambrosia Army" "$PROVINCE$ Army" 
+}
+fleet_names = { 
+	"Ambrosia Navy" "$PROVINCE$ Navy" 
+}

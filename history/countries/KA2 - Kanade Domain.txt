@@ -1,0 +1,19 @@
+government = monarchy
+government_rank = 3
+primary_culture = Slime_Girl
+add_government_reform = Slime_realm
+religion = dark_goddess_religion
+technology_group = TECH_SLIME
+1444.1.1 = { 
+	monarch = { 
+		name = "Kanade"
+		dynasty = "the Slime Ancestor"
+		birth_date = 1.1.1
+		adm = 5
+		dip = 4
+		mil = 6
+		female = yes
+	}
+	add_ruler_personality = immortal_personality
+}
+capital = 3132

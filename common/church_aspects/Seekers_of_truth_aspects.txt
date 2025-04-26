@@ -693,6 +693,8 @@ science_squid_extract = {
 			was_tag = VU1
 			was_tag = VU2
 			was_tag = NP1
+			tag = TR2
+			was_tag = TR2
 
 			#tag = ML1
 			#was_tag = ML1

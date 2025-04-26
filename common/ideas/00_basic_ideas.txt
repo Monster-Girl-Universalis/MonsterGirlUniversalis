@@ -2368,6 +2368,8 @@ alraune_ideas = {
 			was_tag = AL2
 			was_tag = AL3
 			was_tag = AL4
+			tag = TR2
+			was_tag = TR2
 			tag = EL2
 			tag = EL3
 			was_tag = EL2
@@ -2439,8 +2441,6 @@ elf_ideas = {
 				value = 1
 			} 
 			technology_group = TECH_ELF
-			tag = UN1
-			tag = SL1
 			tag = LC1
 			was_tag = PPR
 			was_tag = JLW
@@ -2455,8 +2455,6 @@ elf_ideas = {
 			was_tag = IP1
 			was_tag = FS1
 			was_tag = SR2
-			was_tag = UN1
-			was_tag = SL1
 			was_tag = LC1
 			was_tag = ENV
 			was_tag = EL1
@@ -2632,8 +2630,6 @@ insect_ideas = {
 			} 
 			tag = SSP
 			was_tag = SSP
-			tag = TR2
-			was_tag = TR2
 			was_tag = BGH
 			was_tag = MDR
 			was_tag = SPG
@@ -3907,7 +3903,7 @@ tanuki_ideas = {
 
 	bonus = {
 		no_claim_cost_increasement = yes
-		all_power_cost = -0.025
+		all_power_cost = -0.05
 	}
 
 	charismatic_negotiators = {
@@ -3915,7 +3911,7 @@ tanuki_ideas = {
 		dip_advisor_cost = -0.25
 	}
 	economic_savvy = {
-		global_trade_goods_size = 0.1
+		global_trade_goods_size = 0.5
 	}
 	cunning_merchants = {
 		global_trade_power = 0.1
@@ -3925,7 +3921,7 @@ tanuki_ideas = {
 		spy_offence = 1
 	}
 	hidden_treasures = {
-		trade_company_investment_cost = -0.1
+		trade_company_investment_cost = -0.33
 	}
 	craftsmanship_legacy = {
 		center_of_trade_upgrade_cost = -0.5
@@ -3999,7 +3995,7 @@ fairy_ideas = {
 		defensiveness = 0.20
 	}
 	Magical_Resonance = {
-		monarch_admin_power = 1
+		country_admin_power = 1
 	}
 	Adaptive_Fairies = {
 		global_institution_spread = 0.15

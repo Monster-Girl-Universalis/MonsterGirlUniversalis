@@ -455,6 +455,10 @@ roach_tower_3 = {
 		
 		effect = {
 			add_accepted_culture = Minotaur_Girl
+			add_country_modifier = {
+				name = "RT1_accepted_minotaurs"
+				duration = -1
+			}
 			monte_carlo_region = {
 				type = all
 				add_permanent_claim = ROOT

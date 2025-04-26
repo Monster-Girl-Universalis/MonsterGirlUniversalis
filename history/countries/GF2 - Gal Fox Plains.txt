@@ -1,0 +1,18 @@
+government = monarchy
+add_government_reform = Roid_realm
+government_rank = 1
+technology_group = TECH_ROID
+religion = yamatai_religion
+primary_culture = Mecha_Fox
+1444.1.1 = { 
+	monarch = { 
+		name = "Minamo"
+		dynasty = "Gal Fox"
+		birth_date = 1.1.1
+		adm = 5
+		dip = 5
+		mil = 4
+		female = yes
+	}
+}
+capital = 3233

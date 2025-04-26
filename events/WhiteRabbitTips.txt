@@ -1,0 +1,1306 @@
+namespace = white_rabbit_tips
+
+#White Rabbit gives explanation to mod aspects
+country_event = {
+	id = white_rabbit_tips.1
+	title = "white_rabbit_tips.1.t"
+	desc = "white_rabbit_tips.1.desc"
+	picture = WHITE_RABBIT_eventPicture
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = { set_country_flag = had_white_rabbit_tutorial_event }
+	}
+
+	option = {	#Tell me about racial ideas
+		name = white_rabbit_tips.1.a
+		country_event = {
+			id = white_rabbit_tips.2
+		}
+	}
+	option = {	#Tell me about estates and their privileges
+		name = white_rabbit_tips.1.b
+		country_event = {
+			id = white_rabbit_tips.3
+		}
+	}
+	option = {	#Tell me about mission trees
+		name = white_rabbit_tips.1.c
+		country_event = {
+			id = white_rabbit_tips.4
+		}
+	}
+	option = {	#Tell me about religions
+		name = white_rabbit_tips.1.d
+		country_event = {
+			id = white_rabbit_tips.5
+		}
+	}
+	option = {	#Tell me about tech groups
+		name = white_rabbit_tips.1.e
+		country_event = {
+			id = white_rabbit_tips.6
+		}
+	}
+
+	option = {	#That's enough info
+		name = white_rabbit_tips.cancel
+		highlight = yes
+	}
+}
+
+country_event = {
+	id = white_rabbit_tips.2
+	title = "white_rabbit_tips.2.t"
+	desc = "white_rabbit_tips.2.desc"
+	picture = WHITE_RABBIT_eventPicture
+	is_triggered_only = yes
+
+	option = {	#Human Ideas
+		name = white_rabbit_tips.2.a
+		country_event = {
+			id = white_rabbit_tips.200
+		}
+	}
+	option = {	#Land Dweller Ideas
+		name = white_rabbit_tips.2.b
+		country_event = {
+			id = white_rabbit_tips.201
+		}
+	}
+	option = {	#Undead Ideas
+		name = white_rabbit_tips.2.c
+		country_event = {
+			id = white_rabbit_tips.202
+		}
+	}
+	option = {	#Ghost Ideas
+		name = white_rabbit_tips.2.d
+		country_event = {
+			id = white_rabbit_tips.203
+		}
+	}
+	option = {	#Succubi Ideas
+		name = white_rabbit_tips.2.e
+		country_event = {
+			id = white_rabbit_tips.204
+		}
+	}
+	option = {	#Slime Ideas
+		name = white_rabbit_tips.2.f
+		country_event = {
+			id = white_rabbit_tips.205
+		}
+	}
+	option = {	#Harpy Ideas
+		name = white_rabbit_tips.2.g
+		country_event = {
+			id = white_rabbit_tips.206
+		}
+	}
+	option = {	#Fairy Ideas
+		name = white_rabbit_tips.2.h
+		country_event = {
+			id = white_rabbit_tips.207
+		}
+	}
+	option = {	#Apoptosis Ideas
+		name = white_rabbit_tips.2.i
+		country_event = {
+			id = white_rabbit_tips.208
+		}
+	}
+	option = {	#Elf Ideas
+		name = white_rabbit_tips.2.j
+		country_event = {
+			id = white_rabbit_tips.209
+		}
+	}
+
+	option = {	#Next Page
+		name = white_rabbit_tips.next
+		country_event = {
+			id = white_rabbit_tips.20
+		}
+		highlight = yes
+	}
+	option = {	#Prev Page
+		name = white_rabbit_tips.prev
+		country_event = {
+			id = white_rabbit_tips.1
+		}
+		highlight = yes
+	}
+	option = {	#That's enough info
+		name = white_rabbit_tips.cancel
+		highlight = yes
+	}
+}
+
+
+country_event = {
+	id = white_rabbit_tips.20
+	title = "white_rabbit_tips.20.t"
+	desc = "white_rabbit_tips.20.desc"
+	picture = WHITE_RABBIT_eventPicture
+	is_triggered_only = yes
+
+	option = {	#Insect Ideas
+		name = white_rabbit_tips.20.a
+		country_event = {
+			id = white_rabbit_tips.210
+		}
+	}
+	option = {	#Beast Ideas
+		name = white_rabbit_tips.20.b
+		country_event = {
+			id = white_rabbit_tips.211
+		}
+	}
+	option = {	#Alraune Ideas
+		name = white_rabbit_tips.20.c
+		country_event = {
+			id = white_rabbit_tips.212
+		}
+	}
+	option = {	#Dragon Ideas
+		name = white_rabbit_tips.20.d
+		country_event = {
+			id = white_rabbit_tips.213
+		}
+	}
+	option = {	#Demi-Human Ideas
+		name = white_rabbit_tips.20.e
+		country_event = {
+			id = white_rabbit_tips.214
+		}
+	}
+	option = {	#Vampire Ideas
+		name = white_rabbit_tips.20.f
+		country_event = {
+			id = white_rabbit_tips.215
+		}
+	}
+	option = {	#Yoma Ideas
+		name = white_rabbit_tips.20.g
+		country_event = {
+			id = white_rabbit_tips.216
+		}
+	}
+	option = {	#Sea Dweller Ideas
+		name = white_rabbit_tips.20.h
+		country_event = {
+			id = white_rabbit_tips.217
+		}
+	}
+	option = {	#Mermaid Ideas
+		name = white_rabbit_tips.20.i
+		country_event = {
+			id = white_rabbit_tips.218
+		}
+	}
+	option = {	#Kitsune Ideas
+		name = white_rabbit_tips.20.j
+		country_event = {
+			id = white_rabbit_tips.219
+		}
+	}
+
+	option = {	#Next Page
+		name = white_rabbit_tips.next
+		country_event = {
+			id = white_rabbit_tips.21
+		}
+		highlight = yes
+	}
+	option = {	#Prev Page
+		name = white_rabbit_tips.prev
+		country_event = {
+			id = white_rabbit_tips.2
+		}
+		highlight = yes
+	}
+	option = {	#That's enough info
+		name = white_rabbit_tips.cancel
+		highlight = yes
+	}
+}
+
+
+country_event = {
+	id = white_rabbit_tips.21
+	title = "white_rabbit_tips.21.t"
+	desc = "white_rabbit_tips.21.desc"
+	picture = WHITE_RABBIT_eventPicture
+	is_triggered_only = yes
+
+	option = {	#Scylla Ideas
+		name = white_rabbit_tips.21.a
+		country_event = {
+			id = white_rabbit_tips.220
+		}
+	}
+	option = {	#Lamia Ideas
+		name = white_rabbit_tips.21.b
+		country_event = {
+			id = white_rabbit_tips.221
+		}
+	}
+	option = {	#Doll Ideas
+		name = white_rabbit_tips.21.c
+		country_event = {
+			id = white_rabbit_tips.222
+		}
+	}
+	option = {	#Chimera Ideas
+		name = white_rabbit_tips.21.d
+		country_event = {
+			id = white_rabbit_tips.223
+		}
+	}
+	option = {	#Angel Ideas
+		name = white_rabbit_tips.21.e
+		country_event = {
+			id = white_rabbit_tips.224
+		}
+	}
+	option = {	#Roid Ideas
+		name = white_rabbit_tips.21.f
+		country_event = {
+			id = white_rabbit_tips.225
+		}
+	}
+	option = {	#Tanuki Ideas
+		name = white_rabbit_tips.21.g
+		country_event = {
+			id = white_rabbit_tips.226
+		}
+	}
+	option = {	#Giant Ideas
+		name = white_rabbit_tips.21.h
+		country_event = {
+			id = white_rabbit_tips.227
+		}
+	}
+	option = {	#Prev Page
+		name = white_rabbit_tips.prev
+		country_event = {
+			id = white_rabbit_tips.20
+		}
+		highlight = yes
+	}
+	option = {	#That's enough info
+		name = white_rabbit_tips.cancel
+		highlight = yes
+	}
+}
+country_event = {
+	id = white_rabbit_tips.200
+	title = "white_rabbit_tips.200.t"
+	desc = "white_rabbit_tips.200.desc"
+	picture = WHITE_RABBIT_eventPicture
+	is_triggered_only = yes
+
+	option = {	#Prev Page
+		name = white_rabbit_tips.prev
+		country_event = {
+			id = white_rabbit_tips.2
+		}
+		highlight = yes
+	}
+	option = {	#That's enough info
+		name = white_rabbit_tips.cancel
+		highlight = yes
+	}
+}
+country_event = {
+	id = white_rabbit_tips.201
+	title = "white_rabbit_tips.201.t"
+	desc = "white_rabbit_tips.201.desc"
+	picture = WHITE_RABBIT_eventPicture
+	is_triggered_only = yes
+
+	option = {	#Prev Page
+		name = white_rabbit_tips.prev
+		country_event = {
+			id = white_rabbit_tips.2
+		}
+		highlight = yes
+	}
+	option = {	#That's enough info
+		name = white_rabbit_tips.cancel
+		highlight = yes
+	}
+}
+country_event = {
+	id = white_rabbit_tips.202
+	title = "white_rabbit_tips.202.t"
+	desc = "white_rabbit_tips.202.desc"
+	picture = WHITE_RABBIT_eventPicture
+	is_triggered_only = yes
+
+	option = {	#Prev Page
+		name = white_rabbit_tips.prev
+		country_event = {
+			id = white_rabbit_tips.2
+		}
+		highlight = yes
+	}
+	option = {	#That's enough info
+		name = white_rabbit_tips.cancel
+		highlight = yes
+	}
+}
+country_event = {
+	id = white_rabbit_tips.203
+	title = "white_rabbit_tips.203.t"
+	desc = "white_rabbit_tips.203.desc"
+	picture = WHITE_RABBIT_eventPicture
+	is_triggered_only = yes
+
+	option = {	#Prev Page
+		name = white_rabbit_tips.prev
+		country_event = {
+			id = white_rabbit_tips.2
+		}
+		highlight = yes
+	}
+	option = {	#That's enough info
+		name = white_rabbit_tips.cancel
+		highlight = yes
+	}
+}
+country_event = {
+	id = white_rabbit_tips.204
+	title = "white_rabbit_tips.204.t"
+	desc = "white_rabbit_tips.204.desc"
+	picture = WHITE_RABBIT_eventPicture
+	is_triggered_only = yes
+
+	option = {	#Prev Page
+		name = white_rabbit_tips.prev
+		country_event = {
+			id = white_rabbit_tips.2
+		}
+		highlight = yes
+	}
+	option = {	#That's enough info
+		name = white_rabbit_tips.cancel
+		highlight = yes
+	}
+}
+country_event = {
+	id = white_rabbit_tips.205
+	title = "white_rabbit_tips.205.t"
+	desc = "white_rabbit_tips.205.desc"
+	picture = WHITE_RABBIT_eventPicture
+	is_triggered_only = yes
+
+	option = {	#Prev Page
+		name = white_rabbit_tips.prev
+		country_event = {
+			id = white_rabbit_tips.2
+		}
+		highlight = yes
+	}
+	option = {	#That's enough info
+		name = white_rabbit_tips.cancel
+		highlight = yes
+	}
+}
+country_event = {
+	id = white_rabbit_tips.206
+	title = "white_rabbit_tips.206.t"
+	desc = "white_rabbit_tips.206.desc"
+	picture = WHITE_RABBIT_eventPicture
+	is_triggered_only = yes
+
+	option = {	#Prev Page
+		name = white_rabbit_tips.prev
+		country_event = {
+			id = white_rabbit_tips.2
+		}
+		highlight = yes
+	}
+	option = {	#That's enough info
+		name = white_rabbit_tips.cancel
+		highlight = yes
+	}
+}
+country_event = {
+	id = white_rabbit_tips.207
+	title = "white_rabbit_tips.207.t"
+	desc = "white_rabbit_tips.207.desc"
+	picture = WHITE_RABBIT_eventPicture
+	is_triggered_only = yes
+
+	option = {	#Prev Page
+		name = white_rabbit_tips.prev
+		country_event = {
+			id = white_rabbit_tips.2
+		}
+		highlight = yes
+	}
+	option = {	#That's enough info
+		name = white_rabbit_tips.cancel
+		highlight = yes
+	}
+}
+country_event = {
+	id = white_rabbit_tips.208
+	title = "white_rabbit_tips.208.t"
+	desc = "white_rabbit_tips.208.desc"
+	picture = WHITE_RABBIT_eventPicture
+	is_triggered_only = yes
+
+	option = {	#Prev Page
+		name = white_rabbit_tips.prev
+		country_event = {
+			id = white_rabbit_tips.2
+		}
+		highlight = yes
+	}
+	option = {	#That's enough info
+		name = white_rabbit_tips.cancel
+		highlight = yes
+	}
+}
+country_event = {
+	id = white_rabbit_tips.209
+	title = "white_rabbit_tips.209.t"
+	desc = "white_rabbit_tips.209.desc"
+	picture = WHITE_RABBIT_eventPicture
+	is_triggered_only = yes
+
+	option = {	#Prev Page
+		name = white_rabbit_tips.prev
+		country_event = {
+			id = white_rabbit_tips.2
+		}
+		highlight = yes
+	}
+	option = {	#That's enough info
+		name = white_rabbit_tips.cancel
+		highlight = yes
+	}
+}
+country_event = {
+	id = white_rabbit_tips.210
+	title = "white_rabbit_tips.210.t"
+	desc = "white_rabbit_tips.210.desc"
+	picture = WHITE_RABBIT_eventPicture
+	is_triggered_only = yes
+
+	option = {	#Prev Page
+		name = white_rabbit_tips.prev
+		country_event = {
+			id = white_rabbit_tips.20
+		}
+		highlight = yes
+	}
+	option = {	#That's enough info
+		name = white_rabbit_tips.cancel
+		highlight = yes
+	}
+}
+country_event = {
+	id = white_rabbit_tips.211
+	title = "white_rabbit_tips.211.t"
+	desc = "white_rabbit_tips.211.desc"
+	picture = WHITE_RABBIT_eventPicture
+	is_triggered_only = yes
+
+	option = {	#Prev Page
+		name = white_rabbit_tips.prev
+		country_event = {
+			id = white_rabbit_tips.20
+		}
+		highlight = yes
+	}
+	option = {	#That's enough info
+		name = white_rabbit_tips.cancel
+		highlight = yes
+	}
+}
+country_event = {
+	id = white_rabbit_tips.212
+	title = "white_rabbit_tips.212.t"
+	desc = "white_rabbit_tips.212.desc"
+	picture = WHITE_RABBIT_eventPicture
+	is_triggered_only = yes
+
+	option = {	#Prev Page
+		name = white_rabbit_tips.prev
+		country_event = {
+			id = white_rabbit_tips.20
+		}
+		highlight = yes
+	}
+	option = {	#That's enough info
+		name = white_rabbit_tips.cancel
+		highlight = yes
+	}
+}
+country_event = {
+	id = white_rabbit_tips.213
+	title = "white_rabbit_tips.213.t"
+	desc = "white_rabbit_tips.213.desc"
+	picture = WHITE_RABBIT_eventPicture
+	is_triggered_only = yes
+
+	option = {	#Prev Page
+		name = white_rabbit_tips.prev
+		country_event = {
+			id = white_rabbit_tips.20
+		}
+		highlight = yes
+	}
+	option = {	#That's enough info
+		name = white_rabbit_tips.cancel
+		highlight = yes
+	}
+}
+country_event = {
+	id = white_rabbit_tips.214
+	title = "white_rabbit_tips.214.t"
+	desc = "white_rabbit_tips.214.desc"
+	picture = WHITE_RABBIT_eventPicture
+	is_triggered_only = yes
+
+	option = {	#Prev Page
+		name = white_rabbit_tips.prev
+		country_event = {
+			id = white_rabbit_tips.20
+		}
+		highlight = yes
+	}
+	option = {	#That's enough info
+		name = white_rabbit_tips.cancel
+		highlight = yes
+	}
+}
+country_event = {
+	id = white_rabbit_tips.215
+	title = "white_rabbit_tips.215.t"
+	desc = "white_rabbit_tips.215.desc"
+	picture = WHITE_RABBIT_eventPicture
+	is_triggered_only = yes
+
+	option = {	#Prev Page
+		name = white_rabbit_tips.prev
+		country_event = {
+			id = white_rabbit_tips.20
+		}
+		highlight = yes
+	}
+	option = {	#That's enough info
+		name = white_rabbit_tips.cancel
+		highlight = yes
+	}
+}
+country_event = {
+	id = white_rabbit_tips.216
+	title = "white_rabbit_tips.216.t"
+	desc = "white_rabbit_tips.216.desc"
+	picture = WHITE_RABBIT_eventPicture
+	is_triggered_only = yes
+
+	option = {	#Prev Page
+		name = white_rabbit_tips.prev
+		country_event = {
+			id = white_rabbit_tips.20
+		}
+		highlight = yes
+	}
+	option = {	#That's enough info
+		name = white_rabbit_tips.cancel
+		highlight = yes
+	}
+}
+country_event = {
+	id = white_rabbit_tips.217
+	title = "white_rabbit_tips.217.t"
+	desc = "white_rabbit_tips.217.desc"
+	picture = WHITE_RABBIT_eventPicture
+	is_triggered_only = yes
+
+	option = {	#Prev Page
+		name = white_rabbit_tips.prev
+		country_event = {
+			id = white_rabbit_tips.20
+		}
+		highlight = yes
+	}
+	option = {	#That's enough info
+		name = white_rabbit_tips.cancel
+		highlight = yes
+	}
+}
+country_event = {
+	id = white_rabbit_tips.218
+	title = "white_rabbit_tips.218.t"
+	desc = "white_rabbit_tips.218.desc"
+	picture = WHITE_RABBIT_eventPicture
+	is_triggered_only = yes
+
+	option = {	#Prev Page
+		name = white_rabbit_tips.prev
+		country_event = {
+			id = white_rabbit_tips.20
+		}
+		highlight = yes
+	}
+	option = {	#That's enough info
+		name = white_rabbit_tips.cancel
+		highlight = yes
+	}
+}
+country_event = {
+	id = white_rabbit_tips.219
+	title = "white_rabbit_tips.219.t"
+	desc = "white_rabbit_tips.219.desc"
+	picture = WHITE_RABBIT_eventPicture
+	is_triggered_only = yes
+
+	option = {	#Prev Page
+		name = white_rabbit_tips.prev
+		country_event = {
+			id = white_rabbit_tips.20
+		}
+		highlight = yes
+	}
+	option = {	#That's enough info
+		name = white_rabbit_tips.cancel
+		highlight = yes
+	}
+}
+country_event = {
+	id = white_rabbit_tips.220
+	title = "white_rabbit_tips.220.t"
+	desc = "white_rabbit_tips.220.desc"
+	picture = WHITE_RABBIT_eventPicture
+	is_triggered_only = yes
+
+	option = {	#Prev Page
+		name = white_rabbit_tips.prev
+		country_event = {
+			id = white_rabbit_tips.21
+		}
+		highlight = yes
+	}
+	option = {	#That's enough info
+		name = white_rabbit_tips.cancel
+		highlight = yes
+	}
+}
+country_event = {
+	id = white_rabbit_tips.221
+	title = "white_rabbit_tips.221.t"
+	desc = "white_rabbit_tips.221.desc"
+	picture = WHITE_RABBIT_eventPicture
+	is_triggered_only = yes
+
+	option = {	#Prev Page
+		name = white_rabbit_tips.prev
+		country_event = {
+			id = white_rabbit_tips.21
+		}
+		highlight = yes
+	}
+	option = {	#That's enough info
+		name = white_rabbit_tips.cancel
+		highlight = yes
+	}
+}
+country_event = {
+	id = white_rabbit_tips.222
+	title = "white_rabbit_tips.222.t"
+	desc = "white_rabbit_tips.222.desc"
+	picture = WHITE_RABBIT_eventPicture
+	is_triggered_only = yes
+
+	option = {	#Prev Page
+		name = white_rabbit_tips.prev
+		country_event = {
+			id = white_rabbit_tips.21
+		}
+		highlight = yes
+	}
+	option = {	#That's enough info
+		name = white_rabbit_tips.cancel
+		highlight = yes
+	}
+}
+country_event = {
+	id = white_rabbit_tips.223
+	title = "white_rabbit_tips.223.t"
+	desc = "white_rabbit_tips.223.desc"
+	picture = WHITE_RABBIT_eventPicture
+	is_triggered_only = yes
+
+	option = {	#Prev Page
+		name = white_rabbit_tips.prev
+		country_event = {
+			id = white_rabbit_tips.21
+		}
+		highlight = yes
+	}
+	option = {	#That's enough info
+		name = white_rabbit_tips.cancel
+		highlight = yes
+	}
+}
+country_event = {
+	id = white_rabbit_tips.224
+	title = "white_rabbit_tips.224.t"
+	desc = "white_rabbit_tips.224.desc"
+	picture = WHITE_RABBIT_eventPicture
+	is_triggered_only = yes
+
+	option = {	#Prev Page
+		name = white_rabbit_tips.prev
+		country_event = {
+			id = white_rabbit_tips.21
+		}
+		highlight = yes
+	}
+	option = {	#That's enough info
+		name = white_rabbit_tips.cancel
+		highlight = yes
+	}
+}
+country_event = {
+	id = white_rabbit_tips.225
+	title = "white_rabbit_tips.225.t"
+	desc = "white_rabbit_tips.225.desc"
+	picture = WHITE_RABBIT_eventPicture
+	is_triggered_only = yes
+
+	option = {	#Prev Page
+		name = white_rabbit_tips.prev
+		country_event = {
+			id = white_rabbit_tips.21
+		}
+		highlight = yes
+	}
+	option = {	#That's enough info
+		name = white_rabbit_tips.cancel
+		highlight = yes
+	}
+}
+country_event = {
+	id = white_rabbit_tips.226
+	title = "white_rabbit_tips.226.t"
+	desc = "white_rabbit_tips.226.desc"
+	picture = WHITE_RABBIT_eventPicture
+	is_triggered_only = yes
+
+	option = {	#Prev Page
+		name = white_rabbit_tips.prev
+		country_event = {
+			id = white_rabbit_tips.21
+		}
+		highlight = yes
+	}
+	option = {	#That's enough info
+		name = white_rabbit_tips.cancel
+		highlight = yes
+	}
+}
+country_event = {
+	id = white_rabbit_tips.227
+	title = "white_rabbit_tips.227.t"
+	desc = "white_rabbit_tips.227.desc"
+	picture = WHITE_RABBIT_eventPicture
+	is_triggered_only = yes
+
+	option = {	#Prev Page
+		name = white_rabbit_tips.prev
+		country_event = {
+			id = white_rabbit_tips.21
+		}
+		highlight = yes
+	}
+	option = {	#That's enough info
+		name = white_rabbit_tips.cancel
+		highlight = yes
+	}
+}
+
+
+country_event = {
+	id = white_rabbit_tips.3
+	title = "white_rabbit_tips.3.t"
+	desc = "white_rabbit_tips.3.desc"
+	picture = WHITE_RABBIT_eventPicture
+	is_triggered_only = yes
+
+	option = {	#Vanilla Estates
+		name = white_rabbit_tips.3.a
+		country_event = {
+			id = white_rabbit_tips.300
+		}
+	}
+	option = {	#Monster Girls
+		name = white_rabbit_tips.3.b
+		country_event = {
+			id = white_rabbit_tips.301
+		}
+	}
+	option = {	#Angels
+		name = white_rabbit_tips.3.c
+		country_event = {
+			id = white_rabbit_tips.302
+		}
+	}
+	option = {	#Spiritualists
+		name = white_rabbit_tips.3.d
+		country_event = {
+			id = white_rabbit_tips.303
+		}
+	}
+	option = {	#Apoptosis
+		name = white_rabbit_tips.3.e
+		country_event = {
+			id = white_rabbit_tips.304
+		}
+	}
+	option = {	#Prev Page
+		name = white_rabbit_tips.prev
+		country_event = {
+			id = white_rabbit_tips.1
+		}
+		highlight = yes
+	}
+	option = {	#That's enough info
+		name = white_rabbit_tips.cancel
+		highlight = yes
+	}
+}
+
+country_event = {
+	id = white_rabbit_tips.300
+	title = "white_rabbit_tips.300.t"
+	desc = "white_rabbit_tips.300.desc"
+	picture = WHITE_RABBIT_eventPicture
+	is_triggered_only = yes
+
+	option = {	#Prev Page
+		name = white_rabbit_tips.prev
+		country_event = {
+			id = white_rabbit_tips.3
+		}
+		highlight = yes
+	}
+	option = {	#That's enough info
+		name = white_rabbit_tips.cancel
+		highlight = yes
+	}
+}
+country_event = {
+	id = white_rabbit_tips.301
+	title = "white_rabbit_tips.301.t"
+	desc = "white_rabbit_tips.301.desc"
+	picture = WHITE_RABBIT_eventPicture
+	is_triggered_only = yes
+
+	option = {	#Prev Page
+		name = white_rabbit_tips.prev
+		country_event = {
+			id = white_rabbit_tips.3
+		}
+		highlight = yes
+	}
+	option = {	#That's enough info
+		name = white_rabbit_tips.cancel
+		highlight = yes
+	}
+}
+country_event = {
+	id = white_rabbit_tips.302
+	title = "white_rabbit_tips.302.t"
+	desc = "white_rabbit_tips.302.desc"
+	picture = WHITE_RABBIT_eventPicture
+	is_triggered_only = yes
+
+	option = {	#Prev Page
+		name = white_rabbit_tips.prev
+		country_event = {
+			id = white_rabbit_tips.3
+		}
+		highlight = yes
+	}
+	option = {	#That's enough info
+		name = white_rabbit_tips.cancel
+		highlight = yes
+	}
+}
+country_event = {
+	id = white_rabbit_tips.303
+	title = "white_rabbit_tips.303.t"
+	desc = "white_rabbit_tips.303.desc"
+	picture = WHITE_RABBIT_eventPicture
+	is_triggered_only = yes
+
+	option = {	#Prev Page
+		name = white_rabbit_tips.prev
+		country_event = {
+			id = white_rabbit_tips.3
+		}
+		highlight = yes
+	}
+	option = {	#That's enough info
+		name = white_rabbit_tips.cancel
+		highlight = yes
+	}
+}
+country_event = {
+	id = white_rabbit_tips.304
+	title = "white_rabbit_tips.304.t"
+	desc = "white_rabbit_tips.304.desc"
+	picture = WHITE_RABBIT_eventPicture
+	is_triggered_only = yes
+
+	option = {	#Prev Page
+		name = white_rabbit_tips.prev
+		country_event = {
+			id = white_rabbit_tips.3
+		}
+		highlight = yes
+	}
+	option = {	#That's enough info
+		name = white_rabbit_tips.cancel
+		highlight = yes
+	}
+}
+country_event = {
+	id = white_rabbit_tips.4
+	title = "white_rabbit_tips.4.t"
+	desc = "white_rabbit_tips.4.desc"
+	picture = WHITE_RABBIT_eventPicture
+	is_triggered_only = yes
+
+	option = {	#Prev Page
+		name = white_rabbit_tips.prev
+		country_event = {
+			id = white_rabbit_tips.1
+		}
+		highlight = yes
+	}
+	option = {	#That's enough info
+		name = white_rabbit_tips.cancel
+		highlight = yes
+	}
+}
+country_event = {
+	id = white_rabbit_tips.5
+	title = "white_rabbit_tips.5.t"
+	desc = "white_rabbit_tips.5.desc"
+	picture = WHITE_RABBIT_eventPicture
+	is_triggered_only = yes
+
+	option = {	#Ilias Light
+		name = white_rabbit_tips.5.a
+		country_event = {
+			id = white_rabbit_tips.500
+		}
+	}
+	option = {	#Monster Lord Worship
+		name = white_rabbit_tips.5.b
+		country_event = {
+			id = white_rabbit_tips.501
+		}
+	}
+	option = {	#Elemental Religions
+		name = white_rabbit_tips.5.c
+		country_event = {
+			id = white_rabbit_tips.502
+		}
+	}
+	option = {	#Enrika Coexistence
+		name = white_rabbit_tips.5.d
+		country_event = {
+			id = white_rabbit_tips.503
+		}
+	}
+	option = {	#Chaos Worship
+		name = white_rabbit_tips.5.e
+		country_event = {
+			id = white_rabbit_tips.504
+		}
+	}
+	option = {	#Seekers of Truth
+		name = white_rabbit_tips.5.f
+		country_event = {
+			id = white_rabbit_tips.505
+		}
+	}
+	option = {	#Yamatai Shrines
+		name = white_rabbit_tips.5.g
+		country_event = {
+			id = white_rabbit_tips.506
+		}
+	}
+	option = {	#Fenrir Worship
+		name = white_rabbit_tips.5.h
+		country_event = {
+			id = white_rabbit_tips.507
+		}
+	}
+	option = {	#Angel World Ilias
+		name = white_rabbit_tips.5.i
+		country_event = {
+			id = white_rabbit_tips.508
+		}
+	}
+	option = {	#Dark Goddess Worship
+		name = white_rabbit_tips.5.j
+		country_event = {
+			id = white_rabbit_tips.509
+		}
+	}
+	option = {	#Rogue Magicraft
+		name = white_rabbit_tips.5.k
+		country_event = {
+			id = white_rabbit_tips.510
+		}
+	}
+	option = {	#Prev Page
+		name = white_rabbit_tips.prev
+		country_event = {
+			id = white_rabbit_tips.1
+		}
+		highlight = yes
+	}
+	option = {	#That's enough info
+		name = white_rabbit_tips.cancel
+		highlight = yes
+	}
+}
+country_event = {
+	id = white_rabbit_tips.500
+	title = "white_rabbit_tips.500.t"
+	desc = "white_rabbit_tips.500.desc"
+	picture = WHITE_RABBIT_eventPicture
+	is_triggered_only = yes
+
+	option = {	#Prev Page
+		name = white_rabbit_tips.prev
+		country_event = {
+			id = white_rabbit_tips.5
+		}
+		highlight = yes
+	}
+	option = {	#That's enough info
+		name = white_rabbit_tips.cancel
+		highlight = yes
+	}
+}
+country_event = {
+	id = white_rabbit_tips.501
+	title = "white_rabbit_tips.501.t"
+	desc = "white_rabbit_tips.501.desc"
+	picture = WHITE_RABBIT_eventPicture
+	is_triggered_only = yes
+
+	option = {	#Prev Page
+		name = white_rabbit_tips.prev
+		country_event = {
+			id = white_rabbit_tips.5
+		}
+		highlight = yes
+	}
+	option = {	#That's enough info
+		name = white_rabbit_tips.cancel
+		highlight = yes
+	}
+}
+country_event = {
+	id = white_rabbit_tips.502
+	title = "white_rabbit_tips.502.t"
+	desc = "white_rabbit_tips.502.desc"
+	picture = WHITE_RABBIT_eventPicture
+	is_triggered_only = yes
+
+	option = {	#Prev Page
+		name = white_rabbit_tips.prev
+		country_event = {
+			id = white_rabbit_tips.5
+		}
+		highlight = yes
+	}
+	option = {	#That's enough info
+		name = white_rabbit_tips.cancel
+		highlight = yes
+	}
+}
+country_event = {
+	id = white_rabbit_tips.503
+	title = "white_rabbit_tips.503.t"
+	desc = "white_rabbit_tips.503.desc"
+	picture = WHITE_RABBIT_eventPicture
+	is_triggered_only = yes
+
+	option = {	#Prev Page
+		name = white_rabbit_tips.prev
+		country_event = {
+			id = white_rabbit_tips.5
+		}
+		highlight = yes
+	}
+	option = {	#That's enough info
+		name = white_rabbit_tips.cancel
+		highlight = yes
+	}
+}
+country_event = {
+	id = white_rabbit_tips.504
+	title = "white_rabbit_tips.504.t"
+	desc = "white_rabbit_tips.504.desc"
+	picture = WHITE_RABBIT_eventPicture
+	is_triggered_only = yes
+
+	option = {	#Prev Page
+		name = white_rabbit_tips.prev
+		country_event = {
+			id = white_rabbit_tips.5
+		}
+		highlight = yes
+	}
+	option = {	#That's enough info
+		name = white_rabbit_tips.cancel
+		highlight = yes
+	}
+}
+country_event = {
+	id = white_rabbit_tips.505
+	title = "white_rabbit_tips.505.t"
+	desc = "white_rabbit_tips.505.desc"
+	picture = WHITE_RABBIT_eventPicture
+	is_triggered_only = yes
+
+	option = {	#Prev Page
+		name = white_rabbit_tips.prev
+		country_event = {
+			id = white_rabbit_tips.5
+		}
+		highlight = yes
+	}
+	option = {	#That's enough info
+		name = white_rabbit_tips.cancel
+		highlight = yes
+	}
+}
+country_event = {
+	id = white_rabbit_tips.506
+	title = "white_rabbit_tips.506.t"
+	desc = "white_rabbit_tips.506.desc"
+	picture = WHITE_RABBIT_eventPicture
+	is_triggered_only = yes
+
+	option = {	#Prev Page
+		name = white_rabbit_tips.prev
+		country_event = {
+			id = white_rabbit_tips.5
+		}
+		highlight = yes
+	}
+	option = {	#That's enough info
+		name = white_rabbit_tips.cancel
+		highlight = yes
+	}
+}
+country_event = {
+	id = white_rabbit_tips.507
+	title = "white_rabbit_tips.507.t"
+	desc = "white_rabbit_tips.507.desc"
+	picture = WHITE_RABBIT_eventPicture
+	is_triggered_only = yes
+
+	option = {	#Prev Page
+		name = white_rabbit_tips.prev
+		country_event = {
+			id = white_rabbit_tips.5
+		}
+		highlight = yes
+	}
+	option = {	#That's enough info
+		name = white_rabbit_tips.cancel
+		highlight = yes
+	}
+}
+country_event = {
+	id = white_rabbit_tips.508
+	title = "white_rabbit_tips.508.t"
+	desc = "white_rabbit_tips.508.desc"
+	picture = WHITE_RABBIT_eventPicture
+	is_triggered_only = yes
+
+	option = {	#Prev Page
+		name = white_rabbit_tips.prev
+		country_event = {
+			id = white_rabbit_tips.5
+		}
+		highlight = yes
+	}
+	option = {	#That's enough info
+		name = white_rabbit_tips.cancel
+		highlight = yes
+	}
+}
+country_event = {
+	id = white_rabbit_tips.509
+	title = "white_rabbit_tips.509.t"
+	desc = "white_rabbit_tips.509.desc"
+	picture = WHITE_RABBIT_eventPicture
+	is_triggered_only = yes
+
+	option = {	#Prev Page
+		name = white_rabbit_tips.prev
+		country_event = {
+			id = white_rabbit_tips.5
+		}
+		highlight = yes
+	}
+	option = {	#That's enough info
+		name = white_rabbit_tips.cancel
+		highlight = yes
+	}
+}
+country_event = {
+	id = white_rabbit_tips.510
+	title = "white_rabbit_tips.510.t"
+	desc = "white_rabbit_tips.510.desc"
+	picture = WHITE_RABBIT_eventPicture
+	is_triggered_only = yes
+
+	option = {	#Prev Page
+		name = white_rabbit_tips.prev
+		country_event = {
+			id = white_rabbit_tips.5
+		}
+		highlight = yes
+	}
+	option = {	#That's enough info
+		name = white_rabbit_tips.cancel
+		highlight = yes
+	}
+}
+country_event = {
+	id = white_rabbit_tips.6
+	title = "white_rabbit_tips.6.t"
+	desc = "white_rabbit_tips.6.desc"
+	picture = WHITE_RABBIT_eventPicture
+	is_triggered_only = yes
+
+	option = {	#Prev Page
+		name = white_rabbit_tips.prev
+		country_event = {
+			id = white_rabbit_tips.1
+		}
+		highlight = yes
+	}
+	option = {	#That's enough info
+		name = white_rabbit_tips.cancel
+		highlight = yes
+	}
+}

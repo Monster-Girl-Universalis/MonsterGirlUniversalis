@@ -733,10 +733,8 @@ slu_conquest_branch2 = {
 				}
 				add_permanent_claim = ROOT
 			}
-			set_variable = {
-   		which = Human_integration
-  		value = 1
-}
+			
+			unlock_race = { race = human }
 		}
 	}
 	SLU_mission_1_11 = { 
@@ -1030,10 +1028,7 @@ slu_conquest_branch3 = {
 				}
 				add_permanent_claim = ROOT
 			}
-			set_variable = {
-   		which = Harpy_integration
-  		value = 1
-}
+			unlock_race = { race = harpy }
 		}
 	}
 	slu_estates = { 
@@ -1236,11 +1231,9 @@ slu_diplomatic_branch = {
 			south_pole_coven = { type = all country_or_non_sovereign_subject_holds = ROOT }
 		}
 		effect = {
-			set_variable = {
-   				which = Yoma_integration
-  				value = 1
-			}
-        		add_adm_power = 75
+			unlock_race = { race = yoma }
+
+        	add_adm_power = 75
 			add_dip_power = 75
 			add_mil_power = 75
 		}

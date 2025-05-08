@@ -1,5 +1,550 @@
 ###GENERAL STUFF WITH VARIABLES###
 
+unlock_race = {
+	if = {
+		limit = { NOT = { has_race_unlocked = { race = $race$ } } }
+		custom_tooltip = unlock_race_$race$
+		set_country_flag = can_access_race_$race$
+	}
+}
+
+#This is to be run at the start of the game per country, and later on whenever tag changes.
+#if tech group swaps, the tech
+update_race_unlocks = {
+	if = {
+		limit = {
+			has_race_condition_alraune = yes
+		}
+		unlock_race = { race = alraune }
+	}
+	if = {
+		limit = {
+			has_race_condition_angel = yes
+		}
+		unlock_race = { race = angel }
+	}
+	if = {
+		limit = {
+			has_race_condition_apoptosis = yes
+		}
+		unlock_race = { race = apoptosis }
+	}
+	
+	if = {
+		limit = {
+			has_race_condition_beast = yes
+		}
+		unlock_race = { race = beast }
+	}
+	if = {
+		limit = {
+			has_race_condition_chimera = yes
+		}
+		unlock_race = { race = chimera }
+	}
+	if = {
+		limit = {
+			has_race_condition_demi_human = yes
+		}
+		unlock_race = { race = demi_human }
+	}
+	if = {
+		limit = {
+			has_race_condition_doll = yes
+		}
+		unlock_race = { race = doll }
+	}
+	if = {
+		limit = {
+			has_race_condition_dragon = yes
+		}
+		unlock_race = { race = dragon }
+	}
+	if = {
+		limit = {
+			has_race_condition_elf = yes
+		}
+		unlock_race = { race = elf }
+	}
+	if = {
+		limit = {
+			has_race_condition_fairy = yes
+		}
+		unlock_race = { race = fairy }
+	}
+	if = {
+		limit = {
+			has_race_condition_ghost = yes
+		}
+		unlock_race = { race = ghost }
+	}
+	if = {
+		limit = {
+			has_race_condition_giant = yes
+		}
+		unlock_race = { race = giant }
+	}
+	if = {
+		limit = {
+			has_race_condition_harpy = yes
+		}
+		unlock_race = { race = harpy }
+	}
+	if = {
+		limit = {
+			has_race_condition_human = yes
+		}
+		unlock_race = { race = human }
+	}
+	if = {
+		limit = {
+			has_race_condition_insect = yes
+		}
+		unlock_race = { race = insect }
+	}
+	if = {
+		limit = {
+			has_race_condition_kitsue = yes
+		}
+		unlock_race = { race = kitsune }
+	}
+	if = {
+		limit = {
+			has_race_condition_lamia = yes
+		}
+		unlock_race = { race = lamia }
+	}
+	if = {
+		limit = {
+			has_race_condition_land_dweller = yes
+		}
+		unlock_race = { race = land_dweller }
+	}
+	if = {
+		limit = {
+			has_race_condition_mermaid = yes
+		}
+		unlock_race = { race = mermaid }
+	}
+	if = {
+		limit = {
+			has_race_condition_roid = yes
+		}
+		unlock_race = { race = roid }
+	}
+	if = {
+		limit = {
+			has_race_condition_scylla = yes
+		}
+		unlock_race = { race = scylla }
+	}
+	if = {
+		limit = {
+			has_race_condition_sea_dweller = yes
+		}
+		unlock_race = { race = sea_dweller }
+	}
+	if = {
+		limit = {
+			has_race_condition_slime = yes
+		}
+		unlock_race = { race = slime }
+	}
+	if = {
+		limit = {
+			has_race_condition_succubi = yes
+		}
+		unlock_race = { race = succubi }
+	}
+	if = {
+		limit = {
+			has_race_condition_tanuki = yes
+		}
+		unlock_race = { race = tanuki }
+	}
+	if = {
+		limit = {
+			has_race_condition_undead = yes
+		}
+		unlock_race = { race = undead }
+	}
+	if = {
+		limit = {
+			has_race_condition_vampire = yes
+		}
+		unlock_race = { race = vampire }
+	}
+	if = {
+		limit = {
+			has_race_condition_yoma = yes
+		}
+		unlock_race = { race = yoma }
+	}
+}
+
+#TODO not fully implemented, may be removed as not really needed
+unlock_race_of_province = {
+	if = {
+		limit = { 
+			culture_group = Human_culture 
+		}
+		set_variable = {
+			which = Human_integration
+			value = 1
+		}
+	}
+	if = {
+		limit = {
+			culture_group = land_dweller
+		}
+		set_variable = {
+			which = Land_Dweller_integration
+			value = 1
+		}
+	}
+	if = {
+		limit = {
+			culture_group = undead
+		}
+		set_variable = {
+			which = Undead_integration
+			value = 1
+		}
+	}
+	if = {
+		limit = {
+			culture_group = succubi
+		}
+		set_variable = {
+			which = Succubi_integration
+			value = 1
+		}
+	}
+	if = {
+		limit = {
+			culture_group = slime
+		}
+		set_variable = {
+			which = Slime_integration
+			value = 1
+		}
+	}
+	if = {
+		limit = {
+			culture_group = harpy
+		}
+		set_variable = {
+			which = Harpy_integration
+			value = 1
+		}
+	}
+	if = {
+		limit = {
+			culture_group = elf
+		}
+		set_variable = {
+			which = Elf_integration
+			value = 1
+		}
+	}
+	if = {
+		limit = {
+			culture_group = insect
+		}
+		set_variable = {
+			which = Insect_integration
+			value = 1
+		}
+	}
+	if = {
+		limit = {
+			culture_group = beast
+		}
+		set_variable = {
+			which = Beast_integration
+			value = 1
+		}
+	}
+	if = {
+		limit = {
+			culture_group = alraune
+		}
+		set_variable = {
+			which = Alraune_integration
+			value = 1
+		}
+	}
+	if = {
+		limit = {
+			culture_group = dragon
+		}
+		set_variable = {
+			which = Dragon_integration
+			value = 1
+		}
+	}
+	if = {
+		limit = {
+			culture_group = demi_human
+		}
+		set_variable = {
+			which = Demi_Human_integration
+			value = 1
+		}
+	}
+	if = {
+		limit = {
+			culture_group = vampire
+		}
+		set_variable = {
+			which = Vampire_integration
+			value = 1
+		}
+	}
+	if = {
+		limit = {
+			culture_group = yoma
+		}
+		set_variable = {
+			which = Yoma_integration
+			value = 1
+		}
+	}
+	if = {
+		limit = {
+			culture_group = sea_dweller
+		}
+		set_variable = {
+			which = Sea_Dweller_integration
+			value = 1
+		}
+	}
+	if = {
+		limit = {
+			culture_group = mermaid
+		}
+		set_variable = {
+			which = Mermaid_integration
+			value = 1
+		}
+	}
+	if = {
+		limit = {
+			culture_group = kitsune
+		}
+		set_variable = {
+			which = Kitsune_integration
+			value = 1
+		}
+	}
+	if = {
+		limit = {
+			culture_group = scylla
+		}
+		set_variable = {
+			which = Scylla_integration
+			value = 1
+		}
+	}
+	if = {
+		limit = {
+			culture_group = lamia
+		}
+		set_variable = {
+			which = Lamia_integration
+			value = 1
+		}
+	}
+	if = {
+		limit = {
+			culture_group = doll
+		}
+		set_variable = {
+			which = Doll_integration
+			value = 1
+		}
+	}
+	if = {
+		limit = {
+			culture_group = chimera
+		}
+		unlock_race = { race = chimera }
+	}
+	if = {
+		limit = {
+			culture_group = angel
+		}
+		set_variable = {
+			which = Angel_integration
+			value = 1
+		}
+	}
+	if = {
+		limit = {
+			culture_group = roid
+		}
+		set_variable = {
+			which = Roid_integration
+			value = 1
+		}
+	}
+	if = {
+		limit = {
+			culture_group = tanuki
+		}
+		set_variable = {
+			which = Tanuki_integration
+			value = 1
+		}
+	}
+}
+
+unlock_races_of_owned_region = {
+	if = {
+		limit = {
+			any_owned_province = { region = $region$ culture_group = Human_culture }
+		}
+		unlock_race = { race = human }
+	}
+	if = {
+		limit = {
+			any_owned_province = { region = $region$ culture_group = land_dweller }
+		}
+		unlock_race = { race = land_dweller }
+	}
+	if = {
+		limit = {
+			any_owned_province = { region = $region$ culture_group = undead }
+		}
+		unlock_race = { race = undead }
+	}
+	if = {
+		limit = {
+			any_owned_province = { region = $region$ culture_group = succubi }
+		}
+		unlock_race = { race = succubi }
+	}
+	if = {
+		limit = {
+			any_owned_province = { region = $region$ culture_group = slime }
+		}
+		unlock_race = { race = slime }
+	}
+	if = {
+		limit = {
+			any_owned_province = { region = $region$ culture_group = harpy }
+		}
+		unlock_race = { race = harpy }
+	}
+	if = {
+		limit = {
+			any_owned_province = { region = $region$ culture_group = elf }
+		}
+		unlock_race = { race = elf }
+	}
+	if = {
+		limit = {
+			any_owned_province = { region = $region$ culture_group = insect }
+		}
+		unlock_race = { race = insect }
+	}
+	if = {
+		limit = {
+			any_owned_province = { region = $region$ culture_group = beast }
+		}
+		unlock_race = { race = beast }
+	}
+	if = {
+		limit = {
+			any_owned_province = { region = $region$ culture_group = alraune }
+		}
+		unlock_race = { race = alraune }
+	}
+	if = {
+		limit = {
+			any_owned_province = { region = $region$ culture_group = dragon }
+		}
+		unlock_race = { race = dragon }
+	}
+	if = {
+		limit = {
+			any_owned_province = { region = $region$ culture_group = demi_human }
+		}
+		unlock_race = { race = demi_human }
+	}
+	if = {
+		limit = {
+			any_owned_province = { region = $region$ culture_group = vampire }
+		}
+		unlock_race = { race = vampire }
+	}
+	if = {
+		limit = {
+			any_owned_province = { region = $region$ culture_group = yoma }
+		}
+		unlock_race = { race = yoma }
+	}
+	if = {
+		limit = {
+			any_owned_province = { region = $region$ culture_group = sea_dweller }
+		}
+		unlock_race = { race = sea_dweller }
+	}
+	if = {
+		limit = {
+			any_owned_province = { region = $region$ culture_group = mermaid }
+		}
+		unlock_race = { race = mermaid }
+	}
+	if = {
+		limit = {
+			any_owned_province = { region = $region$ culture_group = kitsune }
+		}
+		unlock_race = { race = kitsune }
+	}
+	if = {
+		limit = {
+			any_owned_province = { region = $region$ culture_group = scylla }
+		}
+		unlock_race = { race = scylla }
+	}
+	if = {
+		limit = {
+			any_owned_province = { region = $region$ culture_group = lamia }
+		}
+		unlock_race = { race = lamia }
+	}
+	if = {
+		limit = {
+			any_owned_province = { region = $region$ culture_group = doll }
+		}
+		unlock_race = { race = doll }
+	}
+	if = {
+		limit = {
+			any_owned_province = { region = $region$ culture_group = chimera }
+		}
+		unlock_race = { race = chimera }
+	}
+	if = {
+		limit = {
+			any_owned_province = { region = $region$ culture_group = angel }
+		}
+		unlock_race = { race = angel }
+	}
+	if = {
+		limit = {
+			any_owned_province = { region = $region$ culture_group = roid }
+		}
+		unlock_race = { race = roid }
+	}
+	if = {
+		limit = {
+			any_owned_province = { region = $region$ culture_group = tanuki }
+		}
+		unlock_race = { race = tanuki }
+	}
+}
 
 ###CHAOS VARIABLES###
 MGQ_add_chaos = {

@@ -1085,26 +1085,11 @@ enrika_5 = {
 			}
 		}
 		effect = {
- 			set_variable = {
-   				which = Undead_integration
-  				value = 1
-			}
- 			set_variable = {
-   				which = Beast_integration
-  				value = 1
-			}
- 			set_variable = {
-   				which = Mermaid_integration
-  				value = 1
-			}
- 			set_variable = {
-   				which = Sea_Dweller_integration
-  				value = 1
-			}
- 			set_variable = {
-   				which = Yoma_integration
-  				value = 1
-			}
+			unlock_race = { race = undead }
+			unlock_race = { race = beast }
+			unlock_race = { race = mermaid }
+			unlock_race = { race = sea_dweller }
+			unlock_race = { race = yoma }
 		}
 	}
 }

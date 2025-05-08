@@ -144,18 +144,9 @@ roach_tower_1 = {
 		}
 		
 		effect = {
- 			set_variable = {
-   				which = Beast_integration
-  				value = 1
-			}
- 			set_variable = {
-   				which = Yoma_integration
-  				value = 1
-			}
- 			set_variable = {
-   				which = Undead_integration
-  				value = 1
-			}
+			unlock_race = { race = beast }
+			unlock_race = { race = yoma }
+			unlock_race = { race = undead }
 		}
 	}
 	
@@ -370,10 +361,7 @@ roach_tower_2 = {
 		}
 		
 		effect = {
- 			set_variable = {
-   				which = Doll_integration
-  				value = 1
-			}
+			unlock_race = { race = doll }
 			add_adm_tech = 1				
 		}
 	}

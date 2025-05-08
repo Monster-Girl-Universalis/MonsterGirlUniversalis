@@ -430,10 +430,7 @@ sheep_island_4 = {
 				name = "SI2_citizenship_for_vampires"
 				duration = -1
 			}
- 			set_variable = {
-   				which = Vampire_integration
-  				value = 1
-			}			
+			unlock_race = { race = vampire }		
 		}
 	}
 	SI2_presence_in_finoa = {

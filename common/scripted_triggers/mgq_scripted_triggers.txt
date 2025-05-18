@@ -42,3 +42,7 @@ mgq_has_mil_advisor = {
 		}
 	}
 }
+
+has_race_unlocked = {
+	has_country_flag = can_access_race_$race$
+}

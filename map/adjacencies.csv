@@ -2,11 +2,11 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 982;983;sea;2643;-1;-1;-1;-1;Administrator Strait
 1344;1436;sea;126;-1;-1;-1;-1;Esta Bay Bottom
 1347;1431;sea;126;-1;-1;-1;-1;Esta Bay Top
-1375;1376;sea;138;-1;-1;-1;-1;Leon Village Bottom Island
-1381;1382;sea;138;-1;-1;-1;-1;Leon Village Middle Island
+1375;1376;sea;2674;-1;-1;-1;-1;Leon Village Bottom Island
+1381;1382;sea;2674;-1;-1;-1;-1;Leon Village Middle Island
 1384;1383;sea;138;-1;-1;-1;-1;Leon Village Upper Island
 1423;1501;sea;129;-1;-1;-1;-1;Lima Strait
 1501;1513;sea;135;-1;-1;-1;-1;Gold Fort Strait
-2488;2489;sea;159;-1;-1;-1;-1;Wendigo Island
-2489;2490;sea;159;-1;-1;-1;-1;Wendigo Island
+2488;2489;sea;2745;-1;-1;-1;-1;Wendigo Island
+2489;2490;sea;2745;-1;-1;-1;-1;Wendigo Island
 -1;-1;;-1;-1;-1;-1;-1;-1;

@@ -427,8 +427,7 @@ mgq_chimeraroids = { #Chimera+Roid
 		full_idea_group = roid_ideas
 		full_idea_group = chimera_ideas 
 	}
-	administrative_efficiency = 0.10
-	development_cost_modifier = -0.05
+	administrative_efficiency = 0.075
 	ai_will_do = {
 		factor = 1
 	}

@@ -1,5 +1,9 @@
 ###GENERAL STUFF WITH VARIABLES###
 
+unlock_race = {
+	#TODO add tooltip
+	set_country_flag = can_access_race_$race$
+}
 
 ###CHAOS VARIABLES###
 MGQ_add_chaos = {

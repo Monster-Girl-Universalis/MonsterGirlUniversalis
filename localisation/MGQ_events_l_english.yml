@@ -989,6 +989,25 @@ gen_mgq_flavor.31.c: "Send aid to minimize the damage!"
  flavor_sp4.1.a:0 "That's reassuring"
  time_magic_master_personality:0 "Time Magic Master"
 
+ ###FLAVOR FOR LILY'S FACTION###
+ flavor_MV1.1.t:0 "Lily's Isolation"
+ flavor_MV1.1.desc:0 "For a long time, the former Witch Hunt village was ruled by a group of cruel, abusive men who turned the lives of local women into a living hell.\nNot long ago, Lily the daughter of a local noble and a secret student of magical science discovered a powerful technique known as 'worm summoning'. It was a shortcut to power, a force that allowed the weak to strike back against their tormentors with overwhelming might. What followed was a massive uprising and a wave of brutal lynchings. While many worm summoners celebrated their liberation, others were appalled by the chaos. Among them was Lucia, who formed a faction committed to strictly regulating the spread of tentacle magic.\nAs tensions grew between former comrades, dissidents opposed to Lily’s rule joined Lucia, establishing their base in the Tower of Magic. Once a remote and semi-autonomous village on the fringes of the Sabasa Kingdom, Magistea became even more isolated from the outside world. Trade collapsed, diplomatic missions ceased, and distrust between the two factions deepened. A full-scale civil war now looms on the horizon..."
+ flavor_MV1.1.a:0 "The horror!"
+ flavor_MV1.2.t:0 "Magistea Unification"
+ flavor_MV1.2.desc:0 "After years of internal strife and ideological conflict, Magistea has finally been reunited under Lady Lily's banner. The struggle was long and painful, but the dream of freeing the weak from oppression has prevailed. Though some once-close allies strayed into fear and repression, Lily never abandoned her vision of a world where the weak wield the power to fight back. The voices of the oppressed, once silenced, now echo through the streets of Magistea! With unification achieved, the work begins to rebuild not just the village, but a future founded on true freedom.\nThe age of fear is over, a new age of liberation dawns."
+ flavor_MV1.2.a:0 "Peace at last"
+
+ ###FLAVOR FOR TOWER OF MAGIC###
+ flavor_TM1.1.t:0 "Lucia's Isolation"
+ flavor_TM1.1.desc:0 "For a long time, the former Witch Hunt village was ruled by a group of cruel, abusive men who turned the lives of local women into a living hell.\nNot long ago, Lily the daughter of a local noble and a secret student of magical science discovered a powerful technique known as 'worm summoning'. It was a shortcut to power, a force that allowed the weak to strike back against their tormentors with overwhelming might. What followed was a massive uprising and a wave of brutal lynchings. While many worm summoners celebrated their liberation, others were appalled by the chaos. Among them was Lucia, who formed a faction committed to strictly regulating the spread of tentacle magic.\nAs tensions grew between former comrades, dissidents opposed to Lily’s rule joined Lucia, establishing their base in the Tower of Magic. Once a remote and semi-autonomous village on the fringes of the Sabasa Kingdom, Magistea became even more isolated from the outside world. Trade collapsed, diplomatic missions ceased, and distrust between the two factions deepened. A full-scale civil war now looms on the horizon..."
+ flavor_TM1.1.a:0 "The horror!"
+ flavor_TM1.2.t:0 "Magistea Unification"
+ flavor_TM1.2.desc:0 "Lucia has succeeded in reuniting Magistea, but it came at a cost. The chaos unleashed by unrestricted worm summoning has been brought under control, and Lady Lucia's vision of a disciplined, ethical use of magic now guides the land. The Tower of Magic stands firm as a symbol of reason amidst past madness. Though Lily was once a dear friend, her descent into delusion and fanaticism could not be left unchecked. Now, with order restored and dangerous magics curtailed, Magistea can finally begin to heal. A wiser, more cautious future lies ahead."
+ flavor_TM1.2.a:0 "Peace at last"
+
+ ###FLAVOR FOR MAGISTEA###
+
+
  ###FLAVOR FOR GENERICS###
  flavor_generic.1.t:0 "Advanced Bioengineering"
  flavor_generic.1.desc:0 "After long years of endless research and huge amount of collected biological data we managed to find a way to synthesize monster cells and incorporate them in different species!\nWe can choose one living monster, human or angel racial idea set!"

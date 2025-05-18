@@ -1,0 +1,31 @@
+namespace = flavor_al4
+
+#Plants are rallied.
+country_event = {
+	id = flavor_al4.1
+	title = "flavor_al4.1.t"
+	desc = "flavor_al4.1.desc"
+	picture = ALRAUNE_eventPicture
+	trigger = {
+		tag = AL4
+		NOT = { is_year = 1460 }
+	}
+
+	mean_time_to_happen = { days = 10 }
+	fire_only_once = yes
+
+	option = {	#Great.
+		name = flavor_al4.1.a
+		add_country_modifier = {
+			name = "AL4_plants_are_rallied"
+			duration = 10950
+		}
+		vassalize = AL5
+		vassalize = AL6
+		vassalize = AL7
+		vassalize = AL8
+		vassalize = AL9
+		vassalize = AL0
+		create_march = CA1
+	}
+}

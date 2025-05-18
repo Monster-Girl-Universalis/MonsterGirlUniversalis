@@ -675,4 +675,16 @@ spriteTypes = {
 		name = "ATLACH_NACHA_eventPicture"
 		texturefile = "gfx/event_pictures/ATLACH_NACHA_eventPicture.dds"
 	}
+	spriteType = {
+		name = "LILY_UNIFICATION_eventPicture"
+		texturefile = "gfx/event_pictures/LILY_UNIFICATION_eventPicture.dds"
+	}
+	spriteType = {
+		name = "Lucia_eventPicture"
+		texturefile = "gfx/event_pictures/Lucia_eventPicture.dds"
+	}
+	spriteType = {
+		name = "LuciaFLAG_eventPicture"
+		texturefile = "gfx/event_pictures/LuciaFLAG_eventPicture.dds"
+	}
 }

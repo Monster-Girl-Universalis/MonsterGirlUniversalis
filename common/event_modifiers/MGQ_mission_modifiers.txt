@@ -1111,6 +1111,133 @@ SI2_sheep_colonial_enterprises_mod = {
 	trade_efficiency = 0.33
 }
 
+###Magistea Village
+MV1_stabilizing_the_nation = {
+	stability_cost_modifier = -0.10
+	country_admin_power = 1
+}
+MV1_growth_of_magistea = {
+	build_cost = -0.20
+}
+MV1_trading_in_magical_supplies = {
+	all_power_cost = -0.025
+	merchants = 1
+}
+MV1_battlewitches_prepared = {
+	shock_damage = 0.125
+	fire_damage = 0.125
+}
+MV1_defeated_lucia_faction = {
+	harsh_treatment_cost = -0.5
+	manpower_recovery_speed = 0.33
+}
+MV1_dissatisfaction_with_lilys_ways = {
+	local_unrest = 2
+	local_monthly_devastation = 0.2
+}
+MV1_conscripted_witch_apprentices = {
+	global_monthly_devastation = 0.10
+	land_forcelimit = 20
+	land_maintenance_modifier = -0.33
+}
+MV1_trade_isolation = {
+	can_not_send_merchants = yes
+	trade_efficiency = -0.1
+	global_tax_income = 100
+}
+MV1_diplomatic_isolation = {
+	diplomats = -5
+	defensiveness = 0.50
+	fort_maintenance_modifier = -0.50
+}
+MV1_magistean_fleet_ready = {
+	global_ship_trade_power = 0.33
+	naval_forcelimit_modifier = 0.25
+}
+MV1_saloon_alchemy_materials = {
+	all_power_cost = -0.05
+}
+MV1_worm_summoners_amplified = {
+	discipline = 0.03
+	morale_damage_received = -0.10
+}
+
+###Tower of Magic
+TM1_rebel_governance = {
+	reform_progress_growth = 0.10
+	legitimacy = 1
+}
+TM1_influx_of_mercenaries = {
+	merc_maintenance_modifier = -0.33
+	inflation_reduction = -0.10
+	may_not_reduce_inflation = yes
+	land_forcelimit = 20
+}
+TM1_stable_currency = {
+	inflation_reduction = 0.1
+	build_cost = -0.1
+}
+TM1_magical_scholars = {
+	all_power_cost = -0.05
+}
+TM1_lucias_witch_resistance = {
+	shock_damage_received = -0.125
+	fire_damage_received = -0.125
+}
+TM1_dissatisfaction_with_lucias_policies = {
+	local_unrest = 2
+	local_autonomy = 0.2
+}
+TM1_defeated_lily_faction = {
+	country_diplomatic_power = 1
+	global_unrest = -3
+}
+TM1_magistea_reopened = {
+	improve_relation_modifier = 0.1
+	diplomatic_upkeep = 1
+}
+TM1_lucias_navy = {
+	global_naval_engagement_modifier = 0.15
+	naval_attrition = -0.33
+}
+TM1_saloon_earth_stones = {
+	shock_damage_received = -0.05
+	shock_damage = 0.05
+	defensiveness = 0.10
+}
+TM1_synergy_with_earth = {
+	defensiveness = 0.10
+	land_attrition = -0.10
+}
+
+###Magistea
+
+MV2_secured_grandeur_trade = {
+	merchants = 1
+	trade_steering = 0.15
+}
+MV2_safar_campaigns = {
+	core_creation = -0.05
+	country_admin_power = 2
+}
+MV2_wasteland_warfare = {
+	shock_damage_received = -0.04
+	fire_damage_received = -0.04
+	country_military_power = 2
+}
+
+###Plansect
+AL4_plants_are_rallied = {
+	diplomatic_upkeep = 4
+	reduced_liberty_desire = 200
+	recover_army_morale_speed = 0.10
+}
+###Red Mountain
+RM1_insects_are_rallied = {
+	diplomatic_upkeep = 4
+	reduced_liberty_desire = 200
+	global_regiment_recruit_speed = -0.15
+}
 
 ###Mithra Castle
 Mithra_Thunder_Retribution_Fist = {

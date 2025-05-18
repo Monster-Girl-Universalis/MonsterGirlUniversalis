@@ -3651,6 +3651,7 @@ chimera_ideas = {
 	category = ADM
 	trigger = {
 		OR = {
+			has_race_unlocked = { race = chimera }
 			technology_group = TECH_CHIMERA
 			check_variable = {
 				which = Project_Chimera

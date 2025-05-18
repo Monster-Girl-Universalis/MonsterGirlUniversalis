@@ -151,6 +151,10 @@ spriteTypes = {
 		name = "melk_alice"
 		texturefile = "gfx//interface//missions//melk_alice.dds"
 	}
+	spriteType = {
+		name = "towerbg"
+		texturefile = "gfx//interface//missions//towerbg.dds"
+	}
 }
 #you can type stuff with a "#" and it wont affect the code IT WORKS!!
 #nice =w=

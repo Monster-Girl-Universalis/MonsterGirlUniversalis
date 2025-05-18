@@ -1,0 +1,10 @@
+spriteTypes = {	
+	spriteType = {
+		name = "MAYA_CAVE_eventPicture"
+		texturefile = "gfx//event_pictures//event_pictures_spidermikorealm//MAYA_CAVE_eventPicture.dds"
+	}
+	spriteType = {
+		name = "OROCHI_CAVE_eventPicture"
+		texturefile = "gfx//event_pictures//event_pictures_spidermikorealm//OROCHI_CAVE_eventPicture.dds"
+	}
+}

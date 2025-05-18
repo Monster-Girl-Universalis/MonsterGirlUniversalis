@@ -1,0 +1,34 @@
+spriteTypes = {	
+	spriteType = {
+		name = "sm1_cave"
+		texturefile = "gfx//interface//missions//spidermikorealm_missions//sm1_cave.dds"
+	}
+	spriteType = {
+		name = "orochi"
+		texturefile = "gfx//interface//missions//spidermikorealm_missions//orochi.dds"
+	}
+	spriteType = {
+		name = "nure_onna"
+		texturefile = "gfx//interface//missions//spidermikorealm_missions//nure_onna.dds"
+	}
+	spriteType = {
+		name = "kappa"
+		texturefile = "gfx//interface//missions//spidermikorealm_missions//kappa.dds"
+	}
+	spriteType = {
+		name = "kunoichi_elf"
+		texturefile = "gfx//interface//missions//spidermikorealm_missions//kunoichi_elf.dds"
+	}
+	spriteType = {
+		name = "broken_barrier"
+		texturefile = "gfx//interface//missions//spidermikorealm_missions//broken_barrier.dds"
+	}
+	spriteType = {
+		name = "maya_lewd"
+		texturefile = "gfx//interface//missions//spidermikorealm_missions//maya_lewd.dds"
+	}
+	spriteType = {
+		name = "sm1_tamamo"
+		texturefile = "gfx//interface//missions//spidermikorealm_missions//sm1_tamamo.dds"
+	}
+}

@@ -1,0 +1,71 @@
+########################################
+# Flavor Events for Spider Miko Realm by Cris
+########################################
+
+namespace = flavor_sm1
+
+###SM1 flavor events###
+
+country_event = {
+	id = flavor_sm1.1
+	title = flavor_sm1.1_title
+	desc = flavor_sm1.1_desc
+	picture = MAYA_CAVE_eventPicture
+	fire_only_once = yes
+	is_triggered_only = no
+	trigger = {
+	OR = {
+		tag = SM1
+		was_tag = SM1
+	}
+	grown_by_states = 2 
+}
+   	mean_time_to_happen = {
+	months = 3
+	}
+	option = {
+		name = flavor_sm1.1.a
+		add_stability = 1
+		add_war_exhaustion = -4
+		add_adm_power = 75
+		add_dip_power = 75
+		add_mil_power = 75
+		add_prestige = 10
+	}
+}
+country_event = {
+	id = flavor_sm1.2
+	title = flavor_sm1.2_title
+	desc = flavor_sm1.2_desc
+	picture = OROCHI_CAVE_eventPicture
+	fire_only_once = yes
+	is_triggered_only = no
+	trigger = {
+	OR = {
+		tag = SM1
+		was_tag = SM1
+	}
+	yamata_no_orochi_cave = {
+		type = all
+		owned_by = ROOT
+		is_core = ROOT
+	} 
+}
+   	mean_time_to_happen = {
+	months = 12
+	}
+	option = {
+		name = flavor_sm1.2.a
+		add_country_modifier = {
+			name = sm1_orochi_2
+			duration = 9125
+		}
+	}
+	option = {
+		name = flavor_sm1.2.b
+		add_country_modifier = {
+			name = sm1_orochi_3
+			duration = 9125
+		}
+	}
+}

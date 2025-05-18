@@ -1,0 +1,63 @@
+﻿l_english:
+#Branch 1
+
+ SM1_cave_title: "Defensive Stance"
+ SM1_cave_desc: "We don't possess the numbers of our enemies, as such we need to fight defensively and choose our battles carefully, lucky for ours our caves give us a great defensive advantage."
+
+ SM1_orochi_title: "Seal Yamata No Orochi"
+ SM1_orochi_desc: "Yamata No Orochi has been demanding tributes from Yamatai Village for generations, if coexistance between humans and monster is to florish we must make sure powerful monsters such as Orochi don't abuse their power to domineer over the weak, as monsters ourselves upholding coexistance this way will have a stronger impact."
+
+ SM1_horai_title: "Break the Horai Barrier"
+ SM1_horai_desc: "Mt Horai and its elven village is sealed off our world by a magical barrier meant to prevent outsiders from entering but breaking through this invisible wall should an easy tasks for us who delved into the taoist arts. We must end this self imposed isolation and integrate these people back into society, whatever circumstance caused this state of affairs cannot be resolved by isolating themselves from the world."
+
+#Branch 2
+
+ SM1_kappa_title: "Kappa conflict"
+ SM1_kappa_desc: "The Kappa are formidable water youkai that dwells in the rivers of Yamatai region, the humans of Yamamtai Village have form a strong bond with them, and as it is true spiders are stronger together, we must learn to live together now if we want to survived."
+
+SM1_nure_onna_title: "Pacify the Snakes"
+SM1_nure_onna_desc: "Nure Onnas are slimy youkai lamias known for their cruel nature, we can't allow them to pick on the weak any longer!"
+
+SM1_tamamo_title: "Tame the Kitsunes"
+SM1_tamamo_onna_desc: ""
+
+#Branch 3
+
+SM1_rally_spiders_title: "Rally the Spiders"
+SM1_rally_spiders_desc: "We are surrounded by many richer countries, if thi situation persist it is only a matter of time until we are conquered, we need to rally each and every spider available for duty and quickly expand and solidify our borders, we can't do this on our own, as such we'll plead with our fellow Arachnes to the north for an alliance."
+
+#Branch 4
+
+SM1_kunoichi_elf_title: "Elf Struggle"
+SM1_kunoichi_elf_desc: "After a hard fought war against the Kunoichi clan of Elfs to our south, we have emerged victorious, but we must learn to be humble and beg our former enemies to forgive our devastation of their lands. As humiliating as it may be, it will be through unity that we will prevail."
+
+#Branch 5
+
+#Mission modifiers
+sm1_kappa: "Kappa defeated"
+sm1_elf_pal: "Elves Befriended"
+sm1_kappa_pal: "Kappa Befriended"
+sm1_cave: "Defensive Measures"
+sm1_orochi_1: "Yamata No Orochi sealed"
+sm1_horai: "Beyond the Barrier"
+sm1_kunoici_elf: "Clash with the elves"
+sm1_orochi_2: "Yamata no Orochi Unsealed"
+sm1_orochi_3: "Yamata no Orochi's Aid"
+sm1_nure_onna: "Nure Onnas Quelled"
+sm1_nure_onna_pal: "Nure Onna Befriended"
+
+#Province modifiers
+lr1_local_shelly: "Local Shellfish Production"
+
+#Events
+flavor_sm1.1_title: "Out of the Caves"
+flavor_sm1.1_desc: "Against all odds our tiny state was able to expand and now we are no longer confined to our cave nests!"
+
+flavor_sm1.2_title: "Villagers Demand Yamata No Orochi's Return"
+flavor_sm1.2_desc: "It has been a while since we sealed off Yamata no Orochi, with no more human tributes to be sent her way we assume balance would return to Yamatai village but that turned out to be a very wrong asumption...instead a large group of young men from Yamatai Village has stormed our home, they were supposed to be tribute of this year but they found no one in Yamata no Orochi's cave, angry they search for answers and discovered it was our doing, and now they are here histerically calling for Yamata no Orochi to be unseal. We were acting under the assumption that she was abusing her power to coerce the humans into submission or face destruction but these humans seem to miss her...perhaps we should unseal her and let her go on the condition that she shall never really carry out the destrution of Yamatai Village.  "
+
+#Event choices
+
+flavor_sm1.1.a: "Fresh air and a new enviroment will invigorate our minds!"
+flavor_sm1.2.a: "I shall unseal and heal up her wounds from our battle."
+flavor_sm1.2.b: "With you once again free, i humbly ask you to lend your knowledge to us."

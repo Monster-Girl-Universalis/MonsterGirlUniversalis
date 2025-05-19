@@ -361,14 +361,8 @@ magistea_last_branch = {
 					tier = 1
 				}				
 			}
- 			set_variable = {
-   				which = Doll_integration
-  				value = 1
-			}
- 			set_variable = {
-   				which = Apoptosis_integration
-  				value = 1
-			}
+			unlock_race = { race = doll }
+			unlock_race = { race = apoptosis }
 					
 		}
 	}

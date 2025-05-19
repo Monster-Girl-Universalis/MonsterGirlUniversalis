@@ -698,10 +698,7 @@ lucia_fleet_and_trade = {
 		}
 		
 		effect = {
- 			set_variable = {
-   				which = Alraune_integration
-  				value = 1
-			}
+			unlock_race = { race = alraune }
 			add_prestige = 25
 		}
 	}	
@@ -716,10 +713,7 @@ lucia_fleet_and_trade = {
 		}
 		
 		effect = {
- 			set_variable = {
-   				which = Fairy_integration
-  				value = 1
-			}
+			unlock_race = { race = fairy }
 			add_dip_power = 50
 			add_adm_power = 50
 			add_mil_power = 50

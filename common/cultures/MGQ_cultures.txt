@@ -1048,7 +1048,25 @@ insect = {
 			diplomatic_upkeep = -1
 		}	
 	}
+	Hornet_Girl = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}	
+	}
 	Mantis_Girl = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}	
+	}
+	Mosquito_Girl = {
 
 
 

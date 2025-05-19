@@ -1,0 +1,375 @@
+
+magistea_army_branch = {
+
+	slot = 2
+	generic = no
+	ai = yes
+	
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		tag = MV2
+	}
+	
+	has_country_shield = yes
+	
+
+	MV2_saloon_unification = {
+		icon = mission_arabian_fort
+		required_missions = { }
+		position = 6
+
+		provinces_to_highlight = {
+			OR = {
+				region = saloon_region
+			}
+		}		
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with= {
+				value = 35
+				region = saloon_region 
+			}
+
+		}
+		
+		effect = {
+			add_army_tradition = 30
+			grandeur_region = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	MV2_richest_trade_city = {
+		icon = mission_grandeur
+		required_missions = { MV2_saloon_unification }
+		position = 7
+
+		provinces_to_highlight = {
+			OR = {
+				region = grandeur_region 
+				province_id = 798
+			}
+		}		
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with= {
+				value = 20
+				region = grandeur_region 
+			}
+			798 = { owned_by = ROOT }
+
+		}
+		
+		effect = {
+			add_prestige = 25
+			add_country_modifier = {
+				name = "MV2_secured_grandeur_trade"
+				duration = -1
+			}
+		}
+	}
+	MV2_challenge_sabasa = {
+		icon = mission_sabasa
+		required_missions = { MV2_richest_trade_city }
+		position = 8
+
+		provinces_to_highlight = {
+			OR = {
+				region = grandeur_region 
+			}
+		}		
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with= {
+				value = 30
+				region = grandeur_region 
+			}
+			safina_river_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			grandeur_road = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+
+		}
+		
+		effect = {
+			add_army_tradition = 50
+			sabasa_region = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	MV2_decisive_victory_over_sabasa = {
+		icon = mission_fall_of_sabasa
+		required_missions = { MV2_challenge_sabasa }
+		position = 9
+
+		provinces_to_highlight = {
+			OR = {
+				region = sabasa_region 
+			}
+		}		
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with= {
+				value = 25
+				region = sabasa_region 
+			}
+
+		}
+		
+		effect = {
+			add_prestige = 50
+			add_mil_power = 300
+			pyramid_region = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+}
+magistea_central_branch = {
+
+	slot = 3
+	generic = no
+	ai = yes
+	
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		tag = MV2
+	}
+	
+	has_country_shield = yes
+
+	MV2_fight_the_piracy = {
+		icon = mission_ashel
+		required_missions = { }
+		position = 6
+
+		provinces_to_highlight = {
+			OR = {
+				region = saloon_region 
+			}
+		}		
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with= {
+				value = 20
+				region = saloon_region 
+			}
+			OR = {
+				num_of_owned_provinces_with = {
+					has_building = naval_battery
+					value = 10
+				}
+				num_of_heavy_ship = 50
+				full_idea_group = naval_ideas
+			}
+			
+		}
+		
+		effect = {
+			add_navy_tradition = 30
+			great_pirate_cave_region = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	MV2_settle_the_islands = {
+		icon = mission_secure_lemuse_trade
+		required_missions = { MV2_fight_the_piracy }
+		position = 7
+
+		provinces_to_highlight = {
+			OR = {
+				region = great_pirate_cave_region 
+			}
+		}		
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with= {
+				value = 10
+				region = great_pirate_cave_region 
+			}			
+		}
+		
+		effect = {
+			986 = { add_siberian_construction = 200 }
+			1939 = { add_siberian_construction = 200 }
+			1941 = { add_siberian_construction = 200 }
+			1940 = { add_siberian_construction = 200 }
+			polar_bear_island = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+			isolated_island = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+			
+		}
+	}
+
+}
+
+magistea_last_branch = {
+
+	slot = 4
+	generic = no
+	ai = yes
+	
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		tag = MV2
+	}
+	
+	has_country_shield = yes
+
+	
+
+	MV2_earth_spirit_ruins = {
+		icon = mission_mirage
+		required_missions = { }
+		position = 6
+		
+		trigger = {
+			grown_by_development = 1000
+			employed_advisor = {
+				type = natural_scientist
+			}
+		}
+		
+		effect = {
+			mirage_coast = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+			mirage_desert = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+			sandworm_coast = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+			sandworm_desert = {
+				type = all
+				add_permanent_claim = ROOT
+			}		
+		}
+	}
+	MV2_followers_of_gnome = {
+		icon = mission_gnome2
+		required_missions = { MV2_earth_spirit_ruins }
+		position = 7
+
+		provinces_to_highlight = {
+			OR = {
+				region = safar_ruins_region 
+			}
+		}		
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with= {
+				value = 15
+				region = safar_ruins_region 
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "MV2_safar_campaigns"
+				duration = 9125
+			}
+			safina_swamp_road = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+			oasis_of_blessings_area = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+			safar_ruins_area = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+			safar_desert = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+			scylla_desert = {
+				type = all
+				add_permanent_claim = ROOT
+			}		
+		}
+	}
+	MV2_earth_monsters = {
+		icon = mission_antlion
+		required_missions = { MV2_followers_of_gnome }
+		position = 8
+
+		provinces_to_highlight = {
+			OR = {
+				region = safar_ruins_region 
+			}
+		}		
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with= {
+				value = 30
+				region = safar_ruins_region 
+			}
+		}
+		
+		effect = {
+			safar_ruins_region = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+			add_country_modifier = {
+				name = "MV2_wasteland_warfare"
+				duration = 9125
+			}		
+		}
+	}
+	MV2_safina_tartarus = {
+		icon = mission_tartarus_rift
+		required_missions = { MV2_earth_monsters }
+		position = 9
+
+		provinces_to_highlight = {
+			OR = {
+				area= safina_tartarus
+			}
+		}		
+		trigger = {
+			innovativeness = 70
+			971 = {
+				has_great_project = {
+					type = sabasa_tartarus
+					tier = 2
+				}
+			}
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with= {
+				value = 5
+				area = safina_tartarus
+			}
+		}
+		
+		effect = {
+			971 = {
+				add_great_project_tier = {
+					type = sabasa_tartarus
+					tier = 1
+				}				
+			}
+ 			set_variable = {
+   				which = Doll_integration
+  				value = 1
+			}
+ 			set_variable = {
+   				which = Apoptosis_integration
+  				value = 1
+			}
+					
+		}
+	}
+}

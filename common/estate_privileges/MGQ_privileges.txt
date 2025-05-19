@@ -151,9 +151,15 @@ estate_burghersMGQ_earth_stones = {
 	loyalty = 0.05
 	influence = 0.1
 	is_valid = { 
-		check_variable = {
-				which = Spirit_Stone_Subsidies
-				value = 1
+		OR = {
+			check_variable = {
+					which = Spirit_Stone_Subsidies
+					value = 1
+			}
+			check_variable = {
+					which = Earth_Stones
+					value = 1
+			}
 		}
 	}	
 	modifier = {

@@ -756,7 +756,10 @@ cb_colonial = {
 cb_liberation = {
 
 	prerequisites_self = {
-		has_country_flag = fra_liberation_wars_enabled
+		OR = {
+			has_country_flag = fra_liberation_wars_enabled
+			has_country_flag = lily_liberation_wars_enabled
+		}
 	}
 
 	war_goal = take_capital_liberation

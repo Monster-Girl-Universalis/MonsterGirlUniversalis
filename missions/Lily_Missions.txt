@@ -1,0 +1,838 @@
+lily_internal_branch = {
+
+	slot = 1
+	generic = yes
+	ai = yes
+	
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		OR = {
+			tag = MV1
+			AND = {
+				was_tag = MV1
+				tag = MV2
+			}
+		}
+	}
+	
+	has_country_shield = yes
+	
+	MV1_aftermath_of_revolt = {
+		icon = mission_rb_control_state_religion
+		required_missions = { }
+		position = 1
+		
+		trigger = {
+			stability = 1
+			is_year = 1450
+		}
+		
+		effect = {
+			add_stability = 1
+			add_country_modifier = {
+				name = "MV1_stabilizing_the_nation"
+				duration = 5475
+			}
+		}
+	}
+
+	MV1_restoration_of_magistea = {
+		icon = mission_rubiana
+		required_missions = { MV1_aftermath_of_revolt }
+		position = 2
+
+		provinces_to_highlight = {
+			OR = {
+				area = magistea_area 
+				area = magistea_coast 
+				area = worm_summoner_fields 
+				area = witch_coast 
+				area = magistean_borderlands 
+			}
+		}		
+		trigger = {
+			magistea_area = {
+				type = all
+				AND = {
+					owned_by = ROOT
+					NOT = { devastation = 0.01 }
+				}
+			}
+			magistea_coast = {
+				type = all
+				AND = {
+					owned_by = ROOT
+					NOT = { devastation = 0.01 }
+				}
+			}
+			worm_summoner_fields = {
+				type = all
+				AND = {
+					owned_by = ROOT
+					NOT = { devastation = 0.01 }
+				}
+			}
+			witch_coast = {
+				type = all
+				AND = {
+					owned_by = ROOT
+					NOT = { devastation = 0.01 }
+				}
+			}
+			magistean_borderlands = {
+				type = all
+				AND = {
+					owned_by = ROOT
+					NOT = { devastation = 0.01 }
+				}
+			}
+		}
+		effect = {
+			add_adm_power = 75
+			add_dip_power = 75
+			add_mil_power = 75
+		}
+	}
+
+	MV1_develop_a_burstling_village = {
+		icon = mission_infrastructure_for_huge_population
+		required_missions = { MV1_restoration_of_magistea }
+		position = 3
+
+		provinces_to_highlight = {
+			OR = {
+				area = magistea_area 
+			}
+		}		
+		
+		trigger = {
+			magistea_area = {
+				type = all
+				AND = {
+					owned_by = ROOT
+					development = 15
+				}
+			}
+			monthly_income = 30
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "MV1_growth_of_magistea"
+				duration = 5475
+			}	
+		}
+	}
+
+	MV1_open_lilys_university = {
+		icon = mission_early_modern_university
+		required_missions = { MV1_develop_a_burstling_village }
+		position = 4
+
+		provinces_to_highlight = {
+			province_id = 857
+		}
+		trigger = {
+			treasury = 150
+			innovativeness = 25
+			857 = {
+				type = all
+				AND = {
+					owned_by = ROOT
+					development = 20
+				}
+			}
+		}
+		effect = {
+			add_treasury = -150
+			change_innovativeness = 5	
+			857 = {
+				add_building_construction = {
+    					building = university
+    					speed = 0.25
+    					cost = 0.25
+				}
+			}
+		}
+	}
+	MV1_magical_supplies_manufactories = {
+		icon = mission_secure_magical_supplies
+		required_missions = { MV1_open_lilys_university }
+		position = 5
+		
+		
+		trigger = {
+			tropical_wood = 2
+			silk = 2
+			cotton = 2
+			wool = 2
+			dyes = 2
+			calc_true_if = {
+				all_owned_province = {
+					OR = {
+						has_building = mills
+						has_building = farm_estate
+						has_building = tradecompany
+						has_building = plantations
+					}
+				}
+				amount = 20
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "MV1_trading_in_magical_supplies"
+				duration = -1
+			}
+			random_owned_province = {
+				limit = { trade_goods = tropical_wood }
+				add_province_modifier = {
+					name = "gen_elf_magical_supplies_boom"
+					duration = 9125 #25 years
+				}
+			}
+			random_owned_province = {
+				limit = { trade_goods = silk }
+				add_province_modifier = {
+					name = "gen_elf_magical_supplies_boom"
+					duration = 9125 #25 years
+				}
+			}
+			random_owned_province = {
+				limit = { trade_goods = cotton }
+				add_province_modifier = {
+					name = "gen_elf_magical_supplies_boom"
+					duration = 9125 #25 years
+				}
+			}
+			random_owned_province = {
+				limit = { trade_goods = wool }
+				add_province_modifier = {
+					name = "gen_elf_magical_supplies_boom"
+					duration = 9125 #25 years
+				}
+			}
+			random_owned_province = {
+				limit = { trade_goods = dyes }
+				add_province_modifier = {
+					name = "gen_elf_magical_supplies_boom"
+					duration = 9125 #25 years
+				}
+			}
+		}
+	}
+}
+lily_army_branch = {
+
+	slot = 2
+	generic = yes
+	ai = yes
+	
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		OR = {
+			tag = MV1
+			AND = {
+				was_tag = MV1
+				tag = MV2
+			}
+		}
+	}
+	
+	has_country_shield = yes
+	
+	MV1_conscript_witch_apprentices = {
+		icon = mission_witchy
+		required_missions = { }
+		position = 1
+		
+		trigger = {
+			OR = {
+				TM1 = { offensive_war_with = ROOT }
+				NOT = { manpower_percentage = 0.10 }
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "MV1_conscripted_witch_apprentices"
+				duration = 5475
+			}
+			add_manpower = 30
+		}
+	}	
+	MV1_deploy_witch_generals = {
+		icon = mission_witch_elites
+		required_missions = { MV1_conscript_witch_apprentices }
+		position = 2
+		
+		trigger = {
+			OR = {
+				is_in_war = {
+					defenders = ROOT
+					duration = 1095
+				}
+				AND = {
+					NOT = { num_of_generals = 3 }
+					army_size_percentage = 1
+				}
+				army_size_percentage = 1.5
+			}
+		}
+		
+		effect = {
+			create_general = { tradition = 70 }
+			create_general = { tradition = 70 }
+			create_general = { tradition = 70 }
+		}
+	}	
+	MV1_demon_hunters = {
+		icon = mission_devil_hunter
+		required_missions = { }
+		position = 3
+		
+		trigger = {
+			NOT = { exists = TM1 }
+			NOT = { has_country_modifier = MV1_conscripted_witch_apprentices }
+			army_size_percentage = 1
+			NOT = { num_of_loans = 1 }
+		}
+		
+		effect = {
+			devil_hunter_woods = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+			devil_hunter_mountains = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+		}
+	}	
+	MV1_saloon_hill = {
+		icon = mission_irina_mountains
+		required_missions = { MV1_demon_hunters }
+		position = 4
+
+		provinces_to_highlight = {
+			OR = {
+				area = devil_hunter_woods 
+				area = devil_hunter_mountains 
+			}
+		}		
+		trigger = {
+			devil_hunter_woods = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			devil_hunter_mountains = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		
+		effect = {
+
+			add_country_modifier = {
+				name = "MV1_saloon_alchemy_materials"
+				duration = 5475
+			}			
+			saloon_hill = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+			ashidaka_area = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+			dodomeki_area = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+			dodomeki_drylands = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+			ashidaka_plains = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+			tareereem_area = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+		}
+	}	
+	MV1_saloon_campaigns = {
+		icon = mission_wasteland_campaigns
+		required_missions = { MV1_saloon_hill }
+		position = 5
+
+		provinces_to_highlight = {
+			OR = {
+				area = saloon_hill 
+				area = ashidaka_area 
+				area = dodomeki_area 
+				area = dodomeki_drylands 
+				area = ashidaka_plains 
+			}
+		}		
+		trigger = {
+			saloon_hill = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			ashidaka_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			dodomeki_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			dodomeki_drylands = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			ashidaka_plains = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		
+		effect = {
+			saloon_region = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+			add_army_tradition = 30
+		}
+	}
+}
+lily_central_branch = {
+
+	slot = 3
+	generic = yes
+	ai = yes
+	
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		OR = {
+			tag = MV1
+			AND = {
+				was_tag = MV1
+				tag = MV2
+			}
+		}
+	}
+	
+	has_country_shield = yes
+
+	MV1_tower_of_magic = {
+		icon = towerbg
+		required_missions = { }
+		position = 1
+		
+		trigger = {
+			army_size_percentage = 0.90
+			OR = {
+				is_enemy = TM1
+				military_strength = {
+					who = TM1
+					value = 2.0
+				}
+			}
+		}
+		
+		effect = {
+			declare_war = TM1
+			magistean_borderlands = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+			rebel_training_grounds = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+			lucia_mercenary_camps = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+			magical_coast = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+			tower_of_magic = {
+				type = all
+				add_permanent_claim = ROOT
+			}			
+			add_country_modifier = {
+				name = "MV1_battlewitches_prepared"
+				duration = 10950
+			}
+		}
+	}
+	MV1_continuation_war = {
+		icon = mission_worm_summoner
+		required_missions = { MV1_tower_of_magic }
+		position = 2
+
+		provinces_to_highlight = {
+			OR = {
+				area = lucia_mercenary_camps
+				province_id = 847
+			}
+		}		
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with= {
+				value = 3
+				area = lucia_mercenary_camps
+			}
+			847 = { owned_by = ROOT }
+		}
+		
+		effect = {
+			declare_war = TM1
+			add_army_tradition = 25
+			add_aggressive_expansion = {
+				who = SA1
+				value = 25
+				apply_calc = no
+			}
+		}
+	}
+	MV1_defeat_lucia_faction = {
+		icon = mission_lucia_displeased
+		required_missions = { MV1_continuation_war }
+		position = 3
+
+		provinces_to_highlight = {
+			OR = {
+				area = tower_of_magic
+				area = rebel_training_grounds
+			}
+		}		
+		trigger = {
+			OR = {
+				war_score_against = {
+					who = TM1
+					value = 95
+				}
+				AND = {
+					tower_of_magic = {
+						type = all
+						owned_by = ROOT
+					}
+					rebel_training_grounds = {
+						type = all
+						owned_by = ROOT
+					}
+				}
+			}
+		}
+		effect = {
+			add_prestige = 50
+			tower_of_magic = {
+				type = all
+				add_province_modifier = {
+					name = "MV1_dissatisfaction_with_lilys_ways"
+					duration = 3650 #10 years
+				}
+			}
+			rebel_training_grounds = {
+				type = all
+				add_province_modifier = {
+					name = "MV1_dissatisfaction_with_lilys_ways"
+					duration = 3650 #10 years
+				}
+			}
+			lucia_mercenary_camps = {
+				type = all
+				add_province_modifier = {
+					name = "MV1_dissatisfaction_with_lilys_ways"
+					duration = 3650 #10 years
+				}
+			}
+			magical_coast = {
+				type = all
+				add_province_modifier = {
+					name = "MV1_dissatisfaction_with_lilys_ways"
+					duration = 3650 #10 years
+				}
+			}
+			add_country_modifier = {
+				name = "MV1_defeated_lucia_faction"
+				duration = 10950
+			}
+		}
+	}
+	MV1_pacification_of_rebels = {
+		icon = mission_worm_summoner_angry
+		required_missions = { MV1_defeat_lucia_faction }
+		position = 4
+
+		provinces_to_highlight = {
+			OR = {
+				area = tower_of_magic 
+				area = rebel_training_grounds 
+				area = lucia_mercenary_camps 
+				area = magical_coast 
+			}
+		}		
+		trigger = {
+			tower_of_magic = {
+				type = all
+				NOT = { has_province_modifier = MV1_dissatisfaction_with_lilys_ways }
+				NOT = { devastation = 0.01 }
+				owned_by = ROOT
+			}
+			rebel_training_grounds = {
+				type = all
+				NOT = { has_province_modifier = MV1_dissatisfaction_with_lilys_ways }
+				NOT = { devastation = 0.01 }
+				owned_by = ROOT
+			}
+			lucia_mercenary_camps = {
+				type = all
+				NOT = { has_province_modifier = MV1_dissatisfaction_with_lilys_ways }
+				NOT = { devastation = 0.01 }
+				owned_by = ROOT
+			}
+			magical_coast = {
+				type = all
+				NOT = { has_province_modifier = MV1_dissatisfaction_with_lilys_ways }
+				NOT = { devastation = 0.01 }
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			change_government_reform_progress = 100
+			remove_country_modifier = MV1_diplomatic_isolation
+			country_event = {
+				id = flavor_MV1.2
+			}
+			every_owned_province = {
+				limit = {
+					region = magistea_region 
+				}
+				add_random_development = 1
+			}
+		}
+	}
+
+}
+
+lily_fleet_and_trade_branch = {
+
+	slot = 4
+	generic = yes
+	ai = yes
+	
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		OR = {
+			tag = MV1
+			AND = {
+				was_tag = MV1
+				tag = MV2
+			}
+		}
+	}
+	
+	has_country_shield = yes
+
+	
+	MV1_restore_trade_flow = {
+		icon = mission_bedouins
+		required_missions = { }
+		position = 1
+		
+		trigger = {
+			857 = {
+				trade_share = {
+					country = ROOT
+					share = 50
+				}
+			}
+		}
+		
+		effect = {
+			remove_country_modifier = MV1_trade_isolation
+			add_years_of_income = 1.5
+		}
+	}	
+	MV1_magistean_fleet = {
+		icon = mission_galleys_in_port
+		required_missions = { MV1_restore_trade_flow }
+		position = 2
+		
+		trigger = {
+			navy_size_percentage = 1
+			num_of_admirals = 2
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "MV1_magistean_fleet_ready"
+				duration = 5475
+			}
+			add_navy_tradition = 20			
+		}
+	}	
+	MV1_yggdrasil_fruits = {
+		icon = mission_alraune_blooming_empire
+		required_missions = { MV1_magistean_fleet }
+		position = 3
+
+		provinces_to_highlight = {
+			province_id = 1030
+		}		
+		trigger = {
+			OR = {
+				has_spy_network_in = {
+					who = WT1
+					value = 40
+				}
+				WT1 = { exists = no }				
+			}
+		}
+		
+		effect = {
+			add_adm_power = 100
+			world_tree_area = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+			forest_dryad_area = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+			dark_dryad_area = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+			walraune_area = {
+				type = all
+				add_permanent_claim = ROOT
+			}		
+		}
+	}	
+	MV1_control_world_tree = {
+		icon = mission_alraune_embrace_natures_dominion
+		required_missions = { MV1_yggdrasil_fruits }
+		position = 4
+
+		provinces_to_highlight = {
+			OR = {
+				area = world_tree_area 
+				area = forest_dryad_area 
+				area = dark_dryad_area 
+				area = walraune_area 
+			}
+		}		
+		trigger = {
+			world_tree_area = {
+				type = all
+				owned_by = ROOT
+			}
+			forest_dryad_area = {
+				type = all
+				owned_by = ROOT
+			}
+			dark_dryad_area = {
+				type = all
+				owned_by = ROOT
+			}
+			walraune_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		
+		effect = {
+			add_dip_power = 100
+			fairy_island_region = {
+				type = all
+				add_permanent_claim = ROOT
+			}		
+		}
+	}
+	MV1_fairy_magic_amplification = {
+		icon = mission_airy
+		required_missions = { MV1_control_world_tree }
+		position = 5
+
+		provinces_to_highlight = {
+			OR = {
+				region = fairy_island_region 
+			}
+		}		
+		trigger = {
+			fairy_island_region = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		
+		effect = {
+			add_mil_power = 100			
+			add_country_modifier = {
+				name = "MV1_worm_summoners_amplified"
+				duration = -1
+			}		
+		}
+	}
+}
+
+lily_final_branch = {
+
+	slot = 5
+	generic = yes
+	ai = yes
+	
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		OR = {
+			tag = MV1
+			AND = {
+				was_tag = MV1
+				tag = MV2
+			}
+		}
+	}
+	
+	has_country_shield = yes
+	
+	MV1_hear_voices_of_oppressed = {
+		icon = mission_lily_displeased
+		required_missions = { }
+		position = 2
+		
+		trigger = {
+			tag = MV2
+			any_neighbor_country = {
+				any_owned_province = {
+					nationalism = 1
+				}
+			}
+		}		
+		effect = {
+			custom_tooltip = fra_liberation_wars_enabled_tt
+			set_country_flag = lily_liberation_wars_enabled
+			every_neighbor_country = {
+				limit = {
+					any_owned_province = {
+						nationalism = 1
+					}
+				}
+				ROOT = {
+					declare_war_with_cb = {
+						who = PREV
+						casus_belli = cb_liberation
+					}
+				}
+			}		
+		}
+	}
+}

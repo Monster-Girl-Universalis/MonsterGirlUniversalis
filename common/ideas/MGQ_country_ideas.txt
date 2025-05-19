@@ -2772,6 +2772,7 @@ DR3_ideas = {
 	
 	trigger = {
 		culture = Dragon_Girl
+		NOT = { tag = SL1 }
 		NOT = { has_country_flag = accepted_dragon_empress_ideas }
 	}
 	free = yes
@@ -3976,7 +3977,7 @@ LQD_ideas = {
 		development_cost_modifier = -0.15
 	}
 	LQD_advanced_ghost_army = {
-		can_bypass_forts = yes
+		morale_damage = 0.10
 		land_attrition = -0.33
 	}
 	LQD_advanced_fireball_battle_magic = {
@@ -4054,20 +4055,20 @@ BQD_ideas = {
 	free = yes
 	
 	BQD_savage_fury = {
-		infantry_power = 0.20
+		infantry_power = 0.25
 	}
 	BQD_animal_instincts = {
 		global_spy_defence = 0.25
 	}	
 	BQD_pack_mentality = {
-		land_morale = 0.10
+		land_morale = 0.20
 		reserves_organisation = 0.50
 	}
 	BQD_wild_abundance = {
 		global_trade_goods_size = 0.5
 	}
 	BQD_fearsome_predators = {
-		morale_damage = 0.10
+		morale_damage = 0.15
 	}
 	BQD_warrior_society = {
 		general_cost = -0.20
@@ -4103,7 +4104,7 @@ SSD_ideas = {
 	}
 	SSD_pleasure_cultivation = {
 		global_unrest = -2
-		diplomatic_reputation = 1
+		diplomatic_reputation = 3
 	}	
 	SSD_eternal_temptation = {
 		accept_vassalization_reasons = 30
@@ -4116,11 +4117,11 @@ SSD_ideas = {
 		free_leader_pool = 1
 	}
 	SSD_widespread_relations = {
-		diplomatic_upkeep = 2
+		diplomatic_upkeep = 3
 	}
 	SSD_dark_enchantments = {
-		fire_damage = 0.10
-		fire_damage_received = -0.10
+		fire_damage = 0.15
+		fire_damage_received = -0.15
 	}
 	SSD_archsuccubus_elite = {
 		leader_land_fire = 2
@@ -4577,5 +4578,53 @@ FQ1_ideas = {
 	FQ1_Cunning_Deceit = {
 		possible_policy = 1
 		free_policy = 1
+	}
+}
+
+#SIX GREAT ANCESTORS
+#Kanon
+KA1_ideas = {
+	start = {
+		reinforce_speed = 0.75
+		all_power_cost = 0.10
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+	
+	bonus = {
+		prestige = 1.5
+	}
+	
+	trigger = {
+		tag = KA1
+	}	
+	free = yes
+
+	KA1_Ivy_of_Devastation = {
+		hostile_attrition = 3
+		max_hostile_attrition = 5
+	}
+	KA1_Kanons_Arms = {
+		defensiveness = 0.75
+	}
+	KA1_Green_Empress_Whip = {
+		infantry_shock = 1.5
+	}
+	KA1_Kanon_Hedonism = {
+		country_admin_power = -1
+		governing_cost = 0.1
+		territories_governing_cost = -0.25
+	}
+	KA1_Digestive_Whirlpool = {
+		morale_damage = 0.25
+	}
+	KA1_Kanon_Inwards_Focus = {
+		min_autonomy = 20
+		development_cost = -0.25
+	}
+	KA1_Aztec_Rose = {
+		shock_damage = 0.50
+		military_tactics = 0.25
 	}
 }

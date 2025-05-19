@@ -1,61 +1,63 @@
-﻿ #Missions
- l_english:
+﻿l_english:
+ 
+ #Missions
  ldq_slug_queen_title: "Ascendant Slug Empire"
  ldq_slug_queen_desc: "Slugs have always been looked down upon by monsters and humans alike, but those days are a thing of the past: Now we have forged through blood and mucus an empire so vast and grand even the Monster Lord herself would be envy! But we can't give up yet, we need to make the whole of slugkind a stronger species, and the power of the four spirits can help us in achieving this feat. But first and foremost; slugs must face harship and hard disipline! All slugs will be called to arms!"
- l_english:
+ 
  ldq_undine1_title: "Across the Strait"
  ldq_undine1_desc: "Undine the spirit of water resides in a hidden spring within Western Noah, so we need to stablish a foothold in the region if we are to challenge the Water Spirit."
- l_english:
+ 
  ldq_undine2_title: "Power of Water"
  ldq_undine2_desc: "We have reached the spring of Undine! The only thing left to do is to challange the great slime to a battle..."
- l_english:
+ 
  ldq_crusader_title: "San Ilia Crusade"
  ldq_crusader_desc: "San Ilia - seat of the blind servant of the wicked Goddsse of Light the Pope - stands between us and the Forest of Spirits, the place where Sylph spirit of the wind resides! Aside from access to the forest San Ilia itself is quite a prize; to get access to their vast library for one!"
- l_english:
+ 
  ldq_irredentism_title: "Irredentist Claims"
  ldq_irredentism_desc: "Our glorious unification of continental Ilias has been achieved, but there are islands nearby that should be considered the true natural border of the empire as they could be used by foreign powers to stage invasions of our imperial core. Seizing those areas to erect fortifications will turn an existing problem into a solution: our finest line of defense! This is a vital imperial interest, we must claim these islands!"
- l_english:
- ldq_southern_sea_title: "Challange the Abyss"
+ 
+ ldq_southern_sea_title: "Challenge the Abyss"
  ldq_southern_sea_desc: "The Undersea Temple is the home of the Southern Sea Queen Kraken, but she is loyal to the Monster Lord. We cannot risk our sea trade in the area being subject to the whims of an unruly Monster Lord or Heavenly Knight, we control it!"
- l_english:
+ 
  ldq_roach_tower_title: "Redeem Roach Tower"
  ldq_roach_tower_desc: "Roach Tower lies on an island easily fortified and defendable. If we could incorporate this to our empire, we'll secure the western flank."
- l_english:
+ 
  ldq_wind_power_title: "Power of Wind"
  ldq_wind_power_desc: "Deep in the forest of spirits resides Sylph who rules over the element of wind. This element allows the user to greatly increase one's speed and agility. Very tantalizing for slugs, hey! That's going to be ours now!"
- l_english:
+ 
  ldq_navy_title: "Sink the Navy"
  ldq_navy_desc: "The Navy Headquaters led by Leviathan represent a vital choke point in the seaway of the world, and its proximity to our imperial core make it a palatable target for imperial expansion!"
- l_english:
+ 
  ldq_gloria_title: "End the Pirate Age"
  ldq_gloria_desc: "The Gloria Pirates have harassed the slug coast for decades with their raids. This may be the only extra territorial claim we can actually justify- err regardless the pirates must go!"
- l_english:
+ 
  ldq_greater_ilias_title: "Greater Ilias"
  ldq_greater_ilias_desc: "We have achieved the natural borders around our imperial core. Now by heavily investing in fortifications, we have secured our flanks in every direction! Any foreign power will have to contend with both our mighty armada and a lengthy island hopping campaign before they can reach the imperial core!"
- l_english:
+ 
  ldq_frogs_title: "Amphibian Warfare"
  ldq_frogs_desc: "Finoa is the home of the frogs, land dwellers like us but with a questionable diet... Despite that, our fellow monsters are threatened by the human power of Grand Noah, Grand Noah has already stepped on our toes back when they laid claim to the Warp Shrine Island which was part of continental Ilias. With how hostilities between Grand Noah and the frogs accelerating, this is our chance to form a united front against Grand Noah for some payback...."
- l_english:
+ 
  ldq_grand_noah_title: "Triumph in Grand Noah"
  ldq_grand_noah_desc: "The walls of Grand Noah have fallen, and the world renown colosseum is ours! This victory shows the world what happens when our imperial core is threatened. With the colosseum in our hands, we have some bread and circuses for our people!"
- l_english:
+ 
  ldq_monster_lord_title: "Eclipse the Monster Lord"
  ldq_monster_lord_desc: "The Monster Lord is the highest authority in the world of monsters, the one who commands monsterkind and the four Heavenly Knights - and a direct descendant of the Dark Goddess Alipheese. That was yesterday, today things have changed; our realm eclipsed the Monster Lord's in every category, our greatest source of pride. This is the beginning of slugkind's golden era!"
- l_english:
+ 
  ldq_attuned_with_nature_title: "Attuned with Nature"
  ldq_attuned_with_nature_desc: "We slugs have eternally been one with the natural world. Now that we have mastered the four elements, our connection with mother nature is overwhelming strong. Our slugs armies are now a force of nature itself!"
- l_english:
+ 
  ldq_university_title: "Enlightened Slugs"
  ldq_university_desc: "Knowledge is power in this world, especially with the technology coming out of the tartaruses. We must enact mass education for all slugs so we don't fall behind the other powers."
- l_english:
+ 
  ldq_natural_revolution_title: "Natural Revolution"
  ldq_natural_revolution_desc: "Our deep connection with mother nature allows us to expand our infrastucture within nature's limit. We never take more than we need and we still managed to attain a powerhouse economy, proving that our ways are superior to the habitat destroying and pollution spreading humans!"
- l_english:
+ 
  ldq_fire_power_title: "Power of Fire"
  ldq_fire_power_desc: "Deep within Gold Volcano resides Salamander the spirit who holds dominion over fire, and although this is a hellish enviroment, we must push forward! Salamander's power is so great it is said she trained one of the four Heavenly Knights, Granberia. We need this power, for slugkind!"
- l_english:
+ 
  ldq_earth_power_title: "Power of Earth"
  ldq_earth_power_desc: "The harsh enviroment of the desert is torture for us slugs, but no pain, no gain! The spirit of earth Gnome is here, and it is said with her power that even a sickly human could break free from a lamia's death grip. Such power cannot be wasted on humans."
+ 
  #Mission Modifiers
  ldq_slug_golden_age: "Slug Golden Age"
  ldq_western_noah_invasion: "Invasion of Western Noah"
@@ -79,6 +81,7 @@
  ldq_slime_slug_union: "Slime-Slug Union"
  ldq_chrome: "Chrome-led Deparment of Science"
  ldq_lamia_pals: "Lamias warming up to slugs"
+
 #Local Modifiers
  ldq_local_crusade: "Ilias faith wavering"
  ldq_water_faith: "Water Focus"
@@ -88,54 +91,56 @@
  ldq_earth_faith: "Earth Focus"
  ldq_fire_faith: "Fire Focus"
  ldq_local_lamias: "Lamia Molluscophobia"
+
 #Events
- l_english:
+
  flavor_ldq.1_title: "Undine of Water"
  flavor_ldq.1_desc: "Undine's spring and its surrounding lands have come under our occupation. Empress $MONARCH$ has challanged the spirit of water Undine for her power! After a long clash with the spirit, Undine yields and grants our Empress the power of water, "Serene Mind" a move that calms one's mind and boosts evasion drastically, especially from attacks filled with bloodlust. This power will be beyond a doubt a great asset to our ruler, but perhaps if we share it with the rest of slugkind it'll be better for our race as a whole?"
- l_english:
+
  flavor_ldq.2_title: "Sylph of Wind"
  flavor_ldq.2_desc: "We have finally made contact with the spirit of wind, Sylph. Of course she wasn't just going to grant us her power out of hospitality; instead she challanged empress $MONARCH$ to a battle! It was a demanding fight with the visible agility gap... a close fight it was! But, $MONARCH$ finished off Sylph with the Gale Thrust skill! Who could've have known that the weak starting move known by low slugs to offset their agility would've become the final blow to the spirit of gale itself, and at the hands of a slug no less! After the battle, the spirit recognized the strength of our empress and handed the power of the wind to her - a power that allows one self to become one with the wind, increasing one's agility greatly. Plant-type, dust, and powder based attacks become futile against a foe charged with wind. This is our majesty $MONARCH$ greatest triumph!"
- l_english:
+
  flavor_ldq.3_title: "Gnome of Earth"
  flavor_ldq.3_desc: "After a taxing slither through the desert sands, we've spotted the Safar Ruins, home of the spirit of Earth Gnome - altough there are no signs of her beside some strange mud dolls roaming around. $MONARCH$ decides to slither after of those odd dolls and soon enough she was facing the the maker of these dolls, Gnome. $MONARCH$'s blade seers toward the sky, beckoning a challenge to the spirit for her power! A lengthy fight develops with Gnome's defenses proving to be a terrific obstacle to break through. In the end, our empress came on top short-winded and sore. Extending her hand to the defeated Gnome, $MONARCH$ asks of her to grant the power of earth to slugkind, granting higher defenses and strengths. The spirit simply nods her head."
- l_english:
+
  flavor_ldq.4_title: "Salamander of Fire"
  flavor_ldq.4_desc: "After a long journey, we have reached the hellish Gold Volcano - home of the last spirit; Salamander of fire. The inside of the volcano could melt off one's face if they stuck around too long, but this is the final elemental power we're missing! After defeating various fire monsters blocking the pathway through hell, the spirit of fire herself shows up inquring about our visit. $MONARCH$ wastes no time in raising her sword against the spirit proclaiming her intentions loudly! Thus, the final struggle between $MONARCH$ and Salamander commences. It was a long fought battle, but between the prowess of our empress and the power of the three other spirits Salamander was made to yield to and accept our demands; the power of fire has surrendered to our empress!"
- l_english:
+
  flavor_ldq.5_title: "The Slimes are Subjugated!"
  flavor_ldq.5_desc: "We have conquered the main population center of the slime race, proving once and for all that we gastropod mollusks are superior to these gelatinous blobs! Humiliating as this day is for them, they shall never rise up against us, not when we could poison Undine's spring - one of the last bastions of the slimes - with clothing production waste! With their precious spring risking the chopping block, we can exploit the lowly slimes for everything they have... although this might have diplomatic repercussions."
- l_english:
+
  flavor_ldq.6_title: "Drizzle Rain"
  flavor_ldq.6_desc: "It was a cloudy day with occasional drizzle rain when we first ventured into Undine's spring. Our slime citizens were elated and flocked there to meet their brethren. The reunion was joyous but it appears the new slimes are puzzled with the closeness slugs and slimes have developed. Back in the age of duchess Melk, she was able to meld our relationship with only the slimes living in continental Ilias, but now that we stand in the presence of Erubetie - queen of the slimes and heavenly knight alongside Undine the spirit of water revered by all slimes - we can make it official to the world that slimes and slugs are a fraternal people and our bond is thicker than blood! To mark the occasion, a special ceremony was prepared; Empress $MONARCH$ with sword and shield in hand ascended the top of an altar. There Erubetie and Undine stood, Erubetie moved forwards first and faced $MONARCH$. She knelt before Erubetie while placing her sword and shield on the ground, then she stood up and shook hands with the heavenly knight. After that Erubetie stepped aside, and so Empress $MONARCH$ and Undine stood right in front of eachother. Undine offered $MONARCH$ a fish freshly caught (she gulped down instantaneously), then it was $MONARCH$'s time to make an offering; a huge healty cabbage (which the slime quickly dissolved into her body). After this exchange of gifts, they both closed the gap with a warming embrace... when then they softly kissed on the lips. The crowd of slime and slugs alike exploded with cheers at the historic heartwarming sight! Many boomerangs were thrown that day, a day no slime or slug will ever forget, an event that would be celebrated every year from now on as the Drizzle Rain Festival."
- l_english:
+
  flavor_ldq.7_title: "Terror of the Lamias"
  flavor_ldq.7_desc: "Lamias are powerful and durable half-snake monsters able to crush their prey with a tail grip and consume them. However, that's not the sight welcoming us after our annexation of the lamias' realm; they are in fact terrified of our presence! The big snakes appared to be panicked and fled from any sighting of slugkind, shrieking like children while others were simply petrified in place, watching from a distance. As amusing as this sight is, we must restore order. We shall quickly round up all the former administrators, tax collectores, and village elders to discuss how things shall be ran under slugkind. But before we can make any demands, they fold and assure us that if we keep distance and refrain from touching them, they'll swear loyalty to the crown and surrender all territorial claims of their prior state. Also, renounce any attempt at independence and grant the state all tax, production and manpower the area can muster up... Well this looks like a fair deal."
- l_english:
+
  flavor_ldq.8_title: "A New Friend in the Shadows"
  flavor_ldq.8_desc: "On a rainy deary day, our empress $MONARCH$ was strolling through the Lost Forest. Her attention got caught by a decrepit house which... as unpleasant as this habitation looked, $MONARCH$ decides to enter. She got greeted by a congregation of zombies and ghost girls. The empress' calm demeanor had them desist from violent action. Further in the house, $MONARCH$ entered a basement where she found a tiny girl shaken by $MONARCH$'s sudden appeareance. $MONARCH$ explained she had no ill will towards anybody present, and soon after some ghosts appeared beside the scared girl to report no fight had taken place. As the petite girl calmed down, she presented herself: "Chrome Artiste" she's a succubus who's only really interested in necromancy. Although our empress is uncultivated in these dark arts, Chrome's stylish outfit was enough attract $MONARCH$'s curiosity, and so a friendy conversation with the necromancer ensued. $MONARCH$ had her servants to set up a tea party table filled with sweets, cookies, cabbage cakes, and of course tea. At seeing the food, Chrome seem to become ecstatic! Our empress gestured for her to sit down by her side and Chrome timidly obeyed. The two conversed about all manner of things, from the Dark art of Necromancy, to the flavor of cabbage cakes. Fueled by the pastry the conversation kept going on until the topic of dressing came up. As a fashionable empress $MONARCH$ lost no time in taking charge of the discussion, eventually Chrome started to become exhausted by the chatter and she made herself comfortable by removing her hat. She then invite our empress to do the same, but $MONARCH$ declined, explaining the pride slugs have in their clothings and the slime-resist cloth industry we have built. Eventually daybrake came and was time to return. But, before going, $MONARCH$ who was amazed by Chrome's scientific approach to dark magic, made her an offer; to come and form a department of science for the empire in exchange for investments in Chrome's reseach and a donation to renovate Chrome's house. Needlessly to say Chrome was elated at the offer and accepted it so. They shook hands and our empress waved good-bye."
- l_english:
+
  flavor_ldq.9_title: "Unexpected Friendship"
  flavor_ldq.9_desc: "An odd sight has been reported in the former Lamia realm; it appears two followers of the Ilias faith, Rosary the slug nun and Sofia the lamia nun have been going around the area trying to convert our subjects to the wicked goddess's faith. As despicable as this is, their actions had unintended consequences; it appears lamias are slowly turning accustomed to slugs! Indeed the sight of a lamia and slug working together must have had mellowed out the phobia lamias had, at least a bit."
+
 #Event choices
- l_english:
+
  flavor_ldq.1.a: "Ask Undine if she can help the slugs master Serene Mind."
  flavor_ldq.1.b: "Let go of any thought you may have, leave only the stream of water in your minds!"
- l_english:
+
  flavor_ldq.2.a: "Ask Sylph if she can teach slugs to play with the wind."
  flavor_ldq.2.b: "Be free and ungovernable as the wind!"
- l_english:
+
  flavor_ldq.3.a: "Ask Gnome if she can teach the power of Wild Lands to the slugs."
  flavor_ldq.3.b: "Under my watch and this scorching desert any slugs can master the earth element!"
- l_english:
+
  flavor_ldq.4.a: "Ask Salamaner to take slugs as her disciples."
  flavor_ldq.4.b: "Focus you burning spirit on your sword and incinerate anything in your path!"
- l_english:
+ 
  flavor_ldq.5.a: "Let's see how they mock us now!"
- l_english:
+ 
  flavor_ldq.6.a: "Race is beneath us, we are one people, now and forever!"
- l_english:
+ 
  flavor_ldq.7.a: "Slimy slimy..."
- l_english:
+ 
  flavor_ldq.8.a: "What a wonderful evening, Chrome you are a friend i will cherish!"
- l_english:
+ 
  flavor_ldq.9.a: "The wicked goddess's deception is so strong it can overcome racial problems like this?"

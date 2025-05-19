@@ -1,0 +1,18 @@
+government = monarchy
+government_rank = 1
+primary_culture = Alraune_Girl
+religion = monster_lord_religion
+technology_group = TECH_ALRAUNE
+1444.1.1 = { 
+	monarch = { 
+		name = "Boa"
+		dynasty = "the Alraune"
+		female = yes
+		birth_date = 1424.1.1
+		adm = 3
+		dip = 4
+		mil = 4
+	}
+}
+add_government_reform = Alraune_realm
+capital = 1337

@@ -940,4 +940,64 @@ spriteTypes = {
         name = "mission_sheep3"
         texturefile = "gfx//interface//missions//mission_sheep3.dds"
     }
+	spriteType = {
+        name = "mission_oni_shizuku"
+        texturefile = "gfx//interface//missions//mission_oni_shizuku.dds"
+    }
+	spriteType = {
+        name = "mission_devil_hunter"
+        texturefile = "gfx//interface//missions//mission_devil_hunter.dds"
+    }
+	spriteType = {
+        name = "mission_lily_mansion"
+        texturefile = "gfx//interface//missions//mission_lily_mansion.dds"
+    }
+	spriteType = {
+        name = "mission_worm_summoner"
+        texturefile = "gfx//interface//missions//mission_worm_summoner.dds"
+    }
+	spriteType = {
+        name = "mission_worm_summoner_angry"
+        texturefile = "gfx//interface//missions//mission_worm_summoner_angry.dds"
+    }
+	spriteType = {
+        name = "mission_lily_displeased"
+        texturefile = "gfx//interface//missions//mission_lily_displeased.dds"
+    }
+	spriteType = {
+        name = "mission_lucia_displeased"
+        texturefile = "gfx//interface//missions//mission_lucia_displeased.dds"
+    }
+	spriteType = {
+        name = "mission_fizz"
+        texturefile = "gfx//interface//missions//mission_fizz.dds"
+    }
+	spriteType = {
+        name = "mission_witchy"
+        texturefile = "gfx//interface//missions//mission_witchy.dds"
+    }
+	spriteType = {
+        name = "mission_witch_elites"
+        texturefile = "gfx//interface//missions//mission_witch_elites.dds"
+    }
+	spriteType = {
+        name = "mission_fall_of_sabasa"
+        texturefile = "gfx//interface//missions//mission_fall_of_sabasa.dds"
+    }
+	spriteType = {
+        name = "mission_ashel"
+        texturefile = "gfx//interface//missions//mission_ashel.dds"
+    }
+	spriteType = {
+        name = "mission_mirage"
+        texturefile = "gfx//interface//missions//mission_mirage.dds"
+    }
+	spriteType = {
+        name = "mission_antlion"
+        texturefile = "gfx//interface//missions//mission_antlion.dds"
+    }
+	spriteType = {
+        name = "mission_gnome2"
+        texturefile = "gfx//interface//missions//mission_gnome2.dds"
+    }
 }	

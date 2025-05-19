@@ -760,10 +760,7 @@ san_ilia_consolidating_natalia_forest_of_spirits = {
 		effect = {
 			add_treasury = -600
 			add_dip_power = -200
- 			set_variable = {
-   				which = Slime_integration
-  				value = 1
-			}
+			unlock_race = { race = slime }
 			add_accepted_culture = Slime_Girl
 			every_owned_province = {
 				limit = {
@@ -830,10 +827,7 @@ san_ilia_consolidating_natalia_forest_of_spirits = {
 		}
 		
 		effect = {
- 			set_variable = {
-   				which = Elf_integration
-  				value = 1
-			}
+			unlock_race = { race = elf }
 			all_owned_province = {
 				limit = {
 					religion = wind_religion
@@ -1087,10 +1081,7 @@ san_ilia_consolidating_natalia_monte_carlo = {
 				}
 				change_culture = Sister_Lamia 
 			}
- 			set_variable = {
-   				which = Lamia_integration
-  				value = 1
-			}
+			unlock_race = { race = lamia }
 			carlos_hill_area = {
 				type = all
 				add_permanent_claim = ROOT

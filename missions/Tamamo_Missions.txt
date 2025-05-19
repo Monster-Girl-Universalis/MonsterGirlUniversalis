@@ -654,10 +654,7 @@ tamamo_kitsune_island_monster_lord_branch = {
 		}
 		effect = {
 			change_government_reform_progress = 75
- 			set_variable = {
-   				which = Tanuki_integration
-  				value = 1
-			}
+			unlock_race = { race = tanuki }
 			every_owned_province = {
 				limit = {
 					OR = {
@@ -859,10 +856,7 @@ tamamo_yamatai_branch = {
 				type = all
 				add_permanent_claim = ROOT
 			}
- 			set_variable = {
-   				which = Human_integration
-  				value = 1
-			}
+			unlock_race = { race = human }
 		}
 	}		
 	KI1_yamatai_demi_humans = {
@@ -877,10 +871,7 @@ tamamo_yamatai_branch = {
 			}
 		}
 		effect = {
- 			set_variable = {
-   				which = Demi_Human_integration
-  				value = 1
-			}
+			unlock_race = { race = demi_human }
 			add_country_modifier = {
 				name = "ki1_youkai_diversity"
 				duration = -1
@@ -1223,10 +1214,7 @@ tamamo_yamatai_caves = {
 		}
 		effect = {
 			add_adm_power = 150
- 			set_variable = {
-   				which = Land_Dweller_integration
-  				value = 1
-			}					
+			unlock_race = { race = land_dweller }
 		}
 	}	
 	has_country_shield = yes
@@ -1292,11 +1280,7 @@ tamamo_yamatai_caves = {
 		effect = {
 			add_navy_tradition = 50
 			add_yearly_sailors = 2.5
- 			set_variable = {
-   				which = Sea_Dweller_integration
-  				value = 1
-			}
-			
+			unlock_race = { race = sea_dweller }
 		}
 	}
 }

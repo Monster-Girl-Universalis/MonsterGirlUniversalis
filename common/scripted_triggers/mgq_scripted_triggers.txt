@@ -44,5 +44,817 @@ mgq_has_mil_advisor = {
 }
 
 has_race_unlocked = {
-	has_country_flag = can_access_race_$race$
+	custom_trigger_tooltip = {
+		tooltip = tt_can_access_race_$race$
+		has_country_flag = can_access_race_$race$
+	}
+}
+
+has_race_condition_human = {
+	OR = {
+		technology_group = TECH_HUMAN
+		was_tag = CG4
+		tag = CG4
+	}
+}
+has_race_condition_undead = {
+	OR = {
+		technology_group = TECH_UNDEAD
+		primary_culture = Undead_Apoptosis
+		was_tag = RMA
+		was_tag = MMW
+		was_tag = MII
+		was_tag = HM1
+		was_tag = MG1
+		was_tag = MR2
+		was_tag = SH1
+		was_tag = SH2
+		was_tag = PA1
+		was_tag = JD1
+		was_tag = HI1
+		was_tag = HK1
+		was_tag = HK2
+		was_tag = NM1
+		was_tag = SP1
+		was_tag = SP2
+		was_tag = SP3
+		was_tag = GH1
+		was_tag = GH2
+		was_tag = WA1
+		was_tag = WA2
+		was_tag = ZA1
+		was_tag = LC1
+		was_tag = DG1
+		was_tag = DG2
+		was_tag = LQD
+		was_tag = MS1
+		was_tag = MS2
+		was_tag = EN1
+		was_tag = EN2
+
+		tag = JD1
+		tag = ZA1
+		tag = SH1
+	}
+}
+has_race_condition_land_dweller = {
+	OR = {
+		technology_group = TECH_LAND_DWELLER
+		was_tag = LGR
+		was_tag = SLU
+		was_tag = ERD
+		was_tag = ROR
+		was_tag = MDS
+		was_tag = SLT
+		was_tag = AR1
+		was_tag = FR1
+		was_tag = FR2
+		was_tag = FR3
+		was_tag = FR4
+		was_tag = SH1
+		tag = SH1
+		was_tag = LDQ
+		was_tag = SLT
+		tag = BS1
+		tag = BS2
+		was_tag = BS1
+		was_tag = BS2
+
+		tag = ML1
+		was_tag = ML1
+	}
+}
+has_race_condition_succubi = {
+	OR = {
+		technology_group = TECH_SUCCUBI
+		tag = HM1
+		tag = LC1
+		was_tag = IMR
+		was_tag = SNR
+		was_tag = CH1
+		was_tag = SU1
+		was_tag = SU2
+		was_tag = HM1
+		was_tag = LC1
+		was_tag = SSD
+		was_tag = KU1
+		was_tag = SM3
+		was_tag = SM4
+		was_tag = SM5
+
+		tag = ML1
+		was_tag = ML1
+	}
+}
+has_race_condition_slime = {
+	OR = {
+		technology_group = TECH_SLIME
+		primary_culture = Slime_Apoptosis
+		tag = UN1
+		was_tag = SLR
+		was_tag = SLM
+		was_tag = BLR
+		was_tag = BP1
+		was_tag = SB1
+		was_tag = RS1
+		was_tag = PS1
+		was_tag = GS1
+		was_tag = TS1
+		was_tag = BR2
+		was_tag = BR3
+		was_tag = LS1
+		was_tag = GE1
+		was_tag = GE2
+		tag = LV1
+		tag = CH2
+		tag = SC3
+		was_tag = CH2
+		was_tag = SC3
+		was_tag = LV1
+		was_tag = VA2
+		was_tag = UN1
+		was_tag = SQD
+
+		tag = ML1
+		was_tag = ML1
+	}
+}
+has_race_condition_apoptosis = {
+	OR = {
+		technology_group = TECH_APOPTOSIS
+		was_tag = RAP
+		was_tag = JIP
+		was_tag = SSP
+		was_tag = LXP
+		was_tag = SLP
+		was_tag = EAP
+		was_tag = VA1
+		was_tag = VA2
+		was_tag = VA3
+		was_tag = SH1
+		was_tag = TA1
+		was_tag = JA1
+		was_tag = RR1
+		was_tag = AA1
+		was_tag = HR1
+		was_tag = AR3
+		tag = RE1
+		was_tag = RE1
+	}
+}
+has_race_condition_alraune = {
+	OR = {
+		technology_group = TECH_ALRAUNE
+		primary_culture = Alraune_Apoptosis
+		was_tag = MNR
+		was_tag = RFF
+		was_tag = SWG
+		was_tag = PG1
+		was_tag = KIM
+		was_tag = WR1
+		was_tag = CG3
+		was_tag = WT1
+		was_tag = AL1
+		was_tag = AL2
+		was_tag = AL3
+		was_tag = AL4
+		tag = EL2
+		tag = EL3
+		was_tag = EL2
+		was_tag = EL3
+		tag = CO1
+		tag = CO2
+		was_tag = CO1
+		was_tag = CO2
+		was_tag = WT1
+		was_tag = AL4
+		was_tag = AQD
+
+		tag = ML1
+		was_tag = ML1
+	}
+}
+has_race_condition_elf = {
+	OR = {
+		technology_group = TECH_ELF
+		tag = UN1
+		tag = SL1
+		tag = LC1
+		was_tag = PPR
+		was_tag = JLW
+		was_tag = JLG
+		was_tag = DLF
+		was_tag = ENF
+		was_tag = DLM
+		was_tag = DOF
+		was_tag = YE1
+		was_tag = YE2
+		was_tag = YE3
+		was_tag = IP1
+		was_tag = FS1
+		was_tag = SR2
+		was_tag = UN1
+		was_tag = SL1
+		was_tag = LC1
+		was_tag = ENV
+		was_tag = EL1
+		was_tag = EL4
+
+		tag = ML1
+		was_tag = ML1
+	}
+}
+has_race_condition_beast = {
+	OR = {
+		technology_group = TECH_BEAST
+		tag = RAP
+		was_tag = RAP
+		was_tag = ORR
+		was_tag = BGR
+		was_tag = BLR
+		was_tag = WLR
+		was_tag = RGR
+		was_tag = DGR
+		was_tag = SGR
+		was_tag = ILC
+		was_tag = ANI
+		was_tag = GRB
+		tag = URM
+		was_tag = URM
+		was_tag = MM1
+		was_tag = MR1
+		tag = PY1
+		was_tag = PY1
+		was_tag = SI2
+		was_tag = CN1
+		was_tag = CN2
+		was_tag = NE1
+		was_tag = NE2
+		was_tag = WN1
+		was_tag = CB1
+		was_tag = TI1
+		was_tag = TI2
+		was_tag = PB1
+		was_tag = PB2
+		tag = UR1
+		tag = UR2
+		was_tag = UR1
+		was_tag = UR2
+		tag = CB1
+		was_tag = WE1
+		was_tag = WE2
+		was_tag = WE3
+		was_tag = MT1
+		was_tag = MT2
+		was_tag = MT3
+		was_tag = YI1
+		was_tag = YI2
+		was_tag = YI3
+		tag = BS1
+		tag = BS2
+		was_tag = BS1
+		was_tag = BS2
+		was_tag = BE1
+		was_tag = BE2
+		was_tag = CE1
+
+		was_tag = CD1
+		was_tag = BQD
+
+		tag = ML1
+		was_tag = ML1
+	}
+}
+has_race_condition_insect = {
+	OR = {
+		technology_group = TECH_INSECT
+		primary_culture = Insect_Apoptosis
+		tag = SSP
+		was_tag = SSP
+		was_tag = BGH
+		was_tag = MDR
+		was_tag = SPG
+		was_tag = NBH
+		was_tag = NVM
+		was_tag = CG1
+		was_tag = TR1
+		was_tag = SC1
+		was_tag = AT1
+		was_tag = RT1
+		was_tag = KU3
+		tag = SR1
+		was_tag = SR1
+		was_tag = AR2
+		was_tag = SG2
+		was_tag = SM1
+		was_tag = OK1
+		was_tag = OK2
+		was_tag = BU1
+		was_tag = BU2
+		was_tag = BU3
+		was_tag = SP4
+		was_tag = RM1
+		was_tag = FL1
+		was_tag = FL2
+		was_tag = AN1
+		was_tag = IQ1
+
+		tag = ML1
+		was_tag = ML1
+	}
+}
+has_race_condition_harpy = {
+	OR = {
+		technology_group = TECH_HARPY
+		was_tag = SPR
+		was_tag = OG1
+		was_tag = WI1
+		was_tag = WI2
+		was_tag = HK3
+		tag = DR3
+		tag = DR4
+		tag = LC1
+		was_tag = DR3
+		was_tag = DR4
+		was_tag = HRT
+		was_tag = HQ1
+		was_tag = LC1
+		was_tag = KU2
+		tag = BS1
+		tag = BS2
+		tag = AE1
+		was_tag = BS1
+		was_tag = BS2
+		was_tag = AE1
+
+		tag = ML1
+		was_tag = ML1
+	}
+}
+has_race_condition_dragon = {
+	OR = {
+		technology_group = TECH_DRAGON
+		primary_culture = Dragon_Apoptosis
+		tag = SL1
+		was_tag = SL1
+		was_tag = HVB
+		tag = RAP
+		was_tag = RAP
+		was_tag = SB2
+		tag = OR1
+		was_tag = OR1
+		was_tag = DR3
+		was_tag = DR4
+		tag = NV1
+		was_tag = NV1
+		was_tag = KI2
+		was_tag = KI3
+		was_tag = KY1
+		was_tag = KY2
+		was_tag = WY1
+		was_tag = WY2
+		tag = AE1
+		was_tag = AE1
+
+		tag = ML1
+		was_tag = ML1
+	}
+}
+has_race_condition_demi_human = {
+	OR = {
+		technology_group = TECH_DEMI_HUMAN
+		tag = HVB
+		was_tag = HVB
+		was_tag = FSM
+		was_tag = ITT
+		was_tag = DR1
+		tag = AR2
+		was_tag = AR2
+		tag = OK1
+		was_tag = OK1
+		tag = OK2
+		was_tag = OK2
+		was_tag = YK1
+		tag = NR2
+		was_tag = NR2
+		tag = SP1
+		was_tag = SP1
+		tag = SP2
+		was_tag = SP2
+		tag = SP3
+		was_tag = SP3
+		tag = CD1
+		was_tag = CD1
+		tag = OR1
+		was_tag = OR1
+		tag = BU1
+		was_tag = BU1
+		tag = BU2
+		was_tag = BU2
+		tag = BU3
+		was_tag = BU3
+		tag = TI1
+		was_tag = TI1
+		tag = TI2
+		was_tag = TI2
+		was_tag = KE1
+		was_tag = FT1
+		was_tag = AK1
+		was_tag = AK2
+		was_tag = NK1
+		was_tag = WK1
+		was_tag = YO1
+		was_tag = YO2
+		tag = KI2
+		tag = KI3
+		was_tag = KI2
+		was_tag = KI3
+		was_tag = GO3
+		was_tag = ZO1
+
+		tag = ML1
+		was_tag = ML1
+
+	}
+}
+has_race_condition_vampire = {
+	OR = {
+		technology_group = TECH_VAMPIRE
+		tag = HVB
+		was_tag = HVB
+		was_tag = VA4
+		was_tag = VA5
+		was_tag = VA6
+
+		tag = ML1
+		was_tag = ML1
+	} 
+}
+has_race_condition_yoma = {
+	OR = {
+		technology_group = TECH_YOUMA
+		primary_culture = Yoma_Apoptosis
+		was_tag = PY1
+		was_tag = GG1
+		was_tag = DH1
+		was_tag = DH2
+		tag = DR1
+		was_tag = DR1
+		tag = VA1
+		was_tag = VA1
+		was_tag = ME1
+		tag = DE1
+		was_tag = DE1
+		tag = DE2
+		was_tag = DE2
+		was_tag = LV1
+		was_tag = SM2
+		tag = TI1
+		was_tag = TI1
+		tag = TI2
+		was_tag = TI2
+		was_tag = IW1
+		was_tag = IW2
+		was_tag = SC4
+		was_tag = DM1
+		was_tag = DM2
+		was_tag = VU1
+		was_tag = VU2
+
+		tag = ML1
+		was_tag = ML1
+	}
+}
+has_race_condition_kitsue = {
+	OR = {
+		technology_group = TECH_KITSUNE
+		primary_culture = Kitsune_Apoptosis
+		was_tag = KTI
+		was_tag = KTG
+		was_tag = KI1
+		was_tag = KI4
+
+		tag = ML1
+		was_tag = ML1
+	}
+}
+has_race_condition_mermaid = {
+	OR = {
+		technology_group = TECH_MERMAID
+
+		tag = PNA
+		was_tag = PNA
+		was_tag = CTR
+		was_tag = MMR
+		tag = LC1
+		was_tag = LC1
+		was_tag = SE1
+		was_tag = SE2
+		was_tag = SE3
+		was_tag = SE4
+		was_tag = SE5
+		was_tag = SE6
+		was_tag = MR3
+		was_tag = FP1
+
+		tag = ML1
+		was_tag = ML1
+	}
+}
+has_race_condition_sea_dweller = {
+	OR = {
+		technology_group = TECH_SEA_DWELLER
+		primary_culture = Sea_Dweller_Apoptosis
+		tag = SLP
+		was_tag = SLP
+		was_tag = MCG
+		was_tag = JGR
+		was_tag = CRR
+		was_tag = SEC
+		tag = SWG
+		was_tag = SWG
+		was_tag = SG1
+		was_tag = NA1
+		was_tag = DR2
+		was_tag = CO1
+		was_tag = CO2
+		tag = ES1
+		was_tag = ES1
+		tag = ES2
+		was_tag = ES2
+		tag = SC2
+		was_tag = SC2
+		was_tag = PK1
+		was_tag = PK2
+		tag = SE4
+		was_tag = SE4
+		tag = SE5
+		was_tag = SE5
+		tag = SE6
+		was_tag = SE6
+		was_tag = AJ1
+		was_tag = AJ2
+		was_tag = NA1
+		was_tag = DQ1
+
+		tag = ML1
+		was_tag = ML1
+	}
+}
+has_race_condition_doll = {
+	OR = {
+		technology_group = TECH_DOLL
+		primary_culture = Doll_Apoptosis
+		tag = HR1
+		was_tag = HR1
+		tag = AL3
+		was_tag = AL3
+		tag = AA1
+		was_tag = AA1
+		was_tag = MU1
+		was_tag = GR3
+		was_tag = JD1
+		tag = SH1
+		was_tag = SH1
+		tag = VA3
+		was_tag = VA3
+		tag = RR1
+		was_tag = RR1
+		tag = TA1
+		was_tag = TA1
+		tag = VA1
+		was_tag = VA1
+		tag = VA2
+		was_tag = VA2
+		tag = LXP
+		was_tag = LXP
+		tag = JIP
+		was_tag = JIP
+		was_tag = BR1
+		was_tag = PT1
+		tag = HM1
+		was_tag = HM1
+	}
+}
+has_race_condition_scylla = {
+	OR = {
+		technology_group = TECH_SCYLLA
+		primary_culture = Scylla_Apoptosis
+		was_tag = SR1
+		was_tag = DS1
+		tag = DR2
+		was_tag = DR2
+		was_tag = URM
+		was_tag = ES1
+		was_tag = ES2
+		tag = HK1
+		was_tag = HK1
+		tag = HK2
+		was_tag = HK2
+		tag = NM1
+		was_tag = NM1
+		was_tag = DE1
+		tag = LV1
+		was_tag = LV1
+		tag = AA1
+		was_tag = AA1
+		tag = CH2
+		was_tag = CH2
+		tag = FC1
+		was_tag = FC1
+		tag = SC2
+		was_tag = SC2
+		tag = SC3
+		was_tag = SC3
+		tag = LC1
+		was_tag = LC1
+		was_tag = KU4
+		was_tag = SS1
+		was_tag = SS2
+
+		tag = ML1
+		was_tag = ML1
+		tag = KK1
+		was_tag = KK1
+		tag = PO1
+		was_tag = PO1
+	}
+}
+has_race_condition_lamia = {
+	OR = {
+		technology_group = TECH_LAMIA
+		tag = HVB
+		was_tag = HVB
+		was_tag = SSL
+		was_tag = LR1
+		was_tag = CG2
+		was_tag = NR1
+		was_tag = NR2
+		tag = ME1
+		was_tag = ME1
+		was_tag = OR1
+		was_tag = DE2
+		was_tag = ME2
+		was_tag = ME3
+		tag = LC1
+		was_tag = LC1
+		was_tag = JK1
+		was_tag = JK2
+		was_tag = SS3
+		tag = AE1
+		was_tag = AE1
+
+		tag = ML1
+		was_tag = ML1
+	}
+}
+has_race_condition_chimera = {
+	OR = {
+		technology_group = TECH_CHIMERA
+		was_tag = CB1
+		was_tag = FC1
+		was_tag = SC2
+		was_tag = SC3
+		was_tag = ZA1
+		was_tag = GR4
+		was_tag = CH2
+		tag = AA1
+		was_tag = AA1
+		was_tag = CG4
+		tag = VA3
+		was_tag = VA3
+		tag = RR1
+		was_tag = RR1
+		tag = TA1
+		was_tag = TA1
+		tag = RE1
+		was_tag = RE1
+		tag = GR4
+	}
+}
+has_race_condition_angel = {
+	OR = {
+		technology_group = TECH_ANGEL
+		primary_culture = Angel_Apoptosis  
+		was_tag = UR1
+		was_tag = UR2
+		was_tag = EL2
+		was_tag = EL3
+		tag = HR1
+		was_tag = HR1
+		tag = AR3
+		was_tag = AR3
+		was_tag = SH3
+		was_tag = CR1
+		was_tag = CR2
+		was_tag = VR1
+		was_tag = VR2
+		tag = ZA1
+		was_tag = ZA1
+		was_tag = IT1
+		tag = FC1
+		was_tag = FC1
+	}
+}
+has_race_condition_roid = {
+	OR = {
+		technology_group = TECH_ROID
+		primary_culture = Roid_Apoptosis
+		tag = SI1
+		was_tag = SI1
+		tag = RE1
+		was_tag = RE1
+		tag = JIP
+		was_tag = JIP
+		tag = LXP
+		was_tag = LXP
+		tag = VA3
+		was_tag = VA3
+		tag = TA1
+		was_tag = TA1
+		tag = RR1
+		was_tag = RR1
+	}
+}
+has_race_condition_tanuki = {
+	OR = {
+		technology_group = TECH_TANUKI
+		was_tag = TA2
+
+		tag = ML1
+		was_tag = ML1
+	}
+}
+has_race_condition_fairy = {
+	OR = {
+		technology_group = TECH_FAIRY
+		was_tag = ENF
+		was_tag = JLW
+		was_tag = PPR
+		was_tag = JLG
+		was_tag = SR2
+		was_tag = FS1
+		tag = UN1
+		was_tag = UN1
+		tag = SL1
+		was_tag = SL1
+		was_tag = IP1
+		tag = LC1
+		was_tag = LC1
+
+		tag = ML1
+		was_tag = ML1
+	}
+}
+has_race_condition_ghost = {
+	OR = {
+		technology_group = TECH_GHOST
+		was_tag = RMA
+		was_tag = MMW
+		was_tag = MII
+		tag = HM1
+		was_tag = HM1
+		was_tag = PA1
+		was_tag = SH2
+		was_tag = MR2
+		was_tag = HI1
+		was_tag = HK1
+		was_tag = HK2
+		was_tag = NM1
+		was_tag = SP1
+		was_tag = SP2
+		was_tag = SP3
+		was_tag = MS1
+		was_tag = MS2
+		was_tag = EN1
+		was_tag = EN2
+	}
+}
+has_race_condition_giant = {
+	OR = {
+		was_tag = KY1
+		was_tag = KY2
+		was_tag = MU1
+		was_tag = SG2
+		was_tag = MT1
+		was_tag = MT2
+		was_tag = MT3
+		was_tag = KK1
+		was_tag = PO1
+		tag = SM2
+		was_tag = SM2
+		tag = CD1
+		was_tag = CD1
+		tag = DR3
+		was_tag = DR3
+		tag = DR4
+		was_tag = DR4
+		tag = NA1
+		was_tag = NA1
+		tag = OR1
+		was_tag = OR1
+
+		tag = ML1
+		was_tag = ML1
+	}
 }

@@ -58,10 +58,7 @@ country_event = {
 	
 	option = {		#Ninja Military Grounds -  Promote Elven Ninjutsu
 		name = flavor_ki1.3.a
- 		set_variable = {
-   			which = Elf_integration
-  			value = 1
-		}
+		unlock_race = { race = elf }
 		add_country_modifier = {
 			name = "KI1_elven_ninjutsu"
 			duration = 3650
@@ -70,10 +67,7 @@ country_event = {
 	}
 	option = {		#Ninja Military Grounds - Promote Succubi Ninjutsu
 		name = flavor_ki1.3.b
- 		set_variable = {
-   			which = Succubi_integration
-  			value = 1
-		}
+		unlock_race = { race = succubi }
 		add_country_modifier = {
 			name = "KI1_succubi_ninjutsu"
 			duration = 3650
@@ -81,10 +75,7 @@ country_event = {
 	}
 	option = {		#Ninja Military Grounds - Promote Harpy Ninjutsu
 		name = flavor_ki1.3.c
- 		set_variable = {
-   			which = Harpy_integration
-  			value = 1
-		}
+		unlock_race = { race = harpy }
 		add_country_modifier = {
 			name = "KI1_harpy_ninjutsu"
 			duration = 3650
@@ -92,10 +83,7 @@ country_event = {
 	}
 	option = {		#Ninja Military Grounds - Promote Scylla Ninjutsu
 		name = flavor_ki1.3.d
- 		set_variable = {
-   			which = Scylla_integration
-  			value = 1
-		}
+		unlock_race = { race = scylla }
 		add_country_modifier = {
 			name = "KI1_scylla_ninjutsu"
 			duration = 3650
@@ -103,10 +91,7 @@ country_event = {
 	}
 	option = {		#Ninja Military Grounds - Promote Arachne Ninjutsu
 		name = flavor_ki1.3.e
- 		set_variable = {
-   			which = Insect_integration
-  			value = 1
-		}
+		unlock_race = { race = insect }
 		add_country_modifier = {
 			name = "KI1_arachne_ninjutsu"
 			duration = 3650

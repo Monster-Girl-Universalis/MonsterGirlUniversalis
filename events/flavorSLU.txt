@@ -61,40 +61,39 @@ country_event = {
 	fire_only_once = yes
 	is_triggered_only = no
 	trigger = {
-	OR = {
-		tag = SLU
-		was_tag = SLU
-	}
-	slime_forest_area = {
-		type = all
-		owned_by = ROOT
-		is_core = ROOT
-	}
-	slime_village_area = {
-		type = all
-		owned_by = ROOT
-		is_core = ROOT
-	}
-
-	slime_village_area = {
-         type = all
-        NOT = {unrest = 0}
-         owned_by = ROOT
-}
-	OR = {
-    		trading_bonus = {
-			trade_goods = fish
-			value = yes
+		OR = {
+			tag = SLU
+			was_tag = SLU
 		}
-		    slime_forest_area = {
-            type = all
-            NOT = {unrest = 0}
-            owned_by = ROOT
-}
-}
-}
+		slime_forest_area = {
+			type = all
+			owned_by = ROOT
+			is_core = ROOT
+		}
+		slime_village_area = {
+			type = all
+			owned_by = ROOT
+			is_core = ROOT
+		}
+		slime_village_area = {
+			type = all
+			NOT = { unrest = 0 }
+			owned_by = ROOT
+		}
+		OR = {
+    		trading_bonus = {
+				trade_goods = fish
+				value = yes
+			}
+			slime_forest_area = {
+				type = all
+				NOT = { unrest = 0 }
+				owned_by = ROOT
+			}
+		}
+	}
    	mean_time_to_happen = {
-	months = 12
+		months = 12
 	}
 	option = {
 		name = flavor_slu.2.a
@@ -108,14 +107,11 @@ country_event = {
 		ai_chance = {
 			factor = 100
 		}
-		set_variable = {
-   		which = Slime_integration
-  		value = 1
-}
+		unlock_race = { race = slime }
 	}
-		option = {
-		custom_tooltip = flavor_insight_slu.4
+	option = {
 		name = flavor_slu.2.b
+		custom_tooltip = flavor_insight_slu.4
 		set_country_flag = slime_enemy
 		add_prestige = 10
 		add_mil_power = 150
@@ -808,9 +804,9 @@ country_event = {
 				culture_group = sea_dweller
 			}
 		}
-}
+	}
    	mean_time_to_happen = {
-	months = 12
+		months = 12
 	}
 	option = {
 		name = flavor_slu.22.a
@@ -821,10 +817,7 @@ country_event = {
 			name = slu_salt_vanquished
 			duration = -1
 		}
-		set_variable = {
-   		which = Sea_Dweller_integration
-  		value = 1
-}
+		unlock_race = { race = sea_dweller }
 	}
 }
 country_event = {

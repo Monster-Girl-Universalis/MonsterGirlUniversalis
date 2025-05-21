@@ -1,9 +1,13 @@
 government = monarchy
 government_rank = 1
 primary_culture = Antlion_Girl
-add_government_reform = Insect_realm
+add_government_reform = antlion_reform
 religion = earth_religion
 technology_group = TECH_INSECT
+historical_rival = ANI
+historical_rival = DS1
+historical_rival = MR2
+historical_rival = SG2
 1444.1.1 = { 
 	monarch = { 
 		name = "Helen"

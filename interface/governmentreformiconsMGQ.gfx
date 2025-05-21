@@ -228,6 +228,10 @@ spriteTypes = {
 		texturefile = "gfx//interface//government_reform_icons//sheep_island_great_company_reform.dds"
 	}
 	spriteType = {
+		name = "government_reform_antlion"
+		texturefile = "gfx//interface//government_reform_icons//antlion_reform.dds"
+	}
+	spriteType = {
 		name = "government_reform_yoma_nobility"
 		texturefile = "gfx//interface//government_reform_icons//yoma_nobility_reform.dds"
 	}

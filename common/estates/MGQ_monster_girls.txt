@@ -242,7 +242,8 @@ estate_monster_girls = {
 		estate_life_restoration_talismans 
 		estate_devastating_gale 
 		estate_wild_lands 
-		estate_forbidden_art_nine_tails_funeral_pyre 
+		estate_forbidden_art_nine_tails_funeral_pyre
+		estate_antlion_trapping_privilege
 		
 	}
 

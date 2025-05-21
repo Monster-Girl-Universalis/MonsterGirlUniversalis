@@ -1,0 +1,16 @@
+name = "Antlion-Anteater War"
+war_goal = {
+	type = humiliate_rival
+	casus_belli = cb_humiliate_rival
+}
+
+1444.1.1 = {
+	add_attacker = ANI
+	add_defender = AT1
+}
+
+# Truce
+1444.7.1 = {
+	rem_attacker = ANI
+	rem_defender = AT1
+}

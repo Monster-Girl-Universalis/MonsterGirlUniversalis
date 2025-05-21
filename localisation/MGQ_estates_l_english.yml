@@ -105,6 +105,11 @@
  estate_wild_lands_desc: "Become one with the Earth, greatly raising protection against physical damage for a limited time."
  estate_forbidden_art_nine_tails_funeral_pyre: "§PForbidden Art:§! 9 Tails Funeral Pyre"
  estate_forbidden_art_nine_tails_funeral_pyre_desc: "Use forbidden ninjutsu that unleashes the power of the Nine Tails to reduce foes to ashes."
+ estate_antlion_trapping_privilege: "Antlion Trapping"
+ estate_antlion_trapping_privilege_desc: "Giving the local antlions the option to trap inside our fortifications will reduce our responsibility in their upkeep, as well as make them more difficult for our enemies to navigate, but will increase our relience on independent antlions as well as entrench them should our $MONARCHTITLE$ try to take away their authority."
+ estate_antlion_trapping_privilege_disloyal: "Antlion Traps"
+ estate_antlion_trapping_privilege_neutral: "Antlion Traps"
+ estate_antlion_trapping_privilege_loyal: "Antlion Traps"
 
  estate_angels_land_rights: "Angels Land Rights"
  estate_angels_land_rights_desc: "Granting Angels exclusive lands will surely please them a lot."

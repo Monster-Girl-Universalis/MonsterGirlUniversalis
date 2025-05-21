@@ -1,26 +1,19 @@
 vampire_internal_development = {
-
 	slot = 1
 	generic = yes
 	ai = yes
-	
-	potential = {
-		NOT = { map_setup = map_setup_random }
-		culture_group = vampire #vampire 
-		NOT = { 
-			OR = {
-				
-			}
-		}
-	}
-	
 	has_country_shield = yes
-	
+	potential = {
+		NOT = { map_setup = map_setup_random } 
+		culture_group = vampire
+		NOT = { OR = {  }  } 
+	}
+
 	gen_vampire_court_affairs = {
 		icon = mission_early_game_buildings
-		required_missions = { }
 		position = 1
-		
+		provinces_to_highlight = {  } 
+
 		trigger = {
 			employed_advisor = {
 				category = ADM
@@ -35,62 +28,54 @@ vampire_internal_development = {
 				culture = ROOT
 			}
 		}
-		
+
 		effect = {
 			add_adm_power = 25
 			add_dip_power = 25
 			add_mil_power = 25
 			add_country_modifier = {
 				name = "gen_vampire_court_affairs_mod"
-				duration = 9125 #25 years
+				duration = 9125
 			}
 		}
 	}
-	
+
 	gen_vampire_nobility_and_grace = {
 		icon = mission_yoma_nobility_and_grace
-		required_missions = { gen_vampire_court_affairs }
 		position = 2
-		
+		required_missions = { gen_vampire_court_affairs } 
+		provinces_to_highlight = {  } 
+
 		trigger = {
 			num_of_owned_provinces_with = {
 				value = 5
 				base_tax = 7
 			}
 			estate_loyalty = {
-    				estate = estate_nobles
-    				loyalty = 60
+				estate = estate_nobles
+				loyalty = 60
 			}
 		}
+
 		effect = {
 			random_owned_province = {
-				limit = {
-					base_tax = 6 
-				}
+				limit = { base_tax = 6 } 
 				add_base_manpower = 3
 			}
 			random_owned_province = {
-				limit = {
-					base_tax = 6 
-				}
+				limit = { base_tax = 6 } 
 				add_base_manpower = 3
 			}
 			random_owned_province = {
-				limit = {
-					base_tax = 6 
-				}
+				limit = { base_tax = 6 } 
 				add_base_manpower = 3
 			}
 			random_owned_province = {
-				limit = {
-					base_tax = 6 
-				}
+				limit = { base_tax = 6 } 
 				add_base_manpower = 3
 			}
 			random_owned_province = {
-				limit = {
-					base_tax = 6 
-				}
+				limit = { base_tax = 6 } 
 				add_base_manpower = 3
 			}
 		}
@@ -98,33 +83,24 @@ vampire_internal_development = {
 
 	gen_vampire_majestic_castles = {
 		icon = mission_fortify_the_realm
-		required_missions = { gen_vampire_nobility_and_grace }
 		position = 3
-		
-		
+		required_missions = { gen_vampire_nobility_and_grace } 
+		provinces_to_highlight = {  } 
+
 		trigger = {
 			treasury = 1000
 			prestige = 50
 			calc_true_if = {
 				all_owned_province = {
-					OR = {
-						fort_level = 2
-					}
+					OR = { fort_level = 2 } 
 					is_prosperous = yes
 				}
 				amount = 5
 			}
 		}
-		
+
 		effect = {
 			random_owned_province = {
-				limit = { 
-					is_prosperous = yes
-					has_building = fort_15th
-				}
-				add_building = ramparts
-			}
-			random_owned_province = {
 				limit = {
 					is_prosperous = yes
 					has_building = fort_15th
@@ -151,87 +127,85 @@ vampire_internal_development = {
 					has_building = fort_15th
 				}
 				add_building = ramparts
-			}	
-			add_treasury = -1000	
+			}
+			random_owned_province = {
+				limit = {
+					is_prosperous = yes
+					has_building = fort_15th
+				}
+				add_building = ramparts
+			}
+			add_treasury = -1000
 			add_prestige = 25
 		}
 	}
 
-
 	gen_vampire_hypnotic_subjugation = {
 		icon = mission_vampire_hypnotic_subjugation
-		required_missions = { gen_vampire_majestic_castles }
 		position = 4
-		
-		
+		required_missions = { gen_vampire_majestic_castles } 
+		provinces_to_highlight = {  } 
+
 		trigger = {
 			vassal = 3
 			statesman = 4
 		}
-		
+
 		effect = {
 			add_country_modifier = {
 				name = "gen_vampire_hypnotic_subjugation_mod"
-				duration = 9125 #25 years
-			}			
+				duration = 9125
+			}
 		}
 	}
 
-
 	gen_vampire_magnificent_mansion = {
 		icon = mission_undead_grandeur_necromancer_mansion
-		required_missions = { gen_vampire_hypnotic_subjugation }
 		position = 5
+		required_missions = { gen_vampire_hypnotic_subjugation } 
+		provinces_to_highlight = {  } 
 
 		trigger = {
 			share_of_starting_income = 10
 			capital_scope = {
 				development = 60
-				num_of_times_expanded_infrastructure = 2 
+				num_of_times_expanded_infrastructure = 2
 			}
 		}
-		
+
 		effect = {
 			add_country_modifier = {
 				name = "gen_vampire_magnificent_mansion_mod"
 				duration = -1
-			}	
+			}
 			add_prestige = 50
 		}
 	}
-	
 }
 vampire_trade_expansion = {
-
 	slot = 5
 	generic = yes
 	ai = yes
-	
-	potential = {
-		NOT = { map_setup = map_setup_random }
-		culture_group = vampire #vampire  
-		NOT = { 
-			OR = {
-				
-			}
-		}
-	}
-	
 	has_country_shield = yes
-	
+	potential = {
+		NOT = { map_setup = map_setup_random } 
+		culture_group = vampire
+		NOT = { OR = {  }  } 
+	}
+
 	gen_vampire_promote_vampire_pubs = {
 		icon = mission_vampire_promote_vampire_pubs
-		required_missions = { }
 		position = 1
-		
+		provinces_to_highlight = {  } 
+
 		trigger = {
 			estate_loyalty = {
-    				estate = estate_monster_girls
-    				loyalty = 60
+				estate = estate_monster_girls
+				loyalty = 60
 			}
 			has_estate_privilege = estate_open_vampire_pubs
 		}
-		
+
 		effect = {
 			add_prestige = 15
 			add_country_modifier = {
@@ -240,32 +214,29 @@ vampire_trade_expansion = {
 			}
 		}
 	}
-	
 
 	gen_vampire_expand_our_realm = {
 		icon = mission_conquer_50_development
-		required_missions = { gen_vampire_promote_vampire_pubs }
 		position = 2
-		
-		trigger = {
-			grown_by_development = 250
+		required_missions = { gen_vampire_promote_vampire_pubs } 
+		provinces_to_highlight = {  } 
 
-		}
-		
+		trigger = { grown_by_development = 250 } 
+
 		effect = {
 			add_country_modifier = {
 				name = "gen_vampire_expand_our_realm_mod"
-				duration = 9125 #25 years
-			}	
+				duration = 9125
+			}
 			add_prestige = 10
 		}
 	}
 
-	
 	gen_vampire_establish_trade_companies = {
 		icon = mission_colonial
-		required_missions = { gen_vampire_expand_our_realm }
 		position = 3
+		required_missions = { gen_vampire_expand_our_realm } 
+		provinces_to_highlight = {  } 
 
 		trigger = {
 			OR = {
@@ -273,17 +244,19 @@ vampire_trade_expansion = {
 				num_of_merchants = 4
 			}
 		}
-		
+
 		effect = {
 			add_years_of_income = 0.50
 			add_mercantilism = 5
 		}
 	}
+
 	gen_powerful_vampire_ruler = {
 		icon = mission_powerful_vampire_ruler
-		required_missions = { gen_vampire_establish_trade_companies }
 		position = 4
-		
+		required_missions = { gen_vampire_establish_trade_companies } 
+		provinces_to_highlight = {  } 
+
 		trigger = {
 			monthly_adm = 10
 			monthly_dip = 10
@@ -291,18 +264,19 @@ vampire_trade_expansion = {
 			grown_by_development = 750
 			legitimacy_equivalent = 90
 		}
-		
-		effect = {
 
+		effect = {
 			change_government_reform_progress = 25
 			add_prestige = 50
 		}
 	}
+
 	gen_vampire_royal_ambitions = {
 		icon = mission_vampire_royal_ambitions
-		required_missions = { gen_powerful_vampire_ruler }
 		position = 5
-		
+		required_missions = { gen_powerful_vampire_ruler } 
+		provinces_to_highlight = {  } 
+
 		trigger = {
 			monthly_adm = 12
 			monthly_dip = 12
@@ -313,7 +287,7 @@ vampire_trade_expansion = {
 			legitimacy_equivalent = 100
 			is_bankrupt = no
 		}
-		
+
 		effect = {
 			add_prestige = 50
 			add_adm_power = 50
@@ -321,5 +295,148 @@ vampire_trade_expansion = {
 			add_mil_power = 50
 		}
 	}
-	
+}
+vampire_control_coast_estates = {
+	slot = 3
+	generic = yes
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		culture_group = vampire
+		NOT = { map_setup = map_setup_random } 
+		NOT = { tag = VA4 } 
+	}
+
+	vampire_control_coast_estates = {
+		icon = mission_invade_island
+		position = 2
+		provinces_to_highlight = {  
+			owned_by = VA4
+		} 
+
+		trigger = {  	
+			years_of_income = 3.0
+			grown_by_development = 300
+			total_development = VA4
+			VA4 = {
+				dynasty = ROOT
+				has_opinion = {
+					who = ROOT
+					value = 200
+				}
+			}
+			has_spy_network_in = {
+				who = VA4
+				value = 40
+			}
+			OR = {
+				full_idea_group = spy_ideas
+				full_idea_group = influence_ideas
+			}
+			OR = {
+				full_idea_group = court_ideas
+				full_idea_group = vampire_ideas
+			}
+		} 
+		effect = { 
+			add_years_of_income = -3.0
+			create_union = VA4
+		} 
+	}
+}
+vampire_control_wateland_estates = {
+	slot = 3
+	generic = yes
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		culture_group = vampire
+		NOT = { map_setup = map_setup_random } 
+		NOT = { tag = VA5 } 
+	}
+
+	vampire_control_wasteland_estates = {
+		icon = mission_sw_against_the_desert
+		position = 3
+		provinces_to_highlight = {  
+			owned_by = VA5
+		} 
+
+		trigger = {  			
+			years_of_income = 3.0
+			grown_by_development = 300
+			total_development = VA5
+			VA5 = {
+				dynasty = ROOT
+				has_opinion = {
+					who = ROOT
+					value = 200
+				}
+			}
+			has_spy_network_in = {
+				who = VA5
+				value = 40
+			}
+			OR = {
+				full_idea_group = spy_ideas
+				full_idea_group = influence_ideas
+			}
+			OR = {
+				full_idea_group = court_ideas
+				full_idea_group = vampire_ideas
+			}
+		} 
+		effect = { 
+			add_years_of_income = -3.0
+			create_union = VA5
+		} 
+	}
+}
+vampire_control_royal_estates = {
+	slot = 3
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		culture_group = vampire
+		NOT = { map_setup = map_setup_random } 
+		NOT = { tag = VA6 } 
+	}
+
+	vampire_control_royal_estates = {
+		icon = mission_restore_faith_in_the_throne
+		position = 4
+		provinces_to_highlight = {  
+			owned_by = VA6
+		} 
+
+		trigger = {  			
+			years_of_income = 8.0
+			grown_by_development = 600
+			total_development = VA6
+			VA6 = {
+				dynasty = ROOT
+				has_opinion = {
+					who = ROOT
+					value = 200
+				}
+			}
+			has_spy_network_in = {
+				who = VA6
+				value = 40
+			}
+			OR = {
+				full_idea_group = spy_ideas
+				full_idea_group = influence_ideas
+			}
+			OR = {
+				full_idea_group = court_ideas
+				full_idea_group = vampire_ideas
+			}
+		} 
+		effect = { 
+			add_years_of_income = -8.0
+			create_union = VA6
+		} 
+	}
 }

@@ -116,7 +116,7 @@ Ghost_realm = {
 	allow_normal_conversion = no
 	potential = {
 		OR = {
-			culture_group = undead
+			culture_group = ghost
 			AND = {
 				is_playing_custom_nation = yes
 				have_had_reform = Ghost_realm
@@ -878,6 +878,45 @@ Tanuki_realm = {
 	}
 	custom_attributes = {
 		queen = no
+	}
+	conditional = {
+		allow = { has_dlc = "Rights of Man" }
+		has_harem = yes
+	}
+}
+
+antlion_reform = {
+	lock_level_when_selected = yes
+	icon = "antlion"
+	allow_normal_conversion = no
+	potential = {
+		OR = {
+			culture = Antlion_Girl
+			AND = {
+				is_playing_custom_nation = yes
+				have_had_reform = antlion_realm
+			}
+		}
+	}
+	valid_for_new_country = no
+	valid_for_nation_designer = yes
+	nation_designer_cost = 40
+	legacy_equivalent = ottoman_government_legacy
+	modifiers = {
+		governing_capacity = 100
+		global_autonomy = 0.10
+		monster_girls_influence_modifier = 0.25
+		hostile_attrition = 2
+		max_hostile_attrition = 4
+		defensiveness = 0.25
+		garrison_size = 0.20
+		garrison_damage = 0.5
+		monarch_lifespan = 1
+		block_introduce_heir = yes
+	}
+	custom_attributes = {
+		queen = no
+		cannot_form_alliances = yes
 	}
 	conditional = {
 		allow = { has_dlc = "Rights of Man" }
@@ -2397,7 +2436,7 @@ Fairy_realm = {
 	allow_normal_conversion = no
 	potential = {
     		OR = {
-			culture = Fairy_Girl
+			culture_group = fairy
 			have_had_reform = Fairy_realm
 			AND = {
 				is_playing_custom_nation = yes

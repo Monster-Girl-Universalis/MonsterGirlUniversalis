@@ -4,6 +4,7 @@ primary_culture = Anteater_Girl
 add_government_reform = Beast_realm
 religion = monster_lord_religion
 technology_group = TECH_BEAST
+historical_rival = AT1
 1444.1.1 = { 
 	monarch = { 
 		name = "Kyona"

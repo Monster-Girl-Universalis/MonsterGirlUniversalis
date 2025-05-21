@@ -467,6 +467,12 @@
  gen_powerful_vampire_ruler_desc:0 "After consolidating our realm, Vampire leader should be empowered and receive support as a strong and capable ruler who will reign the realm with wisdom, grace, and dignity."
  gen_vampire_royal_ambitions_title:0 "Vampire Royal Ambitions"
  gen_vampire_royal_ambitions_desc:0 "It is high time to fulfill our ruler's royal ambitions and establish a prominent and influential presence in the world. And who knows, maybe she is strong and powerful enough to become a Vampire Queen?"
+ vampire_control_coast_estates_title:0 "Control Coast Estates"
+ vampire_control_coast_estates_desc:0 "The Vampires living on the coast of the Gold Continent have little at the momment, with our assistance they could experience a rise in power that with our rulership, would be a great asset to us.  Through careful political menuevering we'll be able to strengthen ties with their ruler, and with sufficiant bribes, she'll easily be able to convince the local nobility of the value of joining our far greater kingdom."
+ vampire_control_wasteland_estates_title:0 "Control Wasteland Estates"
+ vampire_control_wasteland_estates_desc:0 "While the Vampires living in the wastes of the Gold Continent may be living in absoulute squaler, their integration could still have great value for our ruler.  Through careful political menuevering we'll be able to strengthen ties with their ruler, and with sufficiant bribes, she'll easily be able to convince the local nobility of the value of joining our far greater kingdom."
+ vampire_control_royal_estates_title:0 "Control Royal Estates"
+ vampire_control_royal_estates_desc:0 "Vampire Castle has long been the seat of Vampire authority and power, but perhaps that balance is changing. Through careful political menuevering we'll be able to place a close relative on their throne, and with sufficiant bribes, she'll easily be able to convince the local nobility of the value of joining our far greater kingdom."
 
  ###MISSIONS FOR APOPTOSIS###
  gen_apoptosis_prepare_to_travel_outside_title:0 "Prepare to Travel Outside"

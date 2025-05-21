@@ -219,6 +219,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/privileges/privilege_ninjutsu.dds"
 	}
 	spriteType = {
+		name = "privilege_antlion_trapping"
+		texturefile = "gfx/interface/privileges/privilege_antlion_trapping.dds"
+	}
+	spriteType = {
 		name = "privilege_goddess_slaying_talismans"
 		texturefile = "gfx/interface/privileges/privilege_goddess_slaying_talismans.dds"
 	}

@@ -163,6 +163,18 @@ estate_researchers_guaranteed_autonomy_mod = {
 	local_missionary_strength = -1
 }
 
+# Monster Girls
+##################################################
+estate_antlion_trapping_privilege_disloyal = {
+	defensiveness = -0.50
+}
+estate_antlion_trapping_privilege_neutral = {
+	defensiveness = 0.10
+}
+estate_antlion_trapping_privilege_loyal = {
+	defensiveness = 0.30
+}
+
 # Spiritualists
 ##################################################
 

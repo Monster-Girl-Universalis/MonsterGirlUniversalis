@@ -135,6 +135,7 @@ monarchy = {
 				gloria_pirates_reform 
 				sheep_island_reform 
 				sheep_island_great_company_reform
+				antlion_reform
 
 				#kagetsumugi_reform 
 				#promestein_reform 

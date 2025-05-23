@@ -1,0 +1,259 @@
+goddess_ilias_communication_with_eden = {
+
+	slot = 1
+	generic = no
+	ai = yes
+	
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		tag = IT1
+		#TODO Fall to chaosization path
+	}
+	
+	has_country_shield = yes
+	
+
+	IT1_fighting_off_chaosization = {
+		icon = mission_asian_trader
+		required_missions = { }
+		position = 1
+		
+		trigger = {
+			stability = 1
+			has_great_project = {
+				type = ilias_temple_ruins
+				tier = 1
+			}
+
+			#NOT = {
+			#	has_government_power = {
+			#		mechanic_type = ilias_chaosization_mechanic
+			#		power_type = ilias_chaosization
+			#		value = 40
+			#	}
+			#}
+		}
+		
+		effect = {
+			#TODO reduce cost of GP in capital
+			heriel_plains = {
+				add_permanent_claim = ROOT
+			}
+			heriel_area = {
+				add_permanent_claim = ROOT
+			} 
+			alciel_area = {
+				add_permanent_claim = ROOT
+			} 
+			alciel_coast = {
+				add_permanent_claim = ROOT
+			}
+
+			# ilias_temple_ruins_region
+			every_known_country = {
+				limit = { culture_group = chimera }
+				reverse_add_casus_belli = {
+					target = IT1
+					type = cb_vassalize_mission
+					months = 120
+				}
+			}
+		}
+	}
+	IT1_apoptosi_eradication = {
+		icon = mission_asian_trader
+		required_missions = { IT1_fighting_off_chaosization }
+		position = 2
+		
+		trigger = {
+			2089 = {
+				is_in_capital_area = yes
+			}
+			all_neighbor_country = {
+				limit = {
+					capital_scope = { continent = Snow_Continent }
+				}
+				NOT = { culture_group = apoptosis }
+			}
+		}
+		
+		effect = {
+			ilias_temple_ruins_region = {
+				change_original_culture = Angel_Girl
+				add_province_triggered_modifier = apoptosis_conversion
+			}
+		}
+	}
+	IT1_halting_chaos = {
+		icon = mission_asian_trader
+		required_missions = { IT1_apoptosi_eradication IT1_project_chimera }
+		position = 3
+
+		trigger = {
+			ilias_temple_ruins_region = {
+				type = all
+				NOT = { culture_group = apoptosis }
+			}
+		}
+		
+		effect = {
+			set_country_flag = block_apoptosis_race
+			add_country_modifier = { 
+				name = eradication_of_the_apoptosi
+				duration = -1
+			}
+		}
+	}
+}
+goddess_ilias_chimera_project = {
+	slot = 2
+	generic = no
+	ai = yes
+	
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		tag = IT1
+	}
+	
+	has_country_shield = yes
+	
+	IT1_project_chimera = {
+		icon = mission_asian_trader
+		required_missions = { IT1_fighting_off_chaosization }
+		position = 2
+
+		trigger = {
+			ilias_temple_ruins_region = {
+				limit = {
+					culture_group = chimera
+				}
+				type = all
+				
+				OR = {
+					country_or_subject_holds = ROOT
+					owner = { 
+						NOT = { culture_group = chimera }
+						alliance_with = ROOT 
+					}
+				}
+			}
+		}
+		
+		effect = {
+			unlock_race = { race = chimera }
+		}
+	}
+	IT1_ilias_insurance = {
+		icon = mission_asian_trader
+		required_missions = { IT1_apoptosi_eradication IT1_project_chimera }
+		position = 3
+
+		trigger = {
+			ilias_temple_ruins_region = {
+				type = all
+				religion = ilias_light_religion
+			}
+		}
+		
+		effect = {
+			
+
+			# Permanent Defender of faith to be moved to later mission.
+			# Will be branching choice to either give to San Ilia, or keep for self
+			#custom_tooltip = permanent_defender_of_faith_tt
+			#set_country_flag = permanent_defender_of_faith
+			#set_defender_of_the_faith = {
+			#	who = ROOT
+			#	religion = ilias_light_religion
+			#}
+		}
+	}
+}
+goddess_ilias_communication_with_eden = {
+
+	slot = 5
+	generic = no
+	ai = yes
+	
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		tag = IT1
+	}
+	
+	has_country_shield = yes
+	
+	IT1_contacting_eden = {
+		icon = mission_asian_trader
+		required_missions = { }
+		position = 1
+		
+		trigger = {
+			OR = {
+				NOT = { exists = SH3 }
+				SH3 = {
+					alliance_with = ROOT
+					has_opinion = {
+						who = ROOT 
+						value = 180
+					}
+				}
+				SH3 = {
+					OR = { 
+						has_opinion_modifier = {
+							who = ROOT
+							modifier = scornfully_insulted
+						}
+						has_opinion_modifier = {
+							who = ROOT
+							modifier = insulted
+						}
+						war_with = ROOT
+					}
+				}
+				SH3 = {
+					is_subject_of = ROOT
+				}
+			}
+			OR = {
+				is_neighbor_of = SH3
+				is_in_war = {
+					participants = SH3
+				}
+				snow_heaven = {
+					type = all
+					owned_by = ROOT
+				}
+			}
+		}
+		
+		effect = {
+			if = {
+				limit = {
+					OR = {
+						SH3 = {
+							alliance_with = ROOT
+							has_opinion = {
+								who = ROOT 
+								value = 180
+							}
+						}
+						SH3 = {
+							is_subject_of = ROOT
+						}
+					}
+				}
+				set_country_flag = working_with_eden
+			}
+			else = { 
+				set_country_flag = killing_eden 
+				snow_heaven_region = {
+					limit = {
+						NOT = { is_core = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+			add_prestige = 20
+		}
+	}	
+}

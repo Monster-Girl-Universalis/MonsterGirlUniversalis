@@ -1,0 +1,46 @@
+apoptosis_conversion = {
+    # Whether the triggered modifier is visible in the Province view window
+    potential = {
+        owner = { has_mission = IT1_apoptosi_eradication }
+        culture_group = apoptosis
+    }
+
+    # Whether the triggered modifier is active
+    trigger = {
+        owner = { 
+            has_mission = IT1_apoptosi_eradication 
+            NOT = { culture_group = apoptosis }
+        }
+        culture_group = apoptosis
+    }
+
+    # The modifier to apply when the triggered modifier is active
+    local_culture_conversion_cost = -0.5
+    local_culture_conversion_time = -0.5
+    local_years_of_nationalism = -20
+    
+    # Province scope
+    # Effects to execute when the triggered modifiers switches to active
+    on_activation = {
+        
+    }
+    
+    # Effects to execute when the triggered modifiers switches to inactive
+    on_deactivation = {
+        if = {
+            limit = {
+                NOT = { has_province_flag = has_had_apoptosis_conversion_happen }
+            }
+
+            set_province_flag = has_had_apoptosis_conversion_happen
+
+            add_base_tax = 1
+            add_base_production = 1
+            add_base_manpower = 1
+            add_institution_embracement = {
+                which = renaissance
+                value = 50
+            }
+        }
+    } 
+}

@@ -1,0 +1,26 @@
+
+can_claim_defender_of_faith = {
+	condition = {
+		tooltip = "CANNOT_CLAIM_DOF_FROM_ILIAS"
+		potential = {
+            any_country = {
+                limit = { religion = FROM }
+                has_country_modifier = permanent_defender_of_faith
+            }
+		}
+		allow = {
+            OR = {
+                FROM = { has_country_modifier = permanent_defender_of_faith }
+                any_country = {
+                    limit = { 
+                        religion = FROM 
+                    }
+                    NOT = {
+                        has_country_modifier = permanent_defender_of_faith
+                        is_defender_of_faith = yes
+                    }
+                }
+            }
+		}
+	}
+}

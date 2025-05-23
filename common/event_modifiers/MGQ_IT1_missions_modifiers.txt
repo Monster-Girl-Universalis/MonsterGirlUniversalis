@@ -1,0 +1,5 @@
+eradication_of_the_apoptosi = { #TODO add upgrades if you complete certain idea groups fully
+    discipline = 0.05	
+    land_attrition = -0.1
+    reinforce_speed = 0.15
+}

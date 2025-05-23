@@ -2117,6 +2117,7 @@ apoptosis_ideas = {
 	category = MIL
 	trigger = {
 		has_race_unlocked = { race = apoptosis }
+		NOT = { has_country_flag = block_apoptosis_race }
 	}	
 
 	bonus = {

@@ -66,13 +66,7 @@ goddess_ilias_communication_with_eden = {
 		position = 2
 		
 		trigger = {
-			2089 = {
-				is_in_capital_area = yes
-			}
 			all_neighbor_country = {
-				limit = {
-					capital_scope = { continent = Snow_Continent }
-				}
 				NOT = { culture_group = apoptosis }
 			}
 		}
@@ -124,12 +118,10 @@ goddess_ilias_chimera_project = {
 
 		trigger = {
 			ilias_temple_ruins_region = {
-				limit = {
-					culture_group = chimera
-				}
 				type = all
 				
 				OR = {
+					NOT = { culture_group = chimera }
 					country_or_subject_holds = ROOT
 					owner = { 
 						NOT = { culture_group = chimera }

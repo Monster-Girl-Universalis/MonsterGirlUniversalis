@@ -15,7 +15,7 @@
  PROVINCE_HAS_REVOLUTION_INSTANT:0 "The Chaos has spread to $PROVINCE|Y$."
  PROVINCE_HAS_REVOLUTION_INSTANT_2:0 "\nWith $ABSOLUTISM|Y$ absolutism in $OWNER|Y$, it has the following effects:\n\n$MODIFIERS$"
  PROVINCE_HAS_REVOLUTION_DELAYED:1 "Revolutionary ideas spread over time to provinces nearby a Center of Revolution. Once the Revolution takes over a province, the autonomy will rise depending on how Absolutist the country is."
- PROVINCE_HAS_REVOLUTION_DELAYED_REV:1 "Revolutionary ideas spread over time to provinces nearby a Center of Revolution. Spreading the Revolution to other countries will increase our own Revolutionary Zeal."
+ PROVINCE_HAS_REVOLUTION_DELAYED_REV:1 "Chaos spreads over time to provinces near a Center of Chaos. Spreading the Revolution to other countries will increase our own Revolutionary Zeal."
  PROVINCE_REVOLUTION_SPREAD_INSTANT:0 "The Chaos is spreading from $CENTER|Y$ to $PROVINCE|Y$. It has spread by $PROGRESS|Y$% so far."
  PROVINCE_REVOLUTIONARY_ZEAL:0 "$COUNTRY|Y$ has embraced the Revolution and currently has $ZEAL|Y$ Revolutionary Zeal."
  PROVINCE_REVOLUTION_MODIFIER:0 "Chaos"

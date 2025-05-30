@@ -12,27 +12,6 @@ revolution = {
 			}
 		}
 		modifier = {
-			factor = 0.05
-			controller = {
-				NOT = {
-					FROM = {
-						owned_by = PREV
-					}
-				}
-				government = monarchy
-				legitimacy = 90
-				stability = 2
-				is_revolution_target = no
-				is_revolutionary = no
-				OR = {
-					is_subject = no
-					overlord = {
-						is_revolutionary = no
-					}
-				}
-			}
-		}
-		modifier = {
 			factor = 10
 			FROM = {
 				owned_by = PREV
@@ -79,18 +58,6 @@ revolution = {
 			}
 		}
 		modifier = {
-			factor = 1.2
-			culture_group = FROM
-		}
-		modifier = {
-			factor = 0.8
-			NOT = { religion = FROM }
-		}
-		modifier = {
-			factor = 0.6
-			NOT = { religion_group = FROM }
-		}
-		modifier = {
 			factor = 1.5
 			unrest = 1
 			likely_rebels = revolutionary_rebels
@@ -106,27 +73,6 @@ revolution = {
 					is_revolution_target = yes
 				}
 			}
-		}
-		#target absolutist states more
-		modifier = {
-			factor = 0.8
-			NOT = { owner = { absolutism = 60 } }
-		}
-		modifier = {
-			factor = 1.1
-			owner = { absolutism = 70 }
-		}
-		modifier = {
-			factor = 1.1
-			owner = { absolutism = 80 }
-		}
-		modifier = {
-			factor = 1.15
-			owner = { absolutism = 90 }
-		}
-		modifier = {
-			factor = 1.2
-			owner = { absolutism = 100 }
 		}
 		 #cities are breeding grounds for revolution
 		modifier = {
@@ -192,7 +138,6 @@ revolution = {
 
 	# Values at 100 Absolutism
 	revolution_province_modifiers = {
-		local_unrest = 0.25
 	}
 
 	# Values at 100 Revolutionary Zeal

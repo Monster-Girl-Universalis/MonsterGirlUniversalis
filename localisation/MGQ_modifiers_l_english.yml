@@ -758,6 +758,7 @@
  EST_VAL_SPIRITUALISTS_DECLINE: "Decline of Spiritualists"
  desc_EST_VAL_SPIRITUALISTS_DECLINE: " "
 
+
  ###CHANGE ASPECT OR SHRINE### 
  change_deity_wind_mod: "Recently Changed Wind Aspect"
  desc_change_deity_wind_mod: " "
@@ -775,12 +776,35 @@
  desc_change_deity_lightning_mod: " "
  change_deity_cosmos_mod: "Recently Changed Cosmos Aspect"
  desc_change_deity_cosmos_mod: " "
+ 
+ ###SHRINE TOOLTIP### 
+ cat_shrines_tooltip: "Powerful Cat Shrine"
+ tanuki_shrines_tooltip: "Powerful Tanuki Shrine"
+ fox_shrines_tooltip: "Powerful Fox Shrine"
+ snake_shrines_tooltip: "Powerful Snake Shrine"
+ ilias_shrines_tooltip: "Powerful Ilias Shrine"
+ monster_lord_shrines_tooltip: "Powerful Monster Lord Shrine"
+ chaos_shrines_tooltip: "Powerful Chaos Shrine"
+ sylph_shrines_tooltip: "Powerful Slyph Shrine"
+ gnome_shrines_tooltip: "Powerful Gnome Shrine"
+ undine_shrines_tooltip: "Powerful Undine Shrine"
+ salamander_shrines_tooltip: "Powerful Salamander Shrine"
+ ice_shrines_tooltip: "Powerful Ice Shrine"
+ lightning_shrines_tooltip: "Powerful Lightning Shrine"
+ cosmos_shrines_tooltip: "Powerful Cosmos Shrine"
+ science_shrines_tooltip: "Powerful Science Shrine"
+ rat_shrines_tooltip: "Powerful Rat Shrine"
+ kirin_shrines_tooltip: "Powerful Kirin Shrine"
+ amaterasu_shrines_tooltip: "Powerful Amaterasu Shrine"
+ izanami_shrines_tooltip: "Powerful Izanami Shrine"
 
  ###RACIAL INTEGRATION### 
  human_integration_mod: "Integration of human race"
  desc_human_integration_mod: " "
  undead_integration_mod: "Integration of undead race"
  desc_undead_integration_mod: " "
+ ghost_integration_mod: "Integration of ghost race"
+ desc_ghost_integration_mod: " "
  land_dweller_integration_mod: "Integration of land dweller race"
  desc_land_dweller_integration_mod: " "
  succubi_integration_mod: "Integration of succubi race"
@@ -793,6 +817,8 @@
  desc_alraune_integration_mod: " "
  elf_integration_mod: "Integration of elf race"
  desc_elf_integration_mod: " "
+ fairy_integration_mod: "Integration of fairy race"
+ desc_fairy_integration_mod: " "
  beast_integration_mod: "Integration of beast race"
  desc_beast_integration_mod: " "
  insect_integration_mod: "Integration of insect race"
@@ -827,3 +853,5 @@
  desc_roid_integration_mod: " "
  tanuki_integration_mod: "Integration of tanuki race"
  desc_tanuki_integration_mod: " "
+ giant_integration_mod: "Integration of giant race"
+ desc_giant_integration_mod: " "

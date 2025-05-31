@@ -733,9 +733,7 @@ slu_conquest_branch2 = {
 				}
 				add_permanent_claim = ROOT
 			}
-			
 			unlock_race = { race = human }
-		}
 	}
 	SLU_mission_1_11 = { 
 		icon = mission_hegemon_slug 
@@ -920,6 +918,18 @@ slu_conquest_branch2 = {
 			country_event = {
 				id = flavor_slu.1
 			}
+			change_ruler_stat = {
+				type = adm
+				amount = 1
+			}
+			change_ruler_stat = {
+				type = dip
+				amount = 1
+			}
+			change_ruler_stat = {
+				type = mil
+				amount = 1
+			}
 		}
 	}
 }
@@ -1029,6 +1039,7 @@ slu_conquest_branch3 = {
 				add_permanent_claim = ROOT
 			}
 			unlock_race = { race = harpy }
+}
 		}
 	}
 	slu_estates = { 
@@ -1187,6 +1198,7 @@ slu_diplomatic_branch = {
 			}
             		2419 = {
                 		create_colony = 200
+						add_core = ROOT
 			}
 			sedna_region = {
             		discover_country = ROOT
@@ -1232,8 +1244,7 @@ slu_diplomatic_branch = {
 		}
 		effect = {
 			unlock_race = { race = yoma }
-
-        	add_adm_power = 75
+        		add_adm_power = 75
 			add_dip_power = 75
 			add_mil_power = 75
 		}

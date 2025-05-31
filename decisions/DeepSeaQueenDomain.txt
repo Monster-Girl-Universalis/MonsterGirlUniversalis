@@ -51,6 +51,7 @@ country_decisions = {
 				duration = 7300
 			}
 			add_prestige = 25
+			unlock_race = { race = sea_dweller }
 			if = {
 				limit = {
 					NOT = { technology_group = TECH_SEA_DWELLER }

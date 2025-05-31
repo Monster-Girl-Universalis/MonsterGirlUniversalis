@@ -1,0 +1,167 @@
+﻿l_english:
+#Branch 1
+ LR1_renaissance_title: "Lamia Renaissance"
+ LR1_renaissance_desc: "Our capital city has experienced unprecedented growth recently, with this growth came many new ideas from the current phenomenon humans call "Renaissance"...indeed we should follow suit this trend and embrace it; just as we lamia shed our skin to grow, we should strive for new knowledge and challenged the old ones and we shall come out a more advance realm.
+
+ LR1_shelly_title: "Pearls of the Sea"
+ LR1_shelly_desc: "The Shellfish Coast produces pearls and dyes, goods much more valuable than the ones in the rest of our realm, as such it is in our interest if we befriend the local populance and extend a helping hand in the sales of these goods."
+
+ LR1_forts_title: "Protect our Core Lands"
+ LR1_forts_desc: "Our realm has enlarged massively since its humble begginings, but this has left much of our lands unprotected from foreign invaders; we must fortify key location throughout the realm to protect the core of our nation."
+
+ LR1_perfect_admin_title: "Perfect Lamia Administration"
+ LR1_perfect_admin_desc: "Lamias are natural born administrators and now that our realm has expended tenfold we can put our abilities to the test and iron out any mistakes in our administration."
+#Branch 2
+
+ LR1_yoma_pals_title: "Yoma Diplomacy"
+ LR1_yoma_pals_desc: "Yomas are powerful monsters with enhanced military skills; we should seek to establish good relations with a Yoma kingdom in hopes of learning their ways of combat."
+
+ LR1_breath_sea_title: "Sea Breeze"
+ LR1_breath_sea_desc: "Our landlocked status is no more, for we were successful in gaining access to the sea! This is a great step towards our path to survival; we should make haste and establish a trade fleet and keep moving south."
+
+ LR1_block_path_title: "Coil Around Kagetsumugi!"
+ LR1_block_path_desc: "Puppeteer Tower, the realm lead by the puppet master Kagetsumugi, is a great power and a formidable foe, but their realm is surrounded on all sides by impassable terrain but for one way, and now that way is in our hands! This will ensure that Kagetsumugi won't be able to expand her realm further unless she passes through us first. We on the other hand, have now free reign all the way up to the Sabasa desert!"
+
+ LR1_tower_title: "Bring down the Tower!"
+ LR1_tower_desc: "Not only have we prevented Kagetsumugi from expanding, but we emerged victorius against her! Now her realm is in shambles and isolated from the rest of the world. The resolve of our army has  triumphed over a great power, and as Kagetsumugi's crown falls, we lift up ours!"
+
+ LR1_sabasa_title: "At Sabasa's Gates"
+ LR1_sabasa_desc: "After consolidating our power we were able to fully annex a great power, hence becoming one ourselves. However, Sabasa still thrives in the desert and, if left to their own devices, they might annex everything West of our mutual border. As such, we are obligated to confront Sabasa to cut them down to size and establish our own influence in the region."
+
+ LR1_safina_ambition_title: "Break the Camel's Back"
+ LR1_safina_ambition_desc: "We are victorious! The heart of Sabasa belongs to us! There's no way they can recover from losing their largest city. Now it is time to twist the knife deeper into their flesh! If we can prevail over Sabasa completely the whole continent is as good as ours!"
+#Branch 3
+
+ LR1_assessing_our_position_title: "Assessing Our Position"
+ LR1_assessing_our_position_desc: "Our small realm is in a precarious position: San Ilia is to the west, beyond that the great power Puppeteer Tower, and further west in the scorching sands of the desert Sabasa. The only shot at survival our realm has is to quickly expand in the smaller states between these great powers to build a strong foundation and push our borders close to theirs; if we coil our realm around them we will cut their expansion paths while opening new ones for us."
+
+ LR1_watermelons_title: "Northen Push"
+ LR1_watermelons_desc: "To our north there is Chrome the necromancer, she is no push over and between us lies much weaker states, if Chrome were to subjugate them first we could be in trouble, as such we must quickly extend our borders there first!"
+
+ LR1_safina_beachhead_title: "Safina Beachhead"
+ LR1_safina_beachhead_desc: "We've managed to secure our position as a regional power but the Safina region is still contested by various states, we can't allow Sabasa or any rising power to claim this vast region for themselves! We must invade the region and establish a beachhead from where to expand."
+
+ LR1_safar_title: "Scattering the Earth"
+ LR1_safar_desc: "Our expansion has brought us deep into the desert where the Spirit of Earth, Gnome, resides. While this is certanly a great achievement we must continue to push until we reach the other side of the continent! None must stay in our way!"
+
+ LR1_assault_magistea_title: "Assault Magistea"
+ LR1_assault_magistea_desc: "The home of the Earth Spirit is ours, and now nothing stops us from marching from coast to coast, we will strike everything in our way until the faraway Magistea has capitulated to us!"
+l_english:
+ LR1_safina_unification_title: "Safina Unification"
+ LR1_safina_unification_desc: "After many wars, we've permanently secure our place in the sun by uniting the entire continent we stand on! The sky's the limit!"
+#Branch 4
+
+ LR1_flail_diplomacy_title: "Flail Diplomacy"
+ LR1_flail_diplomacy_desc: "We lamias are good with our persuasion skills, but sometimes iron persuades enemies harder than words! We should start focusing on the production of our weapon of choice: the flail."
+
+ LR1_forest_spirits_title: "Slither Through the Forest"
+ LR1_forest_spirits_desc: "Ahead of us lies the Forest of Spirits home of many annoying prankster fairies and the spirit of Wind Sylph who's just annoying, conquering this vast forest and the Safina road past it is, however, vital in our encirclement strategy of Puppeteer Tower and blocking Sabasa's other pathway to our home region, plus we are doing everyone a favor by teaching these fairies how to behave..."
+
+ LR1_vassal_swarm_title: "Lamia Charms"
+ LR1_vassal_swarm_desc: "War is not the only way to expand our borders, with our serpentine charms we were able to bring into our fold diplomatically several realms without shedding a single drop of blood. We should  strengthen our natural abilities and make the most out of it. "
+
+ LR1_flail_master_title: "Flail Mastery"
+ LR1_flail_master_desc: "Flails are the weapon of choice of us Lamias, as such it is imperative we devote ourselves to training our combat prowess with flails."
+
+ LR1_lamia_queen_title: "Lamia of Lamias"
+ LR1_lamia_queen_desc: "Our realm is too great and powerlful to not be considered a great power, we truly reached heights we thought were beyond our capabilities. The title of Lamia Queen belongs to $MONARCH$ by right!"
+
+ LR1_to_iliasburg_title: "Rumours in Iliasburg"
+ LR1_to_iliasburg_desc: "There are rumours coming from Ilias continent of a group of bandits led by a powerful quartet of monsters; A Goblin, a vampire, a dragon, and a Lamia! Our ruler has took an interest in the lamia and demands of us that we conquer the region and bring this powerful Lamia to court."
+
+ LR1_teeny_title: "The Legendary Lamia"
+ LR1_teeny_desc: "We have secured the lands that are said to be the home of these "Heavenly Bandits". We must send a scounting team to search the area for their hideout, our queen herself will be escorted there to personally meet this great lamia warrior"
+#Branch 5
+
+ LR1_sister_lamia_title: "Sway our Sisters"
+ LR1_sister_lamia_desc: "Our Lamia sisters to the north of San Ilia are followers of the Ilias faith. But despite that they're still monsters that share our flesh; we must make them understand that their human counterparts won't hesitate to subjugate all the monsters  around them by force. We must band together and block San Ilia's path of conquest before they become too powerful."
+
+ LR1_san_ilia_title: "End Ilias' Oppression"
+ LR1_san_ilia_desc: "The wicked followers of Ilias have oppressed monsterkind for long enough, our spies report that the Pope has retreated to a secret laboratory after the conquest of San Ilia city by our forces. Who knows what kind of horrible experiments captured monsters have suffered at the hands of the humans, we must make haste and end the papacy once and for all! "
+
+ LR1_jillian_title: "Integrate the Lab Monsters"
+ LR1_jillian_desc: "San Ilia's utterly crushed and now their precious lab is ours! From here we can expend into the remaining tip of the continent free of any major power's intervention. And to this end our new subjects might come in handy; within the lab we found monsters never seen before, but they look strong and very intelligent, perhaps if we grant them freedom and equal footing in our realm our administration might benefit from it."
+
+ LR1_to_finoa_title: "Land of Snake Shrines"
+ LR1_to_finoa_desc: "In Yamatai, lamias and snakes are revered as sacred. Next to the main village lies the caves where the great Yamata no Orochi dwells. We must annex this land full of lamia lovers and, while we're at it, show our power to Yamata no Orochi. Firstly, we must secure a direct connection between us and the Yamatai Lands by annexing the Finoa region."
+
+ LR1_finoa_title: "Trek to Yamatai"
+ LR1_finoa_desc: "With the annexation of the whole of Finoa the road ahead for Yamatai is now clear!"
+
+ LR1_orochi_title: "Yamata no Orochi"
+ LR1_orochi_desc: "Yamata no Orochi and all the powerful lamias of Yamatai village have been defeated! Now they shall serve the new lamia queen forever!"
+
+#Mission modifiers
+lr1_assessing_our_position: "Initial Lamia Campaign"
+lr1_sea_breeze: "Sea Breeze"
+lr1_block_path: "Puppetress Coiled!"
+lr1_tower: "Victorious Against a Great Power"
+lr1_renaissance: "Serpentine Renaissance"
+lr1_forest: "Flailing Fairies"
+lr1_yoma_pals: "Yoma Exchange"
+lr1_shellfish_girl: "Shellfish Girls Integrated"
+lr1_sables: "Sables Integrated"
+lr1_holy_war: "Crusade on Ilias"
+lr1_roid_chimeras: "Roid and Chimeras Integrated"
+lr1_watermelons: "Northen Push"
+lr1_charm: "Lamia Charms"
+lr1_vassal_swarm: "Lamia Vassalage"
+lr1_safina_beachhead: "Safina Beachhead"
+lr1_safar: "Subjugating the Earth Spirit"
+lr1_upper_safina: "Assault on Magistea"
+lr1_sabasa: "Attack on Sabasa"
+lr1_safina_ambition: "Final Struggle with Sabasa"
+lr1_flail_basic: "Flail Production"
+lr1_forts: "Core Lands Fortifield"
+lr1_flail_master: "Flail Mastery"
+lr1_perfect_admin: "Perfect Lamia Administration"
+lr1_safina_unification: "Unification of Safina-Natalia"
+lr1_lamia_queen: "Lamia Queen"
+lr1_teeny: "Teeny's Inn"
+lr1_finoa: "Trek to Yamatai"
+lr1_orochi: "Defeat Yamata no Orochi"
+lr1_harpy: "Harpy Prowess"
+lr1_harpy_2: "Ostrich Girls Integrated"
+lr1_mermaid: "Sea Serpents"
+lr1_mermaid_2: "Mermaids Integrated"
+
+#Province modifiers
+lr1_local_shelly: "Local Shellfish Production"
+lr1_local_renaissance: "Center of Lamia Renaissance"
+
+#Event Insight
+
+flavor_insight_lr1.1: "§TThis event will change our nation to Lamia Queen and grant new ideas.§W"
+
+#Events
+flavor_lr1.1_title: "Pirate Scylla Wriggles our way!"
+flavor_lr1.1_desc: "While checking out a damaged ship being repaired in port a scylla by the name of Sunny appears out of nowhere and boards the ship claiming it as her booty. The sight of a wriggly scylla is causes disgust in our $MONARCH$'s heart, but watching Sunny work to repair the ship one gets the feeling she's extremely cut for naval work, perhaps her pirate aspirations could be of use to us."
+flavor_lr1.2_title: "Fate of Sister Lamia"
+flavor_lr1.2_desc: "Our Lamia sisters to north of San Ilia have fallen to the lies of the wicked Light Goddess, and this has make them vunerable to being subjugated by the followers of Ilias. We must step in! "
+flavor_lr1.3_title: "Queen of all Lamias"
+flavor_lr1.3_desc: "There is no doubt that we are the largest and strongest lamia power in this world, as such no one can contest $MONARCH$'s right to rule as Queen of all lamias!"
+flavor_lr1.4_title: "Teeny Tiny Lamia"
+flavor_lr1.4_desc: "Our troops were scounting the inside of the cave system where the presumed heavely bandits reside. To everyone's suprise it turns out that the monsters were just juveniles turned to thiefs to survived. They were quickly fed food and given aid, but her highness $MONARCH$, who came all the way here looking for a strong lamia warrior to recruit, doesn't seem dejected at all looking at the pitiable tiny Lamia by the name of Teeny. At the sight our our powerful monarch Teeny starts to tremble in fear, but $MONARCH$ slowly approches her and gently picks her up, before wiping the tears off Teeny's face. Once the young lamia has calmed down $MONARCH$ ask her what does she want to be when she grows up, to that question Teeny answers that she wants to run an Inn..."
+flavor_lr1.5_title: "The Desert Runners"
+flavor_lr1.5_desc: "In the vastness of the Safina desert we have come across Ostrichs, a peculiar type of flightless harpy that runs at fast speeds. Indeed, it is quite humiliating as despite lacking flight, these harpies are faster and more agile than us on land...$MONARCH$ pleads with them to teach their tricks and ways to her, and after an entire day slithering around in the scorching sands $MONARCH$ feels like a friendship has been established with the ostrichs. One of them ironicaly comments that if $MONARCH$ keeps training harpy feathers might grow our of her snake scales."
+flavor_lr1.6_title: "The Sea Plungers"
+flavor_lr1.6_desc: "On a hot sunny day, $MONARCH$ found herself sitting on a dock along the Natalia coastline pondering to herself how best to deal with the duties of a monarch and the blazing rays of the sun are not helping...after a few minutes a mermaid emerges from the water and greets our ruler, asking what's the matter. With the situation explained the mermaid gestures $MONARCH$ to plunge into the cold Natalia waters to cool down, offering assistance in learning how to best propel in the water using her snake tail. After a while, it becomes clear $MONARCH$ has a natural talent for the water element, the mermaid is quick to praise her highness' efforts and states that she showed the prowess of one of the sea serpents the sailors claim to see on their voyages."
+flavor_lr1.7_title: "Something Lurks in the Shadows"
+flavor_lr1.7_desc: "$MONARCH$ was strolling outside in the great outdoors to get away from the stress of the current administrative woes her country is going through, when suddenly the sky darkened and a strong downpour suddenly began. Caught by suprise $MONARCH$ finds herself all alone in the middle of the dark woods wet from head to tail, a gloomy and damp atmosphere falls onto the area and in this very moment $MONARCH$'s instincs tell her she's not so alone after all...something's nearby, slowly making its way to her... "
+
+#Event choices
+
+ flavor_lr1.1.a: "I hereby declare your kind welcome in our realm...you may stop wriggling so much!"
+ 
+ flavor_lr1.2.a: "It's too late already, we must liberate them by force!"
+ flavor_lr1.2.b: "You must understand that being under the thumb of humans won't curry favors with Ilias!"
+ 
+ flavor_lr1.3.a: "Bow down to your new queen!"
+
+ flavor_lr1.4.a: "With some pocket change we can help you achieve that dream, do your best dear!"
+ 
+ flavor_lr1.5.a: "A feathered lamia? Surely something like that doesn't exist..."
+
+ flavor_lr1.6.a: "Sea Serpent? That does sound familiar..."
+ l_english:
+ flavor_lr1.7.a: "Stay away! Hyaaaa!"

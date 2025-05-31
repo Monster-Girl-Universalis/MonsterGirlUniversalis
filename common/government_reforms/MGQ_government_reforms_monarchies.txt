@@ -1456,8 +1456,8 @@ sabasa_reform = {
 	modifiers = {
 		governing_capacity = 300
 		discipline = 0.03
-		cavalry_cost = -0.15
-		cavalry_power = 0.15
+		cavalry_cost = -0.10
+		cavalry_power = 0.10
 		block_introduce_heir = yes
 	}
 	custom_attributes = {
@@ -2102,7 +2102,7 @@ salamander_reform = {
 	legacy_equivalent = ottoman_government_legacy
 	modifiers = {
 		governing_capacity = 200
-		infantry_fire = 1
+		infantry_fire = 0.15
 		global_supply_limit_modifier = 0.15
 		artillery_barrage_cost = -0.15
 		monarch_lifespan = 1
@@ -2606,8 +2606,35 @@ sheep_island_great_company_reform = {
 		has_harem = yes
 	}
 }
-
-#Hereditary vs Nobility:
+Defender_east = {
+	lock_level_when_selected = yes
+	icon = "defender_east"
+	allow_normal_conversion = no
+	potential = {
+	has_country_flag = has_completed_first_reform
+	}
+	valid_for_new_country = no
+	valid_for_nation_designer = yes
+	nation_designer_cost = 40
+	legacy_equivalent = ottoman_government_legacy
+	modifiers = {
+		missionaries = 1
+		land_morale = 0.05
+		naval_morale = 0.05
+		war_exhaustion = -0.03
+		prestige = 1
+		governing_capacity = 300
+		monarch_lifespan = 1
+		block_introduce_heir = yes
+	}
+	custom_attributes = {
+		queen = no
+	}
+	conditional = {
+		allow = { has_dlc = "Rights of Man" }
+		has_harem = yes
+	}
+}
 
 yoma_nobility_reform = {
 	icon = "yoma_nobility"
@@ -2775,6 +2802,37 @@ angel_nobility_reform = {
 	}
 	custom_attributes = {
 		
+	}
+	ai = {
+		factor = 1
+	}
+}
+antlion_nobility_reform = {
+	icon = "antlion"
+	allow_normal_conversion = yes
+	potential = {	
+			is_revolutionary = no
+			OR = {
+				has_reform = antlion_realm
+				have_had_reform = antlion_realm	
+			}
+	}
+	trigger = {
+		OR = {
+			full_idea_group = insect_ideas
+		}
+	}
+	modifiers = {
+		governing_capacity = 100
+		global_autonomy = -0.15
+		min_autonomy = 15
+		monster_girls_influence_modifier = -0.3
+		nobles_influence_modifier = 0.2
+		nobles_loyalty_modifier = 0.1
+
+	}	
+	custom_attributes = {
+
 	}
 	ai = {
 		factor = 1
@@ -3000,5 +3058,33 @@ divine_administration_reform = {
 	}
 	ai = {
 		factor = 1
+	}
+}
+
+#Legitimation of Power:
+
+Imperishable_faith = {
+	lock_level_when_selected = yes
+	icon = "imperishable_faith"
+	allow_normal_conversion = no
+	potential = {
+	has_country_flag = has_completed_second_reform
+	}
+	valid_for_new_country = no
+	valid_for_nation_designer = yes
+	nation_designer_cost = 40
+	legacy_equivalent = ottoman_government_legacy
+	modifiers = {
+		global_missionary_strength = 0.02
+		missionary_maintenance_cost = -0.2
+		manpower_in_true_faith_provinces= 0.20
+		warscore_cost_vs_other_religion = -0.10
+	}
+	custom_attributes = {
+		queen = no
+	}
+	conditional = {
+		allow = { has_dlc = "Rights of Man" }
+		has_harem = yes
 	}
 }

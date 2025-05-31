@@ -31,6 +31,10 @@ country_event = {
 		name = elemental_religion.wind.f
 		change_personal_deity = zephyr 
 	}
+	option = {	
+		name = elemental_religion.redo
+		remove_country_modifier = change_deity_wind_mod
+	}
 }
 # Change Earth deity
 country_event = {
@@ -62,6 +66,10 @@ country_event = {
 	option = {	
 		name = elemental_religion.earth.f
 		change_personal_deity = sandstorm 
+	}
+	option = {	
+		name = elemental_religion.redo
+		remove_country_modifier = change_deity_earth_mod
 	}
 }
 # Change Water deity
@@ -95,6 +103,10 @@ country_event = {
 		name = elemental_religion.water.f
 		change_personal_deity = rain 
 	}
+	option = {	
+		name = elemental_religion.redo
+		remove_country_modifier = change_deity_water_mod
+	}
 }
 # Change Fire deity
 country_event = {
@@ -127,6 +139,10 @@ country_event = {
 		name = elemental_religion.fire.f
 		change_personal_deity = ash 
 	}
+	option = {	
+		name = elemental_religion.redo
+		remove_country_modifier = change_deity_fire_mod
+	}
 }
 # Change Yamatai Cult
 country_event = {
@@ -138,18 +154,42 @@ country_event = {
 	option = {	
 		name = elemental_religion.yamatai.a
 		change_cult = cat_shrines 
+		tooltip = {
+			add_ruler_modifier = {
+				name = cat_shrines_tooltip
+				duration = -1
+			}
+		}
 	}
 	option = {	
 		name = elemental_religion.yamatai.b
 		change_cult = tanuki_shrines 
+		tooltip = {
+			add_ruler_modifier = {
+				name = tanuki_shrines_tooltip
+				duration = -1
+			}
+		}
 	}
 	option = {	
 		name = elemental_religion.yamatai.c
 		change_cult = fox_shrines 
+		tooltip = {
+			add_ruler_modifier = {
+				name = fox_shrines_tooltip
+				duration = -1
+			}
+		}
 	}
 	option = {	
 		name = elemental_religion.yamatai.d
 		change_cult = snake_shrines 
+		tooltip = {
+			add_ruler_modifier = {
+				name = snake_shrines_tooltip
+				duration = -1
+			}
+		}
 	}
 	option = {	
 		name = elemental_religion.yamatai.e
@@ -169,6 +209,12 @@ country_event = {
 		}
 		}
 		change_cult = ilias_shrines 
+		tooltip = {
+			add_ruler_modifier = {
+				name = ilias_shrines_tooltip
+				duration = -1
+			}
+		}
 	}
 	option = {	
 		name = elemental_religion.yamatai.f
@@ -188,6 +234,12 @@ country_event = {
 		}
 		}
 		change_cult = monster_lord_shrines 
+		tooltip = {
+			add_ruler_modifier = {
+				name = monster_lord_shrines_tooltip
+				duration = -1
+			}
+		}
 	}
 	option = {	
 		name = elemental_religion.yamatai.g
@@ -207,6 +259,12 @@ country_event = {
 		}
 		}
 		change_cult = chaos_shrines 
+		tooltip = {
+			add_ruler_modifier = {
+				name = chaos_shrines_tooltip
+				duration = -1
+			}
+		}
 	}
 	option = {	
 		name = elemental_religion.yamatai.h
@@ -225,7 +283,13 @@ country_event = {
 			}
 		}
 		}
-		change_cult = sylph_shrines 
+		change_cult = sylph_shrines
+		tooltip = {
+			add_ruler_modifier = {
+				name = slyph_shrines_tooltip
+				duration = -1
+			}
+		}
 	}
 	option = {	
 		name = elemental_religion.yamatai.i
@@ -245,6 +309,12 @@ country_event = {
 		}
 		}
 		change_cult = gnome_shrines 
+		tooltip = {
+			add_ruler_modifier = {
+				name = gnome_shrines_tooltip
+				duration = -1
+			}
+		}
 	}
 	option = {	
 		name = elemental_religion.yamatai.j
@@ -265,6 +335,12 @@ country_event = {
 		}
 		}
 		change_cult = undine_shrines 
+		tooltip = {
+			add_ruler_modifier = {
+				name = undine_shrines_tooltip
+				duration = -1
+			}
+		}
 	}
 	option = {	
 		name = elemental_religion.yamatai.k
@@ -284,7 +360,13 @@ country_event = {
 			}
 		}
 		}
-		change_cult = salamander_shrines 
+		change_cult = salamander_shrines
+		tooltip = {
+			add_ruler_modifier = {
+				name = salamander_shrines_tooltip
+				duration = -1
+			}
+		}
 	}
 	option = {	
 		name = elemental_religion.yamatai.l
@@ -305,10 +387,22 @@ country_event = {
 		}
 		}
 		change_cult = science_shrines 
+		tooltip = {
+			add_ruler_modifier = {
+				name = science_shrines_tooltip
+				duration = -1
+			}
+		}
 	}
 	option = {	
 		name = elemental_religion.yamatai.m
 		change_cult = rat_shrines 
+		tooltip = {
+			add_ruler_modifier = {
+				name = rat_shrines_tooltip
+				duration = -1
+			}
+		}
 	}
 	option = {	
 		name = elemental_religion.yamatai.n
@@ -329,6 +423,12 @@ country_event = {
 		}
 		}
 		change_cult = kirin_shrines 
+		tooltip = {
+			add_ruler_modifier = {
+				name = kirin_shrines_tooltip
+				duration = -1
+			}
+		}
 	}
 	option = {	
 		name = elemental_religion.yamatai.o
@@ -347,6 +447,12 @@ country_event = {
 		}
 		}
 		change_cult = amaterasu_shrines 
+		tooltip = {
+			add_ruler_modifier = {
+				name = amaterasu_shrine_tooltip
+				duration = -1
+			}
+		}
 	}
 	option = {	
 		name = elemental_religion.yamatai.p
@@ -365,6 +471,16 @@ country_event = {
 		}
 		}
 		change_cult = izanami_shrines 
+		tooltip = {
+			add_ruler_modifier = {
+				name = izanami_shrines_tooltip
+				duration = -1
+			}
+		}
+	}
+	option = {	
+		name = elemental_religion.redo
+		remove_country_modifier = change_cult_yamatai_mod
 	}
 }
 
@@ -399,6 +515,10 @@ country_event = {
 		name = elemental_religion.ice.f
 		change_personal_deity = permafrost 
 	}
+	option = {	
+		name = elemental_religion.redo
+		remove_country_modifier = change_deity_ice_mod
+	}
 }
 # Change Lightning deity
 country_event = {
@@ -431,6 +551,10 @@ country_event = {
 		name = elemental_religion.lightning.f
 		change_personal_deity = skybreaker 
 	}
+	option = {	
+		name = elemental_religion.redo
+		remove_country_modifier = change_deity_lightning_mod
+	}
 }
 # Change Cosmos deity
 country_event = {
@@ -462,5 +586,9 @@ country_event = {
 	option = {	
 		name = elemental_religion.cosmos.f
 		change_personal_deity = terra_mastery
+	}
+	option = {	
+		name = elemental_religion.redo
+		remove_country_modifier = change_deity_cosmos_mod
 	}
 }

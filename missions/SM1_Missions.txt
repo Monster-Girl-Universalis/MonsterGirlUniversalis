@@ -1,0 +1,1099 @@
+########################################
+# Missions for Spider Miko Realm by Cris
+########################################
+
+sm1_branch_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		OR = {
+			tag = SM1
+			AND = {
+				was_tag = SM1
+				tag = IQ1
+			}
+		}
+	}
+	has_country_shield = yes
+
+	SM1_cave = { 
+		icon = sm1_cave
+		required_missions = {}
+		position = 1
+        generic = no
+		provinces_to_highlight = {
+			province_id = 1203
+			OR = {
+				NOT = {	owned_by = ROOT }
+				NOT = {	has_building = fort_15th }
+			}
+		}
+		trigger = {
+			1203 = {
+				owned_by = ROOT
+				has_building = fort_15th
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = sm1_cave
+				duration = 7300
+			}
+			yamata_no_orochi_cave = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	SM1_orochi = { 
+		icon = orochi
+		required_missions = {SM1_cave}
+		position = 2
+        generic = no
+		provinces_to_highlight = {
+			OR = {
+				area = yamata_no_orochi_cave
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			yamata_no_orochi_cave = { type = all country_or_non_sovereign_subject_holds = ROOT }
+		}
+		effect = {
+			add_country_modifier = {
+				name = sm1_orochi_1
+				duration = 9125
+			}
+			kunoichi_arachne_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			kunoichi_scylla_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			kitsune_village_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}       
+		 	feral_kitsune_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}       
+			taoist_coast = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}                                
+		}
+	}
+	SM1_horai = { 
+		icon = broken_barrier
+		required_missions = {SM1_orochi}
+		position = 3
+        generic = no
+		provinces_to_highlight = {
+			OR = {
+				area = kunoichi_scylla_area
+				area = kunoichi_arachne_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			OR = {
+			kunoichi_scylla_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			kunoichi_arachne_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = sm1_horai
+				duration = 9125
+			}
+			elven_village = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			horai_coast = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			kunoichi_harpy_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}       
+		 	kunoichi_succubi_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}                                   
+		}
+	}
+}
+sm1_branch_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		OR = {
+			tag = SM1
+			AND = {
+				was_tag = SM1
+				tag = IQ1
+			}
+		}
+	}
+	has_country_shield = yes
+
+	SM1_kappa = { 
+		icon = kappa
+		required_missions = {}
+		position = 1
+        generic = no
+		provinces_to_highlight = {
+			OR = {
+				area = kappa_caverns
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			kappa_caverns = { type = all country_or_non_sovereign_subject_holds = ROOT }
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = sm1_kappa
+				duration = 7300
+			}
+			add_country_modifier = {
+				name = sm1_kappa_pal
+				duration = -1
+			}
+			add_accepted_culture = Kappa
+			nure_onna_caves = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			nure_onna_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}                         
+		}
+	}
+	SM1_nure_onna = { 
+		icon = nure_onna
+		required_missions = {SM1_kappa}
+		position = 2
+        generic = no
+		provinces_to_highlight = {
+			OR = {
+				area = nure_onna_caves
+				area = nure_onna_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			nure_onna_caves = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			nure_onna_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+		}
+		effect = {
+			add_country_modifier = {
+				name = sm1_nure_onna 
+				duration = 9125
+			}
+			add_country_modifier = {
+				name = sm1_nure_onna_pal
+				duration = -1
+			}
+			add_accepted_culture = Yamatai_Lamia
+			yamatai_caves_entrance = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}                       
+		}
+	}
+	SM1_tamamo = { 
+		icon = sm1_tamamo
+		required_missions = {SM1_orochi}
+		position = 3
+        generic = no
+		provinces_to_highlight = {
+			OR = {
+				area = taoist_coast
+				area = kitsune_village_area
+				area = feral_kitsune_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			OR = {
+				taoist_coast = { type = all country_or_non_sovereign_subject_holds = ROOT }
+				kitsune_village_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+				feral_kitsune_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = sm1_tamamo 
+				duration = 9125
+			}
+			bakedanuki_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			tanuki_village_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}                         
+		}
+	}
+	SM1_kitsune_tanuki = { 
+		icon = kitsune_tanuki_island
+		required_missions = {SM1_tamamo}
+		position = 4
+        generic = no
+		provinces_to_highlight = {
+			OR = {
+				area = taoist_coast
+				area = kitsune_village_area
+				area = feral_kitsune_area
+				area = bakedanuki_area
+				area = tanuki_village_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			feral_kitsune_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			kitsune_village_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			taoist_coast = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			bakedanuki_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			tanuki_village_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+		}
+		effect = {
+			add_country_modifier = {
+				name = sm1_kitsune_tanuki 
+				duration = -1
+			}
+			change_ruler_stat = {
+				type = dip
+				amount = 2
+			}
+			add_accepted_culture = Kitsune_Girl
+			add_accepted_culture = Feral_Kitsune
+			add_accepted_culture = Tanuki_Girl
+			unlock_race = { race = kitsune }
+			unlock_race = { race = tanuki }
+			feral_kitsune_area = {
+				add_prosperity = 30
+			}
+			taoist_coast = {
+				add_prosperity = 30
+			}
+			kitsune_village_area = {
+				add_prosperity = 30
+			}
+			bakedanuki_area = {
+				add_prosperity = 30
+			}
+			tanuki_village_area = {
+				add_prosperity = 30
+			}                        
+		}
+	}
+	SM1_grand_noah = { 
+		icon = arthur_colosseum
+		required_missions = {}
+		position = 6
+        generic = no
+		provinces_to_highlight = {
+			OR = {
+				area = grand_noah
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			is_neighbor_of = GR2
+		}
+		effect = {
+			add_country_modifier = {
+				name = sm1_noah
+				duration = 9125
+			}
+			add_yearly_manpower = 3
+			add_army_tradition = 10
+			cerberus_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			dullahan_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}                           
+		}
+	}
+	SM1_repel_noah = { 
+		icon = sm1_repel_noah
+		required_missions = {SM1_grand_noah}
+		position = 7
+        generic = no
+		provinces_to_highlight = {
+			OR = {
+				area = cerberus_area
+				area = dullahan_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			OR = {
+				AND = {
+					cerberus_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+					cerberus_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+				}
+				has_won_war_against = {
+				who = GR2
+				max_years_since = 30
+}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = sm1_repel_noah
+				duration = 10950
+			}
+			grand_noah_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}                       
+		}
+	}
+	SM1_conquer_noah = { 
+		icon = grand_noah_queen_colosseum
+		required_missions = {SM1_repel_noah}
+		position = 8
+        generic = no
+		provinces_to_highlight = {
+			OR = {
+				area = grand_noah
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			grand_noah = { type = all country_or_non_sovereign_subject_holds = ROOT }
+		}
+		effect = {
+			add_country_modifier = {
+				name = sm1_conquer_noah
+				duration = -1
+			}
+			grand_noah_superregion = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}                       
+		}
+	}
+}
+sm1_branch_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		OR = {
+			tag = SM1
+			AND = {
+				was_tag = SM1
+				tag = SM1
+			}
+		}
+	}
+	has_country_shield = yes
+
+	SM1_rally_spiders = { 
+		icon = maya_lewd
+		required_missions = {}
+		position = 1
+        generic = no
+		trigger = {
+			army_size_percentage = 1
+            has_mil_advisor = yes
+		}
+		effect = {
+			kunoichi_elf_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			} 		
+			kappa_caverns = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			yamatai_elf_coast = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			yamatai_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			four_shrines = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}   
+			define_general = {
+				shock = 4
+				fire = 4
+				manuever = 2
+				siege = 3
+				name = Yamame
+				female = yes
+				trait = master_of_arms_personality
+			}                            
+		}
+	}
+	SM1_yamatai = { 
+		icon = yamatai
+		required_missions = {SM1_rally_spiders}
+		position = 2
+        generic = no
+		provinces_to_highlight = {
+			OR = {
+				area = yamatai_area
+				area = four_shrines
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			OR = {
+			yamatai_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			four_shrines = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = sm1_yamatai
+				duration = 9125
+			}
+			add_country_modifier = {
+				name = sm1_human_pal
+				duration = -1
+			}
+			add_accepted_culture = yamatai_human
+			kejourou_area = { 
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			} 		
+			akaname_ricefields = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			akaname_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			futakuchi_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}                           
+		}
+	}
+	SM1_youkai_integration = { 
+		icon = tsubaki
+		required_missions = {SM1_yamatai}
+		position = 3
+        generic = no
+		provinces_to_highlight = {
+			OR = {
+				area = kejourou_area
+				area = akaname_ricefields
+				area = akaname_area
+				area = futakuchi_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			kejourou_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			akaname_ricefields = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			akaname_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			futakuchi_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+		}
+		effect = {
+			add_country_modifier = {
+				name = sm1_super_youkai_pal
+				duration = -1
+			}
+			add_accepted_culture = Kejourou
+			add_accepted_culture = Akaname
+			add_accepted_culture = Futakuchi_Girl
+			nekomata_area = { 
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			} 		
+			nekomata_coast = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			sea_dragon_isles_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			sea_dragon_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			manta_isles_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}                           
+		}
+	}
+	SM1_nekomata = { 
+		icon = nekomata
+		required_missions = {SM1_youkai_integration}
+		position = 3
+        generic = no
+		provinces_to_highlight = {
+			OR = {
+				area = nekomata_coast
+				area = nekomata_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			OR = {
+			nekomata_coast = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			nekomata_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = sm1_neko_pal
+				duration = -1
+			}
+			add_accepted_culture = Nekomata_Girl                         
+		}
+	}
+	SM1_united_yamatai = { 
+		icon = sm1_yamatai
+		required_missions = {SM1_nekomata}
+		position = 5
+        generic = no
+		provinces_to_highlight = {
+			OR = {
+				superregion = yamatai_superregion
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			yamatai_superregion = { type = all country_or_non_sovereign_subject_holds = ROOT }
+		}
+		effect = {
+			custom_tooltip = flavor_insight_sm1.3
+			override_country_name = EASTERN_WONDERLAND
+			change_country_color = { 
+   			 color = { 255 255 255 }
+}
+			add_country_modifier = {
+				name = sm1_united_yamatai
+				duration = -1
+			}
+			country_event = {
+				id = flavor_sm1.4
+			}                         
+		}
+	}
+	SM1_science = { 
+		icon = sm1_science
+		required_missions = {}
+		position = 8
+        generic = no
+		trigger = {
+			religion = yamatai_religion
+		OR = {
+			any_owned_province = {
+				OR = {
+					religion_group = science_religion_g 
+					any_neighbor_province = {
+						religion_group = science_religion_g 
+					}
+				}
+			}			
+			any_neighbor_country = {
+				religion_group = science_religion_g 
+			}
+		}
+		}
+		effect = {
+			custom_tooltip = flavor_insight_sm1.4
+			change_ruler_stat = {
+				type = adm
+				amount = 2
+			}
+			change_innovativeness = 10
+		}
+	}
+	SM1_noah_unification = { 
+		icon = sm1_noah
+		required_missions = {SM1_conquer_noah SM1_plansect_3}
+		position = 9
+        generic = no
+		provinces_to_highlight = {
+			OR = {
+				superregion = yamatai_superregion
+				superregion = grand_noah_superregion
+				superregion = western_noah_superregion
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			yamatai_superregion = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			grand_noah_superregion = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			western_noah_superregion = { type = all country_or_non_sovereign_subject_holds = ROOT }
+		}
+		effect = {
+			add_country_modifier = {
+				name = sm1_united_noah
+				duration = -1
+			}
+			add_prestige_or_monarch_power = {
+				amount = 100
+			}
+			add_power_projection = { 
+				type = 25_permanent_power_projection
+				amount = 25 
+			}                         
+		}
+	}
+}
+sm1_branch_4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		OR = {
+			tag = SM1
+			AND = {
+				was_tag = SM1
+				tag = IQ1
+			}
+		}
+	}
+	has_country_shield = yes
+
+	SM1_kunoichi_elf = { 
+		icon = kunoichi_elf
+		required_missions = {}
+		position = 1
+        generic = no
+		provinces_to_highlight = {
+			OR = {
+				area = kunoichi_elf_area
+				area = yamatai_elf_coast
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			kunoichi_elf_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			yamatai_elf_coast = { type = all country_or_non_sovereign_subject_holds = ROOT }
+		}
+		effect = {
+			add_country_modifier = {
+				name = sm1_kunoici_elf
+				duration = 7300
+			}
+			add_country_modifier = {
+				name = sm1_elf_pal
+				duration = -1
+			}
+			add_accepted_culture = Horai_Elf
+			samurai_elf_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			spirit_coast = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			spirit_caves = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			add_adm_power = 75
+			add_dip_power = 75
+			add_mil_power = 75                         
+		}
+	}
+	SM1_spirit_girl = { 
+		icon = gotan
+		required_missions = {SM1_kunoichi_elf}
+		position = 2
+        generic = no
+		provinces_to_highlight = {
+			OR = {
+				area = spirit_caves
+				area = spirit_coast
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			spirit_caves = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			spirit_coast = { type = all country_or_non_sovereign_subject_holds = ROOT }
+		}
+		effect = {
+			add_country_modifier = {
+				name = sm1_spirit_girl
+				duration = 9125
+			}
+			add_country_modifier = {
+				name = sm1_spirit_pal
+				duration = -1
+			}
+			add_accepted_culture = Spirit_Girl
+			yuki_onna_coast = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			yuki_onna_caves = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}                      
+		}
+	}
+	SM1_youkai = { 
+		icon = yuki_onna
+		required_missions = {SM1_spirit_girl}
+		position = 3
+        generic = no
+		provinces_to_highlight = {
+			OR = {
+				area = yuki_onna_coast
+				area = yuki_onna_caves
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			yuki_onna_coast = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			yuki_onna_caves = { type = all country_or_non_sovereign_subject_holds = ROOT }
+		}
+		effect = {
+			add_country_modifier = {
+				name = sm1_youkai
+				duration = 9125
+			}
+			add_country_modifier = {
+				name = sm1_youkai_pal
+				duration = -1
+			}
+			add_accepted_culture = Ancient_Youkai
+			add_years_of_income = 2
+			add_adm_power = 75
+			add_dip_power = 75                     
+		}
+	}
+	SM1_plansect_1 = { 
+		icon = plansect_1
+		required_missions = {}
+		position = 6
+        generic = no
+		provinces_to_highlight = {
+			OR = {
+				area = mantis_mountains
+				area = canaan_forest
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			mantis_mountains = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			canaan_forest = { type = all country_or_non_sovereign_subject_holds = ROOT }
+		}
+		effect = {
+			add_country_modifier = {
+				name = sm1_plansect_1
+				duration = 10950
+			}                   
+		}
+	}
+	SM1_plansect_2 = { 
+		icon = plansect_2
+		required_missions = {SM1_plansect_1}
+		position = 7
+        generic = no
+		provinces_to_highlight = {
+			OR = {
+				area = alra_woods
+				area = nepenthes_area
+				area = mosquito_mountains
+				area = hornet_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			alra_woods = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			nepenthes_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			mosquito_mountains = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			hornet_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+		}
+		effect = {
+			add_adm_power = 200
+		}
+	}
+	SM1_plansect_3 = { 
+		icon = plansect_3
+		required_missions = {SM1_plansect_2}
+		position = 8
+        generic = no
+		provinces_to_highlight = {
+			OR = {
+				area = plansect_area
+				area = red_mountains
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			plansect_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			red_mountains = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			NOT = { exists = AL4 }
+			NOT = { exists = RM1 }
+			government_rank	= 3
+			accepted_culture = Alraune_Girl
+			accepted_culture = Mushroom_Girl
+		}
+		effect = {
+			add_country_modifier = {
+				name = sm1_plansect_2
+				duration = -1
+			}
+			western_noah_superregion = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}                       
+		}
+	}
+}
+sm1_branch_5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		OR = {
+			tag = SM1
+			AND = {
+				was_tag = SM1
+				tag = IQ1
+			}
+		}
+	}
+	has_country_shield = yes
+
+	SM1_cult = { 
+		icon = maya_yamatai
+		required_missions = {}
+		position = 1
+        generic = no
+		trigger = {
+			religion = yamatai_religion
+			OR ={
+			has_adopted_cult = cat_shrines
+			has_adopted_cult = tanuki_shrines
+			has_adopted_cult = fox_shrines
+			has_adopted_cult = snake_shrines
+			has_adopted_cult = rat_shrines
+			}
+			stability = 1
+		}
+
+		effect = {
+			custom_tooltip = flavor_insight_sm1.1
+			country_event = {
+				id = flavor_sm1.3
+			}
+			change_government_reform_progress = 100                      
+		}
+	}
+	SM1_conversion = { 
+		icon = sm1_oriental
+		required_missions = {SM1_cult}
+        generic = no
+		trigger = {
+			religion = yamatai_religion
+			num_of_converted_provinces = { amount = 10 }
+		}
+		effect = {
+			add_country_modifier = {
+				name = sm1_conversion
+				duration = 9125
+			}
+			add_adm_power = 150                       
+		}
+	}
+	SM1_opposites = { 
+		icon = maya_light_dark
+		required_missions = {SM1_conversion}
+		position = 1
+        generic = no
+		provinces_to_highlight = {
+			OR = {
+				area = grand_noah
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			religion = yamatai_religion
+			grand_noah = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			num_of_converted_provinces = { amount = 30 }
+		}
+		effect = {
+			add_government_reform = divine_shrine_maiden
+			custom_tooltip = flavor_insight_sm1.2
+			add_mil_power = 150 
+			change_government_reform_progress = 100                      
+		}
+	}
+	SM1_defender_east = { 
+		icon = sm1_native_faith
+		required_missions = {SM1_opposites}
+		position = 1
+        generic = no
+		trigger = {
+			religion = yamatai_religion
+			num_of_converted_provinces = { amount = 50 }
+		}
+		effect = {
+			set_country_flag = has_completed_first_reform
+			add_government_reform = Defender_east                    
+		}
+	}
+	SM1_imperishable_faith = { 
+		icon = sm1_war
+		required_missions = {SM1_defender_east}
+		position = 1
+        generic = no
+		trigger = {
+			religion = yamatai_religion
+			full_idea_group = religious_ideas
+			full_idea_group = theocracy_gov_ideas
+		}
+		effect = {
+			set_country_flag = has_completed_second_reform
+			add_government_reform = Imperishable_faith                     
+		}
+	}
+}

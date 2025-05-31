@@ -2089,15 +2089,15 @@ slime_ideas = {
 		war_exhaustion = -0.15
 	}
 	assimilation_mastery = {
-	 num_accepted_cultures = 5
+		num_accepted_cultures = 5
 	}
-	shapeshifting_prowess = {
-		discovered_relations_impact = -0.5
+	slime_blobbing = {
+		province_warscore_cost = -0.05
+		administrative_efficiency = 0.025
  	}
-	primordial_unity = {
-		tolerance_own = 1
-		tolerance_heretic = 1
-		tolerance_heathen = 1
+	divide_destiny = {
+		all_power_cost = -0.05
+		infantry_power = -0.05
 	}
 
 	ai_will_do = {
@@ -2931,8 +2931,8 @@ chimera_ideas = {
 		free_mil_policy = 1
 	}
 	experimental_enhancements = {
-		yearly_innovativeness = 0.1
-		innovativeness_gain = 0.1
+		yearly_innovativeness = 0.25
+		innovativeness_gain = 0.25
 	}
 	mechanized_arsenal = {
 		backrow_artillery_damage = 0.10

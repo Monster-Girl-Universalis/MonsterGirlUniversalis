@@ -1,0 +1,225 @@
+########################################
+# Flavor Events for Lamia Realm by Cris
+########################################
+
+namespace = flavor_lr1
+
+###LR1 Flavor events###
+
+country_event = {
+	id = flavor_lr1.1
+	title = flavor_lr1.1_title
+	desc = flavor_lr1.1_desc
+	picture = LAMIA_SUNNY_eventPicture
+	fire_only_once = yes
+	is_triggered_only = no
+	trigger = {
+	OR = {
+		tag = LR1
+		was_tag = LR1
+	}
+	sables_coast_area = {
+		type = all
+		owned_by = ROOT
+		is_core = ROOT
+	}
+}
+   	mean_time_to_happen = {
+	months = 12
+	}
+	option = {
+		name = flavor_lr1.1.a
+		add_accepted_culture = Sables
+		add_country_modifier = {
+			name = lr1_sables
+			duration = -1
+		}
+		ai_chance = {
+			factor = 100
+		}
+		unlock_race = { race = scylla }
+	}
+}
+country_event = {
+id = flavor_lr1.2
+title = "flavor_lr1.2_title"
+desc = "flavor_lr1.2_desc"
+picture = LAMIA_SISTER_eventPicture
+is_triggered_only = yes
+fire_only_once = yes
+option = {        #Question of Lamia Sisters - gain cores
+        name = flavor_lr1.2.a
+        trigger = {
+OR = {
+SSL = { exists = no }
+SSL = { is_subject = yes } 
+SSL = { total_development = 250 }
+}
+        }
+lamia_sister_area = {
+add_core = ROOT
+}
+}
+option = {        #Question of Lamia Sisters - create a march
+        name = flavor_lr1.2.b
+        trigger = {
+NOT = { SSL = { total_development = 250 } }
+NOT = { SSL = { is_subject = yes } }
+SSL = { exists = yes }
+        }
+        create_march = SSL 
+}
+}
+country_event = {
+	id = flavor_lr1.3
+	title = flavor_lr1.3_title
+	desc = flavor_lr1.3_desc
+	picture = LAMIA_QUEEN_eventPicture
+	is_triggered_only = yes
+	option = {
+		name = flavor_lr1.3.a
+		add_country_modifier = {
+			name = lr1_lamia_queen
+			duration = 9125
+		}
+		change_tag = LQ1
+		on_change_tag_effect = yes
+		swap_non_generic_missions = yes
+		add_prestige = 25
+		if = {
+			limit = {
+				has_custom_ideas = no
+				NOT = { has_idea_group = AKS_ideas }
+			}
+			country_event = { id = ideagroups.1 } #Swap Ideas
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+country_event = {
+	id = flavor_lr1.4
+	title = flavor_lr1.4_title
+	desc = flavor_lr1.4_desc
+	picture = LAMIA_TEENY_eventPicture
+	is_triggered_only = yes
+	option = {
+		name = flavor_lr1.4.a
+		add_treasury = -1000
+		add_mercantilism = 5
+		add_country_modifier = {
+			name = lr1_teeny
+			duration = -1
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+country_event = {
+	id = flavor_lr1.5
+	title = flavor_lr1.5_title
+	desc = flavor_lr1.5_desc
+	picture = LAMIA_HARPY_eventPicture
+	fire_only_once = yes
+	is_triggered_only = no
+	trigger = {
+	OR = {
+		tag = LR1
+		was_tag = LR1
+	}
+	ostrich_area = {
+		type = all
+		owned_by = ROOT
+		is_core = ROOT
+	}
+}
+   	mean_time_to_happen = {
+	months = 12
+	}
+	option = {
+		name = flavor_lr1.5.a
+		add_country_modifier = {
+			name = lr1_harpy
+			duration = 10950
+		}
+		add_country_modifier = {
+			name = lr1_harpy_2
+			duration = -1
+		}
+		add_accepted_culture = Ostrich_Girl
+		unlock_race = { race = harpy }
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+country_event = {
+	id = flavor_lr1.6
+	title = flavor_lr1.6_title
+	desc = flavor_lr1.6_desc
+	picture = LAMIA_MERMAID_eventPicture
+	fire_only_once = yes
+	is_triggered_only = no
+	trigger = {
+	OR = {
+		tag = LR1
+		was_tag = LR1
+	}
+	leira_coast_area = {
+		type = all
+		owned_by = ROOT
+		is_core = ROOT
+	}
+	eastern_natalia_area = {
+		type = all
+		owned_by = ROOT
+		is_core = ROOT
+	}
+}
+   	mean_time_to_happen = {
+	months = 12
+	}
+	option = {
+		name = flavor_lr1.6.a
+		add_country_modifier = {
+			name = lr1_mermaid
+			duration = 10950
+		}
+		add_country_modifier = {
+			name = lr1_mermaid_2
+			duration = -1
+		}
+		add_accepted_culture = Natalian_Mermaid
+		unlock_race = { race = mermaid }
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+country_event = {
+	id = flavor_lr1.7
+	title = flavor_lr1.7_title
+	desc = flavor_lr1.7_desc
+	picture = MELK_WOODS_eventPicture
+	fire_only_once = no
+	is_triggered_only = no
+	trigger = {
+	OR = {
+		tag = LR1
+		was_tag = LR1
+	}
+		overextension_percentage = 1
+	}
+   	mean_time_to_happen = {
+	months = 16
+	}
+	option = {
+		name = flavor_lr1.7.a
+		add_mil_power = -50
+		ai_chance = {
+			factor = 100
+		}
+	}
+}

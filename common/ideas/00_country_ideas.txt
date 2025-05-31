@@ -439,7 +439,6 @@ eternity_ideas = {
 	}
 	eternity_spectral_movements = {
 		movement_speed = 0.20
-		can_bypass_forts = yes
 	}
 	eternity_lords_of_astral = {
 		fire_damage = 0.175

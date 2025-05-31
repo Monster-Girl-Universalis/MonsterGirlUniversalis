@@ -1,0 +1,1543 @@
+lr1_branch_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		NOT = { map_setup = map_setup_random } 
+		OR = {
+			tag = LR1
+			AND = {
+				was_tag = LR1
+				tag = LQ1
+			}
+		}
+	}
+
+	LR1_renaissance = {
+		icon = lamia_renaissance
+		position = 1
+		provinces_to_highlight = {
+			province_id = 632
+			OR = { NOT = { development = 30 }  } 
+		}
+
+		trigger = {
+			has_institution = renaissance
+			632 = { development = 30 } 
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = "lr1_renaissance"
+				duration = 7300
+			}
+			632 = {
+				change_province_name = "Lamia Urbs"
+				rename_capital = "Lamia Urbs"
+				add_province_modifier = {
+					name = "lr1_local_renaissance"
+					duration = -1
+				}
+			}
+		}
+	}
+
+	LR1_shelly = {
+		icon = lr1_shelly_boobies
+		position = 3
+		required_missions = {
+			LR1_breath_sea
+			LR1_renaissance
+		}
+		provinces_to_highlight = {
+			province_id = 627
+			OR = {
+				NOT = { owned_by = ROOT } 
+				NOT = { base_production = 15 } 
+			}
+			province_id = 631
+			OR = {
+				NOT = { owned_by = ROOT } 
+				NOT = { base_production = 15 } 
+			}
+			province_id = 654
+			OR = {
+				NOT = { owned_by = ROOT } 
+				NOT = { base_production = 15 } 
+			}
+		}
+
+		trigger = {
+			627 = {
+				owned_by = ROOT
+				base_production = 15
+			}
+			631 = {
+				owned_by = ROOT
+				base_production = 15
+			}
+			654 = {
+				owned_by = ROOT
+				base_production = 15
+			}
+		}
+
+		effect = {
+			shellfish_coast_area = {
+				add_province_modifier = {
+					name = "lr1_local_shelly"
+					duration = -1
+				}
+				add_base_production = 5
+				add_building = workshop
+			}
+			add_accepted_culture = Shellfish_Girl
+			add_country_modifier = {
+				name = "lr1_shellfish_girl"
+				duration = -1
+			}
+		}
+	}
+
+	LR1_forts = {
+		icon = fort_castle
+		position = 6
+		required_missions = {
+			LR1_shelly
+			LR1_sabasa
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 632
+				province_id = 655
+				province_id = 662
+				province_id = 667
+				province_id = 674
+				province_id = 647
+				province_id = 681
+				province_id = 704
+				province_id = 206
+				province_id = 720
+				province_id = 711
+			}
+			NOT = { has_building = fort_15th } 
+		}
+
+		trigger = {
+			632 = {
+				owned_by = ROOT
+				has_building = fort_15th
+			}
+			655 = {
+				owned_by = ROOT
+				has_building = fort_15th
+			}
+			662 = {
+				owned_by = ROOT
+				has_building = fort_15th
+			}
+			667 = {
+				owned_by = ROOT
+				has_building = fort_15th
+			}
+			674 = {
+				owned_by = ROOT
+				has_building = fort_15th
+			}
+			681 = {
+				owned_by = ROOT
+				has_building = fort_15th
+			}
+			704 = {
+				owned_by = ROOT
+				has_building = fort_15th
+			}
+			206 = {
+				owned_by = ROOT
+				has_building = fort_15th
+			}
+			720 = {
+				owned_by = ROOT
+				has_building = fort_15th
+			}
+			711 = {
+				owned_by = ROOT
+				has_building = fort_15th
+			}
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = "lr1_forts"
+				duration = -1
+			}
+		}
+	}
+
+	LR1_perfect_admin = {
+		icon = admin_lamia
+		position = 7
+		required_missions = { LR1_forts } 
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			monthly_adm = 15
+			stability = 3
+			grown_by_development = 3000
+			government_rank = 3
+			is_great_power = yes
+			full_idea_group = lamia_ideas
+			OR = {
+				full_idea_group = administrative_ideas
+				full_idea_group = infrastructure_ideas
+			}
+			NOT = { governing_capacity_percentage = 1.01 } 
+		}
+
+		effect = {
+			add_adm_power = -400
+			add_country_modifier = {
+				name = "lr1_perfect_admin"
+				duration = -1
+			}
+		}
+	}
+}
+lr1_branch_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		NOT = { map_setup = map_setup_random } 
+		OR = {
+			tag = LR1
+			AND = {
+				was_tag = LR1
+				tag = LQ1
+			}
+		}
+	}
+
+	LR1_yoma_pals = {
+		icon = lr1_yoma
+		position = 1
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			any_ally = {
+				culture_group = yoma
+				has_opinion = {
+					who = root
+					value = 200
+				}
+			}
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = "lr1_yoma_pals"
+				duration = 7300
+			}
+			unlock_race = { race = yoma }
+		}
+	}
+
+	LR1_breath_sea = {
+		icon = anastasia_sea
+		position = 2
+		required_missions = { LR1_assessing_our_position } 
+		provinces_to_highlight = {
+			OR = { area = shellfish_coast_area } 
+			NOT = { country_or_non_sovereign_subject_holds = ROOT } 
+		}
+
+		trigger = {
+			shellfish_coast_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = "lr1_sea_breeze"
+				duration = 7300
+			}
+			631 = {
+				add_unit_construction = {
+					type = light_ship
+					amount = 5
+					speed = 0.1
+					cost = 0
+				}
+				add_unit_construction = {
+					type = transport
+					amount = 5
+					speed = 0.1
+					cost = 0
+				}
+			}
+			minotaur_steppes = {
+				limit = {
+					NOT = { is_core = ROOT } 
+					NOT = { is_permanent_claim = ROOT } 
+				}
+				add_permanent_claim = ROOT
+			}
+			centipede_area = {
+				limit = {
+					NOT = { is_core = ROOT } 
+					NOT = { is_permanent_claim = ROOT } 
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	LR1_block_path = {
+		icon = lr1_kagetsumugi
+		position = 3
+		required_missions = { LR1_breath_sea } 
+		provinces_to_highlight = {
+			OR = {
+				area = minotaur_steppes
+				area = centipede_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT } 
+		}
+
+		trigger = {
+			minotaur_steppes = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			centipede_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+
+		effect = {
+			add_adm_power = 100
+			add_yearly_manpower = 2
+			add_country_modifier = {
+				name = "LR1_block_path"
+				duration = 9125
+			}
+			bandersnatch_area = {
+				limit = {
+					NOT = { is_core = ROOT } 
+					NOT = { is_permanent_claim = ROOT } 
+				}
+				add_permanent_claim = ROOT
+			}
+			rubiana_area = {
+				limit = {
+					NOT = { is_core = ROOT } 
+					NOT = { is_permanent_claim = ROOT } 
+				}
+				add_permanent_claim = ROOT
+			}
+			sables_coast_area = {
+				limit = {
+					NOT = { is_core = ROOT } 
+					NOT = { is_permanent_claim = ROOT } 
+				}
+				add_permanent_claim = ROOT
+			}
+			tarantula_wastelands = {
+				limit = {
+					NOT = { is_core = ROOT } 
+					NOT = { is_permanent_claim = ROOT } 
+				}
+				add_permanent_claim = ROOT
+			}
+			roach_tower = {
+				limit = {
+					NOT = { is_core = ROOT } 
+					NOT = { is_permanent_claim = ROOT } 
+				}
+				add_permanent_claim = ROOT
+			}
+			seekers_cave_area = {
+				limit = {
+					NOT = { is_core = ROOT } 
+					NOT = { is_permanent_claim = ROOT } 
+				}
+				add_permanent_claim = ROOT
+			}
+			infantry_dolls_area = {
+				limit = {
+					NOT = { is_core = ROOT } 
+					NOT = { is_permanent_claim = ROOT } 
+				}
+				add_permanent_claim = ROOT
+			}
+			maid_dolls_area = {
+				limit = {
+					NOT = { is_core = ROOT } 
+					NOT = { is_permanent_claim = ROOT } 
+				}
+				add_permanent_claim = ROOT
+			}
+			magician_dolls_area = {
+				limit = {
+					NOT = { is_core = ROOT } 
+					NOT = { is_permanent_claim = ROOT } 
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	LR1_tower = {
+		icon = lr1_puppet_tower
+		position = 4
+		required_missions = { LR1_block_path } 
+		provinces_to_highlight = {
+			OR = {
+				area = seekers_cave_area
+				area = infantry_dolls_area
+				area = maid_dolls_area
+				area = magician_dolls_areae
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT } 
+		}
+
+		trigger = {
+			seekers_cave_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			infantry_dolls_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			maid_dolls_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			magician_dolls_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = "lr1_tower"
+				duration = -1
+			}
+			change_ruler_stat = {
+				type = mil
+				amount = 2
+			}
+			kagetsumugi_training_grounds = {
+				limit = {
+					NOT = { is_core = ROOT } 
+					NOT = { is_permanent_claim = ROOT } 
+				}
+				add_permanent_claim = ROOT
+			}
+			doll_storage_area = {
+				limit = {
+					NOT = { is_core = ROOT } 
+					NOT = { is_permanent_claim = ROOT } 
+				}
+				add_permanent_claim = ROOT
+			}
+			monster_lord_dolls_area = {
+				limit = {
+					NOT = { is_core = ROOT } 
+					NOT = { is_permanent_claim = ROOT } 
+				}
+				add_permanent_claim = ROOT
+			}
+			doll_assembly_chambers = {
+				limit = {
+					NOT = { is_core = ROOT } 
+					NOT = { is_permanent_claim = ROOT } 
+				}
+				add_permanent_claim = ROOT
+			}
+			puppeteer_tower = {
+				limit = {
+					NOT = { is_core = ROOT } 
+					NOT = { is_permanent_claim = ROOT } 
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	LR1_sabasa = {
+		icon = lr1_sabasa_king
+		position = 4
+		required_missions = { LR1_tower } 
+		provinces_to_highlight = {
+			OR = {
+				area = rubiana_area
+				area = tarantula_wastelands
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT } 
+		}
+
+		trigger = {
+			rubiana_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			tarantula_wastelands = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			NOT = { exists = PT1 } 
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = "lr1_sabasa"
+				duration = 10950
+			}
+			add_adm_power = 75
+			add_dip_power = 75
+			add_mil_power = 75
+			sabasa_region = {
+				limit = {
+					NOT = { is_core = ROOT } 
+					NOT = { is_permanent_claim = ROOT } 
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	LR1_safina_ambition = {
+		icon = lr1_king_apeshit
+		position = 4
+		required_missions = { LR1_sabasa } 
+		provinces_to_highlight = {
+			OR = { area = southern_sabasa_area } 
+			NOT = { country_or_non_sovereign_subject_holds = ROOT } 
+		}
+
+		trigger = {
+			southern_sabasa_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = "lr1_safina_ambition"
+				duration = 7300
+			}
+			add_adm_power = 150
+			add_dip_power = 150
+			add_mil_power = 150
+			pyramid_region = {
+				limit = {
+					NOT = { is_core = ROOT } 
+					NOT = { is_permanent_claim = ROOT } 
+				}
+				add_permanent_claim = ROOT
+			}
+			grandeur_region = {
+				limit = {
+					NOT = { is_core = ROOT } 
+					NOT = { is_permanent_claim = ROOT } 
+				}
+				add_permanent_claim = ROOT
+			}
+			fairy_island_region = {
+				limit = {
+					NOT = { is_core = ROOT } 
+					NOT = { is_permanent_claim = ROOT } 
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+}
+lr1_branch_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		NOT = { map_setup = map_setup_random } 
+		OR = {
+			tag = LR1
+			AND = {
+				was_tag = LR1
+				tag = LQ1
+			}
+		}
+	}
+
+	LR1_assessing_our_position = {
+		icon = lr1_fucked_up
+		position = 1
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			army_size_percentage = 1
+			has_mil_advisor = yes
+			num_of_generals = 1
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = "lr1_assessing_our_position"
+				duration = 7300
+			}
+			shellfish_coast_area = {
+				limit = {
+					NOT = { is_core = ROOT } 
+					NOT = { is_permanent_claim = ROOT } 
+				}
+				add_permanent_claim = ROOT
+			}
+			slime_bess_area = {
+				limit = {
+					NOT = { is_core = ROOT } 
+					NOT = { is_permanent_claim = ROOT } 
+				}
+				add_permanent_claim = ROOT
+			}
+			monte_carlo_area = {
+				limit = {
+					NOT = { is_core = ROOT } 
+					NOT = { is_permanent_claim = ROOT } 
+				}
+				add_permanent_claim = ROOT
+			}
+			carlos_hill_area = {
+				limit = {
+					NOT = { is_core = ROOT } 
+					NOT = { is_permanent_claim = ROOT } 
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	LR1_watermelons = {
+		icon = lr1_chrome
+		position = 2
+		required_missions = { LR1_assessing_our_position } 
+		provinces_to_highlight = {
+			OR = { area = slime_bess_area } 
+			NOT = { country_or_non_sovereign_subject_holds = ROOT } 
+		}
+
+		trigger = {
+			slime_bess_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = "lr1_watermelons"
+				duration = 7300
+			}
+			slime_bess_plains = {
+				limit = {
+					NOT = { is_core = ROOT } 
+					NOT = { is_permanent_claim = ROOT } 
+				}
+				add_permanent_claim = ROOT
+			}
+			watermelon_grasslands = {
+				limit = {
+					NOT = { is_core = ROOT } 
+					NOT = { is_permanent_claim = ROOT } 
+				}
+				add_permanent_claim = ROOT
+			}
+			zombie_mountains = {
+				limit = {
+					NOT = { is_core = ROOT } 
+					NOT = { is_permanent_claim = ROOT } 
+				}
+				add_permanent_claim = ROOT
+			}
+			haunted_mansion_area = {
+				limit = {
+					NOT = { is_core = ROOT } 
+					NOT = { is_permanent_claim = ROOT } 
+				}
+				add_permanent_claim = ROOT
+			}
+			north_natalia_coast = {
+				limit = {
+					NOT = { is_core = ROOT } 
+					NOT = { is_permanent_claim = ROOT } 
+				}
+				add_permanent_claim = ROOT
+			}
+			north_natalia_area = {
+				limit = {
+					NOT = { is_core = ROOT } 
+					NOT = { is_permanent_claim = ROOT } 
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	LR1_safina_beachhead = {
+		icon = coast
+		position = 3
+		required_missions = { LR1_watermelons } 
+		provinces_to_highlight = {
+			OR = {
+				area = zombie_mountains
+				area = haunted_mansion_area
+				area = north_natalia_area
+				area = north_natalia_coast
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT } 
+		}
+
+		trigger = {
+			zombie_mountains = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			haunted_mansion_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			north_natalia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			north_natalia_coast = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = "lr1_safina_beachhead"
+				duration = 9125
+			}
+			administrator_strait_area = {
+				limit = {
+					NOT = { is_core = ROOT } 
+					NOT = { is_permanent_claim = ROOT } 
+				}
+				add_permanent_claim = ROOT
+			}
+			administrator_tower_area = {
+				limit = {
+					NOT = { is_core = ROOT } 
+					NOT = { is_permanent_claim = ROOT } 
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	LR1_safar = {
+		icon = earth_power
+		position = 4
+		required_missions = { LR1_safina_beachhead } 
+		provinces_to_highlight = {
+			OR = {
+				area = administrator_strait_area
+				area = administrator_tower_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT } 
+		}
+
+		trigger = {
+			administrator_strait_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			administrator_tower_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = "lr1_safar"
+				duration = 10950
+			}
+			safar_ruins_region = {
+				limit = {
+					NOT = { is_core = ROOT } 
+					NOT = { is_permanent_claim = ROOT } 
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	LR1_assault_magistea = {
+		icon = lr1_lucia
+		position = 5
+		required_missions = { LR1_safar } 
+		provinces_to_highlight = {
+			OR = { region = safar_ruins_region } 
+			NOT = { country_or_non_sovereign_subject_holds = ROOT } 
+		}
+
+		trigger = {
+			safar_ruins_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = "lr1_upper_safina"
+				duration = 5475
+			}
+			saloon_region = {
+				limit = {
+					NOT = { is_core = ROOT } 
+					NOT = { is_permanent_claim = ROOT } 
+				}
+				add_permanent_claim = ROOT
+			}
+			great_pirate_cave_region = {
+				limit = {
+					NOT = { is_core = ROOT } 
+					NOT = { is_permanent_claim = ROOT } 
+				}
+				add_permanent_claim = ROOT
+			}
+			magistea_region = {
+				limit = {
+					NOT = { is_core = ROOT } 
+					NOT = { is_permanent_claim = ROOT } 
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	LR1_safina_unification = {
+		icon = safina_map
+		position = 7
+		required_missions = {
+			LR1_safina_ambition
+			LR1_assault_magistea
+		}
+		provinces_to_highlight = {
+			OR = {
+				region = st_amos_region
+				region = port_natalia_region
+				region = forest_of_spirits_region
+				region = puppeteer_tower_region
+				region = monte_carlo_region
+				region = grandeur_region
+				region = sabasa_region
+				region = magistea_region
+				region = pyramid_region
+				region = saloon_region
+				region = fairy_island_region
+				region = safar_ruins_region
+				region = great_pirate_cave_region
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT } 
+		}
+
+		trigger = {
+			st_amos_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			port_natalia_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			forest_of_spirits_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			puppeteer_tower_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			monte_carlo_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			grandeur_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			sabasa_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			magistea_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			pyramid_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			saloon_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			fairy_island_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			safar_ruins_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			great_pirate_cave_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+
+		effect = {
+			change_ruler_stat = {
+				type = adm
+				amount = 1
+			}
+			change_ruler_stat = {
+				type = dip
+				amount = 1
+			}
+			change_ruler_stat = {
+				type = mil
+				amount = 1
+			}
+			add_country_modifier = {
+				name = "lr1_safina_unification"
+				duration = -1
+			}
+			add_power_projection = {
+				type = 25_permanent_power_projection
+				amount = 25
+			}
+			add_prestige_or_monarch_power = { amount = 100 } 
+		}
+	}
+}
+lr1_branch_4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		NOT = { map_setup = map_setup_random } 
+		OR = {
+			tag = LR1
+			AND = {
+				was_tag = LR1
+				tag = LQ1
+			}
+		}
+	}
+
+	LR1_flail_diplomacy = {
+		icon = lr1_flail
+		position = 1
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			copper = 2
+			iron = 2
+			army_size_percentage = 1
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = "lr1_flail_basic"
+				duration = 7300
+			}
+			add_army_tradition = 20
+		}
+	}
+
+	LR1_flail_master = {
+		icon = anastasia_flail
+		position = 2
+		required_missions = { LR1_flail_diplomacy } 
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			if = {
+				limit = { has_dlc = "Cradle of Civilization" } 
+				army_professionalism = 0.40
+				army_tradition = 70
+			}
+			else = { army_tradition = 70 } 
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = "lr1_flail_master"
+				duration = -1
+			}
+		}
+	}
+
+	LR1_forest_spirits = {
+		icon = lr1_sylph_bonk
+		position = 3
+		required_missions = { LR1_watermelons } 
+		provinces_to_highlight = {
+			OR = {
+				area = monte_carlo_area
+				area = carlos_hill_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT } 
+		}
+
+		trigger = {
+			carlos_hill_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			monte_carlo_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = "lr1_forest"
+				duration = 7300
+			}
+			elvish_spring_area = {
+				limit = {
+					NOT = { is_core = ROOT } 
+					NOT = { is_permanent_claim = ROOT } 
+				}
+				add_permanent_claim = ROOT
+			}
+			forest_of_spirits = {
+				limit = {
+					NOT = { is_core = ROOT } 
+					NOT = { is_permanent_claim = ROOT } 
+				}
+				add_permanent_claim = ROOT
+			}
+			fairy_grove = {
+				limit = {
+					NOT = { is_core = ROOT } 
+					NOT = { is_permanent_claim = ROOT } 
+				}
+				add_permanent_claim = ROOT
+			}
+			safina_mountain_pass = {
+				limit = {
+					NOT = { is_core = ROOT } 
+					NOT = { is_permanent_claim = ROOT } 
+				}
+				add_permanent_claim = ROOT
+			}
+			safina_road_area = {
+				limit = {
+					NOT = { is_core = ROOT } 
+					NOT = { is_permanent_claim = ROOT } 
+				}
+				add_permanent_claim = ROOT
+			}
+			western_natalia_road = {
+				limit = {
+					NOT = { is_core = ROOT } 
+					NOT = { is_permanent_claim = ROOT } 
+				}
+				add_permanent_claim = ROOT
+			}
+			add_dip_power = 100
+		}
+	}
+	LR1_lamia_queen = { 
+		icon = lr1_queen
+		required_missions = {}
+		position = 4
+		generic = no
+		trigger = {
+			adm_tech = 10
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			monthly_adm = 12
+			monthly_dip = 12
+			monthly_mil = 12
+			government_rank = 2
+			army_tradition = 50
+			army_size = 150
+			grown_by_development = 750
+			legitimacy_equivalent = 100
+			is_bankrupt = no
+		}
+		effect = {
+		custom_tooltip = flavor_insight_lr1.1
+			country_event = {
+				id = flavor_lr1.3
+			}
+			change_ruler_stat = {
+				type = adm
+				amount = 1
+			}
+			change_ruler_stat = {
+				type = dip
+				amount = 1
+			}
+			change_ruler_stat = {
+				type = mil
+				amount = 1
+			}
+		}
+	}
+
+	LR1_to_iliasburg = {
+		icon = capital
+		position = 5
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			grown_by_development = 1500
+			316 = { is_strongest_trade_power = ROOT } 
+		}
+
+		effect = {
+			south_undersea_temple_region = {
+				limit = {
+					NOT = { is_core = ROOT } 
+					NOT = { is_permanent_claim = ROOT } 
+				}
+				add_permanent_claim = ROOT
+			}
+			iliasport_area = {
+				limit = {
+					NOT = { is_core = ROOT } 
+					NOT = { is_permanent_claim = ROOT } 
+				}
+				add_permanent_claim = ROOT
+			}
+			ilian_centaurs_area = {
+				limit = {
+					NOT = { is_core = ROOT } 
+					NOT = { is_permanent_claim = ROOT } 
+				}
+				add_permanent_claim = ROOT
+			}
+			iliasburg_plains = {
+				limit = {
+					NOT = { is_core = ROOT } 
+					NOT = { is_permanent_claim = ROOT } 
+				}
+				add_permanent_claim = ROOT
+			}
+			heavenly_bandits_area = {
+				limit = {
+					NOT = { is_core = ROOT } 
+					NOT = { is_permanent_claim = ROOT } 
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	LR1_teeny = {
+		icon = big_teeny
+		position = 6
+		required_missions = { LR1_to_iliasburg } 
+		provinces_to_highlight = {
+			OR = { area = heavenly_bandits_area } 
+			NOT = { country_or_non_sovereign_subject_holds = ROOT } 
+		}
+
+		trigger = {
+			heavenly_bandits_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+
+		effect = { country_event = { id = flavor_lr1.4 }  } 
+	}
+}
+lr1_branch_5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		NOT = { map_setup = map_setup_random } 
+		OR = {
+			tag = LR1
+			AND = {
+				was_tag = LR1
+				tag = LQ1
+			}
+		}
+	}
+
+	LR1_sister_lamia = {
+		icon = mission_sister_lamia
+		position = 1
+		provinces_to_highlight = {
+			area = lamia_sister_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT } 
+		}
+
+		trigger = {
+			OR = {
+				has_spy_network_in = {
+					who = SSL
+					value = 50
+				}
+				reverse_has_opinion = {
+					who = SSL
+					value = 160
+				}
+				NOT = { exists = SSL } 
+			}
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = "lr1_charm"
+				duration = 7300
+			}
+			country_event = { id = flavor_lr1.2 } 
+			san_ilia_area = {
+				limit = {
+					NOT = { is_core = ROOT } 
+					NOT = { is_permanent_claim = ROOT } 
+				}
+				add_permanent_claim = ROOT
+			}
+			san_ilia_crops = {
+				limit = {
+					NOT = { is_core = ROOT } 
+					NOT = { is_permanent_claim = ROOT } 
+				}
+				add_permanent_claim = ROOT
+			}
+			succubus_nun_area = {
+				limit = {
+					NOT = { is_core = ROOT } 
+					NOT = { is_permanent_claim = ROOT } 
+				}
+				add_permanent_claim = ROOT
+			}
+			ittan_momen_coast = {
+				limit = {
+					NOT = { is_core = ROOT } 
+					NOT = { is_permanent_claim = ROOT } 
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	LR1_san_ilia = {
+		icon = crusade_mission
+		position = 2
+		required_missions = { LR1_sister_lamia } 
+		provinces_to_highlight = {
+			OR = {
+				area = san_ilia_area
+				area = san_ilia_crops
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT } 
+		}
+
+		trigger = {
+			san_ilia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			san_ilia_crops = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = "lr1_holy_war"
+				duration = 7300
+			}
+			oloso_area = {
+				limit = {
+					NOT = { is_core = ROOT } 
+					NOT = { is_permanent_claim = ROOT } 
+				}
+				add_permanent_claim = ROOT
+			}
+			amos_road_area = {
+				limit = {
+					NOT = { is_core = ROOT } 
+					NOT = { is_permanent_claim = ROOT } 
+				}
+				add_permanent_claim = ROOT
+			}
+			secret_lab_facility_area = {
+				limit = {
+					NOT = { is_core = ROOT } 
+					NOT = { is_permanent_claim = ROOT } 
+				}
+				add_permanent_claim = ROOT
+			}
+			jellyfish_beach = {
+				limit = {
+					NOT = { is_core = ROOT } 
+					NOT = { is_permanent_claim = ROOT } 
+				}
+				add_permanent_claim = ROOT
+			}
+			crab_realm_area = {
+				limit = {
+					NOT = { is_core = ROOT } 
+					NOT = { is_permanent_claim = ROOT } 
+				}
+				add_permanent_claim = ROOT
+			}
+			sea_cucumber_area = {
+				limit = {
+					NOT = { is_core = ROOT } 
+					NOT = { is_permanent_claim = ROOT } 
+				}
+				add_permanent_claim = ROOT
+			}
+			seaweed_beach = {
+				limit = {
+					NOT = { is_core = ROOT } 
+					NOT = { is_permanent_claim = ROOT } 
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	LR1_jillian = {
+		icon = mission_roid_army
+		position = 3
+		required_missions = { LR1_san_ilia } 
+		provinces_to_highlight = {
+			OR = { area = secret_lab_facility_area } 
+			NOT = { country_or_non_sovereign_subject_holds = ROOT } 
+		}
+
+		trigger = {
+			secret_lab_facility_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			innovativeness = 30
+			550 = {
+				owned_by = ROOT
+				has_great_project = {
+					type = ancient_lab_facility
+					tier = 2
+				}
+			}
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = "lr1_roid_chimeras"
+				duration = -1
+			}
+			san_ilia_superregion = {
+				limit = {
+					NOT = { is_core = ROOT } 
+					NOT = { is_permanent_claim = ROOT } 
+				}
+				add_permanent_claim = ROOT
+			}
+			add_accepted_culture = Roid_Girl
+			add_accepted_culture = Chimera_Girl
+			unlock_race = { race = roid }
+			unlock_race = { race = chimera }
+		}
+	}
+
+	LR1_vassal_swarm = {
+		icon = lr1_vassal_swarm
+		position = 1
+		required_missions = { LR1_jillian } 
+		provinces_to_highlight = {
+			owner = {
+				is_subject_of = ROOT
+				liberty_desire = 40
+			}
+		}
+
+		trigger = {
+			num_of_non_tributary_subjects = 5
+			NOT = { any_subject_country = { liberty_desire = 10 }  } 
+			OR = {
+				full_idea_group = diplomatic_ideas
+				full_idea_group = influence_ideas
+			}
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = "lr1_vassal_swarm"
+				duration = -1
+			}
+			change_ruler_stat = {
+				type = dip
+				amount = 2
+			}
+		}
+	}
+
+	LR1_to_finoa = {
+		icon = lr1_finoa_claims
+		position = 5
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			grown_by_development = 1500
+			1102 = { is_strongest_trade_power = ROOT } 
+		}
+
+		effect = {
+			finoa_region = {
+				limit = {
+					NOT = { is_core = ROOT } 
+					NOT = { is_permanent_claim = ROOT } 
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	LR1_finoa = {
+		icon = yamatai
+		position = 6
+		required_missions = { LR1_to_finoa } 
+		provinces_to_highlight = {
+			OR = { region = finoa_region } 
+			NOT = { country_or_non_sovereign_subject_holds = ROOT } 
+		}
+
+		trigger = {
+			finoa_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = "lr1_finoa"
+				duration = 10950
+			}
+			centaur_bay = {
+				limit = {
+					NOT = { is_core = ROOT } 
+					NOT = { is_permanent_claim = ROOT } 
+				}
+				add_permanent_claim = ROOT
+			}
+			hakoiri_area = {
+				limit = {
+					NOT = { is_core = ROOT } 
+					NOT = { is_permanent_claim = ROOT } 
+				}
+				add_permanent_claim = ROOT
+			}
+			hakoiri_plains = {
+				limit = {
+					NOT = { is_core = ROOT } 
+					NOT = { is_permanent_claim = ROOT } 
+				}
+				add_permanent_claim = ROOT
+			}
+			blue_frog_area = {
+				limit = {
+					NOT = { is_core = ROOT } 
+					NOT = { is_permanent_claim = ROOT } 
+				}
+				add_permanent_claim = ROOT
+			}
+			red_frog_area = {
+				limit = {
+					NOT = { is_core = ROOT } 
+					NOT = { is_permanent_claim = ROOT } 
+				}
+				add_permanent_claim = ROOT
+			}
+			yamatai_caves_region = {
+				limit = {
+					NOT = { is_core = ROOT } 
+					NOT = { is_permanent_claim = ROOT } 
+				}
+				add_permanent_claim = ROOT
+			}
+			spider_miko_area = {
+				limit = {
+					NOT = { is_core = ROOT } 
+					NOT = { is_permanent_claim = ROOT } 
+				}
+				add_permanent_claim = ROOT
+			}
+			yamata_no_orochi_cave = {
+				limit = {
+					NOT = { is_core = ROOT } 
+					NOT = { is_permanent_claim = ROOT } 
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	LR1_orochi = {
+		icon = orochi
+		position = 7
+		required_missions = { LR1_finoa } 
+		provinces_to_highlight = {
+			OR = {
+				region = yamatai_caves_region
+				area = spider_miko_area
+				are = yamata_no_orochi_cave
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT } 
+		}
+
+		trigger = {
+			yamatai_caves_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			spider_miko_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			yamata_no_orochi_cave = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = "lr1_orochi"
+				duration = -1
+			}
+		}
+	}
+}

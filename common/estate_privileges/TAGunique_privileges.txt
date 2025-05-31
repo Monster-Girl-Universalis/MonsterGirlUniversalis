@@ -82,7 +82,7 @@ estate_devastating_gale = {
 	} 
 	modifier = {
 			global_attacker_dice_roll_bonus = 1
-			can_bypass_forts = yes
+			global_defender_dice_roll_bonus = 1
 	}
 	cooldown_years = 2
 	on_cooldown_expires = {
@@ -146,7 +146,7 @@ estate_forbidden_art_nine_tails_funeral_pyre = {
 
 	modifier = {
 		country_military_power = -1
-		infantry_fire = 1.4
+		infantry_fire = 1
 		leader_land_fire = 1	
 	}
 	cooldown_years = 5

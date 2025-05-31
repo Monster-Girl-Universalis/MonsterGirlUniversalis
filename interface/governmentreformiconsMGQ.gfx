@@ -411,4 +411,16 @@ spriteTypes = {
 		name = "government_reform_divine_administration"
 		texturefile = "gfx//interface//government_reform_icons//divine_administration_reform.dds"
 	}
+	spriteType = {
+		name = "government_reform_defender_east"
+		texturefile = "gfx//interface//government_reform_icons//defender_east.dds"
+	}
+	spriteType = {
+		name = "government_reform_imperishable_faith"
+		texturefile = "gfx//interface//government_reform_icons//imperishable_faith.dds"
+	}
+	spriteType = {
+		name = "government_reform_divine_shrine_maiden"
+		texturefile = "gfx//interface//government_reform_icons//divine_shrine_maiden.dds"
+	}
 }

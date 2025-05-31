@@ -1,0 +1,29 @@
+country_decisions = {
+
+	SM1_change_back = {
+		color = { 255 0 127 }
+		potential = {
+			tag = IQ1
+			was_tag = SM1
+			mission_completed = SM1_united_yamatai
+			NOT =  {has_country_flag = has_changed_back_sm1}
+		}
+		allow = {
+			AND = {
+					tag = IQ1
+					was_tag = SM1
+					mission_completed = SM1_united_yamatai
+			}
+		}
+		effect = {
+			set_country_flag = has_changed_back_sm1
+			change_country_color = { 
+   			 color = { 255 255 255 }
+}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+}

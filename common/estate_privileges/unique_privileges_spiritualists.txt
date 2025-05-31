@@ -85,7 +85,7 @@ estate_zombie_settlements = {
 
 estate_zombie_education = {
 	icon = privilege_practice_necromancy
-	max_absolutism = -20
+	max_absolutism = -10
 	loyalty = 0.1
 	influence = 0.05
 	is_valid = {

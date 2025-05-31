@@ -1392,17 +1392,17 @@ SA1_ideas = {
 	free = yes
 
 	SA1_desert_warriors = {		
-		infantry_power = 0.15
-		army_tradition = 1
+		infantry_power = 0.10
+		land_attrition = -0.15
 	}
 	SA1_trade_hub = {		
 		trade_efficiency = 0.20
 	}
 	SA1_desert_fortifications = {
-		defensiveness = 0.15
+		garrison_size = 0.15
 	}
 	SA1_nomadic_heritage = {
-		cavalry_shock = 1
+		cavalry_shock = 0.75
 		cav_to_inf_ratio = 0.50
 	}
 	SA1_sandstorm_tactics = {
@@ -1410,10 +1410,11 @@ SA1_ideas = {
 		cavalry_flanking = 0.15
 	}
 	SA1_assasin_clan = {		
-		shock_damage = 0.15
+		shock_damage = 0.10
+		spy_offence = 0.15
 	}
 	SA1_finest_military = {
-		military_tactics = 0.25
+		army_tradition = 1.5
 	}
 }
 #Grandeur
@@ -2292,6 +2293,54 @@ CD1_ideas = {
 	}
 	CD1_straightforward_diplomacy = {
 		diplomatic_reputation = 1
+	}
+}
+#Spider Miko Realm
+SM1_ideas = {
+	start = {
+		manpower_in_true_faith_provinces = 0.33
+		infantry_power = 0.125
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+	
+	bonus = {
+		 	core_creation = -0.15
+	}
+	
+	trigger = {
+		OR = {
+			tag = SM1
+		}
+	}	
+	free = yes
+	
+	SM1_Offertory_Box = {
+		global_tax_modifier = 0.25
+	}
+	SM1_Faith_Is_For_The_Transient_People = {
+		global_missionary_strength = 0.02
+		missionaries = 1
+	}
+	SM1_White_And_Time_Magic = {
+		recover_army_morale_speed = 0.15
+		movement_speed = 0.10
+	}	
+	SM1_High_Magic_Power = {
+		fire_damage = 0.125
+	}
+	SM1_Spider_Architecture = {
+		build_time = -0.15
+		development_cost = -0.10
+	}
+	SM1_Spider_Silk_Production = {
+		production_efficiency = 0.15
+		global_trade_goods_size = 0.5
+	}
+	SM1_Taoist_Arts = {
+		morale_damage = 0.05
+		shock_damage = 0.125
 	}
 }
 #Iliasburg
@@ -3974,7 +4023,7 @@ LQD_ideas = {
 		infantry_shock = 1
 	}
 	LQD_mansion_development = {
-		development_cost_modifier = -0.15
+		development_cost_modifier = -0.10
 	}
 	LQD_advanced_ghost_army = {
 		morale_damage = 0.10

@@ -33,9 +33,9 @@ owner = ML1
 culture = Centaur_Girl
 controller = ML1
 trade_goods = iron
-latent_trade_goods = { 
-	coal 
-}
 discovered_by = TECH_FAIRY
 discovered_by = TECH_GHOST
 fort_15th = yes
+latent_trade_goods = { coal }
+1423.1.1 = { set_revolution_in_province = yes }
+1423.1.2 = { add_province_modifier = { name = chaos_level_1 duration = -1 desc = chaos_level_1_tooltip } }

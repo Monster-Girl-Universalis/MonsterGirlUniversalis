@@ -33,8 +33,8 @@ discovered_by = TECH_VAMPIRE
 discovered_by = TECH_YOUMA
 center_of_trade = 1
 trade_goods = copper
-latent_trade_goods = { 
-	coal 
-}
 discovered_by = TECH_FAIRY
 discovered_by = TECH_GHOST
+latent_trade_goods = { coal }
+1423.1.1 = { set_revolution_in_province = yes }
+1423.1.2 = { add_province_modifier = { name = chaos_level_1 duration = -1 desc = chaos_level_1_tooltip } }

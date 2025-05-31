@@ -1,0 +1,44 @@
+chaos_level_1 = { #Shuffling of terrain
+	local_monthly_devastation = 0.2
+	local_development_cost_modifier = 0.10
+	local_build_cost = 0.10
+	local_build_time = 0.25
+	local_hostile_movement_speed = 0.1
+	local_friendly_movement_speed = 0.1
+	
+}
+
+chaos_level_2 = { #Proliferation of Chaos Walls
+	attrition = 1
+	max_attrition = 1
+	local_monthly_devastation = 0.7
+	local_development_cost_modifier = 0.20
+	local_build_cost = 0.25
+	local_build_time = 0.50
+	local_hostile_movement_speed = 0.3
+	local_friendly_movement_speed = 0.3
+}
+
+chaos_level_3 = { #A Chaos Zone, Just pathways over a void
+	attrition = 5
+	max_attrition = 5
+	local_monthly_devastation = 1.2
+	local_development_cost_modifier = 0.50
+	local_build_cost = 2
+	local_build_time = 4
+	local_hostile_movement_speed = 1
+	local_friendly_movement_speed = 1
+	local_unrest = -10
+}
+
+chaos_level_4 = { #Almost completly void
+	attrition = 20
+	max_attrition = 20
+	local_monthly_devastation = 2.5
+	local_development_cost_modifier = 2
+	local_build_cost = 10
+	local_build_time = 10
+	local_hostile_movement_speed = 5
+	local_friendly_movement_speed = 5
+	local_unrest = -100
+}

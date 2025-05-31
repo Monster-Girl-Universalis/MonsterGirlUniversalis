@@ -1,4 +1,4 @@
-#58-South Ilias Tartarus entrance
+# 58-South Ilias Tartarus entrance
 culture = Insect_Apoptosis
 religion = chaos_religion
 trade_goods = iron
@@ -38,3 +38,5 @@ discovered_by = TECH_VAMPIRE
 discovered_by = TECH_YOUMA
 discovered_by = TECH_FAIRY
 discovered_by = TECH_GHOST
+1423.1.1 = { set_revolution_in_province = yes }
+1423.1.2 = { add_province_modifier = { name = chaos_level_1 duration = -1 desc = chaos_level_1_tooltip } }

@@ -1,4 +1,4 @@
-#Eastern Ilias Tartarus entrance
+# Eastern Ilias Tartarus entrance
 owner = RAP
 controller = RAP
 add_core = RAP
@@ -12,9 +12,6 @@ capital = "Eastern Ilias Tartarus entrance"
 is_city = yes
 extra_cost = 8
 center_of_trade = 1
-latent_trade_goods = { 
-	coal 
-}
 discovered_by = TECH_CHIMERA
 discovered_by = TECH_DOLL
 discovered_by = TECH_DRAGON
@@ -41,3 +38,33 @@ discovered_by = TECH_YOUMA
 discovered_by = TECH_FAIRY
 discovered_by = TECH_GHOST
 fort_15th = yes
+latent_trade_goods = { coal }
+1423.1.1 = { 
+    set_revolution_in_province = yes
+    set_revolution_in_province = yes
+    set_revolution_in_province = yes
+    set_revolution_in_province = yes
+    set_revolution_in_province = yes
+    set_revolution_in_province = yes
+    add_province_modifier = { 
+        name = chaos_level_1
+        duration = -1
+        desc = chaos_level_1_tooltip
+        name = chaos_level_1
+        name = chaos_level_1
+        duration = -1
+        desc = chaos_level_1_tooltip
+        name = chaos_level_1
+        duration = -1
+        desc = chaos_level_1_tooltip
+        name = chaos_level_1
+        duration = -1
+        desc = chaos_level_1_tooltip
+        name = chaos_level_1
+        duration = -1
+        desc = chaos_level_1_tooltip
+    }
+
+}
+
+1423.1.2 = { add_province_modifier = { name = chaos_level_1 duration = -1 desc = chaos_level_1_tooltip } }

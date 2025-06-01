@@ -13,7 +13,9 @@ bookmark =
 	country = PB1
 	country = ZA1
 	country = IW1
-	country = FC1
+	country = SC2
+	country = SC3
+	country = EL2
 	
 	easy_country = SH3
 	easy_country = IT1

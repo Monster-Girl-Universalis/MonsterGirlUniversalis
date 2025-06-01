@@ -510,7 +510,7 @@ estate_angels_build_workshop_in_y = {
 					num_free_building_slots = 1
 				}
 				AND = {
-					ROOT = { adm_tech = 19 }
+					ROOT = { adm_tech = 24 }
 					has_building = workshop
 				}
 			}
@@ -531,7 +531,7 @@ estate_angels_build_workshop_in_y = {
 							num_free_building_slots = 1
 						}
 						AND = {
-							ROOT = { adm_tech = 19 }
+							ROOT = { adm_tech = 24 }
 							has_building = workshop
 						}
 					}
@@ -550,7 +550,7 @@ estate_angels_build_workshop_in_y = {
 						num_free_building_slots = 1
 					}
 					AND = {
-						ROOT = { adm_tech = 19 }
+						ROOT = { adm_tech = 24 }
 						has_building = workshop
 					}
 				}
@@ -578,7 +578,7 @@ estate_angels_build_workshop_in_y = {
 						num_free_building_slots = 1
 					}
 					AND = {
-						ROOT = { adm_tech = 19 }
+						ROOT = { adm_tech = 24 }
 						has_building = workshop
 					}
 				}
@@ -596,7 +596,7 @@ estate_angels_build_workshop_in_y = {
 						num_free_building_slots = 1
 					}
 					AND = {
-						ROOT = { adm_tech = 19 }
+						ROOT = { adm_tech = 24 }
 						has_building = workshop
 					}
 				}
@@ -614,7 +614,7 @@ estate_angels_build_workshop_in_y = {
 						num_free_building_slots = 1
 					}
 					AND = {
-						ROOT = { adm_tech = 19 }
+						ROOT = { adm_tech = 24 }
 						has_building = workshop
 					}
 				}

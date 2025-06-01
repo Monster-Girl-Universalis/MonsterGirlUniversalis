@@ -1161,6 +1161,14 @@ MV1_worm_summoners_amplified = {
 	discipline = 0.03
 	morale_damage_received = -0.10
 }
+MV1_synergy_with_holy = {
+	military_tactics = 0.10
+	all_power_cost = -0.025
+}
+MV1_synergy_with_dark = {
+	morale_damage = 0.10
+	discipline = 0.025
+}
 
 ###Tower of Magic
 TM1_rebel_governance = {
@@ -1209,6 +1217,18 @@ TM1_synergy_with_earth = {
 	defensiveness = 0.10
 	land_attrition = -0.10
 }
+TM1_synergy_with_wind = {
+	movement_speed = 0.10
+	shock_damage = 0.05
+}
+TM1_synergy_with_water = {
+	naval_attrition = -0.15
+	fire_damage_received = -0.05
+}
+TM1_synergy_with_fire = {
+	morale_damage = 0.05
+	fire_damage = 0.05
+}
 
 ###Magistea
 
@@ -1225,18 +1245,25 @@ MV2_wasteland_warfare = {
 	fire_damage_received = -0.04
 	country_military_power = 2
 }
+MV2_arcane_empire = {
+	administrative_efficiency = 0.05
+	development_cost = -0.10
+	fire_damage = 0.15
+}
 
 ###Plansect
 AL4_plants_are_rallied = {
 	diplomatic_upkeep = 4
 	reduced_liberty_desire = 200
 	recover_army_morale_speed = 0.10
+	annexation_relations_impact = -1
 }
 ###Red Mountain
 RM1_insects_are_rallied = {
 	diplomatic_upkeep = 4
 	reduced_liberty_desire = 200
 	global_regiment_recruit_speed = -0.15
+	annexation_relations_impact = -1
 }
 
 ###Mithra Castle

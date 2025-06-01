@@ -210,7 +210,7 @@ magistea_central_branch = {
 		}
 	}
 	MV2_arcane_empire = {
-		icon = mission_arcane_empire
+		icon = mission_safina_region
 		required_missions = { MV2_decisive_victory_over_sabasa MV2_settle_the_islands MV2_safina_tartarus }
 		position = 10
 
@@ -221,7 +221,7 @@ magistea_central_branch = {
 		}		
 		trigger = {
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with= {
-				value = 200
+				value = 300
 				continent = safina
 			}
 

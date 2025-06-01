@@ -782,7 +782,7 @@ lucia_final_branch = {
 					value = 80
 				}
 				alliance_with = FS1
-				937 = { owned_by = ROOT }
+				640 = { owned_by = ROOT }
 			}
 		}
 		
@@ -800,7 +800,7 @@ lucia_final_branch = {
 		}
 	}	
 	TM1_research_of_water_spirit = {
-		icon = water_power
+		icon = undine_cave
 		required_missions = { }
 		position = 3
 		
@@ -811,7 +811,7 @@ lucia_final_branch = {
 					value = 80
 				}
 				alliance_with = UN1
-				937 = { owned_by = ROOT }
+				1401 = { owned_by = ROOT }
 			}
 		}
 		
@@ -830,7 +830,7 @@ lucia_final_branch = {
 		}
 	}	
 	TM1_research_of_fire_spirit = {
-		icon = fire_power
+		icon = salamander_fire
 		required_missions = { }
 		position = 4
 		
@@ -841,7 +841,7 @@ lucia_final_branch = {
 					value = 80
 				}
 				alliance_with = SL1
-				937 = { owned_by = ROOT }
+				1667 = { owned_by = ROOT }
 			}
 		}
 		

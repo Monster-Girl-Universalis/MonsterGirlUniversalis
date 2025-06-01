@@ -621,6 +621,10 @@
  desc_MV1_saloon_alchemy_materials: " "
  MV1_worm_summoners_amplified: "Worm Summoners Amplified"
  desc_MV1_worm_summoners_amplified: " "
+ MV1_synergy_with_holy: "Synergy with Holy"
+ desc_MV1_synergy_with_holy: " "
+ MV1_synergy_with_dark: "Synergy with Dark"
+ desc_MV1_synergy_with_dark: " "
 
  TM1_rebel_governance: "Rebel Governance"
  desc_TM1_rebel_governance: " "
@@ -644,6 +648,12 @@
  desc_TM1_saloon_earth_stones: " "
  TM1_synergy_with_earth: "Synergy with Earth"
  desc_TM1_synergy_with_earth: " "
+ TM1_synergy_with_wind: "Synergy with Wind"
+ desc_TM1_synergy_with_wind: " "
+ TM1_synergy_with_water: "Synergy with Water"
+ desc_TM1_synergy_with_water: " "
+ TM1_synergy_with_fire: "Synergy with Fire"
+ desc_TM1_synergy_with_fire: " "
 
  MV2_secured_grandeur_trade: "Secured Grandeur Trade"
  desc_MV2_secured_grandeur_trade: " "
@@ -651,6 +661,8 @@
  desc_MV2_safar_campaigns: " "
  MV2_wasteland_warfare: "Wasteland Warfare"
  desc_MV2_wasteland_warfare: " "
+ MV2_arcane_empire: "Arcane Empire"
+ desc_MV2_arcane_empire: " "
 
  AL4_plants_are_rallied: "Plants are Rallied"
  desc_AL4_plants_are_rallied: " "

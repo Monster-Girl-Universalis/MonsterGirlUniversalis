@@ -399,7 +399,7 @@
  white_rabbit_tips.222.t:0 "Doll Ideas"
  white_rabbit_tips.222.desc:0 "Doll is an administrative idea group.\nConstruction Time: §G-10.0%§!, Artillery Cost: §G-20.0%§!, Recruitment Time: §G-20.0%§!\nMilitary Tactics: §G+0.05§!\nArtillery Combat Ability: §G+20.0%§!, Artillery Levels Available vs Fort: §G+2§!\nReinforce Speed: §G+30.0%§!, Military Technology Cost: §G-5.0%§!\nFort Maintenance: §G-25.0%§!, Fort Defense: §G+10.0%§!\nConstruction Cost: §G-10.0%§!, National Unrest: §G-2.00§!\nLand Leader Maneuver: §G+1.00§!, Yearly Innovativeness: §G+0.25§!\nAmbition: Artillery Barrage Cost: §G-40.0%§!\nHas a policy with Apoptosis ideas."
  white_rabbit_tips.223.t:0 "Chimera Ideas"
- white_rabbit_tips.223.desc:0 "Chimera is an administrative idea group.\nTechnology Cost: §G-10.0%§!, Institution Spread: §G+50.0%§!\nMilitary Tactics: §G+0.05§!\nLand Attrition: §G-10.0%§!, Combat Penalty when landing: §G-1.00§!\nMilitary Possible Policies: §G+1§!, Military Free Policies: §G+1§!\nInnovativeness Gain: §G+25.0%§!, Yearly Innovativeness: §G+0.25§!\nArtillery Damage from Back Row: §G+10.0%§!\nConstruction Cost: §G-10.0%§!\nAmbition: Advisor Costs: §G-10.0%§!, Possible Advisors: §G+2§!\nHas a policy with Roid ideas."
+ white_rabbit_tips.223.desc:0 "Chimera is an administrative idea group.\nTechnology Cost: §G-10.0%§!, Institution Spread: §G+50.0%§!\nMilitary Tactics: §G+0.05§!\nLand Attrition: §G-10.0%§!, Combat Penalty when landing: §G-1.00§!\nMilitary Possible Policies: §G+1§!, Military Free Policies: §G+1§!\nInnovativeness Gain: §G+25.0%§!, Yearly Innovativeness: §G+0.25§!\nArtillery Damage from Back Row: §G+10.0%§!\nConstruction Cost: §G-10.0%§!\nAmbition: Advisor Costs: §G-10.0%§!, Possible Advisors: §G+2§!\nHas policies with Roid, Apoptosis, Sea Dweller, Beast, Slime, Scylla, Undead, Angel, Human, Alraune, Elf, Lamia, Land Dweller and Insect ideas."
  white_rabbit_tips.224.t:0 "Angel Ideas"
  white_rabbit_tips.224.desc:0 "Angel is a diplomatic idea group.\nOpinion od Country from others of the same Religion: §G+35§!\nAll Estates' Loyalty Equilibrium: §G+10.0%§!, Max Privileges per Estate: §G+1.00§!, Clergy Loyalty Equilibrium: §G+5.0%§!\nManpower in True Faith provinces: §G+30.0%§!, Morale of Armies: §G+0.50§!\nPower Projection from Insults: §G+100.0%§!, Cost of Advisors with Ruler's Religion: §G-20.0%§!\nTolerance of the True Faith: §G+3.00§!\nOverextension Impact Modifier: §G-10.0%§!\nGlobal Monthly Devastation: §G-0.15§!\nAmbition: Maximum Absolutism: §G+10.00§!\nHas policies with Alraune, Undead and Apoptosis ideas."
  white_rabbit_tips.225.t:0 "Roid Ideas"
@@ -428,7 +428,7 @@
  white_rabbit_tips.304.desc:0 "Apoptosis are like cosmic cleaners wiping out paradoxes and unwanted visitors from other worlds. Most nations don’t get this estate unless they’re, y’know, Chaos religion types with the right government setup.\nInstead of lots of estates, they usually have just this one, but it’s packed with powerful military and utility bonuses as well as monarch points. They also get extra stuff based on which Apoptosis cultures they’ve accepted! So if you build a big Apoptosis empire, you get all kinds of fun toys to play with!"
 
  white_rabbit_tips.4.t:0 "Mission Trees"
- white_rabbit_tips.4.desc:0 "Looking for nations with fancy mission trees? Oho~ I’ve got you covered!\nHuge Mission trees: Monster Lord Domain, Slug Girl Realm -> Slug Queen\nBig Mission Trees: Kitsune Village, San Ilia, Enrika, Haunted Mansion.\nAverage Mission Trees: Roach Tower, Sheep Island (attention, it's a troll nation!)\nAll other nations have generic MTs slightly different depending on their race."
+ white_rabbit_tips.4.desc:0 "Looking for nations with fancy mission trees? Oho~ I’ve got you covered!\nHuge Mission trees: Monster Lord Domain, Slug Girl Realm -> Slug Queen\nBig Mission Trees: Kitsune Village, San Ilia, Enrika, Haunted Mansion, Lily's Faction, Tower of Magic, Wolf Girl Realm, Lamia Realm, Spider Miko Realm.\nAverage Mission Trees: Roach Tower, Sheep Island (attention, it's a troll nation!).\nAll other nations have generic MTs slightly different depending on their race."
 
  white_rabbit_tips.5.t:0 "Religions"
  white_rabbit_tips.5.desc:0 "You want to learn about religions in MGQ world? I will answer to the best of my ability!"
@@ -1006,8 +1006,15 @@ gen_mgq_flavor.31.c: "Send aid to minimize the damage!"
  flavor_TM1.2.desc:0 "Lucia has succeeded in reuniting Magistea, but it came at a cost. The chaos unleashed by unrestricted worm summoning has been brought under control, and Lady Lucia's vision of a disciplined, ethical use of magic now guides the land. The Tower of Magic stands firm as a symbol of reason amidst past madness. Though Lily was once a dear friend, her descent into delusion and fanaticism could not be left unchecked. Now, with order restored and dangerous magics curtailed, Magistea can finally begin to heal. A wiser, more cautious future lies ahead."
  flavor_TM1.2.a:0 "Peace at last"
 
- ###FLAVOR FOR MAGISTEA###
+ ###FLAVOR FOR PLANSECT###
+ flavor_al4.1.t:0 "Plants are Rallied"
+ flavor_al4.1.desc:0 "Plansect Village is a place where many plant-based monsters live in harmony. Once, insects also coexisted peacefully here. However, recent violent conflicts between the Alra Priestess and Queen Bee have torn the region apart, plunging the once-serene forest into growing chaos. The insects have fled to Red Mountain, while the plants remain behind. As relations between the two races continue to deteriorate, hostility spreads to neighboring settlements in the Plansect Forest. The fragile armistice is crumbling, and both sides are now building fortifications and rallying under their respective leaders — the Alra Priestess for the plants, and Queen Bee for the insects."
+ flavor_al4.1.a:0 "Great"
 
+ ###FLAVOR FOR RED MOUNTAIN###
+ flavor_rm1.1.t:0 "Insects are Rallied"
+ flavor_rm1.1.desc:0 "Driven from their ancient home in Plansect Village, the insect monsters have taken refuge in the harsh, rocky terrain of Red Mountain. Though the environment is unforgiving, Queen Bee’s leadership has united the scattered insect tribes. Encampments are being fortified, hives reconstructed, and warriors trained for the inevitable confrontation with the plant faction. The memory of betrayal and displacement fuels their determination. As tensions rise across the forest, the insects prepare for war and for reclaiming what was once theirs."
+ flavor_rm1.1.a:0 "Great"
 
  ###FLAVOR FOR GENERICS###
  flavor_generic.1.t:0 "Advanced Bioengineering"

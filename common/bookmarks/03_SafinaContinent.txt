@@ -7,18 +7,19 @@ bookmark =
 	center = 744
 
 	country = SA1
-	country = EL1
-	country = AR1
-	country = PY1
 	country = MV1
 	country = TM1
+	country = PY1
+	country = EL1
+	country = FQ1
 	country = FP1
-	country = MR2
+	country = SR2
 	country = VA3
+	country = SH1
 	
 	easy_country = SA1
-	easy_country = EL1
-	easy_country = AR1
+	easy_country = MV1
+	easy_country = TM1
 	easy_country = PY1
 	
 }

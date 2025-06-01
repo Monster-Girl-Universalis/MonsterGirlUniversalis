@@ -1,6 +1,6 @@
 #Country Name: Sonyachaos.
 
-graphical_culture = apoptosisgfx
+graphical_culture = asiangfx
 
 color = { 87  7 175 }
 revolutionary_colors = { 16  16  16 }

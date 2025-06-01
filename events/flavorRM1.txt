@@ -16,16 +16,11 @@ country_event = {
 
 	option = {	#Great.
 		name = flavor_rm1.1.a
-		add_country_modifier = {
-			name = "RM1_insects_are_rallied"
-			duration = 10950
+		tooltip = {
+			add_country_modifier = {
+				name = "RM1_insects_are_rallied"
+				duration = 10950
+			}
 		}
-		vassalize = IN1
-		vassalize = IN2
-		vassalize = IN3
-		vassalize = IN4
-		vassalize = IN5
-		vassalize = IN6
-		vassalize = IN7
 	}
 }

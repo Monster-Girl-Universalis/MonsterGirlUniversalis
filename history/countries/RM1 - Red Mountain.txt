@@ -16,3 +16,9 @@ technology_group = TECH_INSECT
 	}
 }
 capital = 1329
+1444.1.1 = { 
+	add_country_modifier = {
+		name = "RM1_insects_are_rallied"
+		duration = 10950
+	}
+}

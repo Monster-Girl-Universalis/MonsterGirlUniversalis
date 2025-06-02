@@ -734,6 +734,7 @@ slu_conquest_branch2 = {
 				add_permanent_claim = ROOT
 			}
 			unlock_race = { race = human }
+		}
 	}
 	SLU_mission_1_11 = { 
 		icon = mission_hegemon_slug 
@@ -1039,7 +1040,6 @@ slu_conquest_branch3 = {
 				add_permanent_claim = ROOT
 			}
 			unlock_race = { race = harpy }
-}
 		}
 	}
 	slu_estates = { 

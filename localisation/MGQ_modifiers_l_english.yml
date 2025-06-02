@@ -669,6 +669,9 @@
 
  RM1_insects_are_rallied: "Insects are Rallied"
  desc_RM1_insects_are_rallied: " "
+ 
+ rallied_vassal: "Rallied Vassal"
+ desc_rallied_vassal: " "
 
  ###MITHRA CASTLE### 
  Mithra_Thunder_Retribution_Fist: "Thunder Retribution Fist"

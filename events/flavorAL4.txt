@@ -21,5 +21,11 @@ country_event = {
 				name = "AL4_plants_are_rallied"
 				duration = 10950
 			}
+			every_subject_country = { 
+				add_country_modifier = {
+					name = "rallied_vassal"
+					duration = 10950
+				}
+			}
 		}
 }

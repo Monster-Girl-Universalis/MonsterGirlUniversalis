@@ -1266,6 +1266,13 @@ RM1_insects_are_rallied = {
 	annexation_relations_impact = -1
 }
 
+rallied_vassal = {
+	land_forcelimit = 3
+	land_maintenance_modifier = -0.25
+}
+
+
+
 ###Mithra Castle
 Mithra_Thunder_Retribution_Fist = {
 	infantry_power = 0.15

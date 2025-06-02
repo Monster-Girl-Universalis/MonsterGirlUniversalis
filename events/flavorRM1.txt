@@ -21,6 +21,12 @@ country_event = {
 				name = "RM1_insects_are_rallied"
 				duration = 10950
 			}
+			every_subject_country = { 
+				add_country_modifier = {
+					name = "rallied_vassal"
+					duration = 10950
+				}
+			}
 		}
 	}
 }

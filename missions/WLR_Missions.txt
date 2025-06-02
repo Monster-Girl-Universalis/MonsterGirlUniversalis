@@ -2,7 +2,7 @@
 # Missions for Wolf Girl Realm Realm by Cris
 ########################################
 
-sm1_branch_1 = {
+wlr_branch_1 = {
 	slot = 1
 	generic = no
 	ai = yes
@@ -143,7 +143,7 @@ sm1_branch_1 = {
 		}
 	}
 }
-sm1_branch_2 = {
+wlr_branch_2 = {
 	slot = 2
 	generic = no
 	ai = yes
@@ -758,7 +758,7 @@ wlr_branch_3 = {
 		}
 	}
 }
-sm1_branch_4 = {
+wlr_branch_4 = {
 	slot = 4
 	generic = no
 	ai = yes
@@ -920,7 +920,7 @@ sm1_branch_4 = {
 		}
 	}
 }
-sm1_branch_5 = {
+wlr_branch_5 = {
 	slot = 5
 	generic = no
 	ai = yes

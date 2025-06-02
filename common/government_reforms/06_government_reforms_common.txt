@@ -2394,6 +2394,29 @@ forbidden_puppetry_reform = {
 		factor = 1
 	}
 }
+divine_shrine_maiden = {
+	lock_level_when_selected = no
+	icon = "divine_shrine_maiden"
+	allow_normal_conversion = no
+	potential = {
+	mission_completed = SM1_opposites
+	}
+	valid_for_new_country = no
+	valid_for_nation_designer = yes
+	nation_designer_cost = 40
+	legacy_equivalent = ottoman_government_legacy
+	modifiers = {
+		tolerance_own = 2
+	}
+	custom_attributes = {
+		enables_divine_idea_group = yes
+	}
+	conditional = {
+		allow = { has_dlc = "Rights of Man" }
+		has_harem = yes
+	}
+}
+
 #Military Doctrines
 organized_military_staff_reform = {
 	icon = "organized_military_staff"

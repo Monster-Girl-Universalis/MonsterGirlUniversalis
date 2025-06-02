@@ -1,6 +1,6 @@
 government = monarchy
 government_rank = 1
-primary_culture = Ghost_Girl
+primary_culture = Candle_Girl
 add_government_reform = Ghost_realm
 religion = monster_lord_religion
 technology_group = TECH_GHOST

@@ -1,5 +1,5 @@
 #North Rostrum fields
-culture = Ghost_Girl
+culture = Candle_Girl
 religion = monster_lord_religion
 trade_goods = cotton
 base_tax = 2

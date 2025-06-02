@@ -1,0 +1,157 @@
+sm1_kappa = {
+	land_morale = 0.10
+	infantry_power = 0.10
+}
+sm1_kunoici_elf = {
+	manpower_recovery_speed = 0.25
+	shock_damage_received = -0.10
+}
+sm1_elf_pal = {
+	num_accepted_cultures = 1
+}
+sm1_kappa_pal = {
+	num_accepted_cultures = 1
+}
+sm1_cave = {
+	own_territory_dice_roll_bonus = 1
+	defensiveness = 0.15
+}
+sm1_orochi_1 = {
+	global_manpower_modifier = 0.25
+	land_forcelimit = 10
+}
+sm1_horai = {
+	assault_fort_cost_modifier = -0.25
+	assault_fort_ability = 0.25
+	siege_ability = 0.05
+}
+sm1_orochi_2 = {
+	ae_impact = -0.2
+}
+sm1_orochi_3 = {
+	idea_cost = -0.15
+}
+sm1_nure_onna = {
+	infantry_shock = 0.5
+	unjustified_demands = -0.2
+}
+sm1_nure_onna_pal = {
+	num_accepted_cultures = 1
+}
+sm1_tamamo = {
+	province_warscore_cost = -0.1
+	core_creation = -0.15
+}
+sm1_kitsune_tanuki = {
+	num_accepted_cultures = 3
+}
+sm1_devotion_cats = {
+	build_time = -0.05
+	global_unrest = -1
+	stability_cost_modifier = -0.3
+}
+sm1_devotion_tanuki = {
+	trade_efficiency = 0.05
+	idea_cost = -0.05
+	stability_cost_modifier = -0.3
+}
+sm1_devotion_foxes = {
+	build_cost = -0.05
+	shock_damage_received = -0.05
+	stability_cost_modifier = -0.3
+}
+sm1_devotion_snakes = {
+	infantry_shock = 0.1
+	morale_damage = 0.05
+	stability_cost_modifier = -0.3
+}
+sm1_devotion_rats = {
+	hostile_attrition = 1
+	land_attrition = -0.10
+	prestige_decay = 0.01
+	stability_cost_modifier = -0.3
+}
+sm1_conversion = {
+	global_missionary_strength = 0.03
+	missionary_maintenance_cost = -0.3
+	manpower_in_true_faith_provinces = 0.20
+}
+sm1_spirit_girl = {
+	global_tax_modifier = 0.30
+}
+sm1_spirit_pal = {
+	num_accepted_cultures = 1
+}
+sm1_youkai = {
+	inflation_reduction = 0.1
+	interest = -1
+}
+sm1_youkai_pal = {
+	num_accepted_cultures = 1
+}
+sm1_yamatai = {
+	global_tax_income = 24
+}
+sm1_human_pal = {
+	num_accepted_cultures = 1
+}
+sm1_super_youkai_pal = {
+	num_accepted_cultures = 3
+}
+sm1_neko_pal = {
+	diplomatic_reputation = 2
+	num_accepted_cultures = 1
+}
+sm1_succubus = {
+	movement_speed = 0.05
+	morale_damage = 0.05
+}
+sm1_harpy = {
+	movement_speed = 0.05
+	shock_damage_received = -0.05
+}
+sm1_scylla = {
+	movement_speed = 0.05
+	discipline = 0.025
+}
+sm1_elf = {
+	movement_speed = 0.05
+	shock_damage = 0.05
+}
+sm1_arachne = {
+	infantry_power = 0.10
+	global_regiment_cost = -0.10
+}
+sm1_united_yamatai = {
+	development_cost = -0.1
+	trade_efficiency = 0.1
+}
+sm1_noah = {
+	discipline = 0.05
+}
+sm1_repel_noah = {
+	manpower_recovery_speed = 0.30
+	army_tradition_decay = -0.05
+}
+sm1_conquer_noah = {
+	land_attrition = -0.10
+	recover_army_morale_speed = 0.10
+}
+sm1_plansect_1 = {
+	province_warscore_cost = -0.10
+	ae_impact = -0.2
+}
+sm1_plansect_2 = {
+	free_adm_policy = 1
+	possible_adm_policy = 1
+	global_unrest = -1.50
+}
+sm1_united_noah = {
+	administrative_efficiency = 0.05
+	discipline = 0.05
+	governing_capacity_modifier = 0.1
+	max_absolutism = 15
+}
+sm1_spider_shrine = {
+	local_tax_modifier = 0.30
+}

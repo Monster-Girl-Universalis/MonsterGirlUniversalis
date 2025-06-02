@@ -16,3 +16,9 @@ technology_group = TECH_ALRAUNE
 }
 add_government_reform = Alraune_realm
 capital = 1360
+1444.1.1 = { 
+	add_country_modifier = {
+		name = "rallied_vassal"
+		duration = 10950
+	}
+}

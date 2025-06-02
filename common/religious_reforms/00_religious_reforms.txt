@@ -133,16 +133,16 @@ chaos_religion_reforms = {
 		years_of_nationalism = -5
 	}
 	chaos_religion_reform_3 = {
-		defensiveness = 0.30
-		land_attrition = -0.30
+		defensiveness = 0.15
+		land_attrition = -0.15
 	}
 	chaos_religion_reform_4 = {
-		morale_damage_received = -0.15
-		military_tactics = 0.20
+		morale_damage_received = -0.10
+		military_tactics = 0.10
 	}
 	chaos_religion_reform_5 = {
 		all_power_cost = -0.05
-		artillery_fire = 0.75
+		artillery_fire = 0.5
 	}	
 	
 	ai_will_do = {

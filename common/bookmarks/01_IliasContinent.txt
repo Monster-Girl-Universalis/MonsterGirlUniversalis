@@ -7,18 +7,19 @@ bookmark =
 	center = 41
 
 	country = ENV
+	country = SLR
 	country = ILB
 	country = HRT
-	country = SLT
 	country = WLR
-	country = IMR
-	country = SLR
 	country = RMA
-	country = SLU
+	country = SSP
+	country = RAP
+	country = IMR
+	country = HVB
 	
 	easy_country = ENV
+	easy_country = SLR
 	easy_country = ILB
 	easy_country = HRT
-	easy_country = SLT
 	
 }

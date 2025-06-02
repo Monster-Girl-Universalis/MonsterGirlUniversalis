@@ -188,8 +188,8 @@ spiritualists_mass_slow = {
 	local_defensiveness = 0.15
 }
 raise_master_undead = {
-	morale_damage_received = -0.25
-	discipline = 0.06
+	morale_damage_received = -0.10
+	discipline = 0.04
 	is_streltsy_modifier = yes
 }
 

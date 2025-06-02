@@ -153,7 +153,7 @@ mgq_angel_alraune = { #Angel+Alraune
 		full_idea_group = angel_ideas
 		full_idea_group = alraune_ideas 
 	}
-	province_warscore_cost = -0.20
+	province_warscore_cost = -0.15
 
 	ai_will_do = {
 		factor = 1
@@ -427,7 +427,225 @@ mgq_chimeraroids = { #Chimera+Roid
 		full_idea_group = roid_ideas
 		full_idea_group = chimera_ideas 
 	}
-	administrative_efficiency = 0.075
+	administrative_efficiency = 0.05
+	development_cost_modifier = -0.05
+	ai_will_do = {
+		factor = 1
+	}
+}
+mgq_chimera_apoptosis = { #Chimera+Apoptosis
+	monarch_power = ADM
+
+	potential = {
+		has_idea_group = apoptosis_ideas
+		has_idea_group = chimera_ideas 
+	}
+	allow = {
+		full_idea_group = apoptosis_ideas
+		full_idea_group = chimera_ideas 
+	}
+	apoptosis_privilege_slots = 2
+	culture_conversion_cost = -0.10
+	ai_will_do = {
+		factor = 1
+	}
+}
+mgq_chimera_slime = { #Chimera+Slime
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = slime_ideas
+		has_idea_group = chimera_ideas 
+	}
+	allow = {
+		full_idea_group = slime_ideas
+		full_idea_group = chimera_ideas 
+	}
+	culture_conversion_time = -0.25
+	ai_will_do = {
+		factor = 1
+	}
+}
+mgq_chimera_sea_dweller = { #Chimera+Sea_Dweller
+	monarch_power = MIL
+
+	potential = {
+		has_idea_group = sea_dweller_ideas
+		has_idea_group = chimera_ideas 
+	}
+	allow = {
+		full_idea_group = sea_dweller_ideas
+		full_idea_group = chimera_ideas 
+	}
+	capture_ship_chance = 0.33
+	ai_will_do = {
+		factor = 1
+	}
+}
+mgq_chimera_angel = { #Chimera+Angel
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = angel_ideas
+		has_idea_group = chimera_ideas 
+	}
+	allow = {
+		full_idea_group = angel_ideas
+		full_idea_group = chimera_ideas 
+	}
+	same_culture_advisor_cost = -0.25
+	ai_will_do = {
+		factor = 1
+	}
+}
+mgq_chimera_undead = { #Chimera+Undead
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = undead_ideas
+		has_idea_group = chimera_ideas 
+	}
+	allow = {
+		full_idea_group = undead_ideas
+		full_idea_group = chimera_ideas 
+	}
+	regiment_manpower_usage = -0.10
+	special_unit_forcelimit = 0.10
+	ai_will_do = {
+		factor = 1
+	}
+}
+mgq_chimera_human = { #Chimera+Human
+	monarch_power = ADM
+
+	potential = {
+		has_idea_group = human_ideas
+		has_idea_group = chimera_ideas 
+	}
+	allow = {
+		full_idea_group = human_ideas
+		full_idea_group = chimera_ideas 
+	}
+	technology_cost = -0.10
+	reform_progress_growth = 0.1
+	ai_will_do = {
+		factor = 1
+	}
+}
+mgq_chimera_beast = { #Chimera+Beast
+	monarch_power = MIL
+
+	potential = {
+		has_idea_group = beast_ideas
+		has_idea_group = chimera_ideas 
+	}
+	allow = {
+		full_idea_group = beast_ideas
+		full_idea_group = chimera_ideas 
+	}
+	infantry_power = 0.15
+	infantry_shock = 0.15
+	ai_will_do = {
+		factor = 1
+	}
+}
+mgq_chimera_scylla = { #Chimera+Scylla
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = scylla_ideas
+		has_idea_group = chimera_ideas 
+	}
+	allow = {
+		full_idea_group = scylla_ideas
+		full_idea_group = chimera_ideas 
+	}
+	naval_attrition = -0.25
+	transport_attrition = -0.50
+	ai_will_do = {
+		factor = 1
+	}
+}
+mgq_chimera_insect = { #Chimera+Insect
+	monarch_power = MIL
+
+	potential = {
+		has_idea_group = insect_ideas
+		has_idea_group = chimera_ideas 
+	}
+	allow = {
+		full_idea_group = insect_ideas
+		full_idea_group = chimera_ideas 
+	}
+	land_attrition = -0.25
+	transport_attrition = -0.25
+	ai_will_do = {
+		factor = 1
+	}
+}
+mgq_chimera_plant = { #Chimera+Alraune
+	monarch_power = ADM
+
+	potential = {
+		has_idea_group = alraune_ideas
+		has_idea_group = chimera_ideas 
+	}
+	allow = {
+		full_idea_group = alraune_ideas
+		full_idea_group = chimera_ideas 
+	}
+	development_cost = -0.05
+	manpower_recovery_speed = 0.15
+	ai_will_do = {
+		factor = 1
+	}
+}
+mgq_chimera_lamia = { #Chimera+Lamia
+	monarch_power = ADM
+
+	potential = {
+		has_idea_group = lamia_ideas
+		has_idea_group = chimera_ideas 
+	}
+	allow = {
+		full_idea_group = lamia_ideas
+		full_idea_group = chimera_ideas 
+	}
+	administrative_efficiency = 0.02
+	all_power_cost = -0.02
+	ai_will_do = {
+		factor = 1
+	}
+}
+mgq_chimera_land_dweller = { #Chimera+Land_Dweller
+	monarch_power = ADM
+
+	potential = {
+		has_idea_group = land_dweller_ideas
+		has_idea_group = chimera_ideas 
+	}
+	allow = {
+		full_idea_group = land_dweller_ideas
+		full_idea_group = chimera_ideas 
+	}
+	build_time = -0.15
+	ai_will_do = {
+		factor = 1
+	}
+}
+mgq_chimera_elf = { #Chimera+Elf
+	monarch_power = MIL
+
+	potential = {
+		has_idea_group = elf_ideas
+		has_idea_group = chimera_ideas 
+	}
+	allow = {
+		full_idea_group = elf_ideas
+		full_idea_group = chimera_ideas 
+	}
+	shock_damage = 0.15
+	infantry_shock = 0.15
 	ai_will_do = {
 		factor = 1
 	}

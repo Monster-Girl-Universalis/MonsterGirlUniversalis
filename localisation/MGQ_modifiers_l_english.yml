@@ -621,6 +621,10 @@
  desc_MV1_saloon_alchemy_materials: " "
  MV1_worm_summoners_amplified: "Worm Summoners Amplified"
  desc_MV1_worm_summoners_amplified: " "
+ MV1_synergy_with_holy: "Synergy with Holy"
+ desc_MV1_synergy_with_holy: " "
+ MV1_synergy_with_dark: "Synergy with Dark"
+ desc_MV1_synergy_with_dark: " "
 
  TM1_rebel_governance: "Rebel Governance"
  desc_TM1_rebel_governance: " "
@@ -644,6 +648,12 @@
  desc_TM1_saloon_earth_stones: " "
  TM1_synergy_with_earth: "Synergy with Earth"
  desc_TM1_synergy_with_earth: " "
+ TM1_synergy_with_wind: "Synergy with Wind"
+ desc_TM1_synergy_with_wind: " "
+ TM1_synergy_with_water: "Synergy with Water"
+ desc_TM1_synergy_with_water: " "
+ TM1_synergy_with_fire: "Synergy with Fire"
+ desc_TM1_synergy_with_fire: " "
 
  MV2_secured_grandeur_trade: "Secured Grandeur Trade"
  desc_MV2_secured_grandeur_trade: " "
@@ -651,12 +661,17 @@
  desc_MV2_safar_campaigns: " "
  MV2_wasteland_warfare: "Wasteland Warfare"
  desc_MV2_wasteland_warfare: " "
+ MV2_arcane_empire: "Arcane Empire"
+ desc_MV2_arcane_empire: " "
 
  AL4_plants_are_rallied: "Plants are Rallied"
  desc_AL4_plants_are_rallied: " "
 
  RM1_insects_are_rallied: "Insects are Rallied"
  desc_RM1_insects_are_rallied: " "
+ 
+ rallied_vassal: "Rallied Vassal"
+ desc_rallied_vassal: " "
 
  ###MITHRA CASTLE### 
  Mithra_Thunder_Retribution_Fist: "Thunder Retribution Fist"
@@ -758,6 +773,7 @@
  EST_VAL_SPIRITUALISTS_DECLINE: "Decline of Spiritualists"
  desc_EST_VAL_SPIRITUALISTS_DECLINE: " "
 
+
  ###CHANGE ASPECT OR SHRINE### 
  change_deity_wind_mod: "Recently Changed Wind Aspect"
  desc_change_deity_wind_mod: " "
@@ -775,12 +791,35 @@
  desc_change_deity_lightning_mod: " "
  change_deity_cosmos_mod: "Recently Changed Cosmos Aspect"
  desc_change_deity_cosmos_mod: " "
+ 
+ ###SHRINE TOOLTIP### 
+ cat_shrines_tooltip: "Powerful Cat Shrine"
+ tanuki_shrines_tooltip: "Powerful Tanuki Shrine"
+ fox_shrines_tooltip: "Powerful Fox Shrine"
+ snake_shrines_tooltip: "Powerful Snake Shrine"
+ ilias_shrines_tooltip: "Powerful Ilias Shrine"
+ monster_lord_shrines_tooltip: "Powerful Monster Lord Shrine"
+ chaos_shrines_tooltip: "Powerful Chaos Shrine"
+ sylph_shrines_tooltip: "Powerful Slyph Shrine"
+ gnome_shrines_tooltip: "Powerful Gnome Shrine"
+ undine_shrines_tooltip: "Powerful Undine Shrine"
+ salamander_shrines_tooltip: "Powerful Salamander Shrine"
+ ice_shrines_tooltip: "Powerful Ice Shrine"
+ lightning_shrines_tooltip: "Powerful Lightning Shrine"
+ cosmos_shrines_tooltip: "Powerful Cosmos Shrine"
+ science_shrines_tooltip: "Powerful Science Shrine"
+ rat_shrines_tooltip: "Powerful Rat Shrine"
+ kirin_shrines_tooltip: "Powerful Kirin Shrine"
+ amaterasu_shrines_tooltip: "Powerful Amaterasu Shrine"
+ izanami_shrines_tooltip: "Powerful Izanami Shrine"
 
  ###RACIAL INTEGRATION### 
  human_integration_mod: "Integration of human race"
  desc_human_integration_mod: " "
  undead_integration_mod: "Integration of undead race"
  desc_undead_integration_mod: " "
+ ghost_integration_mod: "Integration of ghost race"
+ desc_ghost_integration_mod: " "
  land_dweller_integration_mod: "Integration of land dweller race"
  desc_land_dweller_integration_mod: " "
  succubi_integration_mod: "Integration of succubi race"
@@ -793,6 +832,8 @@
  desc_alraune_integration_mod: " "
  elf_integration_mod: "Integration of elf race"
  desc_elf_integration_mod: " "
+ fairy_integration_mod: "Integration of fairy race"
+ desc_fairy_integration_mod: " "
  beast_integration_mod: "Integration of beast race"
  desc_beast_integration_mod: " "
  insect_integration_mod: "Integration of insect race"
@@ -827,3 +868,5 @@
  desc_roid_integration_mod: " "
  tanuki_integration_mod: "Integration of tanuki race"
  desc_tanuki_integration_mod: " "
+ giant_integration_mod: "Integration of giant race"
+ desc_giant_integration_mod: " "

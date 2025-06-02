@@ -136,6 +136,7 @@ monarchy = {
 				sheep_island_reform 
 				sheep_island_great_company_reform
 				antlion_reform
+				Defender_east
 
 				#kagetsumugi_reform 
 				#promestein_reform 
@@ -184,6 +185,7 @@ monarchy = {
 				lamia_nobility_reform 
 				scylla_nobility_reform 
 				angel_nobility_reform 
+				antlion_nobility_reform 
 			}
 		}
 		bureaucracy = {
@@ -275,6 +277,7 @@ monarchy = {
 				guardian_butterfly_cults_reform
 				alliance_of_wisdom_reform
 				forbidden_puppetry_reform
+				divine_shrine_maiden 
 				
 			}
 		}
@@ -450,6 +453,8 @@ monarchy = {
 				two_treatises_reform
 				the_leviathan_reform
 				the_social_contract_reform
+				#MGQ
+				Imperishable_faith
 			}
 		}
 		absolute_rule_vs_constitutional = {
@@ -795,6 +800,7 @@ republic = {
 				guardian_butterfly_cults_reform
 				alliance_of_wisdom_reform
 				forbidden_puppetry_reform
+				divine_shrine_maiden
 			}
 		}
 		military_doctrines = {
@@ -1373,6 +1379,7 @@ theocracy = {
 				guardian_butterfly_cults_reform
 				alliance_of_wisdom_reform
 				forbidden_puppetry_reform
+				divine_shrine_maiden
 			}
 		}
 		military_doctrines = {

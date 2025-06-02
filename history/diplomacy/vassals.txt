@@ -47,3 +47,82 @@ vassal = {
 	second = CH2 #Chimera Coast
 	start_date = 1444.1.1 
 }
+
+#Plansect Village
+vassal = {
+	first = AL4 #Plansect Village
+	second = AL5 #Alra Arum
+	start_date = 1444.1.1 
+}
+vassal = {
+	first = AL4 #Plansect Village
+	second = AL6 #Alra Rooty
+	start_date = 1444.1.1 
+}
+vassal = {
+	first = AL4 #Plansect Village
+	second = AL7 #Alra Boa
+	start_date = 1444.1.1 
+}
+vassal = {
+	first = AL4 #Plansect Village
+	second = AL8 #Alra Parasol
+	start_date = 1444.1.1 
+}
+vassal = {
+	first = AL4 #Plansect Village
+	second = AL9 #Alra Prison
+	start_date = 1444.1.1 
+}
+vassal = {
+	first = AL4 #Plansect Village
+	second = AL0 #Alra Shroom
+	start_date = 1444.1.1 
+}
+march = {
+	first = AL4 #Plansect Village
+	second = CA1 #Canaan Sisters
+	start_date = 1444.1.1 
+}
+
+#Red Mountain
+vassal = {
+	first = RM1 #Red Mountain
+	second = IN1 #Moth Girl Realm
+	start_date = 1444.1.1 
+}
+vassal = {
+	first = RM1 #Red Mountain
+	second = IN2 #Mosquito Girl Realm
+	start_date = 1444.1.1 
+}
+vassal = {
+	first = RM1 #Red Mountain
+	second = IN3 #Caterpiliar Girl Realm
+	start_date = 1444.1.1 
+}
+vassal = {
+	first = RM1 #Red Mountain
+	second = IN4 #Hornet Girl Realm
+	start_date = 1444.1.1 
+}
+vassal = {
+	first = RM1 #Red Mountain
+	second = IN5 #Red Hornet Realm
+	start_date = 1444.1.1 
+}
+vassal = {
+	first = RM1 #Red Mountain
+	second = IN5 #Moth Girl Realm
+	start_date = 1444.1.1 
+}
+vassal = {
+	first = RM1 #Red Mountain
+	second = IN6 #Mantis Girl Realm
+	start_date = 1444.1.1 
+}
+vassal = {
+	first = RM1 #Red Mountain
+	second = IN7 #Silkworm Girl Realm
+	start_date = 1444.1.1 
+}

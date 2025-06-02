@@ -81,32 +81,6 @@ ldq_mission_branch1 = {
 			}
 		}
 	}
-	ldq_roach_tower = { 
-		icon = roach_tower_irredentism
-		required_missions = {}
-		position = 10
-		provinces_to_highlight = {
-			OR ={
-				area = roach_tower
-			}
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
-		}
-        generic = no
-		trigger = {
-			tag = LDQ
-			has_country_flag = has_irredentism
-			}
-		effect = {
-			add_country_modifier = {
-				name = ldq_roach_tower
-				duration = 7300
-			}
-			change_ruler_stat = {
-				type = adm
-				amount = 1
-			}
-		}
-	}
 	ldq_crusader = {
 		icon = crusader_mission
 		position = 11
@@ -200,8 +174,8 @@ ldq_mission_branch2 = {
 
 	ldq_southern_sea = { 
 		icon = kraken_sea
-		required_missions = {}
-		position = 10
+		required_missions = {ldq_irredentism}
+		position = 11
 		provinces_to_highlight = {
 			OR ={
 				region = south_undersea_temple_region
@@ -210,8 +184,10 @@ ldq_mission_branch2 = {
 		}
         generic = no
 		trigger = {
+			2595 = {
+				controlled_by = ROOT
+			}
 			tag = LDQ
-			has_country_flag = has_irredentism
 			}
 		effect = {
 			south_undersea_temple_region = {
@@ -219,6 +195,34 @@ ldq_mission_branch2 = {
 					name = ldq_local_sea
 					duration = 7300
 				}
+			}
+		}
+	}
+	ldq_roach_tower = { 
+		icon = roach_tower_irredentism
+		required_missions = {ldq_southern_sea}
+		position = 12
+		provinces_to_highlight = {
+			OR ={
+				area = roach_tower
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+        generic = no
+		trigger = {
+			2413 = {
+				controlled_by = ROOT
+			}
+			tag = LDQ
+			}
+		effect = {
+			add_country_modifier = {
+				name = ldq_roach_tower
+				duration = 10950
+			}
+			change_ruler_stat = {
+				type = adm
+				amount = 1
 			}
 		}
 	}
@@ -331,13 +335,12 @@ ldq_mission_branch3 = {
 				name = ldq_irredentism
 				duration = 9125
 			}
-			set_country_flag = has_irredentism
 		}
 	}
 	ldq_greater_ilias = { 
 		icon = greater_ilias
-		required_missions = {}
-		position = 11
+		required_missions = {ldq_roach_tower ldq_gloria}
+		position = 13
 		provinces_to_highlight = {
 			OR = {
 				area = roach_tower
@@ -378,40 +381,11 @@ ldq_mission_branch3 = {
 	}
 	ldq_attuned_with_nature = {
 		icon = attuned_with_nature
-		required_missions = {}
-		position = 13
+		required_missions = {ldq_earth_power ldq_fire_power}
+		position = 14
 		generic = no
-		provinces_to_highlight = {
-			OR = {
-				area = forest_of_spirits
-				area = fairy_grove
-				area = elvish_spring_area
-				area = safar_ruins_area
-				area = safar_desert
-				area = oasis_of_blessings_area
-				area = undine_spring
-				area = esta_spring
-				area = undine_caverns
-				area = central_gold_road
-				area = gold_volcano
-				area = salamander_coast
-			}
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
-		}
 		trigger = {
 			tag = LDQ
-			forest_of_spirits =  { type = all country_or_non_sovereign_subject_holds = ROOT }
-			fairy_grove =  { type = all country_or_non_sovereign_subject_holds = ROOT }
-			elvish_spring_area =  { type = all country_or_non_sovereign_subject_holds = ROOT }
-			safar_ruins_area =  { type = all country_or_non_sovereign_subject_holds = ROOT }
-			safar_desert =  { type = all country_or_non_sovereign_subject_holds = ROOT }
-			oasis_of_blessings_area =  { type = all country_or_non_sovereign_subject_holds = ROOT }
-			undine_spring =  { type = all country_or_non_sovereign_subject_holds = ROOT }
-			esta_spring =  { type = all country_or_non_sovereign_subject_holds = ROOT }
-			undine_caverns =  { type = all country_or_non_sovereign_subject_holds = ROOT }
-			central_gold_road =  { type = all country_or_non_sovereign_subject_holds = ROOT }
-			gold_volcano = { type = all country_or_non_sovereign_subject_holds = ROOT }
-			salamander_coast = { type = all country_or_non_sovereign_subject_holds = ROOT }
 		}
 		effect = {
 			add_country_modifier = {
@@ -433,8 +407,8 @@ ldq_mission_branch4 = {
 	
 	ldq_navy = {
 		icon = navy_irredentism
-		required_missions = {}
-		position = 10
+		required_missions = {ldq_irredentism}
+		position = 11
 		provinces_to_highlight = {
 			OR ={
 				area = seahorse_state
@@ -447,8 +421,10 @@ ldq_mission_branch4 = {
 		}
         generic = no
 		trigger = {
+			484 = {
+				controlled_by = ROOT
+			}
 			tag = LDQ
-			has_country_flag = has_irredentism
 			}
 		effect = {
 			seahorse_state = {
@@ -480,6 +456,32 @@ ldq_mission_branch4 = {
 					name = ldq_local_navy
 					duration = 7300
 				}
+			}
+		}
+	}
+	ldq_gloria = { 
+		icon = gloria_irredentism
+		required_missions = {ldq_navy}
+		position = 12
+		provinces_to_highlight = {
+			OR ={
+				area = western_gloria_isles_area
+				area = gloria_isles_area
+				area = gloria_treasury_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+        generic = no
+		trigger = {
+			2780 = {
+				controlled_by = ROOT
+			}
+			tag = LDQ
+			}
+		effect = {
+			add_country_modifier = {
+				name = ldq_gloria
+				duration = 7300
 			}
 		}
 	}
@@ -561,30 +563,6 @@ ldq_mission_branch5 = {
 			}
 		}
 	}
-	ldq_gloria = { 
-		icon = gloria_irredentism
-		required_missions = {}
-		position = 10
-		provinces_to_highlight = {
-			OR ={
-				area = western_gloria_isles_area
-				area = gloria_isles_area
-				area = gloria_treasury_area
-			}
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
-		}
-        generic = no
-		trigger = {
-			tag = LDQ
-			has_country_flag = has_irredentism
-			}
-		effect = {
-			add_country_modifier = {
-				name = ldq_gloria
-				duration = 7300
-			}
-		}
-	}
 	ldq_undine1 = { 
 		icon = undine_sea
 		required_missions = {}
@@ -653,15 +631,7 @@ ldq_mission_branch5 = {
 			}
 			add_permanent_claim = ROOT
 
-	   }  
-	   undine_caverns = { 
-			limit = {
-				NOT = {is_core = ROOT }
-				NOT = { is_permanent_claim = ROOT }
-			}
-			add_permanent_claim = ROOT
-
-	   }	 	 	 	 	 		 	 	 	 	 	 	 		
+	   }  	 	 	 	 	 		 	 	 	 	 	 	 		
 	}
 }
 	ldq_undine2 = {

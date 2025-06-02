@@ -186,12 +186,12 @@ giga_mutant_ideas = {
 
 advanced_roid_ideas = {
 	start = {
-		development_cost = -0.15
+		development_cost = -0.10
 		may_recruit_female_generals = yes
 	}
 	
 	bonus = {
-		discipline = 0.06
+		discipline = 0.05
 	}
 	
 	trigger = {
@@ -212,7 +212,7 @@ advanced_roid_ideas = {
 	}
 	advanced_roid_ai_synchronization = {
 		infantry_power = 0.15
-		discipline = 0.06
+		discipline = 0.05
 	}
 	advanced_roid_nexus_control = {
 		movement_speed = 0.15
@@ -439,7 +439,6 @@ eternity_ideas = {
 	}
 	eternity_spectral_movements = {
 		movement_speed = 0.20
-		can_bypass_forts = yes
 	}
 	eternity_lords_of_astral = {
 		fire_damage = 0.175

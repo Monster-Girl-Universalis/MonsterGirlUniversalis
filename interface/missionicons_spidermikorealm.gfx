@@ -1,0 +1,114 @@
+spriteTypes = {	
+	spriteType = {
+		name = "sm1_cave"
+		texturefile = "gfx//interface//missions//spidermikorealm_missions//sm1_cave.dds"
+	}
+	spriteType = {
+		name = "orochi"
+		texturefile = "gfx//interface//missions//spidermikorealm_missions//orochi.dds"
+	}
+	spriteType = {
+		name = "nure_onna"
+		texturefile = "gfx//interface//missions//spidermikorealm_missions//nure_onna.dds"
+	}
+	spriteType = {
+		name = "kappa"
+		texturefile = "gfx//interface//missions//spidermikorealm_missions//kappa.dds"
+	}
+	spriteType = {
+		name = "kunoichi_elf"
+		texturefile = "gfx//interface//missions//spidermikorealm_missions//kunoichi_elf.dds"
+	}
+	spriteType = {
+		name = "broken_barrier"
+		texturefile = "gfx//interface//missions//spidermikorealm_missions//broken_barrier.dds"
+	}
+	spriteType = {
+		name = "maya_lewd"
+		texturefile = "gfx//interface//missions//spidermikorealm_missions//maya_lewd.dds"
+	}
+	spriteType = {
+		name = "sm1_tamamo"
+		texturefile = "gfx//interface//missions//spidermikorealm_missions//sm1_tamamo.dds"
+	}
+	spriteType = {
+		name = "kitsune_tanuki_island"
+		texturefile = "gfx//interface//missions//spidermikorealm_missions//kitsune_tanuki_island.dds"
+	}
+	spriteType = {
+		name = "maya_yamatai"
+		texturefile = "gfx//interface//missions//spidermikorealm_missions//maya_yamatai.dds"
+	}
+	spriteType = {
+		name = "gotan"
+		texturefile = "gfx//interface//missions//spidermikorealm_missions//gotan.dds"
+	}
+	spriteType = {
+		name = "yamatai"
+		texturefile = "gfx//interface//missions//spidermikorealm_missions//yamatai.dds"
+	}
+	spriteType = {
+		name = "nekomata"
+		texturefile = "gfx//interface//missions//spidermikorealm_missions//nekomata.dds"
+	}
+	spriteType = {
+		name = "tsubaki"
+		texturefile = "gfx//interface//missions//spidermikorealm_missions//tsubaki.dds"
+	}
+	spriteType = {
+		name = "sm1_yamatai"
+		texturefile = "gfx//interface//missions//spidermikorealm_missions//sm1_yamatai.dds"
+	}
+	spriteType = {
+		name = "sm1_repel_noah"
+		texturefile = "gfx//interface//missions//spidermikorealm_missions//sm1_repel_noah.dds"
+	}
+	spriteType = {
+		name = "arthur_colosseum"
+		texturefile = "gfx//interface//missions//spidermikorealm_missions//arthur_colosseum.dds"
+	}
+	spriteType = {
+		name = "plansect_1"
+		texturefile = "gfx//interface//missions//spidermikorealm_missions//plansect_1.dds"
+	}
+	spriteType = {
+		name = "plansect_2"
+		texturefile = "gfx//interface//missions//spidermikorealm_missions//plansect_2.dds"
+	}
+	spriteType = {
+		name = "plansect_3"
+		texturefile = "gfx//interface//missions//spidermikorealm_missions//plansect_3.dds"
+	}
+	spriteType = {
+		name = "sm1_noah"
+		texturefile = "gfx//interface//missions//spidermikorealm_missions//sm1_noah.dds"
+	}
+	spriteType = {
+		name = "grand_noah_queen_colosseum"
+		texturefile = "gfx//interface//missions//spidermikorealm_missions//grand_noah_queen_colosseum.dds"
+	}
+	spriteType = {
+		name = "sm1_oriental"
+		texturefile = "gfx//interface//missions//spidermikorealm_missions//sm1_oriental.dds"
+	}
+	spriteType = {
+		name = "sm1_science"
+		texturefile = "gfx//interface//missions//spidermikorealm_missions//sm1_science.dds"
+	}
+	spriteType = {
+		name = "sm1_native_faith"
+		texturefile = "gfx//interface//missions//spidermikorealm_missions//sm1_native_faith.dds"
+	}
+	spriteType = {
+		name = "sm1_war"
+		texturefile = "gfx//interface//missions//spidermikorealm_missions//sm1_war.dds"
+	}
+	spriteType = {
+		name = "maya_light_dark"
+		texturefile = "gfx//interface//missions//spidermikorealm_missions//maya_light_dark.dds"
+	}
+	spriteType = {
+		name = "yuki_onna"
+		texturefile = "gfx//interface//missions//spidermikorealm_missions//yuki_onna.dds"
+	}
+}

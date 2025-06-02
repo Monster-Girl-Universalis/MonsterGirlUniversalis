@@ -8,16 +8,16 @@ bookmark =
 
 	country = ML1
 	country = VA6
+	country = TR2
+	country = AM1
 	country = SM5
 	country = BE1
-	country = MS2
 	country = KY1
+	country = MS2
 	country = SS3
 	country = BS1
 	
 	easy_country = ML1
 	easy_country = VA6
-	easy_country = SM5
-	easy_country = BE1
 	
 }

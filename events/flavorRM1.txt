@@ -5,7 +5,7 @@ country_event = {
 	id = flavor_rm1.1
 	title = "flavor_rm1.1.t"
 	desc = "flavor_rm1.1.desc"
-	picture = INSECT_eventPicture
+	picture = insect_RACE_eventPicture
 	trigger = {
 		tag = RM1
 		NOT = { is_year = 1460 }
@@ -16,16 +16,17 @@ country_event = {
 
 	option = {	#Great.
 		name = flavor_rm1.1.a
-		add_country_modifier = {
-			name = "RM1_insects_are_rallied"
-			duration = 10950
+		tooltip = {
+			add_country_modifier = {
+				name = "RM1_insects_are_rallied"
+				duration = 10950
+			}
+			every_subject_country = { 
+				add_country_modifier = {
+					name = "rallied_vassal"
+					duration = 10950
+				}
+			}
 		}
-		vassalize = IN1
-		vassalize = IN2
-		vassalize = IN3
-		vassalize = IN4
-		vassalize = IN5
-		vassalize = IN6
-		vassalize = IN7
 	}
 }

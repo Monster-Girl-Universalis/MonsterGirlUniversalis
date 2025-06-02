@@ -4,14 +4,14 @@ hm_diverting_leadership_resources = {
 }
 
 beam_scythe_economic = {
-	build_cost = -0.1
+	build_cost = -0.15
 	
 }
 
 
 beam_scythe_agriculture = {
-	global_manpower_modifier = 0.05
-	special_unit_manpower_cost_modifier = -0.05
+	global_manpower_modifier = 0.10
+	special_unit_manpower_cost_modifier = -0.10
 	
 }
 
@@ -22,7 +22,7 @@ beam_scythe_forts = {
 
 
 beam_scythe_melee = {
-	infantry_power = 0.025
+	infantry_power = 0.05
 	
 }
 
@@ -33,24 +33,24 @@ hm_studying_lab = {
 }
 
 laser_fire = {
-	fire_damage = 0.025
+	fire_damage = 0.05
 	
 	
 }
 
 laser_dev = {
-	development_cost = -0.025
+	development_cost = -0.05
 	
 }
 
 
 laser_tech = {
-	technology_cost = -0.025
+	technology_cost = -0.10
 	
 }
 
 laser_missionary = {
-	global_missionary_strength = 0.005
+	global_missionary_strength = 0.01
 	
 }
 
@@ -66,12 +66,12 @@ blast_corruption = {
 }
 
 blast_war = {
-	shock_damage = 0.025
+	shock_damage = 0.05
 	
 }
 
 blast_trade = {
-	global_trade_power = 0.1
+	global_trade_power = 0.15
 	
 }
 
@@ -136,7 +136,7 @@ local_gold_depletion_chance_modifier = -1
 }
 
 hm_fruits_studying_safina = {
-idea_cost = -0.05
+idea_cost = -0.10
 }
 
 hm_undead_researchers = {
@@ -170,12 +170,12 @@ tolerance_own = 1
 }
 
 loyal_zombies_reward = {
-spiritualists_loyalty_modifier = 0.025
+spiritualists_loyalty_modifier = 0.05
 special_unit_forcelimit = 0.10
 }
 
 hm_conquer_1 = {
-land_morale = 0.10
+land_morale = 0.15
 years_of_nationalism = -10
 
 }
@@ -196,7 +196,7 @@ local_fort_maintenance_modifier = -0.5
 
 hm_doll_victory = {
 all_estate_possible_privileges = 1
-all_estate_loyalty_equilibrium = 0.025
+all_estate_loyalty_equilibrium = 0.05
 }
 
 
@@ -207,7 +207,7 @@ tolerance_own = 2
 state_governing_cost = -0.15
 governing_capacity = 500
 same_religion_advisor_cost = -0.2
-reverse_relation_with_same_religion = 10
+reverse_relation_with_same_religion = 25
 missionaries = 1
 }
 
@@ -228,7 +228,7 @@ liberty_desire = -1000
 }
 
 hm_zombie_labor = {
-development_cost_in_primary_culture = -0.025
+development_cost_in_primary_culture = -0.10
 great_project_upgrade_time = -0.1
 }
 

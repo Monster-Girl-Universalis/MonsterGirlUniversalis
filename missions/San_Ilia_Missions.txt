@@ -515,6 +515,7 @@ san_ilia_consolidating_natalia_forest_of_spirits = {
 					}
 					SSL = {
 						NOT = { total_development = 250 }
+						is_subject = no
 					}	
 					reverse_has_opinion = {
 						who = SNR
@@ -522,6 +523,7 @@ san_ilia_consolidating_natalia_forest_of_spirits = {
 					}
 					SNR = {
 						NOT = { total_development = 250 }
+						is_subject = no
 					}
 				}
 			}

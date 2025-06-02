@@ -47,6 +47,9 @@ country_decisions = {
 				duration = 7300
 			}
 			add_prestige = 25
+			unlock_race = { race = human }
+			unlock_race = { race = roid }
+			swap_non_generic_missions = yes
 			if = {
 				limit = {
 					NOT = { technology_group = TECH_HUMAN }
@@ -113,6 +116,7 @@ country_decisions = {
 				duration = 7300
 			}
 			add_prestige = 25
+			unlock_race = { race = human }
 			if = {
 				limit = {
 					NOT = { technology_group = TECH_HUMAN }
@@ -123,6 +127,62 @@ country_decisions = {
 			if = {
 				limit = { has_custom_ideas = no }
 				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	magistea_nation = {
+		major = yes
+		potential = {
+			was_never_end_game_tag_trigger = yes
+			OR = {
+				culture = worm_summoner
+			}
+			NOT = { exists = MV2 }
+			NOT = { is_tag = MV1 }
+			NOT = { was_tag = MV1 }
+			NOT = { is_tag = TM1 }
+			NOT = { wass_tag = TM1 }
+		}
+		allow = {
+			AND = {
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			OR = {
+				AND = {
+					government_rank = 2
+					army_size = 100
+					grown_by_development = 500
+					num_of_owned_provinces_with = {
+						region = magistea_region
+						is_core = ROOT
+						value = 38
+					}
+				}
+			}
+			}
+		}
+		effect = {
+
+			change_tag = MV2
+			change_government = monarchy 
+			add_government_reform = worm_summoner_reform 
+
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			unlock_race = { race = human }
+			swap_non_generic_missions = yes
+			if = {
+				limit = {
+					NOT = { technology_group = TECH_HUMAN }
+				}
+				change_technology_group = TECH_HUMAN 
+				change_unit_type = TECH_HUMAN 
 			}
 		}
 		ai_will_do = {
@@ -179,6 +239,7 @@ country_decisions = {
 				duration = 7300
 			}
 			add_prestige = 25
+			unlock_race = { race = human }
 			if = {
 				limit = {
 					NOT = { technology_group = TECH_HUMAN }
@@ -245,6 +306,8 @@ country_decisions = {
 				duration = 7300
 			}
 			add_prestige = 25
+			unlock_race = { race = human }
+			unlock_race = { race = chimera }
 			if = {
 				limit = {
 					NOT = { technology_group = TECH_HUMAN }
@@ -346,6 +409,7 @@ country_decisions = {
 				duration = 7300
 			}
 			add_prestige = 25
+			unlock_race = { race = human }
 			if = {
 				limit = {
 					NOT = { technology_group = TECH_HUMAN }

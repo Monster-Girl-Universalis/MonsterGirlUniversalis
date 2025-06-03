@@ -115,7 +115,7 @@ RMA_ideas = {
 		development_cost = -0.05
 	}
 	RMA_advanced_ghost_army = {
-		can_bypass_forts = yes
+		movement_speed = 0.15
 	}
 	RMA_candle_burnout = {
 		discipline = 0.075
@@ -4609,8 +4609,8 @@ FQ1_ideas = {
 		country_admin_power = 1
 	}
 	FQ1_Advanced_Fairy_Army = {
-		can_bypass_forts = yes
-		reinforce_cost_modifier = -0.33
+		shock_damage = 0.10
+		reinforce_speed = 0.33
 	}
 	FQ1_Royal_Pranks = {
 		spy_offence = 0.50

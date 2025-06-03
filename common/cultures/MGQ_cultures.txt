@@ -459,9 +459,17 @@ undead = {
 ghost = {
 	graphical_culture = asiangfx
 
-	Ghost_Girl = {
+	Candle_Girl = {
 
 		primary = RMA
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}	
+	}
+	Ghost_Girl = {
+
 
 		country = {
 			female_advisor_chance = 1

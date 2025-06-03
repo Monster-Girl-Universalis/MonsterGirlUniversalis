@@ -1,0 +1,118 @@
+spriteTypes = {	
+	spriteType = {
+		name = "ratty"
+		texturefile = "gfx//interface//missions//wolfgirlrealm_missions//ratty.dds"
+	}
+	spriteType = {
+		name = "mini"
+		texturefile = "gfx//interface//missions//wolfgirlrealm_missions//mini.dds"
+	}
+	spriteType = {
+		name = "amara"
+		texturefile = "gfx//interface//missions//wolfgirlrealm_missions//amara.dds"
+	}
+	spriteType = {
+		name = "dahlia"
+		texturefile = "gfx//interface//missions//wolfgirlrealm_missions//dahlia.dds"
+	}
+	spriteType = {
+		name = "irina"
+		texturefile = "gfx//interface//missions//wolfgirlrealm_missions//irina.dds"
+	}
+	spriteType = {
+		name = "chibibandits"
+		texturefile = "gfx//interface//missions//wolfgirlrealm_missions//chibibandits.dds"
+	}
+	spriteType = {
+		name = "full_moon"
+		texturefile = "gfx//interface//missions//wolfgirlrealm_missions//full_moon.dds"
+	}
+	spriteType = {
+		name = "kitsu"
+		texturefile = "gfx//interface//missions//wolfgirlrealm_missions//kitsu.dds"
+	}
+	spriteType = {
+		name = "mary"
+		texturefile = "gfx//interface//missions//wolfgirlrealm_missions//mary.dds"
+	}
+	spriteType = {
+		name = "kate"
+		texturefile = "gfx//interface//missions//wolfgirlrealm_missions//kate.dds"
+	}
+	spriteType = {
+		name = "reina"
+		texturefile = "gfx//interface//missions//wolfgirlrealm_missions//reina.dds"
+	}
+	spriteType = {
+		name = "iliasburg_idea"
+		texturefile = "gfx//interface//missions//wolfgirlrealm_missions//iliasburg_idea.dds"
+	}
+	spriteType = {
+		name = "iliasburg_crown"
+		texturefile = "gfx//interface//missions//wolfgirlrealm_missions//iliasburg_crown.dds"
+	}
+	spriteType = {
+		name = "temple"
+		texturefile = "gfx//interface//missions//wolfgirlrealm_missions//temple.dds"
+	}
+	spriteType = {
+		name = "lime"
+		texturefile = "gfx//interface//missions//wolfgirlrealm_missions//lime.dds"
+	}
+	spriteType = {
+		name = "cow"
+		texturefile = "gfx//interface//missions//wolfgirlrealm_missions//cow.dds"
+	}
+	spriteType = {
+		name = "claudia"
+		texturefile = "gfx//interface//missions//wolfgirlrealm_missions//claudia.dds"
+	}
+	spriteType = {
+		name = "lona"
+		texturefile = "gfx//interface//missions//wolfgirlrealm_missions//lona.dds"
+	}
+	spriteType = {
+		name = "apex"
+		texturefile = "gfx//interface//missions//wolfgirlrealm_missions//apex.dds"
+	}
+	spriteType = {
+		name = "wlr_reform"
+		texturefile = "gfx//interface//missions//wolfgirlrealm_missions//wlr_reform.dds"
+	}
+	spriteType = {
+		name = "wlr_adm"
+		texturefile = "gfx//interface//missions//wolfgirlrealm_missions//wlr_adm.dds"
+	}
+	spriteType = {
+		name = "wlr_dip"
+		texturefile = "gfx//interface//missions//wolfgirlrealm_missions//wlr_dip.dds"
+	}
+	spriteType = {
+		name = "wlr_mil"
+		texturefile = "gfx//interface//missions//wolfgirlrealm_missions//wlr_mil.dds"
+	}
+	spriteType = {
+		name = "coast"
+		texturefile = "gfx//interface//missions//wolfgirlrealm_missions//coast.dds"
+	}
+	spriteType = {
+		name = "ocean_kraken"
+		texturefile = "gfx//interface//missions//wolfgirlrealm_missions//ocean_kraken.dds"
+	}
+	spriteType = {
+		name = "full_moon_wolf"
+		texturefile = "gfx//interface//missions//wolfgirlrealm_missions//full_moon_wolf.dds"
+	}
+	spriteType = {
+		name = "beast_queen"
+		texturefile = "gfx//interface//missions//wolfgirlrealm_missions//beast_queen.dds"
+	}
+	spriteType = {
+		name = "Fenrir_faith"
+		texturefile = "gfx//interface//missions//wolfgirlrealm_missions//Fenrir_faith.dds"
+	}
+	spriteType = {
+		name = "amara_mercenary"
+		texturefile = "gfx//interface//missions//wolfgirlrealm_missions//amara_mercenary.dds"
+	}
+}

@@ -9,18 +9,17 @@ bookmark =
 	country = GR4
 	country = SP4
 	country = LC1
+	country = SL1
 	country = LV1
 	country = SM2
 	country = SU1
-	country = SL1
 	country = TA1
-	country = YO1
+	country = PO1
+	country = GH1
 	
 	easy_country = GR4
 	easy_country = SP4
 	easy_country = LC1
-	easy_country = LV1
-	easy_country = SM2
-	easy_country = SU1
+	easy_country = SL1
 	
 }

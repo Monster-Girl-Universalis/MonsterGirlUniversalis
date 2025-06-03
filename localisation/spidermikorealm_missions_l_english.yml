@@ -1,0 +1,200 @@
+﻿l_english:
+#Branch 1
+
+ SM1_cave_title: "Defensive Stance"
+ SM1_cave_desc: "We don't possess the numbers of our enemies, as such we need to fight defensively and choose our battles carefully, lucky for ours our caves give us a great defensive advantage."
+
+ SM1_orochi_title: "Seal Yamata No Orochi"
+ SM1_orochi_desc: "Yamata No Orochi has been demanding tributes from Yamatai Village for generations, if coexistance between humans and monster is to flourish we must make sure powerful monsters such as Orochi don't abuse their power to domineer the weak, as monsters ourselves upholding coexistance this way will have a stronger impact."
+
+ SM1_horai_title: "Break the Horai Barrier"
+ SM1_horai_desc: "Mt Horai and its elven village is sealed off our world by a magical barrier meant to prevent outsiders from entering but breaking through this invisible wall should an easy tasks for us who delved into the taoist arts. We must end this self imposed isolation and integrate these people back into society, whatever circumstance caused this state of affairs cannot be resolved by isolating themselves from the world."
+
+#Branch 2
+
+ SM1_kappa_title: "Kappa conflict"
+ SM1_kappa_desc: "The Kappa are formidable water youkai that dwell in the rivers of Yamatai region, the humans of Yamamtai Village have formed a strong bond with them. We should strengthen our relationship with the kappas too."
+
+SM1_nure_onna_title: "Pacify the Snakes"
+SM1_nure_onna_desc: "Nure Onnas are slimy youkai lamias known for their cruel nature, we can't allow them to pick on the weak any longer!"
+
+SM1_tamamo_title: "Tame the Kitsunes"
+SM1_tamamo_desc: "The Kitsune Village is ruled by one of the four heavenly knights, Tamamo. Tamamo specifically is deeply tied to the Monster Lord which is not a reassuring fact given the chaotic return of Alipheese XV to the throne. Depending on the whims of the Monster Lord the coexistance between humans and monsters may be threatened, we cannot risk losing all the progress made since the Great Disaster, Tamamo and her realm must be subjugated!"
+
+SM1_kitsune_tanuki_title: "Mend the Schism"
+SM1_kitsune_tanuki_desc: "On Kitsune Village there is a fierce rivarly with the Tanuki Village on the other side of the island. We cannot let this continue for this might create the conditions for future conflict and hatred, we will focus our efforts to undo this pointless rivarly before it becomes another Plansect Village."
+
+SM1_grand_noah_title: "Brace for War"
+SM1_grand_noah_desc: "The powerhouse of Grand Noah is at our doorstep, we must prepare for war immediately or we'll be eventually crushed."
+
+SM1_repel_noah_title: "Repel Grand Noah"
+SM1_repel_noah_desc: "We've managed to inflict a serious defeat on the giant threatening our independence, this trial by fire has shown we've got the means necessary to end the queen of Grand Noah's ambitions in Yamatai!"
+
+SM1_conquer_noah_title: "Vanquish Grand Noah"
+SM1_conquer_noah_desc: "We have emerged victorious against Grand Noah once and for all! Now new avenues of expansion will open for us."
+
+#Branch 3
+
+SM1_rally_spiders_title: "Rally the Spiders"
+SM1_rally_spiders_desc: "We are surrounded by many richer countries, if this situation persist it is only a matter of time until we are conquered, we need to rally each and every spider available for duty and quickly expand and solidify our borders."
+
+SM1_yamatai_title: "Seize Yamatai"
+SM1_yamatai_desc: "Yamatai Village is the cultural and economical heart of the region, it is where the Four Shrines reside after all, getting our hands on this sacred land is nothing short of an achievement!"
+
+SM1_youkai_integration_title: "Youkai Integration"
+SM1_youkai_integration_desc: "The areas near Yamatai Village are full of various types of youkai, integrating them into our country will greatly benefit both parties in the long run."
+
+SM1_nekomata_title: "Bring the Nekos Back"
+SM1_nekomata_desc: "Nekomatas are cat youkai revered by humans, and even humans foreing to our culture are captivated by their charms, bringing more nekomatas in our realm is sure to bring us good luck!"
+
+SM1_united_yamatai_title: "United Yamatai"
+SM1_united_yamatai_desc: "We were successful in uniting all of the Yamatai region under our banner, ensuring prosperity for all future generations to come. Now that our state has become so powerful we can rest easy knowing our cultures are protected, and we are now in a position where we can start thinking about spreading our way of life outwards."
+
+SM1_noah_unification_title: "Peace in Noah"
+SM1_noah_unification_desc: "Our realm's borders now encompass all of the continent of Noah, bringing peace and stability to all its inhabitants, it is now our sacred duty to protect these lands from any who wish to impose their view on the world by force."
+
+SM1_science_title: "Faith and Reason"
+SM1_science_desc: "We are a spiritual nation, but sometimes blind faith can lead one to err, our contact with the seekers of truth has made us think about this shade of religion, we should tread carefully and adopt the scientific method into the fabric of our society alongside our devotion for gods."
+
+#Branch 4
+
+SM1_kunoichi_elf_title: "Kunoichi Elf Clans"
+SM1_kunoichi_elf_desc: "After a hard fought war against the Kunoichi clan of Elfs to our south, we have emerged victorious, but we must learn to be humble and beg our former enemies to forgive our devastation of their lands. As humiliating as it may be, it will be through unity that we will prevail."
+
+SM1_spirit_girl_title: "Spirit Exorcism"
+SM1_spirit_girl_desc: "There are reports of vengeful spirit activity in the southern parts of Yamatai region, one of the sacred duties of shrine maidens is to exorcise evil, we'll make amends with them but right now we need to unleash the incense!"
+
+SM1_youkai_title: "Youkai Extermination"
+SM1_youkai_desc: "Youkai extermination is perhaps the most important duty a Shrine Maiden can have, and with sightings of Yuki Onnas the humans in our country are becoming restless. Exterminating these youkai will win us many favors with the people, that will in turn help out our national coffers...we should use some of that gold to throw a party to welcome our new icy friends!"
+
+SM1_plansect_1_title: "Intervene in Plansect"
+SM1_plansect_1_desc: "A war has been raging out in Plansect Village between the plant and insect monsters for years now, with no end in sight it is our duty as both insect type monsters and preachers of coexistance to end this conflict once and for all!"
+
+SM1_plansect_2_title: "Horrors of War"
+SM1_plansect_2_desc: "Our campaign to pacify the two faction has been a success thus far, yet our troops have witnessed gruesome sights committed by the insects and plants on each other...war is truly hell."
+
+SM1_plansect_3_title: "End the Plansect War"
+SM1_plansect_3_desc: "At long last, Plansect and Red Mountain are no more, now we are in charge of the region and its associate traumas and devastation, we will need to push the capabilities of our administration and society to heal the immense suffering this pointless war has caused."
+
+#Branch 5
+
+SM1_cult_title: "Faith in our Shrines"
+SM1_cult_desc: "We are a realm of Spider Mikos, collecting faith from the masses is our holy duty, especially so in the face of adversity."
+
+SM1_conversion_title: "Interfaith Dialogue"
+SM1_conversion_desc: "The expansion of our nation has brought in new faiths not native to Yamatai, regardless we must teach our new subjects our way of life: Rather than discard their faith altogether we should seek to merge their traditions with ours."
+
+SM1_opposites_title: "Light and Darkness"
+SM1_opposites_desc: "The capital of Grand Noah is ours, within it we have discovered an enviroment of peaceful coexistance between the faith of the Light Goddess and the Monster Lord like none other. We can only aspire to reach this level in the rest of our realm, but if we want to maintain two worlds that contradict each other we need to strengthen the religious zeal in our administration and integrate them fully into the fabric of our society."
+
+SM1_defender_east_title: "Native Faith"
+SM1_defender_east_desc: "Our faith and its traditions are unique in the world, with the domineering attitude of the other religions in full display we must meet them with an iron fist if we wish to preserve ourselves!"
+
+SM1_imperishable_faith_title: "Imperishable Faith"
+SM1_imperishable_faith_desc: "Thanks to our unprecedented growth we can now punch way above our weight in terms of foreign policy, and with the myriad of warmonger states in our world, perhaps it is time we put our religious zeal to use on the battlefield."
+
+#Mission modifiers
+sm1_kappa: "Kappa defeated"
+sm1_elf_pal: "Elves Befriended"
+sm1_kappa_pal: "Kappa Befriended"
+sm1_cave: "Defensive Measures"
+sm1_orochi_1: "Yamata No Orochi sealed"
+sm1_horai: "Beyond the Barrier"
+sm1_kunoici_elf: "Clash with the elves"
+sm1_orochi_2: "Yamata no Orochi Unsealed"
+sm1_orochi_3: "Yamata no Orochi's Aid"
+sm1_nure_onna: "Nure Onnas Quelled"
+sm1_nure_onna_pal: "Nure Onna Befriended"
+sm1_tamamo: "VS Tamamo"
+sm1_kitsune_tanuki: "Kitsune-Tanuki Rivalry Quelled"
+sm1_devotion_cats: "Devotion to Cats"
+sm1_devotion_tanuki: "Devotion to Tanuki"
+sm1_devotion_foxes: "Devotion to Foxes"
+sm1_devotion_snakes: "Devotion to Snakes"
+sm1_devotion_rats: "Devotion to Rats"
+sm1_conversion: "Highly Responsive to Prayers"
+sm1_spirit_girl: "Vengeful Spirits VS Shrine Maidens"
+sm1_spirit_pal: "Spirit Girls Befriended"
+sm1_youkai: "Proper Shrine Maiden"
+sm1_youkai_pal: "Yuki Onnas Befriended"
+sm1_yamatai: "Yamatai Economy"
+sm1_human_pal: "Yamatai Villagers Befriended"
+sm1_super_youkai_pal: "Youkai Befriended"
+sm1_neko_pal: "Adorable Nekomatas"
+sm1_succubus: "Succubus School Mastered"
+sm1_harpy: "Harpy School Mastered"
+sm1_scylla: "Scylla School Mastered"
+sm1_elf: "Elf School Mastered"
+sm1_arachne: "Arachne School Mastered"
+sm1_united_yamatai: "United Yamatai"
+sm1_noah: "Setting the Stage for War"
+sm1_repel_noah: "Victory Over Grand Noah"
+sm1_conquer_noah: "Grand Noah Eclipsed"
+sm1_plansect_1: "intervention in the Plansect-Red Mountain War"
+sm1_plansect_2: "Rebuilding Plansect Village"
+sm1_united_noah: "Noah Continent Under One Banner"
+
+#Province modifiers
+sm1_spider_shrine: "Spider Shrines"
+
+#Event Insights
+flavor_insight_sm1.1: "§TThis event will grant us a slight buff for 20 years depending on the shrine we chose.§W"
+flavor_insight_sm1.2: "§TWe will unlock divine ideas and the Ilias and Monster Lord Shrines permanently.§W"
+flavor_insight_sm1.3: "§TThe event will allow us to choose a permanent modifier and the racial ideas of either succubi,harpy,scyllas or elves.§W"
+flavor_insight_sm1.4: "§TWe will unlock the shrine of science permanently.§W"
+
+#Events
+flavor_sm1.1_title: "Out of the Caves"
+flavor_sm1.1_desc: "Against all odds our tiny state was able to expand and now we are no longer confined to our cave nests!"
+
+flavor_sm1.2_title: "Villagers Demand Yamata No Orochi's Return"
+flavor_sm1.2_desc: "It has been a while since we sealed off Yamata no Orochi, with no more human tributes to be sent her way we assume balance would return to Yamatai village but that turned out to be a very wrong asumption...instead a large group of young men from Yamatai Village has stormed our home, they were supposed to be the tribute of this year but they found no one in Yamata no Orochi's cave, angry they search for answers and discovered it was our doing, and now they are here histerically calling for Yamata no Orochi to be unsealed. We were acting under the assumption that she was abusing her power to coerce the humans into submission or face destruction but these humans seem to miss her...perhaps we should unseal her and let her go on the condition that she shall never really carry out the destrution of Yamatai Village.  "
+
+flavor_sm1.3_title: "Devotion"
+flavor_sm1.3_desc: "The future of our realm is uncertain, but we mustn't give up hope and hold onto our faith till the end."
+
+flavor_sm1.4_title: "Kunoichi Schools"
+flavor_sm1.4_desc: "As the new rulers of Yamatai it is our duty to protect all of our subjects the best we can, to this end, the various kunoichi clans have assemble and offered to train our armies in their ways of combat."
+
+flavor_sm1.5_title: "The Insect Queen Throne is Vacant"
+flavor_sm1.5_desc: "Our intervention in the Plansect civil war had the unintended effect of greatly undermining the authority of Queen Bee, which has resulted in the cruel current Spider Princess to aggressively push her claim on the throne as Insect Queen, naturally this outcome is nothing short of a disaster for us. But nothing is lost yet, on the contrary this presents us with an oppurtunity to kill two birds with one stone; we can denied Spider Princess the insect queen throne, and end her rule of arachnes once and for all. "
+
+flavor_sm1.6_title: "Spider Princess is defeated!"
+flavor_sm1.6_desc: "At last we were victorious against the vile Spider Princess! All her subjects recognize us as their ruler now, and with time, we will reform their ways and better the image the world has on spider monsters."
+
+flavor_sm1.7_title: "Ducats for Spider Shrines"
+flavor_sm1.7_desc: "Cats, snakes, foxes, everyone can have a shrine, and that includes us arachnes! We should invest in the constrution of spider shrines all over Yamatai Village and set up donation boxes to gather faith from the people!"
+
+#Event choices
+
+flavor_sm1.1.a: "Fresh air and a new enviroment will invigorate our minds!"
+flavor_sm1.2.a: "I shall unseal and heal up her wounds from our battle."
+flavor_sm1.2.b: "With you once again free, i humbly ask you to lend your knowledge to us."
+flavor_sm1.3.a: "We shall put our faith in the cats"
+flavor_sm1.3.b: "We shall put our faith in the tanuki"
+flavor_sm1.3.c: "We shall put our faith in the foxes"
+flavor_sm1.3.d: "We shall put our faith in the snakes"
+flavor_sm1.3.e: "We shall put our faith in the rats"
+flavor_sm1.4.a: "We choose the succubus school"
+flavor_sm1.4.b: "We choose the harpy school"
+flavor_sm1.4.c: "We choose the scylla school"
+flavor_sm1.4.d: "We choose the elf school"
+flavor_sm1.4.e: "We choose the arachne school"
+flavor_sm1.5.a: "Your tiranny ends here Spider Princess!"
+flavor_sm1.6.a: "The petty despot is no more, may our rule be blessed with eternal fortune!"
+flavor_sm1.7.a: "A wonderful idea! Let's build spider shrines!"
+
+#Special Name
+EASTERN_WONDERLAND: "Eastern Wonderland"
+EASTERN_WONDERLAND_ADJ: "Eastern Wonderlandish"
+
+#Reform Names
+Defender_east: "Defender of the East"
+Defender_east_desc: "We have devoted ourselves to the defense of our culture and way of life by any means necessary."
+Imperishable_faith: "Imperishable Faith"
+Imperishable_faith_desc: "Our religious zeal has reached a point where it is no longer enough to preach our faith, we must spread it far and wide so that we can create the perfect religion, encompassing all deities from each corner of the world!"
+divine_shrine_maiden: "Eternal Shrine Maiden"
+divine_shrine_maiden_desc: "Our ruler represents the very core of our religious society, her connections to our pantheon of gods grants her a cult of personality that shall persist forever."
+#Decision
+SM1_change_back_title: "Change back to Eastern Wonderland"
+SM1_change_back_desc: "We have assumed the title of nsect queen, but that doesn't reflect our nation's vast diversity, we should return to refer ourselves as the Eastern Wonderland while keeping our title of insect queen just that, a title."

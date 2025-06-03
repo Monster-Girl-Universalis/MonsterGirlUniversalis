@@ -1,0 +1,118 @@
+spriteTypes = {	
+	spriteType = {
+		name = "lr1_fucked_up"
+		texturefile = "gfx//interface//missions//lamiarealm_missions//lr1_fucked_up.dds"
+	}
+	spriteType = {
+		name = "anastasia_sea"
+		texturefile = "gfx//interface//missions//lamiarealm_missions//anastasia_sea.dds"
+	}
+	spriteType = {
+		name = "lr1_kagetsumugi"
+		texturefile = "gfx//interface//missions//lamiarealm_missions//lr1_kagetsumugi.dds"
+	}
+	spriteType = {
+		name = "lr1_puppet_tower"
+		texturefile = "gfx//interface//missions//lamiarealm_missions//lr1_puppet_tower.dds"
+	}
+	spriteType = {
+		name = "mission_sister_lamia"
+		texturefile = "gfx//interface//missions//lamiarealm_missions//mission_sister_lamia.dds"
+	}
+	spriteType = {
+		name = "lr1_yoma"
+		texturefile = "gfx//interface//missions//lamiarealm_missions//lr1_yoma.dds"
+	}
+	spriteType = {
+		name = "lr1_sylph_bonk"
+		texturefile = "gfx//interface//missions//lamiarealm_missions//lr1_sylph_bonk.dds"
+	}
+	spriteType = {
+		name = "lr1_shelly_boobies"
+		texturefile = "gfx//interface//missions//lamiarealm_missions//lr1_shelly_boobies.dds"
+	}
+	spriteType = {
+		name = "crusade_mission"
+		texturefile = "gfx//interface//missions//lamiarealm_missions//crusade_mission.dds"
+	}
+	spriteType = {
+		name = "lamia_renaissance"
+		texturefile = "gfx//interface//missions//lamiarealm_missions//lamia_renaissance.dds"
+	}
+	spriteType = {
+		name = "mission_roid_army"
+		texturefile = "gfx//interface//missions//lamiarealm_missions//mission_roid_army.dds"
+	}
+	spriteType = {
+		name = "lr1_chrome"
+		texturefile = "gfx//interface//missions//lamiarealm_missions//lr1_chrome.dds"
+	}
+	spriteType = {
+		name = "lr1_vassal_swarm"
+		texturefile = "gfx//interface//missions//lamiarealm_missions//lr1_vassal_swarm.dds"
+	}
+	spriteType = {
+		name = "earth_power"
+		texturefile = "gfx//interface//missions//lamiarealm_missions//earth_power.dds"
+	}
+	spriteType = {
+		name = "lr1_king_apeshit"
+		texturefile = "gfx//interface//missions//lamiarealm_missions//lr1_king_apeshit.dds"
+	}
+	spriteType = {
+		name = "lr1_lucia"
+		texturefile = "gfx//interface//missions//lamiarealm_missions//lr1_lucia.dds"
+	}
+	spriteType = {
+		name = "lr1_sabasa_king"
+		texturefile = "gfx//interface//missions//lamiarealm_missions//lr1_sabasa_king.dds"
+	}
+	spriteType = {
+		name = "coast"
+		texturefile = "gfx//interface//missions//lamiarealm_missions//coast.dds"
+	}
+	spriteType = {
+		name = "lr1_flail"
+		texturefile = "gfx//interface//missions//lamiarealm_missions//lr1_flail.dds"
+	}
+	spriteType = {
+		name = "anastasia_flail"
+		texturefile = "gfx//interface//missions//lamiarealm_missions//anastasia_flail.dds"
+	}
+	spriteType = {
+		name = "fort_castle"
+		texturefile = "gfx//interface//missions//lamiarealm_missions//fort_castle.dds"
+	}
+	spriteType = {
+		name = "admin_lamia"
+		texturefile = "gfx//interface//missions//lamiarealm_missions//admin_lamia.dds"
+	}
+	spriteType = {
+		name = "safina_map"
+		texturefile = "gfx//interface//missions//lamiarealm_missions//safina_map.dds"
+	}
+	spriteType = {
+		name = "big_teeny"
+		texturefile = "gfx//interface//missions//lamiarealm_missions//big_teeny.dds"
+	}
+	spriteType = {
+		name = "yamatai"
+		texturefile = "gfx//interface//missions//lamiarealm_missions//yamatai.dds"
+	}
+	spriteType = {
+		name = "orochi"
+		texturefile = "gfx//interface//missions//lamiarealm_missions//orochi.dds"
+	}
+	spriteType = {
+		name = "lr1_finoa_claims"
+		texturefile = "gfx//interface//missions//lamiarealm_missions//lr1_finoa_claims.dds"
+	}
+	spriteType = {
+		name = "capital"
+		texturefile = "gfx//interface//missions//lamiarealm_missions//capital.dds"
+	}
+	spriteType = {
+		name = "lr1_queen"
+		texturefile = "gfx//interface//missions//lamiarealm_missions//lr1_queen.dds"
+	}
+}

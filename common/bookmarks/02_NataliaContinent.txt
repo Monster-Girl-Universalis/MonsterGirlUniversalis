@@ -10,11 +10,12 @@ bookmark =
 	country = HM1
 	country = PT1
 	country = FS1
+	country = LR1
+	country = SI2
 	country = PNA
 	country = CH1
-	country = SSL
 	country = MR1
-	country = PG1
+	country = KK1
 	
 	easy_country = SI1
 	easy_country = HM1

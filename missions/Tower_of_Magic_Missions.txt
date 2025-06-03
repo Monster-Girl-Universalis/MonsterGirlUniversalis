@@ -769,5 +769,93 @@ lucia_final_branch = {
 			}
 						
 		}
+	}	
+	TM1_research_of_wind_spirit = {
+		icon = wind_power
+		required_missions = { }
+		position = 2
+		
+		trigger = {
+			OR = {
+				has_spy_network_in = {
+					who = FS1
+					value = 80
+				}
+				alliance_with = FS1
+				640 = { owned_by = ROOT }
+			}
+		}
+		
+		effect = {
+			add_dip_power = 100
+			add_country_modifier = {
+				name = "TM1_synergy_with_wind"
+				duration = -1
+			}
+ 			set_variable = {
+   				which = Wind_Stones
+  				value = 1
+			}
+						
+		}
+	}	
+	TM1_research_of_water_spirit = {
+		icon = undine_cave
+		required_missions = { }
+		position = 3
+		
+		trigger = {
+			OR = {
+				has_spy_network_in = {
+					who = UN1
+					value = 80
+				}
+				alliance_with = UN1
+				1401 = { owned_by = ROOT }
+			}
+		}
+		
+		effect = {
+			add_mil_power = 50
+			add_dip_power = 50
+			add_country_modifier = {
+				name = "TM1_synergy_with_water"
+				duration = -1
+			}
+ 			set_variable = {
+   				which = Water_Stones
+  				value = 1
+			}
+						
+		}
+	}	
+	TM1_research_of_fire_spirit = {
+		icon = salamander_fire
+		required_missions = { }
+		position = 4
+		
+		trigger = {
+			OR = {
+				has_spy_network_in = {
+					who = SL1
+					value = 80
+				}
+				alliance_with = SL1
+				1667 = { owned_by = ROOT }
+			}
+		}
+		
+		effect = {
+			add_mil_power = 100
+			add_country_modifier = {
+				name = "TM1_synergy_with_fire"
+				duration = -1
+			}
+ 			set_variable = {
+   				which = Fire_Stones
+  				value = 1
+			}
+						
+		}
 	}
 }

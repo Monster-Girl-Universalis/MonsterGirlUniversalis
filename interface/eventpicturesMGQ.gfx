@@ -687,4 +687,72 @@ spriteTypes = {
 		name = "LuciaFLAG_eventPicture"
 		texturefile = "gfx/event_pictures/LuciaFLAG_eventPicture.dds"
 	}
+	spriteType = {
+		name = "LAMIA_SUNNY_eventPicture"
+		texturefile = "gfx//event_pictures//event_pictures_lamiarealm//LAMIA_SUNNY_eventPicture.dds"
+	}
+	spriteType = {
+		name = "LAMIA_SISTER_eventPicture"
+		texturefile = "gfx//event_pictures//event_pictures_lamiarealm//LAMIA_SISTER_eventPicture.dds"
+	}
+	spriteType = {
+		name = "LAMIA_TEENY_eventPicture"
+		texturefile = "gfx//event_pictures//event_pictures_lamiarealm//LAMIA_TEENY_eventPicture.dds"
+	}
+	spriteType = {
+		name = "LAMIA_QUEEN_eventPicture"
+		texturefile = "gfx//event_pictures//event_pictures_lamiarealm//LAMIA_QUEEN_eventPicture.dds"
+	}
+	spriteType = {
+		name = "LAMIA_HARPY_eventPicture"
+		texturefile = "gfx//event_pictures//event_pictures_lamiarealm//LAMIA_HARPY_eventPicture.dds"
+	}
+	spriteType = {
+		name = "LAMIA_MERMAID_eventPicture"
+		texturefile = "gfx//event_pictures//event_pictures_lamiarealm//LAMIA_MERMAID_eventPicture.dds"
+	}
+	spriteType = {
+		name = "MELK_WOODS_eventPicture"
+		texturefile = "gfx//event_pictures//event_pictures_lamiarealm//MELK_WOODS_eventPicture.dds"
+	}
+	spriteType = {
+		name = "WOLF_RATTY_eventPicture"
+		texturefile = "gfx//event_pictures//event_pictures_wolfgirlrealm//WOLF_RATTY_eventPicture.dds"
+	}
+	spriteType = {
+		name = "WOLF_MOON_eventPicture"
+		texturefile = "gfx//event_pictures//event_pictures_wolfgirlrealm//WOLF_MOON_eventPicture.dds"
+	}
+	spriteType = {
+		name = "Castle_eventPicture"
+		texturefile = "gfx//event_pictures//event_pictures_wolfgirlrealm//Castle_eventPicture.dds"
+	}
+	spriteType = {
+		name = "MAYA_CAVE_eventPicture"
+		texturefile = "gfx//event_pictures//event_pictures_spidermikorealm//MAYA_CAVE_eventPicture.dds"
+	}
+	spriteType = {
+		name = "OROCHI_CAVE_eventPicture"
+		texturefile = "gfx//event_pictures//event_pictures_spidermikorealm//OROCHI_CAVE_eventPicture.dds"
+	}
+	spriteType = {
+		name = "MAYA_LEWD_eventPicture"
+		texturefile = "gfx//event_pictures//event_pictures_spidermikorealm//MAYA_LEWD_eventPicture.dds"
+	}
+	spriteType = {
+		name = "KUNOICHI_SCHOOLS_eventPicture"
+		texturefile = "gfx//event_pictures//event_pictures_spidermikorealm//KUNOICHI_SCHOOLS_eventPicture.dds"
+	}
+	spriteType = {
+		name = "SPIDER_PRINCESS_eventPicture"
+		texturefile = "gfx//event_pictures//event_pictures_spidermikorealm//SPIDER_PRINCESS_eventPicture.dds"
+	}
+	spriteType = {
+		name = "PLANSECT_FOREST_eventPicture"
+		texturefile = "gfx//event_pictures//event_pictures_spidermikorealm//PLANSECT_FOREST_eventPicture.dds"
+	}
+	spriteType = {
+		name = "MAYA_BOX_eventPicture"
+		texturefile = "gfx//event_pictures//event_pictures_spidermikorealm//MAYA_BOX_eventPicture.dds"
+	}
 }

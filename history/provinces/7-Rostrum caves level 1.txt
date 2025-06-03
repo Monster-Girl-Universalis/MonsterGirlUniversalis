@@ -2,7 +2,7 @@
 add_core = RMA
 owner = RMA
 controller = RMA
-culture = Ghost_Girl
+culture = Candle_Girl
 religion = monster_lord_religion
 base_tax = 2
 base_production = 2

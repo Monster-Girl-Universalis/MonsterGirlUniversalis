@@ -217,7 +217,7 @@ country_decisions = {
 				name = "alraune_integration_mod"
 				duration = 3650
 			}
- 			unlock_race = { race = apoptosis }
+ 			unlock_race = { race = alraune }
 		}
 		ai_will_do = {
 			factor = 0

@@ -18,7 +18,10 @@ sheep_island_1 = {
 		
 		trigger = {
 			208 = {
-				has_building = coastal_defence
+				OR = {
+					has_building = coastal_defence
+					has_building = naval_battery
+				}
 			}
 			mil_power = 300
 		}
@@ -274,9 +277,19 @@ sheep_island_3 = {
 			208 = {
 				development = 25
 				province_has_center_of_trade_of_level = 2
-				has_building = marketplace
-				has_building = workshop
-				has_building = dock 
+				OR = {
+					has_building = marketplace
+					has_building = trade_depot
+					has_building = stock_exchange
+				}
+				OR = {
+					has_building = workshop
+					has_building = counting_house
+				}
+				OR = {
+					has_building = dock 
+					has_building = drydock
+				}
 			}
 		}
 		
@@ -296,7 +309,10 @@ sheep_island_3 = {
 		trigger = {
 			208 = {
 				development = 40
-				has_building = courthouse
+				OR = {
+					has_building = courthouse
+					has_building = town_hall
+				}
 				has_building = textile
 				num_of_times_expanded_infrastructure = 2
 			}
@@ -320,7 +336,10 @@ sheep_island_3 = {
 		trigger = {
 			208 = {
 				development = 50
-				has_building = shipyard
+				OR = {
+					has_building = shipyard
+					has_building = grand_shipyard
+				}
 				num_of_times_expanded_infrastructure = 3
 				province_has_center_of_trade_of_level = 3
 			}

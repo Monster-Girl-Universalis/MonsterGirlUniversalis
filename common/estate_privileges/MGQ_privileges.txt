@@ -84,8 +84,8 @@ estate_noblesMGQ_godslayer_chainsaw = {
 	}
 	modifier = {
 		shock_damage = 0.25
-		infantry_shock = 2
-		artillery_shock = 2
+		infantry_shock = 1
+		artillery_shock = 1
 		country_military_power = -2
 	}
 }
@@ -95,9 +95,15 @@ estate_burghersMGQ_fire_stones = {
 	loyalty = 0.05
 	influence = 0.1
 	is_valid = { 
-		check_variable = {
-				which = Spirit_Stone_Subsidies
-				value = 1
+		OR = {
+			check_variable = {
+					which = Spirit_Stone_Subsidies
+					value = 1
+			}
+			check_variable = {
+					which = Fire_Stones
+					value = 1
+			}
 		}
 	}	
 	modifier = {
@@ -109,9 +115,15 @@ estate_burghersMGQ_ice_stones = {
 	loyalty = 0.05
 	influence = 0.1
 	is_valid = { 
-		check_variable = {
-				which = Spirit_Stone_Subsidies
-				value = 1
+		OR = {
+			check_variable = {
+					which = Spirit_Stone_Subsidies
+					value = 1
+			}
+			check_variable = {
+					which = Ice_Stones
+					value = 1
+			}
 		}
 	}	
 	modifier = {
@@ -123,9 +135,15 @@ estate_burghersMGQ_thunder_stones = {
 	loyalty = 0.05
 	influence = 0.1
 	is_valid = { 
-		check_variable = {
-				which = Spirit_Stone_Subsidies
-				value = 1
+		OR = {
+			check_variable = {
+					which = Spirit_Stone_Subsidies
+					value = 1
+			}
+			check_variable = {
+					which = Thunder_Stones
+					value = 1
+			}
 		}
 	}	
 	modifier = {
@@ -137,9 +155,15 @@ estate_burghersMGQ_wind_stones = {
 	loyalty = 0.05
 	influence = 0.1
 	is_valid = { 
-		check_variable = {
-				which = Spirit_Stone_Subsidies
-				value = 1
+		OR = {
+			check_variable = {
+					which = Spirit_Stone_Subsidies
+					value = 1
+			}
+			check_variable = {
+					which = Wind_Stones
+					value = 1
+			}
 		}
 	}	
 	modifier = {
@@ -171,9 +195,15 @@ estate_burghersMGQ_water_stones = {
 	loyalty = 0.05
 	influence = 0.1
 	is_valid = { 
-		check_variable = {
-				which = Spirit_Stone_Subsidies
-				value = 1
+		OR = {
+			check_variable = {
+					which = Spirit_Stone_Subsidies
+					value = 1
+			}
+			check_variable = {
+					which = Water_Stones
+					value = 1
+			}
 		}
 	}	
 	modifier = {
@@ -185,9 +215,15 @@ estate_burghersMGQ_holy_stones = {
 	loyalty = 0.05
 	influence = 0.1
 	is_valid = { 
-		check_variable = {
-				which = Spirit_Stone_Subsidies
-				value = 1
+		OR = {
+			check_variable = {
+					which = Spirit_Stone_Subsidies
+					value = 1
+			}
+			check_variable = {
+					which = Holy_Stones
+					value = 1
+			}
 		}
 	}	
 	modifier = {
@@ -199,9 +235,15 @@ estate_burghersMGQ_dark_stones = {
 	loyalty = 0.05
 	influence = 0.1
 	is_valid = { 
-		check_variable = {
-				which = Spirit_Stone_Subsidies
-				value = 1
+		OR = {
+			check_variable = {
+					which = Spirit_Stone_Subsidies
+					value = 1
+			}
+			check_variable = {
+					which = Dark_Stones
+					value = 1
+			}
 		}
 	}	
 	modifier = {

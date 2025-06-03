@@ -9,6 +9,7 @@ bookmark =
 
 	country = ENV
 	country = ML1
+	country = KI1
 	country = SI1
 	country = SA1
 	country = GR2
@@ -16,12 +17,15 @@ bookmark =
 	country = PT1
 	country = IT1
 	country = LC1
-	country = CD1
-	country = NA1
-	country = FP1
+	country = SP4
+	country = VA6
+	country = MR3
+	country = EL1
+	country = FQ1
 	
 	easy_country = ENV
 	easy_country = ML1
+	easy_country = KI1
 	easy_country = SI1
 	easy_country = SA1
 	easy_country = GR2

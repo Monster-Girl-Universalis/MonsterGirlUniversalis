@@ -16,3 +16,9 @@ technology_group = TECH_INSECT
 	}
 }
 capital = 1309
+1444.1.1 = { 
+	add_country_modifier = {
+		name = "rallied_vassal"
+		duration = 10950
+	}
+}

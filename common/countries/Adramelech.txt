@@ -1,6 +1,6 @@
 #Country Name: Adramalech.
 
-graphical_culture = apoptosisgfx
+graphical_culture = asiangfx
 
 color = { 125 1 1 }
 revolutionary_colors = { 16  16  16 }

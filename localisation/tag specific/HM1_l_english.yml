@@ -1,0 +1,270 @@
+﻿l_english:
+#Missions
+ haunted_mansion_demon_lord_1_title: "Monster Lord Relations"
+ haunted_mansion_demon_lord_1_desc: "The opinion of the Monster Lord is an important thing indeed. Our queen hopes to create the ultimate undead one day, and impressing the Monster Lord with the progress of our necromancy will go far in our efforts to recruit more necromancer apprentices. Of course, first we have to earn such an envoy, either through good relations or respect earned through power. And of course, we must still make many preparations before we are ready to receive them such as building up our lab in the capital."
+ 
+ haunted_mansion_demon_lord_2_title: "Digging for Iron"
+ haunted_mansion_demon_lord_2_desc: "There are many materials that we need for our research equipment. Iron is one of the most important, but we have a deficiency of it. Digging in the mountains for more deposits can fix that."
+ 
+ haunted_mansion_demon_lord_3_title: "Journey to the East"
+ haunted_mansion_demon_lord_3_desc: "Although we have found much iron in the vicinity of the capital, we still hunger for more. We must fund an expedition across the mountains to our East so that we may settle there and mine even more!"
+  
+ haunted_mansion_demon_lord_4_title: "Bounty of the Mountains"
+ haunted_mansion_demon_lord_4_desc: "Our expenses have paid off! There is much iron to be found in the St Amos area. Iron that is now to be ours."
+  
+ haunted_mansion_demon_lord_5_title: "Securing Our Prosperity"
+ haunted_mansion_demon_lord_5_desc: "It is difficult to ship back the iron we mine in St Amos through the mountains, and iron shipped by sea is limited by naval capacity, pirates and weather. We must secure a safer, more economical land route for our iron."
+   
+ haunted_mansion_demon_lord_6_title: "The Mushrooms"
+ haunted_mansion_demon_lord_6_desc: "The Kinoko Mountains are rumored to have special mushrooms that increase health and attentiveness. It could be a powerful aid for our scientific ambitions. Of course, we will have to secure the region, and all the land in between there and here."
+   
+ haunted_mansion_demon_lord_7_title: "Conquest and Conversion"
+ haunted_mansion_demon_lord_7_desc: "Now that we are more established we have put off the conquest of our home region for too long. It will be a good opportunity for us to spread our ways! Many of our necromancers thirst for more academic recruits."
+   
+ haunted_mansion_demon_lord_8_title: "Keeping Momentum"
+ haunted_mansion_demon_lord_8_desc: "Our fate in our early days was so precarious. We were surrounded by giants that believed more in faith than reason. But now we are strong and our strength has taught us that security lies in conquest. You must be the conqueror or the conquered, so we shall be the conqueror! The lands to our South are the next natural target for our conquests."
+   
+ haunted_mansion_demon_lord_9_title: "The Spring"
+ haunted_mansion_demon_lord_9_desc: "Some Alraune in our nation discovered a spring in the mountains. It seems to have supernatural properties, increasing the yields of any Alraune who stays there. Some have even started growing indigo! The Alraune request we protect such an important location for them, and we are inclined to agree. The spring is already at a strategic chokepoint anyway."
+   
+ haunted_mansion_demon_lord_10_title: "Underground Lakes"
+ haunted_mansion_demon_lord_10_desc: "Some of the Alraune from the spring before have discovered a series of underground lakes in the Tarantula Wastelands to the South. If we can conquer that then the Alraune will be able to make full use of the new land."
+
+ haunted_mansion_security_1_title: "Security in Numbers"
+ haunted_mansion_security_1_desc: "When it comes to religion, or the lack thereof, we are the odd one out in this region. Furthermore we are far from the biggest fish in this pond, with behemoths like San Ilia to our East, or Puppeteer Tower to our South. Our diplomatic situation is unsettling, to say the least. We must make allies if we want to protect ourselves."
+  
+ haunted_mansion_security_2_title: "The Southern Fortress"
+ haunted_mansion_security_2_desc: "Diplomatic security is no replacement for military security. Our southern lands form a natural chokepoint that we can fortify against invasions deeper to our capital. We should build a fort there to exploit this. Furthermore many of the ghost girls in the mansion have been looking for something new to haunt. Our fortress is the perfect answer! It will keep them busy and help scare away invaders."
+   
+ haunted_mansion_security_3_title: "A Haunted House"
+ haunted_mansion_security_3_desc: "While most have been scared away by our haunted fort a few have actually enjoyed it! This gives us an idea. We can build a haunted house for people to visit as an attraction! The visitors will love it, the necromancers will feel appreciated and we can make some money."
+   
+ haunted_mansion_security_6_title: "Invitation to Her Majesty"
+ haunted_mansion_security_6_desc: "Our research into the ultimate undead has progressed thanks to our efforts. We have made great strides in enhancing the scientific capacity of our nation and so are now just about ready to invite an envoy from the Monster Lord to show them results from some of our most successful projects. If we can impress them then our scientific ways will become more credible and we will be able to recruit even more into becoming necromancer apprentices for us!"
+  
+ haunted_mansion_security_7_title: "The Necromaster"
+ haunted_mansion_security_7_desc: "The envoy was incredibly impressed and the credibility of our ways in the eyes of the populace has increased as a result! The progress of our main project has been relatively smooth since then, but recently hit a wall. In order to break through this wall and create the ultimate undead, the next and final step will require a powerful monster girl. And who is more powerful than our queen? Of course, we must continue to convert the population to our ways so that we have the apprentices needed to carry out the project without error."
+  
+ haunted_mansion_security_8_title: "Kagetsumugi"
+ haunted_mansion_security_8_desc: "Puppeteer Tower is a powerful force in the region. That can make them a powerful ally... or a powerful foe. We must take care of them one way or another in order to make sure they do not hinder us with their might."
+  
+ haunted_mansion_security_9_title: "The Talon Tightens"
+ haunted_mansion_security_9_desc: "Puppeteer Tower is a threat that we can ignore no longer. Their valley is highly defendable, so we will be fighting a difficult battle, but the first thing to do is conquer the land around the valley, as a base of operations for further offensives."
+  
+ haunted_mansion_security_10_title: "The Tower Falls!"
+ haunted_mansion_security_10_desc: "We have surrounded the valley! Their defenses will not be easy to break, but break them we must if wish to secure our place in Natalia. We must strike while the iron is hot!"
+  
+ haunted_mansion_security_11_title: "Hegemon of Natalia"
+ haunted_mansion_security_11_desc: "Necromancy is not beloved by all, with many in the past voicing their recommendation to ban it. But now that we have secured our position as the empire spanning the entire territory of Natalia we can proclaim ourselves the protectors of that art and science!"
+  
+ haunted_mansion_west_1_title: "A Developed Port"
+ haunted_mansion_west_1_desc: "The mountains around us act as a natural barrier to protect us, but they also box us in. We can't limit our ambitions to only the land. We have to look across the water if we want to seize opportunities. The first step would be to develop our port in the North."
+  
+ haunted_mansion_west_2_title: "The Gold Mine"
+ haunted_mansion_west_2_desc: "There are a lot of things we want to do, and they all cost money. The best way to get some would be to take the gold mine to our West for ourselves. Our Scylla maids will be important for managing the operation of such a mine."
+  
+ haunted_mansion_west_3_title: "Westward Expansion"
+ haunted_mansion_west_3_desc: "The lands to our West don't worship the Monster Lord, meaning there will be limited diplomatic consequences for conquering them. At the same time there is a strange tear in reality that we must secure! Many in our nation are eager to properly study it."
+  
+ haunted_mansion_west_4_title: "More Zombie Girls!"
+ haunted_mansion_west_4_desc: "Many Zombie Girls started flooding in as researchers after we secured the Western region. If we can assist their settlement there will be a large amount of Zombie Girls we can potentially recruit for military service."
+  
+ haunted_mansion_west_5_title: "Coastal Trading Ports"
+ haunted_mansion_west_5_desc: "Our nation is dependent on many resources, not all of which can be sourced from within our borders. The coast to our West would make a good series of trading outposts. We just need to conquer that land first."
+  
+ haunted_mansion_west_6_title: "Coastal Investment"
+ haunted_mansion_west_6_desc: "Now that we've taken the land we need it's time to develop the trading infrastructure required. Many of our imports come from our sister nation La Croix, in fact."
+
+ haunted_mansion_west_7_title: "Notes of La Croix"
+ haunted_mansion_west_7_desc: "Our trade relations with La Croix greatly increased recently. We have been having diplomatic meetings with them more regularly, but we have found some mysterious notes in Administrator Tower that are sure to be the topic of our next meeting."
+  
+ haunted_mansion_west_8_title: "Unity with La Croix"
+ haunted_mansion_west_8_desc: "We have become a great Empire rivaling the Monster Lord herself. Our sister nation La Croix has not been as successful, however. It is time for us to take her under our wing in order to protect her."
+  
+ haunted_mansion_la_croix_friendship_actual_title: "Friendship with La Croix"
+ haunted_mansion_la_croix_friendship_actual_desc: "La Croix is our sister nation, as in literally ruled by our sister. She can be distant at times, but that just means we should take the initiative. She is across the sea, so we will need a large navy and naval infrastructure if we want to properly defend her in times of war."
+  
+ haunted_mansion_adm_tower_1_title: "The Paintgeist Realm"
+ haunted_mansion_adm_tower_1_desc: "Paintgeist Realm to our West is much smaller than us and shares our belief system. At the same time they hold a tower that may be of importance to use. We should diplomatically vassalize them for both of our sakes."
+   
+ haunted_mansion_adm_tower_2_title: "Scouting the Tower"
+ haunted_mansion_adm_tower_2_desc: "Administrator Tower has many secrets for us to uncover. First however, we would need to divert significant leadership materials if we are to make those discoveries."
+   
+ haunted_mansion_adm_tower_3_title: "Beam Sythe Discovery!"
+ haunted_mansion_adm_tower_3_desc: "Wonderful news! Our team has discovered a new makina in the tower!"
+   
+ haunted_mansion_safina_lab_1_title: "Study Safina Tartarus"
+ haunted_mansion_safina_lab_1_desc: "Securing Safina Tartarus was a stroke of genius! Now we need to divert some researchers in order to discover any new makinas and their uses. Of course, we should only do so when not preoccupied with other scientific endeavors."
+   
+ haunted_mansion_safina_lab_2_title: "Safina Tartarus Studied!"
+ haunted_mansion_safina_lab_2_desc: "Today's a good day! We made a discovery at the Safina Tartarus!"
+   
+ haunted_mansion_san_illia_lab_1_title: "Study San Ilia Lab"
+ haunted_mansion_san_illia_lab_1_desc: "The San Ilia Lab was always meant to be ours! Those Ilias Light followers aren't as scientifically-minded like us. Now that we own it, it is time to see what we can discover."
+    
+ haunted_mansion_san_illia_lab_2_title: "Discovery from the Lab!"
+ haunted_mansion_san_illia_lab_2_desc: "All our hopes were justified! We made a new discovery at the San Ilia lab!"
+        
+ haunted_mansion_plant_1_title: "The Southern Alraune"
+ haunted_mansion_plant_1_desc: "The Alraune to our South produce a wide variety of plants that can be useful to us, some even in regards to our projects in necromancy. In addition, they produce a lot of food that can be used to feed all the necromancer apprentices we hope to recruit. We will need to prepare to attack if we want those resources. While we have the army, we might as well prepare to conquer the rest of the region if the opportunity presents itself."
+    
+ haunted_mansion_plant_2_title: "Watermelon Girls"
+ haunted_mansion_plant_2_desc: "Now that we have conquered the Watermelon Girls, we need to properly integrate them if we are to make this a truly verdant land. "
+    
+ haunted_mansion_plant_3_title: "Secure the Lab"
+ haunted_mansion_plant_3_desc: "San Ilia is a powerful foe in the region. What more, they have a lab that we want. Those in the region of the lab are scientifically-minded people like us, but they have to suffer under the rule of an Ilias Light regime! We will liberate them in time, but first we must develop a military advantage over our foe."
+    
+ haunted_mansion_plant_4_title: "Rally Them!"
+ haunted_mansion_plant_4_desc: "San Ilia is surrounded by many small nations that are threatened by them and don't share their faith. If we can improve our relations with them we can potentially rally them into a war against San Ilia."
+    
+ haunted_mansion_plant_5_title: "The Great Offense"
+ haunted_mansion_plant_5_desc: "We've made what preparations we can. The time has come to take the lab and crush San Ilia in the process!"
+    
+ haunted_mansion_plant_6_title: "Hegemon of San Ilia"
+ haunted_mansion_plant_6_desc: "Now that we've dealt a crushing blow to San Ilia there is no peer to stand in our way as we unify the subcontinent! Of course, we may need a large amount of Zombie Girls to administrate our conquests. NOTE: Completing this mission will unlock 4 new privileges for the Spiritualists!"
+    
+ haunted_mansion_plant_7_title: "Zombie Labor"
+ haunted_mansion_plant_7_desc: "Our conquests have opened up many economic opportunities to us. Much of the land we conquered is rich in resources and centers of trade. Now that we have such a large population of Zombie Girls we need to make sure that we have the infrastructure in place to make use of their labor. After all, Zombie Girls are an excellent work force! They can work tirelessly, just like... a zombie. NOTE: Completing this mission will unlock a decision to spend manpower to develop your capital."
+    
+ haunted_mansion_plant_8_title: "Loyal Zombies"
+ haunted_mansion_plant_8_desc: "Our Zombie Girls form the backbone of our military and so reinforcing them is a keystone of our defense. If they become more loyal, then we can ask them to shoulder a greater share of this financial burden. NOTE: Completing this mission will unlock a unique privilege for the Spiritualists."
+#Decisions 
+ hm_zombie_labor_decision_title: "Use Zombie Girl Labor"
+ hm_zombie_labor_decision_desc: "We can use zombie girl labor to improve our capital. However we will only be able to do this every 20 years and we may have trouble with manpower and recruitment if we devote so many of our girls to developing the capital."
+#Estate Privileges
+ estate_zombie_admin: "Zombie Girl Administration"
+ estate_zombie_admin_desc: "Having our adminstration rely more heavily on our Zombie Girls may increase our capacity to directly administer our country. After all, we have so many Zombie Girls to employ. However, foreigners might not be the most open-minded people when it comes to interacting with them."
+ 
+ estate_loyal_zombies: "Loyal Zombie Girls"
+ estate_loyal_zombies_desc: "Our Zombie Girls are fiercely loyal, and so are willing to pay a greater portion of military expenses themselves."
+ 
+ estate_zombie_settlements: "Zombie Girl Settlements"
+ estate_zombie_settlements_desc: "We can achieve greater stability through the targeted settlement of our Zombie Girls. However, not everyone will appreciate this."
+ 
+ estate_zombie_education: "Necrotic Education"
+ estate_zombie_education_desc: "Necromancy is a powerful tool, and one we intend to use to its full potential by educating as many of our subjects as we can in its use. However, not everyone appreciates necromancy, and so this may hurt trade relations."
+ 
+ estate_zombie_medic: "Zombie Girl Medics"
+ estate_zombie_medic_desc: "A Zombie Girl's biology isn't like everyone else's. Our medics are trained specifically to operate on our Zombie Girls and so are better able to care for them."
+#Events
+ mt_haunted_house.1.t: "Discovery of the Beam Scythe Makina!"
+ mt_haunted_house.1.d: "Our scouting of the first floor of Administrator Tower has been a great success! Our scientists are presenting us with something they call a Beam Scythe. The makina is powerful enough to slice through some of the toughest materials."
+
+ mt_haunted_house.1.a: "We can use it to help with construction for our economy!"
+
+ mt_haunted_house.1.b: "We can use it to harvest crops!"
+
+ mt_haunted_house.1.c: "We can use it to dig moats around our forts!"
+
+ mt_haunted_house.1.e: "We can use it as a weapon for our soldiers!"
+
+ mt_haunted_house.2.t: "Discovery of the Laser Pointer Makina!"
+ mt_haunted_house.2.d: "The Safina Tartarus was a wonder for our apprentices! They found something they have taken to calling a laser pointer, and after diligent research into its inner workings and applications have presented their findings to us."
+
+ mt_haunted_house.2.a: "We can use it to guide our projectiles!"
+
+ mt_haunted_house.2.b: "We can use it to lure in Nekomata girls!"
+
+ mt_haunted_house.2.c: "Our scientists can use it in their research presentations!"
+
+ mt_haunted_house.2.e: "Our missionaries can use it on their slideshows!"
+
+ mt_haunted_house.3.t: "Discovery of the Blast Voice Makina!"
+ mt_haunted_house.3.d: "The San Ilia lab was always meant to be ours. It goes without saying that many in our great country were overjoyed to liberate it. But that was not the only source of our joy. Many of our apprentices were gleeful fantasizing about what discoveries they might make with the lab. Today those hopes have been realized. Our scientists have presented us with something they call a Blast Voice Makina. The item allows the user to magnify the loudness and reach of their voice. Now the question remains, how shall we apply it?"
+
+ mt_haunted_house.3.a: "We can use it to deliver propoganda to maintain stability!"
+
+ mt_haunted_house.3.b: "We can use it to punish corrupt officials!"
+
+ mt_haunted_house.3.c: "We can use it as a weapon in war!"
+
+ mt_haunted_house.3.e: "We can use it to advertise our trade deals!"
+
+ mt_haunted_house.4.t: "The Notes"
+ mt_haunted_house.4.d: "It was many years ago that our ghost scouts discovered the mysterious tower on the island next to the Safina Tartarus. At first we had no insight as to its origin and purpose, but after some thorough investigation we found out the multifunctional purpose of this place. The Administrator Tower is an object from the parallel world which already met its final demise by being swallowed by the Chaos. This tower served as a research center, living place for refugees, greenhouse for the remaining flora, an arc for all the world's knowledge and an impenetrable fortress.\nAlthough some of our exploring parties were hindered by the artificial monsters guarding this tower, we managed to uncover some of its secrets and glimpses of the history of the dying world. Only a single floor and the Tower's basement weren't covered in debris and due to causal effect were transferred to our world. Among the remaining floors one of our ghost girl researchers has found a very valuable item - notes from the Master of this tower, none other than La Croix herself, the sister of Chrome.\nThose notes contain very sophisticated formulae and research regarding the apoptosis effect, chaos spread and its original cause - the paradox in the original timeline which led to the creation of all the parallel worlds. According to the notes, the further a world will deviate from the original timeline the sooner it will be led towards its demise. On the other hand, even following the correct timeline doesn't prevent the world from disappearing, it only slows chaotization significantly. The notes didn't provide any information on how to fix the paradox or prevent the worlds from disintegration, leaving our scientists in a depressed state of mind. But maybe there are other smart people around in this world? If only Chrome could meet her missing sister La Croix Shirome from our world...\nLa Croix hadn't been in contact with her for a long time since the failed experiment when Shirome almost died protecting her sister from an explosion caused by Chrome's own mistake. But now, when we have an invaluable proof of grave calamity waiting for our world and chaos research done in a great detail with results which could be obtained only in a dying world, she must listen!"
+
+ mt_haunted_house.4.a: "Chrome shall talk to Shirome."
+ 
+ hm_diverting_leadership_resources: "Diverting Leadership Resources"
+#Modifiers
+ beam_scythe_economic: "Beam Scythe - Economic Use"
+ beam_scythe_agriculture: "Beam Scythe - Agricultural Use"
+ beam_scythe_forts: "Beam Scythe - Defensive Use"
+ beam_scythe_melee: "Beam Scythe - Military Use"
+
+ hm_studying_lab: "Researching"
+
+ laser_fire: "Laser Makina - Military Use"
+ laser_dev: "Laser Makina - Luring Nekomata"
+ laser_tech: "Laser Makina - Academic Use"
+ laser_missionary: "Laser Makina - Religious Use"
+ 
+ blast_unrest: "Blast Makina - Internal Use"
+ blast_corruption: "Blast Makina - Punitive Use"
+ blast_war: "Blast Makina - Military Use"
+ blast_trade: "Blast Makina - Advertising Trade Deals"
+
+ getting_labs_ready: "Preparing Labs"
+
+ hm_mountain_expedition: "The Eastern Expedition"
+
+ hm_integration: "Integration into Haunted House"
+
+ hm_kinoko_mushrooms: "Kinoko Mushrooms"
+
+ hm_alliances: "Security in Numbers" 
+
+ haunted_fort: "Haunted Fort"
+
+ happy_ghosts: "Haunted House"
+
+ hm_naval_base: "Naval Infrastructure"
+
+ hm_gold_deplete: "Well-Managed Mine"
+
+ hm_fruits_studying_safina: "Fruits of Sabasa Tartarus"
+
+ hm_undead_researchers: "Undead Researchers Flowing In" 
+
+ hm_abundant_zombie_girls: "Abundant Zombie Girls" 
+
+ hm_bold_apprentices: "Credible Apprentices"
+
+ hm_eve_of_war: "Eve of the War" 
+
+ hm_hegemon_san_illia: "Hegemon of San Ilia" 
+
+ loyal_zombies_reward: "Loyal Zombies"
+
+ hm_conquer_1: "Keeping Momentum"
+
+ hm_alraune_activity: "Alraune Activity"
+
+ hm_alraune_fortress: "Verdant Fortress"
+
+ hm_doll_victory: "Victory Over Kagetsumugi"
+
+ hm_necro_protector: "Necrotic Empire of Natalia" 
+
+ hm_prepare_trade: "Preparing Trade Infrastructure"
+
+ hm_loyal_sister: "Loyal Sister"
+
+ hm_zombie_labor: "Zombie Labor" 
+
+ hm_not_enough_zombies: "Zombie Labor Expended"
+
+
+
+
+
+
+
+ 
+
+ 
+
+ 
+
+ 
+

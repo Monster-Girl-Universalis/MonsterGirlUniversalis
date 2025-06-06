@@ -495,7 +495,7 @@ cb_nationalist = {
 					dip_tech = 18
 					mil_tech = 18
 				}
-				has_idea_group = vampire_ideas
+				vampire_ideas = 7
 			}
 			invasion_nation = yes
 		}
@@ -523,7 +523,7 @@ cb_imperial = {
 					dip_tech = 18
 					mil_tech = 18
 				}
-				has_idea_group = vampire_ideas
+				vampire_ideas = 7
 			}
 			invasion_nation = yes
 		}

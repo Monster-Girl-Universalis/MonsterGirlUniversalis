@@ -1,0 +1,19 @@
+country_decisions = {
+	centaur_cavalry_decision = {
+		major = yes
+		potential = {
+			tag = BQD
+			NOT = { 
+				has_centaur_cavalry = yes
+			}
+		}
+		allow = {
+			tag = BQD
+		}
+		effect = {
+ 			unlock_centaur_cavalry = yes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}

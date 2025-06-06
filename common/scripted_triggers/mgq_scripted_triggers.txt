@@ -858,3 +858,12 @@ has_race_condition_giant = {
 		was_tag = ML1
 	}
 }
+has_centaur_cavalry = {
+	OR = {
+		has_country_flag = can_access_centaur_cavalry
+		is_or_was_tag = { tag = ILC }
+		is_or_was_tag = { tag = CN1 }
+		is_or_was_tag = { tag = CN2 }
+		is_or_was_tag = { tag = CE1 }
+	}
+} 

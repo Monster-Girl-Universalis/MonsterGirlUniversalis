@@ -128,6 +128,7 @@ technology = {
 
 	enable = cavalry_hum_t1_01
 	enable = cavalry_hum_t1_02
+	enable = cavalry_bst_t1
 }
 
 technology = {
@@ -665,6 +666,7 @@ technology = {
 	enable = infantry_hum_t15_02
 	enable = infantry_hum_t15_03
 	enable = infantry_hum_t15_04
+	enable = cavalry_bst_t15
 }
 
 technology = {
@@ -1075,6 +1077,7 @@ technology = {
 	enable = infantry_hum_t24_02
 	enable = infantry_hum_t24_03
 	enable = infantry_hum_t24_04
+	enable = cavalry_bst_t24
 
 	combat_width = 2
 }

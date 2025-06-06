@@ -505,6 +505,14 @@
  infantry_bst_t26_01DESCR: "The Behemoths are massive and powerful infantry units. They can trample enemies under their colossal strength and size."
  infantry_bst_t26_02: "Basilisks"
  infantry_bst_t26_02DESCR: "The Basilisks are infantry units with the ability to petrify their foes with their gaze. They can turn enemies to stone with a single glance."
+ unlock_centaur_cavalry: "Unlocks §TCentaur Cavalry§!\n§TIf you do not currently have cavalry you won't gain access until you take the next military technolgy.§!"
+ cavalry_bst_t1: "Illias Centaurs"
+ cavalry_bst_t1DESCR: "The Centaurs found in Illias are agile and chivalrous cavalry units. They move at speeds that put other monsters to shame."
+ cavalry_bst_t15: "Noah Centaurs"
+ cavalry_bst_t15DESCR: "The Centaurs found in Noah are cavalry units skilled with spears. Despite being quite aloof, their rapid movements can still catch opponents off guard"
+ cavalry_bst_t24: "Grand Centaurs"
+ cavalry_bst_t24DESCR: "The Grand Centaurs are elite cavalry units. Wielding much heavier equipment than other Centaurs they can quickly overwhelm an enemy with their battle prowess."
+
  ###ELF UNITS###
  infantry_elf_t1_01: "Young Elves"
  infantry_elf_t1_01DESCR: "The Young Elves are newly trained warriors eager to prove themselves. Though inexperienced, they fight with agility and determination."

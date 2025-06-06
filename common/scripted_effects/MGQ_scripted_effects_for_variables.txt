@@ -573,6 +573,11 @@ MGQ_add_chaos = {
 	}
 }
 
+unlock_centaur_cavalry = {
+		custom_tooltip = unlock_centaur_cavalry
+		set_country_flag = can_access_centaur_cavalry
+}
+
 MGQ_reduce_chaos = {
 	if = {
 		limit = {

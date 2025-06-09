@@ -1,0 +1,501 @@
+########################################
+# Events concerning Revolution Spread
+#
+# written by Pierre du Plessis
+########################################
+
+namespace = center_of_revolution
+
+###Mechanical Events
+
+#Spawning the Center
+province_event = {
+	id = chaos.1
+	title = chaos.1.name
+	desc = chaos.1.desc
+	picture = REVOLUTION_eventPicture
+	major = yes
+	goto = root
+
+	trigger = {
+		has_dlc = "Emperor"
+		current_age = age_of_revolutions
+		development = 30
+		NOT = { has_province_modifier = religious_center }
+	}
+	mean_time_to_happen = {
+		years = 600
+		modifier = {
+			factor = 0.5
+			owner = {
+				NOT = { stability = -1 }
+			}
+		}
+		modifier = {
+			factor = 1.2
+			owner = {
+				stability = 3
+			}
+		}
+	}
+	fire_only_once = yes
+
+	immediate = {
+		hidden_effect = {
+			save_global_event_target_as = revolution_center
+			save_global_event_target_as = first_revolution_center
+		}
+	}
+
+	option = {
+		name = chaos.A
+		spawn_center_of_revolution = root
+		set_province_flag = first_revolution_center
+		set_global_flag = first_revolution_center_spawned #to check time since spawn for backup center
+		
+		log = "Center of Chaos spawned in [Root.GetName] (owner: [Root.Owner.GetName]) in [GetYear]"
+	}
+}
+
+
+#Spawning the Center - backup event
+province_event = {
+	id = chaos.2
+	title = chaos.2
+	desc = chaos.2
+	picture = REVOLUTION_eventPicture
+	fire_only_once = yes
+	goto = root
+	major = yes
+	
+	trigger = {
+		has_dlc = "Emperor"
+		has_revolution_in_province = yes
+		has_global_flag = first_revolutionary_center_snuffed_out
+#		has_global_flag = first_revolution_center_spawned #not needed
+		OR = {
+			NOT = {
+				had_global_flag = {
+					flag = first_revolution_center_spawned
+					days = 9125
+				}
+			}
+			AND = {
+				owner = { is_revolution_target = yes }
+				NOT = {
+					had_global_flag = {
+						flag = first_revolution_center_spawned
+						days = 18250
+					}
+				}
+			}
+		}
+		NOT = { has_global_flag = no_more_revolutions_ever }
+		development = 30
+		enlightenment = 100
+		owner = {
+			is_great_power = yes
+			has_institution = enlightenment
+			is_free_or_tributary_trigger = yes
+			NOT = { tag = PAP }
+			#NOT = { has_reform = celestial_empire }
+		}
+		NOT = { has_province_modifier = religious_center }
+		NOT = { has_province_flag = first_revolution_center }
+	}
+	mean_time_to_happen = { #slightly simplified version of .1000's weights
+		years = 15
+		modifier = {
+			factor = 10
+			NOT = {
+				event_target:revolution_center = {
+					same_continent = root
+				}
+			}
+		}
+		modifier = {
+			factor = 0.75
+			owner = { is_revolution_target = yes }
+		}
+		modifier = {
+			factor = 0.75
+			owner = { is_revolutionary = yes }
+		}
+		modifier = {
+			factor = 0.75
+			owner = {
+				is_revolutionary = yes
+				revolutionary_zeal = 80
+			}
+		}
+	immediate = {
+		hidden_effect = {
+			clear_global_event_target = revolution_center
+			save_global_event_target_as = revolution_center
+			log = "2nd Center of Revolution spawned in [Root.GetName] (owner: [Root.Owner.GetName]) in [GetYear]"
+		}
+	}
+	option = {
+		name = chaos.2.A
+		trigger = {
+			owner = {
+				is_revolutionary = no
+			}
+		}
+		spawn_center_of_revolution = root
+	}
+	option = {
+		name = chaos.2.B
+		trigger = {
+			owner = {
+				is_revolutionary = yes
+			}
+		}
+		spawn_center_of_revolution = root
+	}
+}
+
+#Reactionary Coup in <province>
+country_event = {
+	id = center_of_revolution.8
+	title = center_of_revolution.8.name
+	desc = center_of_revolution.8.desc
+	picture = CONSPIRACY_eventPicture
+	goto = revolutionary_province
+	
+	trigger = {
+		has_dlc = "Emperor"
+		revolution_target_exists = yes
+		any_owned_province = {
+			has_revolution_in_province = yes
+			is_center_of_revolution = no
+		}
+		is_revolutionary = no
+	}
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			random_country = {
+				limit = { is_revolution_target = yes }
+				save_event_target_as = revolution_target
+			}
+			random_owned_province = {
+				limit = {
+					has_revolution_in_province = yes
+					is_center_of_revolution = no
+				}
+				save_event_target_as = revolutionary_province
+			}
+		}
+	}
+
+	option = {
+		name = center_of_revolution.8.A
+		event_target:revolutionary_province = {
+			area = {
+				limit = {
+					owned_by = root
+					is_center_of_revolution = no
+				}
+				remove_revolution_from_province_effect = yes
+				add_named_unrest = {
+					name = revolutionary_sentiment
+					value = 10
+				}
+			}
+			random = {
+				chance = 30
+				revolutionary_rebels = 1
+			}
+		}
+		ai_chance = {
+			factor = 3
+		}
+	}
+	option = {
+		name = center_of_revolution.8.B
+		add_stability = -1
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+#Reactionaries in <province> discovered
+country_event = {
+	id = center_of_revolution.9
+	title = center_of_revolution.9.name
+	desc = center_of_revolution.9.desc
+	picture = CONSPIRACY_eventPicture
+	is_triggered_only = yes
+	goto = reactionary_province
+
+	trigger = {
+		has_dlc = "Emperor"
+		is_revolutionary = yes
+		any_owned_province = {
+			has_revolution_in_province = yes
+			is_capital = no
+			controlled_by = root
+			is_center_of_revolution = no
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+		modifier = {
+			factor = 2
+			has_country_modifier = the_reign_of_terror
+		}
+		modifier = {
+			factor = 0.5
+			all_owned_province = {
+				has_revolution_in_province = yes
+			}
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					has_revolution_in_province = yes
+					is_capital = no
+					controlled_by = root
+					is_center_of_revolution = no
+				}
+				save_event_target_as = reactionary_province
+			}
+		}
+	}
+
+	option = {
+		name = center_of_revolution.9.A
+		event_target:reactionary_province = {
+			spawn_rebels = {
+				size = 1.5
+				type = pretender_rebels
+			}
+		}
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				OR = {
+					num_of_rebel_armies = 5
+					num_of_rebel_controlled_provinces = 5
+				}
+			}
+		}
+	}
+
+	option = {
+		name = center_of_revolution.9.B
+		event_target:reactionary_province = {
+			remove_revolution_from_province_effect = yes
+		}
+		add_revolutionary_zeal_or_absolutism = { amount = -5 }
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+#Spread the Revolution to someone else's provinces with a coup
+country_event = {
+	id = center_of_revolution.10
+	title = center_of_revolution.10.name
+	desc = center_of_revolution.10.desc
+	picture = CONSPIRACY_eventPicture
+	goto = province_to_revolution
+	
+	trigger = {
+		has_dlc = "Emperor"
+		is_revolutionary = yes
+		any_neighbor_country = {
+			NOT = { war_with = root }
+			any_owned_province = {
+				has_revolution_in_province = no
+				NOT = { has_province_modifier = no_revolution_here_dummy }
+				any_neighbor_province = {
+					owned_by = root
+					has_revolution_in_province = yes
+				}
+			}
+		}
+	}
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			random_neighbor_country = {
+				limit = {
+					NOT = { war_with = root }
+					any_owned_province = {
+						has_revolution_in_province = no
+						NOT = { has_province_modifier = no_revolution_here_dummy }
+						any_neighbor_province = {
+							owned_by = root
+							has_revolution_in_province = yes
+						}
+					}
+				}
+				save_event_target_as = neighbour_country
+				random_owned_province = {
+					limit = {
+						has_revolution_in_province = no
+						NOT = { has_province_modifier = no_revolution_here_dummy }
+						any_neighbor_province = {
+							owned_by = root
+							has_revolution_in_province = yes
+						}
+					}
+					save_event_target_as = province_to_revolution
+					random_neighbor_province = {
+						limit = {
+							owned_by = root
+							has_revolution_in_province = yes
+						}
+						save_event_target_as = own_revolutionary_province
+					}
+				}
+			}
+		}
+	}
+
+	option = {
+		name = center_of_revolution.10.A
+		add_revolutionary_zeal_or_absolutism = { amount = 5 }
+		add_mil_power = -50
+		tooltip = {
+			event_target:province_to_revolution = {
+				set_revolution_in_province = yes
+			}
+		}
+		event_target:neighbour_country = {
+			tooltip = {
+				add_opinion = {
+					who = root
+					modifier = opinion_revolutionary_coup_in_our_province
+				}
+			}
+			country_event = { id = center_of_revolution.11 }
+		}
+	}
+	option = {
+		name = center_of_revolution.10.B
+		add_revolutionary_zeal_or_absolutism = { amount = -5 }
+		event_target:neighbour_country = {
+			add_opinion = {
+				who = root
+				modifier = opinion_non_intervention
+			}
+		}
+	}
+}
+
+#Spread the Revolution to someone else's provinces with a coup (notification for them)
+country_event = {
+	id = center_of_revolution.11
+	title = center_of_revolution.11.name
+	desc = center_of_revolution.11.desc
+	picture = ACCUSATION_eventPicture
+	goto = province_to_revolution
+	
+	is_triggered_only = yes
+
+	option = {
+		name = center_of_revolution.11.A
+		event_target:province_to_revolution = {
+			set_revolution_in_province = yes
+		}
+		add_opinion = {
+			who = from
+			modifier = opinion_revolutionary_coup_in_our_province
+		}
+	}
+}
+
+#Reactionaries from the RT come to you
+country_event = {
+	id = center_of_revolution.12
+	title = center_of_revolution.12.name
+	desc = center_of_revolution.12.desc
+	picture = COURT_eventPicture
+	
+	trigger = {
+		has_dlc = "Emperor"
+		is_revolutionary = no
+		revolution_target_exists = yes
+		any_neighbor_country = {
+			is_revolutionary = yes
+			NOT = {
+				had_country_flag = {
+					flag = revolutionary_republic_flag
+					days = 2920
+				}
+			}
+			NOT = { war_with = root }
+			NOT = { alliance_with = root }
+		}
+		any_owned_province = {
+			is_in_capital_area = yes
+			has_revolution_in_province = no
+		}
+		any_owned_province = {
+			has_revolution_in_province = yes
+			is_in_capital_area = yes
+			is_center_of_revolution = no
+		}
+		is_subject = no
+		absolutism = 60
+		num_of_cities = 15
+	}
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			random_neighbor_country = {
+				limit = {
+					is_revolutionary = yes
+					NOT = {
+						had_country_flag = {
+							flag = revolutionary_republic_flag
+							days = 2920
+						}
+					}
+					NOT = { war_with = root }
+					NOT = { alliance_with = root }
+				}
+				save_event_target_as = revolution_target #not really
+			}
+			random_owned_province = {
+				limit = {
+					has_revolution_in_province = yes
+					is_in_capital_area = yes
+					is_center_of_revolution = no
+				}
+				save_event_target_as = revolutionary_province
+			}
+		}
+	}
+
+	option = {
+		name = center_of_revolution.12.A
+		goto = revolutionary_province
+		add_spy_network_in = {
+			who = event_target:revolution_target
+			value = 25
+		}
+		event_target:revolutionary_province = {
+			remove_revolution_from_province_effect = yes
+		}
+		event_target:revolution_target = {
+			add_opinion = {
+				who = root
+				modifier = opinion_hosting_exiles
+			}
+		}
+	}
+}

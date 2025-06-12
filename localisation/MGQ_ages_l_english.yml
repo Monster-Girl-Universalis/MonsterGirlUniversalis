@@ -1,4 +1,16 @@
 ﻿l_english:
+ age_of_discovery_short:0 "Great Disaster"
+ age_of_reformation_short:0 "Monster Lord Wars"
+ age_of_absolutism_short:0 "Time of Decision"
+ age_of_revolutions_short:0 "End of the Story"
+ age_of_discovery:0 "Age of Great Disaster"
+ age_of_discovery_desc:1 "In the year 1425 of Johannes Calendar the Great Disaster drastically altered the world. Remina vanished, the Sentora continent split into several pieces and a new Snow Continent appeared. Multiple Tartarus rifts started to materialize."
+ age_of_reformation:0 "Age of Monster Lord Wars"
+ age_of_reformation_desc:1 "Strange visitors from other worlds calling themselves Three Seraphs and Lilith Sisters start to influence events in our world. Moreover, the Monster Lord is about to proclaim a full-scale war against humanity! We must prepare for worst."
+ age_of_absolutism:0 "Age of the Decision"
+ age_of_absolutism_desc:1 "Two worlds: one ruled by the Goddess of Light, another - covered in Darkness. Both parties view our world as a very important location and use it as a mean of combating chaosization. Soon we must decide which side are we on..."
+ age_of_revolutions:0 "Age of the End"
+ age_of_revolutions_desc:1 "Chaos is approaching faster then anyone would expect, deviation from correct history is increasing at a rapid rate. At this rate our world might be gone for good. Is there really nothing left to do, or..."
  #Great Disaster
  obj_250_development: "Growing Nation"
  obj_250_development_desc: "Have at least 250 development."

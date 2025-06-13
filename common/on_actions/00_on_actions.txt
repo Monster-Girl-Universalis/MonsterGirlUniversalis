@@ -1107,6 +1107,27 @@ on_great_project_constructed = {
 # OBS: Consider that the following on_actions can be called for Personal Union juniors as well.
 # country
 on_new_monarch = {
+	if = { #MGQ
+		limit = {
+			is_female = no
+			NOT = {
+				OR = {
+					ruler_culture = ilian_human
+					ruler_culture = slums_human
+					ruler_culture = natalian_human
+					ruler_culture = sabasa_human
+					ruler_culture = noah_human
+					ruler_culture = yamatai_human
+					ruler_culture = grandgold_human
+					ruler_culture = remina_human
+					ruler_culture = proto_human
+				}
+			}
+		}
+		define_ruler = {
+			female = yes
+		}
+	}
 	on_new_monarch_effect = yes
 	crimean_succession_effect = yes #Scripted effect
 	slesvig_question_effect = yes #Scripted effect
@@ -1188,6 +1209,61 @@ on_new_consort = {
 	random_events = {
 		1000 = 0
 		25 = polynesian.16 #fijian marriage
+	}
+	if = { #MGQ should probably be changed to change culture to human instead
+		limit = {
+			has_female_consort = no
+			NOT = {
+				OR = {
+					consort_culture = ilian_human
+					consort_culture = slums_human
+					consort_culture = natalian_human
+					consort_culture = sabasa_human
+					consort_culture = noah_human
+					consort_culture = yamatai_human
+					consort_culture = grandgold_human
+					consort_culture = remina_human
+					consort_culture = proto_human
+				}
+			}
+		}
+		random_list = {
+			10 = {
+				set_consort_culture = ilian_human
+			}
+			10 = {
+				set_consort_culture = slums_human
+			}
+			10 = {
+				set_consort_culture = natalian_human
+			}
+			10 = {
+				set_consort_culture = sabasa_human
+				modifier = {
+					factor = 10
+					primary_culture = worm_summoner
+				}
+			}
+			10 = {
+				set_consort_culture = noah_human
+			}
+			10 = {
+				set_consort_culture = yamatai_human
+			}
+			10 = {
+				set_consort_culture = grandgold_human
+			}
+			10 = {
+				set_consort_culture = remina_human
+			}
+			10 = {
+				set_consort_culture = proto_human
+				modifier = {
+					factor = 0
+					always = yes
+				}
+			}
+		}
 	}
 }
 
@@ -1377,6 +1453,14 @@ on_heir_death = {
 	on_heir_disinherited_or_death_effect = yes
 	ladislaus_postumus_heir_died_effect = yes
 	joan_de_trastamara_heir_died_effect = yes
+	if = { #MGQ
+		limit = {
+			has_country_flag = male_heir_begone #male heir replacement - see on_new_heir
+		}
+		country_event = {
+			id = monster_heir_events.200
+		}
+	}
 }
 
 # country
@@ -1482,6 +1566,26 @@ on_new_heir = {
 			has_country_flag = had_bmv
 		}
 		clr_country_flag = had_bmv
+	}
+	if = { #MGQ
+		limit = {
+			has_female_heir = no
+			NOT = {
+				OR = {
+					heir_culture = ilian_human
+					heir_culture = slums_human
+					heir_culture = natalian_human
+					heir_culture = sabasa_human
+					heir_culture = noah_human
+					heir_culture = yamatai_human
+					heir_culture = grandgold_human
+					heir_culture = remina_human
+					heir_culture = proto_human
+				}
+			}
+		}
+		set_country_flag = male_heir_begone #this triggers an if clause in on_heir_death - RNG is fixed in this on_action so to generate randomly statted heirs they need to be made elsewhere.
+		kill_heir = { allow_new_heir = no }
 	}
 }
 

@@ -256,3 +256,26 @@ country_event = {
 		custom_tooltip = monster_heir_events.101.a.tt
 	}
 }
+#--------# Non-Harem Events #---------#
+country_event = {
+	id = monster_heir_events.200
+	title = monster_heir_events.200.t
+	desc = monster_heir_events.200.d
+	picture = MONSTER_GIRLS_BAD_eventPicture
+	
+	hidden = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		clr_country_flag = male_heir_begone
+	}
+
+	option = {
+		name = monster_heir_events.200.a
+		define_heir = {
+			dynasty = original_dynasty
+			culture = ROOT
+			female = yes
+		}
+	}
+}

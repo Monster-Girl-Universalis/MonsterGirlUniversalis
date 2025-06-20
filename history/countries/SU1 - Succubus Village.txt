@@ -1,4 +1,4 @@
-government = monarchy
+government = republic
 government_rank = 2
 primary_culture = Village_Succubi
 add_government_reform = succubus_village_reform

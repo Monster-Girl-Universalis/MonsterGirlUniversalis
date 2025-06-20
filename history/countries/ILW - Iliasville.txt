@@ -1,4 +1,4 @@
-government = monarchy
+government = republic
 government_rank = 1
 primary_culture = ilian_human
 religion = ilias_light_religion
@@ -14,4 +14,4 @@ capital = 41#Iliasville
 		mil = 4
 	}
 }
-add_government_reform = 
+add_government_reform = ilias_republic_reform

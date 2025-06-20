@@ -88,53 +88,28 @@ monarchy = {
 				Tanuki_realm
 				Artiste_necromancer
 				heavenly_bandits
-				enrika_reform 
-				criminal_syndicate_reform 
-				don_father_reform 
-				iliasburg_reform 
-				pornof_reform 
-				happiness_reform 
-				midas_reform 
-				iliasport_reform 
-				port_natalia_reform 
-				luddite_village_reform 
-				port_marle_reform
+				enrika_reform  
 				sylph_reform
 				queen_roach_reform
 				sabasa_reform 
 				saloon_reform 
-				grandeur_reform 
 				worm_summoner_reform 
 				gnome_reform 
-				fishy_pirates_reform 
-				navy_reform 
-				finoa_reform 
 				grand_noah_reform 
 				mephisto_reform
-				yamatai_reform 
 				horai_reform 
 				tamamo_reform 
 				undine_reform 
-				goddard_reform 
-				grangold_reform 
-				goldport_reform 
-				succubus_village_reform 
+				grangold_reform 			
 				lady_village_reform 
 				salamander_reform 
 				snow_heaven_reform 
 				goddess_ilias_reform 
 				hellgondo_shrine_reform 
 				monster_lord_reform 
-				remina_reform 
-				rostrum_reform 
-				rubiana_reform 
-				esta_reform 
-				pirate_state_reform 
+				remina_reform 		
 				Fairy_realm
 				Giant_realm 
-				gloria_pirates_reform 
-				sheep_island_reform 
-				sheep_island_great_company_reform
 				antlion_reform
 				Defender_east
 
@@ -698,6 +673,37 @@ republic = {
 				parliamentary_republic_reform
 				absolute_shogunate_reform
 				japanese_divine_empire
+				#MGQ
+				fishy_pirates_reform 
+				navy_reform 
+				finoa_reform 
+				gloria_pirates_reform 
+				sheep_island_reform 
+				sheep_island_great_company_reform
+				criminal_syndicate_reform 
+				don_father_reform 
+				iliasburg_reform
+				pornof_reform 
+				happiness_reform 
+				midas_reform 
+				iliasport_reform 
+				port_natalia_reform 
+				luddite_village_reform 
+				port_marle_reform
+				yamatai_reform 
+				esta_reform 
+				rostrum_reform
+				rubiana_reform 
+				pirate_state_reform 
+				goldport_reform 
+				succubus_village_reform 
+				goddard_reform 
+				grandeur_reform 
+				ilias_republic_reform
+				noah_republic_reform
+				adventurer_camp_reform
+				research_camp_reform
+				pleasure_camp_reform
 			}
 		}
 		republican_virtues = {

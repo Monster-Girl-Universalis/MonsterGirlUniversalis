@@ -1,4 +1,4 @@
-government = monarchy
+government = republic
 government_rank = 1
 primary_culture = ilian_human
 religion = ilias_light_religion
@@ -15,4 +15,4 @@ capital = 48#Mutated crops fields
 		female = yes
 	}
 }
-add_government_reform = 
+add_government_reform = pleasure_camp_reform

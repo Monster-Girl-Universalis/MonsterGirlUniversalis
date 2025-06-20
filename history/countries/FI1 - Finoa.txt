@@ -1,4 +1,4 @@
-government = monarchy
+government = republic
 government_rank = 2
 primary_culture = noah_human
 religion = ilias_light_religion

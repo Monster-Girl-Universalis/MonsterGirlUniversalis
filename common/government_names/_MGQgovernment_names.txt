@@ -556,7 +556,7 @@ kagetsumugi_localisation = {
 }
 sheep_island_great_company_localisation = {
 	rank = {
-		1 = TRANSNATIONAL_CORPORATION
+		1 = CORPORATION
 		2 = TRANSNATIONAL_CORPORATION
 		3 = TRANSNATIONAL_CORPORATION
 	}
@@ -598,6 +598,103 @@ sheep_island_great_company_localisation = {
 	}
 
 	trigger = {
-		has_reform = sheep_island_great_company_reform
+		OR = {
+			has_reform = sheep_island_great_company_reform
+			has_reform = sheep_island_reform
+		}
+	}
+}
+
+criminal_syndicate_localisation = {
+	rank = {
+		1 = GANG
+		2 = CRIMINAL_SYNDICATE
+		3 = CRIMINAL_EMPIRE
+	}
+
+	ruler_male = {
+		1 = BOSS
+		2 = BOSS
+		3 = BOSS
+	}
+
+	ruler_female = {
+		1 = BOSS
+		2 = BOSS
+		3 = BOSS
+	}
+
+	consort_male = {
+		1 = CONSORT
+		2 = CONSORT
+		3 = CONSORT
+	}
+
+	consort_female = {
+		1 = CONSORT
+		2 = CONSORT
+		3 = CONSORT
+	}
+	
+	heir_male = {
+		1 = HEIR
+		2 = HEIR
+		3 = HEIR
+	}
+
+	heir_female = {
+		1 = HEIR_fem
+		2 = HEIR_fem
+		3 = HEIR_fem
+	}
+
+	trigger = {
+		OR = {
+			has_reform = don_father_reform 
+			has_reform = criminal_syndicate_reform 
+		}
+	}
+}
+
+camp_localisation = {
+	rank = {
+		1 = CAMP
+		2 = GUILD
+		3 = GLOBAL_GUILD
+	}
+
+	ruler_male = {
+		1 = CAPTAIN
+		2 = GUILDMASTER
+	}
+
+	ruler_female = {
+		1 = CAPTAIN
+		2 = GUILDMISTRESS
+	}
+
+	consort_male = {
+		1 = CONSORT
+
+	}
+
+	consort_female = {
+		1 = CONSORT
+	}
+	
+	heir_male = {
+		1 = HEIR
+	}
+
+	heir_female = {
+		1 = HEIR_fem
+	}
+
+	trigger = {
+		OR = {
+			has_reform = adventurer_camp_reform
+			has_reform = research_camp_reform
+			has_reform = pleasure_camp_reform
+		}
 	}
 }

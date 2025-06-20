@@ -255,6 +255,16 @@
  divine_administration_reform: "Divine Administration"
  divine_administration_reform_desc: "Our government is guided by celestial beings, with divine agents overseeing key functions of administration. Their divine wisdom and moral guidance inspire loyalty and ensure that justice and the will of Ilias prevail across the realm." 
 
+ ilias_republic_reform: "Ilias Village"
+ ilias_republic_reform_desc: ""
+ noah_republic_reform: "Noah Village"
+ noah_republic_reform_desc: ""
+ adventurer_camp_reform: "Adventurer Camp"
+ adventurer_camp_reform_desc: ""
+ research_camp_reform: "Research Camp"
+ research_camp_reform_desc: ""
+ pleasure_camp_reform: "Pleasure Camp"
+ pleasure_camp_reform_desc: ""
 
  #_reform: ""
  #_reform_desc: "" 

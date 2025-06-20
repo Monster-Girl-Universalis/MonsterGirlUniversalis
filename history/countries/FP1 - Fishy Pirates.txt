@@ -1,4 +1,4 @@
-government = monarchy
+government = republic
 religion = water_religion
 technology_group = TECH_MERMAID
 primary_culture = Mermaid_Pirate

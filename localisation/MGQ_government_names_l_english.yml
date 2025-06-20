@@ -74,7 +74,25 @@
  PUPPETEER_OF_OUTER_LAW: "Puppeteer of Outer Law"
  SUBSTITUTE_DOLL: "Substitute Doll"
 
+ CORPORATION: "Corporation"
  TRANSNATIONAL_CORPORATION: "Transnational Corporation"
  CEO: "Chief Executive Officer"
- CHIEF_SUPERVISOR:"Chief Supervisor"
+ CHIEF_SUPERVISOR: "Chief Supervisor"
  COO: "Chief Operations Officer"
+ 
+ VILLAGE: "Village"
+ CITY: "City"
+ METROPOLIS: "Metropolis"
+ MAYOR: "Mayor"
+ 
+ GANG: "Gang"
+ CRIMINAL_SYNDICATE: "Criminal Syndicate"
+ CRIMINAL_EMPIRE: "Criminal Empire"
+ BOSS: "Boss"
+ 
+ CAMP: "Camp"
+ GUILD: "Guild"
+ GLOBAL_GUILD: "Global Guild"
+ CAPTAIN: "Captain"
+ GUILDMASTER: "Guild Master"
+ GUILDMISTRESS: "Guild Mistress"

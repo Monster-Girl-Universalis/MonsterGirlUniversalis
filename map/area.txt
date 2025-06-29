@@ -255,13 +255,13 @@ rafflesia_plains = {
 eraha_beach_area = { 
 	389 393 390 400 
 }
-naipi_village = { 
+slug_tower_area = { 
 	398 399 397 
 }
 eastern_iliasburg = { 
 	380 379 
 }
-naipi_plains_area = { 
+sluggy_stars_plains_area = { 
 	381 382 384 
 }
 happiness_village_area = { 
@@ -336,31 +336,31 @@ slug_coast_area = {
 midas_island_area = { 
 	465 464 
 }
-erefor_village = { 
+midas_slugs_area = { 
 	426 431 425 427 
 }
-conant_village = { 
+royal_slug_coast_area = { 
 	428 423 422 424 
 }
-iliarth_state = { 
+high_slugs_area = { 
 	432 430 434 435 
 }
-iliarth_coast = { 
+slug_nuns_area = { 
 	433 429 436 
 }
-midas_slugs_area = { 
+erefor_village = { 
 	455 471 475 454 
 }
-high_slugs_area = { 
+iliarth_state = { 
 	470 450 448 
 }
-slug_nuns_area = { 
+iliarth_coast = { 
 	473 453 449 
 }
-slug_tower_area = { 
+naipi_village = { 
 	457 474 472 456 458 
 }
-royal_slug_coast_area = { 
+conant_village = { 
 	459 461 462 460 463 
 }
 mimic_island_area = { 

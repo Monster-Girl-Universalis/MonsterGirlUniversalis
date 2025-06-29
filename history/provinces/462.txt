@@ -1,12 +1,13 @@
-add_core = SLT
-owner = SLT
+add_core = CNT
+owner = CNT
 base_tax = 4
 base_manpower = 5
 base_production = 4
-culture = Slug_Girl
+culture = Fairy_Girl
 religion = monster_lord_religion
-controller = SLT
+controller = CNT
 is_city = no
+trade_goods = gold
 discovered_by = TECH_ALRAUNE
 discovered_by = TECH_ANGEL
 discovered_by = TECH_BEAST

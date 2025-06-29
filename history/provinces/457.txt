@@ -1,11 +1,11 @@
-add_core = SLT
-owner = SLT
+add_core = NAI
+owner = NAI
 base_tax = 5
 base_manpower = 5
 base_production = 5
-culture = Slug_Girl
+culture = Bee_Girl
 religion = monster_lord_religion
-controller = SLT
+controller = NAI
 is_city = no
 center_of_trade = 2
 discovered_by = TECH_ALRAUNE

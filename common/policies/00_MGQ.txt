@@ -670,10 +670,12 @@ mgq_demonoid_research = { #Human+Demi-Human+Vampire+Yoma
 	monarch_power = MIL
 
 	potential = {
-		has_idea_group = human_ideas
-		has_idea_group = demi_human_ideas 
-		has_idea_group = vampire_ideas 
-		has_idea_group = yoma_ideas 
+		OR = {
+			has_idea_group = human_ideas
+			has_idea_group = demi_human_ideas 
+			has_idea_group = vampire_ideas 
+			has_idea_group = yoma_ideas 
+		}	
 	}
 	allow = {
 		full_idea_group = human_ideas

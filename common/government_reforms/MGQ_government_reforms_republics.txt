@@ -499,6 +499,7 @@ succubus_village_reform = {
 	lock_level_when_selected = yes
 	icon = "succubus_village"
 	allow_normal_conversion = no
+	royal_marriage = yes
 	maintain_dynasty = yes
 	potential = {
     		OR = {

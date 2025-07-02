@@ -248,7 +248,7 @@ country_event = {
 				mil = 1
 				adm = 4
 				dip = 1
-				
+				name = "lastname"	
 				female = yes # Allows random gender for republics
 			}
 		}
@@ -256,7 +256,8 @@ country_event = {
 			define_ruler = {
 				mil = 1
 				adm = 4
-				dip = 1				
+				dip = 1			
+				name = "lastname"			
 				female = yes
 			}
 		}
@@ -299,7 +300,8 @@ country_event = {
 			define_ruler = {
 				dip = 4
 				adm = 1
-				mil = 1				
+				mil = 1	
+				name = "lastname"	
 				female = yes # Allows random gender for republics
 			}
 		}
@@ -307,7 +309,8 @@ country_event = {
 			define_ruler = {
 				dip = 4
 				adm = 1
-				mil = 1				
+				mil = 1	
+				name = "lastname"	
 				female = yes					
 			}
 		}
@@ -350,7 +353,8 @@ country_event = {
 			define_ruler = {
 				mil = 4
 				adm = 1
-				dip = 1				
+				dip = 1		
+				name = "lastname"	
 				female = yes # Allows random gender for republics
 			}
 		}
@@ -359,6 +363,7 @@ country_event = {
 				mil = 4
 				adm = 1
 				dip = 1					
+				name = "lastname"	
 				female = yes				
 			}
 		}
@@ -537,7 +542,8 @@ country_event = {
 			define_ruler = {
 				mil = 1
 				adm = 4
-				dip = 1				
+				dip = 1			
+				name = "lastname"			
 				female = yes # Allows random gender for republics
 			}
 		}
@@ -545,7 +551,8 @@ country_event = {
 			define_ruler = {
 				mil = 1
 				adm = 4
-				dip = 1					
+				dip = 1			
+				name = "lastname"				
 				female = yes				
 			}
 		}
@@ -576,7 +583,8 @@ country_event = {
 			define_ruler = {
 				dip = 4
 				adm = 1
-				mil = 1				
+				mil = 1
+				name = "lastname"	
 				female = yes # Allows random gender for republics
 			}
 		}
@@ -584,7 +592,8 @@ country_event = {
 			define_ruler = {
 				dip = 4
 				adm = 1
-				mil = 1					
+				mil = 1	
+				name = "lastname"	
 				female = yes				
 			}
 		}
@@ -615,7 +624,8 @@ country_event = {
 			define_ruler = {
 				mil = 4
 				adm = 1
-				dip = 1				
+				dip = 1	
+				name = "lastname"	
 				female = yes # Allows random gender for republics
 			}
 		}
@@ -623,7 +633,8 @@ country_event = {
 			define_ruler = {
 				mil = 4
 				adm = 1
-				dip = 1					
+				dip = 1	
+				name = "lastname"	
 				female = yes				
 			}
 		}
@@ -1154,6 +1165,7 @@ country_event = {
 				define_exiled_ruler = {
 					exiled_as = lottery_candidate_a_@ROOT				
 					female = yes
+					name = "lastname"
 					min_age = 50
 					max_age = 75
 					change_adm = 2
@@ -1170,6 +1182,7 @@ country_event = {
 				define_exiled_ruler = {
 					exiled_as = lottery_candidate_a_@ROOT				
 					female = yes
+					name = "lastname"
 					min_age = 50
 					max_age = 75
 					change_adm = 3
@@ -1187,6 +1200,7 @@ country_event = {
 					exiled_as = lottery_candidate_a_@ROOT
 					min_age = 50
 					max_age = 75
+					name = "lastname"
 					change_adm = 3
 					change_dip = -1
 					change_mil = -1				
@@ -1200,6 +1214,7 @@ country_event = {
 					min_age = 50
 					max_age = 75				
 					female = yes
+					name = "lastname"
 					change_adm = 2
 					change_dip = -1
 					change_mil = -1
@@ -1216,6 +1231,7 @@ country_event = {
 					exiled_as = lottery_candidate_b_@ROOT
 					min_age = 50
 					max_age = 75
+					name = "lastname"
 					change_adm = -1
 					change_dip = 2
 					change_mil = -1				
@@ -1233,6 +1249,7 @@ country_event = {
 					female = yes
 					min_age = 50
 					max_age = 75
+					name = "lastname"
 					change_adm = -1
 					change_dip = 3
 					change_mil = -1
@@ -1249,6 +1266,7 @@ country_event = {
 					female = yes
 					min_age = 50
 					max_age = 75
+					name = "lastname"
 					change_adm = -1
 					change_dip = 3
 					change_mil = -1
@@ -1261,6 +1279,7 @@ country_event = {
 					female = yes
 					min_age = 50
 					max_age = 75
+					name = "lastname"
 					change_adm = -1
 					change_dip = 2
 					change_mil = -1
@@ -1277,6 +1296,7 @@ country_event = {
 					exiled_as = lottery_candidate_c_@ROOT
 					min_age = 50
 					max_age = 75
+					name = "lastname"
 					change_adm = -1
 					change_dip = -1
 					change_mil = 2				
@@ -1292,6 +1312,7 @@ country_event = {
 				define_exiled_ruler = {
 					exiled_as = lottery_candidate_c_@ROOT				
 					female = yes
+					name = "lastname"
 					min_age = 50
 					max_age = 75
 					change_adm = -1
@@ -1308,6 +1329,7 @@ country_event = {
 				define_exiled_ruler = {
 					exiled_as = lottery_candidate_c_@ROOT				
 					female = yes
+					name = "lastname"
 					min_age = 50
 					max_age = 75
 					change_adm = -1
@@ -1320,6 +1342,7 @@ country_event = {
 				define_exiled_ruler = {
 					exiled_as = lottery_candidate_c_@ROOT				
 					female = yes
+					name = "lastname"
 					min_age = 50
 					max_age = 75
 					change_adm = -1

@@ -27,6 +27,7 @@ religion = enrika_religion
 is_city = no
 culture = Fallen_Angel
 add_core = ENV
+add_core = FAR
 owner = ENV
 controller = ENV
 discovered_by = TECH_DEMI_HUMAN

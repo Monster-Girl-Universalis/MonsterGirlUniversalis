@@ -924,6 +924,33 @@ antlion_reform = {
 	}
 }
 
+Fallen_angel_state = {
+	lock_level_when_selected = no
+	icon = "fallen_angel_state"
+	allow_normal_conversion = no
+	potential = {
+	culture = Fallen_Angel
+	}
+	valid_for_new_country = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 40
+	legacy_equivalent = ottoman_government_legacy
+	modifiers = {
+		global_regiment_cost = -0.10
+		siege_ability = 0.10
+		production_efficiency = 0.10
+		governing_capacity = 300
+		block_introduce_heir = yes
+	}
+	custom_attributes = {
+		queen = no
+	}
+	conditional = {
+		allow = { has_dlc = "Rights of Man" }
+		has_harem = yes
+	}
+}
+
 Artiste_necromancer = {
 	lock_level_when_selected = yes
 	icon = "artiste_necromancer"

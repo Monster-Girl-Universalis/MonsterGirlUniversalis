@@ -1,0 +1,116 @@
+########################################
+# Flavor Events for Fallen Angel Realm Realm by Cris
+########################################
+
+namespace = flavor_far
+
+###FAR Flavor events###
+
+country_event = {
+	id = flavor_far.1
+	title = flavor_far.1_title
+	desc = flavor_far.1_desc
+	picture = FAR_MARIEL_eventPicture
+	fire_only_once = yes
+	is_triggered_only = no
+	trigger = {
+    tag = FAR
+	is_subject = yes
+	NOT = {has_country_flag = has_angel_leader}
+}
+   	mean_time_to_happen = {
+	months = 1
+	}
+	option = {
+	name = flavor_far.1.a
+	set_country_flag = has_angel_leader
+	define_ruler = {
+    dynasty = "Of Enrika"
+	culture = ROOT
+    religion = ROOT
+	female = yes
+    adm = 4
+    dip = 4
+    mil = 4
+	fixed = yes
+    age = 20
+    claim = 50
+}
+	add_liberty_desire = 100
+	hidden_effect = {
+	add_ruler_personality = immortal_personality
+	}
+	}
+}
+country_event = {
+	id = flavor_far.2
+	title = flavor_far.2_title
+	desc = flavor_far.2_desc
+	picture = FAR_ENRIKA_eventPicture
+	fire_only_once = yes
+	is_triggered_only = no
+	trigger = {
+    tag = FAR
+	is_subject = no
+	is_in_war = {
+    attacker_leader = ROOT
+    defenders = ENV
+}
+}
+   	mean_time_to_happen = {
+	months = 1
+	}
+	option = {
+	name = flavor_far.2.a
+	enrika_area = {
+		add_province_modifier = {
+		name = far_independence_war
+		duration = 7300
+	}
+	}
+	enrika_woods_area = {
+		add_province_modifier = {
+		name = far_independence_war
+		duration = 7300
+	}
+	}
+	}
+}
+country_event = {
+	id = flavor_far.3
+	title = flavor_far.3_title
+	desc = flavor_far.3_desc
+	picture = FAR_ILIAS_TEMPLE_eventPicture
+	fire_only_once = yes
+	is_triggered_only = no
+	trigger = {
+    tag = FAR
+	42 = {
+		owned_by = ROOT
+	}
+}
+   	mean_time_to_happen = {
+	months = 16
+	}
+	option = {
+	name = flavor_far.3.a
+	add_country_modifier = {
+		name = far_machina
+		duration = -1
+	}
+	}
+	option = {
+	name = flavor_far.3.b
+	add_country_modifier = {
+		name = far_horny
+		duration = -1
+	}
+	}
+	option = {
+	name = flavor_far.3.c
+	add_country_modifier = {
+		name = far_angelic
+		duration = -1
+	}
+	}
+}

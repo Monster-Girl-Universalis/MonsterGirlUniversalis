@@ -9,6 +9,14 @@
  estate_monster_girls_desc: "This estate represents various species of monster girls living within our realm. As humans and monsters became closer after the Great Disaster, monsters started to settle in many human cities and villages becoming an integral part of their society."
  estate_clergy_tolerates_science_religion_effect_tooltip_granted:"Seekers of Truth provinces don't give any penalties."
  estate_clergy_tolerates_science_religion_effect_tooltip_removed:"Seekers of Truth provinces don't give any penalties will be removed."
+ estate_monster_society: "Monsters Integrated Into Human Society"
+ estate_monster_society_desc: "We give monster girls jobs in our realm such as shopkeepers, trader, merchants, soldier etc as to make them autonomous citizens."
+ estate_monster_society_effect_tooltip_granted:"Monster Lord Worship provinces don't give any penalties."
+ estate_monster_society_effect_tooltip_removed:"Monster Lord Worship province don't give any penalties will be removed."
+ estate_harpy_treehouse: "Harpy Treehouses"
+ estate_harpy_treehouse_desc: "Harpies prefer to live in houses built on top of trees, this way they get some benifits impossible for normal housing, we should seek to expand them."
+ estate_harpy_treehouse_effect_tooltip_granted:"Provinces with Forest or Woods terrain with any harpy culture in them will get the following province modifier: Supply Limit:§J+5.00§W Possible Number of buildings:§J+1§W Province Governing Cost:§J-10%§W."
+ estate_harpy_treehouse_effect_tooltip_removed:"The "Harpy Treehouses" province modifier will be removed from all provinces"
  estate_monster_girls_ownership: "Monster Girls Land Ownership"
  monster_girls_loyalty_modifier: "Monster Girls Loyalty Equilibrium"
  monster_girls_influence_modifier: "Monster Girls Influence"
@@ -34,6 +42,8 @@
  ###ESTATE PRIVILEGES###
  estate_establish_priests_researchers: "Establish Priests-Researchers"
  estate_establish_priests_researchers_desc: "We create a special division inside our church dedicated to the pursuit of the unknown truth and development of makina."
+ estate_monster_society: "Monsters Integrated into Human Society"
+ estate_monster_society_desc: "We give monster girls jobs in our realm such as shopkeepers, trader, merchants, soldier etc as to make them autonomous citizens."
 
  estate_noblesMGQ_anti_angel_formation: "Anti-Angel Formation"
  estate_noblesMGQ_anti_angel_formation_desc: "Use innovative tactics specifically designed to counter angel military on the battlefield.\n§RWill remain active ONLY for the duration of war against the Goddess Ilias.§!"

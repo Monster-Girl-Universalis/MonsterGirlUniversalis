@@ -1,0 +1,102 @@
+spriteTypes = {	
+	spriteType = {
+		name = "RMA_roper"
+		texturefile = "gfx//interface//missions//rostrummountains_missions//RMA_roper.dds"
+	}
+	spriteType = {
+		name = "RMA_meda"
+		texturefile = "gfx//interface//missions//rostrummountains_missions//RMA_meda.dds"
+	}
+	spriteType = {
+		name = "RMA_chandra"
+		texturefile = "gfx//interface//missions//rostrummountains_missions//RMA_chandra.dds"
+	}
+	spriteType = {
+		name = "RMA_rostrum_destroyed"
+		texturefile = "gfx//interface//missions//rostrummountains_missions//RMA_rostrum_destroyed.dds"
+	}
+	spriteType = {
+		name = "RMA_rostrum_fixed"
+		texturefile = "gfx//interface//missions//rostrummountains_missions//RMA_rostrum_fixed.dds"
+	}
+	spriteType = {
+		name = "RMA_placeholder"
+		texturefile = "gfx//interface//missions//rostrummountains_missions//RMA_placeholder.dds"
+	}
+	spriteType = {
+		name = "RMA_candle_production"
+		texturefile = "gfx//interface//missions//rostrummountains_missions//RMA_candle_production.dds"
+	}
+	spriteType = {
+		name = "RMA_lime"
+		texturefile = "gfx//interface//missions//rostrummountains_missions//RMA_lime.dds"
+	}
+	spriteType = {
+		name = "RMA_forest_fire"
+		texturefile = "gfx//interface//missions//rostrummountains_missions//RMA_forest_fire.dds"
+	}
+	spriteType = {
+		name = "RMA_mary"
+		texturefile = "gfx//interface//missions//rostrummountains_missions//RMA_mary.dds"
+	}
+	spriteType = {
+		name = "RMA_harpy"
+		texturefile = "gfx//interface//missions//rostrummountains_missions//RMA_harpy.dds"
+	}
+	spriteType = {
+		name = "RMA_gold"
+		texturefile = "gfx//interface//missions//rostrummountains_missions//RMA_gold.dds"
+	}
+	spriteType = {
+		name = "RMA_sexy_chandra"
+		texturefile = "gfx//interface//missions//rostrummountains_missions//RMA_sexy_chandra.dds"
+	}
+	spriteType = {
+		name = "RMA_riot"
+		texturefile = "gfx//interface//missions//rostrummountains_missions//RMA_riot.dds"
+	}
+	spriteType = {
+		name = "RMA_river"
+		texturefile = "gfx//interface//missions//rostrummountains_missions//RMA_river.dds"
+	}
+	spriteType = {
+		name = "ellie_zombie"
+		texturefile = "gfx//interface//missions//rostrummountains_missions//ellie_zombie.dds"
+	}
+	spriteType = {
+		name = "RMA_spiritualists"
+		texturefile = "gfx//interface//missions//rostrummountains_missions//RMA_spiritualists.dds"
+	}
+	spriteType = {
+		name = "pornof"
+		texturefile = "gfx//interface//missions//rostrummountains_missions//pornof.dds"
+	}
+	spriteType = {
+		name = "RMA_chandra_heh"
+		texturefile = "gfx//interface//missions//rostrummountains_missions//RMA_chandra_heh.dds"
+	}
+	spriteType = {
+		name = "ghoul"
+		texturefile = "gfx//interface//missions//rostrummountains_missions//ghoul.dds"
+	}
+	spriteType = {
+		name = "irina"
+		texturefile = "gfx//interface//missions//rostrummountains_missions//irina.dds"
+	}
+	spriteType = {
+		name = "RMA_conquest"
+		texturefile = "gfx//interface//missions//rostrummountains_missions//RMA_conquest.dds"
+	}
+	spriteType = {
+		name = "orc_ouch"
+		texturefile = "gfx//interface//missions//rostrummountains_missions//orc_ouch.dds"
+	}
+	spriteType = {
+		name = "chandra_hot"
+		texturefile = "gfx//interface//missions//rostrummountains_missions//chandra_hot.dds"
+	}
+	spriteType = {
+		name = "iliasburg_on_fire"
+		texturefile = "gfx//interface//missions//rostrummountains_missions//iliasburg_on_fire.dds"
+	}
+}

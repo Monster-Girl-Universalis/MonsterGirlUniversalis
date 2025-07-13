@@ -126,3 +126,9 @@ vassal = {
 	second = IN7 #Silkworm Girl Realm
 	start_date = 1444.1.1 
 }
+#Grand Noah
+union = {
+	first = GR2 #Gran Noah
+	second = WSS #Warp Shrine
+	start_date = 1444.1.1
+}

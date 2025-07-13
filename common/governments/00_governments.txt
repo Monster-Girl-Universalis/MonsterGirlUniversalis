@@ -112,6 +112,7 @@ monarchy = {
 				Giant_realm 
 				antlion_reform
 				Defender_east
+				Fallen_angel_state
 
 				#kagetsumugi_reform 
 				#promestein_reform 

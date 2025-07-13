@@ -1,0 +1,92 @@
+########################################
+# Flavor Events for Rostrum Mountains by Cris
+########################################
+
+namespace = flavor_rma
+
+###RMA flavor events###
+
+country_event = {
+	id = flavor_rma.1
+	title = flavor_rma.1_title
+	desc = flavor_rma.1_desc
+	picture = CHANDRA_ROSTRUM_eventPicture
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = flavor_rma.1.a
+		add_stability = 1
+		add_prestige = 10
+	}
+	option = {
+		name = flavor_rma.1.b
+		override_country_name = ROSTRUM
+		add_stability = 1
+		add_prestige = 10
+	}
+	option = {
+		name = flavor_rma.1.c
+		override_country_name = CANDLE_GIRL_REALM
+		add_stability = 1
+		add_prestige = 10
+	}
+}
+country_event = {
+	id = flavor_rma.2
+	title = flavor_rma.2_title
+	desc = flavor_rma.2_desc
+	picture = CHANDRA_ROSTRUM_NEW_eventPicture
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = flavor_rma.2.a
+		change_ruler_stat = {
+			type = adm
+			amount = 1
+		}
+		add_prestige = 25
+		12 = {
+			change_culture = Candle_Girl
+			change_province_name = "Rostrum City"
+			rename_capital = "Rostrum City"
+		}
+		set_capital = 12
+	}
+	option = {
+		name = flavor_rma.2.b
+		change_ruler_stat = {
+			type = adm
+			amount = 1
+		}
+		add_prestige = 25
+		12 = {
+			change_culture = Candle_Girl
+			change_province_name = "Rostrum City"
+			rename_capital = "Rostrum City"
+		}
+	}
+}
+country_event = {
+	id = flavor_rma.3
+	title = flavor_rma.3_title
+	desc = flavor_rma.3_desc
+	picture = CHANDRA_FIRE_eventPicture
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = flavor_rma.3.a
+		add_adm_power = 100
+		add_dip_power = 100
+		add_mil_power = 100
+	}
+	option = {
+		name = flavor_rma.3.b
+		ROOT = { change_religion = fire_religion }
+		hidden_effect = {
+			every_owned_province = {
+				change_religion = fire_religion 
+			}
+			set_ruler_religion = fire_religion 
+		}
+	}
+}

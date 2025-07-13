@@ -1,0 +1,106 @@
+spriteTypes = {	
+	spriteType = {
+		name = "FAR_independence"
+		texturefile = "gfx//interface//missions//fallenangelrealm_missions//FAR_independence.dds"
+	}
+	spriteType = {
+		name = "FAR_farm"
+		texturefile = "gfx//interface//missions//fallenangelrealm_missions//FAR_farm.dds"
+	}
+	spriteType = {
+		name = "FAR_allies"
+		texturefile = "gfx//interface//missions//fallenangelrealm_missions//FAR_allies.dds"
+	}
+	spriteType = {
+		name = "FAR_micaela"
+		texturefile = "gfx//interface//missions//fallenangelrealm_missions//FAR_micaela.dds"
+	}
+	spriteType = {
+		name = "FAR_fallen_angels"
+		texturefile = "gfx//interface//missions//fallenangelrealm_missions//FAR_fallen_angels.dds"
+	}
+	spriteType = {
+		name = "FAR_angels"
+		texturefile = "gfx//interface//missions//fallenangelrealm_missions//FAR_angels.dds"
+	}
+	spriteType = {
+		name = "FAR_woo_angels"
+		texturefile = "gfx//interface//missions//fallenangelrealm_missions//FAR_woo_angels.dds"
+	}
+	spriteType = {
+		name = "FAR_woo_elf"
+		texturefile = "gfx//interface//missions//fallenangelrealm_missions//FAR_woo_elf.dds"
+	}
+	spriteType = {
+		name = "FAR_unification"
+		texturefile = "gfx//interface//missions//fallenangelrealm_missions//FAR_unification.dds"
+	}
+	spriteType = {
+		name = "FAR_iliasville"
+		texturefile = "gfx//interface//missions//fallenangelrealm_missions//FAR_iliasville.dds"
+	}
+	spriteType = {
+		name = "FAR_lime"
+		texturefile = "gfx//interface//missions//fallenangelrealm_missions//FAR_lime.dds"
+	}
+	spriteType = {
+		name = "FAR_outside"
+		texturefile = "gfx//interface//missions//fallenangelrealm_missions//FAR_outside.dds"
+	}
+	spriteType = {
+		name = "FAR_forest"
+		texturefile = "gfx//interface//missions//fallenangelrealm_missions//FAR_forest.dds"
+	}
+	spriteType = {
+		name = "FAR_coast"
+		texturefile = "gfx//interface//missions//fallenangelrealm_missions//FAR_coast.dds"
+	}
+	spriteType = {
+		name = "FAR_ragora"
+		texturefile = "gfx//interface//missions//fallenangelrealm_missions//FAR_ragora.dds"
+	}
+	spriteType = {
+		name = "pornof"
+		texturefile = "gfx//interface//missions//fallenangelrealm_missions//pornof.dds"
+	}
+	spriteType = {
+		name = "happiness_village"
+		texturefile = "gfx//interface//missions//fallenangelrealm_missions//happiness_village.dds"
+	}
+	spriteType = {
+		name = "midas"
+		texturefile = "gfx//interface//missions//fallenangelrealm_missions//midas.dds"
+	}
+	spriteType = {
+		name = "ship_deck"
+		texturefile = "gfx//interface//missions//fallenangelrealm_missions//ship_deck.dds"
+	}
+	spriteType = {
+		name = "ship_deck_night"
+		texturefile = "gfx//interface//missions//fallenangelrealm_missions//ship_deck_night.dds"
+	}
+	spriteType = {
+		name = "ship_deck_cannons"
+		texturefile = "gfx//interface//missions//fallenangelrealm_missions//ship_deck_cannons.dds"
+	}
+	spriteType = {
+		name = "wood_axe"
+		texturefile = "gfx//interface//missions//fallenangelrealm_missions//wood_axe.dds"
+	}
+	spriteType = {
+		name = "polar_bear_island"
+		texturefile = "gfx//interface//missions//fallenangelrealm_missions//polar_bear_island.dds"
+	}
+	spriteType = {
+		name = "isolated_island"
+		texturefile = "gfx//interface//missions//fallenangelrealm_missions//isolated_island.dds"
+	}
+	spriteType = {
+		name = "irma_sexy"
+		texturefile = "gfx//interface//missions//fallenangelrealm_missions//irma_sexy.dds"
+	}
+	spriteType = {
+		name = "fallen_seraphs"
+		texturefile = "gfx//interface//missions//fallenangelrealm_missions//fallen_seraphs.dds"
+	}
+}

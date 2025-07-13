@@ -1,0 +1,20 @@
+government = monarchy
+government_rank = 1
+primary_culture = noah_human
+religion = ilias_light_religion
+technology_group = TECH_HUMAN
+add_accepted_culture = Slime_Girl
+unlock_race = { race = slime }
+1444.1.1 = { 
+	monarch = { 
+		name = "Jonh"
+		dynasty = "of Finoa"
+		culture = "noah_human"
+		birth_date = 1424.1.1
+		adm = 4
+		dip = 4
+		mil = 4
+		female = yes
+	}
+}
+capital = 469

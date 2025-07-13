@@ -1,0 +1,109 @@
+graphical_culture = asiangfx
+color = { 96 108 189 }
+revolutionary_colors = { 2 7 1 }
+random_nation_chance = 0
+historical_score = 500
+historical_idea_groups = { 
+}
+historical_units = { 
+}
+monarch_names = { 
+	"Heinrich #0" = 5
+	"Lazarus #0" = 5
+	"Marcellus #0" = 5
+	"John #0" = 5
+	"Kazuya #0" = 5
+	"Kockyoin #0" = 5
+	"Jack #0" = 5
+	"Hans #0" = 5
+	"Lars #0" = 5
+	"Lauratt #0" = 5
+	"Merlin #0" = 5
+	"Samson #0" = 5
+	"Toru #0" = 5
+	"Pylate #0" = 5
+	"Lest #0" = 5
+	"Adrian #0" = 5
+	"Caleb #0" = 5
+	"Ethan #0" = 5
+	"Gabriel #0" = 5
+	"Isaac #0" = 5
+	"Julian #0" = 5
+	"Lucas #0" = 5
+	"Nathaniel #0" = 5
+	"Oliver #0" = 5
+	"Sebastian #0" = 5
+	"Alexander #0" = 5
+	"Christopher #0" = 5
+	"Daniel #0" = 5
+	"Elijah #0" = 5
+	"Gavin #0" = 5
+	"Henry #0" = 5
+	"Jonathan #0" = 5
+	"Liam #0" = 5
+	"Samuel #0" = 5
+	"Benjamin #0" = 5
+	"David #0" = 5
+	"Evan #0" = 5
+	"Jacob #0" = 5
+	"Gregory #0" = 5
+	"Isaiah #0" = 5
+	"Matthew #0" = 5
+	"Owen #0" = 5
+	"Ryan #0" = 5
+	"Thomas #0" = 5
+	"Damian #0" = 5
+	"Hector #0" = 5
+	"Maximilian #0" = 5
+	"Rafael #0" = 5
+	"Victor #0" = 5
+	"Xavier #0" = 5
+	"Fernando #0" = 5
+	"Nicolas #0" = 5
+	"Sariel #0" = -20
+	"Satanael #0" = -20
+	"Samael #0" = -20
+	"Azazel #0" = -20
+	"Samyaza #0" = -20
+	"Chazaqiel #0" = -20
+	"Gaap #0" = -20
+	"Marbas #0" = -20
+	"Zepar #0" = -20
+	"Kokabiel #0" = -20
+	"Lix Tetras #0" = -20
+	"Mastema #0" = -20
+	"Baal #0" = -20
+	"Solas #0" = -20
+	"Seere #0" = -20
+	"Sytry #0" = -20
+	"Zagan #0" = -20
+	"Vual #0" = -20
+	"Valefor #0" = -20
+	"Uzza #0" = -20
+	"Saleos #0" = -20
+	"Hagenti #0" = -20
+	"Allocen #0" = -20
+	"Amon #0" = -20
+	"Decarabia #0" = -20
+	"Beleth #0" = -20
+	"Orias #0" = -20
+}
+leader_names = { 
+	Starflare Dawnbreaker Lightwing Divineheart Halostrider Gracewing Angelis Heavenborn Feathertouch Aetherius
+	Angelheart Luminelle Ethereal Serenade Luminastra Starwing Hopegale Lumisong Angelglory Seraphicgleam
+	Starlight Angelbane Radiantflare Harmonywing Heavensong Brightfeather Aetherwind Divinefire 
+}
+ship_names = { 
+	"Seraphim's Grace" "Celestial Guardian" "Archangel's Wing" "Heaven's Might" "Divine Crusader" Wormiel "Serenity's Blessing" "Angelic Radiance" "Ascendant Glory" "Elysian Protector"
+	"Seraph's Embrace" "Celestial Ascension" "Archon's Purity" Angelwing "Holy Luminance" "Seraphic Beacon" "Aegis of Light" "Heaven's Triumph" "Divine Messenger" "Virtuous Herald"
+	"Ethereal Sentinel" Ranael Nagael Mariel Muzukiel Seraph Celestia Archon Cherub Serenity
+	Radiance Ascendant Elysium Seraphim Seraphina Aegis Celestial Divine Virtue Ethereal
+	Herald Grace Guardian Triumph Luminary Serenity Eden Resplend Halo Angelus
+	Silkiel Endiel Lucifina Micaela 
+}
+army_names = { 
+	"Fallen Angel Army" "$PROVINCE$ Army" 
+}
+fleet_names = { 
+	"Fallen Angel Navy" "$PROVINCE$ Navy" 
+}

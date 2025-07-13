@@ -18,3 +18,9 @@ alliance = {
 	second = FQ1 #Fairy Queen
 	start_date = 1444.1.1 
 }
+#Slug Tower and High Slugs
+alliance = {
+	first = SLT #Slug Tower
+	second = MDS #High Slugs
+	start_date = 1444.1.1 
+}

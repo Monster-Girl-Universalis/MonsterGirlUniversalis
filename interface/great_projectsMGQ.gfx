@@ -148,4 +148,20 @@ spriteTypes = {
 		name = "GFX_great_project_granberias_swordmaster_academy"	
 		texturefile = "gfx//interface//great_projects//great_project_granberias_swordmaster_academy.dds"
 	}
+		spriteType = {
+		name = "GFX_great_project_grandeur_grand_theater"	
+		texturefile = "gfx//interface//great_projects//great_project_grandeur_grand_theater.dds"
+	}
+		spriteType = {
+		name = "GFX_great_project_magic_laboratory"	
+		texturefile = "gfx//interface//great_projects//great_project_magic_laboratory.dds"
+	}
+		spriteType = {
+		name = "GFX_great_project_navy_port"	
+		texturefile = "gfx//interface//great_projects//great_project_navy_port.dds"
+	}
+		spriteType = {
+		name = "GFX_great_project_slug_tower"	
+		texturefile = "gfx//interface//great_projects//great_project_slug_tower.dds"
+	}
 }

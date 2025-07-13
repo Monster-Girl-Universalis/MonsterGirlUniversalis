@@ -115,7 +115,7 @@ RMA_ideas = {
 		development_cost = -0.05
 	}
 	RMA_advanced_ghost_army = {
-		movement_speed = 0.15
+		can_bypass_forts = yes
 	}
 	RMA_candle_burnout = {
 		discipline = 0.075
@@ -1392,17 +1392,17 @@ SA1_ideas = {
 	free = yes
 
 	SA1_desert_warriors = {		
-		infantry_power = 0.10
-		land_attrition = -0.15
+		infantry_power = 0.15
+		army_tradition = 1
 	}
 	SA1_trade_hub = {		
 		trade_efficiency = 0.20
 	}
 	SA1_desert_fortifications = {
-		garrison_size = 0.15
+		defensiveness = 0.15
 	}
 	SA1_nomadic_heritage = {
-		cavalry_shock = 0.75
+		cavalry_shock = 1
 		cav_to_inf_ratio = 0.50
 	}
 	SA1_sandstorm_tactics = {
@@ -1410,11 +1410,10 @@ SA1_ideas = {
 		cavalry_flanking = 0.15
 	}
 	SA1_assasin_clan = {		
-		shock_damage = 0.10
-		spy_offence = 0.15
+		shock_damage = 0.15
 	}
 	SA1_finest_military = {
-		army_tradition = 1.5
+		military_tactics = 0.25
 	}
 }
 #Grandeur
@@ -2295,54 +2294,6 @@ CD1_ideas = {
 		diplomatic_reputation = 1
 	}
 }
-#Spider Miko Realm
-SM1_ideas = {
-	start = {
-		manpower_in_true_faith_provinces = 0.33
-		infantry_power = 0.125
-		#may_establish_frontier = yes
-		#auto_explore_adjacent_to_colony = yes
-		may_recruit_female_generals = yes
-	}
-	
-	bonus = {
-		 	core_creation = -0.15
-	}
-	
-	trigger = {
-		OR = {
-			tag = SM1
-		}
-	}	
-	free = yes
-	
-	SM1_Offertory_Box = {
-		global_tax_modifier = 0.25
-	}
-	SM1_Faith_Is_For_The_Transient_People = {
-		global_missionary_strength = 0.02
-		missionaries = 1
-	}
-	SM1_White_And_Time_Magic = {
-		recover_army_morale_speed = 0.15
-		movement_speed = 0.10
-	}	
-	SM1_High_Magic_Power = {
-		fire_damage = 0.125
-	}
-	SM1_Spider_Architecture = {
-		build_time = -0.15
-		development_cost = -0.10
-	}
-	SM1_Spider_Silk_Production = {
-		production_efficiency = 0.15
-		global_trade_goods_size = 0.5
-	}
-	SM1_Taoist_Arts = {
-		morale_damage = 0.05
-		shock_damage = 0.125
-	}
-}
 #Iliasburg
 ILB_ideas = {
 	start = {
@@ -2821,7 +2772,6 @@ DR3_ideas = {
 	
 	trigger = {
 		culture = Dragon_Girl
-		NOT = { tag = SL1 }
 		NOT = { has_country_flag = accepted_dragon_empress_ideas }
 	}
 	free = yes
@@ -4023,10 +3973,10 @@ LQD_ideas = {
 		infantry_shock = 1
 	}
 	LQD_mansion_development = {
-		development_cost_modifier = -0.10
+		development_cost_modifier = -0.15
 	}
 	LQD_advanced_ghost_army = {
-		morale_damage = 0.10
+		can_bypass_forts = yes
 		land_attrition = -0.33
 	}
 	LQD_advanced_fireball_battle_magic = {
@@ -4104,20 +4054,20 @@ BQD_ideas = {
 	free = yes
 	
 	BQD_savage_fury = {
-		infantry_power = 0.25
+		infantry_power = 0.20
 	}
 	BQD_animal_instincts = {
 		global_spy_defence = 0.25
 	}	
 	BQD_pack_mentality = {
-		land_morale = 0.20
+		land_morale = 0.10
 		reserves_organisation = 0.50
 	}
 	BQD_wild_abundance = {
 		global_trade_goods_size = 0.5
 	}
 	BQD_fearsome_predators = {
-		morale_damage = 0.15
+		morale_damage = 0.10
 	}
 	BQD_warrior_society = {
 		general_cost = -0.20
@@ -4153,7 +4103,7 @@ SSD_ideas = {
 	}
 	SSD_pleasure_cultivation = {
 		global_unrest = -2
-		diplomatic_reputation = 3
+		diplomatic_reputation = 1
 	}	
 	SSD_eternal_temptation = {
 		accept_vassalization_reasons = 30
@@ -4166,11 +4116,11 @@ SSD_ideas = {
 		free_leader_pool = 1
 	}
 	SSD_widespread_relations = {
-		diplomatic_upkeep = 3
+		diplomatic_upkeep = 2
 	}
 	SSD_dark_enchantments = {
-		fire_damage = 0.15
-		fire_damage_received = -0.15
+		fire_damage = 0.10
+		fire_damage_received = -0.10
 	}
 	SSD_archsuccubus_elite = {
 		leader_land_fire = 2
@@ -4609,8 +4559,8 @@ FQ1_ideas = {
 		country_admin_power = 1
 	}
 	FQ1_Advanced_Fairy_Army = {
-		shock_damage = 0.10
-		reinforce_speed = 0.33
+		can_bypass_forts = yes
+		reinforce_cost_modifier = -0.33
 	}
 	FQ1_Royal_Pranks = {
 		spy_offence = 0.50
@@ -4629,51 +4579,95 @@ FQ1_ideas = {
 		free_policy = 1
 	}
 }
-
-#SIX GREAT ANCESTORS
-#Kanon
-KA1_ideas = {
+#Spider Miko Realm
+SM1_ideas = {
 	start = {
-		reinforce_speed = 0.75
-		all_power_cost = 0.10
+		manpower_in_true_faith_provinces = 0.33
+		infantry_power = 0.125
 		#may_establish_frontier = yes
 		#auto_explore_adjacent_to_colony = yes
 		may_recruit_female_generals = yes
 	}
 	
 	bonus = {
-		prestige = 1.5
+		 	core_creation = -0.15
 	}
 	
 	trigger = {
-		tag = KA1
+		OR = {
+			tag = SM1
+		}
 	}	
 	free = yes
-
-	KA1_Ivy_of_Devastation = {
-		hostile_attrition = 3
-		max_hostile_attrition = 5
+	
+	SM1_Offertory_Box = {
+		global_tax_modifier = 0.25
 	}
-	KA1_Kanons_Arms = {
-		defensiveness = 0.75
+	SM1_Faith_Is_For_The_Transient_People = {
+		global_missionary_strength = 0.02
+		missionaries = 1
 	}
-	KA1_Green_Empress_Whip = {
-		infantry_shock = 1.5
+	SM1_White_And_Time_Magic = {
+		recover_army_morale_speed = 0.15
+		movement_speed = 0.10
+	}	
+	SM1_High_Magic_Power = {
+		fire_damage = 0.125
 	}
-	KA1_Kanon_Hedonism = {
-		country_admin_power = -1
-		governing_cost = 0.1
-		territories_governing_cost = -0.25
+	SM1_Spider_Architecture = {
+		build_time = -0.15
+		development_cost = -0.10
 	}
-	KA1_Digestive_Whirlpool = {
-		morale_damage = 0.25
+	SM1_Spider_Silk_Production = {
+		production_efficiency = 0.15
+		global_trade_goods_size = 0.5
 	}
-	KA1_Kanon_Inwards_Focus = {
-		min_autonomy = 20
-		development_cost = -0.25
+	SM1_Taoist_Arts = {
+		morale_damage = 0.05
+		shock_damage = 0.125
 	}
-	KA1_Aztec_Rose = {
-		shock_damage = 0.50
-		military_tactics = 0.25
+}
+#Fallen Angel Realm
+FAR_ideas = {
+	start = {
+		stability_cost_modifier = -0.33
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+	
+	bonus = {
+		 	military_tactics = 0.10
+	}
+	
+	trigger = {
+		OR = {
+			tag = FAR
+		}
+	}	
+	free = yes
+	
+	FAR_tolerance = {
+		tolerance_heretic = 3
+		tolerance_heathen = 3
+	}
+	FAR_angels = {
+		land_morale = 0.15
+	}
+	FAR_sexy_times = {
+		culture_conversion_cost = -0.15
+	}	
+	FAR_open_society = {
+		core_creation = -0.1
+	}
+	FAR_hard_work = {
+		production_efficiency = 0.15
+	}
+	FAR_fallen_angels = {
+		infantry_power = 0.15
+	}
+	FAR_fallen_angel_dance = {
+		movement_speed = 0.05
+		leader_land_manuever = 1
 	}
 }

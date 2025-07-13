@@ -1798,3 +1798,164 @@ country_event = {
 	
 	
 }
+
+
+
+
+
+
+
+
+country_event = {
+	id = gen_mgq_flavor.32
+	title = gen_mgq_flavor.32.t
+	desc = gen_mgq_flavor.32.d
+	picture = FAR_ILIAS_TEMPLE_eventPicture
+	fire_only_once = yes
+	is_triggered_only = no
+	trigger = {
+    has_great_project = {
+		type = ilias_temple
+		tier = 3
+		}
+	42 = {
+		owned_by = ROOT
+	}
+}
+   	mean_time_to_happen = {
+	days = 7300
+	}
+	option = {
+	name = gen_mgq_flavor.32.a
+	add_country_modifier = {
+		name = temple_machina
+		duration = -1
+	}
+	}
+	option = {
+	name = gen_mgq_flavor.32.b
+	add_country_modifier = {
+		name = temple_horny
+		duration = -1
+	}
+	}
+	option = {
+	name = gen_mgq_flavor.32.c
+	add_country_modifier = {
+		name = temple_lance
+		duration = -1
+	}
+	}
+	option = {
+	name = gen_mgq_flavor.32.e
+	add_country_modifier = {
+		name = temple_samurai
+		duration = -1
+	}
+	}
+	option = {
+	name = gen_mgq_flavor.32.f
+	add_country_modifier = {
+		name = temple_berserker
+		duration = -1
+	}
+	}
+	option = {
+	name = gen_mgq_flavor.32.g
+	add_country_modifier = {
+		name = temple_spacetime
+		duration = -1
+	}
+	}
+	option = {
+	name = gen_mgq_flavor.32.h
+	add_country_modifier = {
+		name = temple_magician
+		duration = -1
+	}
+	}
+	option = {
+	name = gen_mgq_flavor.32.i
+	add_country_modifier = {
+		name = temple_shadow
+		duration = -1
+	}
+	}
+	option = {
+	name = gen_mgq_flavor.32.j
+	add_country_modifier = {
+		name = temple_spy
+		duration = -1
+	}
+	}
+	option = {
+	name = gen_mgq_flavor.32.k
+	add_country_modifier = {
+		name = temple_pirate
+		duration = -1
+	}
+	}
+	option = {
+	name = gen_mgq_flavor.32.l
+	add_country_modifier = {
+		name = temple_sailor
+		duration = -1
+	}
+	}
+	option = {
+	name = gen_mgq_flavor.32.m
+	add_country_modifier = {
+		name = temple_capitalism
+		duration = -1
+	}
+	}
+	option = {
+	name = gen_mgq_flavor.32.n
+	add_country_modifier = {
+		name = temple_gambler
+		duration = -1
+	}
+	}
+	option = {
+	name = gen_mgq_flavor.32.o
+	add_country_modifier = {
+		name = temple_touhou
+		duration = -1
+	}
+	}
+	option = {
+	name = gen_mgq_flavor.32.p
+	add_country_modifier = {
+		name = temple_dante
+		duration = -1
+	}
+	}
+	option = {
+	name = gen_mgq_flavor.32.q
+	add_country_modifier = {
+		name = temple_speech
+		duration = -1
+	}
+	}
+	option = {
+	name = gen_mgq_flavor.32.r
+	add_country_modifier = {
+		name = temple_doctor
+		duration = -1
+	}
+	}
+	option = {
+	name = gen_mgq_flavor.32.s
+	add_country_modifier = {
+		name = temple_shield
+		duration = -1
+	}
+	}
+	option = {
+	name = gen_mgq_flavor.32.u
+	add_country_modifier = {
+		name = temple_sword
+		duration = -1
+	}
+	}
+}

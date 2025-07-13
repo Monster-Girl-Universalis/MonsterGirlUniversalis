@@ -1,0 +1,14 @@
+spriteTypes = {	
+	spriteType = {
+		name = "CHANDRA_ROSTRUM_eventPicture"
+		texturefile = "gfx//event_pictures//event_pictures_rostrummountains//CHANDRA_ROSTRUM_eventPicture.dds"
+	}
+	spriteType = {
+		name = "CHANDRA_ROSTRUM_NEW_eventPicture"
+		texturefile = "gfx//event_pictures//event_pictures_rostrummountains//CHANDRA_ROSTRUM_NEW_eventPicture.dds"
+	}
+	spriteType = {
+		name = "CHANDRA_FIRE_eventPicture"
+		texturefile = "gfx//event_pictures//event_pictures_rostrummountains//CHANDRA_FIRE_eventPicture.dds"
+	}
+}

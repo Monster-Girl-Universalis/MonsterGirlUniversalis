@@ -637,6 +637,211 @@ estate_seahorse_marines_in_navy = {
 	}
 }
 
+estate_monster_society = {
+	icon = privilege_monsters_in_human_society
+	loyalty = 0.05
+	influence = 0.05
+	is_valid = {
+		OR = {
+			tag = GR2
+			was_tag = GR2
+			tag = WSS
+			was_tag = WSS
+		}
+	}
+	on_granted = {
+		custom_tooltip = estate_monster_society_effect_tooltip_granted
+		hidden_effect = {
+			set_country_flag = monster_society
+		}
+	}
+	on_granted_province = {
+		if = {
+			limit = {
+				religion = monster_lord_religion
+			}
+			add_province_modifier = {
+				name = estate_monster_society_mod
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_province_modifier = estate_monster_society_mod
+			}
+			remove_province_modifier = estate_monster_society_mod
+		}
+	}
+	on_revoked = {
+		custom_tooltip = estate_monster_society_effect_tooltip_removed
+		hidden_effect = {
+			clr_country_flag = monster_society
+		}
+	}
+	on_revoked_province = {
+		if = {
+			limit = {
+				has_province_modifier = estate_monster_society_mod
+			}
+			remove_province_modifier = estate_monster_society_mod
+		}
+	}
+	on_invalid = {
+		custom_tooltip = estate_monster_society_effect_tooltip_removed
+		hidden_effect = {
+			clr_country_flag = clergy_tolerates_science_religion
+		}
+	}
+	on_invalid_province = {
+		if = {
+			limit = {
+				has_province_modifier = estate_monster_society_mod
+			}
+			remove_province_modifier = estate_monster_society_mod
+		}
+	}
+	penalties = {
+	 	stability_cost_modifier = 0.33
+	}
+	benefits = {
+		num_accepted_cultures = 2
+		production_efficiency = 0.10
+	}
+	conditional_modifier = {
+		trigger = { has_government_mechanic = russian_modernization_mechanic }
+		modifier = { monthly_russian_modernization = 0.03 }
+	}
+	#conditional_modifier = {
+	#	trigger = { has_government_mechanic = ottoman_decadence_mechanic }
+	#	modifier = { monthly_ottoman_decadence = -0.02 }
+	#}
+	ai_will_do = {
+		factor = 1000
+		modifier = {
+			factor = 0
+			NOT = {
+				any_owned_province = {
+					religion = monster_lord_religion
+				}
+			}
+		}
+		modifier = {
+			factor = 0
+			is_subject = yes
+			overlord = {
+				religion = ROOT
+				has_idea_group = religious_ideas
+			}
+		}
+	}
+}
+
+estate_harpy_treehouse = {
+	icon = privilege_harpy_treehouse_2
+	loyalty = 0.05
+	influence = 0.05
+	is_valid = {
+		OR = {
+		culture_group = harpy
+		accepted_culture = Harpy_Girl
+		accepted_culture = Sparrow_Girl
+		accepted_culture = Siren_Girl
+		accepted_culture = Phoenix_Girl
+		accepted_culture = Ostrich_Girl
+		accepted_culture = Penguin_Girl
+		accepted_culture = Archaeopteryx_Girl
+		}
+	}
+	on_granted = {
+		custom_tooltip = estate_harpy_treehouse_effect_tooltip_granted
+		hidden_effect = {
+			set_country_flag = harpy_treehouse
+		}
+	}
+	on_granted_province = {
+		if = {
+			limit = {
+				AND = {
+					culture_group = harpy
+					OR = {
+					has_terrain = forest
+					has_terrain = woods
+					}
+				}
+			}
+			add_province_modifier = {
+				name = estate_harpy_treehouse_mod
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_province_modifier = estate_harpy_treehouse_mod
+			}
+			remove_province_modifier = estate_harpy_treehouse_mod
+		}
+	}
+	on_revoked = {
+		custom_tooltip =  estate_harpy_treehouse_effect_tooltip_removed
+		hidden_effect = {
+			clr_country_flag = harpy_treehouse
+		}
+	}
+	on_revoked_province = {
+		if = {
+			limit = {
+				has_province_modifier = estate_harpy_treehouse_mod
+			}
+			remove_province_modifier = estate_harpy_treehouse_mod
+		}
+	}
+	on_invalid = {
+		custom_tooltip = estate_harpy_treehouse_effect_tooltip_removed
+	}
+	on_invalid_province = {
+		if = {
+			limit = {
+				has_province_modifier = estate_harpy_treehouse_mod
+			}
+			remove_province_modifier = estate_harpy_treehouse_mod
+		}
+	}
+	penalties = {
+	 	build_cost = 0.15
+		culture_conversion_cost = 0.15
+	}
+	benefits = {
+
+	}
+	conditional_modifier = {
+		trigger = { has_government_mechanic = russian_modernization_mechanic }
+		modifier = { monthly_russian_modernization = 0.03 }
+	}
+	#conditional_modifier = {
+	#	trigger = { has_government_mechanic = ottoman_decadence_mechanic }
+	#	modifier = { monthly_ottoman_decadence = -0.02 }
+	#}
+	ai_will_do = {
+		factor = 1000
+		modifier = {
+			factor = 0
+			NOT = {
+				any_owned_province = {
+					AND = {
+					culture_group = harpy
+					has_terrain = forest
+					has_terrain = woods
+				}
+				}
+			}
+		}
+		modifier = {
+			factor = 0
+			is_subject = yes
+		}
+	}
+}
+
 #Angels
 estate_angels_land_rights = {
 	icon = privilege_grant_autonomy

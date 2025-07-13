@@ -1,0 +1,906 @@
+########################################
+# Missions for Rostrum Mountains by Cris
+########################################
+
+rma_branch_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		tag = RMA
+	}
+	has_country_shield = yes
+	RMA_rostrum_1 = {
+		icon = RMA_rostrum_destroyed
+		required_missions = {}
+		position = 1
+		provinces_to_highlight = {
+			OR = {
+				province_id = 12
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			NOT = { num_of_times_improved = 5 }
+		}
+		trigger = {
+			12 = {
+				owned_by = ROOT
+				num_of_times_improved = 5
+			}
+			13 = {
+				owned_by = ROOT
+			}
+			10 = {
+				owned_by = ROOT
+			}
+			17 = {
+				owned_by = ROOT
+			}
+			16 = {
+				owned_by = ROOT
+			}
+			15 = {
+				owned_by = ROOT
+			}
+			14 = {
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			add_adm_power = 50
+			add_dip_power = 50
+			add_mil_power = 50
+			12 = {
+				change_culture = Ghost_Girl
+			}
+			13 = {
+				change_culture = Ghost_Girl
+			}
+			10 = {
+				change_culture = Ghost_Girl
+			}
+			17 = {
+				change_culture = Ghost_Girl
+			}
+			16 = {
+				change_culture = Ghost_Girl
+			}
+			15 = {
+				change_culture = Ghost_Girl
+			}
+			14 = {
+				change_culture = Ghost_Girl
+			}
+		}
+	}
+	RMA_rostrum_2 = {
+		icon = pornof
+		required_missions = {RMA_rostrum_1}
+		position = 2
+		provinces_to_highlight = {
+			OR = {
+				area = pornof_area
+				area = orcish_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			pornof_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			orcish_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+		}
+		effect = {
+			rostrum_area = {
+				add_base_production = 1
+			}
+			pornof_area = {
+				add_base_production = 1
+			}
+			12 = {
+				add_province_modifier = {
+					name = rma_pornof_trade
+					duration = -1
+				}
+			}
+		}
+	}
+	RMA_rostrum_3 = {
+		icon = RMA_candle_production
+		required_missions = {RMA_rostrum_2}
+		position = 3
+		provinces_to_highlight = {
+			province_id = 12
+			OR = {
+				NOT = {	owned_by = ROOT }
+				NOT = {	has_building = marketplace }
+				NOT = {	has_building = workshop }
+				NOT = {	has_building = temple }
+				NOT = { development = 30 }
+			}
+		}
+		trigger = {
+			12 = {
+				owned_by = ROOT
+				has_building = marketplace
+				has_building = workshop
+				has_building = temple
+				development = 30
+			}
+		}
+		effect = {
+			12 = {
+				change_trade_goods = dyes
+				add_province_modifier = {
+					name = rma_candle_production
+					duration = -1
+				}
+			}
+		}
+	}
+	RMA_rostrum_4 = {
+		icon = RMA_river
+		required_missions = {RMA_rostrum_3}
+		position = 4
+		trigger = {
+			any_owned_province = {
+				culture_group = slime
+			}
+		}
+		effect = {
+			rostrum_area = {
+				add_province_modifier = {
+					name = rma_clean_water
+					duration = -1
+				}
+			}
+			rostrum_coast_area = {
+				add_province_modifier = {
+					name = rma_clean_water
+					duration = -1
+				}
+			}
+		}
+	}
+	RMA_rostrum_5 = {
+		icon = RMA_sexy_chandra
+		required_missions = {RMA_rostrum_4}
+		position = 4
+		trigger = {
+			any_ally = {
+				culture_group = Human_culture
+				has_opinion = {
+					who = root
+					value = 180
+				}
+			}
+		}
+		effect = {
+			add_accepted_culture = ilian_human
+			unlock_race = { race = human }
+			add_country_modifier = {
+				name = rma_taxes
+				duration = 9125
+			}
+			rostrum_area = {
+				add_base_tax = 3
+				add_base_manpower = 3
+			}
+			rostrum_coast_area = {
+				add_base_tax = 3
+				add_base_manpower = 3
+			}
+		}
+	}
+	RMA_rostrum_6 = {
+		icon = RMA_rostrum_fixed
+		required_missions = {RMA_rostrum_5}
+		position = 6
+		provinces_to_highlight = {
+			OR = {
+				province_id = 12
+				province_id = 10
+				province_id = 11
+				province_id = 13
+				province_id = 14
+				province_id = 15
+				province_id = 16
+				province_id = 17
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			NOT = { development = 40 }
+		}
+		trigger = {
+			12 = {
+				development = 40
+			}
+			10 = {
+				development = 40
+			}
+			11 = {
+				development = 40
+			}
+			13 = {
+				development = 40
+			}
+			14 = {
+				development = 40
+			}
+			15 = {
+				development = 40
+			}
+			16 = {
+				development = 40
+			}
+			17 = {
+				development = 40
+			}
+		}
+		effect = {
+			country_event = {
+				id = flavor_rma.2
+			}
+			add_country_modifier = {
+				name = rma_rostrum_final
+				duration = -1
+			}
+			rostrum_area = {
+				add_base_tax = 3
+				add_base_production = 3
+				add_base_manpower = 3
+			}
+			rostrum_coast_area = {
+				add_base_tax = 3
+				add_base_production = 3
+				add_base_manpower = 3
+			}
+		}
+	}
+}
+rma_branch_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		tag = RMA
+	}
+	has_country_shield = yes
+	RMA_meda = {
+		icon = RMA_meda
+		required_missions = {RMA_keep_flame}
+		position = 2
+		provinces_to_highlight = {
+			OR = {
+				area = abandoned_coast
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			abandoned_coast = { type = all country_or_non_sovereign_subject_holds = ROOT }
+		}
+		effect = {
+			add_country_modifier = {
+				name = "rma_meda"
+				duration = 9125
+			}
+			add_adm_power = 75
+		}
+	}
+	RMA_slime = {
+		icon = RMA_lime
+		required_missions = {RMA_orc}
+		position = 5
+		provinces_to_highlight = {
+			OR = {
+				area = slime_forest_area
+				area = slime_village_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			slime_forest_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			slime_village_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+		}
+		effect = {
+			change_ruler_stat = {
+			type = dip
+			amount = 1
+		}
+			country_event = {
+				id = flavor_rma.3
+			}
+			unlock_race = { race = slime }
+			iliasville_region = {
+				limit = {
+					NOT = { is_core = ROOT } 
+					NOT = { is_permanent_claim = ROOT } 
+				}
+				add_permanent_claim = ROOT
+			}
+			elven_traderoute_area = {
+				limit = {
+					NOT = { is_core = ROOT } 
+					NOT = { is_permanent_claim = ROOT } 
+				}
+				add_permanent_claim = ROOT
+			}
+			ntequi_vale = {
+				limit = {
+					NOT = { is_core = ROOT } 
+					NOT = { is_permanent_claim = ROOT } 
+				}
+				add_permanent_claim = ROOT
+			}
+			earthworm_area = {
+				limit = {
+					NOT = { is_core = ROOT } 
+					NOT = { is_permanent_claim = ROOT } 
+				}
+				add_permanent_claim = ROOT
+			}
+			south_irina_road_area = {
+				limit = {
+					NOT = { is_core = ROOT } 
+					NOT = { is_permanent_claim = ROOT } 
+				}
+				add_permanent_claim = ROOT
+			}
+			retociitu_woods = {
+				limit = {
+					NOT = { is_core = ROOT } 
+					NOT = { is_permanent_claim = ROOT } 
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	RMA_worm = {
+		icon = irina
+		required_missions = {RMA_slime}
+		position = 6
+		provinces_to_highlight = {
+			OR = {
+				area = elven_traderoute_area
+				area = ntequi_vale
+				area = retociitu_woods
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			OR = {
+				elven_traderoute_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+				ntequi_vale = { type = all country_or_non_sovereign_subject_holds = ROOT }
+				retociitu_woods = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			}
+		}
+		effect = {
+			irina_region = {
+				limit = {
+					NOT = { is_core = ROOT } 
+					NOT = { is_permanent_claim = ROOT } 
+				}
+				add_permanent_claim = ROOT
+			}
+			lemuse_beach = {
+				limit = {
+					NOT = { is_core = ROOT } 
+					NOT = { is_permanent_claim = ROOT } 
+				}
+				add_permanent_claim = ROOT
+			}
+			fairy_coast = {
+				limit = {
+					NOT = { is_core = ROOT } 
+					NOT = { is_permanent_claim = ROOT } 
+				}
+				add_permanent_claim = ROOT
+			}
+			mimic_grove_area = {
+				limit = {
+					NOT = { is_core = ROOT } 
+					NOT = { is_permanent_claim = ROOT } 
+				}
+				add_permanent_claim = ROOT
+			}
+			etam_grove = {
+				limit = {
+					NOT = { is_core = ROOT } 
+					NOT = { is_permanent_claim = ROOT } 
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	RMA_enrika = {
+		icon = RMA_forest_fire
+		required_missions = {RMA_worm}
+		position = 7
+		provinces_to_highlight = {
+			OR = {
+				area = elven_traderoute_area
+				area = ntequi_vale
+				area = retociitu_woods
+				area = lemuse_beach
+				area = fairy_coast
+				area = mimic_grove_area
+				area = etam_grove
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			elven_traderoute_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			ntequi_vale = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			retociitu_woods = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			lemuse_beach = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			fairy_coast = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			mimic_grove_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			etam_grove = { type = all country_or_non_sovereign_subject_holds = ROOT }
+		}
+		effect = {
+			add_country_modifier = {
+				name = rma_enrika
+				duration = 10950
+			}
+			enrika_region = {
+				limit = {
+					NOT = { is_core = ROOT } 
+					NOT = { is_permanent_claim = ROOT } 
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+}
+rma_branch_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		tag = RMA
+	}
+	has_country_shield = yes
+	RMA_keep_flame = {
+		icon = RMA_chandra
+		position = 1
+		provinces_to_highlight = {  } 
+		trigger = {
+			army_size_percentage = 1
+			has_mil_advisor = yes
+			num_of_generals = 1
+		}
+		effect = {
+			add_country_modifier = {
+				name = "rma_keep_flame"
+				duration = 7300
+			}
+			add_army_tradition = 15
+			abandoned_coast = {
+				limit = {
+					NOT = { is_core = ROOT } 
+					NOT = { is_permanent_claim = ROOT } 
+				}
+				add_permanent_claim = ROOT
+			}
+			rostrum_area = {
+				limit = {
+					NOT = { is_core = ROOT } 
+					NOT = { is_permanent_claim = ROOT } 
+				}
+				add_permanent_claim = ROOT
+			}
+			rostrum_coast_area = {
+				limit = {
+					NOT = { is_core = ROOT } 
+					NOT = { is_permanent_claim = ROOT } 
+				}
+				add_permanent_claim = ROOT
+			}
+			eastern_ilias_tartarus_area = {
+				limit = {
+					NOT = { is_core = ROOT } 
+					NOT = { is_permanent_claim = ROOT } 
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	RMA_invade_rostrum = {
+		icon = RMA_roper
+		required_missions = {RMA_keep_flame}
+		position = 2
+		provinces_to_highlight = {
+			OR = {
+				area = rostrum_area
+				area = rostrum_coast_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			rostrum_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			rostrum_coast_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+		}
+		effect = {
+			add_country_modifier = {
+				name = "rma_roper"
+				duration = 9125
+			}
+		}
+	}
+	RMA_nationality = {
+		icon = RMA_conquest
+		required_missions = {RMA_invade_rostrum	RMA_meda RMA_tartarus}
+		position = 3
+		provinces_to_highlight = {
+			OR = {
+				area = rostrum_area
+				area = rostrum_coast_area
+				area = eastern_ilias_tartarus_area
+				area = rostrum_caves_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		effect = {
+			add_country_modifier = {
+				name = "rma_out_of_rostrum"
+				duration = 9125
+			}
+			change_ruler_stat = {
+				type = adm
+				amount = 2
+			}
+			country_event = {
+				id = flavor_rma.1
+			}
+			pornof_region = {
+				limit = {
+					NOT = { is_core = ROOT } 
+					NOT = { is_permanent_claim = ROOT } 
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	RMA_orc = {
+		icon = orc_ouch
+		required_missions = {RMA_nationality}
+		position = 3
+		provinces_to_highlight = {
+			OR = {
+				region = pornof_region
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			pornof_region = { type = all country_or_non_sovereign_subject_holds = ROOT }
+		}
+		effect = {
+			add_country_modifier = {
+				name = "rma_orc"
+				duration = 9125
+			}
+			south_ilias_coast_area = {
+				limit = {
+					NOT = { is_core = ROOT } 
+					NOT = { is_permanent_claim = ROOT } 
+				}
+				add_permanent_claim = ROOT
+			}
+			cave_of_trials_area = {
+				limit = {
+					NOT = { is_core = ROOT } 
+					NOT = { is_permanent_claim = ROOT } 
+				}
+				add_permanent_claim = ROOT
+			}
+			slime_forest_area = {
+				limit = {
+					NOT = { is_core = ROOT } 
+					NOT = { is_permanent_claim = ROOT } 
+				}
+				add_permanent_claim = ROOT
+			}
+			slime_village_area = {
+				limit = {
+					NOT = { is_core = ROOT } 
+					NOT = { is_permanent_claim = ROOT } 
+				}
+				add_permanent_claim = ROOT
+			}
+			happiness_village_area = {
+				limit = {
+					NOT = { is_core = ROOT } 
+					NOT = { is_permanent_claim = ROOT } 
+				}
+				add_permanent_claim = ROOT
+			}
+			happiness_woods_area = {
+				limit = {
+					NOT = { is_core = ROOT } 
+					NOT = { is_permanent_claim = ROOT } 
+				}
+				add_permanent_claim = ROOT
+			}
+			dog_plains_area = {
+				limit = {
+					NOT = { is_core = ROOT } 
+					NOT = { is_permanent_claim = ROOT } 
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	RMA_sheep = {
+		icon = RMA_mary
+		required_missions = {RMA_orc}
+		position = 4
+		provinces_to_highlight = {
+			OR = {
+				area = dog_plains_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			dog_plains_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+		}
+		effect = {
+			add_country_modifier = {
+				name = rma_sheep
+				duration = 10950
+			}
+			sheep_plains_area = {
+				limit = {
+					NOT = { is_core = ROOT } 
+					NOT = { is_permanent_claim = ROOT } 
+				}
+				add_permanent_claim = ROOT
+			}
+			iliasburg_area = {
+				limit = {
+					NOT = { is_core = ROOT } 
+					NOT = { is_permanent_claim = ROOT } 
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	RMA_iliasburg = {
+		icon = iliasburg_on_fire
+		required_missions = {RMA_sheep}
+		position = 5
+		provinces_to_highlight = {
+			OR = {
+				area = iliasburg_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			iliasburg_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+		}
+		effect = {
+			add_country_modifier = {
+				name = rma_iliasburg
+				duration = 10950
+			}
+			iliasburg_region = {
+				limit = {
+					NOT = { is_core = ROOT } 
+					NOT = { is_permanent_claim = ROOT } 
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	RMA_eternal_flame = {
+		icon = chandra_hot
+		required_missions = {RMA_iliasburg RMA_enrika RMA_gold}
+		position = 8
+		provinces_to_highlight = {
+			OR = {
+				region = enrika_region
+				region = iliasburg_region
+				region = iliasville_region
+				region = happiness_village_region
+				region = midas_region
+				region = pornof_region
+				region = irina_region
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			enrika_region = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			iliasburg_region = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			iliasville_region = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			happiness_village_region = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			midas_region = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			pornof_region = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			irina_region = { type = all country_or_non_sovereign_subject_holds = ROOT }
+		}
+		effect = {
+			change_ruler_stat = {
+			type = adm
+			amount = 1
+		}
+		change_ruler_stat = {
+			type = dip
+			amount = 1
+		}
+		change_ruler_stat = {
+			type = mil
+			amount = 1
+		}
+			add_country_modifier = {
+				name = rma_eternal_flame
+				duration = -1
+			}
+		}
+	}
+}
+rma_branch_4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		tag = RMA
+	}
+	has_country_shield = yes
+	RMA_tartarus = {
+		icon = RMA_riot
+		required_missions = {RMA_keep_flame}
+		position = 2
+		provinces_to_highlight = {
+			OR = {
+				area = eastern_ilias_tartarus_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			eastern_ilias_tartarus_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+		}
+		effect = {
+			add_country_modifier = {
+				name = "rma_tartarus"
+				duration = 9125
+			}
+			change_innovativeness = 5
+		}
+	}
+	RMA_harpy = {
+		icon = RMA_harpy
+		required_missions = {RMA_orc}
+		position = 5
+		provinces_to_highlight = {
+			OR = {
+				area = happiness_village_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			happiness_village_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+		}
+		effect = {
+			add_mercantilism = 5
+			add_years_of_income = 2
+			happiness_village_region = {
+				limit = {
+					NOT = { is_core = ROOT } 
+					NOT = { is_permanent_claim = ROOT } 
+				}
+				add_permanent_claim = ROOT
+			}
+			slug_plains_area = {
+				limit = {
+					NOT = { is_core = ROOT } 
+					NOT = { is_permanent_claim = ROOT } 
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	RMA_gold = {
+		icon = RMA_gold
+		required_missions = {RMA_harpy}
+		position = 7
+		provinces_to_highlight = {
+			OR = {
+				area = slug_plains_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			slug_plains_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+		}
+		effect = {
+			add_country_modifier = {
+				name = rma_gold_1
+				duration = 10950
+			}
+			midas_region = {
+				limit = {
+					NOT = { is_core = ROOT } 
+					NOT = { is_permanent_claim = ROOT } 
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+}
+rma_branch_5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		tag = RMA
+	}
+	has_country_shield = yes
+	RMA_ghost_army_1 = {
+		icon = RMA_chandra_heh
+		required_missions = {}
+		position = 1
+		trigger = {
+			grown_by_development = 100
+		}
+		effect = {
+			add_adm_power = 75
+			add_dip_power = 75
+			add_mil_power = 75
+			change_government_reform_progress = 100
+		}
+	}
+	RMA_ghost_army_2 = {
+		icon = ellie_zombie
+		required_missions = {RMA_ghost_army_1}
+		position = 2
+		trigger = {
+			grown_by_development = 250
+		}
+		effect = {
+			custom_tooltip = flavor_insight_rma.1
+			add_adm_power = 150
+			add_dip_power = 150
+			add_mil_power = 150
+		}
+	}
+	RMA_ghost_army_3 = {
+		icon = RMA_spiritualists
+		required_missions = {RMA_ghost_army_2}
+		position = 3
+		trigger = {
+			num_of_estate_agendas_completed = {
+    		estate = estate_spiritualists
+    		value = 3
+			}
+			estate_loyalty = {
+				estate = estate_spiritualists
+				loyalty = 60
+			}
+			has_estate_privilege = estate_spiritualists_reinforced_zombies
+		}
+		effect = {
+			change_ruler_stat = {
+			type = dip
+			amount = 1
+		}
+			add_country_modifier = {
+				name = rma_zombie_estate
+				duration = -1
+			}
+		}
+	}
+	RMA_ghost_army_4 = {
+		icon = ghoul
+		required_missions = {RMA_ghost_army_3}
+		position = 4
+		trigger = {
+			num_of_streltsy = 100
+		}
+		effect = {
+			add_country_modifier = {
+				name = rma_zombie_army
+				duration = -1
+			}
+			unlock_race = { race = undead }
+		}
+	}
+}

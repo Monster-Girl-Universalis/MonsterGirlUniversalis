@@ -160,7 +160,8 @@ estate_monster_girls = {
 						has_reform = vampire_nobility_reform 
 						has_reform = elf_nobility_reform 
 						has_reform = lamia_nobility_reform 
-						has_reform = scylla_nobility_reform 
+						has_reform = scylla_nobility_reform
+						tag = FAR 
 					}
 	}
 
@@ -244,6 +245,8 @@ estate_monster_girls = {
 		estate_wild_lands 
 		estate_forbidden_art_nine_tails_funeral_pyre
 		estate_antlion_trapping_privilege
+		estate_monster_society
+		estate_harpy_treehouse
 		
 	}
 

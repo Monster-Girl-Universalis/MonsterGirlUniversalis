@@ -165,6 +165,18 @@ estate_researchers_guaranteed_autonomy_mod = {
 
 # Monster Girls
 ##################################################
+estate_monster_society_mod = {
+	religion = yes
+	local_religious_unity_contribution = -1
+	local_missionary_strength = -1
+}
+
+estate_harpy_treehouse_mod = {
+	allowed_num_of_buildings = 1
+	supply_limit = 5
+	local_governing_cost = -0.1
+}
+	
 estate_antlion_trapping_privilege_disloyal = {
 	defensiveness = -0.50
 }
@@ -508,4 +520,85 @@ harpy_girl_scouts_hired = {
 increased_reliance_spies = {
 	spy_offence = 0.2
 	global_spy_defence = 0.2
+}
+
+temple_machina = {
+	fire_damage = 0.10
+}
+
+temple_horny = {
+	global_unrest = -2
+}
+
+temple_lance = {
+	discipline = 0.05
+}
+
+temple_sword = {
+	shock_damage_received = -0.125
+}
+
+temple_samurai = {
+	shock_damage = 0.125
+}
+
+temple_berserker = {
+	infantry_power = 0.15
+}
+
+temple_spacetime = {
+	movement_speed = 0.075
+	build_time = -0.10
+}
+
+temple_magician = {
+	all_power_cost = -0.03
+}
+
+temple_shadow = {
+	fire_damage_received = -0.10
+}
+
+temple_spy = {
+	global_spy_defence = 0.33
+	spy_offence = 0.33
+}
+
+temple_pirate = {
+	naval_morale_damage = 0.075
+}
+
+temple_sailor = {
+	naval_morale_damage_received = -0.075
+}
+
+temple_capitalism = {
+	build_cost = -0.15
+	advisor_cost = -0.15
+}
+
+temple_gambler = {
+	country_diplomatic_power = 1
+}
+
+temple_touhou = {
+	global_monthly_devastation = -0.15
+}
+
+temple_dante = {
+	monthly_reform_progress = 0.25
+	technology_cost = -0.1
+}
+
+temple_speech = {
+	diplomatic_reputation = 2
+	diplomats = 2
+}
+
+temple_doctor = {
+	manpower_recovery_speed = 0.33
+}
+
+temple_shield = {
+	defensiveness = 0.33
 }

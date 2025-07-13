@@ -1,0 +1,14 @@
+spriteTypes = {	
+	spriteType = {
+		name = "FAR_MARIEL_eventPicture"
+		texturefile = "gfx//event_pictures//event_pictures_fallenangelrealm//FAR_MARIEL_eventPicture.dds"
+	}
+	spriteType = {
+		name = "FAR_ENRIKA_eventPicture"
+		texturefile = "gfx//event_pictures//event_pictures_fallenangelrealm//FAR_ENRIKA_eventPicture.dds"
+	}
+	spriteType = {
+		name = "FAR_ILIAS_TEMPLE_eventPicture"
+		texturefile = "gfx//event_pictures//event_pictures_fallenangelrealm//FAR_ILIAS_TEMPLE_eventPicture.dds"
+	}
+}

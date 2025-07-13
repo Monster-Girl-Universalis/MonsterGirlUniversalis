@@ -262,5 +262,17 @@ spriteTypes = {
 		name = "privilege_dark_stones"
 		texturefile = "gfx/interface/privileges/privilege_dark_stones.dds"
 	}
+	spriteType = {
+		name = "privilege_monsters_in_human_society"
+		texturefile = "gfx/interface/privileges/privilege_monsters_in_human_society.dds"
+	}
+	spriteType = {
+		name = "privilege_harpy_treehouse_1"
+		texturefile = "gfx/interface/privileges/privilege_harpy_treehouse_1.dds"
+	}
+	spriteType = {
+		name = "privilege_harpy_treehouse_2"
+		texturefile = "gfx/interface/privileges/privilege_harpy_treehouse_2.dds"
+	}
 
 }

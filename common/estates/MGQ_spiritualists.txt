@@ -54,6 +54,8 @@ estate_spiritualists = {
 						was_tag = LQD
 						has_idea = ultimate_doll_spiritualist_mastery 
 						has_idea = eternity_ethereal_wisdom
+						has_country_flag = has_zombie
+						mission_completed = RMA_ghost_army_2
 					}
 	}
 

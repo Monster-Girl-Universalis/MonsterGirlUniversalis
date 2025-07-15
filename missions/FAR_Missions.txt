@@ -737,8 +737,6 @@ branch_4 = {
 		provinces_to_highlight = {
 			OR = {
 				area = iliasville_area
-				area = slime_village_area
-				area = slime_forest_area
 				area = earthworm_area
 				area = south_irina_road_area
 			}
@@ -746,8 +744,6 @@ branch_4 = {
 		}
 		trigger = {
 			iliasville_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
-			slime_village_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
-			slime_forest_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
 			earthworm_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
 			south_irina_road_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
 		}

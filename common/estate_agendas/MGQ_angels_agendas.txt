@@ -956,9 +956,6 @@ estate_angels_increase_autonomy_in_province_x = {
 			event_target:agenda_province = {
 				NOT = { owned_by = root }
 			}
-			event_target:agenda_province = {
-				religion_group = root
-			}
 			custom_trigger_tooltip = {
 				tooltip = estate_angels_increase_autonomy_in_province_x_tooltip
 				hidden_trigger = {

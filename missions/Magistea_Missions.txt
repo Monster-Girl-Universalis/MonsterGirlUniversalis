@@ -216,13 +216,13 @@ magistea_central_branch = {
 
 		provinces_to_highlight = {
 			OR = {
-				continent = safina
+				continent = Safina
 			}
 		}		
 		trigger = {
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with= {
 				value = 300
-				continent = safina
+				continent = Safina
 			}
 
 		}

@@ -51,25 +51,25 @@ rma_branch_1 = {
 			add_dip_power = 50
 			add_mil_power = 50
 			12 = {
-				change_culture = Ghost_Girl
+				change_culture = Candle_Girl
 			}
 			13 = {
-				change_culture = Ghost_Girl
+				change_culture = Candle_Girl
 			}
 			10 = {
-				change_culture = Ghost_Girl
+				change_culture = Candle_Girl
 			}
 			17 = {
-				change_culture = Ghost_Girl
+				change_culture = Candle_Girl
 			}
 			16 = {
-				change_culture = Ghost_Girl
+				change_culture = Candle_Girl
 			}
 			15 = {
-				change_culture = Ghost_Girl
+				change_culture = Candle_Girl
 			}
 			14 = {
-				change_culture = Ghost_Girl
+				change_culture = Candle_Girl
 			}
 		}
 	}
@@ -213,25 +213,25 @@ rma_branch_1 = {
 				development = 40
 			}
 			10 = {
-				development = 40
+				development = 20
 			}
 			11 = {
-				development = 40
+				development = 20
 			}
 			13 = {
-				development = 40
+				development = 20
 			}
 			14 = {
-				development = 40
+				development = 20
 			}
 			15 = {
-				development = 40
+				development = 20
 			}
 			16 = {
-				development = 40
+				development = 20
 			}
 			17 = {
-				development = 40
+				development = 20
 			}
 		}
 		effect = {

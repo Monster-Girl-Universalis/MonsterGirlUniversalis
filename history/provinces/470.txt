@@ -1,11 +1,11 @@
-add_core = ILR
-owner = ILR
+add_core = MIV
+owner = MIV
 base_tax = 3
 base_manpower = 5
 base_production = 3
-culture = Bunny_Girl
+culture = Slug_Girl
 religion = monster_lord_religion
-controller = ILR
+controller = MIV
 is_city = no
 discovered_by = TECH_ALRAUNE
 discovered_by = TECH_ANGEL

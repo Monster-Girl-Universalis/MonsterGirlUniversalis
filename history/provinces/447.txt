@@ -1,11 +1,11 @@
-add_core = MIV
-owner = MIV
+add_core = ERF
+owner = ERF
 base_tax = 2
 base_manpower = 2
 base_production = 1
 culture = Slug_Girl
 religion = monster_lord_religion
-controller = MIV
+controller = ERF
 is_city = no
 discovered_by = TECH_ALRAUNE
 discovered_by = TECH_ANGEL

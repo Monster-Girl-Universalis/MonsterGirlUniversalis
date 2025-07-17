@@ -1,11 +1,11 @@
-add_core = CNT
-owner = CNT
+add_core = MDM
+owner = MDM
 base_tax = 4
 base_manpower = 5
 base_production = 4
-culture = Fairy_Girl
+culture = Bug_Girl
 religion = monster_lord_religion
-controller = CNT
+controller = MDM
 is_city = no
 trade_goods = gold
 discovered_by = TECH_ALRAUNE

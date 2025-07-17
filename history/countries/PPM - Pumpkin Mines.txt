@@ -1,0 +1,18 @@
+government = monarchy
+government_rank = 1
+primary_culture = Fairy_Girl
+add_government_reform = Fairy_realm
+religion = wind_religion
+technology_group = TECH_FAIRY
+capital = 457
+1444.1.1 = { 
+	monarch = { 
+		name = "Panpukin"
+		dynasty = "o Lantern"
+		birth_date = 1424.1.1
+		adm = 4
+		dip = 4
+		mil = 3
+		female = yes
+	}
+}

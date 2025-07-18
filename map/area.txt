@@ -285,7 +285,7 @@ happiness_woods_area = {
 bee_woods_area = { 
 	353 355 352 354 
 }
-sparrow_woods_area = { 
+iliarth_village = { 
 	365 366 364 
 }
 harpy_tower_area = { 
@@ -321,7 +321,7 @@ midas_village_area = {
 midas_plains_area = { 
 	438 439 441 414 
 }
-slug_plains_area = { 
+northern_sparrows = { 
 	413 412 411 410 
 }
 northern_beehive_area = { 
@@ -330,7 +330,7 @@ northern_beehive_area = {
 northern_bee_plains_area = { 
 	437 419 416 415 
 }
-slug_coast_area = { 
+erefor_village = { 
 	452 446 447 445 443 
 }
 midas_island_area = { 
@@ -348,19 +348,19 @@ high_slugs_area = {
 slug_nuns_area = { 
 	433 429 436 
 }
-erefor_village = { 
+northern_midas = { 
 	455 471 475 454 
 }
-iliarth_state = { 
+slug_farm = { 
 	470 450 448 
 }
-iliarth_coast = { 
+slug_coast = { 
 	473 453 449 
 }
-naipi_village = { 
+mines_entrance = { 
 	457 474 472 456 458 
 }
-conant_village = { 
+abandoned_mines = { 
 	459 461 462 460 463 
 }
 mimic_island_area = { 

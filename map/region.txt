@@ -77,18 +77,18 @@ enrika_region = {
 }
 iliasburg_region = { 
 	areas = {
-		iliasburg_plains iliasburg_area ilian_centaurs_area iliasport_area eastern_iliasburg eraha_beach_area sluggy_stars_plains_area rafflesia_plains kitsune_geisha_area 
+		iliasburg_plains iliasburg_area ilian_centaurs_area iliasport_area eastern_iliasburg eraha_beach_area sluggy_stars_plains_area rafflesia_plains kitsune_geisha_area spider_girl_area kitsune_taoist_area
 	}
 }
 happiness_village_region = { 
 	areas = { 
 		harpy_tower_area bee_girl_hive_area bee_woods_area dog_plains_area edreenaita_spring_area happiness_village_area happiness_woods_area harpy_hill_area hive_coast_area sheep_plains_area
-		sparrow_coast_area sparrow_girl_realm_area sparrow_woods_area mimic_island_area 
+		sparrow_coast_area sparrow_girl_realm_area iliarth_village mimic_island_area 
 	}
 }
 midas_region = { 
 	areas = { 
-		slug_nuns_area midas_slugs_area high_slugs_area slug_tower_area royal_slug_coast_area warp_shrine_area midas_island_area naipi_village
+		slug_nuns_area midas_slugs_area high_slugs_area slug_tower_area royal_slug_coast_area warp_shrine_area midas_island_area northern_beehive_area northern_bee_plains_area midas_plains_area midas_village_area northern_sparrows erefor_village slug_farm slug_coast northern_midas mines_entrance abandoned_mines
 	}
 }
 navyl_region = { 

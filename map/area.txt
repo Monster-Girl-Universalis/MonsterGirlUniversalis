@@ -276,7 +276,7 @@ hive_coast_area = {
 sparrow_coast_area = { 
 	357 359 360 
 }
-sparrow_girl_realm_area = { 
+southern_sparrows = { 
 	356 351 363 358 
 }
 happiness_woods_area = { 
@@ -285,7 +285,7 @@ happiness_woods_area = {
 bee_woods_area = { 
 	353 355 352 354 
 }
-iliarth_village = { 
+central_beehive = { 
 	365 366 364 
 }
 harpy_tower_area = { 
@@ -321,7 +321,7 @@ midas_village_area = {
 midas_plains_area = { 
 	438 439 441 414 
 }
-northern_sparrows = { 
+sparrow_girl_realm_area = { 
 	413 412 411 410 
 }
 northern_beehive_area = { 
@@ -330,7 +330,7 @@ northern_beehive_area = {
 northern_bee_plains_area = { 
 	437 419 416 415 
 }
-erefor_village = { 
+northern_sparrows = { 
 	452 446 447 445 443 
 }
 midas_island_area = { 

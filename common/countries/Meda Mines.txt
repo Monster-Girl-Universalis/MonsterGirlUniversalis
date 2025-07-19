@@ -1,5 +1,5 @@
 graphical_culture = asiangfx
-color = { 179 116 30 }
+color = { 131,33,89 }
 revolutionary_colors = { 1 2 5 }
 random_nation_chance = 0
 historical_score = 500

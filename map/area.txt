@@ -351,7 +351,7 @@ slug_nuns_area = {
 northern_midas = { 
 	455 471 475 454 
 }
-slug_farm = { 
+midas_farms = { 
 	470 450 448 
 }
 slug_coast = { 

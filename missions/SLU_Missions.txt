@@ -181,16 +181,16 @@ slu_economic_branch = {
 			OR = {
 				area = midas_plains_area
 				area = midas_village_area
-				area = slug_coast_area
-				area = slug_plains_area
+				area = slug_coast
+				area = midas_farms
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
 			midas_village_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
 			midas_plains_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
-			slug_plains_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
-			slug_coast_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			midas_farms = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			slug_coast = { type = all country_or_non_sovereign_subject_holds = ROOT }
 		}
 		effect = {
 			add_country_modifier = {

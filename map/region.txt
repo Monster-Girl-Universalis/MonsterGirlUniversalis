@@ -87,7 +87,7 @@ happiness_village_region = {
 }
 midas_region = { 
 	areas = { 
-		slug_nuns_area midas_slugs_area high_slugs_area slug_tower_area royal_slug_coast_area warp_shrine_area midas_island_area northern_beehive_area northern_bee_plains_area midas_plains_area midas_village_area northern_sparrows slug_farm slug_coast northern_midas mines_entrance abandoned_mines sparrow_girl_realm_area
+		slug_nuns_area midas_slugs_area high_slugs_area slug_tower_area royal_slug_coast_area warp_shrine_area midas_island_area northern_beehive_area northern_bee_plains_area midas_plains_area midas_village_area northern_sparrows midas_farms slug_coast northern_midas mines_entrance abandoned_mines sparrow_girl_realm_area
 	}
 }
 navyl_region = { 

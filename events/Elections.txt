@@ -54,6 +54,7 @@ country_event = {
 		NOT = { has_reform = admiralty_reform }
 		NOT = { has_reform = prussian_republic_reform }
 		NOT = { has_disaster =  bonfire_of_the_vanities_disaster }
+		is_lesser_in_union = no
 		if = {
 			limit = {
 				has_country_flag = caretaker_revolutionary_government
@@ -516,6 +517,7 @@ country_event = {
 		NOT = { has_reform = prussian_republic_reform }
 		NOT = { has_disaster =  bonfire_of_the_vanities_disaster }
 		NOT = { has_country_modifier = just_had_revolution_bringing_someone_to_power_timer }
+		is_lesser_in_union = no
 		if = {
 			limit = {
 				has_reform = junior_revolutionary_republic_reform

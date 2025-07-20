@@ -30,6 +30,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
+		is_lesser_in_union = no
 		has_government_attribute = is_pirate_republic_reform
 		if = {
 			limit = {

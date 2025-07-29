@@ -97,6 +97,8 @@ monarchy = {
 				gnome_reform 
 				grand_noah_reform 
 				mephisto_reform
+				elf_princess_reform
+				kunoichi_reform
 				horai_reform 
 				tamamo_reform 
 				undine_reform 

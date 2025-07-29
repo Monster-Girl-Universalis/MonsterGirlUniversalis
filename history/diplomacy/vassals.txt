@@ -129,6 +129,42 @@ vassal = {
 #Grand Noah
 union = {
 	first = GR2 #Gran Noah
-	second = WSS #Warp Shrine
+	second = WSS #Medal Castle
+	start_date = 1444.1.1
+}
+#Elf Princess
+vassal = {
+	first = EL4 #Elf Princess
+	second = KU1 #Kunoichi Succubi
+	start_date = 1444.1.1
+}
+vassal = {
+	first = EL4 #Elf Princess
+	second = KU2 #Kunoichi Harpies
+	start_date = 1444.1.1
+}
+vassal = {
+	first = EL4 #Elf Princess
+	second = KU3 #Kunoichi Arachnes
+	start_date = 1444.1.1
+}
+vassal = {
+	first = EL4 #Elf Princess
+	second = KU4 #Kunoichi Scyllas
+	start_date = 1444.1.1
+}
+vassal = {
+	first = EL4 #Elf Princess
+	second = KE2 #Night Dragonflies
+	start_date = 1444.1.1
+}
+vassal = {
+	first = EL4 #Elf Princess
+	second = KE3 #Moon Buterflies
+	start_date = 1444.1.1
+}
+vassal = {
+	first = EL4 #Elf Princess
+	second = KE4 #Dusk Damselflies
 	start_date = 1444.1.1
 }

@@ -1340,12 +1340,69 @@ mephisto_reform = {
 		has_harem = yes
 	}
 }
+elf_princess_reform = {
+	icon = "horai"
+	allow_normal_conversion = no
+	potential = {
+		OR = {
+			tag = EL4
+			was_tag = EL4
+			have_had_reform = elf_princess_reform 
+		}
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 50
+	fixed_rank = 2
+	maintain_dynasty = yes
+	allow_vassal_war = yes
+	allow_vassal_alliance = yes
+	lock_level_when_selected = yes
+	can_change_primary_culture = no
+
+	modifiers = {
+		governing_capacity = 200
+		global_spy_defence = 0.40
+		shock_damage = 0.15
+		diplomats = -1
+		monarch_lifespan = 1
+		block_introduce_heir = yes
+	}
+
+	custom_attributes = {
+		locked_government_type = yes
+	}
+}
+
+kunoichi_reform = {
+	icon = "daimyo"
+	allow_normal_conversion = no
+	potential = {
+		OR = {
+			has_country_flag = formed_ninja_clan
+			have_had_reform = kunoichi_reform
+		}
+	}
+	fixed_rank = 1
+	maintain_dynasty = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	lock_level_when_selected = yes
+	modifiers = {
+		infantry_power = 0.1
+		spy_offence = 0.15
+		global_defender_dice_roll_bonus = 1
+		monarch_lifespan = 1	
+	}
+	custom_attributes = {
+		locked_government_type = yes
+	}
+}
 horai_reform = {
 	lock_level_when_selected = yes
 	icon = "horai"
 	allow_normal_conversion = no
 	potential = {
-    		OR = {
+    	OR = {
 			tag = EL4
 			was_tag = EL4
 			have_had_reform = horai_reform 

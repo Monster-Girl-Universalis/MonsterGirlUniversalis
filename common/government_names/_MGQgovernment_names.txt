@@ -666,28 +666,38 @@ camp_localisation = {
 	ruler_male = {
 		1 = CAPTAIN
 		2 = GUILDMASTER
+		3 = GUILDMASTER
 	}
 
 	ruler_female = {
 		1 = CAPTAIN
 		2 = GUILDMISTRESS
+		3 = GUILDMISTRESS
 	}
 
 	consort_male = {
 		1 = CONSORT
+		2 = CONSORT
+		3 = CONSORT
 
 	}
 
 	consort_female = {
 		1 = CONSORT
+		2 = CONSORT
+		3 = CONSORT
 	}
 	
 	heir_male = {
 		1 = HEIR
+		2 = HEIR
+		3 = HEIR
 	}
 
 	heir_female = {
 		1 = HEIR_fem
+		2 = HEIR_fem
+		3 = HEIR_fem
 	}
 
 	trigger = {
@@ -695,6 +705,79 @@ camp_localisation = {
 			has_reform = adventurer_camp_reform
 			has_reform = research_camp_reform
 			has_reform = pleasure_camp_reform
+		}
+	}
+}
+
+kunochi_localisation = {
+	rank = {
+		1 = CLAN
+		2 = CLAN
+		3 = CLAN
+	}
+	ruler_male = {
+		1 = MASTER
+		2 = GRANDMASTER
+		3 = GRANDMASTER
+	}
+
+	ruler_female = {
+		1 = MISTRESS
+		2 = GRANDMISTRESS
+		3 = GRANDMISTRESS
+	}
+	
+	heir_male = {
+		1 = HEIR
+		2 = HEIR
+		3 = HEIR
+	}
+
+	heir_female = {
+		1 = HEIR_fem
+		2 = HEIR_fem
+		3 = HEIR_fem
+	}	
+	trigger = {
+		OR = {
+			has_reform = saloon_reform
+			has_reform = kunoichi_reform
+		}
+	}
+}
+
+princess_localisation = {
+	rank = {
+		1 = VILLAGE
+		2 = CITY
+		3 = METROPOLIS
+	}
+	ruler_male = {
+		1 = ASSISTANT
+		2 = ASSISTANT
+		3 = ASSISTANT
+	}
+
+	ruler_female = {
+		1 = PRINCESS
+		2 = PRINCESS
+		3 = PRINCESS
+	}
+	
+	heir_male = {
+		1 = HEIR
+		2 = HEIR
+		3 = HEIR
+	}
+
+	heir_female = {
+		1 = HEIR_fem
+		2 = HEIR_fem
+		3 = HEIR_fem
+	}	
+	trigger = {
+		OR = {
+			has_reform = elf_princess_reform
 		}
 	}
 }

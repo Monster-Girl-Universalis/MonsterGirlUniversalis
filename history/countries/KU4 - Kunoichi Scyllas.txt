@@ -1,7 +1,7 @@
 government = monarchy
 government_rank = 1
 primary_culture = Scylla_Girl
-add_government_reform = Scylla_realm
+add_government_reform = kunoichi_reform
 religion = yamatai_religion
 technology_group = TECH_SCYLLA
 1444.1.1 = { 

@@ -96,3 +96,11 @@
  CAPTAIN: "Captain"
  GUILDMASTER: "Guild Master"
  GUILDMISTRESS: "Guild Mistress"
+ 
+ CLAN: "Clan"
+ MASTER: "Master"
+ MISTRESS: "Mistress"
+ GRANDMASTER: "Grandmaster"
+ GRANDMISTRESS: "Grandmistress"
+ 
+ PRINCESS: "Princess"

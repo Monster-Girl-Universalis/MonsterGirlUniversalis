@@ -1,0 +1,9 @@
+add_core = SH4
+owner = SH4
+base_tax = 3
+base_manpower = 3
+base_production = 3
+culture = Shiva_Girl
+religion = dark_goddess_religion
+controller = SH4
+is_city = no

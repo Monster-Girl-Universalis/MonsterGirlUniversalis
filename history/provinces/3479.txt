@@ -1,0 +1,9 @@
+owner = RE4
+culture = Monster_Succubi
+religion = dark_goddess_religion
+controller = RE4
+is_city = no
+base_tax = 3
+base_manpower = 3
+base_production = 3
+add_core = RE4

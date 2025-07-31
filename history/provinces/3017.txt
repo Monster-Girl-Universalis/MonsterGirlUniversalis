@@ -1,0 +1,9 @@
+owner = MP1
+base_tax = 3
+base_manpower = 5
+base_production = 4
+culture = Royal_Scylla
+religion = dark_goddess_religion
+controller = MP1
+is_city = no
+add_core = MP1

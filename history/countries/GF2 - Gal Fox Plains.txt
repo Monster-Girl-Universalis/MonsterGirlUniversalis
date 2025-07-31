@@ -14,5 +14,7 @@ primary_culture = Mecha_Fox
 		mil = 4
 		female = yes
 	}
+	unlock_race = { race = kitsune }
+	unlock_race = { race = roid }
 }
-capital = 3233
+capital = 3278

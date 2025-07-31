@@ -1,0 +1,9 @@
+owner = GF2
+culture = Mecha_Fox
+religion = yamatai_religion
+controller = GF2
+is_city = no
+add_core = GF2
+base_tax = 3
+base_manpower = 3
+base_production = 3

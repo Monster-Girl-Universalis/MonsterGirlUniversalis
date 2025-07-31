@@ -1,4 +1,4 @@
-namespace = dark_goddess_worship
+namespace = dark_goddess_worship_events
 
 
 # Saja Icon
@@ -10,6 +10,7 @@ country_event = {
 
 	trigger = {
 		has_dlc = "Third Rome"
+		is_country = yes
 		uses_religious_icons = yes
 		current_icon = dark_goddess_icon_saja
 		OR = {
@@ -49,6 +50,7 @@ country_event = {
 
 	trigger = {
 		has_dlc = "Third Rome"
+		is_country = yes
 		uses_religious_icons = yes
 		current_icon = dark_goddess_icon_tamamo
 		OR = {
@@ -94,6 +96,7 @@ country_event = {
 
 	trigger = {
 		has_dlc = "Third Rome"
+		is_country = yes
 		uses_religious_icons = yes
 		current_icon = dark_goddess_icon_minagi
 		OR = {
@@ -148,6 +151,7 @@ country_event = {
 
 	trigger = {
 		has_dlc = "Third Rome"
+		is_country = yes
 		uses_religious_icons = yes
 		current_icon = dark_goddess_icon_kanon
 		OR = {
@@ -282,6 +286,7 @@ country_event = {
 
 	trigger = {
 		has_dlc = "Third Rome"
+		is_country = yes
 		uses_religious_icons = yes
 		current_icon = dark_goddess_icon_kanade
 		OR = {
@@ -408,6 +413,7 @@ country_event = {
 
 	trigger = {
 		has_dlc = "Third Rome"
+		is_country = yes
 		uses_religious_icons = yes
 		current_icon = dark_goddess_icon_hiruko
 		OR = {

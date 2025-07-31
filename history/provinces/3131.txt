@@ -1,0 +1,9 @@
+add_core = KA2
+owner = KA2
+base_tax = 2
+base_manpower = 4
+base_production = 3
+culture = Bomb_Slime
+religion = dark_goddess_religion
+controller = KA2
+is_city = no

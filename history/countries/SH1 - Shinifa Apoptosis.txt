@@ -14,5 +14,9 @@ technology_group = TECH_APOPTOSIS
 		mil = 4
 		female = yes
 	}
+	unlock_race = { race = land_dweller }
+	unlock_race = { race = doll }
+	unlock_race = { race = undead }
+	unlock_race = { race = apoptosis }
 }
 capital = 974

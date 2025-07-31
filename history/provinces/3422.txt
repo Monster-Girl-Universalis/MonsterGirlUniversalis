@@ -1,0 +1,11 @@
+owner = FS2
+culture = Fairy_Girl
+religion = wind_religion
+controller = FS2
+is_city = no
+add_core = FS2
+base_tax = 5
+base_manpower = 7
+base_production = 6
+center_of_trade = 2
+fort_15th = yes

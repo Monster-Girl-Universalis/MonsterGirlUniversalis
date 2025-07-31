@@ -1,0 +1,9 @@
+culture = Baphomet_Girl
+religion = dark_goddess_religion
+is_city = no
+owner = HB2
+controller = HB2
+add_core = HB2
+base_tax = 2
+base_manpower = 5
+base_production = 1

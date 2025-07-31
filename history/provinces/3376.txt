@@ -1,0 +1,9 @@
+owner = AS3
+culture = Asura
+religion = dark_goddess_religion
+controller = AS3
+is_city = no
+add_core = AS3
+base_tax = 4
+base_manpower = 4
+base_production = 4

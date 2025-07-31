@@ -1,0 +1,9 @@
+owner = GA4
+culture = Monster_Succubi
+religion = dark_goddess_religion
+controller = GA4
+is_city = no
+add_core = GA4
+base_tax = 3
+base_manpower = 6
+base_production = 2

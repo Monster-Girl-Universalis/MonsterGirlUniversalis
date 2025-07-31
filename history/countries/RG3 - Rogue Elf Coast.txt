@@ -1,6 +1,6 @@
 government = monarchy
 government_rank = 2
-Elf 
+Elf
 add_government_reform = Elf_realm
 religion = dark_goddess_religion
 technology_group = TECH_ELF
@@ -15,4 +15,5 @@ technology_group = TECH_ELF
 		female = yes
 	}
 }
-capital = 3452
+capital = 3508
+primary_culture = Rogue_Elf

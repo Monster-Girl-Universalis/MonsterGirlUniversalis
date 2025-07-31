@@ -1,0 +1,9 @@
+add_core = SO2
+owner = SO2
+base_tax = 2
+base_manpower = 4
+base_production = 3
+culture = Slime_Girl
+religion = dark_goddess_religion
+controller = SO2
+is_city = no

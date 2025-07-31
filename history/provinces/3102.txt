@@ -1,0 +1,9 @@
+base_tax = 3
+base_manpower = 5
+base_production = 4
+culture = Bomb_Slime
+religion = dark_goddess_religion
+is_city = no
+owner = BS3
+controller = BS3
+add_core = BS3

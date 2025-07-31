@@ -729,6 +729,13 @@
  kagetsumugi_dolls_production: "Kagetsumugi Dolls Production"
  desc_kagetsumugi_dolls_production: " "
 
+ ###GOVERNMENT MODIFIERS### 
+
+ KANON_oversees_tributes_mod: "Kanon Oversees Tributes"
+ desc_KANON_oversees_tributes_mod: " "
+ KANON_hasten_plant_growth_mod: "Hastened Plant Growth"
+ desc_KANON_hasten_plant_growth_mod: " "
+ 
  ###ESTATE MODIFIERS### 
  estate_researchers_guaranteed_autonomy_mod: "Guarantee Researchers Autonomy"
  estate_monster_society_mod: "Monsters in Human Society"

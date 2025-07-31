@@ -14,5 +14,8 @@ technology_group = TECH_APOPTOSIS
 		mil = 4
 		female = yes
 	}
+	unlock_race = { race = doll }
+	unlock_race = { race = slime }
+	unlock_race = { race = apoptosis }
 }
 capital = 963

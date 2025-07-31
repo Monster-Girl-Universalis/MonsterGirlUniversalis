@@ -1,0 +1,9 @@
+owner = CS3
+culture = Mecha_Cat
+religion = yamatai_religion
+controller = CS3
+is_city = no
+add_core = CS3
+base_tax = 3
+base_manpower = 3
+base_production = 3

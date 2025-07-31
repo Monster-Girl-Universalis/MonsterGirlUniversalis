@@ -1,0 +1,21 @@
+government = monarchy
+government_rank = 2
+primary_culture = Mud_Girl
+add_government_reform = gnome_reform
+religion = earth_religion
+technology_group = TECH_FAIRY
+1444.1.1 = { 
+	monarch = { 
+		name = "Loa"
+		dynasty = "the Earth Spirit"
+		birth_date = 1424.1.1
+		adm = 4
+		dip = 4
+		mil = 4
+		female = yes
+	}
+	add_ruler_personality = immortal_personality
+	unlock_race = { race = fairy }
+	unlock_race = { race = slime }
+}
+capital = 3645

@@ -1,0 +1,9 @@
+add_core = AD3
+owner = AD3
+culture = Ancient_Dragon
+religion = yamatai_religion
+controller = AD3
+is_city = no
+base_tax = 2
+base_manpower = 5
+base_production = 1

@@ -1,0 +1,10 @@
+add_core = SO2
+owner = SO2
+base_tax = 3
+base_manpower = 5
+base_production = 4
+culture = Slime_Girl
+religion = dark_goddess_religion
+controller = SO2
+is_city = no
+fort_15th = yes

@@ -16,4 +16,4 @@ technology_group = TECH_FAIRY
 	}
 	add_ruler_personality = immortal_personality
 }
-capital = 3356
+capital = 3422

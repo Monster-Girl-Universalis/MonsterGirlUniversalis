@@ -1,0 +1,20 @@
+government = monarchy
+government_rank = 2
+primary_culture = Pabilsag_Girl
+add_government_reform = Insect_realm
+religion = dark_goddess_religion
+technology_group = TECH_INSECT
+1444.1.1 = { 
+	monarch = { 
+		name = "Skarna"
+		dynasty = "Pabilsag"
+		birth_date = 1424.1.1
+		adm = 5
+		dip = 5
+		mil = 5
+		female = yes
+	}
+	unlock_race = { race = yoma }
+	unlock_race = { race = insect }
+}
+capital = 3666

@@ -1,0 +1,10 @@
+is_city = no
+add_core = MN1
+owner = MN1
+base_tax = 4
+base_manpower = 4
+base_production = 4
+culture = worm_summoner
+religion = dark_goddess_religion
+controller = MN1
+center_of_trade = 1

@@ -56,6 +56,12 @@ estate_spiritualists = {
 						has_idea = eternity_ethereal_wisdom
 						has_country_flag = has_zombie
 						mission_completed = RMA_ghost_army_2
+						tag = HM2
+						was_tag = HM2
+						tag = TO4
+						was_tag = TO4
+						culture = Tao
+						has_idea = PR1_Spiritualist_Proficiency
 					}
 	}
 

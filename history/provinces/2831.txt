@@ -1,0 +1,9 @@
+base_tax = 2
+base_manpower = 3
+base_production = 4
+culture = Monster_Succubi
+religion = dark_goddess_religion
+is_city = no
+add_core = LE4
+owner = LE4
+controller = LE4

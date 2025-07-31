@@ -15,5 +15,8 @@ technology_group = TECH_KITSUNE
 		female = yes
 	}
 	add_ruler_personality = immortal_personality
+	unlock_race = { race = kitsune }
+	unlock_race = { race = beast }
+	unlock_race = { race = tanuki }
 }
-capital = 3160
+capital = 3148

@@ -1,0 +1,9 @@
+add_core = KU5
+owner = KU5
+base_tax = 3
+base_manpower = 4
+base_production = 5
+culture = Kudan_Girl
+religion = dark_goddess_religion
+controller = KU5
+is_city = no

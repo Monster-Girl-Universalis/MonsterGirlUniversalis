@@ -1,0 +1,9 @@
+base_tax = 3
+base_manpower = 3
+base_production = 3
+is_city = no
+add_core = DH5
+owner = DH5
+culture = Dragonhead_Girl
+religion = dark_goddess_religion
+controller = DH5

@@ -1,0 +1,10 @@
+add_core = RC1
+owner = RC1
+culture = Monster_Succubi
+religion = dark_goddess_religion
+controller = RC1
+is_city = no
+base_tax = 4
+base_manpower = 4
+base_production = 4
+center_of_trade = 1

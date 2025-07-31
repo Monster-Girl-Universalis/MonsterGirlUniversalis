@@ -13,6 +13,8 @@ technology_group = TECH_SCYLLA
 		dip = 5
 		mil = 5
 	}
+	unlock_race = { race = scylla }
+	unlock_race = { race = sea_dweller }
 }
 add_government_reform = Scylla_realm
-capital = 3016
+capital = 3006

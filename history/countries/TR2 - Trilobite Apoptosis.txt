@@ -15,4 +15,8 @@ capital = 2271
 		mil = 5
 		female = yes
 	}
+	unlock_race = { race = alraune }
+	unlock_race = { race = doll }
+	unlock_race = { race = apoptosis }
+	unlock_race = { race = giant }
 }

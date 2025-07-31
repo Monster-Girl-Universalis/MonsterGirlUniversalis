@@ -1,0 +1,9 @@
+is_city = no
+add_core = AR7
+owner = AR7
+base_tax = 3
+base_manpower = 3
+base_production = 3
+culture = Monster_Succubi
+religion = dark_goddess_religion
+controller = AR7

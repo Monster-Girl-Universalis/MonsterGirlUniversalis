@@ -14,5 +14,7 @@ technology_group = TECH_BEAST
 		mil = 5
 		female = yes
 	}
+	unlock_race = { race = yoma }
+	unlock_race = { race = beast }
 }
-capital = 3457
+capital = 3500

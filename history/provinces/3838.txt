@@ -1,0 +1,9 @@
+base_tax = 3
+base_manpower = 3
+base_production = 3
+is_city = no
+add_core = AU3
+owner = AU3
+culture = Aun_Girl
+religion = yamatai_religion
+controller = AU3

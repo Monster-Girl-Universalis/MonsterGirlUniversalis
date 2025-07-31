@@ -1,0 +1,9 @@
+add_core = HB3
+owner = HB3
+culture = Baphomet_Girl
+religion = dark_goddess_religion
+controller = HB3
+is_city = no
+base_tax = 2
+base_manpower = 5
+base_production = 1

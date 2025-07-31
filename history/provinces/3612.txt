@@ -1,0 +1,9 @@
+is_city = no
+add_core = NA3
+owner = NA3
+base_tax = 4
+base_manpower = 4
+base_production = 4
+culture = Monster_Succubi
+religion = dark_goddess_religion
+controller = NA3

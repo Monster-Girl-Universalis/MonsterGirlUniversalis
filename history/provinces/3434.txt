@@ -1,0 +1,9 @@
+owner = MC2
+culture = slums_human
+religion = dark_goddess_religion
+controller = MC2
+is_city = no
+add_core = MC2
+base_tax = 3
+base_manpower = 3
+base_production = 3

@@ -1,0 +1,9 @@
+owner = NP2
+base_tax = 3
+base_manpower = 5
+base_production = 4
+culture = Mimic_Girl
+religion = dark_goddess_religion
+controller = NP2
+is_city = no
+add_core = NP2

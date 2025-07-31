@@ -1,0 +1,10 @@
+owner = AR5
+culture = Monster_Succubi
+religion = dark_goddess_religion
+controller = AR5
+is_city = no
+add_core = AR5
+base_tax = 4
+base_manpower = 4
+base_production = 4
+center_of_trade = 1

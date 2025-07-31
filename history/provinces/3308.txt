@@ -1,0 +1,9 @@
+add_core = NE5
+owner = NE5
+culture = Nekomata_Girl
+religion = yamatai_religion
+controller = NE5
+is_city = no
+base_tax = 3
+base_manpower = 3
+base_production = 3

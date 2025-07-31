@@ -1,0 +1,13 @@
+owner = KI5
+base_tax = 5
+base_manpower = 14
+base_production = 21
+culture = yamatai_human
+religion = yamatai_religion
+controller = KI5
+is_city = no
+add_core = KI5
+center_of_trade = 3
+ramparts = yes
+counting_house = yes
+fort_16th = yes

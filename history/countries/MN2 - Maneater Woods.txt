@@ -1,0 +1,18 @@
+government = monarchy
+government_rank = 2
+primary_culture = worm_summoner
+religion = dark_goddess_religion
+technology_group = TECH_HUMAN
+1444.1.1 = { 
+	monarch = { 
+		name = "Rina"
+		dynasty = "the Maneater"
+		birth_date = 1424.1.1
+		adm = 4
+		dip = 4
+		mil = 4
+		female = yes
+	}
+}
+add_government_reform = worm_summoner_reform
+capital = 3704

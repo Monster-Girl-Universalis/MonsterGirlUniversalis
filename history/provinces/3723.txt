@@ -1,0 +1,9 @@
+base_tax = 5
+base_manpower = 5
+base_production = 5
+is_city = no
+add_core = TR3
+owner = TR3
+culture = Alraune_Apoptosis
+religion = chaos_religion
+controller = TR3

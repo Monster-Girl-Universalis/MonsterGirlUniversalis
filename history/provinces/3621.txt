@@ -1,0 +1,9 @@
+is_city = no
+add_core = SR3
+owner = SR3
+base_tax = 3
+base_manpower = 3
+base_production = 3
+culture = Mud_Girl
+religion = earth_religion
+controller = SR3

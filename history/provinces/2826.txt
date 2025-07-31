@@ -1,0 +1,11 @@
+base_tax = 2
+base_manpower = 3
+base_production = 4
+culture = grangold_human
+religion = dark_goddess_religion
+is_city = no
+add_core = QE1
+owner = QE1
+controller = QE1
+trade_goods = slaves
+center_of_trade = 2

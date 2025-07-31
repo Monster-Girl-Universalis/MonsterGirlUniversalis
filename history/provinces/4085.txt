@@ -1,0 +1,9 @@
+base_tax = 2
+base_manpower = 4
+base_production = 3
+is_city = no
+add_core = AK3
+owner = AK3
+culture = Three_Mouth_Akaname
+religion = yamatai_religion
+controller = AK3

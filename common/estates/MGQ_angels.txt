@@ -45,6 +45,7 @@ estate_angels = {
 						culture_group = angel
 						culture = Angel_Apoptosis
 						has_reform = angel_nobility_reform 
+						unit_type = TECH_MAKAI_ANGEL
 					}
 	}
 

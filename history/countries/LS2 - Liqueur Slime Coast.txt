@@ -15,4 +15,4 @@ add_government_reform = Slime_realm
 		female = yes
 	}
 }
-capital = 3052
+capital = 3045

@@ -1,0 +1,9 @@
+add_core = PV1
+owner = PV1
+base_tax = 2
+base_manpower = 4
+base_production = 3
+culture = Lamia_Girl
+religion = dark_goddess_religion
+controller = PV1
+is_city = no

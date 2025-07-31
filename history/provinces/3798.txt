@@ -1,0 +1,9 @@
+add_core = AT4
+owner = AT4
+base_tax = 3
+base_manpower = 3
+base_production = 3
+culture = Athena_Girl
+religion = dark_goddess_religion
+controller = AT4
+is_city = no

@@ -16,4 +16,4 @@ add_government_reform = Angel_realm
 	}
 	add_ruler_personality = immortal_personality
 }
-capital = 3146
+capital = 4073

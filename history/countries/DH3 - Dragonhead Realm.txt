@@ -1,0 +1,20 @@
+government = monarchy
+government_rank = 2
+primary_culture = Dragonhead_Girl
+religion = dark_goddess_religion
+technology_group = TECH_DRAGON
+1444.1.1 = { 
+	monarch = { 
+		name = "Deafrise"
+		dynasty = "the Dragonhead"
+		female = yes
+		birth_date = 1424.1.1
+		adm = 4
+		dip = 5
+		mil = 6
+	}
+	unlock_race = { race = yoma }
+	unlock_race = { race = dragon }
+}
+add_government_reform = Dragon_realm
+capital = 3826

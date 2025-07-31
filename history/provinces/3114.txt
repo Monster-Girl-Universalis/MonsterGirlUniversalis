@@ -1,0 +1,9 @@
+base_tax = 4
+base_manpower = 6
+base_production = 5
+culture = Slime_Girl
+religion = dark_goddess_religion
+is_city = no
+owner = KA2
+controller = KA2
+add_core = KA2

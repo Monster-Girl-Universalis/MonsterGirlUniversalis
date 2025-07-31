@@ -14,5 +14,7 @@ technology_group = TECH_SUCCUBI
 		mil = 4
 		female = yes
 	}
+	unlock_race = { race = yoma }
+	unlock_race = { race = succubi }
 }
-capital = 3293
+capital = 3371

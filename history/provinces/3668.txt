@@ -1,0 +1,9 @@
+is_city = no
+add_core = RO2
+owner = RO2
+base_tax = 3
+base_manpower = 3
+base_production = 3
+culture = Mermaid_Pirate
+religion = water_religion
+controller = RO2

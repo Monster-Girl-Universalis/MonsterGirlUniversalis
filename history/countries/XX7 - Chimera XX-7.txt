@@ -14,4 +14,7 @@ primary_culture = Chimera_Girl
 		mil = 4
 		female = yes
 	}
+	unlock_race = { race = chimera }
+	unlock_race = { race = doll }
+	unlock_race = { race = roid }
 }

@@ -1,9 +1,9 @@
 government = monarchy
 government_rank = 2
-primary_culture = Royal_Vampire
-add_government_reform = Vampire_realm
+primary_culture = Monster_Succubi
+add_government_reform = Succubi_realm
 religion = dark_goddess_religion
-technology_group = TECH_VAMPIRE
+technology_group = TECH_SUCCUBI
 1444.1.1 = { 
 	monarch = { 
 		name = "Elisabeth"
@@ -15,4 +15,4 @@ technology_group = TECH_VAMPIRE
 		female = yes
 	}
 }
-capital = 3274
+capital = 3317

@@ -1,0 +1,11 @@
+add_core = KA1
+owner = KA1
+base_tax = 9
+base_manpower = 10
+base_production = 11
+culture = grangold_human
+religion = dark_goddess_religion
+controller = KA1
+is_city = no
+center_of_trade = 3
+fort_15th = yes

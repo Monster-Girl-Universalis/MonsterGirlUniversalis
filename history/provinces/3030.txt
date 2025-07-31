@@ -1,0 +1,9 @@
+owner = MO1
+base_tax = 3
+base_manpower = 5
+base_production = 4
+culture = Moray_Eel_Girl
+religion = water_religion
+controller = MO1
+is_city = no
+add_core = MO1

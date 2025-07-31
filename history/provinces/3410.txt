@@ -1,0 +1,9 @@
+culture = Monster_Succubi
+religion = dark_goddess_religion
+is_city = no
+add_core = RE3
+owner = RE3
+controller = RE3
+base_tax = 3
+base_manpower = 3
+base_production = 3

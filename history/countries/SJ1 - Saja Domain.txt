@@ -1,0 +1,22 @@
+government = monarchy
+government_rank = 3
+primary_culture = Royal_Lamia
+add_government_reform = Dragon_realm
+religion = dark_goddess_religion
+technology_group = TECH_YOUMA
+1444.1.1 = { 
+	monarch = { 
+		name = "Saja"
+		dynasty = "the Lamia Ancestor"
+		birth_date = 1.1.1
+		adm = 6
+		dip = 6
+		mil = 6
+		female = yes
+	}
+	add_ruler_personality = immortal_personality
+	unlock_race = { race = yoma }
+	unlock_race = { race = lamia }
+	unlock_race = { race = harpy }
+}
+capital = 2819

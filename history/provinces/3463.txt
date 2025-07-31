@@ -1,0 +1,8 @@
+culture = Saint_Doll
+religion = rogue_magicraft_religion
+is_city = no
+base_tax = 3
+base_manpower = 3
+base_production = 3
+fort_15th = yes
+ramparts = yes

@@ -1,7 +1,7 @@
 government = monarchy
 government_rank = 2
 primary_culture = Moray_Eel_Girl
-religion = dark_goddess_religion
+religion = water_religion
 technology_group = TECH_SCYLLA
 1444.1.1 = { 
 	monarch = { 
@@ -13,6 +13,10 @@ technology_group = TECH_SCYLLA
 		dip = 5
 		mil = 4
 	}
+	unlock_race = { race = mermaid }
+	unlock_race = { race = sea_dweller }
+	unlock_race = { race = lamia }
+	unlock_race = { race = scylla }
 }
 add_government_reform = Scylla_realm
-capital = 3043
+capital = 3026

@@ -1,0 +1,10 @@
+is_city = no
+add_core = HI2
+owner = HI2
+base_tax = 1
+base_manpower = 1
+base_production = 1
+culture = Hiruko_Clone
+religion = dark_goddess_religion
+controller = HI2
+center_of_trade = 1

@@ -1,0 +1,10 @@
+owner = KI5
+base_tax = 5
+base_manpower = 7
+base_production = 6
+culture = Scorpion_Girl
+religion = yamatai_religion
+controller = KI5
+is_city = no
+add_core = KI5
+fort_15th = yes

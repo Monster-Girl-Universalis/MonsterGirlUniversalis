@@ -1,0 +1,11 @@
+owner = GH3
+base_tax = 5
+base_manpower = 7
+base_production = 6
+culture = Sea_Dragon_Girl
+religion = water_religion
+controller = GH3
+is_city = no
+add_core = GH3
+center_of_trade = 2
+fort_15th = yes

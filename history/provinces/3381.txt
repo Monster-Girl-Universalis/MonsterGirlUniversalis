@@ -1,0 +1,9 @@
+owner = AR4
+culture = Monster_Succubi
+religion = dark_goddess_religion
+controller = AR4
+is_city = no
+add_core = AR4
+base_tax = 3
+base_manpower = 3
+base_production = 3

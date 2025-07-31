@@ -1,0 +1,20 @@
+government = monarchy
+government_rank = 3
+primary_culture = Harpy_Girl
+add_government_reform = Harpy_realm
+religion = dark_goddess_religion
+technology_group = TECH_HARPY
+1444.1.1 = { 
+	monarch = { 
+		name = "Galia"
+		dynasty = "the Archaeopteryx"
+		birth_date = 1424.1.1
+		adm = 5
+		dip = 5
+		mil = 5
+		female = yes
+	}
+	unlock_race = { race = harpy }
+	unlock_race = { race = dragon }
+}
+capital = 3854

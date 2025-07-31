@@ -1,0 +1,9 @@
+add_core = KA1
+owner = KA1
+base_tax = 2
+base_manpower = 3
+base_production = 4
+culture = Nepenthes_Girl
+religion = dark_goddess_religion
+controller = KA1
+is_city = no

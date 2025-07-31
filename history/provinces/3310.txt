@@ -1,0 +1,9 @@
+owner = TE2
+culture = Monster_Succubi
+religion = dark_goddess_religion
+controller = TE2
+is_city = no
+add_core = TE2
+base_tax = 3
+base_manpower = 3
+base_production = 3

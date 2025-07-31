@@ -14,5 +14,8 @@ add_government_reform = Dragon_realm
 		mil = 6
 		female = yes
 	}
+	unlock_race = { race = yoma }
+	unlock_race = { race = harpy }
+	unlock_race = { race = dragon }
 }
-capital = 3196
+capital = 3220

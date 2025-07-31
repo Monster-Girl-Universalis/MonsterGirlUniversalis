@@ -1,0 +1,20 @@
+government = monarchy
+government_rank = 3
+primary_culture = Marlboro_Girl
+religion = dark_goddess_religion
+technology_group = TECH_ALRAUNE
+1444.1.1 = { 
+	monarch = { 
+		name = "Malbo"
+		dynasty = "the Marlboro"
+		female = yes
+		birth_date = 1424.1.1
+		adm = 5
+		dip = 5
+		mil = 5
+	}
+	unlock_race = { race = alraune }
+	unlock_race = { race = giant }
+}
+add_government_reform = Alraune_realm
+capital = 3907

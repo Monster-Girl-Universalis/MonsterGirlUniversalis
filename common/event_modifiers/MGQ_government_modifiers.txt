@@ -1,3 +1,10 @@
-MGQ_chaos = {
-	picture = "chaos"
+
+KANON_oversees_tributes_mod = {
+	reduced_liberty_desire = 10
+	monarch_power_tribute = 1
+}
+KANON_hasten_plant_growth_mod = {
+	trade_goods_size = 0.25
+	local_hostile_attrition = 1
+	local_hostile_movement_speed = -0.25
 }

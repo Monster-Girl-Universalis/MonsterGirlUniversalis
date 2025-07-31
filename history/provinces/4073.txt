@@ -1,0 +1,10 @@
+base_tax = 6
+base_manpower = 8
+base_production = 7
+is_city = no
+add_core = ED1
+fort_15th = yes
+owner = ED1
+culture = Fallen_Angel
+religion = eden_resistance_religion
+controller = ED1

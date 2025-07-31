@@ -1,0 +1,13 @@
+culture = Monster_Succubi
+religion = dark_goddess_religion
+is_city = no
+owner = MI1
+controller = MI1
+add_core = MI1
+base_tax = 12
+base_manpower = 15
+base_production = 15
+center_of_trade = 3
+fort_15th = yes
+conscription_center = yes
+soldier_households = yes

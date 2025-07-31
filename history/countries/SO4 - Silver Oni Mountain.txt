@@ -15,4 +15,4 @@ add_government_reform = Demi_Human_realm
 		female = yes
 	}
 }
-capital = 3290
+capital = 3357

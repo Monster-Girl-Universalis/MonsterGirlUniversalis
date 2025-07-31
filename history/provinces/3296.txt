@@ -1,0 +1,9 @@
+owner = SO5
+culture = Oni
+religion = yamatai_religion
+controller = SO5
+is_city = no
+add_core = SO5
+base_tax = 4
+base_manpower = 4
+base_production = 4

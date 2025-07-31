@@ -1,0 +1,21 @@
+government = monarchy
+religion = dark_goddess_religion
+technology_group = TECH_SEA_DWELLER
+primary_culture = Royal_Sea_Dweller
+add_government_reform = Sea_Dweller_realm
+government_rank = 3
+1444.1.1 = { 
+	monarch = { 
+		name = "Triton"
+		dynasty = "of the Makai Seas"
+		birth_date = 1424.1.1
+		adm = 5
+		dip = 4
+		mil = 6
+		female = yes
+	}
+	unlock_race = { race = chimera }
+	unlock_race = { race = sea_dweller }
+	unlock_race = { race = giant }
+}
+capital = 4021

@@ -1,0 +1,11 @@
+culture = Necromancer_Succubi
+religion = dark_goddess_religion
+is_city = no
+add_core = HM2
+owner = HM2
+controller = HM2
+base_tax = 7
+base_manpower = 7
+base_production = 7
+center_of_trade = 2
+fort_15th = yes

@@ -1,0 +1,9 @@
+owner = GD1
+culture = Giga_Dryad
+religion = wind_religion
+controller = GD1
+is_city = no
+add_core = GD1
+base_tax = 3
+base_manpower = 3
+base_production = 3

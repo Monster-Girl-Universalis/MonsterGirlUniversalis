@@ -15,4 +15,7 @@ capital = 92#Mutated crops fields
 		mil = 4
 		female = yes
 	}
+	unlock_race = { race = doll }
+	unlock_race = { race = apoptosis }
+	unlock_race = { race = roid }
 }

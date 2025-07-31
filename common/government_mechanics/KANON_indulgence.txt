@@ -1,0 +1,174 @@
+kanon_indulgence_mechanic = {
+	alert_icon_gfx = GFX_alerticons_government_mechanics
+	alert_icon_index = 10
+	available = {
+		OR = {
+			tag = KA1
+			has_reform = kanon_reform
+		}
+	}
+
+	powers = {
+		kanon_indulgence_meter = {
+			gui = kanon_indulgence_gov_mech_3_power
+			show_before_interactions = yes
+			development_scaled_monthly_growth = -0.02
+			max = 200
+			min = 0
+			scaled_modifier = {
+				trigger = {
+					has_government_power = { 
+						mechanic_type = kanon_indulgence_mechanic
+						power_type = kanon_indulgence_meter
+						value = 100
+					}
+				}
+				modifier = {
+					discipline = -0.05
+					all_power_cost = -0.20
+					inflation_reduction = -0.5
+					min_autonomy = -30
+				}
+				start_value = 100
+				end_value = 200
+			}
+			reverse_scaled_modifier = {
+				trigger = {
+					NOT = {
+						has_government_power = { 
+							mechanic_type = kanon_indulgence_mechanic
+							power_type = kanon_indulgence_meter
+							value = 100
+						}
+					}
+				}
+				modifier = {
+					discipline = 0.10
+					all_power_cost = 0.10
+					global_unrest = 5
+				}
+				start_value = 0
+				end_value = 100
+			}
+		}
+	}
+	
+	interactions = {
+		KANON_renovate_gardens = {
+			gui = kanon_interaction_window_1
+			cost_type = kanon_indulgence_meter
+			center = no
+			trigger = {
+				has_government_power = {
+					mechanic_type = kanon_indulgence_mechanic 
+					power_type = kanon_indulgence_meter 
+					value = 25
+				}
+			}
+			effect = { 
+				add_government_power = {
+					mechanic_type = kanon_indulgence_mechanic 
+					power_type = kanon_indulgence_meter 
+					value = -10
+				}
+				add_years_of_income = 1
+			}
+			cooldown_years = 0
+			ai_chance = {
+				factor = 1
+				modifier = {
+					factor = 2
+					has_government_power = {
+						mechanic_type = kanon_indulgence_mechanic 
+						power_type = kanon_indulgence_meter
+						value = 90
+					}
+				}
+			}
+		}
+		KANON_abduct_human_exhibits = {
+			gui = kanon_interaction_window_2
+			cost_type = kanon_indulgence_meter
+			center = no
+			trigger = {
+				years_of_manpower = 1.0
+				not = {
+					has_government_power = {
+						mechanic_type = kanon_indulgence_mechanic 
+						power_type = kanon_indulgence_meter 
+						value = 200
+					}
+				}
+			}
+			effect = { 
+				add_government_power = {
+					mechanic_type = kanon_indulgence_mechanic 
+					power_type = kanon_indulgence_meter 
+					value = 10
+				}
+				add_yearly_manpower = -1
+			}
+			cooldown_years = 0
+			ai_chance = {
+				factor = 10
+				modifier = {
+					factor = 0
+					has_government_power = {
+						mechanic_type = kanon_indulgence_mechanic 
+						power_type = kanon_indulgence_meter
+						value = 90
+					}
+				}
+				modifier = {
+					factor = 0
+					not = { years_of_manpower = 2.5 }
+				}
+			}
+		}
+		KANON_oversee_tributes = {
+			gui = kanon_interaction_window_3
+			cost_type = kanon_indulgence_meter
+			center = no
+			trigger = {
+				has_subject_of_type = tributary_state
+				has_government_power = {
+					mechanic_type = kanon_indulgence_mechanic 
+					power_type = kanon_indulgence_meter 
+					value = 50
+				}
+			}
+			effect = { 
+				add_government_power = {
+					mechanic_type = kanon_indulgence_mechanic 
+					power_type = kanon_indulgence_meter 
+					value = -25
+				}
+				add_country_modifier = { 
+					name = KANON_oversees_tributes_mod
+					duration = 3650  
+				}
+			}
+			cooldown_years = 10
+			ai_chance = {
+				factor = 1
+				modifier = {
+					factor = 10
+					has_government_power = {
+						mechanic_type = kanon_indulgence_mechanic 
+						power_type = kanon_indulgence_meter
+						value = 90
+					}
+				}
+				modifier = {
+					factor = 0
+					NOT = {
+						has_government_power = {
+							mechanic_type = kanon_indulgence_mechanic 
+							power_type = kanon_indulgence_meter
+							value = 0
+						}
+					}
+				}
+			}
+		}
+}

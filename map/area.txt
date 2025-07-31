@@ -1904,3 +1904,771 @@ western_great_sea_area = {
 	173 163 2744 2743 200 2742 162 174 172 198
 	168 160 156 167 161 
 }
+dark_goddess_chamber_area = { 
+	2819 3932 3934 3923 3924 3935 
+}
+makai_tartarus_area = { 
+	2818 3730 3735 3736 3733 
+}
+hellgondo_train_station = { 
+	2821 3768 3771 3776 
+}
+gold_train_station = { 
+	2822 2823 2824 
+}
+makai_succubus_village_area = { 
+	2880 2882 2881 4052 4051 
+}
+makai_queen_eva_palace = { 
+	2842 2840 2843 2834 2878 2879 
+}
+queen_eva_plantations_area = { 
+	2833 2832 2827 2826 
+}
+lancubus_coast_area = { 
+	2837 2835 2839 2838 2836 
+}
+lancubus_area = { 
+	2845 2846 2841 2844 2847 
+}
+leecubus_area = { 
+	2885 2883 4050 4049 4048 
+}
+leecubus_plains = { 
+	2828 2825 2831 2830 4053 
+}
+great_orc_plains = { 
+	2894 2895 2892 2896 2829 
+}
+great_orc_bay = { 
+	2875 2871 2876 2870 2869 
+}
+great_orc_area = { 
+	2873 2863 2865 2864 2877 
+}
+succubi_hideout = { 
+	2851 2852 2850 2854 2853 
+}
+fenrir_frostlands = { 
+	2857 2855 2849 2848 2861 
+}
+fenrir_coast = { 
+	2859 2856 2858 2862 2860 
+}
+fenrir_area = { 
+	2872 2874 2866 2868 2867 
+}
+garchimacera_coast = { 
+	2890 2897 2898 4054 4055 
+}
+medusa_lord_area = { 
+	2903 2908 4063 4064 2944 
+}
+nightmare_lamia_area = { 
+	2901 2906 2905 2900 2914 
+}
+grimoire_area = { 
+	2919 2913 2918 2920 2917 
+}
+grimoire_bay = { 
+	2909 2912 2911 2910 4039 
+}
+nightmare_lamia_caves = { 
+	2915 2916 4061 4062 
+}
+goldfort_coast_area = { 
+	2922 2921 3001 
+}
+makai_goldfort_area = { 
+	2929 2930 2928 2931 
+}
+makai_goldport = { 
+	2952 2949 2955 2943 
+}
+ilias_kreuz_grounds = { 
+	2958 2956 3005 2954 
+}
+medusa_lord_caves = { 
+	2945 2947 2946 4058 4060 
+}
+makai_grangold = { 
+	2960 3003 2936 2938 2993 
+}
+rose_plantations = { 
+	2953 2951 2957 4065 
+}
+rose_aristocrat_area = { 
+	2925 2935 2934 2926 2924 
+}
+grangold_nepenthes_area = { 
+	2927 3002 2923 2933 2932 
+}
+velraune_area = { 
+	2939 2937 2941 2940 2962 
+}
+kanon_marlboro_area = { 
+	2966 2942 2981 2964 
+}
+velraune_gardens_area = { 
+	2963 2961 3004 2969 
+}
+kanon_coast_area = { 
+	2973 2970 2971 2972 
+}
+makai_grangold_outskirts = { 
+	2974 2959 2977 2980 
+}
+baphomet_peninsula_area = { 
+	2987 2988 2989 2991 2990 
+}
+baphomet_area = { 
+	2992 2986 2976 2975 2985 
+}
+kudan_area = { 
+	2983 2979 2978 2984 2982 
+}
+kudan_coast = { 
+	2967 2965 2968 4036 4037 
+}
+slime_outpost_area = { 
+	2813 3000 2999 2998 
+}
+blob_outpost_area = { 
+	2995 2997 2996 2994 
+}
+ghatanothoa_area = { 
+	3037 3039 3042 3043 3044 
+}
+ghatanothoa_caves = { 
+	3038 3027 3028 3012 3040 
+}
+moray_eel_area = { 
+	3025 3029 3030 3031 3033 
+}
+moray_eel_coast = { 
+	3019 3026 3020 3023 
+}
+ancient_scylla_coast = { 
+	3010 3006 3008 3007 3014 
+}
+ancient_scylla_caves = { 
+	3015 3021 3022 3013 3024 
+}
+asura_caves = { 
+	3047 3046 3050 3048 3049 
+}
+noan_pandoras = { 
+	3036 3032 3034 3035 3041 
+}
+magic_pot_bay = { 
+	3009 3011 3017 3016 3018 
+}
+liqueur_slime_coast = { 
+	3052 3045 3051 3054 3603 
+}
+liqueur_slime_area = { 
+	3089 3087 3090 3088 3094 
+}
+bomb_slime_bay = { 
+	3248 3250 3249 3228 3247 
+}
+bomb_slime_area = { 
+	3081 3103 3102 3108 3107 
+}
+makai_plansect_area = { 
+	3101 3063 3074 3075 3076 
+}
+plansect_lamia_strait = { 
+	3073 3071 3072 3078 3080 
+}
+plansect_scylla_bay = { 
+	3070 3067 3069 3061 
+}
+plansect_lamia_mountains = { 
+	3077 3079 3066 3064 
+}
+plansect_scylla_woods = { 
+	3068 3065 3059 3056 3060 
+}
+slime_princess_plains = { 
+	3098 3095 3093 3092 3091 
+}
+asura_area = { 
+	3100 3112 3111 3110 3109 
+}
+asura_mountains = { 
+	3376 3378 3377 3370 3375 
+}
+slime_princess_area = { 
+	3115 3116 3099 3117 3118 
+}
+liqueur_woods_area = { 
+	3104 3105 3106 3096 3097 
+}
+bomb_woods = { 
+	3125 3131 3130 3132 4088 
+}
+makai_grand_noah_area = { 
+	3119 3120 3188 3122 3123 3124 
+}
+kanade_coast = { 
+	3113 3121 3114 3126 3127 
+}
+makai_tamamo_lab = { 
+	3152 3154 3155 4078 4079 
+}
+makai_yamatai_area = { 
+	3160 3159 3161 3148 3168 
+}
+angel_resistance_hideout = { 
+	3145 3144 3141 3147 4075 
+}
+makai_horai_mountain = { 
+	3149 3150 3139 3146 4073 
+}
+makai_akaname_coast = { 
+	3135 3129 3128 4087 3133 
+}
+makai_akaname_area = { 
+	3164 3163 3165 4085 4090 
+}
+cait_sith_factories = { 
+	3157 3156 3166 3167 3158 
+}
+makai_silver_oni_area = { 
+	3174 3162 3184 3185 4082 4089 
+}
+gal_fox_factories = { 
+	3170 3169 3173 3172 4080 
+}
+makai_finoa_area = { 
+	3213 3212 3211 3210 3209 
+}
+makai_nekogami_area = { 
+	3175 3186 3199 3187 3202 4086 
+}
+slime_princess_coast = { 
+	3205 3204 3203 3219 3208 
+}
+giant_slime_area = { 
+	3192 3196 3197 3198 3206 
+}
+marcosian_area = { 
+	3214 3200 3216 3215 3217 
+}
+finoan_archeopteryx = { 
+	3234 3225 3232 3235 3233 3236 
+}
+jura_aevis_area = { 
+	3224 3223 3229 3230 3221 3246 
+}
+makai_privateer_outpost = { 
+	3251 3252 3253 3254 3255 
+}
+makai_natalia_area = { 
+	3261 3263 3264 3262 3265 
+}
+makai_western_natalia = { 
+	3260 3266 3267 3273 3274 
+}
+gal_fox_area = { 
+	3294 3302 3303 3287 3304 
+}
+gal_fox_plains = { 
+	3277 3276 3279 3278 3293 
+}
+cait_sith_area = { 
+	3290 3283 3291 3313 3604 
+}
+roccubus_mountains = { 
+	3324 3318 3327 3320 3601 
+}
+makai_nekogami_coast = { 
+	3286 3268 3288 3289 3284 
+}
+makai_silver_oni_mountain = { 
+	3354 3357 3356 3355 3347 
+}
+makai_natalia_train_station = { 
+	3323 3322 3326 3321 3346 
+}
+makai_san_ilia = { 
+	3360 3358 3363 3361 3359 3364 
+}
+makai_minagi_battlegrounds = { 
+	3339 3329 3328 3340 
+}
+makai_northern_san_ilia = { 
+	3362 3385 3366 3367 3369 
+}
+testarossa_mansion = { 
+	3352 3349 3350 3351 3353 
+}
+testarossa_area = { 
+	3309 3310 3317 3319 3343 3341 
+}
+makai_western_san_ilia = { 
+	3382 3379 3406 3380 3384 3383 
+}
+granavas_area = { 
+	3371 3373 3374 3368 3372 3365 
+}
+natalian_pandoras = { 
+	3430 3475 3441 
+}
+testarossa_coast = { 
+	3348 3344 3315 3316 3342 
+}
+gal_fox_woods = { 
+	3282 3275 3285 3281 3280 
+}
+cait_sith_woods = { 
+	3300 3301 3292 3295 3299 
+}
+wandering_nekogami_area = { 
+	3306 3314 3307 3305 3308 
+}
+wandering_silver_onis = { 
+	3312 3296 3297 3298 3311 
+}
+makai_artiste_coast = { 
+	3404 3395 3402 3403 
+}
+makai_haunted_mansion = { 
+	3401 3396 3393 3400 3399 3397 
+}
+makai_chromes_cemeteries = { 
+	3394 3392 3386 3390 3391 
+}
+roccubus_area = { 
+	3331 3325 3332 3333 3330 
+}
+makai_monte_carlo = { 
+	3438 3431 3432 3433 3434 
+}
+giga_driad_woods = { 
+	3427 3405 3425 3426 3423 
+}
+rescubus_area = { 
+	3436 3435 3437 3439 3440 
+}
+arcubus_coast = { 
+	3444 3445 3447 3446 3448 
+}
+arcubus_area = { 
+	3389 3387 3388 3381 3424 3411 
+}
+makai_seekers_cave = { 
+	3449 3451 3455 3443 
+}
+makai_puppeteer_tower = { 
+	3473 3470 3469 3471 3472 3468 
+}
+makai_puppeteer_dimensional_passage = { 
+	3465 3463 3466 3450 3464 
+}
+ambrosia_woods = { 
+	3419 3398 3418 3420 3602 
+}
+ambrosia_area = { 
+	3417 3421 3422 3429 3428 
+}
+giga_driad_area = { 
+	3412 3413 3414 3415 3416 
+}
+rescubus_hills = { 
+	3408 3407 3410 3409 3442 
+}
+granavas_coast = { 
+	3488 3494 3482 3493 
+}
+makai_ilias_continent_train_station = { 
+	3481 3483 
+}
+makai_enrika = { 
+	3540 3541 3549 3542 3537 
+}
+makai_enrika_coast = { 
+	3551 3547 3553 
+}
+makai_mithra_castle = { 
+	3523 3524 
+}
+high_baphomet_coast = { 
+	3545 3539 3543 3544 
+}
+rogue_elf_coast = { 
+	3505 3508 3507 3509 
+}
+rogue_elf_area = { 
+	3487 3485 3490 3495 3489 
+}
+high_baphomet_area = { 
+	3510 3512 3513 3520 3519 
+}
+ancient_dragon_area = { 
+	3528 3527 3538 3532 3530 
+}
+ancient_dragon_mountains = { 
+	3518 3514 3511 3516 
+}
+ancient_dragon_coast = { 
+	3533 3531 3517 
+}
+high_baphomet_mountains = { 
+	3502 3504 3500 3497 
+}
+rogue_elf_mountains = { 
+	3503 3506 3499 3498 
+}
+makai_fallen_angel_area = { 
+	2817 3550 3552 3548 3546 
+}
+makai_iliasville = { 
+	3521 3534 3536 3535 
+}
+makai_ilias_pandoras = { 
+	3515 3525 3529 3522 3526 
+}
+makai_harpy_wastelands = { 
+	3501 3496 
+}
+granavas_mountains = { 
+	3492 3486 3491 3484 
+}
+plansect_lamia_forest = { 
+	3055 3053 3062 3057 3058 
+}
+plansect_scylla_forest = { 
+	3085 3084 3083 3082 3086 
+}
+makai_eastern_noah = { 
+	3178 3181 3180 3182 3179 
+}
+giant_slime_mountains = { 
+	3191 3189 3190 3201 3207 
+}
+marcosian_coast = { 
+	3218 3231 3220 3222 3227 
+}
+jura_aevis_mountains = { 
+	3239 3238 3237 3226 3241 
+}
+makai_harpy_coast = { 
+	3243 3240 3242 3244 3245 
+}
+makai_noah_train_station = { 
+	3258 3256 3257 3259 3345 
+}
+makai_natalia_fields = { 
+	3269 3271 3272 3270 
+}
+makai_eastern_san_ilia = { 
+	3336 3338 3335 3334 3337 
+}
+rescubus_coast = { 
+	3478 3477 3480 3479 3476 
+}
+makai_doll_factories = { 
+	3461 3462 3467 3458 3459 3460 
+}
+makai_monster_lord_factories = { 
+	3454 3453 3474 3452 3456 3457 
+}
+makai_sabasa = { 
+	3575 3572 3576 3565 3583 3564 
+}
+makai_pyramid = { 
+	3581 3582 3586 3577 3585 3580 
+}
+makai_hiruko_savanna = { 
+	3588 3591 3592 3590 3589 3587 
+}
+makai_safina_wastelands = { 
+	3594 3595 3574 3584 3600 
+}
+makai_southern_desert = { 
+	3563 3578 3562 3579 3561 3593 
+}
+makai_hiruko_coast = { 
+	3558 3557 3560 3559 3554 3555 
+}
+makai_hiruko_desert = { 
+	3567 3566 3556 3568 3570 3571 
+}
+makai_hiruko_oasis = { 
+	3596 3573 3599 3598 3597 3569 
+}
+makai_safar_ruins = { 
+	3619 3645 3620 3194 3621 
+}
+loa_desert_area = { 
+	3643 3622 3641 3623 3642 
+}
+makai_north_safar = { 
+	3644 3646 3650 3648 3651 
+}
+makai_loa_coast = { 
+	3649 3647 3640 3639 
+}
+pabilsag_oasis = { 
+	3626 3625 3624 3627 3628 
+}
+pabilsag_drylands = { 
+	3630 3631 3636 3634 3629 
+}
+arcubus_bay = { 
+	3637 3633 3632 3635 3638 
+}
+nancubus_desert = { 
+	3606 3195 3193 3605 3607 
+}
+nancubus_savanna = { 
+	3612 3611 3616 3613 3608 
+}
+pabilsag_area = { 
+	3666 3667 3664 3665 3662 3663 
+}
+nancubus_area = { 
+	3614 3609 3658 3615 3610 3656 
+}
+nancubus_coast = { 
+	3661 3660 3659 3657 3654 
+}
+arcubus_drylands = { 
+	3653 3618 3617 3655 3652 
+}
+makai_great_pirate_cave = { 
+	3674 3673 3710 3675 3676 
+}
+rosa_pirates_base = { 
+	3677 3679 3678 3680 3670 
+}
+makai_mermaid_pirate_coast = { 
+	3708 3709 3668 3672 3669 
+}
+merman_caves = { 
+	3681 3711 3671 3683 3684 
+}
+merman_coast = { 
+	3685 3682 3706 3705 3707 
+}
+maneater_woods = { 
+	3704 3712 3702 3701 3703 
+}
+makai_former_magistea = { 
+	3699 3700 3696 3698 3697 3695 
+}
+safina_pandoras = { 
+	3693 3694 3692 3691 3690 
+}
+maneater_coast = { 
+	3687 3689 3688 3686 
+}
+makai_trilobite_area = { 
+	3724 3725 3723 3716 3714 
+}
+makai_amor_doll_area = { 
+	3713 3717 3720 3715 
+}
+makai_amor_rahm_area = { 
+	3721 3719 3718 3722 
+}
+makai_amor_rihm_area = { 
+	3726 3737 3727 3738 
+}
+makai_persephone_area = { 
+	3731 3734 3732 3729 3728 
+}
+garchimacera_caves = { 
+	3757 3763 3751 3762 3752 
+}
+fenrir_caves = { 
+	3760 3745 3761 3748 
+}
+makai_outpost = { 
+	3739 3740 3743 3741 3926 
+}
+garchimacera_mountains = { 
+	3759 3742 3744 3747 3746 
+}
+great_orc_caves = { 
+	3754 3749 3753 3750 
+}
+gargoyle_caves = { 
+	3756 3755 3765 3758 
+}
+gargoyle_area = { 
+	3767 3764 3766 3791 3769 3790 
+}
+gargoyle_mountains = { 
+	3800 3792 3799 3793 3789 
+}
+athena_coast = { 
+	3772 3774 3773 3775 3778 
+}
+athena_area = { 
+	3779 3770 3787 3777 3786 3780 
+}
+athena_mountains = { 
+	3797 3798 3794 3795 3796 
+}
+shiva_area = { 
+	3781 3785 3788 3783 3784 3782 
+}
+scorpio_taoist_labs = { 
+	3176 4081 3183 3177 3171 
+}
+makai_akaname_mountains = { 
+	3153 4074 3151 4072 4070 
+}
+scorpio_taoist_mountains = { 
+	3143 4071 4076 4077 3142 
+}
+scorpio_taoist_woods = { 
+	3140 4067 4066 3138 4069 
+}
+scorpio_taoist_realm = { 
+	3134 3137 4083 4084 3136 4068 
+}
+lancubus_plains_area = { 
+	2889 2891 2893 2902 2907 
+}
+pandora_area = { 
+	4041 4038 2888 2899 2904 
+}
+leecubus_mountains = { 
+	4047 2886 4046 4045 2884 
+}
+magic_pot_mountains = { 
+	2948 4056 4057 2950 4059 
+}
+magic_pot_area = { 
+	4042 4040 4043 4044 2887 
+}
+shiva_coast = { 
+	3801 3804 3805 3802 3806 
+}
+shiva_mountains = { 
+	3809 3803 3807 3808 3810 
+}
+aun_area = { 
+	3816 3815 3814 3817 3813 3818 
+}
+aun_plains = { 
+	3823 3819 3820 3812 3822 
+}
+makai_hellgondo_shrine = { 
+	3833 3821 3811 3840 3835 
+}
+aun_mountains = { 
+	3838 3831 3832 3834 3830 
+}
+dragonhead_mountains = { 
+	3845 3837 3836 3842 3841 
+}
+dragonhead_area = { 
+	3825 3827 3824 3826 3828 3829 
+}
+dragonhead_coast = { 
+	3860 3846 3862 3870 3859 
+}
+makai_sealed_sinner_prison = { 
+	3848 3839 3847 3849 3858 
+}
+mephisto_area = { 
+	3864 3861 3857 3863 3856 3865 
+}
+mephisto_mansion = { 
+	3872 3869 3871 3873 3876 
+}
+monstro_coast = { 
+	3889 3888 3890 3891 3895 
+}
+monstro_area = { 
+	3892 3884 3882 3877 3881 3883 
+}
+monstro_bay = { 
+	3903 3904 4019 4026 4025 
+}
+neptune_area = { 
+	4027 4029 4028 4024 4023 4021 
+}
+neptune_mountains = { 
+	4018 3905 4022 3906 4015 3902 
+}
+neptune_palace = { 
+	4017 4016 4020 4014 4013 3999 
+}
+archaeopteryx_area = { 
+	3855 3850 3851 3854 3866 3867 
+}
+archaeopteryx_mountains = { 
+	3874 3868 3878 3875 3880 
+}
+archaeopteryx_drylands = { 
+	3885 3893 3886 3894 3879 
+}
+tao_area = { 
+	4001 3843 3844 3911 3981 4002 
+}
+tao_mountains = { 
+	3898 3852 3853 3897 3910 
+}
+tao_mansion = { 
+	4003 4004 4008 3909 3982 
+}
+marlboro_area = { 
+	3899 3896 3887 3901 3900 3907 
+}
+marlboro_plains = { 
+	4009 4012 3908 4011 4007 
+}
+marlboro_mountains = { 
+	4006 4005 4010 3998 3996 
+}
+asmodeus_mansion = { 
+	3979 3978 3980 3977 3983 
+}
+asmodeus_mountains = { 
+	3974 3973 3961 3960 3965 
+}
+asmodeus_area = { 
+	3976 3984 3985 3975 3972 3969 
+}
+asmodeus_drylands = { 
+	3958 3964 3959 3957 3956 
+}
+jormungandr_mountains = { 
+	3997 4000 3995 3994 3993 
+}
+jormungandr_coast = { 
+	3992 4030 3990 3991 3948 
+}
+jormungandr_area = { 
+	3987 3989 3986 3954 3988 3953 
+}
+jormungandr_mansion = { 
+	3946 3944 3945 3947 3949 
+}
+dark_goddess_coast = { 
+	3931 3939 3933 3930 3940 
+}
+saja_coast = { 
+	3915 3914 3913 3916 3912 
+}
+dark_goddess_mountains = { 
+	3919 3917 3918 3922 3925 
+}
+saja_mountains = { 
+	3942 3941 3950 3938 3943 
+}
+makai_behemoths = { 
+	3970 3971 3968 3951 3967 3952 
+}
+makai_wyverns = { 
+	3962 3966 3963 3929 3955 
+}
+makai_kyoryuu = { 
+	3927 3920 3928 3921 3936 3937 
+}

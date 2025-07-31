@@ -1,0 +1,10 @@
+owner = JA2
+culture = Aevis_Girl
+religion = dark_goddess_religion
+controller = JA2
+is_city = no
+add_core = JA2
+base_tax = 3
+base_manpower = 5
+base_production = 4
+center_of_trade = 1

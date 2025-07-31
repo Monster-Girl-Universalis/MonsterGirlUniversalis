@@ -75,3 +75,33 @@ north_pole_superregion = {
 hellgondo_superregion = { 
 	hellgondo_shrine_region hellgondo_tartarus_region sealed_sinner_prison_region monster_lord_castle_region 
 }
+makai_south_hellgondo_superregion = { 
+	makai_tartarus_region makai_hellgondo_train_station_region makai_hellgondo_shrine_region 
+}
+makai_succubus_village_superregion = { 
+	makai_succubus_village_region makai_gold_train_station_region 
+}
+makai_grangold_superregion = { 
+	makai_goldfort_region makai_grangold_region makai_goldport_region 
+}
+makai_grand_noah_superregion = { 
+	ghatanothoa_region makai_plansect_region makai_grand_noah_region 
+}
+makai_eastern_noah_superregion = { 
+	makai_yamatai_region makai_harpy_village 
+}
+makai_san_ilia_superregion = { 
+	makai_san_ilia_region makai_natalia_region 
+}
+makai_western_san_ilia_superregion = { 
+	makai_ambrosia_region makai_puppeteer_region 
+}
+makai_ilias_continent_superregion = { 
+	makai_enrika_region makai_mithra_region 
+}
+makai_safina_superregion = { 
+	makai_sabasa_region makai_safar_ruins_region makai_great_pirate_cave_region 
+}
+makai_north_hellgondo_superregion = { 
+	dark_goddess_region makai_sealed_sinner_prison_region 
+}

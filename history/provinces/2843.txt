@@ -1,0 +1,13 @@
+base_tax = 7
+base_manpower = 11
+base_production = 12
+culture = grangold_human
+religion = dark_goddess_religion
+is_city = no
+add_core = QE1
+owner = QE1
+controller = QE1
+trade_goods = slaves
+center_of_trade = 3
+fort_15th = yes
+tradecompany = yes

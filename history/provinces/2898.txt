@@ -1,0 +1,9 @@
+base_tax = 2
+base_manpower = 3
+base_production = 4
+culture = Garchimacera_Girl
+religion = dark_goddess_religion
+is_city = no
+add_core = GA2
+owner = GA2
+controller = GA2

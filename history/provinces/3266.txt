@@ -1,0 +1,9 @@
+owner = PN1
+culture = natalian_human
+religion = water_religion
+controller = PN1
+is_city = no
+add_core = PN1
+base_tax = 3
+base_manpower = 3
+base_production = 3

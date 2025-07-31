@@ -15,4 +15,4 @@ government_rank = 1
 		female = yes
 	}
 }
-capital = 3213
+capital = 3253

@@ -1,0 +1,9 @@
+is_city = no
+add_core = PA3
+owner = PA3
+base_tax = 3
+base_manpower = 3
+base_production = 3
+culture = Pabilsag_Girl
+religion = dark_goddess_religion
+controller = PA3

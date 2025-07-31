@@ -165,7 +165,23 @@
  sheep_island_reform_desc: "A peaceful isolated community of sheep girls living on the island in the Navy Sea."
  sheep_island_great_company_reform: "Sheep Island Great Company"
  sheep_island_great_company_reform_desc: "A great international trading empire of sheep girls ruled from the Sheep Island." 
+ kanon_reform: "Kanon Domain"
+ kanon_reform_desc: "A realm governed by the ruthless Plant Ancestor - lady Kanon." 
+ 
+ ability_kanon_indulgence_mechanic: "Kanon Indulgence"
+ kanon_indulgence_meter: "Kanon Indulgence Meter"
+ kanon_indulgence_meter_desc: "Measures level of lady Kanon's satisfaction while she does whatever pleases her."
+ KANON_renovate_gardens: "Renovate Gardens"
+ KANON_renovate_gardens_desc: "Lady Kanon will invest in gardens renovations over the nation."
+ KANON_abduct_human_exhibits: "Abduct Human Exhibits"
+ KANON_abduct_human_exhibits_desc: "Lady Kanon will issue a decree to abduct humans for Botanical Garden exhibitions."
+ KANON_oversee_tributes: "Oversee Tributes"
+ KANON_oversee_tributes_desc: "Lady Kanon will personally oversee all tributes from our subjects."
+ KANON_hasten_plant_growth: "Hasten Plant Growth"
+ KANON_hasten_plant_growth_desc: "Lady Kanon will use her plant control power to make them overgrow.\nAll our provinces with grain, wine, tea, spices, coffee, cotton, sugar, tobacco, cocoa or tropical wood trade goods as well as Alraune culture group will receive a local modifier:\n Local Goods Produced: §G+0.25§!\nAttrition for Enemies: §G+1.00§!\nHostile Movement Speed: §G-25.0%§!"
+ kanon_indulgence_mechanic_tooltip:0 "§YKanon Indulgence Effects§!\n\nAt low indulgence (0–100):\n§R+10% Discipline\n+10% Power Cost\n+5 Global Unrest§!\n\nAt high indulgence (100–200):\n§G-5% Discipline\n-20% Power Cost\n-0.5 Inflation per Year\n-30 Minimum Autonomy§!"
 
+ 
  yoma_nobility_reform: "Yoma Nobility"
  yoma_nobility_reform_desc: "We grant special concessions to the powerful Yoma girls, recognizing their noble status and giving them rightful places of respect within our realm. Their cunning nature and exceptional abilities make them invaluable as advisors and leaders, ensuring our kingdom thrives under their influence.\n§YWe will get Monster Girls estate.§!" 
  succubus_nobility_reform: "Succubus Nobility"

@@ -1,0 +1,11 @@
+base_tax = 7
+base_manpower = 9
+base_production = 8
+culture = Scylla_Girl
+religion = dark_goddess_religion
+is_city = no
+owner = PV1
+controller = PV1
+add_core = PV1
+center_of_trade = 2
+fort_15th = yes

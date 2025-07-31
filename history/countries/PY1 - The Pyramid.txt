@@ -16,5 +16,7 @@ historical_friend = SA1 #Sphinx Blood
 		female = yes
 	}
 	add_ruler_personality = immortal_personality
+	unlock_race = { race = yoma }
+	unlock_race = { race = beast }
 }
 capital = 819

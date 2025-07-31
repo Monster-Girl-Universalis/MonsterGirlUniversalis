@@ -1,0 +1,22 @@
+government = monarchy
+government_rank = 3
+primary_culture = Hiruko_Clone
+add_government_reform = Scylla_realm
+religion = dark_goddess_religion
+technology_group = TECH_SCYLLA
+1444.1.1 = { 
+	monarch = { 
+		name = "Hiruko"
+		dynasty = "the Tentacle Disaster"
+		birth_date = 1.1.1
+		adm = 2
+		dip = 2
+		mil = 6
+		female = yes
+	}
+	add_ruler_personality = immortal_personality
+	unlock_race = { race = scylla }
+	unlock_race = { race = land_dweller }
+	unlock_race = { race = sea_dweller }
+}
+capital = 3572

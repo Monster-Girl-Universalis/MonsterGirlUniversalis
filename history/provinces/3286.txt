@@ -1,0 +1,9 @@
+add_core = NE4
+owner = NE4
+culture = Nekomata_Girl
+religion = yamatai_religion
+controller = NE4
+is_city = no
+base_tax = 4
+base_manpower = 4
+base_production = 4

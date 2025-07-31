@@ -16,5 +16,8 @@ historical_rival = GR5#They just don't get along...
 		female = yes
 	}
 	add_ruler_personality = immortal_personality
+	unlock_race = { race = fairy }
+	unlock_race = { race = slime }
+	unlock_race = { race = dragon }
 }
-capital = 3051
+capital = 3039

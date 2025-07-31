@@ -15,4 +15,4 @@ technology_group = TECH_SUCCUBI
 		female = yes
 	}
 }
-capital = 3369
+capital = 3331

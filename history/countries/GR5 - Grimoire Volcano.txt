@@ -16,5 +16,7 @@ historical_rival = GH3#They just don't get along...
 		female = yes
 	}
 	add_ruler_personality = immortal_personality
+	unlock_race = { race = fairy }
+	unlock_race = { race = ghost }
 }
 capital = 2917

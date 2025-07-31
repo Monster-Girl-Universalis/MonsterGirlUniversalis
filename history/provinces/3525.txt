@@ -1,0 +1,9 @@
+add_core = IP2
+owner = IP2
+culture = Mimic_Girl
+controller = IP2
+is_city = no
+religion = dark_goddess_religion
+base_tax = 2
+base_manpower = 5
+base_production = 1

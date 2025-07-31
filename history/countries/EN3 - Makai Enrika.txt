@@ -17,4 +17,4 @@ technology_group = TECH_ANGEL
 	}
 	add_ruler_personality = immortal_personality
 }
-capital = 3491
+capital = 3541

@@ -17,4 +17,4 @@ technology_group = TECH_UNDEAD
 		female = yes
 	}
 }
-capital = 3342
+capital = 3401

@@ -1,0 +1,9 @@
+is_city = no
+base_tax = 2
+base_manpower = 3
+base_production = 4
+add_core = PR1
+owner = PR1
+culture = Mimic_Girl
+religion = dark_goddess_religion
+controller = PR1

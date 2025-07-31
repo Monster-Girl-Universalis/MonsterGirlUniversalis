@@ -1,0 +1,10 @@
+owner = CS2
+culture = Mecha_Cat
+religion = yamatai_religion
+controller = CS2
+is_city = no
+add_core = CS2
+base_tax = 4
+base_manpower = 4
+base_production = 4
+center_of_trade = 1

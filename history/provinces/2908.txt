@@ -1,0 +1,9 @@
+base_tax = 3
+base_manpower = 4
+base_production = 5
+culture = Royal_Medusa
+religion = dark_goddess_religion
+is_city = no
+add_core = ME4
+owner = ME4
+controller = ME4

@@ -1,0 +1,9 @@
+add_core = GG4
+owner = GG4
+base_tax = 4
+base_manpower = 4
+base_production = 4
+culture = Gargoyle_Girl
+religion = dark_goddess_religion
+controller = GG4
+is_city = no

@@ -1,0 +1,9 @@
+culture = Fallen_Angel
+religion = enrika_religion
+is_city = no
+add_core = EN3
+owner = EN3
+controller = EN3
+base_tax = 2
+base_manpower = 5
+base_production = 1

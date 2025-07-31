@@ -236,7 +236,6 @@ country_event = {
 	title = "gen_mgq_flavor.5.t"
 	desc = "gen_mgq_flavor.5.d"
 	picture = insect_girl_eventPicture
-	
 	trigger = {
 		has_estate = estate_monster_girls
 		
@@ -1814,14 +1813,14 @@ country_event = {
 	fire_only_once = yes
 	is_triggered_only = no
 	trigger = {
-    has_great_project = {
-		type = ilias_temple
-		tier = 3
+		42 = {
+			owned_by = ROOT
+   			has_great_project = {
+				type = ilias_temple
+				tier = 3
+			}
 		}
-	42 = {
-		owned_by = ROOT
 	}
-}
    	mean_time_to_happen = {
 	days = 7300
 	}

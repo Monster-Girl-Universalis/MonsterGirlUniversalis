@@ -14,5 +14,7 @@ primary_culture = Mecha_Cat
 		mil = 4
 		female = yes
 	}
+	unlock_race = { race = beast }
+	unlock_race = { race = roid }
 }
-capital = 3232
+capital = 3323

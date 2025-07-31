@@ -1,0 +1,21 @@
+government = monarchy
+religion = dark_goddess_religion
+technology_group = TECH_MERMAID
+primary_culture = Monstro_Girl
+add_government_reform = Mermaid_realm
+government_rank = 2
+1444.1.1 = { 
+	monarch = { 
+		name = "Urara"
+		dynasty = "the Monstro"
+		birth_date = 1424.1.1
+		adm = 3
+		dip = 3
+		mil = 6
+		female = yes
+	}
+	unlock_race = { race = mermaid }
+	unlock_race = { race = sea_dweller }
+	unlock_race = { race = giant }
+}
+capital = 3904

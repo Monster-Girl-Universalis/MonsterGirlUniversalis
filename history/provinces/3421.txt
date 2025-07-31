@@ -1,0 +1,9 @@
+owner = FS2
+culture = Fairy_Girl
+religion = wind_religion
+controller = FS2
+is_city = no
+add_core = FS2
+base_tax = 3
+base_manpower = 3
+base_production = 3

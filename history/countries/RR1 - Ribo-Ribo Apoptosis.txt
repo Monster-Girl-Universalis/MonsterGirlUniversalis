@@ -14,5 +14,9 @@ technology_group = TECH_APOPTOSIS
 		mil = 6
 		female = yes
 	}
+	unlock_race = { race = doll }
+	unlock_race = { race = apoptosis }
+	unlock_race = { race = chimera }
+	unlock_race = { race = roid }
 }
 capital = 1869

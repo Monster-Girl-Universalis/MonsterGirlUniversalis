@@ -1,0 +1,9 @@
+base_tax = 2
+base_manpower = 4
+base_production = 3
+culture = Liqueur_Slime
+religion = dark_goddess_religion
+is_city = no
+owner = KA2
+controller = KA2
+add_core = KA2

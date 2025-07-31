@@ -1,0 +1,9 @@
+owner = FI2
+base_tax = 2
+base_manpower = 4
+base_production = 3
+culture = Harpy_Girl
+religion = dark_goddess_religion
+controller = FI2
+is_city = no
+add_core = FI2

@@ -1,0 +1,9 @@
+base_tax = 3
+base_manpower = 3
+base_production = 3
+is_city = no
+add_core = PE5
+owner = PE5
+culture = Undead_Apoptosis
+religion = chaos_religion
+controller = PE5

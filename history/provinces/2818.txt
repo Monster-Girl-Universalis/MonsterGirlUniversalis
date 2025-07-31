@@ -1,0 +1,11 @@
+base_tax = 3
+base_manpower = 3
+base_production = 3
+is_city = no
+center_of_trade = 2
+add_core = SJ1
+owner = SJ1
+culture = Doll_Apoptosis
+religion = chaos_religion
+controller = SJ1
+fort_15th = yes

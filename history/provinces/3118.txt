@@ -1,0 +1,9 @@
+owner = SP5
+base_tax = 2
+base_manpower = 4
+base_production = 3
+culture = Royal_Slime
+religion = dark_goddess_religion
+controller = SP5
+is_city = no
+add_core = SP5

@@ -1,0 +1,10 @@
+add_core = ED1
+owner = ED1
+base_tax = 2
+base_manpower = 4
+base_production = 3
+culture = Fallen_Angel
+religion = eden_resistance_religion
+controller = ED1
+is_city = no
+center_of_trade = 1

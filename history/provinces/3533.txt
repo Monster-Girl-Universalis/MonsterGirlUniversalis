@@ -1,0 +1,9 @@
+add_core = AD4
+owner = AD4
+culture = Ancient_Dragon
+religion = yamatai_religion
+controller = AD4
+is_city = no
+base_tax = 2
+base_manpower = 5
+base_production = 1

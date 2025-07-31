@@ -1,0 +1,9 @@
+owner = GH3
+base_tax = 2
+base_manpower = 4
+base_production = 3
+culture = Sea_Dragon_Girl
+religion = water_religion
+controller = GH3
+is_city = no
+add_core = GH3

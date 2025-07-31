@@ -15,4 +15,4 @@ technology_group = TECH_GHOST
 		female = yes
 	}
 }
-capital = 3009
+capital = 3017

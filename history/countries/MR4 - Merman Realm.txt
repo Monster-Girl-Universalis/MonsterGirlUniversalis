@@ -1,0 +1,18 @@
+government = monarchy
+religion = water_religion
+technology_group = TECH_MERMAID
+primary_culture = Great_Mermaid
+add_government_reform = Mermaid_realm
+government_rank = 2
+1444.1.1 = { 
+	monarch = { 
+		name = "Sedna"
+		dynasty = "the Great Merman"
+		birth_date = 1424.1.1
+		adm = 5
+		dip = 5
+		mil = 5
+		female = yes
+	}
+}
+capital = 3681

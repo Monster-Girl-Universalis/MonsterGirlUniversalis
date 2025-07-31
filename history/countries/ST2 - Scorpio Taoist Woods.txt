@@ -1,0 +1,20 @@
+government = monarchy
+government_rank = 2
+religion = yamatai_religion
+technology_group = TECH_INSECT
+primary_culture = Scorpion_Girl
+add_government_reform = Insect_realm
+1444.1.1 = { 
+	monarch = { 
+		name = "Eboshi"
+		dynasty = "Onmyoji"
+		birth_date = 1424.1.1
+		adm = 5
+		dip = 5
+		mil = 5
+		female = yes
+	}
+	unlock_race = { race = demi_human }
+	unlock_race = { race = insect }
+}
+capital = 4067

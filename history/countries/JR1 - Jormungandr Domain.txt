@@ -1,0 +1,21 @@
+government = monarchy
+religion = dark_goddess_religion
+technology_group = TECH_LAMIA
+primary_culture = Royal_Lamia
+add_government_reform = Lamia_realm
+government_rank = 3
+1444.1.1 = { 
+	monarch = { 
+		name = "Jorm"
+		dynasty = "Jormungandr"
+		birth_date = 1424.1.1
+		adm = 5
+		dip = 5
+		mil = 5
+		female = yes
+	}
+	unlock_race = { race = yoma }
+	unlock_race = { race = lamia }
+	unlock_race = { race = giant }
+}
+capital = 3988

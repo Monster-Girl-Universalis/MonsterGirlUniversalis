@@ -1,0 +1,9 @@
+add_core = RG2
+owner = RG2
+culture = Rogue_Elf
+religion = dark_goddess_religion
+controller = RG2
+is_city = no
+base_tax = 2
+base_manpower = 5
+base_production = 1

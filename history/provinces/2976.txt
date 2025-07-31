@@ -1,0 +1,9 @@
+add_core = BA1
+owner = BA1
+base_tax = 3
+base_manpower = 4
+base_production = 5
+culture = Baphomet_Girl
+religion = dark_goddess_religion
+controller = BA1
+is_city = no

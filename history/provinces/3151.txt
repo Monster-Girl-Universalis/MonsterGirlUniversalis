@@ -1,0 +1,10 @@
+owner = AK5
+base_tax = 2
+base_manpower = 4
+base_production = 3
+culture = Three_Mouth_Akaname
+religion = yamatai_religion
+controller = AK5
+is_city = no
+add_core = AK5
+fort_15th = yes

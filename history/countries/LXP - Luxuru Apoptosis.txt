@@ -15,4 +15,7 @@ capital = 18#Eastern Ilias Tartarus coast
 		mil = 4
 		female = yes
 	}
+	unlock_race = { race = apoptosis }
+	unlock_race = { race = doll }
+	unlock_race = { race = roid }
 }

@@ -1,0 +1,9 @@
+owner = ST1
+base_tax = 3
+base_manpower = 5
+base_production = 4
+culture = Scorpion_Girl
+religion = yamatai_religion
+controller = ST1
+is_city = no
+add_core = ST1

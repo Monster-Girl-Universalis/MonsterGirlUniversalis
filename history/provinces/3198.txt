@@ -1,0 +1,10 @@
+owner = GS2
+base_tax = 3
+base_manpower = 5
+base_production = 4
+culture = Giga_Slime
+religion = dark_goddess_religion
+controller = GS2
+is_city = no
+add_core = GS2
+center_of_trade = 2

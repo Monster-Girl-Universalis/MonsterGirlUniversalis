@@ -13,6 +13,9 @@ technology_group = TECH_DRAGON
 		dip = 5
 		mil = 5
 	}
+	unlock_race = { race = demi_human }
+	unlock_race = { race = lamia }
+	unlock_race = { race = dragon }
 }
 add_government_reform = Dragon_realm
-capital = 3434
+capital = 3514

@@ -2501,6 +2501,15 @@ scylla = {
 			diplomatic_upkeep = -1
 		}
 	}
+	Hiruko_Clone = {
+
+
+
+		country = {
+			female_advisor_chance = 1
+			diplomatic_upkeep = -1
+		}
+	}
 
 	male_names = {
 

@@ -1,0 +1,9 @@
+base_tax = 2
+base_manpower = 3
+base_production = 4
+culture = Mimic_Girl
+religion = dark_goddess_religion
+is_city = no
+owner = MP2
+controller = MP2
+add_core = MP2

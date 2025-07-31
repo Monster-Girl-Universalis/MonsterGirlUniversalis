@@ -1,0 +1,9 @@
+owner = SP7
+culture = Royal_Slime
+religion = dark_goddess_religion
+controller = SP7
+is_city = no
+add_core = SP7
+base_tax = 2
+base_manpower = 4
+base_production = 3

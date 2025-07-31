@@ -107,7 +107,7 @@ ship_names = {
 	Serpentgale Lamiafang Reptiliancoil Scyllisnake Nagaship Rattlerider Copperhead Serpentwhisper Vipervoyage Hissedance
 	Maraviper Constrictor Serpentongue Scaleroar Fangfleet Aspwave Hydrasnake Coilcrest "Lamia's Sway" "Python's Grace"
 	Cobramight Scalewind Slitherin Mambastryke Cursedancer Lorensnare Lustcrusher Anacondread Nagashadow Medusail
-	Serpentia 
+	Serpentia
 }
 army_names = { 
 	"Plansect Army" "Lamia Army" "Scylla Army" "$PROVINCE$ Army" 

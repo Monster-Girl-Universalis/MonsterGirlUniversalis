@@ -4,4 +4,4 @@ primary_culture = natalian_human
 religion = water_religion
 technology_group = TECH_HUMAN
 add_government_reform = port_natalia_reform
-capital = 3218
+capital = 3262

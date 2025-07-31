@@ -1,0 +1,13 @@
+center_of_trade = 3
+is_city = no
+add_core = SJ1
+owner = SJ1
+base_tax = 20
+base_manpower = 20
+base_production = 20
+culture = Royal_Yoma
+religion = dark_goddess_religion
+controller = SJ1
+fort_18th = yes
+ramparts = yes
+soldier_households = yes

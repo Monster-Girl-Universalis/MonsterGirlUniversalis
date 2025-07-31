@@ -1,0 +1,9 @@
+owner = PO2
+culture = Mermaid_Pirate
+religion = water_religion
+controller = PO2
+is_city = no
+add_core = PO2
+base_tax = 2
+base_manpower = 4
+base_production = 3

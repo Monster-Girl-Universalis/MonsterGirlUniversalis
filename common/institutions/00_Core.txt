@@ -33,6 +33,12 @@ feudalism = {
 			continent = Gold
 			continent = Snow_Continent
 			continent = Hellgondo
+			continent = Makai_Hellgondo
+			continent = Makai_Gold
+			continent = Makai_Noah
+			continent = Makai_Natalia
+			continent = Makai_Safina
+			continent = Makai_Ilias_Continent 
 		}
 
 	}

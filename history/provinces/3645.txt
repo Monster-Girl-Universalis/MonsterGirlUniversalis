@@ -1,0 +1,11 @@
+is_city = no
+add_core = SR3
+fort_15th = yes
+owner = SR3
+base_tax = 6
+base_manpower = 6
+base_production = 6
+culture = Mud_Girl
+religion = earth_religion
+controller = SR3
+center_of_trade = 2

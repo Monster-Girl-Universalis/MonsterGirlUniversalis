@@ -533,51 +533,6 @@ SSP_ideas = {
 		allow_client_states = yes
 	}
 }
-#Orc Girl Realm
-ORR_ideas = {
-	start = {
-		core_creation = -0.15
-		#may_establish_frontier = yes
-		#auto_explore_adjacent_to_colony = yes
-		may_recruit_female_generals = yes
-	}
-
-	bonus = {		
-		army_tradition = 1
-	}
-	
-	trigger = {
-		culture = Orc_Girl
-	}
-	free = yes
-
-	ORR_orc_looting = {		
-		available_province_loot = 0.33
-		loot_amount = 0.33
-	}
-	ORR_raze_everything = {		
-		raze_power_gain = 0.25
-	}
-	ORR_expert_blitz = {
-		shock_damage = 0.125
-	}
-	ORR_cheerful_orcs = {
-		war_exhaustion_cost = -0.25
-		war_exhaustion = -0.10
-	}
-	ORR_raider_economy = {
-		land_maintenance_modifier = -0.33
-		production_efficiency = -0.10
-	}
-	ORR_loot_loot_loot = {		
-		build_cost = 0.15
-		siege_ability = 0.33
-	}
-	ORR_warrior_society = {
-		general_cost = -0.20
-		free_leader_pool = 2
-	}
-}
 #Bunny Girl Realm
 BGR_ideas = {
 	start = {
@@ -952,49 +907,6 @@ WLR_ideas = {
 		max_general_shock = 1
 	}
 }
-#Mimic ideas
-MMW_ideas = {
-	start = {
-		defensiveness = 0.10
-		#may_establish_frontier = yes
-		#auto_explore_adjacent_to_colony = yes
-		may_recruit_female_generals = yes
-	}
-
-	bonus = {		
-		max_hostile_attrition = 1
-	}
-	
-	trigger = {
-		culture = Mimic_Girl
-	}
-	free = yes
-
-	MMW_deceptive_diplomacy = {		
-		diplomatic_upkeep = 1
-	}
-	MMW_corpse_of_the_chest = {		
-		hostile_attrition = 1
-	}
-	MMW_camouflaged_ambush = {
-		morale_damage = 0.05
-	}
-	MMW_lurking_predators = {
-		leader_land_manuever = 1
-	}
-	MMW_spiritualist_mastery = {
-		regiment_manpower_usage = -0.1
-		reinforce_cost_modifier = -0.50
-	}
-	MMW_mimic_isolationism = {		
-		global_spy_defence = 0.25
-		mercantilism_cost = -0.25
-	}
-	MMW_mimic_assimilation = {
-		culture_conversion_cost = -0.2
-		culture_conversion_time = -0.2
-	}
-}
 #Anteater Ideas
 ANI_ideas = {
 	start = {
@@ -1132,7 +1044,10 @@ PNA_ideas = {
 	}
 	
 	trigger = {
-		tag = PNA
+		OR = {
+			tag = PNA
+			tag = PN1
+		}
 	}
 	free = yes
 
@@ -1262,7 +1177,10 @@ MC1_ideas = {
 	}
 	
 	trigger = {
-		tag = MC1
+		OR = {
+			tag = MC1
+			tag = MC2
+		}
 	}
 	free = yes
 
@@ -1342,7 +1260,10 @@ HM1_ideas = {
 	}
 	
 	trigger = {
-		tag = HM1
+		OR = {
+			tag = HM1
+			tag = HM2
+		}
 	}
 	free = yes
 
@@ -1392,17 +1313,17 @@ SA1_ideas = {
 	free = yes
 
 	SA1_desert_warriors = {		
-		infantry_power = 0.15
-		army_tradition = 1
+		infantry_power = 0.10
+		land_attrition = -0.15
 	}
 	SA1_trade_hub = {		
 		trade_efficiency = 0.20
 	}
 	SA1_desert_fortifications = {
-		defensiveness = 0.15
+		garrison_size = 0.15
 	}
 	SA1_nomadic_heritage = {
-		cavalry_shock = 1
+		cavalry_shock = 0.75
 		cav_to_inf_ratio = 0.50
 	}
 	SA1_sandstorm_tactics = {
@@ -1410,10 +1331,11 @@ SA1_ideas = {
 		cavalry_flanking = 0.15
 	}
 	SA1_assasin_clan = {		
-		shock_damage = 0.15
+		shock_damage = 0.10
+		spy_offence = 0.15
 	}
 	SA1_finest_military = {
-		military_tactics = 0.25
+		army_tradition = 1.5
 	}
 }
 #Grandeur
@@ -2597,7 +2519,10 @@ GO2_ideas = {
 	}
 	
 	trigger = {
-		tag = GO2
+		OR = {
+			tag = GO2
+			tag = GO5
+		}
 	}
 	free = yes
 
@@ -2757,51 +2682,6 @@ WA1_ideas = {
         max_hostile_attrition = 2
     }
 }
-#Dragon Girl Realm
-DR3_ideas = {
-	start = {
-		land_morale = 0.10
-		#may_establish_frontier = yes
-		#auto_explore_adjacent_to_colony = yes
-		may_recruit_female_generals = yes
-	}
-
-	bonus = {		
-		discipline = 0.05
-	}
-	
-	trigger = {
-		culture = Dragon_Girl
-		NOT = { has_country_flag = accepted_dragon_empress_ideas }
-	}
-	free = yes
-
-    DG1_draconic_majesty = {
-        prestige = 0.50
-    }
-    DG1_scales_of_resilience = {
-        defensiveness = 0.15
-    }
-    DG1_flameforged_weapons = {
-        infantry_power = 0.15
-    }
-    DG1_dragons_hoard = {
-        global_tax_modifier = 0.10
-    }
-    DG1_aerial_dominance = {
-        movement_speed = 0.075
-    }
-    DG1_ancient_bloodline = {
-       legitimacy = 1
-		republican_tradition = 0.3
-		devotion = 1
-		horde_unity = 1
-		meritocracy = 0.5
-    }
-    DG1_scorching_wrath = {
-        fire_damage = 0.15
-    }
-}
 #Succubus Village
 SU1_ideas = {
 	start = {
@@ -2924,6 +2804,51 @@ SL1_ideas = {
     }
     SL1_infused_inferno_magic = {
         artillery_fire = 0.75
+    }
+}
+#Dragon Girl Realm
+DR3_ideas = {
+	start = {
+		land_morale = 0.10
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+
+	bonus = {		
+		discipline = 0.05
+	}
+	
+	trigger = {
+		culture = Dragon_Girl
+		NOT = { has_country_flag = accepted_dragon_empress_ideas }
+	}
+	free = yes
+
+    DG1_draconic_majesty = {
+        prestige = 0.50
+    }
+    DG1_scales_of_resilience = {
+        defensiveness = 0.15
+    }
+    DG1_flameforged_weapons = {
+        infantry_power = 0.15
+    }
+    DG1_dragons_hoard = {
+        global_tax_modifier = 0.10
+    }
+    DG1_aerial_dominance = {
+        movement_speed = 0.075
+    }
+    DG1_ancient_bloodline = {
+       legitimacy = 1
+		republican_tradition = 0.3
+		devotion = 1
+		horde_unity = 1
+		meritocracy = 0.5
+    }
+    DG1_scorching_wrath = {
+        fire_damage = 0.15
     }
 }
 #Spider Princess Domain
@@ -3684,7 +3609,10 @@ TR2_ideas = {
 	}
 	
 	trigger = {
-		tag = TR2
+		OR = {
+			tag = TR2
+			tag = TR3
+		}
 	}
 	free = yes
 
@@ -3729,7 +3657,10 @@ PE4_ideas = {
 	}
 	
 	trigger = {
-		tag = PE4
+		OR = {
+			tag = PE4
+			tag = PE5
+		}
 	}
 	free = yes
 
@@ -3775,7 +3706,10 @@ AM1_ideas = {
 	}
 	
 	trigger = {
-		tag = AM1
+		OR = {
+			tag = AM1
+			tag = AM2
+		}
 	}
 	free = yes
 
@@ -3805,6 +3739,1151 @@ AM1_ideas = {
 		allow_client_states = yes
 	}
 }
+#Amour Rahm Apoptosis
+RA1_ideas = {
+	start = {
+		infantry_power = 0.10
+		land_morale = 0.10
+	}
+
+	bonus = {
+		infantry_shock = 0.25
+	}
+
+	trigger = {
+		OR = {
+			#tag = RA1
+			tag = RA2
+		}
+	}
+	free = yes
+
+	RA1_spacetime_assimilation = {		
+		culture_conversion_cost = -0.33
+	}
+	RA1_Brutal_Constructs = {
+		discipline = 0.05
+		infantry_cost = -0.10
+	}
+	RA1_Plasma_Core_Strikes = {
+		fire_damage = 0.10
+		shock_damage = 0.10
+	}
+	RA1_Serrated_And_Spiked = {
+		leader_land_shock = 1
+		army_tradition = 0.5
+	}
+	RA1_Organic_Part_Assimilation = {
+		global_regiment_recruit_speed = -0.15
+		culture_conversion_time = -0.15
+	}
+	RA1_otherworldy_being = {		
+		unjustified_demands = -0.5
+	}
+	RA1_cross_world_contact_elimination = {
+		ignore_coring_distance = yes
+		core_creation = -0.2
+		allow_client_states = yes
+	}
+}
+#Amor Rihm Apoptosis
+RI1_ideas = {
+	start = {
+		fire_damage = 0.15
+	}
+
+	bonus = {
+		max_general_fire = 1
+	}
+
+	trigger = {
+		OR = {
+			#tag = RI1
+			tag = RI2
+		}
+	}
+	free = yes
+
+	RI1_Magic_Reactor_Core = {
+		shock_damage_received = -0.20
+	}
+	RI1_Spellcasting_Overclock = {
+		advisor_cost = -0.20
+		idea_cost = -0.10
+	}
+	RI1_Autonomous_Sorcery = {
+		leader_land_fire = 1
+		recover_army_morale_speed = 0.15
+	}
+	RI1_spacetime_assimilation = {		
+		culture_conversion_cost = -0.33
+	}
+	RI1_otherworldy_being = {		
+		unjustified_demands = -0.5
+	}
+	RI1_Replicated_Will = {
+		land_forcelimit_modifier = 0.25
+		stability_cost_modifier = -0.20
+	}
+	RI1_cross_world_contact_elimination = {
+		ignore_coring_distance = yes
+		core_creation = -0.2
+		allow_client_states = yes
+	}
+}
+
+#Queen Eva
+QE1_ideas = {
+	start = {
+		stability_cost_modifier = -0.15
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+	
+	bonus = {
+		mercenary_discipline = 0.075
+		global_tax_income = 100
+	}
+	
+	trigger = {
+		OR = {
+			tag = QE1
+		}
+	}	
+	free = yes
+	
+	QE1_Stockpile_Reappropriation = {
+		production_efficiency = -0.10
+		global_tax_modifier = -0.10
+		global_tax_income = 100
+	}
+	QE1_Queen_of_Destruction = {
+		land_attrition = -0.15
+		fire_damage_received = -0.05
+	}
+	QE1_Slave_Economy = {
+		mercenary_manpower = 0.50
+		merc_maintenance_modifier = -0.15
+		global_tax_income = 100
+	}	
+	QE1_Mercenary_Loyalists = {
+		mercenary_cost = -0.20
+		land_morale = 0.10
+	}
+	QE1_Hedonist_Surge = {
+		prestige = 1.5
+		state_maintenance_modifier = 0.50
+		global_tax_income = 100
+	}
+	QE1_Successful_Poor_Succubus = {
+		advisor_cost = -0.20
+		global_tax_income = 100
+	}
+	QE1_Sinbound_Succession = {
+		power_projection_from_insults = 1
+	}
+}
+#Lancubus
+LA1_ideas = {
+	start = {
+		discipline = 0.05
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+	
+	bonus = {
+		diplomatic_annexation_cost = -0.15
+	}
+	
+	trigger = {
+		OR = {
+			tag = LA1
+			tag = LA2
+			tag = LA3
+		}
+	}	
+	free = yes
+	
+	LA1_Body_and_Blade = {
+		infantry_power = 0.20
+	}
+	LA1_Charm_and_Command = {
+		diplomatic_reputation = 2
+		diplomats = 1
+	}
+	LA1_Standards_of_Minagi = {
+		idea_cost = -0.10
+		advisor_pool = 1
+	}	
+	LA1_Agile_Training = {
+		shock_damage = 0.15
+		shock_damage_received = -0.15
+	}
+	LA1_Hedonistic_Pride = {
+		stability_cost_modifier = -0.15
+		tolerance_own = 2
+	}
+	LA1_Enforcers_of_Pleasure = {
+		reinforce_speed = 0.25
+		manpower_recovery_speed = 0.15
+	}
+	LA1_The_Midnight_Code = {
+		global_spy_defence = 0.20
+		leader_land_shock = 2
+	}
+}
+#Leecubus
+LE3_ideas = {
+	start = {
+		ae_impact = -0.15
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+	
+	bonus = {
+		diplomatic_annexation_cost = -0.15
+	}
+	
+	trigger = {
+		OR = {
+			tag = LE3
+			tag = LE4
+			tag = LE5
+		}
+	}	
+	free = yes
+	
+	LE3_Bewitching_Bureaucracy = {
+		advisor_cost = -0.10
+		monthly_reform_progress_modifier = 0.25
+	}
+	LE3_Charm_of_All = {
+		improve_relation_modifier = 0.3
+		diplomatic_reputation = 1
+	}
+	LE3_Magical_Superiority = {
+		idea_cost = -0.15
+		technology_cost = -0.05
+	}	
+	LE3_Tempting_Tacticians = {
+		leader_land_manuever = 1
+		siege_ability = 0.15
+	}
+	LE3_Whispers_in_Silk = {
+		diplomatic_reputation = 1
+		spy_offence = 0.20
+	}
+	LE3_Succubi_Magicians = {
+		fire_damage = 0.125
+		all_power_cost = -0.03
+	}
+	LE3_Lilith_Nightmare_Spells = {
+		leader_land_manuever = 1
+		leader_land_shock = 1
+	}
+}
+
+#Garchimacera
+GA1_ideas = {
+	start = {
+		global_trade_power = 0.15
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+	
+	bonus = {
+		interest = -1
+	}
+	
+	trigger = {
+		OR = {
+			culture = Garchimacera_Girl
+		}
+	}	
+	free = yes
+	
+	GA1_Cityborn_Cunning = {
+		governing_capacity_modifier = 0.20
+		state_maintenance_modifier = -0.25
+	}
+	GA1_Softstep_Survival = {
+		hostile_attrition = 1.0
+		fort_maintenance_modifier = -0.25
+	}
+	GA1_Peddlers_and_Whispers = {
+		spy_offence = 0.25
+		trade_steering = 0.33
+	}	
+	GA1_Silver_and_Scripture = {
+		tolerance_heathen = 2
+		interest = -1
+	}
+	GA1_Expert_Thieves = {
+		shock_damage = 0.20
+		infantry_shock = 0.25
+	}
+	GA1_Dextrous_Yoma_Species = {
+		movement_speed = 0.15
+		shock_damage_received = -0.10
+	}
+	GA1_The_Syndicate_Network = {
+		reduced_liberty_desire = 10
+		merchants = 2
+	}
+}
+#Great Orc Realm
+OR2_ideas = {
+	start = {
+		mercenary_cost = -0.25
+		discipline = 0.05
+	}
+
+	bonus = {
+		land_morale = 0.15
+	}
+
+	trigger = {
+		OR = {
+			tag = OR2
+			tag = OR3
+			tag = OR4
+			tag = OR5
+		}
+	}
+	free = yes
+
+	OR2_Immense_Strength = {
+		infantry_power = 0.15
+	}
+	OR2_Hardened_Bodies = {
+		fire_damage_received = -0.10
+		shock_damage_received = -0.10
+	}
+	OR2_Contract_Bound_Fury = {
+		morale_damage_received = -0.10
+		ae_impact = -0.10
+	}
+	OR2_Mercenary_Tradition = {
+		mercenary_manpower = 0.33
+		mercenary_discipline = 0.05
+	}
+	OR2_Great_Orcish_Army = {
+		land_forcelimit_modifier = 0.25
+		morale_damage = 0.10
+	}
+	OR2_Breach_Retaliation_Doctrine = {
+		war_exhaustion = -0.15
+		hostile_attrition = 1
+	}
+	OR2_Monster_Realm_Workforce = {
+		build_time = -0.10
+		state_maintenance_modifier = -0.10
+	}
+}
+#Orc Girl Realm
+ORR_ideas = {
+	start = {
+		core_creation = -0.15
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+
+	bonus = {		
+		army_tradition = 1
+	}
+	
+	trigger = {
+		culture = Orc_Girl
+	}
+	free = yes
+
+	ORR_orc_looting = {		
+		available_province_loot = 0.33
+		loot_amount = 0.33
+	}
+	ORR_raze_everything = {		
+		raze_power_gain = 0.25
+	}
+	ORR_expert_blitz = {
+		shock_damage = 0.125
+	}
+	ORR_cheerful_orcs = {
+		war_exhaustion_cost = -0.25
+		war_exhaustion = -0.10
+	}
+	ORR_raider_economy = {
+		land_maintenance_modifier = -0.33
+		production_efficiency = -0.10
+	}
+	ORR_loot_loot_loot = {		
+		build_cost = 0.15
+		siege_ability = 0.33
+	}
+	ORR_warrior_society = {
+		general_cost = -0.20
+		free_leader_pool = 2
+	}
+}
+
+#Baphomet Girl Realm
+BA1_ideas = {
+	start = {
+		idea_cost = -0.20
+	}
+
+	bonus = {
+		advisor_pool = 2
+	}
+
+	trigger = {
+		OR = {
+			culture = Baphomet_Girl
+		}
+	}
+	free = yes
+
+	BA1_Inherited_Arcana = {
+		innovativeness_gain = 0.5
+	}
+	BA1_Dark_Arts_Specialization = {
+		fire_damage = 0.10
+		morale_damage = 0.10
+	}
+	BA1_Magical_Slowness = {
+		defensiveness = 0.25
+		advisor_cost = -0.15
+	}
+	BA1_Scholar_Magocracy = {
+		technology_cost = -0.15
+		governing_capacity_modifier = 0.15
+	}
+	BA1_Ritual_Casters = {
+		prestige = 1
+		infantry_fire = 0.50
+	}
+	BA1_Beast_Clan_Wisdom = {
+		leader_land_fire = 1
+	}
+	BA1_Monster_Realm_Researchers = {
+		all_power_cost = -0.05
+	}
+}
+
+#Kudan
+KU5_ideas = {
+	start = {
+		leader_land_shock = 1
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+	
+	bonus = {
+		army_tradition = 1
+	}
+	
+	trigger = {
+		OR = {
+			culture = Kudan_Girl
+		}
+	}	
+	free = yes
+	
+	KU5_Honorable_Blades = {
+		discipline = 0.05
+		land_morale = 0.10
+	}
+	KU5_Chivalrous_Challenge = {
+		shock_damage = 0.15
+	}
+	KU5_School_of_the_Rapier = {
+		leader_land_manuever = 1
+		infantry_power = 0.20
+	}	
+	KU5_Travelling_Monsters = {
+		improve_relation_modifier = 0.15
+	}
+	KU5_Duelist_Culture = {
+		prestige_decay = -0.01
+		infantry_shock = 0.25
+	}
+	KU5_Beastial_Yoma_Species = {
+		morale_damage_received = -0.10
+	}
+	KU5_Fury_in_Form = {
+		fire_damage = 0.10
+		movement_speed = 0.15
+	}
+}
+
+#Bomb Slime
+BS3_ideas = {
+	start = {
+		fire_damage = 0.15
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+	
+	bonus = {
+		discipline = 0.05
+	}
+	
+	trigger = {
+		OR = {
+			culture = Bomb_Slime
+		}
+	}	
+	free = yes
+	
+	BS3_Boiling_Blood = {
+		land_morale = 0.10
+		morale_damage = 0.05
+	}
+	BS3_Molecular_Detonation = {
+		fire_damage = 0.10
+		siege_ability = 0.15
+	}
+	BS3_Blazing_Strikes = {
+		leader_land_fire = 1
+	}
+	BS3_Slime_Artillery = {
+		artillery_power = 0.30
+	}
+	BS3_Unstable_Genius = {
+		idea_cost = -0.125
+	}
+	BS3_Slime_Bombardment = {
+		backrow_artillery_damage = 0.25
+		artillery_barrage_cost = -0.25
+	}	
+	BS3_Flame_For_Hire = {
+		mercenary_discipline = 0.05
+		mercenary_cost = -0.15
+	}
+}
+#Liqueur Slime
+LS3_ideas = {
+	start = {
+		innovativeness_gain = 0.5
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+	
+	bonus = {
+		all_power_cost = -0.03
+	}
+	
+	trigger = {
+		OR = {
+			culture = Liqueur_Slime
+		}
+	}	
+	free = yes
+	
+	LS3_Molecular_Command = {
+		shock_damage_received = -0.10
+		morale_damage_received = -0.10
+	}
+	LS3_Tempest_in_Stillness = {
+		land_morale = 0.15
+	}
+	LS3_Alchemical_Prowess = {
+		siege_ability = 0.15
+		artillery_cost = -0.15
+	}
+	LS3_Field_Analysts = {
+		leader_land_manuever = 1
+		leader_siege = 1
+	}
+	LS3_Elemental_Adaptation = {
+		hostile_attrition = 1.0
+		land_attrition = -0.25
+	}
+	LS3_Fluid_Form_Tactics = {
+		manpower_recovery_speed = 0.25
+		reinforce_speed = 0.50
+	}	
+	LS3_Slime_Alchemy_Guilds = {
+		production_efficiency = 0.20
+	}
+}
+
+#Slime Princess
+SP6_ideas = {
+	start = {
+		diplomatic_reputation = 2
+		advisor_cost = -0.10
+		may_recruit_female_generals = yes
+	}
+	
+	bonus = {
+		stability_cost_modifier = -0.15
+	}
+	
+	trigger = {
+		OR = {
+			culture = Royal_Slime
+		}
+	}	
+	free = yes
+	
+	SP6_Charming_Lineage = {
+		improve_relation_modifier = 0.33
+	}
+	SP6_Golden_Gel_Gala = {
+		culture_conversion_cost = -0.25
+		tolerance_own = 2
+	}
+	SP6_Melodic_Traditions = {
+		prestige = 1.0
+		diplomatic_upkeep = 2
+	}
+	SP6_Palace_of_Pleasure = {
+		global_unrest = -2
+		monthly_favor_modifier = 0.5
+	}
+	SP6_Regal_Diplomacy = {
+		diplomats = 1
+		diplomatic_annexation_cost = -0.25
+	}
+	SP6_Sweetened_Deals = {
+		province_warscore_cost = -0.10
+		embracement_cost = -0.25
+	}
+	SP6_Benevolent_Descent = {
+		yearly_absolutism = 1
+		years_of_nationalism = -7
+	}
+}
+
+#Asura
+AS1_ideas = {
+	start = {
+		land_morale = 0.15
+		may_recruit_female_generals = yes
+	}
+
+	bonus = {
+		discipline = 0.05
+	}
+
+	trigger = {
+		OR = {
+			culture = Asura
+		}
+	}
+	free = yes
+
+	AS1_Pinaka = {
+		shock_damage = 0.25
+	}
+	AS1_War_Gods_Incarnate = {
+		army_tradition = 1
+		army_tradition_decay = -0.01
+	}
+	AS1_Multiweapon_Symphony = {
+		leader_land_shock = 2
+	}
+	AS1_Honor_Through_Struggle = {
+		max_general_shock = 2
+	}
+	AS1_Yamatai_Influence = {
+		build_cost = -0.10
+		core_creation = -0.10
+	}
+	AS1_Mercenary_Command = {
+		mercenary_cost = -0.20
+		merc_maintenance_modifier = -0.20
+	}
+	AS1_Spirit_of_Protection = {
+		defensiveness = 0.20
+		land_forcelimit_modifier = 0.15
+	}
+}
+
+#Giga Slime
+GS2_ideas = {
+	start = {
+		infantry_shock = 0.25
+		may_recruit_female_generals = yes
+	}
+
+	bonus = {
+		artillery_shock = 0.25
+	}
+
+	trigger = {
+		OR = {
+			culture = Giga_Slime
+		}
+	}
+	free = yes
+
+	GS2_Fused_Legions = {
+		infantry_power = 0.33
+		fire_damage_received = 0.10
+	}
+	GS2_Biological_Reinforcement = {
+		reinforce_speed = 0.25
+		manpower_recovery_speed = 0.25
+	}
+	GS2_Colossal_Slimes = {
+		siege_ability = 0.25
+	}
+	GS2_Memetic_Resilience = {
+		war_exhaustion_cost = -0.25
+		advisor_cost = -0.10
+	}
+	GS2_Unified_Core = {
+		core_creation = -0.20
+	}
+	GS2_Slime_Walls = {
+		defensiveness = 0.33
+		garrison_size = 0.33
+	}
+	GS2_Superaccelerated_Slime_Bullets = {
+		artillery_power = 0.33
+	}
+}
+
+#Nightmare Lamias
+NL1_ideas = {
+	start = {
+		leader_land_shock = 1
+		may_recruit_female_generals = yes
+	}
+
+	bonus = {
+		discipline = 0.075
+	}
+
+	trigger = {
+		OR = {
+			tag = NL1
+		}
+	}
+	free = yes
+
+	NL1_Scourge_of_Dreams = {
+		morale_damage = 0.15
+	}
+	NL1_Elite_Cruelty = {
+		infantry_power = 0.20
+	}
+	NL1_Torturers_Instinct = {
+		infantry_shock = 0.20
+		land_maintenance_modifier = -0.20
+	}
+	NL1_Shadow_Veneration = {
+		prestige = 1
+		administrative_efficiency = 0.03
+	}
+	NL1_Lamia_Executioners = {
+		land_morale = 0.175
+		leader_land_fire = 1
+	}
+	NL1_Cold_Blooded_Fighters = {
+		army_tradition_from_battle = 0.5
+		army_tradition_decay = -0.01
+	}
+	NL1_Fear_Made_Flesh = {
+		shock_damage = 0.10
+		siege_ability = 0.10
+	}
+}
+
+#Medusa Lords
+ME4_ideas = {
+	start = {
+		leader_land_shock = 1
+		mercenary_cost = -0.15
+	}
+
+	bonus = {
+		leader_land_fire = 1
+	}
+
+	trigger = {
+		OR = {
+			tag = ME4
+		}
+	}
+	free = yes
+
+	ME4_Mystic_Eyes = {
+		fire_damage = 0.15
+		shock_damage_received = -0.10
+	}
+	ME4_Stoneblood_Training = {
+		infantry_power = 0.15
+	}
+	ME4_Queens_Right_Hands = {
+		leader_siege = 1
+	}
+	ME4_Hardened_Youth = {
+		manpower_recovery_speed = 0.20
+		reinforce_speed = 0.20
+	}
+	ME4_Battleborn_Sorcery = {
+		land_morale = 0.15
+	}
+	ME4_Serpent_Commanders = {
+		leader_land_manuever = 1
+		mercenary_discipline = 0.05
+	}
+	ME4_Medusa_Aristocracy = {
+		diplomatic_reputation = 1
+		administrative_efficiency = 0.05
+	}
+}
+
+#Pandora
+PR1_ideas = {
+	start = {
+		fort_maintenance_modifier = -0.25
+		may_recruit_female_generals = yes
+	}
+
+	bonus = {
+		discipline = 0.06
+	}
+
+	trigger = {
+		OR = {
+			tag = PR1	#Pandora Realm
+			tag = NP2	#Noan Pandoras
+			tag = NP3	#Natalian Pandoras
+			tag = IP2	#Ilian Pandoras
+			tag = SP8	#Safina Pandoras
+		}
+	}
+	free = yes
+
+	PR1_Chest_of_Doom = {
+		artillery_power = 0.15
+		morale_damage = 0.10
+	}
+	PR1_Silent_Overlord = {
+		global_spy_defence = 0.20
+		advisor_cost = -0.10
+	}
+	PR1_Self_Imposed_Secrecy = {
+		defensiveness = 0.25
+	}
+	PR1_Crushing_Reveal = {
+		infantry_power = 0.15
+		leader_land_fire = 1
+	}
+	PR1_Spiritualist_Proficiency = {
+		regiment_manpower_usage = -0.15
+		reinforce_cost_modifier = -0.75
+	}
+	PR1_Pandora_Assimilation = {
+		culture_conversion_cost = -0.25
+		culture_conversion_time = -0.25
+	}
+	PR1_Pandora_Mystique = {
+		hostile_attrition = 1
+		stability_cost_modifier = -0.10
+	}
+}
+
+#Mimic ideas
+MMW_ideas = {
+	start = {
+		defensiveness = 0.10
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+
+	bonus = {		
+		max_hostile_attrition = 1
+	}
+	
+	trigger = {
+		culture = Mimic_Girl
+	}
+	free = yes
+
+	MMW_deceptive_diplomacy = {		
+		diplomatic_upkeep = 1
+	}
+	MMW_corpse_of_the_chest = {		
+		hostile_attrition = 1
+	}
+	MMW_camouflaged_ambush = {
+		morale_damage = 0.05
+	}
+	MMW_lurking_predators = {
+		leader_land_manuever = 1
+	}
+	MMW_spiritualist_mastery = {
+		regiment_manpower_usage = -0.1
+		reinforce_cost_modifier = -0.50
+	}
+	MMW_mimic_isolationism = {		
+		global_spy_defence = 0.25
+		mercantilism_cost = -0.25
+	}
+	MMW_mimic_assimilation = {
+		culture_conversion_cost = -0.2
+		culture_conversion_time = -0.2
+	}
+}
+#Nekogami Realm
+NEKO_ideas = {
+	start = {
+		diplomatic_reputation = 2
+		may_recruit_female_generals = yes
+	}
+
+	bonus = {
+		global_unrest = -2
+	}
+
+	trigger = {
+		OR = {
+			tag = NE3
+			tag = NE4
+			tag = NE5
+		}
+	}
+	free = yes
+
+	NEKO_Graceful_Terror = {
+		infantry_shock = 0.25
+		morale_damage = 0.10
+	}
+	NEKO_Cutest_Under_Heaven = {
+		diplomatic_upkeep = 2
+	}
+	NEKO_Martial_Dance_Arts = {
+		leader_land_manuever = 2
+		infantry_power = 0.10
+	}
+	NEKO_Charm_and_Panic = {
+		stability_cost_modifier = -0.25
+		improve_relation_modifier = 0.20
+	}
+	NEKO_Divine_Agility = {
+		shock_damage_received = -0.10
+		movement_speed = 0.15
+	}
+	NEKO_Supple_Strikes = {
+		discipline = 0.05
+	}
+	NEKO_Yamatai_Favorite = {
+		advisor_pool = 1
+		culture_conversion_cost = -0.15
+	}
+}
+#Silver Oni Realm
+SO3_ideas = {
+	start = {
+		land_morale = 0.10
+		advisor_cost = -0.10
+	}
+
+	bonus = {
+		discipline = 0.05
+	}
+
+	trigger = {
+		OR = {
+			tag = SO3
+			tag = SO4
+			tag = SO5
+		}
+	}
+	free = yes
+
+	SO3_Chaotic_Kishin_Club = {
+		shock_damage = 0.15
+		fire_damage = 0.10
+	}
+	SO3_Ancient_Knowledge = {
+		technology_cost = -0.10
+		innovativeness_gain = 0.25
+	}
+	SO3_Elder_Yokai = {
+		leader_land_shock = 1
+		leader_land_fire = 1
+	}
+	SO3_Unshakable_Mind = {
+		war_exhaustion = -0.30
+		recover_army_morale_speed = 0.20
+	}
+	SO3_Yamatai_Wisdom = {
+		governing_capacity_modifier = 0.10
+		stability_cost_modifier = -0.15
+	}
+	SO3_Small_Form_Great_Power = {
+		infantry_power = 0.15
+		shock_damage_received = -0.10
+	}
+	SO3_Legendary_Command = {
+		land_forcelimit_modifier = 0.20
+		army_tradition = 1.5
+	}
+}
+
+#Scorpio Taoists
+ST1_ideas = {
+	start = {
+		shock_damage = 0.10
+		leader_land_shock = 1
+	}
+
+	bonus = {
+		advisor_pool = 1
+	}
+
+	trigger = {
+		OR = {
+			tag = ST1
+			tag = ST2
+			tag = ST3
+		}
+	}
+	free = yes
+
+	ST1_Scorpid_Fury = {
+		infantry_power = 0.20
+	}
+	ST1_Taoist_Practices = {
+		production_efficiency = 0.15
+		siege_ability = 0.20
+	}
+	ST1_Dark_Laboratories = {
+		advisor_cost = -0.20
+		technology_cost = -0.10
+	}
+	ST1_Surgical_Cruelty = {
+		morale_damage = 0.10
+		war_exhaustion = -0.10
+	}
+	ST1_Mind_and_Mandible = {
+		manpower_recovery_speed = 0.15
+		reinforce_speed = 0.15
+	}
+	ST1_Underground_Research_Facilities = {
+		spy_offence = 0.25
+		all_power_cost = -0.05
+	}
+	ST1_Protective_Taoism = {
+		fire_damage_received = -0.15
+		shock_damage_received = -0.15
+	}
+}
+
+#Cait Sith Realm
+CS1_ideas = {
+	start = {
+		build_cost = -0.10
+		state_maintenance_modifier = -0.15
+	}
+
+	bonus = {
+		technology_cost = -0.05
+	}
+
+	trigger = {
+		OR = {
+			tag = CS1
+			tag = CS2
+			tag = CS3
+		}
+	}
+	free = yes
+
+	CS1_Autonomous_Workforce = {
+		build_time = -0.15
+		production_efficiency = 0.10
+	}
+	CS1_Armament_Over_Spec = {
+		fire_damage = 0.10
+		infantry_power = 0.15
+	}
+	CS1_Catlike_Reflexes = {
+		movement_speed = 0.10
+		hostile_attrition = 1
+	}
+	CS1_Adaptive_Personality_Matrix = {
+		improve_relation_modifier = 0.20
+		diplomatic_reputation = 1
+	}
+	CS1_Decentralized_Systems = {
+		autonomy_change_time = -0.05
+		reserves_organisation = 0.20
+	}
+	CS1_Civic_Integration_Core = {
+		governing_capacity_modifier = 0.15
+		administrative_efficiency = 0.05
+	}
+	CS1_Meowfactor_Protocols = {
+		global_unrest = -2
+		stability_cost_modifier = -0.10
+	}
+}
+
+#Gal Fox Realm
+GF1_ideas = {
+	start = {
+		recover_army_morale_speed = 0.20
+		leader_land_shock = 1
+	}
+
+	bonus = {
+		mil_tech_cost_modifier = -0.10
+	}
+
+	trigger = {
+		OR = {
+			tag = GF1
+			tag = GF2
+			tag = GF3
+		}
+	}
+	free = yes
+
+	GF1_Kitsune_Frame_Combat_Systems = {
+		shock_damage = 0.15
+		leader_land_manuever = 1
+	}
+	GF1_Tao_Core_Reactor = {
+		fire_damage = 0.15
+	}
+	GF1_Counterstrike_Protocol = {
+		defensiveness = 0.20
+		siege_ability = 0.10
+	}
+	GF1_Combat_AI_Refinement_Loop = {
+		drill_gain_modifier = 0.33
+		discipline = 0.05
+	}
+	GF1_Elite_Not_Many = {
+		drill_decay_modifier = -0.33
+		special_unit_forcelimit = 0.15
+	}
+	GF1_Spirit_Infused_Strike_Teams = {
+		movement_speed = 0.10
+		reinforce_speed = 0.25
+	}
+	GF1_Gal_Fox_Production_Lines = {
+		land_attrition = -0.25
+		manpower_recovery_speed = 0.25
+	}
+}
+
+
 #Remina
 RE1_ideas = {
 	start = {
@@ -3973,9 +5052,10 @@ LQD_ideas = {
 		infantry_shock = 1
 	}
 	LQD_mansion_development = {
-		development_cost_modifier = -0.15
+		development_cost_modifier = -0.10
 	}
 	LQD_advanced_ghost_army = {
+		morale_damage = 0.10
 		land_attrition = -0.33
 	}
 	LQD_advanced_fireball_battle_magic = {
@@ -4053,20 +5133,20 @@ BQD_ideas = {
 	free = yes
 	
 	BQD_savage_fury = {
-		infantry_power = 0.20
+		infantry_power = 0.25
 	}
 	BQD_animal_instincts = {
 		global_spy_defence = 0.25
 	}	
 	BQD_pack_mentality = {
-		land_morale = 0.10
+		land_morale = 0.20
 		reserves_organisation = 0.50
 	}
 	BQD_wild_abundance = {
 		global_trade_goods_size = 0.5
 	}
 	BQD_fearsome_predators = {
-		morale_damage = 0.10
+		morale_damage = 0.15
 	}
 	BQD_warrior_society = {
 		general_cost = -0.20
@@ -4102,7 +5182,7 @@ SSD_ideas = {
 	}
 	SSD_pleasure_cultivation = {
 		global_unrest = -2
-		diplomatic_reputation = 1
+		diplomatic_reputation = 3
 	}	
 	SSD_eternal_temptation = {
 		accept_vassalization_reasons = 30
@@ -4115,11 +5195,11 @@ SSD_ideas = {
 		free_leader_pool = 1
 	}
 	SSD_widespread_relations = {
-		diplomatic_upkeep = 2
+		diplomatic_upkeep = 3
 	}
 	SSD_dark_enchantments = {
-		fire_damage = 0.10
-		fire_damage_received = -0.10
+		fire_damage = 0.15
+		fire_damage_received = -0.15
 	}
 	SSD_archsuccubus_elite = {
 		leader_land_fire = 2
@@ -4364,6 +5444,7 @@ DQ1_ideas = {
 			tag = DQ1
 			tag = KK1
 			tag = PO1
+			tag = NT1
 		}
 	}
 	free = yes
@@ -4668,5 +5749,292 @@ FAR_ideas = {
 	FAR_fallen_angel_dance = {
 		movement_speed = 0.05
 		leader_land_manuever = 1
+	}
+}
+
+#SIX GREAT ANCESTORS
+#Kanon
+KA1_ideas = {
+	start = {
+		reinforce_speed = 0.75
+		all_power_cost = 0.10
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+	
+	bonus = {
+		prestige = 1.5
+	}
+	
+	trigger = {
+		tag = KA1
+	}	
+	free = yes
+
+	KA1_Ivy_of_Devastation = {
+		hostile_attrition = 3
+		max_hostile_attrition = 5
+	}
+	KA1_Kanons_Arms = {
+		defensiveness = 0.75
+	}
+	KA1_Green_Empress_Whip = {
+		infantry_shock = 1.5
+	}
+	KA1_Kanon_Hedonism = {
+		country_admin_power = -1
+		governing_cost = 0.1
+		territories_governing_cost = -0.25
+	}
+	KA1_Digestive_Whirlpool = {
+		morale_damage = 0.25
+	}
+	KA1_Kanon_Inwards_Focus = {
+		min_autonomy = 20
+		development_cost = -0.25
+	}
+	KA1_Plant_Overbooster = {
+		shock_damage = 0.50
+		military_tactics = 0.25
+	}
+}
+#Kanade
+KA2_ideas = {
+	start = {
+		relation_with_same_culture_group = 50
+		diplomats = -2
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+	
+	bonus = {
+		trade_efficiency = 0.20
+		
+	}
+	
+	trigger = {
+		OR = {
+			tag = KA2
+		}
+	}	
+	free = yes
+
+	KA2_kanade_clones = {
+		discipline = 0.05
+		manpower_recovery_speed = 0.25
+	}	
+	KA2_kanade_full_life = {
+		reinforce_speed = 1.5
+		leader_land_manuever = 4
+	}
+	KA2_instant_recombination = {
+		land_attrition = -0.33
+		build_cost = -0.33
+	}	
+	KA2_kanade_wall = {
+		max_general_maneuver = 4
+		garrison_size = 0.25
+	}
+	KA2_predatory_giant_slimes = {
+		infantry_power = 0.40
+	}
+	KA2_paradise_for_slimes = {
+		development_cost_in_primary_culture = -0.20
+		build_time = -0.25
+	}
+	KA2_invasive_slime_bodies = {
+		administrative_efficiency = -0.05
+		province_warscore_cost = -0.15
+	}
+}
+
+# Tamamo no Mae
+KI5_ideas = {
+	start = {
+		all_power_cost = -0.10	
+		may_recruit_female_generals = yes
+	}
+	
+	bonus = {
+		global_spy_defence = 0.50
+		spy_offence = 0.50
+	}
+	
+	trigger = {
+		tag = KI5
+	}
+	free = yes
+	
+	KI5_yamatai_metropolis = {
+		development_cost = -0.15
+		yearly_innovativeness = 1
+	}
+	KI5_roid_armies = {
+		infantry_fire = 1.25
+		artillery_fire = 1.25
+	}
+	KI5_exoteric_ice_wind_formation = {
+		fire_damage_received = -0.25
+		movement_speed = 0.15
+	}
+	KI5_exoteric_lightning_earth_formation = {
+		shock_damage = 0.25
+		defensiveness = 0.33
+	}
+	KI5_experiments_on_prisoners = {
+		technology_cost = -0.20
+		idea_cost = -0.20
+	}
+	KI5_ultimate_kitsune_lore = {
+		country_admin_power = 1
+		country_diplomatic_power = 1
+		country_military_power = 1
+	}
+	KI5_strategic_defense_in_depth = {
+		attack_bonus_in_capital_terrain = 1
+		own_territory_dice_roll_bonus = 1
+	}
+}
+# Minagi
+MI1_ideas = {
+	start = {
+		advisor_cost = -0.20	
+		may_recruit_female_generals = yes
+	}
+	
+	bonus = {
+		land_morale = 0.25
+		discipline = 0.05
+	}
+	
+	trigger = {
+		tag = MI1
+	}
+	free = yes
+	
+	MI1_ecstasy_field = {
+		morale_damage = 0.10
+		hostile_attrition = 2
+	}
+	MI1_great_whore_of_babylon = {
+		diplomatic_reputation = 3
+		diplomatic_upkeep = 3
+	}
+	MI1_unarmed_succubus_martial_arts = {
+		infantry_power = 0.25
+		shock_damage = 0.20
+	}
+	MI1_pleasure_as_weapon = {
+		rebel_support_efficiency = 1.50
+	}
+	MI1_succubus_administrators = {
+		global_unrest = -2
+		stability_cost_modifier = -0.20
+	}
+	MI1_dark_capital_san_ilia = {
+		tolerance_heretic = 2
+		tolerance_heathen = 2
+		development_cost = -0.10
+	}
+	MI1_makai_succession = {
+		army_tradition = 2
+	}
+}
+
+# Hiruko
+HI2_ideas = {
+	start = {
+		reinforce_speed = 0.33 
+		manpower_recovery_speed = 0.33 	
+		may_recruit_female_generals = yes
+	}
+	
+	bonus = {
+		land_forcelimit_modifier = 0.33
+	}
+	
+	trigger = {
+		tag = HI2
+	}
+	free = yes
+	
+	HI2_ceaseless_appetite = {
+		loot_amount = 5
+		discipline = 0.10
+	}
+	HI2_aberrant_reconstruction = {
+		development_cost = -0.15
+		governing_capacity_modifier = 0.25
+	}
+	HI2_flesh_that_multiplies = {
+		land_forcelimit_modifier = 0.50
+		land_attrition = -0.15
+	}
+	HI2_digestive_hive_mind = {
+		core_creation = -0.33
+		administrative_efficiency = -0.05
+	}
+	HI2_sabasa_within = {
+		global_tax_modifier = 0.15
+		stability_cost_modifier = -0.20 
+	}
+	HI2_monstrous_vitality = {
+		land_morale = 0.15
+		recover_army_morale_speed = 0.25  
+	}
+	HI2_predation_instinct = {
+		infantry_power = 0.33
+		shock_damage = 0.15 
+	}
+}
+#Saja
+SJ1_ideas = {
+	start = {
+		discipline = 0.10
+		army_tradition = 1.5
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+		reduced_stab_impacts = yes
+	}
+
+	bonus = {		
+		leader_land_fire = 1
+		leader_land_shock = 1
+	}
+	
+	trigger = {
+		tag = SJ1
+	}
+	free = yes
+
+	SJ1_dark_goddess_vanguard = {		
+		land_morale = 0.20 
+		prestige_from_land = 1.0
+	}
+   	SJ1_lord_of_hellgondo = {
+        	governing_capacity_modifier = 0.33
+		land_forcelimit_modifier = 0.33
+    	}
+	SJ1_warrior_of_balance = {
+		fire_damage = 0.20
+		shock_damage = 0.20
+	}
+	SJ1_ancestor_of_lamias_and_harpies = {
+		movement_speed = 0.15
+		infantry_power = 0.20
+	}
+	SJ1_adjutant_of_the_dark_goddess = {
+		country_military_power = 2
+	}
+	SJ1_military_command_sanctified = {
+		war_exhaustion_cost = -0.33
+		manpower_recovery_speed = 0.33
+	}
+	SJ1_will_of_the_monster_lord = {
+		country_admin_power = 2
+		core_creation = -0.20
 	}
 }

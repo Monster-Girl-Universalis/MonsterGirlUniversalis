@@ -1,0 +1,9 @@
+base_tax = 3
+base_manpower = 4
+base_production = 5
+culture = Wolf_Girl
+religion = fenrir_religion
+is_city = no
+add_core = FE3
+owner = FE3
+controller = FE3

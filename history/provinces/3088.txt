@@ -1,0 +1,9 @@
+owner = LS3
+base_tax = 2
+base_manpower = 4
+base_production = 3
+culture = Liqueur_Slime
+religion = dark_goddess_religion
+controller = LS3
+is_city = no
+add_core = LS3

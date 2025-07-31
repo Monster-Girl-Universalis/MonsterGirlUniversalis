@@ -140,7 +140,7 @@ spriteTypes = {
 		name = "GFX_tech_group_strip"
 		texturefile = "gfx//interface//tech_group_strip2.dds"
 		transparencecheck = yes
-		noOfFrames = 44
+		noOfFrames = 70
 	}
 
 	spriteType = {
@@ -392,6 +392,32 @@ spriteTypes = {
 		name = "GFX_mamluk_mechanic_bar_frame"
 		texturefile = "gfx/interface/mamluk_mechanic_bar_frame.dds"
 		alwaystransparent = yes
+	}
+
+
+	spriteType = {
+		name = "GFX_kanon_ability_renovate_gardens"
+		texturefile = "gfx//interface//kanon_ability_renovate_gardens.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_kanon_ability_renovate_gardens"
+		texturefile = "gfx//interface//kanon_ability_renovate_gardens.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_kanon_ability_abduct_human_exhibits"
+		texturefile = "gfx//interface//kanon_ability_abduct_human_exhibits.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_kanon_indulgence_info_icon"
+		texturefile = "gfx//interface//kanon_indulgence_info_icon.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
 	}
 
 }

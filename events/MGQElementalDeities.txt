@@ -194,19 +194,20 @@ country_event = {
 	option = {	
 		name = elemental_religion.yamatai.e
 		trigger = {
-		OR = {
-			any_owned_province = {
-				OR = {
-					religion_group = ilias_religion_g
+			OR = {
+				any_owned_province = {
+					religion_group = ilias_religion_g 
+				}
+				any_owned_province = {
 					any_neighbor_province = {
-						religion_group = ilias_religion_g
+						religion_group = ilias_religion_g 
 					}
 				}
-			}			
-			any_neighbor_country = {
-				religion_group = ilias_religion_g
+				any_neighbor_country = {
+					religion_group = ilias_religion_g 
+				}
 			}
-		}
+
 		}
 		change_cult = ilias_shrines 
 		tooltip = {
@@ -219,19 +220,19 @@ country_event = {
 	option = {	
 		name = elemental_religion.yamatai.f
 		trigger = {
-		OR = {
-			any_owned_province = {
-				OR = {
-					religion_group = monster_religion_g
+			OR = {
+				any_owned_province = {
+					religion_group = monster_religion_g 
+				}
+				any_owned_province = {
 					any_neighbor_province = {
-						religion_group = monster_religion_g
+						religion_group = monster_religion_g 
 					}
 				}
-			}			
-			any_neighbor_country = {
-				religion_group = monster_religion_g
+				any_neighbor_country = {
+					religion_group = monster_religion_g 
+				}
 			}
-		}
 		}
 		change_cult = monster_lord_shrines 
 		tooltip = {
@@ -244,19 +245,19 @@ country_event = {
 	option = {	
 		name = elemental_religion.yamatai.g
 		trigger = {
-		OR = {
-			any_owned_province = {
-				OR = {
-					religion_group = chaos_religion_g
+			OR = {
+				any_owned_province = {
+					religion_group = chaos_religion_g 
+				}
+				any_owned_province = {
 					any_neighbor_province = {
-						religion_group = chaos_religion_g
+						religion_group = chaos_religion_g 
 					}
 				}
-			}			
-			any_neighbor_country = {
-				religion_group = chaos_religion_g
+				any_neighbor_country = {
+					religion_group = chaos_religion_g 
+				}
 			}
-		}
 		}
 		change_cult = chaos_shrines 
 		tooltip = {
@@ -269,19 +270,19 @@ country_event = {
 	option = {	
 		name = elemental_religion.yamatai.h
 		trigger = {
-		OR = {
-			any_owned_province = {
-				OR = {
-					religion = wind_religion 
+			OR = {
+				any_owned_province = {
+					religion_group = wind_religion_g 
+				}
+				any_owned_province = {
 					any_neighbor_province = {
-						religion = wind_religion 
+						religion_group = wind_religion_g 
 					}
 				}
-			}			
-			any_neighbor_country = {
-				religion = wind_religion 
+				any_neighbor_country = {
+					religion_group = wind_religion_g 
+				}
 			}
-		}
 		}
 		change_cult = sylph_shrines
 		tooltip = {
@@ -294,19 +295,19 @@ country_event = {
 	option = {	
 		name = elemental_religion.yamatai.i
 		trigger = {
-		OR = {
-			any_owned_province = {
-				OR = {
-					religion = earth_religion 
+			OR = {
+				any_owned_province = {
+					religion_group = earth_religion_g 
+				}
+				any_owned_province = {
 					any_neighbor_province = {
-						religion = earth_religion 
+						religion_group = earth_religion_g 
 					}
 				}
-			}			
-			any_neighbor_country = {
-				religion = earth_religion 
+				any_neighbor_country = {
+					religion_group = earth_religion_g 
+				}
 			}
-		}
 		}
 		change_cult = gnome_shrines 
 		tooltip = {
@@ -319,20 +320,19 @@ country_event = {
 	option = {	
 		name = elemental_religion.yamatai.j
 		trigger = {
-
-		OR = {
-			any_owned_province = {
-				OR = {
-					religion = water_religion 
+			OR = {
+				any_owned_province = {
+					religion_group = water_religion_g 
+				}
+				any_owned_province = {
 					any_neighbor_province = {
-						religion = water_religion 
+						religion_group = water_religion_g 
 					}
 				}
-			}			
-			any_neighbor_country = {
-				religion = water_religion 
+				any_neighbor_country = {
+					religion_group = water_religion_g 
+				}
 			}
-		}
 		}
 		change_cult = undine_shrines 
 		tooltip = {
@@ -345,20 +345,19 @@ country_event = {
 	option = {	
 		name = elemental_religion.yamatai.k
 		trigger = {
-
-		OR = {
-			any_owned_province = {
-				OR = {
-					religion = fire_religion 
+			OR = {
+				any_owned_province = {
+					religion_group = fire_religion_g 
+				}
+				any_owned_province = {
 					any_neighbor_province = {
-						religion = fire_religion 
+						religion_group = fire_religion_g 
 					}
 				}
-			}			
-			any_neighbor_country = {
-				religion = fire_religion 
+				any_neighbor_country = {
+					religion_group = fire_religion_g 
+				}
 			}
-		}
 		}
 		change_cult = salamander_shrines
 		tooltip = {
@@ -371,20 +370,19 @@ country_event = {
 	option = {	
 		name = elemental_religion.yamatai.l
 		trigger = {
-
-		OR = {
-			any_owned_province = {
-				OR = {
+			OR = {
+				any_owned_province = {
 					religion_group = science_religion_g 
+				}
+				any_owned_province = {
 					any_neighbor_province = {
 						religion_group = science_religion_g 
 					}
 				}
-			}			
-			any_neighbor_country = {
-				religion_group = science_religion_g 
+				any_neighbor_country = {
+					religion_group = science_religion_g 
+				}
 			}
-		}
 		}
 		change_cult = science_shrines 
 		tooltip = {
@@ -407,20 +405,19 @@ country_event = {
 	option = {	
 		name = elemental_religion.yamatai.n
 		trigger = {
-
-		OR = {
-			any_owned_province = {
-				OR = {
+			OR = {
+				any_owned_province = {
 					culture_group = dragon
+				}
+				any_owned_province = {
 					any_neighbor_province = {
 						culture_group = dragon
 					}
 				}
-			}			
-			any_neighbor_country = {
-				culture_group = dragon
+				any_neighbor_country = {
+					culture_group = dragon 
+				}
 			}
-		}
 		}
 		change_cult = kirin_shrines 
 		tooltip = {

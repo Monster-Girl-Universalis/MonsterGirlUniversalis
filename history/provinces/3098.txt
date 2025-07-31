@@ -1,0 +1,10 @@
+base_tax = 3
+base_manpower = 5
+base_production = 4
+culture = Royal_Slime
+religion = dark_goddess_religion
+is_city = no
+add_core = SP6
+owner = SP6
+controller = SP6
+center_of_trade = 2

@@ -1,0 +1,9 @@
+add_core = CS1
+owner = CS1
+culture = Mecha_Cat
+religion = yamatai_religion
+controller = CS1
+is_city = no
+base_tax = 3
+base_manpower = 3
+base_production = 3

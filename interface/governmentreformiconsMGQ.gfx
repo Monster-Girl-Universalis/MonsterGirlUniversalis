@@ -423,4 +423,8 @@ spriteTypes = {
 		name = "government_reform_divine_shrine_maiden"
 		texturefile = "gfx//interface//government_reform_icons//divine_shrine_maiden.dds"
 	}
+	spriteType = {
+		name = "government_reform_kanon_domain_reform"
+		texturefile = "gfx//interface//government_reform_icons//kanon_domain_reform.dds"
+	}
 }

@@ -1,0 +1,9 @@
+owner = HM2
+culture = Spirit_Girl
+religion = dark_goddess_religion
+controller = HM2
+is_city = no
+add_core = HM2
+base_tax = 3
+base_manpower = 3
+base_production = 3

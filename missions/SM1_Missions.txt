@@ -707,19 +707,19 @@ sm1_branch_3 = {
         generic = no
 		trigger = {
 			religion = yamatai_religion
-		OR = {
-			any_owned_province = {
-				OR = {
+			OR = {
+				any_owned_province = {
 					religion_group = science_religion_g 
+				}
+				any_owned_province = {
 					any_neighbor_province = {
 						religion_group = science_religion_g 
 					}
 				}
-			}			
-			any_neighbor_country = {
-				religion_group = science_religion_g 
+				any_neighbor_country = {
+					religion_group = science_religion_g 
+				}
 			}
-		}
 		}
 		effect = {
 			custom_tooltip = flavor_insight_sm1.4

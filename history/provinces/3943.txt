@@ -1,0 +1,9 @@
+is_city = no
+add_core = SJ1
+owner = SJ1
+base_tax = 3
+base_manpower = 3
+base_production = 3
+culture = Royal_Lamia
+religion = dark_goddess_religion
+controller = SJ1

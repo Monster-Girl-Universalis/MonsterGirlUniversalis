@@ -14,5 +14,7 @@ add_government_reform = Slime_realm
 		mil = 5
 		female = yes
 	}
+	unlock_race = { race = slime }
+	unlock_race = { race = giant }
 }
-capital = 3210
+capital = 3198

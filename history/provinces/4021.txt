@@ -1,0 +1,10 @@
+base_tax = 3
+base_manpower = 3
+base_production = 3
+is_city = no
+add_core = NT1
+owner = NT1
+culture = Royal_Sea_Dweller
+religion = dark_goddess_religion
+controller = NT1
+center_of_trade = 2

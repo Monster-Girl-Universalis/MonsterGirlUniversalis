@@ -162,6 +162,20 @@ estate_monster_girls = {
 						has_reform = lamia_nobility_reform 
 						has_reform = scylla_nobility_reform
 						tag = FAR 
+						unit_type = TECH_KANON
+						unit_type = TECH_KANADE
+						unit_type = TECH_TAMAMO
+						unit_type = TECH_MINAGI
+						unit_type = TECH_MAKAI_SEA_DWELLER
+						unit_type = TECH_MAKAI_GHOST
+						unit_type = TECH_HIRUKO
+						unit_type = TECH_MAKAI_INSECT
+						unit_type = TECH_SAJA
+						unit_type = TECH_MAKAI_SCYLLA
+						unit_type = TECH_MAKAI_FAIRY
+						unit_type = TECH_MAKAI_ELF
+						unit_type = TECH_MAKAI_MERMAID
+						unit_type = TECH_MAKAI_UNDEAD
 					}
 	}
 

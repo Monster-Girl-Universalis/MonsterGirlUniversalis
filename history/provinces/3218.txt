@@ -1,0 +1,9 @@
+owner = MA3
+culture = Marcosias_Girl
+religion = dark_goddess_religion
+controller = MA3
+is_city = no
+add_core = MA3
+base_tax = 2
+base_manpower = 4
+base_production = 3

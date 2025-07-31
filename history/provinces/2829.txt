@@ -1,0 +1,9 @@
+base_tax = 2
+base_manpower = 3
+base_production = 4
+culture = Orc_Girl
+religion = dark_goddess_religion
+is_city = no
+owner = OR4
+controller = OR4
+add_core = OR4

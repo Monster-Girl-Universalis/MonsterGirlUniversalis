@@ -16,6 +16,8 @@ capital = 2180
 		female = yes
 	}
 	add_ruler_personality = immortal_personality
+	unlock_race = { race = kitsune }
+	unlock_race = { race = beast }
 }
 1444.1.1 = { 
 	leader = { 

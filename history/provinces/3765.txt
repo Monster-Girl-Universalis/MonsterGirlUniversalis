@@ -1,0 +1,9 @@
+add_core = GG3
+owner = GG3
+base_tax = 3
+base_manpower = 3
+base_production = 3
+culture = Gargoyle_Girl
+religion = dark_goddess_religion
+controller = GG3
+is_city = no

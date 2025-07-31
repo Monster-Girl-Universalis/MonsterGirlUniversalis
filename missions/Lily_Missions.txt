@@ -862,7 +862,7 @@ lily_final_branch = {
 					who = ML1
 					value = 80
 				}
-				alliance_with = IT1
+				alliance_with = ML1
 				2409 = { owned_by = ROOT }
 			}
 		}

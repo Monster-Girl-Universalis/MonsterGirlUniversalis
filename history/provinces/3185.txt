@@ -1,0 +1,9 @@
+owner = SO3
+base_tax = 3
+base_manpower = 5
+base_production = 4
+culture = Oni
+religion = yamatai_religion
+controller = SO3
+is_city = no
+add_core = SO3

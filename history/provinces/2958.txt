@@ -1,0 +1,9 @@
+add_core = GO5
+owner = GO5
+base_tax = 2
+base_manpower = 3
+base_production = 4
+culture = grangold_human
+religion = ilias_light_religion
+controller = GO5
+is_city = no

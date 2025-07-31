@@ -1,0 +1,9 @@
+culture = Monster_Succubi
+religion = dark_goddess_religion
+is_city = no
+owner = MI1
+controller = MI1
+add_core = MI1
+base_tax = 5
+base_manpower = 5
+base_production = 5

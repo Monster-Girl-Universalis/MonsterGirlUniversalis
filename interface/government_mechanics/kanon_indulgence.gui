@@ -1,0 +1,64 @@
+guiTypes = {
+
+	windowType = {
+		name = "kanon_indulgence_gov_mech_3_power"
+		size = { x = 350 y = 65 }
+		moveable = 0
+		iconType = {
+			name = "kanon_indulgence_info_icon"
+			spriteType = "GFX_kanon_indulgence_info_icon" # Or whatever fits
+			position = { x = 40 y = 10 } # Adjust to your layout
+			tooltip = "kanon_indulgence_mechanic_tooltip"
+		}
+
+		# Frame
+		iconType = {
+			name = "government_power_bar"
+			spriteType = "GFX_prussian_militarization_power_bar"
+			position = { x = 16 y = 0 }
+		}
+	}
+
+	windowType = {
+		name = "kanon_interaction_window_1"
+		size = { x = 70 y = 70 }
+		moveable = 0
+
+		guiButtonType = {
+			name = "government_interaction_button"
+			quadTextureSprite = "GFX_kanon_ability_renovate_gardens"
+			position = { x = 30 y = -3 }
+			buttonFont = "vic_18"
+			clicksound = back_click
+		}
+		# Interaction button, graphics replaced from the interaction icon specification
+	}
+	windowType = {
+		name = "kanon_interaction_window_2"
+		size = { x = 70 y = 70 }
+		moveable = 0
+
+		guiButtonType = {
+			name = "government_interaction_button"
+			quadTextureSprite = "GFX_kanon_ability_abduct_human_exhibits"
+			position = { x = 40 y = -3 }
+			buttonFont = "vic_18"
+			clicksound = back_click
+		}
+		# Interaction button, graphics replaced from the interaction icon specification
+	}
+	windowType = {
+		name = "kanon_interaction_window_3"
+		size = { x = 70 y = 70 }
+		moveable = 0
+
+		guiButtonType = {
+			name = "government_interaction_button"
+			quadTextureSprite = "GFX_kanon_ability_abduct_human_exhibits"
+			position = { x = 50 y = -3 }
+			buttonFont = "vic_18"
+			clicksound = back_click
+		}
+		# Interaction button, graphics replaced from the interaction icon specification
+	}
+}

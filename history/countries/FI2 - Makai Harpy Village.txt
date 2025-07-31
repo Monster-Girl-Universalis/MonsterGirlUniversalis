@@ -15,4 +15,4 @@ add_government_reform = Harpy_realm
 		female = yes
 	}
 }
-capital = 3184
+capital = 3213

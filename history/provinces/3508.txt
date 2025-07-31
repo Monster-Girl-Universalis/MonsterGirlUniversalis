@@ -1,0 +1,10 @@
+add_core = RG3
+owner = RG3
+culture = Rogue_Elf
+religion = dark_goddess_religion
+controller = RG3
+is_city = no
+base_tax = 3
+base_manpower = 6
+base_production = 2
+center_of_trade = 1

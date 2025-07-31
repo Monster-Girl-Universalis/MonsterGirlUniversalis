@@ -1,0 +1,9 @@
+is_city = no
+base_tax = 3
+base_manpower = 3
+base_production = 3
+add_core = AS4
+owner = AS4
+culture = Royal_Scylla
+religion = dark_goddess_religion
+controller = AS4

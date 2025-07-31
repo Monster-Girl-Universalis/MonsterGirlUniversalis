@@ -1,0 +1,14 @@
+is_city = no
+add_core = HI2
+owner = HI2
+base_tax = 19
+base_manpower = 20
+base_production = 1
+culture = Hiruko_Clone
+trade_goods = livestock
+religion = dark_goddess_religion
+controller = HI2
+center_of_trade = 3
+ramparts = yes
+fort_16th = yes
+soldier_households = yes

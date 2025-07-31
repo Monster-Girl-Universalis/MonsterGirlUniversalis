@@ -362,3 +362,134 @@ western_great_sea_region = {
 		western_great_sea_area 
 	}
 }
+makai_tartarus_region = { 
+	areas = { 
+		makai_tartarus_area makai_amor_rihm_area makai_outpost makai_amor_rahm_area makai_trilobite_area makai_amor_doll_area makai_persephone_area garchimacera_mountains fenrir_caves great_orc_caves
+	}
+}
+dark_goddess_region = { 
+	areas = { 
+		dark_goddess_chamber_area asmodeus_mansion makai_wyverns makai_kyoryuu dark_goddess_mountains saja_coast jormungandr_mansion dark_goddess_coast saja_mountains jormungandr_area
+		jormungandr_mountains jormungandr_coast makai_behemoths marlboro_mountains asmodeus_area asmodeus_mountains asmodeus_drylands 
+	}
+}
+makai_succubus_village_region = { 
+	areas = { 
+		succubi_hideout fenrir_frostlands fenrir_coast fenrir_area great_orc_bay makai_succubus_village_area queen_eva_plantations_area great_orc_area makai_queen_eva_palace lancubus_area
+		lancubus_coast_area 
+	}
+}
+makai_gold_train_station_region = { 
+	areas = { 
+		gold_train_station garchimacera_coast great_orc_plains leecubus_plains leecubus_area medusa_lord_area nightmare_lamia_area leecubus_mountains magic_pot_area lancubus_plains_area
+	}
+}
+makai_goldfort_region = { 
+	areas = { 
+		grimoire_area grimoire_bay goldfort_coast_area makai_goldfort_area grangold_nepenthes_area pandora_area 
+	}
+}
+makai_grangold_region = { 
+	areas = { 
+		makai_grangold makai_grangold_outskirts kanon_coast_area baphomet_area baphomet_peninsula_area kudan_area velraune_gardens_area kudan_coast kanon_marlboro_area velraune_area
+	}
+}
+makai_goldport_region = { 
+	areas = { 
+		nightmare_lamia_caves makai_goldport medusa_lord_caves ilias_kreuz_grounds rose_plantations rose_aristocrat_area magic_pot_mountains 
+	}
+}
+ghatanothoa_region = { 
+	areas = { 
+		ghatanothoa_area blob_outpost_area slime_outpost_area magic_pot_bay noan_pandoras ancient_scylla_caves ancient_scylla_coast asura_caves moray_eel_area moray_eel_coast
+		ghatanothoa_caves liqueur_slime_coast 
+	}
+}
+makai_plansect_region = { 
+	areas = { 
+		plansect_scylla_woods makai_plansect_area plansect_lamia_strait plansect_scylla_bay plansect_lamia_mountains plansect_lamia_forest plansect_scylla_forest 
+	}
+}
+makai_grand_noah_region = { 
+	areas = { 
+		makai_grand_noah_area bomb_woods asura_area liqueur_woods_area kanade_coast slime_princess_area slime_princess_plains bomb_slime_area liqueur_slime_area makai_eastern_noah
+		giant_slime_mountains giant_slime_area 
+	}
+}
+makai_yamatai_region = { 
+	areas = { 
+		angel_resistance_hideout makai_akaname_coast makai_tamamo_lab makai_horai_mountain makai_akaname_area makai_yamatai_area cait_sith_factories gal_fox_factories makai_nekogami_area makai_silver_oni_area
+		scorpio_taoist_realm scorpio_taoist_woods scorpio_taoist_mountains makai_akaname_mountains scorpio_taoist_labs 
+	}
+}
+makai_harpy_village = { 
+	areas = { 
+		makai_finoa_area finoan_archeopteryx jura_aevis_area marcosian_area slime_princess_coast makai_privateer_outpost marcosian_coast bomb_slime_bay jura_aevis_mountains makai_harpy_coast
+		makai_noah_train_station 
+	}
+}
+makai_san_ilia_region = { 
+	areas = { 
+		makai_san_ilia makai_northern_san_ilia granavas_area roccubus_mountains makai_western_san_ilia testarossa_coast roccubus_area makai_silver_oni_mountain testarossa_mansion testarossa_area
+		makai_eastern_san_ilia makai_minagi_battlegrounds arcubus_area asura_mountains 
+	}
+}
+makai_ambrosia_region = { 
+	areas = { 
+		ambrosia_woods makai_haunted_mansion makai_artiste_coast giga_driad_woods ambrosia_area giga_driad_area makai_monte_carlo makai_chromes_cemeteries rescubus_area 
+	}
+}
+makai_puppeteer_region = { 
+	areas = { 
+		makai_puppeteer_dimensional_passage makai_puppeteer_tower makai_seekers_cave arcubus_coast makai_doll_factories makai_monster_lord_factories natalian_pandoras rescubus_coast rescubus_hills 
+	}
+}
+makai_natalia_region = { 
+	areas = { 
+		makai_natalia_area gal_fox_area gal_fox_plains makai_natalia_train_station makai_western_natalia cait_sith_area makai_nekogami_coast makai_natalia_fields gal_fox_woods
+		cait_sith_woods wandering_nekogami_area wandering_silver_onis 
+	}
+}
+makai_mithra_region = { 
+	areas = { 
+		rogue_elf_coast makai_ilias_continent_train_station high_baphomet_area rogue_elf_area makai_mithra_castle makai_ilias_pandoras granavas_mountains rogue_elf_mountains 
+	}
+}
+makai_enrika_region = { 
+	areas = { 
+		makai_enrika makai_iliasville makai_enrika_coast makai_fallen_angel_area makai_harpy_wastelands ancient_dragon_coast high_baphomet_mountains high_baphomet_coast ancient_dragon_mountains granavas_coast
+		ancient_dragon_area 
+	}
+}
+makai_sabasa_region = { 
+	areas = { 
+		makai_sabasa makai_safina_wastelands makai_pyramid makai_hiruko_savanna makai_hiruko_oasis makai_hiruko_desert makai_hiruko_coast makai_southern_desert 
+	}
+}
+makai_safar_ruins_region = { 
+	areas = { 
+		makai_safar_ruins loa_desert_area pabilsag_drylands pabilsag_oasis arcubus_bay makai_loa_coast makai_north_safar nancubus_coast pabilsag_area nancubus_savanna
+		nancubus_desert nancubus_area arcubus_drylands 
+	}
+}
+makai_great_pirate_cave_region = { 
+	areas = { 
+		makai_great_pirate_cave makai_mermaid_pirate_coast rosa_pirates_base merman_caves merman_coast maneater_woods makai_former_magistea safina_pandoras maneater_coast 
+	}
+}
+makai_hellgondo_train_station_region = { 
+	areas = { 
+		hellgondo_train_station athena_coast shiva_area athena_area gargoyle_mountains gargoyle_area gargoyle_caves garchimacera_caves 
+	}
+}
+makai_hellgondo_shrine_region = { 
+	areas = { 
+		makai_hellgondo_shrine shiva_mountains shiva_coast aun_area aun_plains dragonhead_area aun_mountains dragonhead_mountains tao_area athena_mountains
+	}
+}
+makai_sealed_sinner_prison_region = { 
+	areas = { 
+		makai_sealed_sinner_prison archaeopteryx_area mephisto_area dragonhead_coast mephisto_mansion archaeopteryx_mountains marlboro_area archaeopteryx_drylands monstro_area tao_mountains
+		monstro_bay monstro_coast neptune_mountains neptune_area neptune_palace marlboro_plains tao_mansion 
+	}
+}

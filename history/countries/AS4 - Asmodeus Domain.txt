@@ -1,0 +1,21 @@
+government = monarchy
+religion = dark_goddess_religion
+technology_group = TECH_SCYLLA
+primary_culture = Royal_Scylla
+add_government_reform = Scylla_realm
+government_rank = 3
+1444.1.1 = { 
+	monarch = { 
+		name = "Adeus"
+		dynasty = "Asmodeus"
+		birth_date = 1424.1.1
+		adm = 5
+		dip = 5
+		mil = 5
+		female = yes
+	}
+	unlock_race = { race = sea_dweller }
+	unlock_race = { race = scylla }
+	unlock_race = { race = yoma }
+}
+capital = 3976

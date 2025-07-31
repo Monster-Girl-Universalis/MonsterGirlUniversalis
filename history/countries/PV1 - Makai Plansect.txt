@@ -16,4 +16,4 @@ technology_group = TECH_LAMIA
 		female = yes
 	}
 }
-capital = 3071
+capital = 3101

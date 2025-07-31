@@ -1,0 +1,9 @@
+add_core = GA6
+owner = GA6
+base_tax = 4
+base_manpower = 4
+base_production = 4
+culture = Garchimacera_Girl
+religion = dark_goddess_religion
+controller = GA6
+is_city = no

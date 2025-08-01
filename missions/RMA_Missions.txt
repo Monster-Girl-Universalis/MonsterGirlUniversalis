@@ -788,7 +788,7 @@ rma_branch_4 = {
 				}
 				add_permanent_claim = ROOT
 			}
-			slug_plains_area = {
+			abandoned_mines = {
 				limit = {
 					NOT = { is_core = ROOT } 
 					NOT = { is_permanent_claim = ROOT } 
@@ -803,12 +803,12 @@ rma_branch_4 = {
 		position = 7
 		provinces_to_highlight = {
 			OR = {
-				area = slug_plains_area
+				area = abandoned_mines
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
-			slug_plains_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			abandoned_mines = { type = all country_or_non_sovereign_subject_holds = ROOT }
 		}
 		effect = {
 			add_country_modifier = {

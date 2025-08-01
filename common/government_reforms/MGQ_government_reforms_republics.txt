@@ -293,9 +293,11 @@ pirate_state_reform = {
 		max_absolutism = 20
 	}
 	conditional = {
-		OR = {
-			has_dlc = "Lions of the North"
-			has_dlc = "Golden Century"
+		allow = {
+			OR = {
+				has_dlc = "Lions of the North"
+				has_dlc = "Golden Century"
+			}
 		}
 		factions_frame = 9
 		factions = {
@@ -337,9 +339,11 @@ fishy_pirates_reform = {
 		max_absolutism = 20
 	}
 	conditional = {
-		OR = {
-			has_dlc = "Lions of the North"
-			has_dlc = "Golden Century"
+		allow = {
+			OR = {
+				has_dlc = "Lions of the North"
+				has_dlc = "Golden Century"
+			}
 		}
 		factions_frame = 9
 		factions = {
@@ -626,9 +630,11 @@ gloria_pirates_reform = {
 		max_absolutism = 20
 	}
 	conditional = {
-		OR = {
-			has_dlc = "Lions of the North"
-			has_dlc = "Golden Century"
+		allow = {
+			OR = {
+				has_dlc = "Lions of the North"
+				has_dlc = "Golden Century"
+			}
 		}
 		factions_frame = 9
 		factions = {

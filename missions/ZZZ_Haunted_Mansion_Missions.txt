@@ -998,8 +998,6 @@ remove_ruler_personality = loose_lips_personality
 remove_ruler_personality = obsessive_perfectionist_personality
 remove_ruler_personality = malevolent_personality
 remove_ruler_personality = reformist_personality
-remove_ruler_personality = enlightened_personality
-remove_ruler_personality = absolutist_personality
 remove_ruler_personality = legendary_pirate_personality
 
 
@@ -1404,10 +1402,6 @@ haunted_mansion_west = {
 			
 		}
 		985 = {
-			limit = { 
-				NOT = { owned_by = ROOT }
-				NOT = { is_core = ROOT } 
-			}
 			add_permanent_claim = ROOT 
 		}
 			
@@ -2183,7 +2177,7 @@ haunted_mansion_plant_4 = {
 		NVM = {
 			add_historical_friend = HM1
 		}
-		PGM = {
+		PG1 = {
 			add_historical_friend = HM1
 		}
 		
@@ -2250,10 +2244,7 @@ haunted_mansion_plant_6 = {
 		position = 6
 		
 		provinces_to_highlight = {
-			OR = {
-				superregion = san_ilia_superregion
-				subcontinent = san_ilia_superregion
-			}
+			superregion = san_ilia_superregion
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		

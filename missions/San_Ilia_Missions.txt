@@ -830,7 +830,7 @@ san_ilia_consolidating_natalia_forest_of_spirits = {
 		
 		effect = {
 			unlock_race = { race = elf }
-			all_owned_province = {
+			every_owned_province = {
 				limit = {
 					religion = wind_religion
 				}
@@ -1406,8 +1406,8 @@ remove_ruler_personality = loose_lips_personality
 remove_ruler_personality = obsessive_perfectionist_personality
 remove_ruler_personality = malevolent_personality
 remove_ruler_personality = reformist_personality
-remove_ruler_personality = enlightened_personality
-remove_ruler_personality = absolutist_personality
+#remove_ruler_personality = enlightened_personality
+#remove_ruler_personality = absolutist_personality
 remove_ruler_personality = legendary_pirate_personality
 
 

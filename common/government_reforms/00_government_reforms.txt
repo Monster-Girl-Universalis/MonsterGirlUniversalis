@@ -1927,7 +1927,7 @@ artiste_legacy = {
 	allow_convert = no
 	valid_for_nation_designer = yes
 	nation_designer_cost = 20
-	has_russian_abilities = yes
+	#has_russian_abilities = yes
 
 	modifiers = {
 		governing_capacity = 250

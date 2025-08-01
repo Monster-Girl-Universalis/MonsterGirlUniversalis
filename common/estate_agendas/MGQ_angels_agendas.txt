@@ -1123,7 +1123,7 @@ estate_angels_prove_devotion_to_ilias = {
 			estate = estate_angels
 			loyalty = 15
 		}
-		stability = 1
+		add_stability = 1
     }
     failing_effect = {
 		

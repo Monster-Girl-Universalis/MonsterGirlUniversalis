@@ -335,7 +335,7 @@ gen_doll_produce_golem_seals_mod = {
 gen_doll_quality_precision_mod = {
 	all_power_cost = -0.02
 }
-gen_doll_secure_parts_for_doll_production__mod = {
+gen_doll_secure_parts_for_doll_production_mod = {
 	development_cost = -0.05
 	build_cost = -0.10
 }
@@ -393,6 +393,11 @@ gen_lamia_perfect_administrators = {
 gen_lamia_secure_flail_production = {
 	shock_damage = 0.075
 	infantry_shock = 0.25
+}
+
+gen_lamia_expand_our_realm = {
+	shock_damage = 0.10	
+	defensiveness = 0.25
 }
 
 gen_yoma_secure_rapier_production = {

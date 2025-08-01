@@ -141,10 +141,10 @@ country_decisions = {
 				culture = worm_summoner
 			}
 			NOT = { exists = MV2 }
-			NOT = { is_tag = MV1 }
+			#NOT = { is_tag = MV1 }
 			NOT = { was_tag = MV1 }
-			NOT = { is_tag = TM1 }
-			NOT = { wass_tag = TM1 }
+			#NOT = { is_tag = TM1 }
+			NOT = { was_tag = TM1 }
 		}
 		allow = {
 			AND = {

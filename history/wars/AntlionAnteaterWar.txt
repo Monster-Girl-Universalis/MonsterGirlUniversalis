@@ -1,6 +1,6 @@
 name = "Antlion-Anteater War"
 war_goal = {
-	type = humiliate_rival
+	type = humiliate
 	casus_belli = cb_humiliate_rival
 }
 

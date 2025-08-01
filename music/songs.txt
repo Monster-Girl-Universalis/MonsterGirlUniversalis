@@ -19,16 +19,7 @@ song = {
 	}
 }
 
-song = {
-	name = "castle1_san_ilia"
-	
-	chance = {
-		modifier = {
-			factor = 5
-			capital_scope = { region = san_ilia_region  }
-		}		
-	}
-}
+
 
 song = {
 	name = "boss0"
@@ -1022,9 +1013,13 @@ song = {
 	
 	chance = {
 		modifier = {
-			factor = 5
+			factor = 3
 			tag = SI1
-		}				
+		}
+		modifier = {
+			factor = 3
+			capital_scope = { region = san_ilia_region  }
+		}					
 	}
 }
 

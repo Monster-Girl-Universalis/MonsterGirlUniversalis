@@ -272,15 +272,15 @@ country_event = {
 		trigger = {
 			OR = {
 				any_owned_province = {
-					religion_group = wind_religion_g 
+					religion = wind_religion 
 				}
 				any_owned_province = {
 					any_neighbor_province = {
-						religion_group = wind_religion_g 
+						religion = wind_religion 
 					}
 				}
 				any_neighbor_country = {
-					religion_group = wind_religion_g 
+					religion = wind_religion 
 				}
 			}
 		}
@@ -297,15 +297,15 @@ country_event = {
 		trigger = {
 			OR = {
 				any_owned_province = {
-					religion_group = earth_religion_g 
+					religion = earth_religion
 				}
 				any_owned_province = {
 					any_neighbor_province = {
-						religion_group = earth_religion_g 
+						religion = earth_religion 
 					}
 				}
 				any_neighbor_country = {
-					religion_group = earth_religion_g 
+					religion = earth_religion 
 				}
 			}
 		}
@@ -322,15 +322,15 @@ country_event = {
 		trigger = {
 			OR = {
 				any_owned_province = {
-					religion_group = water_religion_g 
+					religion = water_religion
 				}
 				any_owned_province = {
 					any_neighbor_province = {
-						religion_group = water_religion_g 
+						religion = water_religion 
 					}
 				}
 				any_neighbor_country = {
-					religion_group = water_religion_g 
+					religion = water_religion 
 				}
 			}
 		}
@@ -347,15 +347,15 @@ country_event = {
 		trigger = {
 			OR = {
 				any_owned_province = {
-					religion_group = fire_religion_g 
+					religion = fire_religion 
 				}
 				any_owned_province = {
 					any_neighbor_province = {
-						religion_group = fire_religion_g 
+						religion = fire_religion 
 					}
 				}
 				any_neighbor_country = {
-					religion_group = fire_religion_g 
+					religion = fire_religion 
 				}
 			}
 		}

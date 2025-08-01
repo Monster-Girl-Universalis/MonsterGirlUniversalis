@@ -260,6 +260,24 @@
  izanami_shrines: "Izanami Shrines"
  izanami_shrines_desc: "Izanami is the infamous goddess of the Netherworld who used to be worshipped in ancient Yamatai. One is truly desperate if they decide to revive her worship..."
 
+ #Variables
+ USES_CULTS:0 "$COUNTRY|Y$ uses Shrines."
+ USES_NOT_CULTS:0 "$COUNTRY|Y$ does NOT use Shrines."
+ CULT_HELP_DESC:1 "New Shrines can be gained by bordering $RELIGION$ nations of other religions and during times of hardship"
+ CONFIRM_NEW_CULT_TITLE:0 "Embracing a Shrine"
+ CONFIRM_NEW_CULT_DESC:0 "By choosing to embrace this shrine we are accepting its traditions and agree to follow the demands this places upon our ruler."
+ RV_NO_CULT:0 "No Shine Selected"
+ RV_NO_CULT_TITLE:0 "No Current Shrine"
+ RV_NO_CULT_DESC:0 "Your religion allows you to select which shrine to follow. Each shrine will come with its own effects and last until your monarch changes."
+ RV_PICK_CULT:0 "Select Shrine"
+ RV_PICK_CULT_THIS:0 "Pick $CULTNAME$"
+ HAS_ADOPTED_CULT:0 "Is following $CULTNAME|Y$"
+ NOT_HAS_ADOPTED_CULT:0 "Is NOT following $CULTNAME|Y$"
+ HAS_UNLOCKED_CULT:0 "Has unlocked $CULTNAME|Y$"
+ NOT_HAS_UNLOCKED_CULT:0 "Has NOT unlocked $CULTNAME|Y$"
+ CHANGE_CULT_EFFECT:0 "Change Shrine to $CULTNAME|Y$"
+ UNLOCK_CULT_EFFECT:0 "Unlock Shrine $CULTNAME|Y$"
+
  ###SEEKERS OF TRUTH PLACES OF RESEARCH###
  HOLY_SITE_20_DESC: "Eastern Ilias Continent Tartarus is a rather peculiar place. One of the many Tartarus rifts which appeared in our world after The Great Disaster. There have been reports of abnormal crops growth, as well as mutated fish. According to the most experienced researchers, this rift may lead to a parallel world a few years behind our own. In that world the village of Rostrum should still exist..."
  HOLY_SITE_58_DESC: "Southern Ilias Continent Tartarus is yet another mysterious rift which appeared after the Great Disaster. Recently it's been thoroughly investigated by a group of researchers from Iliasburg and Iliasport. The Alliance of Wisdom society has managed to gather even more information on this subject. Not only apoptosis beings and makina found there, but also a peculiar interdimensional door. According to them this door may lead to a parallel world where the Goddess Ilias performed so-called 'Re-creation Plan' essentially wiping monsters and humans for good."

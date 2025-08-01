@@ -287,7 +287,7 @@ country_event = {
 		change_cult = sylph_shrines
 		tooltip = {
 			add_ruler_modifier = {
-				name = slyph_shrines_tooltip
+				name = sylph_shrines_tooltip
 				duration = -1
 			}
 		}
@@ -446,7 +446,7 @@ country_event = {
 		change_cult = amaterasu_shrines 
 		tooltip = {
 			add_ruler_modifier = {
-				name = amaterasu_shrine_tooltip
+				name = amaterasu_shrines_tooltip
 				duration = -1
 			}
 		}

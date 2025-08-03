@@ -1,0 +1,6 @@
+spriteTypes = {
+	spriteType = {
+		name = "government_reform_mei_lin_state"
+		texturefile = "gfx//interface//government_reform_icons//mei_lin_state.dds"
+	}
+}

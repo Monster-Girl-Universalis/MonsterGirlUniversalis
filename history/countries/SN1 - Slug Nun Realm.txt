@@ -1,0 +1,21 @@
+government = monarchy
+government_rank = 1
+primary_culture = Slug_Girl
+add_government_reform = Land_Dweller_realm
+religion = ilias_light_religion
+technology_group = TECH_LAND_DWELLER
+historical_friend = SLT #Big slimy sisters...hopefully you can see the light of the one true faith before the goddess burns your lands into the ground
+historical_friend = MDS #Sisters that will face the wrath of the goddess
+capital = 432
+1444.1.1 = { 
+	monarch = { 
+		name = "Rosary"
+		dynasty = "the Slug"
+		birth_date = 1424.1.1
+		adm = 5
+		dip = 4
+		mil = 4
+		female = yes
+	}
+	add_ruler_personality = zealot_personality
+}

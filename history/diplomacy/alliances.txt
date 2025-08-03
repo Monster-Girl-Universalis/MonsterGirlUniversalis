@@ -24,3 +24,9 @@ alliance = {
 	second = MDS #High Slugs
 	start_date = 1444.1.1 
 }
+#Slug Tower and Slug Nun Realm
+alliance = {
+	first = SLT #Slug Tower
+	second = SN1 #Slug Nun Realm
+	start_date = 1444.1.1 
+}

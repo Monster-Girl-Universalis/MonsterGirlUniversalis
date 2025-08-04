@@ -564,15 +564,19 @@ slugs_branch_5 = {
 		position = 3
 		provinces_to_highlight = {
 			OR = {
-				area = slug_plains_area
-				area = slug_coast_area
+				area = midas_farms
+				area = slug_coast
+				province_id = 471
+				province_id = 454
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
 			stability = 3
-			slug_plains_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
-			slug_coast_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			midas_farms = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			slug_coast = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			471 = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			454 = { type = all country_or_non_sovereign_subject_holds = ROOT }
 		}
 		effect = {
 			add_country_modifier = {

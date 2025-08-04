@@ -1,0 +1,6 @@
+spriteTypes = {	
+	spriteType = {
+		name = "LAND_DWELLERS_DAMP_eventPicture"
+		texturefile = "gfx//event_pictures//event_pictures_slugsshared//LAND_DWELLERS_DAMP_eventPicture.dds"
+	}
+}

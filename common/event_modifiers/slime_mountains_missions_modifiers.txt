@@ -1,0 +1,61 @@
+slm_unification = {
+	land_morale = 0.15
+}
+slm_idea = {
+	idea_cost = -0.15
+}
+slm_institution = {
+	global_prosperity_growth = 0.20
+}
+slm_reform = {
+	monthly_reform_progress_modifier = 0.25
+}
+slm_republican_tradition = {
+	republican_tradition = 0.50
+}
+slm_slime_multiplication = {
+	global_regiment_recruit_speed = -0.20
+	garrison_size = 0.25
+}
+slm_bunni_idea = {
+	idea_cost = -0.10
+}
+slm_harpy_fight = {
+	morale_damage_received = -0.15
+	land_morale = 0.10
+}
+slm_iliasburg_capital = {
+	core_creation = -0.25
+	trade_efficiency = 0.25
+}
+slm_iliasburg_down = {
+	culture_conversion_cost = -0.10
+	culture_conversion_time = -0.30
+}
+slm_slimy_ilias = {
+	development_cost_in_primary_culture = -0.05
+	administrative_efficiency = 0.05
+	trade_steering = 0.10
+	mercantilism_cost = -0.10
+}
+slm_blob = {
+	province_warscore_cost = -0.10
+}
+slm_money = {
+	global_tax_income = 24
+	development_cost = -0.15
+}
+slm_defense = {
+	hostile_attrition = 2
+	defensiveness = 0.20
+}
+slm_final_dev = {
+	trade_efficiency = 0.10
+	development_cost = -0.10
+	production_efficiency = 0.10
+}
+slm_trade_fleet = {
+	light_ship_power = 0.20
+	light_ship_hull_size_modifier = 0.20
+	light_ship_number_of_cannons_modifier = 0.20
+}

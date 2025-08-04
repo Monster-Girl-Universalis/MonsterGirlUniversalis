@@ -1,0 +1,41 @@
+########################################
+# Flavor Events for SLM by Cris
+########################################
+
+namespace = flavor_slm
+
+###Slime Mountains Flavor events###
+
+
+country_event = {
+	id = flavor_slm.1
+	title = flavor_slm.1_title
+	desc = flavor_slm.1_desc
+	picture = SLM_RIVER_eventPicture
+	fire_only_once = yes
+	is_triggered_only = no
+	trigger = {
+		has_country_flag = has_slime_republic
+	}
+	mean_time_to_happen = {
+	months = 2
+	}
+	option = {
+		name = flavor_slm.1.a
+		override_country_name = SLIME_REPUBLIC
+			change_country_color = { 
+   			 color = { 20 50 210 }
+}
+		add_prestige = 25
+		ai_chance = {
+			factor = 100
+		}
+	}
+	option = {
+		name = flavor_slm.1.b
+		add_prestige = 25
+		ai_chance = {
+			factor = 0
+		}
+	}
+}

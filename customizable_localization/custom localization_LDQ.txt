@@ -1,0 +1,102 @@
+﻿defined_text = {
+    name = GetHolySlug
+    random = no
+
+    text = {
+        localisation_key = string_holy_slug
+        trigger = {
+            religion = ilias_light_religion
+        }
+    }
+    text = {
+        localisation_key = string_not_holy_slug
+        trigger = {
+            always = yes
+        }
+    }
+}
+defined_text = {
+    name = GetHolySlug2
+    random = no
+
+    text = {
+        localisation_key = string_holy_slug_2
+        trigger = {
+            religion = ilias_light_religion
+        }
+    }
+    text = {
+        localisation_key = string_not_holy_slug_2
+        trigger = {
+            always = yes
+        }
+    }
+}
+defined_text = {
+    name = GetMonsterSlug
+    random = no
+
+    text = {
+        localisation_key = string_monster_slug
+        trigger = {
+            religion = ilias_light_religion
+        }
+    }
+    text = {
+        localisation_key = string_not_monster_slug
+        trigger = {
+            always = yes
+        }
+    }
+}
+defined_text = {
+    name = GetKrakkenMelk
+    random = no
+
+    text = {
+        localisation_key = string_krakken_melk
+        trigger = {
+            religion = ilias_light_religion
+        }
+    }
+    text = {
+        localisation_key = string_not_krakken_melk
+        trigger = {
+            always = yes
+        }
+    }
+}
+defined_text = {
+    name = GetCrusadeMelk
+    random = no
+
+    text = {
+        localisation_key = string_crusade_melk
+        trigger = {
+            religion = ilias_light_religion
+        }
+    }
+    text = {
+        localisation_key = string_not_crusade_melk
+        trigger = {
+            always = yes
+        }
+    }
+}
+defined_text = {
+    name = GetCrusadeMelk2
+    random = no
+
+    text = {
+        localisation_key = string_crusade_melk2
+        trigger = {
+            religion = ilias_light_religion
+        }
+    }
+    text = {
+        localisation_key = string_not_crusade_melk2
+        trigger = {
+            always = yes
+        }
+    }
+}

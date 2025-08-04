@@ -1,0 +1,729 @@
+########################################
+# Missions for SLM by Cris
+########################################
+
+branch_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		OR = {
+		tag = SLM
+		was_tag = SLM
+		}
+	}
+	has_country_shield = yes
+	SLM_race_slime = { 
+		icon = slime_member
+		required_missions = {}
+		position = 1
+		trigger = {
+			full_idea_group = slime_ideas
+		}
+		effect = {
+			add_country_modifier = {
+				name = slm_idea
+				duration = 7300
+			}
+		}
+	}
+	SLM_dev = { 
+		icon = capital
+		required_missions = {SLM_race_slime}
+		trigger = {
+			full_idea_group = human_ideas
+			full_idea_group = infrastructure_ideas
+		}
+		effect = {
+			add_country_modifier = {
+				name = slm_institution
+				duration = -1
+			}
+		}
+	}
+	SLM_trading = { 
+		icon = lime_trade
+		required_missions = {SLM_dev}
+		trigger = {
+			full_idea_group = trade_ideas
+			full_idea_group = economic_ideas
+		}
+		effect = {
+			add_country_modifier = {
+				name = slm_reform
+				duration = -1
+			}
+		}
+	}
+	SLM_republic = { 
+		icon = lime_democratic
+		required_missions = {SLM_trading}
+		trigger = {
+			grown_by_development = 750
+		}
+		effect = {
+			add_country_modifier = {
+				name = slm_republican_tradition
+				duration = 9125
+			}
+			set_country_flag = has_slime_republic
+			change_government = republic
+			add_government_reform = slime_republic
+		}
+	}
+	SLM_great_power = { 
+		icon = lime_boobs
+		required_missions = {SLM_republic}
+		provinces_to_highlight = {
+			OR = {
+			province_id = 2409_province
+			}
+		}
+		trigger = {
+			monthly_income = ML1
+			grown_by_development = 2000
+		}
+		effect = {
+			add_country_modifier = {
+				name = slm_slime_multiplication
+				duration -1
+			}
+			add_adm_power = 100
+			add_dip_power = 100
+			add_mil_power = 100
+			
+		}
+	}
+}
+branch_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		OR = {
+		tag = SLM
+		was_tag = SLM
+		}
+	}
+	has_country_shield = yes
+	SLM_humans = { 
+		icon = marie
+		position = 3
+		required_missions = {SLM_starting_blobbing}
+		provinces_to_highlight = {
+			OR = {
+				area = iliasville_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			iliasville_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+		}
+		effect = {
+			iliasville_outskirts_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			trials_way_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			97 = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			90 = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			unlock_race = { race = human }
+		}
+	}
+	SLM_slugs = { 
+		icon = slu_absolutism
+		required_missions = {SLM_humans}
+		provinces_to_highlight = {
+			OR = {
+				area = iliasville_outskirts_area
+				area = trials_way_area
+				province_id = 97
+				province_id = 90
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			iliasville_outskirts_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			trials_way_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			97 = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			90 = { type = all country_or_non_sovereign_subject_holds = ROOT }
+		}
+		effect = {
+			merchants_southern_route_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_core = ROOT
+			}
+			serene_coast_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_core = ROOT
+			}
+			south_ilias_tartarus_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			south_ilias_coast_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			unlock_race = { race = land_dweller }
+			add_army_tradition = 15
+		}
+	}
+	SLM_bunni = { 
+		icon = bunny_slime
+		required_missions = {SLM_slugs}
+		provinces_to_highlight = {
+			OR = {
+				area = merchants_southern_route_area
+				area = serene_coast_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			merchants_southern_route_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			serene_coast_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+		}
+		effect = {
+			merchants_southern_route_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_core = ROOT
+			}
+			serene_coast_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_core = ROOT
+			}
+			south_ilias_tartarus_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			south_ilias_coast_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			add_adm_power = 200
+			add_country_modifier = {
+				name = slm_bunni_idea
+				duration = -1
+			}
+		}
+	}
+}
+branch_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		OR = {
+		tag = SLM
+		was_tag = SLM
+		}
+	}
+	has_country_shield = yes
+	SLM_unification = { 
+		icon = FAR_lime
+		required_missions = {}
+		position = 1
+		trigger = {
+			OR = {
+				is_rival = SLR
+			}
+		}
+		effect = {
+			slime_forest_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_core = ROOT
+			}
+			add_country_modifier = {
+				name = slm_unification
+				duration = 7300
+			}
+			add_manpower = 5
+		}
+	}
+	SLM_starting_blobbing = { 
+		icon = lime_2
+		required_missions = {SLM_unification}
+		provinces_to_highlight = {
+			OR = {
+				area = slime_forest_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			slime_forest_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+		}
+		effect = {
+			iliasville_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			cave_of_trials_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			talus_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			north_pornof_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			dog_plains_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			south_irina_road_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			earthworm_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			54 = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			48 = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			add_country_modifier = {
+				name = slm_blob
+				duration = 9125
+			}
+		}
+	}
+	SLM_irina_road = { 
+		icon = RMA_lime
+		required_missions = {SLM_starting_blobbing}
+		provinces_to_highlight = {
+			OR = {
+				area = south_irina_road_area
+				area = earthworm_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			south_irina_road_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			earthworm_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+		}
+		effect = {
+			iliasburg_road_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			iliasburg_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	SLM_iliasburg = { 
+		icon = iliasburg_market
+		required_missions = {SLM_irina_road}
+		provinces_to_highlight = {
+			OR = {
+				area = iliasburg_road_area
+				area = iliasburg_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			iliasburg_road_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			iliasburg_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+		}
+		effect = {
+			irina_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			enrika_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			iliasburg_plains = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			eastern_iliasburg = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			heavenly_bandits_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			add_country_modifier = {
+				name = slm_iliasburg_capital
+				duration = 10950
+			}
+			add_adm_power = 150
+			add_army_tradition = 15
+		}
+	}
+	SLM_midas = { 
+		icon = RMA_gold
+		required_missions = {SLM_iliasburg}
+		provinces_to_highlight = {
+			OR = {
+				area = eastern_iliasburg
+				area = iliasburg_plains
+				area = heavenly_bandits_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			eastern_iliasburg = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			iliasburg_plains = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			heavenly_bandits_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+		}
+		effect = {
+			midas_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			add_country_modifier = {
+				name = slm_iliasburg_down
+				duration = -1
+			}
+			add_adm_power = 200
+			add_army_tradition = 20
+		}
+	}
+	SLM_big_blue_blob = { 
+		icon = lime
+		required_missions = {SLM_midas SLM_bunni SLM_harpy}
+		provinces_to_highlight = {
+			OR = {
+				region = enrika_region
+				region = iliasburg_region
+				region = iliasville_region
+				region = happiness_village_region
+				region = midas_region
+				region = pornof_region
+				region = irina_region
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			enrika_region = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			iliasburg_region = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			iliasville_region = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			happiness_village_region = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			midas_region = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			pornof_region = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			irina_region = { type = all country_or_non_sovereign_subject_holds = ROOT }
+		}
+		effect = {
+			add_country_modifier = {
+				name = slm_slimy_ilias
+				duration = -1
+			}
+			add_power_projection = { 
+				type = 25_permanent_power_projection
+				amount = 25 
+			} 	 	 	 	 	 	 	 		 	 	 	 	 	 	 	
+			add_prestige_or_monarch_power = {
+				amount = 100
+			}
+		}
+	}
+}
+branch_4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		OR = {
+		tag = SLM
+		was_tag = SLM
+		}
+	}
+	has_country_shield = yes
+	SLM_mandragora = { 
+		icon = FAR_ragora
+		position = 3
+		required_missions = {SLM_starting_blobbing}
+		provinces_to_highlight = {
+			OR = {
+				area = talus_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			talus_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+		}
+		effect = {
+			pornof_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			add_adm_power = 200
+			unlock_race = { race = alraune}
+		}
+	}
+	SLM_beast = { 
+		icon = bunni_horny
+		position = 3
+		required_missions = {SLM_mandragora}
+		provinces_to_highlight = {
+			OR = {
+				area = north_pornof_area
+				area = orcish_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			north_pornof_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			orcish_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+		}
+		effect = {
+			add_mil_power = 150
+			unlock_race = { race = beast}
+		}
+	}
+	SLM_harpy = { 
+		icon = reina
+		position = 3
+		required_missions = {SLM_beast}
+		provinces_to_highlight = {
+			OR = {
+				area = dog_plains_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			dog_plains_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+		}
+		effect = {
+			happiness_village_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			add_country_modifier = {
+				name = slm_harpy_fight
+				duration = 10950
+			}
+			add_army_tradition = 20
+		}
+	}
+}
+branch_5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		OR = {
+		tag = SLM
+		was_tag = SLM
+		}
+	}
+	has_country_shield = yes
+	SLM_big_city = { 
+		icon = iliasburg_plaza_day
+		position = 1
+		required_missions = {}
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = obj_30_development_city_tooltip
+				any_owned_province = {
+					exclude_from_progress = {
+						is_core = ROOT
+						controlled_by = owner
+					}
+					development_discounting_tribal = 30
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = slm_money
+				duration = 7300
+			}
+		}
+	}
+	SLM_walls = { 
+		icon = slime_state_fort
+		required_missions = {SLM_big_city}
+		trigger = {
+			47 = {
+				owned_by = ROOT
+				has_building = fort_15th
+			}
+			94 = {
+				owned_by = ROOT
+				has_building = fort_15th
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = slm_defense
+				duration = 9125
+			}
+		}
+	}
+	SLM_rich_slimes = { 
+		icon = slime_state_prosper
+		required_missions = {SLM_walls}
+		provinces_to_highlight = {
+		OR = {
+			area = slime_forest_area
+			area = slime_village_area
+		}
+		OR = {
+			NOT = { development = 40 }
+			NOT = { owned_by = ROOT }
+			NOT = { is_core = ROOT }
+		}
+	}
+		trigger = {
+			slime_forest_area = {
+			type = all
+			development = 40
+			owned_by = ROOT
+			is_core = ROOT
+		}
+		slime_village_area = {
+			type = all
+			development = 40
+			owned_by = ROOT
+			is_core = ROOT
+		}
+		}
+		effect = {
+			add_country_modifier = {
+				name = slm_final_dev
+				duration = -1
+			}
+		}
+	}
+	SLM_trade_ships = { 
+		icon = mission_umineko
+		required_missions = {}
+		position = 4
+		trigger = {
+			num_of_ports = 20
+			num_of_light_ship = 40
+			has_flagship = yes
+			is_great_power = yes
+		}
+		effect = {
+			add_country_modifier = {
+				name = slm_trade_fleet
+				duration = -1
+			}
+		}
+	}
+}

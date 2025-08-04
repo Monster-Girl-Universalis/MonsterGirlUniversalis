@@ -1,0 +1,120 @@
+########################################
+# Flavor Events for the slug tags by Cris
+########################################
+
+namespace = flavor_slugs
+
+###Slugs Flavor events###
+
+country_event = {
+	id = flavor_slugs.1
+	title = flavor_slugs.1_title
+	desc = flavor_slugs.1_desc
+	picture = LAND_DWELLERS_DAMP_eventPicture
+	fire_only_once = yes
+	is_triggered_only = no
+	trigger = {
+		OR = {
+			primary_culture = Leech_Girl
+			primary_culture = Earthworm_Girl
+			primary_culture = Slug_Girl
+		}
+		433 = {
+			owned_by = ROOT
+			is_core = ROOT
+		}
+	}
+	mean_time_to_happen = {
+	months = 12
+	}
+	option = {
+		name = flavor_slugs.1.a
+		goto = 433
+		433 = {
+			change_culture = ROOT
+			change_religion = ROOT
+			add_province_modifier = {
+				name = slug_local_damp
+				duration = -1
+			}
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+country_event = {
+	id = flavor_slugs.2
+	title = flavor_slugs.2_title
+	desc = flavor_slugs.2_desc
+	picture = SLUG_MIDAS_eventPicture
+	fire_only_once = yes
+	is_triggered_only = no
+	trigger = {
+			NOT = {tag = SLU}
+		    primary_culture = Slug_Girl
+			midas_village_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			midas_plains_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			slug_plains_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			slug_coast_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+}
+   	mean_time_to_happen = {
+	months = 12
+	}
+	option = {
+		name = flavor_slugs.2.a
+		midas_village_area = {
+			change_culture = ROOT
+			change_religion = ROOT
+		}
+		midas_plains_area = {
+			change_culture = ROOT
+			change_religion = ROOT
+		}
+		add_adm_power = 75
+		add_mil_power = 75
+		ai_chance = {
+			factor = 100
+		}
+	}
+	option = {
+		name = flavor_slugs.2.b
+		if = {
+    limit = {
+        NOT = {accepted_culture = ilian_human}
+    }
+	midas_plains_area = {
+		add_province_modifier = {
+			name = slug_local_midas
+			duration = 7300
+		}
+	}
+	midas_village_area = {
+		add_province_modifier = {
+			name = slug_local_midas
+			duration = 7300
+		}
+	}
+    add_accepted_culture = ilian_human
+}   
+ 
+else = {
+	midas_plains_area = {
+		add_province_modifier = {
+			name = slug_local_midas
+			duration = 7300
+		}
+	}
+	midas_village_area = {
+		add_province_modifier = {
+			name = slug_local_midas
+			duration = 7300
+		}
+	}
+    add_dip_power = 150
+}
+		ai_chance = {
+			factor = 100
+		}
+	}
+}

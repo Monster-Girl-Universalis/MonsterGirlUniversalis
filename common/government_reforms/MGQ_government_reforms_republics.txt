@@ -1,3 +1,25 @@
+slime_republic = {
+	icon = "slime_republic"
+	allow_normal_conversion = no
+	potential = {
+	has_country_flag = has_slime_republic
+	}
+	modifiers = {
+		reelection_cost = -0.10
+		monarch_lifespan = 1
+		governing_capacity = 200
+		global_trade_power = 0.10
+	}
+	conditional = {
+		allow = {
+			OR = {
+				has_dlc = "Common Sense"
+				has_dlc = "Domination"
+			}
+		}
+		has_parliament = yes
+	}
+}
 criminal_syndicate_reform = {
 	lock_level_when_selected = yes
 	icon = "paper_money_map"

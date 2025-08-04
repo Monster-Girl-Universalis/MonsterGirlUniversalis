@@ -708,6 +708,7 @@ republic = {
 				adventurer_camp_reform
 				research_camp_reform
 				pleasure_camp_reform
+				slime_republic
 			}
 		}
 		republican_virtues = {

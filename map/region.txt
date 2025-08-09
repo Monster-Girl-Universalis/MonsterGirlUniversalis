@@ -97,7 +97,7 @@ navyl_region = {
 }
 san_ilia_region = { 
 	areas = { 
-		crab_realm_area luddite_area secret_lab_facility_area sea_cucumber_area oloso_area san_ilia_crops san_ilia_area 
+		crab_realm_area luddite_area secret_lab_facility_area sea_cucumber_area san_ilia_crops san_ilia_area 
 	}
 }
 st_amos_region = { 

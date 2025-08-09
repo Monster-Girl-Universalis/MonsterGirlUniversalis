@@ -1276,13 +1276,6 @@ lr1_branch_5 = {
 				name = "lr1_holy_war"
 				duration = 7300
 			}
-			oloso_area = {
-				limit = {
-					NOT = { is_core = ROOT } 
-					NOT = { is_permanent_claim = ROOT } 
-				}
-				add_permanent_claim = ROOT
-			}
 			amos_road_area = {
 				limit = {
 					NOT = { is_core = ROOT } 

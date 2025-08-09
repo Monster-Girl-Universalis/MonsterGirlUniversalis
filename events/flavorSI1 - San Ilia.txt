@@ -19,6 +19,18 @@ country_event = {
 	option = {		#Assasination attempt
 		name = flavor_si1.1.a
 		add_stability = -1
+		create_subject = {
+    			subject_type = research_subject
+    			subject = CR3
+		}
+		create_subject = {
+    			subject_type = research_subject
+    			subject = XX7
+		}
+		create_subject = {
+    			subject_type = research_subject
+    			subject = LB1
+		}
 	}
 }
 country_event = {

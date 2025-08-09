@@ -439,13 +439,10 @@ luddite_area = {
 	542 549 523 544 
 }
 secret_lab_facility_area = { 
-	536 550 556 557 
+	536 550 556 557 562 558 
 }
 amos_road_area = { 
-	572 570 564 
-}
-oloso_area = { 
-	562 561 558 
+	572 570 564 561
 }
 oningrone_area = { 
 	524 507 506 503 

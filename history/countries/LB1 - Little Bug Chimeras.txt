@@ -1,0 +1,17 @@
+government = monarchy
+add_government_reform = Chimera_realm
+government_rank = 1
+technology_group = TECH_CHIMERA
+religion = seekers_of_truth_religion
+primary_culture = Cockroach_Girl
+1444.1.1 = { 
+	monarch = { 
+		name = "Lippy"
+		dynasty = "Little Bug"
+		birth_date = 1.1.1
+		adm = 3
+		dip = 3
+		mil = 3
+		female = yes
+	}
+}

@@ -781,11 +781,11 @@ Scylla_realm = {
 }
 
 Chimera_realm = {
-	lock_level_when_selected = yes
 	icon = "chimera_realm"
 	allow_normal_conversion = no
 	potential = {
 		OR = {
+			technology_group = TECH_CHIMERA
 			culture_group = chimera
 			AND = {
 				is_playing_custom_nation = yes

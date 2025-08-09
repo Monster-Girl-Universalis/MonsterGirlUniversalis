@@ -1,0 +1,8 @@
+﻿l_english:
+ research_subject_title: "Research Subject"
+  research_subject: "Research Subject"
+  research_subject_long_desc: "A Research Subject are given a great deal of autonomy as long as their overlord is allowed to study and extract resources in their lands"
+  research_subject_is_our: "We are studying $NAME|Y$"
+  research_subject_title: "Research Subject"
+  research_subject_title_plural: "Research Subjects"
+  is_research_subject: "Is Research Subject"

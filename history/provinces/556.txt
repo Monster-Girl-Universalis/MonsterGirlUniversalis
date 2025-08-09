@@ -6,7 +6,6 @@ base_manpower = 3
 base_production = 3
 owner = CR3
 controller = CR3
-add_core = SI1
 discovered_by = TECH_ALRAUNE
 discovered_by = TECH_ANGEL
 discovered_by = TECH_BEAST
@@ -32,9 +31,7 @@ discovered_by = TECH_YOUMA
 discovered_by = TECH_DEMI_HUMAN
 center_of_trade = 1
 trade_goods = iron
-latent_trade_goods = { 
-	coal 
-}
+latent_trade_goods = { coal }
 add_core = CR3
 discovered_by = TECH_FAIRY
 discovered_by = TECH_GHOST

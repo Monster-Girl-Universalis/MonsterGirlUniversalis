@@ -4,6 +4,7 @@ government_rank = 1
 technology_group = TECH_CHIMERA
 religion = seekers_of_truth_religion
 primary_culture = Cockroach_Girl
+unlock_race = { race = insect }
 1444.1.1 = { 
 	monarch = { 
 		name = "Lippy"

@@ -317,28 +317,34 @@ tamamo_horai_grand_noah_branch = {
 	KI1_control_over_the_summit = {
 		icon = mission_mt_horai
 		required_missions = { KI1_hikkikomori_elf }
-		position = 3
-		
+		position = 3	
 		trigger = {
-			OR = {
-				reverse_has_opinion = {
-					who = EL4
-					value = 190
-				}
-				AND = {
-					horai_coast = {
-						type = all
-						owned_by = ROOT
-					}
-					elven_village = {
-						type = all
-						owned_by = ROOT
+			custom_trigger_tooltip = {
+				tooltip = ki1_tooltip_kunoichi_spy_or_opinion
+				all_country = {
+					OR = {
+						NOT = { has_reform = kunoichi_reform }
+						has_spy_network_from = {
+							who = ROOT
+							value = 40
+						}
+						has_opinion = {
+							who = ROOT
+							value = 150
+						}
 					}
 				}
 			}
 		}
 		effect = {
-			inherit = EL4
+			every_country = {
+    				limit = {
+        				has_reform = kunoichi_reform
+    				}
+				EL4 = {
+					inherit = PREV
+				}
+			}
 			add_accepted_culture = Horai_Elf
 			horai_region = {
 				type = all
@@ -356,6 +362,7 @@ tamamo_horai_grand_noah_branch = {
 				value = 45
 				region = horai_region 
 			}	
+			treasury = 100
 		}
 		effect = {
 			2180 = {

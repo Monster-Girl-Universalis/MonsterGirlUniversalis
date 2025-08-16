@@ -1,7 +1,7 @@
 government = monarchy
 government_rank = 2
 religion = dark_goddess_religion
-technology_group = TECH_DEMI_HUMAN
+technology_group = TECH_TAMAMO
 primary_culture = Shiva_Girl
 add_government_reform = Demi_Human_realm
 1444.1.1 = { 

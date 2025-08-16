@@ -1,7 +1,7 @@
 government = monarchy
 government_rank = 2
 religion = yamatai_religion
-technology_group = TECH_DEMI_HUMAN
+technology_group = TECH_TAMAMO
 primary_culture = Three_Mouth_Akaname
 add_government_reform = Demi_Human_realm
 1444.1.1 = { 

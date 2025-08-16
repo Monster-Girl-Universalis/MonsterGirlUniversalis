@@ -110,7 +110,10 @@ seraph_ideas = {
 	}
 	
 	trigger = {
-		has_country_flag = accepted_seraph_ideas
+		OR = {
+			has_country_flag = accepted_seraph_ideas
+			tag = ED1
+		}
 	}
 	free = yes
 	

@@ -1,6 +1,6 @@
 government = monarchy
 religion = dark_goddess_religion
-technology_group = TECH_MERMAID
+technology_group = TECH_MAKAI_MERMAID
 primary_culture = Monstro_Girl
 add_government_reform = Mermaid_realm
 government_rank = 2

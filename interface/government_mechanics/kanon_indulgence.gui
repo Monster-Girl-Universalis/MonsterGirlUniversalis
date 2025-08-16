@@ -54,7 +54,7 @@ guiTypes = {
 
 		guiButtonType = {
 			name = "government_interaction_button"
-			quadTextureSprite = "GFX_kanon_ability_abduct_human_exhibits"
+			quadTextureSprite = "GFX_kanon_ability_oversee_tribute"
 			position = { x = 50 y = -3 }
 			buttonFont = "vic_18"
 			clicksound = back_click

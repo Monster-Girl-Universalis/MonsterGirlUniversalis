@@ -1,6 +1,6 @@
 government = monarchy
 religion = dark_goddess_religion
-technology_group = TECH_SCYLLA
+technology_group = TECH_MAKAI_SCYLLA
 primary_culture = Royal_Scylla
 add_government_reform = Scylla_realm
 government_rank = 3

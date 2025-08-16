@@ -1,9 +1,9 @@
 government = monarchy
 government_rank = 2
 religion = eden_resistance_religion
-technology_group = TECH_ANGEL
+technology_group = TECH_MAKAI_ANGEL
 primary_culture = Fallen_Angel
-add_government_reform = Angel_realm
+add_government_reform = Fallen_angel_state
 1444.1.1 = { 
 	monarch = { 
 		name = "Eden"

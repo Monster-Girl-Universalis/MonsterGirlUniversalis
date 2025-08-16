@@ -1,7 +1,7 @@
 government = monarchy
 government_rank = 1
 religion = dark_goddess_religion
-technology_group = TECH_SLIME
+technology_group = TECH_KANADE
 primary_culture = Slime_Girl
 add_government_reform = Slime_realm
 1444.1.1 = { 

@@ -7,6 +7,11 @@ country_decisions = {
 					tag = TR2
 					tag = PE4
 					tag = AM1
+					tag = TR3
+					tag = PE5
+					tag = AM2
+					tag = RA2
+					tag = RI2
 					mission_completed = gen_apoptosis_research_barrier_technology 
 				}		
 				NOT = { 
@@ -16,7 +21,10 @@ country_decisions = {
 					} 
 				}		
 				NOT = { 
-					truce_with = ML1
+					AND = {
+						truce_with = ML1
+						truce_with = SJ1
+					}
 				}
 			}
 		}
@@ -34,6 +42,8 @@ country_decisions = {
 		effect = {
 			add_truce_with = ML1
 			white_peace = ML1
+			add_truce_with = SJ1
+			white_peace = SJ1
 			change_variable = {
 				which = Quantum_Barrier_Used
 				value = 1

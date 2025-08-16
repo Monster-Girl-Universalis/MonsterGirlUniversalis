@@ -1,6 +1,6 @@
-government = monarchy
+government = republic
 religion = water_religion
-technology_group = TECH_MERMAID
+technology_group = TECH_MAKAI_MERMAID
 primary_culture = Mermaid_Pirate
 add_government_reform = pirate_state_reform
 government_rank = 1

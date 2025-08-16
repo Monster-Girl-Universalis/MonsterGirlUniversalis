@@ -67,7 +67,7 @@ wendigo_coast_sea_area = {
 	159 125 121 111 2746 2745 2747 2748 
 }
 magistea_coast_sea_area = { 
-	139 140 141 2658 2708 2709 2710 2711 2712 
+	139 140 141 2658 2708 2709 2710 2711 2712 147
 }
 north_hellgondo_sea_area = { 
 	2717 2718 2719 2720 2723 199 2733 2734 2735 
@@ -97,7 +97,7 @@ western_gold_sea_area = {
 	133 2654 2655 2656 
 }
 snow_heaven_sea_area = { 
-	142 2713 2714 2715 144 197 202 2652 
+	142 2713 2714 2715 144 197 2652 
 }
 orcish_area = { 
 	26 27 29 
@@ -1900,9 +1900,7 @@ sea_dragon_area = {
 	2797 2795 2796 
 }
 western_great_sea_area = { 
-	158 147 153 157 149 155 148 169 170 171
-	173 163 2744 2743 200 2742 162 174 172 198
-	168 160 156 167 161 
+	169 163 2744 2743 200 2742 162 202 
 }
 dark_goddess_chamber_area = { 
 	2819 3932 3934 3923 3924 3935 
@@ -2671,4 +2669,73 @@ makai_wyverns = {
 }
 makai_kyoryuu = { 
 	3927 3920 3928 3921 3936 3937 
+}
+dark_goddess_sea_area = { 
+	4096 4119 4099 4097 4098 4100 
+}
+makai_tartarus_sea_area = { 
+	4117 4118 4124 4125 4116 148 
+}
+makai_northern_great_sea = { 
+	4121 4120 4109 4122 4123 4126 4127 4128 4091 
+}
+great_pirate_sea_area = { 
+	4143 4130 4129 156 4142 4144 
+}
+former_magistea_sea_area = { 
+	4146 4145 4150 4147 4148 4149 4095 
+}
+makai_safina_sea_area = { 
+	4154 4151 4152 157 4153 4199 2804 4200 
+}
+makai_enrika_sea_area = { 
+	4202 4201 4203 4204 4205 4206 2820 
+}
+makai_natalia_sea_area = { 
+	198 158 160 161 167 
+}
+makai_ilias_sea_area = { 
+	174 4194 171 4207 4210 4209 
+}
+makai_eastern_great_sea_area = { 
+	4094 4208 173 170 
+}
+pirate_mermaid_sea_area = { 
+	4192 172 168 4195 4093 4197 4191 4198 4196 4189
+}
+makai_yamatai_sea_area = { 
+	4186 4188 4190 4187 4185 4184 4183 
+}
+monstro_sea_area = { 
+	4101 4103 4105 4107 4108 4104 4102 
+}
+makai_north_eastern_great_sea = { 
+	4175 4172 4173 4176 4171 4174 4180 4182 
+}
+liquer_slime_sea_area = { 
+	4113 4167 4166 4168 
+}
+north_gold_sea_area = { 
+	4178 4092 4163 4170 4165 4164 4158 4177 4179 4181
+}
+shiva_sea_area = { 
+	4111 4110 4106 4112 
+}
+garchimacera_sea_area = { 
+	4114 4156 4115 
+}
+makai_plansect_sea_area = { 
+	4193 4160 4161 4169 
+}
+makai_goldfort_sea_area = { 
+	4135 4155 4141 
+}
+fenrir_sea_area = { 
+	4131 149 153 4133 4134 4136 
+}
+makai_artiste_sea_area = { 
+	4139 4159 4138 
+}
+makai_safar_sea_area = { 
+	4162 4140 4137 4132 155 4157 
 }

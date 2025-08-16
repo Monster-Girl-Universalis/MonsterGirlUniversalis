@@ -553,3 +553,6 @@ MA4 = "countries/Marlboro Realm.txt"
 AP1 = "countries/Archaeopteryx Realm.txt"
 AS4 = "countries/Asmodeus Domain.txt"
 JR1 = "countries/Jormungandr Domain.txt"
+
+HE2 = "countries/Makai Tartarus.txt"
+NO1 = "countries/Noah Tartarus.txt"

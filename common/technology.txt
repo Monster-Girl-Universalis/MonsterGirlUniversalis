@@ -711,44 +711,6 @@ groups = {
 			value = 75
 		}
 	}
-
-
-
-	TECH_MAKAI_UNDEAD = {
-		start_level = 3
-		start_cost_modifier = 0
-		nation_designer_cost = {
-			trigger = {
-				capital_scope = {
-					OR = {
-						continent = new_world
-						continent = north_america
-						continent = south_america
-						continent = oceania
-					}
-				}
-			}
-			value = 75
-		}
-	}
-	TECH_MAKAI_LAND_DWELLER = {
-		start_level = 3
-		start_cost_modifier = 0
-		nation_designer_cost = {
-			trigger = {
-				capital_scope = {
-					OR = {
-						continent = new_world
-						continent = north_america
-						continent = south_america
-						continent = oceania
-					}
-				}
-			}
-			value = 75
-		}
-	}
-
 	TECH_KANON = {
 		start_level = 3
 		start_cost_modifier = 0
@@ -767,7 +729,7 @@ groups = {
 		}
 	}
 
-	TECH_MAKAI_HARPY = {
+	TECH_KANADE = {
 		start_level = 3
 		start_cost_modifier = 0
 		nation_designer_cost = {
@@ -784,126 +746,7 @@ groups = {
 			value = 75
 		}
 	}
-	TECH_MAKAI_BEAST = {
-		start_level = 3
-		start_cost_modifier = 0
-		nation_designer_cost = {
-			trigger = {
-				capital_scope = {
-					OR = {
-						continent = new_world
-						continent = north_america
-						continent = south_america
-						continent = oceania
-					}
-				}
-			}
-			value = 75
-		}
-	}
-	TECH_MAKAI_ELF = {
-		start_level = 3
-		start_cost_modifier = 0
-		nation_designer_cost = {
-			trigger = {
-				capital_scope = {
-					OR = {
-						continent = new_world
-						continent = north_america
-						continent = south_america
-						continent = oceania
-					}
-				}
-			}
-			value = 75
-		}
-	}
-	TECH_MAKAI_INSECT = {
-		start_level = 3
-		start_cost_modifier = 0
-		nation_designer_cost = {
-			trigger = {
-				capital_scope = {
-					OR = {
-						continent = new_world
-						continent = north_america
-						continent = south_america
-						continent = oceania
-					}
-				}
-			}
-			value = 75
-		}
-	}
-	TECH_MAKAI_SLIME = {
-		start_level = 3
-		start_cost_modifier = 0
-		nation_designer_cost = {
-			trigger = {
-				capital_scope = {
-					OR = {
-						continent = new_world
-						continent = north_america
-						continent = south_america
-						continent = oceania
-					}
-				}
-			}
-			value = 75
-		}
-	}
-	TECH_MAKAI_SUCCUBI = {
-		start_level = 3
-		start_cost_modifier = 0
-		nation_designer_cost = {
-			trigger = {
-				capital_scope = {
-					OR = {
-						continent = new_world
-						continent = north_america
-						continent = south_america
-						continent = oceania
-					}
-				}
-			}
-			value = 75
-		}
-	}
-	TECH_MAKAI_DRAGON = {
-		start_level = 3
-		start_cost_modifier = 0
-		nation_designer_cost = {
-			trigger = {
-				capital_scope = {
-					OR = {
-						continent = new_world
-						continent = north_america
-						continent = south_america
-						continent = oceania
-					}
-				}
-			}
-			value = 75
-		}
-	}
-	TECH_MAKAI_DEMI_HUMAN = {
-		start_level = 3
-		start_cost_modifier = 0
-		nation_designer_cost = {
-			trigger = {
-				capital_scope = {
-					OR = {
-						continent = new_world
-						continent = north_america
-						continent = south_america
-						continent = oceania
-					}
-				}
-			}
-			value = 75
-		}
-	}
-	TECH_MAKAI_DOLL = {
+	TECH_TAMAMO = {
 		start_level = 3
 		start_cost_modifier = 0
 		nation_designer_cost = {
@@ -937,24 +780,7 @@ groups = {
 			value = 75
 		}
 	}
-	TECH_MAKAI_YOUMA = {
-		start_level = 3
-		start_cost_modifier = 0
-		nation_designer_cost = {
-			trigger = {
-				capital_scope = {
-					OR = {
-						continent = new_world
-						continent = north_america
-						continent = south_america
-						continent = oceania
-					}
-				}
-			}
-			value = 75
-		}
-	}
-	TECH_MAKAI_MERMAID = {
+	TECH_MINAGI = {
 		start_level = 3
 		start_cost_modifier = 0
 		nation_designer_cost = {
@@ -988,7 +814,7 @@ groups = {
 			value = 75
 		}
 	}
-	TECH_MAKAI_VAMPIRE = {
+	TECH_MAKAI_GHOST = {
 		start_level = 3
 		start_cost_modifier = 0
 		nation_designer_cost = {
@@ -1005,7 +831,41 @@ groups = {
 			value = 75
 		}
 	}
-	TECH_MAKAI_LAMIA = {
+	TECH_HIRUKO = {
+		start_level = 3
+		start_cost_modifier = 0
+		nation_designer_cost = {
+			trigger = {
+				capital_scope = {
+					OR = {
+						continent = new_world
+						continent = north_america
+						continent = south_america
+						continent = oceania
+					}
+				}
+			}
+			value = 75
+		}
+	}
+	TECH_MAKAI_INSECT = {
+		start_level = 3
+		start_cost_modifier = 0
+		nation_designer_cost = {
+			trigger = {
+				capital_scope = {
+					OR = {
+						continent = new_world
+						continent = north_america
+						continent = south_america
+						continent = oceania
+					}
+				}
+			}
+			value = 75
+		}
+	}
+	TECH_SAJA = {
 		start_level = 3
 		start_cost_modifier = 0
 		nation_designer_cost = {
@@ -1039,7 +899,7 @@ groups = {
 			value = 75
 		}
 	}
-	TECH_MAKAI_CHIMERA = {
+	TECH_MAKAI_FAIRY = {
 		start_level = 3
 		start_cost_modifier = 0
 		nation_designer_cost = {
@@ -1056,7 +916,7 @@ groups = {
 			value = 75
 		}
 	}
-	TECH_MAKAI_KITSUNE = {
+	TECH_MAKAI_ELF = {
 		start_level = 3
 		start_cost_modifier = 0
 		nation_designer_cost = {
@@ -1073,7 +933,7 @@ groups = {
 			value = 75
 		}
 	}
-	TECH_MAKAI_ROID = {
+	TECH_MAKAI_MERMAID = {
 		start_level = 3
 		start_cost_modifier = 0
 		nation_designer_cost = {
@@ -1090,7 +950,7 @@ groups = {
 			value = 75
 		}
 	}
-	TECH_MAKAI_TANUKI = {
+	TECH_MAKAI_UNDEAD = {
 		start_level = 3
 		start_cost_modifier = 0
 		nation_designer_cost = {
@@ -1124,24 +984,7 @@ groups = {
 			value = 75
 		}
 	}
-	TECH_MAKAI_GHOST = {
-		start_level = 3
-		start_cost_modifier = 0
-		nation_designer_cost = {
-			trigger = {
-				capital_scope = {
-					OR = {
-						continent = new_world
-						continent = north_america
-						continent = south_america
-						continent = oceania
-					}
-				}
-			}
-			value = 75
-		}
-	}
-	TECH_MAKAI_FAIRY = {
+	TECH_MAKAI_BEAST = {
 		start_level = 3
 		start_cost_modifier = 0
 		nation_designer_cost = {

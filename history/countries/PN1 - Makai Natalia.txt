@@ -1,7 +1,7 @@
-government = monarchy
+government = republic
 government_rank = 1
 primary_culture = natalian_human
 religion = water_religion
-technology_group = TECH_HUMAN
+technology_group = TECH_MAKAI_HUMAN
 add_government_reform = port_natalia_reform
 capital = 3262

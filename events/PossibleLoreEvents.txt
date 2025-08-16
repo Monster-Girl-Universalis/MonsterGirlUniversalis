@@ -24,6 +24,8 @@ country_event = {
 		OR = {
 			ROOT = { offensive_war_with = ML1 }
 			ROOT = { defensive_war_with = ML1 }
+			ROOT = { offensive_war_with = SJ1 }
+			ROOT = { defensive_war_with = SJ1 }
 		}
 	}
 
@@ -63,6 +65,8 @@ country_event = {
 			OR = {
 				ROOT = { offensive_war_with = ML1 }
 				ROOT = { defensive_war_with = ML1 }
+				ROOT = { offensive_war_with = SJ1 }
+				ROOT = { defensive_war_with = SJ1 }
 			}
 		}
 	}
@@ -107,8 +111,22 @@ country_event = {
 			NOT = { was_tag = ML1 }
 			NOT = { tag = KI1 }			#Tamamo never sides with Ilias
 			NOT = { was_tag = KI1 }
+			NOT = { tag = KA1 }			#Kanon of Six Ancestors never sides with Ilias
+			NOT = { was_tag = KA1 }
+			NOT = { tag = KA2 }			#Kanade of Six Ancestors never sides with Ilias
+			NOT = { was_tag = KA2 }
+			NOT = { tag = KI5 }			#Tamamo of Six Ancestors never sides with Ilias
+			NOT = { was_tag = KI5 }
+			NOT = { tag = MI1 }			#Minagi of Six Ancestors never sides with Ilias
+			NOT = { was_tag = MI1 }
+			NOT = { tag = HI2 }			#Hiruko of Six Ancestors never sides with Ilias
+			NOT = { was_tag = HI2 }
+			NOT = { tag = SJ1 }			#Saja of Six Ancestors never sides with Ilias
+			NOT = { was_tag = SJ1 }
 			NOT = { tag = ENV }			#Micaela doesn't want to get involved
 			NOT = { was_tag = ENV }
+			NOT = { tag = EN3 }			#Micaela from Makai is dead inside
+			NOT = { was_tag = EN3 }
 		}
 		ROOT = { change_religion = angel_world_religion }
 		hidden_effect = {
@@ -122,15 +140,18 @@ country_event = {
 		name = lore_events.3.b
 		trigger = {
 			NOT = { religion = angel_world_religion }
+			NOT = { religion = eden_resistance_religion }
 			NOT = { religion_group = chaos_religion_g }
 			NOT = { religion_group = science_religion_g }
 			NOT = { religion = cosmos_religion }
 			NOT = { tag = SH3 }			#Eden never abandones Ilias
 			NOT = { was_tag = SH3 }
-			NOT = { tag = IT1 }			#ilias never sides with Alipheese
+			NOT = { tag = IT1 }			#Ilias never sides with Alipheese
 			NOT = { was_tag = IT1 }
 			NOT = { tag = ENV }			#Micaela doesn't want to get involved
 			NOT = { was_tag = ENV }
+			NOT = { tag = EN3 }			#Micaela from Makai is dead inside
+			NOT = { was_tag = EN3 }
 		}
 		ROOT = { change_religion = dark_goddess_religion }
 		hidden_effect = {

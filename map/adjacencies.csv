@@ -10,4 +10,13 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 1501;1513;sea;135;-1;-1;-1;-1;Gold Fort Strait
 2488;2489;sea;2745;-1;-1;-1;-1;Wendigo Island
 2489;2490;sea;2745;-1;-1;-1;-1;Wendigo Island
+2821;2822;sea;4114;-1;-1;-1;-1;Hellgondo-Gold Train Station
+2929;2813;sea;4135;-1;-1;-1;-1;Makai Gold Fort Strait
+3006;3000;sea;4155;-1;-1;-1;-1;Makai Lima Strait
+3045;3051;sea;4113;-1;-1;-1;-1;Liquer Left Island
+3603;3052;sea;4113;-1;-1;-1;-1;Liquer Right Island
+3250;3251;sea;4191;-1;-1;-1;-1;Bomb Slime-Makai Privateer
+3345;3264;sea;4193;-1;-1;-1;-1;Noah-Natalia Train Station
+3323;3481;sea;161;-1;-1;-1;-1;Natalia-Ilias Train Station
+3635;3637;sea;4140;-1;-1;-1;-1;Arcubus Bay in Administrator Tower Makai
 -1;-1;;-1;-1;-1;-1;-1;-1;

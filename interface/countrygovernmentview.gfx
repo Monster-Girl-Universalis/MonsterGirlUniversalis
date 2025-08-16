@@ -140,7 +140,7 @@ spriteTypes = {
 		name = "GFX_tech_group_strip"
 		texturefile = "gfx//interface//tech_group_strip2.dds"
 		transparencecheck = yes
-		noOfFrames = 70
+		noOfFrames = 61
 	}
 
 	spriteType = {
@@ -402,8 +402,8 @@ spriteTypes = {
 		transparencecheck = yes
 	}
 	spriteType = {
-		name = "GFX_kanon_ability_renovate_gardens"
-		texturefile = "gfx//interface//kanon_ability_renovate_gardens.dds"
+		name = "GFX_kanon_ability_oversee_tribute"
+		texturefile = "gfx//interface//kanon_ability_oversee_tribute.dds"
 		loadType = "INGAME"
 		transparencecheck = yes
 	}

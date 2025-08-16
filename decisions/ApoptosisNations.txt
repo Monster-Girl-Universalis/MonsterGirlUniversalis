@@ -308,5 +308,127 @@ country_decisions = {
 			factor = 1
 		}
 	}
+	makai_hellgondo_tartarus_nation = {
+		major = yes
+		potential = {
+			was_never_end_game_tag_trigger = yes
+			culture_group = apoptosis
+			NOT = { exists = HE2 }
+			capital_scope = {
+				region = makai_tartarus_region
+				is_core = ROOT
+			}
+		}
+		allow = {
+			AND = {
+				is_free_or_tributary_trigger = yes
+				is_at_war = no
+				OR = {
+					AND = {
+						army_size = 50
+						grown_by_development = 300
+						num_of_owned_provinces_with = {
+							region = makai_tartarus_region
+							is_core = ROOT
+							value = 20
+						}
+					}
+				}
+				owns_core_province = 2818
+				capital_scope = {
+					region = makai_tartarus_region
+					is_core = ROOT
+				}
+			}
+		}
+		effect = {
+
+			change_tag = HE2
+
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
+			unlock_races_of_owned_region = { region = makai_tartarus_region }
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			if = {
+				limit = {
+					NOT = { technology_group = TECH_APOPTOSIS }
+				}
+				change_technology_group = TECH_APOPTOSIS 
+				change_unit_type = TECH_APOPTOSIS 
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	esta_tartarus_nation = {
+		major = yes
+		potential = {
+			was_never_end_game_tag_trigger = yes
+			culture_group = apoptosis
+			NOT = { exists = HE2 }
+			capital_scope = {
+				region = esta_tartarus_region
+				is_core = ROOT
+			}
+		}
+		allow = {
+			AND = {
+				is_free_or_tributary_trigger = yes
+				is_at_war = no
+				OR = {
+					AND = {
+						army_size = 50
+						grown_by_development = 300
+						num_of_owned_provinces_with = {
+							region = esta_tartarus_region
+							is_core = ROOT
+							value = 20
+						}
+					}
+				}
+				#owns_core_province = TBA
+				capital_scope = {
+					region = esta_tartarus_region
+					is_core = ROOT
+				}
+			}
+		}
+		effect = {
+
+			change_tag = NO1
+
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
+			unlock_races_of_owned_region = { region = esta_tartarus_region }
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			if = {
+				limit = {
+					NOT = { technology_group = TECH_APOPTOSIS }
+				}
+				change_technology_group = TECH_APOPTOSIS 
+				change_unit_type = TECH_APOPTOSIS 
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
 
 }

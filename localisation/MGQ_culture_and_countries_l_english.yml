@@ -1030,8 +1030,10 @@
  GO4_ADJ: "Gold Tartarus"
  HE1: "Hellgondo Tartarus"
  HE1_ADJ: "Hellgondo Tartarus"
- ET1: "Esta Tartarus"				#Placeholder till part 3 comes out
- ET1_ADJ: "Esta Tartarus"
+ HE2: "Makai Tartarus"
+ HE2_ADJ: "Makai Tartarus"
+ NO1: "Esta Tartarus"				
+ NO1_ADJ: "Esta Tartarus"
  RE1: "Remina"
  RE1_ADJ: "Remina"
  SQD: "Slime Queen"

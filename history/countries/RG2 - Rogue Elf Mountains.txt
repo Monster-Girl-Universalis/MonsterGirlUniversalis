@@ -3,7 +3,7 @@ government_rank = 2
 Elf
 add_government_reform = Elf_realm
 religion = dark_goddess_religion
-technology_group = TECH_ELF
+technology_group = TECH_MAKAI_ELF
 1444.1.1 = { 
 	monarch = { 
 		name = "Jane"

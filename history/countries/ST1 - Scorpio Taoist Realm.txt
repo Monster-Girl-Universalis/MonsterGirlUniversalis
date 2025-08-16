@@ -1,7 +1,7 @@
 government = monarchy
 government_rank = 2
 religion = yamatai_religion
-technology_group = TECH_INSECT
+technology_group = TECH_MAKAI_INSECT
 primary_culture = Scorpion_Girl
 add_government_reform = Insect_realm
 1444.1.1 = { 

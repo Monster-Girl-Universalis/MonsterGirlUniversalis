@@ -115,7 +115,7 @@ monarchy = {
 				antlion_reform
 				Defender_east
 				Fallen_angel_state
-				kanon_reform
+				kanon_domain_reform
 				
 				#kagetsumugi_reform 
 				#promestein_reform 

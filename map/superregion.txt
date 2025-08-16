@@ -13,7 +13,7 @@ yamatai_sea_superregion = {
 	yamatai_sea_region 
 }
 ilias_sea_superregion = { 
-	ilias_coast_sea_region natalia_coast_sea_region 
+	natalia_coast_sea_region ilias_coast_sea_region 
 }
 inland_sea_superregion = { 
 	inland_sea_region noah_gold_sea_region 
@@ -104,4 +104,25 @@ makai_safina_superregion = {
 }
 makai_north_hellgondo_superregion = { 
 	dark_goddess_region makai_sealed_sinner_prison_region 
+}
+makai_ilias_sea_superregion = { 
+	makai_ilias_sea_region 
+}
+makai_safina_sea_superregion = { 
+	makai_safina_sea_superregion makai_safina_sea_region 
+}
+makai_natalia_sea_superregion = { 
+	makai_natalia_sea_region makai_plansect_sea_region 
+}
+makai_central_sea_superregion = { 
+	loa_sea_region makai_south_gold_sea_region 
+}
+makai_western_great_sea_superregion = { 
+	makai_western_great_sea_region makai_hellgondo_sea_region 
+}
+makai_eastern_great_sea_superregion = { 
+	makai_eastern_great_sea_region shiva_sea_region 
+}
+makai_noah_sea_superregion = { 
+	makai_noah_sea_region 
 }

@@ -157,6 +157,8 @@ technology = {
 	enable = infantry_mmer_t1_02
 	enable = infantry_mund_t1_01	#Makai Undead
 	enable = infantry_mund_t1_02
+	enable = infantry_mbst_t1_01	#Makai Beasts
+	enable = infantry_mbst_t1_02
 
 	enable = cavalry_hum_t1_01
 	enable = cavalry_hum_t1_02
@@ -330,6 +332,8 @@ technology = {
 	enable = infantry_mmer_t5_02
 	enable = infantry_mund_t5_01	#Makai Undead
 	enable = infantry_mund_t5_02
+	enable = infantry_mbst_t5_01	#Makai Beasts
+	enable = infantry_mbst_t5_02
 	
 	combat_width = 2
 }
@@ -554,6 +558,8 @@ technology = {
 	enable = infantry_mmer_t10_02
 	enable = infantry_mund_t10_01	#Makai Undead
 	enable = infantry_mund_t10_02
+	enable = infantry_mbst_t10_01	#Makai Beasts
+	enable = infantry_mbst_t10_02
 
 	enable = cavalry_hum_t10_01
 	enable = cavalry_hum_t10_02
@@ -713,6 +719,8 @@ technology = {
 	enable = infantry_mmer_t13_02
 	enable = infantry_mund_t13_01	#Makai Undead
 	enable = infantry_mund_t13_02
+	enable = infantry_mbst_t13_01	#Makai Beasts
+	enable = infantry_mbst_t13_02
 }
 
 technology = {
@@ -895,6 +903,8 @@ technology = {
 	enable = infantry_mmer_t16_02
 	enable = infantry_mund_t16_01	#Makai Undead
 	enable = infantry_mund_t16_02
+	enable = infantry_mbst_t16_01	#Makai Beasts
+	enable = infantry_mbst_t16_02
 }
 
 technology = {
@@ -1067,6 +1077,8 @@ technology = {
 	enable = infantry_mmer_t19_02
 	enable = infantry_mund_t19_01	#Makai Undead
 	enable = infantry_mund_t19_02
+	enable = infantry_mbst_t19_01	#Makai Beasts
+	enable = infantry_mbst_t19_02
 }
 
 technology = {
@@ -1270,6 +1282,8 @@ technology = {
 	enable = infantry_mmer_t23_02
 	enable = infantry_mund_t23_01	#Makai Undead
 	enable = infantry_mund_t23_02
+	enable = infantry_mbst_t23_01	#Makai Beasts
+	enable = infantry_mbst_t23_02
 }
 
 technology = {
@@ -1448,6 +1462,8 @@ technology = {
 	enable = infantry_mmer_t26_02
 	enable = infantry_mund_t26_01	#Makai Undead
 	enable = infantry_mund_t26_02
+	enable = infantry_mbst_t26_01	#Makai Beasts
+	enable = infantry_mbst_t26_02
 	
 	combat_width = 2
 }

@@ -2,7 +2,7 @@ government = monarchy
 government_rank = 3
 add_government_reform = Zombie_realm
 religion = yamatai_religion
-technology_group = TECH_UNDEAD
+technology_group = TECH_MAKAI_UNDEAD
 1444.1.1 = { 
 	monarch = { 
 		name = "Tao"
@@ -17,3 +17,4 @@ technology_group = TECH_UNDEAD
 	unlock_race = { race = undead }
 }
 capital = 4002
+primary_culture = Tao

@@ -1,7 +1,7 @@
 government = monarchy
 add_government_reform = Roid_realm
 government_rank = 1
-technology_group = TECH_ROID
+technology_group = TECH_TAMAMO
 religion = yamatai_religion
 primary_culture = Mecha_Fox
 1444.1.1 = { 

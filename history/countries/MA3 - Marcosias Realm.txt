@@ -1,7 +1,7 @@
 government = monarchy
 government_rank = 2
 religion = dark_goddess_religion
-technology_group = TECH_DRAGON
+technology_group = TECH_SAJA
 primary_culture = Marcosias_Girl
 add_government_reform = Dragon_realm
 1444.1.1 = { 

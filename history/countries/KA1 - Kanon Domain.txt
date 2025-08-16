@@ -1,9 +1,9 @@
 government = monarchy
 government_rank = 3
 primary_culture = Alraune_Girl
-add_government_reform = kanon_reform
+add_government_reform = kanon_domain_reform
 religion = dark_goddess_religion
-technology_group = TECH_ALRAUNE
+technology_group = TECH_KANON
 historical_rival = KA2#They just don't get along...
 1444.1.1 = { 
 	monarch = { 
@@ -16,7 +16,7 @@ historical_rival = KA2#They just don't get along...
 		female = yes
 	}
 	add_ruler_personality = immortal_personality
-	add_government_power = {
+	add_government_power = { 
 		mechanic_type = kanon_indulgence_mechanic
 		power_type = kanon_indulgence_meter
 		value = 100

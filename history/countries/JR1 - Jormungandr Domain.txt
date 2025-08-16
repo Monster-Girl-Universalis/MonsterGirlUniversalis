@@ -1,6 +1,6 @@
 government = monarchy
 religion = dark_goddess_religion
-technology_group = TECH_LAMIA
+technology_group = TECH_SAJA
 primary_culture = Royal_Lamia
 add_government_reform = Lamia_realm
 government_rank = 3

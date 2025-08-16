@@ -176,6 +176,7 @@ estate_monster_girls = {
 						unit_type = TECH_MAKAI_ELF
 						unit_type = TECH_MAKAI_MERMAID
 						unit_type = TECH_MAKAI_UNDEAD
+						unit_type = TECH_MAKAI_BEAST
 					}
 	}
 

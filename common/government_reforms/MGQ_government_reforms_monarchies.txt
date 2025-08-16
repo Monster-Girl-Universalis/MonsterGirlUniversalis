@@ -1891,18 +1891,18 @@ Defender_east = {
 		has_harem = yes
 	}
 }
-kanon_reform = {
+kanon_domain_reform = {
 	lock_level_when_selected = yes
-	icon = "kanon_domain_reform"
+	icon = "kanon_domain"
 	allow_normal_conversion = no
 	potential = {
     		OR = {
 			tag = KA1
 			was_tag = KA1
-			have_had_reform = kanon_reform
+			have_had_reform = kanon_domain_reform
 			AND = {
 				is_playing_custom_nation = yes
-				have_had_reform = kanon_reform
+				have_had_reform = kanon_domain_reform
 			}
 		}
 	}
@@ -1912,9 +1912,9 @@ kanon_reform = {
 	locked_government_type = yes
 	government_abilities = { kanon_indulgence_mechanic }
 	nation_designer_cost = 40
-	legacy_equivalent = ottoman_government_legacy
+	#legacy_equivalent = ottoman_government_legacy
 	modifiers = {
-		governing_capacity = 300
+		governing_capacity = 500
 		recover_army_morale_speed = 0.25
 		block_introduce_heir = yes
 	}

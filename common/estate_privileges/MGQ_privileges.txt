@@ -1651,6 +1651,21 @@ estate_practice_necromancy = {
 			has_streltsy = yes
 			allowed_streltsy_fraction = 0.25
 	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 25
+			has_government_reform = corpse_army_elminea_reform
+		}
+		modifier = {
+			factor = 5
+			full_idea_group = undead_ideas
+		}
+		modifier = {
+			factor = 5
+			full_idea_group = ghost_ideas
+		}
+	}
 }
 estate_mass_produce_zombies = {
 	icon = privilege_practice_necromancy
@@ -1664,6 +1679,21 @@ estate_mass_produce_zombies = {
 	}
 	modifier = {
 			allowed_streltsy_fraction = 0.25
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 15
+			has_government_reform = corpse_army_elminea_reform
+		}
+		modifier = {
+			factor = 3
+			full_idea_group = undead_ideas
+		}
+		modifier = {
+			factor = 3
+			full_idea_group = ghost_ideas
+		}
 	}
 }
 estate_raise_master_undead = {

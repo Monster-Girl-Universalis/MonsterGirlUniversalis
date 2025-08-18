@@ -1,8 +1,8 @@
 add_core = PPM
 owner = PPM
-base_tax = 4
-base_manpower = 5
-base_production = 4
+base_tax = 2
+base_manpower = 3
+base_production = 1
 culture = ilian_human
 religion = ilias_light_religion
 controller = PPM
@@ -34,3 +34,4 @@ discovered_by = TECH_FAIRY
 discovered_by = TECH_GHOST
 religion = wind_religion
 culture = Fairy_Girl
+trade_goods = gold

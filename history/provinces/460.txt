@@ -1,8 +1,8 @@
 add_core = MDM
 owner = MDM
-base_tax = 4
-base_manpower = 5
-base_production = 4
+base_tax = 2
+base_manpower = 3
+base_production = 1
 culture = Bug_Girl
 religion = monster_lord_religion
 controller = MDM
@@ -32,3 +32,4 @@ discovered_by = TECH_YOUMA
 discovered_by = TECH_DEMI_HUMAN
 discovered_by = TECH_FAIRY
 discovered_by = TECH_GHOST
+trade_goods = copper

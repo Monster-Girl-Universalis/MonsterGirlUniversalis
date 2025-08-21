@@ -25,6 +25,7 @@ base_manpower = 4
 base_production = 3
 religion = ilias_light_religion
 is_city = no
+trade_goods = paper
 add_core = ILP
 owner = ILP
 culture = ilian_human

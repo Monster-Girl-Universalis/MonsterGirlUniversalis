@@ -3,7 +3,7 @@ government_rank = 2
 primary_culture = ilian_human
 religion = ilias_light_religion
 technology_group = TECH_HUMAN
-capital = 324#Mutated crops fields
+capital = 322
 1444.1.1 = { 
 	monarch = { 
 		name = "Fizz"
@@ -12,6 +12,7 @@ capital = 324#Mutated crops fields
 		adm = 6
 		dip = 5
 		mil = 2
+		personality = free_thinker_personality
 		female = yes
 	}
 }

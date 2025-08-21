@@ -1,0 +1,97 @@
+########################################
+# Flavor Events for Canceroid Realm by Cris
+########################################
+
+namespace = flavor_cr3
+country_event = {
+	id = flavor_cr3.1
+	title = flavor_cr3.1_title
+	desc = flavor_cr3.1_desc
+	picture = CR3_KANI_eventPicture
+	fire_only_once = yes
+	is_triggered_only = no
+	trigger = {
+		tag = CR3
+		crab_realm_area = {
+			type = all
+			owned_by = ROOT
+			is_core = ROOT
+		}
+	}
+	mean_time_to_happen = {
+	months = 12
+	}
+	option = {
+		name = flavor_cr3.1.a
+		add_country_modifier = {
+				name = cr3_roid_carcinisation
+				duration = -1
+			}
+		crab_realm_area = {
+			change_religion = ROOT
+		}
+		add_accepted_culture = Crab_Girl
+	}
+}
+country_event = {
+	id = flavor_cr3.2
+	title = flavor_cr3.2_title
+	desc = flavor_cr3.2_desc
+	picture = SLUG_SAKI_eventPicture
+	fire_only_once = yes
+	is_triggered_only = no
+	trigger = {
+		tag = CR3
+		south_undersea_temple_region = {
+			type = all
+			owned_by = ROOT
+			is_core = ROOT
+		}
+		seaweed_beach = {
+			type = all
+			owned_by = ROOT
+			is_core = ROOT
+		}
+	}
+	mean_time_to_happen = {
+	months = 12
+	}
+	option = {
+		name = flavor_cr3.2.a
+		add_country_modifier = {
+				name = cr3_sea_dwelling
+				duration = -1
+			}
+			unlock_race = { race = sea_dweller }
+			unlock_race = { race = alraune }
+
+	}
+}
+country_event = {
+	id = flavor_cr3.3
+	title = flavor_cr3.3_title
+	desc = flavor_cr3.3_desc
+	picture = CR3_FIZZ_eventPicture
+	fire_only_once = yes
+	is_triggered_only = no
+	trigger = {
+		tag = CR3
+		development_in_provinces = {
+				value = 100
+				culture_group = natalian_human
+			}
+	}
+	mean_time_to_happen = {
+	months = 12
+	}
+	option = {
+		name = flavor_cr3.3.a
+		add_adm_power = 150
+		add_country_modifier = {
+			name = cr3_humans 
+			duration -1
+		}
+		add_accepted_culture = natalian_human
+		unlock_race = { race = human }
+	}
+}

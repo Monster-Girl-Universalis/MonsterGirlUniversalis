@@ -337,7 +337,8 @@ monarchy = {
 				adramelech_fighting_stance_reform 
 				sonyachaos_fighting_stance_reform 
 				white_rabbit_omnipresence_reform 
-				reaper_removal_protocol_reform 
+				reaper_removal_protocol_reform
+				roid_reform
 			}
 		}
 		deliberative_assembly = {

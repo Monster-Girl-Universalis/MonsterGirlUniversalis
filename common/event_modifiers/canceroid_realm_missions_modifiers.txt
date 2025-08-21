@@ -1,0 +1,94 @@
+cr3_luddite = {
+	yearly_innovativeness = 0.25
+    idea_cost = -0.15
+}
+cr3_makina_market = {
+    global_tax_income = 24
+    land_maintenance_modifier = -0.20
+}
+cr3_wartime_independence = {
+    land_forcelimit = 10
+    shock_damage = 0.15
+}
+cr3_freedom = {
+    stability_cost_modifier = -0.30
+    manpower_recovery_speed = 0.30
+}
+cr3_truth_spreading = {
+    global_missionary_strength = 0.06
+    missionaries = 3
+}
+cr3_truth_spreading_2 = {
+    global_missionary_strength = 0.025
+    missionaries = 2
+}
+cr3_tech = {
+    technology_cost = -0.15
+}
+cr3_army_1 = {
+    army_tradition_from_battle = 0.50
+    shock_damage = 0.15
+}
+cr3_army_2 = {
+    can_claim_states = yes
+    fabricate_claims_cost = -0.20
+}
+cr3_crab = {
+    galley_cost = -0.30
+    galley_power = 0.20
+}
+cr3_port_natalia = {
+    manpower_recovery_speed = 0.30
+    global_manpower_modifier = 0.25
+}
+cr3_golden_age = {
+    prestige = 1
+    naval_tradition_from_trade = 0.25
+}
+cr3_san_ilia_bested = {
+    infantry_power = 0.25
+    general_cost = -0.10
+}
+cr3_haunted_mansion = {
+    land_morale = 0.10
+    land_maintenance_modifier = -0.10
+}
+cr3_puppet = {
+    core_creation = -0.15
+    build_cost = -0.15
+}
+cr3_final_conquest = {
+    land_morale = 0.10
+    infantry_power = 0.10
+    mil_tech_cost_modifier = -0.10
+}
+cr3_lab_money = {
+    great_project_upgrade_cost = -0.25
+    great_project_upgrade_time = -0.25
+}
+cr3_lab_monsters = {
+    num_accepted_cultures = 2
+}
+cr3_roid_carcinisation = {
+    culture_conversion_cost = -0.10
+    num_accepted_cultures = 1
+}
+cr3_reform = {
+    national_focus_years = -10
+    years_of_nationalism = -10
+}
+cr3_professionalism_roids = {
+    max_absolutism = 10
+    drill_decay_modifier = -0.50
+}
+cr3_sea_dwelling = {
+    naval_morale = 0.05
+    global_sailors_modifier = 0.10
+}
+cr3_development_lab = {
+    governing_capacity_modifier = 0.10
+    global_tax_modifier = 0.10
+}
+cr3_humans = {
+    num_accepted_cultures = 1
+}

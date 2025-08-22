@@ -883,7 +883,6 @@ country_decisions = {
 				limit = { has_reform = enrika_reform }
 				development_in_provinces = {
 					value = 200
-					any_owned_province = {
 						OR = {
 							culture = Narwhal_Girl
 							culture = Kyoryuu_Girl
@@ -892,13 +891,11 @@ country_decisions = {
 							culture = Mammoth_Girl
 							culture = Royal_Sea_Dweller
 						}
-					}
 				}
 			}
 			else = {
 				development_in_provinces = {
 					value = 300
-					any_owned_province = {
 						OR = {
 							culture = Narwhal_Girl
 							culture = Kyoryuu_Girl
@@ -907,7 +904,6 @@ country_decisions = {
 							culture = Mammoth_Girl
 							culture = Royal_Sea_Dweller
 						}
-					}
 				}
 			}
 		}

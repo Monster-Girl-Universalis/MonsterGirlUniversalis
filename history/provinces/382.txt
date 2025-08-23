@@ -18,6 +18,7 @@ discovered_by = TECH_KITSUNE
 discovered_by = TECH_LAMIA
 discovered_by = TECH_LAND_DWELLER
 discovered_by = TECH_MERMAID
+discovered_by = TECH_ROID
 discovered_by = TECH_SCYLLA
 discovered_by = TECH_SEA_DWELLER
 discovered_by = TECH_SLIME

@@ -6,31 +6,26 @@ country_decisions = {
 			was_never_end_game_tag_trigger = yes
 			culture_group = apoptosis
 			NOT = { exists = IT2 }
-			capital_scope = {
+			any_owned_province = {
 				region = iliasville_region 
-				is_core = ROOT
 			}
 		}
 		allow = {
-			AND = {
-				is_free_or_tributary_trigger = yes
-				is_at_war = no
-				OR = {
-					AND = {
-						army_size = 50
-						grown_by_development = 300
-						num_of_owned_provinces_with = {
-							region = iliasville_region
-							is_core = ROOT
-							value = 20
-						}
-					}
-				}
-				owns_core_province = 58
-				capital_scope = {
-					region = iliasville_region
-					is_core = ROOT
-				}
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+
+			army_size = 50
+			grown_by_development = 300
+			num_of_owned_provinces_with = {
+				region = iliasville_region
+				is_core = ROOT
+				value = 20
+			}
+
+			owns_core_province = 58
+			capital_scope = {
+				region = iliasville_region
+				is_core = ROOT
 			}
 		}
 		effect = {
@@ -68,31 +63,26 @@ country_decisions = {
 			was_never_end_game_tag_trigger = yes
 			culture_group = apoptosis
 			NOT = { exists = RO1 }
-			capital_scope = {
+			any_owned_province = {
 				region = pornof_region 
-				is_core = ROOT
 			}
 		}
 		allow = {
-			AND = {
-				is_free_or_tributary_trigger = yes
-				is_at_war = no
-				OR = {
-					AND = {
-						army_size = 50
-						grown_by_development = 300
-						num_of_owned_provinces_with = {
-							region = pornof_region 
-							is_core = ROOT
-							value = 20
-						}
-					}
-				}
-				owns_core_province = 20
-				capital_scope = {
-					region = pornof_region 
-					is_core = ROOT
-				}
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+
+			army_size = 50
+			grown_by_development = 300
+			num_of_owned_provinces_with = {
+				region = pornof_region 
+				is_core = ROOT
+				value = 20
+			}
+
+			owns_core_province = 20
+			capital_scope = {
+				region = pornof_region 
+				is_core = ROOT
 			}
 		}
 		effect = {
@@ -130,31 +120,26 @@ country_decisions = {
 			was_never_end_game_tag_trigger = yes
 			culture_group = apoptosis
 			NOT = { exists = SA3 }
-			capital_scope = {
+			any_owned_province = {
 				region = safar_ruins_region 
-				is_core = ROOT
 			}
 		}
 		allow = {
-			AND = {
-				is_free_or_tributary_trigger = yes
-				is_at_war = no
-				OR = {
-					AND = {
-						army_size = 50
-						grown_by_development = 300
-						num_of_owned_provinces_with = {
-							region = safar_ruins_region 
-							is_core = ROOT
-							value = 20
-						}
-					}
-				}
-				owns_core_province = 971
-				capital_scope = {
-					region = safar_ruins_region 
-					is_core = ROOT
-				}
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+
+			army_size = 50
+			grown_by_development = 300
+			num_of_owned_provinces_with = {
+				region = safar_ruins_region 
+				is_core = ROOT
+				value = 20
+			}
+
+			owns_core_province = 971
+			capital_scope = {
+				region = safar_ruins_region 
+				is_core = ROOT
 			}
 		}
 		effect = {
@@ -192,31 +177,26 @@ country_decisions = {
 			was_never_end_game_tag_trigger = yes
 			culture_group = apoptosis
 			NOT = { exists = GO4 }
-			capital_scope = {
+			any_owned_province = {
 				region = holy_wings_shrine_region 
-				is_core = ROOT
 			}
 		}
 		allow = {
-			AND = {
-				is_free_or_tributary_trigger = yes
-				is_at_war = no
-				OR = {
-					AND = {
-						army_size = 50
-						grown_by_development = 300
-						num_of_owned_provinces_with = {
-							region = holy_wings_shrine_region 
-							is_core = ROOT
-							value = 20
-						}
-					}
-				}
-				owns_core_province = 1856
-				capital_scope = {
-					region = holy_wings_shrine_region 
-					is_core = ROOT
-				}
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+
+			army_size = 50
+			grown_by_development = 300
+			num_of_owned_provinces_with = {
+				region = holy_wings_shrine_region 
+				is_core = ROOT
+				value = 20
+			}
+
+			owns_core_province = 1856
+			capital_scope = {
+				region = holy_wings_shrine_region 
+				is_core = ROOT
 			}
 		}
 		effect = {
@@ -253,31 +233,26 @@ country_decisions = {
 			was_never_end_game_tag_trigger = yes
 			culture_group = apoptosis
 			NOT = { exists = HE1 }
-			capital_scope = {
+			any_owned_province = {
 				region = hellgondo_tartarus_region 
-				is_core = ROOT
 			}
 		}
 		allow = {
-			AND = {
-				is_free_or_tributary_trigger = yes
-				is_at_war = no
-				OR = {
-					AND = {
-						army_size = 50
-						grown_by_development = 300
-						num_of_owned_provinces_with = {
-							region = hellgondo_tartarus_region 
-							is_core = ROOT
-							value = 20
-						}
-					}
-				}
-				owns_core_province = 2274
-				capital_scope = {
-					region = hellgondo_tartarus_region 
-					is_core = ROOT
-				}
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+
+			army_size = 50
+			grown_by_development = 300
+			num_of_owned_provinces_with = {
+				region = hellgondo_tartarus_region 
+				is_core = ROOT
+				value = 20
+			}
+
+			owns_core_province = 2274
+			capital_scope = {
+				region = hellgondo_tartarus_region 
+				is_core = ROOT
 			}
 		}
 		effect = {

@@ -6,6 +6,13 @@ country_event = {
 	desc = "flavor_si1.1.desc"
 	picture = AssasinationAttempt_eventPicture
 	fire_only_once = yes
+	major = yes
+	major_trigger = {
+		OR = {
+			religion = ilias_light_religion
+			provinces_on_capital_continent_of = FROM
+		}
+	}
 	trigger = {
 		tag = SI1
 		is_year = 1444
@@ -19,6 +26,19 @@ country_event = {
 	option = {		#Assasination attempt
 		name = flavor_si1.1.a
 		add_stability = -1
+		create_subject = {
+    			subject_type = research_subject
+    			subject = CR3
+		}
+		create_subject = {
+    			subject_type = research_subject
+    			subject = XX7
+		}
+		create_subject = {
+    			subject_type = research_subject
+    			subject = LB1
+		}
+			
 	}
 }
 country_event = {

@@ -6,13 +6,14 @@ religion = ilias_light_religion
 technology_group = TECH_LAMIA
 1444.1.1 = { 
 	monarch = { 
-		name = "Hannah"
+		name = "Sofia"
 		dynasty = "the Lamia"
 		birth_date = 1424.1.1
 		adm = 4
-		dip = 4
+		dip = 6
 		mil = 4
 		female = yes
 	}
 }
+add_ruler_personality = zealot_personality
 capital = 583

@@ -7,15 +7,12 @@ technology_group = TECH_APOPTOSIS
 capital = 18#Eastern Ilias Tartarus coast
 1444.1.1 = { 
 	monarch = { 
-		name = "Ruth"
-		dynasty = "Hayron"
+		name = "Luxuru"
+		dynasty = "the Chaos Researcher"
 		birth_date = 1424.1.1
 		adm = 6
 		dip = 2
 		mil = 4
 		female = yes
 	}
-	unlock_race = { race = apoptosis }
-	unlock_race = { race = doll }
-	unlock_race = { race = roid }
 }

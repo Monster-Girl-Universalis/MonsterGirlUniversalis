@@ -136,7 +136,7 @@ lily_internal_branch = {
 			treasury = 150
 			innovativeness = 25
 			857 = {
-				type = all
+				#type = all
 				AND = {
 					owned_by = ROOT
 					development = 20
@@ -862,7 +862,7 @@ lily_final_branch = {
 					who = ML1
 					value = 80
 				}
-				alliance_with = ML1
+				alliance_with = IT1
 				2409 = { owned_by = ROOT }
 			}
 		}

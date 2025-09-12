@@ -1,0 +1,66 @@
+spriteTypes = {	
+	spriteType = {
+		name = "slime_member"
+		texturefile = "gfx//interface//missions//slimemountains_missions//slime_member.dds"
+	}
+	spriteType = {
+		name = "lime"
+		texturefile = "gfx//interface//missions//slimemountains_missions//lime.dds"
+	}
+	spriteType = {
+		name = "capital"
+		texturefile = "gfx//interface//missions//slimemountains_missions//capital.dds"
+	}
+	spriteType = {
+		name = "slu_absolutism"
+		texturefile = "gfx//interface//missions//slimemountains_missions//slu_absolutism.dds"
+	}
+	spriteType = {
+		name = "FAR_ragora"
+		texturefile = "gfx//interface//missions//slimemountains_missions//FAR_ragora.dds"
+	}
+	spriteType = {
+		name = "FAR_lime"
+		texturefile = "gfx//interface//missions//slimemountains_missions//FAR_lime.dds"
+	}
+	spriteType = {
+		name = "lime_2"
+		texturefile = "gfx//interface//missions//slimemountains_missions//lime_2.dds"
+	}
+	spriteType = {
+		name = "slime_state_prosper"
+		texturefile = "gfx//interface//missions//slimemountains_missions//slime_state_prosper.dds"
+	}
+	spriteType = {
+		name = "slime_state_fort"
+		texturefile = "gfx//interface//missions//slimemountains_missions//slime_state_fort.dds"
+	}
+	spriteType = {
+		name = "iliasburg_market"
+		texturefile = "gfx//interface//missions//slimemountains_missions//iliasburg_market.dds"
+	}
+	spriteType = {
+		name = "bunni_horny"
+		texturefile = "gfx//interface//missions//slimemountains_missions//bunni_horny.dds"
+	}
+	spriteType = {
+		name = "marie"
+		texturefile = "gfx//interface//missions//slimemountains_missions//marie.dds"
+	}
+	spriteType = {
+		name = "bunny_slime"
+		texturefile = "gfx//interface//missions//slimemountains_missions//bunny_slime.dds"
+	}
+	spriteType = {
+		name = "lime_democratic"
+		texturefile = "gfx//interface//missions//slimemountains_missions//lime_democratic.dds"
+	}
+	spriteType = {
+		name = "lime_trade"
+		texturefile = "gfx//interface//missions//slimemountains_missions//lime_trade.dds"
+	}
+	spriteType = {
+		name = "lime_boobs"
+		texturefile = "gfx//interface//missions//slimemountains_missions//lime_boobs.dds"
+	}
+}

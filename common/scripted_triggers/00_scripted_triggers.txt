@@ -679,6 +679,10 @@ was_never_end_game_tag_trigger = {	#Country Scope
 				NOT = { was_tag = GO4 }
 				NOT = { tag = HE1 }
 				NOT = { was_tag = HE1 }
+				NOT = { tag = HE2 }
+				NOT = { was_tag = HE2 }
+				NOT = { tag = NO1 }
+				NOT = { was_tag = NO1 }
 				NOT = { tag = KA1 }
 				NOT = { was_tag = KA1 }
 				NOT = { tag = KA2 }

@@ -141,7 +141,7 @@ estate_forbidden_art_nine_tails_funeral_pyre = {
 		mission_completed = KI1_nine_tailed_mastery 
 	}
 	benefits = {
-		monster_girl_privilege_slots = 1
+		monster_girls_privilege_slots = 1
 	}
 
 	modifier = {

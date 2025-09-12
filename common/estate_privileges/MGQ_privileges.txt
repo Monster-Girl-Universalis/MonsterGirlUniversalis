@@ -1564,7 +1564,6 @@ estate_mass_slow = {
 		custom_tooltip = estate_mass_slow_rt
 	}
 	on_granted_province = {
-				limit = { owned_by = ROOT }
 				add_province_modifier = {
 					name = spiritualists_mass_slow
 					duration = -1
@@ -1647,7 +1646,7 @@ estate_practice_necromancy = {
 		}
 	}
 	modifier = {
-			has_russian_abilities = yes	
+			#has_russian_abilities = yes	
 			has_streltsy = yes
 			allowed_streltsy_fraction = 0.25
 	}

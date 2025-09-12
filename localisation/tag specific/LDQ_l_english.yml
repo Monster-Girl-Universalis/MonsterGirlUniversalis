@@ -1,8 +1,8 @@
 ﻿l_english:
  
  #Missions
- ldq_slug_queen_title: "Ascendant Slug Empire"
- ldq_slug_queen_desc: "Slugs have always been looked down upon by monsters and humans alike, but those days are a thing of the past: Now we have forged through blood and mucus an empire so vast and grand even the Monster Lord herself would be envy! But we can't give up yet, we need to make the whole of slugkind a stronger species, and the power of the four spirits can help us in achieving this feat. But first and foremost; slugs must face harship and hard disipline! All slugs will be called to arms!"
+ ldq_slug_queen_title: "[From.GetHolySlug]"
+ ldq_slug_queen_desc: "[From.GetHolySlug2]"
  
  ldq_undine1_title: "Across the Strait"
  ldq_undine1_desc: "Undine the spirit of water resides in a hidden spring within Western Noah, so we need to stablish a foothold in the region if we are to challenge the Water Spirit."
@@ -10,14 +10,14 @@
  ldq_undine2_title: "Power of Water"
  ldq_undine2_desc: "We have reached the spring of Undine! The only thing left to do is to challange the great slime to a battle..."
  
- ldq_crusader_title: "San Ilia Crusade"
- ldq_crusader_desc: "San Ilia - seat of the blind servant of the wicked Goddsse of Light the Pope - stands between us and the Forest of Spirits, the place where Sylph spirit of the wind resides! Aside from access to the forest San Ilia itself is quite a prize; to get access to their vast library for one!"
+ ldq_crusader_title: "[From.GetCrusadeMelk]"
+ ldq_crusader_desc: "[From.GetCrusadeMelk2]"
  
  ldq_irredentism_title: "Irredentist Claims"
  ldq_irredentism_desc: "Our glorious unification of continental Ilias has been achieved, but there are islands nearby that should be considered the true natural border of the empire as they could be used by foreign powers to stage invasions of our imperial core. Seizing those areas to erect fortifications will turn an existing problem into a solution: our finest line of defense! This is a vital imperial interest, we must claim these islands!"
  
  ldq_southern_sea_title: "Challenge the Abyss"
- ldq_southern_sea_desc: "The Undersea Temple is the home of the Southern Sea Queen Kraken, but she is loyal to the Monster Lord. We cannot risk our sea trade in the area being subject to the whims of an unruly Monster Lord or Heavenly Knight, we control it!"
+ ldq_southern_sea_desc: "[From.GetKrakkenMelk]"
  
  ldq_roach_tower_title: "Redeem Roach Tower"
  ldq_roach_tower_desc: "Roach Tower lies on an island easily fortified and defendable. If we could incorporate this to our empire, we'll secure the western flank."
@@ -41,7 +41,7 @@
  ldq_grand_noah_desc: "The walls of Grand Noah have fallen, and the world renown colosseum is ours! This victory shows the world what happens when our imperial core is threatened. With the colosseum in our hands, we have some bread and circuses for our people!"
  
  ldq_monster_lord_title: "Eclipse the Monster Lord"
- ldq_monster_lord_desc: "The Monster Lord is the highest authority in the world of monsters, the one who commands monsterkind and the four Heavenly Knights - and a direct descendant of the Dark Goddess Alipheese. That was yesterday, today things have changed; our realm eclipsed the Monster Lord's in every category, our greatest source of pride. This is the beginning of slugkind's golden era!"
+ ldq_monster_lord_desc: "[From.GetMonsterSlug]"
  
  ldq_attuned_with_nature_title: "Attuned with Nature"
  ldq_attuned_with_nature_desc: "We slugs have eternally been one with the natural world. Now that we have mastered the four elements, our connection with mother nature is overwhelming strong. Our slugs armies are now a force of nature itself!"
@@ -57,6 +57,20 @@
  
  ldq_earth_power_title: "Power of Earth"
  ldq_earth_power_desc: "The harsh enviroment of the desert is torture for us slugs, but no pain, no gain! The spirit of earth Gnome is here, and it is said with her power that even a sickly human could break free from a lamia's death grip. Such power cannot be wasted on humans."
+ 
+ #ilias light localisation
+ string_holy_slug: "Holy Slug Empire"
+ string_not_holy_slug: "Ascendant Slug Empire"
+ string_holy_slug_2: "Slugs have always been looked down upon by monsters and humans alike, but those days are a thing of the past: Now we have forged through blood and mucus an empire so vast and grand even the Goddess of Light herself would be proud! But we can't give up yet, we need to make the whole of slugkind a stronger species, and the power of the four spirits can help us in achieving this feat. But first and foremost; slugs must face harship and hard disipline! All slugs will be called to arms!"
+ string_not_holy_slug_2: "Slugs have always been looked down upon by monsters and humans alike, but those days are a thing of the past: Now we have forged through blood and mucus an empire so vast and grand even the Monster Lord herself would be envy! But we can't give up yet, we need to make the whole of slugkind a stronger species, and the power of the four spirits can help us in achieving this feat. But first and foremost; slugs must face harship and hard disipline! All slugs will be called to arms!"
+ string_monster_slug: "The Monster Lord is the highest authority in the world of monsters, the one who commands monsterkind and the four Heavenly Knights - and a direct descendant of the Dark Goddess Alipheese. That was yesterday, today things have changed; our realm eclipsed the Monster Lord's in every category, our greatest source of pride. Ilias is sure to bless us!"
+ string_not_monster_slug: "The Monster Lord is the highest authority in the world of monsters, the one who commands monsterkind and the four Heavenly Knights - and a direct descendant of the Dark Goddess Alipheese. That was yesterday, today things have changed; our realm eclipsed the Monster Lord's in every category, our greatest source of pride. This is the beginning of slugkind's golden era!"
+ string_krakken_melk: "The Undersea Temple is under the control of a subject of the Monster Lord, as such our merchants and sailors in the area are at risk of incur in the wrath of the Monster Lord or a heavenly knight, we must secure the waters around continental Ilias for the safety of our people."
+ string_not_krakken_melk: "The Undersea Temple is the home of the Southern Sea Queen Kraken, but she is loyal to the Monster Lord. We cannot risk our sea trade in the area being subject to the whims of an unruly Monster Lord or Heavenly Knight, we control it!"
+ string_crusade_melk: "Clashing Faiths"
+ string_not_crusade_melk: "San Ilia Crusade"
+ string_crusade_melk2: "San Ilia is the home of the Pope and his peope are widely considered to be the most zealot among the followers of the Goddess of Light, but is is clear to us that their faith is wavering and as fellow followers of Ilias' teaching we must be willing to show her light to our neighbours in the dark."
+ string_not_crusade_melk2: "San Ilia - seat of the blind servant of the wicked Goddsse of Light the Pope - stands between us and the Forest of Spirits, the place where Sylph spirit of the wind resides! Aside from access to the forest San Ilia itself is quite a prize; to get access to their vast library for one!"
  
  #Mission Modifiers
  ldq_slug_golden_age: "Slug Golden Age"

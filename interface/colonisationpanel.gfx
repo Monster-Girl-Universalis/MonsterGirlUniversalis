@@ -118,6 +118,22 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_colony_terrain_chaos_field"
 		texturefile = "gfx/interface/colony_terrain_chaos_field.dds"
+	}	
+	spriteType = {
+		name = "GFX_colony_terrain_lava"
+		texturefile = "gfx/interface/colony_terrain_lava.dds"
+	}	
+	spriteType = {
+		name = "GFX_colony_terrain_flesh"
+		texturefile = "gfx/interface/colony_terrain_flesh.dds"
+	}	
+	spriteType = {
+		name = "GFX_colony_terrain_heavenly"
+		texturefile = "gfx/interface/colony_terrain_heavenly.dds"
+	}	
+	spriteType = {
+		name = "GFX_colony_terrain_moonscape"
+		texturefile = "gfx/interface/colony_terrain_moonscape.dds"
 	}
 	
 #########################################

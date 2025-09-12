@@ -1,0 +1,10 @@
+spriteTypes = {	
+	spriteType = {
+		name = "CR3_KANI_eventPicture"
+		texturefile = "gfx//event_pictures//event_pictures_canceroid_realm//CR3_KANI_eventPicture.dds"
+	}
+	spriteType = {
+		name = "CR3_FIZZ_eventPicture"
+		texturefile = "gfx//event_pictures//event_pictures_canceroid_realm//CR3_FIZZ_eventPicture.dds"
+	}
+}

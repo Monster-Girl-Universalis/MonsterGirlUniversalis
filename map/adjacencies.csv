@@ -15,6 +15,8 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 3006;3000;sea;4155;-1;-1;-1;-1;Makai Lima Strait
 3045;3051;sea;4113;-1;-1;-1;-1;Liquer Left Island
 3603;3052;sea;4113;-1;-1;-1;-1;Liquer Right Island
+3030;3071;sea;4161;-1;-1;-1;-1;South Plansect
+3032;3073;sea;4161;-1;-1;-1;-1;North Plansect
 3250;3251;sea;4191;-1;-1;-1;-1;Bomb Slime-Makai Privateer
 3345;3264;sea;4193;-1;-1;-1;-1;Noah-Natalia Train Station
 3323;3481;sea;161;-1;-1;-1;-1;Natalia-Ilias Train Station

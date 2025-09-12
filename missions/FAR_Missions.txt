@@ -2,7 +2,7 @@
 # Missions for Fallen Angel Realm by Cris
 ########################################
 
-branch_1 = {
+FAR_branch_1 = {
 	slot = 1
 	generic = no
 	ai = yes
@@ -264,7 +264,7 @@ branch_1 = {
 		}
 	}
 }
-branch_2 = {
+FAR_branch_2 = {
 	slot = 2
 	generic = no
 	ai = yes
@@ -441,7 +441,7 @@ branch_2 = {
 		}
 	}
 }
-branch_3 = {
+FAR_branch_3 = {
 	slot = 3
 	generic = no
 	ai = yes
@@ -604,7 +604,7 @@ branch_3 = {
 		}
 	}
 }
-branch_4 = {
+FAR_branch_4 = {
 	slot = 4
 	generic = no
 	ai = yes
@@ -792,7 +792,7 @@ branch_4 = {
 		}
 	}
 }
-branch_5 = {
+FAR_branch_5 = {
 	slot = 5
 	generic = no
 	ai = yes
@@ -874,7 +874,6 @@ branch_5 = {
 		icon = FAR_woo_angels
 		required_missions = {FAR_enrika}
 		position = 3
-		generic = no
 		trigger = {
 			estate_loyalty = {
 					estate = estate_angels
@@ -904,7 +903,6 @@ branch_5 = {
 		icon = FAR_woo_elf
 		required_missions = {FAR_angel_estate}
 		position = 4
-		generic = no
 		trigger = {
 			estate_loyalty = {
 					estate = estate_monster_girls

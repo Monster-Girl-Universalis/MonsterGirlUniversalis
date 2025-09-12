@@ -21,3 +21,4 @@ discovered_by = TECH_MAKAI_UNDEAD
 discovered_by = TECH_MINAGI
 discovered_by = TECH_SAJA
 discovered_by = TECH_TAMAMO
+discovered_by = TECH_MAKAI_BEAST

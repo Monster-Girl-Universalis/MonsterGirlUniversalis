@@ -644,7 +644,7 @@ estate_monster_girls_slimes_want_trade = {
 			estate = estate_monster_girls
 			loyalty = 15
 		}
-		years_of_income = 0.2
+		add_years_of_income = 0.2
     }
     failing_effect = {
 		
@@ -679,7 +679,7 @@ estate_monster_girls_vampires_want_wealth = {
 			estate = estate_monster_girls
 			loyalty = 15
 		}
-		years_of_income = 1
+		add_years_of_income = 1
     }
     failing_effect = {
 		

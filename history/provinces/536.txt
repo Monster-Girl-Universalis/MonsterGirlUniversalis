@@ -6,7 +6,6 @@ base_manpower = 3
 base_production = 3
 owner = XX7
 controller = XX7
-add_core = SI1
 discovered_by = TECH_ALRAUNE
 discovered_by = TECH_ANGEL
 discovered_by = TECH_BEAST
@@ -21,6 +20,7 @@ discovered_by = TECH_KITSUNE
 discovered_by = TECH_LAMIA
 discovered_by = TECH_LAND_DWELLER
 discovered_by = TECH_MERMAID
+discovered_by = TECH_ROID
 discovered_by = TECH_SCYLLA
 discovered_by = TECH_SEA_DWELLER
 discovered_by = TECH_SLIME
@@ -31,9 +31,7 @@ discovered_by = TECH_VAMPIRE
 discovered_by = TECH_YOUMA
 discovered_by = TECH_DEMI_HUMAN
 trade_goods = copper
-latent_trade_goods = { 
-	coal 
-}
+latent_trade_goods = { coal }
 add_core = XX7
 discovered_by = TECH_FAIRY
 discovered_by = TECH_GHOST

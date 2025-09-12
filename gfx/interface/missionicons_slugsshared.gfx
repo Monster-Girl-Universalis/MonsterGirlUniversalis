@@ -1,0 +1,66 @@
+spriteTypes = {	
+	spriteType = {
+		name = "mission_elisabeth"
+		texturefile = "gfx//interface//missions//slugsshared_missions//mission_elisabeth.dds"
+	}
+	spriteType = {
+		name = "midas"
+		texturefile = "gfx//interface//missions//slugsshared_missions//midas.dds"
+	}
+	spriteType = {
+		name = "midas_slugs"
+		texturefile = "gfx//interface//missions//slugsshared_missions//midas_slugs.dds"
+	}
+	spriteType = {
+		name = "melty"
+		texturefile = "gfx//interface//missions//slugsshared_missions//melty.dds"
+	}
+	spriteType = {
+		name = "elisabeth_wall"
+		texturefile = "gfx//interface//missions//slugsshared_missions//elisabeth_wall.dds"
+	}
+	spriteType = {
+		name = "rosary"
+		texturefile = "gfx//interface//missions//slugsshared_missions//rosary.dds"
+	}
+	spriteType = {
+		name = "capital"
+		texturefile = "gfx//interface//missions//slugsshared_missions//capital.dds"
+	}
+	spriteType = {
+		name = "land_dweller_melk"
+		texturefile = "gfx//interface//missions//slugsshared_missions//land_dweller_melk.dds"
+	}
+	spriteType = {
+		name = "sluggy_midas"
+		texturefile = "gfx//interface//missions//slugsshared_missions//sluggy_midas.dds"
+	}
+	spriteType = {
+		name = "melk_power"
+		texturefile = "gfx//interface//missions//slugsshared_missions//melk_power.dds"
+	}
+	spriteType = {
+		name = "LDQ"
+		texturefile = "gfx//interface//missions//slugsshared_missions//LDQ.dds"
+	}
+	spriteType = {
+		name = "melk_purple"
+		texturefile = "gfx//interface//missions//slugsshared_missions//melk_purple.dds"
+	}
+	spriteType = {
+		name = "pornof"
+		texturefile = "gfx//interface//missions//slugsshared_missions//pornof.dds"
+	}
+	spriteType = {
+		name = "queen_harpy_mad"
+		texturefile = "gfx//interface//missions//slugsshared_missions//queen_harpy_mad.dds"
+	}
+	spriteType = {
+		name = "melk_lost_woods"
+		texturefile = "gfx//interface//missions//slugsshared_missions//melk_lost_woods.dds"
+	}
+	spriteType = {
+		name = "iliasburg_plaza_day"
+		texturefile = "gfx//interface//missions//slugsshared_missions//iliasburg_plaza_day.dds"
+	}
+}

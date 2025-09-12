@@ -1,0 +1,616 @@
+########################################
+# Missions for the slugs nations by Cris
+########################################
+
+slugs_branch_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		OR = {
+		tag = SLT
+		tag = SN1
+		tag = SLG 
+		tag = MDS
+		was_tag = SLT
+		was_tag = SN1
+		was_tag = SLG
+		was_tag = MDS
+		}
+	}
+	has_country_shield = yes
+	SLUG_slug_tower = { 
+		icon = melty
+		required_missions = {}
+		position = 3
+		provinces_to_highlight = {
+			OR = {
+				area = sluggy_stars_plains_area
+				area = slug_tower_area
+				area = royal_slug_coast_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			stability = 3
+			sluggy_stars_plains_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			slug_tower_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			royal_slug_coast_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+		}
+		effect = {
+			add_country_modifier = {
+				name = slug_slug_tower
+				duration = 10950
+			}
+			add_army_tradition = 10  
+		}
+	}
+	SLUG_iliasburg = { 
+		icon = iliasburg_plaza_day
+		required_missions = {SLUG_slug_tower}
+		provinces_to_highlight = {
+			OR = {
+				area = iliasburg_area
+				area = eastern_iliasburg
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			iliasburg_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			eastern_iliasburg = { type = all country_or_non_sovereign_subject_holds = ROOT }
+		}
+		effect = {
+			add_country_modifier = {
+				name = slug_iliasburg 
+				duration = 9125
+			}
+			iliasburg_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			south_irina_road_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			earthworm_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			add_years_of_income = 2 
+		}
+	}
+	SLUG_irina_enrika = { 
+		icon = melk_lost_woods
+		required_missions = {SLUG_iliasburg}
+		provinces_to_highlight = {
+			OR = {
+				area = south_irina_road_area
+				area = earthworm_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			south_irina_road_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			earthworm_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+		}
+		effect = {
+			enrika_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			irina_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			add_mil_power = 300
+			add_adm_power = 250
+		}
+	}
+}
+slugs_branch_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		OR = {
+		tag = SLT
+		tag = SN1
+		tag = SLG 
+		tag = MDS
+		was_tag = SLT
+		was_tag = SN1
+		was_tag = SLG
+		was_tag = MDS
+		}
+	}
+	has_country_shield = yes
+	SLUG_capital = { 
+		icon = capital
+		required_missions = {}
+		position = 1
+		trigger = {
+			capital_scope = {
+				development = 30
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = slug_capital_city
+				duration = 9125
+			}
+			capital_scope = {
+				add_base_tax = 2
+				add_base_production = 2
+				add_base_manpower = 2
+			}
+			add_stability = 1
+		}
+	}
+	SLUG_reform = { 
+		icon = sluggy_midas
+		required_missions = {SLUG_capital}
+		trigger = {
+			adm_power = 150
+			government_reform_progress = 30
+		}
+		effect = {
+			add_country_modifier = {
+				name = slug_reform_gov
+				duration = -1
+			}
+			add_adm_power = -150
+			change_government_reform_progress = -30
+		}
+	}
+	SLUG_high_slugs = { 
+		icon = elisabeth_wall
+		required_missions = {}
+		position = 3
+		provinces_to_highlight = {
+			OR = {
+				area = midas_slugs_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			stability = 3
+			midas_slugs_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+		}
+		effect = {
+			add_country_modifier = {
+				name = slug_high_slugs
+				duration = 10950
+			}
+			add_army_tradition = 10  
+		}
+	}
+	SLUG_harpy_tower = { 
+		icon = queen_harpy_mad
+		required_missions = {SLUG_high_slugs}
+		provinces_to_highlight = {
+			OR = {
+				area = harpy_tower_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			harpy_tower_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+		}
+		effect = {
+			add_country_modifier = {
+				name = slug_harpy_tower  
+				duration = 9125
+			}
+			happiness_village_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			add_adm_power = 100
+		}
+	}
+	SLUG_pornof = { 
+		icon = pornof
+		required_missions = {SLUG_harpy_tower}
+		provinces_to_highlight = {
+			OR = {
+				area = pornof_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			pornof_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+		}
+		effect = {
+			add_country_modifier = {
+				name = slug_pornof  
+				duration = 9125
+			}
+			pornof_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	SLUG_iliasville = { 
+		icon = temple
+		required_missions = {SLUG_pornof}
+		provinces_to_highlight = {
+			OR = {
+				region = pornof_region
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			pornof_region = { type = all country_or_non_sovereign_subject_holds = ROOT }
+		}
+		effect = {
+			iliasville_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			add_dip_power = 300
+			add_adm_power = 250
+		}
+	}
+}
+slugs_branch_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		OR = {
+		tag = SLT
+		tag = SN1
+		tag = SLG 
+		tag = MDS
+		was_tag = SLT
+		was_tag = SN1
+		was_tag = SLG
+		was_tag = MDS
+		}
+	}
+	has_country_shield = yes
+	SLUG_raise_army = { 
+		icon = mission_elisabeth
+		required_missions = {}
+		position = 1
+		trigger = {
+			army_size_percentage = 1
+			has_mil_advisor = yes
+			num_of_generals = 1
+		}
+		effect = {
+			add_country_modifier = {
+				name = slug_army
+				duration = 7300
+			}
+			add_manpower = 15
+			custom_tooltip = perma_claim_neighbor_area
+			hidden_effect = {
+				every_owned_province = {
+					every_neighbor_province = {
+						area = {
+							limit = {
+								NOT = { owned_by = ROOT }
+								NOT = { is_permanent_claim = ROOT    }
+								NOT = { is_core = ROOT    }
+							}
+							add_permanent_claim = ROOT
+						}
+					}
+				}
+			}
+		}
+	}
+	SLUG_flexing = { 
+		icon = melk_purple
+		required_missions = {SLUG_raise_army}
+		trigger = {
+			custom_trigger_tooltip = {
+			tooltip = obj_humiliate_rival_tooltip
+			has_country_flag = humiliated_rival
+			}
+		}
+		effect = {
+			slug_plains_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			} 
+			slug_coast_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			} 
+			midas_plains_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			} 
+			midas_village_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			} 
+		}
+	}
+	SLUG_midas = { 
+		icon = midas
+		required_missions = {SLUG_flexing}
+		provinces_to_highlight = {
+			OR = {
+				area = midas_village_area
+				area = midas_plains_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			midas_village_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			midas_plains_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+		}
+		effect = {
+			sluggy_stars_plains_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			} 
+			slug_tower_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			} 
+			royal_slug_coast_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			} 
+			midas_slugs_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			slug_nuns_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			} 
+			high_slugs_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}  
+		}
+	}
+	slug_queen = { 
+		icon = LDQ
+		required_missions = {SLUG_midas}
+		position = 7
+		generic = no
+		trigger = {
+			adm_tech = 10
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			monthly_adm = 12
+			monthly_dip = 12
+			monthly_mil = 12
+			government_rank = 2
+			army_tradition = 50
+			army_size = 150
+			grown_by_development = 750
+			legitimacy_equivalent = 100
+			is_bankrupt = no
+			NOT = {
+				exists = LDQ
+			}
+		}
+		effect = {
+			custom_tooltip = flavor_insight_slu.1
+			country_event = {
+				id = flavor_slu.1
+			}
+			change_ruler_stat = {
+				type = adm
+				amount = 1
+			}
+			change_ruler_stat = {
+				type = dip
+				amount = 1
+			}
+			change_ruler_stat = {
+				type = mil
+				amount = 1
+			}
+		}
+	}
+}
+slugs_branch_4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		OR = {
+		tag = SLT
+		tag = SN1
+		tag = SLG 
+		tag = MDS
+		was_tag = SLT
+		was_tag = SN1
+		was_tag = SLG
+		was_tag = MDS
+		}
+	}
+	has_country_shield = yes
+	SLUG_ideas = { 
+		icon = land_dweller_melk
+		required_missions = {}
+		position = 1
+		trigger = {
+			full_idea_group = land_dweller_ideas
+		}
+		effect = {
+			add_country_modifier = {
+				name = slug_military
+				duration = 9125
+			}
+			add_mil_power = 150
+		}
+	}
+	SLUG_yoma = { 
+		icon = melk_power
+		required_missions = {SLUG_ideas}
+		trigger = {
+			full_idea_group = offensive_ideas
+			mil_power = 200
+		}
+		effect = {
+			unlock_race = { race = yoma }
+			add_mil_power = -200
+		}
+	}
+	SLUG_rosary = { 
+		icon = rosary
+		required_missions = {}
+		position = 3
+		provinces_to_highlight = {
+			OR = {
+				area = slug_nuns_area
+				area = high_slugs_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			stability = 3
+			slug_nuns_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			high_slugs_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+		}
+		effect = {
+			add_country_modifier = {
+				name = slug_rosary
+				duration = 10950
+			}
+			add_army_tradition = 10  
+		}
+	}
+}
+slugs_branch_5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		OR = {
+		tag = SLT
+		tag = SN1
+		tag = SLG 
+		tag = MDS
+		was_tag = SLT
+		was_tag = SN1
+		was_tag = SLG
+		was_tag = MDS
+		}
+	}
+	has_country_shield = yes
+	SLUG_midas_slugs = { 
+		icon = midas_slugs
+		required_missions = {}
+		position = 3
+		provinces_to_highlight = {
+			OR = {
+				area = midas_farms
+				area = slug_coast
+				province_id = 471
+				province_id = 454
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			stability = 3
+			midas_farms = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			slug_coast = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			471 = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			454 = { type = all country_or_non_sovereign_subject_holds = ROOT }
+		}
+		effect = {
+			add_country_modifier = {
+				name = slug_midas_slugs
+				duration = 10950
+			}
+			add_army_tradition = 10  
+		}
+	}
+	SLUG_midas_village = { 
+		icon = sluggy_midas
+		required_missions = {SLUG_midas_slugs}
+		provinces_to_highlight = {
+			OR = {
+				area = midas_village_area
+				area = midas_plains_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			midas_village_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			midas_plains_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+		}
+		effect = {
+			midas_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			add_adm_power = 300
+			add_dip_power = 125
+			add_mil_power = 125
+		}
+	}
+}

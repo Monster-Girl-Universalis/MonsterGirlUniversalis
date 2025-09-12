@@ -875,6 +875,11 @@ country_decisions = {
 					culture = Sandworm_Girl
 					culture = Mammoth_Girl
 					culture = Royal_Sea_Dweller
+					culture = Marlboro_Girl
+					culture = Giga_Slime
+					culture = Monstro_Girl 
+					culture = Giga_Dryad 
+					culture = Giant_Doll 
 				}
 			}
 		}
@@ -883,30 +888,36 @@ country_decisions = {
 				limit = { has_reform = enrika_reform }
 				development_in_provinces = {
 					value = 200
-					any_owned_province = {
-						OR = {
-							culture = Narwhal_Girl
-							culture = Kyoryuu_Girl
-							culture = Golem_Girl
-							culture = Sandworm_Girl
-							culture = Mammoth_Girl
-							culture = Royal_Sea_Dweller
-						}
+					OR = {
+						culture = Narwhal_Girl
+						culture = Kyoryuu_Girl
+						culture = Golem_Girl
+						culture = Sandworm_Girl
+						culture = Mammoth_Girl
+						culture = Royal_Sea_Dweller
+						culture = Marlboro_Girl
+						culture = Giga_Slime
+						culture = Monstro_Girl 
+						culture = Giga_Dryad 
+						culture = Giant_Doll 
 					}
 				}
 			}
 			else = {
 				development_in_provinces = {
 					value = 300
-					any_owned_province = {
-						OR = {
-							culture = Narwhal_Girl
-							culture = Kyoryuu_Girl
-							culture = Golem_Girl
-							culture = Sandworm_Girl
-							culture = Mammoth_Girl
-							culture = Royal_Sea_Dweller
-						}
+					OR = {
+						culture = Narwhal_Girl
+						culture = Kyoryuu_Girl
+						culture = Golem_Girl
+						culture = Sandworm_Girl
+						culture = Mammoth_Girl
+						culture = Royal_Sea_Dweller
+						culture = Marlboro_Girl
+						culture = Giga_Slime
+						culture = Monstro_Girl 
+						culture = Giga_Dryad 
+						culture = Giant_Doll 
 					}
 				}
 			}

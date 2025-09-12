@@ -266,7 +266,6 @@ monster_lord_1 = {
 			create_union = SP4
 			define_general = { 
 				name = "Spider Princess"
-        			type = general
         			fire = 3
         			shock = 7
         			manuever = 3
@@ -1262,7 +1261,7 @@ monster_lord_5 = {
 				duration = -1 
 			}
 			2233 = {
-				owned_by = ROOT
+				#owned_by = ROOT
 				add_great_project_tier = {
 					type = sealed_sinner_prison 
 					tier = 1

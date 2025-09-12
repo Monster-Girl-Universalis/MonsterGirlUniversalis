@@ -130,7 +130,7 @@ lr1_perfect_admin = {
 lr1_safina_unification = {
 	administrative_efficiency = 0.05
 	overextension_impact_modifier = -0.2
-	country_military_power = 1
+	country_mil_power = 1
 }
 lr1_lamia_queen = {
 	 	prestige = 1

@@ -476,6 +476,7 @@ categories =  {
 		terrain_override = {
 		2583 2584 2585 2586 2587 2588 2589 2590 2591 2592 2593 2594 2595 2596 2597 2598 2601 2602
 		2603 2604 2605 2606 2607 2608 2609 2610 2611 2612 2613 2614 2615 2616 2617 2618 2619 2620
+		3119 3120 3188 3122 3123 3124 
 		}	
 	}
 	
@@ -496,6 +497,40 @@ categories =  {
 		2085 2086 2087 2088 2089 2090
 		}	
 	}	
+	lava = {
+		color = { 255 0 0 }
+
+		type = lava
+		sound_type = lava
+
+		movement_cost = 1.40
+		local_development_cost = 0.60
+		nation_designer_cost_multiplier = 0.6	
+		supply_limit = 3
+		allowed_num_of_buildings = -1
+		max_attrition = 3
+		local_hostile_attrition = 3
+		
+		terrain_override = {
+		1667 1658 1666 1661 
+		}	
+	}		
+	flesh = {
+		color = { 163 38 21 }
+
+		sound_type = flesh
+
+		movement_cost = 1.30
+		local_development_cost = 0.20
+		nation_designer_cost_multiplier = 0.75	
+		supply_limit = 15
+		max_attrition = 25
+		local_hostile_attrition = 1
+		
+		terrain_override = {
+		3575 3572 3576 3565 3583 3564 
+		}	
+	}
 }
 	
 ##################################################################
@@ -518,7 +553,7 @@ terrain = {
 	terrain_8			= { type = hills			color = { 	8	 } }
 	marsh				= { type = marsh			color = { 	9	 } }
 	lab_facility			= { type = lab_facility		color = { 	10	 } }
-	terrain_11			= { type = farmlands		color = { 	11	 } }
+	lava			= { type = lava		color = { 	11	 } }
 
 	forest_12			= { type = forest			color = { 	12	 } }
 	forest_13			= { type = forest			color = { 	13	 } }

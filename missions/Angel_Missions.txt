@@ -111,7 +111,7 @@ angel_internal_development = {
 		effect = {
 			add_years_of_income = 1.50
 			add_country_modifier = {
-				name = "gen_angel_feathers_market"
+				name = "gen_angel_feathers_market_mod"
 				duration = 9125 #25 years
 			}
 		}

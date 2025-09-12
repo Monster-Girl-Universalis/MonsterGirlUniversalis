@@ -1,0 +1,40 @@
+# Check if a province is in a given world
+is_in_singularity_world = {
+	OR = {
+		continent = Ilias
+		continent = Natalia
+		continent = Safina
+		continent = Noah
+		continent = Gold
+		continent = Snow_Continent
+		continent = Hellgondo
+		continent = North_Pole
+		continent = South_Pole
+	}
+}
+is_in_makai_world = {
+	OR = {
+		continent = Makai_Ilias_Continent
+		continent = Makai_Natalia
+		continent = Makai_Safina
+		continent = Makai_Noah
+		continent = Makai_Gold
+		continent = Makai_Hellgondo
+	}
+}
+is_in_dominion_world = {
+	OR = {
+		continent = Dominion_Ilias_Continent
+		continent = Dominion_Natalia
+		continent = Dominion_Safina
+		continent = Dominion_Noah
+		continent = Dominion_Gold
+		continent = Dominion_Hellgondo
+		continent = Dominion_Moon
+	}
+}
+is_in_chaos_domain_world = {
+	OR = {
+		#TBA
+	}
+}

@@ -1,0 +1,80 @@
+#This one is only for reference purpose. EU4 doesn't support any custom classification above continents. World is being checked by scripted_triggers
+world = {
+	Singularity_World = {
+		continents = {
+			Ilias
+			Natalia
+			Safina
+			Noah
+			Gold
+			Snow_Continent
+			Hellgondo
+			North_Pole
+			South_Pole
+		}
+	}
+	Makai = {
+		continents = {
+			Makai_Ilias_Continent
+			Makai_Natalia
+			Makai_Safina
+			Makai_Noah
+			Makai_Gold
+			Makai_Hellgondo
+		}
+	}
+	Dominion = {
+		continents = {
+			Dominion_Ilias_Continent
+			Dominion_Natalia
+			Dominion_Safina
+			Dominion_Noah
+			Dominion_Gold
+			Dominion_Hellgondo
+			Dominion_Moon
+		}
+	}
+	Chaos_Domain = {
+		continents = {
+			#TBA
+		}
+	}
+
+########That shit for EU5 or very distant future. maybe 
+
+	Black_Alice = {
+		continents = {
+			Black_Alice_Ilias_Continent
+			Black_Alice_Natalia
+			Black_Alice_Safina
+			Black_Alice_Noah
+			Black_Alice_Gold
+			Black_Alice_Hellgondo
+		}
+	}
+	Re_Creation = {
+		continents = {
+			Re_Creation_Ilias_Continent
+			Re_Creation_Natalia
+			Re_Creation_Safina
+			Re_Creation_Noah
+			Re_Creation_Gold
+			Re_Creation_Hellgondo
+		}
+	}
+	Pre_Disaster = {
+		continents = {
+			Pre_Disaster_Ilias_Continent
+			Pre_Disaster_Natalia
+			Pre_Disaster_Safina
+			Pre_Disaster_Noah
+			Pre_Disaster_Gold
+			Pre_Disaster_Hellgondo
+		}
+	}
+	Doomed_World = {
+		continents = {
+			Doomed_World_Safina
+		}
+	}
+}

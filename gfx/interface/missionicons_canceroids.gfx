@@ -1,0 +1,82 @@
+spriteTypes = {	
+	spriteType = {
+		name = "makinas_roid"
+		texturefile = "gfx//interface//missions//canceroid_missions//makinas_roid.dds"
+	}
+    spriteType = {
+		name = "lab_jillian"
+		texturefile = "gfx//interface//missions//canceroid_missions//lab_jillian.dds"
+	}
+    spriteType = {
+		name = "ldv_flag"
+		texturefile = "gfx//interface//missions//canceroid_missions//ldv_flag.dds"
+	}
+    spriteType = {
+		name = "chrome_evil"
+		texturefile = "gfx//interface//missions//canceroid_missions//chrome_evil.dds"
+	}
+    spriteType = {
+		name = "soapy_beach"
+		texturefile = "gfx//interface//missions//canceroid_missions//soapy_beach.dds"
+	}
+    spriteType = {
+		name = "ancient_temple_lab"
+		texturefile = "gfx//interface//missions//canceroid_missions//ancient_temple_lab.dds"
+	}
+    spriteType = {
+		name = "little_bug_lab"
+		texturefile = "gfx//interface//missions//canceroid_missions//little_bug_lab.dds"
+	}
+    spriteType = {
+		name = "general_rifles_roid"
+		texturefile = "gfx//interface//missions//canceroid_missions//general_rifles_roid.dds"
+	}
+	spriteType = {
+		name = "jillian_soapy"
+		texturefile = "gfx//interface//missions//canceroid_missions//jillian_soapy.dds"
+	}
+	spriteType = {
+		name = "rpg_stars"
+		texturefile = "gfx//interface//missions//canceroid_missions//rpg_stars.dds"
+	}
+	spriteType = {
+		name = "lab_science"
+		texturefile = "gfx//interface//missions//canceroid_missions//lab_science.dds"
+	}
+	spriteType = {
+		name = "meia_beach"
+		texturefile = "gfx//interface//missions//canceroid_missions//meia_beach.dds"
+	}
+	spriteType = {
+		name = "lab_tech"
+		texturefile = "gfx//interface//missions//canceroid_missions//lab_tech.dds"
+	}
+	spriteType = {
+		name = "machine_guns"
+		texturefile = "gfx//interface//missions//canceroid_missions//machine_guns.dds"
+	}
+	spriteType = {
+		name = "jillian_mission_supremacy"
+		texturefile = "gfx//interface//missions//canceroid_missions//jillian_mission_supremacy.dds"
+	}
+	spriteType = {
+		name = "ocean_star"
+		texturefile = "gfx//interface//missions//canceroid_missions//ocean_star.dds"
+	}
+	spriteType = {
+		name = "cr3_flag_plus"
+		texturefile = "gfx//interface//missions//canceroid_missions//cr3_flag_plus.dds"
+	}
+	spriteType = {
+		name = "robin_lab"
+		texturefile = "gfx//interface//missions//canceroid_missions//robin_lab.dds"
+	}
+	spriteType = {
+		name = "cr3_mission_warpath"
+		texturefile = "gfx//interface//missions//canceroid_missions//cr3_mission_warpath.dds"
+	}
+	spriteType = {
+		name = "lab_core"
+		texturefile = "gfx//interface//missions//canceroid_missions//lab_core.dds"
+	}
+}

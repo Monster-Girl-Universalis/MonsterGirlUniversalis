@@ -33,3 +33,4 @@ add_core = GR1
 center_of_trade = 2
 discovered_by = TECH_FAIRY
 discovered_by = TECH_GHOST
+discovered_by = TECH_ROID

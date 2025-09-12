@@ -1,0 +1,24 @@
+government = monarchy
+government_rank = 1
+primary_culture = ilian_human
+religion = ilias_light_religion
+technology_group = TECH_HUMAN
+capital = 433
+1444.1.1 = { 
+	monarch = { 
+		name = "Mei-Lin"
+		dynasty = "Hong"
+		birth_date = 1424.1.1
+		adm = 4
+		dip = 4
+		mil = 6
+		female = yes
+	}
+    add_ruler_personality = bold_fighter_personality
+}
+unlock_race = { race = land_dweller }
+add_accepted_culture = Slug_Girl
+add_accepted_culture = Earthworm_Girl
+add_accepted_culture = Leech_Girl
+race_unlocks = land_dweller
+add_government_reform = 

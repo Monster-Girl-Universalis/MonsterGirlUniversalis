@@ -6,7 +6,7 @@ country_decisions = {
 			was_never_end_game_tag_trigger = yes
 			culture_group = apoptosis
 			NOT = { exists = IT2 }
-			capital_scope = {
+			any_owned_province = {
 				region = iliasville_region 
 				is_core = ROOT
 			}
@@ -68,7 +68,7 @@ country_decisions = {
 			was_never_end_game_tag_trigger = yes
 			culture_group = apoptosis
 			NOT = { exists = RO1 }
-			capital_scope = {
+			any_owned_province = {
 				region = pornof_region 
 				is_core = ROOT
 			}
@@ -130,7 +130,7 @@ country_decisions = {
 			was_never_end_game_tag_trigger = yes
 			culture_group = apoptosis
 			NOT = { exists = SA3 }
-			capital_scope = {
+			any_owned_province = {
 				region = safar_ruins_region 
 				is_core = ROOT
 			}
@@ -192,7 +192,7 @@ country_decisions = {
 			was_never_end_game_tag_trigger = yes
 			culture_group = apoptosis
 			NOT = { exists = GO4 }
-			capital_scope = {
+			any_owned_province = {
 				region = holy_wings_shrine_region 
 				is_core = ROOT
 			}
@@ -253,7 +253,7 @@ country_decisions = {
 			was_never_end_game_tag_trigger = yes
 			culture_group = apoptosis
 			NOT = { exists = HE1 }
-			capital_scope = {
+			any_owned_province = {
 				region = hellgondo_tartarus_region 
 				is_core = ROOT
 			}
@@ -314,7 +314,7 @@ country_decisions = {
 			was_never_end_game_tag_trigger = yes
 			culture_group = apoptosis
 			NOT = { exists = HE2 }
-			capital_scope = {
+			any_owned_province = {
 				region = makai_tartarus_region
 				is_core = ROOT
 			}
@@ -375,7 +375,7 @@ country_decisions = {
 			was_never_end_game_tag_trigger = yes
 			culture_group = apoptosis
 			NOT = { exists = HE2 }
-			capital_scope = {
+			any_owned_province = {
 				region = esta_tartarus_region
 				is_core = ROOT
 			}

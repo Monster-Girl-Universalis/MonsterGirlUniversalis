@@ -435,6 +435,31 @@ Insect_realm = {
 	}
 }
 
+Mei_lin_state = {
+	lock_level_when_selected = no
+	icon = "mei_lin_state"
+	allow_normal_conversion = no
+	potential = {
+		tag = BF1
+	}
+	valid_for_new_country = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 40
+	legacy_equivalent = ottoman_government_legacy
+	modifiers = {
+		manpower_recovery_speed = 0.15
+		land_morale = 0.10
+		block_introduce_heir = yes
+	}
+	custom_attributes = {
+		queen = no
+	}
+	conditional = {
+		allow = { has_dlc = "Rights of Man" }
+		has_harem = yes
+	}
+}
+
 Dragon_realm = {
 	lock_level_when_selected = yes
 	icon = "dragon_realm"
@@ -756,11 +781,12 @@ Scylla_realm = {
 }
 
 Chimera_realm = {
-	lock_level_when_selected = yes
+	#lock_level_when_selected = yes
 	icon = "chimera_realm"
 	allow_normal_conversion = no
 	potential = {
 		OR = {
+			technology_group = TECH_CHIMERA
 			culture_group = chimera
 			AND = {
 				is_playing_custom_nation = yes
@@ -971,7 +997,7 @@ Artiste_necromancer = {
 	valid_for_new_country = no
 	valid_for_nation_designer = yes
 	nation_designer_cost = 40
-	has_russian_abilities = yes
+	#has_russian_abilities = yes
 	legacy_equivalent = artiste_legacy
 	modifiers = {
 		governing_capacity = 300

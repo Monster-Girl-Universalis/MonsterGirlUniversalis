@@ -115,6 +115,7 @@ monarchy = {
 				antlion_reform
 				Defender_east
 				Fallen_angel_state
+				Mei_lin_state
 				kanon_domain_reform
 				
 				#kagetsumugi_reform 
@@ -338,6 +339,7 @@ monarchy = {
 				sonyachaos_fighting_stance_reform 
 				white_rabbit_omnipresence_reform 
 				reaper_removal_protocol_reform 
+				roid_reform
 			}
 		}
 		deliberative_assembly = {
@@ -708,6 +710,7 @@ republic = {
 				adventurer_camp_reform
 				research_camp_reform
 				pleasure_camp_reform
+				slime_republic
 			}
 		}
 		republican_virtues = {

@@ -1,0 +1,779 @@
+########################################
+# Missions for Canceroid Realm by Cris
+########################################
+
+CR3_branch_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		tag = CR3
+	}
+	has_country_shield = yes
+	CR3_institution = {
+		icon = lab_tech
+		position = 1
+		required_missions = {}
+		provinces_to_highlight = {
+			province_id = 556
+			OR = {
+				NOT = {num_of_times_improved = 5}
+			}
+		}
+		trigger = {
+			is_institution_enabled = renaissance
+			556 = {
+				num_of_times_improved = 5
+			} 
+		}
+		effect = {
+			add_country_modifier = {
+				name = cr3_tech
+				duration = 7300
+			}
+			add_stability = 1
+            556 = {
+				add_institution_embracement = {
+					which = renaissance
+					value = 90
+				}
+			}
+		}
+	}
+	CR3_lab = {
+		icon = ancient_temple_lab
+		required_missions = {CR3_institution}
+		provinces_to_highlight = {
+			OR = {
+				area = secret_lab_facility_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			secret_lab_facility_area = {
+			type = all
+			owned_by = ROOT
+			is_core = ROOT
+		}
+		NOT = {is_vassal = yes}
+		}
+		effect = {
+			add_country_modifier = {
+				name = cr3_lab_money
+				duration = 9125
+			}
+			add_stability = 1
+			add_manpower = 5
+			custom_tooltip = egy_better_traits_rulers_tt
+		}
+	}
+	CR3_reform = {
+		icon = cr3_flag_plus
+		required_missions = {CR3_lab}
+		trigger = {
+		 	reform_level = 4
+			grown_by_development = 2500
+		}
+		effect = {
+			add_country_modifier = {
+				name = cr3_reform
+				duration = -1
+			}
+			add_adm_power = 100
+			add_dip_power = 100
+			add_mil_power = 100
+		}
+	}
+}
+CR3_branch_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		tag = CR3
+	}
+	has_country_shield = yes
+    CR3_money_makina = {
+		icon = makinas_roid
+		position = 1
+		required_missions = {} 
+		trigger = {
+			OR = {
+                advisor = trader
+                advisor = statesman
+            }
+		}
+		effect = {
+			add_country_modifier = {
+				name = "cr3_makina_market"
+				duration = 7300
+			}
+		}
+	}
+	CR3_lab_dwellers = {
+		icon = little_bug_lab
+		required_missions = {CR3_money_makina}
+		provinces_to_highlight = {
+			OR = {
+				area = secret_lab_facility_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			556 = {
+				development = 30
+			}
+			secret_lab_facility_area = {
+			type = all
+			owned_by = ROOT
+			is_core = ROOT
+		}
+		NOT = {is_vassal = yes}
+		}
+		effect = {
+			add_country_modifier = {
+				name = cr3_lab_monsters
+				duration = -1
+			}
+			unlock_race = { race = insect }
+			add_accepted_culture = Cockroach_Girl
+			add_accepted_culture = Chimera_Girl
+		}
+	}
+	CR3_development = {
+		icon = lab_core
+		required_missions = {CR3_lab_dwellers}
+		provinces_to_highlight = {
+			OR = {
+				area = secret_lab_facility_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			NOT = { development = 30 }
+		}
+		trigger = {
+			secret_lab_facility_area = {
+			type = all
+			owned_by = ROOT
+			is_core = ROOT
+			development = 30
+		}
+		}
+		effect = {
+			add_country_modifier = {
+				name = cr3_development_lab
+				duration = -1
+			}
+		}
+	}
+	CR3_natalia = {
+		icon = meia_beach
+		required_missions = {CR3_kani}
+		position = 4
+		provinces_to_highlight = {
+			OR = {
+				area = natalian_woods
+				area = jellyfish_beach
+				area = seaweed_beach
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+		OR = {
+			natalian_woods = {
+			type = all
+			owned_by = ROOT
+			is_core = ROOT
+		}
+			jellyfish_beach = {
+			type = all
+			owned_by = ROOT
+			is_core = ROOT
+		}
+			seaweed_beach = {
+			type = all
+			owned_by = ROOT
+			is_core = ROOT
+		}
+		}
+		}
+		effect = {
+			add_country_modifier = {
+				name = cr3_port_natalia
+				duration = 9125
+			}
+           port_natalia_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			sheep_island = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}  
+		}
+	}
+	CR3_second_golden_age = {
+		icon = ocean_star
+		required_missions = {CR3_natalia}
+		provinces_to_highlight = {
+			OR = {
+				region = port_natalia_region
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+		port_natalia_region = { type = all country_or_non_sovereign_subject_holds = ROOT }
+		}
+		effect = {
+			add_country_modifier = {
+				name = cr3_golden_age
+				duration = -1
+			}
+           add_years_of_income = 1.5 
+		}
+	}
+}
+CR3_branch_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		tag = CR3
+	}
+	has_country_shield = yes
+    CR3_prepare_for_war = {
+		icon = robin_lab
+		required_missions = {}
+		position = 1
+		trigger = {
+			army_size_percentage = 1.0			
+			has_mil_advisor = yes
+			num_of_generals = 1
+		}
+		effect = {
+			add_country_modifier = {
+				name = "cr3_wartime_independence" 
+				duration = 7300
+			}
+			secret_lab_facility_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+            jellyfish_beach = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+            crab_realm_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+            sea_cucumber_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+            novistador_mountains = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+            kinoko_mountains = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+            amos_road_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+            secret_lab_facility_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+            luddite_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+            marle_road_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+            natalian_woods = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	CR3_luddite = {
+		icon = ldv_flag
+		required_missions = {CR3_prepare_for_war}
+		provinces_to_highlight = {
+			OR = {
+				area = luddite_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			luddite_area = {
+			type = all
+			owned_by = ROOT
+			is_core = ROOT
+		}
+		}
+		effect = {
+			add_country_modifier = {
+				name = cr3_luddite
+				duration = 7300
+			}
+            542 = {
+			change_religion = ROOT
+			change_culture = ROOT
+			change_province_name = "Roid Village"
+			rename_capital = "Roid Village"
+			}
+			544 = {
+			change_religion = ROOT
+			change_culture = ROOT
+			change_province_name = "Roid Woods"
+			rename_capital = "Roid Woods"
+			}
+			549 = {
+			change_religion = ROOT
+			change_culture = ROOT
+			change_province_name = "Roid Farm"
+			rename_capital = "Roid Farm"
+			}
+			523 = {
+			change_religion = ROOT
+			change_culture = ROOT
+			change_province_name = "Roid Inn"
+			rename_capital = "Roid Inn"
+			}
+		}
+	}
+	CR3_kani = {
+		icon = soapy_beach
+		required_missions = {CR3_luddite}
+		provinces_to_highlight = {
+			OR = {
+				area = crab_realm_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			crab_realm_area = {
+			type = all
+			owned_by = ROOT
+			is_core = ROOT
+		}
+		}
+		effect = {
+			add_country_modifier = {
+				name = cr3_crab
+				duration = 7300
+			}
+           san_ilia_crops = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			san_ilia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			south_undersea_temple_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}  
+		}
+	}
+	CR3_san_ilia = {
+		icon = crusade_mission
+		required_missions = {CR3_kani}
+		provinces_to_highlight = {
+			OR = {
+				area = san_ilia_crops
+				area = san_ilia_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+		san_ilia_crops = {
+			type = all
+			owned_by = ROOT
+			is_core = ROOT
+		}
+		san_ilia_area = {
+			type = all
+			owned_by = ROOT
+			is_core = ROOT
+		}
+		}
+		effect = {
+			add_country_modifier = {
+				name = cr3_san_ilia_bested
+				duration = 9125
+			}
+           st_amos_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			forest_of_spirits_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			} 
+		}
+	}
+	CR3_chrome = {
+		icon = chrome_evil
+		required_missions = {CR3_san_ilia}
+		provinces_to_highlight = {
+			OR = {
+				area = haunted_mansion_area
+				area = zombie_mountains
+				area = north_natalia_area
+				area = north_natalia_coast
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+		haunted_mansion_area = {
+			type = all
+			owned_by = ROOT
+			is_core = ROOT
+		}
+		zombie_mountains = {
+			type = all
+			owned_by = ROOT
+			is_core = ROOT
+		}
+		north_natalia_area = {
+			type = all
+			owned_by = ROOT
+			is_core = ROOT
+		}
+		north_natalia_coast = {
+			type = all
+			owned_by = ROOT
+			is_core = ROOT
+		}
+		}
+		effect = {
+			add_country_modifier = {
+				name = cr3_haunted_mansion
+				duration = 9125
+			}
+           monte_carlo_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	CR3_puppet_tower = {
+		icon = lr1_puppet_tower
+		required_missions = {CR3_chrome}
+		provinces_to_highlight = {
+			OR = {
+				area = minotaur_steppes
+				area = tarantula_wastelands
+				area = safina_road_area
+				area = safina_mountain_pass
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+		OR = {
+		minotaur_steppes = {
+			type = all
+			owned_by = ROOT
+			is_core = ROOT
+		}
+		tarantula_wastelands = {
+			type = all
+			owned_by = ROOT
+			is_core = ROOT
+		}
+		safina_road_area = {
+			type = all
+			owned_by = ROOT
+			is_core = ROOT
+		}
+		safina_mountain_pass = {
+			type = all
+			owned_by = ROOT
+			is_core = ROOT
+		}
+		}
+		}
+		effect = {
+			add_country_modifier = {
+				name = cr3_puppet
+				duration = 10950
+			}
+           puppeteer_tower_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	CR3_natalia_continent = {
+		icon = jillian_mission_supremacy
+		required_missions = {CR3_puppet_tower}
+		provinces_to_highlight = {
+			OR = {
+				region = port_natalia_region
+				region = st_amos_region
+				region = san_ilia_region
+				region = forest_of_spirits_region
+				region = south_undersea_temple_region
+				region = monte_carlo_region
+				region = puppeteer_tower_region
+				area = sheep_island
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+		port_natalia_region = { type = all country_or_non_sovereign_subject_holds = ROOT }
+		st_amos_region = { type = all country_or_non_sovereign_subject_holds = ROOT }
+		san_ilia_region = { type = all country_or_non_sovereign_subject_holds = ROOT }
+		forest_of_spirits_region = { type = all country_or_non_sovereign_subject_holds = ROOT }
+		south_undersea_temple_region = { type = all country_or_non_sovereign_subject_holds = ROOT }
+		monte_carlo_region = { type = all country_or_non_sovereign_subject_holds = ROOT }
+		puppeteer_tower_region = { type = all country_or_non_sovereign_subject_holds = ROOT }
+		sheep_island = { type = all country_or_non_sovereign_subject_holds = ROOT }
+		}
+		effect = {
+			add_country_modifier = {
+				name = cr3_final_conquest
+				duration = -1
+			}
+           add_prestige_or_monarch_power = {
+				amount = 100
+			}
+			add_power_projection = { 
+				type = 25_permanent_power_projection
+				amount = 25
+			}
+		}
+	}
+}
+CR3_branch_4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		tag = CR3
+	}
+	has_country_shield = yes
+    CR3_support = {
+		icon = general_rifles_roid
+		position = 1
+		required_missions = {} 
+		trigger = {
+			national_focus = MIL
+		}
+		effect = {
+			create_general = {
+            name = "Dorothy Haze" 
+			tradition = 70
+			culture = Roid_Girl
+		}
+		}
+	}
+	CR3_warpath = {
+		icon = cr3_mission_warpath
+		required_missions = {CR3_support}
+		trigger = {
+			army_size = 25
+			manpower_percentage = 0.25
+		}
+		effect = {
+            add_country_modifier = {
+				name = cr3_army_1
+				duration = 9125
+			}
+			add_army_tradition = 15
+		}
+	}
+	CR3_blobbing = {
+		icon = rpg_stars
+		required_missions = {CR3_warpath}
+		trigger = {
+			grown_by_development = 1000
+			has_global_modifier_value = {
+			which = discipline
+			value = 0.175
+			}
+		}
+		effect = {
+            add_country_modifier = {
+				name = cr3_army_2
+				duration = -1
+			}
+		}
+	}
+	CR3_roid_ideas = {
+		icon = lab_jillian
+		required_missions = {CR3_blobbing}
+		trigger = {
+			monthly_adm = 12
+			monthly_dip = 12
+			monthly_mil = 12
+			government_rank = 2
+			army_tradition = 50
+			army_size = 150
+			legitimacy_equivalent = 100
+			is_bankrupt = no
+		}
+		effect = {
+			if = {
+				custom_tooltip = accepted_advanced_roid_ideas_tt 
+				set_country_flag = accepted_advanced_roid_ideas
+				hidden_effect = {
+					swap_free_idea_group = yes
+				}
+			}
+			else = { add_prestige = 50 }
+			add_prestige = 50
+			add_adm_power = 50
+			add_dip_power = 50
+			add_mil_power = 50
+		}
+	}
+	CR3_professionalism = {
+		icon = machine_guns
+		required_missions = {CR3_roid_ideas}
+		trigger = {
+			army_professionalism = 1
+		}
+		effect = {
+			add_country_modifier = {
+				name = cr3_professionalism_roids
+				duration = -1
+			}
+		}
+	}
+}
+CR3_branch_5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		tag = CR3
+	}
+	has_country_shield = yes
+	CR3_scientific_method = {
+		icon = lab_science
+		position = 1
+		required_missions = {}
+		trigger = {
+			religion = seekers_of_truth_religion
+			OR = {
+			full_idea_group = religious_ideas
+			num_of_converted_provinces = { amount = 10 }
+			}
+		}
+		effect = {
+			add_stability = 1
+            add_adm_power = 75
+			add_dip_power = 75
+			add_mil_power = 75
+		}
+	}
+	CR3_scientific_method_2 = {
+		icon = jillian_soapy
+		required_missions = {CR3_scientific_method}
+		trigger = {
+			religion = seekers_of_truth_religion
+			grown_by_development = 100
+			OR = {
+			full_idea_group = religious_ideas
+			num_of_converted_provinces = { amount = 30 }
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = cr3_truth_spreading
+				duration = 9125
+			}
+		}
+	}
+	CR3_scientific_method_3 = {
+		icon = wlr_reform
+		required_missions = {CR3_scientific_method_2}
+		trigger = {
+			religion = seekers_of_truth_religion
+			university = 20
+			OR = {
+				full_idea_group = religious_ideas
+				full_idea_group = humanist_ideas
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = cr3_truth_spreading_2
+				duration = -1
+			}
+		}
+	}
+}

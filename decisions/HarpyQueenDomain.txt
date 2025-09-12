@@ -47,11 +47,38 @@ country_decisions = {
 			add_prestige = 25
 			unlock_race = { race = harpy }
 			if = {
-				limit = {
+				AND = {
 					NOT = { technology_group = TECH_HARPY }
+					NOT = { capital_scope = { continent = Makai_Hellgondo } }
+					NOT = { capital_scope = { continent = Makai_Gold } }
+					NOT = { capital_scope = { continent = Makai_Noah } }
+					NOT = { capital_scope = { continent = Makai_Natalia } }
+					NOT = { capital_scope = { continent = Makai_Ilias_Continent } }
+					NOT = { capital_scope = { continent = Makai_Safina } }
+					NOT = { capital_scope = { continent = Dominion_Hellgondo } }
+					NOT = { capital_scope = { continent = Dominion_Gold } }
+					NOT = { capital_scope = { continent = Dominion_Noah } }
+					NOT = { capital_scope = { continent = Dominion_Safina } }
+					NOT = { capital_scope = { continent = Dominion_Ilias_Continent } }
+					NOT = { capital_scope = { continent = Dominion_Moon } }
 				}
-				change_technology_group = TECH_HARPY
+				change_technology_group = TECH_HARPY 
 				change_unit_type = TECH_HARPY 
+			}
+			if = {
+				NOT = { technology_group = TECH_SAJA }
+				OR = {
+					capital_scope = { continent = Makai_Hellgondo }
+					capital_scope = { continent = Makai_Gold }
+					capital_scope = { continent = Makai_Noah }
+					capital_scope = { continent = Makai_Natalia }
+					capital_scope = { continent = Makai_Ilias_Continent }
+					capital_scope = { continent = Makai_Safina }
+				}
+				change_technology_group = TECH_SAJA 
+				change_unit_type = TECH_SAJA 
+				unlock_race = { race = dragon }
+				unlock_race = { race = lamia }
 			}
 			if = {
 				limit = { 

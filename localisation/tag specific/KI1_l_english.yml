@@ -174,7 +174,9 @@
  desc_KI1_arachne_ninjutsu: " "
  KI1_kitsune_ninjutsu: "Kitsune Ninjutsu"
  desc_KI1_kitsune_ninjutsu: " "
-
+ 
+ #Tooltips
+ ki1_tooltip_kunoichi_spy_or_opinion: "All §YKunoichi Clans§!:\n One of the following must be true:\n   Have a Spy Network of at least size §Y40§! from §Y[Root.GetName]§!\n   Opinion of §Y[Root.GetName]§! is at least §Y150§!"
 
 
 

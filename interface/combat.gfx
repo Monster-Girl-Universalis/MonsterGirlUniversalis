@@ -252,6 +252,22 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_combat_terrain_chaos_field"
 		texturefile = "gfx/interface/combat_terrain_chaos_field.dds"
+	}
+	spriteType = {
+		name = "GFX_combat_terrain_lava"
+		texturefile = "gfx/interface/combat_terrain_lava.dds"
+	}
+	spriteType = {
+		name = "GFX_combat_terrain_flesh"
+		texturefile = "gfx/interface/combat_terrain_flesh.dds"
+	}
+	spriteType = {
+		name = "GFX_combat_terrain_heavenly"
+		texturefile = "gfx/interface/combat_terrain_heavenly.dds"
+	}
+	spriteType = {
+		name = "GFX_combat_terrain_moonscape"
+		texturefile = "gfx/interface/combat_terrain_moonscape.dds"
 	}		
 	
 #############################################

@@ -1,0 +1,6 @@
+spriteTypes = {	
+	spriteType = {
+		name = "SLM_RIVER_eventPicture"
+		texturefile = "gfx//event_pictures//event_pictures_slimemountains//SLM_RIVER_eventPicture.dds"
+	}
+}

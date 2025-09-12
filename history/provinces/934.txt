@@ -32,3 +32,4 @@ owner = AT1
 controller = AT1
 discovered_by = TECH_FAIRY
 discovered_by = TECH_GHOST
+discovered_by = TECH_ROID

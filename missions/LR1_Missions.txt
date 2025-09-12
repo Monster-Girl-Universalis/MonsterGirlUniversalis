@@ -323,7 +323,7 @@ lr1_branch_2 = {
 			add_adm_power = 100
 			add_yearly_manpower = 2
 			add_country_modifier = {
-				name = "LR1_block_path"
+				name = "lr1_block_path"
 				duration = 9125
 			}
 			bandersnatch_area = {
@@ -1071,7 +1071,6 @@ lr1_branch_4 = {
 		icon = lr1_queen
 		required_missions = {}
 		position = 4
-		generic = no
 		trigger = {
 			adm_tech = 10
 			is_free_or_tributary_trigger = yes
@@ -1276,13 +1275,6 @@ lr1_branch_5 = {
 			add_country_modifier = {
 				name = "lr1_holy_war"
 				duration = 7300
-			}
-			oloso_area = {
-				limit = {
-					NOT = { is_core = ROOT } 
-					NOT = { is_permanent_claim = ROOT } 
-				}
-				add_permanent_claim = ROOT
 			}
 			amos_road_area = {
 				limit = {
@@ -1513,7 +1505,7 @@ lr1_branch_5 = {
 			OR = {
 				region = yamatai_caves_region
 				area = spider_miko_area
-				are = yamata_no_orochi_cave
+				area = yamata_no_orochi_cave
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT } 
 		}

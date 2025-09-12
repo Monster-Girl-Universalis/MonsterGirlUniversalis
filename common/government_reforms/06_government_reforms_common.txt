@@ -4820,6 +4820,31 @@ reaper_removal_protocol_reform = {
 		factor = 1000
 	}
 }
+roid_reform = {
+	icon = "roid_reform"
+	allow_normal_conversion = yes
+	potential = {
+		
+		OR = {
+			religion_group = seekers_of_truth_religion
+			culture_group = roid
+		}
+	}
+	trigger = {
+			AND = {
+				full_idea_group = roid_ideas
+				religion_group = seekers_of_truth_religion
+			}
+	}
+	modifiers = {
+		artillery_power = 0.15
+		free_land_leader_pool = 2
+	}
+	
+	ai = {
+		factor = 1000
+	}
+}
 #Economical Matters
 
 empower_the_burghers_reform = {

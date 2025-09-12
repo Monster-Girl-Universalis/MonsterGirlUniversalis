@@ -6181,6 +6181,98 @@ FAR_ideas = {
 		leader_land_manuever = 1
 	}
 }
+#Warp Shrine/Mei-Lin
+BF1_ideas = {
+	start = {
+		num_accepted_cultures = 3
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+	
+	bonus = {
+		 	envoy_travel_time = -0.2
+			advisor_pool = 3
+	}
+	
+	trigger = {
+		OR = {
+			tag = BF1
+		}
+	}	
+	free = yes
+	
+	BF1_fort = {
+		defensiveness = 0.10
+		garrison_size = 0.20
+	}
+	BF1_warpshrine = {
+		global_tax_modifier = 0.10
+		prestige = 1
+	}
+	BF1_landdweller = {
+		production_efficiency = 0.10
+		gold_depletion_chance_modifier = -0.1
+	}	
+	BF1_martial_pro = {
+		shock_damage = 0.20
+	}
+	BF1_martial_fighter = {
+		discipline = 0.05
+	}
+	BF1_pleasure = {
+		global_unrest = -2
+	}
+	BF1_fistarmy = {
+		land_maintenance_modifier = -0.20
+	}
+}
+#Sparrow Girl Realm
+SPR_ideas = {
+	start = {
+		accept_vassalization_reasons = 10
+		#may_establish_frontier = yes
+		#auto_explore_adjacent_to_colony = yes
+		may_recruit_female_generals = yes
+	}
+	
+	bonus = {
+		 	diplomatic_annexation_cost = -0.20
+	}
+	
+	trigger = {
+		OR = {
+			tag = SPR
+		}
+	}	
+	free = yes
+	
+	SPR_tiny_bird = {
+		ae_impact = -0.20
+	}
+	SPR_dance = {
+		movement_speed = 0.10
+		infantry_flanking = 1
+	}
+	SPR_evasion = {
+		military_tactics = 0.15
+	}	
+	SPR_slave = {
+		production_efficiency = 0.10
+		global_trade_power = 0.10
+	}
+	SPR_docile = {
+		num_accepted_cultures = 2
+		reduced_liberty_desire = 10 
+	}
+	SPR_sparrow_flock = {
+		global_manpower_modifier = 0.15
+	}
+	SPR_territory = {
+		infantry_power = 0.15
+		land_morale = 0.10
+	}
+}
 
 #SIX GREAT ANCESTORS
 #Kanon

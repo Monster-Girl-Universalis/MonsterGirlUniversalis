@@ -15,4 +15,5 @@ technology_group = TECH_SUCCUBI
 		female = yes
 	}
 }
+add_ruler_personality = zealot_personality
 capital = 577

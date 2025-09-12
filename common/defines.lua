@@ -99,9 +99,9 @@ NDiplomacy = {
 	MAX_CLIENT_STATES = 10,							-- Max client states for one country
 
 	ALLOW_LEADER_DEMAND_TOGGLE = 0,					-- Whether or not player is allowed to set if warleader can negotiate for them
-	VASSALIZE_BASE_DEVELOPMENT_CAP = 100, 			-- Countries with more total development than this cannot be vassalized
+	VASSALIZE_BASE_DEVELOPMENT_CAP = 500, 			-- Countries with more total development than this cannot be vassalized
 
-	MARCH_BASE_DEVELOPMENT_CAP = 200, 				-- Countries with more total development than this cannot be made into a march
+	MARCH_BASE_DEVELOPMENT_CAP = 500, 				-- Countries with more total development than this cannot be made into a march
 
 	MARCH_DEVELOPMENT_FRACTION = 0.25,
 
@@ -569,7 +569,7 @@ NCountry = {
 	ALLOW_ZERO_BASE_VALUES = 0,						-- Affects base tax, base manpower, and base production
 
 	COUNTRY_DEVELOPMENT_SCALE = 600,
-	OVERSEAS_CLIENT_STATES = 0,					-- Allow overseas client states?
+	OVERSEAS_CLIENT_STATES = 1,					-- Allow overseas client states?
 
 	ESTATE_DROP_LOYALTY_IF_LOST_PRIVILEDGE = -0.2,
 	ESTATE_ANGRY_THRESHOLD = 30,

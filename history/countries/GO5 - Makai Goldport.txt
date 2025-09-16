@@ -5,3 +5,4 @@ religion = ilias_light_religion
 technology_group = TECH_MAKAI_HUMAN
 add_government_reform = goldport_reform
 capital = 2952
+unlock_race = { race = human }

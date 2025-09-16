@@ -3,6 +3,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 982;983;sea;2643;-1;-1;-1;-1;Administrator Strait
 1344;1436;sea;126;-1;-1;-1;-1;Esta Bay Bottom
 1347;1431;sea;126;-1;-1;-1;-1;Esta Bay Top
+4228;1431;sea;127;-1;-1;-1;-1;Esta Bay Tartarus
 1375;1376;sea;2674;-1;-1;-1;-1;Leon Village Bottom Island
 1381;1382;sea;2674;-1;-1;-1;-1;Leon Village Middle Island
 1384;1383;sea;138;-1;-1;-1;-1;Leon Village Upper Island
@@ -18,7 +19,15 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 3030;3071;sea;4161;-1;-1;-1;-1;South Plansect
 3032;3073;sea;4161;-1;-1;-1;-1;North Plansect
 3250;3251;sea;4191;-1;-1;-1;-1;Bomb Slime-Makai Privateer
-3345;3264;sea;4193;-1;-1;-1;-1;Noah-Natalia Train Station
+3345;3264;sea;4192;-1;-1;-1;-1;Noah-Natalia Train Station
 3323;3481;sea;161;-1;-1;-1;-1;Natalia-Ilias Train Station
 3635;3637;sea;4140;-1;-1;-1;-1;Arcubus Bay in Administrator Tower Makai
+2274;2818;;-1;-1;-1;-1;-1;Hellgondo Tartarus Singularity-Makai
+715;3473;;-1;-1;-1;-1;-1;Puppeteer Tower Singularity-Makai
+1552;2938;;-1;-1;-1;-1;-1;Grangold Singularity-Makai
+1192;3122;;-1;-1;-1;-1;-1;Grand Noah Singularity-Makai
+755;3572;;-1;-1;-1;-1;-1;Sabasa Singularity-Makai
+582;3360;;-1;-1;-1;-1;-1;San Ilia Singularity-Makai
+87;3523;;-1;-1;-1;-1;-1;Mithra Singularity-Makai
+1223;3148;;-1;-1;-1;-1;-1;Yamatai Singularity-Makai
 -1;-1;;-1;-1;-1;-1;-1;-1;

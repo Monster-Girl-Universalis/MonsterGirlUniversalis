@@ -1,0 +1,8 @@
+hellgondo_tartarus_singularity_makai_2274_2818 = {
+    local_friendly_movement_speed = 90000
+    local_hostile_movement_speed = 90000
+}
+kagetsumugi_singularity_makai_715_3473 = {
+    local_friendly_movement_speed = 90000
+    local_hostile_movement_speed = 90000
+}

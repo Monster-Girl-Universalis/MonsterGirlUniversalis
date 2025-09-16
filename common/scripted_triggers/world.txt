@@ -10,6 +10,7 @@ is_in_singularity_world = {
 		continent = Hellgondo
 		continent = North_Pole
 		continent = South_Pole
+		continent = Sentora
 	}
 }
 is_in_makai_world = {

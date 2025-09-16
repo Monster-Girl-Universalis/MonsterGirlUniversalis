@@ -6,6 +6,7 @@ country_decisions = {
 			was_never_end_game_tag_trigger = yes
 			culture = natalian_human
 			NOT = { exists = SI1 }
+			capital_scope = { is_in_singularity_world = yes }
 		}
 		allow = {
 			AND = {
@@ -66,6 +67,74 @@ country_decisions = {
 			factor = 1
 		}
 	}
+	makai_san_ilia_nation = {
+		major = yes
+		potential = {
+			was_never_end_game_tag_trigger = yes
+			culture = natalian_human
+			NOT = { exists = SI3 }
+			capital_scope = { is_in_makai_world = yes }
+		}
+		allow = {
+			AND = {
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			OR = {
+				AND = {
+					government_rank = 2
+					army_size = 100
+					grown_by_development = 500
+					owns_core_province = 3363
+					owns_core_province = 3358
+					owns_core_province = 3360
+					owns_core_province = 3361
+					owns_core_province = 3364
+					owns_core_province = 3359
+					num_of_owned_provinces_with = {
+						superregion = makai_san_ilia_superregion
+						is_core = ROOT
+						value = 40
+					}
+				}
+			}
+			}
+		}
+		effect = {
+
+			change_tag = SI3
+			change_government = theocracy 
+			add_government_reform = san_ilia_holy_kingdom_reform
+			if = {
+				limit = {
+					NOT = { government_rank = 3 }
+				}
+				set_government_rank = 3
+			}
+
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			unlock_race = { race = human }
+			unlock_race = { race = roid }
+			#swap_non_generic_missions = yes
+			if = {
+				limit = {
+					NOT = { technology_group = TECH_MAKAI_HUMAN }
+				}
+				change_technology_group = TECH_MAKAI_HUMAN 
+				change_unit_type = TECH_MAKAI_HUMAN 
+			}
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
 	sabasa_nation = {
 		major = yes
 		potential = {
@@ -75,6 +144,7 @@ country_decisions = {
 				culture = worm_summoner
 			}
 			NOT = { exists = SA1 }
+			capital_scope = { is_in_singularity_world = yes }
 		}
 		allow = {
 			AND = {
@@ -133,6 +203,75 @@ country_decisions = {
 			factor = 1
 		}
 	}
+	makai_sabasa_nation = {
+		major = yes
+		potential = {
+			was_never_end_game_tag_trigger = yes
+			OR = {
+				culture = sabasa_human
+				culture = worm_summoner
+			}
+			NOT = { exists = SA4 }
+			capital_scope = { is_in_makai_world = yes }
+		}
+		allow = {
+			AND = {
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			OR = {
+				AND = {
+					government_rank = 2
+					army_size = 100
+					grown_by_development = 500
+					owns_core_province = 3583
+					owns_core_province = 3576
+					owns_core_province = 3564
+					owns_core_province = 3565
+					owns_core_province = 3575
+					owns_core_province = 3572
+					num_of_owned_provinces_with = {
+						superregion = makai_safina_superregion
+						is_core = ROOT
+						value = 40
+					}
+				}
+			}
+			}
+		}
+		effect = {
+
+			change_tag = SA4
+			change_government = monarchy 
+			add_government_reform = sabasa_reform 
+			if = {
+				limit = {
+					NOT = { government_rank = 3 }
+				}
+				set_government_rank = 3
+			}
+
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			unlock_race = { race = human }
+			if = {
+				limit = {
+					NOT = { technology_group = TECH_MAKAI_HUMAN }
+				}
+				change_technology_group = TECH_MAKAI_HUMAN 
+				change_unit_type = TECH_MAKAI_HUMAN 
+			}
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
 	magistea_nation = {
 		major = yes
 		potential = {
@@ -145,6 +284,7 @@ country_decisions = {
 			NOT = { was_tag = MV1 }
 			#NOT = { is_tag = TM1 }
 			NOT = { was_tag = TM1 }
+			capital_scope = { is_in_singularity_world = yes }
 		}
 		allow = {
 			AND = {
@@ -189,6 +329,63 @@ country_decisions = {
 			factor = 1
 		}
 	}
+	makai_magistea_nation = {
+		major = yes
+		potential = {
+			was_never_end_game_tag_trigger = yes
+			OR = {
+				culture = worm_summoner
+			}
+			NOT = { exists = MV3 }
+			#NOT = { is_tag = MV1 }
+			NOT = { was_tag = MV1 }
+			#NOT = { is_tag = TM1 }
+			NOT = { was_tag = TM1 }
+			capital_scope = { is_in_makai_world = yes }
+		}
+		allow = {
+			AND = {
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			OR = {
+				AND = {
+					government_rank = 2
+					army_size = 100
+					grown_by_development = 500
+					num_of_owned_provinces_with = {
+						region = makai_great_pirate_cave_region 
+						is_core = ROOT
+						value = 35
+					}
+				}
+			}
+			}
+		}
+		effect = {
+
+			change_tag = MV3
+			change_government = monarchy 
+			add_government_reform = worm_summoner_reform 
+
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			unlock_race = { race = human }
+			swap_non_generic_missions = yes
+			if = {
+				limit = {
+					NOT = { technology_group = TECH_MAKAI_HUMAN }
+				}
+				change_technology_group = TECH_MAKAI_HUMAN 
+				change_unit_type = TECH_MAKAI_HUMAN 
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
 	grand_noah_nation = {
 		major = yes
 		potential = {
@@ -198,6 +395,7 @@ country_decisions = {
 				culture = yamatai_human
 			}
 			NOT = { exists = GR2 }
+			capital_scope = { is_in_singularity_world = yes }
 		}
 		allow = {
 			AND = {
@@ -256,6 +454,76 @@ country_decisions = {
 			factor = 1
 		}
 	}
+
+	makai_grand_noah_nation = {
+		major = yes
+		potential = {
+			was_never_end_game_tag_trigger = yes
+			OR = {
+				culture = noah_human
+				culture = yamatai_human
+			}
+			NOT = { exists = GR6 }
+			capital_scope = { is_in_makai_world = yes }
+		}
+		allow = {
+			AND = {
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			OR = {
+				AND = {
+					government_rank = 2
+					army_size = 100
+					grown_by_development = 500
+					owns_core_province = 3124
+					owns_core_province = 3123
+					owns_core_province = 3122
+					owns_core_province = 3120
+					owns_core_province = 3119
+					owns_core_province = 3188
+					num_of_owned_provinces_with = {
+						superregion = makai_grand_noah_superregion
+						is_core = ROOT
+						value = 40
+					}
+				}
+			}
+			}
+		}
+		effect = {
+
+			change_tag = GR6
+			change_government = monarchy 
+			add_government_reform = grand_noah_reform 
+			if = {
+				limit = {
+					NOT = { government_rank = 3 }
+				}
+				set_government_rank = 3
+			}
+
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			unlock_race = { race = human }
+			if = {
+				limit = {
+					NOT = { technology_group = TECH_MAKAI_HUMAN }
+				}
+				change_technology_group = TECH_MAKAI_HUMAN 
+				change_unit_type = TECH_MAKAI_HUMAN 
+			}
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
 	grangold_nation = {
 		major = yes
 		potential = {
@@ -265,6 +533,7 @@ country_decisions = {
 				culture = proto_human
 			}
 			NOT = { exists = GR4 }
+			capital_scope = { is_in_singularity_world = yes }
 		}
 		allow = {
 			AND = {
@@ -324,6 +593,76 @@ country_decisions = {
 			factor = 1
 		}
 	}
+
+	makai_grangold_nation = {
+		major = yes
+		potential = {
+			was_never_end_game_tag_trigger = yes
+			OR = {
+				culture = grangold_human
+				culture = proto_human
+			}
+			NOT = { exists = GR7 }
+			capital_scope = { is_in_makai_world = yes }
+		}
+		allow = {
+			AND = {
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			OR = {
+				AND = {
+					government_rank = 2
+					army_size = 100
+					grown_by_development = 500
+					owns_core_province = 3003
+					owns_core_province = 2960
+					owns_core_province = 2936
+					owns_core_province = 2938
+					owns_core_province = 2993
+					num_of_owned_provinces_with = {
+						superregion = makai_grangold_superregion
+						is_core = ROOT
+						value = 40
+					}
+				}
+			}
+			}
+		}
+		effect = {
+
+			change_tag = GR7
+			change_government = monarchy 
+			add_government_reform = grangold_reform 
+			if = {
+				limit = {
+					NOT = { government_rank = 3 }
+				}
+				set_government_rank = 3
+			}
+
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			unlock_race = { race = human }
+			unlock_race = { race = chimera }
+			if = {
+				limit = {
+					NOT = { technology_group = TECH_MAKAI_HUMAN }
+				}
+				change_technology_group = TECH_MAKAI_HUMAN 
+				change_unit_type = TECH_MAKAI_HUMAN 
+			}
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
 	remina_nation = {
 		major = yes
 		potential = {
@@ -334,6 +673,7 @@ country_decisions = {
 				region = hellgondo_tartarus_region
 				value = 1
 			}
+			capital_scope = { is_in_singularity_world = yes }
 		}
 		allow = {
 			AND = {
@@ -416,6 +756,109 @@ country_decisions = {
 				}
 				change_technology_group = TECH_HUMAN 
 				change_unit_type = TECH_HUMAN 
+			}
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	makai_remina_nation = {
+		major = yes
+		potential = {
+			was_never_end_game_tag_trigger = yes
+			culture_group = Human_culture
+			NOT = { exists = RE5 }
+			num_of_owned_provinces_with = {
+				region = makai_tartarus_region 
+				value = 1
+			}
+			capital_scope = { is_in_makai_world = yes }
+		}
+		allow = {
+			AND = {
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			OR = {
+				AND = {
+					government_rank = 2
+					army_size = 100
+					grown_by_development = 500
+					owns_core_province = 2818
+					owns_core_province = 3739
+					owns_core_province = 3740
+					owns_core_province = 3743
+					owns_core_province = 3926
+					owns_core_province = 3741
+					num_of_owned_provinces_with = {
+						region = makai_tartarus_region 
+						is_core = ROOT
+						value = 20
+					}
+				}
+			}
+			}
+		}
+		effect = {
+			change_tag = RE5
+			change_government = monarchy 
+			add_government_reform = remina_reform 
+			makai_outpost = {
+				change_culture = remina_human
+				change_religion = ROOT
+			}
+			makai_tartarus_area = {
+				change_culture = remina_human
+				change_religion = ROOT
+			}
+			makai_amor_rihm = {
+				change_culture = remina_human
+				change_religion = ROOT
+			}
+			makai_amor_rahm = {
+				change_culture = remina_human
+				change_religion = ROOT
+			}
+			2818 = { change_province_name = "Makai Remina Tartarus" }
+			3736 = { change_province_name = "Makai Remina checkpoint 1" }
+			3735 = { change_province_name = "Makai Remina checkpoint 2" }
+			3733 = { change_province_name = "Makai Remina checkpoint 3" }
+			3730 = { change_province_name = "Makai Remina checkpoint 4" }
+			3739 = { change_province_name = "New Remina of Makai" }
+			3740 = { change_province_name = "Makai Remina lands 1" }
+			3726 = { change_province_name = "Makai Remina lands 2" }
+			3743 = { change_province_name = "Makai Remina lands 3" }
+			3741 = { change_province_name = "Makai Remina lands 4" }
+			set_capital = 3739
+			3739 = {
+					add_base_tax = 3
+					add_base_production = 3
+					add_base_manpower = 3
+					center_of_trade = 3
+			}
+			change_primary_culture = remina_human
+			if = {
+				limit = {
+					NOT = { government_rank = 3 }
+				}
+				set_government_rank = 3
+			}
+
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			unlock_race = { race = human }
+			if = {
+				limit = {
+					NOT = { technology_group = TECH_MAKAI_HUMAN }
+				}
+				change_technology_group = TECH_MAKAI_HUMAN 
+				change_unit_type = TECH_MAKAI_HUMAN 
 			}
 			if = {
 				limit = { has_custom_ideas = no }

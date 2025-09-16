@@ -7,6 +7,7 @@ country_decisions = {
 			was_never_end_game_tag_trigger = yes
 			culture_group = beast
 			NOT = { exists = BQD }
+			capital_scope = { is_in_singularity_world = yes }
 		}
 		allow = {
 			AND = {
@@ -47,33 +48,72 @@ country_decisions = {
 			add_prestige = 25
 			unlock_race = { race = beast }
 			if = {
-				AND = {
+				limit = {
 					NOT = { technology_group = TECH_BEAST }
-					NOT = { capital_scope = { continent = Makai_Hellgondo } }
-					NOT = { capital_scope = { continent = Makai_Gold } }
-					NOT = { capital_scope = { continent = Makai_Noah } }
-					NOT = { capital_scope = { continent = Makai_Natalia } }
-					NOT = { capital_scope = { continent = Makai_Ilias_Continent } }
-					NOT = { capital_scope = { continent = Makai_Safina } }
-					NOT = { capital_scope = { continent = Dominion_Hellgondo } }
-					NOT = { capital_scope = { continent = Dominion_Gold } }
-					NOT = { capital_scope = { continent = Dominion_Noah } }
-					NOT = { capital_scope = { continent = Dominion_Safina } }
-					NOT = { capital_scope = { continent = Dominion_Ilias_Continent } }
-					NOT = { capital_scope = { continent = Dominion_Moon } }
 				}
 				change_technology_group = TECH_BEAST 
 				change_unit_type = TECH_BEAST 
 			}
 			if = {
-				NOT = { technology_group = TECH_MAKAI_BEAST }
-				OR = {
-					capital_scope = { continent = Makai_Hellgondo }
-					capital_scope = { continent = Makai_Gold }
-					capital_scope = { continent = Makai_Noah }
-					capital_scope = { continent = Makai_Natalia }
-					capital_scope = { continent = Makai_Ilias_Continent }
-					capital_scope = { continent = Makai_Safina }
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	makai_beast_queen_nation = {
+		major = yes
+		potential = {
+
+			was_never_end_game_tag_trigger = yes
+			culture_group = beast
+			NOT = { exists = BQ1 }
+			capital_scope = { is_in_makai_world = yes }
+		}
+		allow = {
+			AND = {
+			adm_tech = 10
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			OR = {
+				mission_completed = gen_beast_royal_ambitions
+				AND = {
+					monthly_adm = 12
+					monthly_dip = 12
+					monthly_mil = 12
+					government_rank = 2
+					army_tradition = 50
+					army_size = 150
+					grown_by_development = 750
+					legitimacy_equivalent = 100
+					is_bankrupt = no
+				}
+			}
+			}
+		}
+		effect = {
+
+			change_tag = BQ1
+
+			if = {
+				limit = {
+					NOT = { government_rank = 3 }
+				}
+				set_government_rank = 3
+			}
+
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			unlock_race = { race = beast }
+			if = {
+				limit = {
+					NOT = { technology_group = TECH_MAKAI_BEAST }
 				}
 				change_technology_group = TECH_MAKAI_BEAST 
 				change_unit_type = TECH_MAKAI_BEAST 
@@ -87,5 +127,6 @@ country_decisions = {
 			factor = 1
 		}
 	}
+
 
 }

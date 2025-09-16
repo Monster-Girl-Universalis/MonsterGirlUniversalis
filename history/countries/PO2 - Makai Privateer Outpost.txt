@@ -14,5 +14,6 @@ government_rank = 1
 		mil = 3
 		female = yes
 	}
+	unlock_race = { race = mermaid }
 }
 capital = 3253

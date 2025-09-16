@@ -73,6 +73,11 @@ technology = {
 	enable = infantry_hum_t1_02
 	enable = infantry_hum_t1_03
 	enable = infantry_hum_t1_04
+	enable = infantry_mhum_t1_01
+	enable = infantry_mhum_t1_02
+	enable = infantry_mhum_t1_03
+	enable = infantry_mhum_t1_04
+
 	enable = infantry_apt_t1_01
 	enable = infantry_apt_t1_02
 	enable = infantry_und_t1_01
@@ -131,7 +136,7 @@ technology = {
 	enable = infantry_malr_t1_02
 	enable = infantry_mslm_t1_01	#Kanade
 	enable = infantry_mslm_t1_02
-	enable = infantry_mkit_t1_01	#Tamamo - Demi Humans, Kitsune, Beasts
+	enable = infantry_mkit_t1_01	#Tamamo - Demi Humans, Kitsune
 	enable = infantry_mkit_t1_02
 	enable = infantry_mang_t1_01	#Makai Angels
 	enable = infantry_mang_t1_02
@@ -145,7 +150,7 @@ technology = {
 	enable = infantry_hiru_t1_02
 	enable = infantry_mins_t1_01	#Makai Insects
 	enable = infantry_mins_t1_02
-	enable = infantry_myum_t1_01	#Saja - yoma, lamias, dragons
+	enable = infantry_myum_t1_01	#Saja - yoma, lamias, dragons and harpies
 	enable = infantry_myum_t1_02
 	enable = infantry_mscy_t1_01	#Makai Scyllas
 	enable = infantry_mscy_t1_02
@@ -162,6 +167,8 @@ technology = {
 
 	enable = cavalry_hum_t1_01
 	enable = cavalry_hum_t1_02
+	enable = cavalry_mhum_t1_01
+	enable = cavalry_mhum_t1_02
 }
 
 technology = {
@@ -248,7 +255,12 @@ technology = {
 	enable = infantry_hum_t5_01
 	enable = infantry_hum_t5_02
 	enable = infantry_hum_t5_03
-	enable = infantry_hum_t5_04	
+	enable = infantry_hum_t5_04
+	enable = infantry_mhum_t5_01
+	enable = infantry_mhum_t5_02
+	enable = infantry_mhum_t5_03
+	enable = infantry_mhum_t5_04	
+
 	enable = infantry_apt_t5_01
 	enable = infantry_apt_t5_02
 	enable = infantry_und_t5_01
@@ -371,6 +383,8 @@ technology = {
 	enable = pacific_horseman
 	enable = cavalry_hum_t6_01
 	enable = cavalry_hum_t6_02
+	enable = cavalry_mhum_t6_01
+	enable = cavalry_mhum_t6_02
 	
 	combat_width = 2
 }
@@ -434,6 +448,10 @@ technology = {
 	enable = infantry_hum_t9_02
 	enable = infantry_hum_t9_03
 	enable = infantry_hum_t9_04
+	enable = infantry_mhum_t9_01
+	enable = infantry_mhum_t9_02
+	enable = infantry_mhum_t9_03
+	enable = infantry_mhum_t9_04
 	military_tactics 	= 	0.25
 	combat_width = 1	
 }
@@ -563,6 +581,8 @@ technology = {
 
 	enable = cavalry_hum_t10_01
 	enable = cavalry_hum_t10_02
+	enable = cavalry_mhum_t10_01
+	enable = cavalry_mhum_t10_02
 }
 
 technology = {
@@ -618,6 +638,10 @@ technology = {
 	enable = infantry_hum_t12_02
 	enable = infantry_hum_t12_03
 	enable = infantry_hum_t12_04
+	enable = infantry_mhum_t12_01
+	enable = infantry_mhum_t12_02
+	enable = infantry_mhum_t12_03
+	enable = infantry_mhum_t12_04
 }
 
 technology = {
@@ -763,6 +787,8 @@ technology = {
 	enable = pacific_arquebusier
 	enable = cavalry_hum_t14_01
 	enable = cavalry_hum_t14_02
+	enable = cavalry_mhum_t14_01
+	enable = cavalry_mhum_t14_02
 	
 	combat_width = 2
 }
@@ -798,6 +824,10 @@ technology = {
 	enable = infantry_hum_t15_02
 	enable = infantry_hum_t15_03
 	enable = infantry_hum_t15_04
+	enable = infantry_mhum_t15_01
+	enable = infantry_mhum_t15_02
+	enable = infantry_mhum_t15_03
+	enable = infantry_mhum_t15_04
 }
 
 technology = {
@@ -926,6 +956,8 @@ technology = {
 	enable = african_swarm
 	enable = cavalry_hum_t17_01
 	enable = cavalry_hum_t17_02
+	enable = cavalry_mhum_t17_01
+	enable = cavalry_mhum_t17_02
 }
 
 technology = {
@@ -1100,7 +1132,11 @@ technology = {
 	enable = infantry_hum_t20_01
 	enable = infantry_hum_t20_02
 	enable = infantry_hum_t20_03
-	enable = infantry_hum_t20_04	
+	enable = infantry_hum_t20_04
+	enable = infantry_mhum_t20_01
+	enable = infantry_mhum_t20_02
+	enable = infantry_mhum_t20_03
+	enable = infantry_mhum_t20_04	
 
 	combat_width = 2
 }
@@ -1199,6 +1235,9 @@ technology = {
 	enable = pacific_dragoon
 	enable = cavalry_hum_t23_01
 	enable = cavalry_hum_t23_02
+	enable = cavalry_mhum_t23_01
+	enable = cavalry_mhum_t23_02
+
 	enable = infantry_apt_t23_01
 	enable = infantry_apt_t23_02
 	enable = infantry_und_t23_01
@@ -1307,6 +1346,10 @@ technology = {
 	enable = infantry_hum_t24_02
 	enable = infantry_hum_t24_03
 	enable = infantry_hum_t24_04
+	enable = infantry_mhum_t24_01
+	enable = infantry_mhum_t24_02
+	enable = infantry_mhum_t24_03
+	enable = infantry_mhum_t24_04
 
 	combat_width = 2
 }
@@ -1488,6 +1531,10 @@ technology = {
 	enable = infantry_hum_t27_02
 	enable = infantry_hum_t27_03
 	#enable = infantry_hum_t27_04
+	enable = infantry_mhum_t27_01
+	enable = infantry_mhum_t27_02
+	enable = infantry_mhum_t27_03
+	#enable = infantry_mhum_t27_04
 }
 
 technology = {

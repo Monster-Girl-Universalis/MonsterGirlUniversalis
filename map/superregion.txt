@@ -49,7 +49,7 @@ grand_noah_superregion = {
 	grand_noah_region finoa_region cow_demon_region plansect_region 
 }
 western_noah_superregion = { 
-	lyra_region undine_region 
+	lyra_region undine_region esta_tartarus_region 
 }
 eastern_gold_superregion = { 
 	goddard_region grangold_region toxic_swamp_region north_undersea_temple_region 

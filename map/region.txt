@@ -556,3 +556,8 @@ makai_safina_sea_superregion = {
 		former_magistea_sea_area 
 	}
 }
+esta_tartarus_region = { 
+	areas = { 
+		heavenly_gate_outpost amor_rihm_area amor_rahm_area heavenly_gate_coast amor_rahm_coast amor_rihm_coast northern_esta_tartarus 
+	}
+}

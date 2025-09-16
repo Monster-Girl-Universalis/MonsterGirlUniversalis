@@ -15,5 +15,6 @@ technology_group = TECH_KANADE
 		female = yes
 	}
 	add_ruler_personality = immortal_personality
+	unlock_race = { race = slime }
 }
 capital = 3122

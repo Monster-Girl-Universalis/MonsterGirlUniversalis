@@ -16,5 +16,8 @@ technology_group = TECH_MAKAI_UNDEAD
 		mil = 5
 		female = yes
 	}
+	unlock_race = { race = succubi }
+	unlock_race = { race = undead }
+	unlock_race = { race = ghost }
 }
 capital = 3401

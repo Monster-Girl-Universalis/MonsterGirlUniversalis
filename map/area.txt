@@ -442,7 +442,7 @@ secret_lab_facility_area = {
 	536 550 556 557 562 558 
 }
 amos_road_area = { 
-	572 570 564 561
+	572 570 564 561 
 }
 oningrone_area = { 
 	524 507 506 503 
@@ -2735,4 +2735,25 @@ makai_artiste_sea_area = {
 }
 makai_safar_sea_area = { 
 	4162 4140 4137 4132 155 4157 
+}
+amor_rahm_area = { 
+	4213 4217 4218 4219 4216 
+}
+amor_rahm_coast = { 
+	4214 4212 4228 4215 4227 
+}
+amor_rihm_area = { 
+	4229 4231 4230 4237 
+}
+amor_rihm_coast = { 
+	4241 24 4240 4238 4239 
+}
+heavenly_gate_outpost = { 
+	4232 4226 4225 4222 4233 
+}
+heavenly_gate_coast = { 
+	4221 4220 4223 4224 
+}
+northern_esta_tartarus = { 
+	4236 4235 4234 
 }

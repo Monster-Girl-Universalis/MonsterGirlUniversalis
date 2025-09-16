@@ -15,5 +15,7 @@ technology_group = TECH_MAKAI_FAIRY
 		female = yes
 	}
 	add_ruler_personality = immortal_personality
+	unlock_race = { race = elf }
+	unlock_race = { race = fairy }
 }
 capital = 3422

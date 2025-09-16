@@ -15,5 +15,6 @@ add_government_reform = Fallen_angel_state
 		female = yes
 	}
 	add_ruler_personality = immortal_personality
+	unlock_race = { race = angel }
 }
 capital = 4073

@@ -1,0 +1,9 @@
+add_core = RA1
+owner = RA1
+base_tax = 1
+base_manpower = 2
+base_production = 2
+culture = Doll_Apoptosis
+religion = chaos_religion
+controller = RA1
+is_city = no

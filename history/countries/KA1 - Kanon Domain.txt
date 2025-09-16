@@ -21,5 +21,6 @@ historical_rival = KA2#They just don't get along...
 		power_type = kanon_indulgence_meter
 		value = 100
 	}
+	unlock_race = { race = alraune }
 }
 capital = 2938

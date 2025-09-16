@@ -37,6 +37,7 @@ world = {
 	Chaos_Domain = {
 		continents = {
 			#TBA
+			Sentora #Central Tartarus. Really just everything chaos-related, in Deep Chaos/different dimension/whatever will be here
 		}
 	}
 

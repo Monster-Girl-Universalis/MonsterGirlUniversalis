@@ -26,3 +26,7 @@ discovered_by = TECH_SAJA
 discovered_by = TECH_TAMAMO
 discovered_by = TECH_MAKAI_BEAST
 fort_15th = yes
+add_permanent_province_modifier = {
+	name = hellgondo_tartarus_singularity_makai_2274_2818 
+	duration = -1
+}

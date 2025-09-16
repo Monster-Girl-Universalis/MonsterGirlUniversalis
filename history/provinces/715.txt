@@ -35,3 +35,7 @@ discovered_by = TECH_FAIRY
 discovered_by = TECH_GHOST
 discovered_by = TECH_ROID
 fort_15th = yes
+add_permanent_province_modifier = {
+	name = kagetsumugi_singularity_makai_715_3473 
+	duration = -1
+}

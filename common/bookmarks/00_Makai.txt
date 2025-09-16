@@ -1,0 +1,28 @@
+bookmark =
+{
+	name = "MGQ_MAKAI"
+	desc = "MGQ_MAKAI_DESC"
+	date = 1444.11.11
+	
+	center = 2819
+
+	country = KA1
+	country = KA2
+	country = KI5
+	country = MI1
+	country = HI2
+	country = SJ1
+	country = GO5
+	country = TR3
+	country = HM2
+	country = TE1
+	country = MN1
+	
+	easy_country = KA1
+	easy_country = KA2
+	easy_country = KI5
+	easy_country = MI1
+	easy_country = HI2
+	easy_country = SJ1
+	
+}

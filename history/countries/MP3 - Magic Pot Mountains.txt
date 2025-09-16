@@ -14,5 +14,6 @@ technology_group = TECH_MAKAI_GHOST
 		mil = 5
 		female = yes
 	}
+	unlock_race = { race = ghost }
 }
 capital = 4057

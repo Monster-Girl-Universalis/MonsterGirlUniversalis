@@ -1,12 +1,11 @@
 graphical_culture = asiangfx
-color = { 252 23 22 }
+color = { 232 23 22 }
 revolutionary_colors = { 1 0 0 }
 random_nation_chance = 0
 historical_score = 500
 historical_idea_groups = { 
 }
 historical_units = { 
-	japanese_archer eastern_bow japanese_footsoldier japanese_samurai asian_arquebusier asian_charge_cavalry asian_mass_infantry asian_musketeer reformed_asian_musketeer reformed_asian_cavalry
 }
 monarch_names = { 
 	"Heinrich #0" = 5

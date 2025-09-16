@@ -1,0 +1,17 @@
+government = monarchy
+government_rank = 2
+primary_culture = Doll_Apoptosis
+add_government_reform = Apoptosis_realm
+religion = seekers_of_truth_religion
+technology_group = TECH_APOPTOSIS
+1444.1.1 = { 
+	monarch = { 
+		name = "Luxuru"
+		dynasty = "the Chaos Researcher"
+		birth_date = 1424.1.1
+		adm = 6
+		dip = 2
+		mil = 4
+		female = yes
+	}
+}

@@ -14,5 +14,6 @@ technology_group = TECH_MAKAI_BEAST
 		mil = 5
 		female = yes
 	}
+	unlock_race = { race = beast }
 }
 capital = 2857

@@ -2,7 +2,7 @@
 # Missions for SLM by Cris
 ########################################
 
-branch_1 = {
+SLM_branch_1 = {
 	slot = 1
 	generic = no
 	ai = yes
@@ -96,7 +96,8 @@ branch_1 = {
 		}
 	}
 }
-branch_2 = {
+
+SLM_branch_2 = {
 	slot = 2
 	generic = no
 	ai = yes
@@ -255,7 +256,8 @@ branch_2 = {
 		}
 	}
 }
-branch_3 = {
+
+SLM_branch_3 = {
 	slot = 3
 	generic = no
 	ai = yes
@@ -274,6 +276,7 @@ branch_3 = {
 		trigger = {
 			OR = {
 				is_rival = SLR
+				SLR = { exists = no }
 			}
 		}
 		effect = {
@@ -533,7 +536,8 @@ branch_3 = {
 		}
 	}
 }
-branch_4 = {
+
+SLM_branch_4 = {
 	slot = 4
 	generic = no
 	ai = yes
@@ -619,7 +623,8 @@ branch_4 = {
 		}
 	}
 }
-branch_5 = {
+
+SLM_branch_5 = {
 	slot = 5
 	generic = no
 	ai = yes

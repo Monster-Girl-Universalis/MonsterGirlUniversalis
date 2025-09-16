@@ -3,7 +3,10 @@ san_ilia_holy_kingdom_reform = {
 	icon = "monks"
 	allow_normal_conversion = no
 	potential = {
-		tag = SI1
+		OR = {
+			tag = SI1
+			tag = SI3
+		}
 	}
 	valid_for_new_country = no
 	valid_for_nation_designer = no
@@ -13,7 +16,7 @@ san_ilia_holy_kingdom_reform = {
 		devotion = 1
 		global_tax_modifier = 0.20
 		num_accepted_cultures = 2
-		governing_capacity = 200
+		governing_capacity = 300
 	}
 	conditional = {
 		allow = {

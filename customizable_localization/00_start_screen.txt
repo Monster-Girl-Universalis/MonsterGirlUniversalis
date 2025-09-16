@@ -1868,6 +1868,14 @@ defined_text = {
 			}
 		}
 	}
+	text = { #Makai
+        localisation_key = string_start_tag_makai_world
+		trigger = {
+			capital_scope = {
+				is_in_makai_world = yes
+			}
+		}
+	}
 	text = { #Fallback
         localisation_key = string_start_tag_generic
 		trigger = {

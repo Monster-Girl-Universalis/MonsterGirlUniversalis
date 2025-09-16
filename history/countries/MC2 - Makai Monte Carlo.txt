@@ -5,3 +5,4 @@ religion = dark_goddess_religion
 technology_group = TECH_MAKAI_HUMAN
 add_government_reform = criminal_syndicate_reform
 capital = 3432
+unlock_race = { race = human }

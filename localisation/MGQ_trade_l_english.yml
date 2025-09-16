@@ -55,6 +55,8 @@
  monster_lord_castle: "Monster Lord Castle"
  esta: "Esta"
  lima: "Lima"
+ esta_tartarus: "Esta Tartarus"
+ central_tartarus: "Central Tartarus"
  makai_enrika_tradenode: "Makai Enrika"
  makai_gold_train_station_tradenode: "Gold Train Station"
  makai_goldport_tradenode: "Makai Goldport"
@@ -177,6 +179,9 @@
  trade_company_undine_spring_trade: "Undine Charter"
  TRADE_COMPANY_UNDINE_SPRING_NODE_Root_Culture_GetName: "[Root.Culture.GetName] Undine Company"
  TRADE_COMPANY_UNDINE_SPRING_Noah_Trade_Company: "Undine Trade Company"
+ trade_company_noah_tartarus_trade: "Esta Tartarus Charter"
+ TRADE_COMPANY_NOAH_TARTARUS_NODE_Root_Culture_GetName: "[Root.Culture.GetName] Esta Tartarus Company"
+ TRADE_COMPANY_NOAH_TARTARUS_Noah_Trade_Company: "Esta Tartarus Trade Company"
  trade_company_goddard_trade: "Goddard Charter"
  TRADE_COMPANY_GODDARD_NODE_Root_Culture_GetName: "[Root.Culture.GetName] Goddard Company"
  TRADE_COMPANY_GODDARD_Gold_Trade_Company: "Goddard Trade Company"
@@ -237,6 +242,9 @@
  trade_company_lima_trade: "Lima Charter"
  TRADE_COMPANY_LIMA_NODE_Root_Culture_GetName: "[Root.Culture.GetName] Lima Company"
  TRADE_COMPANY_LIMA_Noah_Trade_Company: "Lima Trade Company"
+ trade_company_central_tartarus_trade: "Central Tartarus Charter"
+ TRADE_COMPANY_CENTRAL_TARTARUS_NODE_Root_Culture_GetName: "[Root.Culture.GetName] Central Tartarus Company"
+ TRADE_COMPANY_CENTRAL_TARTARUS_Sentora_Trade_Company: "Central Tartarus Trade Company"
  
 
  trade_company_makai_dark_goddess_trade: "Dark Goddess Charter"

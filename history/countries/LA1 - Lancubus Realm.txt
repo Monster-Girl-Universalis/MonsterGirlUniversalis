@@ -14,5 +14,6 @@ technology_group = TECH_MINAGI
 		mil = 4
 		female = yes
 	}
+	unlock_race = { race = succubi }
 }
 capital = 2844

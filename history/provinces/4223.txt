@@ -1,0 +1,9 @@
+add_core = HG1
+owner = HG1
+base_tax = 1
+base_manpower = 2
+base_production = 2
+culture = Undead_Apoptosis
+religion = chaos_religion
+controller = HG1
+is_city = no

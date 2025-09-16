@@ -1,0 +1,20 @@
+government = monarchy
+government_rank = 2
+primary_culture = Doll_Apoptosis
+add_government_reform = Apoptosis_realm
+religion = chaos_religion
+technology_group = TECH_APOPTOSIS
+1444.1.1 = { 
+	monarch = { 
+		name = "Jade"
+		dynasty = "the Otherworldy Automaton"
+		birth_date = 1424.1.1
+		adm = 4
+		dip = 4
+		mil = 4
+		female = yes
+	}
+	unlock_race = { race = doll }
+	unlock_race = { race = apoptosis }
+	unlock_race = { race = roid }
+}

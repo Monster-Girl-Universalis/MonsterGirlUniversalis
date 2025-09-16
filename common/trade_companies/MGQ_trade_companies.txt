@@ -567,6 +567,23 @@ trade_company_undine_spring_trade = {
 		name = "TRADE_COMPANY_UNDINE_SPRING_Noah_Trade_Company"
 	}
 }
+trade_company_noah_tartarus_trade = { 
+	color = { 188 200 56 }
+	provinces = { 
+		24 4212 4213 4214 4215 4216 4217 4218 4219 4220
+		4221 4222 4223 4224 4225 4226 4227 4228 4229 4230
+		4231 4232 4233 4234 4235 4236 4237 4238 4239 4240
+		4241 
+	}
+	# Specific
+	# Generic
+	names = { 
+		name = "TRADE_COMPANY_NOAH_TARTARUS_NODE_Root_Culture_GetName"
+	}
+	names = { 
+		name = "TRADE_COMPANY_NOAH_TARTARUS_Noah_Trade_Company"
+	}
+}
 trade_company_goddard_trade = { 
 	color = { 243 95 99 }
 	provinces = { 
@@ -936,6 +953,19 @@ trade_company_lima_trade = {
 		name = "TRADE_COMPANY_LIMA_Noah_Trade_Company"
 	}
 }
+trade_company_central_tartarus_trade = { 
+	color = { 1 1 1 }
+	provinces = { 
+	}
+	# Specific
+	# Generic
+	names = { 
+		name = "TRADE_COMPANY_CENTRAL_TARTARUS_NODE_Root_Culture_GetName"
+	}
+	names = { 
+		name = "TRADE_COMPANY_CENTRAL_TARTARUS_Sentora_Trade_Company"
+	}
+}
 trade_company_makai_dark_goddess_trade = { 
 	color = { 172 120 33 }
 	provinces = { 
@@ -1079,7 +1109,7 @@ trade_company_makai_goldport_trade = {
 		2915 2916 2924 2925 2926 2934 2935 2943 2945 2946
 		2947 2948 2949 2950 2951 2952 2953 2954 2955 2956
 		2957 2958 3005 4056 4057 4058 4059 4060 4061 4062
-		4065 
+		4065
 	}
 	# Specific
 	# Generic

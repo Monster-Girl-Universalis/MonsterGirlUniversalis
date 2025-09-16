@@ -1,0 +1,10 @@
+add_core = HG1
+owner = HG1
+base_tax = 3
+base_manpower = 4
+base_production = 4
+culture = Angel_Girl
+religion = angel_world_religion
+controller = HG1
+center_of_trade = 2
+is_city = no

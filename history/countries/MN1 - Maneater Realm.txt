@@ -13,6 +13,7 @@ technology_group = TECH_MAKAI_HUMAN
 		mil = 4
 		female = yes
 	}
+	unlock_race = { race = human }
 }
 add_government_reform = worm_summoner_reform
 capital = 3699

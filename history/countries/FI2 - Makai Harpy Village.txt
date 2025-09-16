@@ -14,5 +14,7 @@ add_government_reform = Harpy_realm
 		mil = 4
 		female = yes
 	}
+	unlock_race = { race = harpy }
+	unlock_race = { race = dragon }
 }
 capital = 3213

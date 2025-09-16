@@ -21,3 +21,7 @@ discovered_by = TECH_MINAGI
 discovered_by = TECH_SAJA
 discovered_by = TECH_TAMAMO
 discovered_by = TECH_MAKAI_BEAST
+add_permanent_province_modifier = {
+	name = kagetsumugi_singularity_makai_715_3473 
+	duration = -1
+}

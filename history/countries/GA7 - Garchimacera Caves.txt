@@ -14,5 +14,6 @@ technology_group = TECH_SAJA
 		mil = 4
 		female = yes
 	}
+	unlock_race = { race = yoma }
 }
 capital = 2821

@@ -1,0 +1,138 @@
+grangold_singularity_makai_1552_2938 = {
+ 	potential = {
+		OR = {
+			province = 1552
+			province = 2938
+		}
+	}
+	trigger = {
+		OR = {
+			current_age = age_of_absolutism
+			current_age = age_of_revolutions
+		}
+	}
+	local_friendly_movement_speed = 90000
+	local_hostile_movement_speed = 90000
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+}
+grand_noah_singularity_makai_1192_3122 = {
+ 	potential = {
+		OR = {
+			province = 1192
+			province = 3122
+		}
+	}
+	trigger = {
+		OR = {
+			current_age = age_of_absolutism
+			current_age = age_of_revolutions
+		}
+	}
+	local_friendly_movement_speed = 90000
+	local_hostile_movement_speed = 90000
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+}
+sabasa_singularity_makai_755_3572 = {
+ 	potential = {
+		OR = {
+			province = 755
+			province = 3572
+		}
+	}
+	trigger = {
+		OR = {
+			current_age = age_of_absolutism
+			current_age = age_of_revolutions
+		}
+	}
+	local_friendly_movement_speed = 90000
+	local_hostile_movement_speed = 90000
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+}
+san_ilia_singularity_makai_582_3360 = {
+ 	potential = {
+		OR = {
+			province = 582
+			province = 3360
+		}
+	}
+	trigger = {
+		OR = {
+			current_age = age_of_absolutism
+			current_age = age_of_revolutions
+		}
+	}
+	local_friendly_movement_speed = 90000
+	local_hostile_movement_speed = 90000
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+}
+mithra_castle_singularity_makai_87_3523 = {
+ 	potential = {
+		OR = {
+			province = 87
+			province = 3523
+		}
+	}
+	trigger = {
+		OR = {
+			current_age = age_of_absolutism
+			current_age = age_of_revolutions
+		}
+	}
+	local_friendly_movement_speed = 90000
+	local_hostile_movement_speed = 90000
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+}
+yamatai_singularity_makai_1223_3148 = {
+ 	potential = {
+		OR = {
+			province = 1223
+			province = 3148
+		}
+	}
+	trigger = {
+		OR = {
+			current_age = age_of_absolutism
+			current_age = age_of_revolutions
+		}
+	}
+	local_friendly_movement_speed = 90000
+	local_hostile_movement_speed = 90000
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+}

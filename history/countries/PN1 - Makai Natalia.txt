@@ -4,4 +4,5 @@ primary_culture = natalian_human
 religion = water_religion
 technology_group = TECH_MAKAI_HUMAN
 add_government_reform = port_natalia_reform
+unlock_race = { race = human }
 capital = 3262

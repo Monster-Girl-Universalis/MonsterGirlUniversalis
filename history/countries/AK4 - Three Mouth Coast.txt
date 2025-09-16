@@ -14,5 +14,6 @@ add_government_reform = Demi_Human_realm
 		mil = 5
 		female = yes
 	}
+	unlock_race = { race = demi_human }
 }
 capital = 3135

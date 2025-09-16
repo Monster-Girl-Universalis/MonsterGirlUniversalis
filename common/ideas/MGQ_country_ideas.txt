@@ -1096,7 +1096,10 @@ SI1_ideas = {
 	}
 	
 	trigger = {
-		tag = SI1
+		OR = {
+			tag = SI1
+			tag = SI3
+		}
 	}
 	free = yes
 
@@ -1267,7 +1270,10 @@ SA1_ideas = {
 	}
 	
 	trigger = {
-		tag = SA1
+		OR = {
+			tag = SA1
+			tag = SA4
+		}
 	}
 	free = yes
 
@@ -1978,7 +1984,10 @@ GR2_ideas = {
 	}
 	
 	trigger = {
-		tag = GR2
+		OR = {
+			tag = GR2
+			tag = GR6
+		}
 	}
 	free = yes
 
@@ -2019,7 +2028,10 @@ ME1_ideas = {
 	}
 	
 	trigger = {
-		tag = ME1
+		OR = {
+			tag = ME1
+			tag = ME5
+		}
 	}
 	free = yes
 
@@ -2436,7 +2448,10 @@ GR4_ideas = {
 	}
 	
 	trigger = {
-		tag = GR4
+		OR = {
+			tag = GR4
+			tag = GR7
+		}
 	}
 	free = yes
 
@@ -5328,6 +5343,7 @@ RE1_ideas = {
 	trigger = {
 		OR = {
 			tag = RE1
+			tag = RE5
 		}
 	}	
 	free = yes
@@ -5378,6 +5394,7 @@ SQD_ideas = {
 	trigger = {
 		OR = {
 			tag = SQD
+			tag = SQ1
 		}
 	}	
 	free = yes
@@ -5469,7 +5486,10 @@ LQD_ideas = {
 	}
 	
 	trigger = {
-		tag = LQD
+		OR = {
+			tag = LQD
+			tag = LQ2
+		}
 	}
 	free = yes
 
@@ -5512,7 +5532,10 @@ AQD_ideas = {
 	}
 	
 	trigger = {
-		tag = AQD
+		OR = {
+			tag = AQD
+			tag = AQ1
+		}
 	}	
 	free = yes
 	
@@ -5556,7 +5579,10 @@ BQD_ideas = {
 	}
 	
 	trigger = {
-		tag = BQD
+		OR = {
+			tag = BQD
+			tag = BQ1
+		}
 	}	
 	free = yes
 	
@@ -5600,7 +5626,10 @@ SSD_ideas = {
 	}
 	
 	trigger = {
-		tag = SSD
+		OR = {
+			tag = SSD
+			tag = SQ3
+		}
 	}	
 	free = yes
 	
@@ -5649,7 +5678,10 @@ MR3_ideas = {
 	}
 	
 	trigger = {
-		tag = MR3
+		OR = {
+			tag = MR3
+			tag = MQ1
+		}
 	}	
 	free = yes
 	
@@ -5691,7 +5723,10 @@ EL1_ideas = {
 	}
 	
 	trigger = {
-		tag = EL1
+		OR = {
+			tag = EL1
+			tag = EQ1
+		}
 	}	
 	free = yes
 	
@@ -5735,7 +5770,10 @@ VA6_ideas = {
 	}
 	
 	trigger = {
-		tag = VA6
+		OR = {
+			tag = VA6
+			tag = VQ1
+		}
 	}	
 	free = yes
 	VA6_bloodthirsty_dominion = {
@@ -5781,6 +5819,7 @@ HQ1_ideas = {
 			tag = HQ1
 			tag = HRT
 			tag = FI2
+			tag = HQ2
 		}
 	}	
 	free = yes
@@ -5828,6 +5867,7 @@ IQ1_ideas = {
 			tag = IQ1
 			tag = RM1
 			tag = RT1
+			tag = IQ2
 		}
 	}
 	free = yes
@@ -5875,6 +5915,7 @@ DQ1_ideas = {
 			tag = KK1
 			tag = PO1
 			tag = NT1
+			tag = DQ2
 		}
 	}
 	free = yes
@@ -5922,6 +5963,7 @@ LQ1_ideas = {
 	trigger = {
 		OR = {
 			tag = LQ1
+			tag = LQ3
 		}
 	}
 	free = yes
@@ -5967,6 +6009,7 @@ SQ1_ideas = {
 	trigger = {
 		OR = {
 			tag = SQ1
+			tag = SQ4
 		}
 	}
 	free = yes
@@ -6016,6 +6059,7 @@ TQ1_ideas = {
 	trigger = {
 		OR = {
 			tag = TQ1
+			tag = TQ2
 		}
 	}
 	free = yes
@@ -6061,6 +6105,7 @@ FQ1_ideas = {
 	trigger = {
 		OR = {
 			tag = FQ1
+			tag = FQ2
 		}
 	}	
 	free = yes

@@ -20,5 +20,4 @@ unlock_race = { race = land_dweller }
 add_accepted_culture = Slug_Girl
 add_accepted_culture = Earthworm_Girl
 add_accepted_culture = Leech_Girl
-race_unlocks = land_dweller
 add_government_reform = 

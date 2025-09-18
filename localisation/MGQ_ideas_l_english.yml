@@ -3014,6 +3014,26 @@
  SPR_territory:0 "Territorial Singers"
  SPR_territory_desc:0 "We may be weak and tiny, but we won't back down from defending our territory, our very songs are nothing but territorial cries to warn others of our home's borders."
  
+
+ AT1_ideas: "Antlion Ideas"
+ AT1_ideas_start: "Antlion Girl Traditions"
+ AT1_ideas_bonus: "Antlion Girl Ambition"
+ AT1_traps:0 "Quicksand Traps"
+ AT1_traps_desc:0 "Our proficiency in burrowing under the scorching sands of the desert ready to pin the enemy down a deadly trap allows us to make the siege of our forts a living nightmare for we can lay down our lethal quicksands in places incoming foes are forced to pass through."
+ AT1_pincer:0 "Deadly Pincer"
+ AT1_pincer_desc:0 "We are equipped with deadly pincers that we used to pin our prey in place while we devour it, but with a little training they can become more versatile."
+ AT1_trading:0 "Traders of the Scorching Lands"
+ AT1_trading_desc:0 "Antlion monsters have evolved in the scorching sands of the desert, trekking through this enviroment is easy for us."
+ AT1_desert_oasis:0 "Desert Oasis Wealth"
+ AT1_desert_oasis_desc:0 "The heart of our realm lies in an oasis, its waters attracting capital from every nearby village, we should capitalized on this wealth to grow our nation."
+ AT1_nest_building:0 "Sand Nests"
+ AT1_nest_building_desc:0 "Our burrowing isn't limited as a trap for catching prey but as a method of building underground nests, with our cunning abilities in doing so we can quickly establish ourselves in newly aquired territories."
+ AT1_territorial_monsters:0 "Territorial Monsters"
+ AT1_territorial_monsters_desc:0 "Our species often clashes with other desert dwelling monsters such as Sandworms and Desert Scyllas, we've learned to fight for our territory and to impose on our foes to gain even more."
+ AT1_wrath_of_earth:0 "Wrath of the Earth"
+ AT1_wrath_of_earth_desc:0 "The desert is a harsh enviroment with little food that shows no mercy to anyone, but we are one with the element of earth, our spirit allowed us to tame the power of the earth and we shall use it to crush anyone that stands in our way!"
+ 
+ 
  KA1_ideas: "Kanon Ideas"
  KA1_ideas_start: "Kanon Traditions"
  KA1_ideas_bonus: "Kanon Ambition"

@@ -808,7 +808,27 @@ gen_mgq_flavor.31.a: "How horrible!"
 gen_mgq_flavor.31.b: "We'll make them pay for the damages by force!"
 gen_mgq_flavor.31.c: "Send aid to minimize the damage!"
  
-
+gen_mgq_flavor.32.t: "Ilias Temple Jobs"
+gen_mgq_flavor.32.d: "Ilias Tample once the place where the goddess herself would ascend from heaven to baptized heroes, now stands as a structure mainly used for changing jobs. Indeed now that were are here we might as well change our jobs to try something different, but what should we choose?"
+gen_mgq_flavor.32.a: "Magic is nice but Machinas have their own charm and style!"
+gen_mgq_flavor.32.b: "Some pleasure related job might be fun to try..."
+gen_mgq_flavor.32.c: "I want my lance to pierced the heavens!"
+gen_mgq_flavor.32.e: "All who oppose me will fall to the blade of darkness!"
+gen_mgq_flavor.32.f: "I will tear my foes apart with my bare hands!"
+gen_mgq_flavor.32.g: "Tapping into the fabric of space time sounds dangerous...i like it!"
+gen_mgq_flavor.32.h: "The pinnacle of magic is what i yern for."
+gen_mgq_flavor.32.i: "The shadows are a predator's best friend."
+gen_mgq_flavor.32.j: "My deadly skill is murdering people."
+gen_mgq_flavor.32.k: "Sailing sailing jumping off the railing, drinking drinking 'till the ship is sinking!"
+gen_mgq_flavor.32.l: "I bid farewell to the port and the land, as i paddle away from my hometown's white sands."
+gen_mgq_flavor.32.m: "Capitalism ho!"
+gen_mgq_flavor.32.n: "I'm all in!"
+gen_mgq_flavor.32.o: "I don't particulary mind needless killing."
+gen_mgq_flavor.32.p: "We were not made to live like brutes, but to follow virtue and knowledge."
+gen_mgq_flavor.32.q: "The pen is mightier than the sword, or in this case the words."
+gen_mgq_flavor.32.r: "Hurting is not as rewarding as healing."
+gen_mgq_flavor.32.s: "The best offense is defense!"
+gen_mgq_flavor.32.u: "Mine sacred blade shall be thy doom!"
  
 
  ###FLAVOR FOR VAMPIRE QUEEN###

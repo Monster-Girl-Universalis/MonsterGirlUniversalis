@@ -427,4 +427,8 @@ spriteTypes = {
 		name = "government_reform_kanon_domain"
 		texturefile = "gfx//interface//government_reform_icons//kanon_domain_reform.dds"
 	}
+	spriteType = {
+		name = "government_reform_antlion_nobility"
+		texturefile = "gfx//interface//government_reform_icons//antlion_nobility_reform.dds"
+	}
 }

@@ -28,3 +28,4 @@ discovered_by = TECH_MAKAI_BEAST
 ramparts = yes
 counting_house = yes
 fort_16th = yes
+trade_goods = dyes

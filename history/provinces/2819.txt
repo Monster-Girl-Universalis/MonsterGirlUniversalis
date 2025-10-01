@@ -28,3 +28,4 @@ discovered_by = TECH_MAKAI_BEAST
 fort_18th = yes
 ramparts = yes
 soldier_households = yes
+trade_goods = gems

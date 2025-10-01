@@ -298,35 +298,38 @@ country_event = {
 }
 }
 country_event = {
-	id = flavor_slu.6
-	title = flavor_slu.6_title
-	desc = flavor_slu.6_desc
-	picture = SLUG_MIDAS_eventPicture
-	fire_only_once = yes
-	is_triggered_only = no
-	trigger = {
-		    OR ={
-				tag = SLU
-				was_tag = SLU
-			}
-			midas_village_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
-			midas_plains_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
-			slug_plains_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
-			slug_coast_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
-}
-   	mean_time_to_happen = {
-	months = 12
-	}
-	option = {
-		name = flavor_slu.6.a
-		add_country_modifier = {
-			name = slu_slug_diaspora
-			duration = -1
-		}
-		ai_chance = {
-			factor = 100
-		}
-	}
+    id = flavor_slu.6
+    title = flavor_slu.6_title
+    desc = flavor_slu.6_desc
+    picture = SLUG_MIDAS_eventPicture
+    fire_only_once = yes
+    is_triggered_only = no
+
+    trigger = {
+        OR = {
+            tag = SLU
+            was_tag = SLU
+        }
+        midas_village_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+        midas_plains_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+        midas_slugs_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+        royal_slug_coast_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+    }
+
+    mean_time_to_happen = {
+        months = 12
+    }
+
+    option = {
+        name = flavor_slu.6.a
+        add_country_modifier = {
+            name = slu_slug_diaspora
+            duration = -1
+        }
+        ai_chance = {
+            factor = 100
+        }
+    }
 }
 country_event = {
 	id = flavor_slu.7

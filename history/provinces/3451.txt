@@ -23,3 +23,4 @@ discovered_by = TECH_TAMAMO
 discovered_by = TECH_MAKAI_BEAST
 fort_15th = yes
 ramparts = yes
+trade_goods = gems

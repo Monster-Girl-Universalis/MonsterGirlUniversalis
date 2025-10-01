@@ -49,6 +49,7 @@ lakes = {
 }
 
 force_coastal = {
+	2040 2039 2038 2037 2036 2035 
 }
 
 definitions = "definition.csv"

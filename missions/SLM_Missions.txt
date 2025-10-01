@@ -30,10 +30,12 @@ SLM_branch_1 = {
 	}
 	SLM_dev = { 
 		icon = capital
-		required_missions = {SLM_race_slime}
+		required_missions = { SLM_race_slime }
 		trigger = {
-			full_idea_group = human_ideas
-			full_idea_group = infrastructure_ideas
+			OR = {
+				full_idea_group = human_ideas
+				full_idea_group = infrastructure_ideas
+			}
 		}
 		effect = {
 			add_country_modifier = {
@@ -46,8 +48,10 @@ SLM_branch_1 = {
 		icon = lime_trade
 		required_missions = {SLM_dev}
 		trigger = {
-			full_idea_group = trade_ideas
-			full_idea_group = economic_ideas
+			OR = {
+				full_idea_group = trade_ideas
+				full_idea_group = economic_ideas
+			}
 		}
 		effect = {
 			add_country_modifier = {
@@ -58,7 +62,7 @@ SLM_branch_1 = {
 	}
 	SLM_republic = { 
 		icon = lime_democratic
-		required_missions = {SLM_trading}
+		required_missions = { SLM_trading }
 		trigger = {
 			grown_by_development = 750
 		}
@@ -74,7 +78,7 @@ SLM_branch_1 = {
 	}
 	SLM_great_power = { 
 		icon = lime_boobs
-		required_missions = {SLM_republic}
+		required_missions = { SLM_republic }
 		provinces_to_highlight = {
 			OR = {
 			province_id = 2409_province

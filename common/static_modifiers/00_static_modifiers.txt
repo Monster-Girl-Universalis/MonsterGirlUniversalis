@@ -156,7 +156,7 @@ arctic = {
 	local_hostile_attrition = 1
 
 	allowed_num_of_buildings = -1
-	local_development_cost = 0.5
+	local_development_cost = 0.33
 
 	picture = "climate_arctic"
 }

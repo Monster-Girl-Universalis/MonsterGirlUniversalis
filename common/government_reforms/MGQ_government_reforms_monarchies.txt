@@ -2141,7 +2141,7 @@ angel_nobility_reform = {
 	}
 }
 antlion_nobility_reform = {
-	icon = "antlion"
+	icon = "antlion_nobility"
 	allow_normal_conversion = yes
 	potential = {	
 		is_revolutionary = no

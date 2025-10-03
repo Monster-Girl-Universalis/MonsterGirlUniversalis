@@ -168,4 +168,8 @@ spriteTypes = {
 		name = "GFX_great_project_cassandra_mansion"	
 		texturefile = "gfx//interface//great_projects//great_project_cassandra_mansion.dds"
 	}
+	spriteType = {
+		name = "GFX_great_project_san_ilia_cathedral"	
+		texturefile = "gfx//interface//great_projects//great_project_san_ilia_cathedral.dds"
+	}
 }

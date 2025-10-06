@@ -421,7 +421,7 @@ san_ilia_coastal_conquest_branch = {
 		}
 	}
 	SI1_increase_our_presence_in_ilias_continent = {
-		icon = mission_ilias_continent
+		icon = mission_hegemon
 		required_missions = { SI1_ties_with_iliasport }
 		position = 10
 		

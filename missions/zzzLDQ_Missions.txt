@@ -9,7 +9,7 @@ ldq_mission_branch1 = {
 	has_country_shield = yes
 
 	ldq_frogs = { 
-		icon = ldq_frog
+		icon = mission_frogs
 		position = 8
 		required_missions = {}
         generic = no

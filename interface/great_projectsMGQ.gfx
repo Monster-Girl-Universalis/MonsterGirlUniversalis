@@ -172,4 +172,20 @@ spriteTypes = {
 		name = "GFX_great_project_san_ilia_cathedral"	
 		texturefile = "gfx//interface//great_projects//great_project_san_ilia_cathedral.dds"
 	}
+	spriteType = {
+		name = "GFX_great_project_sabasa_castle"	
+		texturefile = "gfx//interface//great_projects//great_project_sabasa_castle.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_south_undersea_temple"	
+		texturefile = "gfx//interface//great_projects//great_project_south_undersea_temple.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_north_undersea_temple"	
+		texturefile = "gfx//interface//great_projects//great_project_north_undersea_temple.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_lily_manor"	
+		texturefile = "gfx//interface//great_projects//great_project_lily_manor.dds"
+	}
 }

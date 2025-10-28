@@ -192,4 +192,8 @@ spriteTypes = {
         name = "GFX_great_project_kanon_botanical_garden"
         texturefile = "gfx//interface//great_projects//great_project_kanon_botanical_garden.dds"
     }
+	spriteType = {
+        name = "GFX_great_project_great_ilias_cathedral"
+        texturefile = "gfx//interface//great_projects//great_project_great_ilias_cathedral.dds"
+    }
 }

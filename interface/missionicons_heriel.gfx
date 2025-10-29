@@ -1,0 +1,98 @@
+spriteTypes = {	
+	spriteType = {
+		name = "heriel_happy"
+		texturefile = "gfx//interface//missions//herielrealm_missions//heriel_happy.dds"
+	}
+	spriteType = {
+		name = "alciel"
+		texturefile = "gfx//interface//missions//herielrealm_missions//alciel.dds"
+	}
+	spriteType = {
+		name = "snow_continent"
+		texturefile = "gfx//interface//missions//herielrealm_missions//snow_continent.dds"
+	}
+	spriteType = {
+		name = "snow_continent_heriel"
+		texturefile = "gfx//interface//missions//herielrealm_missions//snow_continent_heriel.dds"
+	}
+	spriteType = {
+		name = "ilias_static"
+		texturefile = "gfx//interface//missions//herielrealm_missions//ilias_static.dds"
+	}
+	spriteType = {
+		name = "ilias_temple_ruins"
+		texturefile = "gfx//interface//missions//herielrealm_missions//ilias_temple_ruins.dds"
+	}
+	spriteType = {
+		name = "eden_snow_shrine"
+		texturefile = "gfx//interface//missions//herielrealm_missions//eden_snow_shrine.dds"
+	}
+	spriteType = {
+		name = "flappy_chimera"
+		texturefile = "gfx//interface//missions//herielrealm_missions//flappy_chimera.dds"
+	}
+	spriteType = {
+		name = "angel_chimera_temple"
+		texturefile = "gfx//interface//missions//herielrealm_missions//angel_chimera_temple.dds"
+	}
+	spriteType = {
+		name = "angel_idea_ranael"
+		texturefile = "gfx//interface//missions//herielrealm_missions//angel_idea_ranael.dds"
+	}
+	spriteType = {
+		name = "eliciel"
+		texturefile = "gfx//interface//missions//herielrealm_missions//eliciel.dds"
+	}
+	spriteType = {
+		name = "heriel_chaos"
+		texturefile = "gfx//interface//missions//herielrealm_missions//heriel_chaos.dds"
+	}
+	spriteType = {
+		name = "heriel_chibi"
+		texturefile = "gfx//interface//missions//herielrealm_missions//heriel_chibi.dds"
+	}
+	spriteType = {
+		name = "uranus_snow"
+		texturefile = "gfx//interface//missions//herielrealm_missions//uranus_snow.dds"
+	}
+	spriteType = {
+		name = "heriel_navy"
+		texturefile = "gfx//interface//missions//herielrealm_missions//heriel_navy.dds"
+	}
+	spriteType = {
+		name = "heriel_remina_style"
+		texturefile = "gfx//interface//missions//herielrealm_missions//heriel_remina_style.dds"
+	}
+	spriteType = {
+		name = "ribo_ribo"
+		texturefile = "gfx//interface//missions//herielrealm_missions//ribo_ribo.dds"
+	}
+	spriteType = {
+		name = "ilias_stained_glass"
+		texturefile = "gfx//interface//missions//herielrealm_missions//ilias_stained_glass.dds"
+	}
+	spriteType = {
+		name = "heriel_flag"
+		texturefile = "gfx//interface//missions//herielrealm_missions//heriel_flag.dds"
+	}
+	spriteType = {
+		name = "heriel_sexy"
+		texturefile = "gfx//interface//missions//herielrealm_missions//heriel_sexy.dds"
+	}
+	spriteType = {
+		name = "saloon_flag"
+		texturefile = "gfx//interface//missions//herielrealm_missions//saloon_flag.dds"
+	}
+	spriteType = {
+		name = "trilobite_hellgondo"
+		texturefile = "gfx//interface//missions//herielrealm_missions//trilobite_hellgondo.dds"
+	}
+	spriteType = {
+		name = "heaven_cross"
+		texturefile = "gfx//interface//missions//herielrealm_missions//heaven_cross.dds"
+	}
+	spriteType = {
+		name = "heriel_colonial"
+		texturefile = "gfx//interface//missions//herielrealm_missions//heriel_colonial.dds"
+	}
+}

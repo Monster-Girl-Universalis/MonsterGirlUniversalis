@@ -77,3 +77,9 @@ hr1_new_heaven_on_earth = {
     possible_adm_policy = 1
     free_adm_policy = 1
 }
+hr1_eden_pu_1 = {
+    num_accepted_cultures = 2
+}
+hr1_eden_pu_2 = {
+    liberty_desire = -10
+}

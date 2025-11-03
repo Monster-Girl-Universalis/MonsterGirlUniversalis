@@ -15,4 +15,8 @@ spriteTypes = {
 		name = "HR1_RANAEL_SNOW_eventPicture"
 		texturefile = "gfx//event_pictures//event_pictures_heriel_realm//HR1_RANAEL_SNOW_eventPicture.dds"
 	}
+	spriteType = {
+		name = "HR1_EDEN_SHRINE_eventPicture"
+		texturefile = "gfx//event_pictures//event_pictures_heriel_realm//HR1_EDEN_SHRINE_eventPicture.dds"
+	}
 }

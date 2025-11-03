@@ -111,7 +111,7 @@ country_event = {
 		has_country_flag = has_rejected_ranael
 	}
 	mean_time_to_happen = {
-	months = 120
+	months = 240
 }
 	option = {
 		name = flavor_hr1.4.a
@@ -124,5 +124,35 @@ country_event = {
 				female = yes
 				trait = cruel_tactician_personality
 			}
+	}
+}
+country_event = {
+	id = flavor_hr1.5
+	title = flavor_hr1.5_title
+	desc = flavor_hr1.5_desc
+	picture = HR1_EDEN_SHRINE_eventPicture
+	fire_only_once = yes
+	is_triggered_only = no
+	trigger = {
+		tag = HR1
+		SH3 = {is_subject_of_type = personal_union}
+	}
+	mean_time_to_happen = {
+	months = 1
+}
+	option = {
+		name = flavor_hr1.5.a
+		add_country_modifier = {
+			name = hr1_eden_pu_1
+			duration = -1
+		}
+		add_accepted_culture = Angel_Girl
+		add_accepted_culture = Rogue_Angel
+		SH3 = {
+			add_country_modifier = {
+				name = hr1_eden_pu_2
+				duration = -1
+			}
+		}
 	}
 }

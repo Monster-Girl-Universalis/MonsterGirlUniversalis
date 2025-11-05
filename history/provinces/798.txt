@@ -34,3 +34,4 @@ add_core = GR1
 center_of_trade = 2
 discovered_by = TECH_FAIRY
 discovered_by = TECH_GHOST
+trade_goods = silk

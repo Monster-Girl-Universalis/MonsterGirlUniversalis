@@ -1,0 +1,11 @@
+add_core = TG1
+fort_18th = yes
+ramparts = yes
+owner = TG1
+base_tax = 15
+base_manpower = 15
+base_production = 15
+culture = Yoma_Apoptosis
+religion = chaos_religion
+controller = TG1
+is_city = no

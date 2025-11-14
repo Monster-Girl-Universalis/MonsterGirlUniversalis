@@ -1,0 +1,9 @@
+add_core = AN2
+owner = AN2
+base_tax = 3
+base_manpower = 4
+base_production = 3
+culture = Scylla_Apoptosis
+religion = chaos_religion
+controller = AN2
+is_city = no

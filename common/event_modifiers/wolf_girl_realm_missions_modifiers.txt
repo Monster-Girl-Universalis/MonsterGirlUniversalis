@@ -5,7 +5,7 @@ wlr_slums = {
 	num_accepted_cultures = 1
 }
 wlr_mini_money = {
-	tax_income = 24
+	global_tax_income = 24
 }
 wlr_mini = {
 	num_accepted_cultures = 1

@@ -295,6 +295,13 @@ country_event = {
 				flag = dark_goddess_kanade_icon 
 				days = 1095
 			}
+			AND = {
+				has_reform = kanade_domain_reform
+				had_country_flag = {
+					flag = dark_goddess_kanade_icon 
+					days = 365
+				}				
+			}
 		}
 	}
 
@@ -316,6 +323,10 @@ country_event = {
 
 	mean_time_to_happen = {
 		days = 730
+		modifier = {
+			factor = 0.33
+			has_government_reform = kanade_domain_reform
+		}
 	}
 	option = {
 		name = dark_goddess_worship_events.5.a				#No Slime Girls? Make Slime Girls
@@ -385,6 +396,76 @@ country_event = {
 			add_base_production = 2
 			add_base_manpower = 2
 			change_culture = Gelatinous_Cube_Girl 
+		}
+	}
+	option = {
+		name = dark_goddess_worship_events.5.f				#No Slime Girls? Make Bomb Slime Girls
+		trigger = {
+			any_owned_province = {
+				NOT = { culture_group = slime }
+			}
+		}
+		event_target:dark_goddess_worship_kanade_icon_prov = {
+			add_base_tax = 2
+			add_base_production = 2
+			add_base_manpower = 2
+			change_culture = Bomb_Slime
+		}
+	}
+	option = {
+		name = dark_goddess_worship_events.5.g				#No Slime Girls? Make Liqueur Slime Girls
+		trigger = {
+			any_owned_province = {
+				NOT = { culture_group = slime }
+			}
+		}
+		event_target:dark_goddess_worship_kanade_icon_prov = {
+			add_base_tax = 2
+			add_base_production = 2
+			add_base_manpower = 2
+			change_culture = Liqueur_Slime
+		}
+	}
+	option = {
+		name = dark_goddess_worship_events.5.h				#No Slime Girls? Make Slime Princess Girls
+		trigger = {
+			any_owned_province = {
+				NOT = { culture_group = slime }
+			}
+		}
+		event_target:dark_goddess_worship_kanade_icon_prov = {
+			add_base_tax = 2
+			add_base_production = 2
+			add_base_manpower = 2
+			change_culture = Royal_Slime
+		}
+	}
+	option = {
+		name = dark_goddess_worship_events.5.i				#No Slime Girls? Make Giga Slime Girls
+		trigger = {
+			any_owned_province = {
+				NOT = { culture_group = slime }
+			}
+		}
+		event_target:dark_goddess_worship_kanade_icon_prov = {
+			add_base_tax = 2
+			add_base_production = 2
+			add_base_manpower = 2
+			change_culture = Giga_Slime
+		}
+	}
+	option = {
+		name = dark_goddess_worship_events.5.j				#No Slime Girls? Make Mud Girls
+		trigger = {
+			any_owned_province = {
+				NOT = { culture_group = slime }
+			}
+		}
+		event_target:dark_goddess_worship_kanade_icon_prov = {
+			add_base_tax = 2
+			add_base_production = 2
+			add_base_manpower = 2
+			change_culture = Mud_Girl
 		}
 	}
 	option = {

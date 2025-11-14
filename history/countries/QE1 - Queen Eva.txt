@@ -1,7 +1,7 @@
 government = monarchy
 government_rank = 3
 primary_culture = Monster_Succubi
-add_government_reform = Succubi_realm
+add_government_reform = queen_eva_reform 
 religion = dark_goddess_religion
 technology_group = TECH_MINAGI
 1444.1.1 = { 

@@ -2757,3 +2757,186 @@ heavenly_gate_coast = {
 northern_esta_tartarus = { 
 	4236 4235 4234 
 }
+sentora_eater_area = { 
+	4254 4247 4286 4244 4255 
+}
+sentora_eater_drylands = { 
+	4253 4256 4248 4252 4257 
+}
+sentora_jaide_area = { 
+	4242 4285 4245 4243 4246 4281 
+}
+sentora_jaide_woods = { 
+	4259 4249 4250 4251 4258 
+}
+sentora_sully_area = { 
+	4260 4282 4261 4284 4267 
+}
+sentora_sully_coast = { 
+	4288 4291 4289 4292 4297 
+}
+sentora_shesta_area = { 
+	4299 4302 4301 4304 4303 
+}
+sentora_shesta_coast = { 
+	4306 4305 4308 4307 4319 
+}
+sentora_luxuru_area = { 
+	4268 4262 4263 4269 4290 
+}
+sentora_luxuru_desert = { 
+	4293 4283 4294 4298 4295 
+}
+sentora_riot_area = { 
+	4311 4309 4310 4312 4316 
+}
+sentora_riot_drylands = { 
+	4317 4318 4321 4324 4325 
+}
+sentora_vetala_coast = { 
+	4322 4320 4323 4330 4331 
+}
+sentora_vetala_area = { 
+	4428 4329 4339 4328 4338 
+}
+sentora_vitae_area = { 
+	4332 4429 4327 4333 4431 
+}
+sentora_vitae_forest = { 
+	4350 4340 4430 4349 4351 
+}
+sentora_valto_caves = { 
+	4427 4352 4353 4426 4354 
+}
+sentora_valto_area = { 
+	4347 4348 4341 4342 4346 
+}
+sentora_shinifa_area = { 
+	4313 4315 4326 4334 4335 
+}
+sentora_shinifa_swamp = { 
+	4405 4314 4296 4367 4280 
+}
+sentora_ribo_ribo_area = { 
+	4273 4272 4274 4287 4275 
+}
+sentora_ribo_ribo_drylands = { 
+	4277 4276 4266 4271 4264 
+}
+sentora_twinkell_area = { 
+	4278 4265 4270 4279 4370 
+}
+sentora_twinkell_hills = { 
+	4401 4368 4369 4407 4372 
+}
+sentora_jellaila_area = { 
+	4403 4336 4425 4371 4344 
+}
+sentora_jellaila_caves = { 
+	4343 4337 4345 4414 4382 
+}
+sentora_amphil_area = { 
+	4357 4415 4383 4410 4363 
+}
+sentora_amphil_woods = { 
+	4384 4381 4402 4412 4380 
+}
+sentora_trilobite_area = { 
+	4356 4355 4362 4406 4360 
+}
+sentora_trilobite_coast = { 
+	4432 4358 4359 4361 4366 
+}
+sentora_persephone_area = { 
+	4364 4365 4393 4437 4436 
+}
+sentora_persephone_coast = { 
+	4435 4433 4434 4438 4439 
+}
+sentora_amour_doll_area = { 
+	4375 4376 4374 4420 4373 
+}
+sentora_amour_doll_caves = { 
+	4411 4423 4400 4377 4524 
+}
+sentora_amour_rihm_area = { 
+	4378 4379 4388 4389 4399 
+}
+sentora_amour_rihm_woods = { 
+	4390 4385 4408 4386 4424 
+}
+sentora_amour_rahm_area = { 
+	4391 4387 4392 4394 4443 
+}
+sentora_amour_rahm_forest = { 
+	4416 4395 4413 4396 4417 
+}
+cursed_angel_coast = { 
+	4444 4441 4440 4447 4448 
+}
+cursed_angel_area = { 
+	4445 4442 4446 4450 4451 
+}
+cursed_angel_caves = { 
+	4454 4452 4449 4453 4421 
+}
+idun_coast = { 
+	4457 4455 4458 4456 4460 
+}
+idun_area = { 
+	4461 4459 4462 4463 4469 
+}
+idun_caves = { 
+	4501 4468 4467 4483 4502 
+}
+elgemini_coast = { 
+	4504 4507 4503 4505 4487 
+}
+algemini_coast = { 
+	4514 4508 4509 4506 4515 
+}
+algemini_area = { 
+	4516 4510 4511 4512 4517 
+}
+algemini_caves = { 
+	4513 4518 4497 4519 4520 
+}
+elgemini_area = { 
+	4489 4488 4484 4486 4491 
+}
+elgemini_caves = { 
+	4485 4482 4479 4480 4490 
+}
+samyaza_area = { 
+	4549 4550 4548 4546 4547 
+}
+samyaza_caves = { 
+	4544 4545 4528 4538 4539 
+}
+samyaza_abyss = { 
+	4543 4541 4540 4542 4537 
+}
+agrave_abyss = { 
+	4533 4532 4531 4530 4534 
+}
+agrave_caves = { 
+	4536 4535 4522 4523 4529 
+}
+agrave_area = { 
+	4526 4527 4525 4500 4496 
+}
+mr_bear_castle = { 
+	4493 4521 4492 4481 4494 
+}
+heinrichs_chambers = { 
+	4495 4499 4498 4478 4477 
+}
+black_mansion_exterior = { 
+	4475 4474 4473 4476 4472 4422 
+}
+lost_remina = { 
+	4465 4471 4470 4464 4466 
+}
+black_alice_mansion = { 
+	4409 4397 4398 4404 4418 4419 
+}

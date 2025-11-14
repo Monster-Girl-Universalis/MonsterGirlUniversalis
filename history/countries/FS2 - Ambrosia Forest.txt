@@ -1,7 +1,7 @@
 government = monarchy
 government_rank = 2
 primary_culture = Fairy_Girl
-add_government_reform = sylph_reform
+add_government_reform = ambrosia_reform 
 religion = wind_religion
 technology_group = TECH_MAKAI_FAIRY
 1444.1.1 = { 

@@ -1,0 +1,9 @@
+add_core = EA1
+owner = EA1
+base_tax = 4
+base_manpower = 5
+base_production = 4
+culture = Roid_Apoptosis
+religion = chaos_religion
+controller = EA1
+is_city = no

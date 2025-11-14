@@ -1,7 +1,7 @@
 government = monarchy
 government_rank = 2
 primary_culture = Spirit_Girl
-add_government_reform = salamander_reform
+add_government_reform = grimoire_reform 
 religion = fire_religion
 technology_group = TECH_MAKAI_GHOST
 historical_rival = GH3#They just don't get along...

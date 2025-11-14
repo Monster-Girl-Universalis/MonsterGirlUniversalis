@@ -1,0 +1,19 @@
+government = monarchy
+government_rank = 3
+add_government_reform = High_Apoptosis_realm
+primary_culture = XX-class_Apoptosis
+religion = chaos_religion
+technology_group = TECH_APOPTOSIS
+1444.1.1 = { 
+	monarch = { 
+		name = "Alipheese VIII"
+		dynasty = "Fateburn"
+		birth_date = 1424.1.1
+		adm = 4
+		dip = 4
+		mil = 6
+		female = yes
+	}
+	add_ruler_personality = immortal_personality
+}
+capital = 4409

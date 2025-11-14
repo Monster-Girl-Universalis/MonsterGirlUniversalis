@@ -1,0 +1,9 @@
+add_core = EC1
+owner = EC1
+base_tax = 3
+base_manpower = 4
+base_production = 3
+culture = Alraune_Apoptosis
+religion = chaos_religion
+controller = EC1
+is_city = no

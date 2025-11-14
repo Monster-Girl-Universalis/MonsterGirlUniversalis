@@ -18,5 +18,5 @@ technology_group = TECH_ANGEL
 	unlock_race = { race = beast }
 	unlock_race = { race = giant }
 }
-add_government_reform = Angel_realm
+add_government_reform = heavenly_gate_reform 
 capital = 4232

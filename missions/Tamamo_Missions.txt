@@ -1047,7 +1047,7 @@ tamamo_yamatai_branch = {
 				} 
 			}
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with= {
-				value = 41
+				value = 38
 				region = iliasburg_region 
 			}
 		}

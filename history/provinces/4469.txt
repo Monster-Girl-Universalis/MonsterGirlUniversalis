@@ -1,0 +1,9 @@
+add_core = IA1
+owner = IA1
+base_tax = 4
+base_manpower = 5
+base_production = 4
+culture = Human_Apoptosis
+religion = chaos_religion
+controller = IA1
+is_city = no

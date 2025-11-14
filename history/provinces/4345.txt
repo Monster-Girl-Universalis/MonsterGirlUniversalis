@@ -1,0 +1,9 @@
+add_core = JC1
+owner = JC1
+base_tax = 3
+base_manpower = 4
+base_production = 3
+culture = Doll_Apoptosis
+religion = chaos_religion
+controller = JC1
+is_city = no

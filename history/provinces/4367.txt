@@ -1,0 +1,9 @@
+add_core = SC5
+owner = SC5
+base_tax = 3
+base_manpower = 4
+base_production = 3
+culture = Undead_Apoptosis
+religion = chaos_religion
+controller = SC5
+is_city = no

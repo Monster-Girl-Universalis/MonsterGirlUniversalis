@@ -194,7 +194,7 @@ science_weed_extract = {
 		}
 	}
 	effect = {
-		unlock_race = { race = beast }
+		unlock_race = { race = elf }
 	}
 	modifier = {
 		global_prosperity_growth = 0.01

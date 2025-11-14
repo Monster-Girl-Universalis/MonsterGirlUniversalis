@@ -12,3 +12,4 @@ religion = ilias_light_religion
 controller = VR1
 discovered_by = FC1
 discovered_by = ZA1
+trade_goods = cocoa

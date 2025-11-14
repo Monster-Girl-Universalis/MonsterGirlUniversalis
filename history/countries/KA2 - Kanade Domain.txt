@@ -1,8 +1,9 @@
 government = monarchy
 government_rank = 3
 primary_culture = Slime_Girl
-add_government_reform = Slime_realm
+add_government_reform = kanade_domain_reform
 religion = dark_goddess_religion
+add_accepted_culture = noah_human
 technology_group = TECH_KANADE
 1444.1.1 = { 
 	monarch = { 

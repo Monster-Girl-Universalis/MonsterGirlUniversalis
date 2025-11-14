@@ -878,7 +878,7 @@ slu_conquest_branch2 = {
 			set_country_flag = has_magic
 		}
 	}
-	slug_queen = { 
+	slu_mission_slug_queen = { 
 		icon = LDQ
 		required_missions = {}
 		position = 7
@@ -900,18 +900,6 @@ slu_conquest_branch2 = {
 			custom_tooltip = flavor_insight_slu.1
 			country_event = {
 				id = flavor_slu.1
-			}
-			change_ruler_stat = {
-				type = adm
-				amount = 1
-			}
-			change_ruler_stat = {
-				type = dip
-				amount = 1
-			}
-			change_ruler_stat = {
-				type = mil
-				amount = 1
 			}
 		}
 	}

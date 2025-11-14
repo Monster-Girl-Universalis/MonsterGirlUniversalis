@@ -1,0 +1,154 @@
+MIV_achievement_slug_deinfestation_mod = {
+	country_admin_power = 1
+	country_diplomatic_power = 1
+	country_military_power = 1
+}
+SLP_achievement_its_shrimple_mod = {
+	country_admin_power = 1
+	country_diplomatic_power = 1
+	country_military_power = 1
+}
+HM1_achievement_she_is_a_genius_mod = {
+	country_admin_power = 1
+	country_diplomatic_power = 1
+	country_military_power = 1
+}
+LDV_achievement_fundamentalist_takeover_mod = {
+	country_admin_power = 1
+	country_diplomatic_power = 1
+	country_military_power = 1
+}
+SA1_achievement_sandstorm_mod = {
+	country_admin_power = 1
+	country_diplomatic_power = 1
+	country_military_power = 1
+}
+FP1_achievement_new_pirate_queen_mod = {
+	country_admin_power = 1
+	country_diplomatic_power = 1
+	country_military_power = 1
+}
+KI1_achievement_I_love_fluffy_tails_mod = {
+	country_admin_power = 1
+	country_diplomatic_power = 1
+	country_military_power = 1
+}
+CD1_achievement_cow_demon_conquest_mod = {
+	country_admin_power = 1
+	country_diplomatic_power = 1
+	country_military_power = 1
+}
+AL4_new_power_in_plansect_mod = {
+	country_admin_power = 1
+	country_diplomatic_power = 1
+	country_military_power = 1
+}
+LV1_monster_lord_cassandra_mod = {
+	country_admin_power = 2
+	country_diplomatic_power = 2
+	country_military_power = 2
+	land_maintenance_modifier = -0.15
+}
+SU1_I_believe_in_potato_supremacy_mod = {
+	country_admin_power = 1
+	country_diplomatic_power = 1
+	country_military_power = 1
+}
+ML1_achievement_great_monster_lord_mod = {
+	country_admin_power = 2
+	country_diplomatic_power = 2
+	country_military_power = 2
+	land_maintenance_modifier = -0.15
+}
+IT1_achievement_goddess_ilias_re_creation_plan_mod = {
+	country_admin_power = 3
+	country_diplomatic_power = 3
+	country_military_power = 3
+	land_maintenance_modifier = -0.50
+}
+LGR_leech_girl_mod = {
+	country_admin_power = 1
+	country_diplomatic_power = 1
+	country_military_power = 1
+}
+HUMAN_achievement_rekindle_the_flame_mod = {
+	country_admin_power = 1
+	country_diplomatic_power = 1
+	country_military_power = 1
+}
+ILW_achievement_remina_restoration_mod = {
+	country_admin_power = 1
+	country_diplomatic_power = 1
+	country_military_power = 1
+}
+VA6_moonlight_invasion_mod = {
+	country_admin_power = 1
+	country_diplomatic_power = 1
+	country_military_power = 1
+}
+ALRAUNE_achievement_pyrophytes_mod = {
+	country_admin_power = 1
+	country_diplomatic_power = 1
+	country_military_power = 1
+}
+HE1_hold_my_chaos_stew_mod = {
+	country_admin_power = 2
+	country_diplomatic_power = 2
+	country_military_power = 2
+	land_maintenance_modifier = -0.15
+}
+KA1_hedonistic_flower_mod = {
+	country_admin_power = 1
+	country_diplomatic_power = 1
+	country_military_power = 1
+}
+KA2_kanade_wall_mod = {
+	country_admin_power = 1
+	country_diplomatic_power = 1
+	country_military_power = 1
+}
+KI5_cyber_yamatai_mod = {
+	country_admin_power = 1
+	country_diplomatic_power = 1
+	country_military_power = 1
+}
+MI1_evas_discipline_mod = {
+	country_admin_power = 1
+	country_diplomatic_power = 1
+	country_military_power = 1
+}
+HI2_tasty_tasty_food_mod = {
+	country_admin_power = 2
+	country_diplomatic_power = 2
+	country_military_power = 2
+}
+SJ1_nation_of_balance_mod = {
+	country_admin_power = 1
+	country_diplomatic_power = 1
+	country_military_power = 1
+}
+GO5_ilias_kreuz_liberation_army_mod = {
+	country_admin_power = 1
+	country_diplomatic_power = 1
+	country_military_power = 1
+}
+ED1_eden_strikes_back_mod = {
+	country_admin_power = 2
+	country_diplomatic_power = 2
+	country_military_power = 2
+}
+PIRATES_yarr_harr_feedle_dee_dee_mod = {
+	country_admin_power = 1
+	country_diplomatic_power = 1
+	country_military_power = 1
+}
+HUMAN_fall_of_the_ancestor_mod = {
+	country_admin_power = 1
+	country_diplomatic_power = 1
+	country_military_power = 1
+}
+HG1_messenger_of_goddess_mod = {
+	country_admin_power = 1
+	country_diplomatic_power = 1
+	country_military_power = 1
+}

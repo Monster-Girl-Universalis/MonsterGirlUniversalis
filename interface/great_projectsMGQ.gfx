@@ -164,4 +164,96 @@ spriteTypes = {
 		name = "GFX_great_project_slug_tower"	
 		texturefile = "gfx//interface//great_projects//great_project_slug_tower.dds"
 	}
+		spriteType = {
+		name = "GFX_great_project_cassandra_mansion"	
+		texturefile = "gfx//interface//great_projects//great_project_cassandra_mansion.dds"
+	}
+		spriteType = {
+		name = "GFX_great_project_san_ilia_cathedral"	
+		texturefile = "gfx//interface//great_projects//great_project_san_ilia_cathedral.dds"
+	}
+		spriteType = {
+		name = "GFX_great_project_sabasa_castle"	
+		texturefile = "gfx//interface//great_projects//great_project_sabasa_castle.dds"
+	}
+		spriteType = {
+		name = "GFX_great_project_south_undersea_temple"	
+		texturefile = "gfx//interface//great_projects//great_project_south_undersea_temple.dds"
+	}
+		spriteType = {
+		name = "GFX_great_project_north_undersea_temple"	
+		texturefile = "gfx//interface//great_projects//great_project_north_undersea_temple.dds"
+	}
+		spriteType = {
+		name = "GFX_great_project_lily_manor"	
+		texturefile = "gfx//interface//great_projects//great_project_lily_manor.dds"
+	}
+		spriteType = {
+		name = "GFX_great_project_great_ilias_cathedral"	
+		texturefile = "gfx//interface//great_projects//great_project_great_ilias_cathedral.dds"
+	}
+		spriteType = {
+		name = "GFX_great_project_queen_eva_palace"	
+		texturefile = "gfx//interface//great_projects//great_project_queen_eva_palace.dds"
+	}
+		spriteType = {
+		name = "GFX_great_project_kanon_botanical_garden"	
+		texturefile = "gfx//interface//great_projects//great_project_kanon_botanical_garden.dds"
+	}
+		spriteType = {
+		name = "GFX_great_project_grimoire_volcano"	
+		texturefile = "gfx//interface//great_projects//great_project_grimoire_volcano.dds"
+	}
+		spriteType = {
+		name = "GFX_great_project_ghatanothoa_spring"	
+		texturefile = "gfx//interface//great_projects//great_project_ghatanothoa_spring.dds"
+	}
+		spriteType = {
+		name = "GFX_great_project_underwater_city_grand_noah"	
+		texturefile = "gfx//interface//great_projects//great_project_underwater_city_grand_noah.dds"
+	}
+		spriteType = {
+		name = "GFX_great_project_yamatai_metropolis"	
+		texturefile = "gfx//interface//great_projects//great_project_yamatai_metropolis.dds"
+	}
+		spriteType = {
+		name = "GFX_great_project_san_ilia_brothel"	
+		texturefile = "gfx//interface//great_projects//great_project_san_ilia_brothel.dds"
+	}
+		spriteType = {
+		name = "GFX_great_project_chrome_manor"	
+		texturefile = "gfx//interface//great_projects//great_project_chrome_manor.dds"
+	}
+		spriteType = {
+		name = "GFX_great_project_ambrosia_forest"	
+		texturefile = "gfx//interface//great_projects//great_project_ambrosia_forest.dds"
+	}
+		spriteType = {
+		name = "GFX_great_project_castle_of_flesh"	
+		texturefile = "gfx//interface//great_projects//great_project_castle_of_flesh.dds"
+	}
+		spriteType = {
+		name = "GFX_great_project_makai_safar_ruins"	
+		texturefile = "gfx//interface//great_projects//great_project_makai_safar_ruins.dds"
+	}
+		spriteType = {
+		name = "GFX_great_project_WIP_great_pirate_cave"	
+		texturefile = "gfx//interface//great_projects//great_project_WIP_great_pirate_cave.dds"
+	}
+		spriteType = {
+		name = "GFX_great_project_makai_mithra_castle"	
+		texturefile = "gfx//interface//great_projects//great_project_makai_mithra_castle.dds"
+	}
+		spriteType = {
+		name = "GFX_great_project_makai_tartarus"	
+		texturefile = "gfx//interface//great_projects//great_project_makai_tartarus.dds"
+	}
+		spriteType = {
+		name = "GFX_great_project_makai_sealed_prison"	
+		texturefile = "gfx//interface//great_projects//great_project_makai_sealed_prison.dds"
+	}
+		spriteType = {
+		name = "GFX_great_project_dark_goddess_castle"	
+		texturefile = "gfx//interface//great_projects//great_project_dark_goddess_castle.dds"
+	}
 }

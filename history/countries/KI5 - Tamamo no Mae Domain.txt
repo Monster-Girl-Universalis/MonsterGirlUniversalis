@@ -4,6 +4,7 @@ primary_culture = Kitsune_Girl
 add_government_reform = tamamo_reform
 religion = yamatai_religion
 technology_group = TECH_TAMAMO
+add_accepted_culture = yamatai_human
 1444.1.1 = { 
 	monarch = { 
 		name = "Tamamo"
@@ -18,5 +19,6 @@ technology_group = TECH_TAMAMO
 	unlock_race = { race = kitsune }
 	unlock_race = { race = beast }
 	unlock_race = { race = tanuki }
+	unlock_race = { race = roid }
 }
 capital = 3148

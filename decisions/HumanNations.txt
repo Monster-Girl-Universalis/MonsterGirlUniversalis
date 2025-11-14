@@ -71,7 +71,7 @@ country_decisions = {
 		major = yes
 		potential = {
 			was_never_end_game_tag_trigger = yes
-			culture = natalian_human
+			culture_group = Human_culture 
 			NOT = { exists = SI3 }
 			capital_scope = { is_in_makai_world = yes }
 		}
@@ -207,10 +207,7 @@ country_decisions = {
 		major = yes
 		potential = {
 			was_never_end_game_tag_trigger = yes
-			OR = {
-				culture = sabasa_human
-				culture = worm_summoner
-			}
+			culture_group = Human_culture 
 			NOT = { exists = SA4 }
 			capital_scope = { is_in_makai_world = yes }
 		}
@@ -459,10 +456,7 @@ country_decisions = {
 		major = yes
 		potential = {
 			was_never_end_game_tag_trigger = yes
-			OR = {
-				culture = noah_human
-				culture = yamatai_human
-			}
+			culture_group = Human_culture 
 			NOT = { exists = GR6 }
 			capital_scope = { is_in_makai_world = yes }
 		}
@@ -598,10 +592,7 @@ country_decisions = {
 		major = yes
 		potential = {
 			was_never_end_game_tag_trigger = yes
-			OR = {
-				culture = grangold_human
-				culture = proto_human
-			}
+			culture_group = Human_culture 
 			NOT = { exists = GR7 }
 			capital_scope = { is_in_makai_world = yes }
 		}

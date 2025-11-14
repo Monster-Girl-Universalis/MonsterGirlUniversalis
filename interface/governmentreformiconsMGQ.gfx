@@ -424,11 +424,79 @@ spriteTypes = {
 		texturefile = "gfx//interface//government_reform_icons//divine_shrine_maiden.dds"
 	}
 	spriteType = {
+		name = "government_reform_antlion_nobility"
+		texturefile = "gfx//interface//government_reform_icons//antlion_nobility_reform.dds"
+	}
+	spriteType = {
 		name = "government_reform_kanon_domain"
 		texturefile = "gfx//interface//government_reform_icons//kanon_domain_reform.dds"
 	}
 	spriteType = {
-		name = "government_reform_antlion_nobility"
-		texturefile = "gfx//interface//government_reform_icons//antlion_nobility_reform.dds"
+		name = "government_reform_minagi_domain"
+		texturefile = "gfx//interface//government_reform_icons//minagi_domain_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_hiruko_domain"
+		texturefile = "gfx//interface//government_reform_icons//hiruko_domain_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_grimoire"
+		texturefile = "gfx//interface//government_reform_icons//grimoire_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_ghatanothoa"
+		texturefile = "gfx//interface//government_reform_icons//ghatanothoa_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_ambrosia"
+		texturefile = "gfx//interface//government_reform_icons//ambrosia_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_loa"
+		texturefile = "gfx//interface//government_reform_icons//loa_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_makai_plansect"
+		texturefile = "gfx//interface//government_reform_icons//makai_plansect_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_makai_harpy_village"
+		texturefile = "gfx//interface//government_reform_icons//makai_harpy_village_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_roza_pirates"
+		texturefile = "gfx//interface//government_reform_icons//roza_pirates_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_queen_eva"
+		texturefile = "gfx//interface//government_reform_icons//queen_eva_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_makai_mephisto"
+		texturefile = "gfx//interface//government_reform_icons//makai_mephisto_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_tao_realm"
+		texturefile = "gfx//interface//government_reform_icons//tao_realm_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_marlboro_realm"
+		texturefile = "gfx//interface//government_reform_icons//marlboro_realm_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_archaeopteryx_realm"
+		texturefile = "gfx//interface//government_reform_icons//archaeopteryx_realm_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_asmodeus_realm"
+		texturefile = "gfx//interface//government_reform_icons//asmodeus_realm_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_jormungandr_realm"
+		texturefile = "gfx//interface//government_reform_icons//jormungandr_realm_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_heavenly_gate_realm"
+		texturefile = "gfx//interface//government_reform_icons//heavenly_gate_realm_reform.dds"
 	}
 }

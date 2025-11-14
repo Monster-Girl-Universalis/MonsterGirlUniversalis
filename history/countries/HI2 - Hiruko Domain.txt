@@ -1,7 +1,7 @@
 government = monarchy
 government_rank = 3
 primary_culture = Hiruko_Clone
-add_government_reform = Scylla_realm
+add_government_reform = hiruko_domain_reform 
 religion = dark_goddess_religion
 technology_group = TECH_HIRUKO
 1444.1.1 = { 

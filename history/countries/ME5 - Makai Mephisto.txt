@@ -1,7 +1,7 @@
 government = monarchy
 government_rank = 2
 primary_culture = Yoma_Girl
-add_government_reform = mephisto_reform
+add_government_reform = makai_mephisto_reform 
 religion = dark_goddess_religion
 technology_group = TECH_SAJA
 1444.1.1 = { 

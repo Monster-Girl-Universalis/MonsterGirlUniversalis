@@ -62,6 +62,7 @@ estate_spiritualists = {
 						was_tag = TO4
 						culture = Tao
 						has_idea = PR1_Spiritualist_Proficiency
+						1772 = { owned_by = ROOT }
 					}
 	}
 

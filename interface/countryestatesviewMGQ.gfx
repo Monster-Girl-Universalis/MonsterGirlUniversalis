@@ -131,6 +131,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/privileges/privilege_scales_of_light.dds"
 	}
 	spriteType = {
+		name = "privilege_divine_forging"
+		texturefile = "gfx/interface/privileges/privilege_diving_forging.dds"
+	}
+	spriteType = {
 		name = "privilege_luminous_dragon"
 		texturefile = "gfx/interface/privileges/privilege_luminous_dragon.dds"
 	}

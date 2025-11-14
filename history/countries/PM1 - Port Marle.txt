@@ -3,6 +3,19 @@ government_rank = 1
 primary_culture = natalian_human
 religion = ilias_light_religion
 technology_group = TECH_HUMAN
+1444.1.1 = { 
+	monarch = { 
+		name = "Tatsu"
+		dynasty = "of the Navy"
+		culture = "Sea_Horse_Girl"
+		religion = "water_religion"
+		birth_date = 1424.1.1
+		adm = 4
+		dip = 4
+		mil = 4
+		female = yes
+	}
+}
 capital = 539
 add_government_reform = port_marle_reform
 add_accepted_culture = Sea_Horse_Girl

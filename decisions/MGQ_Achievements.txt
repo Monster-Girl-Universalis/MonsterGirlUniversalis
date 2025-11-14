@@ -1,0 +1,1193 @@
+country_decisions = {
+
+	MIV_achievement_slug_deinfestation = {
+		major = yes
+		color = { 1 31 243 }
+		potential = {
+			OR = {
+				tag = MIV
+				was_tag = MIV
+			}
+			NOT = { has_country_flag = achievement_slug_deinfestation_done }
+		}
+		allow = {
+			NOT = { exists = MDS }
+			NOT = { exists = SLT }
+			NOT = { exists = SLG }
+			NOT = { exists = SN1 }
+			#has_ruler = "Flora of Midas Village"
+			NOT = { is_year = 1474 }
+		}
+		effect = {
+			add_prestige = 5
+			country_event = { id = MGQ_achievements.1 }
+			hidden_effect = { set_country_flag = achievement_slug_deinfestation_done }
+		}
+		ai_will_do = { factor = 0 }
+	}
+	SLP_achievement_its_shrimple = {
+		major = yes
+		color = { 1 31 243 }
+		potential = {
+			OR = {
+				tag = SLP
+				was_tag = SLP
+			}
+			NOT = { has_country_flag = achievement_its_shrimple_done }
+		}
+		provinces_to_highlight = {
+			OR = {
+				superregion = ilias_superregion
+				superregion = enrika_superregion 
+				superregion = harpy_forest_superregion 
+			}
+			NOT = { owned_by = ROOT }
+		}
+
+		allow = {
+			ilias_superregion = {
+				type = all
+				owned_by = ROOT
+			}
+			enrika_superregion = {
+				type = all
+				owned_by = ROOT
+			}
+			harpy_forest_superregion = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			add_prestige = 5
+			country_event = { 
+				id = MGQ_achievements.2
+			}
+			hidden_effect = {
+				set_country_flag = achievement_its_shrimple_done 
+			}
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	HM1_achievement_she_is_a_genius = {
+		major = yes
+		color = { 1 31 243 }
+		potential = {
+			OR = {
+				tag = HM1
+				was_tag = HM1
+				tag = HM2
+				was_tag = HM2
+			}
+			NOT = { has_country_flag = achievement_she_is_a_genius_done }
+		}
+		allow = {
+			innovativeness = 100
+		}
+			
+		effect = {
+			country_event = { 
+				id = MGQ_achievements.3
+			}
+			hidden_effect = {
+				set_country_flag = achievement_she_is_a_genius_done 
+			}
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	LDV_achievement_fundamentalist_takeover = {
+		major = yes
+		color = { 1 31 243 }
+		potential = {
+			OR = {
+				tag = LDV
+				was_tag = LDV
+			}
+			NOT = { has_country_flag = achievement_fundamentalist_takeover_done }
+		}
+
+		allow = {
+			tag = SI1
+		}
+			
+		effect = {
+			country_event = { 
+				id = MGQ_achievements.4
+			}
+			hidden_effect = {
+				set_country_flag = achievement_fundamentalist_takeover_done 
+			}
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	SA1_achievement_sandstorm = {
+		major = yes
+		color = { 1 31 243 }
+		potential = {
+			OR = {
+				tag = SA1
+				was_tag = SA1
+				tag = SA4
+				was_tag = SA4
+			}
+			NOT = { has_country_flag = achievement_sandstorm_done }
+		}
+
+		allow = {
+			has_global_modifier_value = {
+				which = shock_damage
+				value = 0.5
+			}
+			has_global_modifier_value = {
+				which = cavalry_power
+				value = 0.5
+			}
+			num_of_cavalry = 200
+		}
+			
+		effect = {
+			country_event = { 
+				id = MGQ_achievements.5
+			}
+			hidden_effect = {
+				set_country_flag = achievement_sandstorm_done 
+			}
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	FP1_achievement_new_pirate_queen = {
+		major = yes
+		color = { 1 31 243 }
+		potential = {
+			OR = {
+				tag = FP1
+				was_tag = FP1
+			}
+			NOT = { has_country_flag = achievement_new_pirate_queen_done }
+		}
+
+		allow = {
+			OR = {
+				tag = MR3
+				tag = MQ1
+			}			
+		}
+			
+		effect = {
+			country_event = { 
+				id = MGQ_achievements.6
+			}
+			hidden_effect = {
+				set_country_flag = achievement_new_pirate_queen_done 
+			}
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	KI1_achievement_I_love_fluffy_tails = {
+		major = yes
+		color = { 1 31 243 }
+		potential = {
+			OR = {
+				tag = KI1
+				was_tag = KI1
+			}
+			NOT = { has_country_flag = achievement_I_love_fluffy_tails_done }
+		}
+
+		allow = {
+			mission_completed = KI1_tamamo_peace_in_two_villages
+			mission_completed = KI1_kitsune_artisanry 
+			mission_completed = KI1_stop_cow_demon_plans 
+			mission_completed = KI1_eternal_peace_in_plansect 
+			mission_completed = KI1_zero_tailed_kitsune_ambitions 
+			mission_completed = KI1_secure_all_routes_to_seekers_cave 
+			mission_completed = KI1_rule_the_noah_seas 
+		}
+			
+		effect = {
+			country_event = { 
+				id = MGQ_achievements.7
+			}
+			hidden_effect = {
+				set_country_flag = achievement_I_love_fluffy_tails_done 
+			}
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	CD1_achievement_cow_demon_conquest = {
+		major = yes
+		color = { 1 31 243 }
+		potential = {
+			OR = {
+				tag = CD1
+				was_tag = CD1
+			}
+			NOT = { has_country_flag = achievement_cow_demon_conquest }
+		}
+
+		allow = {
+			current_age = age_of_discovery
+			num_of_provinces_owned_or_owned_by_subjects_with = {
+				value = 200
+				is_core = ROOT
+			}
+		}
+			
+		effect = {
+			country_event = { 
+				id = MGQ_achievements.8
+			}
+			hidden_effect = {
+				set_country_flag = achievement_cow_demon_conquest 
+			}
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	AL4_new_power_in_plansect = {
+		major = yes
+		color = { 1 31 243 }
+		potential = {
+			OR = {
+				tag = AL5
+				tag = AL6 
+				tag = AL7 
+				tag = AL8 
+				tag = AL9 
+				tag = AL0
+				tag = CA1
+				tag = IN1
+				tag = IN2
+				tag = IN3
+				tag = IN4
+				tag = IN5
+				tag = IN6
+				tag = IN7
+				was_tag = AL5
+				was_tag = AL6 
+				was_tag = AL7 
+				was_tag = AL8 
+				was_tag = AL9 
+				was_tag = AL0
+				was_tag = CA1
+				was_tag = IN1
+				was_tag = IN2
+				was_tag = IN3
+				was_tag = IN4
+				was_tag = IN5
+				was_tag = IN6
+				was_tag = IN7
+			}
+			NOT = { has_country_flag = achievement_new_power_in_plansect }
+		}
+		provinces_to_highlight = {
+			OR = {
+				region = plansect_region
+			}
+			NOT = { owned_by = ROOT }
+		}
+		allow = {
+			plansect_region = {
+				type = all
+				owned_by = ROOT
+			}						
+		}
+			
+		effect = {
+			country_event = { 
+				id = MGQ_achievements.9
+			}
+			hidden_effect = {
+				set_country_flag = achievement_new_power_in_plansect 
+			}
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	LV1_monster_lord_cassandra = {
+		major = yes
+		color = { 1 31 243 }
+		potential = {
+			OR = {
+				tag = LV1
+				was_tag = LV1
+			}
+			NOT = { has_country_flag = achievement_monster_lord_cassandra }
+		}
+
+		provinces_to_highlight = {
+			province_id = 2409
+		}
+		allow = {
+			current_age = age_of_discovery
+			2409 = { owned_by = ROOT }
+		}
+			
+		effect = {
+			country_event = { 
+				id = MGQ_achievements.10
+			}
+			hidden_effect = {
+				set_country_flag = achievement_monster_lord_cassandra 
+			}
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	SU1_I_believe_in_potato_supremacy = {
+		major = yes
+		color = { 1 31 243 }
+		potential = {
+			OR = {
+				tag = SU1
+				was_tag = SU1
+				tag = SU3
+				was_tag = SU3
+				tag = QE1
+				was_tag = QE1
+			}
+			NOT = { has_country_flag = achievement_I_believe_in_potato_supremacy }
+		}
+
+		allow = {
+			trading_bonus = {
+				trade_goods = grain
+				value = yes
+			}
+			calc_true_if = {
+				all_owned_province = {
+					OR = {
+						has_building = farm_estate
+					}
+				}
+				amount = 50
+			}
+		}
+			
+		effect = {
+			country_event = { 
+				id = MGQ_achievements.11
+			}
+			hidden_effect = {
+				set_country_flag = achievement_I_believe_in_potato_supremacy 
+			}
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	ML1_achievement_great_monster_lord = {
+		major = yes
+		color = { 1 31 243 }
+		potential = {
+			OR = {
+				tag = ML1
+				was_tag = ML1
+			}
+			NOT = { has_country_flag = achievement_achievement_great_monster_lord }
+		}
+
+		allow = {
+			mission_completed = ML1_patronize_sword_training_culture 
+			mission_completed = ML1_hellgondo_shrine 
+			mission_completed = ML1_patronize_martial_arts_for_succubi 
+			mission_completed = ML1_seal_armored_berserkers 
+			mission_completed = ML1_persuade_tamamo 
+			mission_completed = ML1_deal_with_spider_princess 
+			mission_completed = ML1_natalia_aspirations 
+			mission_completed = ML1_safina_aspirations 
+			mission_completed = ML1_noah_aspirations 
+			mission_completed = ML1_buy_vampires_real_estate 
+		}
+			
+		effect = {
+			country_event = { 
+				id = MGQ_achievements.12
+			}
+			hidden_effect = {
+				set_country_flag = achievement_achievement_great_monster_lord 
+			}
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	IT1_achievement_goddess_ilias_re_creation_plan = {
+		major = yes
+		color = { 1 31 243 }
+		potential = {
+			OR = {
+				tag = IT1
+				was_tag = IT1
+			}
+			NOT = { has_country_flag = achievement_goddess_ilias_re_creation_plan }
+		}
+		provinces_to_highlight = {
+			OR = {
+				continent = Ilias
+				continent = Natalia 
+				continent = Safina 
+				continent = Noah 
+				continent = Gold 
+				continent = Snow_Continent 
+				continent = Hellgondo 
+				continent = South_Pole 
+				continent = North_Pole 
+			}
+			NOT = { owned_by = ROOT }
+		}
+
+		allow = {
+			ilias_superregion = {
+				type = all
+				owned_by = ROOT
+			}
+			enrika_superregion = {
+				type = all
+				owned_by = ROOT
+			}
+			harpy_forest_superregion = {
+				type = all
+				owned_by = ROOT
+			}
+			navy_superregion = {
+				type = all
+				owned_by = ROOT
+			}
+			san_ilia_superregion = {
+				type = all
+				owned_by = ROOT
+			}
+			sabasa_superregion = {
+				type = all
+				owned_by = ROOT
+			}
+			north_safina_superregion = {
+				type = all
+				owned_by = ROOT
+			}
+			yamatai_superregion = {
+				type = all
+				owned_by = ROOT
+			}
+			grand_noah_superregion = {
+				type = all
+				owned_by = ROOT
+			}
+			western_noah_superregion = {
+				type = all
+				owned_by = ROOT
+			}
+			eastern_gold_superregion = {
+				type = all
+				owned_by = ROOT
+			}
+			central_gold_superregion = {
+				type = all
+				owned_by = ROOT
+			}
+			western_gold_superregion = {
+				type = all
+				owned_by = ROOT
+			}
+			vampire_castle_superregion = {
+				type = all
+				owned_by = ROOT
+			}
+			south_pole_superregion = {
+				type = all
+				owned_by = ROOT
+			}
+			north_pole_superregion = {
+				type = all
+				owned_by = ROOT
+			}
+			hellgondo_superregion  = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			add_prestige = 5
+			country_event = { 
+				id = MGQ_achievements.13
+			}
+			hidden_effect = {
+				set_country_flag = achievement_goddess_ilias_re_creation_plan 
+			}
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+#Race collector - complete 10 racial ideas and have at least 15 races as integrated. RESERVED. Number 14
+
+#I became the ultimate existence. - integrate every possible race. RESERVED. Number 15
+
+	LGR_leech_girl = {
+		major = yes
+		color = { 1 31 243 }
+		potential = {
+			OR = {
+				tag = LGR
+				was_tag = LGR
+			}
+			NOT = { has_country_flag = achievement_leech_girl_done }
+		}
+		allow = {
+			NOT = {
+			any_country = {
+				monthly_income = ROOT
+			}
+			}
+		}	
+		effect = {
+			country_event = { 
+				id = MGQ_achievements.16
+			}
+			hidden_effect = {
+				set_country_flag = achievement_leech_girl_done 
+			}
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	HUMAN_achievement_rekindle_the_flame = {
+		major = yes
+		color = { 1 31 243 }
+		potential = {
+			OR = {
+				culture_group = Human_culture
+			}
+			NOT = { has_country_flag = achievement_rekindle_the_flame_done }
+		}
+
+		allow = {
+			OR = {
+				tag = RE1
+				tag = RE5
+			}
+		}
+			
+		effect = {
+			country_event = { 
+				id = MGQ_achievements.17
+			}
+			hidden_effect = {
+				set_country_flag = achievement_rekindle_the_flame_done 
+			}
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	ILW_achievement_remina_restoration = {
+		major = yes
+		color = { 1 31 243 }
+		potential = {
+			OR = {
+				tag = ILW
+				was_tag = ILW
+			}
+			NOT = { has_country_flag = achievement_remina_restoration_done }
+		}
+
+		allow = {
+			OR = {
+				tag = RE1
+				tag = RE5
+			}
+		}
+			
+		effect = {
+			country_event = { 
+				id = MGQ_achievements.18
+			}
+			hidden_effect = {
+				set_country_flag = achievement_remina_restoration_done 
+			}
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	VA6_moonlight_invasion = {
+		major = yes
+		color = { 1 31 243 }
+		potential = {
+			OR = {
+				tag = VA6
+				was_tag = VA6
+				tag = VQ1
+				was_tag = VQ1
+			}
+			NOT = { has_country_flag = achievement_moonlight_invasion }
+		}
+		provinces_to_highlight = {
+			OR = {
+				continent = Gold  
+				continent = Hellgondo 
+			}
+			NOT = { owned_by = ROOT }
+		}
+
+		allow = {
+			NOT = { current_age = age_of_absolutism }
+			NOT = { current_age = age_of_revolutions }
+			OR = {
+				AND = {
+					eastern_gold_superregion = {
+						type = all
+						owned_by = ROOT
+					}
+					central_gold_superregion = {
+						type = all
+						owned_by = ROOT
+					}
+					western_gold_superregion = {
+						type = all
+						owned_by = ROOT
+					}
+				}
+				AND = {
+					vampire_castle_superregion = {
+						type = all
+						owned_by = ROOT
+					}
+					hellgondo_superregion = {
+						type = all
+						owned_by = ROOT
+					}
+				}
+			}
+		}
+			
+		effect = {
+			country_event = { 
+				id = MGQ_achievements.19
+			}
+			hidden_effect = {
+				set_country_flag = achievement_moonlight_invasion 
+			}
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+#"Slug swarm" As any nation with slug girl primary culture, have 3 vassals with slug girl primary culture with at least 300 development each. Number 20
+	ALRAUNE_achievement_pyrophytes = {
+		major = yes
+		color = { 1 31 243 }
+		potential = {
+			OR = {
+				culture_group = alraune
+				culture = Alraune_Apoptosis
+			}
+			NOT = { has_country_flag = achievement_pyrophytes_done }
+		}
+
+		allow = {
+			religion = fire_religion
+			has_global_modifier_value = {
+				which = fire_damage
+				value = 0.30
+			}
+			grown_by_development = 1000
+		}
+			
+		effect = {
+			country_event = { 
+				id = MGQ_achievements.21
+			}
+			hidden_effect = {
+				set_country_flag = achievement_pyrophytes_done 
+			}
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	HE1_hold_my_chaos_stew = {
+		major = yes
+		color = { 1 31 243 }
+		potential = {
+			OR = {
+				tag = TR2
+				tag = AM1
+				tag = PE4
+				tag = RI2
+				tag = RA2
+				tag = AM2
+				tag = TR3
+				tag = PE5
+				was_tag = TR2
+				was_tag = AM1
+				was_tag = PE4
+				was_tag = RI2
+				was_tag = RA2
+				was_tag = AM2
+				was_tag = TR3
+				was_tag = PE5
+			}
+			NOT = { has_country_flag = achievement_hold_my_chaos_stew }
+		}
+		allow = {
+			NOT = { is_year = 1474 }
+			OR = {
+				has_won_war_against = {
+					who = SJ1
+					max_years_since = 10
+				}
+				has_won_war_against = {
+					who = ML1
+					max_years_since = 10
+				}
+			}			
+		}
+			
+		effect = {
+			country_event = { 
+				id = MGQ_achievements.22
+			}
+			hidden_effect = {
+				set_country_flag = achievement_hold_my_chaos_stew 
+			}
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	KA1_hedonistic_flower = {
+		major = yes
+		color = { 1 31 243 }
+		potential = {
+			OR = {
+				tag = KA1
+				was_tag = KA1
+			}
+			NOT = { has_country_flag = achievement_hedonistic_flower_done }
+		}
+		allow = {
+			NOT = {
+			any_country = {
+				monthly_income = ROOT
+			}
+			}
+			has_government_power = {
+				mechanic_type = kanon_indulgence_mechanic
+				power_type = kanon_indulgence_meter
+				value = 200
+			}
+		}	
+		effect = {
+			country_event = { 
+				id = MGQ_achievements.23
+			}
+			hidden_effect = {
+				set_country_flag = achievement_hedonistic_flower_done 
+			}
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	KA2_kanade_wall = {
+		major = yes
+		color = { 1 31 243 }
+		potential = {
+			OR = {
+				tag = KA2
+				was_tag = KA2
+			}
+			NOT = { has_country_flag = achievement_kanade_wall_done }
+		}
+		allow = {
+			has_global_modifier_value = {
+				which = manpower_recovery_speed 
+				value = 1
+			}
+			has_global_modifier_value = {
+				which = defensiveness 
+				value = 1
+			}
+			has_leader_with = {
+				manuever = 10
+			}
+		}	
+		effect = {
+			country_event = { 
+				id = MGQ_achievements.24
+			}
+			hidden_effect = {
+				set_country_flag = achievement_kanade_wall_done 
+			}
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	KI5_cyber_yamatai = {
+		major = yes
+		color = { 1 31 243 }
+		potential = {
+			OR = {
+				tag = KI5
+				was_tag = KI5
+			}
+			NOT = { has_country_flag = achievement_cyber_yamatai_done }
+		}
+		allow = {
+			full_idea_group = roid_ideas
+			full_idea_group = kitsune_ideas
+			innovativeness = 100
+		}	
+		effect = {
+			country_event = { 
+				id = MGQ_achievements.25
+			}
+			hidden_effect = {
+				set_country_flag = achievement_cyber_yamatai_done 
+			}
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	MI1_evas_discipline = {
+		major = yes
+		color = { 1 31 243 }
+		potential = {
+			OR = {
+				tag = MI1
+				was_tag = MI1
+			}
+			NOT = { has_country_flag = achievement_evas_discipline_done }
+		}
+		allow = {
+			NOT = { exists = QE1 }
+			2843  = { owned_by = ROOT }
+		}	
+		effect = {
+			country_event = { 
+				id = MGQ_achievements.26
+			}
+			hidden_effect = {
+				set_country_flag = achievement_evas_discipline_done 
+			}
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	HI2_tasty_tasty_food = {
+		major = yes
+		color = { 1 31 243 }
+		potential = {
+			OR = {
+				tag = HI2
+				was_tag = HI2
+			}
+			NOT = { has_country_flag = achievement_tasty_tasty_food_done }
+		}
+		allow = {
+			trading_bonus = {
+				trade_goods = grain
+				value = yes
+			}	
+			trading_bonus = {
+				trade_goods = fish
+				value = yes
+			}		
+			trading_bonus = {
+				trade_goods = livestock
+				value = yes
+			}
+			trading_bonus = {
+				trade_goods = copper
+				value = yes
+			}
+			trading_bonus = {
+				trade_goods = iron
+				value = yes
+			}
+			trading_bonus = {
+				trade_goods = wine
+				value = yes
+			}
+			trading_bonus = {
+				trade_goods = ivory
+				value = yes
+			}
+			trading_bonus = {
+				trade_goods = spices
+				value = yes
+			}
+			trading_bonus = {
+				trade_goods = cocoa
+				value = yes
+			}
+			trading_bonus = {
+				trade_goods = sugar
+				value = yes
+			}
+			trading_bonus = {
+				trade_goods = cloves
+				value = yes
+			}
+		}	
+		effect = {
+			country_event = { 
+				id = MGQ_achievements.27
+			}
+			hidden_effect = {
+				set_country_flag = achievement_tasty_tasty_food_done 
+			}
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	SJ1_nation_of_balance = {
+		major = yes
+		color = { 1 31 243 }
+		potential = {
+			OR = {
+				tag = SJ1
+				was_tag = SJ1
+			}
+			NOT = { has_country_flag = achievement_nation_of_balance_done }
+		}
+		allow = {
+			is_hegemon = yes
+			hegemon_strength = 100
+			NOT = { current_age = age_of_absolutism }
+			NOT = { current_age = age_of_revolutions }
+			
+		}	
+		effect = {
+			country_event = { 
+				id = MGQ_achievements.28
+			}
+			hidden_effect = {
+				set_country_flag = achievement_nation_of_balance_done 
+			}
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	GO5_ilias_kreuz_liberation_army = {
+		major = yes
+		color = { 1 31 243 }
+		potential = {
+			OR = {
+				tag = GO5
+				was_tag = GO5
+			}
+			religion_group = ilias_religion_g 
+			NOT = { has_country_flag = achievement_ilias_kreuz_liberation_army_done }
+		}
+		allow = {
+			NOT = { exists = KA1 }
+			makai_grangold_region = {
+				type = all
+				owned_by = ROOT
+			}
+			makai_goldport_region = {
+				type = all
+				owned_by = ROOT
+			}
+			
+		}	
+		effect = {
+			country_event = { 
+				id = MGQ_achievements.29
+			}
+			hidden_effect = {
+				set_country_flag = achievement_ilias_kreuz_liberation_army_done 
+			}
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	ED1_eden_strikes_back = {
+		major = yes
+		color = { 1 31 243 }
+		potential = {
+			OR = {
+				tag = ED1
+				was_tag = ED1
+				religion = eden_resistance_religion 
+			}
+			NOT = { has_country_flag = achievement_eden_strikes_back_army_done }
+		}
+		allow = {
+			NOT = { exists = HI2 }
+			NOT = { great_power_rank = 4 }
+		}	
+		effect = {
+			country_event = { 
+				id = MGQ_achievements.30
+			}
+			hidden_effect = {
+				set_country_flag = achievement_eden_strikes_back_army_done 
+			}
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	PIRATES_yarr_harr_feedle_dee_dee = {
+		major = yes
+		color = { 1 31 243 }
+		potential = {
+			OR = {
+				tag = RO2
+				was_tag = RO2
+				tag = FP1
+				was_tag = FP1
+				tag = GL1
+				was_tag = GL1
+			}
+			NOT = { has_country_flag = achievement_yarr_harr_feedle_dee_dee_done }
+		}
+		allow = {
+			num_ships_privateering = 200
+			has_global_modifier_value = {
+				which = privateer_efficiency
+				value = 1
+			}
+		}	
+		effect = {
+			country_event = { 
+				id = MGQ_achievements.31
+			}
+			hidden_effect = {
+				set_country_flag = achievement_yarr_harr_feedle_dee_dee_done 
+			}
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	HUMAN_fall_of_the_ancestor = {
+		major = yes
+		color = { 1 31 243 }
+		potential = {
+			OR = {
+				culture_group = Human_culture 
+			}
+			NOT = { has_country_flag = achievement_fall_of_the_ancestor_done }
+		}
+		allow = {
+			OR = {
+				tag = SI3
+				tag = SA4
+				tag = GR6
+				tag = GR7
+			}
+		}	
+		effect = {
+			country_event = { 
+				id = MGQ_achievements.32
+			}
+			hidden_effect = {
+				set_country_flag = achievement_fall_of_the_ancestor_done 
+			}
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	HG1_messenger_of_goddess = {
+		major = yes
+		color = { 1 31 243 }
+		potential = {
+			OR = {
+				tag = HG1
+				was_tag = HG1
+			}
+			religion = angel_world_religion 
+			
+			NOT = { has_country_flag = achievement_messenger_of_goddess_done }
+		}
+		allow = {
+			grand_noah_superregion = {
+				type = all
+				owned_by = ROOT
+				religion = angel_world_religion 
+			}
+			yamatai_superregion = {
+				type = all
+				owned_by = ROOT
+				religion = angel_world_religion 
+			}
+			western_noah_superregion = {
+				type = all
+				owned_by = ROOT
+				religion = angel_world_religion 
+			}
+		}	
+		effect = {
+			country_event = { 
+				id = MGQ_achievements.33
+			}
+			hidden_effect = {
+				set_country_flag = achievement_messenger_of_goddess_done 
+			}
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

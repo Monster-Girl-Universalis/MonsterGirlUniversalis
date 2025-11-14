@@ -1,0 +1,563 @@
+namespace = MGQ_achievements
+
+#Slug Deinfestation
+country_event = {
+	id = MGQ_achievements.1
+	title = "MGQ_achievements.1.t"
+	desc = "MGQ_achievements.1.desc"
+	picture = Kate_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {	#Well done!
+		name = MGQ_achievements.1.a
+		add_country_modifier = {
+			name = "MIV_achievement_slug_deinfestation_mod"
+			duration = -1
+		}
+	}
+}
+#It's Shrimple
+country_event = {
+	id = MGQ_achievements.2
+	title = "MGQ_achievements.2.t"
+	desc = "MGQ_achievements.2.desc"
+	picture = Sully_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {	#Well done!
+		name = MGQ_achievements.2.a
+		add_country_modifier = {
+			name = "SLP_achievement_its_shrimple_mod"
+			duration = -1
+		}
+	}
+}
+#She is a Genius
+country_event = {
+	id = MGQ_achievements.3
+	title = "MGQ_achievements.3.t"
+	desc = "MGQ_achievements.3.desc"
+	picture = CHROME_GRAVEYARD_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {	#Well done!
+		name = MGQ_achievements.3.a
+		add_country_modifier = {
+			name = "HM1_achievement_she_is_a_genius_mod"
+			duration = -1
+		}
+	}
+}
+#Fundamentalist Takeover
+country_event = {
+	id = MGQ_achievements.4
+	title = "MGQ_achievements.4.t"
+	desc = "MGQ_achievements.4.desc"
+	picture = AssasinationAttempt_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {	#Well done!
+		name = MGQ_achievements.4.a
+		add_country_modifier = {
+			name = "LDV_achievement_fundamentalist_takeover_mod"
+			duration = -1
+		}
+	}
+}
+#Sandstorm
+country_event = {
+	id = MGQ_achievements.5
+	title = "MGQ_achievements.5.t"
+	desc = "MGQ_achievements.5.desc"
+	picture = SabasaKing_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {	#Well done!
+		name = MGQ_achievements.5.a
+		add_country_modifier = {
+			name = "SA1_achievement_sandstorm_mod"
+			duration = -1
+		}
+	}
+}
+#New Pirate Queen
+country_event = {
+	id = MGQ_achievements.6
+	title = "MGQ_achievements.6.t"
+	desc = "MGQ_achievements.6.desc"
+	picture = Bonnie_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {	#Well done!
+		name = MGQ_achievements.6.a
+		add_country_modifier = {
+			name = "FP1_achievement_new_pirate_queen_mod"
+			duration = -1
+		}
+	}
+}
+#I love Fluffy Tails
+country_event = {
+	id = MGQ_achievements.7
+	title = "MGQ_achievements.7.t"
+	desc = "MGQ_achievements.7.desc"
+	picture = Tamamo_Small_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {	#Well done!
+		name = MGQ_achievements.7.a
+		add_country_modifier = {
+			name = "KI1_achievement_I_love_fluffy_tails_mod"
+			duration = -1
+		}
+	}
+}
+#Cow Demon Conquest
+country_event = {
+	id = MGQ_achievements.8
+	title = "MGQ_achievements.8.t"
+	desc = "MGQ_achievements.8.desc"
+	picture = Cow_Demon_Queen_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {	#Well done!
+		name = MGQ_achievements.8.a
+		add_country_modifier = {
+			name = "CD1_achievement_cow_demon_conquest_mod"
+			duration = -1
+		}
+	}
+}
+#New Power in Plansect
+country_event = {
+	id = MGQ_achievements.9
+	title = "MGQ_achievements.9.t"
+	desc = "MGQ_achievements.9.desc"
+	picture = alraune_RACE_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {	#Well done!
+		name = MGQ_achievements.9.a
+		add_country_modifier = {
+			name = "AL4_new_power_in_plansect_mod"
+			duration = -1
+		}
+	}
+}
+#Monster Lord Cassandra
+country_event = {
+	id = MGQ_achievements.10
+	title = "MGQ_achievements.10.t"
+	desc = "MGQ_achievements.10.desc"
+	picture = Monster_Lord_Cassandra_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {	#Well done!
+		name = MGQ_achievements.10.a
+		add_country_modifier = {
+			name = "LV1_monster_lord_cassandra_mod"
+			duration = -1
+		}
+	}
+}
+#I believe in Potato Supremacy
+country_event = {
+	id = MGQ_achievements.11
+	title = "MGQ_achievements.11.t"
+	desc = "MGQ_achievements.11.desc"
+	picture = succubi_girls_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {	#Well done!
+		name = MGQ_achievements.11.a
+		add_country_modifier = {
+			name = "SU1_I_believe_in_potato_supremacy_mod"
+			duration = -1
+		}
+	}
+}
+#Great Monster Lord
+country_event = {
+	id = MGQ_achievements.12
+	title = "MGQ_achievements.12.t"
+	desc = "MGQ_achievements.12.desc"
+	picture = NewMonsterLord_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {	#Well done!
+		name = MGQ_achievements.12.a
+		add_country_modifier = {
+			name = "ML1_achievement_great_monster_lord_mod"
+			duration = -1
+		}
+	}
+}
+#Goddess Ilias Re-Creation Plan
+country_event = {
+	id = MGQ_achievements.13
+	title = "MGQ_achievements.13.t"
+	desc = "MGQ_achievements.13.desc"
+	picture = ILIAS_EVIL_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {	#Well done!
+		name = MGQ_achievements.13.a
+		add_country_modifier = {
+			name = "IT1_achievement_goddess_ilias_re_creation_plan_mod"
+			duration = -1
+		}
+	}
+}
+#Race Collector - TODO
+country_event = {
+	id = MGQ_achievements.14
+	title = "MGQ_achievements.14.t"
+	desc = "MGQ_achievements.14.desc"
+	picture = LukaCT1_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {	#Well done!
+		name = MGQ_achievements.14.a
+		add_country_modifier = {
+			name = "RACE_achievement_Race_Collector_mod"
+			duration = -1
+		}
+	}
+}
+#I became the ultimate existance - TODO
+country_event = {
+	id = MGQ_achievements.15
+	title = "MGQ_achievements.15.t"
+	desc = "MGQ_achievements.15.desc"
+	picture = Luka_White_Rabbit_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {	#Well done!
+		name = MGQ_achievements.15.a
+		add_country_modifier = {
+			name = "RACE_achievement_I_Became_Ultimate_Existance_mod"
+			duration = -1
+		}
+	}
+}
+#Leech Girl
+country_event = {
+	id = MGQ_achievements.16
+	title = "MGQ_achievements.16.t"
+	desc = "MGQ_achievements.16.desc"
+	picture = SLUG_HIRU_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {	#Well done!
+		name = MGQ_achievements.16.a
+		add_country_modifier = {
+			name = "LGR_leech_girl_mod"
+			duration = -1
+		}
+	}
+}
+#Rekindle the Flame
+country_event = {
+	id = MGQ_achievements.17
+	title = "MGQ_achievements.17.t"
+	desc = "MGQ_achievements.17.desc"
+	picture = Remina_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {	#Well done!
+		name = MGQ_achievements.17.a
+		add_country_modifier = {
+			name = "HUMAN_achievement_rekindle_the_flame_mod"
+			duration = -1
+		}
+	}
+}
+#Remina Restoration
+country_event = {
+	id = MGQ_achievements.18
+	title = "MGQ_achievements.18.t"
+	desc = "MGQ_achievements.18.desc"
+	picture = Remina_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {	#Well done!
+		name = MGQ_achievements.18.a
+		add_country_modifier = {
+			name = "ILW_achievement_remina_restoration_mod"
+			duration = -1
+		}
+	}
+}
+#Moonlight Invasion
+country_event = {
+	id = MGQ_achievements.19
+	title = "MGQ_achievements.19.t"
+	desc = "MGQ_achievements.19.desc"
+	picture = Queen_Vampire_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {	#Well done!
+		name = MGQ_achievements.19.a
+		add_country_modifier = {
+			name = "VA6_moonlight_invasion_mod"
+			duration = -1
+		}
+	}
+}
+#Slug Swarm - TODO
+country_event = {
+	id = MGQ_achievements.20
+	title = "MGQ_achievements.20.t"
+	desc = "MGQ_achievements.20.desc"
+	picture = SLUG_UNIFICATION_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {	#Well done!
+		name = MGQ_achievements.20.a
+		add_country_modifier = {
+			name = "SLUG_achievement_Slug_Swarm_mod"
+			duration = -1
+		}
+	}
+}
+#Pyrophytes
+country_event = {
+	id = MGQ_achievements.21
+	title = "MGQ_achievements.21.t"
+	desc = "MGQ_achievements.21.desc"
+	picture = alraune_RACE_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {	#Well done!
+		name = MGQ_achievements.21.a
+		add_country_modifier = {
+			name = "ALRAUNE_achievement_pyrophytes_mod"
+			duration = -1
+		}
+	}
+}
+#Hold my Chaos Stew
+country_event = {
+	id = MGQ_achievements.22
+	title = "MGQ_achievements.22.t"
+	desc = "MGQ_achievements.22.desc"
+	picture = Persephone_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {	#Well done!
+		name = MGQ_achievements.22.a
+		add_country_modifier = {
+			name = "HE1_hold_my_chaos_stew_mod"
+			duration = -1
+		}
+	}
+}
+#Hedonistic Flower
+country_event = {
+	id = MGQ_achievements.23
+	title = "MGQ_achievements.23.t"
+	desc = "MGQ_achievements.23.desc"
+	picture = Kanon_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {	#Well done!
+		name = MGQ_achievements.23.a
+		add_country_modifier = {
+			name = "KA1_hedonistic_flower_mod"
+			duration = -1
+		}
+	}
+}
+#Kanade Wall
+country_event = {
+	id = MGQ_achievements.24
+	title = "MGQ_achievements.24.t"
+	desc = "MGQ_achievements.24.desc"
+	picture = Kanade_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {	#Well done!
+		name = MGQ_achievements.24.a
+		add_country_modifier = {
+			name = "KA2_kanade_wall_mod"
+			duration = -1
+		}
+	}
+}
+#Cyber Yamatai
+country_event = {
+	id = MGQ_achievements.25
+	title = "MGQ_achievements.25.t"
+	desc = "MGQ_achievements.25.desc"
+	picture = Tamamo_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {	#Well done!
+		name = MGQ_achievements.25.a
+		add_country_modifier = {
+			name = "KI5_cyber_yamatai_mod"
+			duration = -1
+		}
+	}
+}
+#Eva's Discipline
+country_event = {
+	id = MGQ_achievements.26
+	title = "MGQ_achievements.26.t"
+	desc = "MGQ_achievements.26.desc"
+	picture = Queen_Eva_Sad_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {	#Well done!
+		name = MGQ_achievements.26.a
+		add_country_modifier = {
+			name = "MI1_evas_discipline_mod"
+			duration = -1
+		}
+	}
+}
+#Tasty Tasty Food!
+country_event = {
+	id = MGQ_achievements.27
+	title = "MGQ_achievements.27.t"
+	desc = "MGQ_achievements.27.desc"
+	picture = Hiruko_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {	#Well done!
+		name = MGQ_achievements.27.a
+		add_country_modifier = {
+			name = "HI1_tasty_tasty_food_mod"
+			duration = -1
+		}
+	}
+}
+#Nation of 'Balance'
+country_event = {
+	id = MGQ_achievements.28
+	title = "MGQ_achievements.28.t"
+	desc = "MGQ_achievements.28.desc"
+	picture = Saja_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {	#Well done!
+		name = MGQ_achievements.28.a
+		add_country_modifier = {
+			name = "SJ1_nation_of_balance_mod"
+			duration = -1
+		}
+	}
+}
+#Ilias Kreuz Liberation Army
+country_event = {
+	id = MGQ_achievements.29
+	title = "MGQ_achievements.29.t"
+	desc = "MGQ_achievements.29.desc"
+	picture = Lazarus_Knight_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {	#Well done!
+		name = MGQ_achievements.29.a
+		add_country_modifier = {
+			name = "GO5_ilias_kreuz_liberation_army_mod"
+			duration = -1
+		}
+	}
+}
+#Eden Strikes Back
+country_event = {
+	id = MGQ_achievements.30
+	title = "MGQ_achievements.30.t"
+	desc = "MGQ_achievements.30.desc"
+	picture = MakaiEden_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {	#Well done!
+		name = MGQ_achievements.30.a
+		add_country_modifier = {
+			name = "ED1_eden_strikes_back_mod"
+			duration = -1
+		}
+	}
+}
+#Pirates
+country_event = {
+	id = MGQ_achievements.31
+	title = "MGQ_achievements.31.t"
+	desc = "MGQ_achievements.31.desc"
+	picture = Bonnie_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {	#Well done!
+		name = MGQ_achievements.31.a
+		add_country_modifier = {
+			name = "PIRATES_yarr_harr_feedle_dee_dee_mod"
+			duration = -1
+		}
+	}
+}
+#Fall of the Ancestor
+country_event = {
+	id = MGQ_achievements.32
+	title = "MGQ_achievements.32.t"
+	desc = "MGQ_achievements.32.desc"
+	picture = Remina_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {	#Well done!
+		name = MGQ_achievements.32.a
+		add_country_modifier = {
+			name = "HUMAN_fall_of_the_ancestor_mod"
+			duration = -1
+		}
+	}
+}
+#Messenger of the Goddess
+country_event = {
+	id = MGQ_achievements.33
+	title = "MGQ_achievements.33.t"
+	desc = "MGQ_achievements.33.desc"
+	picture = Gate_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {	#Well done!
+		name = MGQ_achievements.33.a
+		add_country_modifier = {
+			name = "HG1_messenger_of_goddess_mod"
+			duration = -1
+		}
+	}
+}

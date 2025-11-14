@@ -5,4 +5,6 @@ religion = ilias_light_religion
 technology_group = TECH_HUMAN
 capital = 528
 add_government_reform = port_natalia_reform
+unlock_race = { race = human }
+unlock_race = { race = mermaid }
 add_accepted_culture = Natalian_Mermaid

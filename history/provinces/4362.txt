@@ -1,0 +1,9 @@
+add_core = TC2
+owner = TC2
+base_tax = 3
+base_manpower = 4
+base_production = 3
+culture = Alraune_Apoptosis
+religion = chaos_religion
+controller = TC2
+is_city = no

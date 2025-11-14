@@ -35,3 +35,4 @@ center_of_trade = 2
 discovered_by = TECH_FAIRY
 discovered_by = TECH_GHOST
 fort_15th = yes
+trade_goods = cloth

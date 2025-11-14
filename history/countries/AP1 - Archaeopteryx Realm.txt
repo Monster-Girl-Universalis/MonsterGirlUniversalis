@@ -1,7 +1,7 @@
 government = monarchy
 government_rank = 3
 primary_culture = Archaeopteryx_Girl
-add_government_reform = Harpy_realm
+add_government_reform = archaeopteryx_realm_reform 
 religion = dark_goddess_religion
 technology_group = TECH_SAJA
 1444.1.1 = { 

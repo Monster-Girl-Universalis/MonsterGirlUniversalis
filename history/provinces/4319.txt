@@ -1,0 +1,9 @@
+add_core = SS4
+owner = SS4
+base_tax = 3
+base_manpower = 4
+base_production = 3
+culture = Insect_Apoptosis
+religion = chaos_religion
+controller = SS4
+is_city = no

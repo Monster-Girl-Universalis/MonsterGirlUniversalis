@@ -88,4 +88,12 @@ country_event = {
 		name = flavor_generic.1.ta
 		unlock_race = { race = tanuki }
 	}
+	option = {		
+		name = flavor_generic.1.fa
+		unlock_race = { race = fairy }
+	}
+	option = {		
+		name = flavor_generic.1.gi
+		unlock_race = { race = giant }
+	}
 }

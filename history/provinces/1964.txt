@@ -12,3 +12,4 @@ religion = ice_religion
 controller = PB1
 discovered_by = FC1
 discovered_by = ZA1
+trade_goods = copper

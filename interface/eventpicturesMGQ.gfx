@@ -656,6 +656,10 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/CHROME_eventPicture.dds"
 	}
 	spriteType = {
+		name = "CHROME_GRAVEYARD_eventPicture"
+		texturefile = "gfx/event_pictures/CHROME_GRAVEYARD_eventPicture.dds"
+	}
+	spriteType = {
 		name = "SLIME_GOOD_eventPicture"
 		texturefile = "gfx/event_pictures/SLIME_GOOD_eventPicture.dds"
 	}
@@ -754,5 +758,69 @@ spriteTypes = {
 	spriteType = {
 		name = "MAYA_BOX_eventPicture"
 		texturefile = "gfx//event_pictures//event_pictures_spidermikorealm//MAYA_BOX_eventPicture.dds"
+	}
+	spriteType = {
+		name = "Kate_eventPicture"
+		texturefile = "gfx/event_pictures/Kate_eventPicture.dds"
+	}
+	spriteType = {
+		name = "Sully_eventPicture"
+		texturefile = "gfx/event_pictures/Sully_eventPicture.dds"
+	}
+	spriteType = {
+		name = "SabasaKing_eventPicture"
+		texturefile = "gfx/event_pictures/SabasaKing_eventPicture.dds"
+	}
+	spriteType = {
+		name = "Bonnie_eventPicture"
+		texturefile = "gfx/event_pictures/Bonnie_eventPicture.dds"
+	}
+	spriteType = {
+		name = "Tamamo_Small_eventPicture"
+		texturefile = "gfx/event_pictures/Tamamo_Small_eventPicture.dds"
+	}
+	spriteType = {
+		name = "Cow_Demon_Queen_eventPicture"
+		texturefile = "gfx/event_pictures/Cow_Demon_Queen_eventPicture.dds"
+	}
+	spriteType = {
+		name = "Monster_Lord_Cassandra_eventPicture"
+		texturefile = "gfx/event_pictures/Monster_Lord_Cassandra_eventPicture.dds"
+	}
+	spriteType = {
+		name = "ILIAS_EVIL_eventPicture"
+		texturefile = "gfx/event_pictures/ILIAS_EVIL_eventPicture.dds"
+	}
+	spriteType = {
+		name = "LukaCT1_eventPicture"
+		texturefile = "gfx/event_pictures/LukaCT1_eventPicture.dds"
+	}
+	spriteType = {
+		name = "Luka_White_Rabbit_eventPicture"
+		texturefile = "gfx/event_pictures/Luka_White_Rabbit_eventPicture.dds"
+	}
+	spriteType = {
+		name = "Remina_eventPicture"
+		texturefile = "gfx/event_pictures/Remina_eventPicture.dds"
+	}
+	spriteType = {
+		name = "Persephone_eventPicture"
+		texturefile = "gfx/event_pictures/Persephone_eventPicture.dds"
+	}
+	spriteType = {
+		name = "Queen_Eva_Sad_eventPicture"
+		texturefile = "gfx/event_pictures/Queen_Eva_Sad_eventPicture.dds"
+	}
+	spriteType = {
+		name = "Lazarus_Knight_eventPicture"
+		texturefile = "gfx/event_pictures/Lazarus_Knight_eventPicture.dds"
+	}
+	spriteType = {
+		name = "MakaiEden_eventPicture"
+		texturefile = "gfx/event_pictures/MakaiEden_eventPicture.dds"
+	}
+	spriteType = {
+		name = "Gate_eventPicture"
+		texturefile = "gfx/event_pictures/Gate_eventPicture.dds"
 	}
 }

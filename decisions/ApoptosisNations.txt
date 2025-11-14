@@ -374,7 +374,7 @@ country_decisions = {
 		potential = {
 			was_never_end_game_tag_trigger = yes
 			culture_group = apoptosis
-			NOT = { exists = HE2 }
+			NOT = { exists = NO1 }
 			any_owned_province = {
 				region = esta_tartarus_region
 				is_core = ROOT
@@ -395,7 +395,6 @@ country_decisions = {
 						}
 					}
 				}
-				#owns_core_province = TBA
 				capital_scope = {
 					region = esta_tartarus_region
 					is_core = ROOT

@@ -1,7 +1,7 @@
 government = monarchy
 government_rank = 2
 primary_culture = Sea_Dragon_Girl
-add_government_reform = undine_reform
+add_government_reform = ghatanothoa_reform 
 religion = water_religion
 technology_group = TECH_MAKAI_FAIRY
 historical_rival = GR5#They just don't get along...

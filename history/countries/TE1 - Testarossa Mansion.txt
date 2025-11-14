@@ -15,5 +15,6 @@ technology_group = TECH_MINAGI
 		female = yes
 	}
 	unlock_race = { race = succubi }
+	unlock_race = { race = vampire }
 }
 capital = 3352

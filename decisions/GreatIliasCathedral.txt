@@ -1,0 +1,108 @@
+country_decisions = {
+
+	great_ilias_cathedral_decision = {
+		color = { 255 201 14 }
+		potential = {
+			OR = {
+				religion = ilias_light_religion
+				religion = angel_world_religion
+			}
+			OR = {
+				culture_group = angel
+				culture = Angel_Chimera
+				culture = Angel_Apoptosis
+			}
+			OR = {
+				snow_heaven = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+				}
+				ilias_temple_ruins = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+				}
+				ilias_temple_ruins_deep = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT	
+				}
+			}
+			NOT = {culture = Fallen_Angel}
+			NOT = {has_country_flag = has_built_the_ilias_cathedral}
+		}
+		provinces_to_highlight = {
+				OR = {
+				area = monster_lord_castle_area
+				area = snow_heaven
+				area = ilias_temple_ruins
+				area = ilias_temple_ruins_deep
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			}
+		allow = {
+			OR = {
+				religion = ilias_light_religion
+				religion = angel_world_religion
+			}
+			OR = {
+				culture_group = angel
+				culture = Angel_Chimera
+				culture = Angel_Apoptosis
+			}
+			AND = {
+				monster_lord_castle_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+				}
+				snow_heaven = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+				}
+				ilias_temple_ruins = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+				}
+				ilias_temple_ruins_deep = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT	
+				}
+			}
+			NOT = {culture = Fallen_Angel}
+		}
+		effect = {
+			2397 = {
+                change_province_name = "Great Ilias Cathedral"
+            }
+            2398 = {
+                change_province_name = "Great Ilias Cathedral"
+            }
+            2403 = {
+                change_province_name = "Great Ilias Cathedral"
+            }
+            2404 = {
+                change_province_name = "Great Ilias Cathedral"
+            }
+            2409 = {
+                change_province_name = "Great Ilias Cathedral"
+            }
+            2410 = {
+                change_province_name = "Great Ilias Cathedral"
+            }
+            add_great_project = {
+            type = great_ilias_cathedral
+            instant = no 
+            }
+			set_country_flag = has_built_the_ilias_cathedral
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+}

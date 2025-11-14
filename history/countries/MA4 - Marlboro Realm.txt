@@ -16,5 +16,5 @@ technology_group = TECH_KANON
 	unlock_race = { race = alraune }
 	unlock_race = { race = giant }
 }
-add_government_reform = Alraune_realm
+add_government_reform = marlboro_realm_reform 
 capital = 3907

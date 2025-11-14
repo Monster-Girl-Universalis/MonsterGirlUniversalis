@@ -1,0 +1,9 @@
+add_core = JA3
+owner = JA3
+base_tax = 3
+base_manpower = 4
+base_production = 3
+culture = Roid_Apoptosis
+religion = chaos_religion
+controller = JA3
+is_city = no

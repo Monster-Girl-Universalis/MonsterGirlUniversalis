@@ -1,0 +1,1053 @@
+########################################
+# Missions for Heriel Realm by Cris
+########################################
+
+hr1_mission_branch1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		tag = HR1
+	}
+	has_country_shield = yes
+
+     hr1_ilias1 = { 
+		icon = ilias_temple_ruins
+		position = 1
+		required_missions = {}
+        generic = no
+        provinces_to_highlight = {
+			OR = {
+				area = ilias_temple_ruins
+				area = ilias_temple_ruins_deep
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+            ilias_temple_ruins = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			ilias_temple_ruins_deep = { type = all country_or_non_sovereign_subject_holds = ROOT }
+            NOT = {
+                exists = IT1
+            }
+            }
+        effect = {
+			add_adm_power = 100
+            add_dip_power = 100
+            add_mil_power = 100
+            add_prestige = 15
+		}
+		}
+        hr1_ilias2 = { 
+		icon = ilias_static
+		position = 2
+		required_missions = { hr1_ilias1 }
+        generic = no
+        provinces_to_highlight = {
+			OR = {
+				region = ilias_temple_ruins_region
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+            ilias_temple_ruins_region = { type = all country_or_non_sovereign_subject_holds = ROOT }
+            }
+        effect = {
+            add_splendor = 100
+            add_prestige = 10
+		}
+		}
+        hr1_ilias3 = { 
+		icon = eden_snow_shrine
+		position = 3
+		required_missions = { hr1_ilias2 }
+        generic = no
+		trigger = {
+            OR = {
+                army_size = SH3
+                total_development = SH3
+            }
+            }
+        effect = {
+			add_casus_belli = {
+            target = SH3
+            type = cb_restore_personal_union
+            months = 600 #50 years
+        }
+		}
+		}
+        hr1_ilias4 = {
+		icon = snow_continent_heriel
+		position = 4
+		required_missions = { hr1_ilias3 }
+        generic = no
+		provinces_to_highlight = {
+			OR = {
+				area = snow_heaven
+				superregion = snow_continent_superregion
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+            OR = {
+				SH3 = {
+                is_subject_of = ROOT
+				}
+				ROOT = {
+				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 120
+				OR = {
+					superregion = snow_continent_superregion
+				}
+			}
+					}
+			}
+            }
+        effect = {
+			country_event = {
+				id = flavor_hr1.1
+			}
+			change_ruler_stat = {
+				type = adm
+				amount = 1
+			}
+		    change_ruler_stat = {
+				type = dip
+				amount = 1
+			}
+		    change_ruler_stat = {
+				type = mil
+				amount = 1
+			}
+		}
+		}
+		hr1_church = { 
+		icon = ilias_stained_glass
+		position = 5
+		required_missions = {}
+        generic = no
+		trigger = {
+			temple = 20
+		}
+		effect = {
+			add_years_of_income = 1.5
+			2104 = {
+				add_base_tax = 5
+			}
+			add_country_modifier = {
+				name = hr1_ilias_church
+				duration = 10950
+			}
+		}
+	}
+	hr1_dev_heriel = { 
+		icon = heriel_sexy
+		position = 6
+		required_missions = {}
+        generic = no
+        provinces_to_highlight = {
+			OR = {
+				area = heriel_area
+				area = heriel_plains
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			heriel_plains = {
+				type = all
+				owned_by = ROOT
+				is_prosperous = yes
+				development = 20
+			}
+			heriel_plains = {
+				type = all
+				owned_by = ROOT
+				is_prosperous = yes
+				development = 20
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = hr1_dev_sexy_heriel
+				duration = 10950
+			}
+		}
+	}
+	hr1_new_heaven = { 
+		icon = heaven_cross
+		position = 7
+		required_missions = {}
+        generic = no
+		trigger = {
+			2089 = {
+				has_great_project = {
+					type = ilias_temple_ruins
+					tier = 3
+				}
+				owned_by = ROOT
+			}
+			1989 = {
+				has_great_project = {
+					type = snow_heaven
+					tier = 3
+				}
+				owned_by = ROOT
+			}
+			2028 = {
+				has_great_project = {
+					type = snow_shrine
+					tier = 3
+				}
+				owned_by = ROOT
+			}
+			2062 = {
+				has_great_project = {
+					type = hall_of_creation
+					tier = 3
+				}
+				owned_by = ROOT
+			}
+		
+		}
+		effect = {
+			add_country_modifier = {
+				name = hr1_new_heaven_on_earth
+				duration = -1
+			}
+		}
+	}
+}
+
+hr1_mission_branch2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		tag = HR1
+	}
+	has_country_shield = yes
+
+	hr1_alciel_iriasu = { 
+		icon = alciel
+		position = 1
+		required_missions = {}
+        generic = no
+		trigger = {
+            OR = {
+			is_rival = IT1
+			is_rival = AR3
+			}
+		}
+		effect = {
+			add_army_tradition = 10 
+            alciel_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+            alciel_coast = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+            ilias_temple_ruins = { 
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+            ilias_temple_ruins_deep = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	hr1_sea = { 
+		icon = heriel_navy
+		position = 2
+		required_missions = { hr1_alciel_iriasu }
+        generic = no
+		trigger = {
+            navy_size_percentage = 1
+			num_of_ports = 10
+			num_of_transport = 15
+			num_of_galley = 10
+		}
+		effect = {
+			add_country_modifier = {
+				name = hr1_boats
+				duration = 7300
+			}
+			north_safina_superregion = {
+            discover_country = ROOT
+			}
+			inland_sea_region = {
+            discover_country = ROOT
+			}
+			saloon_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+            great_pirate_cave_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	hr1_saloon = { 
+		icon = saloon_flag
+		position = 3
+		required_missions = { hr1_sea }
+        generic = no
+		provinces_to_highlight = {
+			OR = {
+				region = saloon_region
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+            ROOT = {
+				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 15
+				OR = {
+					region = saloon_region
+				}
+			}
+					}
+            }
+		effect = {
+			add_country_modifier = {
+				name = hr1_saloon_mission
+				duration = 10950
+			}
+			safar_ruins_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				add_adm_power = 100
+				add_dip_power = 100
+				add_mil_power = 100
+		}
+	}
+	hr1_great_projects = { 
+		icon = mission_administrator_tower
+		position = 6
+		required_missions = { hr1_saloon }
+        generic = no
+		provinces_to_highlight = {
+			OR = {
+				area = safina_tartarus
+				area = administrator_tower_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+            safina_tartarus = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			administrator_tower_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+            }
+		effect = {
+			add_country_modifier = {
+				name = hr1_great_project_modifier
+				duration = 10950
+			}
+			add_adm_power = 50
+			add_dip_power = 50
+			add_mil_power = 50
+		}
+	}
+}
+hr1_mission_branch3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		tag = HR1
+	}
+	has_country_shield = yes
+
+	hr1_chimera2 = { 
+		icon = angel_chimera_temple
+		position = 1
+		required_missions = {}
+        generic = no
+        provinces_to_highlight = {
+			OR = {
+				area = spinny_distortion
+				area = flappy_distortion
+                area = chimera_beast_distortion
+                area = angel_zombie_distortion
+                area = slimey_distortion
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+            flappy_distortion = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			spinny_distortion = { type = all country_or_non_sovereign_subject_holds = ROOT }
+            chimera_beast_distortion = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			angel_zombie_distortion = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			slimey_distortion = { type = all country_or_non_sovereign_subject_holds = ROOT }
+		}
+		effect = {
+			unlock_race = { race = chimera }
+		}
+	}
+
+	hr1_angel = { 
+		icon = angel_idea_ranael
+		position = 2
+		required_missions = {}
+        generic = no
+		trigger = {
+            full_idea_group = angel_ideas
+		}
+		effect = {
+			add_country_modifier = {
+				name = hr1_angel_idea
+				duration = 7300
+			}
+		}
+	}
+	hr1_angel_apoptosis = { 
+		icon = heriel_happy
+		position = 3
+		required_missions = { hr1_angel hr1_apoptosis }
+        generic = no
+		trigger = {
+			monthly_adm = 12
+			monthly_dip = 12
+			monthly_mil = 12
+			government_rank = 2
+			army_tradition = 50
+			army_size = 150
+			legitimacy_equivalent = 100
+			is_bankrupt = no
+		}
+		effect = {
+			if = {
+				limit = {
+					NOT = { has_reform = High_Apoptosis_realm  }
+				}
+				add_government_reform = High_Apoptosis_realm  
+			}
+			else = { add_prestige = 50 }
+			add_prestige = 50
+			add_adm_power = 50
+			add_dip_power = 50
+			add_mil_power = 50
+			add_country_modifier = {
+				name = hr1_angel_apoptosis_destroyer
+				duration = 9125
+			}
+		}
+	}
+
+	hr1_razing_razing_like_its_remina = { 
+		icon = heriel_remina_style
+		position = 4
+		required_missions = { hr1_angel_apoptosis }
+        generic = no
+		trigger = {
+            num_of_converted_provinces = {
+				amount = 150
+			}
+		}
+	effect = {
+			add_country_modifier = {
+				name = hr1_razing_like_remina
+				duration = -1
+			}
+		}
+	}
+	hr1_heriel_hegemon = { 
+		icon = heriel_flag
+		position = 7
+		required_missions = { hr1_razing_razing_like_its_remina hr1_gold_hellgondo hr1_great_projects }
+        generic = no
+		provinces_to_highlight = {
+			OR = {
+				superregion = snow_continent_superregion
+				region = saloon_region
+				region = safar_ruins_region
+				region = holy_wings_shrine_region
+				region = hellgondo_tartarus_region
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			snow_continent_superregion = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			saloon_region = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			safar_ruins_region = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			holy_wings_shrine_region = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			hellgondo_tartarus_region = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+		}
+	effect = {
+			add_country_modifier = {
+				name = hr1_heriel_empire
+				duration = -1
+			}
+			add_power_projection = { 
+			type = 25_permanent_power_projection
+			amount = 25 
+			}
+			add_prestige_or_monarch_power = {
+				amount = 100
+			}
+		}
+	}
+}
+hr1_mission_branch4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		tag = HR1
+	}
+	has_country_shield = yes
+
+	hr1_dev_eliciel = { 
+		icon = eliciel
+		position = 1
+		required_missions = {}
+        generic = no
+        provinces_to_highlight = {
+			OR = {
+				area = eliciel_area
+				area = eliciel_mountains
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			eliciel_area = {
+				type = all
+				owned_by = ROOT
+				is_prosperous = yes
+				development = 20
+			}
+			eliciel_mountains = {
+				type = all
+				owned_by = ROOT
+				is_prosperous = yes
+				development = 20
+			}
+		}
+		effect = {
+			unlock_race = { race = alraune }
+			eliciel_area = {
+				add_province_modifier = {
+				name = hr1_plant_dev
+				duration = 9125
+			}
+			}
+			eliciel_mountains = {
+				add_province_modifier = {
+				name = hr1_plant_dev
+				duration = 9125
+			}
+			}
+		}
+	}
+	hr1_apoptosis = { 
+		icon = heriel_chaos
+		position = 2
+		required_missions = {}
+        generic = no
+		trigger = {
+            full_idea_group = apoptosis_ideas
+		}
+		effect = {
+			add_country_modifier = {
+				name = hr1_apoptosis_idea
+				duration = 7300
+			}
+		}
+	}
+
+	hr1_dev_uranus = { 
+		icon = uranus_snow
+		position = 1
+		required_missions = {}
+        generic = no
+        provinces_to_highlight = {
+			OR = {
+				area = uranus_area
+				area = uranus_mountains
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			uranus_area = {
+				type = all
+				owned_by = ROOT
+				is_prosperous = yes
+				development = 20
+			}
+			uranus_mountains = {
+				type = all
+				owned_by = ROOT
+				is_prosperous = yes
+				development = 20
+			}
+		}
+		effect = {
+			unlock_race = { race = beast }
+			uranus_area = {
+				add_province_modifier = {
+				name = hr1_plant_dev
+				duration = 9125
+			}
+			}
+			uranus_mountains = {
+				add_province_modifier = {
+				name = hr1_plant_dev
+				duration = 9125
+			}
+			}
+		}
+	}
+}
+hr1_mission_branch5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		tag = HR1
+	}
+	has_country_shield = yes
+
+	hr1_early_conquest = {
+		icon = heriel_chibi
+		position = 1
+		required_missions = {}
+        generic = no
+		trigger = {
+            OR = {
+			num_of_estate_privileges = {
+	        estate = estate_apoptosis
+	        value = 2
+            }
+			adm_tech = 5
+			}
+			OR = {
+			estate_loyalty = {
+            estate = estate_angels
+            loyalty = 60
+            }
+			mil_tech = 5
+			}
+			army_size_percentage = 1
+            has_mil_advisor = yes
+			num_of_generals = 1
+		}
+		effect = {
+			add_country_modifier = {
+				name = hr1_start
+				duration = 7300 	
+			}
+            add_church_power = 100
+			spinny_distortion = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			flappy_distortion = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+            chimera_beast_distortion = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+    hr1_chimera1 = { 
+		icon = flappy_chimera
+		position = 2
+		required_missions = { hr1_early_conquest }
+        generic = no
+        provinces_to_highlight = {
+			OR = {
+				area = spinny_distortion
+				area = flappy_distortion
+                area = chimera_beast_distortion
+                area = alciel_area
+                area = alciel_coast
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+            OR = {
+            flappy_distortion = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			spinny_distortion = { type = all country_or_non_sovereign_subject_holds = ROOT }
+            chimera_beast_distortion = { type = all country_or_non_sovereign_subject_holds = ROOT }
+            AND = {
+            alciel_coast = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			alciel_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+            }
+            }
+		}
+		effect = {
+			add_country_modifier = {
+				name = hr1_distortion
+				duration = 7300 	
+			}
+			slimey_distortion = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			angel_zombie_distortion = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+            ice_witch_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+            ice_witch_coast = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+    hr1_witch1 = { 
+		icon = irma_sexy
+		position = 3
+		required_missions = { hr1_chimera1 }
+        generic = no
+        provinces_to_highlight = {
+			OR = {
+				area = slimey_distortion
+				area = angel_zombie_distortion
+                area = ice_witch_area
+                area = ice_witch_coast
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+            OR = {
+            ice_witch_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			ice_witch_coast = { type = all country_or_non_sovereign_subject_holds = ROOT }
+            }
+		}
+		effect = {
+			add_country_modifier = {
+				name = hr1_irma
+				duration = 7300 	
+			}
+			snow_heaven = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			polar_bear_snowfields = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+            polar_bear_coast = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+            polar_bear_village = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+            frozen_coast = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+            snow_cave_coast = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+            snow_cave = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+    hr1_east_angels = { 
+		icon = slu_victoria
+		position = 4
+		required_missions = { hr1_witch1 }
+        generic = no
+        provinces_to_highlight = {
+			OR = {
+				area = snow_cave_coast
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+            snow_cave_coast = { type = all country_or_non_sovereign_subject_holds = ROOT }
+		}
+		effect = {
+			add_country_modifier = {
+				name = hr1_polar_bears
+				duration = 9125 	
+			}
+			cupid_coast = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			cupid_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+            valkyrie_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+            valkyrie_mountains = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+            uranus_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+            uranus_mountains = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+            snow_shrine_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+            eliciel_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+            eliciel_mountains = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	hr1_gold_apoptosis = { 
+		icon = ribo_ribo
+		position = 5
+		required_missions = { hr1_east_angels }
+        generic = no
+		provinces_to_highlight = {
+			OR = {
+				area = cupid_coast
+				area = cupid_area
+				area = valkyrie_area
+				area = valkyrie_mountains
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+            cupid_coast = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			cupid_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			valkyrie_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			valkyrie_mountains = { type = all country_or_non_sovereign_subject_holds = ROOT }
+		}
+		effect = {
+			add_country_modifier = {
+				name = hr1_apoptosis_gold_region
+				duration = 10950
+			}
+			holy_wings_shrine_region = {
+            discover_country = ROOT
+			}
+			monster_lord_sea_region = {
+            discover_country = ROOT
+			}
+			holy_wings_shrine_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+		}
+	}
+
+	hr1_gold_hellgondo = { 
+		icon = trilobite_hellgondo
+		position = 6
+		required_missions = { hr1_gold_apoptosis }
+        generic = no
+		provinces_to_highlight = {
+			OR = {
+				area = twinkle_coast
+				area = twinkle_area
+				area = ribo_ribo_wastelands
+				area = ribo_ribo_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+            twinkle_coast = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			twinkle_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			ribo_ribo_wastelands = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			ribo_ribo_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+		}
+		effect = {
+			unlock_race = { race = roid }
+			hellgondo_tartarus_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+		}
+	}
+	hr1_colonial_islands = { 
+		icon = heriel_colonial
+		position = 7
+		required_missions = {}
+        generic = no
+		provinces_to_highlight = {
+			OR = {
+				area = pirate_coast_area
+				area = great_pirate_cave_area
+				area = dagon_area
+				area = hitodama_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+    	OR = {
+			AND = {
+				pirate_coast_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+				dagon_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+				great_pirate_cave_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+				hitodama_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			}
+			AND = {
+				polar_bear_island = { type = all country_or_non_sovereign_subject_holds = ROOT }
+				isolated_island = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			}
+		}
+        }
+		effect = {
+			add_prestige = 10
+			add_dip_power = 100
+			country_event = {
+				id = flavor_hr1.3
+			}
+		}
+	}
+}

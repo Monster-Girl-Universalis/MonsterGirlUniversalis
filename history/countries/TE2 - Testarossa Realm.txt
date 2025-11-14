@@ -6,7 +6,7 @@ religion = dark_goddess_religion
 technology_group = TECH_MINAGI
 1444.1.1 = { 
 	monarch = { 
-		name = "Elisabeth"
+		name = "Rossa"
 		dynasty = "Testarossa"
 		birth_date = 1424.1.1
 		adm = 5
@@ -15,5 +15,6 @@ technology_group = TECH_MINAGI
 		female = yes
 	}
 	unlock_race = { race = succubi }
+	unlock_race = { race = vampire }
 }
 capital = 3317

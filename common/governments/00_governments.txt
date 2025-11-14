@@ -117,6 +117,25 @@ monarchy = {
 				Fallen_angel_state
 				Mei_lin_state
 				kanon_domain_reform
+				kanade_domain_reform
+				minagi_domain_reform 
+				hiruko_domain_reform 
+				grimoire_reform 
+				ghatanothoa_reform 
+				ambrosia_reform 
+				loa_reform 
+				makai_plansect_reform 
+				makai_harpy_village_reform 
+				roza_pirates_reform 
+				queen_eva_reform 
+				makai_eden_reform
+				makai_mephisto_reform 
+				tao_realm_reform
+				marlboro_realm_reform 
+				archaeopteryx_realm_reform 
+				asmodeus_realm_reform 
+				jormungandr_realm_reform 
+				heavenly_gate_reform 
 				
 				#kagetsumugi_reform 
 				#promestein_reform 

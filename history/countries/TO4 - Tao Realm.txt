@@ -1,6 +1,6 @@
 government = monarchy
 government_rank = 3
-add_government_reform = Zombie_realm
+add_government_reform = tao_realm_reform
 religion = yamatai_religion
 technology_group = TECH_MAKAI_UNDEAD
 1444.1.1 = { 
@@ -8,9 +8,9 @@ technology_group = TECH_MAKAI_UNDEAD
 		name = "Tao"
 		dynasty = "of Yamatai"
 		birth_date = 1424.1.1
-		adm = 4
-		dip = 4
-		mil = 4
+		adm = 5
+		dip = 5
+		mil = 5
 		female = yes
 	}
 	unlock_race = { race = demi_human }

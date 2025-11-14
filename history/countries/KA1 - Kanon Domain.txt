@@ -5,6 +5,7 @@ add_government_reform = kanon_domain_reform
 religion = dark_goddess_religion
 technology_group = TECH_KANON
 historical_rival = KA2#They just don't get along...
+add_accepted_culture = grangold_human
 1444.1.1 = { 
 	monarch = { 
 		name = "Kanon"

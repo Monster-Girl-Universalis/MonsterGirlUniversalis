@@ -561,3 +561,36 @@ esta_tartarus_region = {
 		heavenly_gate_outpost amor_rihm_area amor_rahm_area heavenly_gate_coast amor_rahm_coast amor_rihm_coast northern_esta_tartarus 
 	}
 }
+central_tartarus_layer_one_region = { 
+	areas = { 
+		sentora_eater_area sentora_eater_drylands sentora_jaide_area sentora_jaide_woods sentora_luxuru_desert sentora_luxuru_area sentora_riot_area sentora_riot_drylands sentora_shesta_area sentora_shesta_coast
+		sentora_sully_area sentora_sully_coast 
+	}
+}
+central_tartarus_layer_two_region = { 
+	areas = { 
+		sentora_amphil_area sentora_amphil_woods sentora_jellaila_area sentora_jellaila_caves sentora_ribo_ribo_area sentora_ribo_ribo_drylands sentora_shinifa_area sentora_shinifa_swamp sentora_twinkell_area sentora_twinkell_hills
+	}
+}
+central_tartarus_layer_three_region = { 
+	areas = { 
+		sentora_valto_area sentora_valto_caves sentora_vetala_area sentora_vetala_coast sentora_vitae_area sentora_vitae_forest sentora_trilobite_coast sentora_trilobite_area sentora_persephone_area sentora_persephone_coast
+	}
+}
+central_tartarus_layer_four_region = { 
+	areas = { 
+		sentora_amour_rihm_woods sentora_amour_rihm_area sentora_amour_rahm_forest sentora_amour_rahm_area sentora_amour_doll_caves sentora_amour_doll_area cursed_angel_area cursed_angel_caves cursed_angel_coast idun_area
+		idun_caves idun_coast 
+	}
+}
+black_alice_mansion_region = { 
+	areas = { 
+		mr_bear_castle heinrichs_chambers black_alice_mansion black_mansion_exterior lost_remina agrave_abyss agrave_area agrave_caves samyaza_abyss samyaza_area
+		samyaza_caves 
+	}
+}
+central_tartarus_layer_five_region = { 
+	areas = { 
+		algemini_area algemini_caves algemini_coast elgemini_area elgemini_caves elgemini_coast 
+	}
+}

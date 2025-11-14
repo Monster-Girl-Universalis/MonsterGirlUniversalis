@@ -1,0 +1,9 @@
+add_core = LX1
+owner = LX1
+base_tax = 3
+base_manpower = 4
+base_production = 3
+culture = Roid_Apoptosis
+religion = chaos_religion
+controller = LX1
+is_city = no

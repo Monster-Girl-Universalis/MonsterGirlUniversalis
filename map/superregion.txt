@@ -1,7 +1,4 @@
 # A region can only belong to one super region.
-ilias_superregion = { 
-	iliasville_region irina_region iliasburg_region pornof_region 
-}
 # Sea super regions are used by AI to plan naval bases (it wants at least one fleet in each it has non-home presence if possible).
 great_sea_superregion = { 
 	great_sea_region western_great_sea_region 
@@ -20,6 +17,9 @@ inland_sea_superregion = {
 }
 south_safina_sea_superregion = { 
 	magistea_coast_sea_region sabasa_coast_sea_region south_pole_sea_region 
+}
+ilias_superregion = { 
+	iliasville_region irina_region iliasburg_region pornof_region 
 }
 enrika_superregion = { 
 	enrika_region 
@@ -125,4 +125,7 @@ makai_eastern_great_sea_superregion = {
 }
 makai_noah_sea_superregion = { 
 	makai_noah_sea_region 
+}
+sentora_chaos_field_superregion = { 
+	central_tartarus_layer_one_region central_tartarus_layer_two_region central_tartarus_layer_three_region central_tartarus_layer_four_region black_alice_mansion_region central_tartarus_layer_five_region 
 }

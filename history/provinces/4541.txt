@@ -1,0 +1,9 @@
+add_core = SZ1
+owner = SZ1
+base_tax = 4
+base_manpower = 5
+base_production = 4
+culture = Angel_Apoptosis
+religion = chaos_religion
+controller = SZ1
+is_city = no

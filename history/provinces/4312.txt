@@ -1,0 +1,9 @@
+add_core = RT2
+owner = RT2
+base_tax = 3
+base_manpower = 4
+base_production = 3
+culture = Dragon_Apoptosis
+religion = chaos_religion
+controller = RT2
+is_city = no

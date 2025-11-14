@@ -1,8 +1,10 @@
 government = republic
-government_rank = 1
+government_rank = 2
 primary_culture = natalian_human
 religion = water_religion
 technology_group = TECH_MAKAI_HUMAN
 add_government_reform = port_natalia_reform
 unlock_race = { race = human }
+unlock_race = { race = mermaid }
+add_accepted_culture = Natalian_Mermaid
 capital = 3262

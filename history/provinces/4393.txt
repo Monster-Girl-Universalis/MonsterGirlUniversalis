@@ -1,0 +1,9 @@
+add_core = PC1
+owner = PC1
+base_tax = 3
+base_manpower = 4
+base_production = 3
+culture = Undead_Apoptosis
+religion = chaos_religion
+controller = PC1
+is_city = no

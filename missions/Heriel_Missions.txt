@@ -159,7 +159,7 @@ hr1_mission_branch1 = {
 				is_prosperous = yes
 				development = 20
 			}
-			heriel_plains = {
+			heriel_area = {
 				type = all
 				owned_by = ROOT
 				is_prosperous = yes

@@ -98,12 +98,3 @@ far_continental_ilias = {
 	possible_policy = 1
 	prestige = 1
 }
-far_machina = {
-	fire_damage = 0.10
-}
-far_horny = {
-	global_unrest = -2
-}
-far_angelic = {
-	discipline = 0.05
-}

@@ -1,5 +1,5 @@
 ########################################
-# Flavor Events for Fallen Angel Realm Realm by Cris
+# Flavor Events for Fallen Angel Realm by Cris
 ########################################
 
 namespace = flavor_far
@@ -73,44 +73,6 @@ country_event = {
 		name = far_independence_war
 		duration = 7300
 	}
-	}
-	}
-}
-country_event = {
-	id = flavor_far.3
-	title = flavor_far.3_title
-	desc = flavor_far.3_desc
-	picture = FAR_ILIAS_TEMPLE_eventPicture
-	fire_only_once = yes
-	is_triggered_only = no
-	trigger = {
-    tag = FAR
-	42 = {
-		owned_by = ROOT
-	}
-}
-   	mean_time_to_happen = {
-	months = 16
-	}
-	option = {
-	name = flavor_far.3.a
-	add_country_modifier = {
-		name = far_machina
-		duration = -1
-	}
-	}
-	option = {
-	name = flavor_far.3.b
-	add_country_modifier = {
-		name = far_horny
-		duration = -1
-	}
-	}
-	option = {
-	name = flavor_far.3.c
-	add_country_modifier = {
-		name = far_angelic
-		duration = -1
 	}
 	}
 }

@@ -93,9 +93,6 @@ flavor_far.3_desc: "Ilias Tample once the place where the goddess herself would 
 #Event Choices
 flavor_far.1.a: "I want to see the world!"
 flavor_far.2.a: "There's no turning back now!"
-flavor_far.3.a: "Magic is nice but Machinas have their own charm and style!"
-flavor_far.3.b: "Some pleasure related job might be fun to try..."
-flavor_far.3.c: "Something that works well with our angelic race."
 #Reform names
 Fallen_angel_state: "Fallen Angel Realm"
 Fallen_angel_state_desc: "A realm inhabited by both the fallen angels who were cast down from Heaven and the angels who remained stuck on earth after the Great Disaster, with a heavy focus on warfare and farm work."

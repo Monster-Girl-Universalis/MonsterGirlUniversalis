@@ -473,9 +473,9 @@
  ###RELIGIONS###
  ilias_light.1.t:0 "Powerful Hero's Revelation"
  ilias_light.1.desc:0 "Recently a well-known Powerful Hero came to our realm. Stories about her travels already circulate around our continent, many kids are fascinated by her, many warriors dream of her fame. A devout baptised servant of Ilias Light, she is determined to reach Hellgondo continent and slay the current Monster Lord. Cheering is echoed through our capital as the hero is walking down the streets.\nWe are left with a choice though - what should we do with this hero? Providing her with the best equipment we can get may be costly but it will definitely bring us closer to fulfilling the will of Goddess herself, while completely ignoring her may disappoint some of our brethren.\nOne of our cunning Macchiavelian advisors offers a third option - he believes this hero is not very smart and we can manipulate her to serve as one of our army generals instead of following the hero's road. What should we do?"
- ilias_light.1.a:0 "He should receive the best equipment in our kingdom!"
+ ilias_light.1.a:0 "She should receive the best equipment in our kingdom!"
  ilias_light.1.b:0 "Ignore this hero."
- ilias_light.1.c:0 "This hero is valuable, we will conscript him."
+ ilias_light.1.c:0 "This hero is valuable, we will conscript Her."
  ilias_light.2.t:0 "Goddess Ilias is angry"
  ilias_light.2.desc:0 "It is absolutely outrageous! Your people start to forget my commandments, they are doing intercourse with monsters, churches are being abandoned and commoners forget about how important true faith is! As much as I wanted to help your nation, it seems you are not worthy of my grace. I shall deliver Judgment to all the sinners."
  ilias_light.2.a:0 "We will suffer..."

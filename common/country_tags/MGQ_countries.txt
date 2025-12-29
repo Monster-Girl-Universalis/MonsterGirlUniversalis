@@ -394,6 +394,7 @@ WSS = "countries/Warp Shrine State.txt"
 SLG = "countries/Midas Golden Slugs.txt"
 BF1 = "countries/Meilin Warp Shrine.txt"
 SN1 = "countries/Slug Nun Realm.txt"
+OSS = "countries/Oni Sellswords.txt"
 
 AD1 = "countries/Adramelech.txt"
 SO1 = "countries/Sonyachaos.txt"

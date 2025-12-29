@@ -1,0 +1,14 @@
+spriteTypes = {	
+	spriteType = {
+		name = "SHIZUKU_TOWN_eventPicture"
+		texturefile = "gfx//event_pictures//event_pictures_onisellswords//SHIZUKU_TOWN_eventPicture.dds"
+	}
+	spriteType = {
+		name = "NABISU_NAHO_eventPicture"
+		texturefile = "gfx//event_pictures//event_pictures_onisellswords//NABISU_NAHO_eventPicture.dds"
+	}
+	spriteType = {
+		name = "CHANDRA_FIRE_eventPicture"
+		texturefile = "gfx//event_pictures//event_pictures_rostrummountains//CHANDRA_FIRE_eventPicture.dds"
+	}
+}

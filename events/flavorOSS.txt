@@ -1,0 +1,141 @@
+########################################
+# Flavor Events for Oni Sellswords by Cris
+########################################
+
+namespace = flavor_oss
+
+###OSS Flavor events###
+
+country_event = {
+	id = flavor_oss.1
+	title = flavor_oss.1_title
+	desc = flavor_oss.1_desc
+	picture = SHIZUKU_TOWN_eventPicture
+	fire_only_once = yes
+	is_triggered_only = no
+	trigger = {
+	ai = no
+    tag = OSS
+	is_subject = yes
+	NOT = {has_country_flag = has_oni_leader}
+}
+   	mean_time_to_happen = {
+	months = 1
+	}
+	option = {
+	name = flavor_oss.1.a
+	set_country_flag = has_oni_leader
+	define_ruler = {
+    name = "Shizuku"
+    dynasty = "Ibaraki"
+	culture = ROOT
+    religion = ROOT
+	female = yes
+    adm = 4
+    dip = 4
+    mil = 4
+	fixed = yes
+    age = 15
+    claim = 90
+}
+	}
+}
+country_event = {
+	id = flavor_oss.2
+	title = flavor_oss.2_title
+	desc = flavor_oss.2_desc
+	picture = SLUG_MIDAS_eventPicture
+	fire_only_once = yes
+	is_triggered_only = no
+	trigger = {
+	ai = no
+    tag = OSS
+	is_subject = yes
+    has_country_flag = has_oni_leader
+}
+   	mean_time_to_happen = {
+	months = 2
+	}
+	option = {
+	name = flavor_oss.2.a
+	add_country_modifier = {
+        name = oss_trinity
+        duration = -1
+    }
+    add_accepted_culture = Slime_Girl
+    add_accepted_culture = Stray_Succubi
+    add_manpower = 15
+    set_country_flag = has_mercenaries_forces
+	}
+}
+country_event = {
+	id = flavor_oss.3
+	title = flavor_oss.3_title
+	desc = flavor_oss.3_desc
+	picture = NABISU_NAHO_eventPicture
+	fire_only_once = yes
+	is_triggered_only = no
+	trigger = {
+	ai = no
+    tag = OSS
+	is_subject = yes
+	has_country_flag = has_mercenaries_forces
+}
+   	mean_time_to_happen = {
+	months = 3
+	}
+	option = {
+	name = flavor_oss.3.a
+	define_general = {
+				shock = 1
+				fire = 2
+				manuever = 3
+				siege = 3
+				name = Nabisu
+				female = yes
+			}
+    define_general = {
+				shock = 3
+				fire = 2
+				manuever = 1
+				siege = 1
+				name = Naho
+				female = yes
+			}
+    add_country_modifier = {
+        name = oss_mercenaries_1
+        duration = 7300
+    }
+    add_treasury = 500
+    magistea_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+	}
+}
+country_event = {
+	id = flavor_oss.4
+	title = flavor_oss.4_title
+	desc = flavor_oss.4_desc
+	picture = NABISU_NAHO_eventPicture
+	fire_only_once = yes
+	is_triggered_only = no
+	trigger = {
+	ai = no
+    tag = OSS
+	is_subject = no
+}
+   	mean_time_to_happen = {
+	months = 12
+	}
+	option = {
+	name = flavor_oss.4.a
+	add_stability = 2
+	add_adm_power = 200
+	add_dip_power = 200
+	add_mil power = 200
+	}
+}

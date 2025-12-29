@@ -1,0 +1,7 @@
+oss_trinity = {
+	num_accepted_cultures = 2
+}
+oss_mercenaries_1 = {
+	mercenary_cost = -0.15
+    merc_maintenance_modifier = -0.25
+}

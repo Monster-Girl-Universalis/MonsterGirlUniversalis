@@ -1,0 +1,11 @@
+government = monarchy
+government_rank = 1
+primary_culture = Oni
+add_government_reform = Demi_Human_realm
+religion = seekers_of_truth_religion
+technology_group = TECH_DEMI_HUMAN
+unlock_race = { race = demi_human }
+unlock_race = { race = doll }
+unlock_race = { race = slime }
+unlock_race = { race = succubi }
+capital = 838

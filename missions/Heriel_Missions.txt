@@ -69,6 +69,7 @@ hr1_mission_branch1 = {
             }
             }
         effect = {
+			custom_tooltip = flavor_insight_hr1.1
 			add_casus_belli = {
             target = SH3
             type = cb_restore_personal_union

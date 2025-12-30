@@ -214,4 +214,6 @@
  white_rabbit_tips_decision_desc:0 "Ask the omnipresent White Rabbit for an advice."
  great_ilias_cathedral_decision_title:0 "Build Great Ilias Cathedral"
  great_ilias_cathedral_decision_desc:0 "Recently our angelic nation grew very strong, the land of pious now encompasses the entire Heaven and even the Monster Lord yielded her castle. Now it's a proper time to build a magnificent Cathedral Fortress befitting the name of Goddess Ilias!"
+ inherit_snow_heaven_decision_title:0 "Integrate Snow Heaven"
+ inherit_snow_heaven_decision_desc:0 "Snow Heaven has been under vassalage for a few decades, now that our position has been secure it is time we annex the angel lands into our realm."
 

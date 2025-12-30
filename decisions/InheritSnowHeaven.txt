@@ -1,0 +1,30 @@
+country_decisions = {
+
+	inherit_snow_heaven_decision = {
+		color = { 106 90 171 }
+		potential = {
+			OR = {
+            tag = HR1
+            tag = IT1
+            }
+            SH3 = {is_subject_of = ROOT}
+            NOT = {has_country_flag = has_inherited_snow_heaven}
+		}
+		allow = {
+			SH3 = { years_in_union_under = {
+			who = ROOT
+			years = 60
+		}
+			SH3 = { NOT = { num_of_cities = 100 } }
+	}
+		}
+		effect = {
+			inherit = SH3
+			set_country_flag = has_inherited_snow_heaven
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+}

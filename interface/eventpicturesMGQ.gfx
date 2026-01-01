@@ -755,4 +755,8 @@ spriteTypes = {
 		name = "MAYA_BOX_eventPicture"
 		texturefile = "gfx//event_pictures//event_pictures_spidermikorealm//MAYA_BOX_eventPicture.dds"
 	}
+	spriteType = {
+		name = "monster_lord_room_eventPicture"
+		texturefile = "gfx//event_pictures//monster_lord_room_eventPicture.dds"
+	}
 }

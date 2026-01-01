@@ -602,3 +602,8 @@ temple_doctor = {
 temple_shield = {
 	defensiveness = 0.33
 }
+
+legendary_conquerer = {
+	army_tradition = 0.5
+	core_creation = -0.05
+}
